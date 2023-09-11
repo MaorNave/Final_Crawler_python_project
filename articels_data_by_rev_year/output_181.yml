@@ -1,0 +1,895 @@
+- Affiliation of the first author: department of ece, northeastern university, boston,
+    ma, usa
+  Affiliation of the last author: department of ece and khoury college of computer
+    science, northeastern university, boston, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_1.jpg
+  Figure 1 caption: "PSNR (\xD72 scale on Urban100 test set) and Mult-Adds comparison\
+    \ of different SR models. Each circle area is proportional to the number of model\
+    \ parameters. Ours: GASSL-SB. Best viewed in color."
+  Figure 10 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_10.jpg
+  Figure 10 caption: "Test PSNR comparison (on Set5, \xD72) of models finetuned for\
+    \ merely 1 epoch, after being trimmed by our method vs. the baseline L1 -norm\
+    \ pruning approach [28]."
+  Figure 2 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_2.jpg
+  Figure 2 caption: "Visual quality and model complexity (ParamsMult-Adds) comparison\
+    \ of popular efficient SR approaches (and one heavy EDSR model as reference) on\
+    \ the Urban100 dataset [25] (img012 and img020) at scale \xD74. As noted, our\
+    \ GASSL delivers more favorable visual quality despite being smaller (in terms\
+    \ of Params) and faster (in terms of Mult-Adds)."
+  Figure 3 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_3.jpg
+  Figure 3 caption: "Illustration of applying our ASSLGASSL method to pruning the\
+    \ filters in a typical residual block. The 3-d cubes mathbf F represent feature\
+    \ maps. The weight kernel mathbf W (4-d tensor) in a Conv layer is expanded as\
+    \ a 2-d matrix in the figure (each row represents a filter). Both the orange and\
+    \ yellow colors indicate the filters will be removed (i.e., unimportant filters)\
+    \ \u2013 Orange indicates the layer is a free Conv layer, while yellow indicates\
+    \ the layer is a constrained Conv layer. A weight normalization (WN) layer is\
+    \ introduced after each convolutional layer. Our method will impose strong sparsity-inducing\
+    \ penalty on the WN scales of the unimportant filters. A sparsity structure alignment\
+    \ (SSA) regularization term is enforced on the WN scales of the constrained Conv\
+    \ layers to make the pruned filter indices aligned as much as possible. Note,\
+    \ WN layers are only used for pruning; after pruning, they will be removed."
+  Figure 4 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_4.jpg
+  Figure 4 caption: "Normalized WN (weight normalization) scale of layer \u201Cmodel.body.8.body.0\u201D\
+    \ in our GASSL-B model during the RegSelect process. As seen, as the training\
+    \ iteration increases (the regularization strength increases too), the WN scales\
+    \ gradually \u201Cdiverge\u201D \u2013 the difference among different WN scales\
+    \ are more significant, just as implied by the proposed Proposition III.1."
+  Figure 5 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_5.jpg
+  Figure 5 caption: Illustration of the gram matrix of the WN scale masks. Eight mask
+    vectors are depicted here. Note, if two mask vectors pose more similar patterns,
+    their inner-product in the gram matrix will be greater.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_6.jpg
+  Figure 6 caption: Layer sparsity ratio w.r.t. training iterations in our GASSL-B
+    model during the RegSelect process. Note, only the free Conv layers are imposed
+    with RegSelect, so the total number of layers is 16 (i.e., layer index from 0
+    to 15).
+  Figure 7 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_7.jpg
+  Figure 7 caption: "Illustration of normalized WN scale stddev in our GASSL-B model\
+    \ during the RegSelect process. Three layers (\u201Cmodel.body.4,8,12.body.0\u201D\
+    ) are presented. The \u201Coverall network\u201D (red solid line) indicates the\
+    \ WN scale stddev is calculated with all the WN scales in the network."
+  Figure 8 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_8.jpg
+  Figure 8 caption: "Filter visualization of the EDSR baseline network at \xD72 scale.\
+    \ Three layers are selected to present, from low layer (\u201Cmodel.body.0.body.0\u201D\
+    ) to high (\u201Cmodel.body.8.body.0\u201D). Green color indicates zero here;\
+    \ bluered represents negativepositive values. Particularly note the pattern that\
+    \ higher layers have more diverse filters in general, implying shallower layers\
+    \ have more redundancy and should be pruned more. This can be an underlying reason\
+    \ that promotes the proposed RegSelect algorithm to result in the layer sparsity\
+    \ ratio pattern in Fig. 6; see Section IV-B for more discussions."
+  Figure 9 Link: articels_figures_by_rev_year\2023\Global_Aligned_Structured_Sparsity_Learning_for_Efficient_Image_SuperResolution\figure_9.jpg
+  Figure 9 caption: "Regularization illustration of RegPrune for the \u201Cmodel.body.8.body.0\u201D\
+    \ layer of EDSR baseline model. The WN mean scale of keptpruned filters are plotted\
+    \ to the left y-axis; the sparsity-inducing penalty factor ( alpha ) is plotted\
+    \ to the right y-axis."
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Huan Wang
+  Name of the last author: Yun Fu
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Global Aligned Structured Sparsity Learning for Efficient Image Super-Resolution
+  Publication Date: 2023-04-20 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Test AvgPSNR Avg PSNR (Db, (22)) Comparison (On Set5 At \xD7\
+      2 Scale) of Two Layer-Wise Sparsity Schemes (ASSL: Uniform Layer-Wise Sparsity;\
+      \ GASSL: Non-Uniform Learned Layer-Wise Sparsity). The EDSR Baseline Network\
+      \ (Params: 1,369.9 K, FLOPs: 316.3 G, PSNR: 37.99 Db) is Evaluated Here. Only\
+      \ the Free Conv Layers are Pruned Here. To Mitigate the Influence of Statistical\
+      \ Variation, Each Result is Averaged by 3 Random Runs. Note the PSNR Gap Between\
+      \ GASSL and ASSL is Typically Around an Order-of-Magnitude Larger Than the Std,\
+      \ Implying the Gap is Stable and Statistically Significant"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE II Test PSNR Comparison Between Our ASSL and Other Two Baselines\
+      \ on Set5 (\xD72) Under Different Sparsity Budgets. Training Epochs: 200. The\
+      \ Unpruned Model is EDSR Baseline (Params: 1,369.9 K, Mult-Adds: 316.3 G, PSNR:\
+      \ 37.99 dB). The Best Results are Highlighted in Bold, second Best Underlined.\
+      \ Note, in Each Column, the Resulting Small Networks by the Three Methods are\
+      \ Exactly the Same"
+  Table 3 caption:
+    table_text: TABLE III Quantitative Comparison (PSNRSSIM). The Best Results are
+      Highlighted in Bold and second Best Underlined. NA Indicates the Result is Not
+      Available From Their Paper. GASSL-S-B Indicates the Resulting smallbig Model
+      by Applying Our Method to the CARNEDSR Model, Respectively. Note, ECBSR [74]
+      and RepSR [75] Calculate the SSIM Slightly Differently From the Others, Which
+      on Average Reports a Bit Higher SSIM Results Than the Other Calculation Scheme
+  Table 4 caption:
+    table_text: "TABLE IV Parameters, Mult-Adds, and PSNR (dB) Comparison ( \xD72\
+      \ \xD72) of Efficient SR Methods Based on Popular Model Compression Techniques\
+      \ (NAS and KD)"
+  Table 5 caption:
+    table_text: "TABLE V Wall-Clock Speed Comparison. Benchmark Conditions: One TITAN\
+      \ Xp (12 GB) GPU, Batch Size 4, 50 Runs (Average Speed Reported), Output SR\
+      \ Image Height 640, Width 360, Scale \xD72, PyTorch 1.12.1. For CARNIMDNECBSR,\
+      \ We Use Their Official Code to Obtain the Speed"
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268675
+- Affiliation of the first author: state key laboratory of crop genetics and germplasm
+    enhancement and utilization, bioinformatics center, academy for advanced interdisciplinary
+    studies, nanjing agricultural university, nanjing, jiangsu, china
+  Affiliation of the last author: state key laboratory of crop genetics and germplasm
+    enhancement and utilization, bioinformatics center, academy for advanced interdisciplinary
+    studies, nanjing agricultural university, nanjing, jiangsu, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_1.jpg
+  Figure 1 caption: Block diagram of Hough transform for line, plane and hyperplane
+    detection.
+  Figure 10 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_10.jpg
+  Figure 10 caption: The comparison of detection rates between IFHT and FHT with measurement
+    noise in both dimensions of the observed data. Two levels of noise, with standard
+    deviation 0.02 and 0.067 respectively, have been tested.
+  Figure 2 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_2.jpg
+  Figure 2 caption: Tests for the intersection of a line and an accumulator (square)
+    can be relaxed to test the intersection of the line and the circumscribing circle.
+    The approximation only affects the dashed line.
+  Figure 3 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_3.jpg
+  Figure 3 caption: The coarse-to-fine strategy for quantized accumulators of IFHT.
+    Accumulators have the same length along each dimension.
+  Figure 4 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_4.jpg
+  Figure 4 caption: The k-tree representation of the parameter space. For simplicity,
+    we here use 0 and 1 for binary values of vector b. Each node can be subdivided
+    into 2 k child nodes except that there are only 2 k -1 child nodes for the root
+    node as b1 = 1 due to beta 1 geq 0 .
+  Figure 5 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_5.jpg
+  Figure 5 caption: The number of active accumulators by IFHT in two 3D datasets and
+    the theoretic number of accumulators.
+  Figure 6 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_6.jpg
+  Figure 6 caption: IFHT provides an intuitive insight for determining the number
+    of lines in an image and parameter tuning. (a) An image with two lines. (b) IFHT
+    vote distribution in the parameter space shows two clusters, corresponding two
+    lines in the data. Here the IFHT parameter space in quantitation level l = 5 is
+    shown.
+  Figure 7 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_7.jpg
+  Figure 7 caption: A 3D data space and its IFHT parameter space. (a) 3D data points
+    and the existing plane. (b) The IFHT vote distribution in the parameter space
+    shows a cluster, corresponding the plane in the data space. Here the IFHT parameter
+    space in quantitation level l = 5 is shown.
+  Figure 8 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_8.jpg
+  Figure 8 caption: IFHT and FHT model different error distances. (a) FHT minimizes
+    the sum of L1 distances (dashed line in black) of points involved to the target
+    line. (b) IFHT minimizes the sum of Euclidian distances (dashed line in red) of
+    points involved to the target line.
+  Figure 9 Link: articels_figures_by_rev_year\2023\An_Integrated_Fast_Hough_Transform_for_Multidimensional_Data\figure_9.jpg
+  Figure 9 caption: The comparison of performances between IFHT and FHT with two levels
+    of measurement noise in the second dimension. (a) A typical line detection experiment;
+    (b) a challenging scenario where peaks in the parameter space straddle the boundaries
+    between accumulators in both IFHT and FHT methods.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yanhui Li
+  Name of the last author: Xiangchao Gan
+  Number of Figures: 11
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: An Integrated Fast Hough Transform for Multidimensional Data
+  Publication Date: 2023-04-21 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3269202
+- Affiliation of the first author: s-lab, nanyang technological university, singapore
+  Affiliation of the last author: s-lab, nanyang technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_1.jpg
+  Figure 1 caption: Point cloud incompleteness impacts classification accuracy on
+    MVP-40 of both PointNet [7] (red bars) and DGCNN [8] (blue bars). The classification
+    accuracy significantly drops when its missing ratio is very large (50% missing).
+    After completion by VRCNet, we can highly improve the performance for both methods
+    (see yellow bars).
+  Figure 10 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_10.jpg
+  Figure 10 caption: Completion results on real-scanned point clouds. VRCNet generates
+    impressive complete shapes for real-scanned point clouds by learning and predicting
+    shape symmetries. (a) shows completion results for cars from Kitti dataset [17].
+    (b) and (c) show completion results for chairs and tables from ScanNet dataset
+    [18], respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_2.jpg
+  Figure 2 caption: '(a) System Overview. VRCNet is first used for point cloud completion
+    with two consecutive stages: probabilistic modeling and relational enhancement,
+    which facilitates downstream perception tasks. (b) Qualitative Results show that
+    VRCNet generates better shape details than the other works [1], [6], [9]. (c)
+    Our completion results conditioned on partial observations. The arrows indicate
+    the viewing angles. In (1) and (2), 2 knots are partially observed for the pole
+    of the lamp, and hence we generate 2 complete knots. In (3), only 1 kn is observed,
+    and then we reconstruct 1 complete knot. If no knots are observed (see (4)), VRCNet
+    generates a smooth pole without knots.'
+  Figure 3 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_3.jpg
+  Figure 3 caption: PMNet (light blue block) consists of two parallel paths, the upper
+    construction path (orange line) and the lower completion path (blue line). The
+    reconstruction path is only used in training, and the completion path generates
+    a coarse completion based on the inferred distribution and global features. Subsequently,
+    RENet (Fig. 5) adaptively exploits relational structure properties to predict
+    the fine complete point cloud.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_4.jpg
+  Figure 4 caption: Our proposed point kernels. (a) Our PSA adaptively aggregate neighboring
+    point features. (b) Using selective kernel unit, our PSK can adaptively adjust
+    receptive fields to exploit and fuse multi-scale point features. (c) By adding
+    a residual connection, we construct our RPSK that is an important building block
+    for our RENet.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_5.jpg
+  Figure 5 caption: Our relational enhancement network (RENet) uses a hierarchical
+    encoder-decoder architecture, which effectively learns multi-scale structural
+    relations.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_6.jpg
+  Figure 6 caption: Point cloud completion for perception. Various point cloud completion
+    networks are compared with different perception networks.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_7.jpg
+  Figure 7 caption: Multi-View Partial point cloud dataset. (a) shows an example for
+    26 uniformly distributed camera poses on a unit sphere. (b) presents the 26 partial
+    point clouds for the airplane from the uniformly distributed virtual cameras.
+    (c) compares the rendered incomplete point clouds with different camera resolutions.
+    (d) shows that Poisson disk sampling generates complete point clouds with a higher
+    quality than uniform sampling.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_8.jpg
+  Figure 8 caption: Qualitative completion results (16,384 points) on the MVP dataset
+    by different methods. VRCNet can generate better complete point clouds than the
+    other methods by learning geometrical symmetries.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Variational_Relational_Point_Completion_Network_for_Robust_D_Classification\figure_9.jpg
+  Figure 9 caption: Per-category classification results (Acc. %) on MVP-40 dataset
+    (50% missing). PointNet [7] (red bars) and DGCNN [8] (blue bars) can provide much
+    higher classification accuracy (yellow bar) with the help of point cloud completion
+    by VRCNet than those directly on partial point clouds for most categories, although
+    accuracy decrements (green bars) are observed in few categories.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Liang Pan
+  Name of the last author: Ziwei Liu
+  Number of Figures: 10
+  Number of Tables: 10
+  Number of authors: 7
+  Paper title: Variational Relational Point Completion Network for Robust 3D Classification
+  Publication Date: 2023-04-21 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE I Comparing MVP With Existing Datasets. MVP Has Many Appealing
+      Properties: 1) Diversity of Uniform Views; 2) Large-Scale and High-Quality;
+      3) Rich Categories. Note that Both PCN and C3D Only Randomly Render One Incomplete
+      Point Cloud for each CAD Model to Construct Their Testing sets. (C3D: Completion3d;
+      CAT.: Categories; Distri.: Distribution; RESO.: Virtual Camera Resolution or
+      Missing Ratios of Incomplete Point Clouds; PC: Point Cloud; FPS: Farthest Point
+      Sampling; PDS: Poisson Disk Sampling. Point Cloud Resolution is Shown as Multiples
+      of 2048 Points.)'
+  Table 10 caption:
+    table_text: TABLE X A User Study of Completion Quality on Real Scans. The Values
+      are Average Scores Given by Volunteers (3 Points for Best Result, 1 Point for
+      the Worst Result). Vrcnet is the Most Preferred Method Overall
+  Table 2 caption:
+    table_text: "TABLE II Completion Results (CD Loss \xD7 10 4 \u2193 \xD7104\u2193\
+      ) on Our MVP Dataset (16,384 Points). Vrcnet Outperforms Existing Methods by\
+      \ Convincing Margins"
+  Table 3 caption:
+    table_text: "TABLE III Completion Results (F-Score1% \u2191 \u2191) on Our MVP\
+      \ Dataset (16,384 Points)"
+  Table 4 caption:
+    table_text: "TABLE IV Completion Results (CD Loss \xD7 10 4 \xD7104) With Various\
+      \ Resolutions"
+  Table 5 caption:
+    table_text: TABLE V Ablation Studies for VRCNet (2,048 Points)
+  Table 6 caption:
+    table_text: TABLE VI Classification Results on MVP Dataset (2,048 Points)
+  Table 7 caption:
+    table_text: "TABLE VII Completion Results (CD \xD7 10 4 \xD7104) on Completion3D"
+  Table 8 caption:
+    table_text: "TABLE VIII Completion Results (CD \xD7 10 3 \xD7103) on MVP-40 (2,048\
+      \ Points)"
+  Table 9 caption:
+    table_text: TABLE IX Classification Results on MVP-40 Dataset (2,048 Points)
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268305
+- Affiliation of the first author: bnrist, thuibcs, kliss, blbci, school of software,
+    tsinghua university, beijing, china
+  Affiliation of the last author: bnrist, thuibcs, kliss, blbci, school of software,
+    tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_1.jpg
+  Figure 1 caption: "Illustration of different histology retrieval tasks. (a) Represents\
+    \ the patch-to-patch retrieval. Patches are both query images and target images.\
+    \ (b) Represents the slide-to-slide retrieval. A group of patches from the same\
+    \ slide is combined and retrieval is based on the similarities among these \u201C\
+    bags of patches\u201D. (c) Is our improvement on slide-to-slide retrieval. We\
+    \ use slide-level self-supervised learning to extract more representative slide-level\
+    \ information from \u201Cbags of patches\u201D and a hypergraph is leveraged to\
+    \ establish superior group similarity measurement with high-order correlation\
+    \ explored."
+  Figure 10 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_10.jpg
+  Figure 10 caption: The surface plots of three anatomic sites under optimal K and
+    different alpha,beta . The parameters alpha,beta range from 0 to 2 with an interval
+    of 0.1. Higher and lighter surfaces indicate higher performance and otherwise
+    lower performance.
+  Figure 2 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_2.jpg
+  Figure 2 caption: The pipeline of our HSHR model. During SSL (self-supervised learning)
+    Hash Encoding stage, a group of patches is densely selected from each slide and
+    fed into a backbone pre-trained by these histology patch images in a SSL manner.
+    Then we divide extracted patch features into two groups and cluster them into
+    two groups of cluster centers. Leveraging them from all WSIs, a slide-level SSL
+    framework is adopted to train the Cluster-Attention Hash Encoder (CaEncoder).
+    During fine-tuning, a group of cluster centers is encoded as a group of weighted
+    hash codes, which efficiently and concisely represents a WSI. In the Hypergraph-guided
+    Retrieval stage, we employ a many-to-many distance calculation for all slides
+    to encode each slide as a vertex and a hyperedge, whose connection is based on
+    the similarities of cluster centers. The correlation in the constructed hypergraph
+    will be sufficiently explored through multiple pairwise relationships in both
+    low-order and high-order. Finally, we combine these pairwise relationships to
+    obtain the final similarity matrix, which contains all the ranking information
+    of our similarity-based retrieval.
+  Figure 3 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_3.jpg
+  Figure 3 caption: Three stages of an example slide being preprocessed. (a) is a
+    quintessential raw WSI image, with tissue regions surrounded by blank regions.
+    (b) is the image after informative tissue segmentation. Selected regions are covered
+    in black. It demonstrates that the algorithm successfully distinguishes informative
+    tissues with blank backgrounds. (c) is the image after densely patch selection.
+    Squares are our selected patches for this image, which try to cover up all of
+    the selected regions.
+  Figure 4 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_4.jpg
+  Figure 4 caption: The illustration of a hypergraph and the corresponding incidence
+    matrix.
+  Figure 5 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_5.jpg
+  Figure 5 caption: The illustration of three similarity views. Each slide is encoded
+    as a vertex and a hypergraph. A different view can capture different similarities
+    that may be ignored in other views. As an example, slide 1 and slide 2 are associated
+    but the low-order vertex-hyperedge connection can only discover this in (a).
+  Figure 6 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_6.jpg
+  Figure 6 caption: Primary subtype retrieval experiment results demonstrated in histograms.
+    Each sub-figure represents the result in an anatomic site. All results are in
+    the metric of mMV5, with the average results on the left and all subtypes results
+    on the right. Our HSHR results are represented in green. Yottixel results are
+    represented in red. And FISH results are represented in blue.
+  Figure 7 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_7.jpg
+  Figure 7 caption: Confusion Matrixes of our classification results by mMV5. Diagonal
+    areas indicate correct classifications, while other areas indicate wrong classifications.
+    The number in each area denotes the number of slides. Each area has a proportion
+    between 0 to 1, representing the share of slides in the corresponding row. (i.e.,
+    Within slides of all the true subtypes, the percentage of slides of the predicted
+    subtype.).
+  Figure 8 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_8.jpg
+  Figure 8 caption: "The mMV5 scores and loss during the SSL training procedure. Colored\
+    \ curves denote mean scores and shadow areas denote the range within standard\
+    \ deviation (i.e., mean \xB1 std). Training loss is represented as the gray line."
+  Figure 9 Link: articels_figures_by_rev_year\2023\HighOrder_CorrelationGuided_SlideLevel_Histology_Retrieval_With_SelfSupervised_H\figure_9.jpg
+  Figure 9 caption: Average mMV5 scores of three anatomic sites under different K.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Shengrui Li
+  Name of the last author: Yue Gao
+  Number of Figures: 12
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: High-Order Correlation-Guided Slide-Level Histology Retrieval With
+    Self-Supervised Hashing
+  Publication Date: 2023-04-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Primary Subtype Retrieval Experiment Results
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Ablation Study Results in Anatomic Sites Experiments
+  Table 3 caption:
+    table_text: TABLE III Ablation Study on the Effectiveness of Cluster Attention
+  Table 4 caption:
+    table_text: TABLE IV Comparison of Different View Parameters
+  Table 5 caption:
+    table_text: TABLE V Comparison of Different Backbones
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3269810
+- Affiliation of the first author: school of information technology and electrical
+    engineering, the university of queensland, st lucia, qld, australia
+  Affiliation of the last author: school of information technology and electrical
+    engineering, the university of queensland, st lucia, qld, australia
+  Figure 1 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_1.jpg
+  Figure 1 caption: Proposed PGL framework. By alternating between Steps 2 and 3,
+    we progressively achieve the optimal classification model G circ F for the shared
+    classes and pseudo-labeling function hb for rejecting the unknowns.
+  Figure 10 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_10.jpg
+  Figure 10 caption: S-OSVDA recognition accuracies on the challenging Kinetics-Gameplay
+    datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_2.jpg
+  Figure 2 caption: The network architecture of the node network GN and edge network
+    GE .
+  Figure 3 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_3.jpg
+  Figure 3 caption: An illustration of the progressive learning to construct the pseudo-labeled
+    target set. alpha indicates the ideal threshold for classifying known and unknown
+    samples.
+  Figure 4 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_4.jpg
+  Figure 4 caption: Proposed SF-PGL framework. The black line represents the data
+    flow of both the source and target data.
+  Figure 5 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_5.jpg
+  Figure 5 caption: Performance Comparisons w.r.t. varying (a) openness of the Syn2Real-o
+    (ResNet-50); (b) loss coefficients mu and gamma on the Ar to Cl task (Office-Home)
+    with the ResNet-50 backbone.
+  Figure 6 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_6.jpg
+  Figure 6 caption: 'Visualization of edge features on the Syn2Real-O. Left: the binary
+    ground-truths label map. Right: the learned edge map from the proposed edge update
+    networks. Best viewed in color.'
+  Figure 7 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_7.jpg
+  Figure 7 caption: The t-SNE visualization of feature distributions on the Rw to
+    Ar task (Office-Home) with the ResNet-50 backbone.
+  Figure 8 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_8.jpg
+  Figure 8 caption: Recognition accuracies of the proposed PGL method on the (a) Ar
+    to Cl task (Office-Home) and (b) Syn2Real-O datasets.
+  Figure 9 Link: articels_figures_by_rev_year\2023\SourceFree_Progressive_Graph_Learning_for_OpenSet_Domain_Adaptation\figure_9.jpg
+  Figure 9 caption: The t-SNE visualization for the source and target data in the
+    Syn2Real-O dataset.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Yadan Luo
+  Name of the last author: Mahsa Baktashmotlagh
+  Number of Figures: 11
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: Source-Free Progressive Graph Learning for Open-Set Domain Adaptation
+  Publication Date: 2023-04-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE I The General Statistics of the Four Action Recognition Datasets
+      for Tasks of OSVDA and S-OSVDA
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II The Summary of All Collected Categories in the UCF-101 and
+      HMDB Datasets. Classes Highlighted in Blue Represent the Unknown Class
+  Table 3 caption:
+    table_text: "TABLE III Recognition Accuracies (%) on 12 Pairs of sourcetarget\
+      \ Domains From Office-Home Benchmark Using ResNet-50 as the Backbone. Ar: Art,\
+      \ Cp: Clipart, Pr: Product, Rw: Real-World. \u2217 Indicates Our Re-Implementation\
+      \ With the Officially Released Code"
+  Table 4 caption:
+    table_text: "TABLE IV Performance Comparisons on the VisDA-17. \u2020 \u2020 Indicates\
+      \ Methods With OSVM"
+  Table 5 caption:
+    table_text: "TABLE V Ablation Performance on the Syn2Real-O (ResNet-50). \u201C\
+      w\u201D Indicates With and \u201Cwo\u201D Indicates Without"
+  Table 6 caption:
+    table_text: TABLE VI Recognition Accuracies (%) for Open-Set Domain Adaptation
+      Experiments on the Syn2Real-O (ResNet-50)
+  Table 7 caption:
+    table_text: "TABLE VII Performance Comparisons W.r.t. Varying Enlarge Factor \u03B1\
+      \ \u03B1 on the Syn2Real-O and Office-Home (ResNet-50)"
+  Table 8 caption:
+    table_text: "TABLE VIII Classification Accuracies (%) of the Proposed PGL Method\
+      \ for Open-Set Action Recognition. \u2020 \u2020 Indicates Methods With OSVM"
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3270288
+- Affiliation of the first author: department of electronic engineering and information
+    science of electrical and computer engineering, university of science and technology
+    of china, hefei, anhui, china
+  Affiliation of the last author: department of electronic engineering and information
+    science of electrical and computer engineering, university of science and technology
+    of china, hefei, anhui, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\SignBERT_HandModelAware_SelfSupervised_PreTraining_for_Sign_Language_Understandi\figure_1.jpg
+  Figure 1 caption: The overview of our method and sign language understanding tasks
+    (isolated SLR, continuous SLR and SLT).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\SignBERT_HandModelAware_SelfSupervised_PreTraining_for_Sign_Language_Understandi\figure_2.jpg
+  Figure 2 caption: Illustration of our SignBERT+ framework details, which contains
+    self-supervised pre-training and fine-tuning for the downstream tasks. We organize
+    the pre-extracted 2D poses of both hands as the visual token sequence. For each
+    token, it is embedded with gesture state and spatial-temporal position encoding.
+    During self-supervised pre-training, multi-level masked modeling strategies work
+    with incorporated model-aware hand prior, in order to better capture the hierarchical
+    context in the sign domain. Given the downstream-task diversity, we design the
+    task-specific prediction head and fine-tune it with the pre-trained SignBERT+
+    encoder.
+  Figure 3 Link: articels_figures_by_rev_year\2023\SignBERT_HandModelAware_SelfSupervised_PreTraining_for_Sign_Language_Understandi\figure_3.jpg
+  Figure 3 caption: Illustration of the settings on three downstream tasks, i.e.,
+    isolated SLR, continuous SLR and SLT. The box in purple denotes our designed task-specific
+    prediction head. It is fine-tuned with the pre-trained SignBERT+ encoder.
+  Figure 4 Link: articels_figures_by_rev_year\2023\SignBERT_HandModelAware_SelfSupervised_PreTraining_for_Sign_Language_Understandi\figure_4.jpg
+  Figure 4 caption: Qualitative illustration of the framework feasibility on HANDS17.
+    We exhibit 15 continuous frames of a video. Four rows represent the ground truth
+    pose, input pose disturbed by all kinds of masked modeling strategies (joint,
+    frame and clip), reconstructed sequence and the middle mesh representation, respectively.
+    Notably, blanks in the second row represent all joints in the corresponding frames
+    are masked.
+  Figure 5 Link: articels_figures_by_rev_year\2023\SignBERT_HandModelAware_SelfSupervised_PreTraining_for_Sign_Language_Understandi\figure_5.jpg
+  Figure 5 caption: "More visualization samples under sign data sources with no hand\
+    \ pose annotation. For each sample, 8 continuous frames are visualized. \u201C\
+    In\u201D, \u201COut\u201D and \u201CMesh\u201D denote the input hand pose, the\
+    \ reconstructed hand pose and the intermediate hand mesh, respectively. For clarity,\
+    \ we visualize all the poses and meshes on their aligned RGB image planes."
+  Figure 6 Link: articels_figures_by_rev_year\2023\SignBERT_HandModelAware_SelfSupervised_PreTraining_for_Sign_Language_Understandi\figure_6.jpg
+  Figure 6 caption: "More visualization samples on two types of hard interaction cases\
+    \ during sign language expression, i.e., hand-to-hand interaction and hand-to-face\
+    \ interaction. For each sample, 5 continuous frames are visualized. \u201CIn\u201D\
+    , \u201COut\u201D and \u201CMesh\u201D denote the input hand pose, the reconstructed\
+    \ hand pose and the intermediate hand mesh, respectively. For clarity, we only\
+    \ plot one hand and visualize its poses and meshes on their aligned RGB image\
+    \ planes."
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Hezhen Hu
+  Name of the last author: Houqiang Li
+  Number of Figures: 6
+  Number of Tables: 18
+  Number of authors: 4
+  Paper title: 'SignBERT+: Hand-Model-Aware Self-Supervised Pre-Training for Sign
+    Language Understanding'
+  Publication Date: 2023-04-26 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Framework Feasibility Validation on HANDS17. \u201CP20\u201D\
+      \ Denotes the PCK Metrics With the Error Threshold Set as 20 Pixel. \u201Cjoint\u201D\
+      , \u201Cframe\u201D and \u201Cclip\u201D Denote the Masked Joint Modeling, Masked\
+      \ Frame Modeling and Masked Clip Modeling, Respectively. \u201Cinput\u201D and\
+      \ \u201Coutput\u201D Represent the Corrupted Input Pose and the Reconstructed\
+      \ Pose Sequence by Our Framework, Respectively"
+  Table 10 caption:
+    table_text: TABLE X Effectiveness of the Ratio of Pre-Training Data Scale on MSASL
+      Dataset
+  Table 2 caption:
+    table_text: TABLE II Impact of the Transformer Layers N N on MSASL Dataset. N
+      N Denotes the Number of the Transformer Encoder Layers in Our Framework
+  Table 3 caption:
+    table_text: "TABLE III Impact of the Pose \u03B8 \u03B8 Dimension in the Hand-Model-Aware\
+      \ Decoder on MSASL Dataset"
+  Table 4 caption:
+    table_text: TABLE IV Impact of the Temporal Span K K in Masked Clip Modeling on
+      MSASL Dataset. K K Represents That the Masked Clip Duration Ranges From 2 to
+      K K
+  Table 5 caption:
+    table_text: TABLE V Impact of Different Temporal Information Extraction on MSASL
+      Dataset
+  Table 6 caption:
+    table_text: "TABLE VI Effectiveness of the Spatial-Temporal Position encoding\
+      \ (\u201CPE\u201D) on MSASL Dataset"
+  Table 7 caption:
+    table_text: TABLE VII Effectiveness of the Masking Ratio R R on MSASL Dataset
+  Table 8 caption:
+    table_text: "TABLE VIII Effectiveness of the Masking Strategy on MSASL Dataset.\
+      \ The First Row Denotes the Baseline, i.e., Our Framework is Trained Without\
+      \ Pre-Training. \u201Cjoint\u201D, \u201Cframe\u201D and \u201Cclip\u201D Denote\
+      \ the Masked Joint Modeling, Masked Frame Modeling and Masked Clip Modeling,\
+      \ Respectively"
+  Table 9 caption:
+    table_text: TABLE IX Effectiveness of the Model-Aware Decoder on MSASL Dataset.
+      We Compare Ours With Different Pose Decoders
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3269220
+- Affiliation of the first author: department of computer science and engineering,
+    university of notre dame, notre dame, in, usa
+  Affiliation of the last author: department of computer science and engineering,
+    university of notre dame, notre dame, in, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\Measuring_Human_Perception_to_Improve_Open_Set_Recognition\figure_1.jpg
+  Figure 1 caption: In this work, we conduct behavioral experiments to gauge the human
+    perception of objects that belong or don't belong to a task. Through the use of
+    visual psychophysics, human reaction time is measured across tasks (top panel).
+    These measurements are then used in a novel psychophysical loss function to train
+    biologically-inspired deep networks with a variable reaction time property, leading
+    to better novelty detection and multi-class classification performance in open
+    set recognition settings (bottom panel).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Measuring_Human_Perception_to_Improve_Open_Set_Recognition\figure_2.jpg
+  Figure 2 caption: A sample of one of the survey questions for collecting human reaction
+    time for known images. The subjects are asked to look at both rows of images and
+    select the first image in the bottom row that is of the same object class as the
+    reference class in the top row. It is possible that no image from the reference
+    class is shown, hence the sixth option in the bottom row. In this specific example,
+    the subjects should select the fifth image.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Measuring_Human_Perception_to_Improve_Open_Set_Recognition\figure_3.jpg
+  Figure 3 caption: This histogram and kernel density estimate shows the distribution
+    of human reaction time for the data collected for known samples. The X -axis shows
+    the range of reaction times after thresholding the long tail, which removed outliers.
+    The Y -axis shows the probability of occurrence.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Measuring_Human_Perception_to_Improve_Open_Set_Recognition\figure_4.jpg
+  Figure 4 caption: Pipeline depicting the three components of the proposed machine
+    learning process. The yellow box represents the human study for collecting RT.
+    The blue box shows machine learning training. The green box illustrates the testing
+    process. See Supp. Mat. Sec. 3.1 for additional detail on these, available online.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jin Huang
+  Name of the last author: Walter Scheirer
+  Number of Figures: 4
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Measuring Human Perception to Improve Open Set Recognition
+  Publication Date: 2023-04-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Results for Three Variations of the Loss Used to Train MSD-Net;
+      Scores are Accuracy (%). For Each Loss, We Run Experiments 5 Times Using 5 Different
+      Seeds for Training; The Scores Shown for Each Experiment are the Average of
+      5 Runs With Standard Error. L P LP is a Performance Loss [8] Described in Sec.
+      2 of the Supp. Mat., Available Online Additional Results, Including Results
+      for a Model Trained With All 3 Losses and Complete Results for All 5 Runs, are
+      in Sec. 3 of the Supp. Mat., Available Online
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Testing Results for the Proposed Loss and Other Baselines.
+      Bold Numbers Indicate Best Performance for a Metric. Results in Red Highlight
+      Spurious Best Results Due to a Classifier Biased Towards Determining Samples
+      are Novel
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3270772
+- Affiliation of the first author: university of oxford, oxford, u.k.
+  Affiliation of the last author: university of california, los angeles, los angeles,
+    ca, usa
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Song Bai
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: Not Available
+  Number of Tables: 0
+  Number of authors: 6
+  Paper title: 'Guest Editorial: Introduction to the Special Section on Graphs in
+    Vision and Pattern Analysis'
+  Publication Date: 2023-05-05 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3259779
+- Affiliation of the first author: department of mathematics and computer science,
+    university of catania, catania, italy
+  Affiliation of the last author: department of mathematics and computer science,
+    university of catania, catania, italy
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Antonino Furnari
+  Name of the last author: Giovanni Maria Farinella
+  Number of Figures: Not Available
+  Number of Tables: 0
+  Number of authors: 5
+  Paper title: 'Editorial: Special Section on Egocentric Perception'
+  Publication Date: 2023-05-05 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3256679
+- Affiliation of the first author: adobe research, san jose, ca, usa
+  Affiliation of the last author: "universit\xE9 laval, quebec, qc, canada"
+  Figure 1 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_1.jpg
+  Figure 1 caption: The unified spherical model [22], [47]. A 3D point mathbf pmathrmc
+    = mathbf Rmathbf pmathrmw (see Section III-C) is first projected onto the unit
+    sphere with mathbf pmathrms = mathbf pmathrmcVert mathbf pmathrmcVert , and then
+    onto the image plane mathbf ptextim using a line starting from a point mathbf
+    Omathrmc located at [ 0,0,xi ] below the sphere center mathbf O . Distances not
+    to scale to simplify visualization.
+  Figure 10 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_10.jpg
+  Figure 10 caption: 'Human sensitivity to errors in (a) pitch, (b) roll, (c) field
+    of view and (d) distortion. We use the percentage of users choosing the image
+    with an object inserted with the ground truth calibration as a measure of human
+    sensitivity. 50% represents perfect confusion: users are as likely to choose the
+    image with a distorted calibration than the ground truth, and 100% means that
+    all humans could detect the ground truth image. The solid line is the median of
+    the percentage of people who pick the ground truth for each image, and the light
+    shaded regions delimits the region between the first and third quartile. The mean
+    interquartile ranges, corresponding to the average height of the light shaded
+    regions, are (a) 30.8% (b) 23.2% (c) 26.0% and (d) 20.8%.'
+  Figure 2 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_2.jpg
+  Figure 2 caption: Example results of horizon line estimation on our 360Cities test
+    set, for images both (a) with and (b) without clear vanishing lines. We provide
+    the ground truth field of view to UprightNet [33]. Only our method and SVA [43]
+    allow for curved horizon lines (due to large distortions). Note how Upright [41]
+    and SVA perform well when sharp human-made objects are present in the scene, whereas
+    deep learning methods offer a more robust performance across all scenes. Note
+    also that SVA fails on 49% of our test images. More examples available in the
+    supplementary material, which can be found on the Computer Society Digital Library
+    at http:doi.ieeecomputersociety.org10.1109TPAMI.2023.3269641.
+  Figure 3 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_3.jpg
+  Figure 3 caption: Quantitative comparison of (a) roll, (b) pitch, (c) focal length,
+    (d) distortion. Note that SVA [43] fails on 49% of the images, when there are
+    not enough distinguishable edges to be detected with confidence.
+  Figure 4 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_4.jpg
+  Figure 4 caption: '3D reconstruction results: (a) front and (b) top views. Top row:
+    results obtained with our parameters used for initialization step. Bottom: results
+    obtained with the automatic initialization of intrinsic parameters.'
+  Figure 5 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_5.jpg
+  Figure 5 caption: 'Examples of automatic undistortion results on images in the wild,
+    with the estimated field of view htheta and distortion xi . Left: Original image.
+    Right: output of our algorithm. Our approach works on a variety of images, including
+    closefar objects, indooroutdoor, true colorheavily edited, verticaltilted viewpoint,
+    and groundaerial views. See the supplementary material, available online for more
+    results.'
+  Figure 6 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_6.jpg
+  Figure 6 caption: Examples of image retrieval by horizon location on Places2. The
+    horizon line is estimated using our method from the query image, and used to find
+    closest matches in a 10 k random subset from Places2. The top-4 matches are shown
+    on the right.
+  Figure 7 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_7.jpg
+  Figure 7 caption: 'Examples of virtual object insertions using our estimations,
+    clockwise from top left: statue, laptop, bunny, cart.'
+  Figure 8 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_8.jpg
+  Figure 8 caption: Analysis of the neural network focus. The result of smoothed guided
+    backpropagation is displayed as a jet overlay, and the estimated horizon line
+    in blue. (a) When present, edges corresponding to important vanishing lines are
+    highlighted while other edges are discarded. (b) When no clear horizontal vanishing
+    lines are detected, the neural network seems to look for the boundaries of either
+    sky or land textures while dismissing the clouds or objects like trees, probably
+    hinting bounds on horizon location in the image. Refer to the supplementary material,
+    available online for more examples and a comparison of the network focus before
+    and after training.
+  Figure 9 Link: articels_figures_by_rev_year\2023\A_Perceptual_Measure_for_Deep_Single_Image_Camera_and_Lens_Calibration\figure_9.jpg
+  Figure 9 caption: 'Results of Preliminary Experiment 2a: sensitivity of observers
+    to lens distortion as a function of horizontal position of the virtual object,
+    for three scene types: artificial, urban and nature. Sensitivity is quantified
+    as the percentage of users choosing the ground truth image, i.e., where the object
+    has the same amount of distortion as the background. A sensitivity of 50% means
+    that humans are not sensitive to errors in distortion (confusion), whereas a sensitivity
+    of 100% means that humans are very sensitive to errors. The shaded areas correspond
+    to the 95% confidence intervals.'
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yannick Hold-Geoffroy
+  Name of the last author: "Jean-Fran\xE7ois Lalonde"
+  Number of Figures: 12
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: A Perceptual Measure for Deep Single Image Camera and Lens Calibration
+  Publication Date: 2023-05-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Sampling of Camera Parameters Used to Generate the Dataset
+      for the Human Sensitivity Study
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Camera Calibration Results for Different Cameras (columns)
+      and Calibration Methods (rows). All Compared Methods Use Multiple Checkerboard
+      Pictures, While Ours Require a Single Picture of a General Scene. Failures Cases
+      are Noted NA. Please See the Supplementary Materials, available online for the
+      Estimated Parameters
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3269641

@@ -1,0 +1,845 @@
+- Affiliation of the first author: higher school of economics, national research university
+  Affiliation of the last author: skolkovo institute of science and technology, moscow,
+    russia
+  Figure 1 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_1.jpg
+  Figure 1 caption: "Indexing the set of 600 points (small black) distributed non-uniformly\
+    \ within the unit 2D square. Left - the inverted index based on standard quantization\
+    \ (the codebook has 16 2D codewords; boundaries are in green). Right - the inverted\
+    \ multi-index based on product quantization (each of the two codebooks has 16\
+    \ 1D codewords). The number of operations needed to match a query to codebooks\
+    \ is the same for both structures. Two example queries are issued (light-blue\
+    \ and light-red circles). The lists returned by the inverted index (left) contain\
+    \ 45 and 62 words respectively (circled). Note that when a query lies near a space\
+    \ partition boundary (as happens most often in high dimensions) the resulting\
+    \ list is heavily \u201Cskewed\u201D and may not contain many of the close neighbors.\
+    \ Note also that the inverted index is not able to return lists of a pre-specified\
+    \ small length (e.g. 30 points). For the same queries, the candidate lists of\
+    \ at least 30 vectors are requested from the inverted multi-index (right) and\
+    \ the lists containing 31 and 32 words are returned (circled). As even such short\
+    \ candidate lists require visiting several nearest cells in the partition (which\
+    \ can be done efficiently via the multi-sequence algorithm ), the resulting vector\
+    \ sets span the neighborhoods that are much less \u201Cskewed\u201D (i.e., the\
+    \ neighborhoods are approximately centered at the queries). In high dimensions,\
+    \ the capability to visit many cells that surround the query from different directions\
+    \ translates into considerably higher accuracy of retrieval and nearest neighbor\
+    \ search."
+  Figure 10 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_10.jpg
+  Figure 10 caption: 'Near-duplicate retrieval recall T of the second- and the fourth-order
+    multi-indices as a function of time. Because of faster quantization the fourth-order
+    multi-index traverses the cells closest to queries and attains moderate recall
+    values faster. For high recall values the second-order multi-index is preferable:
+    it gains high recall faster because its traversal procedure better concentrates
+    on the parts of space around the query (cf. Fig. 9).'
+  Figure 2 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_2.jpg
+  Figure 2 caption: "Top \u2014The overview of the query process within the inverted\
+    \ multi-index. First, the two halves of the query bf q1 and bf q2 are matched\
+    \ w.r.t. sub-codebooks cal U and cal V to produce the two sequences of codewords\
+    \ ordered by the distance (denoted r and s ) from the respective query half. Then,\
+    \ those sequences are traversed with the multi-sequence algorithm that outputs\
+    \ the pairs of codewords ordered by the distance from the query. The lists associated\
+    \ with those pairs are concatenated to produce the answer to the query. Bottom\u2014\
+    The first iterations of the multi-sequence algorithm in this example. Red denotes\
+    \ pairs in the priority queue, blue indicates traversed pairs (the pair traversed\
+    \ at the current iteration is emphasized). Green numbers correspond to pair indices\
+    \ ( i and j ), while black symbols give original codewords ( bf ualpha (i) and\
+    \ bf vbeta (j) ). The numbers in entries are the distances r(i)+s(j) = dleft(bf\
+    \ q,[bf ualpha (i);bf vbeta (j)]right) ."
+  Figure 3 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_3.jpg
+  Figure 3 caption: "The pseudocode for the multi-sequence algorithm. In our implementation,\
+    \ the iterations are stopped whenever the total number of elements within the\
+    \ entries corresponding to the output pairs of indices exceeds a user-prespecified\
+    \ length. Here, we give the variant of the multi-sequence algorithm for combining\
+    \ two sequences. The generalization to the \u201Chigher-order\u201D case (e.g.\
+    \ merging four sequences) is straightforward."
+  Figure 4 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_4.jpg
+  Figure 4 caption: 'Recall as a function of the candidate list length. For the same
+    codebook size K , we compare three systems with similar retrieval and construction
+    complexities: an inverted index with K codewords, an inverted index with larger
+    codebook ( 218 codewords) sped up by a kd-tree search with a maximum of K comparisons,
+    a second-order inverted multi-index with codebooks having K codewords. For billion-scale
+    dataset we also provide results for an inverted index with K = 216 codewords which
+    requires more runtime for quantization. In all experiments, multi-indices returned
+    shorter lists with higher recall.'
+  Figure 5 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_5.jpg
+  Figure 5 caption: Time (in milliseconds) required to retrieve a list of a particular
+    length from the inverted multi-index and index on the BIGANN dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_6.jpg
+  Figure 6 caption: Recall as a function of the candidate list length as in Fig. 4
+    with added curves for different PCA strategies. Even with lossy PCA compression,
+    the quality of candidate lists from multi-indices is higher than from the baseline
+    systems. We also note that the PQ-aware strategy is significantly better than
+    naive strategy to combine PCA and inverted multi-indices.
+  Figure 7 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_7.jpg
+  Figure 7 caption: Recall T ( T=1 to 10,000 ) of the Multi-ADC system (storing m=8
+    extra bytes per vector for reranking) for the BIGANN dataset. The curves correspond
+    to the Multi-ADC system that reranks a candidate list of a certain length T (
+    x -axis) returned by the second-order multi-index ( K=214 ), while the flat dashed
+    lines corresponds to the system that reranks the entire dataset. After reranking
+    a tiny part of the billion-size dataset, Multi-ADC is able to match the performance
+    of the exhaustive search-based system.
+  Figure 8 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_8.jpg
+  Figure 8 caption: Retrieval Examples on the Tiny Images Dataset (the Images Associated
+    with GIST Vectors are Shown)In each of the three row pairs, the left-most images
+    correspond to the query, the top row corresponds to Euclidean nearest neighbors
+    found by exhaustive search, the bottom row are the top matches returned by the
+    Multi-D-ADC system ( K=214 , m=16 extra bytes). Empirically, for most examples,
+    we observed that the top matches returned by a Multi-D-ADC are similar in terms
+    of semantic similarity to the exhaustive search on uncompressed vectors (top two
+    rows) with few exceptions (bottom row).
+  Figure 9 Link: articels_figures_by_rev_year\2014\The_Inverted_MultiIndex\figure_9.jpg
+  Figure 9 caption: Near-duplicate retrieval recall T of the second- and the fourth-order
+    multi-indices as a function of the candidate list length. For all reasonable lengths
+    the second-order multi-index produces lists with higher recall.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Artem Babenko
+  Name of the last author: Victor Lempitsky
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: The Inverted Multi-Index
+  Publication Date: 2014-10-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Performance (Recall for the Top-1, Top-10, and Top-100
+      Matches After Reranking + Time in Milliseconds) of the Multi-D-ADC System (Based
+      on the Second-Order Multi-Index with K= 2 14 ) for Different Datasets, Different
+      Compression Levels
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Performance of the Multi-D-ADC and Multi-4-D-ADC Systems
+      with the Same Number of Effective Codewords (the Second-Order Multi-Index with
+      K= 2 14 and the Fourth-Order Multi-Index with K= 2 7 are Used for Indexing)
+      for Different Datasets
+  Table 3 caption:
+    table_text: TABLE 3 The Performance of Different Strategies to Combine the Second-Order
+      Multi-Index and the PCA-Based Four-Fold Compression
+  Table 4 caption:
+    table_text: TABLE 4 The Results for (Our Implementations of) the Improved Versions
+      of the Multi-D-ADC System
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2361319
+- Affiliation of the first author: computer science and engineering, arizona state
+    university, tempe
+  Affiliation of the last author: computer science and engineering, arizona state
+    university, tempe
+  Figure 1 Link: articels_figures_by_rev_year\2014\Relative_Hidden_Markov_Models_for_VideoBased_Evaluation_of_Motion_Skills_in_Surg\figure_1.jpg
+  Figure 1 caption: 'The experiment result with different numbers of states: (a) the
+    computational time (blue solid curve) and number of iterations needed for convergence
+    (green dashed curve); (b) the accuracy of the improved method. The X -axis is
+    the number of states.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\Relative_Hidden_Markov_Models_for_VideoBased_Evaluation_of_Motion_Skills_in_Surg\figure_2.jpg
+  Figure 2 caption: 'The accuracy of the improved method: (a) with different gamma
+    ( rho is fixed to 10 ), which controls the weight of the penalty term with slack
+    variables; (b) with different rho ( gamma is fixed to 1,000 ), which controls
+    the margin of the learned models.'
+  Figure 3 Link: articels_figures_by_rev_year\2014\Relative_Hidden_Markov_Models_for_VideoBased_Evaluation_of_Motion_Skills_in_Surg\figure_3.jpg
+  Figure 3 caption: The results of four methods on training set (dashed curve) and
+    testing set (solid curve) with different numbers of training pairs.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Relative_Hidden_Markov_Models_for_VideoBased_Evaluation_of_Motion_Skills_in_Surg\figure_4.jpg
+  Figure 4 caption: 'The logarithm of the data likelihood ratio with the models learned
+    by the improved method. Top: the result for the testing set. Bottom: the result
+    for the training set. The data are grouped (as the section partitioned by the
+    red lines) according to the data generation model from which they are synthesized.'
+  Figure 5 Link: articels_figures_by_rev_year\2014\Relative_Hidden_Markov_Models_for_VideoBased_Evaluation_of_Motion_Skills_in_Surg\figure_5.jpg
+  Figure 5 caption: The convergence behavior of the improved method, where around
+    1,250 training pairs were used. The blue curveaxis shows the value of the objective
+    function, and the green curveaxis shows the number of constraints satisfied.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Relative_Hidden_Markov_Models_for_VideoBased_Evaluation_of_Motion_Skills_in_Surg\figure_6.jpg
+  Figure 6 caption: The computation time for solving the improved model with the method
+    proposed in [13] (redupper curve) and the method proposed in Section 4.3 (greenlower)
+    under varying number of training pairs. For illustration purpose, we use log-log
+    plot, where X-axis is the number of training pairs (from around 125 to around
+    9,000 ) and Y-axis is the computation time in unit second (from about 20 to around
+    6,000 ). The time is measured in Matlab on a dual-core PC platform.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Relative_Hidden_Markov_Models_for_VideoBased_Evaluation_of_Motion_Skills_in_Surg\figure_7.jpg
+  Figure 7 caption: 'Top: the logarithm of the data likelihood ratio from two models
+    learned by HMM. Middle: the logarithm of data likelihood with the model learned
+    by the baseline method. Bottom: the logarithm of the data likelihood ratio with
+    the models learned by the improved method. The red vertical lines separate the
+    data of different subjects, where X-axis is the corresponding subject ID. Within
+    each subjects'' corpus, the videos are sorted according to their time of recording.'
+  Figure 8 Link: articels_figures_by_rev_year\2014\Relative_Hidden_Markov_Models_for_VideoBased_Evaluation_of_Motion_Skills_in_Surg\figure_8.jpg
+  Figure 8 caption: The two component models (Model 1 for Xi 1 and Model 2 for Xi
+    2 ) learned by the improved method, where we only draw the edges with a transition
+    probability larger than 0.01 and ignore self transitions. The number attached
+    to each edge indicates the transition probability.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Qiang Zhang
+  Name of the last author: Baoxin Li
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: Relative Hidden Markov Models for Video-Based Evaluation of Motion
+    Skills in Surgical Training
+  Publication Date: 2014-10-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparing the Method in [13] and the Proposed Method for Updating
+      the Baseline Model, with Regarding to the Problem Size, Number of Linear Constraints
+      and Nonlinear Constraints
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Result for Experiment on Evaluating Surgical Skills
+  Table 3 caption:
+    table_text: TABLE 3 The Result for Experiment on UUDB Datasets
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2361121
+- Affiliation of the first author: graduate school at shenzhen, tsinghua university,
+    shenzhen, china
+  Affiliation of the last author: beijing key laboratory of multi-dimension & multi-scale
+    computational photography (mmcp), tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_1.jpg
+  Figure 1 caption: Example lecture videos that we aim to process.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_10.jpg
+  Figure 10 caption: Tag clouds of the text recognition results for the lecture video
+    in Fig. 13 . OCR performed on (a) the original images produces more errors than
+    the (b) extracted screen region. From our result (b) it is clear that this is
+    a lecture about Gaussian Processes.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_2.jpg
+  Figure 2 caption: The flowchart of the proposed system.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_3.jpg
+  Figure 3 caption: Slide progression detection. (a) A visualization of the lifespan
+    of the feature trajectories, where each tracked feature point moving from left
+    to right. (b) The probability that a slide progression occurs at each frame. The
+    threshold value is shown as the dashed magenta line. (c) The MeanShift clustering
+    method for estimating a spatial box where most of the change occurs. The initial
+    search window (shown in yellow) is iteratively moved to the local density region
+    (shown in cyan), producing the rectangle in magenta.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_4.jpg
+  Figure 4 caption: Heuristic observations for three kinds of representative trajectories.
+    (a) Horizontal feature movement between neighboring frames. (b) Local appearance
+    similarity between adjacent frames.
+  Figure 5 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_5.jpg
+  Figure 5 caption: Prior distribution selection for straightness measure. (a) Histogram
+    of feature change magnitude. (b) Estimated Gamma distribution and half-normal
+    distribution for describing feature change magnitude.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_6.jpg
+  Figure 6 caption: The confusion matrix for trajectory labeling computed from a lecture
+    video. (a) With proposed techniques; (b) without using priors in (11) and (12);
+    (c) without handling tracking error in Section 5.1.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_7.jpg
+  Figure 7 caption: Localization results. (a) Optimized projection screen region (the
+    green parallelogram) in Section 4.4. Each feature is rendered in color according
+    to the probability of being Person, Screen, Background, which are assigned to
+    the red, green, and blue component, respectively. For instance, the greener the
+    color is, the more possible it is a screen trajectory. (b) Detected lines outside
+    the parallelogram in (a). Left, right, top, and bottom lines are shown in red,
+    green, cyan, and purple, respectively. (c) Refined screen region (the green trapezoid)
+    in Section 4.5 and localized speaker region (the red rectangle) in Section 5.2.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_8.jpg
+  Figure 8 caption: Accuracy of the localized screen region and detected slide progression
+    frames. Note that the values on the screen region curve at a non-integer and integer
+    iteration are results via Sections 4.4 and 4.5, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Structuring_Lecture_Videos_by_Automatic_Projection_Screen_Localization_and_Analy\figure_9.jpg
+  Figure 9 caption: Comparative examples. (a) Tracking result of different methods
+    after a few slide transitions. CamShift, Boosting, MIL, and ours are marked in
+    blue, cyan, yellow, and red, respectively. (b) Extracted semantic keyframes by
+    SDS (first row) and our system (second row). The SDS method misses three keyframes
+    and generates an unwanted one.
+  First author gender probability: 0.93
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Kai Li
+  Name of the last author: Qionghai Dai
+  Number of Figures: 14
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Structuring Lecture Videos by Automatic Projection Screen Localization
+    and Analysis
+  Publication Date: 2014-10-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Performance of Different Methods on Tracking the Projection
+      Screen Region
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Performance of Different Methods on Extracting Semantic
+      Keyframes
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2361133
+- Affiliation of the first author: department of computer science, city university
+    of hong kong, hong kong special administrative region, china
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of illinois at urbana-champaign, urbana, il
+  Figure 1 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_1.jpg
+  Figure 1 caption: Highlight removal on a synthetic image.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_10.jpg
+  Figure 10 caption: A failure case.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_2.jpg
+  Figure 2 caption: Performance w.r.t to the bilateral filter parameters sigma S and
+    sigma R .
+  Figure 3 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_3.jpg
+  Figure 3 caption: A real diffuse image and the corresponding synthetic specular
+    intensity and specular image.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_4.jpg
+  Figure 4 caption: Evaluation on a real scene. (c) and (d) are diffuse reflections
+    estimated using constant and optimal parameters, respectively. Note that they
+    are visually similar and the PSNR difference is also small. The images are gamma
+    corrected for better illustration.
+  Figure 5 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_5.jpg
+  Figure 5 caption: Sensitivity to illumination chromaticity.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_6.jpg
+  Figure 6 caption: Highlight removal on synthetic images in Figs. 1a2 and 3b.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_7.jpg
+  Figure 7 caption: Highlight removal on the images provided in [24].
+  Figure 8 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_8.jpg
+  Figure 8 caption: Highlight removal on both low-textured and highly-textured images.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Efficient_and_Robust_Specular_Highlight_Removal\figure_9.jpg
+  Figure 9 caption: Speed comparison. This figure shows that our method runs over
+    200times faster than [24] on a standard CPU.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Qingxiong Yang
+  Name of the last author: Narendra Ahuja
+  Number of Figures: 10
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Efficient and Robust Specular Highlight Removal
+  Publication Date: 2014-10-02 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2360402
+- Affiliation of the first author: institute of systems and robotics, university of
+    coimbra, coimbra, portugal
+  Affiliation of the last author: department of mathematics, faculty of engineering,
+    lund university, lund, sweden
+  Figure 1 Link: articels_figures_by_rev_year\2014\FreeForm_Region_Description_with_SecondOrder_Pooling\figure_1.jpg
+  Figure 1 caption: Overview of the computational pipeline for describing free-form
+    regions. Local feature extraction, here illustrated with SIFT features (the methodology
+    is generally applicable with any base descriptor), is followed by a pooling stage
+    that summarizes the local features inside an automatically extracted region (shown
+    in green) into a single vector that can be fed to regular linear classifiers.
+    In this work, we introduce descriptors computed based on second-order pooling
+    operations that capture the pairwise correlations of local features inside free-form
+    regions, as well as metrics to compare them in a principled way.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\FreeForm_Region_Description_with_SecondOrder_Pooling\figure_2.jpg
+  Figure 2 caption: Effect of matrix logarithm on one example bf Gavg matrix computed
+    from SIFT features inside a ground truth airplane region in a PASCAL VOC image.
+    On the left we show the original matrix, on the right the matrix obtained after
+    the logarithm computation. Top images show 2D visualizations with a saturated
+    value range between 0 (black) and 0.2 (white). Bottom image shows full range of
+    values in a depth view.
+  Figure 3 Link: articels_figures_by_rev_year\2014\FreeForm_Region_Description_with_SecondOrder_Pooling\figure_3.jpg
+  Figure 3 caption: Frequency of different feature values after pooling SIFT descriptors
+    with and without power normalization. Power normalization increases the magnitude
+    of features close to zero and saturates large values, a property known to improve
+    performance with linear classifiers.
+  Figure 4 Link: articels_figures_by_rev_year\2014\FreeForm_Region_Description_with_SecondOrder_Pooling\figure_4.jpg
+  Figure 4 caption: Analysis of the sensitivity of different free-form region descriptors
+    to under-segmentation. Classification results on the validation set of the VOC
+    2012 Segmentation benchmark are measured as average accuracy (left) and mean average
+    precision (right) using both descriptors extracted on ground truth regions and
+    descriptors computed over a set of outward thresholded distance transforms of
+    the ground truth regions (see Fig. 5). The horizontal axis indicates the average
+    intersection-over-union overlap with ground truth regions (the overlap of a ground
+    truth region with itself is 1). The results for the lowest overlap are equivalent
+    to image classification, because feature extraction is performed over the entire
+    image. See the main text for discussion.
+  Figure 5 Link: articels_figures_by_rev_year\2014\FreeForm_Region_Description_with_SecondOrder_Pooling\figure_5.jpg
+  Figure 5 caption: Illustration of synthetic under-segmentations obtained by dilating
+    ground truth regions isotropically over 9 different strides. The strides are selected
+    on a logarithmic scale, calibrated on a per-object basis, in order to cover the
+    range between the ground truth region and the entire image. Since the final under-segmentation
+    corresponds to the full image, free-form recognition coincides, in that case,
+    with image classification. Lighter color indicates pixels that lie deeper inside
+    nested under-segmentations.
+  Figure 6 Link: articels_figures_by_rev_year\2014\FreeForm_Region_Description_with_SecondOrder_Pooling\figure_6.jpg
+  Figure 6 caption: 'Examples of our semantic segmentations including failures that
+    reflect typical recognition issues: false positive detections such as the tvmonitor
+    in the kitchen scene, and false negatives like undetected cat and cows. In some
+    cases objects are correctly recognized but not very accurately segmented, as visible
+    in the potted plant, motorbike and train images. Additional visual results are
+    available in the associated O2P code and project page, on our websites.'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Jo\xE3o Carreira"
+  Name of the last author: Cristian Sminchisescu
+  Number of Figures: 6
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Free-Form Region Description with Second-Order Pooling
+  Publication Date: 2014-10-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Accuracy Using Different Pooling Operations on Raw
+      Local Features, i.e. without a Coding Stage
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Accuracy on Ground Truth Regions and their Superpixel
+      Approximations from Images of the VOC 2012 Validation Set
+  Table 3 caption:
+    table_text: TABLE 3 Classification Accuracy on Caltech101 Using a Single Feature
+      and 30 Training Examples per Class, for Various Methods
+  Table 4 caption:
+    table_text: TABLE 4 Efficiency of O 2 P Regressors compared to those of the best
+      performing method [2] on the PASCAL VOC 2011 Segmentation Challenge
+  Table 5 caption:
+    table_text: 'TABLE 5 Left: Semantic Segmentation Results on the VOC 2011 Test
+      Set [69]'
+  Table 6 caption:
+    table_text: TABLE 6 Diagnostic Results Obtained by Training on VOC 'train-2011'
+      and Testing on 'val-2011'
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2361137
+- Affiliation of the first author: department of electrical engineering, korea advanced
+    institute of science and technology (kaist), daejeon, republic of korea
+  Affiliation of the last author: department of electrical engineering, korea advanced
+    institute of science and technology (kaist), daejeon, republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_1.jpg
+  Figure 1 caption: Illustration of the observed intensity values for (a) saturation
+    region, (b) moving object, and (c) consistent cases. Solid lines denote the ideal
+    relationship between intensity and exposure time, and dots and dotted lines denote
+    the observed intensity samples.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_10.jpg
+  Figure 10 caption: Quantitative comparisons of alignment accuracy on the SculptureGarden
+    dataset. Misaligned inputs are synthetically generated using random affine transforms.
+    The average alignment errors over five trials are reported.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_2.jpg
+  Figure 2 caption: "Intermediate results after rank minimization. (a) Aligned O\u2218\
+    g , (b) Low-rank A and sparse outlier E obtained by RPCA-OURS (c) \u03A9 (red\
+    \ masks are provided by user, and black regions are automatically detected saturationunder-exposed\
+    \ regions), low-rank A and sparse outlier E obtained by MC-OURS. An offset, 0.5,\
+    \ is added to E for display purpose. (d) Comparison between RPCA-OURS (Top) and\
+    \ MC-OURS (Bottom). Since MC-OURS excluded the saturation regions as missing values,\
+    \ the estimated low rank matrix is more accurate. While the results in RPCA-OURS\
+    \ are biased by the large saturation region that appears consistently across half\
+    \ number of input images."
+  Figure 3 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_3.jpg
+  Figure 3 caption: Our user input for MC-OURS. (a) Automatic method through outlier
+    analysis, (b) User mark-up on super-pixel segmentation [52].
+  Figure 4 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_4.jpg
+  Figure 4 caption: "Reconstruction error for synthetic data with varying numbers\
+    \ of columns n . (a) RPCA. (b) RPCA-OURS. (c) MC. (d) MC-OURS. The Y-axis represents\
+    \ the corruption ratio r\u2208[0,0.4] . The X-axis represents the column size\
+    \ n\u2208[4,10] for the rank-1 case. The color magnitude represents the normalized\
+    \ reconstruction error \u2225 A GT \u2212 A \u2225 \u2225 A GT \u2225 ."
+  Figure 5 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_5.jpg
+  Figure 5 caption: "Quantitative results for denoising. Top: Test examples. Middle:\
+    \ PSNR. Bottom: An example error maps for Street data between (a) Photoshop CS6,\
+    \ (b) the conventional RPCA and (c) Ours. The error maps show the normalized absolute\
+    \ error AE = | H GT (x)\u2212 H est (x)| ."
+  Figure 6 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_6.jpg
+  Figure 6 caption: Convergence. (Left) Termination criterion according to outer iterations.
+    (Right) Relative step size ( Vert mathbf At - mathbf At-1 Vert over Vert mathbf
+    AtVert ) according to outer iterations.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_7.jpg
+  Figure 7 caption: 'Left: Synthetically generated weak nonlinear response functions.
+    Right: Reconstruction error Vert mathbf AGT- hatmathbf AVert over Vert mathbf
+    AGTVert against degree of nonlinearity controlled by gamma .'
+  Figure 8 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_8.jpg
+  Figure 8 caption: Comparisons of our results with and without the radiometric calibration.
+    One of input images (Left). The low-rank latent images without (Middle) and with
+    (Right) CRF correction.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Robust_High_Dynamic_Range_Imaging_by_Rank_Minimization\figure_9.jpg
+  Figure 9 caption: An example of unaligned input and our output (RPCA-OURS) on the
+    SculptureGarden dataset.
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Tae-Hyun Oh
+  Name of the last author: In So Kweon
+  Number of Figures: 18
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Robust High Dynamic Range Imaging by Rank Minimization
+  Publication Date: 2014-10-03 00:00:00
+  Table 1 caption:
+    table_text: Heo [7] Hu [18] Sen [25] RPCA- OURS RPCA- OURS + Align MC- OURS Env.
+      C++ Matlab + Mex Matlab + Mex Matlab Matlab Matlab Run time 3 min 94 s 106 s
+      10 s 57 s 144 s
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "\u03C3 1 2 4 8 16 24 Ours 0.11 0.11 0.10 0.11 0.11 0.13 RASL 119.54\
+      \ 80.34 99.86 68.30 101.41 116.99 F. Init 0.82 1.07 1.11 1.03 0.86 1.31 F.+Bundle\
+      \ 0.32 0.40 0.42 0.36 0.37 0.42"
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2361338
+- Affiliation of the first author: department of diagnostic radiology, the department
+    of biomedical engineering, and the department of electrical engineering, yale
+    university, new haven, ct
+  Affiliation of the last author: department of mathematics, university of florida,
+    gainesville, fl
+  Figure 1 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_1.jpg
+  Figure 1 caption: The fixed and moving images and their partitions.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_2.jpg
+  Figure 2 caption: Partitions and their refinements.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_3.jpg
+  Figure 3 caption: Partitions with increasing severity from left to right.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_4.jpg
+  Figure 4 caption: The Structure of phi .
+  Figure 5 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_5.jpg
+  Figure 5 caption: The partition of unity functions tildeBi .
+  Figure 6 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_6.jpg
+  Figure 6 caption: Scatter plot of joint T1-PD image values.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_7.jpg
+  Figure 7 caption: The T1 and warped PD-images at SNR =20 db.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_8.jpg
+  Figure 8 caption: The registered PD-images for different phi functions.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Why_Does_MutualInformation_Work_for_Image_Registration_A_Deterministic_Explanati\figure_9.jpg
+  Figure 9 caption: The Frobenius norm of AA-I.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hemant D. Tagare
+  Name of the last author: Murali Rao
+  Number of Figures: 9
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: Why Does Mutual-Information Work for Image Registration? A Deterministic
+    Explanation
+  Publication Date: 2014-10-03 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 The \u03D5 Functions, Their Parameter Values, and Short-Form\
+      \ Names"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 The Median and the Median Absolute Deviation (MAD) of the\
+      \ Frobenius Norms of A \u2217 A\u2212I for Different \u03D5"
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2361512
+- Affiliation of the first author: department of computational neuroscience, frankfurt
+    institute for advanced studies, ruth-moufang-str. 1, frankfurt am main, germany
+  Affiliation of the last author: department of computer science, university of montreal,
+    cp 6128, succ centre-ville, montreal h3c 3j7, canada.
+  Figure 1 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_1.jpg
+  Figure 1 caption: Some hidden unit activation functions and their integrals.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_2.jpg
+  Figure 2 caption: Example of a learned vector field and the associated energy function.
+    See the text for details.
+  Figure 3 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_3.jpg
+  Figure 3 caption: Examples of class-dependent contractive autoencoder scores distributions
+    and squared reconstruction errors of digits 6 and 9 from the MNISTsmall data set,
+    learned using different activation functions.
+  Figure 4 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_4.jpg
+  Figure 4 caption: 'Factored autoencoder with tied weights. Top: a single factored
+    autoencoder; bottom: encoder-part of the combination of several autoencoders.
+    Dashed lines represent the class-dependent weights, solid lines class-independent
+    weights.'
+  Figure 5 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_5.jpg
+  Figure 5 caption: "Initial filters learned by a contractive autoencoder trained\
+    \ on the \u201C0\u201C\u2014digits from MNIST, before supervised finetuning (left),\
+    \ and after supervised finetuning (right)."
+  Figure 6 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_6.jpg
+  Figure 6 caption: 'Test error rates for the CSAE model with and without discriminative
+    pretraining. Top: ordinary contractive class-specific AE with sigmoid hidden units.
+    Middle: factored denoising AE with sigmoid hidden units. Bottom: ordinary contractive
+    class-specific AE with linear hidden units.'
+  Figure 7 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_7.jpg
+  Figure 7 caption: Test error rates of factored vs unfactored model.
+  Figure 8 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_8.jpg
+  Figure 8 caption: Filters learned using autoencoders with different activation functions.
+  Figure 9 Link: articels_figures_by_rev_year\2014\The_Potential_Energy_of_an_Autoencoder\figure_9.jpg
+  Figure 9 caption: 'Example images and filters learned by the CSAE model. (a): Examples
+    of RECTANGLESimg data; (b)-(c): learned horizontal vs vertical filters. (d): MNISTrotImg
+    (factored model); (e) : RECTANGLES (factored model).'
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hanna Kamyshanska
+  Name of the last author: Roland Memisevic
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: The Potential Energy of an Autoencoder
+  Publication Date: 2014-10-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Error Rates on Train- and Test-Data Sets with and without
+      Pretraining, Using the Linear Activation Function
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Test-Error Rates on MNIST for the CSAE Model Based on Autoencoders
+      with Different Activation Functions
+  Table 3 caption:
+    table_text: TABLE 3 Test-Error Rates on Deep Learning Benchmark for the Basic
+      CSAE Model
+  Table 4 caption:
+    table_text: TABLE 4 Classification Results for Variations of the Model
+  Table 5 caption:
+    table_text: TABLE 5 Test-Error Rates on the Deep Learning Benchmark Data Set
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2362140
+- Affiliation of the first author: department of computing, imperial college london,
+    london, united kingdom
+  Affiliation of the last author: department of computing, imperial college london,
+    london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2014\From_Pixels_to_Response_Maps_Discriminative_Image_Filtering_for_Face_Alignment_i\figure_1.jpg
+  Figure 1 caption: Background and overview of the proposed response map based texture
+    model. In the following Section 2, we will show that these normalized response
+    maps can be modeled and reconstructed accurately using a very small number of
+    parameters.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\From_Pixels_to_Response_Maps_Discriminative_Image_Filtering_for_Face_Alignment_i\figure_2.jpg
+  Figure 2 caption: 'Pixel value based versus Response Map based texture model: (a)
+    Sample test image from LFPW with relevant landmarks labelled 1-8. (b) For landmarks
+    1-8: First row shows the extracted image patches. Second row shows the reconstructed
+    image patches generated by the top five PCA components of each landmark''s pixel
+    value based texture model. (c) For landmarks 1-8: First row shows the extracted
+    response maps. Second row shows the reconstructed response maps generated by the
+    top five PCA components of each landmark''s response map based texture model.'
+  Figure 3 Link: articels_figures_by_rev_year\2014\From_Pixels_to_Response_Maps_Discriminative_Image_Filtering_for_Face_Alignment_i\figure_3.jpg
+  Figure 3 caption: Pixel Value based (P-Model) versus Response Map based texture
+    model (R-Model). (a) For the patch around Left Eye Corner, using upto top 20 PCA
+    components. (b) For all landmark points, using top five PCA components.
+  Figure 4 Link: articels_figures_by_rev_year\2014\From_Pixels_to_Response_Maps_Discriminative_Image_Filtering_for_Face_Alignment_i\figure_4.jpg
+  Figure 4 caption: The holistic response map based texture model.
+  Figure 5 Link: articels_figures_by_rev_year\2014\From_Pixels_to_Response_Maps_Discriminative_Image_Filtering_for_Face_Alignment_i\figure_5.jpg
+  Figure 5 caption: Multi-PIE results.
+  Figure 6 Link: articels_figures_by_rev_year\2014\From_Pixels_to_Response_Maps_Discriminative_Image_Filtering_for_Face_Alignment_i\figure_6.jpg
+  Figure 6 caption: Experimental Results. See Sections 5.2 and 5.3 for details.
+  Figure 7 Link: articels_figures_by_rev_year\2014\From_Pixels_to_Response_Maps_Discriminative_Image_Filtering_for_Face_Alignment_i\figure_7.jpg
+  Figure 7 caption: 'Sample Alignment Results (Column 1-3: Multi-PIE Results. Column
+    4-10: LFPW Results. Column 11-16: HELEN Results). Row 1: GFRM-Alternating Results.
+    Row 2: DFRM Results. Row 3: GFRM-PO Results. Row 4: RLMS [24] Results. Row 5:
+    mathsf p204 tree-based method [27] Results.'
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Akshay Asthana
+  Name of the last author: Maja Pantic
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 5
+  Paper title: 'From Pixels to Response Maps: Discriminative Image Filtering for Face
+    Alignment in the Wild'
+  Publication Date: 2014-10-09 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2362142
+- Affiliation of the first author: department of statistics, university of california,
+    los angeles, ca
+  Affiliation of the last author: department of statistics, university of california,
+    los angeles, ca
+  Figure 1 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_1.jpg
+  Figure 1 caption: 3D object recognition. (a) A learned 3D car template is composed
+    of multiple 3D volumetric parts. Within each volume a 2D planar panel is used
+    to fit the local surface. On each 2D panel, an appearance template is defined
+    and is decomposed into primitive 2D shapes, line segments and sketches. (b) At
+    each specific view, the learned 3D template is projected to derive a 2D template.
+    (c) 2D templates are then deformed and instantiated with appearance features (Gabor
+    filters) to match the images in (d).
+  Figure 10 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_10.jpg
+  Figure 10 caption: Fine-to-coarse approximation to a minivan shape by the learned
+    3D template from G-AoT.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_2.jpg
+  Figure 2 caption: Overview of the And-Or Tree Structure. The AoT is factorized as
+    geometry-AoT and appearance-AoT to quantize the geometry and appearance spaces
+    respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_3.jpg
+  Figure 3 caption: Illustration of the learning process. (a) Initial volumes for
+    rough parts from CAD models of car. (b) Each volume consists of basic cubic units.
+    The size of each volume is slightly different from that in (a) because of volume
+    size rounding. (c) The selected meaningful parts. (d) Selected 2D panels within
+    each part volume. (e) The shape templates chosen for each 2D panel. The AoT search
+    optimizes the selections from (b) to (c), (d) and (e).
+  Figure 4 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_4.jpg
+  Figure 4 caption: '(a): Geometry And-Or Tree (G-AoT), where And-nodes represent
+    combinations of two sub-volumes occupying larger sub-volumes, Or-nodes connect
+    to multiple And-nodes representing possible combinations for the same sub-volume,
+    and leaf-nodes represent panels inscribing their parent volumes. (b): Each panel
+    represents the geometry of a shape template, and is connected to an Appearance
+    And-Or Tree (A-AoT). Here And means composition and Or is for deformation. It
+    extends the G-AoT to image space since its leaf-nodes are Gabor filters.'
+  Figure 5 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_5.jpg
+  Figure 5 caption: The cross-section view of the alternative panels inside a VoI,
+    which will be selected to fit the 3D surfaces.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_6.jpg
+  Figure 6 caption: An example of the 3D deformation for the shape templates. We allow
+    the template to rotate round panel center and translate along the axis directions.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_7.jpg
+  Figure 7 caption: The inference process. (Left) A few nodes in the template Tpt
+    hierarchy. (Right) Score maps for each node on the left. The score maps are normalized
+    such that intensities are only comparable on score maps in the same layer.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_8.jpg
+  Figure 8 caption: (a) View distribution of our dataset; (b) View distribution of
+    the 3D car dataset in [31]. The angular direction represents pan angle and radius
+    direction represents tilt angle. (c) Sample images of our dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Learning_D_Object_Templates_by_Quantizing_Geometry_and_Appearance_Spaces\figure_9.jpg
+  Figure 9 caption: Comparison of representation efficiency between the G-AoT and
+    commonly used Octree. Horizontal axis represents the side length of minimum volumes
+    in millimeters from fine-to-coarse, and the vertical axis represents the percentage
+    of CAD model surfaces inside VOI and represented by the computed solution. The
+    And-Or tree outperforms Octree consistently across all the four vehicle categories
+    at all granularity.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Wenze Hu
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: 14
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: Learning 3D Object Templates by Quantizing Geometry and Appearance
+    Spaces
+  Publication Date: 2014-10-09 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 List of Visual Concepts Used in Our Representation, Their
+      Parameters, Deformation Ranges and Instantiating Ranges
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Capacity of the G-AoT
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison of 2D Car Detection and Pose Estimation
+      Tasks in Terms of AP and MPPE on the 3D Car Dataset [31]
+  Table 4 caption:
+    table_text: TABLE 4 Object Detection Performance of the DPM Model with Different
+      Number of Components
+  Table 5 caption:
+    table_text: TABLE 5 Results from View Generalization Experiment
+  Table 6 caption:
+    table_text: TABLE 6 Part Localization Performance in Term of Detection Rate, Where
+      Numbers in Italic Type Are the Best among the Baseline Models
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2362141

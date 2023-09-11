@@ -1,0 +1,888 @@
+- Affiliation of the first author: school of computer science and engineering, south
+    china university of technology, guangzhou, china
+  Affiliation of the last author: school of computing and information systems, singapore
+    management university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\Reducing_Spatial_Labeling_Redundancy_for_Active_SemiSupervis\figure_1.jpg
+  Figure 1 caption: Given a limited labeling budget (e.g., 10% of the entire dataset),
+    all the previous methods adopt a None-or-All labeling strategy and select a few
+    crowd images to densely label all the individuals which typically appear similar
+    and lack diversity. Differently, we propose to break the labeling chain of previous
+    methods and annotate the representative regions only in each crowd image.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Reducing_Spatial_Labeling_Redundancy_for_Active_SemiSupervis\figure_2.jpg
+  Figure 2 caption: Overview of the proposed semi-supervised crowd counting framework,
+    which consists of three stages, i.e., labeling, training, and inference. At the
+    labeling stage, we design a Multi-level Density-aware Cluster (MDC) strategy to
+    annotate the representative regions only in each crowd image. After labeling,
+    to leverage the rich unlabeled regions, a Crowd Affinity Propagation (CAP) module
+    is introduced to supervise both the labeled and unlabeled regions via feature
+    propagation by exploiting the deep feature affinities among individuals. Note
+    that the CAP module can be removed at the inference stage without performance
+    degradation, which makes it computationally free after training.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Reducing_Spatial_Labeling_Redundancy_for_Active_SemiSupervis\figure_3.jpg
+  Figure 3 caption: Illustration of the proposed Multi-level Density-aware Cluster
+    strategy for representative regions selection.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Reducing_Spatial_Labeling_Redundancy_for_Active_SemiSupervis\figure_4.jpg
+  Figure 4 caption: Comparison results of the None-or-All and region-level labeling
+    strategies with respect to different labeling budgets in the ShanghaiTech PartA
+    dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Reducing_Spatial_Labeling_Redundancy_for_Active_SemiSupervis\figure_5.jpg
+  Figure 5 caption: Visualization of affinity maps in the CAP module. Labeled regions
+    are enclosed between two red lines in each crowd image with two representative
+    positions marked. Crowd affinities between each marked position and all the positions
+    of unlabeled regions are illustrated in the latter two columns. Warmer colors
+    mean higher values.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yongtuo Liu
+  Name of the last author: Shengfeng He
+  Number of Figures: 5
+  Number of Tables: 7
+  Number of authors: 7
+  Paper title: Reducing Spatial Labeling Redundancy for Active Semi-Supervised Crowd
+    Counting
+  Publication Date: 2022-12-28 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Comparison Results of Different Spatial Ratios of the Labeled\
+      \ Regions in Each Crowd Image. The Experiments are Conducted in the ShanghaiTech\
+      \ PartA Dataset With a 10% Labeling Budget. : Denotes Vertical:horizontal. \u221E\
+      \ \u221E:1 (Or 1: \u221E \u221E) Represents the Spatial Ratio With the Height\
+      \ (Or Width) of the Labeled Region Equal to That of the Entire Image"
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: "TABLE II Comparison Results of Different Representative Regions Selection\
+      \ Strategies in the ShanghaiTech PartA Dataset. Each Result is in the Form of\
+      \ MAERMSE. \u201C MDC K MDC K\u201D and \u201C MDC G MDC G\u201D Denote MDC\
+      \ With K-Means and GMM as Clustering Methods, Respectively. \u201CEU\u201D Represents\
+      \ Ensemble-Based Uncertainty Strategy"
+  Table 3 caption:
+    table_text: "TABLE III Ablation Studies for the CAP Module on the ShanghaiTech\
+      \ PartA dataset. Results are Shown in the Form of MAERMSE. \u201CLP,\u201D \u201C\
+      SST,\u201D and \u201CDST\u201D Represent Direct Label Propagation [12], Segmentation-Based\
+      \ Surrogate Task [11], and Classification-Based Surrogate Task [13]"
+  Table 4 caption:
+    table_text: TABLE IV Further Ablation Studies on the Proposed MAC and CAP Modules
+      When They are Applied to the Existing None-or-All Labeling Strategy. The Experiments
+      are Conducted in the ShanghaiTech PartA and UCF-QNRF Datasets With 10% and 20%
+      Labeling Budgets, Respectively
+  Table 5 caption:
+    table_text: "TABLE V Further Ablation Studies on the Proposed Region-Level Labeling\
+      \ Strategy When It is Applied to the Existing Semi-Supervised Methods. Experiments\
+      \ are Conducted in the ShanghaiTech PartA Dataset With a 10% Labeling Budget.\
+      \ As the Methods Does Not Release Their Codes, We Implement Them and Summarize\
+      \ the Performance in the \u201Cnone-or-All\u201D Column, Which are Slightly\
+      \ Different From the Reported Ones"
+  Table 6 caption:
+    table_text: "TABLE VI Comparison With State-of-the-Art Methods in the ShanghaiTech\
+      \ PartA [4] (Denoted as STPart A), ShanghaiTech PartB [4] (Denoted as STPart\
+      \ B), and UCF-QNRF [46] Datasets. The Labeling Budgets are 10%, 10%, and 20%,\
+      \ Respectively. \u201CS,\u201D \u201C S A SA,\u201D and \u201Cf\u201D Denote\
+      \ Semi-Supervised, Active Semi-Supervised and Fully-Supervised Methods, Respectively.\
+      \ Italic Numbers Represent Re-Implementation"
+  Table 7 caption:
+    table_text: TABLE VII Comparison Results in JHU-CROWD++ [50] and NWPU [51] Datasets.
+      As Only SUA [41] Explores the Two Datasets, We Follow It to Set the Labeling
+      Budgets as 50%
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3232712
+- Affiliation of the first author: qing yuan research institute, shanghai jiao tong
+    university, shanghai, china
+  Affiliation of the last author: shanghai digital medicine innovation center, ruijin
+    hospital, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\HAKE_A_Knowledge_Engine_Foundation_for_Human_Activity_Unders\figure_1.jpg
+  Figure 1 caption: Object Recognition versus Activity Recognition. a. SCR test reveals
+    the difference between activity and object visual patterns. b. Bottleneck of direct
+    mapping. Given the same order of magnitude of training images, it rapidly saturates
+    on the HICO-DET [1] test set and performs much worse than object recognition on
+    MS-COCO [2] (dotted line, 55+ mAP (mean Average Precision, %)). c-d. Direct mapping
+    and our two-stage paradigm. We introduce an intermediate primitive space to embed
+    activity information and infer semantics via primitive programming.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\HAKE_A_Knowledge_Engine_Foundation_for_Human_Activity_Unders\figure_2.jpg
+  Figure 2 caption: 'Nature of activity perception: atomic primitive and logical reasoning.
+    a. Primitives exist such as body part states [5] and objects. Here, we show some
+    common hand states. b. Activities can be inferred by programming primitives following
+    logical rules.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\HAKE_A_Knowledge_Engine_Foundation_for_Human_Activity_Unders\figure_3.jpg
+  Figure 3 caption: "HAKE Overview. a. We cast activity understanding into: a(1) Knowledge\
+    \ base construction: annotating large-scale activity-primitive labels to afford\
+    \ accurate primitive detection. a(2) Reasoning: Given detected primitives, adopting\
+    \ neuro-symbolic reasoning to program them into semantics. b. Detailed pipeline.\
+    \ b(1) Primitive detection and Activity2Vec. Given an image, we utilize the detectors\
+    \ [27], [28] to locate the humanobject and human body parts. Then we use a simple\
+    \ CNN model together with Bert [52] to extract the visual and linguistic features\
+    \ of primitives via primitive detection. b(2) Primitive-based logical reasoning.\
+    \ With the two kinds of representations from Activity2Vec, we operate logical\
+    \ reasoning in a neuro-symbolic paradigm following the prior and auto-discovered\
+    \ logic rules. Here, NOT(\u22C5) and OR(\u22C5,\u22C5) modules are shared by all\
+    \ events but drawn separately here for clarity."
+  Figure 4 Link: articels_figures_by_rev_year\2022\HAKE_A_Knowledge_Engine_Foundation_for_Human_Activity_Unders\figure_4.jpg
+  Figure 4 caption: Positive correlation between the primitive detection quality and
+    activity detection performance (wo unified inference) on HICO-DET [1]. Detected
+    boxes mean the detection from iCAN [30].
+  Figure 5 Link: articels_figures_by_rev_year\2022\HAKE_A_Knowledge_Engine_Foundation_for_Human_Activity_Unders\figure_5.jpg
+  Figure 5 caption: Verification of the logic operations. Distribution of the True
+    False in sampled embeddings, which shows the well distinguishable ability of HAKE
+    for two logical states.
+  Figure 6 Link: articels_figures_by_rev_year\2022\HAKE_A_Knowledge_Engine_Foundation_for_Human_Activity_Unders\figure_6.jpg
+  Figure 6 caption: The correlation between PaSta and logic rules before and after
+    the updating for activities hug horse and carry pottedplant.
+  Figure 7 Link: articels_figures_by_rev_year\2022\HAKE_A_Knowledge_Engine_Foundation_for_Human_Activity_Unders\figure_7.jpg
+  Figure 7 caption: Annotated rules and generated rules for ride bicycle class and
+    their performances (AP) on the HICO-DET [1] test set.
+  Figure 8 Link: articels_figures_by_rev_year\2022\HAKE_A_Knowledge_Engine_Foundation_for_Human_Activity_Unders\figure_8.jpg
+  Figure 8 caption: Masking results from HAKE and humans in the SCR Test. The verbs
+    are given at the top. The source of masking is marked below the sub-image. Two
+    sets of maskings are very similar and difficult to distinguish even by human participants
+    (59.55% accuracy).
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Yong-Lu Li
+  Name of the last author: Cewu Lu
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 9
+  Paper title: 'HAKE: A Knowledge Engine Foundation for Human Activity Understanding'
+  Publication Date: 2022-12-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results (mAP, %) of Enhancing Experiments on HICO-DET [1]
+      and AVA [13]
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE 2 Transfer Learning Results on V-COCO [12], Ambiguous-HOI [60],
+      and Image-Based AVA [13] (v2.1)
+  Table 3 caption:
+    table_text: TABLE 3 Accuracy of Different Logic Expressions
+  Table 4 caption:
+    table_text: Not Avaliable
+  Table 5 caption:
+    table_text: Not Avaliable
+  Table 6 caption:
+    table_text: Not Avaliable
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3232797
+- Affiliation of the first author: school of informatics, xiamen university, xiamen,
+    fujian, china
+  Affiliation of the last author: school of informatics and institute of artificial
+    intelligence, xiamen university, xiamen, fujian, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\A_MultiTask_MultiStage_Transitional_Training_Framework_for_N\figure_1.jpg
+  Figure 1 caption: An example of cross-lingual chat (En Leftrightarrow Zh). The speaker
+    s1-specific utterance mathbf xu is being translated from English to Chinese with
+    corresponding dialogue history context.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\A_MultiTask_MultiStage_Transitional_Training_Framework_for_N\figure_2.jpg
+  Figure 2 caption: "The architecture of the Flat-NCT model used in this work. The\
+    \ left part depicts the attention mechanism inside Flat-NCT encoder. For illustration,\
+    \ we assume the input sequence mathcal Cmathbf xu;mathbf xu is the concatenation\
+    \ of mathcal Cmathbf xu = x1,x2,x3,x4 and mathbf xu = x6,x7,x8,langle eosrangle\
+    \ separated by a special token \u201C langle seprangle \u201D. Notably, words\
+    \ in mathcal Cmathbf xu can only be attended to by those in mathbf xu at the first\
+    \ encoder layer. At the other encoder layers, mathcal Cmathbf xu is masked and\
+    \ the self-attention is only conducted within words of mathbf xu ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\A_MultiTask_MultiStage_Transitional_Training_Framework_for_N\figure_3.jpg
+  Figure 3 caption: 'Overview of the auxiliary tasks and the MMT training framework.
+    To show the two auxiliary tasks, we just take the source-language dialogue X =
+    mathbf x1, mathbf x2, mathbf x3, mathbf x4,..., mathbf xu-1, mathbf xu for instance,
+    which can be analogously generalized to other types of dialogues ( Y , overlineX
+    and overlineY ). (a): The utterance discrimination (UD) task. (b): The speaker
+    discrimination (SD) task. (c): The three training stages of our proposed framework.
+    Note that the NCT encoder is shared across the chat translation and the two auxiliary
+    tasks.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\A_MultiTask_MultiStage_Transitional_Training_Framework_for_N\figure_4.jpg
+  Figure 4 caption: The effect of the context length for mathcal Cmathbf xu . The
+    BLEU scores of the Flat-NCT+FT model on the En Rightarrow De validation set (under
+    the Transformer-Base setting).
+  Figure 5 Link: articels_figures_by_rev_year\2022\A_MultiTask_MultiStage_Transitional_Training_Framework_for_N\figure_5.jpg
+  Figure 5 caption: 'Results (Left: BLEU uparrow Right: TER downarrow ) on the validation
+    set of BConTrasT (En Leftrightarrow De) using different proportions of used monolingual
+    dialogues (under the Transformer-Base setting).'
+  Figure 6 Link: articels_figures_by_rev_year\2022\A_MultiTask_MultiStage_Transitional_Training_Framework_for_N\figure_6.jpg
+  Figure 6 caption: Two illustrative case examples from the test set of BMELD (En
+    Rightarrow Zh).
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.69
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.93
+  Name of the first author: Chulun Zhou
+  Name of the last author: Jinsong Su
+  Number of Figures: 6
+  Number of Tables: 12
+  Number of authors: 8
+  Paper title: A Multi-Task Multi-Stage Transitional Training Framework for Neural
+    Chat Translation
+  Publication Date: 2022-12-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Definitions of Different Dialogue History Contexts
+  Table 10 caption:
+    table_text: TABLE 10 Performance WithWithout Gradual Transition Strategy
+  Table 2 caption:
+    table_text: TABLE 2 Dataset Statistics
+  Table 3 caption:
+    table_text: TABLE 3 Model Performance after Sentence-Level Pre-Training
+  Table 4 caption:
+    table_text: TABLE 4 Balancing Factor Determination
+  Table 5 caption:
+    table_text: "TABLE 5 Overall Evaluation (BLEU \u2191 \u2191TER \u2193 \u2193)\
+      \ of En \u21D4 \u21D4 De and En \u21D4 \u21D4 Zh Chat Translation Tasks"
+  Table 6 caption:
+    table_text: TABLE 6 Performance With Different Monolingual Dialogue Groups Removed
+  Table 7 caption:
+    table_text: TABLE 7 Performance with Ablations of UDSD Tasks
+  Table 8 caption:
+    table_text: TABLE 8 Performance With PseudoAuthentic Monolingual Dialogues
+  Table 9 caption:
+    table_text: "TABLE 9 Performance With BT-Augmented Chat Translation Corpus D \u2032\
+      \ bct Dbct'"
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3233226
+- Affiliation of the first author: cooperative medianet innovation center, shanghai
+    jiao tong university, shanghai, china
+  Affiliation of the last author: jd explore academy, jd.com, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_1.jpg
+  Figure 1 caption: Comparison of our WebUAV-3M with the public benchmarks, including
+    UAV tracking benchmarks, i.e., UAV123, DTB70, UAVDT, VisDrone, UAVDark135, and
+    GOT benchmarks, i.e., OTB2015, VOT2020, NUS-PRO, and TNL2K. The area of each circle
+    is proportional to the number of total frames of the corresponding benchmark.
+    Best viewed in color.
+  Figure 10 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_10.jpg
+  Figure 10 caption: Scenario indicator distributions of the test set. The framewise
+    difficulty indicators represent the degrees of challenge for current tracking
+    algorithms. Best viewed by zooming in.
+  Figure 2 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_2.jpg
+  Figure 2 caption: "A glance at some diverse video sequences and annotations in WebUAV-3M.\
+    \ All sequences are divided into 12 superclasses, including person, building,\
+    \ vehicle, vessel, public transport, aircraft, animal, agricultural machinery,\
+    \ industry machine, plant, artifact and natural object. Each sequence is attached\
+    \ to a semantic label: \u201Ctarget class\u201D or \u201Cmotion class\u201D. WebUAV-3M\
+    \ populates 223 target classes and 63 motion classes in total. In addition, we\
+    \ provide a natural language specification and two audio descriptions for each\
+    \ sequence. Best viewed in color."
+  Figure 3 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_3.jpg
+  Figure 3 caption: The number of videos per group of object classes. Best viewed
+    by zooming in.
+  Figure 4 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_4.jpg
+  Figure 4 caption: An overview of the construction of WebUAV-3M. During the process
+    of data collection, we first download videos from the internet to collect raw
+    videos and then perform data cleaning (i.e., video naming and cropping) to obtain
+    cleaned videos for annotation. After that, a SATA pipeline is used to label the
+    massive WebUAV-3M dataset. Finally, diverse attributes, natural language specifications,
+    and audio descriptions are provided to enrich the dataset, which is further divided
+    into a unified dataset, including training, verification, and test sets.
+  Figure 5 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_5.jpg
+  Figure 5 caption: Examples of accurate annotations generated by SATA.
+  Figure 6 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_6.jpg
+  Figure 6 caption: Distribution of videos for each attribute.
+  Figure 7 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_7.jpg
+  Figure 7 caption: Dataset splits of WebUAV-3M.
+  Figure 8 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_8.jpg
+  Figure 8 caption: Target position, size, and video length distributions in WebUAV-3M.
+    Best viewed by zooming in.
+  Figure 9 Link: articels_figures_by_rev_year\2022\WebUAVM_A_Benchmark_for_Unveiling_the_Power_of_MillionScale_\figure_9.jpg
+  Figure 9 caption: Screenshots of some videos obtained from seven scenarios in WebUAV-3M.
+    The video name and scenario indicator value of the current frame are presented
+    at the top of the corresponding image.
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chunhui Zhang
+  Name of the last author: Dacheng Tao
+  Number of Figures: 14
+  Number of Tables: 11
+  Number of authors: 8
+  Paper title: 'WebUAV-3M: A Benchmark for Unveiling the Power of Million-Scale Deep
+    UAV Tracking'
+  Publication Date: 2022-12-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of WebUAV-3M With the Popular GOT and UAV Tracking
+      Benchmarks
+  Table 10 caption:
+    table_text: TABLE 10 Cross-Superclass Transfer Learning Results (cAUC) of SiamFC
+      on the Six Largest Superclasses, i.e., Person, Vehicle, Vessel, Building, Public
+      Transport and Animal
+  Table 2 caption:
+    table_text: TABLE 2 Quality Control Process for Dataset Construction
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Between the Times Spent Per Bounding Box by Our
+      SATA Method and other Annotation Tools
+  Table 4 caption:
+    table_text: TABLE 4 The Details of the Seven Scenario Subtest Sets
+  Table 5 caption:
+    table_text: TABLE 5 Overall Tracking Results of the 43 Baseline Trackers on WebUAV-3M
+      Test Set
+  Table 6 caption:
+    table_text: TABLE 6 The Results Obtained after Retraining Five Deep Trackers on
+      WebUAV-3M
+  Table 7 caption:
+    table_text: TABLE 7 Intraclass Domain Generalization Results (cAUC) of SiamFC
+      on Vehicle Superclass
+  Table 8 caption:
+    table_text: TABLE 8 Intraclass Domain Generalization Results (cAUC) of SiamFC
+      on the Person Superclass
+  Table 9 caption:
+    table_text: TABLE 9 Interclass Domain Generalization Results (cAUC) of SiamFC
+      on the Two Largest Subclasses of Each of the Six Largest Superclasses, i.e.,
+      Person, Vehicle, Vessel, Building, Public Transport and Animal
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3232854
+- Affiliation of the first author: department of computer science and engineering,
+    national taiwan ocean university, keelung city, taiwan
+  Affiliation of the last author: department of computer science and engineering,
+    national taiwan ocean university, keelung city, taiwan
+  Figure 1 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_1.jpg
+  Figure 1 caption: An illustration of the space-folding operation, where (a) LDA
+    fails since Fisher's criterion value is zero; (b) Fisher's criterion value of
+    the mapped data is greater than zero, and LDA can find classification information.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_2.jpg
+  Figure 2 caption: The artificial data sets.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_3.jpg
+  Figure 3 caption: "Experimental results on the artificial data set, where RAW denotes\
+    \ the accuracy of the classifier on the original data; the algorithm annotated\
+    \ with \u201C\u201D is the most accurate and that annotated with \u201C+\u201D\
+    \ is as accurate as the best based on the Wilcoxon signed-rank test with significance\
+    \ level 0.01."
+  Figure 4 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_4.jpg
+  Figure 4 caption: Experimental results on the open data sets.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_5.jpg
+  Figure 5 caption: Experimental results on 3,000 training examples of noisy Two-Circle.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_6.jpg
+  Figure 6 caption: Experimental results on the madelon data set with feature ranking.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_7.jpg
+  Figure 7 caption: Density plots for the mapping of the artificial data set.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_8.jpg
+  Figure 8 caption: Structures of the composite LDA-based mapping constructed by LDASF
+    and LDABLK with Delta c set to 1 for a round of experiments, where the input vector
+    of the artificial data set contains no noise components, the bar chart shows the
+    dimension of the intermediate space, the blue and orange curves, respectively,
+    show the training and validation error rates for the NC classifier, and the number
+    sequence shown at the bottom is the neural architecture.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Fishers_Linear_Discriminant_Analysis_With_SpaceFolding_Opera\figure_9.jpg
+  Figure 9 caption: Plots of the composite LDA-based mappings constructed by LDASF
+    and LDABLK, where Delta c is set to 0.01 and the madelon data set is based on
+    the selected feature subset.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chin-Chun Chang
+  Name of the last author: Chin-Chun Chang
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 1
+  Paper title: Fisher's Linear Discriminant Analysis With Space-Folding Operations
+  Publication Date: 2023-01-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Setting for the Parameter of the Proposed Algorithm
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE 2 The Specifications of Open Data Sets
+  Table 3 caption:
+    table_text: TABLE 3 Computation Time (Seconds) on Open Data Sets
+  Table 4 caption:
+    table_text: Not Avaliable
+  Table 5 caption:
+    table_text: Not Avaliable
+  Table 6 caption:
+    table_text: Not Avaliable
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3233572
+- Affiliation of the first author: center for biometrics and security research & national
+    laboratory of pattern recognition, institute of automation, chinese academy of
+    sciences, beijing, china
+  Affiliation of the last author: center for biometrics and security research & national
+    laboratory of pattern recognition, institute of automation, chinese academy of
+    sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_1.jpg
+  Figure 1 caption: In computer graphics, a face image is decomposed into several
+    components including 3D geometry, lighting, common texture, and identity texture.
+    The useful components, their best combinations, and the optimal architecture of
+    forgery features extraction are automatically found by a composition search strategy.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_10.jpg
+  Figure 10 caption: Searched architectures by setting (a) lambda cost=0 , (b) lambda
+    cost=5 times 10-5 , and (c) lambda cost=10-3 , corresponding to the full, medium,
+    and small architectures, respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_2.jpg
+  Figure 2 caption: Artifacts brought by inaccurate 3D face reconstruction. (a) Overlap
+    of an image and its reconstructed 3D face. (b) Overlap of an image and its fitted
+    common texture. (c) Difference between the image pixel and the fitted texture.
+    The red rectangles exhibit the artifacts on the face contour and right eye.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_3.jpg
+  Figure 3 caption: Fine-grained Morphing Network (FM-Net). The input is the concatenation
+    of the face image and the PNCC of coarse shape, and the outputs are the vertex
+    offsets on the image plane.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_4.jpg
+  Figure 4 caption: Overview of morphing target construction. The offsets between
+    the fitted 3DMM landmarks and the detected 2D landmarks provide the morphing offsets
+    on the landmark-located coordinates. The offsets of the other coordinates are
+    interpolated by triangulation. The 2D-3D correspondence in (c) is best viewed
+    by zooming.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_5.jpg
+  Figure 5 caption: "Briefview of the encoding, decoding, and fusion operations at\
+    \ the image, map, and vector levels. The caption follows the format of \u201C\
+    componentsform\u201D, where the form is either image, feature map, or feature\
+    \ vector."
+  Figure 6 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_6.jpg
+  Figure 6 caption: "Illustrations of image-level fusion. \u201C3D\u201D, \u201Clgt\u201D\
+    , \u201Cctex\u201D, and \u201Citex\u201D are short for 3D shape, lighting, common\
+    \ texture, and identity texture, respectively."
+  Figure 7 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_7.jpg
+  Figure 7 caption: '(a) Simplified toy search space with three components: lighting,
+    identity texture, and residual, where the searched routes are highlighted with
+    red lines. The caption of nodes follows componentsform-n, and the caption of unification
+    edges follows alphacomponentsformn where n indexes a candidate. (b) The searched
+    architecture. (c) The searched architecture when the computation cost is penalized.'
+  Figure 8 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_8.jpg
+  Figure 8 caption: Architecture of Component Composition Net (CC-Net). The identity
+    texture, full texture, and original image are encoded to three feature maps of
+    M1, M2, and M3. Then, M1 and M2 are concatenated and decoded to a feature vector
+    of F1. Afterwards, M2 and M3 are concatenated and decoded to a feature vector
+    of F2. Finally, F1 and F2 are summed to the final output feature for realfake
+    classification.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Face_Forgery_Detection_by_D_Decomposition_and_Composition_Se\figure_9.jpg
+  Figure 9 caption: Decomposition by (a) coarse shape and (b) fine-grained shape.
+    For each sample, the left is the 3D shape and the right is the identity texture,
+    whose values are scaled to highlight the subtle patterns. The reduced noise in
+    identity texture is zoomed by the red rectangles.
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Xiangyu Zhu
+  Name of the last author: Zhen Lei
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 7
+  Paper title: Face Forgery Detection by 3D Decomposition and Composition Search
+  Publication Date: 2023-01-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Formulations of Image-Level Fusion
+  Table 10 caption:
+    table_text: TABLE 10 Performance (%) of the Frequency Decomposition (F 3 3 Net),
+      Graphics Decomposition (Ours), and Their Fusion
+  Table 2 caption:
+    table_text: TABLE 2 Performance Comparison by AUC (%) Among the State-of-the-Art
+      Methods
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison by AUC (%) Among the State-of-the-Art
+      Methods on the Unseen Manipulation Methods in FFpp
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Study About the 3D Decomposition on Celeb-DF and
+      DFDC
+  Table 5 caption:
+    table_text: TABLE 5 Forgery Detection Results (%) of Our Method Whose Images are
+      Decomposed by Coarse and Fine-Grained 3D Shapes, Evaluated on Celeb-DF and DFDC
+  Table 6 caption:
+    table_text: TABLE 6 Forgery Detection AUC (%) With Different Architectures, Evaluated
+      on Celeb-DF and DFDC
+  Table 7 caption:
+    table_text: TABLE 7 Performance (%) of the Searched Architectures With Different
+      Computation Penalties
+  Table 8 caption:
+    table_text: TABLE 8 Performance (%) With Different Inputs on FFpp
+  Table 9 caption:
+    table_text: TABLE 9 Performance (%) Comparison With Different Backbones
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3233586
+- Affiliation of the first author: school of computer, national university of defense
+    technology, changsha, hunan, china
+  Affiliation of the last author: school of computer, national university of defense
+    technology, changsha, hunan, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\HyperparameterFree_Localized_Simple_Multiple_Kernel_Kmeans_W\figure_1.jpg
+  Figure 1 caption: The kernel weights learned by the proposed parameter-free localized
+    SimpleMKKM and the compared algorithms.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\HyperparameterFree_Localized_Simple_Multiple_Kernel_Kmeans_W\figure_2.jpg
+  Figure 2 caption: (a) The learned boldsymbolmu by the proposed parameter-free localized
+    SimpleMKKM. (b) The clustering performance with four different groups of mask
+    matrices.
+  Figure 3 Link: articels_figures_by_rev_year\2023\HyperparameterFree_Localized_Simple_Multiple_Kernel_Kmeans_W\figure_3.jpg
+  Figure 3 caption: The evolution of the learned mathbf H by the proposed algorithm
+    with iterations.
+  Figure 4 Link: articels_figures_by_rev_year\2023\HyperparameterFree_Localized_Simple_Multiple_Kernel_Kmeans_W\figure_4.jpg
+  Figure 4 caption: The objective curves of Hyperparameter Free Localized SimpleMKKM
+    under ten different initializations on Wdbc, ProteinFold, Flower17, Flower102,
+    and Handwritten. Though with different initializations, the objective value stops
+    at the same point.
+  Figure 5 Link: articels_figures_by_rev_year\2023\HyperparameterFree_Localized_Simple_Multiple_Kernel_Kmeans_W\figure_5.jpg
+  Figure 5 caption: Running time of the aforementioned algorithms on all datasets
+    (logarithm in seconds). These algorithms are run on a PC with Intel(R) Core(TM)-i9-10900X
+    3.7GHz CPU and 64G RAM in MATLAB R2020b environment.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xinwang Liu
+  Name of the last author: Xinwang Liu
+  Number of Figures: 5
+  Number of Tables: 1
+  Number of authors: 1
+  Paper title: Hyperparameter-Free Localized Simple Multiple Kernel K-means With Global
+    Optimum
+  Publication Date: 2023-01-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The ACC, NMI, Purity and Rand Index Comparison of the Proposed
+      Algorithm With Baseline Methods on Eight Benchmark Datasets
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: Not Avaliable
+  Table 3 caption:
+    table_text: Not Avaliable
+  Table 4 caption:
+    table_text: Not Avaliable
+  Table 5 caption:
+    table_text: Not Avaliable
+  Table 6 caption:
+    table_text: Not Avaliable
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3233635
+- Affiliation of the first author: college of electrical and information engineering,
+    hunan university, changsha, hunan, china
+  Affiliation of the last author: department of information engineering and computer
+    science (disi), university of trento, trento, italy
+  Figure 1 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_1.jpg
+  Figure 1 caption: Observation of the cross-image semantic consistency and semantic
+    discrepancy. We present the pixel-wise correspondence between the unlabeled and
+    labeled images. Specifically, we first pool the features of a class (horse in
+    this case) in the labeled image to be a vector, then we calculate the pixel-wise
+    similarity between the obtained vector and an unlabeled image to generate the
+    correspondence map. (a) Horses from different images share similar features, where
+    the corresponding regions are highlighted. (b) Horse, bird, sheep, and cow contain
+    different components with diverse characteristics, where the heatmaps yield no
+    correspondence.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_10.jpg
+  Figure 10 caption: Quality of the pseudo labels from the selected reliable and unreliable
+    sets.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_2.jpg
+  Figure 2 caption: The main idea of the proposed CISC-R. Samples in the blue dashed
+    box represent unlabeled images and corresponding pseudo labels. Samples in the
+    orange solid box represent labeled images and corresponding labels for querying.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_3.jpg
+  Figure 3 caption: The overall framework of the proposed CISC-R approach. Given an
+    unlabeled image and its pseudo mask generated by the segmentation model, we first
+    determine the query category (e.g., cat) and then query labeled samples with the
+    same category by the proposed image-selection method. Then, we obtain the CISC
+    map by calculating the similarity between the deep features of the unlabeled image
+    and the selected labeled image. The CISC map is used to rectify the pseudo mask
+    for training a robust segmentation model.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_4.jpg
+  Figure 4 caption: Illustration of our proposed CISC-based image selecting method.
+    The circles with deeper colors represent the images with smaller D .
+  Figure 5 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_5.jpg
+  Figure 5 caption: Qualitative visualization results of CISC map for the PASCAL VOC
+    2012 dataset under the setting of 116 partition protocol. Some failure cases are
+    shown in the last row. Fonts in red represent the classes of pseudo masks. In
+    the last row, the fonts in green represent the real class of Ground truth.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_6.jpg
+  Figure 6 caption: Qualitative visualization results of CISC map for the Cityscapes
+    dataset under the setting of 130 partition protocol. Some failure cases are shown
+    in the last row. Fonts in red represent the classes of pseudo masks. We mark the
+    improved regions with orange solid boxes.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_7.jpg
+  Figure 7 caption: Visualization of heatmaps and distributions of output features.
+    (a) shows the labeled images for querying. (b) shows the heatmaps of output features.
+    It can be seen that an object may contain different parts, i.e., a horse contains
+    head, body, and feet, a car contains windows, car body, and wheels. However, in
+    semantic segmentation, we map these different parts to one semantic category with
+    the supervision of annotated labels. Thus, we can learn consistent features from
+    these parts. We further use t-SNE [58] to visualize the feature distributions
+    in 2-D space. It can be observed that the learned features of a class cluster
+    together. Thus, we pool the features to be one single prototype instead of extracting
+    multiple prototypes.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_8.jpg
+  Figure 8 caption: Qualitative segmentation results of pseudo labels for the PASCAL
+    VOC 2012 dataset under the setting of 116 partition protocol.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Querying_Labeled_for_Unlabeled_CrossImage_Semantic_Consisten\figure_9.jpg
+  Figure 9 caption: Qualitative segmentation results of pseudo labels for the Cityscapes
+    dataset under the setting of 130 partition protocol.
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.81
+  Name of the first author: Linshan Wu
+  Name of the last author: Zhun Zhong
+  Number of Figures: 13
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: 'Querying Labeled for Unlabeled: Cross-Image Semantic Consistency Guided
+    Semi-Supervised Semantic Segmentation'
+  Publication Date: 2023-01-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Motivations and Implementations of Few-Shot
+      Semantic Segmentation, Weakly Supervised Semantic Segmentation, Co-Saliency
+      Detection, and Semi-Supervised Semantic Segmentation (Ours) in Terms of Mining
+      Cross-Image Semantics
+  Table 10 caption:
+    table_text: TABLE 10 Comparison With State-of-the-Art Methods on the Cityscapes
+      Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Results of CISC-R With a Pre-Trained Classification Model
+      on ImageNet [47]
+  Table 3 caption:
+    table_text: TABLE 3 Results of CISC-R With Multiple Prototypes (MP)
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Study for CISC-R With Labeled Images Selecting Methods
+  Table 5 caption:
+    table_text: TABLE 5 Ablation Study for Pseudo Labels Rectifying Methods
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Study for Stage-Wise Re-Training With Unlabeled Images
+      Selecting Methods
+  Table 7 caption:
+    table_text: TABLE 7 Results of Our Proposed Method With Mean and Std
+  Table 8 caption:
+    table_text: TABLE 8 Results of CISC-R With Cropped Images for Training (Crop)
+  Table 9 caption:
+    table_text: TABLE 9 Comparison With State-of-the-Art Methods on the PASCAL VOC
+      2012 Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3233584
+- Affiliation of the first author: department of computer science, the university
+    of hong kong, hong kong
+  Affiliation of the last author: department of computer science, the university of
+    hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_1.jpg
+  Figure 1 caption: Motivation illustration. We propose a unified SSL framework to
+    simultaneously preserve information in visual representations from perspectives
+    of pixels, semantics, and scales. lbrace mathcal F1, mathcal F2, mathcal F3, mathcal
+    F4, mathcal F5rbrace denote different levels in the feature pyramid, given an
+    input image. Our approach restores uncorrupted inputs from the feature maps directly
+    to preserve pixel-level details. In order to retain the global semantic information,
+    our method compares siamese one-dimensional representations. Last but not the
+    least, the proposed methodology conducts pixel restoration and feature comparison
+    at different scales. The rationale behind is to introduce multi-scale self-supervised
+    latent representations, making them more transferable to various downstream tasks.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_2.jpg
+  Figure 2 caption: 'The overall structure of PCRLv2. PCRLv2 performs self-supervised
+    visual learning on siamese feature pyramids. To achieve this goal, we propose
+    non-skip U-Net (nsUNet). nsUNet consists of five feature scales and removes the
+    skip connections to prevent network optimizers from finding shortcut solutions
+    to context restoration. On the basis of nsUNet, we propose to decouple the preservation
+    of pixel-level, semantic, and scale information into two tasks: (a) multi-scale
+    pixel restoration; (b) multi-scale feature comparison. The rationale behind is
+    to incorporate pixel details and semantics into features at different scales.
+    During the training stage, we randomly choose a feature scale from the feature
+    pyramid, on top of which we conduct pixel restoration and feature comparison.
+    x denotes a batch of input images. t1 and t2 stand for two distinct global augmentations,
+    while t1prime and t2prime denote the successive local augmentations.'
+  Figure 3 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_3.jpg
+  Figure 3 caption: The architecture of non-skip U-Net (nsUNet). In comparison to
+    previous U-Net series, nsUNet removes skip connections, and the associated skip
+    feature maps to prevent shortcut solutions to the pixel restoration and feature
+    comparison tasks. Besides, nsUNet consists of five levels of feature maps (denoted
+    with different colors), where two self-supervised tasks are further conducted.
+    Note that this is a 2D illustration of nsUNet.
+  Figure 4 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_4.jpg
+  Figure 4 caption: Architectural details of the pixel restoration and feature comparison
+    heads. Conv, BN, GAP, and FC denote the convolution, batch normalization, global
+    average pooling, and fully-connected layers, respectively. The kernel size of
+    all convolution layers is 3, and the convolution stride is set to 1. Note that
+    each pair of siamese feature maps share one pixel restoration head and one feature
+    comparison head, while different feature scales employ distinct task heads.
+  Figure 5 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_5.jpg
+  Figure 5 caption: Illustration of sub-crop. Given a 3D local volume, we first randomly
+    crop two large patches, where an intersection over union (IoU) constraint is applied
+    to guarantee that two patches are partly overlapped. These two large patches are
+    considered as x1 and x2 in Fig. 2 and will be passed to the siamese architecture
+    to conduct the following multi-scale pixel restoration and feature comparison
+    tasks. To acquire local views, we compute the minimum 3D bounding box of two large
+    patches, after which random crop is applied to extract multiple local patches.
+    Finally, we reshape these local patches to a fixed size and forward them to the
+    network to extract local representations.
+  Figure 6 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_6.jpg
+  Figure 6 caption: Influence of skip connections in pixel restoration. We display
+    the loss curve of mean square error (MSE) in the first 15 epoches.
+  Figure 7 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_7.jpg
+  Figure 7 caption: Two choices of how to conduct siamese feature comparison for multiple
+    feature scales. Here, we primarily consider pairwise feature comparison and cross-scale
+    feature comparison.
+  Figure 8 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_8.jpg
+  Figure 8 caption: Visual interpretation of the transfer learning on chest pathology
+    identification (a), and segmentation results of brain tumor (b) and liver (c).
+    We mainly compare PCRLv2 against PCRLv1 and TransVW. Red boxes in the top figure
+    a denote the ground-truth (GT) annotations from radiologists. In figure b, we
+    present the segmentation results of the enhancing tumor (ET) from BraTS when the
+    labeling ratios are 10% and 20%. Similarly in the bottom figure, we display the
+    liver segmentation results in three different labeling ratios (10%, 20%, and 30%).
+  Figure 9 Link: articels_figures_by_rev_year\2023\A_Unified_Visual_Information_Preservation_Framework_for_Self\figure_9.jpg
+  Figure 9 caption: Failure case analysis on chest pathology identification. Red boxes
+    stand for the lesion areas delineated by radiologists. Images are from NIH ChestX-ray.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Hong-Yu Zhou
+  Name of the last author: Yizhou Yu
+  Number of Figures: 9
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: A Unified Visual Information Preservation Framework for Self-supervised
+    Pre-Training in Medical Image Analysis
+  Publication Date: 2023-01-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Impact of Skip Connections on Chest Pathology Identification
+      (NIH ChestX-ray), Brain Tumor Segmentation (BraTS), and Abdominal Organ Segmentation
+      (LiTS)
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE 2 Results of Pairwise and Crossed Siamese Feature Comparison
+      (Semi-Supervised Learning on NIH ChestX-ray)
+  Table 3 caption:
+    table_text: TABLE 3 Impact of Different Modules in PCRLv2
+  Table 4 caption:
+    table_text: TABLE 4 Semi-Supervised Chest Pathology Identification (on NIH ChestX-ray)
+  Table 5 caption:
+    table_text: TABLE 5 Semi-Supervised Pulmonary Nodule Detection (on LUNA)
+  Table 6 caption:
+    table_text: TABLE 6 Transfer Learning on Chest Pathology Identification
+  Table 7 caption:
+    table_text: TABLE 7 Transfer Learning on Brain Tumor Segmentation (on BraTS)
+  Table 8 caption:
+    table_text: TABLE 8 Transfer Learning on Abdominal Organ Segmentation (on LiTS)
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234002
+- Affiliation of the first author: department of mathematical sciences, university
+    of copenhagen, copenhagen, denmark
+  Affiliation of the last author: department of mathematical sciences, university
+    of copenhagen, copenhagen, denmark
+  Figure 1 Link: articels_figures_by_rev_year\2023\Invariant_Policy_Learning_A_Causal_Perspective\figure_1.jpg
+  Figure 1 caption: "Graphs summarizing different data-generating models. White and\
+    \ grey circles represent observed and hidden variables, respectively. (a) A summary\
+    \ of the causal structure of Setting 1. The causal relations between X - and U\
+    \ -covariates are not shown explicitly but assumed to be acyclic (see (b) and\
+    \ (c) for examples). (b) Graph mathcal G induced by the data-generating process\
+    \ in Example 1. Here, lbrace X2rbrace is d -invariant, because R mathrel perp!!!perp\
+    \ mathcal Glbrace 2rbrace e mid XS , see Definition 3. mathcal Glbrace 2rbrace\
+    \ is the graph obtained when removing the edge X1 rightarrow A . Any set S that\
+    \ contains X1 is not d -invariant because of the open path e rightarrow X1 leftarrow\
+    \ U rightarrow R . In practice, we do not assume that the structure is known but\
+    \ test for invariances (11) from data. This requires testing under distributional\
+    \ shifts: even though lbrace X2rbrace is d -invariant, (11) may not hold for a\
+    \ policy pi that depends on X1 and X2 because of the path e rightarrow X1 rightarrow\
+    \ A rightarrow R . (c) A more complex model, where the environments do not act\
+    \ on all X variables. Although U has an edge into X3 , the subset lbrace X2, X3rbrace\
+    \ is still a d -invariant set \u2013 there is no edge from e to X3 . Again, every\
+    \ subset of variables containing X1 is not d -invariant. (In fact, in examples\
+    \ (b) and (c), X1 is a strongly non- d -invariant variable, see Definition 5,\
+    \ and cannot be part of a d -invariant set.)"
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Invariant_Policy_Learning_A_Causal_Perspective\figure_2.jpg
+  Figure 2 caption: The generalization performance (in terms of regret) of the policy
+    based on an invariant set lbrace X2rbrace and the policy based on a non-invariant
+    set lbrace X1,X2rbrace . The left and the right plot show the results when the
+    training environments consist of two and six different environments, respectively.
+    In both cases, the worst-case regret for the invariant policy is upper bounded
+    while this is not the case for the non-invariant policy.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Invariant_Policy_Learning_A_Causal_Perspective\figure_3.jpg
+  Figure 3 caption: Acceptance rates for the off-policy invariance test proposed in
+    Section 4.2 for varying sample sizes. With increasing sample size, only the invariant
+    set lbrace X2rbrace is accepted. Here, more environments (right) seems to yield
+    higher test power than fewer environments (left).
+  Figure 4 Link: articels_figures_by_rev_year\2023\Invariant_Policy_Learning_A_Causal_Perspective\figure_4.jpg
+  Figure 4 caption: Empirical results on the original dataset. Each point represents
+    the expected reward of a policy on the corresponding test environment. The square
+    points represent the mean value of the expected rewards. In this setup, all candidate
+    methods yield similar performances on all of the test environments. This result
+    indicates that the test environments may not be significantly different from the
+    training environments.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Invariant_Policy_Learning_A_Causal_Perspective\figure_5.jpg
+  Figure 5 caption: Empirical results on policy learning with a non-invariant predictor
+    (see Section 6.4). Each point represents the expected reward of a policy on the
+    corresponding test environment. In this setup, our proposed method (Inv) outperforms
+    the two baselines (Pred and All) that ignore the environment structure, while
+    approaching the performance of the invariant oracle (Oracle-Inv).
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sorawit Saengkyongam
+  Name of the last author: Niklas Pfister
+  Number of Figures: 5
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: 'Invariant Policy Learning: A Causal Perspective'
+  Publication Date: 2023-01-03 00:00:00
+  Table 1 caption:
+    table_text: Not Avaliable
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: Not Avaliable
+  Table 3 caption:
+    table_text: Not Avaliable
+  Table 4 caption:
+    table_text: Not Avaliable
+  Table 5 caption:
+    table_text: Not Avaliable
+  Table 6 caption:
+    table_text: Not Avaliable
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3232363

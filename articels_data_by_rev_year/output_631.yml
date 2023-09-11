@@ -1,0 +1,791 @@
+- Affiliation of the first author: "computer vision laboratory, \xE9cole polytechnique\
+    \ f\xE9d\xE9rale de lausanne, lausanne, switzerland"
+  Affiliation of the last author: "computer vision laboratory, \xE9cole polytechnique\
+    \ f\xE9d\xE9rale de lausanne, lausanne, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_1.jpg
+  Figure 1 caption: Detecting a small flying object against a complex moving background.
+    (Left) It is almost invisible to the human eye and hard to detect from a single
+    image. (Right) Yet, our algorithm can find it by using appearance and motion cues.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_10.jpg
+  Figure 10 caption: Examples of motion compensation. The first image in each pair
+    shows the middle patch of the original st-cube, coming from the sliding window.
+    The second image corresponds to the same patch after applying our motion compensation
+    algorithm. Failure cases are often due to motion estimation failures, which happen
+    when the appearance of the object is heavily corrupted by noise.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_2.jpg
+  Figure 2 caption: Motion compensation for four different st-cubes of flying objects
+    seen against different backgrounds. (Top ) For each one, we show four consecutive
+    patches before motion stabilization. In the leftmost plot below the patches, the
+    blue dots denote the location of the true center of the drone and the red cross
+    is the patch center over time. The other two plots depict the x and y deviations
+    of the drone center with respect to the patch center. (Middle) The same four st-cubes
+    and corresponding graphs after motion compensation using an optical flow approach,
+    as suggested by [11]. (Bottom) The same four st-cubes and corresponding graphs
+    after motion compensation using our approach.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_3.jpg
+  Figure 3 caption: Object detection pipeline with st-cubes and motion compensation.
+    Provided a set of video frames from the camera, we use a multi-scale sliding window
+    approach to extract st-cubes. We than process every patch of the st-cube to compensate
+    for the motion of the aircraft and then run the detector. (best seen in color).
+  Figure 4 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_4.jpg
+  Figure 4 caption: Sample patches of the UAVs and aircrafts. Each row corresponds
+    to a single st-cube and illustrates different possible motions that an aircraft
+    could have.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_5.jpg
+  Figure 5 caption: The structure of the convolutional neural network, which we used
+    for flying object detection. CL, PL and FL correspond to convolution, pooling,
+    and fully-connected layers respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_6.jpg
+  Figure 6 caption: Structure of the CNNs used for motion compensation. (Top) The
+    first network uses extended patches to correct for the large displacements of
+    the aircraft. (Bottom) The second network is applied after rectification by the
+    motion predicted by the first network, and is designed to correct for the small
+    motions.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_7.jpg
+  Figure 7 caption: Combining multiple detections in several images of a video sequence.
+    The red square and dots depict the positions of the original detection across
+    the 50 frames preceding two different images. The green square and dots illustrate
+    the position of the same detections after refinement. They are superposed and
+    form much smoother trajectories. (best seen in color).
+  Figure 8 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_8.jpg
+  Figure 8 caption: Sample image patches containing aircrafts or UAVs from our datasets.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Detecting_Flying_Objects_Using_a_Single_Moving_Camera\figure_9.jpg
+  Figure 9 caption: An object's apparent size can change enormously depending on its
+    pose and distance to the camera. We therefore use a sliding window approach at
+    different resolutions. The green boxes denote detections by our algorithm, which
+    successfully handles background, lighting, scale, and pose changes.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Artem Rozantsev
+  Name of the last author: Pascal Fua
+  Number of Figures: 22
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Detecting Flying Objects Using a Single Moving Camera
+  Publication Date: 2016-05-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance of Motion Compensation Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Precision of Detection Methods on our Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Speed Comparison of the Motion and Scale Adjustment Methods
+      with Motion Compensation
+  Table 4 caption:
+    table_text: TABLE 4 Evaluation of the HBT-Detection Method on the UAV Dataset
+      with and without Scale Adjustment
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2564408
+- Affiliation of the first author: nvidia research, santa clara, ca
+  Affiliation of the last author: department of electrical engineering, city university
+    of new york, new york, ny
+  Figure 1 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_1.jpg
+  Figure 1 caption: Illustration of generating the polynormal for a cloud point pt.
+    (a) shows a depth sequence of tennis serve and normals associated with cloud points.
+    For figure clarity, only a few normals are visualized. The three white squared
+    regions correspond to the neighborhood L . (b) denotes the extended surface normal
+    vector. (c) If L x = L y = L t =3 , the polynormal of pt is consisted of the 27
+    neighboring normals.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_10.jpg
+  Figure 10 caption: Confusion matrix of SNV on the MSRGesture3D dataset. This figure
+    is better viewed on screen.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_2.jpg
+  Figure 2 caption: "Comparison between the traditional (top) and our proposed (bottom)\
+    \ spatial grids. We place the 4\xD73 spatial grid on the largest bounding box\
+    \ of the human body instead of the entire frame."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_3.jpg
+  Figure 3 caption: The frame index and associated motion energy used to build the
+    adaptive temporal pyramid. The temporal segments are generated by repeatedly and
+    evenly subdividing the normalized motion energy axis instead of the time axis.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_4.jpg
+  Figure 4 caption: SNV based on the skeleton joint trajectory. The trajectory-aligned
+    volume is subdivided into a set of space-time cells according to the adaptive
+    spatio-temporal pyramid. Each cell generates a feature vector of SNV by the spatial
+    average pooling and temporal max pooling.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_5.jpg
+  Figure 5 caption: Recognition accuracies (%) of SNV using different sizes L x L
+    y L t of a local spatio-temporal neighborhood L to form the polynormal.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_6.jpg
+  Figure 6 caption: Recognition accuracies (%) of SNV with different combinations
+    of spatial (S) temporal (T) and average (Ave) max (Max) pooling.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_7.jpg
+  Figure 7 caption: Comparison of recognition accuracies (%) between the proposed
+    adaptive spatio-temporal pyramid based on motion energy and the traditional pyramid
+    based on time.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_8.jpg
+  Figure 8 caption: Percentage of the time spent on each major step in computing SNV
+    with the default parameter setting.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Super_Normal_Vector_for_Human_Activity_Recognition_with_Depth_Cameras\figure_9.jpg
+  Figure 9 caption: Confusion matrix of SNV on the MSRAction3D dataset. This figure
+    is better viewed on screen.
+  First author gender probability: 0.94
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.74
+  Name of the first author: Xiaodong Yang
+  Name of the last author: YingLi Tian
+  Number of Figures: 11
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Super Normal Vector for Human Activity Recognition with Depth Cameras
+  Publication Date: 2016-05-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Recognition Accuracy Comparison on the MSRAction3D Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Recognition Accuracy Comparison on the MSRGesture3D Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Recognition Accuracy Comparison on the MSRActionPairs3D Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Recognition Accuracy Comparison on the MSRDailyActivity3D
+      Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2565479
+- Affiliation of the first author: institute of sensors, signals and systems at heriot-watt
+    university, edinburgh, united kingdom
+  Affiliation of the last author: department of electronic and electrical engineering,
+    university of bath, bath, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_1.jpg
+  Figure 1 caption: (a) The landmarking algorithm steps in a block diagram; (b) The
+    naming convention for the nasal landmarks in our work.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_10.jpg
+  Figure 10 caption: '(a) CMC curves for FRGC v2.0; (b) Between seasons verification
+    results for FRGC: ROC III.'
+  Figure 2 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_2.jpg
+  Figure 2 caption: "The blue curve is strictly decreasing without any minima, while\
+    \ its 45 degree rotation (red curve) has a distinctive minimum. The interpretation\
+    \ of this procedure in the continuous space is \u03B1=arctan( \u2223 \u2223 df(x)\
+    \ dx | x= x b \u2223 \u2223 ) while d f r (x) dx | x= x a =0 ."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_3.jpg
+  Figure 3 caption: "(a) Localisation procedure for the nasal root, L 1 0 , shown\
+    \ in green: the blue curves and red points represent planes intersections and\
+    \ their minima, respectively. (b) The 5\xD75 mm 2 RoIs around L1 i and L4 j .\
+    \ (c) The horizontal strip S k y used in (4)."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_4.jpg
+  Figure 4 caption: "Nasal root, tip and subnasale detection: (a) Updating the nasal\
+    \ region using \u03B8 opt z . (b) The maximum and minimum of a curve connecting\
+    \ the optimum [L 4 opt x ,L 4 opt y ] and [L 1 opt x ,L 1 opt y ] (blue curve)\
+    \ are used as L4 and L1 , respectively (red points); (c) Blue points: symmetry\
+    \ plane intersection; Red point: the lowest minimum, detected as subnasale."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_5.jpg
+  Figure 5 caption: (a) and (b) RoIs for detection of the nasal alar groove and eye
+    corners landmarks. (b) and (d) show green and blue points as the inliers and outliers,
+    while the red points are the selected locations for L3, L6 , L2 and L7, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_6.jpg
+  Figure 6 caption: 'The overall feature space creation procedure: 1) the wavelets
+    are applied in different orientations and scales; 2) normals are computed on the
+    maximum of absolute values of the filtered images per scale; 3) feature descriptors
+    are applied; 4) normalised histograms are concatenated for all descriptors.'
+  Figure 7 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_7.jpg
+  Figure 7 caption: (a) Grid of landmarks used for the spherical patches in (b). The
+    nasal curves (d) are found using the combination of new landmarks, illustrated
+    in (c).
+  Figure 8 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_8.jpg
+  Figure 8 caption: Precision curves for the proposed landmarking algorithm computed
+    using Bosphorus.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Nasal_Patches_and_Curves_for_ExpressionRobust_D_Face_Recognition\figure_9.jpg
+  Figure 9 caption: 'CMC curves before and after feature selection on Bosphorus: neutral
+    gallery versus non-neutral probe.'
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Mehryar Emambakhsh
+  Name of the last author: Adrian Evans
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 2
+  Paper title: Nasal Patches and Curves for Expression-Robust 3D Face Recognition
+  Publication Date: 2016-05-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Landmarking Consistency Error in mm
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Landmarking Precision Accuracy from the Ground Truth over
+      the Bosphorus Dataset Samples
+  Table 3 caption:
+    table_text: TABLE 3 R 1 RR Performance for Varying the Training Size Per Subject,
+      When All Samples of the FRGC Dataset Are Merged from the Three Seasons
+  Table 4 caption:
+    table_text: TABLE 4 Performance Comparison on the FRGC Dataset
+  Table 5 caption:
+    table_text: 'TABLE 5 Comparison of Some of the Previous Works on the 105 Subjects
+      in the Bosphorus Dataset: the Numbers in Parentheses Show the No. Gallery Samples
+      No. of Probe Samples'
+  Table 6 caption:
+    table_text: TABLE 6 R 1 RR for Different Expression Types from the Bosphorus Dataset
+      Used as Probes, with 105 Neutral Samples Used as the Gallery
+  Table 7 caption:
+    table_text: TABLE 7 R 1 RR for Different Expression Types from the BU-3DFE Dataset
+      Used as Probes, with 100 Neutral Samples Used as the Gallery
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2565473
+- Affiliation of the first author: school of automation, northwestern polytechnical
+    university, xi'an, china
+  Affiliation of the last author: school of automation, northwestern polytechnical
+    university, xi'an, china
+  Figure 1 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_1.jpg
+  Figure 1 caption: Illustration of the self-paced multiple-instance learning model.
+  Figure 10 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_10.jpg
+  Figure 10 caption: Some examples of the activity localization results based on the
+    proposed co-saliency detection framework.
+  Figure 2 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_2.jpg
+  Figure 2 caption: The framework of the proposed SP-MIL approach for co-saliency
+    detection.
+  Figure 3 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_3.jpg
+  Figure 3 caption: An example to visualize the selected training instances with their
+    important weights. (a) One image in the given image group. (b) The selected training
+    instances with their important weights obtained without using the spatial smoothness
+    term. (c) The selected training instances with their important weights obtained
+    using the spatial smoothness term.
+  Figure 4 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_4.jpg
+  Figure 4 caption: An example to show that our approach can gradually converge to
+    satisfactory results under conditions that the initial estimation is incomplete
+    (row 1), imprecise (row 2), and even totally wrong (row 3).
+  Figure 5 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_5.jpg
+  Figure 5 caption: Visual comparisons of the proposed SP-MIL approach and two state-of-the-art
+    methods. For the examples in each dataset, the first row is the input image groups,
+    the second row is the ground truth masks, and the 3-5 rows are the co-saliency
+    maps generated by the proposed approach, SACS, and ESMG, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_6.jpg
+  Figure 6 caption: Quantitative comparisons of the proposed approach and other state-of-the-art
+    methods.
+  Figure 7 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_7.jpg
+  Figure 7 caption: Analysis of the proposed SP-MIL model, where NW, ND, NS indicate
+    the SP-MIL model without considering the real-valued sample weights, the sample
+    diversity, and the sample smoothness, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_8.jpg
+  Figure 8 caption: The box plots display the experimental results of the random selection
+    baseline in the MSRC dataset. The yellow lines indicate the performance of the
+    proposed approach obtained based on the well-organized sample selection scheme.
+  Figure 9 Link: articels_figures_by_rev_year\2016\CoSaliency_Detection_via_a_SelfPaced_MultipleInstance_Learning_Framework\figure_9.jpg
+  Figure 9 caption: Component evaluation of the proposed framework. Notice that the
+    results of SP-MIL with conventionaldeep features are obtained without using the
+    spatial map recovery.
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Dingwen Zhang
+  Name of the last author: Junwei Han
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Co-Saliency Detection via a Self-Paced Multiple-Instance Learning Framework
+  Publication Date: 2016-05-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Running Time of Each Programming Component for One
+      Image
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Running Time per Image
+  Table 3 caption:
+    table_text: TABLE 3 Comparison between the Proposed Approach and Other State-of-the-Art
+      Methods in Terms of the Average Per-Frame Pixel Error Rate on Segtrack
+  Table 4 caption:
+    table_text: TABLE 4 Comparison between the Proposed Approach and Other State-of-the-Art
+      Methods in Terms of the Localization Precision on UCF-Sport
+  Table 5 caption:
+    table_text: TABLE 5 Comparison between the Proposed Approach and Other State-of-the-Art
+      Co-Localization Methods in Terms of the Average CorLoc
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2567393
+- Affiliation of the first author: department of electrical engineering, princeton
+    university, princeton, nj
+  Affiliation of the last author: department of electrical engineering, princeton
+    university, princeton, nj
+  Figure 1 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_1.jpg
+  Figure 1 caption: "The constraints and feasible set F of the dual problem for (a):\
+    \ general features, (b): unit norm features. (c): Examples of two spheres and\
+    \ a dome region bounding \u03B8 for unit norm features. In all cases only the\
+    \ lower half of F is shown."
+  Figure 10 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_10.jpg
+  Figure 10 caption: 'Data-Adaptive Sequential Screening applied to MNIST (top) and
+    YALEBXF (bottom) using the feature-sign and FISTA solvers. (Left): average rejection
+    percentage. (Middle): Speedup factor. (Right): The average value of N .'
+  Figure 2 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_2.jpg
+  Figure 2 caption: "(a) A general dome region D(q,r;n,c) shown for 0< \u03C8 d <1\
+    \ and the dome consisting of less than half the sphere. (b) The rejection area\
+    \ (shaded) of a lasso dome test."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_3.jpg
+  Figure 3 caption: "Two dome tests for unit norm features and target vector. Left:\
+    \ The dome (30) based on the feasible point y \u03BB max and the closed half space\
+    \ b T max \u03B8\u22641 . Right: The dome (33) based on a solved instance ( y\
+    \ 0 , \u03BB 0 , \u03B8 0 ) ."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_4.jpg
+  Figure 4 caption: An illustration of the dome (45) formed at step k .
+  Figure 5 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_5.jpg
+  Figure 5 caption: 'Algorithm for THT. The functions Vu and Vl are from Theorem 4.
+    Other Notation: For the lasso, f(z)=|z| and g(z)=mathrm sign(z) and for the nonnegative
+    lasso, f(z)=g(z)=z . For a logical condition c(cdot) , [[c(z)]] evaluates to sc
+    true if z satisfies condition c and sc false otherwise.'
+  Figure 6 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_6.jpg
+  Figure 6 caption: Algorithm for IRDT. Here Vu and Vl are from Theorem 3. For other
+    notation see the caption of Algorithm 1.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_7.jpg
+  Figure 7 caption: Algorithm for data-adaptive sequential screening.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_8.jpg
+  Figure 8 caption: 'Performance of ST, DT and D-THT. Top: rejection percentage; Bottom:
+    speedup using screening and the FeatureSign solver [46]. Solid curves lower bound
+    and dashed curves upper bound performance for spherical bounds centered at mathbf
+    ylambda .'
+  Figure 9 Link: articels_figures_by_rev_year\2016\Screening_Tests_for_Lasso_Problems\figure_9.jpg
+  Figure 9 caption: Performance comparison of ST, DT, D-THT (all with default boldsymbolthetaF
+    ), enhanced DPP (EDPP) [25] and the strong rule [19] using the FISTA solver on
+    the MNIST and YALEBXF datasets.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zhen James Xiang
+  Name of the last author: Peter J. Ramadge
+  Number of Figures: 12
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: Screening Tests for Lasso Problems
+  Publication Date: 2016-05-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of the Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2568185
+- Affiliation of the first author: computer science department at the university of
+    freiburg, freiburg im breisgau, germany
+  Affiliation of the last author: computer science department at the university of
+    freiburg, freiburg im breisgau, germany
+  Figure 1 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_1.jpg
+  Figure 1 caption: "Architecture of a 1-stream deep network (\u201C1s-S-deep\u201D\
+    ) that generates 128\xD7128 pixel images. Layer names are shown above: FC - fully\
+    \ connected, upconv - upsampling+convolution, conv - convolution."
+  Figure 10 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_10.jpg
+  Figure 10 caption: 'Elevation angle knowledge transfer. In each pair of rows top
+    row: trained only on chairs (no knowledge transfer), bottom row: trained both
+    on chairs and tables (with knowledge transfer). Green background denotes elevations
+    not presented during training.'
+  Figure 2 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_2.jpg
+  Figure 2 caption: Illustration of upsampling (left) and upsampling+convolution (right)
+    as used in the generative network.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_3.jpg
+  Figure 3 caption: 'Representative images used for training the networks. Top: chairs,
+    middle: tables, bottom: cars.'
+  Figure 4 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_4.jpg
+  Figure 4 caption: Qualitative results with different networks trained on chairs.
+    See the description of architectures in Section 4.2.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_5.jpg
+  Figure 5 caption: Qualitative results for different numbers of car models in the
+    training set, without and with (rightmost column) data augmentation.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_6.jpg
+  Figure 6 caption: 'Interpolation between two car models. Top: without data augmentation,
+    bottom: with data augmentation.'
+  Figure 7 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_7.jpg
+  Figure 7 caption: 'Generation of chair images while activating various transformations.
+    Each row shows one transformation: translation, rotation, zoom, stretch, saturation,
+    brightness, color. The middle column shows the reconstruction without any transformation.'
+  Figure 8 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_8.jpg
+  Figure 8 caption: Examples of view interpolation (azimuth angle). In each pair of
+    rows the top row is with knowledge transfer and the second row is without it.
+    In each row the leftmost and the rightmost images are the views presented to the
+    network during training while all intermediate ones are new to the network and,
+    hence, are the result of interpolation. The number of different views per chair
+    available during training is 15, 8, 4, 2, 1 (top-down). Image quality is worse
+    than in other figures because we used the 64 times 64 network.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Learning_to_Generate_Chairs_Tables_and_Cars_with_Convolutional_Networks\figure_9.jpg
+  Figure 9 caption: 'Reconstruction error for unseen views of chairs from the target
+    set depending on the number of viewpoints present during training. Blue: all viewpoints
+    available in the source dataset (knowledge transfer), green: the same number of
+    viewpoints are available in the source and target datasets (no knowledge transfer).'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Alexey Dosovitskiy
+  Name of the last author: Thomas Brox
+  Number of Figures: 25
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Learning to Generate Chairs, Tables and Cars with Convolutional Networks
+  Publication Date: 2016-05-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Per-Pixel Mean Squared Error of the Generated Chair Images
+      with Different Network Architectures and the Number of Parameters in the Expanding
+      Parts of These Networks
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Per-Pixel Mean Squared Error of Image Generation with Varying
+      Number of Car Models in the Training Set
+  Table 3 caption:
+    table_text: TABLE 3 Average Displacement (in Pixels) of Keypoints Predicted by
+      Different Methods on the Whole Test Set and on the 'Simple' and 'Difficult'
+      Subsets
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2567384
+- Affiliation of the first author: microsoft ait, haifa, israel
+  Affiliation of the last author: microsoft research, cambridge, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_1.jpg
+  Figure 1 caption: 'System overview: the inputs are n pulsed TOF response images,
+    obtained concurrently using different exposure profiles. In realtime (30 fps)
+    we separate depth, ambient illumination and effective albedo at every pixel.'
+  Figure 10 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_10.jpg
+  Figure 10 caption: Posterior inference results under different illuminations and
+    albedos. (a) First response image, exhibiting varying ambient light levels and
+    albedos, including strong shadows. (b) Posterior depth uncertainty (cm), higher
+    under either stronger ambient light or lower albedo. (c) Inferred albedo map,
+    in [0;1] . (d) Inferred ambient illumination map.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_2.jpg
+  Figure 2 caption: "A typical response curve. (a) The actual curve C \u20D7 (\u22C5\
+    ) . As distance grows the response decays, as per equation (5). (b) Decay-compensated\
+    \ response where we plot C \u20D7 (t)d(t)= t 2 C \u20D7 (t) for more details (from\
+    \ now on we use decay-compensated curves for visualization)."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_3.jpg
+  Figure 3 caption: "Two-path model priors for the additional latent variables t 2\
+    \ and \u03C1 2 . Left: The prior for the second bounce depth t 2 is uniform over\
+    \ the shaded polygon. Right: the prior for \u03C1 2 is defined over [0;2] in order\
+    \ to handle large diffuse reflectors."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_4.jpg
+  Figure 4 caption: 'Exposure profile optimization. Top: Simulated annealing over
+    100k iterations, finding response curves to minimize (19), the expected error
+    (MSE) in depth estimation. Bottom: snapshots of the response curves after 20k,
+    40k, and after all 100k iterations. The x-axis is depth (cm).'
+  Figure 5 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_5.jpg
+  Figure 5 caption: "A basis element j=(\u03B4,w) defining B j (\u22C5) ."
+  Figure 6 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_6.jpg
+  Figure 6 caption: "Left, (a): basis functions Q j d for a fixed delay \u03B4 and\
+    \ varying width w . Right, (b): all basis functions Q j d j\u2208J , defined by\
+    \ Eq. (17)."
+  Figure 7 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_7.jpg
+  Figure 7 caption: "Insights into multipath using physically accurate light transport\
+    \ simulation. (a) A scene created in Blender. (b) Ground truth depth. (c) Normalized\
+    \ measure of multipath intensity compared to direct contributions. (please see\
+    \ the main text). (d)-(f) Normalized light densities for three selected pixels;\
+    \ pixel A has no multipath component, pixel B has one multipath component from\
+    \ 30\u201350 cm further away, and pixel C, where a specular component gives rise\
+    \ to a narrow multipath response."
+  Figure 8 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_8.jpg
+  Figure 8 caption: Predicted uncertainty versus actual uncertainty; the model is
+    well-calibrated in that it accurately predicts depth uncertainty.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Bayesian_TimeofFlight_for_Realtime_Shape_Illumination_and_Albedo\figure_9.jpg
+  Figure 9 caption: 'Sample scenes. Top: exposure profile used. Middle: first response
+    image R1 . Bottom: inferred depth image using the SP-MLE model. The left and middle
+    column are scenes with a far-range design, the right column is a scene with a
+    near-range design. The designs were obtained using different priors p(t) in (19).'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Amit Adam
+  Name of the last author: Sebastian Nowozin
+  Number of Figures: 15
+  Number of Tables: 1
+  Number of authors: 5
+  Paper title: Bayesian Time-of-Flight for Realtime Shape, Illumination and Albedo
+  Publication Date: 2016-05-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Predictive Performance of the Bayesian Single-Path (SP) and
+      Two-Path (TP) Models on Realistic Data Obtained from Physically-Accurate Light
+      Transport Simulation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2567379
+- Affiliation of the first author: citius, university of santiago de compostela, spain
+  Affiliation of the last author: citius, university of santiago de compostela, spain
+  Figure 1 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_1.jpg
+  Figure 1 caption: Saliency maps generated by SALICON on some simple pop-out stimuli
+    (http:salicon.netdemo).
+  Figure 10 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_10.jpg
+  Figure 10 caption: Human ground-truth and saliency maps predicted by representative
+    models on the public datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_2.jpg
+  Figure 2 caption: A general diagram showing the data flow through the AWS-D model.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_3.jpg
+  Figure 3 caption: Sample frames for real videos (upper rows) and synthetic (lower
+    rows) for the CITIUS dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_4.jpg
+  Figure 4 caption: "Representation of the s - AU C t for the AWS-D model. The black\
+    \ bold line shows s-AUC values \u2208[0,1] for each frame. Blue dashed lines represent\
+    \ the temporal margins of significance (permutation test p\u22640.01 )."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_5.jpg
+  Figure 5 caption: Human ground-truth and saliency maps predicted by representative
+    models on the CITIUS-S.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_6.jpg
+  Figure 6 caption: Human ground-truth and saliency maps predicted by representative
+    models on the CITIUS-R.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_7.jpg
+  Figure 7 caption: Performance of static path, dynamic path and fusion scheme over
+    the CITIUS datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_8.jpg
+  Figure 8 caption: Small set of sample frames of the videos in public datasets.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Dynamic_Whitening_Saliency\figure_9.jpg
+  Figure 9 caption: Ranking visual saliency models over public datasets using s-AUC
+    scores.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "V\xEDctor Lebor\xE1n"
+  Name of the last author: "Xos\xE9 M. Pardo"
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Dynamic Whitening Saliency
+  Publication Date: 2016-05-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Datasets' Characteristics
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance with CITIUS-S Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Performance with CITIUS-R Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Ranking with CITIUS-RSC and CITIUS-RDC Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Performance with AE-UCFSA Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Performance with DIEM Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Performance with GC Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Performance with ASCMN Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Performance with CRCNS Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2567391
+- Affiliation of the first author: collaborative innovation center of high performance
+    computing, national university of defense technology, changsha, china
+  Affiliation of the last author: department of computing, the hong kong polytechnic
+    university, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2016\CrossDomain_Visual_Matching_via_Generalized_Similarity_Measure_and_Feature_Learn\figure_1.jpg
+  Figure 1 caption: Typical examples of matching cross-domain visual data. (a) Faces
+    from still images and vidoes. (b) Front- and side-view persons. (c) Older and
+    younger faces. (d) Photo and sketch faces.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\CrossDomain_Visual_Matching_via_Generalized_Similarity_Measure_and_Feature_Learn\figure_2.jpg
+  Figure 2 caption: Illustration of the generalized similarity model. Conventional
+    approaches project data by simply using the linear similarity transformations
+    (i.e., U and V ), as illustrated in (a), where Euclidean distance is applied as
+    the distance metric. As illustrated in (b), we improve existing models by i) expanding
+    the traditional linear similarity transformation into an affine transformation
+    and ii) fusing Mahalanobis distance and Cosine similarity. One can see that the
+    case in (a) is a simplified version of our model. Please refer to Appendix section
+    for the deduction details.
+  Figure 3 Link: articels_figures_by_rev_year\2016\CrossDomain_Visual_Matching_via_Generalized_Similarity_Measure_and_Feature_Learn\figure_3.jpg
+  Figure 3 caption: 'Deep architecture of our similarity model. This architecture
+    is comprised of three parts: domain-specific sub-network, shared sub-network and
+    similarity sub-network. The first two parts extract feature representations from
+    samples of different domains, which are built upon a number of convolutional layers,
+    max-pooling operations and fully-connected layers. The similarity sub-network
+    includes two structured fully-connected layers that incorporate the similarity
+    components in Eqn. (3).'
+  Figure 4 Link: articels_figures_by_rev_year\2016\CrossDomain_Visual_Matching_via_Generalized_Similarity_Measure_and_Feature_Learn\figure_4.jpg
+  Figure 4 caption: CMC curves on (a) CUHK03 [28] dataset and (b) CUHK01 [32] for
+    evaluating person re-identification. Our method has superior performances over
+    existing state-of-the-arts overall.
+  Figure 5 Link: articels_figures_by_rev_year\2016\CrossDomain_Visual_Matching_via_Generalized_Similarity_Measure_and_Feature_Learn\figure_5.jpg
+  Figure 5 caption: The retrieval performances on CACD dataset for age-invariant face
+    recognition. Ours-1 and Ours-2 are our method, while the latter uses more training
+    samples.
+  Figure 6 Link: articels_figures_by_rev_year\2016\CrossDomain_Visual_Matching_via_Generalized_Similarity_Measure_and_Feature_Learn\figure_6.jpg
+  Figure 6 caption: Results of the ablation studies demonstrating the effectiveness
+    of each main component of our framework. The CMC curve and recognition rate are
+    used for evaluation. The results of different similarity models are shown using
+    the handcrafted features (in (a) and (b)) and using the deep features (in (c)-(f)
+    ), respectively. (g) and (h) show the performances withwithout the deep feature
+    learning while keeping the same similarity model.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.55
+  Name of the first author: Liang Lin
+  Name of the last author: Lei Zhang
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Cross-Domain Visual Matching via Generalized Similarity Measure and
+    Feature Learning
+  Publication Date: 2016-05-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Experimental Results for Age-Invariant Face Recognition
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Recognition Rates on the CUFS Dataset for Sketch-Photo Face
+      Verification
+  Table 3 caption:
+    table_text: TABLE 3 Recognition Rates on the COX Face Dataset
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2567386
+- Affiliation of the first author: department of computer science, stony brook university,
+    stony brook, ny
+  Affiliation of the last author: department of computer science, stony brook university,
+    stony brook, ny
+  Figure 1 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_1.jpg
+  Figure 1 caption: Canonical fundamental group basis and a fundamental domain.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_10.jpg
+  Figure 10 caption: Surface conformal mapping and optimal transport map.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_2.jpg
+  Figure 2 caption: (a) Finite portion of the universal covering space of a genus
+    3 surface. (b) Pants decomposition of a genus 3 surface.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_3.jpg
+  Figure 3 caption: "M\xF6bius transformation of the unit disk."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_4.jpg
+  Figure 4 caption: Exponential map.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_5.jpg
+  Figure 5 caption: A pair of hyperbolic pants is decomposed to two hyperbolic hexagons.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_6.jpg
+  Figure 6 caption: "Algorithm Pipeline (suppose we have two brain surfaces M and\
+    \ N as input): (a). The input brain models M and N , with landmarks cut open as\
+    \ boundaries. (b). Hyperbolic embedding of M and N on the Poincar\xE9 disk. (c).\
+    \ Decompose M and N into multiple pants, and each pant further decomposed to two\
+    \ hyperbolic hexagons. (d). Hyperbolic hexagons on the Poincar\xE9 disk become\
+    \ convex hexagons under the Klein model, then a one-to-one map between the correspondent\
+    \ parts of M and N can be obtained via the constrained Euclidean harmonic map.\
+    \ Then we can apply our hyperbolic heat diffusion algorithm to obtain a global\
+    \ hyperbolic harmonic diffeomorphism. (e). Color coded registration result of\
+    \ M and N . The colored balls on the models show the detailed correspondence,\
+    \ as the balls with the same color correspond to each other."
+  Figure 7 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_7.jpg
+  Figure 7 caption: Hyperbolic triangle and the hyperbolic circle packing.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_8.jpg
+  Figure 8 caption: "(a), (b) The cortical surface is with four landmarks a, b, c\
+    \ and d . (c) The surface is conformally mapped onto a planar circle domain. a,b,c\
+    \ are inner circles, while d becomes the exterior circle. Each inner circle is\
+    \ connected to the exterior circle and the paths are tau ad, tau bd and tau cd\
+    \ , their inverses are tau da,tau db and tau dc , respectively. The loop gamma\
+    \ , homotopic to acdot b , divides the surface into two pairs of pants. gamma\
+    \ is separated by tau ad and tau bd into gamma 0 and gamma 1 . (d) The hyperbolic\
+    \ metric of the cortical surface is obtained and a finite portion of the universal\
+    \ covering space is isometrically embedded on the Poincar\xE9 disk. All boundaries\
+    \ become geodesics. One fundamental domain is a hyperbolic polygon with edges\
+    \ lbrace a, tau ad, d1, tau db, b, tau bd, d2, tau dc, c, tau cd, d0, tau darbrace\
+    \ . gamma 0 and gamma 1 divide the surface into two pairs of pants, one of which\
+    \ is a hyperbolic polygon with edges lbrace gamma 0, tau db, b, tau bd, gamma\
+    \ 1, tau da, a, tau ad rbrace ."
+  Figure 9 Link: articels_figures_by_rev_year\2016\Hyperbolic_Harmonic_Mapping_for_Surface_Registration\figure_9.jpg
+  Figure 9 caption: Pants decomposition.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.91
+  Name of the first author: Rui Shi
+  Name of the last author: Xianfeng Gu
+  Number of Figures: 23
+  Number of Tables: 0
+  Number of authors: 9
+  Paper title: Hyperbolic Harmonic Mapping for Surface Registration
+  Publication Date: 2016-05-12 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2567398

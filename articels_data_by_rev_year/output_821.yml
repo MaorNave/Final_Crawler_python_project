@@ -1,0 +1,866 @@
+- Affiliation of the first author: johann bernoulli institute, university of groningen,
+    groningen, the netherlands
+  Affiliation of the last author: johann bernoulli institute, university of groningen,
+    groningen, the netherlands
+  Figure 1 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_1.jpg
+  Figure 1 caption: '(a) Image containing stars and two large interacting galaxies;
+    (b) output of connected filtering: identified objects and nested structures are
+    coded in different colours.'
+  Figure 10 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_10.jpg
+  Figure 10 caption: Speed-up of each phase as function of the number of threads on
+    the (a) Float4 and (b) LOFAR images.
+  Figure 2 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_2.jpg
+  Figure 2 caption: (a) Represents a 16-bit integer 1D image. (b) is a quantized image
+    after mapping the original intensities onto 4 intensities. (c) illustrates the
+    max-tree structure of connected components of the quantized image shown in (b).
+  Figure 3 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_3.jpg
+  Figure 3 caption: (a) Shows the performance of the parallel algorithm based on priority
+    queues on images with randomly generated floating point values. The two-threaded
+    version performs better than the single-threaded only up to 16-20 bits per pixel.
+    With higher bit depths, the cost of merging cancels any benefit. (b) Speed-up
+    is close to its optimal value up to about 16 bits per pixels, then it drops dramatically.
+  Figure 4 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_4.jpg
+  Figure 4 caption: Given a 1-D image, an example of spatial partition of the pixels
+    is given in (a). In (b), the image is partitioned according to ranges of intensities.
+  Figure 5 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_5.jpg
+  Figure 5 caption: Pixels are sorted according to their intensity, from low to high.
+    A partition S i is made of the pixels with intensity values within h i and h i+1
+    .
+  Figure 6 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_6.jpg
+  Figure 6 caption: The same quantized image as in Fig. 2b is reported here. Level
+    roots of the pilot max-tree are indicated with open circles. When a pixel p is
+    retrieved from the sorted array, its neighbours q1 and q2 are processed, according
+    to the Berger algorithm. Since barf(q1) > barf(p) , function DescendRoots is called
+    on the pilot max-tree, starting from node nodequ[q1] . Node nodequ[a] is returned,
+    because its parent points to the partition where p belongs.
+  Figure 7 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_7.jpg
+  Figure 7 caption: (a) Original image; (b) a quantization of (a); (c) pixel p is
+    extracted from the sorted array and its neighbour q that belongs to a higher partition
+    is processed. Pixel a is the closest descendant of p , returned by DescendRoots.
+    If noderef[a] has no parent set yet, then the pixel p is assigned as parent, see
+    white dotted arrow. (d) Later, pixel p1 will be extracted, its neighbour q processed
+    and once again a is returned by DescendRoots. Its parent pointer was set in step
+    (c). Therefore, as in the Berger algorithm, pixel p1 is accessed and p1 is set
+    as parent of noderef[p] .
+  Figure 8 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_8.jpg
+  Figure 8 caption: '(a) ESO image-Release No.: eso1242. Credit: ESOVVV, SurveyD.
+    Minniti. Acknowledgement: Ignacio Toledo, Martin Kornmesser; (b) a sample section
+    of the cropped PRAGUE image; (c) average of the 1,080 frames of the LOFAR cube.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\A_Hybrid_SharedMemory_Parallel_MaxTree_Algorithm_for_Extreme_DynamicRange_Images\figure_9.jpg
+  Figure 9 caption: 'Performance measurements: Processed Mpx per second (a) and speed-up
+    (b) for Float1, Float4, Double1 and Double4. The pixels carry randomly generated
+    floating points with single (square marker) and double (circle marker) precision.'
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ugo Moschini
+  Name of the last author: Michael H. F. Wilkinson
+  Number of Figures: 13
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: A Hybrid Shared-Memory Parallel Max-Tree Algorithm for Extreme Dynamic-Range
+    Images
+  Publication Date: 2017-03-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 A Summary of the Images Used for Testing the Performance of
+      the Algorithm
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance in Mpxs and Completion Time of the Sequential
+      Berger Algorithm and Our Parallel Hybrid Algorithm
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2689765
+- Affiliation of the first author: institute for infocomm research, 1 fusionopolis
+    way, singapore
+  Affiliation of the last author: school of electrical and electronic engineering,
+    nanyang technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2017\Deep_Multimodal_Feature_Analysis_for_Action_Recognition_in_RGBD_Videos\figure_1.jpg
+  Figure 1 caption: Illustration of the proposed single layer shared-specific component
+    analysis. X r and X d are input RGB and depth based features. We factorize each
+    input feature into shared (Y) and specific (Z) components by forcing the Y vectors
+    to be close, and the input features to be reconstructible from derived components.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Deep_Multimodal_Feature_Analysis_for_Action_Recognition_in_RGBD_Videos\figure_2.jpg
+  Figure 2 caption: Cascading factorization layers to a deep shared-specific network.
+    To disentangle the highly nonlinear combination of shared-specific components,
+    factorization layers are stacked by feeding the Y components of each layer as
+    inputs of the next layer.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Deep_Multimodal_Feature_Analysis_for_Action_Recognition_in_RGBD_Videos\figure_3.jpg
+  Figure 3 caption: Schema of our convolutional and holistic networks of deep shared-specific
+    component analysis ( DSSCA ). We divide each video into n local cubes. Local features
+    X i r and X i d are extracted from the i th cube. Convolutional network (denoted
+    as DSSC A L ) is trained and then applied to decompose local features. The factorized
+    components are then combined with holistic features X H r and X H d . This combination
+    undergoes PCA and is fed into the holistic network (denoted as DSSC A H ) as its
+    multimodal input.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Deep_Multimodal_Feature_Analysis_for_Action_Recognition_in_RGBD_Videos\figure_4.jpg
+  Figure 4 caption: Confusion matrix for CCA-RICA method on atomic local level features
+    RGBD-HuDaAct dataset. Ground truth action labels are on rows and detections are
+    on columns of the grid.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Deep_Multimodal_Feature_Analysis_for_Action_Recognition_in_RGBD_Videos\figure_5.jpg
+  Figure 5 caption: Confusion matrix for SSCA method on atomic local level features
+    of RGBD-HuDaAct dataset. Ground truth action labels are on rows and detections
+    are on columns of the grid.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Amir Shahroudy
+  Name of the last author: Gang Wang
+  Number of Figures: 5
+  Number of Tables: 18
+  Number of authors: 4
+  Paper title: Deep Multimodal Feature Analysis for Action Recognition in RGB+D Videos
+  Publication Date: 2017-04-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the Results of Our Methods with the Baselines
+      in Online RGBD Action Dataset
+  Table 10 caption:
+    table_text: TABLE 10 Performance Comparison of Proposed Multimodal Correlation-Independence
+      Analysis with the State-of-the-Art Methods on 3D Action Pairs Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Performance Comparison for Holistic Network, Local Network,
+      and Stacked Local+Holistic ( Fig. 3) Networks on Online RGBD Action Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Comparison with a Correlation Network (without Modality-Specific
+      Components) on the Online RGBD Action Dataset, Local Network, Scenario 3
+  Table 4 caption:
+    table_text: TABLE 4 Performance Comparison of Proposed DSSCA with the State-of-the-Art
+      Results on Online RGBD Action Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of the Results of Our Methods with the Baselines
+      in MSR-DailyActivity3D Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Performance Comparison for Holistic Network, Local Network,
+      and Stacked Local+Holistic ( Fig. 3) Networks on MSR-DailyActivity3D Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Performance Comparison of the Proposed Multimodal DSSCA with
+      the State-of-the-Art Methods on MSR-DailyActivity Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of the Results of Our Methods with the Baselines
+      in 3D Action Pairs Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Performance Comparison for Holistic Network, Local Network,
+      and Stacked Local+Holistic ( Fig. 3) Networks on 3D Action Pairs Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2691321
+- Affiliation of the first author: school of computer science and software engineering,
+    university of western australia, crawley, wa, australia
+  Affiliation of the last author: school of electric engineering and computer science,
+    university of central florida, orlando, fl
+  Figure 1 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_1.jpg
+  Figure 1 caption: Existing cross-view action recognition techniques [15], [16],
+    [17], [18], [19], [20], [21], [22], [23] connect two different views with a set
+    of linear transformations that are unable to capture the non-linear manifolds
+    on which real actions lie. (a) Li and Zickler [23] construct cross-view action
+    descriptors by applying a set of linear transformations on view-dependent descriptors.
+    The transformations are obtained by uniformly sampling a few points along the
+    path connecting source and target views. (b) Wang et al. [21] learn a separate
+    linear transformation for each body part using samples from training views to
+    interpolate unseen views. (c) Our proposed R-NKTM learns a shared high-level space
+    among all possible views. The view-dependent action descriptors from both source
+    and target views are independently transferred to the shared space using a sequence
+    of non-linear transformations.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_10.jpg
+  Figure 10 caption: Per class recognition accuracy of the proposed R-NKTM and NKTM
+    [43] on the UWA3D Multiview ActivityII [40] dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_2.jpg
+  Figure 2 caption: Framework of the proposed R-NKTM learning algorithm. A realistic
+    3D human model (a) is fitted to a real mocap sequence (b) to generate 3D action
+    video (c) which is projected to plains viewed from n=108 angles. Projection from
+    only two viewpoints are shown in (d). This results in n sequences of 2D pointclouds
+    that are connected sequentially to construct synthetic trajectories (red curves
+    in (d)) which are used to learn a general codebook (e). A bag-of-features approach
+    is used to build the dense trajectory descriptors (f) from which a single R-NKTM
+    (g) is learned. Note that instead of action labels, we use dummy labels where
+    each 3D video gets a different label. The R-NKTM is learned once only and generalizes
+    to real videos for cross-view feature extraction.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_3.jpg
+  Figure 3 caption: Virtual cameras are placed on the hemisphere looking towards the
+    center of the sphere to generate 108 virtual views.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_4.jpg
+  Figure 4 caption: R-NKTM learns to find a shared high-level view and the corresponding
+    set of non-linear transformations connecting the input views to it.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_5.jpg
+  Figure 5 caption: Visualization of R-NKTM layer outputs for four unseen mocap sequences.
+    Each sequence gives 108 descriptors corresponding to cameras placed at azimuth
+    angles 0 to 340 degree (20 degree step) and zenith angles 0, 10, 30, 50, 70, 90
+    degree. The outputs of the R-NKTM layers (source view x i j and three virtual
+    views h (1) , h (2) , h (3) ) are visualized as images. The 108 rows in an image
+    correspond to 108 viewpoints of the same action. The norm of correlation coefficient
+    ( C n ) is shown above each image where larger values indicate higher similarity
+    between the rows. Note that as the action descriptors progress through the R-NKTM
+    layers, the similarity of the same action observed from 108 viewpoints increases.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_6.jpg
+  Figure 6 caption: Extracting cross-view action descriptors from real videos. The
+    view-dependent dense trajectory descriptor x is extracted from a training or test
+    video and forward propagated through the learned R-NKTM for transfer to the shared
+    high-level virtual view by performing a set of non-linear transformations. The
+    outputs of these transformation functions x, h (1) , h (2) , h (3) are concatenated
+    to form a cross-view action descriptor.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_7.jpg
+  Figure 7 caption: Sample frames from the IXMAS [36] dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_8.jpg
+  Figure 8 caption: Per class recognition accuracy of our proposed R-NKTM and NKTM
+    [43] on the IXMAS [36] dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Learning_a_Deep_Model_for_Human_Action_Recognition_from_Novel_Viewpoints\figure_9.jpg
+  Figure 9 caption: Sample frames from the UWA3DII [40].
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hossein Rahmani
+  Name of the last author: Mubarak Shah
+  Number of Figures: 14
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Learning a Deep Model for Human Action Recognition from Novel Viewpoints
+  Publication Date: 2017-04-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Accuracy (%) Comparison with State-of-the-Art Methods Under
+      20 Combinations of Source (Training) and Target (Test) Views on the IXMAS [36]
+      Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Accuracies (%) on the IXMAS [36] Dataset, e.g., C
+      0 Is the Average Accuracy When Camera 0 Is Used for Training or Testing
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Action Recognition Accuracy (%) on the UWA3D
+      Multiview ActivityII Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Accuracy (%) on the N-UCLA Multiview Dataset [21]
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Action Recognition Accuracy on the UCF Sports
+      and Hollywood2 Datasets
+  Table 6 caption:
+    table_text: TABLE 6 Effects of Combining HOG, HOF, MBH with Our Proposed Cross-View
+      Descriptor on the IXMAS [36] Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Computation Time (in Minutes) Including Feature Extraction
+      on the N-UCLA Dataset [21]
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2691768
+- Affiliation of the first author: department of bioinformatics and functional genomics,
+    university of heidelberg, heidelberg, germany
+  Affiliation of the last author: department of bioinformatics and functional genomics,
+    university of heidelberg, heidelberg, germany
+  Figure 1 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_1.jpg
+  Figure 1 caption: Examples of our method for different application areas. (a) Segmentation
+    of streets in 2D satellite images. (b) Vessel segmentation in 2D retinal images.
+    (c) Segmentation of vessels in 3D 7T MRA images of the human brain. (d) Detection
+    of bridges in 2D satellite images.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_10.jpg
+  Figure 10 caption: 'Segmentation of real images. Column 1: Retinal image. Column
+    2: Satellite image of a river. Column 3: Satellite image of a street. Results
+    of FM-V (yellow), LY (green), and our progressive method (red).'
+  Figure 2 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_2.jpg
+  Figure 2 caption: 'Comparison of minimal path methods: (a) A line with gaps due
+    to artifacts. (b) Using a static speed, the result (red curve) between x s and
+    x e is usually a short cut. (c) Using our progressive minimal path method the
+    line is correctly segmented. (d) Sketch of our approach: The dynamic speed is
+    initialized with a static speed and updated during the propagation of the wavefront,
+    based on the functions ComputeFeature and ComputeDynamicSpeed (see Section 3.1
+    and Algorithm 1 below). Green, blue, and orange regions represent image points
+    where the arrival time of the wavefront is finally determined ( R A , Alive),
+    not computed yet ( R F , Far), or temporarily determined ( R T , trial), respectively.'
+  Figure 3 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_3.jpg
+  Figure 3 caption: "One step of the wave propagation with dynamic speed. (a) Select\
+    \ the point x min on W with minimum arrival time. (b) For \u03B3(s)= x 2 , extract\
+    \ \u03B3 local ( x 2 ) with length \u0393 , test if \u03B3 local satisfies the\
+    \ constraint. (c) \u03B3 local does not satisfy the constraint: F comp ( x 2 )\
+    \ is reduced and therefore U x s ( x 2 ) increases. Select another point on W\
+    \ . (d) \u03B3 local satisfies the constraint: Compute arrival time for neighbors\
+    \ (same as in previous minimal path approaches). (e) W advances. Green, blue,\
+    \ and orange regions represent R A (Alive), R F (Far), and R T (Trial), respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_4.jpg
+  Figure 4 caption: 'Left: Retinal vessels crossing each other (image from DRIVE dataset
+    [39]). Right: Segmentation results. Yellow and red colors indicate the results
+    of an approach with length regularization [1] and our curvature-based approach,
+    respectively.'
+  Figure 5 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_5.jpg
+  Figure 5 caption: 'Segmentation of a curved line structure with many gaps due to
+    artifacts (left column), and a spiral with a high noise level (right column).
+    x s and x e are indicated as yellow circles, and the centerlines are shown as
+    red lines. Row 1: Original image. Row 2: Vesselness map, high values are represented
+    by bright intensities. For the spiral, two regions marked by boxes have been enlarged.
+    Green: High vesselness in the area between two spiral lines, yellow: Low vesselness
+    along the spiral line and high vesselness nearby). Row 3: Result of FM-V. Row
+    4: Result of LY. Row 5: Result of our progressive method.'
+  Figure 6 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_6.jpg
+  Figure 6 caption: "Examples of synthetic images with four different types of 2D\
+    \ line structures. Each image contains a line structure with radius r and is distorted\
+    \ by Gaussian noise with standard deviation \u03C3 n ."
+  Figure 7 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_7.jpg
+  Figure 7 caption: "Dependency of Q inside on the length \u0393 of the local paths\
+    \ \u03B3 local . First row: Type A, r=1.5 . Second row: Type B, r=1.5 ."
+  Figure 8 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_8.jpg
+  Figure 8 caption: "Dependency of Q inside on the threshold T v of the mean vesselness\
+    \ of the local paths \u03B3 local . First row: Type A, r=1.5 . Second row: Type\
+    \ B, r=1.5 ."
+  Figure 9 Link: articels_figures_by_rev_year\2017\Progressive_Minimal_Path_Method_for_Segmentation_of_D_and_D_Line_Structures\figure_9.jpg
+  Figure 9 caption: 'Dependency of Q inside on the noise level for four different
+    types of 2D line structures. First row: Type A, r=1.5 . Second row: Type B, r=1.5
+    . Third row: Type C, r=2.5 . Fourth row: Type D, r=3.5 .'
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Wei Liao
+  Name of the last author: Karl Rohr
+  Number of Figures: 18
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Progressive Minimal Path Method for Segmentation of 2D and 3D Line
+    Structures
+  Publication Date: 2017-04-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Quantitative Results for Retinal Images
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Mean Errors and Standard Deviations (Voxels) of the Centerline
+      Positions for the Gaps in 3D Synthetic Images of Parallel Vessels
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Results for 508 Gaps in 3D 7T MRA Images (Errors
+      in mm)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2691709
+- Affiliation of the first author: department of computer science and engineering,
+    incheon national university, south korea
+  Affiliation of the last author: school of information and communications, gwangju
+    institute of science and technology, buk-gu, gwangju, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_1.jpg
+  Figure 1 caption: Contaminated training samples in tracking sequences.
+  Figure 10 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_10.jpg
+  Figure 10 caption: Transfer learning evaluation on the ETHZ dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_2.jpg
+  Figure 2 caption: Tracklet confidence variation of an object (in the PETS-L1 sequence)
+    under occlusion. Under occlusion, the confidence decreases, but it then gradually
+    increases by association with detections with time.
+  Figure 3 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_3.jpg
+  Figure 3 caption: Proposed framework for robust online multi-object tracking. Colors
+    of tracklets indicate their confidence values.
+  Figure 4 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_4.jpg
+  Figure 4 caption: 'Proposed discriminative deep appearance model: Our model is learned
+    by minimizing the distances between high-level features of positive pairs while
+    maximizing the distances between the high-level features of negative pairs. Here,
+    W l , b l , w l ij and b l j are learned and shared parameters. For the image
+    pairs, the feature maps extracted from each layer with the parameters are depicted
+    in each row.'
+  Figure 5 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_5.jpg
+  Figure 5 caption: A loss function using the pairwise constraint. The loss decreases
+    when the feature distance of a positive pair is decreased but the distance of
+    a negative pair is increased.
+  Figure 6 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_6.jpg
+  Figure 6 caption: (a) Training samples. (b) Collected samples during tracking.
+  Figure 7 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_7.jpg
+  Figure 7 caption: Training samples from the trackets with high confidence (red)
+    and low confidence (blue).
+  Figure 8 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_8.jpg
+  Figure 8 caption: 'The ID correction by the LC-association: ID 48 is changed to
+    ID 43 by occlusion. However, it is successfully recovered to its original ID after
+    the LC-association.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\ConfidenceBased_Data_Association_and_Discriminative_Deep_Appearance_Learning_for\figure_9.jpg
+  Figure 9 caption: 'Performance comparison for various architectures: (a) Different
+    network structures. (b) Color and gray image patches as input maps. (c) Different
+    ratios of positive and negative sample pairs (RPN) for network training. (d) Different
+    normalization methods, local contrast [37] and ZCA whitening [38]. (e) Different
+    numbers of kernels of CP(1-3) layers. (f) Different pooling schemes for CP1-CP3
+    layers.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.56
+  Name of the first author: Seung-Hwan Bae
+  Name of the last author: Kuk-Jin Yoon
+  Number of Figures: 15
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Confidence-Based Data Association and Discriminative Deep Appearance
+    Learning for Robust Online Multi-Object Tracking
+  Publication Date: 2017-04-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance Comparison with Different Association and Appearance
+      Learning Algorithms
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance Comparison with Other MOT Systems
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison with Other MOT Systems on the 2015
+      & 2016 MOT Challenge Benchmark
+  Table 4 caption:
+    table_text: TABLE 4 Performance Comparison with Different Deep Learning Algorithms
+      Using Same Detections and Ground Truth on PETS, ETHMS and Town Centre Datasets
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2691769
+- Affiliation of the first author: stony brook university, stony brook, ny
+  Affiliation of the last author: stony brook university, stony brook, ny
+  Figure 1 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_1.jpg
+  Figure 1 caption: 'Shadow detection as a region labeling problem. From left to right:
+    Input image, initial superpixels, segmented regions, and shadow predictions.'
+  Figure 10 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_10.jpg
+  Figure 10 caption: 'Examples of significant mismatch between predicted and annotated
+    shadow regions. The last column compares predicted shadow and provided annotation;
+    false positives in orange, false negatives in green. Rows (1,2): Imperfect shadow
+    masks cause mismatches. Row (3): limitation of appearance-based approaches that
+    ignore scene context.'
+  Figure 2 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_2.jpg
+  Figure 2 caption: 'Shadow region relighting using lit neighbor. (a) Shadow region
+    and lit neighbor: shadow region depicted with black boundaries, lit neighboring
+    region depicted with yellow boundaries, common boundary drawn in blue. (b) RGB
+    reconstruction showing the result of histogram matching on L channel for the shadow
+    region. (c) Shadow region relit, results after the adjustments in a and b channels.'
+  Figure 3 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_3.jpg
+  Figure 3 caption: Shadow removal pipeline. (a) Input image with overlaid shadow
+    mask, boundary of segmented regions depicted in red. (b) Removal results after
+    first iteration of our method. (c) Removal results after the second iteration.
+    (d) Final removal results after boundary areas are relit.
+  Figure 4 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_4.jpg
+  Figure 4 caption: 'Generation of ''ground truth'' shadow masks on UIUC dataset.
+    Two images of the same scene are taken, with and without blocking a light source.
+    The shadow mask is obtained by considering the difference between two images.
+    This process typically yields a good shadow mask, but not always. Top: Good shadow
+    mask. Bottom: Bad shadow mask; the top of the tea box is not in shadow, and should
+    have not been a part of the shadow mask.'
+  Figure 5 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_5.jpg
+  Figure 5 caption: 'Benefit of pairwise potentials. This figure shows the balanced
+    error rates for three methods: LooKOP, LooKOP with Affinity pairwise potential,
+    and LooKOP with both Affinity and Disparity pairwise potentials.'
+  Figure 6 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_6.jpg
+  Figure 6 caption: Per image error distribution within test sets. Proportion of images
+    (Y axis) within a given error rate upper bound threshold (X axis).
+  Figure 7 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_7.jpg
+  Figure 7 caption: Leave-one-out balanced error rate as a function of iterations
+    of the kernel optimization. The optimization algorithm converges after around
+    300 iterations.
+  Figure 8 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_8.jpg
+  Figure 8 caption: Balanced error rate on test set. This shows mean BER on the test
+    set over 5 trials. Error bars illustrate variance among trial runs.
+  Figure 9 Link: articels_figures_by_rev_year\2017\LeaveOneOut_Kernel_Optimization_for_Shadow_Detection_and_Removal\figure_9.jpg
+  Figure 9 caption: Shadow detection examples. The last column compares the predicted
+    shadow and the provided annotation; false positive is shown in orange, false negative
+    in green. This figure is best seen in color. Most of the errors occur at the shadow
+    boundaries.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Tom\xE1s F. Yago Vicente"
+  Name of the last author: Dimitris Samaras
+  Number of Figures: 12
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Leave-One-Out Kernel Optimization for Shadow Detection and Removal
+  Publication Date: 2017-04-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Shadow Detection Performance of Several Region Classifiers
+      on the UIUC Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance of Shadow Detection Pipelines on the UIUC Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Performance on the UCF Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Role of Kernel Choices in Our Framework
+  Table 5 caption:
+    table_text: TABLE 5 Cross-Dataset Evaluation
+  Table 6 caption:
+    table_text: TABLE 6 Evaluation of Shadow Detection-Removal Pipelines on the UIUC
+      Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Evaluation of Shadow Removal Using Ground Truth Shadow Masks
+      on the UIUC Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Shadow Removal Performance on Qualitative Examples
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2691703
+- Affiliation of the first author: department of computer science and technology,
+    university of science and technology beijing, beijing, china
+  Affiliation of the last author: research center of digital technologies, chinese
+    academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2017\A_Unified_Framework_for_Tracking_Based_Text_Detection_and_Recognition_from_Web_V\figure_1.jpg
+  Figure 1 caption: 'Text in video: (a) Layered caption text, (b) embedded caption
+    text, and (c) scene text, where embedded caption text is common and challenging
+    for detection, tracking and recognition from web videos.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\A_Unified_Framework_for_Tracking_Based_Text_Detection_and_Recognition_from_Web_V\figure_2.jpg
+  Figure 2 caption: 'Challenges for detecting and recognizing embedded captions from
+    web videos: (a) Complex backgrounds with a mess of stuffs, (b) varied colors from
+    image compression (zooming in for a part of text on the top), (c) similar colors
+    between the foreground text and the background, and (d) low contrast and blur.'
+  Figure 3 Link: articels_figures_by_rev_year\2017\A_Unified_Framework_for_Tracking_Based_Text_Detection_and_Recognition_from_Web_V\figure_3.jpg
+  Figure 3 caption: A whole diagram for text detection, tracking and recognition in
+    video [4] , where tracking based text detection and tracking based text recognition
+    are focused and formulated into a unified Bayesian framework in this paper.
+  Figure 4 Link: articels_figures_by_rev_year\2017\A_Unified_Framework_for_Tracking_Based_Text_Detection_and_Recognition_from_Web_V\figure_4.jpg
+  Figure 4 caption: Overview of text tracking with a tracking-by-detection technique,
+    where the text detections are marked with the rectangles, and the false matching
+    (linking) results are marked with a dashed line.
+  Figure 5 Link: articels_figures_by_rev_year\2017\A_Unified_Framework_for_Tracking_Based_Text_Detection_and_Recognition_from_Web_V\figure_5.jpg
+  Figure 5 caption: 'Flowchart of tracking based text recognition for embedded captions,
+    which include four major steps: Over-segmentation, merging, boundary refinement,
+    and voting (multi-frame integration).'
+  Figure 6 Link: articels_figures_by_rev_year\2017\A_Unified_Framework_for_Tracking_Based_Text_Detection_and_Recognition_from_Web_V\figure_6.jpg
+  Figure 6 caption: Screen shot samples of videos in USTB-VidTEXT.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.74
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Shu Tian
+  Name of the last author: Hong-Wei Hao
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: A Unified Framework for Tracking Based Text Detection and Recognition
+    from Web Videos
+  Publication Date: 2017-04-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The USTB-VidTEXT Dataset with Five Typical Video Sequences
+      Directly Crawled from the Web
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Experimental Results for Tracking Based Text Detection on\
+      \ USTB-VidTEXT, Where \u201COURS\u201D Is Our Proposed Tracking Based Text Detection\
+      \ Method within the Unified Bayesian-Based Framework"
+  Table 3 caption:
+    table_text: TABLE 3 Experimental Results for Tracking Based Text Recognition on
+      USTB-VidTEXT, Where IND, AVE and T 2 DAR Represent Text Recognition Methods
+      with Each Individual Frame, the Average Image (Frame Averaging) and Our Proposed
+      Video Text Recognition System with the Unified Framework, Respectively
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2692763
+- Affiliation of the first author: "image analysis and learning group, heidelberg\
+    \ collaboratory for image processing, universit\xE4t heidelberg, heidelberg, germany"
+  Affiliation of the last author: "institute of computational biology, m\xFCnchen"
+  Figure 1 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_1.jpg
+  Figure 1 caption: Visualization of the toy examples 1 to 5 for comparison of the
+    bisecting median and the arc distance median. The variants of example 3 and 4
+    correspond to exact data (a) and to slightly perturbed data (b).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_2.jpg
+  Figure 2 caption: "Illustration of different notions of a median on the unit circle.\
+    \ If all points lie on one hemisphere, the bisecting median coincides with the\
+    \ arc distance median (left). In general, there are many possibilities for the\
+    \ bisecting median, and they are not necessarily data points (center, right).\
+    \ In all configurations, the medians induced by the ambient space R 2 \u2013separable\
+    \ and normalized L 1 median\u2013do not coincide with a data point (or its antipodal\
+    \ point). The arc distance median is unique (almost surely) and it is contained\
+    \ in the data."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_3.jpg
+  Figure 3 caption: "Graphical illustration of the two-stage recurrence scheme at\
+    \ pixel (m,n) for a 5\xD75 filter mask."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_4.jpg
+  Figure 4 caption: "Qualitative comparison of circle-median filters for a synthetic\
+    \ image using a filter of size 7\xD77. We observe that the separable median filter\
+    \ creates erroneous values at some edges. The normalized L 1 median filter and\
+    \ the arc distance median filter produce comparable results with respect to smoothness;\
+    \ the arc distance median filter has slightly sharper edge localization. (The\
+    \ circle-valued data are visualized as hue component in the HSV color space.)"
+  Figure 5 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_5.jpg
+  Figure 5 caption: "Runtime of our methods for a randomly generated image of size\
+    \ 500\xD7500 and filter masks of size R\xD7R with R=3,5,\u2026,31. Our method\
+    \ for non-quantized data (Algorithm 1) is slightly faster than the separable median\
+    \ filter, which mainly consists of applying a real-valued median filter twice.\
+    \ Furthermore it is around 60 times faster than the normalized L 1 median filter,\
+    \ which is computed using the Weiszfeld algorithm. The runtime of our algorithm\
+    \ for quantized data (Algorithm 2) is constant with respect to the filter size."
+  Figure 6 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_6.jpg
+  Figure 6 caption: "Total runtime of the arc distance median filter (Algorithm 1\
+    \ ) for patchwise processing of a 1000\xD71000 image. If the filter masks are\
+    \ small relative to the patch size, there is almost no loss of efficiency."
+  Figure 7 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_7.jpg
+  Figure 7 caption: Median filtering of an InSAR image from [45] using a 3 times 3
+    filter mask. The results of the separable median is less smooth than the others
+    which can be observed in particular in the right zoomed image. The results of
+    the normalized L1 median and the arc distance median are comparable, but the latter
+    requires significantly less computation time.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_8.jpg
+  Figure 8 caption: 'Top: Wind directions at station SAUF1 (St. Augustine, Florida)
+    recorded every 10 minutes in the year 2014. Bottom: Arc distance median filter
+    with filter size 145. The data is given quantized to K=360 angles. Therefore,
+    we use Algorithm 2. The computation time amounts to only 0.09 seconds for the
+    signal of length N=52549.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\Fast_Median_Filtering_for_Phase_or_Orientation_Data\figure_9.jpg
+  Figure 9 caption: "Medians of the data y \u2032 (a)=( y 2 ,\u2026, y 11 ,a) in dependance\
+    \ of the element a using data y as in Fig. 2, right. The real-valued median, i.e.,\
+    \ when considering the angles of y \u2032 as real-valued data, only has three\
+    \ possible candidates. In contrast, the arc distance median has as many candidates\
+    \ as data points (corresponding to the steps and a itself as the diagonal)."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Martin Storath
+  Name of the last author: Andreas Weinmann
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: Fast Median Filtering for Phase or Orientation Data
+  Publication Date: 2017-04-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Medians for Circle-Valued Data
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Comparison of Circle-Median Filters on a Synthetic
+      Data Set
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Median-Type Smoothing for Optical Flow Images
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2692779
+- Affiliation of the first author: oculus research, redmond, wa
+  Affiliation of the last author: "department of computer science, technical university\
+    \ munich, m\xFCnchen, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_1.jpg
+  Figure 1 caption: Direct sparse odometry (DSO). 3D reconstruction and tracked trajectory
+    for a 1:40 min video cycling around a building (monocular visual odometry only).
+    The bottom-left inset shows a close-up of the start and end point, visualizing
+    the drift accumulated over the course of the trajectory. The bottom row shows
+    some video frames.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_10.jpg
+  Figure 10 caption: Results on EuRoC MAV (top) and ICLNUIM (bottom) datasets. Translational
+    RMSE after Sim(3) alignment. RT (dashed) denotes hard-enforced real-time execution.
+    Further, we evaluate DSO with low settings at 5 times real-time speed, and ORB-SLAM
+    when restricting local loop-closures to points that have been observed at least
+    once within the last ttextmax =10 s.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_2.jpg
+  Figure 2 caption: "Sparse versus dense Hessian structure. Left: Hessian structure\
+    \ of sparse bundle adjustment: since the geometry-geometry block is diagonal,\
+    \ it can be solved efficiently using the Schur complement. Right: A geometry prior\
+    \ adds (partially unstructured) geometry-geometry correlations\u2014the resulting\
+    \ system is hence not only much larger, but also becomes much harder to solve.\
+    \ For simplicity, we do not show the global camera intrinsic parameters."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_3.jpg
+  Figure 3 caption: "Photometric calibration. Top: Inverse response function G \u2212\
+    1 and lens attenuation V of the camera used for Fig. 1. Bottom: Exposure t in\
+    \ milliseconds for a sequence containing an indoor and an outdoor part. Note how\
+    \ it varies by a factor of more than 500, from 0.018 to 10.5 ms. Instead of treating\
+    \ these quantities as unknown noise sources, we explicitly account for them in\
+    \ the photometric error model."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_4.jpg
+  Figure 4 caption: Residual pattern. Pattern N p used for energy computation. The
+    bottom-right pixel is omitted to enable SSE-optimized processing. Note that since
+    we have 1 unknown per point (its inverse depth), and do not use a regularizer,
+    we require | N p |>1 in order for all model parameters to be well-constrained
+    when optimizing over only two frames. Fig. 19 shows an evaluation of how this
+    pattern affects tracking accuracy.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_5.jpg
+  Figure 5 caption: Factor graph for the direct sparse model. Example with four keyframes
+    and four points; one in KF1, two in KF2, and one in KF4. Each energy term (defined
+    in Eq. (4)) depends on the point's host frame (blue), the frame the point is observed
+    in (red), and the point's inverse depth (black). Further, all terms depend on
+    the global camera intrinsics vector c , which is not shown.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_6.jpg
+  Figure 6 caption: Windowed optimization. The red curve denotes the parameter space,
+    composed of non-euclidean camera poses in textSE(3) , and the remaining euclidean
+    parameters. The blue line corresponds to the tangent-space around boldsymbolzeta0
+    , in which we (1) accumulate the quadratic marginalization-prior on boldsymbolx
+    , and (2) compute Gauss-Newton steps boldsymboldelta . For each parameter, the
+    tangent space is fixed as soon as that parameter becomes part of the marginalization
+    term. Note that while we treat all parameters equally in our notation, for euclidean
+    parameters tangent-space and parameter-space coincide.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_7.jpg
+  Figure 7 caption: Example depth maps used for initial frame tracking. The top row
+    shows the original images, the bottom row the color-coded depth maps. Since we
+    aim at a fixed number of points in the active optimization, they become more sparse
+    in densely textured scenes (left), while becoming similar in density to those
+    of LSD-SLAM in scenes where only few informative image regions are available to
+    sample from (right).
+  Figure 8 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_8.jpg
+  Figure 8 caption: "Keyframe management. Bottom: The six old keyframes in the optimization\
+    \ window, overlaid with the points hosted in them (already marginalized points\
+    \ are shown in black). The top image shows the full point cloud, as well as the\
+    \ positions of all keyframes (black camera frustums)\u2014active points and keyframes\
+    \ are shown in red and blue respectively. The inlay shows the newly added keyframe,\
+    \ overlaid with all forward-warped active points, which will be used for initial\
+    \ alignment of subsequent frames."
+  Figure 9 Link: articels_figures_by_rev_year\2017\Direct_Sparse_Odometry\figure_9.jpg
+  Figure 9 caption: Candidate selection. The top row shows the original images, the
+    bottom row shows the points chosen as candidates to be added to the map (2,000
+    in each frame). Points selected on the first pass are shown in green, those selected
+    on the second and third pass in blue and red respectively. Green candidates are
+    evenly spread across gradient-rich areas, while points added on the second and
+    third pass also cover regions with very weak intensity variations, but are much
+    sparser.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jakob Engel
+  Name of the last author: Daniel Cremers
+  Number of Figures: 23
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Direct Sparse Odometry
+  Publication Date: 2017-04-12 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2658577
+- Affiliation of the first author: indian institute of science, bangalore, karnataka,
+    india
+  Affiliation of the last author: indian institute of science, bangalore, karnataka,
+    india
+  Figure 1 Link: articels_figures_by_rev_year\2017\Robust_Relative_Rotation_Averaging\figure_1.jpg
+  Figure 1 caption: A view-graph representation of the available relative rotations.
+    The averaging problem considered in this paper is one of recovering the rotations
+    at the vertices (cameras) given the relative rotations on the edges.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Robust_Relative_Rotation_Averaging\figure_2.jpg
+  Figure 2 caption: Log-log plot of distribution of errors in relative rotations for
+    various large-scale datasets. The almost linear behaviour of all datasets implies
+    that it is not possible to choose a threshold for removing outliers. See text
+    for details.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Robust_Relative_Rotation_Averaging\figure_3.jpg
+  Figure 3 caption: Synthetic graphs to demonstrate problems of slow convergence and
+    failure of the Weiszfeld method of [13]. Please see text for details.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Robust_Relative_Rotation_Averaging\figure_4.jpg
+  Figure 4 caption: Testing the statistical efficiency of different loss functions
+    on synthetic datasets. See text for details.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Robust_Relative_Rotation_Averaging\figure_5.jpg
+  Figure 5 caption: Comparison of our methods with DISCO [11] and Weiszfeld method
+    [13] on the 'San Francisco' (SNF) data set. (a) shows the histograms of errors
+    of individual camera rotation estimates for different methods; (b) represents
+    the fraction of errors below a given error threshold; (c) plots the median error
+    versus computational time for the Weiszfeld method and our method. Note that the
+    scale for time (x-axis) is logarithmic.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Avishek Chatterjee
+  Name of the last author: Venu Madhav Govindu
+  Number of Figures: 5
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: Robust Relative Rotation Averaging
+  Publication Date: 2017-04-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Different Robust Loss Functions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Datasets and Their Accuracies
+  Table 3 caption:
+    table_text: TABLE 3 Errors (Degree) of Different Robust Cost Functions
+  Table 4 caption:
+    table_text: TABLE 4 Computational Time (Second) of Different Robust Cost Functions
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Our Methods with the State-of-the-Art DISCO
+      [11] and Weiszfeld [13] Methods
+  Table 6 caption:
+    table_text: TABLE 6 Median Error Metric for Different Alignment Methods
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2693984

@@ -1,0 +1,782 @@
+- Affiliation of the first author: facebook ai research, menlo park, ca
+  Affiliation of the last author: university of california, berkeley, ca
+  Figure 1 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_1.jpg
+  Figure 1 caption: The hypercolumn representation. The bottom image is the input,
+    and above it are the feature maps of different layers in the CNN. The hypercolumn
+    at a pixel is the vector of activations of all units that lie above that pixel.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_10.jpg
+  Figure 10 caption: Examples where the bounding box, and as a consequence the segmentation,
+    underestimates the extent of the object.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_2.jpg
+  Figure 2 caption: Representing our hypercolumn classifiers as a neural network.
+    Layers of the original classification CNN are shown in red, and layers that we
+    add are in blue.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_3.jpg
+  Figure 3 caption: Fast hypercolumn prediction using the SPP idea. Convolutional
+    layers of the CNN (shown in orange) are run just once on the entire image. Then
+    for each box, the SPP layer uses a spatial pyramid grid to compute a fixed length
+    vector that is then passed to the fully connected layers (in red). Similarly for
+    the hypercolumn based figure-ground prediction, the image-level convolutional
+    feature maps are convolved with filters once, and for each box the filter responses
+    are cropped, upsampled and added before classifier interpolation. The fully connected
+    layer features are still separately computed per box.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_4.jpg
+  Figure 4 caption: An alternative pipeline for SDS starting from bounding box detections
+    ( Section 5).
+  Figure 5 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_5.jpg
+  Figure 5 caption: Example segmentations from System 1. Each row shows in order the
+    original region candidate, the refinement produced by [5] using fc7 features,
+    and the refinement produced by using hypercolumns before and after projection
+    to superpixels.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_6.jpg
+  Figure 6 caption: Figure ground segmentations starting from bounding box detections.
+    In each set, the top row is the baseline using fc7, and the bottom row is ours.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_7.jpg
+  Figure 7 caption: Speed gains from using the fast hypercolumn prediction.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_8.jpg
+  Figure 8 caption: Keypoint prediction (left wrist). In each set, the top row is
+    the baseline using fc7, and the bottom row is ours (hypercolumns without finetuning).
+    In black is the bounding box and the predicted heatmap is in red. We normalize
+    each heatmap so that the maximum value is 1.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Object_Instance_Segmentation_and_FineGrained_Localization_Using_Hypercolumns\figure_9.jpg
+  Figure 9 caption: 'Part labeling. In each set, the top row is the baseline using
+    fc7 and the bottom row is ours (hypercolumns). Both rows use the same figure-ground
+    segmentation. Red: head, green: torso, blue: legs, magenta: arms.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Bharath Hariharan
+  Name of the last author: Jitendra Malik
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Object Instance Segmentation and Fine-Grained Localization Using Hypercolumns
+  Publication Date: 2016-06-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results on SDS on VOC2012 Val Using System 1
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results on SDS on VOC 2012 Val Using System 2
+  Table 3 caption:
+    table_text: TABLE 3 Speeding Up SDS
+  Table 4 caption:
+    table_text: TABLE 4 Results on Keypoint Prediction (APK on the Person Subset of
+      VOC2009 Val)
+  Table 5 caption:
+    table_text: TABLE 5 Results on Part Labeling
+  Table 6 caption:
+    table_text: TABLE 6 Impact on AP Due to Two Error Modes, Measured by the Gain
+      in Performance Offered by an Oracle that Fixes the Errors
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2578328
+- Affiliation of the first author: state key lab of cad&cg, zhejiang university, 388
+    yuhang tang road, hangzhou, zhejiang, china
+  Affiliation of the last author: state key lab of cad&cg, zhejiang university, 388
+    yuhang tang road, hangzhou, zhejiang, china
+  Figure 1 Link: articels_figures_by_rev_year\2016\Sparse_Learning_with_Stochastic_Composite_Optimization\figure_1.jpg
+  Figure 1 caption: "The exact sparsity (i.e., the percentage of non-zero entries)\
+    \ (left) and \u2113 1 sparsity (right) of the solutions obtained by \u03B1 -SGD\
+    \ and ORDA over iterations with \u03BB=0.1,\u03C1=0.1, \u03C3 2 e =1 ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\Sparse_Learning_with_Stochastic_Composite_Optimization\figure_2.jpg
+  Figure 2 caption: "Objective values over iterations with parameter \u03C1 =0.1,\
+    \ \u03BB =0.1 and d =100 (a) and d =1,000 (b)."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Sparse_Learning_with_Stochastic_Composite_Optimization\figure_3.jpg
+  Figure 3 caption: "Exact density ratio over iterations with parameter \u03C1 =0.1,\
+    \ \u03BB =0.1 and d =100 (a) and d =1,000 (b)."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Sparse_Learning_with_Stochastic_Composite_Optimization\figure_4.jpg
+  Figure 4 caption: "Truncated density ratio over iterations with parameter \u03C1\
+    \ =0.1, \u03BB =0.1 and d =100 (a) and d =1000 (b)."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Sparse_Learning_with_Stochastic_Composite_Optimization\figure_5.jpg
+  Figure 5 caption: SSR over iterations with parameter rho =0.1, lambda =0.1 and d
+    =100 (a) and d =1000 (b).
+  Figure 6 Link: articels_figures_by_rev_year\2016\Sparse_Learning_with_Stochastic_Composite_Optimization\figure_6.jpg
+  Figure 6 caption: The performance comparison of our three methods when d =1,000,
+    rho =0.1, lambda =0.1 and sigma e =1 (left) and 10 (right).
+  Figure 7 Link: articels_figures_by_rev_year\2016\Sparse_Learning_with_Stochastic_Composite_Optimization\figure_7.jpg
+  Figure 7 caption: The visualization for the prediction models learned by different
+    methods when classifying the digits 2 and 3 in MNIST. Columns (a)-(d) are the
+    results for rho =0.01 and lambda=0.02, 0.03, 0.04, 0.05 .
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Weizhong Zhang
+  Name of the last author: Xiaofei He
+  Number of Figures: 7
+  Number of Tables: 7
+  Number of authors: 8
+  Paper title: Sparse Learning with Stochastic Composite Optimization
+  Publication Date: 2016-06-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of the High Probability Bounds
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Numerical Results on \u2113 1 Regularized Linear Regression\
+      \ Problem with d=100, \u03BB=0.1,\u03C1=0.1"
+  Table 3 caption:
+    table_text: "TABLE 3 Numerical Results on \u2113 1 Regularized Linear Regression\
+      \ Problem with d=1000, \u03BB=0.1,\u03C1=0.1"
+  Table 4 caption:
+    table_text: TABLE 4 Descriptions of the Datasets
+  Table 5 caption:
+    table_text: "TABLE 5 Results When Classify the Digits 2 and 3 of MNIST with Fixed\
+      \ \u03C1=0.01"
+  Table 6 caption:
+    table_text: "TABLE 6 Results of rcv1.Binary with Fixed \u03C1=0.001"
+  Table 7 caption:
+    table_text: "TABLE 7 The Test Error of \u03B1 -SGD before (EB) and after (EA)\
+      \ Rounding When Classifying on Some Data Pairs"
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2578323
+- Affiliation of the first author: "alcov-isit (cnrs), universit\xE9 d'auvergne, clermont\
+    \ ferrand, france"
+  Affiliation of the last author: "alcov-isit (cnrs), universit\xE9 d'auvergne, clermont\
+    \ ferrand, france"
+  Figure 1 Link: articels_figures_by_rev_year\2016\Planar_StructurefromMotion_with_Affine_Camera_Models_ClosedForm_Solutions_Ambigu\figure_1.jpg
+  Figure 1 caption: Scene geometry with orthographic cameras and a planar structure
+    (left top and left bottom) and the critical motion sequence (right). Vector a
+    i denotes the projection direction of the i th camera. The critical motion sequence
+    that causes the problem to be ill-posed (right).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\Planar_StructurefromMotion_with_Affine_Camera_Models_ClosedForm_Solutions_Ambigu\figure_2.jpg
+  Figure 2 caption: 'Simulation experimental results: Experiments one to four with
+    one experiment per column. Best viewed in colour.'
+  Figure 3 Link: articels_figures_by_rev_year\2016\Planar_StructurefromMotion_with_Affine_Camera_Models_ClosedForm_Solutions_Ambigu\figure_3.jpg
+  Figure 3 caption: 'Simulation experimental results: experiments five to eight with
+    one experiment per column. Best viewed in colour.'
+  Figure 4 Link: articels_figures_by_rev_year\2016\Planar_StructurefromMotion_with_Affine_Camera_Models_ClosedForm_Solutions_Ambigu\figure_4.jpg
+  Figure 4 caption: Results on the image set shown in Fig. 5. In the three columns
+    we show results using three, five and eight of the views. In the rows we show
+    the corresponding performance statistics.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Planar_StructurefromMotion_with_Affine_Camera_Models_ClosedForm_Solutions_Ambigu\figure_5.jpg
+  Figure 5 caption: "A real test set consisting of eight unorganised 3,680\xD72,456\
+    \ views of a textured flat A4 sheet of paper."
+  Figure 6 Link: articels_figures_by_rev_year\2016\Planar_StructurefromMotion_with_Affine_Camera_Models_ClosedForm_Solutions_Ambigu\figure_6.jpg
+  Figure 6 caption: Results for reconstructing the top section of a bottle top from
+    an orbiting image sequence (best viewed in colour).
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Toby Collins
+  Name of the last author: Adrien Bartoli
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: 'Planar Structure-from-Motion with Affine Camera Models: Closed-Form
+    Solutions, Ambiguities and Degeneracy Analysis'
+  Publication Date: 2016-06-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of the Differences between Stratified SfM with Affine
+      Cameras for Non-Planar and Planar Structures
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Properties of Methods Under Comparison
+  Table 3 caption:
+    table_text: TABLE 3 Experimental Parameters Used in Eight Simulation Experiments
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2578333
+- Affiliation of the first author: jiangsu engineering center of network monitoring
+    and the school of computer & software, nanjing university of information science
+    & technology, nanjing, jiangsu, p. r. china
+  Affiliation of the last author: department of medical biophysics, university of
+    western ontario, london, on, canada
+  Figure 1 Link: articels_figures_by_rev_year\2016\Cross_Validation_Through_TwoDimensional_Solution_Surface_for_CostSensitive_SVM\figure_1.jpg
+  Figure 1 caption: Structure flow chart of the proposed CV-SES method.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\Cross_Validation_Through_TwoDimensional_Solution_Surface_for_CostSensitive_SVM\figure_2.jpg
+  Figure 2 caption: "The corresponding relation between ( C + , C \u2212 ) and ( \u03BB\
+    ,\u03B7 ) coordinate systems."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Cross_Validation_Through_TwoDimensional_Solution_Surface_for_CostSensitive_SVM\figure_3.jpg
+  Figure 3 caption: The partition of the training samples S into three independent
+    sets by KKT-conditions.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Cross_Validation_Through_TwoDimensional_Solution_Surface_for_CostSensitive_SVM\figure_4.jpg
+  Figure 4 caption: "(a): The overlapped phenomenon of CCPRs ( \u03BB 1 = \u03BB 2\
+    \ =0.5 , \u03B7 1 =0.51 , and \u03B7 2 =0.49 ). (b): Partitioning the parameter\
+    \ space X based on Theorem 3. (c): Partitioning the lower triangle region of [0,1]\xD7\
+    [0,1] for ( C + , C \u2212 ) through CCPR-BPSP. (d): Partitioning the parameter\
+    \ space [0,1]\xD7[0,1] of ( \u03BB , \u03B7 ) through CCPR-BPSP."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Cross_Validation_Through_TwoDimensional_Solution_Surface_for_CostSensitive_SVM\figure_5.jpg
+  Figure 5 caption: 'Error surfaces in two-fold CV. (a)-(c): Two-fold CV for all parameter
+    pairs of ( lambda, eta ) in [0,1] times [0,1] . (d)-(f): Two-fold CV for all parameter
+    pairs of ( C+,C- ) in the lower triangle region of [0,1] times [0,1] . (a), (d):
+    The results of the first fold. (b), (e): The results of the second fold. (c),
+    (f): The results of two-fold CV.'
+  Figure 6 Link: articels_figures_by_rev_year\2016\Cross_Validation_Through_TwoDimensional_Solution_Surface_for_CostSensitive_SVM\figure_6.jpg
+  Figure 6 caption: '(a)-(b): [0,10] times [0,10] of ( C+,C- ). (c)-(d): [0,10] times
+    [0,1] of ( lambda , eta ). (a), (c): The results of space partition through CCPR-BPSP.
+    (b), (d): Two-fold CV error surface.'
+  Figure 7 Link: articels_figures_by_rev_year\2016\Cross_Validation_Through_TwoDimensional_Solution_Surface_for_CostSensitive_SVM\figure_7.jpg
+  Figure 7 caption: 'The results of cost sensitive errors on the test sets, over 50
+    trials. The grouped boxes represent the results of CSHL-SVM with three-dimensional
+    grid search, CS-SVM with GS, SP eta +GS lambda , SP lambda +GS eta , and CV-SES,
+    from left to right on different datasets. The notched-boxes have lines at the
+    lower, median, and upper quartile values. The whiskers are lines extended from
+    each end of the box to the most extreme data value within 1.5 times IQR (Interquartile
+    Range) of the box. Outliers are data with values beyond the ends of the whiskers,
+    which are displayed by plus signs. (a): C(-,+)=2 . (b): C(-,+)=5 . (c): C(-,+)=10
+    . (d): C(-,+)=mathrm ratio , for imbalanced learning.'
+  Figure 8 Link: articels_figures_by_rev_year\2016\Cross_Validation_Through_TwoDimensional_Solution_Surface_for_CostSensitive_SVM\figure_8.jpg
+  Figure 8 caption: Runtime of CSHL-SVM with three-dimensional grid search, and of
+    CS-SVM with GS, SP eta +GS lambda , SP lambda +GS eta , and CV-SES on different
+    datasets, when kappa =10-3 and 103 , respectively. (a) Sonar datset. (b) Ionosphere
+    datset. (c) Diabetes datset. (d) Breast Cancer datset. (e) Heart datset. (f) Hill-Valley
+    datset. (g) Spine Image datset. (h) Ecoli1 datset. (i) Ecoli3 datset. (j) Vowel0
+    datset. (k) Vehicle0 datset.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Bin Gu
+  Name of the last author: Shuo Li
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Cross Validation Through Two-Dimensional Solution Surface for Cost-Sensitive
+    SVM
+  Publication Date: 2016-06-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Datasets Used in the Experiments
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 The Average Numbers of \u201CDepth\u201D (D), \u201CBranches\u201D\
+      \ (B), \u201CLeaves\u201D (L), \u201COverlaps\u201D (O), and \u201CRegions\u201D\
+      \ (R) of CV-SES in the Region of [0,1]\xD7[0,1] for ( \u03BB,\u03B7 )-SVM, over\
+      \ 10 Trials"
+  Table 3 caption:
+    table_text: "TABLE 3 The Average Numbers of \u201CDepth\u201D (D), \u201CBranches\u201D\
+      \ (B), \u201CLeaves\u201D (L), \u201COverlaps\u201D (O), and \u201CRegions\u201D\
+      \ (R) of CV-SES in the Lower Triangle Region of [0,1]\xD7[0,1] for 2C -SVM,\
+      \ over 10 Trials"
+  Table 4 caption:
+    table_text: "TABLE 4 The Results (i.e., Optimal Values of C + , C \u2212 , \u03BA\
+      \ and CV Error) of Five-Fold CV with GS, SP \u03B7 +GS \u03BB , SP \u03BB +GS\
+      \ \u03B7 , and CV-SES, Respectively, for CS-SVM"
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2578326
+- Affiliation of the first author: department of biomedical engineering, johns hopkins
+    school of medicine, baltimore, md
+  Affiliation of the last author: department of applied mathematics and statistics,
+    johns hopkins university whiting school of engineering, baltimore, md
+  Figure 1 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_1.jpg
+  Figure 1 caption: 'The problem of associating geodesic coordinates to subcortical
+    templates, to represent the dense segmentations, is depicted here. Left: Depiction
+    of subcortical manifolds representing amygdala, caudate, hippocampus, putamen,
+    thalamus and ventricles. Second from left: sections through the MRI depicting
+    the outlines of the surfaces striking the subvolume. Right: Segmentations (top)
+    and corresponding isosurfaces (bottom) of amygdala, thalamus, hippocampus, putamen
+    structures from the ADNI dementia study (columns 1,2) and PREDICT-HD Huntington''s
+    disease study (columns 3,4).'
+  Figure 10 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_10.jpg
+  Figure 10 caption: 'Left column: Corronal and axial slices of deformed template
+    I 1 target J image: blueyellow, when summed in RGB space a correct overlap results
+    in grayscale. The overlap is only expected to be good in neighbourhood of the
+    subcortical structures. Right column: Deformed template: cool colors, target:
+    warm colors, when summed in RGB space a correct overlap results in white. This
+    data was used only for evaluation, not in the mapping algorithm.'
+  Figure 2 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_2.jpg
+  Figure 2 caption: "A patch of surface defined by the function f 0 (u) (cyan) supports\
+    \ a function p 0 (u) (red, left). The initial velocity field v 0 (blue, right),\
+    \ is supported everywhere in space, and is obtained by convolving the measure\
+    \ p 0 d\u03B7 with the reproducing kernel Hilbert space kernel K(\u22C5,\u22C5\
+    ) ."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_3.jpg
+  Figure 3 caption: The first two dimensions of our model for hippocampus, amygdala,
+    and entorhinal cortex are shown here. The mean shape is shown in the center in
+    grey, and each subsequent shape is shown by taking a step of one standard deviation
+    in the direction of the first basis function (leftright or cyanred) or the second
+    basis function (updown or blueyellow).
+  Figure 4 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_4.jpg
+  Figure 4 caption: Two results (leftright) from PREDICT-HD showing a slice of the
+    dense template image I 1 (top row), target J (second row), and both together (third
+    row) summed in RGB space such that overlap appears white.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_5.jpg
+  Figure 5 caption: 'Two results (leftright) from ADNI. First row: isosurface of deformed
+    template image I 1 . Second row: isosurface of target image J . Third row: both
+    together. Fourth row: Deformed template surfaces f 1 along with basis coefficients
+    (in multiples of the eigenvalue standard-deviations).'
+  Figure 6 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_6.jpg
+  Figure 6 caption: 'Results of mapping amygdala, entorhinal cortex, and hippocampus
+    onto BIOCARD segmented structures. Top left: Slice through I 1 and J . Correct
+    overlap of template and target is depicted as white, while other errors are encoded
+    via colors as described in the text. Middle left: Isosurfaces of segmentations
+    I 1 and J . Right: Volumes of deformed templates I 1 and targets J for the three
+    temporal lobe structures. The identity line is shown in black.'
+  Figure 7 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_7.jpg
+  Figure 7 caption: 'Three overlapping segmentation examples from the BIOCARD dataset.
+    Red ellipse indicates region of overlapping labels. Top: Target. yellowcyanmagenta:
+    hippocampusamygdalaentorhinal cortex. Bottom: deformed template I 1 . blueredgreen:
+    hippocampusamygdalaentorhinal cortex.'
+  Figure 8 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_8.jpg
+  Figure 8 caption: Two results (leftright) from ADNI illustrating misoriented surfaces
+    by 180 degrees. Layout as in Fig. 5. Basis coefficients demonstrate the geodesic
+    coordinates are outliers with respect to the prior.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Parametric_Surface_Diffeomorphometry_for_Low_Dimensional_Embeddings_of_Dense_Seg\figure_9.jpg
+  Figure 9 caption: Two results (leftright) from PREDICT-HD illustrating extreme segmentations.
+    Layout as in Fig. 5. Basis coefficients demonstrate the geodesic coordinates are
+    outliers with respect to the prior.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Daniel Tward
+  Name of the last author: Laurent Younes
+  Number of Figures: 12
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Parametric Surface Diffeomorphometry for Low Dimensional Embeddings
+    of Dense Segmentations and Imagery
+  Publication Date: 2016-06-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 p -Values from Permutation Testing, Showing Probability of
+      Even One False Positive in a Multiple Comparison Setting
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2578317
+- Affiliation of the first author: "instituto universitario para el desarrollo tecnol\xF3\
+    gico y la innovaci\xF3n en comunicaciones, universidad de las palmas de gran canaria,\
+    \ las palmas de gran canaria, spain"
+  Affiliation of the last author: "atvs-biometric research group, universidad aut\xF3\
+    noma de madrid, madrid, spain"
+  Figure 1 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_1.jpg
+  Figure 1 caption: Block diagram of the dual static and dynamic signature generation
+    procedure. Solid blue lines show the pen-downs of the signature trajectory whereas
+    solid red lines refer to pen-ups. Dots on the blue lines indicate signature sampling
+    points.
+  Figure 10 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_10.jpg
+  Figure 10 caption: 'Examples of intra-personal variability: Genuine samples (four
+    columns on the left) and forgeries (four columns on the right).'
+  Figure 2 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_2.jpg
+  Figure 2 caption: Database morphology for synthetic identity generation.
+  Figure 3 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_3.jpg
+  Figure 3 caption: Engram of the body letter 'a' on the hexagonal letter grid (left).
+    Engram of the word 'hello' on the tessellation (right). The stroke limits are
+    the remarked grid nodes.
+  Figure 4 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_4.jpg
+  Figure 4 caption: 'Left: Areas for pen-up engram definition. Center: Pen-up engram
+    linking two letters. The grid nodes selected are marked by green circles. Right:
+    Text with diacritic marks which are written along with the following pen-up. Letters
+    in continuous blue lines and pen-ups in dashed red lines.'
+  Figure 5 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_5.jpg
+  Figure 5 caption: Signature envelope on the grid span, flourish and text engram.
+  Figure 6 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_6.jpg
+  Figure 6 caption: Activity of several arm muscles in the transition from text to
+    flourish of a real user while signing.
+  Figure 7 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_7.jpg
+  Figure 7 caption: 'Multi-level motor control model inspired by inverse internal
+    models. Solid blue line: Written signature, dashed red lines: Pen-ups, green circles:
+    Stroke limits.'
+  Figure 8 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_8.jpg
+  Figure 8 caption: "Synthetic dynamic version of the static signature of \u201CJane\u201D\
+    ."
+  Figure 9 Link: articels_figures_by_rev_year\2016\A_Behavioral_Handwriting_Model_for_Static_and_Dynamic_Signature_Synthesis\figure_9.jpg
+  Figure 9 caption: Examples of dynamic signatures synthetically generated. Blue dots
+    show pen-downs samples whereas red dots refer to pen-ups samples.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Miguel A. Ferrer
+  Name of the last author: Aythami Morales
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: A Behavioral Handwriting Model for Static and Dynamic Signature Synthesis
+  Publication Date: 2016-06-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance (ERR in Percent and STD) for Random Impostor and
+      Deliberate Forgeries' Experiments
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Area between Det Curves of Real and Synthetic Databases
+  Table 3 caption:
+    table_text: TABLE 3 Comparison with Other Synthesizers
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2582167
+- Affiliation of the first author: bioinformatics institute, astar, singapore, singapore
+  Affiliation of the last author: institute of computer science, university of kiel,
+    kiel, germany
+  Figure 1 Link: articels_figures_by_rev_year\2016\Pose_Estimation_from_Line_Correspondences_A_Complete_Analysis_and_a_Series_of_So\figure_1.jpg
+  Figure 1 caption: 'The geometry of the P3L problem: the 2D3D line correspondences
+    and the three coordinate frames.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\Pose_Estimation_from_Line_Correspondences_A_Complete_Analysis_and_a_Series_of_So\figure_2.jpg
+  Figure 2 caption: Geometry of the P3P problem.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Pose_Estimation_from_Line_Correspondences_A_Complete_Analysis_and_a_Series_of_So\figure_3.jpg
+  Figure 3 caption: "Illustration of the virtual camera frame. The ray O c p c joint\
+    \ is perpendicular to the virtual image plane and l \u2032 0 is parallel to Y\
+    \ c \u2032 -axis."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Pose_Estimation_from_Line_Correspondences_A_Complete_Analysis_and_a_Series_of_So\figure_4.jpg
+  Figure 4 caption: "A simplified illustration of the local minima of the PnL problem\
+    \ with respect to \u03B1 . f i denotes the P3L polynomial in Eq. (18). The curves\
+    \ of f 2 i and F=\u03A3 f 2 i are plotted. The local minima of F are related to\
+    \ the solutions of f i ."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Pose_Estimation_from_Line_Correspondences_A_Complete_Analysis_and_a_Series_of_So\figure_5.jpg
+  Figure 5 caption: Synthetic experimental results. n denotes the number of lines,
+    and sigma denotes the standard deviation of image noise. In row (a) and (b), the
+    accuracies of the compared methods are tested in centred and uncentred cases by
+    varying n from 4 to 20. In row (c) and (d), the robustness against noisy small
+    line-set is tested with n=4 or 5 , and sigma varies from 1 to 15 pixels. In row
+    (e) and (f), the robustness against outliers is tested in centred and uncentred
+    cases by varying outlier rate from 5 to 60 percent.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Pose_Estimation_from_Line_Correspondences_A_Complete_Analysis_and_a_Series_of_So\figure_6.jpg
+  Figure 6 caption: Camera pose estimation using lines and points. n denotes the number
+    of features in which 50 percent are lines and 50 percent are points. sigma denotes
+    the standard deviation of image noise. The experiments are tested in centred case.
+    In row (a), the accuracy is tested by varying n from 8 to 40. In row (b), the
+    robustness against outliers is tested by varying outlier rate from 5 to 60 percent.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Pose_Estimation_from_Line_Correspondences_A_Complete_Analysis_and_a_Series_of_So\figure_7.jpg
+  Figure 7 caption: Running Time. In (a), running time is tested by varying n from
+    10 to 350 in outlier-free case. In (b), n=100 and the outlier rate varies from
+    5 to 60 percent.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Pose_Estimation_from_Line_Correspondences_A_Complete_Analysis_and_a_Series_of_So\figure_8.jpg
+  Figure 8 caption: Performance evaluation on real image with small line set. The
+    experimental results illustrate the compared PnL solutions for real images when
+    using 4 , 5 or all the available line correspondences. The red lines are the used
+    2D line segments. The blue lines are the projection of the 3D line model using
+    the estimated camera pose.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chi Xu
+  Name of the last author: Reinhard Koch
+  Number of Figures: 8
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: 'Pose Estimation from Line Correspondences: A Complete Analysis and
+    a Series of Solutions'
+  Publication Date: 2016-06-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of the 3D Configuration Analysis
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2582162
+- Affiliation of the first author: department of computer science & engineering, michigan
+    state university, east lansing, michigan
+  Affiliation of the last author: department of computer science & engineering, michigan
+    state university, east lansing, michigan
+  Figure 1 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_1.jpg
+  Figure 1 caption: An example of large-scale face search problem.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_10.jpg
+  Figure 10 caption: Distribution of well-aligned templates and poorly-aligned templates
+    in 1:N search protocol of IJB-A, averaged over 10 folds. Correct MatchRank- 1
+    means that the mated gallery template is correctly retrieved at rank 1 . Landmarks
+    in well-aligned images can be automatically detected by DLIB [28]. Poorly-aligned
+    images mainly consist of profile views of faces. We align these images using the
+    three ground-truth landmarks when available, or else by cropping the entire face
+    region.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_2.jpg
+  Figure 2 caption: Illustration of the proposed large-scale face search system.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_3.jpg
+  Figure 3 caption: Proposed deep convolutional neural network (ConvNet).
+  Figure 4 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_4.jpg
+  Figure 4 caption: A face image alignment example. The original image is shown in
+    (a); (b) shows the 68 landmark points detected by the method in [28], and (c)
+    is the final aligned face image, where the blue circle was used to center the
+    face image along the x-axis, and the red circles denote the two points used for
+    face cropping.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_5.jpg
+  Figure 5 caption: Examples of face images in five face datasets used in our experiments.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_6.jpg
+  Figure 6 caption: (a) Impact of candidate set size ( k ) as a function of the gallery
+    size ( N ) on the search performance as measured in terms of Mean Average Precision.
+    Red points mark the optimal value of k for different values of N . (b) Comparison
+    of fusion strategies based on a 1 M gallery and 3 K probes.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_7.jpg
+  Figure 7 caption: Examples of false positive samples detected by DLIB face detector.
+    (a) non-face images, (b) non-human face images.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_8.jpg
+  Figure 8 caption: Examples of web images in the IJB-A dataset with overlayed landmarks
+    (top row), and the corresponding aligned face images (bottom row); (a) example
+    of a well-aligned image obtained using automatically detected landmarks by DLIB
+    [28]; (b), (c), and (d) examples of poorly-aligned images with 3, 2, and 0 ground-truth
+    landmarks provided in IJB-A, respectively. DLIB fails to output landmarks for
+    (b)-(d). The images in the top row have been cropped around the relevant face
+    regions from the original images.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Face_Search_at_Scale\figure_9.jpg
+  Figure 9 caption: "Examples of face search in the first fold of the IJB-A closed-set\
+    \ search protocol, using \u201Ctemplates.\u201D The first column contains the\
+    \ probe templates, and the following five columns contain the corresponding top-\
+    \ 5 ranked gallery templates, where red text highlights the correct mated gallery\
+    \ template and the number of faces in the corresponding template is denoted with\
+    \ . There are 112 gallery templates in total; only a subset (at most four) of\
+    \ the images for each template are shown."
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Dayong Wang
+  Name of the last author: Anil K. Jain
+  Number of Figures: 15
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Face Search at Scale
+  Publication Date: 2016-06-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 A Summary of Face Search Systems Reported in the Literature
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance of Various Face Recognition Methods on the Standard
+      LFW Verification Protocol
+  Table 3 caption:
+    table_text: TABLE 3 Performance of Various Face Recognition Methods on LFW Using
+      the BLUFR Protocol Reported as True Accept Rate and Detection and Identification
+      Rate (DIR)
+  Table 4 caption:
+    table_text: TABLE 4 Recognition Accuracies under the IJB-A Protocol
+  Table 5 caption:
+    table_text: TABLE 5 Large-Scale Web Face Search Dataset Overview
+  Table 6 caption:
+    table_text: TABLE 6 The Average Search Time (Seconds) per Probe Face and the Corresponding
+      Search Performance (mAP)
+  Table 7 caption:
+    table_text: TABLE 7 Rank Retrieval Results of the Two Boston Bomber Suspects Based
+      on 5 and 80 M Face Gallery
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2582166
+- Affiliation of the first author: school of computing sciences, university of east
+    anglia, norwich, norfolk, united kingdom
+  Affiliation of the last author: akzo nobel decorative coatings, sassenheim, aj,
+    netherlands
+  Figure 1 Link: articels_figures_by_rev_year\2016\The_Reproduction_Angular_Error_for_Evaluating_the_Performance_of_Illuminant_Esti\figure_1.jpg
+  Figure 1 caption: 'An example of similar color corrected images with varying recovery
+    angular error. (a) First row: images of the same scene captured under chromatic
+    illuminants (from SFU dataset [1]). Second row: corrected images using grey-world
+    Algorithm [8]. (b) Recovery versus Reproduction angular errors.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\The_Reproduction_Angular_Error_for_Evaluating_the_Performance_of_Illuminant_Esti\figure_2.jpg
+  Figure 2 caption: 2D chromaticity gamut (solid line) bounding the set of SFU Lab
+    dataset's measured illuminants [1].
+  Figure 3 Link: articels_figures_by_rev_year\2016\The_Reproduction_Angular_Error_for_Evaluating_the_Performance_of_Illuminant_Esti\figure_3.jpg
+  Figure 3 caption: (a) Cumulative probability distribution function of analytical
+    maximum recovery angular errors (in magenta), maximum error of real lights within
+    the convex of SFU Lab dataset's [1] measured illuminants (in blue) and the recovery
+    angular errors of the estimated lights of 321 SFU Lab images using the two algorithms
+    (in red). (b) Cumulative probability distribution function of maximum reproduction
+    angular errors [15].
+  Figure 4 Link: articels_figures_by_rev_year\2016\The_Reproduction_Angular_Error_for_Evaluating_the_Performance_of_Illuminant_Esti\figure_4.jpg
+  Figure 4 caption: The pictorial scheme of Kendall test for the changed rank algorithms
+    in Table 3 [15].
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Graham D. Finlayson
+  Name of the last author: Arjan Gijsenij
+  Number of Figures: 4
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: The Reproduction Angular Error for Evaluating the Performance of Illuminant
+    Estimation Algorithms
+  Publication Date: 2016-06-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Recovery and Reproduction Errors in Terms of Median and 95
+      Percent Quantile for Several Color Constancy Algorithms Applied on SFU Dataset
+      [1]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Recovery and Reproduction Errors in Terms of Max and 95 Percent
+      Quantile for Several Algorithms Applied on Canon1D Camera from NUS Dataset [5]
+  Table 3 caption:
+    table_text: TABLE 3 Changes in Ranking of Algorithms for SFU Lab Dataset [1] (Based
+      on Median Errors)
+  Table 4 caption:
+    table_text: TABLE 4 Changes in Ranking of Algorithms for SFU Lab Dataset [1] (Based
+      on 95 Percent Quantile Errors)
+  Table 5 caption:
+    table_text: TABLE 5 Changes in Ranking of Algorithms for Canon1D Camera from NUS
+      Dataset [5] (Based on Max Errors)
+  Table 6 caption:
+    table_text: TABLE 6 Changes in Ranking of Algorithms for Canon1D Camera from NUS
+      Dataset [5] (Based on 95 Percent Quantile Errors)
+  Table 7 caption:
+    table_text: TABLE 7 Wilcoxon Sign Test on SFU Dataset for Recovery and Reproduction
+      Errors of the Algorithms in Table 3
+  Table 8 caption:
+    table_text: TABLE 8 Changes in Ranking of Algorithms for Foster et al. Dataset
+      [33] (Based on Median Errors)
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2582171
+- Affiliation of the first author: "department of cybernetics, czech technical university,\
+    \ karlovo n\xE1m\u011Bst\xED 13, praha, czech republic"
+  Affiliation of the last author: "department of cybernetics, czech technical university,\
+    \ karlovo n\xE1m\u011Bst\xED 13, praha, czech republic"
+  Figure 1 Link: articels_figures_by_rev_year\2016\LP_Relaxation_of_the_Potts_Labeling_Problem_Is_as_Hard_as_Any_Linear_Program\figure_1.jpg
+  Figure 1 caption: "One object pair u,v\u2208E with |K|=3 labels. Objects u,v\u2208\
+    V are depicted as boxes, labels (u,k)\u2208I as nodes, and label pairs (u,k),(v,\u2113\
+    )\u2208I as edges. Note the meaning of constraints (3): for unary pseudomarginals\
+    \ a,b,c and pairwise pseudomarginals p,q,r , equality (3a) reads a=p+q+r and equality\
+    \ (3b) reads a+b+c=1 ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\LP_Relaxation_of_the_Potts_Labeling_Problem_Is_as_Hard_as_Any_Linear_Program\figure_2.jpg
+  Figure 2 caption: "Our notation for gadgets. (a) shows a gadget in our notation.\
+    \ (b) is the corresponding reparameterized Potts problem with unary costs written\
+    \ inside nodes and pairwise costs written next to edges; each + [ \u2212 ] contributes\
+    \ by 1 [ \u22121 ] to the pairwise cost of the adjacent edge. (c) is the corresponding\
+    \ Potts problem; each + [ \u2212 ] contributes by 1 [ \u22121 ] to the unary cost\
+    \ of the adjacent node, each white node contributes to its unary cost by additional\
+    \ increment 1 ."
+  Figure 3 Link: articels_figures_by_rev_year\2016\LP_Relaxation_of_the_Potts_Labeling_Problem_Is_as_Hard_as_Any_Linear_Program\figure_3.jpg
+  Figure 3 caption: Potts problems used as gadgets.
+  Figure 4 Link: articels_figures_by_rev_year\2016\LP_Relaxation_of_the_Potts_Labeling_Problem_Is_as_Hard_as_Any_Linear_Program\figure_4.jpg
+  Figure 4 caption: A reparameterized Potts problem that encodes the polyhedron P=lbrace
+    , (x1,x2,x3,x4)in mathbb R4 mid x1 + x2 = x4, ; x2 + x3 = x1, ; x1geq 0, ; x2geq
+    0, ; x3geq 0, ; x4=1 ,rbrace .
+  Figure 5 Link: articels_figures_by_rev_year\2016\LP_Relaxation_of_the_Potts_Labeling_Problem_Is_as_Hard_as_Any_Linear_Program\figure_5.jpg
+  Figure 5 caption: Eliminating an edge crossing.
+  Figure 6 Link: articels_figures_by_rev_year\2016\LP_Relaxation_of_the_Potts_Labeling_Problem_Is_as_Hard_as_Any_Linear_Program\figure_6.jpg
+  Figure 6 caption: Gadget Cross.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Daniel Pr\u016F\u0161a"
+  Name of the last author: "Tom\xE1\u0161 Werner"
+  Number of Figures: 6
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: LP Relaxation of the Potts Labeling Problem Is as Hard as Any Linear
+    Program
+  Publication Date: 2016-06-20 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2582165

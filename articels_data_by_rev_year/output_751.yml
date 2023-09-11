@@ -1,0 +1,859 @@
+- Affiliation of the first author: department of computer science and engineering,
+    shanghai jiaotong university, shanghai, china
+  Affiliation of the last author: department of computer science and engineering,
+    the hong kong university of science and technology
+  Figure 1 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_1.jpg
+  Figure 1 caption: (a) A sunny image with mean lightness 32.41. (b) A cloudy image
+    with mean lightness 58.25.
+  Figure 10 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_10.jpg
+  Figure 10 caption: "Sample images found in two clusters. (a) \u201Csky + shadow\u201D\
+    \ cluster with center 0.90,0.87,0.26,0.11 . (b) \u201Csky + haze\u201D cluster\
+    \ with center 0.94,0.24,0.27,0.84 , where v sk , v sh , v re , v ha is composed\
+    \ of the respective existence scores."
+  Figure 2 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_2.jpg
+  Figure 2 caption: Pixel intensity distributions in the lightness L channel in the
+    LAB color space of 5 K cloudy images and 5 K sunny images. It is almost impossible
+    to draw a decision boundary between the two types of weather.
+  Figure 3 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_3.jpg
+  Figure 3 caption: Weather cues. (a) Common weather cues in red rectangles. (b) Regions
+    in (a) lacking any weather cues.
+  Figure 4 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_4.jpg
+  Figure 4 caption: Sky. (a) input image, (b) detected sky region, (c) color histogram
+    of the sky, (d) plot of f sk .
+  Figure 5 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_5.jpg
+  Figure 5 caption: Shadow detection results of [25] for (a) a cloudy image and (b)
+    a sunny image. Shadow detection in cloudy images is vulnerable to false detection.
+  Figure 6 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_6.jpg
+  Figure 6 caption: K -nearest neighbor matching in P . Shown in the blue rectangles
+    are the five nearest neighbors.
+  Figure 7 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_7.jpg
+  Figure 7 caption: Reflection cue. A sunny image with strong sunlight reflection
+    in (a) versus a cloudy image with inherently white regions in (e). (b) and (f)
+    are the corresponding alpha mattes. In (c) and (g), red and blue points indicate
+    background and foreground seeds used in alpha matting. (d) and (h) are distributions
+    of the alpha maps, taken as the f re cue.
+  Figure 8 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_8.jpg
+  Figure 8 caption: Camera parameters and photo editing. (b) and (c) are weather counterparts
+    of (a). These weather counterparts are obtained by adjusting camera parameters
+    while capturing the same scene. Here, a high ISO value makes the picture sensitive
+    to light. (e) and (f) are weather counterparts of (d). These weather counterparts
+    are obtained via editing the original photos.
+  Figure 9 Link: articels_figures_by_rev_year\2016\TwoClass_Weather_Classification\figure_9.jpg
+  Figure 9 caption: Examples of weather counterpart mapping. (b) and (c) are weather
+    counterparts of (a). We build the mapping function from (a) to (b)-(c) respectively
+    denoted as H 1 and H 2 . Given the testing image (d), (a) is among those visually
+    similar to (d) in the weather counterpart dataset. (e) and (f) are respectively
+    the mapped results of H 1 and H 2 with input (a).
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.93
+  Name of the first author: Cewu Lu
+  Name of the last author: Chi-Keung Tang
+  Number of Figures: 19
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: Two-Class Weather Classification
+  Publication Date: 2016-12-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Mean and Variance of the Mean User-Assigned Probabilities
+      Not Equal to 0 or 1
+  Table 10 caption:
+    table_text: TABLE 10 Comparison with Manual Feature Localization
+  Table 2 caption:
+    table_text: "TABLE 2 Regression Error (Mean \xB1 Variance) of Different Methods"
+  Table 3 caption:
+    table_text: "TABLE 3 Classification Results (Mean \xB1 Variance) Using Individual\
+      \ Features"
+  Table 4 caption:
+    table_text: "TABLE 4 Classification Results (Mean \xB1 Variance) with Individual\
+      \ Weather Cues Being Left Out"
+  Table 5 caption:
+    table_text: "TABLE 5 Classification Results (Mean \xB1 Variance) with and without\
+      \ Data Augmentation; \u201Cwith DA\u201D and \u201Cwithout DA\u201D Respectively\
+      \ Stand for Training with and without Data Augmentation"
+  Table 6 caption:
+    table_text: "TABLE 6 Classification Results (Mean \xB1 Variance) of Different\
+      \ Methods"
+  Table 7 caption:
+    table_text: TABLE 7 Classification Statistics of Different Methods
+  Table 8 caption:
+    table_text: TABLE 8 Comparison with CNN Classifier under Different Learning Rates,
+      Given Momentum and Weight Decay Are Respectively 0.9 and 0.005
+  Table 9 caption:
+    table_text: "TABLE 9 Comparison with CNN Classifier, Given Learning Rate Is 0.0001,\
+      \ \u03BD and \u03BE Are Respectively Momentum and Weight Decay"
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2640295
+- Affiliation of the first author: department of automation, tsinghua university,
+    beijing, china
+  Affiliation of the last author: department of automation, state key lab of intelligence
+    technologies and systems, tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_1.jpg
+  Figure 1 caption: The architectural diagram of our image captioning system. An image
+    is first analyzed and represented with multiple visual regions from which visual
+    features are extracted (Section 3.1). The visual feature vectors (2,048-dimensional
+    real-valued vectors in this paper) are then fed into a Long-Short Term Memory
+    network which predicts both the sequence of focusing on different regions and
+    the sequence of generating words based on the transition of visual attention (Section
+    3.2). The neural network model is also governed by a scene vector, a global visual
+    context extracted from the whole image. Intuitively, it selects a scene-specific
+    language model for generating text (Section 3.3).
+  Figure 10 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_10.jpg
+  Figure 10 caption: An image from MSCOCO in which a baby holds a toothbrush. The
+    caption given by our-ss properly describes the image content by using the correct
+    scene vector to bias the language generation. To see the influence of scene vectors,
+    we replace the origin scene vector with three one-hot topic vectors. The topic
+    indexes are 12, 63 and 68. The baby will hold different objects given different
+    scene vectors. For example, topic 68 corresponds to scenes about baseball, and
+    the caption is now changed to regarding the baby holding a baseball bat.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_2.jpg
+  Figure 2 caption: Image representation with localized regions at multiple scales.
+    The image is hierarchically segmented and the top regions containing salient visual
+    information are selected. Those regions are analyzed with a Convolutional Neural
+    Network (CNN) trained for object recognition. See texts for details.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_3.jpg
+  Figure 3 caption: The parallel processes of generating a new word and shifting visual
+    attention among visual regions on the image. (a) Based on the history of previously
+    generated word, hidden state of LSTM that encodes the flow of latent meaning,
+    and the previous visual attention, a neural network predicts which visual regions
+    (out of the set of R ) should be focused on now. (b) Based on the new focus, the
+    hidden state is updated. (c) The new hidden state, together with the previous
+    word, and the current visual context, predicts which word will be generated next.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_4.jpg
+  Figure 4 caption: Pipeline of extracting the scene-specific contexts and biasing
+    the LSTM. The whole image is represented as a feature vector using ResNet-152
+    network, the go through a multilayer perceptron regressor to obtain the scene
+    vector s . By being fed s , the gates and input modulator of LSTM are constantly
+    biased to the context during word generation.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_5.jpg
+  Figure 5 caption: "The statistics of region coverage. The figure shows how many\
+    \ pixels are covered by 1,2,3,\u2026 regions. Our region sets have full coverage\
+    \ of images and tend to be over-complete."
+  Figure 6 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_6.jpg
+  Figure 6 caption: The statistics of topic distribution. The figure shows how images
+    distribute over different scene topics. We grouped the images according to their
+    maximum scene components.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_7.jpg
+  Figure 7 caption: Example captions generated by our systems. Part (a) shows two
+    images with captions generated by our-(ra+ss) as well as written by human. Though
+    human may describe the image from various perspectives, our system is able to
+    catch the salient parts appearing in most of the ground-truth captions. Part (b)
+    gives more examples, varying from human activities to other things. Part (c) selects
+    four images where different variants generate better captions than others. In
+    general, scene-specific contexts grasp the global information, while the region
+    attention depicts richer details. Part (d) shows bad cases, in which our system
+    misunderstands some of the important details.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_8.jpg
+  Figure 8 caption: "The alignment between attention transition among visual regions\
+    \ and the generation of words for the caption. Many concepts in the sentence correspond\
+    \ well to the visual elements in the image. The brighter part means larger attention\
+    \ being allocated. Note that in row 5 there is no single region tightly contains\
+    \ the concept \u201Chorse\u201D. Several relevant regions are attended and their\
+    \ intersection\u2014the \u201Chorse\u201D part\u2014becomes the brightest region.\
+    \ While for \u201Cman\u201D in row 5, which has a tight region, the focusing is\
+    \ more clear. The examples are generated using the model our-ra."
+  Figure 9 Link: articels_figures_by_rev_year\2016\Aligning_Where_to_See_and_What_to_Tell_Image_Captioning_with_RegionBased_Attenti\figure_9.jpg
+  Figure 9 caption: Words with their matched image regions. The example words include
+    two nouns, two verbs and two adjectives. Though the word-region matching is not
+    a direct objective, our attention model aligns words and regions well. The examples
+    are generated using the model our-ra.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Kun Fu
+  Name of the last author: Changshui Zhang
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: 'Aligning Where to See and What to Tell: Image Captioning with Region-Based
+    Attention and Scene-Specific Contexts'
+  Publication Date: 2016-12-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Automatic Metric Scores on the MSCOCO Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Automatic Metric Scores on the MSCOCO Test Server
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation of Various Systems on the Task of Image Captioning,
+      on the Flickr8K and Flickr30K Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Evaluation with the Tasks of Image and Captions Retrieval
+      on the MSCOCO Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Human Evaluation Results on MSCOCO
+  Table 6 caption:
+    table_text: TABLE 6 Effect of Region Number
+  Table 7 caption:
+    table_text: TABLE 7 Performances of Attention Model Variants
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2642953
+- Affiliation of the first author: university of california, los angeles, ca
+  Affiliation of the last author: department of statistics and computer science, university
+    of california, los angeles, ca
+  Figure 1 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_1.jpg
+  Figure 1 caption: "Illustration of some typical issues in online object tracking\
+    \ using the \u201Cskating1\u201D video in the benchmark [2]. Starting from the\
+    \ object specified in the first frame, a tracker needs to handle many variations\
+    \ in subsequent frames which include illuminative variation, scale variation,\
+    \ occlusion, deformation, fast motion, in-plane and out-of-plane rotation, background\
+    \ clutter, etc."
+  Figure 10 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_10.jpg
+  Figure 10 caption: Performance comparison of six variants of our AOGTracker in TB-100
+    using success plots of OPE, SRE and TRE.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_2.jpg
+  Figure 2 caption: Overview of our AOGTracker. (a) Illustration of the tracking,
+    learning and parsing (TLP) framework. It consists of four components as shown
+    in the sub-figure. (b) Examples of capturing structural and appearance variations
+    of a tracked object by a series of object configurations inferred on-the-fly over
+    key frames 1, 173, 282, etc. (c) Illustration of an object AOG, a parse tree and
+    an object configuration in frame 282. A parse tree is an instantiation of an AOG.
+    A configuration is the layout of latent parts represented by terminal-nodes in
+    a parse tree. An object AOG preserves ambiguities by capturing multiple parse
+    trees. (Best viewed in color and magnification.)
+  Figure 3 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_3.jpg
+  Figure 3 caption: We assume parts are of rectangular shapes. (a) shows a configuration
+    with three parts. Two different, yet equivalent, decomposition rules in representing
+    a configuration are shown in (b) for decomposition with branching factor equal
+    to the number of parts (i.e., a flat structure), and in (c) for a hierarchical
+    decomposition with branching factor being set to 2 at all levels.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_4.jpg
+  Figure 4 caption: Illustration of (a) the dictionary of part types, and (b) part
+    instances generated by placing a part type in a grid. Given part instances, (c)
+    shows how a sub-grid is decomposed in different ways. We allow overlap between
+    child nodes (see (c.3)).
+  Figure 5 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_5.jpg
+  Figure 5 caption: "Illustration of the full structure And-Or Graph (AOG) unfolding\
+    \ the space of latent part configurations. It is of directed acyclic graph (DAG)\
+    \ structure. For clarity, we show a toy example constructed for a 3\xD73 grid.\
+    \ The AOG can generate all possible latent part configurations (the number is\
+    \ often huge for typical grid sizes, see Table 1), while allowing efficient exploration\
+    \ with a DP algorithm due to the DAG structure. See text for details. (Best viewed\
+    \ in color and with magnification)."
+  Figure 6 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_6.jpg
+  Figure 6 caption: "Illustration of the spatial DP algorithm for parsing with AOGs\
+    \ (e.g., AO G 172 in the left where the deformation model is showed for each part\
+    \ Terminal-node). Right-middle : The input image (ROI in the 173th frame in the\
+    \ \u201CSkating1\u201D sequence) and the inferred object configuration. Right-top:\
+    \ The score map pyramid for root Or-node. Middle: For each node in AOG, we show\
+    \ one level of score map pyramid at which the optimal parse tree is retrieved."
+  Figure 7 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_7.jpg
+  Figure 7 caption: 'Illustration of learning an object AOG in the first frame (top)
+    and re-learning an object AOG in the 281th frame when a critical moment has triggered.
+    It consists of two steps: (a) learning initial object AOG by pruning branches
+    of Or-nodes in full structure AOG, and (b) learning refined object AOG by pruning
+    part configurations w.r.t. majority voting in positive re-labeling in LSVM.'
+  Figure 8 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_8.jpg
+  Figure 8 caption: Performance comparison in TB-100 (1st row), TB-50 (2nd row) and
+    TB-CVPR2013 (3rd row) in term of success plots of OPE (1st column), SRE (2nd column)
+    and TRE (3rd colum). For clarity, only top 10 trackers are shown in color curves
+    and listed in the legend. Two deep learning based trackers, CNT [5] and SO-DLT
+    [6], are evaluated in TB-CVPR2013 using OPE (with their performance plots manually
+    added in the left-bottom figure). We note that the plots are reproduced with the
+    raw results provided at http:cvlab.hanyang.ac.krtrackerbenchmark. (Best viewed
+    in color and with magnification).
+  Figure 9 Link: articels_figures_by_rev_year\2016\Online_Object_Tracking_Learning_and_Parsing_with_AndOr_Graphs\figure_9.jpg
+  Figure 9 caption: Qualitative results. For clarity, we show tracking results (bounding
+    boxes) in 6 randomly sampled frames for the top 10 trackers according to their
+    OPE performance in TB-100. (Best viewed in color and with magnification.)
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Tianfu Wu
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Online Object Tracking, Learning and Parsing with And-Or Graphs
+  Publication Date: 2016-12-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Number of Latent Part Configurations Generated from Full
+      Structure AOGs
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Tracking Algorithms Evaluated in the TB-100 Benchmark (Reproduced
+      from [2] )
+  Table 3 caption:
+    table_text: TABLE 3 Performance Gain (in Percent) of Our AOGTracker in Term of
+      Success Rate and Precision Rate in the Benchmark [2]
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2644963
+- Affiliation of the first author: "lipade \u2013 sip, universit\xE9 paris descartes,\
+    \ paris, france"
+  Affiliation of the last author: "lipade \u2013 sip, universit\xE9 paris descartes,\
+    \ paris, france"
+  Figure 1 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_1.jpg
+  Figure 1 caption: 'The goal of this article is to study the following questions:
+    is A enlaced by B ? Is B enlaced by A ? Are the two objects interlaced? (black:
+    object A , gray: object B ).'
+  Figure 10 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_10.jpg
+  Figure 10 caption: Examples of retinal images from the DRIVE [35] and CHASEDB1 [36]
+    datasets, with their respective blood vessels automatic segmentations provided
+    by [37]. The first image corresponds to a retina from the DRIVE dataset (shifted
+    optic disk), while the other comes from CHASEDB1 (centered optic disk).
+  Figure 2 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_2.jpg
+  Figure 2 caption: "Different longitudinal cuts of a binary object. An oriented line\
+    \ \u0394 (\u03B8,\u03C1) slices the object into either an empty, or a finite set\
+    \ of segments."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_3.jpg
+  Figure 3 caption: "Illustration of the enlacement between points along a line for\
+    \ two configurations. Along the oriented line \u0394 (\u03B8,\u03C1) , the ordered\
+    \ triplet ( b 1 , a 1 , b 2 ) is the only argument to be put in favor of the proposition\
+    \ \u201C A is enlaced by B \u201D. Along the opposite oriented line \u0394 (\u03B8\
+    +\u03C0,\u03C1) , the arguments in favor of the proposition can be represented\
+    \ by the set of ordered triplets ( b 1 , a 1 , b 2 ),( b 1 , a 1 , b 3 ),( b 1\
+    \ , a 2 , b 3 ),( b 2 , a 2 , b 3 ) ."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_4.jpg
+  Figure 4 caption: Illustration of the enlacement between segments along a line for
+    two configurations ( Ai and Bi denote the lengths of the segments). On the first
+    line, the enlacement of A segments by B segments in direction theta is given by
+    B1A1B2 . On the second line, the enlacement of A segments by B segments in direction
+    theta + pi is (B1A1B2) + (B1A1B3) + (B1A2B3) + (B2A2B3) .
+  Figure 5 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_5.jpg
+  Figure 5 caption: The set of all parallel lines going in a given direction slices
+    the objects A and B into sets of longitudinal cuts. The combination of the one-dimensional
+    enlacement values obtained for each of these longitudinal cuts allows to measure
+    the overall enlacement in this direction.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_6.jpg
+  Figure 6 caption: 'Evolution of the directional enlacement profiles EAB and EBA
+    on a series of simple examples where objects are composed of multiple connected
+    components (white: object A , gray: object B ), illustrating increasingly complex
+    configurations in the horizontal directions. In these examples, each square has
+    an area of 10 times 10 pixels (in (b), the two curves overlap).'
+  Figure 7 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_7.jpg
+  Figure 7 caption: 'Polar representations of the directional descriptors of (a) enlacement,
+    and (b, c, d) interlacement obtained for the configurations introduced previously
+    in Fig. 1 (white: object A , gray: object B ).'
+  Figure 8 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_8.jpg
+  Figure 8 caption: "Typical configurations where the degree of truth given to the\
+    \ proposition \u201C A is surrounded by B \u201D may vary (white: object A , gray:\
+    \ object B )."
+  Figure 9 Link: articels_figures_by_rev_year\2016\Directional_Enlacement_Histograms_for_the_Description_of_Complex_Spatial_Configu\figure_9.jpg
+  Figure 9 caption: Box plot of the surrounding values mathcal SAB(alpha) obtained
+    for different tolerance values of alpha in [0, 1] , for each configuration presented
+    in Fig. 8.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: "Micha\xEBl Cl\xE9ment"
+  Name of the last author: Laurent Wendling
+  Number of Figures: 17
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Directional Enlacement Histograms for the Description of Complex Spatial
+    Configurations between Objects
+  Publication Date: 2016-12-26 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluation of the Enlacement and Interlacement of Objects
+      in Specific Directions Using a Fuzzy Pattern Matching Approach
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Evaluation of the Enlacement and Interlacement of Objects
+      in Specific Directions Using Our Averaging Approach
+  Table 3 caption:
+    table_text: TABLE 3 Surrounding Evaluations Obtained for the Approaches of [28]
+      and [27], Compared to the Evaluations of Our Approach, for the Different Configurations
+      of Fig. 8
+  Table 4 caption:
+    table_text: TABLE 4 Comparative Accuracy Results for the Noise Robustness Evaluation
+      on the DRIVE and CHASEDB1 Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Comparative Accuracy Results for the Classification of Decorative
+      Drop Caps with Different Segmentation Methods
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2645151
+- Affiliation of the first author: department of eecs, queen mary university of london,
+    london, united kingdom
+  Affiliation of the last author: department of eecs, queen mary university of london,
+    london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_1.jpg
+  Figure 1 caption: Comparing our weakly supervised approach to object-attribute association
+    learning to the conventional strongly supervised approach.
+  Figure 10 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_10.jpg
+  Figure 10 caption: Qualitative comparison of our semantic segmentation versus alternatives
+    on the LabelMe dataset (best viewed in colour).
+  Figure 2 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_2.jpg
+  Figure 2 caption: The probabilistic graphical models representing our WS-SIBP and
+    WS-MRF-SIBP. Shaded nodes are observed.
+  Figure 3 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_3.jpg
+  Figure 3 caption: Strong bounding-box-level annotation and weak image-level annotations
+    for aPascal are used for learning strongly supervised models and weakly supervised
+    models respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_4.jpg
+  Figure 4 caption: 43 subordinate classes of dog are converted into a single entry-level
+    class 'dog'.
+  Figure 5 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_5.jpg
+  Figure 5 caption: Qualitative results on free annotation. False positives are shown
+    in red. If the object prediction is wrong, the corresponding attribute box is
+    shaded.
+  Figure 6 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_6.jpg
+  Figure 6 caption: Illustrating the inferred superpixel annotation. Object and attributes
+    are coloured, and multi-label annotation blends colours. Each of the bottom two
+    groups has two rows corresponding to the two most confident objects detected.
+  Figure 7 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_7.jpg
+  Figure 7 caption: Object-attribute query results as precision-average recall curve.
+  Figure 8 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_8.jpg
+  Figure 8 caption: "Object-attribute query: qualitative comparison. Given a query,\
+    \ such as \u201CTable+Round\u201D, we list the top-5 results predicted by our\
+    \ method and w-SVM."
+  Figure 9 Link: articels_figures_by_rev_year\2016\WeaklySupervised_Image_Annotation_and_Segmentation_with_Objects_and_Attributes\figure_9.jpg
+  Figure 9 caption: Qualitative illustration of (attribute-enhanced) semantic segmentation
+    results on aPascal.
+  First author gender probability: 0.92
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Zhiyuan Shi
+  Name of the last author: Tao Xiang
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Weakly-Supervised Image Annotation and Segmentation with Objects and
+    Attributes
+  Publication Date: 2016-12-26 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Free Annotation Performance (APt) Evaluated on t Attributes
+      per Object
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results on Annotation Given Object Names (GN) or Locations
+      (GL)
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Semantic Segmentation Comparison versus State-of-the-Art
+      on the aPascal Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Comparison of Semantic Segmentation Performance
+      on the LabelMe Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Computation Time (Seconds per Iteration) of Different Methods
+      on aPascal Training Set (2,113 Images)
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2645157
+- Affiliation of the first author: department of electronic and electrical engineering,
+    university of sheffield, sheffield, united kingdom
+  Affiliation of the last author: school of computing sciences, university of east
+    anglia, norwich, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_1.jpg
+  Figure 1 caption: 'A hetero-manifold with three modalities: the blue, red and green
+    closed curves represent three uni-modal data sub-manifolds; the lines used to
+    connect two uni-modal data sub-manifolds constitute a cross-modal sub-manifold;
+    all uni- and cross-modal sub-manifolds constitute a hetero-manifold; any change
+    of a uni- or cross-modal sub-manifold will result in a change of the hetero-manifold.'
+  Figure 10 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_10.jpg
+  Figure 10 caption: The cross-modal first three matching results of two probe images.
+    The red rectangles demonstrate the correctly matched images in the gallery of
+    a same person.
+  Figure 2 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_2.jpg
+  Figure 2 caption: Cross-modal similarities between features of two objects O i and
+    O j captured in two modalities. The lines represent the similarity between two
+    points. The longer the lines, the less similar the two points are. The black lines
+    represent the uni-modal similarity while the dashed lines represent the similarity
+    defined by three-order random walks from one modality to another modality. Among
+    them, we can see that the features x 1 1 and x 2 2 are connected by two red dashed
+    lines whilst the two features x 1 2 and x 2 1 are connected by only one dashed
+    blue line. This point reflects the asymmetry of S uv in Lemma 2.
+  Figure 3 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_3.jpg
+  Figure 3 caption: 'Some image examples of the two person re-identification datasets:
+    VIPeR (left) and CUHK01 (right).'
+  Figure 4 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_4.jpg
+  Figure 4 caption: The CMC rankings of the compared methods on the VIPeR dataset
+    with 316 test persons. Numbers in legend are the Rank-1 accuracies and HMR-512
+    means the length of learned codes of HMR is 512.
+  Figure 5 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_5.jpg
+  Figure 5 caption: The CMC rankings of five methods on the CUHK01 dataset at code
+    lengths 32, 64 and 128 with 486 test persons.
+  Figure 6 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_6.jpg
+  Figure 6 caption: Precision recall curves on Wiki by varying the Hamming distance.
+  Figure 7 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_7.jpg
+  Figure 7 caption: MAP performance for each category at 32 bits.
+  Figure 8 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_8.jpg
+  Figure 8 caption: Some image examples of the FG-NET dataset. For person 007, the
+    dataset contains no image samples with age range 5-14.
+  Figure 9 Link: articels_figures_by_rev_year\2016\HeteroManifold_Regularisation_for_CrossModal_Hashing\figure_9.jpg
+  Figure 9 caption: Overall performance comparison between the proposed HMR, CCA and
+    other state-of-the-art methods. The number in the legend is the Area Under Curve
+    (AUC) and the possible largest AUC can be up to 1.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Feng Zheng
+  Name of the last author: Ling Shao
+  Number of Figures: 10
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Hetero-Manifold Regularisation for Cross-Modal Hashing
+  Publication Date: 2016-12-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ranking Accuracy Comparison at Ranks 1, 5, 10, 15 and 20 and
+      Overall AUC Performance Comparison When 512 Dimensional Binary Codes Are Learned
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 AUC Comparison on CUHK01 Corresponding to the Curves in Fig.
+      5
+  Table 3 caption:
+    table_text: TABLE 3 MAP Comparison on Wiki
+  Table 4 caption:
+    table_text: TABLE 4 Rank 1 Performance of Cross-Age Retrieval on the FG-NET Face
+      Dataset with Six Modalities
+  Table 5 caption:
+    table_text: TABLE 5 Rank 10 Performance of Cross-Age Retrieval on the FG-NET Face
+      Dataset with Six Modalities
+  Table 6 caption:
+    table_text: TABLE 6 Rank 20 Performance of Cross-Age Retrieval on the FG-NET Face
+      Dataset with Six Modalities
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2645565
+- Affiliation of the first author: facebook ai research, facebook inc., menlo park,
+    ca
+  Affiliation of the last author: computer science department, rutgers university,
+    110 frelinghuysen rd, piscataway, nj
+  Figure 1 Link: articels_figures_by_rev_year\2016\Write_a_Classifier_Predicting_Visual_Classifiers_from_Unstructured_Text\figure_1.jpg
+  Figure 1 caption: Our proposed setting where machine can predict unseen class from
+    class-level unstructured text description.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\Write_a_Classifier_Predicting_Visual_Classifiers_from_Unstructured_Text\figure_2.jpg
+  Figure 2 caption: 'Top: Example Wikipedia article about the painted bunting, with
+    an example image. Bottom: The proposed learning setting. For each category we
+    are give one (or more) textual description (only a synopsis of a larger text is
+    shown), and a set of training images. Our goal is to be able to predict a classifier
+    for a category based only on the narrative (zero-shot learning).'
+  Figure 3 Link: articels_figures_by_rev_year\2016\Write_a_Classifier_Predicting_Visual_Classifiers_from_Unstructured_Text\figure_3.jpg
+  Figure 3 caption: Illustration of the proposed linear prediction framework (constrained
+    regression and domain transfer) for the task zero-shot learning from textual description
+    (linear formulation (E)).
+  Figure 4 Link: articels_figures_by_rev_year\2016\Write_a_Classifier_Predicting_Visual_Classifiers_from_Unstructured_Text\figure_4.jpg
+  Figure 4 caption: 'Linear : Left and Middle: ROC curves of best 10 predicted classes
+    by the final formulation (E) for bird and flower datasets respectively, Right:
+    AUC improvement over the three baselines on flower dataset (formulations A (GPR),
+    A (TGP), C). The improvement is sorted in an increasing order for each baseline
+    separately (best seen in color).'
+  Figure 5 Link: articels_figures_by_rev_year\2016\Write_a_Classifier_Predicting_Visual_Classifiers_from_Unstructured_Text\figure_5.jpg
+  Figure 5 caption: 'Linear: AUC of the predicated classifiers for all classes of
+    the flower datasets (formulation E).'
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mohamed Elhoseiny
+  Name of the last author: Babak Saleh
+  Number of Figures: 5
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: 'Write a Classifier: Predicting Visual Classifiers from Unstructured
+    Text'
+  Publication Date: 2016-12-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Classifier Prediction Functions (Linear and Kernel)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Linear: Comparative Evaluation of Different Formulations
+      on the Flower and Bird Datasets'
+  Table 3 caption:
+    table_text: 'TABLE 3 Linear: Percentage of Classes that the Final Proposed Approach
+      (Formulation (E)) Makes an Improvement in Predicting Over the Baselines (Relative
+      to the Total Number of Classes in Each Dataset)'
+  Table 4 caption:
+    table_text: 'TABLE 4 Linear: Top-5 Classes with Highest Combined Improvement in
+      Flower Dataset'
+  Table 5 caption:
+    table_text: 'TABLE 5 Kernel: Recall, MAU, and Average AUC on Three SeenUnseen
+      Splits on Flower Dataset and a SeenUnseen Split on Birds Dataset'
+  Table 6 caption:
+    table_text: 'TABLE 6 Kernel: MAU on a Seen-Unseen Split-Birds Dataset (MKL)'
+  Table 7 caption:
+    table_text: 'TABLE 7 Kernel: MAU on a Seen-Unseen Split-Birds Dataset (CNN Image
+      Features, Text Description)'
+  Table 8 caption:
+    table_text: 'TABLE 8 Kernel: Recall and MAU on a Seen-Unseen Split-Birds Dataset
+      (Attributes)'
+  Table 9 caption:
+    table_text: TABLE 9 Zero-Shot Learning Performance CUB Dataset (Super Category
+      Seen (SC-Seen) Split)
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2643667
+- Affiliation of the first author: school of electronic information and communications,
+    huazhong university of science and technology, wuhan, china
+  Affiliation of the last author: school of electronic information and communications,
+    huazhong university of science and technology, wuhan, china
+  Figure 1 Link: articels_figures_by_rev_year\2016\An_EndtoEnd_Trainable_Neural_Network_for_ImageBased_Sequence_Recognition_and_Its\figure_1.jpg
+  Figure 1 caption: 'The network architecture. The architecture consists of three
+    parts: 1) convolutional layers, which extract a feature sequence from the input
+    image; 2) recurrent layers, which predict a label distribution for each frame;
+    3) transcription layer, which translates the per-frame predictions into the final
+    label sequence.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\An_EndtoEnd_Trainable_Neural_Network_for_ImageBased_Sequence_Recognition_and_Its\figure_2.jpg
+  Figure 2 caption: Receptive fields. Each vector in the extracted feature sequence
+    is associated with a receptive field on the input image, and can be considered
+    as the feature vector of that field.
+  Figure 3 Link: articels_figures_by_rev_year\2016\An_EndtoEnd_Trainable_Neural_Network_for_ImageBased_Sequence_Recognition_and_Its\figure_3.jpg
+  Figure 3 caption: (a) The structure of a basic LSTM unit. An LSTM consists of a
+    cell module and three gates, namely the input gate i t , the output gate o t and
+    the forget gate f t . (b) The structure of the deep bidirectional LSTM we use
+    in our paper. Combining a forward (left to right) and a backward (right to left)
+    LSTMs results in a bidirectional LSTM. Stacking multiple bidirectional LSTMs results
+    in a deep bidirectional LSTM.
+  Figure 4 Link: articels_figures_by_rev_year\2016\An_EndtoEnd_Trainable_Neural_Network_for_ImageBased_Sequence_Recognition_and_Its\figure_4.jpg
+  Figure 4 caption: "Blue line graph: recognition accuracy as a function parameter\
+    \ \u03B4 . Red bars: lexicon search time per sample. Tested on the IC03 dataset\
+    \ with the 50k lexicon."
+  Figure 5 Link: articels_figures_by_rev_year\2016\An_EndtoEnd_Trainable_Neural_Network_for_ImageBased_Sequence_Recognition_and_Its\figure_5.jpg
+  Figure 5 caption: (a) Clean musical scores images collected from [40] (b) Synthesized
+    musical score images. (c) Real-world score images taken with a mobile phone camera.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Baoguang Shi
+  Name of the last author: Cong Yao
+  Number of Figures: 5
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: An End-to-End Trainable Neural Network for Image-Based Sequence Recognition
+    and Its Application to Scene Text Recognition
+  Publication Date: 2016-12-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Network Configuration Summary
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Recognition Accuracies (%) on Four Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Among Various Methods
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Pitch Recognition Accuracies, Among CRNN and
+      Two Commercial OMR Systems, on the Three Datasets We Have Collected
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2646371
+- Affiliation of the first author: department of engineering, university of cambridge,
+    cambridge, united kingdom
+  Affiliation of the last author: department of engineering, university of cambridge,
+    cambridge, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\SegNet_A_Deep_Convolutional_EncoderDecoder_Architecture_for_Image_Segmentation\figure_1.jpg
+  Figure 1 caption: SegNet predictions on road scenes and indoor scenes. To try our
+    system yourself, please see our online web demo at http:mi.eng.cam.ac.ukprojectssegnet.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\SegNet_A_Deep_Convolutional_EncoderDecoder_Architecture_for_Image_Segmentation\figure_2.jpg
+  Figure 2 caption: An illustration of the SegNet architecture. There are no fully
+    connected layers and hence it is only convolutional. A decoder upsamples its input
+    using the transferred pool indices from its encoder to produce a sparse feature
+    map(s). It then performs convolution with a trainable filter bank to densify the
+    feature map. The final decoder output feature maps are fed to a soft-max classifier
+    for pixel-wise classification.
+  Figure 3 Link: articels_figures_by_rev_year\2017\SegNet_A_Deep_Convolutional_EncoderDecoder_Architecture_for_Image_Segmentation\figure_3.jpg
+  Figure 3 caption: An illustration of SegNet and FCN [2] decoders. a,b,c,d correspond
+    to values in a feature map. SegNet uses the max pooling indices to upsample (without
+    learning) the feature map(s) and convolves with a trainable decoder filter bank.
+    FCN upsamples by learning to deconvolve the input feature map and adds the corresponding
+    encoder feature map to produce the decoder output. This feature map is the output
+    of the max-pooling layer (includes sub-sampling) in the corresponding encoder.
+    Note that there are no trainable decoder filters in FCN.
+  Figure 4 Link: articels_figures_by_rev_year\2017\SegNet_A_Deep_Convolutional_EncoderDecoder_Architecture_for_Image_Segmentation\figure_4.jpg
+  Figure 4 caption: Results on CamVid day and dusk test samples. SegNet shows superior
+    performance, particularly with its ability to delineate boundaries, as compared
+    to some of the larger models when all are trained in a controlled setting. DeepLab-LargeFOV
+    is the most efficient model and with CRF post-processing can produce competitive
+    results although smaller classes are lost. FCN with learnt deconvolution is clearly
+    better. DeconvNet is the largest model with the longest training time, but its
+    predictions loose small classes. Note that these results correspond to the model
+    corresponding to the highest mIoU accuracy in Table 3.
+  Figure 5 Link: articels_figures_by_rev_year\2017\SegNet_A_Deep_Convolutional_EncoderDecoder_Architecture_for_Image_Segmentation\figure_5.jpg
+  Figure 5 caption: Qualitative assessment of SegNet predictions on RGB indoor test
+    scenes from the recently released SUN RGB-D dataset [23]. In this hard challenge,
+    SegNet predictions delineate inter class boundaries well for object classes in
+    a variety of scenes and their view-points. Overall rhe segmentation quality is
+    better when object classes are reasonably sized but is very noisy when the scene
+    is more cluttered. Note that often parts of an image of a scene do not have ground
+    truth labels and these are shown in black colour. These parts are not masked in
+    the corresponding deep model predictions that are shown. Note that these results
+    correspond to the model corresponding to the highest mIoU accuracy in Table 4.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Vijay Badrinarayanan
+  Name of the last author: Roberto Cipolla
+  Number of Figures: 5
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: 'SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image
+    Segmentation'
+  Publication Date: 2017-01-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Decoder Variants
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Comparisons of SegNet with Traditional Methods
+      on the CamVid 11 Road Class Segmentation Problem [22]
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparison of Deep Networks for Semantic Segmentation
+      on the CamVid Test Set When Trained on a Corpus of 3,433 Road Scenes Without
+      Class Balancing
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Comparison of Deep Architectures on the SUNRGB-D
+      Dataset When Trained on a Corpus of 5,250 Indoor Scenes
+  Table 5 caption:
+    table_text: TABLE 5 Class Average Accuracies of SegNet Predictions for the 37
+      Indoor Scene Classes in the SUN RGB-D Benchmark Dataset
+  Table 6 caption:
+    table_text: TABLE 6 A Comparison of Computational Time and Hardware Resources
+      Required for Various Deep Architectures
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2644615
+- Affiliation of the first author: department of electronic engineering, national
+    university of ireland, maynooth, ireland
+  Affiliation of the last author: school of electronics, electrical engineering and
+    computer science, queen's university belfast, belfast, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_1.jpg
+  Figure 1 caption: PCA NIPALS algorithm.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_10.jpg
+  Figure 10 caption: Plasma etch process OES spectrum.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_2.jpg
+  Figure 2 caption: FSCA algorithm.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_3.jpg
+  Figure 3 caption: Direct FSV implementation of FSCA.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_4.jpg
+  Figure 4 caption: 'Complexity of FSCA algorithms as a function of v and m : Plots
+    show FSCA (blue) and FSVA (green) implementations with precomputed covariance
+    matrices (dashed lines) and without (solid lines).'
+  Figure 5 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_5.jpg
+  Figure 5 caption: Single-pass backward refinement algorithm.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_6.jpg
+  Figure 6 caption: Multi-pass backward refinement algorithm.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_7.jpg
+  Figure 7 caption: Modified FSV procedure for reordering variables following backward
+    refinement.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_8.jpg
+  Figure 8 caption: 'Example 1: Boxplots showing variation in performance of each
+    method for k=4 and 6 components, over 200 Monte Carlo repetitions.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\Forward_Selection_Component_Analysis_Algorithms_and_Applications\figure_9.jpg
+  Figure 9 caption: 'Example 2: The percentage of variance explained as a function
+    of the number of selected components for u=10,v=30 .'
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Luca Puggini
+  Name of the last author: "Se\xE1n McLoone"
+  Number of Figures: 13
+  Number of Tables: 10
+  Number of authors: 2
+  Paper title: 'Forward Selection Component Analysis: Algorithms and Applications'
+  Publication Date: 2017-01-05 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Flop Count and Asymptotic Complexity for Computing k FSCs\
+      \ of X\u2208 R m\xD7v with Different FSCA Algorithm Implementations"
+  Table 10 caption:
+    table_text: 'TABLE 10 Wafer Sites: The Percentage of Variance Explained by the
+      Various Methods for Different Values of k , the Number of Selected Wafer Sites'
+  Table 2 caption:
+    table_text: 'TABLE 2 Example 1: The Percentage of Explained Variance Achieved
+      with PCA, OPFS, FSCA, and Its Backward Refinement Variants, for Different Numbers
+      of Selected Components'
+  Table 3 caption:
+    table_text: 'TABLE 3 Example 1: Variables Selected at Each Step by FSCA, SPBR
+      and OPFS'
+  Table 4 caption:
+    table_text: 'TABLE 4 Example 2: Percentage Variance Explained ( V X ) and Percentage
+      of True Variables Selected ( S c ) with FSCA and Its Backward Refinement Variants
+      (Averaged Over 1,000 Repetitions)'
+  Table 5 caption:
+    table_text: "TABLE 5 Example 3: The 1st and 2nd Loading Generated by PCA and SPCA\
+      \ ( \u03BB = 20) and the 1st and 2nd FSC Obtained with FSCA and SPBR"
+  Table 6 caption:
+    table_text: 'TABLE 6 Pitprops Dataset: Percentage of Explained Variance as a Function
+      of the Number of Variables Selected for Each Algorithm'
+  Table 7 caption:
+    table_text: 'TABLE 7 Pitprops Dataset: The Six Variables Selected by Each Algorithm
+      and the Optimum Set of Six Variables (BEST) in Terms of Maximizing the Percentage
+      of Explained Variance in the Dataset'
+  Table 8 caption:
+    table_text: 'TABLE 8 Plasma Etch: Accumulative Variance Explained by PCA, FSCA
+      and the Four Backward Refinement Variants of FSCA for Different Values of k'
+  Table 9 caption:
+    table_text: 'TABLE 9 Plasma Etch: Computation Time (in Seconds) for PCA, FSVA
+      and the Four Backward Refinement Variants of FSCA for Different Values of k'
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2648792

@@ -1,0 +1,911 @@
+- Affiliation of the first author: university of adelaide, school of computer science,
+    adelaide, sa, australia
+  Affiliation of the last author: "technische universit\xE4t darmstadt, department\
+    \ of computer science, hochschulstr. 10, darmstadt, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_1.jpg
+  Figure 1 caption: Given a number of unlabeled object detections (a) and a number
+    of possible trajectory hypotheses (b), our method labels all detections (c) and
+    re-estimates the trajectories (d) using an alternating discrete-continuous optimization
+    scheme.
+  Figure 10 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_10.jpg
+  Figure 10 caption: New trajectory hypotheses (bottom) are generated based on existing
+    ones (top) by extending (a), shrinking (b), splitting (c), merging (d) , and unwinding
+    (e).
+  Figure 2 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_2.jpg
+  Figure 2 caption: Factor graph of the underlying CRF with black circular nodes representing
+    the random variables (trajectory hypothesis for each detection) and square nodes
+    representing the pairwise potentials. For clarity, all unary and high-order potentials
+    are omitted. In addition to simple temporal smoothing factors E S (left, shown
+    in red), we model pairwise exclusion between detections within the same time step
+    E X (right, blue, subset shown) to prevent implausible data association.
+  Figure 3 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_3.jpg
+  Figure 3 caption: The trajectory of target i is represented by a two-dimensional
+    piecewise cubic spline with a fixed starting point s i and a terminating point
+    e i .
+  Figure 4 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_4.jpg
+  Figure 4 caption: Empirical analysis of various trajectory properties in multiple
+    people tracking, using ground truth data of eight sequences. Thick grey curves
+    denote our suggested models, motivated by their empirical distributions (negative
+    log-frequency shown).
+  Figure 5 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_5.jpg
+  Figure 5 caption: To enable gradient-based continuous optimization, we choose differentiable
+    penalties (dotted lines) approximating the absolute value (left), the truncated
+    absolute value (middle), and the step functions (right).
+  Figure 6 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_6.jpg
+  Figure 6 caption: An additional boundary term Emathrmbnd enforces natural trajectory
+    behavior beyond the support. Here, the support, i.e., detections assigned to the
+    red trajectory, are indicated with solid circles. An unlikely configuration with
+    a high (angular) velocity in the dotted area, resulting in a high energy value
+    is shown on the left, while a more plausible trajectory hypothesis is depicted
+    on the right. In the latter case, unassigned detections (empty circles) are more
+    likely to be picked up by data association later.
+  Figure 7 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_7.jpg
+  Figure 7 caption: The distance between two targets is modeled by an isotropic sigmoid
+    (left), while the spatio-temporal overlap between two trajectories is computed
+    by accumulating the overlap at each time step.
+  Figure 8 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_8.jpg
+  Figure 8 caption: Influence of the detection-level exclusion term Emathrmdetmathsf
+    X , which prevents that two separate targets are assigned the same ID.
+  Figure 9 Link: articels_figures_by_rev_year\2015\MultiTarget_Tracking_by_DiscreteContinuous_Energy_Minimization\figure_9.jpg
+  Figure 9 caption: Factor graph encoding of the unary and pairwise label cost before
+    expanding on alpha . Random variables (detections) and their current labels (trajectory
+    IDs) are represented by solid circles, while auxiliary variables (higher-order
+    cliques connecting all detections that are part of the same trajectory) are outlined
+    with dashed circles. Solid squares represent unary (black) and pairwise (colored)
+    terms, respectively. The corresponding potentials are depicted on the right with
+    Lstar and Lstar star being the respective label cost for a single label (black)
+    and a pair of labels (red). Note that all factors that are unrelated to the label
+    cost are omitted for clarity.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Anton Milan
+  Name of the last author: Stefan Roth
+  Number of Figures: 13
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Multi-Target Tracking by Discrete-Continuous Energy Minimization
+  Publication Date: 2015-12-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Parameters Used in Our Experiments
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison of Different Optimization Techniques
+      w.r.t. Ground Truth
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Results on Each Test Sequence Measured in 3D
+      World Coordinates
+  Table 5 caption:
+    table_text: 'TABLE 5 Quantitative Comparison of Our Method to Previous Work, Averaged
+      over Six Sequences: Full Field of View (top ) and Cropped Tracking Area (bottom).'
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Comparison to Three State-of-the-Art Methods
+      on the ETHMS Dataset [46]
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Results on 2015 2D MOTChallenge [30]
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2505309
+- Affiliation of the first author: department of computer science, rutgers university,
+    nj, usa
+  Affiliation of the last author: department of computer science, rutgers university,
+    nj, usa
+  Figure 1 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_1.jpg
+  Figure 1 caption: Pose-free facial landmark initialization using Procrustes analysis
+    on 3D reference shape and detected optimized part mixture.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_10.jpg
+  Figure 10 caption: Visual comparison of CLM, TSPM with full 1,050 independent part
+    model and our proposed method evaluated on MultiPIE, AR, LFW, LFPW and AFW databases.
+    The first column is a test sample from MultiPIE. The second column is from AR
+    database. The third and fourth columns are from LFW database. The fifth and sixth
+    columns are with LFPW images and the last two columns are from AFW dataset. (a)
+    Localization result by CLM. (b) Localization result by Tree Structure Part Model
+    with full independent 1,050 parts model which achieves the highest accuracy among
+    all its models. (c) Localization result from proposed method.
+  Figure 2 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_2.jpg
+  Figure 2 caption: The group sparse structure illustration. The most salient boxes
+    denoted as green comparing to all the boxes are sparse. Each box is considered
+    a group. At the group level, the selection is sparse. While inside each box, the
+    corresponding coefficient matrix denoted as the gray patch is dense because inside
+    the area of each box, all the pixels contribute to the score f( s j ) calculation.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_3.jpg
+  Figure 3 caption: Visual comparison of converted TSPM with OPM. The converted TSPM
+    is the manual selected 17 point setup which matches the 17 point setup in OPM.
+    The results are evaluated on MultiPIE, AR, LFW, LFPW and AFW. The first column
+    is from MultiPIE. The second column is from AR. The third and fourth columns are
+    from LFW. The fifth and sixth columns are from LFPW and the last two columns are
+    from AFW. (a) Result of converted TSPM in green dots as anchor points. (b) Result
+    of OPM in red dots as anchor points.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_4.jpg
+  Figure 4 caption: Facial landmark models of TSPM and Optimized Part Mixtures. (a)
+    TSPM landmark model with 68 red dots as landmark positions and blue rectangles
+    as local patches. (b) The Optimized Part Mixture model with only 17 red-dot landmarks
+    and blue rectangles as local patches.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_5.jpg
+  Figure 5 caption: The visualization of weight vector norms and the gray scale patch
+    image to show the weight distributions at various norm thresholds. The top part
+    is the plot of weight vector norm of each filter. The bottom part are the gray
+    scale patch images under norm threshold 0.03, 0.05, 0.06 and 0.07.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_6.jpg
+  Figure 6 caption: Cumulative error distribution curves on MultiPIE compared with
+    17-point random selection method and 10-point baseline method. The proportion
+    reported in the legend is under the relative error 0.05.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_7.jpg
+  Figure 7 caption: Cumulative error distribution curves for landmark localization
+    on large pose variation databases. (a) Error distribution tested on MultiPIE.
+    (b) Error distribution tested on LFPW-P. (c) Error distribution tested on iBug-P.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_8.jpg
+  Figure 8 caption: Cumulative error distribution curves for landmark localization
+    on face-in-the-wild databases. (a) Error distribution tested on Life Face in the
+    Wild (LFW) dataset. (b) Error distribution tested on Labeled Face Parts in the
+    Wild (LFPW). (c) Error distribution tested on Annotated Face in the Wild (AFW).
+  Figure 9 Link: articels_figures_by_rev_year\2015\Face_Landmark_Fitting_via_Optimized_Part_Mixtures_and_Cascaded_Deformable_Model\figure_9.jpg
+  Figure 9 caption: Cumulative error distribution curves for landmark localization
+    on near-frontal images. (a) Error distribution tested on near-frontal AR database.
+    The numbers in legend are the percentage of testing faces that have average error
+    below 5 percent of the pupil distance. (b) Error distribution tested on near-frontal
+    MultiPIE database. The percentage is the ratio of error less than 5 percent of
+    ground truth face size.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xiang Yu
+  Name of the last author: Dimitris N. Metaxas
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Face Landmark Fitting via Optimized Part Mixtures and Cascaded Deformable
+    Model
+  Publication Date: 2015-12-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Percentage of Images Less than Given Relative Error Level
+      of TSPM and the Proposed Optimized Mixtures on AR and LFPW Datasets and Average
+      Running Time per Image
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Proportion of Image Volume Less than Given Relative Error
+      Level on LFPW and AFW Comparing with TSPM-Convert, the Proposed Method and the
+      Proposed Method without Component-Wise Active Contour (No Snake)
+  Table 3 caption:
+    table_text: TABLE 3 The Success Rate of the Detection, the Proportion of Successfully
+      Detected Images over the Database Volume on MultiPIE, LFPW-P and iBug-P
+  Table 4 caption:
+    table_text: TABLE 4 Proportion of Image Less than Given Relative Error Level on
+      AR, MultiPIE, LFW, LFPW and AFW Comparing with Oxford Detector (Ox), ASM, Kernel
+      Regression (KR), CLM, TSPM, RCPR and SDM
+  Table 5 caption:
+    table_text: TABLE 5 Percentage of Talking Face Image Frames Less than Given Relative
+      Error Level and Mean Average Pixel Error (MAPE) in Pixels
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2509999
+- Affiliation of the first author: center for biometrics and security research and
+    national laboratory of pattern recognition, institute of automation, chinese academy
+    of sciences, beijing, china
+  Affiliation of the last author: school of engineering, university of california
+    at merced, ca
+  Figure 1 Link: articels_figures_by_rev_year\2015\Exploiting_Hierarchical_Dense_Structures_on_Hypergraphs_for_MultiObject_Tracking\figure_1.jpg
+  Figure 1 caption: (a) Existing methods often fail when multiple objects with similar
+    appearance or motion patterns appear in proximity. (b) The proposed tracking algorithm
+    based on an undirected affinity hypergraph effectively handles such cases. The
+    circles denote different tracklets and the colors represent the corresponding
+    appearance or motion patterns. Existing methods, which focus on the pairwise similarities
+    of tracklets in short and local temporal span, are likely to generate incorrect
+    trajectories (blue splines). In contrast, the proposed algorithm searches for
+    dense structures on the affinity hypergraph of tracklets which consider similarities
+    among multiple tracklets across the temporal domain (i.e., high-oder information),
+    and generates correct trajectories (red splines).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Exploiting_Hierarchical_Dense_Structures_on_Hypergraphs_for_MultiObject_Tracking\figure_2.jpg
+  Figure 2 caption: (a) Appearance affinity of a set of tracklets. (b) Motion affinity
+    of a set of tracklets. (c) Smoothness affinity of a set of tracklets.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Exploiting_Hierarchical_Dense_Structures_on_Hypergraphs_for_MultiObject_Tracking\figure_3.jpg
+  Figure 3 caption: Effect of the hypergraph degree k on tracking performance and
+    running speed for the H2TAcc (Denoted by the suffix Acc) and the H2TwoAcc (Denoted
+    by the suffix woAcc) methods. The left and right figures show the tracking performance
+    in terms of accuracy (measured by MOTA) and speed (measured by frame-per-second
+    (fps)) by changing the hypergraph degree k .
+  Figure 4 Link: articels_figures_by_rev_year\2015\Exploiting_Hierarchical_Dense_Structures_on_Hypergraphs_for_MultiObject_Tracking\figure_4.jpg
+  Figure 4 caption: Effect of the number of temporally adjacent segments used to generate
+    the new segment division for both the first layer and the remaining ones. The
+    first and second columns present the tracking performance (measured by MOTA) and
+    speed (measured by frame-per-second) by changing delta circ and delta ast .
+  Figure 5 Link: articels_figures_by_rev_year\2015\Exploiting_Hierarchical_Dense_Structures_on_Hypergraphs_for_MultiObject_Tracking\figure_5.jpg
+  Figure 5 caption: Tracking results of the proposed tracking algorithm in multi-pedestrian
+    tracking sequences (PETS2009-S2L2 and PETS2009-S2L3) and multi-face sequences
+    (SubwayFaces-S001 SubwayFaces-S002, SubwayFaces-S003 and SubwayFaces-S004). The
+    highlighted area in the PETS2009 sequences is the tracking region which is set
+    as [53].
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.53
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Longyin Wen
+  Name of the last author: Ming-Hsuan Yang
+  Number of Figures: 5
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Exploiting Hierarchical Dense Structures on Hypergraphs for Multi-Object
+    Tracking
+  Publication Date: 2015-12-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Effect of Different Components in the Proposed Method
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparison Results of the Proposed Trackers with
+      Other State-of-the-Art Trackers in the Multi-Pedestrian Tracking Sequences (Results
+      Marked with the Asterisk Are Taken Directly from the Literature)
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Results of the Evaluated MOT Algorithms in the
+      Subway Surveillance Sequences
+  Table 5 caption:
+    table_text: TABLE 5 Run Time Performance of Evaluated Methods
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2509979
+- Affiliation of the first author: xerox research center europe, france
+  Affiliation of the last author: university of sheffield, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2015\DataDriven_Detection_of_Prominent_Objects\figure_1.jpg
+  Figure 1 caption: 'Data-Driven Detection: the prominent object of the query is detected
+    using a global representation that is compared to image representations from an
+    annotated set. The nearest neighbors transfer their annotations. We use supervision
+    to learn an image representation and a metric geared toward detection.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\DataDriven_Detection_of_Prominent_Objects\figure_2.jpg
+  Figure 2 caption: 'Task-aware representation: patch-level object classifiers are
+    used to represent query images by probability maps. Annotations of training images
+    with similar probability maps are transferred to solve detection.'
+  Figure 3 Link: articels_figures_by_rev_year\2015\DataDriven_Detection_of_Prominent_Objects\figure_3.jpg
+  Figure 3 caption: Root and part filters for each of the three symmetric (six in
+    total) components learnt by DPM for the People and Bird classes, for the ELSP
+    and Caltech-UCSD datasets.
+  Figure 4 Link: articels_figures_by_rev_year\2015\DataDriven_Detection_of_Prominent_Objects\figure_4.jpg
+  Figure 4 caption: DPM and DDD exhibit very different behaviors when it comes to
+    failure cases.
+  Figure 5 Link: articels_figures_by_rev_year\2015\DataDriven_Detection_of_Prominent_Objects\figure_5.jpg
+  Figure 5 caption: For UCSD, precision as a function of (left) overlap threshold
+    and (right) object size.
+  Figure 6 Link: articels_figures_by_rev_year\2015\DataDriven_Detection_of_Prominent_Objects\figure_6.jpg
+  Figure 6 caption: DDD+PMap (SIFT+Color) results. For each block of four images,
+    the first image is the query, and the three others are the closest three, according
+    to the task aware representation that is shown below. The corresponding object
+    locations are transferred.
+  Figure 7 Link: articels_figures_by_rev_year\2015\DataDriven_Detection_of_Prominent_Objects\figure_7.jpg
+  Figure 7 caption: Examples of vehicle part annotations generated from KITTI. Parts
+    not indicated are invisible ( v t =0 ).
+  Figure 8 Link: articels_figures_by_rev_year\2015\DataDriven_Detection_of_Prominent_Objects\figure_8.jpg
+  Figure 8 caption: 'Vehicle pose retrieval. Left: query image, right: five nearest
+    neighbors using the learned metric.'
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Diane Larlus
+  Name of the last author: Zhenwen Dai
+  Number of Figures: 8
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: Data-Driven Detection of Prominent Objects
+  Publication Date: 2015-12-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 For the Three Datasets, the Top Part Indicates Average Overlaps
+      Used to Choose the Overlap Thresholds that Evaluates the Precision (The bottom
+      part shows results of the control baselines)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results of the Different DDD Variants Compared to Several
+      Baselines on the Three Datasets
+  Table 3 caption:
+    table_text: TABLE 3 For the Three Datasets, Results of the Task-Aware Representation
+      with and without Color Information
+  Table 4 caption:
+    table_text: TABLE 4 Fine-Grained Classification on the Dogs Dataset, Using Detection
+  Table 5 caption:
+    table_text: TABLE 5 Top-1 Accuracy for Fine-Grained Classification on the Birds
+      Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Precision of Vehicle Part Detection, in the KITTI Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2509988
+- Affiliation of the first author: obvious engineering, london, united kingdom
+  Affiliation of the last author: university of oxford
+  Figure 1 Link: articels_figures_by_rev_year\2015\Struck_Structured_Output_Tracking_with_Kernels\figure_1.jpg
+  Figure 1 caption: 'Different adaptive tracking-by-detection paradigms: given the
+    current estimated object location, traditional approaches (shown on the right-hand
+    side) generate a set of samples and, depending on the type of learner, produce
+    training labels. Our approach (left-hand side) avoids these steps and operates
+    directly on the tracking output.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Struck_Structured_Output_Tracking_with_Kernels\figure_2.jpg
+  Figure 2 caption: The typical structure of a tracking-by-detection tracker (see
+    Section 3). The dashed box is specific to Struck and indicates the place in which
+    we add a budget maintenance step to the pipeline (see Section 4).
+  Figure 3 Link: articels_figures_by_rev_year\2015\Struck_Structured_Output_Tracking_with_Kernels\figure_3.jpg
+  Figure 3 caption: The different types of Haar feature used by Struck. The numbers
+    in the boxes are the (unnormalised) weights used when calculating the features.
+    Note that no feature requires more than four boxes, which makes for efficient
+    evaluation on the GPU (see Section 5.4).
+  Figure 4 Link: articels_figures_by_rev_year\2015\Struck_Structured_Output_Tracking_with_Kernels\figure_4.jpg
+  Figure 4 caption: The representation of the SVM in ThunderStruck.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Struck_Structured_Output_Tracking_with_Kernels\figure_5.jpg
+  Figure 5 caption: To evaluate an SVM with a linear kernel efficiently using CUDA,
+    we use a thread block for each sample and compute a dot product between the sample's
+    features and the SVM's weight vector. Each dot product is computed using a pointwise
+    multiplication followed by a reduction in shared memory. The coloured boxes indicate
+    where the data is stored (cyan = global memory, green = shared memory). The coloured
+    arrows distinguish between thread blocks.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Struck_Structured_Output_Tracking_with_Kernels\figure_6.jpg
+  Figure 6 caption: Example frames from benchmark sequences, comparing the results
+    of Struck (variant mklHGHI) with KCF [22], SCM [49] and ASLA [51]. Videos of these
+    results can be found at https:goo.glcJ1Dg7 .
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sam Hare
+  Name of the last author: Philip H. S. Torr
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 7
+  Paper title: 'Struck: Structured Output Tracking with Kernels'
+  Publication Date: 2015-12-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Tracking Performance of Single-Scale, Single-Kernel Struck
+      and ThunderStruck Variants on the Wu et al. [21] Benchmark Using Various FeatureKernelBudget
+      Combinations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparing the Tracking Performance of Some Single-Kernel Variants
+      of Struck with Variants that Use Multiple Kernel Learning (MKL)
+  Table 3 caption:
+    table_text: TABLE 3 Comparing the Average Speed (in Frames per Second) of a Number
+      of Variants of Struck and ThunderStruck over the Entire Wu Benchmark
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2509974
+- Affiliation of the first author: "computer aided medical procedures, technische\
+    \ universit\xE4t m\xFCnchen, germany"
+  Affiliation of the last author: siemens ag, munich, germany
+  Figure 1 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_1.jpg
+  Figure 1 caption: 'Shelf dataset: Our results on 3D pose estimation of multiple
+    individuals projected in four out of five views of the Shelf dataset [7].'
+  Figure 10 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_10.jpg
+  Figure 10 caption: 'Shelf dataset: Our results projected in four out of five views
+    of the Shelf dataset [7].'
+  Figure 2 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_2.jpg
+  Figure 2 caption: 'Campus dataset: Our results on 3D pose estimation projected in
+    all views for the Campus dataset [10]. On the result of Camera 3 on the right
+    column, the projected poses of Actor 1 and 3 overlap in the image plane.'
+  Figure 3 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_3.jpg
+  Figure 3 caption: 'Factor graph for the human body: We use 14 variables in our graphical
+    model to represent the body parts. A body part in our model corresponds to a physical
+    body joint, other than the head part. The factors denote different types of constraints
+    and are illustrated with different colours. The kinematic constrains are presented
+    with red (translation) and green (rotation) edges (factors). The collision constraints
+    are represented with yellow edges. The unary factors have not been drawn for simplicity
+    reasons.'
+  Figure 4 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_4.jpg
+  Figure 4 caption: 'State space: The body part hypotheses are projected in two views.
+    Fake hypotheses which form reasonable human bodies are observed in the middle
+    of the scene (yellow bounding box). These are created by intersecting the body
+    parts of different humans with similar poses because the identity of each person
+    is not available during the formation of the state space.'
+  Figure 5 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_5.jpg
+  Figure 5 caption: "Size of the state space: On the top graph, the size of the state\
+    \ space for three different datasets is presented, based on the number of sampled\
+    \ 2D part detections per view and individual. On the bottom graph, the size of\
+    \ the state space is presented according to the 3D space discretisation of [3].\
+    \ It is clear that using a part detector as input results in magnitudes smaller\
+    \ state space in comparison to 3D space discretisation in terms of rotation and\
+    \ translation. In both cases, 10 body parts have been considered for the computation\
+    \ of the final number of 3D hypotheses. In [3], a discretisation of 8 3 \xD7 32\
+    \ 3 ( Rotatio n 3 \xD7Translatio n 3 ) has been chosen as a compromise between\
+    \ performance and speed. In our case, we have sampled 40 2D parts for all the\
+    \ experiments."
+  Figure 6 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_6.jpg
+  Figure 6 caption: 'Training sample: In the left column a positive training sample
+    is presented, while on the right column a negative one. We choose negative samples
+    which form reasonable human poses, instead of randomly sampling from the image
+    space.'
+  Figure 7 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_7.jpg
+  Figure 7 caption: 'HumanEva-I dataset: The 3D estimated body pose is projected across
+    each view for the Box and Walking sequences.'
+  Figure 8 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_8.jpg
+  Figure 8 caption: 'Potentials'' contribution: The contribution of each potential
+    function is presented for the KTH Multiview Football II [3], Campus [10] , Shelf
+    [7] datasets. The performance measurement is the PCP score. The horizontal axis
+    corresponds to the aggregation of the potential functions (confidence, reprojection,
+    visibility, trermporal consistency, translation, collision, rotation). For the
+    Campus and Shelf datasets, the average PCP score of all individuals is presented.
+    Adding more potential functions to the base model (only confidence) gives considerable
+    improvement to the KTH Multiview Football II and Campus datasets, while the improvement
+    is smaller in the Shelf dataset.'
+  Figure 9 Link: articels_figures_by_rev_year\2015\D_Pictorial_Structures_Revisited_Multiple_Human_Pose_Estimation\figure_9.jpg
+  Figure 9 caption: 'KTH Multiview Football II dataset: The 3D estimated body pose
+    is projected across each view. The results comes from the inference with all cameras.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Vasileios Belagiannis
+  Name of the last author: Slobodan Ilic
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: '3D Pictorial Structures Revisited: Multiple Human Pose Estimation'
+  Publication Date: 2015-12-17 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Potentials''s Aggregation: The Aggregated PCP (Percentage
+      of Correctly Estimated Parts) Scores Are Presented for the Potential Functions'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Potentials''s Aggregation: The Aggregated PCP (Percentage
+      of Correctly Estimated Parts) Scores Are Presented for the Potential Functions'
+  Table 3 caption:
+    table_text: 'TABLE 3 Human-Eva I: The Average 3D Joint Error in Millimetres (mm)
+      Is Presented'
+  Table 4 caption:
+    table_text: 'TABLE 4 KTH Multiview Football II: The PCP (Percentage of Correctly
+      Estimated Parts) Scores Using 2 and 3 Cameras Are Presented'
+  Table 5 caption:
+    table_text: 'TABLE 5 State-of-the-Art Comparison: The PCP (Percentage of Correctly
+      Estimated Parts) Scores Are Presented for Different Related Work and the Proposed
+      Method'
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2509986
+- Affiliation of the first author: school of computing and information technology,
+    university of wollongong, nsw, australia
+  Affiliation of the last author: department of brain and cognitive engineering, korea
+    university, seoul, republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2015\Learning_Discriminative_Bayesian_Networks_from_HighDimensional_Continuous_Neuroi\figure_1.jpg
+  Figure 1 caption: Illustration of Fisher-kernel-induced discriminative learning.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Learning_Discriminative_Bayesian_Networks_from_HighDimensional_Continuous_Neuroi\figure_2.jpg
+  Figure 2 caption: "One example of the estimated parameter \u0398 for the MCI class\
+    \ (reshaped as a long vector) with regard to the random permutation of the feature\
+    \ ordering. Quantitative measurements of the changes are given in Table 3."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Learning_Discriminative_Bayesian_Networks_from_HighDimensional_Continuous_Neuroi\figure_3.jpg
+  Figure 3 caption: "Comparison of classification accuracies on data sets of MRI (the\
+    \ left column), PET (the middle column) and MRI-II (the right column). The top\
+    \ two rows correspond to the test accuracies obtained by the learned SGBNs. The\
+    \ first row shows the test accuracies varied with the sparsity levels (i.e., the\
+    \ parameter \u03BB ). The second row shows the test accuracies varied with the\
+    \ number of edges (denoted as \u201CSel Edges\u201D in the figure) optimized in\
+    \ discriminative learning. The bottom two rows correspond to the test accuracies\
+    \ obtained by SVMs using the SGBN-induced Fisher vectors either in full length\
+    \ (the third row) or with (100) selected components (the fourth row)."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Learning_Discriminative_Bayesian_Networks_from_HighDimensional_Continuous_Neuroi\figure_4.jpg
+  Figure 4 caption: Visualization of connectivities for MRI-II. The four red boxes
+    correspond to the frontal, parietal, occipital and temporal (including subcortical
+    regions) lobes of the brain. The green row (Row 35) and column (Col 35) correspond
+    to the left hippocampus while the blue ones (Row 38 and Col 38) correspond to
+    the right hippocampus.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Learning_Discriminative_Bayesian_Networks_from_HighDimensional_Continuous_Neuroi\figure_5.jpg
+  Figure 5 caption: 'An example: change of edge weights learned by KL-SGBN and MM-SGBN.'
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.69
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Luping Zhou
+  Name of the last author: Dinggang Shen
+  Number of Figures: 5
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Learning Discriminative Bayesian Networks from High-Dimensional Continuous
+    Neuroimaging Data
+  Publication Date: 2015-12-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Summary of Experiment Purpose
+  Table 3 caption:
+    table_text: "TABLE 3 Quantitative Analysis of \u0398 for the Random Permutation\
+      \ of Feature Ordering (between the Original and the Averaged \u0398 )"
+  Table 4 caption:
+    table_text: TABLE 4 Total Errors (Number of Both False and Missing Edges, Averaged
+      on 50 Simulations) on Benchmark Networks
+  Table 5 caption:
+    table_text: TABLE 5 Number of Falsely Identified Edges (Averaged on 50 Simulations)
+      on Benchmark Networks
+  Table 6 caption:
+    table_text: TABLE 6 Number of Falsely Identified P-DAG Structures (Averaged on
+      50 Simulations) on Benchmark Networks
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2511754
+- Affiliation of the first author: college of computer and information science and
+    the department of electrical and computer engineering, northeastern university,
+    boston, ma
+  Affiliation of the last author: department of electrical engineering and computer
+    sciences, uc berkeley, berkeley, ca
+  Figure 1 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_1.jpg
+  Figure 1 caption: "Video summarization using representatives: some video frames\
+    \ of a movie trailer, which consists of multiple shots, and the automatically\
+    \ computed representatives (inside red rectangles) of the whole video sequence\
+    \ using our proposed algorithm. We use the Bag of Features approach [20] by extracting\
+    \ SIFT features [21] from all frames of the video and forming a histogram with\
+    \ b=100 bins for each frame. We apply the DS3 algorithm to the dissimilarity matrix\
+    \ computed by using the \u03C7 2 distance between pairs of histograms."
+  Figure 10 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_10.jpg
+  Figure 10 caption: We demonstrate the effectiveness of our proposed framework on
+    the temporal segmentation of human activities. We use CMU motion capture dataset
+    [64]. The dataset contains 149 subjects performing several activities. The motion
+    capture system uses 42 markers per subject. We consider the data from subject
+    86 in the dataset, consisting of 14 different trials. Each trial comprises multiple
+    activities such as 'walk,' 'squat,' 'run,' 'stand,' 'arm-up,' 'jump,' 'drink,'
+    'punch,' 'stretch,' etc.
+  Figure 2 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_2.jpg
+  Figure 2 caption: "Left: The DS3 algorithm takes pairwise dissimilarities between\
+    \ a source set X= x 1 ,\u2026, x M and a target set Y= y 1 ,\u2026, y N . The\
+    \ dissimilarity d ij indicates how well x i represents y j . Right: The DS3 algorithm\
+    \ finds a few representative elements of X that, based on the provided dissimilarities,\
+    \ well represent the set Y ."
+  Figure 3 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_3.jpg
+  Figure 3 caption: "Finding representative models for noisy data y j N j=1 on a nonlinear\
+    \ manifold. For each data point y j and its K=4 nearest neighbors, we learn a\
+    \ one-dimensional affine model with parameters \u03B8 j =( a j , b j ) so as to\
+    \ minimize the loss \u2113 \u03B8 (y)=| a \u22A4 y\u2212b| for the K+1 points.\
+    \ We set X= \u03B8 i N i=1 and Y= y j N j=1 and compute the dissimilarity between\
+    \ each estimated model \u03B8 i and each data point y j as d ij = \u2113 \u03B8\
+    \ i ( y j ) . Representative models found by our proposed optimization in (5)\
+    \ for several values of \u03BB , with \u03BB max,\u221E defined in (14), are shown\
+    \ by red lines. Notice that as we decrease \u03BB , we obtain a larger number\
+    \ of representative models, which more accurately approximate the nonlinear manifold."
+  Figure 4 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_4.jpg
+  Figure 4 caption: "Top: Data points (blue circles) drawn from a mixture of three\
+    \ Gaussians and the representatives (red pluses) found by our proposed optimization\
+    \ program in (5) for several values of \u03BB , with \u03BB max,\u221E defined\
+    \ in (14). Dissimilarity is chosen to be the Euclidean distance between each pair\
+    \ of data points. As we increase \u03BB , the number of representatives decreases.\
+    \ Bottom: the matrix Z obtained by our proposed optimization program in (5) for\
+    \ several values of \u03BB . The nonzero rows of Z indicate indices of the representatives.\
+    \ In addition, entries of Z provide information about the association probability\
+    \ of each data point with each representative."
+  Figure 5 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_5.jpg
+  Figure 5 caption: We generate a source set by drawing data points (blue circles)
+    from a mixture of Gaussians with means (0,0) , (5,5) and (-1,7) . We generate
+    a target set by drawing data points (green squares) from a mixture of Gaussians
+    with means (0,0) , (5,5) and (7,-1) . Representatives (red pluses) of the source
+    set and outliers (red crosses) of the target set found by our proposed optimization
+    in (7) with wi = 0.3 are shown. Dissimilarity is the Euclidean distance between
+    each source and target data point. Notice that we only select representatives
+    from the two clusters with means (0,0) , (5,5) that also appear in the target
+    set. Our method finds the cluster with the mean (7,-1) in the target set as outlier
+    since there are no points in the source set efficiently encoding it.
+  Figure 6 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_6.jpg
+  Figure 6 caption: 'Illustration of our theoretical result for clustering. Left:
+    we assume a joint partitioning of source and target sets into L groups, lbrace
+    (mathcal Gxk, mathcal Gyk) rbrace k=1L . Middle: we assume that the medoid of
+    each mathcal Gxk better represents mathcal Gyk than other partitions mathcal Gxkprime
+    for kprime ne k . Right: Our optimization in (5) selects representatives from
+    all source set partitions and each partition in the target set only get represented
+    by the corresponding source set partition.'
+  Figure 7 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_7.jpg
+  Figure 7 caption: 'Left and middle plots: The dataset partitions into groups mathcal
+    G1 and mathcal G2 , according to Definition 2, if 1) for every boldsymbolxj with
+    j in mathcal G1 , the dissimilarity to boldsymbolxc1 is smaller than the dissimilarity
+    to any boldsymbolxi with i in mathcal G2 (left plot); 2) for every boldsymbolxjprime
+    with jprime in mathcal G2 , the distance to boldsymbolxc2 is smaller than the
+    distance to any boldsymbolxiprime with iprime in mathcal G1 (middle plot). In
+    such a case, our proposed algorithm selects representatives from all mathcal Gi
+    ''s and points in each group will be represented only by representatives from
+    the same group. Right plot: A sufficient condition on the regularization parameter
+    to reveal the clustering is to have lambda < r12 - max lbrace r1, r2 rbrace .'
+  Figure 8 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_8.jpg
+  Figure 8 caption: We demonstrate the effectiveness of our proposed framework on
+    the problem of scene categorization via representatives. We use the Fifteen Scene
+    Categories dataset [61], a few of its images are shown. The dataset contains images
+    from 15 different categories of street, coast, forest, highway, building, mountain,
+    open country, store, tall building, office, bedroom, industrial, kitchen, living
+    room, and suburb.
+  Figure 9 Link: articels_figures_by_rev_year\2015\DissimilarityBased_Sparse_Subset_Selection\figure_9.jpg
+  Figure 9 caption: Nearest Neighbor confusion matrix for the performance of the DS3
+    algorithm on the 15 Scene Categories dataset for several values of the fraction
+    of training samples ( eta ) selected from each class.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ehsan Elhamifar
+  Name of the last author: S. Shankar Sastry
+  Number of Figures: 12
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Dissimilarity-Based Sparse Subset Selection
+  Publication Date: 2015-12-23 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Average Computational Time (Sec.) of CVX (Sedumi Solver)\
+      \ and the Proposed ADMM Algorithm ( \u03BC=0.1 ) for \u03BB=0.01 \u03BB max,p\
+      \ over 100 Trials on Randomly Generated Datasets of Size N\xD7N"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Errors (Percent) of Different Algorithms, Computed via (21),\
+      \ as a Function of the Fraction of Selected Samples from Each Class ( \u03B7\
+      \ ) on the 15 Scene Categories Dataset Using \u03C7 2 Distances"
+  Table 3 caption:
+    table_text: "TABLE 3 Errors (Percent) of DS3, SNC with Random Initialization and\
+      \ SNC Initialized with the Solution of DS3, Computed via (21), as a Function\
+      \ of the Fraction of Selected Samples from each Class ( \u03B7 ) on the 15 Scene\
+      \ Categories Dataset"
+  Table 4 caption:
+    table_text: TABLE 4 The Top Rows Show the Sequence Identifier, Number of Frames
+      and Activities for Each of the 14 Sequences in the CMU MoCap Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2511748
+- Affiliation of the first author: section for cognitive systems, technical university
+    of denmark
+  Affiliation of the last author: "perceiving systems department, max planck institute\
+    \ for intelligent systems, t\xFCbingen, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_1.jpg
+  Figure 1 caption: 'Left: A zero-mean dataset represented as a set of points. Center:
+    The same data represented as a set of one-dimensional subspaces. Right: The blue
+    dotted subspace is the average subspace.'
+  Figure 10 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_10.jpg
+  Figure 10 caption: 'Left: Mean absolute deviation of a reconstruction attained by
+    different projection operators. Robust projection generally improves results.
+    Center: Comparison between orthogonal and robust projection. The panel shows the
+    data, its reconstruction using both orthogonal and robust projections, as well
+    as the thresholded difference between the two projections methods; when pixels
+    are represented using 8 bits (between 0 and 255), the maximal observed absolute
+    pixel-difference is 1. Right: Running time of the algorithms as a function of
+    the size of the problem. The dimensionality is fixed at D = 320times 240 while
+    the number of observations N increases. mathsf TGA is comparable to mathsf EM~PCA
+    , while [5] and [6] are unable to handle more than 6,000 observations.'
+  Figure 2 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_2.jpg
+  Figure 2 caption: An illustration of the Grassmann manifold Gr(1,2) of one-dimensional
+    subspaces of R 2 . Any subspace is represented by a point on the unit sphere with
+    the further identification that opposing points on the sphere correspond to the
+    same point on Gr(1,D) .
+  Figure 3 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_3.jpg
+  Figure 3 caption: 'Left: Zero-mean Gaussian data (orange) and the unit circle (black).
+    Right: The distribution of the Gaussian data projected onto the unit circle. As
+    the data has zero mean, the projected distribution has two equal-sized modes at
+    opposing points. The Grassmann average is such a mode.'
+  Figure 4 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_4.jpg
+  Figure 4 caption: Gaussian data (orange) along with the average subspace (black
+    line). The light gray subspace interval corresponds to the 95 percent confidence
+    interval of the mean estimate under the probabilistic interpretation (27).
+  Figure 5 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_5.jpg
+  Figure 5 caption: Two representative frames from the 1922 film Nosferatu as well
+    as their restoration using mathsf TGA and the algorithms from [5], [6]. mathsf
+    TGA removes many outliers and generally improves the visual quality of the film,
+    while mathsf Inexact~ALM oversmoothes the results and De la Torre and Black oversmooth
+    and introduce artifacts. This is also seen in the absolute difference between
+    the data and the reconstruction, which is also shown (inverted and multiplied
+    by 2 for contrast purposes). We also refer the reader to the supplementary video.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_6.jpg
+  Figure 6 caption: The mean absolute deviation from ground-truth measured at noisy
+    pixels for two sequences.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_7.jpg
+  Figure 7 caption: 'Reconstruction of the background from video sequences with changing
+    illumination; three representative frames. Left: the airport sequence (3,584 frames),
+    which was also used in [5] . Right: a sequence from the CAVIAR dataset (1,500
+    frames).'
+  Figure 8 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_8.jpg
+  Figure 8 caption: Shadow removal using robust PCA. We show the original image, the
+    robust reconstructions as well as their absolute difference (inverted). mathsf
+    TGA preserves more specularity, while mathsf Inexact~ALM produce more matte results.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Scalable_Robust_Principal_Component_Analysis_Using_Grassmann_Averages\figure_9.jpg
+  Figure 9 caption: (a) The expressed variance for different methods as a function
+    of the percentage of vector-level outliers. Note that mathsf EM~PCA and mathsf
+    Inexact~ALM provide near-identical solutions. (b) The expressed variance as a
+    function of the number of observations N . Here the dimensionality is fixed at
+    D = 100 . The different curves correspond to different levels of trimming. (c)
+    Expressed variance as a function of number of samples from a known Gaussian distribution.
+    The results are for D = 30 dimensional data, and are averaged over five experiments
+    with randomly generated covariance matrices. (d) Expressed variance for Gaussian
+    inliers with an increasing number of outliers. The results are for D = 30 dimensional
+    data, and are averaged over 50 experiments with randomly generated covariance
+    matrices. (e) Expressed variance (color coded from 0.86 (blue) to 1 (yellow))
+    as a function of the relative rank of the inliers verses the percentage of outliers.
+    (f) Impact of initialization is studied in mathsf TGA by measuring expressed variance
+    (see color code) for different random initializations.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "S\xF8ren Hauberg"
+  Name of the last author: Michael J. Black
+  Number of Figures: 11
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Scalable Robust Principal Component Analysis Using Grassmann Averages
+  Publication Date: 2015-12-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Mean Absolute Reconstruction Error of the Different Algorithms
+      on Recent Movies with Added Noise Estimated from Nosferatu
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2511743
+- Affiliation of the first author: center for biometrics and security research & national
+    laboratory of pattern recognition, institute of automation, chinese academy of
+    sciences, room 1411, intelligent building, 95 zhongguancun donglu, haidian district,
+    beijing, china
+  Affiliation of the last author: center for biometrics and security research & national
+    laboratory of pattern recognition, institute of automation, chinese academy of
+    sciences, room 1411, intelligent building, 95 zhongguancun donglu, haidian district,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_1.jpg
+  Figure 1 caption: Some samples from CGD. The first row is RGB images and the corresponding
+    depth images are shown in the second row. It is derived from [9].
+  Figure 10 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_10.jpg
+  Figure 10 caption: The performances of different spatiotemporal features. It can
+    be seen that MFSK achieves the best performance. More exactly, the order of performance
+    decrease is MFSK > 3D SMoSIFT > 3D EMoSIFT > dense trajectory(R+D) > 3D MoSIFT
+    > dense trajectory(R) > STIP(R+D) > STIP(R) > Cuboid(R+D) > Cuboid(R).
+  Figure 2 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_2.jpg
+  Figure 2 caption: It shows some samples derived from [20] for the new subsets on
+    CGD. (a) untranslated; (b) translated; (c) scaled; (d) occluded.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_3.jpg
+  Figure 3 caption: It shows the results by the preprocessing step. (a) original frame,
+    (b) image smoothing, (c) background removal. The image is derived from [33].
+  Figure 4 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_4.jpg
+  Figure 4 caption: Examples for the calculation of motion feature vector (a-d) and
+    temporal segmentation by DTW algorithm (e). Images are derived from [9].
+  Figure 5 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_5.jpg
+  Figure 5 caption: Building four pyramids from two pair of consecutive frames. (a)
+    P t G at time t ; (b) P t D at time t ; (c) P t+1 G at time t+1 ; (D) P t+1 D
+    at time t+1 . The detected keypoints are denoted by the green circle, and the
+    extracted local patches are shown within the green rectangles. The four local
+    patches are denoted by g t , d t , g t+1 , d t+1 from left to right.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_6.jpg
+  Figure 6 caption: "The approximation for the second order Gaussian partial derivative\
+    \ in x -( D xx ), y -( D yy ) and xy\u2212 direction ( D xy ). The grey regions\
+    \ are equal to zero."
+  Figure 7 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_7.jpg
+  Figure 7 caption: The detected keypoints via SURF detector and motion filtering.
+    The keypoints are detected in the first two levels from the pyramids of Fig. 5,
+    and no keypoints are found in the third level.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_8.jpg
+  Figure 8 caption: Computing the descriptors (3D SMoSFIT, HOG, HOF, MBH) from the
+    local patch around every keypoint.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Explore_Efficient_Local_Features_from_RGBD_Data_for_OneShot_Learning_Gesture_Rec\figure_9.jpg
+  Figure 9 caption: The performances of different components in the MFSK feature (
+    devel01-devel20 ). It can be seen that the MFSK feature achieves the best performance.
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Jun Wan
+  Name of the last author: Stan Z. Li
+  Number of Figures: 12
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Explore Efficient Local Features from RGB-D Data for One-Shot Learning
+    Gesture Recognition
+  Publication Date: 2015-12-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Survey of Published Methods about One-Shot Learning Gesture
+      Recognition from RGB-D Data
+  Table 10 caption:
+    table_text: TABLE 10 Descriptor Comparisons in the MFSK Feature on the MSR Daily
+      Activity 3D Dataset under One-Shot Learning Seeting
+  Table 2 caption:
+    table_text: TABLE 2 It Shows the Recognition Performances of the Published Papers
+      on Different Subsets of CGD
+  Table 3 caption:
+    table_text: "TABLE 3 Parameters: Cell Number \u03B3=2 , Bin Number \u03B7=8"
+  Table 4 caption:
+    table_text: "TABLE 4 Parameters: Patch Size \u0393=32\xD732"
+  Table 5 caption:
+    table_text: "TABLE 5 Parameters: \u03B3=2 , \u03B7=8 , \u0393=32"
+  Table 6 caption:
+    table_text: TABLE 6 Our Method is Compared with the Results of All the Top 14
+      Results on the Validation, Final, Untranslated, Translated and Scaled Data of
+      CGD
+  Table 7 caption:
+    table_text: TABLE 7 Comparison with State-of-the-Art on the CAD-60 Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Comparisons between the MFSK and Individual Feature Descriptors
+      on the CAD-60 Dataset Using One-Shot Learning Settings
+  Table 9 caption:
+    table_text: TABLE 9 Comparison on the MSR Daily Activity 3D Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2513479

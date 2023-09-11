@@ -1,0 +1,855 @@
+- Affiliation of the first author: school of electronic and computer engineering,
+    peking university, shenzhen, china
+  Affiliation of the last author: school of computer science and engineering, nanyang
+    technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_1.jpg
+  Figure 1 caption: Visual results from high-ranking 2D, 3D, and 4D methods. (a) All-focus
+    images. (b) Ground truths. (c) Results from the 2D method GCPA [14]. (d) Results
+    from the 3D method ATSA [16]. (e) and (f) Results from 4D methods ERNet [23] and
+    ours. Though 2D and 3D images can be derived from 4D light fields, and light fields
+    provide more spatial information, previous high-ranking 4D methods still perform
+    worse than corresponding 2D or 3D cases. The proposed method can unleash the potential
+    of light fields in SOD and achieve the best accuracy.
+  Figure 10 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_10.jpg
+  Figure 10 caption: "Qualitative results of individual focal slices and focal stack.\
+    \ (a) All-focus image and ground truth. (b)-(d) Focal slices and predictions.\
+    \ (e) Focal stack and prediction. \u201CWeight\u201D denotes the weight coefficient\
+    \ of each focal slice learned by our FIM."
+  Figure 2 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_2.jpg
+  Figure 2 caption: Illustration of light fields. (a) Theory of light fields where
+    a light ray is represented by the two-plane parameterization L(u,v,x,y) . (b)
+    Light field data in our PKU-LF including the calibration data of our camera, raw
+    light field data, all-focus images, depth maps, sub-aperture images, micro-lens
+    images, and focal stacks with relative-depth-of-field coordinates ( lambda ) [24].
+    Please refer to [7] for a detailed description of these light field representations.
+  Figure 3 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_3.jpg
+  Figure 3 caption: Rich annotations of the proposed PKU-LF dataset including scribble
+    annotations, bounding boxes, object-instance-level annotations, and edge annotations.
+    It is worth mentioning that the samples also indicate the complexity of our dataset,
+    e.g., underwater scenes (1st column), transparent objects (2nd column), similar
+    foregrounds and backgrounds (3rd column), low illumination (4th column), extremely
+    smalllarge objects (5th and 6th columns), and multiple objects (7th and 8th columns).
+  Figure 4 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_4.jpg
+  Figure 4 caption: Statistics of our proposed dataset. (a) Object categories including
+    11 superclasses and 112 subclasses. (b) Statistics on object numbers. (c) Number
+    of focal slices in a focal stack. (d) Statistics on scene complexity. (e) Scatter
+    of object centers.
+  Figure 5 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_5.jpg
+  Figure 5 caption: Precise annotations. The annotations in our dataset are generated
+    by accurate matting.
+  Figure 6 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_6.jpg
+  Figure 6 caption: Word cloud distribution of our PKU-LF. The size of a word is proportional
+    to the word frequency.
+  Figure 7 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_7.jpg
+  Figure 7 caption: Statistical illustration of existing datasets and ours. (a) Distribution
+    of normalized object sizes [7]. (b) Distribution of color contrasts [61] between
+    the foreground and background.
+  Figure 8 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_8.jpg
+  Figure 8 caption: Overall architecture of our symmetric two-stream architecture
+    (STSA) network, which is developed in an encoder-decoder manner. Apart from a
+    two-stream backbone ( lbrace textBlock irbrace i=15 ), our encoder contains a
+    focalness interweavement module (FIM) followed by several attention operations
+    (Att 12), while our decoder includes three partial decoder modules (PDM) that
+    can simultaneously aggregate and decode multi-modal (i.e., all-focus images and
+    focal stacks) and multi-scale features.
+  Figure 9 Link: articels_figures_by_rev_year\2023\A_Thorough_Benchmark_and_a_New_Model_for_Light_Field_Salienc\figure_9.jpg
+  Figure 9 caption: Spatial alignment of salient objects across different focal slices.
+    Left focal slices focus on the distant backgrounds, while right ones focus on
+    the foregrounds. Salient objects in different focal slices are spatially aligned.
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Wei Gao
+  Name of the last author: Weisi Lin
+  Number of Figures: 18
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: A Thorough Benchmark and a New Model for Light Field Saliency Detection
+  Publication Date: 2023-01-09 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Summary of Four Existing Datasets and the Proposed PKU-LF
+      Dataset
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE II Benchmarking Results of Representative 2D, 3D, and 4D Models
+      on Four Existing and Our Proposed Datasets
+  Table 3 caption:
+    table_text: TABLE III S-measure [77] Scores for Cross-Dataset Analysis
+  Table 4 caption:
+    table_text: TABLE IV Ablation Analysis on DUT-LF Dataset
+  Table 5 caption:
+    table_text: TABLE V Ablations of Different FIM Settings on DUT-LF Dataset
+  Table 6 caption:
+    table_text: TABLE VI Inference Speed Comparisons Between Existing 4D SOD Methods
+      and Ours
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3235415
+- Affiliation of the first author: department of electrical engineering, city university
+    of hong kong, hong kong
+  Affiliation of the last author: department of electronic engineering, the chinese
+    university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_1.jpg
+  Figure 1 caption: Illustration of the category-level DAOD paradigms. (a) Existing
+    works [9], [45], [69], [83], [91] first estimate class prototypes (marked as stars)
+    to model class conditional distribution, and then align prototypes to adapt the
+    cross-domain distribution. (b) Our previous work, SIGMA [46], leverages structural
+    graphs to model distribution and conducts node-to-node graph matching to align
+    distribution in a fine-grained manner. (c) The proposed SIGMA++ models and aligns
+    distribution in the more representative hypergraph space, reducing the redundant
+    and ineffective low-order edges for better adaptation.
+  Figure 10 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_10.jpg
+  Figure 10 caption: Qualitative comparison results on the proposed modules among
+    (a) the GA baseline model without both HSC and BHM, (b) SIGMA++ without HSC, (c)
+    SIGMA++ without BHM, (d) the full SIGMA++ model, and (e) the ground-truth labels.
+    (Zooming in for a better view.).
+  Figure 2 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_2.jpg
+  Figure 2 caption: Overview of the proposed SIGMA++ framework for DAOD. V2G represents
+    vision-to-graph transformation.
+  Figure 3 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_3.jpg
+  Figure 3 caption: Illustration of the (a) second-order graph matching [46] with
+    three edges and (b) third-order hypergraph matching with one hyperedge (the hyperedge
+    connects three nodes), between the source ( mathcal Es in orange) and target (
+    mathcal Et in blue) edges. The dark nodes indicate the matched ones, and the nodes
+    in light color represent their neighbor nodes formulated with graph edges.
+  Figure 4 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_4.jpg
+  Figure 4 caption: Average Precision (AP) (tow row) and Average Recall (AR) (bottom
+    row) comparison between the proposed SIGMA++ and EPM [35] with different IoU thresholds
+    on Cityscapes rightarrow Foggy Cityscapes (left col.) and Sim10 k rightarrow Cityscapes
+    (right col.).
+  Figure 5 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_5.jpg
+  Figure 5 caption: Detailed error analysis using TIDE [7] toolbox of (a) source-only,
+    (b) EPM [35], (c) SIGMA [46], and (d) the proposed SIGMA++.
+  Figure 6 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_6.jpg
+  Figure 6 caption: Detection results comparison on Cityscapes rightarrow Foggy Cityscapes
+    (top rows) and Sim10 k rightarrow Cityscapes (bottom rows) of (a) source-only
+    [70], (b) EPM [35], (c) SIGMA [46], (d) our SIGMA++, and (e) ground-truth. The
+    different colors of bounding boxes indicate varied object classes.
+  Figure 7 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_7.jpg
+  Figure 7 caption: Detection results comparison on Pascal VOC rightarrow Clipart
+    (top rows) and Pascal VOC rightarrow Watercolor (bottom rows) among (a) the source-only
+    model [70], (b) EPM [35], (c) SIGMA [46], (d) SIGMA++, and (e) ground-truth. The
+    red and navy boxes indicate the correct and wrong detection.
+  Figure 8 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_8.jpg
+  Figure 8 caption: TSNE feature comparison between the GA baseline [35] and SIGMA++
+    (ours). The circles with black contours are sampled from the target domain, while
+    the ones without edges are from the source domain. We randomly sample 250 feature
+    points inside bounding boxes for each class in each domain equally.
+  Figure 9 Link: articels_figures_by_rev_year\2023\SIGMA_Improved_SemanticComplete_Graph_Matching_for_Domain_Ad\figure_9.jpg
+  Figure 9 caption: Graph matching visualization with Cityscapes to Foggy Cityscapes
+    adaptation. For the domain-mismatched classes, we illustrate hallucination nodes
+    mathcal Vstmathcal H in the lower-leftupper-left corner (the white-region legend)
+    of sourcetarget-domain images, respectively. (Zooming in for a better view.).
+  First author gender probability: 0.92
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Wuyang Li
+  Name of the last author: Yixuan Yuan
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: 'SIGMA++: Improved Semantic-Complete Graph Matching for Domain Adaptive
+    Object Detection'
+  Publication Date: 2023-01-09 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Results (%) on Cityscapes \u2192 \u2192 Foggy Cityscapes\
+      \ With VGG16"
+  Table 10 caption:
+    table_text: "TABLE X Comparison Results (%) on Cityscapes \u2192 \u2192 Foggy\
+      \ Cityscapes With ResNet50. Tow Sub-Table: The Comparison Between Faster RCNN\
+      \ C4 [59] Based SIGMA++ and the Latest Works Using the Same Baseline. Bottom\
+      \ Sub-Table: The Comparison Between FCOS [70] Based SIGMA++ and the Latest Methods\
+      \ Using the Same Baseline"
+  Table 2 caption:
+    table_text: "TABLE II Comparison Results (%) on Cityscapes \u2192 \u2192 BDD100k\
+      \ With VGG16"
+  Table 3 caption:
+    table_text: "TABLE III Comparison Results (%) on Sim10 K \u2192 \u2192 Cityscapes,\
+      \ KITTI \u2192 \u2192 Cityscapes, and Cityscapes \u2192 \u2192 KITTI With VGG16"
+  Table 4 caption:
+    table_text: "TABLE IV Results (%) on CVC-ClinicDB \u2192 \u2192 Abnormal Symptoms\
+      \ With ResNet101"
+  Table 5 caption:
+    table_text: "TABLE V Comparison Results (%) on PASCAL VOC \u2192 \u2192 Clipart\
+      \ With ResNet101 Backbone"
+  Table 6 caption:
+    table_text: "TABLE VI Comparison Results (%) on Pascal VOC \u2192 \u2192 Watercolor\
+      \ (left) and Pascal VOC \u2192 \u2192 Comic (right) With ResNet101 Backbone"
+  Table 7 caption:
+    table_text: "TABLE VII Ablation Study Results (%) on Four Adaptation Scenarios,\
+      \ Including Cityscapes \u2192 \u2192 Foggy Cityscapes (C \u2192 \u2192 F), Sim10\
+      \ k \u2192 \u2192 Citscapes (S \u2192 \u2192 C), Pascal VOC \u2192 \u2192 Clipart\
+      \ (P \u2192 \u2192 C), and Pascal VOC \u2192 \u2192 Watercolor (P \u2192 \u2192\
+      \ W)"
+  Table 8 caption:
+    table_text: "TABLE VIII Results (%) on Cityscapes \u2192 \u2192 Foggy Cityscapes\
+      \ With Different Graph Node Settings. N f st Nstf Represents the Maximum Sampled\
+      \ Nodes From Source and Target Domains on Each Image-Level Feature Map"
+  Table 9 caption:
+    table_text: "TABLE IX Results (%) on Cityscapes \u2192 \u2192 Foggy Cityscapes\
+      \ With Different (a) Graph Architectures, (b) Hyperedge Orders, and (c) Graph\
+      \ Reasoning Layers"
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3235367
+- Affiliation of the first author: school of electronic information and electrical
+    engineering, shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: department of computer science, johns hopkins university,
+    baltimore, md, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\BNET_Batch_Normalization_With_Enhanced_Linear_Transformation\figure_1.jpg
+  Figure 1 caption: The framework of BN and BNET- k . We consider the per-channel
+    parameters lbrace gamma,beta as an equivalent 1times 1 depth-wise convolution
+    to help better understanding the extended BNET- k .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\BNET_Batch_Normalization_With_Enhanced_Linear_Transformation\figure_2.jpg
+  Figure 2 caption: Visualizations of enhancement heat-maps of BNET-3, BNET-5 and
+    BNET-7. The first column is the input image from MS-COCO with bounding box and
+    lbrace mathfrak H2,mathfrak H3,mathfrak H4,mathfrak H5rbrace are enhancement heat-maps
+    of BNET in each stage's last residual block.
+  Figure 3 Link: articels_figures_by_rev_year\2023\BNET_Batch_Normalization_With_Enhanced_Linear_Transformation\figure_3.jpg
+  Figure 3 caption: Training curves (lossaccuracy without and with AutoAugment [20])
+    of ResNet-50 using BN and BNET-3 on ImageNet.
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yuhui Xu
+  Name of the last author: Alan Yuille
+  Number of Figures: 3
+  Number of Tables: 10
+  Number of authors: 9
+  Paper title: 'BNET: Batch Normalization With Enhanced Linear Transformation'
+  Publication Date: 2023-01-09 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Compared to BN, BNET-3 Achieves Consistent Performance Gains
+      and Negligible Extra Computational Costs (i.e., Number of Parameters and GFLOPs)
+      in ResNet-50 [3] on Four Prevailing Visual Tasks, Including Classification on
+      ImageNet, Detection on MS-COCO, Segmentation on Cityscapes and Action Recognition
+      on UCF-101
+  Table 10 caption:
+    table_text: TABLE 10 Comparison of Different Normalization Layers With and Without
+      Enhancement in ResNet-50 and ResNet-101 on ImageNet
+  Table 2 caption:
+    table_text: TABLE 2 Top-1 and Top-5 Accuracy (%) for Image Classification on ImageNet
+      [15] Using ResNets [3], ResNeXt [54], MobileNetV2 [55], Bi-Real Net [56], EfficientNet
+      [57], and DeiT [58]
+  Table 3 caption:
+    table_text: TABLE 3 The Inference Time (Miliseconds per Image) and Frame per Second
+      (FPS) for Image Classification on ImageNet [14] Using ResNet-50
+  Table 4 caption:
+    table_text: TABLE 4 Top-1 and Top-5 Accuracy (%) for Image Classification on ImageNet
+      [15] Using ResNet-50 [3] Trained With AutoAugment [20] for 100 and 270 Epochs
+  Table 5 caption:
+    table_text: TABLE 5 AP (%) Scores for Object Detection on MS-COCO Using Faster
+      R-CNN [4] and FPN [5] With BN, GN, and BNET and RetinaNet [60] and FPN [5] With
+      BN and BNET
+  Table 6 caption:
+    table_text: TABLE 6 AP (%) Scores for Instance Segmentation on MS-COCO [16] Using
+      Mask R-CNN [61] and FPN [5] With the ResNet Backbone
+  Table 7 caption:
+    table_text: TABLE 7 mIoU (%) for Semantic Segmentation on Cityscapes [17] Using
+      PSPNet [7] With the ResNet-50 [3] Backbone
+  Table 8 caption:
+    table_text: TABLE 8 mIoU (%) for Semantic Segmentation on PASCAL VOC 2012 [53]
+      With DeepLabV3 [64] Using ResNet101 as the Backbone
+  Table 9 caption:
+    table_text: TABLE 9 Top-1 and Top-5 Accuracy (%) of Action Recognition for TSN
+      [65] on UCF-101 (Split 1) [18] Using ResNet [3] as Backbone
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3235369
+- Affiliation of the first author: "litis ea 4108, university of rouen normandy and\
+    \ normandie universit\xE9, rouen, france"
+  Affiliation of the last author: "litis ea 4108, university of rouen normandy and\
+    \ normandie universit\xE9, rouen, france"
+  Figure 1 Link: articels_figures_by_rev_year\2023\DAN_A_SegmentationFree_Document_Attention_Network_for_Handwr\figure_1.jpg
+  Figure 1 caption: Visualization of input, ground truth and prediction.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\DAN_A_SegmentationFree_Document_Attention_Network_for_Handwr\figure_2.jpg
+  Figure 2 caption: The DAN architecture is made up of an FCN encoder, for the extraction
+    of 2D features f 2D , and a transformer-based decoder for the recurrent prediction
+    of the characterlayout tokens y t . At each iteration t , the model computes the
+    representation o t of the current characterlayout token to recognize y t , based
+    on the flattened features f 1D and on the previous predictions. Positional encoding
+    is added to these two modalities to preserve the spatial information through the
+    transformer's attention mechanism.
+  Figure 3 Link: articels_figures_by_rev_year\2023\DAN_A_SegmentationFree_Document_Attention_Network_for_Handwr\figure_3.jpg
+  Figure 3 caption: Images from READ 2016 and RIMES 2009 and associated layout graph
+    annotation.
+  Figure 4 Link: articels_figures_by_rev_year\2023\DAN_A_SegmentationFree_Document_Attention_Network_for_Handwr\figure_4.jpg
+  Figure 4 caption: Illustration of the curriculum learning strategy through the synthetic
+    document image generation process for the READ 2016 dataset at double-page level.
+    The number of lines per page l increases from 1 to 30 through the epochs. The
+    cropping strategy is discarded when the curriculum phase ends.
+  Figure 5 Link: articels_figures_by_rev_year\2023\DAN_A_SegmentationFree_Document_Attention_Network_for_Handwr\figure_5.jpg
+  Figure 5 caption: Visualization of the prediction on a RIMES 2009 test sample. The
+    DAN predicts both text (printed in red under each text line) and layout entities
+    (depicted as a graph on the right). Attention weights are colored given the last
+    predicted layout token.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Denis Coquenet
+  Name of the last author: Thierry Paquet
+  Number of Figures: 5
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: 'DAN: A Segmentation-Free Document Attention Network for Handwritten
+    Document Recognition'
+  Publication Date: 2023-01-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparison of the Related Works in Terms of Task, Input, Context,
+      and Physical Segmentation Annotation Requirements
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE II Sub-Sequences are Extracted, Grouped and Ordered by Layout
+      Classes for mAP CER mAPCER Computation
+  Table 3 caption:
+    table_text: TABLE III Datasets Split in Training, Validation and Test Sets and
+      Associated Number of Tokens in Their Alphabet
+  Table 4 caption:
+    table_text: TABLE IV Evaluation of the DAN on the Test Set of the RIMES Datasets
+      and Comparison With the State-of-the-Art Approaches
+  Table 5 caption:
+    table_text: TABLE V Evaluation of the DAN on the Test Set of the READ 2016 Dataset
+      and Comparison With the State-of-the-Art Approaches
+  Table 6 caption:
+    table_text: TABLE VI mAP CER mAPCER Detailed for Each Class and Each CER Threshold,
+      for the READ 2016 Double-Page Dataset
+  Table 7 caption:
+    table_text: TABLE VII Prediction Using a Single GPU V100 (32 Gb)
+  Table 8 caption:
+    table_text: TABLE VIII Ablation Study of the DAN on the RIMES 2009 and READ 2016
+      Datasets
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3235826
+- Affiliation of the first author: beijing advanced innovation center for big data
+    and brain computing, school of computer science and engineering, beihang university,
+    beijing, china
+  Affiliation of the last author: department of computer science, university of illinois
+    at chicago, chicago, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_1.jpg
+  Figure 1 caption: 'The pipeline of AdaSNN includes three steps to build a subgraph
+    neural network: (1) critical subgraph detection, (2) Subgraph sketching and encoding,
+    and (3) subgraph representation enhancement.'
+  Figure 10 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_10.jpg
+  Figure 10 caption: AdaSNN with different mi enhancement mechanisms.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_2.jpg
+  Figure 2 caption: 'An illustration of the AdaSNN architecture. Step-1: the reinforced
+    subgraph detection module aims to detect critical subgraphs lbrace girbrace for
+    an input graph G . Step-2: the critical subgraphs lbrace girbrace are used to
+    contract a sketched graph Gske and encoded into subgraph representations lbrace
+    zgirbrace . Step-3: the bi-level mi enhancement mechanism further enhances the
+    subgraph representations and uses them for classification.'
+  Figure 3 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_3.jpg
+  Figure 3 caption: 'An illustration of the reinforced subgraph detection module.
+    For a given center node, a critical subgraph is detected in two phases: (1) For
+    a center node vt , depth-agent generates an action adt by policy pi d to specify
+    the number of hops for the current subgraph; (2) With the specified depth k=adt
+    , neighbor-agent generates actions (an(1)t,an(2)t,ldots,an(k)t) by policy pi n
+    to sample the member nodes of subgraph within k -hop neighbors of node vt hop
+    by hop.'
+  Figure 4 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_4.jpg
+  Figure 4 caption: "Test accuracy (\xB1 standard deviation) in the edge attack scenarios\
+    \ on REDDIT-B."
+  Figure 5 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_5.jpg
+  Figure 5 caption: AdaSNN with different subgraph detection strategies. ( blacktriangle
+    denotes the mean accuracy value).
+  Figure 6 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_6.jpg
+  Figure 6 caption: Training accuracy dynamics of AdaSNN and SUGAR on PTC dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_7.jpg
+  Figure 7 caption: Mean reward of the reinforcement subgraph detection module.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_8.jpg
+  Figure 8 caption: Parameter sensitivity of the number of detected critical subgraphs
+    N .
+  Figure 9 Link: articels_figures_by_rev_year\2023\Adaptive_Subgraph_Neural_Network_With_Reinforced_Critical_St\figure_9.jpg
+  Figure 9 caption: Parameter sensitivity of the maximum subgraph depth K .
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jianxin Li
+  Name of the last author: Philip S. Yu
+  Number of Figures: 15
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: Adaptive Subgraph Neural Network With Reinforced Critical Structure
+    Mining
+  Publication Date: 2023-01-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparison of Graph Representation Methods in the Perspective
+      of Critical Structure Mining
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE II Main Notations in the Paper
+  Table 3 caption:
+    table_text: TABLE III Statistics of Datasets
+  Table 4 caption:
+    table_text: "TABLE IV Graph Classification Results: \u201CAverage accuracy \xB1\
+      \ standard deviation (rank)\u201D"
+  Table 5 caption:
+    table_text: "TABLE V Graph Classification Results on OGBG-PPA: \u201CAverage Accuracy\
+      \ \xB1 Standard Deviation\u201D"
+  Table 6 caption:
+    table_text: TABLE VI Performance Comparison of AdaSNN(Corrupt) and AdaSNN
+  Table 7 caption:
+    table_text: TABLE VII Statistics of the Average Training Time of one Epoch (in
+      Second)
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3235931
+- Affiliation of the first author: institute of information engineering, chinese academy
+    of sciences, beijing, china
+  Affiliation of the last author: institute of information engineering, chinese academy
+    of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_1.jpg
+  Figure 1 caption: Illustration of our motivation. (a) The target frame. (b) The
+    input video clip. (c) Spatial modeling alone can generate plausible segmentation
+    but may misidentify other objects due to insufficient action recognition ability.
+    (d) Temporal modeling alone can distinguish the correct object which performs
+    the described action but may introduce misaligned spatial features into the target
+    frame, yielding inaccurate segmentation. (e) Through language-aware spatial-temporal
+    collaboration, the correct object in the target frame can be well segmented.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_2.jpg
+  Figure 2 caption: Overall architecture of our method. Spatial and temporal encoders
+    extract features of the target frame and the video clip respectively, aided by
+    CMAM+ which dynamically interacts with multimodal features in each stage. LASP
+    is also densely applied in adjacent stages of the decoder (except for the shallowest
+    stage) to highlight language-compatible foreground features and suppress language-incompatible
+    background features.
+  Figure 3 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_3.jpg
+  Figure 3 caption: Illustration of CMAM+ module. The linguistic feature is dynamically
+    recombined based on the relevance with visual features and further enriched by
+    global context with spatial or temporal preference. The situation of the temporal
+    encoder is denoted in parentheses, which is similar to the spatial encoder.
+  Figure 4 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_4.jpg
+  Figure 4 caption: Illustration of LASP module. The relevance score map between linguistic
+    and visual features is exploited to sample language-compatible foreground pixels
+    and language-incompatible background pixels from the deep stage. Foreground and
+    background visual features in the shallow stage are accordingly highlighted and
+    suppressed by the propagated deep semantics.
+  Figure 5 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_5.jpg
+  Figure 5 caption: Qualitative comparison results. (a) Target frames. (b) Results
+    of our previous conference version CSTM [1]. (c) Results of our extended method.
+    (d) Ground-truth masks.
+  Figure 6 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_6.jpg
+  Figure 6 caption: Visualization of feature maps in LASP. (a) Target frames. (b)
+    Feature activations before LASP modules. (c) Feature activations after LASP modules.
+  Figure 7 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_7.jpg
+  Figure 7 caption: Qualitative comparison between our CMAM and CMAM+ modules. (a)
+    Target frames. (b) Ground-truth masks. (c) Results of our CMAM module (d) Results
+    of our CMAM+ module.
+  Figure 8 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_8.jpg
+  Figure 8 caption: Qualitative results of consecutive frames on A2D Sentences testing
+    set. The colors of referring expressions correspond to the colors of segmentation
+    masks.
+  Figure 9 Link: articels_figures_by_rev_year\2023\LanguageAware_SpatialTemporal_Collaboration_for_Referring_Vi\figure_9.jpg
+  Figure 9 caption: Visualization of attention maps between words and frames in CMAM+.
+    Red regions denote high attention values. Both spatial-related words and temporal-related
+    words can attend to corresponding visual regions.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tianrui Hui
+  Name of the last author: Jizhong Han
+  Number of Figures: 9
+  Number of Tables: 10
+  Number of authors: 8
+  Paper title: Language-Aware Spatial-Temporal Collaboration for Referring Video Segmentation
+  Publication Date: 2023-01-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparison With State-of-the-art Methods on the A2D Sentences
+      Testing Set
+  Table 10 caption:
+    table_text: TABLE X Comparative Experiments of Different Language Encoding Methods
+      on A2D Sentences Testing Set
+  Table 2 caption:
+    table_text: TABLE II Comparison With State-of-the-art Methods on the Whole J-HMDB
+      Sentences Dataset Using the Best Model Trained on A2D Sentences Without Further
+      Finetuning
+  Table 3 caption:
+    table_text: TABLE III Comparison With State-of-the-art Methods on the Refer-YouTube-VOS
+      Validation Set
+  Table 4 caption:
+    table_text: TABLE IV Comparison With State-of-the-art Methods on the Refer-DAVIS
+      Validation Set
+  Table 5 caption:
+    table_text: TABLE V Verifying the Effectiveness of Each Component in Our Language-Aware
+      Spatial-Temporal Collaboration Framework
+  Table 6 caption:
+    table_text: TABLE VI Inserting Stages of the CMAM+ Module in the Encoders With
+      LASP Module in the Decoder
+  Table 7 caption:
+    table_text: TABLE VII Inserting Stages of CMAM+ Module in the Encoders Without
+      LASP Module in the Decoder
+  Table 8 caption:
+    table_text: TABLE VIII Inserting Stages of LASP Module
+  Table 9 caption:
+    table_text: TABLE IX Sub-Component Analysis of LASP Module
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3235720
+- Affiliation of the first author: division of computer science and engineering, louisiana
+    state university, baton rouge, la, usa
+  Affiliation of the last author: department of computer science, george mason university,
+    fairfax, va, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_1.jpg
+  Figure 1 caption: Overall workflow of our proposed method. The input to our method
+    are two sequences of light field images captured at orthogonal viewing angles.
+    We estimate particle motion vectors in the full fluid volume and use it to represent
+    the fluid flow.
+  Figure 10 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_10.jpg
+  Figure 10 caption: Flow reconstruction results on JHUTDB data in comparison with
+    other state-of-the-art PIV methods and the ground truth.
+  Figure 2 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_2.jpg
+  Figure 2 caption: Focal stack symmetry. We show zoom-in views of four focal slices
+    on the right. A particle exhibits symmetric defocus effect (e.g., 31.5mm and 36.5mm
+    slices) centered at the in-focus slice (34mm). In the 39mm slice, an occluded
+    particle could be seen as the occluder becomes extremely out-of-focus.
+  Figure 3 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_3.jpg
+  Figure 3 caption: Single-view particle 3D reconstruction.
+  Figure 4 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_4.jpg
+  Figure 4 caption: (a) An illustration of particle fusion as correspondence matching.
+    Here mathcal X and mathcal Y are the sets of 3D particle locations that are separately
+    recovered under each camera view. Our goal is to find one-to-one matching mathbf
+    Mi,j for the particles. (b) An illustration of the point-to-ray distance that
+    takes depth layering into account.
+  Figure 5 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_5.jpg
+  Figure 5 caption: Sample simulation images with different particle densities.
+  Figure 6 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_6.jpg
+  Figure 6 caption: Real experiment setup.
+  Figure 7 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_7.jpg
+  Figure 7 caption: Reconstructed flow vector fields on simulated flows in comparison
+    with ground truths.
+  Figure 8 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_8.jpg
+  Figure 8 caption: Ablation study on flow reconstruction. We show the error maps
+    of estimated flow vector fields at three fluid volume slices.
+  Figure 9 Link: articels_figures_by_rev_year\2023\FullVolume_D_Fluid_Flow_Reconstruction_With_Light_Field_PIV\figure_9.jpg
+  Figure 9 caption: Quantitative evaluation on flow reconstruction. The first row
+    shows errors with respect to different particle densities. The second row shows
+    accumulated errors over time.
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.88
+  Name of the first author: Yuqi Ding
+  Name of the last author: Jinwei Ye
+  Number of Figures: 12
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: Full-Volume 3D Fluid Flow Reconstruction With Light Field PIV
+  Publication Date: 2023-01-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE I The Mean Distance Error (in mm mm) of Recovered 3D Particles
+      Locations. (DR - Depth Resolution.)
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE II The Particle Mis-Match Rate (in % %) in two Views
+  Table 3 caption:
+    table_text: TABLE III The Average End-Point Error (AEE) of Reconstructed Flow
+      Vector Fields (on Data From JHUTDB) w.r.t. Depth Resolution (DR) and Particle
+      Density
+  Table 4 caption:
+    table_text: TABLE IV The Average Angular Error (AAE) of Reconstructed Flow Vector
+      Fields (on Data From JHUTDB) w.r.t. Depth Resolution (DR) and Particle Density
+  Table 5 caption:
+    table_text: Not Avaliable
+  Table 6 caption:
+    table_text: Not Avaliable
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3236344
+- Affiliation of the first author: lyda hill department of bioinformatics, university
+    of texas southwestern medical center, dallas, tx, usa
+  Affiliation of the last author: lyda hill department of bioinformatics, university
+    of texas southwestern medical center, dallas, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\AdversariallyRegularized_Mixed_Effects_Deep_Learning_ARMED_M\figure_1.jpg
+  Figure 1 caption: The ARMED framework for a generic neural network. The conventional
+    model (blue area) predicts hatyF from the data sample boldsymbolx . Cluster membership
+    of the sample is one-hot encoded into boldsymbolz . The fixed effects subnetwork
+    (blue + gray areas) is constructed by adding an adversarial classifier (gray area)
+    to predict cluster membership hatboldsymbolz . The original model is penalized
+    through the generalization loss for learning features that allow cluster membership
+    prediction. The random effects subnetwork (orange area) uses Bayesian layers to
+    learn cluster-specific weights, dependent on boldsymbolz , that follow zero-mean
+    multivariate normal distributions. These weights can be formulated as nonlinear
+    slopes multiplied by the fixed effects latent representation hF(X; beta) , linear
+    slopes multiplied by X , andor intercepts. The fixed and random effects are combined
+    with a mixing function m(...) . For prediction on data from clusters unseen during
+    training, boldsymbolz is inferred with a classifier (Z-predictor) trained on data
+    from seen clusters.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\AdversariallyRegularized_Mixed_Effects_Deep_Learning_ARMED_M\figure_2.jpg
+  Figure 2 caption: Decision boundaries learned by each model in spiral simulation
+    1, where spiral radii varies across clusters as a random effect. Each row illustrates
+    one of 3 representative clusters from 10 total simulated clusters. Each column
+    contains the decision boundaries (black solid line) learned by one model. The
+    green dashed line illustrates the true decision boundary, computed as the midpoint
+    between the two spirals. Only the ARMED-DFNN was able to learn the appropriate
+    cluster-specific decision boundaries.
+  Figure 3 Link: articels_figures_by_rev_year\2023\AdversariallyRegularized_Mixed_Effects_Deep_Learning_ARMED_M\figure_3.jpg
+  Figure 3 caption: Feature importance and random slope variance for the ARMED-DFNN
+    predictor of stable versus progressive mild cognitive impairment. left) Features
+    are ranked by descending median feature importance (gradient magnitude) across
+    10 cross-validation folds, measured from the fixed effects subnetwork. right)
+    The inter-site variance of each feature's random slopes. See Supplemental Section
+    3.3.1, available online for abbreviations.
+  Figure 4 Link: articels_figures_by_rev_year\2023\AdversariallyRegularized_Mixed_Effects_Deep_Learning_ARMED_M\figure_4.jpg
+  Figure 4 caption: MCI conversion prediction with 5 added confounded probes (bolded
+    label, red bar). For each DFNN, the top 10 features are shown, ranked by median
+    feature importance (gradient magnitude) across 10 cross-validation folds.
+  Figure 5 Link: articels_figures_by_rev_year\2023\AdversariallyRegularized_Mixed_Effects_Deep_Learning_ARMED_M\figure_5.jpg
+  Figure 5 caption: Grad-CAM visualizations indicating important image regions for
+    classifying Alzheimer's Disease versus cognitively normal individuals. Each row
+    contains examples from one of three representative study sites.
+  Figure 6 Link: articels_figures_by_rev_year\2023\AdversariallyRegularized_Mixed_Effects_Deep_Learning_ARMED_M\figure_6.jpg
+  Figure 6 caption: Reconstructed melanoma cell images from the ARMED-AEC. The first
+    row contains the real image, the second row contains the fixed effects-based reconstructions,
+    and remaining rows show random effects-based reconstructions using different learned
+    random effects.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kevin P. Nguyen
+  Name of the last author: Albert A. Montillo
+  Number of Figures: 6
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Adversarially-Regularized Mixed Effects Deep Learning (ARMED) Models
+    Improve Interpretability, Performance, and Generalization on Clustered (non-iid)
+    Data
+  Publication Date: 2023-01-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Spiral Simulation Results With 10-Fold Cross-Validation
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE II Sensitivity to Confounded Probe Features in Spiral Simulation
+      3
+  Table 3 caption:
+    table_text: TABLE III Prediction of Stable Versus Progressive Mild Cognitive Impairment
+  Table 4 caption:
+    table_text: TABLE IV Alzheimer's Disease Diagnosis From MRI
+  Table 5 caption:
+    table_text: TABLE V Melanoma Live Cell Image Compression and Classification, and
+      Batch Effect Contamination of Latent Representations
+  Table 6 caption:
+    table_text: Not Avaliable
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234291
+- Affiliation of the first author: key laboratory of machine perception, moe, school
+    of intelligence science and technology, peking university, beijing, china
+  Affiliation of the last author: key laboratory of machine perception, moe, school
+    of intelligence science and technology, peking university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_1.jpg
+  Figure 1 caption: Overview. Fig. 1(a) shows a standard Transformer network, where
+    we omit layer norms and skip connections in the figure for brevity; Fig. 1(b)
+    shows an Evolving Attention-enhanced Transformer, where the red lines denote residual
+    connections, with exemplar attention maps from the 17th and 18th blocks presented.
+    As shown by the case, vanilla transformer obtains very vague attention maps at
+    the 18th block. Instead, evolving attention-enhanced transformer generates reasonable
+    attention maps, and there is a clear evolutionary trend between adjacent layers.
+    Fig. 1(c) illustrates the network architecture of Evolving Attention-enhanced
+    Dilated Convolutional (EA-DC-) Transformer for time-series representation.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_2.jpg
+  Figure 2 caption: 'Empirical results on various tasks of different modalities: (a)
+    Time-Series Classification, (b) Image Classification, (c) Natural Language Understanding,
+    and (d) Machine Translation. In the figure, gray bars indicate baseline models,
+    and the highlighted green bars indicate models equipped with convolution-enhanced
+    evolving attention mechanism.'
+  Figure 3 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_3.jpg
+  Figure 3 caption: Different convolution masks for three kinds of attentions.
+  Figure 4 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_4.jpg
+  Figure 4 caption: Representations of Transformer and EA-DC-Transformer on three
+    time-series datasets. Each row corresponds to one dataset, namely SelfRegulationSCP1,
+    PEMS-SF and UWaveGestureLibrary, respectively from the top to bottom.
+  Figure 5 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_5.jpg
+  Figure 5 caption: Visualization of exemplar attention maps from the 16th, 17th and
+    18th layers of AA-ResNet-34 and EA-AA-ResNet-34 models
+  Figure 6 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_6.jpg
+  Figure 6 caption: Comparing rationales generated by LIME for BERT and EA-BERT.
+  Figure 7 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_7.jpg
+  Figure 7 caption: Learning curve comparison on (a) De-En machine translation dataset
+    and (b) AppliancesEnergy time series regression dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_8.jpg
+  Figure 8 caption: "Attention maps of layer 11 and 12 for \u201CMary tried John to\
+    \ go abroad.\u201D in BERT and EA-BERT."
+  Figure 9 Link: articels_figures_by_rev_year\2023\ConvolutionEnhanced_Evolving_Attention_Networks\figure_9.jpg
+  Figure 9 caption: Hyper-parameter analyses.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yujing Wang
+  Name of the last author: Yunhai Tong
+  Number of Figures: 9
+  Number of Tables: 13
+  Number of authors: 10
+  Paper title: Convolution-Enhanced Evolving Attention Networks
+  Publication Date: 2023-01-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparison of RMSEParameters for Different Models on Time-Series
+      Regression Datasets
+  Table 10 caption:
+    table_text: TABLE X Accuracy Comparison of ViTs and EA-ViTs on ImageNet Classification
+  Table 2 caption:
+    table_text: TABLE II Comparison of accuracyParameters for Different Models on
+      Time-Series Classification Datasets
+  Table 3 caption:
+    table_text: TABLE III Ablation Study for Time-Series Regression
+  Table 4 caption:
+    table_text: TABLE IV Ablation Study for Time-Series Classification
+  Table 5 caption:
+    table_text: TABLE V Comparison of Different Models on GLUE Benchmark for Text
+      Understanding. The Metrics for SST-2, MNLI, QNLI and RTE are Accuracy. The Metrics
+      for MRPC and QQP are F1accuracy. The Matthew's Correlation Coefficient and PearsonSpearman
+      Correlation Coefficient are Used for CoLA and STS-B, Respectively. The Average
+      GLUE Score is Calculated by the First Metric for Each Dataset
+  Table 6 caption:
+    table_text: TABLE VI Ablation Study for Text Understanding
+  Table 7 caption:
+    table_text: TABLE VII BLUE Scores on Machine Translation Datasets
+  Table 8 caption:
+    table_text: TABLE VIII Ablation Study for Machine Translation
+  Table 9 caption:
+    table_text: TABLE IX Accuracy Comparison of ResNets and EA-ResNets on ImageNet
+      Classification
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3236725
+- Affiliation of the first author: school of computer science and engineering, university
+    of new south wales, sydney, nsw, australia
+  Affiliation of the last author: school of engineering and information technology,
+    university of new south wales, canberra, act, australia
+  Figure 1 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_1.jpg
+  Figure 1 caption: The framework of the proposed FingerGAN. Texture components from
+    the TV decomposition [34] are used as the latent fingerprints input to the U-shaped
+    network because they are generally used as the representation of the latent fingerprints
+    to be enhanced in current research [14], [15], [16], [17].
+  Figure 10 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_10.jpg
+  Figure 10 caption: Comparison of CMC curves achieved using the enhanced latent fingerprints
+    generated by Cao's, Qian's Huang's, Tang's, Joshi's, Dabouei's, and our methods
+    on the NIST SD27 database. (a) CMC curves achieved using all latent fingerprints,
+    (b) CMC curves achieved using the 'good' latent fingerprints, (c) CMC curves achieved
+    using the 'bad' latent fingerprints, and (d) CMC curves achieved using the 'ugly'
+    latent fingerprints.
+  Figure 2 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_2.jpg
+  Figure 2 caption: Illustration of details of the proposed FingerGAN.
+  Figure 3 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_3.jpg
+  Figure 3 caption: Illustration of the proposed Gaussian-based minutia weight map.
+    (a) a fingerprint skeleton map; (b) the minutia map M of (a); and (c) the Gaussian-based
+    minutia weight map of (a).
+  Figure 4 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_4.jpg
+  Figure 4 caption: Schematic diagram of the proposed training data generation.
+  Figure 5 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_5.jpg
+  Figure 5 caption: Example of (a) various plastic distortions and (b) corresponding
+    distorted fingerprints based on the same rolled fingerprint.
+  Figure 6 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_6.jpg
+  Figure 6 caption: Examples illustrating the proposed training data generation by
+    (a) selected good-quality rolled fingerprints, (b) synthesized latent fingerprints
+    of (a), (c) training latent fingerprints (TV decomposed textures) of (a), and
+    (d) ground truth skeleton maps of (a).
+  Figure 7 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_7.jpg
+  Figure 7 caption: Numbers of recovered genuine minutiae extracted from the enhanced
+    latent fingerprints generated by our and the four compared methods, compared with
+    the numbers of manually marked minutiae for each of the 258 latent fingerprints
+    in the NSIT SD27 database.
+  Figure 8 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_8.jpg
+  Figure 8 caption: Comparison of numbers of introduced fake minutiae in the enhanced
+    latent fingerprints generated by our and the four compared methods for each of
+    the 258 latent fingerprints in the NSIT SD27 database.
+  Figure 9 Link: articels_figures_by_rev_year\2023\FingerGAN_A_Constrained_Fingerprint_Generation_Scheme_for_La\figure_9.jpg
+  Figure 9 caption: Example of the comparison of the enhanced latent fingerprints
+    generated by different methods. (a) Latent fingerprint B176 from the NIST SD27
+    database with the manually marked minutiae labeled as red circles or crosses,
+    (b) the enhanced latent fingerprint by Cao's method, (c) the enhanced latent fingerprint
+    by Qian's method, (d) the enhanced latent fingerprint by Huang's method, (e) the
+    enhanced latent fingerprint by Tang's method, and (f) the enhanced latent fingerprint
+    by our method. Recovered genuine minutiae and introduced fake minutiae in (b-f)
+    are labeled as red and blue circles or crosses, respectively. Some regions of
+    interest are highlighted in red rectangles.
+  First author gender probability: 0.81
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yanming Zhu
+  Name of the last author: Jiankun Hu
+  Number of Figures: 19
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: 'FingerGAN: A Constrained Fingerprint Generation Scheme for Latent
+    Fingerprint Enhancement'
+  Publication Date: 2023-01-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Details of the Architecture of the FingerGAN
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE II Comparison of Minutia Recovery Accuracy of Different Methods
+      in Terms of Overall Numbers of Recovered Genuine Minutiae and Introduced Fake
+      Minutiae for the 258 Latent Fingerprints in the NIST SD27 Database
+  Table 3 caption:
+    table_text: Not Avaliable
+  Table 4 caption:
+    table_text: Not Avaliable
+  Table 5 caption:
+    table_text: Not Avaliable
+  Table 6 caption:
+    table_text: Not Avaliable
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3236876

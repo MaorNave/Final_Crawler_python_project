@@ -1,0 +1,178 @@
+- Affiliation of the first author: school of electrical and electronic engineering,
+    yonsei university, seoul, korea
+  Affiliation of the last author: "\xE9cole normale sup\xE9rieure psl research university\
+    \ and willow project-team (cnrsensinria umr 8548), paris, france"
+  Figure 1 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_1.jpg
+  Figure 1 caption: 'SD filtering for depth upsampling: Static guidance filtering
+    convolves an input image (a low-resolution depth image) with a weight function
+    computed from a fixed guidance signal (a high-resolution color image), as in the
+    blue box. Dynamic guidance filtering uses weight functions that are repeatedly
+    obtained from filtered input images, as in the red box. We have observed that
+    static and dynamic guidance complement each other, and exploiting only one of
+    them is problematic, especially in the case of data from different sensors (e.g.,
+    depth and color images). The SD filter takes advantage of both, and addresses
+    the problems of current joint image filtering. (Best viewed in colour.)'
+  Figure 10 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_10.jpg
+  Figure 10 caption: textLog10 of the normalized histograms (probability) of relative
+    depths between adjacent pixels. Each histogram is computed using depth gradients
+    along x - and y -axis, and then averaged on the Middlebury dataset [60]. (Best
+    viewed in colour.)
+  Figure 2 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_2.jpg
+  Figure 2 caption: "Comparison of static and dynamic guidance filtering methods.\
+    \ Given (a) a high-resolution color image, (b) a low-resolution depth image is\
+    \ upsampled ( \xD78 ) by our model in (1) using (c) static guidance only (e.g.,\
+    \ [23]), (d) dynamic guidance only (e.g., [16]), and (e) joint static and dynamic\
+    \ guidance. Static guidance filtering restores smoothed depth edges, as in the\
+    \ red boxes of (c). However, this method transfers all the structural information\
+    \ of the color image to the depth image, such as the weak color edges between\
+    \ the board and background and the color stripes on the tablecloth in the blue\
+    \ boxes of (c). Dynamic guidance filtering avoids this problem, as in the blue\
+    \ boxes of (d), but this method does not use the structural information of the\
+    \ high-resolution color image, smoothing or even eliminating depth edges as in\
+    \ the red boxes of (d). The SD filter jointly uses the structure of color and\
+    \ depth images, and does not suffer from these problems as in the blue and red\
+    \ boxes of (e). See Section 5.1 for details. (Best viewed in colour.)"
+  Figure 3 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_3.jpg
+  Figure 3 caption: "Sketch of the majorize-minimization algorithm. At step k , a\
+    \ surrogate function Q k is constructed given some estimate u k of the minimum\
+    \ of E , such that Q k ( u k )=E( u k ) and Q k (u)\u2265E(u) . At step k+1 ,\
+    \ the next estimate u k+1 is obtained by minimizing Q k . These two steps are\
+    \ repeated until convergence."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_4.jpg
+  Figure 4 caption: "Welsch's function \u03C8 \u03BD and its surrogate functions \u03A8\
+    \ y \u03BD , when \u03BD is set to 1. The convex surrogate function \u03A8 y \u03BD\
+    \ (x) is an upper bound on \u03C8 \u03BD (x) and coincides with \u03C8 \u03BD\
+    \ (x) only when x is equal to y . (Best viewed in colour.)"
+  Figure 5 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_5.jpg
+  Figure 5 caption: "Upper bounds on Welsch's function \u03C8 \u03BD : An l 2 regularizer\
+    \ x 2 and an l 1 regularizer \u03B1|x| (a tight upper bound on \u03C8 \u03BD ),\
+    \ when \u03BD is set to 1. (Best viewed in colour.)"
+  Figure 6 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_6.jpg
+  Figure 6 caption: 'Examples of (a) energy evolution of (6) and (b) a sum of intensity
+    difference between successive steps (i.e., Vert mathbf uk-mathbf uk+1Vert 1 ),
+    given (c) the input image. Our solver converges in fewer steps with the l1 initialization
+    ( mathbf u0 = mathbf ul1 ) than with the l2 one ( mathbf u0 = mathbf ul2 ), with
+    faster overall speed. In contrast to most filtering methods, it does not give
+    a constant-value image in the steady-state: (d) mathbf u0 = mathbf ul2 , k=30
+    , (e) mathbf u0 = mathbf ul1 , k=7 , and (f) mathbf u0 = mathbf ul1 , k=30 . In
+    this example, for removing textures, static guidance is set to the Gaussian filtered
+    version (standard deviation, 1) of the input image ( lambda =50 , mu=5 , nu=40
+    ). See Section 5.2 for details.'
+  Figure 7 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_7.jpg
+  Figure 7 caption: Average PBP on (a) the Middlebury dataset [60] and (b) the Graz
+    dataset [10] as a function of the depth error tolerance delta . (Best viewed in
+    colour.)
+  Figure 8 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_8.jpg
+  Figure 8 caption: 'Visual comparison of upsampled depth images on a snippet of the
+    books sequence in the Middlebury dataset [60]: (a) A high-resolution color image,
+    (b) a ground-truth depth image, (c) bilinear interpolation, (d) GF [2], (e) RWR
+    [62], (f) Park et al. [12], (g) TGV [10], (h) WMF [11], (i) WModF [25], (j) mathbf
+    ul2 , (k) mathbf ul1 , and (l) SD filter ( mathbf u0 = mathbf ul1 ). In contrast
+    to the static guidance filters such as GF [2] and WMF [11], the SD filter interpolates
+    the low-resolution depth image using the structure of both color and depth images,
+    preserving sharp depth edges.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\Robust_Guided_Image_Filtering_Using_Nonconvex_Potentials\figure_9.jpg
+  Figure 9 caption: Examples of (top) point cloud scene reconstruction using (bottom)
+    depth images computed by (a) the ground truth, (b) bilinear interpolation, (c)
+    GF [2], (d) TGV [10], (e) WMF [11], and (f) SD filter ( mathbf u0 = mathbf ul2
+    ). Current depth upsampling methods smooth depth edges, causing jagged artifacts.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.72
+  Name of the first author: Bumsub Ham
+  Name of the last author: Jean Ponce
+  Number of Figures: 17
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Robust Guided Image Filtering Using Nonconvex Potentials
+  Publication Date: 2017-02-14 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Average PBP ( \u03B4=1 ) on the Middlebury Dataset [60] with\
+      \ Varying the Regularization Parameter \u03BB"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Average PBP ( \u03B4=1 ) and Processing Time on the Middlebury\
+      \ Dataset [60] with Varying the Number of Steps k"
+  Table 3 caption:
+    table_text: "TABLE 3 PBP ( \u03B4=1 ) Comparison with the State of the Art on\
+      \ the Middlebury Dataset [60]"
+  Table 4 caption:
+    table_text: "TABLE 4 PBP \u22C6 ( \u03B4=1 ) Comparison on the Middlebury Dataset\
+      \ [60]"
+  Table 5 caption:
+    table_text: TABLE 5 The Kullback-Leibler Divergence Between the Normalized Histograms
+      of Depth Gradients Computed from the Ground-Truth and Upsampled Depth Images
+  Table 6 caption:
+    table_text: TABLE 6 Evaluation of Boundary Localization Accuracy on the BSDS300
+      Database [64]
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2669034
+- Affiliation of the first author: national laboratory of pattern recognition (nlpr),
+    institute of automation, beijing, cas, china
+  Affiliation of the last author: department of computer science and information systems,
+    birkbeck college, london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\MultiView_MultiInstance_Learning_Based_on_Joint_Sparse_Representation_and_MultiV\figure_1.jpg
+  Figure 1 caption: "An example of airplane recognition using MIL: (A) the background\
+    \ of \u201Csky\u201D provides an important context for the recognition of \u201C\
+    airplane\u201D, (B) the background of \u201Cmountain\u201D is not a useful cue\
+    \ for the recognition of \u201Cairplane\u201D"
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\MultiView_MultiInstance_Learning_Based_on_Joint_Sparse_Representation_and_MultiV\figure_2.jpg
+  Figure 2 caption: The framework of the M 2 IL.
+  Figure 3 Link: articels_figures_by_rev_year\2017\MultiView_MultiInstance_Learning_Based_on_Joint_Sparse_Representation_and_MultiV\figure_3.jpg
+  Figure 3 caption: The comparison of the M 2 IL with different views on four data
+    sets.
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Bing Li
+  Name of the last author: Steve Maybank
+  Number of Figures: 3
+  Number of Tables: 4
+  Number of authors: 7
+  Paper title: Multi-View Multi-Instance Learning Based on Joint Sparse Representation
+    and Multi-View Dictionary Learning
+  Publication Date: 2017-02-14 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Accuracy (%) on Benchmark Sets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Accuracy (%) on Image Categorization
+  Table 3 caption:
+    table_text: TABLE 3 Average AUC Values with 95% Confidence Interval Over 30 Rounds
+      of Test on SIVAL Image Set
+  Table 4 caption:
+    table_text: TABLE 4 Performance (%) on Horror Video Recognition
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2669303

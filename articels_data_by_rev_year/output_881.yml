@@ -1,0 +1,910 @@
+- Affiliation of the first author: ipab institute at the university of edinburgh,
+    edinburgh, united kingdom
+  Affiliation of the last author: ipab institute at the university of edinburgh, edinburgh,
+    united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\Learning_Semantic_PartBased_Models_from_Google_Images\figure_1.jpg
+  Figure 1 caption: Images returned from Google Images. On the left examples of queries
+    for object parts, while on the right queries for an object under different viewpoints.
+    Note how the instances are correct, clean and they mostly appear under a uniform
+    background.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Learning_Semantic_PartBased_Models_from_Google_Images\figure_2.jpg
+  Figure 2 caption: Schema of our framework for object class 'horse', simplified to
+    just one part 'head' and two viewpoints 'left' and 'front'. At T 0 the framework
+    downloads horse instances ( O 1 and O 2 , for the two viewpoints) and head instances
+    ( P 1 ) from Google Images. At T 1 it learns a first head appearance model A 1
+    . At T 2 it then hunts for new head instances from the horse images in O 1 and
+    O 2 to first train two head location models L 2 1,1 and L 2 1,2 , one for each
+    horse viewpoint, and later to re-train a more accurate head appearance model A
+    2 . Finally, it also learns a viewpoint classifier V 2 . At T 3 it then predicts
+    the viewpoint of objects in O voc using V 2 and hunts for more part instances
+    from them. These are then used to train our final part appearance model A 3 and
+    part location models L 3 1,1 and L 3 1,2 . Note how at time T 1 the framework
+    has only seen part instances and has no information to learn neither L 1 nor V
+    1 .
+  Figure 3 Link: articels_figures_by_rev_year\2017\Learning_Semantic_PartBased_Models_from_Google_Images\figure_3.jpg
+  Figure 3 caption: Examples of the steps of our procedure to fit bounding-boxes to
+    objectpart instances in web images (Section. 4.1). (a) is the input image; (b)
+    is the initial rough foreground estimate M ; (c) is the output of the segmentation
+    process; and (d) are the bounding-boxes fit to connected components in the segmentation.
+    Note how the two images 'horse leg' and 'bicycle front' have multiple partobject
+    instances and our method is able to fit a separate bounding-box around each of
+    them.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Learning_Semantic_PartBased_Models_from_Google_Images\figure_4.jpg
+  Figure 4 caption: Examples of our location models L . We show a canonical image
+    of each object captured under one of our viewpoints and the location models of
+    their parts. These models nicely capture the average position of each part within
+    the object in that viewpoint. Note how these are automatically learnt from Google
+    Images. For visualization, we show a 2D projection of the location models, which
+    however live in a 4D space defined not only by the (x,y) position of a proposal,
+    but also by its scale and aspect ratio.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Learning_Semantic_PartBased_Models_from_Google_Images\figure_5.jpg
+  Figure 5 caption: Detections obtained by running A 1 + L 2 on object images from
+    Google (top) and A 3 + L 3 on objects from PASCAL-Parts (bottom).
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Davide Modolo
+  Name of the last author: Vittorio Ferrari
+  Number of Figures: 5
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: Learning Semantic Part-Based Models from Google Images
+  Publication Date: 2017-07-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Viewpoint Classification Results (Average Precision)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Part Detection Results (Average Precision) on the Validation
+      set of PASCAL-Part Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Object Detection Results (Average Precision)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2724029
+- Affiliation of the first author: school of computer science and software engineering,
+    the university of western australia, crawley, wa, australia
+  Affiliation of the last author: school of computer science, university of adelaide,
+    ingkarni wardli, north terrace campus, adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_1.jpg
+  Figure 1 caption: Block diagram of the presented dense 3D face correspondence algorithm.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_10.jpg
+  Figure 10 caption: Sample images and details of our four experimental datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_2.jpg
+  Figure 2 caption: "The directed graph G=( V g , E g ) (Left) and the Minimum Spanning\
+    \ Tree (MST) \u03A0=( V t , E t ) (Right) constructed from five example images\
+    \ of FRGCv2."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_3.jpg
+  Figure 3 caption: "(a) Vertices of the 2D-convex hull of the projection. (b) Points\
+    \ sampled at angular intervals of \u03C036 . (c) Initial sparse correspondence\
+    \ projected on four identities of the FRGCv2 dataset."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_4.jpg
+  Figure 4 caption: Illustration of geodesic patch extraction. (a) Two 3D faces with
+    triangulation over a few corresponding points from the 2 nd iteration. Geodesic
+    surface patch is extracted between two sample points shown in red colour. (b)
+    Pointclouds of the geodesic surface patches before and after registration.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_5.jpg
+  Figure 5 caption: Illustration of keypoints (not corresponding points) detected
+    along geodesic patches in the tenth iteration of our algorithm. Notice the repeatability
+    of keypoints across the identities.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_6.jpg
+  Figure 6 caption: The effect of correspondence quality threshold kq in the synthetic
+    dataset in the first iteration. (Left) Graph of kq versus the mean and SD of correspondence
+    localization error. (Middle) kq versus the number of correspondences established.
+    (Right) kq versus the maximum localization error. For all our experiments we have
+    set kq=2rho shown in the graphs in a magenta circle.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_7.jpg
+  Figure 7 caption: Correspondence established in 1st, 4th, 13th and 18th iteration
+    of our algorithm on the first two identities of FRGCv2. Notice how well the points
+    correspond across the identities.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_8.jpg
+  Figure 8 caption: Correspondence establishment on smooth surfaces. Two faces from
+    an ordered pair with triangulation over nq best quality corresponding points.
+    Blue dots indicate the centroids of large triangles. Level set based evolution
+    of geodesic curves for the two sample triangles, magnified on the right.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Dense_D_Face_Correspondence\figure_9.jpg
+  Figure 9 caption: K3DM fitting results on three datasets. The first scan for each
+    dataset is the raw input while the second scan is the fitted model. The 60 degree
+    side pose scan has been rotated to highlight the partial data.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Syed Zulqarnain Gilani
+  Name of the last author: Ian Reid
+  Number of Figures: 14
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Dense 3D Face Correspondence
+  Publication Date: 2017-07-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Module Wise Mean and SD of Localization Error (mm) on 2,246
+      Vertices of the Synthetic Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparative Results of the Mean and SD (mm) of Landmark Localization
+      Error on FRGCv2 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Landmark Localization Results with the State-of-the-Art
+      on Bosphorus Dataset
+  Table 4 caption:
+    table_text: "TABLE 4 Comparison of Landmark Localization Results (Mean \xB1 SD)\
+      \ with the State-of-the-Art on BU3DFE Dataset"
+  Table 5 caption:
+    table_text: TABLE 5 Comparative Landmark Localisation Results (mm) on UND Side
+      Pose Scans
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of 3D Face Recognition Results with the State-of-the-Art
+      in Terms of Rank-1 Identification Rate (I-Rate) and Verification Rate (V-Rate)
+      at 0.1 Percent FAR
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Rank-1 Recognition Results (in Percentage) with
+      the State-of-the-Art on Bosphorus Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Comparative of Rank-1 Recognition Results on Partial Faces
+      of UND Side Pose Scans
+  Table 9 caption:
+    table_text: TABLE 9 Comparison of Rank-1 Recognition on FRGCv2 and Bosphorus Datasets
+      Using Cross Domain Models
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2725279
+- Affiliation of the first author: school of electrical and electronic engineering,
+    yonsei university, seoul, korea
+  Affiliation of the last author: "\xE9cole normale sup\xE9rieurepsl research university\
+    \ and inria, paris, france"
+  Figure 1 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_1.jpg
+  Figure 1 caption: Proposal flow generates a reliable and robust semantic flow between
+    similar images using local and geometric consistency constraints among object
+    proposals, and it can be transformed into a dense flow field. Using object proposals
+    for semantic flow enables focusing on regions containing prominent objects and
+    scene elements rather than clutter and distracting details. (a) Region-based semantic
+    flow between source (left) and target (right) images. (b) Dense flow field (bottom)
+    and image warping using the flow field (top). (Best viewed in color.)
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_2.jpg
+  Figure 2 caption: 'Top: (a-b) A pair of images and their object proposals [25] .
+    (c) Multi-scale object proposals contain the same object or parts, but they are
+    not perfectly repeatable across different images. Bottom: In contrast to NAM (d),
+    PHM [41] (e) and LOM (f) both exploit geometric consistency, which regularizes
+    proposal flow. In particular, LOM imposes local smoothness on offsets between
+    neighboring regions, avoiding the problem of using a global consensus on the offset
+    in PHM [41]. The matching score is color-coded for each match (red: high, blue:
+    low). The HOG descriptor [46] is used for appearance matching in this example.
+    (Best viewed in color.)'
+  Figure 3 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_3.jpg
+  Figure 3 caption: Flow field generation. (a) For each pixel (yellow point), its
+    anchor match (red boxes) is determined. The correspondence (green point) is computed
+    by the transformed coordinate with respect to the position and size of the anchor
+    match. (b) Based on the flow field, (c) the right image is warped to the left
+    image. The warped object shows visually similar shape to the one in the left image.
+    The LOM method is used for region matching with the object proposals [24] and
+    the HOG descriptor [46]. (Best viewed in color.)
+  Figure 4 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_4.jpg
+  Figure 4 caption: 'Top: Generating ground-truth regions and evaluating correct matches.
+    (a) Using keypoint annotations, dense correspondences between images are established
+    using TPS warping [55], [56]. (b) Based on the dense correspondences, all pixels
+    in the left image are warped to the right image, showing that the correspondences
+    align two images well. (c) We assume that true matches exist only between the
+    regions near the object bounding box, and thus an evaluation is done with the
+    regions in this subset of object proposals. (d) For each object proposal (red
+    box in the left image), its ground truth is generated automatically by the dense
+    correspondences: We fit a tight rectangle (red box in the right image) of the
+    region formed by the warped object proposal (yellow box in the right image) and
+    use it as a ground-truth correspondence. Bottom: Examples of correct matches:
+    The numbers of correct matches are 16, 5, and 38 for NAM (e), PHM [41] (f), and
+    LOM (g), respectively. Matches with an IoU score greater than 0.5 are considered
+    as correct in this example. (Best viewed in color.)'
+  Figure 5 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_5.jpg
+  Figure 5 caption: 'PF-PASCAL benchmark evaluation on region matching precision (top,
+    PCR plots) and match retrieval accuracy (bottom, mIoU k plots): (a) Evaluation
+    for LOM with HOG [46], (b) Evaluation for LOM with RP [24], and (c) Evaluation
+    for RP with HOG [46]. The AuC is shown in the legend. (Best viewed in color.)'
+  Figure 6 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_6.jpg
+  Figure 6 caption: PF benchmark evaluation on AuCs for PCR and mIoU k plots with
+    the PF-PASCAL dataset. We can see that combining LOM, RP, and HOG performs best
+    in both metrics and datasets. (Best viewed in color.)
+  Figure 7 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_7.jpg
+  Figure 7 caption: AuCs for PCR and mIoU k plots and fraction of inlier proposals
+    over all proposals on the PF-PASCAL (top) and PF-WILLOW (bottom). We can see that
+    matching precision (left, PCR plots) and retrieval accuracy (center, mIoU k plots)
+    are slightly increasing, except MCG. The MCG is designed to obtain high precision
+    with small number of proposals, so the fraction | R s ||R| (right) decreases as
+    the number of proposals. The LOM method is used for region matching with the HOG
+    descriptor. (Best viewed in color.)
+  Figure 8 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_8.jpg
+  Figure 8 caption: 'Examples of dense flow field. (a-b) Source images are warped
+    to the target images using the dense correspondences estimated by (c) DeepFlow
+    [4], (d) SIFT Flow [8], (e) DSP [10], (f) Zhou et al. [21], and (g) Proposal Flow
+    (LOM w RP and HOG). Top: Compared to the existing methods, proposal flow is robust
+    to background clutter, and translation and scale changes between objects. The
+    first two images are from the PF-WILLOW and remaining ones are from the PF-PASCAL.
+    Bottom: Failure examples of (from top to bottom) sofa and bus classes on the PF-PASCAL
+    dataset. Proposal flow is hard to deal with images containing (from top to bottom)
+    severe occlusion and similarly shaped objects.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\Proposal_Flow_Semantic_Correspondences_from_Object_Proposals\figure_9.jpg
+  Figure 9 caption: Verification of ground-truth data using a leave- n -out validation.
+    This shows the average PCK of 10 trials over all object classes. For this experiment,
+    we leave out n randomly selected keypoints per each pair, and then measure PCK
+    scores between the estimated correspondences (using TPS warps) of the leave out
+    keypoints and their ground-truth annotations. (Best viewed in color.)
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.72
+  Name of the first author: Bumsub Ham
+  Name of the last author: Jean Ponce
+  Number of Figures: 9
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: 'Proposal Flow: Semantic Correspondences from Object Proposals'
+  Publication Date: 2017-07-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 AuC Performance for PCR Plots on the PF-PASCAL Dataset (RP
+      w HOG)
+  Table 10 caption:
+    table_text: TABLE 10 PCK Performance for a Leave-One-Out Validation on the PF-WILLOW
+      Dataset
+  Table 2 caption:
+    table_text: TABLE 2 AuC Performance for PCR Plots on the PF-WILLOW Dataset (RP
+      w HOG)
+  Table 3 caption:
+    table_text: "TABLE 3 PCK ( \u03B1=0.1 ) Comparison for Dense Flow Field on the\
+      \ PF Dataset (PF-PASCAL PF-WILLOW)"
+  Table 4 caption:
+    table_text: "TABLE 4 PCK ( \u03B1=0.1 ) Comparison for Dense Flow Field on the\
+      \ PF-PASCAL Dataset (SS w HOG)"
+  Table 5 caption:
+    table_text: "TABLE 5 PCK ( \u03B1=0.1 ) Comparison for Dense Flow Field on the\
+      \ PF-WILLOW Dataset (SS w HOG)"
+  Table 6 caption:
+    table_text: TABLE 6 Runtime Comparison for Dense Flow Field on the PF-PASCAL Dataset
+      (SS w HOG)
+  Table 7 caption:
+    table_text: TABLE 7 Matching Accuracy on the Caltech-101 Dataset (HOG)
+  Table 8 caption:
+    table_text: TABLE 8 Matching Accuracy on the Taniai's Dataset (SS w HOG)
+  Table 9 caption:
+    table_text: TABLE 9 Matching Accuracy on the PASCAL Parts (SS w HOG)
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2724510
+- Affiliation of the first author: guangzhou key laboratory of data security and privacy
+    preserving, jinan university, guangzhou, china
+  Affiliation of the last author: baiyun district bureau of justice, guangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_1.jpg
+  Figure 1 caption: Changes from single-gait to multi-gait. GEI of each person walking
+    alone and walking with another person are both calculated. The black area of the
+    difference image represents that there are some unchanged features when a person
+    walks with another person, which demonstrates that recognizing a person even though
+    walking with other people is available. The white area of the difference image
+    represents changes caused by walking with another person.
+  Figure 10 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_10.jpg
+  Figure 10 caption: Sample images from the CASIA-B database under (a) 0 degree, (b)
+    72 degree, (c) walking with a bag under 90 degree and (h) walking with a coat
+    under 90 degree.
+  Figure 2 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_2.jpg
+  Figure 2 caption: Illustration of person tracking results, and each person is tracked
+    accurately.
+  Figure 3 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_3.jpg
+  Figure 3 caption: Multi-gait attribute training model.
+  Figure 4 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_4.jpg
+  Figure 4 caption: The overall flowchart of the proposed method, and illustration
+    is for the single attribute.
+  Figure 5 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_5.jpg
+  Figure 5 caption: Raw images of our proposed multi-gait database under four views.
+    From top row to bottom row represents lateral view, frontal view, view 30 degree
+    and view 60 degree.
+  Figure 6 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_6.jpg
+  Figure 6 caption: Given an input image sequence, the human pose of each frame is
+    estimated by CPM. Then 14 body joints can be detected.
+  Figure 7 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_7.jpg
+  Figure 7 caption: Examples of the top ranked (based on the recognition rate) attributes
+    discovered by our multi-gait recognition framework. Under each view, from left
+    to right represent 5, 10, 15 percent ranked attributes. Trajectory cluster in
+    one color represents one attribute.
+  Figure 8 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_8.jpg
+  Figure 8 caption: Illustration of some success cases (in green rectangles) and two
+    typical failure cases (in red rectangles) in our experiment.
+  Figure 9 Link: articels_figures_by_rev_year\2017\MultiGait_Recognition_Based_on_Attribute_Discovery\figure_9.jpg
+  Figure 9 caption: Influence of different dynamic feature types.
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Xin Chen
+  Name of the last author: Jiaming Xu
+  Number of Figures: 10
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Multi-Gait Recognition Based on Attribute Discovery
+  Publication Date: 2017-07-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Recognition Accuracy Comparison of Single-Gait (Represented
+      by 'S'), Double-Gait (Represented by 'D') and Triple-Gait (Represented by 'T')
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results of Different Tracking Methods
+  Table 3 caption:
+    table_text: TABLE 3 Lateral-View Recognition Rates of Different Algorithms on
+      Probe Image Sets of the CASIA-B Database
+  Table 4 caption:
+    table_text: TABLE 4 Gait Recognition Rates (%) Where the Probe View Is 90 degree
+      and Gallery Views Are 54, 72, 108, 126 and 144 degree
+  Table 5 caption:
+    table_text: TABLE 5 Comparison with Deep Learning Method Under Different Walking
+      Conditions on CASIA-B by Accuracies
+  Table 6 caption:
+    table_text: TABLE 6 Running Time Comparison (s)
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2726061
+- Affiliation of the first author: school of computer science and network security,
+    dongguan university of technology, dongguan, china
+  Affiliation of the last author: department of computer science, hong kong baptist
+    university, hong kong sar, china
+  Figure 1 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_1.jpg
+  Figure 1 caption: "Inference-based r -neighbour detection modelled as binary channel\
+    \ estimation with decision rule \u03B4 ."
+  Figure 10 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_10.jpg
+  Figure 10 caption: Performance comparison in terms of the search accuracy with respect
+    to the top k retrieved candidates. (a) The UBIRIS dataset. (b) The LFW dataset.
+    (c) The FERET dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_2.jpg
+  Figure 2 caption: "Empirical probability mass functions of \u03C0 under H 0 and\
+    \ H 1 , respectively, with the UBIRIS dataset, given L=30 and r=50 . Choosing\
+    \ \u03B7=0.1144 minimizes \u03BB 0 + \u03BB 1 ."
+  Figure 3 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_3.jpg
+  Figure 3 caption: Main procedures of the three-party search protocol.
+  Figure 4 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_4.jpg
+  Figure 4 caption: Bound beta (s+ctextN; 2 ctextR, ctextN)T2 with respect to the
+    modulus encoding length ctextN for T=1, 2, 3 , given s=14 and ctextR=15 .
+  Figure 5 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_5.jpg
+  Figure 5 caption: I(X; Gamma 1, Gamma 2) with respect to the multiplier encoding
+    length ctextR for s=4, 7, 14 . The mean and standard deviation are obtained with
+    ten pairs of prime moduli N1 and N2 randomly chosen in (0, 215) .
+  Figure 6 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_6.jpg
+  Figure 6 caption: I(X; Gamma 1, Gamma 2) with respect to the prime moduli N1 and
+    N2 chosen to span the range (0, 215) , given s=7 and ctextR=15 .
+  Figure 7 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_7.jpg
+  Figure 7 caption: Effect of distance obfuscation with L=30 for the UBIRIS dataset.
+    (a) Mapping from Hamming distance d to obfuscated distance measure m . (b) Histogram
+    of d and that of m for neighbouring pairs with dleq 50 . (c) Histogram of d and
+    that of m for non-neighbouring pairs with d > 50 .
+  Figure 8 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_8.jpg
+  Figure 8 caption: Retrieval performance of MIMP-RM on the simulated dataset with
+    positions of mismatching bits randomly chosen from a range.
+  Figure 9 Link: articels_figures_by_rev_year\2017\InferenceBased_Similarity_Search_in_Randomized_Montgomery_Domains_for_PrivacyPre\figure_9.jpg
+  Figure 9 caption: Impact of the parameter L on the search accuracy of MIMP-RM with
+    respect to the top k retrieved candidates. (a) The UBIRIS dataset. (b) The LFW
+    dataset. (c) The FERET dataset.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Yi Wang
+  Name of the last author: Pong C. Yuen
+  Number of Figures: 10
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: Inference-Based Similarity Search in Randomized Montgomery Domains
+    for Privacy-Preserving Biometric Identification
+  Publication Date: 2017-07-14 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Inference-Based r -Neighbour Detection over the UBIRIS Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Computation Cost for Encoding Piecewise Binary
+      Codes Generated from the UBIRIS Dataset
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2727048
+- Affiliation of the first author: computer science and engineering, michigan state
+    university, east lansing, mi
+  Affiliation of the last author: msu-doe plant biology lab, michigan state university,
+    east lansing, mi
+  Figure 1 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_1.jpg
+  Figure 1 caption: Given a fluorescence plant video captured during its growth period,
+    our algorithm performs multi-leaf SAT jointly, i.e., estimating unique and consistent-over-time
+    labels for all leaves and their individual leaf structure like leaf tips.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_10.jpg
+  Figure 10 caption: Alignment parameter tuning. We show the accuracy in E , F , and
+    SBD when varying the coefficients of each objectve (a) and the template set size
+    (b,c,d).
+  Figure 2 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_2.jpg
+  Figure 2 caption: Overview of the proposed joint multi-leaf SAT. Given a plant video
+    with t frames, the proposed method outputs the SAT results on each frame, and
+    two prediction curves on the quality of alignment and tracking for each leaf.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_3.jpg
+  Figure 3 caption: Forward and backward warping.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_4.jpg
+  Figure 4 caption: Leaf template scaling and rotation from basic template shapes.
+    The tip labels are shown in yellow and green.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_5.jpg
+  Figure 5 caption: The process of generating boldsymbol m and boldsymbol A .
+  Figure 6 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_6.jpg
+  Figure 6 caption: "The angle difference\u2014the long axis of leaves should point\
+    \ to the plant center."
+  Figure 7 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_7.jpg
+  Figure 7 caption: A toy example of executing Step 1 of Algorithm 2 on one video
+    with 3 frames. In frame 1, we illustrate the process of Algorithm 1. Each table
+    shows the corresponding computation of each leaf from tracking results (each row)
+    and label results (each column).
+  Figure 8 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_8.jpg
+  Figure 8 caption: 'Qualitative results: (a) ground truth labels; (b) baseline CM;
+    (c) [17] ; (d) proposed method; and (e) manual results. Each column is one frame
+    in the video (dayframe). Yellowgreen dots are the estimated outerinner leaf tips.
+    Red contour is boldsymbol W(boldsymbol U;boldsymbol p) . Blue box encloses the
+    edge points matching boldsymbol W(boldsymbol U;boldsymbol p) . The number on a
+    leaf is the leaf ID. Best viewed in color.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\Joint_MultiLeaf_Segmentation_Alignment_and_Tracking_for_Fluorescence_Plant_Video\figure_9.jpg
+  Figure 9 caption: Accuracy comparison of F , E , and T versus tau for all different
+    methods based on Algorithm 2.
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xi Yin
+  Name of the last author: David M. Kramer
+  Number of Figures: 16
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Joint Multi-Leaf Segmentation, Alignment, and Tracking for Fluorescence
+    Plant Videos
+  Publication Date: 2017-07-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 SBD and Efficiency Comparison (Sec.Image)
+  Table 3 caption:
+    table_text: "TABLE 3 Leaf Segmentation SBD Accuracy ( \xB1 std) Comparison"
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2728065
+- Affiliation of the first author: department of statistics, university of california,
+    los angeles, ca
+  Affiliation of the last author: department of statistics, university of california,
+    los angeles, ca
+  Figure 1 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_1.jpg
+  Figure 1 caption: (left) People's trajectories are color-coded by their shared goal
+    destination. The triangles denote destinations, and the dots denote start positions
+    of the trajectories. E.g., people may be heading toward the food-truck to buy
+    food (green), or the vending machine to quench thirst (blue). (right) Due to low
+    resolution, poor lighting, and occlusions, objects at the destinations are very
+    difficult to detect only based on their appearance and shape.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_10.jpg
+  Figure 10 caption: "PR curves of \u201Csequential intents\u201D and \u201Cchange\
+    \ of intent\u201D."
+  Figure 2 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_2.jpg
+  Figure 2 caption: "An example video where people driven by latent needs move toward\
+    \ functional objects where these needs can be satisfied (i.e., \u201Cdark matter\u201D\
+    ). (Right) A zoomed-in top-down view of the scene and our actual results of: (a)\
+    \ Inferring and localizing the person's goal destination; (b) Predicting the person's\
+    \ full trajectory (red); (c) Estimating the force field affecting the person (the\
+    \ blue arrows, where their thickness indicates the force magnitude; the black\
+    \ arrows represent another visualization of the same field.); and (d) Estimating\
+    \ the constraint map of non-walkable areas and obstacles in the scene (the \u201C\
+    holes\u201D in the field of blue arrows and the field of black arrows)."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_3.jpg
+  Figure 3 caption: (a) An example of a public space; (b) 3D reconstruction of the
+    scene using the method of [2]; (c) Our estimation of the ground surface; and (d)
+    Our inference is based on superpixels obtained using the method of [48].
+  Figure 4 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_4.jpg
+  Figure 4 caption: "Visualizations of the force field for the scene from Fig. 2.\
+    \ ( left) In LM, particles are driven by a sum of all forces; the figure shows\
+    \ the resulting fields generated by only two sources. (right) In ALM, each agent\
+    \ selects a single force F \u20D7 j (x) to drive its motion; the figure shows\
+    \ that forces at all locations in the scene point toward the top left of the scene\
+    \ where the source is located. The white regions represent our estimates of obstacles.\
+    \ Repulsion forces are short ranged, with magnitudes too small to show here."
+  Figure 5 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_5.jpg
+  Figure 5 caption: "Top view of the scene from Fig. 2 with the overlaid illustration\
+    \ of the MCMC inference. The rows show the progression of proposals of the constraint\
+    \ map C in raster scan (the white regions indicate obstacles), and trajectory\
+    \ estimates of agent a i with goal to reach s j (warmer colors represent higher\
+    \ likelihood P( \u0393 ij |C,S, r ij =1, z i =\u201Csingle'') ). In the last iteration\
+    \ (bottom right), MCMC estimates that the agent's goal is to approach s j at the\
+    \ top-left of the scene, and finds two equally likely trajectories for this goal."
+  Figure 6 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_6.jpg
+  Figure 6 caption: "Top view of the scene from Fig. 2 with the overlaid trajectory\
+    \ predictions of a person who starts at the top-left of the scene, and wants to\
+    \ reach the dark matter in the middle-right of the scene (the food truck). A magnitude\
+    \ of difference in parameters \u03BB=0.2 (on the left) and \u03BB=1 ( on the right)\
+    \ used to compute likelihood P( \u0393 ij |C,S,R,Z) gives similar trajectory predictions.\
+    \ The predictions are getting more certain as the person comes closer to the goal.\
+    \ Warmer colors represent higher likelihood."
+  Figure 7 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_7.jpg
+  Figure 7 caption: "The ground truth of two scenes in the toy dataset. There are\
+    \ three \u201Cdark-matter\u201D objects in each scene represented by colored squares\
+    \ whereas the black regions are defined as obstacles. The trajectories are created\
+    \ by i) assigning an agent with a starting position and one of the objects as\
+    \ destination, and ii) sampling a path between the starting position and the function\
+    \ object. The colors of the trajectories indicate the corresponding \u201Cdark\
+    \ matter\u201D."
+  Figure 8 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_8.jpg
+  Figure 8 caption: "Qualitative experiment results for \u201Cdark matter\u201D localization\
+    \ and \u201Csingle intent\u201D prediction in 4 scenes. Each row is one scene.\
+    \ The 1st column is the reconstructed 3D surfaces of each scene. The 2nd column\
+    \ is the estimated layout of obstacles (the white masks) and dark matter (the\
+    \ Gaussians). The 3rd column shows the trajectory prediction by sampling. We predict\
+    \ the future trajectory for an agent at some position ( A , B , C , D ) in the\
+    \ scene toward each potential source in S . The warm and cold colors represent\
+    \ high and low probability of visiting the positions respectively. Note that we\
+    \ cropped and projected the ground surface onto the top-down view which results\
+    \ into the irregular polygons."
+  Figure 9 Link: articels_figures_by_rev_year\2017\Learning_and_Inferring_Dark_Matter_and_Predicting_Human_Intents_and_Trajectories\figure_9.jpg
+  Figure 9 caption: "Qualitative result of \u201Csequential intents\u201D and \u201C\
+    change of intent\u201D. Left: online prediction where the red bounding boxes represent\
+    \ the possible intents at a certain moment and a larger bounding box indicates\
+    \ an intent with higher probability; histograms represent the probabilities of\
+    \ each functional object being the intent of the agent at a given moment. Right:\
+    \ offline intent types and intents inference based on the full observation of\
+    \ trajectories, where the square is the first intent and the triangle is the second\
+    \ intent."
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Dan Xie
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: "Learning and Inferring \u201CDark Matter\u201D and Predicting Human\
+    \ Intents and Trajectories in Videos"
+  Publication Date: 2017-07-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Examples of Human Needs and Objects That Can Satisfy These
+      Needs in the Context of a Public Space
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Notation Used in This Paper
+  Table 3 caption:
+    table_text: TABLE 3 Accuracy of S and R Averaged Over All Agents, and NLL on the
+      Toy Dataset
+  Table 4 caption:
+    table_text: "TABLE 4 Summary of \u201CDark Matter\u201D for the Datasets"
+  Table 5 caption:
+    table_text: "TABLE 5 Qualitative Results of \u201CSingle Intent\u201D"
+  Table 6 caption:
+    table_text: "TABLE 6 Results on \u2460 with Different Observed Ratios"
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2728788
+- Affiliation of the first author: state key laboratory of virtual reality technology
+    and systems, beihang university
+  Affiliation of the last author: state key laboratory of virtual reality technology
+    and systems, beihang university
+  Figure 1 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_1.jpg
+  Figure 1 caption: Detection proposals generated on two videos from the Youtube-Objects
+    dataset [51], by directly applying the DPM detector [19] pre-trained on Pascal
+    VOC dataset [17]. The detections provide rough, noisy, but important cues for
+    video object localization.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_10.jpg
+  Figure 10 caption: The initial (top) and the final (bottom) object tracks generated
+    by incorporating one and both of the spatial and temporal terms in Eq. (2), evaluated
+    on the video horses01 from the FBMS-59 dataset. Colors represent different objects.
+    (Best viewed in color with zoom.)
+  Figure 2 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_2.jpg
+  Figure 2 caption: 'The system framework of our approach. It consists of three major
+    stages, including 1) proposal generation: generating a set of detection and segment
+    proposals for each frame; 2) track initialization: initializing object tracks
+    from noisy proposals by solving a joint assignment problem; 3) track refinement:
+    refining the spatiotemporal consistency of object tracks by using shape priors
+    and color cues.'
+  Figure 3 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_3.jpg
+  Figure 3 caption: "Visual comparison between the per-frame voting and spatiotemporal\
+    \ voting. Row 1: trivial cases with clean background, where high-quality estimations\
+    \ are obtained by both voting schemes. Row 2\u223C3 : when background clutter\
+    \ and object occlusion present, only the spatiotemporal voting gives meaningful\
+    \ results. Row 4: spatiotemporal voting fixes per-frame failures and generates\
+    \ more complete shape priors."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_4.jpg
+  Figure 4 caption: Quantitative results on YTO-Tang dataset, reported as mAP (left)
+    and precision-recall curves (right).
+  Figure 5 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_5.jpg
+  Figure 5 caption: 'Representative examples generated by our approach on Youtube-Objects
+    dataset. Rows 1-4: successful cases. We show our results in case of high-quality
+    detections (left), highly inconsistent detections (middle) and multiple objects
+    (right). Row 5: partially successful examples. Our approach may miss some object
+    parts when the detections are unreliable (left), fail to locate the objects in
+    some frames in presence of large camera motion (middle) and fail to segment the
+    undetected objects (right). Row 6: typical failure cases, including invalid bounding
+    box assumption (left), missing detections (middle) and false positives (right).
+    See text for details.'
+  Figure 6 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_6.jpg
+  Figure 6 caption: Evaluating shape prior estimation algorithms on the YTO-Jain-Sub
+    dataset as precision-recall curves. The legend shows the Average Precision (AP)
+    and time cost of different algorithms.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_7.jpg
+  Figure 7 caption: 'Left: IoU scores (left) and object CorLoc accuracies of different
+    approaches as functions of the overlap threshold on the YTO-Jain-Sub dataset.
+    (Best viewed in color.)'
+  Figure 8 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_8.jpg
+  Figure 8 caption: IoU scores (left) and detection F1-scores (right) of the proposed
+    approach as functions of detection thresholds on the YTO-Jain-Sub dataset. The
+    optimal threshold for each category (where F1-score is maximized) is indicated
+    using vertical dashed lines. For clarity, we illustrate four dominant categories
+    with the most instances and the curves averaged on all classes. (Best viewed in
+    color.)
+  Figure 9 Link: articels_figures_by_rev_year\2017\Semantic_Object_Segmentation_in_Tagged_Videos_via_Detection\figure_9.jpg
+  Figure 9 caption: "Average IoU scores of the proposed approach as a function of\
+    \ value combinations of \u03BB 1 and \u03BB 2 on the YTO-Jain-Sub dataset. The\
+    \ cross of two slices shows the best accuracy. (Best viewed in color.)"
+  First author gender probability: 0.53
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Yu Zhang
+  Name of the last author: Jun Li
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Semantic Object Segmentation in Tagged Videos via Detection
+  Publication Date: 2017-07-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Results on YTO-Jain Dataset, Reported as IoU
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Results on YTO-Jain-Sub Dataset, Reported as
+      IoU
+  Table 3 caption:
+    table_text: TABLE 3 Evaluating Track Initialization Algorithms on the YTO-Jain-Sub
+      Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Results of Ablation Studies on the YTO-Jain-Sub Dataset, Reported
+      as IoU
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Results on Multi-ClassObject Segmentation on
+      Videos from the FBMS-59 and SegTrack v2 Datasets, Reported as IoU
+  Table 6 caption:
+    table_text: TABLE 6 Average Running Time of Our Approach on the Subset of [28]
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2727049
+- Affiliation of the first author: "department of computer science, university of\
+    \ copenhagen, k\xF8benhavn, denmark"
+  Affiliation of the last author: "department of computer science, university of copenhagen,\
+    \ k\xF8benhavn, denmark"
+  Figure 1 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_1.jpg
+  Figure 1 caption: A schematic overview of consistent deformation. (a) Naive consistent
+    deformation. This is the approach used in SyN for each deformation to the midpoint
+    for representing the deformation and its inverse by post-registration estimation.
+    This approach is similar to other implementations, where the symmetry is obtained
+    by maintaining 2 deformations with 2 different parameterizations. (b) is the consistency
+    obtained by CDD , by accurately using the diffeomorphic property.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_10.jpg
+  Figure 10 caption: The scaling and squaring architecture.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_2.jpg
+  Figure 2 caption: The convergence plot (a) and the consistency plot (b) of integrating
+    a circle with the different methods. Their similarity demonstrate that the consistency
+    is a good surrogate for convergence, which is useful when the true solution of
+    the ODE is unknown.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_3.jpg
+  Figure 3 caption: "The solutions for a single point obtained by the use of Fwd Euler,\
+    \ Trapezoidal, SS and RK4 methods on 3 different velocity fields (top row) and\
+    \ the corresponding consistency plots (bottom row). a) & b) are for a full rotation\
+    \ of \u03C0 with radius 10. c) & d) is a random velocity field with mean 0 and\
+    \ std 10, and e) & f) a sinusoidal function. The plots clearly illustrate that\
+    \ for very well behaved velocity fields (rotation (b)) the SS is far superior,\
+    \ however for velocity fields which are slightly more challenging then SS fails\
+    \ to converge ((d) and (f))."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_4.jpg
+  Figure 4 caption: The reduction in the maximum and mean consistency accuracy error
+    as a function of the number of steps using 1st -order B-Splines using the SVF's
+    obtained from the 45 pairwise registrations of the MGH10 dataset. As the figure
+    shows, the consistency accuracy for the Euler improves by a factor of 2 when doubling
+    the number of time steps, the RK4 with a factor of 10 and the trapezoidal is around
+    a factor of 50.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_5.jpg
+  Figure 5 caption: An example of the results of a registration from the MGH dataset
+    of a deformed brain with labels overlaid, showing that the labels match well with
+    the cortical structures. Four different transversal slices are shown, together
+    with a sagittal overview slice that marks the position of the transversal slices
+    with blue lines, starting with the lowest slice displayed on the far left.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_6.jpg
+  Figure 6 caption: The box plot of the average mean overlap and average target overlap
+    for LPBA dataset. mathbfCDD has the highest mean of both measures and the highest
+    median of the target overlap. SyN has a median of the mean overlap which is 0.0019
+    higher than mathbfCDD , but has far more outliers and thus produces far less reliable
+    registrations.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_7.jpg
+  Figure 7 caption: The box plot of the average mean overlap and average target overlap
+    for the IBSR. mathbfCDD has the highest mean and median of both measures. DARTEL
+    has a median of target overlap which is 0.0064 lower than mathbfCDD , but has
+    more outliers and thus produces less reliable registrations.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_8.jpg
+  Figure 8 caption: The box plot of the average mean overlap and average target overlap
+    for the CUMC12. mathbfCDD has the highest mean and median of both measures.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Collocation_for_Diffeomorphic_Deformations_in_Medical_Image_Registration\figure_9.jpg
+  Figure 9 caption: The box plot of the average mean overlap and average target overlap
+    for the MGH10. mathbfCDD has the highest mean and median of both measures.
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sune Darkner
+  Name of the last author: Jon Sporring
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Collocation for Diffeomorphic Deformations in Medical Image Registration
+  Publication Date: 2017-07-21 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Individual Tests versus CDD on LPBA: The Mean and Median
+      of the Target Overlap and Mean Overlap of the Registration'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Individual Tests versus CDD on IBSR: The Mean and Median
+      of the Target Overlap and Mean Overlap of the Registration of the IBSR'
+  Table 3 caption:
+    table_text: 'TABLE 3 Individual Tests versus CDD on CUMC: The Mean and Median
+      of the Target Overlap and Mean Overlap of the Registration of the CUMC Dataset'
+  Table 4 caption:
+    table_text: 'TABLE 4 Individual Tests versus CDD on MGH: The Mean and Median of
+      the Target Overlap and Mean Overlap of the Registration of the MGH Dataset'
+  Table 5 caption:
+    table_text: TABLE 5 Estimated Number of (Dominating) Operations per Step and Number
+      of Steps to Converge
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2730205
+- Affiliation of the first author: institute for computer graphics and vision (icg),
+    inffeldgasse 16, graz, austria
+  Affiliation of the last author: faculty of computer science, dresden university
+    of technology, dresden, germany
+  Figure 1 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_1.jpg
+  Figure 1 caption: Progress of partial optimality methods. The top row corresponds
+    to a stereo model with Potts interactions and large aggregating windows for unary
+    costs used in [1], [2] (instance published by [2]). The bottom row is a more refined
+    stereo model with truncated linear terms [3] (instance from [4]). The hashed red
+    area indicates that the optimal persistent label in the pixel is not found (but
+    some non-optimal labels might have been eliminated). Solution completeness is
+    given by the percentage of persistent labels. Graph cut based methods are fast
+    but only efficient for strong unary terms. LP-based methods are able to determine
+    larger persistent assignments but are extremely slow prior to this work.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_2.jpg
+  Figure 2 caption: "Dead end elimination dominance. Variables are shown as boxes\
+    \ and their possible labels as circles. Label x u =1 is substituted with label\
+    \ x u =3 . If for any configuration of neighbors x N(u) the energy does not increase\
+    \ (only the terms inside u\u222AN(u) contribute to the difference), label x u\
+    \ =1 can be eliminated without loss of optimality."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_3.jpg
+  Figure 3 caption: Simultaneous substitution of labels in two variables. X u = X
+    v =1,2,3 , labels at arrow tails are substituted with labels at arrow heads. So
+    the joint configuration (1,2) (dashed) is substituted with the configuration (3,3)
+    (solid).
+  Figure 4 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_4.jpg
+  Figure 4 caption: Steps of the discrete cutting-plane algorithm. (a) Starting from
+    substitution that maps everything to the test labeling y (red), crossed labels
+    would be eliminated if p passes the sufficient condition. (b) A relaxed solution
+    mu violating the sufficient condition is found (black). (c) Substitution p is
+    pruned.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_5.jpg
+  Figure 5 caption: Illustration for the reduction. Labels mathcal Xu backslash mathcal
+    Yu are not displaced by p hence their associated unary and pairwise costs are
+    zero in g = (I-[p]mathsf T)f . In case (a) the indicated pairwise costs are replaced
+    with their minimum. In case (b) the value of guv(i,j) can be decreased, assuming
+    all reductions of type (a) and their symmetric counterparts are already performed.
+    The amount of decrease matches the value of the mixed derivative (non-submodularity)
+    associated to i,iprime paired with j,jprime .
+  Figure 6 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_6.jpg
+  Figure 6 caption: Performance on a hard segmentation problem. The remainder of the
+    problem visualizes |pu(Xu)| for all pixels. The result of the improved method
+    [28] - mathttTRWS is the same as [17] - mathttTRWS , because this is a Potts model.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_7.jpg
+  Figure 7 caption: Examples of an easy problem, mathttobjecttext-seg . TRWS finds
+    the optimal solution (zero integrality gap) and therefore our method as well as
+    [17] - mathttTRWS , [28] - mathttTRWS report 100 percent.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_8.jpg
+  Figure 8 caption: Examples of a hard stereo problem, mathtttedtext-gm . The result
+    [28] - mathttTRWS is the same as [17] - mathttTRWS , because this is a Potts model
+    too.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Maximum_Persistency_via_Iterative_Relaxed_Inference_in_Graphical_Models\figure_9.jpg
+  Figure 9 caption: Example of a very hard instance, photomontage. The number of views
+    covering a pixel is usually smaller than the total number of views = number of
+    labels. The 79 percent by our method mostly originate from the elimination of
+    these redundant labels. The result of [17]-TRWS gives 27.55 percent (visually
+    same as [1]) in 3.9h. [28]-TRWS improves on this due to choosing the optimal reparametrization
+    [28]. Note that our partial labeling (the part with one label remaining) is larger.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Alexander shekhovtsov
+  Name of the last author: Bogdan Savchynskyy
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Maximum Persistency via Iterative Relaxed Inference in Graphical Models
+  Publication Date: 2017-07-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 List of Evaluated Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance Evaluation on Random Instances of [16]
+  Table 3 caption:
+    table_text: TABLE 3 Performance on OpenGM Benchmarks
+  Table 4 caption:
+    table_text: 'TABLE 4 Evaluation of Speedups on Selected Examples: Computational
+      Time Drops, as from Left to Right We Add Techniques Described in Section 6'
+  Table 5 caption:
+    table_text: TABLE 5 Comparison to [17] Using Exact and Approximate LP Solvers
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2730884

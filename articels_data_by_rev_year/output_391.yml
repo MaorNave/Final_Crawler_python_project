@@ -1,0 +1,928 @@
+- Affiliation of the first author: national engineering lab for video technology,
+    cooperative medianet innovation center, key laboratory of machine perception (moe),
+    department of eecs, peking university, beijing, china
+  Affiliation of the last author: department of statistics and the department of computer
+    science, university of california, los angeles, ca
+  Figure 1 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_1.jpg
+  Figure 1 caption: Tiling examples. (a) A tangram consists of seven pieces (left)
+    and can generate complex shapes. (b) Tessellation for decorating floor and wall.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_10.jpg
+  Figure 10 caption: Ambiguity reduction. (a) An illustration of ambiguous parse trees.
+    (b) The posterior probability in each learning round of the ambiguous parse trees.
+    (c) The posterior distribution of the inferred parse trees, where the horizontal
+    axis denotes different parse trees and the vertical axis denotes their posterior
+    probabilities.
+  Figure 2 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_2.jpg
+  Figure 2 caption: 'Flowchart of HST learning. (a) The input images and text descriptions.
+    (b) The HST representation consists of two components: the HST-geo and HST-att,
+    in an And-Or hierarchy. The thickness of the edges under each Or-node indicates
+    the value of branching probabilities. The branches are pruned (see the red crosses)
+    if their probabilities are near zero. (c) Scene part dictionary formed by the
+    terminal nodes (blue panel in (b)). (d) Association matrix measures the assignment
+    probabilities between scene parts and noun attributes (pink panel in (b)). (e)
+    The inferred parse trees (scene configurations) augmented with attributes.'
+  Figure 3 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_3.jpg
+  Figure 3 caption: "Scene configuration representation by HST-geo. (a) The AoT structure\
+    \ of HST-geo on a 2\xD72 image grid. (b) The scene part dictionary (the empty\
+    \ level, i.e., L=3 , is not shown). (c) Parse trees and configurations generated\
+    \ from the HST-geo. The parse trees highlighted in the blue panel show the ambiguity\
+    \ in the HST-geo."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_4.jpg
+  Figure 4 caption: Multi-scale segmentation. (a) Input image I m . (b) Segmentations
+    in different layers. The segmented layers in the red frames compose a multi-scale
+    segmentation set C m =( C k m , z k m ) 6 k=1 .
+  Figure 5 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_5.jpg
+  Figure 5 caption: "Analysis of HST-att learning. (a) The histogram on the left shows\
+    \ the association probability between a noun attribute and scene parts, where\
+    \ the horizontal axis indexes different scene parts and the vertical axis is the\
+    \ association probability from \u03A6 . The right figure shows the learned spatial\
+    \ prior for each noun attribute, which is the average image of attribute patches.\
+    \ (b) The adjective clusters belonging to the noun attributes."
+  Figure 6 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_6.jpg
+  Figure 6 caption: "Three pre-processes on LMO dataset. For each pre-process, the\
+    \ first column is the original image; the second column is the label map in [15]\
+    \ and the third column is the pre-processed one. (a) Synonymous labels, such as\
+    \ \u201Cgrass\u201D and \u201Cfield\u201D, are merged. (b) \u201Cvoid\u201D regions\
+    \ are filled. (c) Tiny objects, such as \u201Cpole\u201D and \u201Cmoon\u201D\
+    \ are ignored, either by assigning \u201Cvoid\u201D label instead (top) or merging\
+    \ to the surrounding regions (bottom)."
+  Figure 7 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_7.jpg
+  Figure 7 caption: Examples of SceneAtt dataset and the ground-truth for evaluation.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_8.jpg
+  Figure 8 caption: Efficiency of representation. (a) Given the annotated label maps
+    in the second column, we reconstruct the label maps by Spatial Pyramid, Quadtree(Qt),
+    HST-geo with squares and rectangles (HST-RECT) and HST-geo with triangles, parallelograms
+    and trapezoids (HST-TRI) methods in the third to sixth columns respectively. (b)
+    The rate-distortion curve of SP, Qt, HST-RECT and HST-TRI, where the horizontal
+    axis denotes the coding error and the vertical axis denotes the coding length.
+    (See more results in supplementary material).
+  Figure 9 Link: articels_figures_by_rev_year\2015\Learning_Hierarchical_Space_Tiling_for_Scene_Modeling_Parsing_and_Attribute_Tagg\figure_9.jpg
+  Figure 9 caption: Terminal node groups which are often observed in different scenes.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Shuo Wang
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: 13
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Learning Hierarchical Space Tiling for Scene Modeling, Parsing and
+    Attribute Tagging
+  Publication Date: 2015-04-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Number of Nodes, Parse Trees and Configurations Generated
+      from the HST-geo
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Terminology Used in the HST
+  Table 3 caption:
+    table_text: TABLE 3 The Learning Algorithm
+  Table 4 caption:
+    table_text: TABLE 4 The Scene Classification Performance
+  Table 5 caption:
+    table_text: TABLE 5 The Attribute Recognition Performance
+  Table 6 caption:
+    table_text: TABLE 6 The Attribute Localization Performance
+  Table 7 caption:
+    table_text: TABLE 7 The Scene Labeling Performance
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2424880
+- Affiliation of the first author: cas key laboratory of technology in geo-spatial
+    information processing and application system, department of electronic engineering
+    and information science, university of science and technology of china, hefei
+    230027, china.
+  Affiliation of the last author: department of computer science, university of texas
+    at san antonio, san antonio, tx 78249
+  Figure 1 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_1.jpg
+  Figure 1 caption: The distribution of identified true matches and false matches
+    based on L 2 -distance thresholds. All DoG SIFT features are L 2 -normalized when
+    extracted.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_10.jpg
+  Figure 10 caption: Comparison of the mAP for all methods with different sizes of
+    distractor image database on the (a) DupImage dataset, (b) Holidays dataset, and
+    (c) Oxford Building dataset. The visual codebooks involved in the comparison approaches
+    are trained with feature samples from independent image dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_2.jpg
+  Figure 2 caption: Scalar quantization on 1-D data with dual resolution strategy.
+    (a) In quantization of the coarse resolution the data range is divided into multiple
+    cells, and each cell is assigned a scalar ID. (b) In quantization of the fine
+    resolution, each cell is further divided into four sub-cells, and each sub-cell
+    is assigned a bit vector indicating the position in the cell.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_3.jpg
+  Figure 3 caption: "Identification of target cells of a query data (denoted by the\
+    \ black arrow) based on scalar quantization on 1D data. The cells of coarse scalar\
+    \ quantization and fine scalar quantization are separated by vertical red solid\
+    \ lines and vertical green dashed lines, respectively. (a) The query falls into\
+    \ the 0 th sub-cell of a certain cell, and candidate range covers only three sub-cells,\
+    \ one in the left cell and two in the containing cell. (b) The query falls into\
+    \ the \u201C1\u201Dst sub-cell and the candidate range is fully encompassed in\
+    \ the containing cell."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_4.jpg
+  Figure 4 caption: Index structure of our cascaded scalar quantization approach.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_5.jpg
+  Figure 5 caption: 'Sample results of local matching between images based on our
+    approach. Each red line denotes a local match across two images, with the line
+    endpoints at the key point location of the corresponding local features. The matching
+    images in (a) and (d) are from the DupImage dataset while the matching images
+    in (b), (c), (e), and (f) are from the UKBench dataset. The parameters are set
+    as: k = 20 and s = 28 .'
+  Figure 6 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_6.jpg
+  Figure 6 caption: The coefficient range width in each principal component of SIFT
+    feature trained on 5 million features sampled from a 50-million feature set.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_7.jpg
+  Figure 7 caption: The performance of the N-S score on the UKBench dataset with various
+    values of scalar quantization step s and dimension number k.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_8.jpg
+  Figure 8 caption: The average time cost per query on the UKBench dataset with various
+    values of scalar quantization step s , with k = 20 .
+  Figure 9 Link: articels_figures_by_rev_year\2015\Scalable_Feature_Matching_by_Dual_Cascaded_Scalar_Quantization_for_Image_Retriev\figure_9.jpg
+  Figure 9 caption: The percentage of accumulated variance over the principal components.
+    The principal components are sorted by their explained variance in descending
+    order.
+  First author gender probability: 0.69
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Wengang Zhou
+  Name of the last author: Qi Tian
+  Number of Figures: 10
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Scalable Feature Matching by Dual Cascaded Scalar Quantization for
+    Image Retrieval
+  Publication Date: 2015-05-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Examples of Checking Whether a Test Data Is in a Closed Interval
+      by Position Bit Vector
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Retrieval Results in Terms of N-S Score and mAP for the Comparison
+      Approaches on the UKBench Dataset [4]
+  Table 3 caption:
+    table_text: TABLE 3 Necessity to Train Visual Codebook in the Comparison Approaches
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the Indexing Time to Process 1 Million SIFT
+      Features at the Offline Stage
+  Table 5 caption:
+    table_text: TABLE 5 Comparison on the Query Time for All Approaches on the 1 Million
+      Image Database
+  Table 6 caption:
+    table_text: TABLE 6 Memory Cost on Each Indexed Feature and the Quantization Function
+      for the Comparison Approaches
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2430329
+- Affiliation of the first author: "laboratoire paul painlev\xE9 (u.m.r. cnrs 8524)\
+    \ university of lille1, france"
+  Affiliation of the last author: department of statistics, florida state university,
+    tallahassee, fl
+  Figure 1 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_1.jpg
+  Figure 1 caption: Two paths in F with the same sequence of shapes but with different
+    reparameterizations between the corresponding shapes.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_10.jpg
+  Figure 10 caption: 'Classification performance; left: the distance matrix. right:
+    the dendrogram.'
+  Figure 2 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_2.jpg
+  Figure 2 caption: "Direct sum decomposition H(f)\u2295Ver(f)= T f F . b. Vector\
+    \ field decomposition into tangent and normal directions."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_3.jpg
+  Figure 3 caption: 'Rotational alignment: two hands before and after the alignment,
+    respectively at the left and at the right. Each hand is approximated by an ellipsoid.
+    The rotation used apply the axis of one ellipsoid to the axis of the other.'
+  Figure 4 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_4.jpg
+  Figure 4 caption: Robustness of the approximating ellipsoid of a surface with respect
+    to reparameterizations.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_5.jpg
+  Figure 5 caption: Path connecting two concentric spheres used for computations in
+    Table 1 .
+  Figure 6 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_6.jpg
+  Figure 6 caption: 'From left to right: A hand with the tangent plane and normal
+    at the tip of the index finger; three-neighborhood of the tip of the index finger;
+    tip of the index finger after rotation; a closeup; approximating second order
+    polynomial.'
+  Figure 7 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_7.jpg
+  Figure 7 caption: A path of zero energy connecting a hand and the same hand with
+    another parameterization.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_8.jpg
+  Figure 8 caption: Illustration of initial path (upper row) and geodesic path in
+    shape space (middle row). The energy is reported in the buttom row. The surfaces
+    at the end points of the path have different parameterizations.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Gauge_Invariant_Framework_for_Shape_Analysis_of_Surfaces\figure_9.jpg
+  Figure 9 caption: The top row shows an initial path formed by linear interpolation
+    between a cat to a horse and back to the cat. The second row illustrates the geodesic
+    obtained after 800 iterations of path-straightening. The corresponding evolution
+    of the energy is shown on the right. Similarly, the third row shows a linear path
+    between two hands with bad correspondence and the last row shows the final geodesic,
+    with the corresponding energy is shown on the right.
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Alice Barbara Tumpach
+  Name of the last author: Anuj Srivastava
+  Number of Figures: 11
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Gauge Invariant Framework for Shape Analysis of Surfaces
+  Publication Date: 2015-05-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Computation of the Energy of a Path Connecting Two Concentric
+      Spheres (Fig. 5 ) Using Different Methods, and Time Needed for the Computations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2430319
+- Affiliation of the first author: computer science department, cornell university,
+    new york, ny
+  Affiliation of the last author: computer science department, cornell university,
+    new york, ny
+  Figure 1 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_1.jpg
+  Figure 1 caption: 'Reactive robot response through anticipation: Robot observes
+    a person holding an object and walking towards a fridge (a). It uses our ATCRF
+    to anticipate the affordances (b), and trajectories (c). It then performs an anticipatory
+    action of opening the door (d).'
+  Figure 10 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_10.jpg
+  Figure 10 caption: Highest scored future anticipations for cleaning objects activity
+    (top-row) and arranging objects activity (bottom-row).
+  Figure 2 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_2.jpg
+  Figure 2 caption: An example activity from the CAD-120 dataset (top row) and one
+    possible graph structure (bottom row). Top row shows the RGB image (left), depths
+    (middle), and the extracted skeleton and object information (right). (Graph in
+    the bottom row shows the nodes at only the temporal segment level, the frame level
+    nodes are not shown.)
+  Figure 3 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_3.jpg
+  Figure 3 caption: 'An ATCRF that models the human poses H , object affordance labels
+    O , object locations L , and sub-activity labels A , over past time '' t '', and
+    future time '' d ''. Two temporal segments are shown in this figure: k th for
+    the recent past, and (k+1 ) th for the future. Each temporal segment has three
+    objects for illustration in the figure.'
+  Figure 4 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_4.jpg
+  Figure 4 caption: Figure illustrating two possible graph structures resulting from
+    two temporal segmentations (top and bottom), with six observed frames in the past
+    and three anticipated frames in the future. This example has one sub-activity
+    node and two object nodes in each temporal segment.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_5.jpg
+  Figure 5 caption: Affordance heatmaps. The learnt affordance heatmaps for placeability
+    (top-left), reachability (top-right), pourability (bottom-left) and drinkability
+    (bottom-right). The red signifies where the affordance is most likely, for example,
+    the red signifies where the object is placeable (top-left) and the most likely
+    reachable locations on the object (top-right) (See Section 4.1).
+  Figure 6 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_6.jpg
+  Figure 6 caption: Heatmap of anticipated trajectories for moving sub-activity and
+    how they evolve with time.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_7.jpg
+  Figure 7 caption: Figure showing the process of augmenting the CRF structure to
+    obtain multiple ATCRFs at time t for an activity with three objects. The frame
+    level nodes are not shown for the sake of clarity.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_8.jpg
+  Figure 8 caption: Confusion matrix for affordance labeling (left), sub-activity
+    labeling (middle) and high-level activity labeling (right) of the test RGB-D videos.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Anticipating_Human_Activities_Using_Object_Affordances_for_Reactive_Robotic_Resp\figure_9.jpg
+  Figure 9 caption: 'Illustration of the ambiguity in temporal segmentation. We compare
+    the sub-activity labeling of various segmentations. Here, making cereal activity
+    comprises the sub-activities: reaching , moving, pouring and placing as colored
+    in red, green, blue and magenta respectively. The x-axis denotes the time axis
+    numbered with frame numbers. It can be seen that the various individual segmentation
+    methods are not perfect.'
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hema S. Koppula
+  Name of the last author: Ashutosh Saxena
+  Number of Figures: 14
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: Anticipating Human Activities Using Object Affordances for Reactive
+    Robotic Response
+  Publication Date: 2015-05-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results on CAD-120 Dataset for detection, Showing Average
+      Micro PrecisionRecall, and Average Macro Precision and Recall for Affordances,
+      Sub-Activities and High-Level Activities
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Anticipation Results of Future Activities and Affordances,
+      Computed over 3 Seconds in the Future (Similar Trends Hold for Other Anticipation
+      Times)
+  Table 3 caption:
+    table_text: TABLE 3 Online Detection Results of Past Activities and Affordances
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2430335
+- Affiliation of the first author: department of electrical and computer engineering,
+    boston university, boston, ma
+  Affiliation of the last author: department of engineering science, university of
+    oxford, oxford, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_1.jpg
+  Figure 1 caption: (i) Summary of our cascaded method. An image (a) is first convolved
+    with a set of linear classifiers at varying scalesaspect-ratios (b) producing
+    response images (c). Local maxima are extracted with non-max suppression from
+    each response image, and the corresponding windows with top ranking scores are
+    forwarded to the second stage of the cascade. Each proposed window is associated
+    with a feature vector (d), and a second round of ranking orders these windows
+    (e) so that the true positives (marked as black) are pushed towards the top during
+    training. Our method outputs the top ranking windows in this final ordering. (ii)
+    An example of generating proposals for detecting the dog in the image is shown,
+    which explains the steps in (i). The numbers at the corners of windows indicate
+    the ranks of the windows.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_10.jpg
+  Figure 10 caption: Comparison of recall-proposal curves using different methods
+    on the VOC2007 test data with overlap threshold eta =0.5 .
+  Figure 2 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_2.jpg
+  Figure 2 caption: "Illustration of hierarchical representation of our scaleaspect-ratio\
+    \ quantization scheme with overlap threshold \u03B7=0.5 . (a) superimposes the\
+    \ four window scales in a mini-quantization scheme, and (b) unfolds the scales\
+    \ into a tree structure. The relative widths and heights of the windows are represented\
+    \ by the (w,h) pairs. Such a hierarchy can represent all windows to \u03B7 -accuracy."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_3.jpg
+  Figure 3 caption: "An example of our method [10] on demonstrating the localization\
+    \ quality with increase of the number of quantized scalesaspect-ratios, K , on\
+    \ the VOC2006 [25] dataset using the object recall-overlap evaluation. Recall-overlap\
+    \ curves are plotted for individual classes using d 2 =1,000 final proposals from\
+    \ left to right, and K\u220836,121,196 from top to bottom. The numbers shown in\
+    \ the legends are the recall percentages when the overlap score threshold for\
+    \ correct localization, \u03B7 , is set to 0.5. For more details, please refer\
+    \ to [10]."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_4.jpg
+  Figure 4 caption: "Comparing the speed of our method [10] in seconds at various\
+    \ parameter settings in forms of \u201Cmean \xB1 standard deviation\u201D, where\
+    \ K denotes the number of quantized scalesaspect-ratios, (W,H) denotes the filter\
+    \ size, and R denotes the number of feature segments. The code is written using\
+    \ a mixture of Matlab and C++, and run on a single core with 3.33 GHz. The highlighted\
+    \ (red) numbers are close to the running time in [6], one of the state-of-the-art\
+    \ cascaded classifiers. For more details, please refer to [10] ."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_5.jpg
+  Figure 5 caption: Illustration of the calculation process from image patch feature
+    vector to its corresponding ranking score, where blue color denotes the known
+    data and red color denotes the learned filters. Here we illustrate a case with
+    four segments.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_6.jpg
+  Figure 6 caption: "Illustration of the effect of our proposal calibration, where\
+    \ the red solid bounding box denotes the ground-truth annotation for \u201Cdog\u201D\
+    , the green dotted bounding box denotes an output proposal from the two-stage\
+    \ cascade SVMs, and the cyan solid bounding box denotes the corresponding output\
+    \ proposal after proposal calibration. The orginal image is from VOC2007 [29]."
+  Figure 7 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_7.jpg
+  Figure 7 caption: Area-under-curve comparison of different cascade settings (Stage
+    I + Stage II) on VOC2007 by varying the total number of quantized scalesaspect-ratios
+    Kin lbrace 36,121,196rbrace and the number of proposals d2in lbrace 1,10,100,1,000rbrace
+    , respectively. Here we measure the recall-overlap curves. The error bars in the
+    figure denote the standard deviations of different settings over three trials,
+    and performance is reported either (a) without proposal calibration, or (b) with
+    proposal calibration. On average, proposal calibration helps improve the performance
+    by 4.2 percent in terms of AUC.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_8.jpg
+  Figure 8 caption: Comparison of recall-overlap curves using different methods and
+    numbers of proposals d2 on VOC2007.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Object_Proposal_Generation_Using_TwoStage_Cascade_SVMs\figure_9.jpg
+  Figure 9 caption: Comparison of class-specific recall-overlap curves using different
+    methods on the VOC2007 test data with 1,000 proposals.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ziming Zhang
+  Name of the last author: Philip H.S. Torr
+  Number of Figures: 13
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Object Proposal Generation Using Two-Stage Cascade SVMs
+  Publication Date: 2015-05-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Some Notations Used in Explanation of Our Cascade SVMs
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 AUC Score Comparison (Percent) on VOC2007 in Fig. 8 Using
+      Different Numbers of Proposals d 2
+  Table 3 caption:
+    table_text: TABLE 3 Object Detection Recall Comparison (Percent) on VOC2007 in
+      Fig. 10 Using Different Numbers of Proposals d 2
+  Table 4 caption:
+    table_text: TABLE 4 ABO & MABO Comparison (Percent) between Our Method and Other
+      Object Proposal Generation Methods on VOC2007 Using 1,000 Proposals
+  Table 5 caption:
+    table_text: TABLE 5 MABO and Object Detection Rate Comparison on VOC2007.
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2430348
+- Affiliation of the first author: department of computing, drexel university, philadelphia,
+    pa
+  Affiliation of the last author: department of computing, drexel university, philadelphia,
+    pa
+  Figure 1 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_1.jpg
+  Figure 1 caption: "Fitting variants of the DSBRDF model to measured BRDF data. This\
+    \ figure illustrates how we arrive at a compact analytical reflectance model while\
+    \ retaining expressiveness. Column (a) is a ground-truth rendering of the MERL\
+    \ BRDF in three different illumination environments. Column (b) shows renderings\
+    \ of the DSBRDF model with (\u03BA,\u03B3) -curves represented as B-splines with\
+    \ color integrated into each lobe representation [7]. This model has three colors,\
+    \ three lobes, and six parameters per B-spline for a total of 108 free variables.\
+    \ Column (c) shows renderings of the DSBRDF model with ( \u03BA,\u03B3 )-curves\
+    \ represented with the learned bases b i truncated at 16 parameters with color\
+    \ integrated into each lobe representation. This model has 16 free variables.\
+    \ Column (d) shows renderings of the DSBRDF model with color represented explicitly\
+    \ for each lobe (see main text). This model uses 10 basis coefficients and two\
+    \ variables per lobe for chromaticity for a total of 16 free variables. From the\
+    \ figure we can see qualitatively that the DSBRDF model with color represented\
+    \ separately has expressiveness comparable to the \u201Cfull\u201D DSBRDF model\
+    \ (Column (b)) but with only 16 parameters."
+  Figure 10 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_10.jpg
+  Figure 10 caption: "Results on \u201Clobby\u201D and \u201CspiralStairs\u201D illumination\
+    \ environments. Each row shows the recovered reflectance and illumination of a\
+    \ different object with the ground-truth illumination for comparison. Note how\
+    \ features of the reflectance function are accurately captured: the \u201Capple\u201D\
+    , \u201Cbear\u201D, \u201Chorse\u201D, and \u201Cmilk\u201D objects are shiny\
+    \ and the recovered reflectance function has sharp specular highlights; the \u201C\
+    tree\u201D object has a softer glossy reflection that is captured in the reflectance\
+    \ estimate."
+  Figure 2 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_2.jpg
+  Figure 2 caption: Comparison of the DSBRDF model to the non-parametric bivariate
+    model [24] and Cook-Torrance [26]. This figure shows the log-space RMSE of fitting
+    Lambertian and one lobe of Cook-Torrance (10 free parameters), Lambertian and
+    three lobes of Cook-Torrance (24 free parameters), the DSBRDF with color separation
+    modeled with a small number of learned bases (13 free parameters), the full DSBRDF
+    model with color separation (42 free parameters), and the non-parametric bivariate
+    BRDF (24,300 parameters). The vertical grey bars highlight the BRDFs used in Fig.
+    1. The figure demonstrates that the DSBRDF model accurately captures real-world
+    reflectance functions with a low-order parameterization.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_3.jpg
+  Figure 3 caption: Reflectance prior overlaid onto a 2D slice of the DSBRDF space.
+    The BRDFs of the MERL database are visualized by the first two eigenfunction coefficients
+    in the DSBRDF model. The ellipses of the Gaussian mixture are shown. We can see
+    that the mixture of Gaussians is a good model for this distribution.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_4.jpg
+  Figure 4 caption: "Empirical support for the novel BRDF chromaticity prior. The\
+    \ top two rows show the lobe chromaticity values fit to four example BRDFs from\
+    \ the MERL database. Solid dots represent the chromaticity values. The dashed\
+    \ line is Eq. (7) as \u03B1 is varied. The bottom plot shows the distribution\
+    \ of the angles between chromaticity hue vectors for each unique pair of lobes\
+    \ among all MERL BRDFs. We then fit a von Mises distribution to this (cyan curve).\
+    \ The strong correlation of lobe chromaticity hue vectors shows that the novel\
+    \ BRDF chromaticity prior effectively constrains the BRDF color to reflect that\
+    \ of real-world BRDFs."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_5.jpg
+  Figure 5 caption: Quantitative evaluation of single point light experiments and
+    select results. On the left, this figure shows the log-space RMSE (Eq. (5)) of
+    recovered BRDFs from 500 single point light experiments. Each BRDF from the MERL
+    database was illuminated by a point light at 0, 30, 60, 90, and 120 degrees from
+    the viewing direction. On the right, we highlight several example results to illustrate
+    how certain log-space RMSE values correspond to perceptual accuracy. The BRDFs
+    on the right are visualized by rendering a sphere under several point light directions.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_6.jpg
+  Figure 6 caption: Quantitative evaluation of point light direction estimation. This
+    figure shows the distribution of point light direction error in degrees. As shown,
+    all estimates are within a single degree of the ground-truth lighting direction.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_7.jpg
+  Figure 7 caption: Evaluation of synthetic experiments under natural illumination.
+    The bottom plot shows the log-space RMSE for 100 MERL BRDFs under four natural
+    illumination environments. Highlighted are eight results from that plot shown
+    at the top. This plot demonstrates the ability of the model to successfully infer
+    reflectance and illumination in a variety of illumination environments for many
+    different materials.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_8.jpg
+  Figure 8 caption: "Quantitative evaluation of natural illumination estimation versus\
+    \ BRDF specularity. This figure shows the RMS error of the natural illumination\
+    \ estimates in blue for 100 MERL BRDFs in four illumination environments. In red\
+    \ is the \u201Cspecularity\u201D of the BRDF, as measured by the gamma value of\
+    \ the most specular lobe. This figure illustrates the general trend that highly\
+    \ glossy BRDFs enable more accurate illumination estimation."
+  Figure 9 Link: articels_figures_by_rev_year\2015\Reflectance_and_Illumination_Recovery_in_the_Wild\figure_9.jpg
+  Figure 9 caption: Relighting comparisons. The first column in each subfigure show
+    a photograph of an object under several different illumination environments. We
+    recover the reflectance and illumination of the object and then use the recovered
+    reflectance to relight the object with each illumination environment which is
+    shown in the subsequent columns. The visual similarity of the relighting to the
+    ground truth demonstrates the accuracy of our reflectance estimates.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.8
+  Name of the first author: Stephen Lombardi
+  Name of the last author: Ko Nishino
+  Number of Figures: 12
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: Reflectance and Illumination Recovery in the Wild
+  Publication Date: 2015-05-06 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2430318
+- Affiliation of the first author: tsinghua national laboratory for information science
+    and technology, the department of computer science and technology, tsinghua university,
+    beijing, china
+  Affiliation of the last author: tsinghua national laboratory for information science
+    and technology, the department of computer science and technology, tsinghua university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_1.jpg
+  Figure 1 caption: "Skeletons on a two-manifold M . A stratigraphic ridge \u03A9\
+    \ in M is bounded by a red curve (having the same altitude) and the skeleton of\
+    \ \u03A9 is shown in blue. Voronoi skeletons 1 and 2 are at granularities 20 and\
+    \ 3 (detail about granularity is presented in Section 6.2)."
+  Figure 10 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_10.jpg
+  Figure 10 caption: Voronoi skeletons of three sulci at different granularities.
+    Full illustration of Voronoi skeletons of 14 major sulci are presented in supplemental
+    material B, available online.
+  Figure 2 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_2.jpg
+  Figure 2 caption: 'Geodesic disks D r (p) in M : disks of r=1,2,3 are homeomorphic
+    to a planar disk while disks of r=4,5 are not.'
+  Figure 3 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_3.jpg
+  Figure 3 caption: "A skeleton does not have medial axis points. Place a circle in\
+    \ the coordinate system as shown in left and ab \xAF \xAF \xAF \xAF \xAF is a\
+    \ diameter of the circle in x -axis. Rotate the circle around y -axis to get a\
+    \ torus M , and a is rotated into a circle C blue and b into a circle C red .\
+    \ C red is the skeleton of open set M\u2216 C blue and C red has no medial axis\
+    \ points. Centered at each point in C red , there is a maximal disk whose boundary\
+    \ touches only one point in C blue twice."
+  Figure 4 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_4.jpg
+  Figure 4 caption: 2D bisector. r lies on the bisector of points p and q in mathbb
+    R2 and angle prq=alpha . A planar triangle fan with a spanning angle gamma >2alpha
+    is folded into the gray-shaded area (middel left). When unfolding the triangle
+    fan from the lines overlinepr and overlineqr , respectively, inside the triangle
+    fan, the yellow (or blue) region has a shorter geodesic distance to point p (or
+    q ), and the uncolored area with a spanning angle gamma -2alpha has equal geodesic
+    distance to both p and q .
+  Figure 5 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_5.jpg
+  Figure 5 caption: A disconnected skeleton in mathcal M and a connected skeleton
+    in mathbb R2 . See text for full description.
+  Figure 6 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_6.jpg
+  Figure 6 caption: 'Disconnected boundary-based Voronoi diagrams in mathcal M . Some
+    sample points are at the back of the model (right) and cannot be viewed when the
+    surface is shaded (left). Top: Two-manifold of genus 2. Bottom: Two-manifold of
+    genus 0.'
+  Figure 7 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_7.jpg
+  Figure 7 caption: Proof of Property 6. The shaded area is Omega and the blank area
+    is mathcal Msetminus Omega . (a) If the closest sample point to x is pj (or pj2
+    ), the midpoint a of the shortest path overlinexpj (or overlinexpj2 ) is inside
+    Omega (or mathcal Msetminus Omega ). (b) Disk Dra(a) of radius ra=dg(a,x)< r contains
+    two connected components of partial Omega , i.e., l1 and l2 (green colored curves).
+    b is the closest point of a on partial Omega , bin l1 , and bprime is the closest
+    point of a on l2 . (c) aprime is a point in the path overlineabprime which has
+    equal distance to l1 and l2 . Draprime (aprime ) is a maximal disk in Omega whose
+    radius raprime =dg(aprime ,bprime )< r .
+  Figure 8 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_8.jpg
+  Figure 8 caption: Voronoi skeletons in topographical surfaces of Asia and North
+    America at different granularities. Full illustrations of Voronoi skeletons of
+    five continents, including Africa, Asia, Europe, North America and South America,
+    are presented in supplemental material A, available online.
+  Figure 9 Link: articels_figures_by_rev_year\2015\SemiContinuity_of_Skeletons_in_TwoManifold_and_Discrete_Voronoi_Approximation\figure_9.jpg
+  Figure 9 caption: Parts of sulcal shapes in the cortical surface of human brain.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Yong-Jin Liu
+  Name of the last author: Yong-Jin Liu
+  Number of Figures: 10
+  Number of Tables: 1
+  Number of authors: 1
+  Paper title: Semi-Continuity of Skeletons in Two-Manifold and Discrete Voronoi Approximation
+  Publication Date: 2015-05-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Statistical Data of Computing Voronoi Skeletons in Topographical
+      Surfaces in Fig. 8 and Supplemental Material A, Available Online
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2430342
+- Affiliation of the first author: school of computer science and technology, nanjing
+    university of aeronautics and astronautics, nanjing, china
+  Affiliation of the last author: school of computer science and engineering, southeast
+    university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2015\Joint_Binary_Classifier_Learning_for_ECOCBased_MultiClass_Classification\figure_1.jpg
+  Figure 1 caption: Pair-wise linear correlation coefficients among weight vectors
+    of SVM binary classifiers using OVA encoding strategy on Vehicle dataset.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Joint_Binary_Classifier_Learning_for_ECOCBased_MultiClass_Classification\figure_2.jpg
+  Figure 2 caption: Classification accuracies of multiple binary classifiers on Glass
+    and Zoo datasets .
+  Figure 3 Link: articels_figures_by_rev_year\2015\Joint_Binary_Classifier_Learning_for_ECOCBased_MultiClass_Classification\figure_3.jpg
+  Figure 3 caption: Error distribution of multiple binary classifiers on Glass and
+    Zoo datasets.
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.96
+  Name of the first author: Mingxia Liu
+  Name of the last author: Hui Xue
+  Number of Figures: 3
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Joint Binary Classifier Learning for ECOC-Based Multi-Class Classification
+  Publication Date: 2015-05-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 UCI DataSets Used in the Experiments
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results Based on LLW Decoding Strategy Using Linear Kernel
+      (%)
+  Table 3 caption:
+    table_text: TABLE 3 Comparison with Joint Learning Methods (%)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2430325
+- Affiliation of the first author: "\xE9cole polytechnique f\xE9d\xE9rale de lausanne,\
+    \ lausanne, switzerland"
+  Affiliation of the last author: "\xE9cole polytechnique f\xE9d\xE9rale de lausanne,\
+    \ lausanne, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_1.jpg
+  Figure 1 caption: Linear parameterization of the mesh using control vertices. (a)
+    Reference shape and (b) Deformed shape. Every vertex is a linear combination of
+    the control vertices, shown in red. In this case, the reference shape is planar.
+  Figure 10 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_10.jpg
+  Figure 10 caption: Accuracy results when using non-planar templates and different
+    numbers of control vertices for the cushion (top row), banana leaf (middle row),
+    and sail (bottom row) sequences of Figs. 5 and 6.
+  Figure 2 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_2.jpg
+  Figure 2 caption: "Conditioning of the regularization matrix. (a) Singular values\
+    \ of M and M w r =[M; w r A] , in red and blue respectively, for a planar model\
+    \ and a given set of correspondences. M w r has no zero singular values and only\
+    \ a few that are small whereas the first N v singular values of M are much closer\
+    \ to zero than the rest. (b) Singular values of regularization matrix A for a\
+    \ non-planar model corresponding to one specific coordinate divided by the largest\
+    \ one. Each curve corresponds to a different value \u03C3 introduced in Section\
+    \ 4.1.2. Note that the curves are almost superposed for \u03C3 values greater\
+    \ than one. The first four singular values being 0 indicates that affine transformations\
+    \ are not penalized."
+  Figure 3 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_3.jpg
+  Figure 3 caption: Building the A regularization matrix of Section 4.1. (a) Two facets
+    that share an edge. (b) Non-planar reference mesh. (c) Non-planar reference mesh
+    with virtual vertices and edges added. The virtual vertices are located above
+    and below the center of each facet. They are connected to vertices of their corresponding
+    mesh facet and virtual vertices of the neighbouring facets on the same side. This
+    produces pairs of blue tetrahedra, one of those is shown in green and the other
+    in red.
+  Figure 4 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_4.jpg
+  Figure 4 caption: Paper and Apron using a planar template. In the first and third
+    rows, we project the 3D surfaces reconstructed using different methods into the
+    image used to perform the reconstruction. The overlay colors correspond to those
+    of the graphs in Fig. 9. In the second and fourth rows, we show the same surfaces
+    seen from a different viewpoint. The gray dots denote the projections of the mesh
+    vertices onto the ground-truth surface. The closer they are to the mesh, the better
+    the reconstruction. (a) Our method using regularly sampled control vertices. (b)
+    Brunet et al. [10] (c) Bartoli et al. [1] (d) Salzmann and Fua [4].
+  Figure 5 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_5.jpg
+  Figure 5 caption: Cushion and banana leaf using a non-planar template. As in Fig.
+    4, we overlay the surfaces reconstructed using the different methods on the corresponding
+    images and also show them as seen from a different viewpoint. The gray dots denote
+    the projections of the mesh vertices onto the ground-truth surface and the overlay
+    colors correspond to those of the graphs in Fig. 10a Our method using regularly
+    sampled control vertices. (b) Bartoli et al. [1] (c) Salzmann and Fua [4].
+  Figure 6 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_6.jpg
+  Figure 6 caption: Sail using a non-planar template. As in Figs. 4 and 5, we both
+    overlay the surfaces reconstructed using the different methods on the image used
+    to perform the reconstruction and show them as seen from a different viewpoint.
+    (a) Our method using regularly sampled control points. (b) Bartoli et al. [1]
+    (c) Salzmann and Fua [4].
+  Figure 7 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_7.jpg
+  Figure 7 caption: 'Probability of success as a function of the number of inlier
+    matches and proportion of outliers, on the x -axis and y-axis respectively. The
+    lines are level lines of the probability of having at least 90 percent mesh vertices
+    reprojected within 2 pixels of the solution. Top row: paper dataset. Bottom row:
+    cushion dataset.'
+  Figure 8 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_8.jpg
+  Figure 8 caption: 'Templates and control vertices. Each row depicts the template
+    and control vertex configuration used for the paper, apron, cushion, banana leaf,
+    and sail sequences. The number below each figures denotes the number of control
+    vertices used in each case. Leftmost four columns: Manually chosen control vertices.
+    Fifth column: All vertices as control vertices. Rightmost four columns: Examples
+    of randomly chosen control vertices.'
+  Figure 9 Link: articels_figures_by_rev_year\2015\TemplateBased_Monocular_D_Shape_Recovery_Using_Laplacian_Meshes\figure_9.jpg
+  Figure 9 caption: Accuracy results when using planar templates and different numbers
+    of control vertices for the paper (top row) and apron (bottom row) sequences of
+    Fig. 4.
+  First author gender probability: 0.77
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Dat Tien Ngo
+  Name of the last author: Pascal Fua
+  Number of Figures: 17
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: Template-Based Monocular 3D Shape Recovery Using Laplacian Meshes
+  Publication Date: 2015-05-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Five Datasets Used for Quantitative Evaluation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2435739
+- Affiliation of the first author: institute of systems and robotics, university of
+    coimbra, coimbra, portugal
+  Affiliation of the last author: institute of systems and robotics and with the department
+    of electrical engineering and computers, university of coimbra, coimbra, portugal
+  Figure 1 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_1.jpg
+  Figure 1 caption: "Example input images to our algorithm for four different classes\u2014\
+    aeroplanes, birds, boats and cars\u2014of the PASCAL VOC dataset and their associated\
+    \ figure-ground segmentations and keypoints. Modern detection datasets such as\
+    \ VOC exhibit significant intra-class variability, making it challenging for traditional\
+    \ approaches to class-specific object reconstruction based on linear non-rigid\
+    \ shape models."
+  Figure 10 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_10.jpg
+  Figure 10 caption: Viewpoint estimation failure cases. The first row is the input
+    image, the second row the ground truth viewpoint in the Pascal3D+ dataset, displayed
+    using the 3D CAD model associated with that image and the third row our viewpoint
+    estimate using the same CAD model. Our viewpoint estimation algorithm is sometimes
+    less accurate for images showing large perspective effects (first column), for
+    instances very different from the class average (second and third columns) and
+    in the presence of articulation (last column).
+  Figure 2 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_2.jpg
+  Figure 2 caption: "Results of the camera viewpoint estimation. Our method provides\
+    \ useful insight about viewpoint distribution for the different classes in VOC.\
+    \ Here, we show the histogram of different azimuths for \u201Ccar\u201D and a\
+    \ few samples of estimated elevation angle for \u201Caeroplane\u201D. Note the\
+    \ significant intra-class variation."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_3.jpg
+  Figure 3 caption: Viewpoint estimate before (a) and after (b) silhouette-based refinement.
+    For both (a) and (b) we show the SfM rigid shape S for the motorbike class from
+    the front and side views. The visible ground truth keypoints are shown in green,
+    the corresponding SfM points are shown in red and the SfM points corresponding
+    to occluded ground truth keypoints are shown in blue. The silhouette is shown
+    in pink. Our viewpoint refinement optimizes for viewpoint estimates where all
+    shape points project inside the object silhouette.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_4.jpg
+  Figure 4 caption: Illustration of our clustering step. Instances which have a viewpoint
+    similar to the principal directions are clustered together. We sample from these
+    clusters to generate informative triplets of exemplars for visual hull computation.
+    The process is repeated multiple times for each target object.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_5.jpg
+  Figure 5 caption: Illustration of the imprinted visual hull reconstruction method,
+    when sampling two different triplets corresponding to the same reference instance
+    (in white). The reconstructions are obtained by intersecting the three instances
+    shown and their left-right flipped versions.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_6.jpg
+  Figure 6 caption: "An example image where imprinting improves reconstruction significantly.\
+    \ In the middle, without imprinting, the wings of the reference bird are not reconstructed\
+    \ because it is paired with surrogate shapes having their wings closed. In the\
+    \ reconstruction shown on the right, imprinting fills in wings so as to satisfy\
+    \ silhouette consistency with the reference bird\u2014shown overlaid in green\
+    \ on the left."
+  Figure 7 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_7.jpg
+  Figure 7 caption: Average mask for each of the principal directions for the car
+    and motorbike classes, as well as the convex hull of the 3D keypoints obtained
+    with SFM. These average masks are used when ranking the reconstructions for a
+    single instance. Note that for the class car, there is no instance associated
+    with the top-bottom axis and for motorbike there is only one instance.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_8.jpg
+  Figure 8 caption: Clusters of boat, chair and car shapes, ordered from most frequent
+    (red) to least frequent (yellow). The results agree with observation, namely SUV-like
+    shapes and large sailboats (in yellow) are more rare than hatchbacks and something
+    resembling a flat fishing boat (in red).
+  Figure 9 Link: articels_figures_by_rev_year\2015\Lifting_Object_Detection_Datasets_into_D\figure_9.jpg
+  Figure 9 caption: Viewpoint estimation errors measured using the ground truth cameras
+    from Pascal3D+. We measure the angle between our estimate and the ground truth
+    and report the median angle in degrees for each class. Elevation error is below
+    10 degrees for all classes, perhaps because most photos are taken from typical
+    human viewpoints (PASCAL is assembled from FLICKR). Azimuth error is slightly
+    higher for classes such as boat and bus, with possible causes being the extreme
+    intra-class shape variation among boats (eg. kayaks, sailboats and cruise ships
+    differ significantly) and perspective distortion, frequent in pictures of buses.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Jo\xE3o Carreira"
+  Name of the last author: Jorge Batista
+  Number of Figures: 13
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Lifting Object Detection Datasets into 3D
+  Publication Date: 2015-05-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Symmetric Root Mean Square Error between Reconstructed and
+      Ground Truth 3D Models
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2435707

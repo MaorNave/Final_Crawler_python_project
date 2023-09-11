@@ -1,0 +1,818 @@
+- Affiliation of the first author: department of mathematics and computer science,
+    univeristy of udine, udine, italy
+  Affiliation of the last author: department of electrical engineering, university
+    of california riverside, riverside, ca
+  Figure 1 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_1.jpg
+  Figure 1 caption: Three images of the same person in three non-overlapping cameras
+    from the RAiD dataset [1]. Below each image, HSV features are shown as three different
+    histograms. Brown denotes the hue, green denotes saturation and the sky-blue denotes
+    the value histograms respectively. The inconsistency of the histogram shape does
+    not allow them to be used as unique features for re-identification.
+  Figure 10 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_10.jpg
+  Figure 10 caption: CMC curves for RAiD dataset. In (a), (b) and (c) comparisons
+    are shown for the camera pairs 1-3, 1-4 and 3-4 respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_2.jpg
+  Figure 2 caption: Using the principle of DTW to capture the transformation of features
+    as a person goes from a brightly illuminated space to a dark place. (a) and (b)
+    show the images of a person along with its value histogram plots at a brightly
+    illuminated and a dark place respectively. (c) shows the warp function which maps
+    the bin numbers of the color histogram in (a) to the bin numbers of the color
+    histogram in (b). The initial flatness and latter steepness of the warp function
+    captures the transformation of features resulting from the change in illumination.
+    (d) shows the distribution of the Bhattacharyya distances between the transformed
+    and actual grayscale histograms using BTF [2] (in green) and warp functions (in
+    blue) computed for all the 50 persons in the CAVIAR4REID dataset. Concentration
+    of more persons with smaller distances using warp function can be readily seen.
+    The distribution of the distances computed between the raw value histograms is
+    also shown for comparison (in red).
+  Figure 3 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_3.jpg
+  Figure 3 caption: "Feasible and infeasible warp functions in the WFS. (a) and (c)\
+    \ show example images of the feasible and infeasible pairs respectively taken\
+    \ from an outdoor and an indoor camera of the RAiD [1] dataset. (b) shows the\
+    \ mean of the feasible (in bold line) and infeasible warp functions (in dashed\
+    \ line) between the grayscale histograms of the torso of the feasible and infeasible\
+    \ pairs. 100 randomly chosen examples of feasible and infeasible warp functions\
+    \ are averaged to get the mean warp functions. The shaded areas show the corresponding\
+    \ spread of the variances (as \xB1 standard deviation value). This figure shows\
+    \ that feasible and infeasible warp functions for this simple feature (grayscale\
+    \ histogram) can be discriminative and can be used for re-identification."
+  Figure 4 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_4.jpg
+  Figure 4 caption: Re-identification by discriminating in the warp function space.
+    The warp functions computed between features extracted from images of the same
+    target (i.e. positive warp functions) are shown in solid blue. The warp functions
+    computed between features extracted from different targets (i.e. negative warp
+    functions) are shown in dashed red. A nonlinear decision surface (shown in green)
+    is learned to separate the two regions.
+  Figure 5 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_5.jpg
+  Figure 5 caption: System overview. The feature extraction module takes raw video
+    frames and extracts dense color and texture features from each of the four detected
+    body parts. These are input to the warp function space module that computes the
+    warp function between each of them and reduces the dimensionality of the warp
+    function space. A random forest classifier is trained to discriminate between
+    the feasible and the infeasible warp functions in the WFS. The trained classifier
+    is used to classify the test warp functions.
+  Figure 6 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_6.jpg
+  Figure 6 caption: Dense image features from the detected body parts. Dense color
+    and texture histogram features are extracted from each of the four resized body
+    parts.
+  Figure 7 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_7.jpg
+  Figure 7 caption: "Example of computing the warp functions between features extracted\
+    \ from the same patch of two images. The first column shows two images from two\
+    \ cameras. The warp function between the features extracted from the same patches\
+    \ (shown by the orange and red boxes) are computed next. The last two columns\
+    \ show the cost matrices, the optimal warp path W \u2217 and the corresponding\
+    \ warp function f . For convenience of visualization, warp functions computed\
+    \ for the H and S colorspaces only are shown in second and third column respectively.\
+    \ The cost matrix is colorcoded and the cost gets higher as the color goes from\
+    \ blue to red. First row shows the feature warps for the same person. Second and\
+    \ third rows show the warping of features between different persons that have\
+    \ similar and different appearance respectively with the person in the left."
+  Figure 8 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_8.jpg
+  Figure 8 caption: CMC curves for CAVIAR4REID dataset. In (a) results are shown when
+    the dataset is split in terms of persons. In (b), (c) and (d) comparisons are
+    shown for the case where the dataset is not split in terms of persons with N=1
+    , N=3 and N=5 respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2014\ReIdentification_in_the_Function_Space_of_Feature_Warps\figure_9.jpg
+  Figure 9 caption: CMC curves for the WARD dataset. Results and comparisons in (a),
+    (b) and (c) are shown for the camera pairs 1-2, 1-3, and 2-3 respectively. All
+    the results are reported for the case where the dataset is split in terms of persons
+    with N=10 .
+  First author gender probability: 0.69
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Niki Martinel
+  Name of the last author: Amit K. Roy-Chowdhury
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Re-Identification in the Function Space of Feature Warps
+  Publication Date: 2014-12-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Details and Comparison of Commonly Used Person Re-Identification
+      Benchmark Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Proposed Method on the ETHZ Dataset Using
+      Both a Single Shot-Strategy (Top 9 Rows) and a Multiple-Shot Strategy (Last
+      10 Rows)
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of the Proposed Method on the VIPeR Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Average Performance Across Different Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Performance for Different Choices of Classifiers
+      and Patch Sizes
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2377748
+- Affiliation of the first author: department of electrical engineering and computer
+    science, university of california at berkeley, berkeley, ca
+  Affiliation of the last author: department of electrical engineering and computer
+    science, university of california at berkeley, berkeley, ca
+  Figure 1 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_1.jpg
+  Figure 1 caption: "A visualization of Adelson and Pentland's \u201Cworkshop\u201D\
+    \ metaphor [1] . The image in 1a clearly corresponds to the interpretation in\
+    \ 1b, but it could be a painting, a sculpture, or an arrangement of lights."
+  Figure 10 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_10.jpg
+  Figure 10 caption: A visualization of a shape and its mean curvature (blue = positive,
+    red = negative, white = 0). Planes and soap films have 0 mean curvature, spheres
+    and cylinders have constant mean curvature, and mean curvature varies where shapes
+    bend.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_2.jpg
+  Figure 2 caption: A single image from our dataset, under three colorillumination
+    conditions. For each condition, we present the ground-truth, the output of SIRFS,
+    the output of SIRFS + S (which uses external shape information), and the two best-performing
+    intrinsic image techniques (for which we do SFS on the recovered shading to recover
+    shape).
+  Figure 3 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_3.jpg
+  Figure 3 caption: Our smoothness prior on log-reflectance is a univariate Gaussian
+    scale mixture on the differences between nearby reflectance pixels for grayscale
+    images, or a multivariate GSM for color images. These distribution prefers nearby
+    reflectance pixels to be similar, but its heavy tails allow for rare non-smooth
+    discontinuities. Our multivariate color model captures the correlation between
+    color channels, which means that chromatic variation in log-reflectance lies further
+    out in the tails, making it more likely to be ignored during inference.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_4.jpg
+  Figure 4 caption: "Here we have a color reflectance image R , and its cost and influence\
+    \ (derivative of cost) under our multivariate GSM smoothness prior. Strong, colorful\
+    \ edges, such as those caused by reflectance variation, are very costly, while\
+    \ small edges, such as those caused by shading, are less costly. But in terms\
+    \ of influence\u2014the gradient of cost with respect to each pixel\u2014we see\
+    \ an inversion: because sharp edges lie in the tails of the GSM, they have little\
+    \ influence, while shading variation has great influence. This means that during\
+    \ inference our model attempts to explain shading (small, achromatic variation)\
+    \ in the image by varying shape, while explaining sharp or chromatic variation\
+    \ by varying reflectance."
+  Figure 5 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_5.jpg
+  Figure 5 caption: Three grayscale log-reflectance images from our dataset and their
+    marginal distributions. Log-reflectance in an image tend to be grouped around
+    certain values, or equivalently, these distributions tend to be low-entropy.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_6.jpg
+  Figure 6 caption: A demonstration of the importance of both our smoothness and parsimony
+    priors on reflectance. Using only a smoothness prior, as in 6a, allows for reflectance
+    variation across disconnected regions. Using only the parsimony prior, as in 6b,
+    encourages reflectance to take on a small number of values, but does not encourage
+    it to form large piecewise-constant regions. Only by using the two priors in conjunction,
+    as in 6c, does our model correctly favor a normal, paint-like checkerboard configuration.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_7.jpg
+  Figure 7 caption: "Some reflectance images and their corresponding log-RGB scatterplots.\
+    \ Mistakes in estimating shape or illumination produce shading-like or illumination-like\
+    \ errors in the inferred reflectance, causing the log-RGB distribution of the\
+    \ reflectance to be \u201Csmeared\u201D, and causing entropy (and therefore cost)\
+    \ to increase."
+  Figure 8 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_8.jpg
+  Figure 8 caption: "A visualization of our \u201Cabsolute\u201D prior on grayscale\
+    \ reflectance, trained on the MIT Intrinsic Images dataset [4]. In 8a we have\
+    \ the log-likelihood of our density model, and the data on which it was trained.\
+    \ In 8 b we have samples from our model, where the x axis is sorted by cost (\
+    \ y axis is random)."
+  Figure 9 Link: articels_figures_by_rev_year\2014\Shape_Illumination_and_Reflectance_from_Shading\figure_9.jpg
+  Figure 9 caption: "A visualization of our \u201Cabsolute\u201D prior on color reflectance.\
+    \ We train two versions of our prior, one on the MIT Intrinsic Images dataset\
+    \ [4] that we use in our experiments (top row) and one on the OpenSurfaces dataset\
+    \ for comparison [51] (bottom row). In the first-column we have the log-RGB reflectance\
+    \ pixels in our training set, and in the second column we have a visualization\
+    \ of the 3D spline PDF that we fit to that data. In the third column we have samples\
+    \ from the PDF, where the x axis is sorted by cost ( y axis is random). For both\
+    \ datasets, our model prefers less saturated, more earthy or subdued colors, and\
+    \ abhors brightly lit neon-like colors or very dark colors\u2014the high-cost\
+    \ reflectances often do not even look like paint, but instead appear glowing and\
+    \ luminescent."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Jonathan T. Barron
+  Name of the last author: Jitendra Malik
+  Number of Figures: 18
+  Number of Tables: 1
+  Number of authors: 2
+  Paper title: Shape, Illumination, and Reflectance from Shading
+  Publication Date: 2014-12-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 We Evaluate SIRFS on Three Different Variants of Our Dataset,
+      and We Compare SIRFS to Several Baseline Techniques, Several Ablations, and
+      Two Extensions in Which Additional Information Is Provided
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2377712
+- Affiliation of the first author: interactive visual media, microsoft research, redmond,
+    wa
+  Affiliation of the last author: interactive visual media, microsoft research, redmond,
+    wa
+  Figure 1 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_1.jpg
+  Figure 1 caption: Edge detection results using three versions of our structured
+    edge (SE) detector demonstrating tradeoffs in accuracy vs. runtime. We obtain
+    realtime performance while simultaneously achieving state-of-the-art results.
+    ODS numbers were computed on BSDS [1] on which the popular gPb detector [1] achieves
+    a score of .73 . The variants shown include SE, SE + SH, and SE + MS + SH, see
+    Section 4 for details.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_10.jpg
+  Figure 10 caption: Precisionrecall curves on NYUD using different image modalities.
+    SE-BSDS is the RGB model trained on the BSDS dataset. See Table 2 and 3 and text
+    for details.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_2.jpg
+  Figure 2 caption: 'Illustration of the decision tree node splits: (a) Given a set
+    of structured labels such as segments, a splitting function must be determined.
+    Intuitively a good split (b) groups similar segments, whereas a bad split (c)
+    does not. In practice we cluster the structured labels into two classes (d). Given
+    the class labels, a standard splitting criterion, such as Gini impurity, may be
+    used (e).'
+  Figure 3 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_3.jpg
+  Figure 3 caption: Illustration of edge detection results on the BSDS500 dataset
+    on five sample images. The first two rows show the original image and ground truth.
+    The next three rows contain results for gPb-owt-ucm [1], Sketch Tokens [31], and
+    SCG [41] . The final four rows show our results for variants of SE. Use viewer
+    zoom functionality to see fine details.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_4.jpg
+  Figure 4 caption: "Visualizations of matches and errors of SE+MS+SH compared to\
+    \ BSDS ground truth edges. Edges are thickened to two pixels for better visibility;\
+    \ the color coding is green=true positive, blue = false positive, red=false negative.\
+    \ Results are shown at three thresholds: high precision (T \u2248 .26, P \u2248\
+    \ 0.88, R = .50), ODS threshold (T \u2248 .14, P=R \u2248 .75), and high recall\
+    \ (T \u2248 .05, P = .50, R \u2248 0.93)."
+  Figure 5 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_5.jpg
+  Figure 5 caption: Splitting parameter sweeps. See text for details.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_6.jpg
+  Figure 6 caption: Feature parameter sweeps. See text for details.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_7.jpg
+  Figure 7 caption: Model parameter sweeps. See text for details.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_8.jpg
+  Figure 8 caption: Results of structured edges (SE) with sharpening ( + SH) and multiscale
+    detection ( + MS). SH increases recall while MS increases precision; their combination
+    gives best results.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Fast_Edge_Detection_Using_Structured_Forests\figure_9.jpg
+  Figure 9 caption: Results on BSDS500. Structured edges (SE) and SE coupled with
+    hierarchical multiscale segmentation (SE + multi-ucm) [2] achieve top results.
+    For the SE result we report the SE + MS + SH variant. See Table 1 for additional
+    details including method citations and runtimes. SE is orders of magnitude faster
+    than nearly all edge detectors with comparable accuracy.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: "Piotr Doll\xE1r"
+  Name of the last author: C. Lawrence Zitnick
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: Fast Edge Detection Using Structured Forests
+  Publication Date: 2014-12-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results on BSDS500
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results on the NYUD Dataset [44]
+  Table 3 caption:
+    table_text: TABLE 3 Cross-Dataset Generalization for Structured Edges
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2377715
+- Affiliation of the first author: department of automation, tsinghua university and
+    baidu research, beijing, china
+  Affiliation of the last author: department of automation, tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_1.jpg
+  Figure 1 caption: 'Effect of using manifold constraint and spatial regularity constraint
+    in subspace clustering. Left: the clustering results using LRR method [11]. Right:
+    the clustering results using our method.'
+  Figure 10 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_10.jpg
+  Figure 10 caption: "The clustering error (CE) on USPS data set with varying parameters.\
+    \ (a) \u03B1=0.001,\u03B2=32 , 4-nn, model rank varies; (b) \u03B1=0.001 , 10-rank\
+    \ models, 4-nn, \u03B2 varies."
+  Figure 2 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_2.jpg
+  Figure 2 caption: A solution tree with three candidate subspaces.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_3.jpg
+  Figure 3 caption: Samples from the three benchmark data sets, Hopkins155 (top),
+    Extended Yale Face B (middle) and USPS (bottom).
+  Figure 4 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_4.jpg
+  Figure 4 caption: "The influence of parameter \u03B1 on performance of motion segmentation\
+    \ with known motion number and constant spatial regularity as: N(i) corresponds\
+    \ to the four-nearest neighbors of point and \u03B2=500 . (a) plots the average\
+    \ CE for all sequences in Hopkins155 data sets; (b) shows the CE on three sequences:\
+    \ 66, 131 and 155."
+  Figure 5 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_5.jpg
+  Figure 5 caption: "The influence of spatial regularity parameters ( \u03B2 and N(i)\
+    \ ) on performance of motion segmentation with known motion number."
+  Figure 6 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_6.jpg
+  Figure 6 caption: The average computational time and proportion of exploited nodes
+    versus candidate models on Hopkins155 data sets.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_7.jpg
+  Figure 7 caption: "The average clustering error (CE) with error bars of different\
+    \ methods on Extended Yale Face B data set. For all variants of BB, \u03B1=0.04\
+    \ and no spatial regularity is involved. For other methods, the parameters are\
+    \ chosen by grid searching."
+  Figure 8 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_8.jpg
+  Figure 8 caption: "The effect of parameter \u03B1 on the performance of face clustering\
+    \ using rank-9 subspace model."
+  Figure 9 Link: articels_figures_by_rev_year\2014\Exploiting_Unsupervised_and_Supervised_Constraints_for_Subspace_Clustering\figure_9.jpg
+  Figure 9 caption: ROC curves for outlier detection on four real motion sequences.
+    Note that for ALC-o, there are no tuning parameters available to get a whole ROC
+    curve.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.59
+  Name of the first author: Han Hu
+  Name of the last author: Jie Zhou
+  Number of Figures: 13
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Exploiting Unsupervised and Supervised Constraints for Subspace Clustering
+  Publication Date: 2014-12-05 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Clustering Errors (CE) of Mixture Model Based Methods on\
+      \ Hopkins155 Data Sets with Known Motion Number, Where \u201CAve.\u201D Stands\
+      \ for \u201CAverage\u201D, and \u201CMed.\u201D Stands for \u201CMedian\u201D"
+  Table 10 caption:
+    table_text: "TABLE 10 Computational Times (Seconds) and Peak Memory (Mb) under\
+      \ Different Constraints for Motion Segmentation of the 2T3RCRT Sequence. \u201C\
+      s.r.\u201D Stands for \u201CSpatial Regularity\u201D; \u201Cp.w.\u201D Stands\
+      \ for \u201CPairwise Constraints\u201D; and \u201CSize1,2,3\u201D Represent\
+      \ the Three Types of Size Priors"
+  Table 2 caption:
+    table_text: TABLE 2 Comparison to theAlgebraic Methods and Spectral Clustering
+      Based Methods on Hopkins155 Data Sets with Known Motion Number
+  Table 3 caption:
+    table_text: TABLE 3 Clustering Errors (CE) on Hopkins155 Data Sets with Unknown
+      Motion Number
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the BB Method to the Manifold Clustering Methods
+      on Hopkins155 Data Sets Using CE
+  Table 5 caption:
+    table_text: TABLE 5 Average Clustering Errors (CE) on Hopkins155 Data Sets Using
+      Different Models
+  Table 6 caption:
+    table_text: TABLE 6 Accuracy of Motion Number Estimation on Hopkins155 Data Sets
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Uncapacitated Facility Location Methods on Hopkins155
+      Data Sets When No Constraints (Except Motion Number Prior) Are Exploited
+  Table 8 caption:
+    table_text: TABLE 8 Clustering Errors (CE) and the Corresponding Parameters on
+      USPS Data Set
+  Table 9 caption:
+    table_text: TABLE 9 CE (%) on four Motion Sequences with Real Outliers
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2377740
+- Affiliation of the first author: university of western ontario, london, on, canada
+  Affiliation of the last author: university of western ontario, london, on, canada
+  Figure 1 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_1.jpg
+  Figure 1 caption: 'Derivation of the auxiliary function at y : We assume the foreground
+    region of some fixed y includes the variable foreground region defined by x .
+    Fixed y corresponds to the solution obtained at a previous iteration.'
+  Figure 10 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_10.jpg
+  Figure 10 caption: "An example showing the fast convergence of Algorithm 3. The\
+    \ initial background model is estimated from the image within a strip of width\
+    \ 10 pixels around the bounding box. \u03BB=1.5\xD7 10 \u22124 ; number of bins:\
+    \ 96 3 ; \u03B1 0 =5.8 ; \u03C1=0.8 ."
+  Figure 2 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_2.jpg
+  Figure 2 caption: "The geometry of inequality (10) for \u03B1=0 (left) and \u03B1\
+    = 1 2 (right). The approximating plane (upper bound) is depicted by the wireframe\
+    \ mesh whereas the solid blue surface corresponds to function \u2212 f g \u2212\
+    \ \u2212 \u221A . The red dots at (1, 1, \u22121) correspond to the tightness\
+    \ condition in (12) when x=y (specifically, f=g=1 ). Notice that the neighborhood\
+    \ of the green dot at (1,0,\u22121.5) corresponds to lower values of \u2212 f\
+    \ g \u2212 \u2212 \u221A and, therefore, lower values of the negative Bhattacharyya\
+    \ coefficient."
+  Figure 3 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_3.jpg
+  Figure 3 caption: 'Illustration of the two-step segmentation with a user-provided
+    bounding box (Algorithm 3): background model N (k) is refined iteratively with
+    the binary labeling.'
+  Figure 4 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_4.jpg
+  Figure 4 caption: Examples of segmentations for various target-region categories,
+    including animals, cars, monuments and humans in sport scenes. Given a model learned
+    from a training image in the first column (a manual segmentation is depicted by
+    the green curve), objects of the same category are obtained with Algorithm 1 in
+    several other images (red curves). In these examples, the color distributions,
+    shapes and sizes of the target objects do not match exactly. The target objects
+    undergo substantial variations in shapesize in comparison to the learning images,
+    which precludes the use of shape priors to drive the segmentation process. Furthermore,
+    in some cases, the background regions are cluttered and are significantly different
+    from the training-image backgrounds. For these scenarios, the standard log-likelihood
+    criterion, which requires a reliable background model, is not applicable.
+  Figure 5 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_5.jpg
+  Figure 5 caption: "Illustration of the effect of \u03B1 on the solutions obtained\
+    \ by Algorithm 1. First row, right side: the energy obtained at convergence as\
+    \ a function of the initial value of \u03B1 ; First row, left side: the evolution\
+    \ of the energy as a function of the iteration number for different values of\
+    \ \u03B1 0 . Second row, first column: The training image and its manual segmentation.\
+    \ Second row, columns from second to fifth: The segmentations obtained for different\
+    \ values of \u03B1 0 ."
+  Figure 6 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_6.jpg
+  Figure 6 caption: 'Comparisons of Algorithm 1 with the fast trust region optimization
+    in [53]. Left: Energy at convergence versus the image number; Right: Error at
+    convergence versus the image number.'
+  Figure 7 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_7.jpg
+  Figure 7 caption: "Examples of failure of Algorithm1. The first column shows the\
+    \ learning image; the rest of the images show three instances where Algorithm\
+    \ 1 did not succeed to fully detect the target region. The parameters are \u03B1\
+    =0.5 and \u03BB=1\xD7 10 \u22124 . We used standard spatial distance pairwise\
+    \ weights [19] and a four-connected grid. A three-dimensional histogram based\
+    \ on 96 3 bins was used as a distribution."
+  Figure 8 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_8.jpg
+  Figure 8 caption: "The iterative behavior of the proposed co-segmentation algorithm\
+    \ (Algorithm 2). A 3-dimensional histogram based on 32 3 bins was used as a distribution.\
+    \ The parameters are \u03BB=3\xD7 10 \u22124 , \u03C1=0.8 and \u03B1 0 =5.8 ,\
+    \ used in conjunction with standard spatial distance pairwise weights [19] and\
+    \ a four-connected grid."
+  Figure 9 Link: articels_figures_by_rev_year\2014\Distribution_Matching_with_the_Bhattacharyya_Similarity_A_Bound_Optimization_Fra\figure_9.jpg
+  Figure 9 caption: "Examples of co-segmentations with Algorithm 2. For each example,\
+    \ we show the segmentation boundaries and foreground regions obtained at convergence.\
+    \ A three-dimensional histogram based on 32 3 bins was used as a distribution.\
+    \ The parameters are \u03BB=3\xD7 10 \u22124 , \u03C1=0.8 and \u03B1 0 =5.8 ."
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Ismail Ben Ayed
+  Name of the last author: Shuo Li
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: 'Distribution Matching with the Bhattacharyya Similarity: A Bound Optimization
+    Framework'
+  Publication Date: 2014-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparisons over the GrabCut Data Set of the Proposed Bound
+      Optimizer (Algorithm 1) with the Fast Trust Region Optimization in [53]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Accuracy Evaluations on the Co-Segmentation Database Introduced
+      in [10]: Average Error for Algorithm 2 and the Co-Segmentation Algorithms in
+      [9], [11], [13]'
+  Table 3 caption:
+    table_text: 'TABLE 3 Accuracy Evaluations on the GrabCut Database: Average Error
+      for Algorithm 3 and Two Other Algorithms Optimizing the Image Log-Likelihood
+      Cost, One Based on Dual Decomposition (DD) [18] and the Other on Expectation-Maximization
+      (EM) [20]'
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2382104
+- Affiliation of the first author: centre for imaging sciences, the university of
+    manchester, manchester, united kingdom
+  Affiliation of the last author: centre for imaging sciences, the university of manchester,
+    manchester, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_1.jpg
+  Figure 1 caption: Example 17-point model capturing features of the face.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_10.jpg
+  Figure 10 caption: Evaluation of voting styles for a chained 2c-17c-17f-point RFRV-CLM.
+    Error bars are given as the standard deviation across five repeats of training
+    and testing for each experiment.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_2.jpg
+  Figure 2 caption: Superposition of histograms of votes for a 17-point face model.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_3.jpg
+  Figure 3 caption: During search each rectangular patch predicts (one or more) positions
+    for the target point. Votes are accumulated over a grid.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_4.jpg
+  Figure 4 caption: Annotation example for the joints of the hand using 37 points,
+    and the first two modes of the shape model. In the radiograph, blue points are
+    the reference points returned by the object detector, and red points define the
+    reference length used to give the mean point-to-point error as a percentage of
+    the wrist width.
+  Figure 5 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_5.jpg
+  Figure 5 caption: 'Evaluation of the effect of introducing a second search stage
+    to locally refine all point placements. Notation: x - y -trees refers to using
+    x trees in the RFs of the first-stage model and y trees in the RFs of the second-stage
+    model.'
+  Figure 6 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_6.jpg
+  Figure 6 caption: 'Evaluation of the effect of combining multiple independent estimates
+    of position by varying the number of trees in the RFs when every tree: (a) combines
+    votes from multiple regions around the feature point; (b) votes only from the
+    current position. Notation: x - y -trees refers to using x trees in the RFs of
+    the first-stage model and y trees in the RFs of the second-stage model. Note the
+    same scale of the plots.'
+  Figure 7 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_7.jpg
+  Figure 7 caption: Comparison of fully automatic hand annotation results with (a)
+    different shape model matching techniques, and (b) previously published results
+    from Cootes et al. [9]. All results are based on cross-validation experiments.
+    Note the different scales of the two plots.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_8.jpg
+  Figure 8 caption: Optimisation of the patch and frame width for (a,d) 2-, (b,e)
+    4- and (c,f) 17-point RFRV-CLMs with (a,b,c) one and (d,e,f) two stages. Performance
+    was measured as the area under the CDF of mn (see main text). Error bars are given
+    as the standard deviation across five repeats of training and testing for each
+    experiment. As all error bars across the curves of an experiment were roughly
+    of the same size, we only show them for one curve per graph to aid visualisation.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Robust_and_Accurate_Shape_Model_Matching_Using_Random_Forest_RegressionVoting\figure_9.jpg
+  Figure 9 caption: 'Performance evaluation of combinations of optimal (a) 2-, (b)
+    4- and (c) 17-point models. Notation: x c-point refers to a coarse, first-stage
+    model using x points, and x f-point refers to a fine, second-stage model using
+    x points. For example, the 2c-17c-17f-point curve in (c) represents a model comprising
+    a coarse, first-stage 2-point model followed by a coarse-to-fine, two-stage 17-point
+    model. Error bars are given as the standard deviation across five repeats of training
+    and testing for each experiment.'
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Claudia Lindner
+  Name of the last author: Tim F. Cootes
+  Number of Figures: 14
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Robust and Accurate Shape Model Matching Using Random Forest Regression-Voting
+  Publication Date: 2014-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Effect of Regional Sampling on a Coarse Grid Rather Than at
+      Every Pixel
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Optimal Values for All Multi-Stage RFRV-CLM Parameters (c
+      = coarse, first-stage model; f = fine, second-stage model)
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2382106
+- Affiliation of the first author: department of computer science, university of bristol,
+    bristol, united kingdom
+  Affiliation of the last author: department of computer science, university of bristol,
+    bristol, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_1.jpg
+  Figure 1 caption: Example results of our algorithm. From images such as those on
+    the left, we can detect planes and predict their 3D orientation, as shown on the
+    right. The two versions of our method segment using either salient points (top)
+    or a regular grid of points (bottom).
+  Figure 10 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_10.jpg
+  Figure 10 caption: Examples of plane detection. In the ground truth, red regions
+    are planes, blue are not. In the detection results, groups of planar points are
+    enclosed in coloured regions, displaying their orientation; individual coloured
+    points are non-planar.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_2.jpg
+  Figure 2 caption: Main components of the plane recognition algorithm.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_3.jpg
+  Figure 3 caption: Examples of hand-segmented regions and their ground truth orientation
+    (rightmost image is obtained by warping).
+  Figure 4 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_4.jpg
+  Figure 4 caption: Main steps of the plane detection method (using DoG salient points).
+  Figure 5 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_5.jpg
+  Figure 5 caption: 'Outputs from plane detection: from the input image (a), we apply
+    plane recognition over the image to obtain a point-wise estimate of orientation
+    (b). This is segmented into distinct regions (c), from which the final plane detections
+    are derived (d).'
+  Figure 6 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_6.jpg
+  Figure 6 caption: Comparison of mean orientation estimation error using word and
+    topic histograms and spatiograms while varying vocabulary size.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_7.jpg
+  Figure 7 caption: Histogram of orientation errors for the recognition algorithm,
+    showing that the majority of regions are given an orientation estimate with low
+    error.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_8.jpg
+  Figure 8 caption: 'Example outputs of plane recognition, showing correct classification
+    (a-j) and good orientation estimation (a-g), plus some failure cases: poor orientation
+    estimate (k,l), misclassification as non-plane (m,n), and misclassification as
+    planar (o). Orangecyan boundaries denote ground-truth planenon-plane respectively;
+    those classified as planes have green arrows (estimated orientation), ground-truth
+    orientation is drawn with blue arrows.'
+  Figure 9 Link: articels_figures_by_rev_year\2014\Recognising_Planes_in_a_Single_Image\figure_9.jpg
+  Figure 9 caption: Distribution of orientation errors for plane detection on previously
+    unseen data.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Osian Haines
+  Name of the last author: Andrew Calway
+  Number of Figures: 14
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: Recognising Planes in a Single Image
+  Publication Date: 2014-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Average Classification Accuracy and Mean Orientation
+      Error when Using Gradient and Colour Features
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Performance for Histograms and Spatiograms on
+      Regions Cut to be Uniformly Circular, Compared to the Original Shaped Regions
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2382097
+- Affiliation of the first author: department of applied mathematics and informatics,
+    ryukoku university, otsu, shiga, japan
+  Affiliation of the last author: department of information engineering, hiroshima
+    university, 1-4-1 kagamiyama, higashi-hiroshima-shi, hiroshima, japan
+  Figure 1 Link: articels_figures_by_rev_year\2014\Mixture_of_Subspaces_Image_Representation_and_Compact_Coding_for_LargeScale_Imag\figure_1.jpg
+  Figure 1 caption: Image retrieval accuracy as a function of the number of variables
+    for representing each database image.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\Mixture_of_Subspaces_Image_Representation_and_Compact_Coding_for_LargeScale_Imag\figure_2.jpg
+  Figure 2 caption: Image retrieval accuracy as a function of the database size.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Mixture_of_Subspaces_Image_Representation_and_Compact_Coding_for_LargeScale_Imag\figure_3.jpg
+  Figure 3 caption: Image retrieval accuracy using the encoded mixture of subspaces
+    image representation.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Mixture_of_Subspaces_Image_Representation_and_Compact_Coding_for_LargeScale_Imag\figure_4.jpg
+  Figure 4 caption: Image retrieval accuracy using the encoded mixture of subspaces
+    image representation as a function of the database size.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Takashi Takahashi
+  Name of the last author: Takio Kurita
+  Number of Figures: 4
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Mixture of Subspaces Image Representation and Compact Coding for Large-Scale
+    Image Retrieval
+  Publication Date: 2014-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Effects of the Constraints and Approximations on the Models
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Effects of Dimensionality Reduction and Whitening
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of the Proposed Method with the FV-Based Method
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the Proposed Method with the FV+ADC Method
+  Table 5 caption:
+    table_text: TABLE 5 Retrieval Time
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2382092
+- Affiliation of the first author: department of ophthalmology, duke university, durham,
+    nc 27707
+  Affiliation of the last author: departments of biomedical engineering, ophthalmology,
+    electrical and computer engineering, and computer science, duke university, durham,
+    nc 27707
+  Figure 1 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_1.jpg
+  Figure 1 caption: Images of physical trees. (This figure is best viewed on-screen.)
+    Different combinations of internal and external factors yield remarkably different
+    trees. However, all these trees facilitate a hierarchical flow between a central
+    node and a series of end-points. (a) and (b) are samples from our experimental
+    data sets, while (c) and (d) are public domain images.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_10.jpg
+  Figure 10 caption: SKETCH examples. (This Figure is best viewed on-screen). (a,d)
+    Two sample test graphs (in blue). (b,e) The ground-truth tree for each image.
+    Different subtrees are shown in different colors. (c,f) The best tree found by
+    our method. The parent and flow similarities for each graph are listed in the
+    corresponding subcaption. The white ellipses highlight differences between computed
+    and ground-truth trees.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_2.jpg
+  Figure 2 caption: The projection P(A) of an arborescence A . (Best viewed in color.)
+    The hollow circles are the roots of A and P(A) . Both green and red dots project
+    to crossings in P(A) ; that is, points in P(A) onto which distinct points in A
+    project. Red dots are vertices of A and green dots, called refined vertices of
+    A , are not. The red, green, and blue projection lines indicate vertex-vertex,
+    edge-edge, and vertex-edge crossings, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_3.jpg
+  Figure 3 caption: Edge subdivision. In (a), an edge subdivision replaces a single
+    edge (u,v) with two new edges (u,w) and (w,v) . In (b), the same subdivision in
+    an embedded edge maintains the continuity of the embedding. Old vertices are highlighted
+    in light blue, while the new vertex is shown in red.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_4.jpg
+  Figure 4 caption: Some graph orientations cannot be transformed into connected directed
+    trees by valid partitions. This directed graph has only one crossing v , which
+    can only be partitioned in one way. Applying this valid partition yields two disconnected
+    trees.
+  Figure 5 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_5.jpg
+  Figure 5 caption: For crossings that are part of a directed circuit, only some of
+    their valid partitions lead to trees. (a) A crossing v that is part of a directed
+    circuit. (b) A valid partition of v into v 1 and v 2 that disconnects the graph
+    and retains the circuit. Thus, the result is not a tree. (c) A different partition
+    of v does yield a connected directed tree.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_6.jpg
+  Figure 6 caption: The flow-DAG meta-graph. (This figure is best viewed in color.)
+    The flow-DAG meta-graph for a small graph G . Neighboring orientations differ
+    by one valid flip. The meta-graph is in blue. Edges entering a crossing in each
+    flow-DAG are in red.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_7.jpg
+  Figure 7 caption: Arborescence growth. At each step, the frontier F T (t) (highlighted
+    in red) is updated. At depth t , a new vertex u is added to both F T (t) and V
+    T (t) . At depth t+1 , u is removed from F T (t) and its offspring v,w,x are added
+    to the frontier. At depth t+2 , the three vertices are removed from the frontier;
+    v is succeeded by a single child and w spawned three children, while x has none.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_8.jpg
+  Figure 8 caption: Valid partition formation. (This figure is best viewed in color.)
+    (a) A vertex u and its neighbors. In (b), the edges incident to u are assigned
+    orientations. Since u has more than one incoming edge (red and green), it must
+    be partitioned. In (c), u is split into two vertices v (red) and w (green), each
+    with a single parent. The dashed oval indicates that v and w share the same location
+    on the plane. Each of the outgoing edges of u is then assigned to one of the new
+    vertices.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Tree_Topology_Estimation\figure_9.jpg
+  Figure 9 caption: WIDE and RICE examples. (This Figure is best viewed on-screen).
+    (a,e,i,m) Four sample test images. (b,f,j,n) The extracted graph for each image
+    (in blue). (c,g,k,o) The ground-truth tree for each image. Different subtrees
+    are shown in different colors.(d,h,l,p) The best tree found by our method. The
+    parent and flow similarities for each graph are listed in the corresponding subcaption.
+    The white ellipses highlight differences between computed and ground-truth trees.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.7
+  Name of the first author: Rolando Estrada
+  Name of the last author: Sina Farsiu
+  Number of Figures: 10
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Tree Topology Estimation
+  Publication Date: 2014-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 WIDE Data Set Results
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 RICE Data Set Results
+  Table 3 caption:
+    table_text: TABLE 3 SKETCH Data Set Results
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2382116

@@ -1,0 +1,2746 @@
+- Affiliation of the first author: division of computer assisted medical interventions,
+    german cancer research center (dkfz), heidelberg, germany
+  Affiliation of the last author: division of computer assisted medical interventions,
+    german cancer research center (dkfz), heidelberg, germany
+  Figure 1 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_1.jpg
+  Figure 1 caption: Annotation process analysis based segmentation quality estimation
+    in crowd-sourced image segmentation. The quality of the segmentation is derived
+    from the worker's mouse actions recorded in the clickstream.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_10.jpg
+  Figure 10 caption: 'Descriptive statistics of the quality estimation error when
+    training on animals or vehicles and testing on (1) the same class, (2) the same
+    category (here: different animals or vehicles), (3) a similar category (here:
+    vehicles or animals) and (4) a different category (here: rectangular-shaped objects).'
+  Figure 2 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_2.jpg
+  Figure 2 caption: Training of segmentation quality estimator. Initially, images
+    with known reference segmentations are distributed to multiple crowd workers.
+    While the workers are segmenting the images, the system records their annotation
+    behavior (clickstreams). For each annotated image, the clickstream is converted
+    into a feature vector characterizing the worker's interaction behavior. The DSC
+    is computed using the reference annotation. The set of all collected feature vectors
+    with corresponding DSC values is then used to train a regressor to estimate the
+    DSC solely based on a worker's clickstream.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_3.jpg
+  Figure 3 caption: Concept for crowd-based image segmentation based on a trained
+    segmentation quality estimator ( Fig. 2). The image to be annotated is repeatedly
+    distributed to the crowd until a certain confidence level is reached. The obtained
+    segmentations are merged in a weighted manner, where the weight of the worker's
+    annotation increases with the estimated DSC on that specific image.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_4.jpg
+  Figure 4 caption: 'Examples of poor estimations: (a) Accurate segmentation of wrong
+    objects. (b) Wrong usage of the segmentation tool: Crowd users draw outlines with
+    polygons (top). Inverted segmentation of the object (bottom). (c) Spam. (d) Bounding
+    box.'
+  Figure 5 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_5.jpg
+  Figure 5 caption: '(a) Absolute error of the estimated segmentation quality for
+    training and testing on the same class. (b) Distribution of crowd segmentations
+    that were estimated to have a high DSC but had a low true DSC (false positives)
+    divided into the error classes introduced in Section 4.1 with the absolute amount
+    for each error class. The total amounts of false positives relative to all estimations
+    for each class were: 3 (car) and 1 percent (cat).'
+  Figure 6 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_6.jpg
+  Figure 6 caption: Median R2 score and IQR as a function of the number of images
+    used to train the segmentation quality estimation.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_7.jpg
+  Figure 7 caption: Confidence-weighted majority voting (red) compared to conventional
+    majority voting with lambda annotations (blue) and varphi annotations (green)
+    for different training and testing classes (car andor cat), where varphi represents
+    the average number of annotations to obtain lambda annotations with a estimated
+    DSC above epsilon t . Performance is assessed for a estimated DSC threshold of
+    epsilon t = 0.9 and a varying number of annotations lambda . For clarity only
+    subsets of the experiments ( lambda in lbrace 1,3,5,7 rbrace ) are visualized.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_8.jpg
+  Figure 8 caption: STAPLE with segmentation quality estimation (red) compared to
+    conventional STAPLE with lambda annotations (blue) and varphi annotations (green)
+    for different training and testing classes (car andor cat), where varphi represents
+    the average number of annotations to obtain lambda annotations with a estimated
+    DSC above epsilon t . Performance is assessed for a estimated DSC threshold of
+    epsilon t = 0.9 and a varying number of annotations lambda . For clarity only
+    subsets of the experiments ( lambda in lbrace 1,3,5,7 rbrace ) are visualized.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Clickstream_Analysis_for_CrowdBased_Object_Segmentation_with_Confidence\figure_9.jpg
+  Figure 9 caption: Intra-class segmentation quality estimation performance for all
+    classes (see Section 4.3).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Eric Heim
+  Name of the last author: Lena Maier-Hein
+  Number of Figures: 12
+  Number of Tables: 1
+  Number of authors: 7
+  Paper title: Clickstream Analysis for Crowd-Based Object Segmentation with Confidence
+  Publication Date: 2017-11-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Mean Estimation Error for Each Feature Selection Method
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2777967
+- Affiliation of the first author: chinese academy of sciences, 95 zhongguancun donglu,
+    institute of automation, beijing, china
+  Affiliation of the last author: chinese academy of sciences, 95 zhongguancun donglu,
+    institute of automation, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_1.jpg
+  Figure 1 caption: Fitting results of 3DDFA (the bluered points indicate visibleinvisible
+    landmarks). For each pair of the four results, on the left is the rendering of
+    the fitted 3D face with the mean texture, which is made transparent to demonstrate
+    the fitting accuracy. On the right is the landmarks overlayed on the fitted 3D
+    face model.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_10.jpg
+  Figure 10 caption: Fake good alignment in AFLW. For each sample, the first shows
+    the visible 21 landmarks and the second shows all the 68 landmarks. The Normalized
+    Mean Error (NME) reflects their accuracy. It can be seen that only evaluating
+    visible landmarks cannot well reflect the accuracy of 3D fitting.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_2.jpg
+  Figure 2 caption: "An overview of the two-stream network in 3DDFA. With an intermediate\
+    \ parameter p k , in the first stream we construct a novel Projected Normalized\
+    \ Coordinate Code (PNCC), which is stacked with the input image and sent to the\
+    \ CNN. In the second stream, we get some feature anchors with consistent semantics\
+    \ and conduct Pose Adaptive Convolution (PAC) on them. The outputs of the two\
+    \ streams are merged with an additional fully connected layer to predict the parameter\
+    \ update \u0394 p k ."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_3.jpg
+  Figure 3 caption: "An example of gimbal lock. We assume the rotation sequence is\
+    \ from pitch to yaw to roll . In the first row, the face is first rotated 20 degree\
+    \ around the pitch axis and then 90 degree around the yaw axis, whose Euler angles\
+    \ are [ 20 \u2218 , 90 \u2218 , 0 \u2218 ] . In the second row, the face is first\
+    \ rotated 90 degree around the yaw axis and then 20 degree around the roll axis,\
+    \ whose Euler angles are [ 0 \u2218 , 90 \u2218 , 20 \u2218 ] . However the two\
+    \ different Euler angles correspond to the same rotation matrix, generating the\
+    \ profile view of a nodding face."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_4.jpg
+  Figure 4 caption: "Pose Adaptive Convolution (PAC): (a) The 64\xD764 feature anchors\
+    \ on the 3D face model. (b) The projected feature anchors V(p ) anchor (the bluered\
+    \ ones indicate visibleinvisible anchors). (c) The feature patch map concatenated\
+    \ by the patches cropped at V(p ) anchor . (d) Conducting convolution, whose stride\
+    \ and filter size are the same with the patch size, on the feature patch map and\
+    \ shrinking the responses at invisible points, leading to the Pose Adaptive Feature\
+    \ (PAF)."
+  Figure 5 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_5.jpg
+  Figure 5 caption: The Normalized Coordinate Code (NCC) and the Projected Normalized
+    Coordinate Code (PNCC). (a) The normalized mean face, which is also demonstrated
+    with NCC as its texture ( NCC x =R , NCC y =G , NCC z =B ). (b) The generation
+    of PNCC, the projected 3D face is rendered by Z-Buffer with NCC as its colormap.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_6.jpg
+  Figure 6 caption: (a) An open-mouth face in near-profile view. (b) The fitting result
+    of WPDC in the first iteration. (c) The fitting result when the CNN is restricted
+    to only regress the 6-dimensional pose parameters. Errors are measured by normalized
+    mean error.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_7.jpg
+  Figure 7 caption: 3D image meshing. (a) The input image. (b) The fitted 3D face
+    through MFF. (c) The depth image from 3D meshing. (d) A different view of the
+    depth image.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_8.jpg
+  Figure 8 caption: The face profiling and anchor adjustment process. (a) The source
+    image. (b) The profiled face with out of plane rotation. It can be seen that the
+    face locates on the hollow since the background is squeezed. (c) The synthesized
+    image after anchor adjustment.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Face_Alignment_in_Full_Pose_Range_A_D_Total_Solution\figure_9.jpg
+  Figure 9 caption: 2D and 3D view of face profiling. (a) The original yaw angle yaw0
+    . (b) yaw0+ 20circ . (c) yaw0 + 30circ . (d) yaw0 + 40circ .
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Xiangyu Zhu
+  Name of the last author: Stan Z. Li
+  Number of Figures: 20
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: 'Face Alignment in Full Pose Range: A 3D Total Solution'
+  Publication Date: 2017-11-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The NME(%) of PAF, PNCC and Their Corresponding Alternative
+      Features, Evaluated on AFLW2000-3D with Different Yaw Interval
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The NME(%) of Face Alignment Results on AFLW and AFLW2000-3D
+      with the First and the Second Best Results Highlighted
+  Table 3 caption:
+    table_text: TABLE 3 The NME(%) of Face Alignment Results on 300 W, with the First
+      and the Second Best Results Highlighted
+  Table 4 caption:
+    table_text: TABLE 4 Alignment Performance (NME) Initialized by Detected Bounding
+      Boxes
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2778152
+- Affiliation of the first author: "max planck institute for informatics, saarland\
+    \ informatics campus, saarbr\xFCcken, germany"
+  Affiliation of the last author: "max planck institute for informatics, saarland\
+    \ informatics campus, saarbr\xFCcken, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_1.jpg
+  Figure 1 caption: "Overview of GazeNet\u2013 appearance-based gaze estimation using\
+    \ a deep convolutional neural network (CNN)."
+  Figure 10 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_10.jpg
+  Figure 10 caption: Architecture of the proposed GazeNet. The head angle h is injected
+    into the first fully connected layer. The 13 convolutional layers are inherited
+    from a 16-layer VGG network [66].
+  Figure 2 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_2.jpg
+  Figure 2 caption: 'Sample images from the MPIIGaze dataset showing the considerable
+    variability in terms of place and time of recording, eye appearance, and illumination
+    (particularly directional light and shadows). For comparison, the last column
+    shows sample images from other current publicly available datasets (cf. Table
+    1): UT Multiview [6] (top), EYEDIAP [12] (middle), and Columbia [13] (bottom).'
+  Figure 3 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_3.jpg
+  Figure 3 caption: Key characteristics of our dataset. Percentage of images collected
+    at different times of day (left), having different mean grey-scale intensities
+    within the face region (middle), and having horizontally different mean grey-scale
+    intensities between the left to right half of the face region (right). Representative
+    sample images are shown at the top.
+  Figure 4 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_4.jpg
+  Figure 4 caption: Distributions of head angle ( h ) and gaze angle ( g ) in degrees
+    for MPIIGaze, UT Multiview, and the screen target sequences in EYEDIAP (cf. Table
+    1 ).
+  Figure 5 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_5.jpg
+  Figure 5 caption: Sample images from a single person for roughly the same gaze directions
+    from MPIIGaze with (a) and without (b) glasses, UT Multiview (c), and EYEDIAP
+    (d).
+  Figure 6 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_6.jpg
+  Figure 6 caption: 'We manually annotated 37,667 images with seven facial landmarks:
+    the corners of the left and right eye, the mouth corners, and the pupil centres.
+    We used a semi-automatic annotation approach: (a) Landmarks were first detected
+    automatically (in red) and, (b) if needed, corrected manually post-hoc (in green).
+    We also manually annotated the pupil centre without any detection (c). Note that
+    this is only for completeness and we do not use the pupil centre as input for
+    our method later.'
+  Figure 7 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_7.jpg
+  Figure 7 caption: Percentage of images for different error levels in the detection
+    of facial landmarks (blue solid line) and pupil centres (red dashed line). The
+    x -axis shows the root-mean-square (RMS) distance between the detected and annotated
+    landmarks, which is normalised by the distance between both eyes.
+  Figure 8 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_8.jpg
+  Figure 8 caption: Definition of the head coordinate system defined based on the
+    triangle connecting three midpoints of the eyes and mouth. The x -axis goes through
+    the midpoints of both eyes while the y -axis is perpendicular to the x -axis inside
+    the triangle plane. The z -axis is perpendicular to this triangle plane and pointing
+    backwards from the face.
+  Figure 9 Link: articels_figures_by_rev_year\2017\MPIIGaze_RealWorld_Dataset_and_Deep_AppearanceBased_Gaze_Estimation\figure_9.jpg
+  Figure 9 caption: Procedure for eye image normalisation. (a) Starting from the head
+    pose coordinate system centred at one of the eye centres e r (top) and the camera
+    coordinate system (bottom); (b) the camera coordinate system is rotated with R
+    ; (c) the head pose coordinate system is scaled with matrix S ; (d) the normalised
+    eye image is cropped from the input image by the perspective warping corresponding
+    to these rotations and scaling.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xucong Zhang
+  Name of the last author: Andreas Bulling
+  Number of Figures: 18
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: 'MPIIGaze: Real-World Dataset and Deep Appearance-Based Gaze Estimation'
+  Publication Date: 2017-11-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Overview of Publicly Available Appearance-Based Gaze Estimation
+      Datasets Showing the Number of Participants, Head Poses and On-Screen Gaze Targets
+      (Discrete or Continuous), Illumination Conditions, Images with Annotated Face
+      and Facial Landmarks, Amount of Data (Number of Images or Duration of Video),
+      Collection Duration per Participant, as Well as the Availability of 3D Annotations
+      of Gaze Directions and Head Poses
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2778103
+- Affiliation of the first author: national institute of defense technology innovation,
+    beijing, china
+  Affiliation of the last author: university of maryland institute for advanced computer
+    studies (umiacs), university of maryland at college park, md
+  Figure 1 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_1.jpg
+  Figure 1 caption: "The comparison of loss functions: (a) e 2 (x) , e 1 (x) , e c\
+    \ (x;1) , e t (x;1,5) , and e 0 (x) ; and (b) e t (x;\u03B3,\u03B5 ) when (\u03B3\
+    ,\u03B5)=(1,200),(0.1,100),(0.01,50),(0.001,25) and e 0 (x) ."
+  Figure 10 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_10.jpg
+  Figure 10 caption: Example images in Caltech101 dataset from 6 categories, and we
+    have four images per category.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_2.jpg
+  Figure 2 caption: 'The illustrative example: (a) Frontal face images from the AR
+    database, (b) face images reconstructed by Truncated CauchyNMF, (c) error images,
+    and (d) the learned basis images.'
+  Figure 3 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_3.jpg
+  Figure 3 caption: An illustrative example of the sequence of weights generated by
+    the HQ algorithm.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_4.jpg
+  Figure 4 caption: 'Learning the one-dimensional subspace (i.e., a straight line)
+    from 180 synthetic two-dimensional data points by L 2 -NMF, L 1 -NMF, and Truncated
+    CauchyNMF in four cases: (a) Clean dataset, (b) 20 points contaminated in x -direction,
+    (c) 40 points contaminated in x -direction, and (d) 80 points contaminated in
+    both directions.'
+  Figure 5 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_5.jpg
+  Figure 5 caption: "Example face images of ORL database: (a) An example face image\
+    \ and its noised versions by Laplace noise with deviation \u03B4=40,80,120,160,200,240,280\
+    \ , (b) an example face image and its noisy versions, where p% pixels are contaminated\
+    \ by Salt & Pepper noise and p=5,10,20,30,40,50,60 , (c) an example face image\
+    \ and its occluded versions by b\xD7b -blocks with b=10,12,14,16,18,20,22 ."
+  Figure 6 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_6.jpg
+  Figure 6 caption: 'Evaluation on frontal face images of ORL database contaminated
+    by Laplace noise: (a) Average accuracy and standard deviation of K-means, L 2
+    -NMF, L 2,1 -NMF, RNMF- L 1 , L 1 -NMF, Huber-NMF, CIM-NMF and Truncated CauchyNMF,
+    (b) comparison of average normalized mutual information and standard deviation.'
+  Figure 7 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_7.jpg
+  Figure 7 caption: 'Evaluation on frontal face images of ORL database contaminated
+    by Salt & Pepper noise: (a) Average accuracy and standard deviation of K-means,
+    L 2 -NMF, L 2,1 -NMF, RNMF- L 1 , L 1 -NMF, Huber-NMF, CIM-NMF and Truncated CauchyNMF,
+    (b) comparison of average normalized mutual information and standard deviation.'
+  Figure 8 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_8.jpg
+  Figure 8 caption: Face image examples of two individuals in the AR dataset, with
+    10 images per individual.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Truncated_Cauchy_NonNegative_Matrix_Factorization\figure_9.jpg
+  Figure 9 caption: 'Clustering performance in terms of average accuracy and average
+    normalized mutual information of Truncated CauchyNMF, CIM-NMF, Huber-NMF, L 2,1
+    -NMF, RNMF- L 1 , L 2 -NMF, and L 1 -NMF on the AR dataset, with the number of
+    clusters varying between 2 and 10: (a) Average accuracy versus number of clusters,
+    and (b) average normalized mutual information versus number of clusters.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Naiyang Guan
+  Name of the last author: Larry S. Davis
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Truncated Cauchy Non-Negative Matrix Factorization
+  Publication Date: 2017-11-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the Robustness of Truncated CauchyNMF with Those
+      of Other NMF Models
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Relative Reconstruction Error (%) of L 2 -NMF, L 2,1 -NMF,
+      RNMF- L 1 , L 1 -NMF, Huber-NMF, CIM-NMF, and CauchyNMF on ORL Dataset Contaminated
+      by Laplace Noise with Deviation Varying from 40 to 280
+  Table 3 caption:
+    table_text: TABLE 3 Relative Reconstruction Error (%) of L 2 -NMF, L 2,1 -NMF,
+      RNMF- L 1 , L 1 -NMF, Huber-NMF, CIM-NMF, and Truncated CauchyNMF on ORL Dataset
+      Contaminated by Salt & Pepper Noise with the Percentage of Corrupted Pixels
+      Varying from 5 to 60 percent
+  Table 4 caption:
+    table_text: TABLE 4 Average Accuracy (%) and Average Normalized Mutual Information
+      (%) of K-Means, L 2 -NMF, L 2,1 -NMF, RNMF- L 1 , L 1 -NMF, Huber-NMF, CauchyNMF,
+      CIM-NMF, and Truncated CauchyNMF on Occluded ORL Dataset with Block Size b Varying
+      from 10 to 22 with Step Size 2
+  Table 5 caption:
+    table_text: TABLE 5 Face Recognition Accuracies (%) of SEC and NMF Models on the
+      AR Dataset, with the Reduced Dimensionalities of NMF Models Set to 200 and the
+      Test Images Classified by SRC in the Subspaces Learned by NMF Methods
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2777841
+- Affiliation of the first author: department of computer science and electrical engineering,
+    jacobs university bremen, bremen, germany
+  Affiliation of the last author: department of computer science and electrical engineering,
+    jacobs university bremen, bremen, germany
+  Figure 1 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_1.jpg
+  Figure 1 caption: 'A set-up for research on automated unloading of coffee sacks
+    from a shipping-container. Right: The autonomous RobLog system at a coffee storage
+    warehouse owned by Berthold Vollers GmbH in Bremen. Left: The environment state
+    as believed by the robotic system. The white wireframes represent superquadrics
+    which correspond to the recognized and localized candidate sacks for unloading.'
+  Figure 10 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_10.jpg
+  Figure 10 caption: A comparison of the influence of the noise level to the approximation
+    error for the different methods and shapes. The dependency of the normalized hatmathfrak
+    Loverrightarrow2 metric on the normalized noise level hatsigma is depicted in
+    the top row. Yellow and blue are used for the SoA, respectively NS method. In
+    the bottom row the curves of the ratio between the errors of NS and SoA methods
+    are provided for the different optimization libraries; red is the Eigen and yellow
+    marks the Ceres library. The vertical black line marks the noise level of a Microsoft
+    Kinect-I sensor at a distance of 1.5 meters.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_2.jpg
+  Figure 2 caption: "Example superquadrics with respect to the shape parameters (\
+    \ 0\u2264 \u03B5 1 , \u03B5 2 \u22643.5 with 0.5 resolution). The surfaces are\
+    \ colored based on RGB encoding of the surface normal vectors with red intensity\
+    \ corresponding to x , green to y , and blue to z components. The superquadrics\
+    \ have a convex shape within the region of 0\u2264 \u03B5 1 , \u03B5 2 \u2264\
+    2 ."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_3.jpg
+  Figure 3 caption: "The effect of restricting the exponent parameters to \u03B5 1\
+    \ , \u03B5 2 \u22650.1 . Top row depicts the restricted superquadrics with \u03B5\
+    \ 1 =.1 and respectively \u03B5 2 =0.1,0.5,1.0,1.5,2.0,2.5,3.0 , whereas the bottom\
+    \ row contains corresponding superquadrics with sharp edges\u2014 \u03B5 1 =0.0\
+    \ and \u03B5 2 =0.0,0.5,1.0,1.5,2.0,2.5,3.0 . Note that colored parts highlight\
+    \ the areas which are supposed to represent a single boundary curve or corner,\
+    \ i.e., the colors indicate the regions where the prominent approximation errors\
+    \ for objects with sharp contours occur."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_4.jpg
+  Figure 4 caption: An illustration of two distinct sampling strategies. Parametric
+    sampling is shown for two examples in (a); corresponding representations created
+    by recursive sampling are depicted in (b). All of the examples were created using
+    approximately 2,000 samples which are represented by colored points. The black
+    lines connect the samples and form wireframes of the shapes.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_5.jpg
+  Figure 5 caption: "Categorization of different regions used in the experiments with\
+    \ respect to the \u03B5 1 , \u03B5 2 parameters. The unstable region is not up\
+    \ to scale and was increased for the visualization purposes."
+  Figure 6 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_6.jpg
+  Figure 6 caption: A visualization of the performance of the different methods in
+    the unstable region in terms of the parameter recovery errors and the convergence
+    success rates. The subfigure (a) provides an explanation for the overview plots
+    in (b).
+  Figure 7 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_7.jpg
+  Figure 7 caption: The distributions of the parameter estimation errors over different
+    regions and optimization methods for the radial cost function. The yellow and
+    the blue colors respectively correspond to the state-of-the-art and the numerically
+    stable implementations. Each distribution is represented as a box plot. The box
+    extends over the range between the first and the third quartiles. The band inside
+    marks the location of the median. The full range of the inliers is denoted by
+    the whiskers. The dots and the circles outside of the range of the whiskers mark
+    the outliers.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_8.jpg
+  Figure 8 caption: The speed of convergence in terms of runtime (bottom row) and
+    the number of iterations (top row). The yellow and the blue colors respectively
+    correspond to the state-of-the-art and our numerically stable methods. The bars
+    extend to the median value of the metrics obtained for the different regions and
+    methods using point-clouds consisting of approximately 500 points.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Revisiting_Superquadric_Fitting_A_Numerically_Stable_Formulation\figure_9.jpg
+  Figure 9 caption: 'The influence of the point-cloud size on the runtime, which linearly
+    increases. Different line styles are used for the different optimization libraries:
+    the dashed curves correspond to Eigen library and the continuous curves to the
+    Ceres library. As in the previous figures, the yellow and the blue colors respectively
+    correspond to the state-of-the-art and our numerically stable method.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Narunas Vaskevicius
+  Name of the last author: Andreas Birk
+  Number of Figures: 11
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: 'Revisiting Superquadric Fitting: A Numerically Stable Formulation'
+  Publication Date: 2017-12-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Approximation Parameters for the Auxiliary Functions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Different Optimization Libraries and Methods Used for the
+      Comparison
+  Table 3 caption:
+    table_text: "TABLE 3 Results of Fitting Superquadrics to Three Geometric Primitives\
+      \ with Errors According to the L 2 \u2192 and the One-Sided Hausdorff Distance\
+      \ H Metrics, Plus a Visualization of the Error Distribution Where Each Point\
+      \ on the Surface of the Fitted Superquadric Is Colored by Its Deviation from\
+      \ the Ground-Truth Surface"
+  Table 4 caption:
+    table_text: TABLE 4 Summary of the Performance on the KIT Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2779493
+- Affiliation of the first author: Not Available
+  Affiliation of the last author: Not Available
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sven Dickinson
+  Name of the last author: Sven Dickinson
+  Number of Figures: Not Available
+  Number of Tables: 0
+  Number of authors: 1
+  Paper title: State of the Journal
+  Publication Date: 2017-12-04 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2770038
+- Affiliation of the first author: school of computing sciences, university of east
+    anglia, norwich, east anglia, united kingdom
+  Affiliation of the last author: school of informatics, university of edinburgh,
+    edinburgh, scotland, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_1.jpg
+  Figure 1 caption: Top left, panel (a), images of two planes are related by a homography.
+    Right, panel (b), 4 images of a colored ball are shown. Ball1 is the reference
+    image where the illumination color is white and placed behind the camera. Ball2
+    is the object illuminated with a blue light from above. Respectively, Ball3 and
+    Ball4 are the least-squares mapping and the homography match (in both cases the
+    aim is to correctly undo the illumination color) from Ball2 to Ball1, Bottom right,
+    panel (c), the chromaticities from Ball2 matched to corresponding chromaticities
+    in Ball1.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_10.jpg
+  Figure 10 caption: 'RAW-to-JPEG Approximation. Left: The non-linear mapping from
+    a RAW image to its rendered camera output image can be well approximated by a
+    shading homography. Right: RMSE between estimation and ground truth using our
+    shading homography model of the 24 RAW-capable cameras in the Middlebury dataset
+    [69] .'
+  Figure 2 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_2.jpg
+  Figure 2 caption: a) Color correction (mapping RAW to display sRGB [10]) is a homography
+    problem. b) The top contains 3 images of colorful objects. Histogram matching
+    of chromaticity distributions of images I 1 with I 2 and I 1 with I 3 are shown
+    in the middle (chromaticity distribution for I 1 is in purple and for I 2 and
+    I 3 is in green). Solving for the color homographies best mapping I 1 to I 2 and
+    I 1 to I 3 (respectively, H ( I 1 , I 2 ) and H ( I 1 , I 3 ) ) results in the
+    histograms shown in the bottom row. The distributions for I 1 and I 2 now match
+    and the object is correctly identified. c) Color transfer for matching the colors
+    of an input image I to the colors of a target image J can be reinterpreted as
+    a simple color homography mapping H(I,O) .
+  Figure 3 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_3.jpg
+  Figure 3 caption: 'Top: ASIFT [21] can match the chromaticity distributions of images
+    I 1 and I 2 . Bottom: ASIFT cannot match the chromaticity distributions of image
+    I 1 to image I 3 (images I 1 , I 2 and I 3 shown in Fig. 2b).'
+  Figure 4 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_4.jpg
+  Figure 4 caption: Two example images with non-uniformly shading used for color correction
+    test.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_5.jpg
+  Figure 5 caption: Given pixel-wise correspondence between Images A and B, a color
+    homography is solved for to convert Image A to Images D (with shading correction)
+    and E (without shading). Image F is the worse conversion result when linear least-squares
+    is adopted. Image C shows the rg chromaticity spread (Image A in green, Image
+    B in pink).
+  Figure 6 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_6.jpg
+  Figure 6 caption: "Plot of color structure complexity percentile and matching percentile.\
+    \ The result is filtered by a moving Gaussian convolution kernel (width = 10 percent\
+    \ of total color structure complexity span, \u03C3 = 16 kernel width). The dashed\
+    \ line indicates the threshold, over which homography-based method works better."
+  Figure 7 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_7.jpg
+  Figure 7 caption: Visual result of color transfer approximations (in the order of
+    [18], [62], [63], [64]). The images in Column 4 (Homography) are generally more
+    similar to those in Column 2 than those shown in Column 3 (3D Similarity).
+  Figure 8 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_8.jpg
+  Figure 8 caption: Color transfer approximation for [18] from downsampled images.
+    The sizes of source images and target images (i.e., I and J ) are reduced by the
+    corresponding factors. The original color transfer (MATLAB) takes about 3.630s.
+    The 3 evaluation measurements and the total estimation time with down-sampling
+    are shown over the images. As it is shown, image down-sampling barely affects
+    the color transfer approximation quality. And, it takes less time to color transfer
+    an image by using our down-sampling trick.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Color_Homography_Theory_and_Applications\figure_9.jpg
+  Figure 9 caption: Color transfer enhancement. A source image is color transferred
+    by [63] with some noticeable imperfections (on the clouds). This issue is fixed
+    by approximating the original color transfer effect with a shading-smoothed shading
+    homography. Visually, the enhanced result also preserves more texture details
+    compared with the result obtained by directly smoothing the original approximation
+    RGB.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Graham Finlayson
+  Name of the last author: Robert B. Fisher
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: 'Color Homography: Theory and Applications'
+  Publication Date: 2017-12-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Errors for Color Correction (X-Rite Classic Color Checker)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Match Percentile Results for All 1,000 Objects
+  Table 3 caption:
+    table_text: TABLE 3 Average Match Percentile Results for Query Image with Color
+      Structure Complexity
+  Table 4 caption:
+    table_text: TABLE 4 Errors of Color Transfer Approximation
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2760833
+- Affiliation of the first author: university of chinese academy of sciences, beijing,
+    china
+  Affiliation of the last author: center for biometrics and security research & national
+    laboratory of pattern recognition, chinese academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_1.jpg
+  Figure 1 caption: 'The pipeline of our framework for age estimation. It consists
+    of two stages: training stage and testing stage. In the training stage, the training
+    images with different scales are first processed by face detection, alignment
+    and cropping. All the images are aligned according to the point of the center
+    of two eyes and the upper lip. Then all the training images are grouped by the
+    age group-n encoding strategy, where the images from adjacent ages would grouped
+    into the same group. After that, the training images are used to train the CNNs.
+    In the testing stage, the test image is first processed in the same way as the
+    training stage used. Then, the processed image is input into the trained CNN network,
+    and age group classification is employed to obtain the probabilities of each group.
+    Finally, the predicted age is obtained by decoding the group classification results.'
+  Figure 10 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_10.jpg
+  Figure 10 caption: The visualization of age and age group probabilities.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_2.jpg
+  Figure 2 caption: "The architecture of the proposed network. Our network is based\
+    \ on the VGG-16 network [28] and we adopt the BGR face image as the input with\
+    \ the size of 224\xD7224 . The CNN network consists of two fully connected layers\
+    \ and the later one produces a feature vector for age group classification. After\
+    \ that, the network branches out T output layers, where each layer is employed\
+    \ as an binary classifier that judges whether the input image belongs to the corresponding\
+    \ age group or not. Moreover, all the convolutional layers are followed by ReLU\
+    \ non-linearity."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_3.jpg
+  Figure 3 caption: "Example of grouping results with Age Group-3 Encoding for age\
+    \ set 0,1\u2026,100 . There are 103 groups in total and each age corresponds to\
+    \ 3 groups."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_4.jpg
+  Figure 4 caption: The distribution of positive and negative samples for each age
+    group on MORPH II training set with AGE3, AGE9 and AGE15. When grouped by AGE3,
+    the distribution is extremely uneven and negative samples is many times larger
+    than positive samples. The number of positive samples of middle groups would increase
+    as n rises, but the imbalance is still serious in the marginal groups.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_5.jpg
+  Figure 5 caption: Sample images from Chalearn LAP, FG-NET, MORPH, CACD and IMDB-WIKI
+    databases. The value below the image is its corresponding age label. FG-NET database
+    includes some old photos (gray image) as shown in the second row. The face images
+    of Chalearn LAP and MORPH databases are taken from the ordinary people, while
+    the images of CACD and IMDB-WIKI databases are from the celebrities. And this
+    difference can be easily found from the figure. Additionally, the CACD database
+    contains some noise. For example, the second image of this databases was wrong
+    labeled. For IMDB-WIKI, it contains more noise, such as a image contains more
+    than one face (see the second image of IMDB-WIKI database) or no face (see the
+    last image of IMDB-WIKI database).
+  Figure 6 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_6.jpg
+  Figure 6 caption: The network that we used for parameters searching. The network
+    is based on the AlexNet [43], and the last layer also be replaced with multiple
+    binary classifiers. More details of the convolution and pooling layers are shown
+    in the figure.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_7.jpg
+  Figure 7 caption: (a) and (b) show the last two layers of the network of DEX and
+    VGG+euclidean, respectively. The architecture of the lower layers of DEX and VGG+euclidean
+    are the same to our network's.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_8.jpg
+  Figure 8 caption: '(a) CS comparisons on FG-NET. (b) CS comparisons on MORPH II
+    with 80-20 protocol when training with 80 percent images and testing with 20 percent
+    images. (c) CS comparisons on MORPH II with S1-S2-S3 protocol. The experiments
+    are repeated twice: 1) Training with S2 and testing with S1+S3; 2) training with
+    S1 and testing with S2+S3, and the average CS performance is reported. (d) CS
+    comparisons on CACD when training with 1,800 celebrities and testing with 120
+    celebrities.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\Efficient_Groupn_Encoding_and_Decoding_for_Facial_Age_Estimation\figure_9.jpg
+  Figure 9 caption: The original and aligned images of Chalearn LAP, FG-NET, Morph
+    and CACD databases. The predicted ages of both good and bad estimation are given
+    in the figure. Note that the predicted age on Chalearn LAP dataset is not an integer
+    due to the averaging of the predictions of the augmented testing images and an
+    ensemble of networks.
+  First author gender probability: 0.68
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Zichang Tan
+  Name of the last author: Stan Z. Li
+  Number of Figures: 11
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: Efficient Group-n Encoding and Decoding for Facial Age Estimation
+  Publication Date: 2017-12-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of the Databases Used in Our Experiments
+  Table 10 caption:
+    table_text: TABLE 10 The Comparisons Between with and without Grouping and Decoding
+      Components on Morph II Dataset Under 80-20 Protocal
+  Table 2 caption:
+    table_text: "TABLE 2 MAE Results with a Variety of n and \u03C1 1 on Validation\
+      \ Set"
+  Table 3 caption:
+    table_text: TABLE 3 The Comparisons Between the Proposed Method and Other State-of-the-Art
+      Methods on MORPH II Database with the S1-S2-S3 Protocol
+  Table 4 caption:
+    table_text: TABLE 4 The Results on Morph II Database with 80-20 Protocol and FG-NET
+      Database
+  Table 5 caption:
+    table_text: TABLE 5 Comparisons with the State-of-the-Art Methods on the Chalearn
+      LAP 2015 Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Comparisons with the State-of-the-Art Methods on the Chalearn
+      LAP 2016 Dataset
+  Table 7 caption:
+    table_text: TABLE 7 The Comparisons on CACD Dataset
+  Table 8 caption:
+    table_text: TABLE 8 The Comparisons Between GAD and LAD
+  Table 9 caption:
+    table_text: TABLE 9 Some Training Details of Our Method on Chalearn Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2779808
+- Affiliation of the first author: department of computer science, university of western
+    ontario, london, ontario, canada
+  Affiliation of the last author: department of computer science, university of western
+    ontario, london, ontario, canada
+  Figure 1 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_1.jpg
+  Figure 1 caption: "Kernel K-means with Gaussian kernel (1) gives desirable nonlinear\
+    \ separation for uniform density clusters (a,b). But, for non-uniform clusters\
+    \ in (c), it either isolates a small dense \u201Cclump\u201D for smaller \u03C3\
+    \ due to Breiman's bias (Section 2) or gives results like (a) for larger \u03C3\
+    \ . No fixed \u03C3 yields solution (d) given by locally adaptive kernels or weights\
+    \ eliminating the bias (Sections 4 and 3)."
+  Figure 10 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_10.jpg
+  Figure 10 caption: "\u201CDensity inversion\u201D in sparse regions. Using node\
+    \ degree approximation d p \u221D \u03C1 p (67) we show representative density\
+    \ transformation plots (a) \u03C1 \xAF p =\u03C4( \u03C1 p ) and (b) \u03C1 \u2032\
+    \ p =\u03C4( \u03C1 p ) corresponding to AA with kernel modification A pq = A\
+    \ pq d p d q (65) and additional point weighting w p = d p (66) exactly corresponding\
+    \ to NC . This additional weighting weakens the density inversion in (b) compared\
+    \ to (a), see the x -axis scale difference. However, it is easy to check that\
+    \ the minima in (65) and (66) are achieved at some x \u2217 exponentially growing\
+    \ with N \xAF . This makes the density inversion significant for NC since N \xAF\
+    \ may equal the data size."
+  Figure 2 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_2.jpg
+  Figure 2 caption: "Example of Breiman's bias on real data. Feature vectors are 3-dimensional\
+    \ LAB colors corresponding to image pixels. Clustering results are shown in two\
+    \ ways. First, red and blue show different clusters inside LAB space. Second,\
+    \ pixels with colors in the \u201Cbackground\u201D (red) cluster are removed from\
+    \ the original image. (a) shows the result for kernel K-means with a fixed-width\
+    \ Gaussian kernel isolating a small dense group of pixels from the rest. (b) shows\
+    \ the result for an adaptive kernel, see Section 4."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_3.jpg
+  Figure 3 caption: 'Breiman''s bias in clustering of images. We select four categories
+    from the LabelMe dataset [30]. The last fully connected layer of the neural network
+    in [31] gives 4096-dimensional feature vector for each image. We reduce the dimension
+    to 5 via PCA. For visualization purposes, we obtain 3D embeddings via MDS [32].
+    (a) Kernel densities estimates for data points are color-coded: darker points
+    correspond to higher density. (b) and (c) The result of the kernel K-means with
+    the Gaussian kernel (1). Scott''s rule of thumb defines the bandwidth. Breiman''s
+    bias causes poor clustering, i.e., small cluster is formed in the densest part
+    of the data in (b), three clusters occupy few points within densest regions while
+    the fourth cluster contains 71 percent of the data in (c). The normalized mutual
+    information (NMI) in (c) is 0.38. (d) Good clustering produced by KNN kernel u
+    p (Example 3) gives NMI of 0.90, which is slightly better than the basic K-means
+    (0.89).'
+  Figure 4 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_4.jpg
+  Figure 4 caption: "Density equalization via (a) adaptive weights and (b) adaptive\
+    \ kernels. In (a) the density is modified as in (43) via \u201Creplicating\u201D\
+    \ each data point inverse-proportionately to the observed density using w p \u221D\
+    1 \u03C1 p . For simplicity, (a) assumes positive integer weights w p . In (b),\
+    \ the density is modified according to (58) for bandwidth (61) via implicit embedding\
+    \ of data points in a higher dimensional space that changes their relative positions."
+  Figure 5 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_5.jpg
+  Figure 5 caption: "Kernel K-means biases over the range of bandwidth \u03C3 . Data\
+    \ diameter is denoted by d \u03A9 = max pq\u2208\u03A9 \u2225 f p \u2212 f q \u2225\
+    \ . Breiman's bias is established for r -small \u03C3 ( Section 1.1.2). Points\
+    \ stop interacting for \u03C3 smaller than r -small making kernel K-means fail.\
+    \ Larger \u03C3 reduce kernel K-means to the basic K-means removing an ability\
+    \ to separate the clusters non-linearly. In practice, there could be no intermediate\
+    \ good \u03C3 . In the example of Fig. 1c, any fixed \u03C3 leads to either Breiman's\
+    \ bias or to the lack of non-linear separability."
+  Figure 6 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_6.jpg
+  Figure 6 caption: Adaptive kernel (46) based on Riemannian distances (a) is equivalent
+    to fixed bandwidth kernel after some quasi-isometric (50) embedding into Euclidean
+    space (b), see Theorem 3, mapping ellipsoids (52) to balls (54) and modifying
+    data density as in (57).
+  Figure 7 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_7.jpg
+  Figure 7 caption: "(a)-(d) Breiman's bias for fixed bandwidth kernel (1). (f) Result\
+    \ for (48) with adaptive bandwidth (61) s.t. \u03C4(\u03C1)=const . (e) Density\
+    \ equalization: scatter plot of empirical densities in the originalnew feature\
+    \ spaces obtained via (11) and (50)."
+  Figure 8 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_8.jpg
+  Figure 8 caption: Representative interactive segmentation results. Regularized average
+    association ( AA ) with fixed bandwidth kernel (1) or adaptive KNN kernels (Example
+    3) is optimized as in [37]. Red boxes define initial clustering, green contours
+    define ground-truth clustering. Table 1 provides the error statistics. Breiman's
+    bias manifests itself by isolating the most frequent color from the rest.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Kernel_Clustering_Density_Biases_and_Solutions\figure_9.jpg
+  Figure 9 caption: "Normalized Cut with kernel (1) on the same data as in Fig. 1c,d.\
+    \ For small bandwidths, NC shows bias to small isolated subsets (a). As bandwidth\
+    \ increases, the first non-trivial solution overcoming this bias (b) requires\
+    \ bandwidth large enough so that problems with non-linear separation become visible.\
+    \ Indeed, for larger bandwidths, the node degrees become more uniform d p \u2248\
+    const reducing NC to average association, which is known to degenerate into basic\
+    \ K-means (see Section 4.1). Thus, any further increase of \u03C3 leads to solutions\
+    \ even worse than (b). In this simple example, no fixed \u03C3 leads NC to a good\
+    \ solution as in Fig. 1d. That good solution uses adaptive kernel from Section\
+    \ 4.3 making specific clustering criterion ( AA , NC , or AC ) irrelevant, see\
+    \ (68)."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Dmitrii Marin
+  Name of the last author: Yuri Boykov
+  Number of Figures: 11
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: 'Kernel Clustering: Density Biases and Solutions'
+  Publication Date: 2017-12-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Interactive Segmentation Errors
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2780166
+- Affiliation of the first author: school of information science and engineering,
+    chengdu university, chengdu, china
+  Affiliation of the last author: faculty of science and technology, university of
+    macau, macau, china
+  Figure 1 Link: articels_figures_by_rev_year\2017\Atomic_RepresentationBased_Classification_Theory_Algorithm_and_Applications\figure_1.jpg
+  Figure 1 caption: 'Geometric illustration of atomic circumradius R A ( D k ) with
+    A= A S and D k =[ d k 1 , d k 2 , d k 3 ] . Left: small R A ( D k ) ; Right: large
+    R A ( D k ) . It has small value if the points in D k are well spread out.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Atomic_RepresentationBased_Classification_Theory_Algorithm_and_Applications\figure_2.jpg
+  Figure 2 caption: Venn diagram to show the novelty of this paper compared with the
+    prior works [16] , [18], [19]. For the task of pattern classification, these works
+    are confined to the case of SRC using clean data (the blue part) while we establish
+    theoretical guarantees for the unified ARC framework (including SRC and BSRC)
+    for both clean and noisy data.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Atomic_RepresentationBased_Classification_Theory_Algorithm_and_Applications\figure_3.jpg
+  Figure 3 caption: "Error metrics for different values of the class coherence \u03BC\
+    \ A and density \u03C1 of data points per subspace. We randomly sample the same\
+    \ number \u03C1d of training samples from each subspace to form the training set.\
+    \ Each row shows the SP (Subspace-Preserving) error, its standard deviation, and\
+    \ the classification error of each method. From top to bottom: the results of\
+    \ SRC, BSRC, and CRC, respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Atomic_RepresentationBased_Classification_Theory_Algorithm_and_Applications\figure_4.jpg
+  Figure 4 caption: Average values and the standard deviation of the two error metrics
+    as functions of the magnitude of the Gaussian noise with the ambient dimension
+    m=50 and varying subspace dimension d . (a) m=50 and d=10 . (b) m=50 and d=15
+    . (c) m=50 and d=20 . Some standard deviation have too small value to be viewed
+    and the figures are better to be zoomed in to view the details.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Atomic_RepresentationBased_Classification_Theory_Algorithm_and_Applications\figure_5.jpg
+  Figure 5 caption: Average classification error and its standard deviation as functions
+    of the magnitude of various noises with the ambient dimension m=50 and each data
+    subspace dimension d=20 . (a) Chi-square noise. (b) Exponential noise. (c) Student's
+    t noise. (d) Uniform noise.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Atomic_RepresentationBased_Classification_Theory_Algorithm_and_Applications\figure_6.jpg
+  Figure 6 caption: Average values and the standard deviation of the two error metrics
+    as functions of the dimension of the intersection of subspaces corresponding to
+    different classes. (a) Subspace-preserving error. (b) Classification error.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Yulong Wang
+  Name of the last author: Jianjia Pan
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: 'Atomic Representation-Based Classification: Theory, Algorithm, and
+    Applications'
+  Publication Date: 2017-12-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Key Notations Used in This Paper
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The ARC View for Many Typical RC (Representation-Based Classification)
+      Algorithms
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Different Related Works
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2780094
+- Affiliation of the first author: department of computer science, university of massachusetts,
+    amherst, ma
+  Affiliation of the last author: department of computer science, university of massachusetts,
+    amherst, ma
+  Figure 1 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_1.jpg
+  Figure 1 caption: "a) a page image from the book \u201CTremendous Toronto\u201D\
+    \ from the Internet Archive [7], b) their provided ABBYY OCR output. Crossing\
+    \ out text leads to segmentation and therefore OCR errors."
+  Figure 10 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_10.jpg
+  Figure 10 caption: Intersection model's MAP score distribution on the TELUGU-1718
+    test set as a function of the query word length.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_2.jpg
+  Figure 2 caption: 'Word image examples: a), c), e) correctly retrieved by the proposed
+    framework but missed by the OCR text search baseline due to OCR errors as shown.
+    b), d), f) correctly recognized by ABBYY OCR engine and retrieved by OCR text
+    search baseline but missed by the proposed approach. The combined approach (image
+    + OCR text search) correctly retrieved all these word images.'
+  Figure 3 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_3.jpg
+  Figure 3 caption: Visual features are shown for an example word image. In a) small
+    dots correspond to the local interest points. Local patches extracted from interest
+    points are quantized into visual terms ( v 1 , v 2 ,... v 9 ) which are represented
+    with large big circles at the bottom. b) and c) shows an example image patch from
+    the word image and the corresponding SIFT features respectively. There are typically
+    around 100 visual terms per word image.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_4.jpg
+  Figure 4 caption: "The configuration of our MRF model for searching arbitrary text\
+    \ in document images. Red nodes (top) represents the visual terms v 1 , v 2 ,\u2026\
+    , v 9 extracted from the test image. Blue nodes (bottom) denotes the letter bigrams\
+    \ q 1 , q 2 ,\u2026, q (n+1)=7 of the example query word \u201Cmatter\u201D with\
+    \ n characters. The dependencies between random variables are shown with straight\
+    \ lines."
+  Figure 5 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_5.jpg
+  Figure 5 caption: Sliding a Gaussian window along the horizontal axis of the image
+    plane is illustrated for an example word image.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_6.jpg
+  Figure 6 caption: "Visual terms and their positions are shown for a sample image\
+    \ containing the letter bigram \u201CBa\u201D. Circles indicate the groups of\
+    \ visterms with the same visterm ID. The visual terms extracted from nearby locations\
+    \ have quite similar feature vectors, therefore they end up having the same visterm\
+    \ ID."
+  Figure 7 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_7.jpg
+  Figure 7 caption: The learning models illustrated for learning the probability distributions
+    of visterms for the letter bigram class qj from three training word images C1
+    , C2 and C3 . The visterm distribution of visterms for each training sample are
+    shown in a), b) and c). The horizontal and vertical axes represent the visterm
+    IDs vi and the corresponding probability respectively. Estimated visterm distributions
+    for the letter bigram class qj are shown using d) the Union and e) the Intersection
+    learning models.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_8.jpg
+  Figure 8 caption: Example text lines from the Ottoman dataset. The Ottoman script
+    is quite similar to the Arabic script with some additional letters and missing
+    diacritics.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Dependence_Models_for_Searching_Text_in_Document_Images\figure_9.jpg
+  Figure 9 caption: Distribution of query words as a function of their length is given
+    in a). MAP score distribution as a function of the query word length is given
+    for b) the proposed approach (Intersection model), c) OCR text search baseline,
+    d) Proposed approach + OCR, e) BLSTM baseline, and, f) (BLSTM+OCR) baselines.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ismet Zeki Yalniz
+  Name of the last author: R. Manmatha
+  Number of Figures: 14
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Dependence Models for Searching Text in Document Images
+  Publication Date: 2017-12-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Frequency Distribution of the Words in the English, Telugu
+      and Ottoman Books After Ignoring Punctuation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 MAP Scores for the Test Book Titled \u201CWuthering Heights\u201D"
+  Table 3 caption:
+    table_text: TABLE 3 Experimental Results for the Telugu Dataset (TELUGU-1716 for
+      Training, TELUGU-1718 for Testing)
+  Table 4 caption:
+    table_text: TABLE 4 Experimental Results for the Ottoman Dataset (Training on
+      OTTO-1, Test on OTTO-2) for Three Different Patch Size Selection Approaches
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2780108
+- Affiliation of the first author: logicdata, d.o.o., ulica kneza koclja 22, maribor,
+    slovenia
+  Affiliation of the last author: faculty of electrical engineering and computer science,
+    university of maribor, maribor, slovenia
+  Figure 1 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_1.jpg
+  Figure 1 caption: "An illustration of the wavelet transform of ovarian follicle:\
+    \ LoG-wavelet from ( 5) that \u201Cscans\u201D the follicle (gray sphere) and\
+    \ the resulting wavelet transform (the curve bellow the follicle)."
+  Figure 10 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_10.jpg
+  Figure 10 caption: 'An example of ultrasound ovarian volume: Recognized follicles
+    are depicted by lower opacity if their likelihood according to (16) is lower.
+    Top panels show transverse (a) and sagittal (b) views, bottom panels show coronal
+    (c) and 3D views (d). The red arrows point out the follicle having the highest
+    likelihood in this volume, the yellow arrows a non-follicular structure with only
+    14 percent of the maximum follicle likelihood.'
+  Figure 2 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_2.jpg
+  Figure 2 caption: "Modeling of gray levels in an ultrasound ovarian volume: an example\
+    \ of 2D cross-section through an ultrasound ovarian volume (subfigure a) and the\
+    \ Gaussian mixture, p(\u03B8) , approximating the entire volume gray levels by\
+    \ the model from (8) (subfigure b). Red vertical arrows in p(\u03B8) denote the\
+    \ components that define a threshold for best separation of on-follicle and off-follicle\
+    \ gray-level distributions."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_3.jpg
+  Figure 3 caption: 'An illustration of adaptive multiscale segmentation: A 2D cross-section
+    of ultrasound ovarian volume with green line segments detected as candidate follicle
+    segments by the proposed algorithm (a); the corresponding wavelet transform for
+    scales 1 to 5 (b, top), and detected segments (b, bottom). Thin lines designate
+    segments at scales 1 to 5, whereas the red dotted line denotes the final selection
+    of non-overlapped segments (b, bottom). These final segments determine the green
+    line segments, i.e., candidate follicle segments, in the left subfigure (a) that
+    depict the direction of the wavelet transform as well. The black solid line (b,
+    bottom) corresponds to the ultrasound volume gray-level profile along the current
+    wavelet-transform direction. This is to get the gist of how the proposed detection
+    operates and how precisely it extracts all candidate follicle segments even in
+    rather noisy images.'
+  Figure 4 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_4.jpg
+  Figure 4 caption: Sensitivity and specificity versus likelihood of detected regions
+    for two independent follicle annotations (subfigures a and b). Thick lines trace
+    the overall sensitivity and specificity (over all the volumes), and dashed lines
+    depict standard deviations of sensitivities and specificities obtained with individual
+    volumes at given likelihood thresholds.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_5.jpg
+  Figure 5 caption: ROC curves for consensual annotations (solid line), and the first
+    (dotted line) and second annotation (dashed line) separately.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_6.jpg
+  Figure 6 caption: Sensitivities and specificities of the proposed recognition algorithm
+    when computed according to consensual follicle annotations; results are depicted
+    versus follicular diameters and the overall assessment each obtained at the mean
+    likelihood threshold. Specificity at diameters higher than 13.9 mm could not be
+    determined because no non-follicular regions of such size were detected or missed
+    at any likelihood threshold in any volume.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_7.jpg
+  Figure 7 caption: 'Distribution of recognized follicles in 30 tested volumes: Bins
+    depict the number of recognized follicles with the same size (diameter of an equivalent
+    sphere) at the mean likelihood threshold.'
+  Figure 8 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_8.jpg
+  Figure 8 caption: "Volume ratios of recognized follicles and their \u03C1 1 \u03C1\
+    \ 2 metrics depicted versus follicular diameters at the mean likelihood threshold:\
+    \ Volume ratios were defined as the sum of volumes of annotated follicles recognized\
+    \ at the mean likelihood threshold and divided by the sum of volumes of all consensually\
+    \ annotated follicles; the \u03C1 1 \u03C1 2 metrics describes recognized follicles'\
+    \ volumes versus annotated follicles' volumes where value 1 indicates a perfect\
+    \ match of the two volumes."
+  Figure 9 Link: articels_figures_by_rev_year\2017\Directional_D_Wavelet_Transform_Based_on_Gaussian_Mixtures_for_the_Analysis_of_D\figure_9.jpg
+  Figure 9 caption: Mean Euclidian distances between surfaces and absolute differences
+    of radii of equivalent spheres of recognized and annotated follicles; results
+    are depicted versus follicular diameters and the overall assessment each obtained
+    at the mean likelihood threshold.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Boris Cigale
+  Name of the last author: Damjan Zazula
+  Number of Figures: 10
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: Directional 3D Wavelet Transform Based on Gaussian Mixtures for the
+    Analysis of 3D Ultrasound Ovarian Volumes
+  Publication Date: 2017-12-06 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2780248
+- Affiliation of the first author: rutgers university, new brunswick, nj
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of maryland, college park, md
+  Figure 1 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_1.jpg
+  Figure 1 caption: Our method can simultaneously detect the face, localize landmarks,
+    estimate the pose and recognize the gender. The blue boxes denote detected male
+    faces, while pink boxes denote female faces. The green dots provide the landmark
+    locations. Pose estimates for each face are shown on top of the boxes in the order
+    of roll, pitch and yaw.
+  Figure 10 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_10.jpg
+  Figure 10 caption: "Landmarks Localization cumulative error distribution curves\
+    \ on the AFLW dataset. The numbers in the legend are the average NME for the test\
+    \ images. The test samples are chosen such that samples with absolute yaw angles\
+    \ between [ 0 \u2218 , 30 \u2218 ], [ 30 \u2218 , 60 \u2218 ] and [ 60 \u2218\
+    \ , 90 \u2218 ] are 13 each."
+  Figure 2 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_2.jpg
+  Figure 2 caption: The architecture of the proposed HyperFace. The network is able
+    to classify a given image region as face or non-face, estimate the head pose,
+    locate face landmarks and recognize gender.
+  Figure 3 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_3.jpg
+  Figure 3 caption: Candidate face region (red box on left) obtained using Selective
+    Search gives a low score for face detection, while landmarks are correctly localized.
+    We generate a new face region (red box on right) using the landmarks information
+    and feed it through the network to increase the detection score.
+  Figure 4 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_4.jpg
+  Figure 4 caption: R-CNN-based network architectures for (a) Face Detection (R-CNNFace),
+    (b) Landmark Localization (R-CNNFiducial), (c) Pose Estimation (R-CNNPose), and
+    (d) Gender Recognition (R-CNNGender). The numbers on the left denote the kernel
+    size and the numbers on the right denote the cardinality of feature maps for a
+    given layer.
+  Figure 5 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_5.jpg
+  Figure 5 caption: Network architecture of multitaskFace. The numbers on the left
+    denote the kernel size and the numbers on the right denote the cardinality of
+    feature maps for a given layer.
+  Figure 6 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_6.jpg
+  Figure 6 caption: The architecture of the proposed HyperFace-Resnet (HF-ResNet).
+    ResNet-101 model is used as the backbone network, represented in color orange.
+    The new layers added are represented in color blue. The network is able to classify
+    a given image region as face or non-face, estimate the head pose, locate face
+    landmarks and recognize gender.
+  Figure 7 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_7.jpg
+  Figure 7 caption: Face Detection performance evaluation on (a) the AFW dataset,
+    (b) the PASCAL faces dataset. The numbers in the legend are the mean average precision
+    (mAP) for the corresponding datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_8.jpg
+  Figure 8 caption: Face Detection performance evaluation on the FDDB dataset. The
+    numbers in the legend are the mean average precision.
+  Figure 9 Link: articels_figures_by_rev_year\2017\HyperFace_A_Deep_MultiTask_Learning_Framework_for_Face_Detection_Landmark_Locali\figure_9.jpg
+  Figure 9 caption: Landmarks Localization cumulative error distribution curves on
+    the AFW dataset. The numbers in the legend are the fraction of testing faces that
+    have average error below (5 percent) of the face size.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.62
+  Name of the first author: Vishal M. Patel
+  Name of the last author: Rama Chellappa
+  Number of Figures: 15
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: 'HyperFace: A Deep Multi-Task Learning Framework for Face Detection,
+    Landmark Localization, Pose Estimation, and Gender Recognition'
+  Publication Date: 2017-12-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The NME(%) of Face Alignment Results on AFLW Test Set with
+      the Best Results Highlighted
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Normalized Mean Error (in %) of 68-Point Landmarks Localization
+      on IBUG [44] Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison (in %) of Gender Recognition on CelebA
+      and LFWA Datasets
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2781233
+- Affiliation of the first author: "pattern recognition lab, friedrich-alexander-universit\xE4\
+    t erlangen-n\xFCrnberg, erlangen, germany"
+  Affiliation of the last author: siemens healthineers, medical imaging technologies,
+    princeton, nj
+  Figure 1 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_1.jpg
+  Figure 1 caption: Schematic overview of the proposed machine learning-based paradigm
+    for anatomical landmark detection. The detection problem is reformulated to learning
+    a navigation strategy, which exploits the scale-space representation of a given
+    image. In other words, an artificial agent learns how to search for an anatomical
+    structure.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_2.jpg
+  Figure 2 caption: "Schematic visualization of the decision-based search model in\
+    \ state s . Six possible actions a , allow for voxel-wise movement in the volumetric\
+    \ image space. In this synthetic example the optimal decision with respect to\
+    \ the cumulative future reward is to go left, to state s \u2032 . The dashed red\
+    \ line represents the optimal search-trajectory to the anatomical landmark, while\
+    \ the circles represent neighboring voxels."
+  Figure 3 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_3.jpg
+  Figure 3 caption: "Visualization of the differences between exhaustive scanning\
+    \ and our proposed method, which learns the search-process. Solutions based on\
+    \ exhaustive scanning, e.g., [1], [10], [18], typically test all hypotheses extracted\
+    \ from the volumetric input and then apply a form of aggregationclustering of\
+    \ high-probability candidates to obtain a final result. In contrast, our approach\
+    \ learns not only the appearance of the anatomy but also the strategy of how to\
+    \ find a target anatomical landmark. The search starts at a given point p \u20D7\
+    \ 0 and defines a 3D trajectory in image space, visualized as a white curve, converging\
+    \ to the sought anatomical landmark location (here the right kidney)."
+  Figure 4 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_4.jpg
+  Figure 4 caption: "Visualization of the detection pipeline for the right kidney.\
+    \ The search starts on the coarsest scale level L d (2) . On each scale L d (k),k\u2265\
+    0 , the agent navigates until convergence. This convergence point (see definition\
+    \ in Section 3.4.1) is used as a starting point for the subsequent scale level\
+    \ L d (k\u22121) (red dashed arrows indicate the change of scale). The process\
+    \ continues analogously on the following scale levels, with the convergence point\
+    \ on the finest scale marked as the detection result. We visualize with white\
+    \ arrows the optimal 3D search trajectories navigated at each scale. Along the\
+    \ trajectories we visualize the sequence of states, represented as 3D boxes of\
+    \ image context, centered at the location of the agent. The orange frame represents\
+    \ the constrained region sampled and explored during training on each scale. On\
+    \ the coarsest scale, this region always covers the entire 3D volume, with decreasing\
+    \ range on finer scales."
+  Figure 5 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_5.jpg
+  Figure 5 caption: Visualization of the search-path followed to find the left kidney
+    in a thorax CT scan, which does not capture the left kidney (marked by an x).
+    The trajectory leaves the image space, signaling that the organ is missing from
+    the field-of-view. On the right we show several slices of other CT scans from
+    the test set, which do not capture the left kidney. The image on the left is a
+    slice from a CT scan of the legs. On the upper right we show a slice of a thorax
+    CT scan, acquired for lung cancer screening. The lower right slice is from a cardiac
+    CT scan with contrast.
+  Figure 6 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_6.jpg
+  Figure 6 caption: 'Visualization of all anatomical landmarks used for evaluation.
+    On the left we visualize a section of a whole body 3D-CT scan including neck,
+    thorax, abdomen and pelvis. On the right we highlight the different anatomical
+    structures and mark the individual landmark points: bronchial bifurcation (1),
+    bifurcation of left subclavian artery (2), bifurcation of left common carotid
+    artery and left subclavian artery (3), bifurcation of left common carotid artery
+    and brachiocephalic artery (4), center of right kidney (5), center of left kidney
+    (6), front corner of right hip-bone (7), front corner of left hip-bone (8).'
+  Figure 7 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_7.jpg
+  Figure 7 caption: "Visualization of the mean squared error in the Bellman equation\
+    \ on each scale level during training of the right hip-bone landmark. The plot\
+    \ also visualizes the progression of the \u03F5 variable during training\u2014\
+    this value controls the randomness in the exploration and decays from 1 to 0.05.\
+    \ Note that \u03F5 does not measure an error."
+  Figure 8 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_8.jpg
+  Figure 8 caption: Scatter plot showing the correlation between scan size and detection
+    speed for all considered methods on the right hip-bone landmark. Note that solutions
+    based on scanning show a linear correlation between volume size and execution
+    time. We remind the reader that for technical reasons the SADNN and Overfeat solutions
+    are evaluated at a finest isotropic resolution of 4 mm while the other methods
+    are evaluated at 2 mm. Our approach not only improves the average speed, but also
+    scales sublinearly with respect to the size of the input volume.
+  Figure 9 Link: articels_figures_by_rev_year\2017\MultiScale_Deep_Reinforcement_Learning_for_RealTime_DLandmark_Detection_in_CT_Sc\figure_9.jpg
+  Figure 9 caption: Comparison of the four best performing solutions (regarding accuracy
+    and failures). For each of the considered anatomical landmarks our method reduces
+    the number of failed detections to zero and improves the average and median error
+    by around 20-30 percent. Note that the plot displays the distribution of detection
+    errors that are smaller than 70 mm and does not show very large outliers above
+    this value (noted in Table 2).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.93
+  Name of the first author: Florin-Cristian Ghesu
+  Name of the last author: Dorin Comaniciu
+  Number of Figures: 9
+  Number of Tables: 4
+  Number of authors: 7
+  Paper title: Multi-Scale Deep Reinforcement Learning for Real-Time 3D-Landmark Detection
+    in CT Scans
+  Publication Date: 2017-12-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Values of All Meta-Parameters Required to Train Our System
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Table Showing Results on Different Anatomical Landmarks
+  Table 3 caption:
+    table_text: TABLE 3 Table Showing a General Comparison Against Different Solutions
+      for Anatomical Landmark Detection in Large High-Resolution Scans
+  Table 4 caption:
+    table_text: TABLE 4 Table Showing the Runtime Performance on the Example of the
+      Right Hip-Bone Landmark
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2782687
+- Affiliation of the first author: robotics institute, carnegie mellon university,
+    pittsburgh, pa
+  Affiliation of the last author: robotics institute, carnegie mellon university,
+    pittsburgh, pa
+  Figure 1 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_1.jpg
+  Figure 1 caption: (Left) 480 unique VGA views capturing a social interaction within
+    the Panoptic Studio. (Right) HD example views showing frequently occurring postures
+    that carry rich social signals, with 3D body pose automatically annotated by our
+    method.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_10.jpg
+  Figure 10 caption: Example failure cases. For each column, the first row shows the
+    projection of reconstructed 3D skeletons on a view where the red colored parts
+    are manually annotated outliers. The second row shows the 2D pose detection results.
+    (Left) The hands are severely occluded and only visible from few cameras where
+    they are too close to be detected by 2D pose detector. (Center) The leftright
+    legs are confused in performing 2D pose detection, which causes failures in our
+    3D inference. (Right) The toddler is not detected by the pose detector, since
+    he is severely occluded.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_2.jpg
+  Figure 2 caption: The studio structure. (Top) The exterior of the dome with the
+    equipment mounted on the surface. (Middle) The interior of the dome. VGA cameras
+    are shown as red circles, HD cameras as blue circles, Kinects as cyan rectangles,
+    and projectors as green rectangles. (Bottom left) The panels are designed to ensure
+    interchangeability. (Bottom right) Optimized camera positions to ensure uniform
+    angles with respect to the dome center between each camera and all its neighbors
+    (e.g., Camera i is a neighbor of Camera j ).
+  Figure 3 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_3.jpg
+  Figure 3 caption: Modularized system architecture. The studio houses 480 VGA cameras
+    synchronized to a central clock system and controlled by a master node. 31 synchronized
+    HD cameras are also installed with another clock system. The VGA clock and HD
+    clock are temporally aligned by recording them as a stereo signal. 10 RGB-D sensors
+    are also located in the studio. All the sensors are calibrated to the same coordinate
+    system.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_4.jpg
+  Figure 4 caption: Several levels of proposals generated by our method. (a) Images
+    from upto 480 views. (b) Per-joint detection score maps. (c) Node proposals generated
+    after non-maxima suppression. (d) Part proposals by connecting a pair of node
+    proposals. (e) Skeletal proposals generated by piecing together part proposals.
+    (f) Labeled 3D patch trajectory stream showing associations with each part trajectory.
+    In (c-f), color means joint or part labels shown below the figure.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_5.jpg
+  Figure 5 caption: 2D pose detections and score maps generated by the method of [42].
+    (Column 1) Example views out of 480 views with proposals by the pose detector
+    (Column 2-7) Heat maps for each node on each view. Note that the body pose detector
+    distinguishes left-right limbs.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_6.jpg
+  Figure 6 caption: Computed scores for node proposals and part proposals. The color
+    encodes scores.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_7.jpg
+  Figure 7 caption: Example scenes of social game sequences. The reconstructed 3D
+    skeletons from the 480 VGA views are projected on novel HD views.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_8.jpg
+  Figure 8 caption: Performance evaluation using Probability of Correct Keypoint (PCK)
+    metric for varying number and type of cameras on 160422 ultimatum1. We use the
+    result of 480 VGA cameras after manually excluding outliers as ground truth. The
+    X -axis of each graph represents thresholds, and the Y -axis represents accuracy
+    by the thresholds. Each graph is generated for scenes with a different number
+    of people. The results demonstrate that more views (rather than higher resolution)
+    are beneficial to improve accuracy, and the distinction is more noticeable if
+    the scene contains more people.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Panoptic_Studio_A_Massively_Multiview_System_for_Social_Interaction_Capture\figure_9.jpg
+  Figure 9 caption: Refinement result by the Stage 2 of our method on the 160226 mafia2
+    sequence. The most erroneous node is selected. The graph represents the X coordinate
+    of the node across frames after the Stage 1 method (blue) and Stage 2 method (red).
+    The gray regions represent the frames where the part is missing in the stage 1
+    output. They are recovered via the temporal propagation in the result of Stage
+    2.
+  First author gender probability: 0.94
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Hanbyul Joo
+  Name of the last author: Yaser Sheikh
+  Number of Figures: 11
+  Number of Tables: 4
+  Number of authors: 13
+  Paper title: 'Panoptic Studio: A Massively Multiview System for Social Interaction
+    Capture'
+  Publication Date: 2017-12-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Notation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Processing Time for One Minute of Data
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Evaluation of the Accuracy of Our Method on the
+      160422 ultimatum1 Sequence
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Comparison to [56] on the 150129 007Bang Sequence
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2782743
+- Affiliation of the first author: "inria grenoble rh\xF4ne-alpes and with universit\xE9\
+    \ grenoble alpes, montbonnot, saint-martin, france"
+  Affiliation of the last author: "inria grenoble rh\xF4ne-alpes and with universit\xE9\
+    \ grenoble alpes, montbonnot, saint-martin, france"
+  Figure 1 Link: articels_figures_by_rev_year\2017\Tracking_Gaze_and_Visual_Focus_of_Attention_of_People_Involved_in_Social_Interac\figure_1.jpg
+  Figure 1 caption: "This figure illustrates the principle of our method and displays\
+    \ the observed and latent variables associated with a person (left-person indexed\
+    \ by i ). The two images were grabbed with a camera mounted onto the head of a\
+    \ robot and they correspond to frames t\u2212n (left image) and t (right image),\
+    \ respectively. The following variables are displayed: head orientation (red arrow),\
+    \ H i t\u2212n , H i t (observed variables), as well as the latent variables estimated\
+    \ with the proposed method, namely gaze direction (green arrow), G i t\u2212n\
+    \ , G i t , VFOA, V i t\u2212n , V i t , and head reference orientation (black\
+    \ arrow), R i t\u2212n , R i t (that coincides with upper-body orientation). In\
+    \ this example left-person gazes towards the robot at t\u2212n , then turns her\
+    \ head to eventually gaze towards right-person at t , hence her VFOA switches\
+    \ from V i t\u2212n =robot to V i t =right\u2212person ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Tracking_Gaze_and_Visual_Focus_of_Attention_of_People_Involved_in_Social_Interac\figure_2.jpg
+  Figure 2 caption: 'Graphical representation showing the dependencies between the
+    variables of the proposed Bayesian dynamic model. The discrete latent variables
+    (visual focus of attention) are shown with squares while continuous variables
+    are shown with circles: observed variables (head pose and target locations) are
+    shown with shaded circles and latent variables (gaze and reference) are shown
+    with white circles.'
+  Figure 3 Link: articels_figures_by_rev_year\2017\Tracking_Gaze_and_Visual_Focus_of_Attention_of_People_Involved_in_Social_Interac\figure_3.jpg
+  Figure 3 caption: "The Vernissage setup. Left: Global view of an \u201Cexhibition\u201D\
+    \ showing wall paintings, two participants, i.e., left-p and right-p, and the\
+    \ NAO robot. Right: Top view of the room showing the Vernissage layout."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Tracking_Gaze_and_Visual_Focus_of_Attention_of_People_Involved_in_Social_Interac\figure_4.jpg
+  Figure 4 caption: 'Confusion matrices for the Vicon data. Left: [26]. Right: Proposed
+    algorithm. Row-wise: ground-truth VFOAs. Column-wise: estimated VFOAs. Diagonal
+    terms represent the recall.'
+  Figure 5 Link: articels_figures_by_rev_year\2017\Tracking_Gaze_and_Visual_Focus_of_Attention_of_People_Involved_in_Social_Interac\figure_5.jpg
+  Figure 5 caption: "Results obtained with the proposed method on Vicon data. Gaze\
+    \ directions are shown with green arrows, head reference directions with dark-grey\
+    \ arrows and observed head directions with red arrows. The ground-truth VFOA is\
+    \ shown with a black circle. The top row displays the image of the robot-head\
+    \ camera. Top views of the room show results obtained for the left-p (middle row)\
+    \ and for the right-p (bottom row). In the last example the left-p gazes at \u201C\
+    nothing\u201D."
+  Figure 6 Link: articels_figures_by_rev_year\2017\Tracking_Gaze_and_Visual_Focus_of_Attention_of_People_Involved_in_Social_Interac\figure_6.jpg
+  Figure 6 caption: 'Confusion matrices for the RGB data. Left: [26]. Right: Proposed
+    algorithm. Row-wise: ground-truth VFOAs. Column-wise: estimated VFOAs. Diagonal
+    terms represent the recall.'
+  Figure 7 Link: articels_figures_by_rev_year\2017\Tracking_Gaze_and_Visual_Focus_of_Attention_of_People_Involved_in_Social_Interac\figure_7.jpg
+  Figure 7 caption: Results obtained with the proposed method on RGB data. Gaze directions
+    are shown with green arrows, head reference directions with dark-grey arrows and
+    observed head directions with red arrows. The ground-truth VFOA is shown with
+    a black circle. The top row displays the image of the robot-head camera. Top views
+    of the room show results obtained for the left person (left-p, middle row) and
+    the right person (right-p, bottom row).
+  Figure 8 Link: articels_figures_by_rev_year\2017\Tracking_Gaze_and_Visual_Focus_of_Attention_of_People_Involved_in_Social_Interac\figure_8.jpg
+  Figure 8 caption: This figure shows some results obtained with the LAEO dataset.
+    The top row shows results obtained with coarse head orientation and the bottom
+    row shows results obtained with fine head orientation. Head orientations are shown
+    with red arrows. The algorithm infers gaze directions (green arrows) and VFOAs
+    (blue circles). People looking at each others are shown with a dashed blue line.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: "Benoit Mass\xE9"
+  Name of the last author: Radu Horaud
+  Number of Figures: 8
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Tracking Gaze and Visual Focus of Attention of People Involved in Social
+    Interaction
+  Publication Date: 2017-12-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 FRR Scores of the Estimated VFOAs for the Vicon Data for the
+      Left and Right Persons (Left-p and Right-p)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Mean Error for Head Pose Estimations from RGB Data, for the
+      Left Person (Left-p) and the Right Person (Right-p)
+  Table 3 caption:
+    table_text: TABLE 3 FRR Scores of the Estimated VFOAs Obtained with [26] and with
+      the Proposed Method for the RGB Data
+  Table 4 caption:
+    table_text: TABLE 4 Mean FRR Scores Obtained with [26], with [31] and with the
+      Proposed Method
+  Table 5 caption:
+    table_text: TABLE 5 Average Shot Recognition Rate (SRR) Obtained with [26] and
+      with the Proposed Method
+  Table 6 caption:
+    table_text: TABLE 6 Average Precision (AP) Obtained with [4], with Ba and Odobez
+      [26] and with the Proposed Method
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2782819
+- Affiliation of the first author: eecs department, university of california berkeley,
+    berkeley, ca
+  Affiliation of the last author: department of engineering science, university of
+    oxford, oxford, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_1.jpg
+  Figure 1 caption: The 3D shape attributes investigated in this paper, and an illustration
+    of each from our training set. Additional sample annotations are shown in Fig.
+    4.
+  Figure 10 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_10.jpg
+  Figure 10 caption: Test images sampled at the top, 95th, 5th percentiles and lowest
+    percentile with respect to three attributes.
+  Figure 2 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_2.jpg
+  Figure 2 caption: The dataset consists of 143K images of sculptures that were gathered
+    from Flickr and Google images. A representative sample is shown on the left. Note
+    the great variety in shape, material, and style. Our data has structure in terms
+    of artist, work, and viewpoint cluster (shown numbered on the right). Each is
+    important for investigating 3D shape attributes.
+  Figure 3 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_3.jpg
+  Figure 3 caption: (a) Frequency of each attribute (i.e., positives labeled); (b)
+    Correlation between attributes.
+  Figure 4 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_4.jpg
+  Figure 4 caption: Sample positive and negative annotations from the dataset for
+    the planar, has-holes, and empty attributes.
+  Figure 5 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_5.jpg
+  Figure 5 caption: The multi-task network architecture, based on VGG-M. After shared
+    layers, the network branches into layers specialized for attribute classification
+    and shape embedding.
+  Figure 6 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_6.jpg
+  Figure 6 caption: Plots of predicted attributes versus parameters. For each stimulus,
+    we show a plot of the mean predicted shape attribute against the relevant parameter,
+    sample images at the 10th, 50th, and 90th percentiles of the parameter, and give
+    the rank correlation. Red error bars indicate the standard deviation after centering
+    the per-background responses at zero.
+  Figure 7 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_7.jpg
+  Figure 7 caption: Examining the role of contour and shading cues in the output of
+    the network. The contour and shading changes from sphere to cube going along the
+    horizontal and vertical directions respectively. The network perceives stimuli
+    closer to the bottom right as more planar.
+  Figure 8 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_8.jpg
+  Figure 8 caption: Texture variations and their effect on the perception of the Lp
+    stimulus. Marble-like texture changes the interpretation, although changing shape
+    also changes the prediction irrespective of texture.
+  Figure 9 Link: articels_figures_by_rev_year\2017\From_Images_to_D_Shape_Attributes\figure_9.jpg
+  Figure 9 caption: Thresholded predictions for all attributes on test images. The
+    system has never seen these sculptures or ones by the artists who made them, but
+    generalizes successfully.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: David F. Fouhey
+  Name of the last author: Andrew Zisserman
+  Number of Figures: 15
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: From Images to 3D Shape Attributes
+  Publication Date: 2017-12-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Data Statistics at Each Stage and the TrainvalTest Splits
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 How Has Planar Surfaces Changes as Contour and Shading Vary
+      or Are Held Constant as a Sphere or Cube
+  Table 3 caption:
+    table_text: TABLE 3 Area Under the ROC Curve
+  Table 4 caption:
+    table_text: TABLE 4 AUROC for the Mental-Rotation Task
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2782810
+- Affiliation of the first author: department of computing, imperial college london,
+    london, united kingdom
+  Affiliation of the last author: department of computing, imperial college london,
+    london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_1.jpg
+  Figure 1 caption: Visualisation of the unsupervised multilinear decomposition and
+    its applications. A sample vector x i is assumed to be generated by a common multilinear
+    structure B and sample specific weights e.g., l i , e i and c i . We assume the
+    weights correspond to variations in the data ( l i to lighting, e i to expression
+    and c i to identity). By varying e i only, we expect to see changes in expression
+    but no change in identity or lighting. Similarly, if we vary c i only we expect
+    the expression and lighting to remain the same but the identities to change. Additionally
+    if we remove the lighting l i , we expect the remaining information to correspond
+    to the 3D shape of the object.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_10.jpg
+  Figure 10 caption: Ear reconstructions. Images from the Ear dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_2.jpg
+  Figure 2 caption: Visualisation of the Multi-PIE [13] dataset. Collecting data where
+    every person is present in all the lighting and expression variations is an expensive
+    process that does not scale well.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_3.jpg
+  Figure 3 caption: The 3 first expression bases from the decomposition of the synthetic
+    3D data.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_4.jpg
+  Figure 4 caption: Sample data of the synthetic 3D dataset. Images 1 to 3 from the
+    left show different identities and images 4 to 6 different expressions.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_5.jpg
+  Figure 5 caption: Neutralising expressions.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_6.jpg
+  Figure 6 caption: Expression transfer.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_7.jpg
+  Figure 7 caption: 3D Reconstruction on Multi-PIE [13] dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_8.jpg
+  Figure 8 caption: Expression transfer on Multi-PIE. As our decomposition reduces
+    the dimensionality of the images in the dataset, we show the images with the transferred
+    expression next to the reconstructed image of the ground truth from the dataset.
+    Given the decomposition, the reconstruction represents the result of a plausible
+    expression transfer.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Disentangling_the_Modes_of_Variation_in_Unlabelled_Data\figure_9.jpg
+  Figure 9 caption: Comparison of the robust and non-robust decomposition. Images
+    from the HELEN [43] dataset.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mengjiao Wang
+  Name of the last author: Stefanos P. Zafeiriou
+  Number of Figures: 16
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Disentangling the Modes of Variation in Unlabelled Data
+  Publication Date: 2017-12-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Prediction Accuracy on Synthetic Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Angular Error for our Method with and without Robustness on
+      Photoface Containing 1 Percent Salt&Pepper Noise
+  Table 3 caption:
+    table_text: TABLE 3 Angular Error for our Method with and without Low-Rank Constraints
+      on Videos Containing Baboon Patch Occlusions
+  Table 4 caption:
+    table_text: TABLE 4 Expression Classification Results Using Unsupervised and Semi-Supervised
+      Decomposition
+  Table 5 caption:
+    table_text: TABLE 5 Angular Error for the Various Surface Normal Estimation Methods
+      on the Photoface [49] Dataset
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2783940
+- Affiliation of the first author: school of data and computer science, sun yat-sen
+    university (sysu), guangzhou, guangdong, china
+  Affiliation of the last author: visual computing center, king abdullah university
+    of science and technology (kaust), thuwal, saudi arabia
+  Figure 1 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_1.jpg"
+  Figure 1 caption: "An example of an image recovery result using our proposed \u2113\
+    \ 0 TV-PADMM method. Left column: corrupted image. Middle column: recovered image.\
+    \ Right column: absolute residual between these two images."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_2.jpg"
+  Figure 2 caption: Asymptotic behavior for optimizing (6) to denoise and deblur the
+    corrupted 'cameraman' image. We plot the value of the objective function (solid
+    blue line) and the SNR value (dashed red line) against the number of optimization
+    iterations. At specific iterations (i.e., 1, 10, 20, 40, 80, and 160), we also
+    show the denoised and deblurred image. Clearly, the corrupting noise is being
+    effectively removed throughout the optimization process.
+  Figure 3 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_3.jpg"
+  Figure 3 caption: "Image denoising with varying the tuning parameter \u03BB in (6)\
+    \ on 'cameraman' image. First row: Noise level = 50. Second row: Noise level =\
+    \ 70 percent. Third row: Noise level = 90 percent."
+  Figure 4 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_4.jpg"
+  Figure 4 caption: "Image deblurring with varying the tuning parameter \u03BB in\
+    \ (6) on 'cameraman' image. First row: Noise level = 50 percent. Second row: Noise\
+    \ level = 70 percent. Third row: Noise level = 90 percent."
+  Figure 5 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_5.jpg"
+  Figure 5 caption: 'Image deblurring with varying the radius parameter r in (18).
+    First row: ''Cameraman'' image. Second row: ''Barbara'' image.'
+  Figure 6 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_6.jpg"
+  Figure 6 caption: Sample images in scratched image denoising problems.
+  Figure 7 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_7.jpg"
+  Figure 7 caption: "Recovered images in scratched image denoising problems. First\
+    \ column: \u2113 02 TV -AOP, second column: \u2113 0 TV -PDA, third column: \u2113\
+    \ 0 TV -PADMM."
+  Figure 8 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_8.jpg"
+  Figure 8 caption: "Absolute residual (between scratched image and recovered image)\
+    \ in scratched image denoising problems. First column: \u2113 02 TV -AOP, second\
+    \ column: \u2113 0 TV -PDA, third column: \u2113 0 TV -PADMM."
+  Figure 9 Link: "articels_figures_by_rev_year\\2017\\\u2113TV_A_Sparse_Optimization_Method_for_Impulse_Noise_Image_Restoration\\\
+    figure_9.jpg"
+  Figure 9 caption: Colored image denoising problems.
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Ganzhao Yuan
+  Name of the last author: Bernard Ghanem
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: "\u2113\n0\nTV: A Sparse Optimization Method for Impulse Noise Image\
+    \ Restoration"
+  Publication Date: 2017-12-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Data Fidelity Models
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Regularization Models
+  Table 3 caption:
+    table_text: TABLE 3 General Denoising Problems
+  Table 4 caption:
+    table_text: TABLE 4 General Deblurring Problems
+  Table 5 caption:
+    table_text: TABLE 5 CPU Time (in Seconds) Comparisons
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2783936
+- Affiliation of the first author: onfido, london, united kingdom
+  Affiliation of the last author: department of computing, imperial college london,
+    london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_1.jpg
+  Figure 1 caption: Procedure followed to generate data contaminated by sparse, non-Gaussian
+    noise.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_10.jpg
+  Figure 10 caption: Progressed faces produced by the proposed RJIVE method.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_2.jpg
+  Figure 2 caption: Joint, individual components, and error matrices produced by the
+    compared JIVE and RJIVE methods.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_3.jpg
+  Figure 3 caption: Mean average correlation achieved by JIVE and BKRRR methods on
+    (a) MPIE, (b) CK+, and (c) ITW databases.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_4.jpg
+  Figure 4 caption: Synthesized expressions of MPIE's subject (a) '014' and (b) '015'
+    produced by the BKRRR and RJIVE methods.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_5.jpg
+  Figure 5 caption: Joint, individual components and error matrices produced by the
+    compared JIVE and RJIVE methods.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_6.jpg
+  Figure 6 caption: Synthesized 'in-the-wild' expressions produced by the RJIVE method.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_7.jpg
+  Figure 7 caption: Progressed faces produced by the compared methods on the FG-NET
+    database.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_8.jpg
+  Figure 8 caption: Progressed faces produced by the compared methods on the FG-NET
+    database.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Recovering_Joint_and_Individual_Components_in_Facial_Data\figure_9.jpg
+  Figure 9 caption: Comparisons between the IAAP, DARB, and RJIVE methods.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Christos Sagonas
+  Name of the last author: Stefanos Zafeiriou
+  Number of Figures: 15
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Recovering Joint and Individual Components in Facial Data
+  Publication Date: 2017-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Parameters Used in the Conducted Experiments
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Quantitative Recovering Results Produced by JIVE [12], COBE\
+      \ [13], RCICA [14], \u2113 1 -RJIVE (7), and NN- \u2113 1 -RJIVE (9) Under Gaussian\
+      \ and Gross Non-Gaussian Noise"
+  Table 3 caption:
+    table_text: TABLE 3 Mean AUC and Accuracy on the Proposed Protocols
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2784421
+- Affiliation of the first author: department of electrical and computer engineering
+    and asri, seoul national university, 1 gwanak-ro, gwanak-gu, seoul, korea
+  Affiliation of the last author: department of electrical and computer engineering
+    and asri, seoul national university, 1 gwanak-ro, gwanak-gu, seoul, korea
+  Figure 1 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_1.jpg
+  Figure 1 caption: A sample image acquired from a vehicle. Head poses and body orientations
+    are important cues to predict pedestrian movements. For intelligent vehicles,
+    an estimation algorithm needs to be fast, accurate, and robust to low-resolution
+    images degraded by motion blur and noise.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_10.jpg
+  Figure 10 caption: Accuracy of the CRPnet on the HIIT dataset with different compression
+    layer setting. For this experiment, we use 100 filters and the compressed dimension
+    is fixed to 50. The variance of the result is obtained after ten independent runs.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_2.jpg
+  Figure 2 caption: Proposed CRPforest algorithm. It is equipped with a CRPnet at
+    each node of a tree as a split function. The network is capable of learning discriminative
+    filters at each rectangular region.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_3.jpg
+  Figure 3 caption: Proposed CRPnet algorithm for head and body orientation estimation.
+    Three filters and a network with a small number of nodes are shown as an illustrative
+    example.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_4.jpg
+  Figure 4 caption: Examples of trained filters on the HIIT dataset. Each filter is
+    displayed repeatedly in the average image of each head orientation class to help
+    understand its role for classification. The order of orientation classes is left,
+    front-left, front, front-right, right, and rear. The filter in the red box, which
+    resembles a face looking at front left, is used in Fig. 5 to compare responses
+    of each orientation class as an example.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_5.jpg
+  Figure 5 caption: Responses of a filter on the HIIT test dataset. The filter used
+    in this experiment is the one in the red box of Fig. 4. It shows that this filter
+    is able to distinguish most of the right and front-right orientations from other
+    classes.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_6.jpg
+  Figure 6 caption: An example of the objective and error curves of the CRPnet.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_7.jpg
+  Figure 7 caption: Examples of poorly trained filters after a few deterministic splits
+    in a tree.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_8.jpg
+  Figure 8 caption: Illustration of a tree that has a stochastic split function. The
+    sum of probabilities to reach child nodes is one, e.g., p1+p2=1 .
+  Figure 9 Link: articels_figures_by_rev_year\2017\Head_and_Body_Orientation_Estimation_Using_Convolutional_Random_Projection_Fores\figure_9.jpg
+  Figure 9 caption: Sample images of the evaluation datasets.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Donghoon Lee
+  Name of the last author: Songhwai Oh
+  Number of Figures: 19
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Head and Body Orientation Estimation Using Convolutional Random Projection
+    Forests
+  Publication Date: 2017-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Classification Accuracy on the HIIT, QMUL, and QMULB Datasets
+      at Different Image Sizes
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Accuracy on the HOC Dataset at Different Image
+      Sizes
+  Table 3 caption:
+    table_text: TABLE 3 Regression Accuracy on the Multi-PIE Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Regression Accuracy on the FacePix Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2784424
+- Affiliation of the first author: amazon a9 visual search, palo alto, ca
+  Affiliation of the last author: box inc., redwood city, ca
+  Figure 1 Link: articels_figures_by_rev_year\2017\CROification_Accurate_Kernel_Classification_with_the_Efficiency_of_Sparse_Linear\figure_1.jpg
+  Figure 1 caption: "Comparison of the two sides of Eq. (33) for \u03B3=\u22122.42617\
+    \ ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\CROification_Accurate_Kernel_Classification_with_the_Efficiency_of_Sparse_Linear\figure_2.jpg
+  Figure 2 caption: "Comparison of the two sides of Eq. (40) for \u03B3=\u22122.42617\
+    \ ."
+  Figure 3 Link: articels_figures_by_rev_year\2017\CROification_Accurate_Kernel_Classification_with_the_Efficiency_of_Sparse_Linear\figure_3.jpg
+  Figure 3 caption: Average trans. time with increasing input space dimensionality
+    d .
+  Figure 4 Link: articels_figures_by_rev_year\2017\CROification_Accurate_Kernel_Classification_with_the_Efficiency_of_Sparse_Linear\figure_4.jpg
+  Figure 4 caption: Total transformation time with increasing input size n .
+  Figure 5 Link: articels_figures_by_rev_year\2017\CROification_Accurate_Kernel_Classification_with_the_Efficiency_of_Sparse_Linear\figure_5.jpg
+  Figure 5 caption: Average trans. time as a func. of feature space dimensionality
+    D .
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.91
+  Name of the first author: Mehran Kafai
+  Name of the last author: Kave Eshghi
+  Number of Figures: 5
+  Number of Tables: 12
+  Number of authors: 2
+  Paper title: 'CROification: Accurate Kernel Classification with the Efficiency of
+    Sparse Linear SVM'
+  Publication Date: 2017-12-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Procedure for Computing the CRO Hash Set for Given Input Vector
+      A
+  Table 10 caption:
+    table_text: TABLE 10 Classification Results on TIMIT Dataset for Different Network
+      Topologies
+  Table 2 caption:
+    table_text: TABLE 2 Python Code for the CROify Function Using the Discrete Cosine
+      Transform
+  Table 3 caption:
+    table_text: TABLE 3 Dataset Information
+  Table 4 caption:
+    table_text: TABLE 4 Classification Results on MNIST Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Classification Prediction Accuracy and Processing Time Comparison
+  Table 6 caption:
+    table_text: TABLE 6 Processing Time Breakdown for CROification
+  Table 7 caption:
+    table_text: TABLE 7 MNIST Cross-Validation Accuracy with CROification
+  Table 8 caption:
+    table_text: TABLE 8 Parameter Values for Each Dataset
+  Table 9 caption:
+    table_text: TABLE 9 TIMIT Corpus Summary
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2785313
+- Affiliation of the first author: dept of computer science, university college london,
+    london, united kingdom
+  Affiliation of the last author: dept of computer science, university college london,
+    london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_1.jpg
+  Figure 1 caption: "The need for an atlas structure. a) A visual system should be\
+    \ able to assess the similarity of the two objects (faces) indicated despite their\
+    \ difference in position, extent and visible detail. b) For that it needs to isolate\
+    \ and compare sub-regions of the image at different levels of scale. c) These\
+    \ sub-regions at different scales are related within the Scale Space of the image\
+    \ (x is image position, s is scale). The views of a region at different scales\
+    \ form slices of an atlas. The two faces are similar in the sense that the atlas\
+    \ of one is similar to a coarse segment of the atlas of the other (see Section\
+    \ 6) i.e., C is similar to C \u2032 and M to M \u2032 ."
+  Figure 10 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_10.jpg
+  Figure 10 caption: 'Examples of the s-j-aperture descriptor. The top example is
+    from the ''easy'' positive pair set, the bottom from the ''hard''. Left column:
+    patches overlaid with a red circle indicating the measured aperture, with radius
+    sqrt 2 times the filter scale; and green ellipses indicating the steered aperture.
+    2nd column: the view of the patch through the measured aperture, computed from
+    the measured jet. 3rd column: view through the steered aperture, computed from
+    the steered jet (which was computed from the measured jet). Note how the steered
+    views, within a pair, are more similar than the measured views. Right column:
+    image-horizontal cross-sections of the scale space extent of the atlases arising
+    from the measured and steered apertures. Vertical axis is log-scale; the bottom
+    line is pixel scale, the next line a blur of sigma = 1 , then sigma = 2 , etc.
+    These panels show the considerable overlap of the measured and steered atlases,
+    which supports the accuracy of the steering. In all panels of the figure it is
+    important to bear in mind that the red and green lines do not mark hard cut-off
+    but only the start of the decaying part of the apertues.'
+  Figure 2 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_2.jpg
+  Figure 2 caption: 'Illustrates scale space. Top-left: Gaussian kernels (1-D and
+    2-D) used to produce levels of scale space by convolution. Sections through the
+    scale space of an example image: horizontal (bottom-left) and vertical (right).'
+  Figure 3 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_3.jpg
+  Figure 3 caption: "Illustrates different types of patch. All patches are from an\
+    \ image of a woodland scene. Each row is a different type of patch. Patches in\
+    \ the same column are roughly matched in extent and articulation which increases\
+    \ across columns from left to right. Top: 'Traditional' patches\u2014cropped from\
+    \ an image. Middle: Aperture-based patches\u2014using circular region apertures\
+    \ applied to a level of scale space. Bottom: As middle but positive weighting\
+    \ function apertures. The weighting functions are Gaussians, which are argued\
+    \ in Section 6 to be fundamental."
+  Figure 4 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_4.jpg
+  Figure 4 caption: "Illustrates tight containment of apertures. The apertures on\
+    \ the coarse row are associated with a strong blur; on the medium row with a medium\
+    \ blur; and on the fine row with a smaller blur. Both coarse apertures are tightly\
+    \ contained within the medium aperture, which is in turn tightly contained within\
+    \ both the fine apertures. Containment means that the view through the contained\
+    \ aperture is determined by the view through the container. The containment relation\
+    \ is tight when the containing aperture cannot be reduced in any way, nor the\
+    \ contained aperture be expanded in any way, without it causing the relation to\
+    \ fail. The dotted apertures are gaussians, the solid are not\u2014illustrating\
+    \ that tight containment can hold between apertures of either type."
+  Figure 5 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_5.jpg
+  Figure 5 caption: Cause-effect apertures. The apertures (unimodal cruves) are in
+    cause and effect relation. The cause aperture is the blur of the effect aperture.
+    Two 1-D images (dark and lighter) are shown at the scales the apertures view.
+    Observe how the image blur increases going upwards in the figure, while the aperture
+    width increases going downwards. The two images have been chosen so that they
+    are very similar within the view of the cause aperture; consequently they are
+    at least as similar within the view of the upper aperture.
+  Figure 6 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_6.jpg
+  Figure 6 caption: 'Illustrates a Gaussian atlas. Left: The aperture weighting functions
+    of a gaussian atlas shown as a contour plot across scale space. The dashed curve
+    marks the locus of aperture transitions between convex and concave (a convenient
+    landmark). With increasing scale the apertures can be seen to get tighter, and
+    the peak value increases. For improved visibility the grey-levels of the plot
+    have been clipped at an upper threshold. Right: Example apertures from the atlas
+    at a selection of scales as indicated by the arrows. Dashed lines, as at left,
+    mark the transition between convex and concave regions.'
+  Figure 7 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_7.jpg
+  Figure 7 caption: The DtG model of image measurement. a) An equal-scale family of
+    2-D DtG filters of 0th (top row) to 3rd (bottom row) order. The family shown has,
+    at each order, rotated copies of a single filter. This matches V1 simple cells,
+    but the Cartesian basis derivatives typically implemented in Computer Vision are
+    linearly equivalent [28]. b) The jet is equal to the point derivatives of the
+    image blurred to the scale of the filters. c) The jet is equal to initial terms
+    of the Hermite Transform of the image.
+  Figure 8 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_8.jpg
+  Figure 8 caption: Gaussian aperture approximated equivalent to a DtG family. a)
+    A gaussian aperture (pale) and the blur kernel of its associated scale (darker).
+    b) The system of DtG filters up to 3rd order that approximate the view through
+    (a). c) Each plot shows a natural image profile (thin), the view through the Gaussian
+    aperture shown in (a) (thick), and the view according to the jet measured by the
+    filters in (b) (thick). d) For pairs of natural image profiles the IPs computed
+    by aperture (a) or by jet (b) are highly correlated. e) The correlation between
+    the jet IP and the equivalent-aperture IP increases with jet order, for natural
+    signals.
+  Figure 9 Link: articels_figures_by_rev_year\2017\The_Atlas_Structure_of_Images\figure_9.jpg
+  Figure 9 caption: Gaussian atlas and image pyramid compared. a) The black curves
+    indicate the widths of the apertures in an atlas (shown dashed in Fig. 6). Horizontal
+    lines indicate apertures equivalent to jets; subdivided by the degrees-of-freedom
+    of the jet. b) As (a) but rendered with coordinates that make the degrees of freedom
+    of scale space more homogeneous. c) An image pyramid as often used in Computer
+    Vision.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Lewis D. Griffin
+  Name of the last author: Lewis D. Griffin
+  Number of Figures: 10
+  Number of Tables: 1
+  Number of authors: 1
+  Paper title: The Atlas Structure of Images
+  Publication Date: 2017-12-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Keypoint Descriptor Scores on Hpatches Classification Challenge
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2777856
+- Affiliation of the first author: department of mathematics, university of texas
+    at arlington, arlington, tx
+  Affiliation of the last author: here north america llc, chicago, il
+  Figure 1 Link: articels_figures_by_rev_year\2017\Probabilistic_Dimensionality_Reduction_via_Structure_Learning\figure_1.jpg
+  Figure 1 caption: "The visualization results for parameter sensitivity analysis\
+    \ of SPL on DistortedSShape by either varying \u03B3\u22080, 10 \u22123 , 10 3\
+    \ with prefixed C=\u221E , or varying C\u2208 10 \u22122 , 10 3 ,\u221E with \u03B3\
+    = 10 \u22123 using the neighborhood size as 10 in a 2-D space. For the results\
+    \ of parameter sensitivity analysis on other parameters, please see them in the\
+    \ supplementary material, available online."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Probabilistic_Dimensionality_Reduction_via_Structure_Learning\figure_2.jpg
+  Figure 2 caption: The visualization results of embedding points using five methods
+    on six synthetic data. Due to the space limit, the visualization results of the
+    remaining four methods are reported in the supplementary materials, available
+    online.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Probabilistic_Dimensionality_Reduction_via_Structure_Learning\figure_3.jpg
+  Figure 3 caption: "Visualization results of SPL with parameters \u03B3\u22080, 10\
+    \ \u22123 and C= 10 3 on Teapot and USPS with tag 1."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Probabilistic_Dimensionality_Reduction_via_Structure_Learning\figure_4.jpg
+  Figure 4 caption: Experimental results of DDRTree applied to Teapot images. (a)
+    principal curve generated by DDRTree. Each dot represents one teapot image. Images
+    following the principal curve are plotted at intervals of 30 for visualization.
+    (b) The adjacency matrix of the curve follows the ordering of the 400 consecutive
+    teapot images with 360circ rotation.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Probabilistic_Dimensionality_Reduction_via_Structure_Learning\figure_5.jpg
+  Figure 5 caption: Experimental results of our DDRTree method performed on facial
+    expression images. (a) A hierarchical tree generated by DDRTree. Each dot represents
+    one face image. Images of three types of facial expressions from three subjects
+    are plotted for visualization. The black circle is the root of the hierarchical
+    structure; (b) The adjacency matrix of the tree on nine blocks indicates that
+    each block corresponds to one facial expression of one subject.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Probabilistic_Dimensionality_Reduction_via_Structure_Learning\figure_6.jpg
+  Figure 6 caption: Graph structure learned by DDRTree on breast cancer dataset with
+    d=80 and visualized in three-dimensional space spanned by the first three components
+    of the learned projection matrix.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Li Wang
+  Name of the last author: Qi Mao
+  Number of Figures: 6
+  Number of Tables: 1
+  Number of authors: 2
+  Paper title: Probabilistic Dimensionality Reduction via Structure Learning
+  Publication Date: 2017-12-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Leave-One-Out Cross Validation Accuracy of One-Nearest
+      Neighbor Classifier Over Ten Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2785402
+- Affiliation of the first author: information sciences institute usc, marina del
+    rey, ca
+  Affiliation of the last author: information sciences institute usc, marina del rey,
+    ca
+  Figure 1 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_1.jpg
+  Figure 1 caption: 'Average images for 64 face clusters. Top: clusters computed using
+    RBG values. These appear misaligned (blurry) and strongly influenced by intensities.
+    Bottom: Images clustered using features from an intermediate layer of a network
+    trained to regress facial landmarks. These are clearly better aligned. We leverage
+    this to tweak network processing based on intermediate representations. (Note:
+    Both results were produced using the same image set.)'
+  Figure 10 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_10.jpg
+  Figure 10 caption: '300W results. (a) TCNN + CLNF qualitative results for 49 (top
+    two rows) and 68 landmarks (bottom). Column pairs show images from the 300W subsets:
+    AFW, HELEN, iBUG and LFPW; (b) Quantitative results: % images with 49 (68) landmark
+    detection errors lower than 5 percent (10 percent) interocular distances, area
+    under the error curves (AUC), and mean error rates (MER). Best scores in boldface.
+    1 MER only for true positive detected faces. 2 Does not include AFW.'
+  Figure 2 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_2.jpg
+  Figure 2 caption: CNN architectures. (a) The vanilla network described in Sec. 2.1
+    for facial landmark regression. We show that representations extracted from the
+    input to F C 5 (marked in red) are highly specialized and, in particular, reflect
+    head pose and some facial properties. (b) Our Tweaked CNN design, diverting intermediate
+    features to K different subsequent, fine-tuned processes in the same dimensions
+    as the original layers.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_3.jpg
+  Figure 3 caption: "Landmark position variability at different layers. \u03BB l,k,j\
+    \ averaged ( \xB1 SE) over K clusters in each layer (Eq. (3) ). Scatter plots\
+    \ for the ground truth landmarks of 15 faces from the most variable clusters of\
+    \ RGB (left) and F C 5 (right) layer features are shown, visualizing the reduced\
+    \ variability at the deeper layer."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_4.jpg
+  Figure 4 caption: "Variance of attribute labels at different layers. \u03C3 2 l,k,a\
+    \ averaged ( \xB1 SE) over K clusters in each layer (Eq. (4) )."
+  Figure 5 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_5.jpg
+  Figure 5 caption: 'Alignment-sensitive data augmentation. Top: Training images from
+    the same F C 5 cluster. Bottom: Images added to the cluster to increase training
+    set size. Bottom images are noticeably different from their origins in the top,
+    yet remain in their original cluster. Ground truth landmark positions used to
+    align these images appear in cyan.'
+  Figure 6 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Effect of tweaking. Validation set, per cluster mean error rate
+    for vanilla CNN (green) versus TCNN (blue) (Section 3). SDM [7] provided as reference
+    in pink. K=64 clusters produced from FC5 features, sorted by TCNN performance.
+    The same order (left-to-right, top-to-bottom) was used for the cluster mean images
+    in Fig. 1 (bottom). Evidently, the biggest improvements were obtained for out-of-plane
+    views.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_7.jpg
+  Figure 7 caption: Number of clusters versus mean error. Results on AFW [3] (blue)
+    and AFLW [39] (red) for TCNN models with different numbers of tweaked processes,
+    K . Lower numbers are better.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_8.jpg
+  Figure 8 caption: 'AFLW and AFW results. Left: Error rates on AFLW [39] and AFW
+    [3] for ESR [5], CDM [15], RCPR [16], SDM [7], TCDCN''14 [22] and BB-FCN [19],
+    versus our vanilla CNN ( Sec. 2.1) and TNC lower values are better. Right: Accumulative
+    error curves reported on AFLW for CFAN [21], Cascaded CNN [20] and TCDCN''15 [23]
+    versus our TCNN (mean error % in parentheses). Previous methods did not report
+    these curves for AFW.'
+  Figure 9 Link: articels_figures_by_rev_year\2017\Facial_Landmark_Detection_with_Tweaked_Convolutional_Neural_Networks\figure_9.jpg
+  Figure 9 caption: Qualitative detections. AFLW [39] (left) and AFW [3] (right).
+    Ground truth landmark in white; TCNN in cyan. Typical errors highlighted in red.
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yue Wu
+  Name of the last author: Prem Natarajan
+  Number of Figures: 11
+  Number of Tables: 1
+  Number of authors: 5
+  Paper title: Facial Landmark Detection with Tweaked Convolutional Neural Networks
+  Publication Date: 2017-12-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Cluster Statistics
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2787130
+- Affiliation of the first author: institute for language, cognition and computation,
+    school of informatics, university of edinburgh, edinburgh, united kingdom
+  Affiliation of the last author: institute for language, cognition and computation,
+    school of informatics, university of edinburgh, edinburgh, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_1.jpg
+  Figure 1 caption: Categorization of action recognition tasks in images.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_10.jpg
+  Figure 10 caption: Example verb predictions of MIL and MLC classifiers.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_2.jpg
+  Figure 2 caption: 'Visual sense ambiguity: three of the senses of the verb play:
+    playsport , playinstrument , childrenplay .'
+  Figure 3 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_3.jpg
+  Figure 3 caption: Google Image Search trying to disambiguate sit. All clusters pertain
+    to the sitdown sense, other senses ( babysit , convene ) are not included.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_4.jpg
+  Figure 4 caption: 'Example item for depictability and sense annotation: sense definitions
+    and examples (in blue) for the verb touch.'
+  Figure 5 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_5.jpg
+  Figure 5 caption: Schematic overview of the visual sense disambiguation model.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_6.jpg
+  Figure 6 caption: Extracting visual sense representation for the verb play.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_7.jpg
+  Figure 7 caption: Multi-label verb prediction classifiers.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_8.jpg
+  Figure 8 caption: Localizations for different senses of the verb play.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Disambiguating_Visual_Verbs\figure_9.jpg
+  Figure 9 caption: Localizations for predicted verbs ride, fly and feed.
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Spandana Gella
+  Name of the last author: Mirella Lapata
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: Disambiguating Visual Verbs
+  Publication Date: 2017-12-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Existing Action Recognition Datasets According
+      to Various Subtasks (AC Stands for Action Classification, HOI for Human Object
+      Interaction Recognition, VSRL for Visual Semantic Role Labeling, and VSD for
+      Visual Verb Sense Disambiguation); L Denotes the Number of Action Labels in
+      the Dataset; V Denotes the Number of Verbs Covered in the Dataset; Obj Indicates
+      the Number of Objects Annotated; Sen Indicates Whether Sense Ambiguity Is Explicitly
+      Handled; Des Indicates Whether Image Descriptions Are Included; Cln Denotes
+      Whether the Dataset Has Been Manually Verified; ML Indicates the Possibility
+      of Multiple Labels per Image; Resource Indicates Whether a Linguistic Resource
+      Was Used to Label Actions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Overview of VerSe Dataset Divided into Motion and Non-Motion
+      Verbs; Depct: Depictable Senses; ITA: Inter-Annotator Agreement'
+  Table 3 caption:
+    table_text: 'TABLE 3 Sense Disambiguation Scores for Gold-Standard Verbs: Accuracy
+      Scores for Motion and Non-Motion Verbs Using Different Types of Sense and Image
+      Representations (O: Object Labels, C: Image Descriptions, CNN: Image Features,
+      FS: First Sense Heuristic, MFS: Most Frequent Sense Heuristic)'
+  Table 4 caption:
+    table_text: TABLE 4 Images Assigned an Incorrect Sense (Shown in Red) in the PRED
+      Setting
+  Table 5 caption:
+    table_text: 'TABLE 5 Accuracy Scores for Motion and Non-Motion Verbs for Supervised
+      and Unsupervised Approaches Using Different Types of Sense and Image Representation
+      Features (O: Object Labels, C: Image Descriptions, CNN: Image Features, FS:
+      First Sense Heuristic, MFS: Most Frequent Sense Heuristic)'
+  Table 6 caption:
+    table_text: 'TABLE 6 Verb Prediction Accuracy and mAP on VerSe; MIL: Multiple
+      Instance Learning; MLC: Multi-Label Classification'
+  Table 7 caption:
+    table_text: 'TABLE 7 Sense Disambiguation Scores for Predicted Verbs: Accuracy
+      Scores for Motion and Non-Motion Verbs Using Different Types of Sense and Image
+      Representations (O: Object Labels, C: Image Descriptions, CNN: Image Features,
+      FS: First Sense Heuristic, MFS: Most Frequent Sense Heuristic)'
+  Table 8 caption:
+    table_text: TABLE 8 Average Precision Scores for Individual Verbs
+  Table 9 caption:
+    table_text: TABLE 9 Human Evaluation Accuracy Scores for Verb Prediction Labels
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2786699
+- Affiliation of the first author: computer science department, rwth aachen university,
+    aachen, germany
+  Affiliation of the last author: computer science department, rwth aachen university,
+    aachen, germany
+  Figure 1 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_1.jpg
+  Figure 1 caption: Sketch of the simulation approach proposed here to support the
+    discovery of novel error bounds.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_10.jpg
+  Figure 10 caption: Simulation results for a string classifier and both feature and
+    context reduction with C=5 classes, |X|=10 observations, and sequence length N=3
+    . The accuracy and Gini difference was calculated at position i=2 . Each gray
+    dot represents one simulated distribution. Also, the derived analytic tight upper
+    and lower bounds are shown as lines, respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_2.jpg
+  Figure 2 caption: Simulation results for feature reduction with C=8 classes and
+    |X|=16 observations. Each gray dot represents one simulated distribution. Also,
+    the derived analytic tight upper and lower bounds are shown as lines, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_3.jpg
+  Figure 3 caption: Simulation results for feature reduction with C=3 classes and
+    |X|=2 observations. Each gray dot represents one simulated distribution. Also,
+    the derived analytic tight upper and lower bounds are shown as lines, respectively.
+    Note that in this case we have |X|<C , which does not fulfil the requirements
+    for the tightness of the upper, and mid- and right section of the lower bound.
+    This is confirmed by the simulation.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_4.jpg
+  Figure 4 caption: Simulation results for feature reduction with C=2 classes and
+    |X|=2 observations. Each gray dot represents one simulated distribution. Also,
+    the derived analytic tight upper and lower bounds are shown as lines, respectively.
+    Note that in this case we have |X|=C , which does not fulfil the requirements
+    for the tightness of the mid-section of the lower bound. This is confirmed by
+    the simulation.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_5.jpg
+  Figure 5 caption: "Simulation results for feature selection with C=3 classes and\
+    \ a selection of one out of two features x 1 \u2208 X 1 and x 2 \u2208 X 2 with\
+    \ | X 1,2 |=4 observations each. Each gray dot represents one simulated distribution.\
+    \ Also, the derived analytic tight upper and lower bounds are shown as lines,\
+    \ respectively."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_6.jpg
+  Figure 6 caption: Simulation results for feature selection with C=3 classes and
+    a selection of a feature x1in X1 with |X1|=6 observations out of two features,
+    with the second, not selected feature x2in X2 being binary, i.e., |X2|=2<C observations.
+    Each gray dot represents one simulated distribution. Also, the derived analytic
+    tight upper and lower bounds are shown as lines, respectively. Note that this
+    case is not tight. The simulations only fill the convex hull of the area reached
+    by the simulations of the local case, which is eqivalent to feature omission with
+    C=3 and |X|=2 , as shown in Fig. 3. To illustrate this, the simulation of this
+    case from Fig. 3 is plotted on top here using a brighter gray. The narrow darkened
+    sections show how the convex hull confines the simulations for the feature selection
+    case when dropping the single binary feature x2 .
+  Figure 7 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_7.jpg
+  Figure 7 caption: Simulation results for a string classifier and context reduction
+    with C=5 classes, |X|=10 observations, and sequence length N=3 . The accuracy
+    and Gini difference was calculated at position i=2 . Each gray dot represents
+    one simulated distribution. Also, the derived analytic tight upper and lower bounds
+    are shown as lines, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_8.jpg
+  Figure 8 caption: Simulation results for a string classifier and context reduction
+    with C=3 classes, |X|=6 observations, and sequence length N=3 . The accuracy and
+    Gini difference was calculated at position i=2 . Each gray dot represents one
+    simulated distribution. Also, the derived analytic tight upper and lower bounds
+    are shown as lines, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Upper_and_Lower_Tight_Error_Bounds_for_Feature_Omission_with_an_Extension_to_Con\figure_9.jpg
+  Figure 9 caption: Simulation results for a string classifier and context reduction
+    with C=8 classes, |X|=9 observations, and sequence length N=5 . The accuracy and
+    Gini difference was calculated at position i=3 . Each gray dot represents one
+    simulated distribution. Also, the derived analytic tight upper and lower bounds
+    are shown as lines, respectively.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Ralf Schl\xFCter"
+  Name of the last author: Hermann Ney
+  Number of Figures: 12
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Upper and Lower Tight Error Bounds for Feature Omission with an Extension
+    to Context Reduction
+  Publication Date: 2018-01-01 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2788434
+- Affiliation of the first author: "sorbonne universit\xE9s, paris, france"
+  Affiliation of the last author: "sorbonne universit\xE9s, paris, france"
+  Figure 1 Link: articels_figures_by_rev_year\2018\Exploiting_Negative_Evidence_for_Deep_Latent_Structured_Models\figure_1.jpg
+  Figure 1 caption: "Negative evidence intuition. The heatmaps and the predicted regions\
+    \ ( h + y in green, h \u2212 y in red) for different learned class models (bedroom,\
+    \ airport inside and dining room) are shown on a bedroom image x . F w (x,y, h\
+    \ + y ) (resp. F w (x,y, h \u2212 y ) ) is the score of the h + y (resp. h \u2212\
+    \ y ) region for class y , and s w (x,y) is the predicted score for class y .\
+    \ The bedroom and dining room models have high score for max regions because each\
+    \ model focus on objects discriminative for the class (bed for bedroom and chair\
+    \ for dining room). The min region brings complementary information to max region:\
+    \ the min regions score of dining room have a low score because the dining room\
+    \ model has found a negative evidence (bed) for the absence of dining room class."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Exploiting_Negative_Evidence_for_Deep_Latent_Structured_Models\figure_2.jpg
+  Figure 2 caption: 'ResNet-WELDON deep architecture is decomposed into two sub-networks:
+    a feature extraction network (left) and a prediction network (right) The feature
+    extraction network is based on ResNet-101 to extract local features from whole
+    images with good spatial resolution. Then a transfert layer is used to learn class-specific
+    heatmaps (car, motorbike and person), and finally a prediction layer aggregates
+    the heatmaps to produce a single score for each class. Finally, we show for each
+    class the 3 regions with the highest score on the right.'
+  Figure 3 Link: articels_figures_by_rev_year\2018\Exploiting_Negative_Evidence_for_Deep_Latent_Structured_Models\figure_3.jpg
+  Figure 3 caption: Visual results of ResNet-WELDON with the final prediction score.
+    We visualize the predicted regions for the ground truth model (left column) and
+    a model of a similar incorrect class (right column). The top 3 positive (resp.
+    top 3 negative) regions selected by the model are in green (resp. red).
+  Figure 4 Link: articels_figures_by_rev_year\2018\Exploiting_Negative_Evidence_for_Deep_Latent_Structured_Models\figure_4.jpg
+  Figure 4 caption: 'Visual results of ResNet-WELDON. We show the heatmaps of 2 categories:
+    motorbike which is present in the image and bottle which is absent. For each class,
+    we show the maximum (resp. minimum) region in green (resp. red) with its corresponding
+    score. The model learns that the person class is positively correlated with motorbike
+    class. On the contrary, the bottle model learns that the motorbike is a negative
+    evidence of the class: the motorbike has a very low score, which shows the absence
+    of bottle class.'
+  Figure 5 Link: articels_figures_by_rev_year\2018\Exploiting_Negative_Evidence_for_Deep_Latent_Structured_Models\figure_5.jpg
+  Figure 5 caption: Normalized co-occurrence matrix between the classes of PASCAL
+    VOC 2007 (trainval). For each category (row), we show the percentage of other
+    objects (column) that appear in the same image. For instance, we observe that
+    in horse images, there is usually a person (77 percent), but there is never an
+    aeroplane (0 percent).
+  Figure 6 Link: articels_figures_by_rev_year\2018\Exploiting_Negative_Evidence_for_Deep_Latent_Structured_Models\figure_6.jpg
+  Figure 6 caption: "Pooling analysis. We compare different spatial pooling strategies\
+    \ on 6 datasets for an input image of size 448\xD7448 . The x -axis shows the\
+    \ proportion of selected regions and the y -axis the performance. We can see that\
+    \ MANTRA always outperforms the max pooling, which validates the relevance of\
+    \ negative evidence. We can also see that our spatial performes equally or better\
+    \ than GAP with only 20 percent of regions."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Exploiting_Negative_Evidence_for_Deep_Latent_Structured_Models\figure_7.jpg
+  Figure 7 caption: Segmentation examples on VOC 2012. We show the prediction of our
+    model after FC-CRF and the ground truth.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Thibaut Durand
+  Name of the last author: Matthieu Cord
+  Number of Figures: 7
+  Number of Tables: 11
+  Number of authors: 3
+  Paper title: Exploiting Negative Evidence for Deep Latent Structured Models
+  Publication Date: 2018-01-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Model Comparison with Corresponding Parameters
+  Table 10 caption:
+    table_text: TABLE 10 Pointwise Object Localization Performances (MAP) on VOC 2012
+      and MS COCO
+  Table 2 caption:
+    table_text: 'TABLE 2 Dataset Information: Number of Train and Test Images, Number
+      of Classes and Evaluation Measures (mAP: Mean Average Precision)'
+  Table 3 caption:
+    table_text: TABLE 3 Multi-Scale Setup
+  Table 4 caption:
+    table_text: TABLE 4 mAP Results on Object Recognition Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Results on Scene, Action and Fine-Grained Datasets
+  Table 6 caption:
+    table_text: TABLE 6 Classification Error on the ILSVRC Validation Set with Single
+      Model
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Study of Our WSL Deep ConvNet Contributions on Object
+      (VOC 2007), Action (VOC 2012 Action), Scene (MIT67) and Fine-Grained (CUB-200)
+      Datasets
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of Optimization with Classification Loss and Ranking
+      AP Loss
+  Table 9 caption:
+    table_text: TABLE 9 Training Time (s) for One Epoch with Different Image Sizes
+      on VOC 2007
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2788435
+- Affiliation of the first author: dais, ca' foscari universty of venice, venezia,
+    ve, italy
+  Affiliation of the last author: center for research in computer vision (crcv), university
+    of central florida, orlando, fl
+  Figure 1 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_1.jpg
+  Figure 1 caption: For each query feature, we dynamically select NNs and remove query
+    features which are less informative, we build fully connected graph between selected
+    NN and extract candidate matching reference images using Dominant set clustering
+    (DSC). Finally, we employ constrained dominant sets (CDS) based post processing
+    to select best matching reference image and finally we approximate the location
+    of the query based of the location of the best matching reference image.
+  Figure 10 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_10.jpg
+  Figure 10 caption: Results with different number of NN.
+  Figure 2 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_2.jpg
+  Figure 2 caption: 'Dominant set example: (a) shows a compact set (dominant set),
+    (b) node 4 is added which is highly similar to the set 1,2,3 forming a new compact
+    set. (c) Node 5 is added to the set which has very low similarity with the rest
+    of the nodes and this is reflected in the value W 1,2,3,4,5 (5) .'
+  Figure 3 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_3.jpg
+  Figure 3 caption: 'Exemplar output of the dominant set framework: Left: query, Right:
+    each row shows corresponding reference images from the first, second and third
+    local solutions (dominant sets), respectively, from top to bottom. The number
+    under each image shows the frequency of the matched reference image, while those
+    on the right side of each image show the min-max normalized scores of HSV, CNN6,
+    CNN7 and GIST global features, respectively. The filled colors circles on the
+    upper right corner of the images are used as reference IDs of the images.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_4.jpg
+  Figure 4 caption: Another exemplar output of the dominant set framework. See caption
+    of Fig. 3 for details.
+  Figure 5 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_5.jpg
+  Figure 5 caption: 'Exemplar graph for post processing. Top left: reduced graph for
+    Fig. 3 which contains unique matched reference images. Bottom left: Part of the
+    full graph which contains the gray circled nodes of the reduced graph and the
+    query. Since the frequency of images represented by a yellow node in Fig. 3 is
+    3, we represent it with 3 nodes in the expanded graph. The same is true for all
+    nodes. Top right: corresponding affinity of the reduced graph. Bottom right: The
+    outputs of nearest neighbor approach, consider only the node''s pairwise similarity,
+    (KNN( Q )=node 3 which is the dark red node) and constrained dominant sets approach
+    ( CDS(Q) = node 2 which is the yellow node).'
+  Figure 6 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_6.jpg
+  Figure 6 caption: The top four rows are sample street view images from eight different
+    places of WorldCities dataset. The bottom two rows are sample user uploaded images
+    from the test set.
+  Figure 7 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_7.jpg
+  Figure 7 caption: Comparison of our baseline (without post processing) and final
+    method with state-of-the-art approaches on the first dataset (102K Google street
+    view images).
+  Figure 8 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_8.jpg
+  Figure 8 caption: Comparison of overall geo-localization results using DSC with
+    and without post processing and state-of-the-art approaches on the WorldCities
+    dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2018\LargeScale_Image_GeoLocalization_Using_Dominant_Sets\figure_9.jpg
+  Figure 9 caption: Sample qualitative results taken from Pittsburgh area. The green
+    ones are the ground truth while yellow locations indicate our localization results.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Eyasu Zemene
+  Name of the last author: Mubarak Shah
+  Number of Figures: 11
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: Large-Scale Image Geo-Localization Using Dominant Sets
+  Publication Date: 2018-01-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance on San Francisco Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results of the Experiment, Done on the 102k Google Street
+      View Images (Dts1) and WorldCities (Dts2) Datasets, to See the Impact of the
+      Post-Processing Step When the Candidates of Reference Images Are Obtained by
+      Other Image Retrieval Algorithms
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2787132
+- Affiliation of the first author: bioinformatics institute, bioinformatics institute,
+    singapore
+  Affiliation of the last author: bioinformatics institute, bioinformatics institute,
+    singapore
+  Figure 1 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_1.jpg
+  Figure 1 caption: "An illustration of the proposed approach for multivariate regression\
+    \ on grossly corrupted manifold-valued data, which contains two main ingredients:\
+    \ The first is to obtain the corrected response y c i by removing its possible\
+    \ gross error, as illustrated by the directed curves on the manifold; The second\
+    \ one involves the manifold-valued regression process using x i , y c i . Here\
+    \ x 1 1 and x 2 1 are the components of input x 1 along tangent vectors v 1 and\
+    \ v 2 of point p\u2208M . Red solid arrow denotes a tangent vector x 1 1 v 1 +\
+    \ x 2 1 v 2 at p , and red dash arrow is its corresponding geodesic path. x 1\
+    \ 2 and x 2 2 are also defined similarly using blue color. See Section 3.1 for\
+    \ details."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_10.jpg
+  Figure 10 caption: Distribution of relative FA errors on testing data. The inset
+    figures show zoom-in plots of the prediction errors by MGLM and PALMR over the
+    error interval [0, 1] . Better viewed in color.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_2.jpg
+  Figure 2 caption: "An illustration of the Schild's ladder approximation of parallel\
+    \ transport of the tangent vector v from p to q . It consists of four steps: (1)\
+    \ Obtain p 1 ; (2) Compute tangent vector u= Exp \u22121 p 1 (q) and take half\
+    \ step along u to arrive at p 2 ; (3) Compute tangent vector w= Exp \u22121 p\
+    \ ( p 2 ) and take two steps along w to have p 3 ; (4) Compute tangent vector\
+    \ joining q and p 3 P pq (v)= Exp \u22121 q ( p 3 ) . If the distance between\
+    \ p and q is large, the above process can be iterated over points along the geodesic\
+    \ path joining p and q ."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_3.jpg
+  Figure 3 caption: Visualization of the synthesized training samples and the predictions
+    of PALMR and MGLM. The two row vectors on the top give the values of X generating
+    the data, red boxes identify the samples with gross error. The rows indexed by
+    PALMR and MGLM display the predictions of corresponding method on the training
+    data. All objects are viewed directly from overhead. Best viewed in color.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_4.jpg
+  Figure 4 caption: 'Visual results of PALMR and MGLM. (a) Predictions for 20 testing
+    data. (b) From top to bottom: Training samples corrupted by gross error (i.e.,
+    samples marked by red boxes in Fig. 3), correction results of PALMR, and the true
+    data without gross error. Best viewed in color.'
+  Figure 5 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_5.jpg
+  Figure 5 caption: 'Box plots showing the effect of four different parameters: The
+    number of tangent basis d , the number of training data N , the magnitude of gross
+    error sigma g , and the percentage of grossly corrupted training data beta , corresponding
+    to four columns accordingly. Plots in each row show results using the same metric.
+    Since MGLM does not consider gross error, the last two rows only show results
+    of PALMR. See text for details. Best viewed in color.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_6.jpg
+  Figure 6 caption: Results of comparing PALMR and MGLM with euclidean model (7) under
+    different magnitude of gross error (left) and different ratio of gross error in
+    the training data (right). For each plot, the y -axis denotes the log-scale of
+    median error over 10 reptitions measured by Frobenious norm.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_7.jpg
+  Figure 7 caption: 'p -value maps obtained by three methods: FA regression (top),
+    MGLM (middle) and PALMR (bottom). p -value is only illustrated for voxels with
+    p -value leq 0.05. Best viewed in color.'
+  Figure 8 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_8.jpg
+  Figure 8 caption: Distribution of p -values for white matter tensors in all six
+    slices. The inlet plot shows distribution of p -values over range [0.1, 1] .
+  Figure 9 Link: articels_figures_by_rev_year\2018\Multivariate_Regression_with_Gross_Errors_on_ManifoldValued_Data\figure_9.jpg
+  Figure 9 caption: Performance improvement obtained by PALMR measured with the relative
+    FA error (left) and the MSGE (right). A positive value means that PALMR is better
+    than the best competitor, and a negative value means that PALMR is worse. We first
+    compute the performance improvement of PALMR on each voxel of all six slices to
+    get a percentage value, then put all values under the same metric and experimental
+    setting to plot a box plot.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Xiaowei Zhang
+  Name of the last author: Li Cheng
+  Number of Figures: 11
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Multivariate Regression with Gross Errors on Manifold-Valued Data
+  Publication Date: 2018-01-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Median Values of Prediction Errors on All Six Slices of Testing
+      Data
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2776260

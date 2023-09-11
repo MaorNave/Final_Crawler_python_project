@@ -1,0 +1,892 @@
+- Affiliation of the first author: "department of computer science, eth zurich, r\xE4\
+    mistrasse, z\xFCrich, switzerland"
+  Affiliation of the last author: computer graphics group, rwth aachen university,
+    templergraben, aachen, germany
+  Figure 1 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_1.jpg
+  Figure 1 caption: Overview over the framework for efficient and effective image-based
+    localization proposed in this paper.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_10.jpg
+  Figure 10 caption: Using camera sets based on clustering the k closest database
+    images instead of the original images ( k=0 ) enables us to achieve the same effectiveness
+    as without the filtering steps (black line).
+  Figure 2 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_2.jpg
+  Figure 2 caption: 2D-to-3D matching approaches (tree-based and VPS) achieve a higher
+    localization effectiveness than methods based on 3D-to-2D search such as Point-to-Feature
+    (P2F) matching [2] on three standard datasets. For kd-tree search, we visit L=50,100,200,300,500
+    leaf nodes (left to right).
+  Figure 3 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_3.jpg
+  Figure 3 caption: (a) Cumulative histograms showing that only a small fraction of
+    query features matches to 3D points. (b-d) The approximation factor of the greedy
+    algorithm on the (b) Dubrovnik, (c) Rome, and (d) Vienna datasets. Though the
+    probabilities were trained on the query images, the greedy solution is close to
+    the optimal approximation factor of 1 for most queries. Queries for which (3)
+    has no solution were not included in the plots.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_4.jpg
+  Figure 4 caption: Once a matching 3D point is found through 2D-to-3D search (red),
+    Active Search finds candidate points for 3D-to-2D search through nearest neighbor
+    search in 3D. The candidates are inserted into a common prioritization scheme
+    and are later used to recover matches originally lost to due to quantization artifacts
+    (blue).
+  Figure 5 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_5.jpg
+  Figure 5 caption: (a) The red point is amongst the nearest neighbors of the blue
+    point. Yet, there is no database image observing both points. (b) The bipartite
+    Visibility Graph mathcal G defined by the SfM reconstruction. (c) The 3D points
+    (blue) contained in a set mathcal M of 2D-3D matches define a subgraph mathcal
+    G(mathcal M) of the Visibility Graph. (d) The new Visibility Graph mathcal Gprimemathcal
+    S obtained by clustering the k=2 nearest cameras and solving the set cover problem.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_6.jpg
+  Figure 6 caption: The impact of enforcing a minimal inlier ratio of R on VPS's rejection
+    times and effectiveness for (a) Dubrovnik, (b) Rome, and (c) Vienna. We used Nt=infty
+    and values from lbrace 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6rbrace for R to create the
+    curves. R=0.2 reduces the rejection times considerably with only little impact
+    on the effectiveness.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_7.jpg
+  Figure 7 caption: The 50 percent (full) and 75 percent (dashed) quantiles of the
+    localization errors for the three strategies.
+  Figure 8 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_8.jpg
+  Figure 8 caption: Increase in (top row) the mean number of localized images and
+    (bottom row) the mean localization times compared to VPS. The black lines denote
+    the maximum possible increase in the number of images that can be localized. Active
+    Search achieves a similar or better effectiveness than kd-tree search at faster
+    localization times.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Efficient__Effective_Prioritized_Matching_for_LargeScale_ImageBased_Localization\figure_9.jpg
+  Figure 9 caption: The impact of applying the filtering operations proposed in Section
+    5. Both filtering steps significantly improve the efficiency of our framework
+    at the cost of effectiveness. Active Search with the combined prioritization strategy
+    was used for all experiments.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Torsten Sattler
+  Name of the last author: Leif Kobbelt
+  Number of Figures: 10
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Efficient & Effective Prioritized Matching for Large-Scale Image-Based
+    Localization
+  Publication Date: 2016-09-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Datasets Used for Evaluation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Influence of the Parameter N t on the Localization Performance
+      of VPS
+  Table 3 caption:
+    table_text: TABLE 3 Comparing the Use of Generic Vocabularies (G) of Different
+      Sizes and Dataset Specific Vocabularies (S)
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with the Current State-of-the-Art
+  Table 5 caption:
+    table_text: TABLE 5 Localization Error on the Dubrovnik Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Results for the Landmarks 1k Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2611662
+- Affiliation of the first author: department of electrical engineering and computer
+    sciences, university of california, berkeley, ca
+  Affiliation of the last author: microsoft, redmond, wa
+  Figure 1 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_1.jpg
+  Figure 1 caption: '(Top) from left to right: Example of input image, best label
+    image segmentation result, depthmap. (Bottom) our proposed joint optimization
+    combines class segmentation and geometry resulting in an accurately labeled 3D
+    reconstruction.'
+  Figure 10 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_10.jpg
+  Figure 10 caption: 'Comparison using different semantic classifiers: (Top row) example
+    input images, (middle row) ALE results (raw labeling using per pixel best responses
+    (left) and 3D model (right)), (bottom row) STAIR Vision library results (raw labeling
+    using per pixel best responses (left) and 3D model (right)).'
+  Figure 2 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_2.jpg
+  Figure 2 caption: Illustration of the formulation in the 2D case.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_3.jpg
+  Figure 3 caption: Unaries assigned to voxels along a particular line-of-sight for
+    two different solid classes.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_4.jpg
+  Figure 4 caption: "(Top row) A section of the cadastral 3D city model. (Bottom row)\
+    \ A segmented example building used for the training of the geometric priors.\
+    \ (Left) building \u2194 free-space (overground part of the building), (middle)\
+    \ ground \u2194 building (underground part of the building), (right) ground \u2194\
+    \ free-space (part of the ground not covered by the building)."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_5.jpg
+  Figure 5 caption: "Visualization of the 2D version of the used Wulff shapes (line\
+    \ segment and half-sphere plus spherical cap). The red lines depict the Wulff\
+    \ shapes. The black lines are polar plots of the function \u03C8 . The distance\
+    \ of a point on the black curve to the origin is the value that the function \u03C8\
+    (n) attains for a normal vector n in the direction of the point (visualized in\
+    \ blue)."
+  Figure 6 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_6.jpg
+  Figure 6 caption: "Results for 4 datasets. (From left to right) Castle-P30 [37],\
+    \ Southbuilding, Providence, Catania. (From top to bottom) Example input images,\
+    \ example depth map, raw image labeling, our proposed joint fusion result, TV-Flux\
+    \ fusion result; The different class labels are depicted using the following color\
+    \ scheme: building \u2192 red, ground \u2192 dark gray, vegetation \u2192 green,\
+    \ clutter \u2192 light gray."
+  Figure 7 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_7.jpg
+  Figure 7 caption: '(Top Row) TV-Flux fusion and our joint reconstruction and segmentation
+    result, (Bottom Row) Our result divided into three components: ground, building,
+    vegetation plus clutter.'
+  Figure 8 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_8.jpg
+  Figure 8 caption: (Top) TV-Flux fusion, (Bottom) our joint reconstruction and segmentation
+    result. Using a generic smoothness prior, the ground and parts of the facades
+    get removed. Using our joint reconstruction and segmentation approach buildings
+    are naturally extended to the ground.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Dense_Semantic_D_Reconstruction\figure_9.jpg
+  Figure 9 caption: (Top) TV-Flux fusion, (Bottom) our joint reconstruction and segmentation
+    result. Note how the vegetation close to the building facade gets connected to
+    the building in the TV-Flux fusion. In our joint reconstruction this defect gets
+    resolved.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Christian H\xE4ne"
+  Name of the last author: Marc Pollefeys
+  Number of Figures: 14
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Dense Semantic 3D Reconstruction
+  Publication Date: 2016-09-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluation of Convergence on the Southbuilding Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2613051
+- Affiliation of the first author: school of computing science, simon fraser university,
+    burnaby, bc, canada
+  Affiliation of the last author: school of computing science, simon fraser university,
+    burnaby, bc, canada
+  Figure 1 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_1.jpg
+  Figure 1 caption: Cyclist helmet recognition using the proposed max-margin MIL method.
+    The goal is to recognize if the cyclist is wearing a helmet or not, given the
+    input video. Each video is treated as a bag of instances, where each instance
+    is represented by an automatically detected window around the cyclist's head.
+    The proposed cardinality-based models help to control the positivenegative label
+    proportions in the bags and encode a wide range of multi-instance assumptions.
+  Figure 10 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_10.jpg
+  Figure 10 caption: "An example of \u201CFall\u201D scene from the nursing home dataset.\
+    \ We model this problem as a multi-instance learning problem, where each individual\
+    \ is represented as an instance."
+  Figure 2 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_2.jpg
+  Figure 2 caption: "Graphical illustration of the proposed model for binary multi-instance\
+    \ learning. Instance potential functions \u03D5 I w ( x i , y i ) relate instances\
+    \ x i to labels y i . A second clique potential \u03D5 C w (y,Y) relates all instance\
+    \ labels y i to the bag label Y . There is also an optional potential function\
+    \ \u03D5 B w (X,Y) , which relates the global representation of the bag to the\
+    \ bag label."
+  Figure 3 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_3.jpg
+  Figure 3 caption: Graphical illustration of the proposed model for multiclass multi-instance
+    learning.
+  Figure 4 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_4.jpg
+  Figure 4 caption: Evaluating the classification performance of the proposed models
+    on binary benchmark datasets.
+  Figure 5 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_5.jpg
+  Figure 5 caption: "Classification accuracy on binary benchmark datasets using RMIMN\
+    \ with different value of \u03C1 ."
+  Figure 6 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_6.jpg
+  Figure 6 caption: "Classification accuracy on binary benchmark datasets using RMIMN\
+    \ with different value of \u03C1 ."
+  Figure 7 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_7.jpg
+  Figure 7 caption: Comparison between classification accuracy of the proposed multiclass
+    MIMN and binary MIMN with one-vs-all technique.
+  Figure 8 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_8.jpg
+  Figure 8 caption: "Cyclist helmet classification\u2014is she wearing helmet? how\
+    \ many positives are in this bag? An automatic cyclist detectortracker is run,\
+    \ with head position estimate in green rectangle. Data instances are features\
+    \ defined on the head position estimates, bags aggregate these over a track."
+  Figure 9 Link: articels_figures_by_rev_year\2016\MultiInstance_Classification_by_MaxMargin_Training_of_CardinalityBased_Markov_Ne\figure_9.jpg
+  Figure 9 caption: "Cyclist helmet recognition accuracy with RMIMN model and different\
+    \ values of the parameter \u03C1 ."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hossein Hajimirsadeghi
+  Name of the last author: Greg Mori
+  Number of Figures: 14
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: Multi-Instance Classification by Max-Margin Training of Cardinality-Based
+    Markov Networks
+  Publication Date: 2016-09-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 A List of Some Well-Known MIL Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison between State-of-the-Art MIL Methods on the Binary
+      MIL Benchmark Dataset.
+  Table 3 caption:
+    table_text: TABLE 3 Comparison between State-of-the-Art MIL Methods on the COREL
+      Image Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Results of the Experiments on Cyclist Helmet Classification
+      Problem
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Different Methods on the Nursing Home Dataset
+      in Terms of Classification Accuracy (CA) and Mean Per-Class Accuracy (MPCA)
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Different Methods on Collective Activity Dataset
+      in Terms of Multi-Class Classification Accuracy (MCA) and Mean Per-Class Accuracy
+      (MPCA)
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2613865
+- Affiliation of the first author: department of computer science and engineering,
+    university of california, san diego, ca
+  Affiliation of the last author: department of computer science and engineering,
+    university of california, san diego, ca
+  Figure 1 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_1.jpg
+  Figure 1 caption: A perspective camera is imaging an object point at X , with a
+    normal N , illuminated by a point light source at S . The object is in a scattering
+    medium, and thus light may be scattered in the three ways shown, detailed in Section
+    3.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_10.jpg
+  Figure 10 caption: Input images and resulting surface reconstructions of the spherical
+    cap. The columns depict three levels of increasing turbidity from left to right.
+    [1st row] result of standard photometric stereo (scattering is ignored). The shape
+    is not reconstructed correctly. [2nd row] Result of removing the backscatter as
+    in [8]. The reconstruction is improved but still unsatisfactory. [3rd row] Using
+    fluorescence to remove backscatter. The result is basically the same as backscatter
+    subtraction. [4th row] result of deblurring the backscatter subtracted images.
+    This recovers the shape quite well when the SNR is not too low. However this is
+    not the case in high turbidity. [5th row] result of deblurring the fluorescence
+    images. Here the SNR remains high even in high turbidity and thus we continue
+    to get excellent quality reconstructions. Note the roughness on the fourth row,
+    second column due to noise. [Bottom row] Clear water reconstruction (ground truth).
+  Figure 2 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_2.jpg
+  Figure 2 caption: Our Algorithm. Steps 2 and 4 are applied to each image i independently.
+    Step 5 is applied to each pixel j independently with the data from each image
+    i stacked into a matrix.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_3.jpg
+  Figure 3 caption: "(a) Light source can be considered distant if the irradiant light\
+    \ intensity across it is uniform. (b) Path length differences yield 10 percent\
+    \ intensity difference of point light source intensity due to free space falloff,\
+    \ as a function of d . (c) Path length differences along an object that yield\
+    \ 10 percent difference in medium attenuation across it, as a function of \u03B2\
+    \ . For \u03B2>1 m \u22121 , which represents fairly clear water, path lengths\
+    \ greater than 10 cm already result in noticeable intensity changes, ruling out\
+    \ the distant light source assumption."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_4.jpg
+  Figure 4 caption: "a) Diagram of the intuition for the effective source approximation.\
+    \ Although light is arriving from the entire hemisphere of directions, the vector\
+    \ sum of most of these directions lies in the original direction due to symmetry.\
+    \ Only the area of asymmetric scattering does not have symmetrical rays since\
+    \ the symmetrical rays lie below the visible hemisphere (in attached shadow) for\
+    \ the surface point. The contribution from these rays are often small. b) The\
+    \ relative error between L o (d,\u03D5) and L ~ o (d,\u03D5) for g=0.8 and \u03B2\
+    =0.0026 . Note that the spike only reaches 3 percent and is located at \u03D5\
+    =90 degree where L ~ o =0 due to shadowing. \u03D5 near 90 degree and above is\
+    \ not usually relevant for photometric stereo. c) The mean relative error between\
+    \ L o and L o ~ for \u03B2\u2208[0,0.005] mm \u22121 and g\u2208[0,0.9] . The\
+    \ approximation errors are small over a wide variety of media."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_5.jpg
+  Figure 5 caption: a) Backscatter is caused by light that is scattered into the camera
+    by a medium, before it reaches the object and has the same color as the illumination.
+    Thus, the barrier filter used to block fluorescence excitation also blocks backscatter,
+    while imaging the signal from the object. We use this property to remove backscatter
+    in input images. b) Photometric stereo reconstruction of a fluorescent sphere
+    using backscatter subtracted reflectance images. One of the input images is shown
+    on the left, with visible noise and blur. Blur in the input images flattens the
+    reconstruction. c) Looking at fluorescence images as an input, the backscatter
+    is eliminated while maintaining a higher SNR. However the blur still flattens
+    the reconstruction. d) Deblurring the backscatter subtracted images recovers the
+    general shape but suffers from noise as seen by the spiky surface. e) Deblurring
+    the fluorescence results in the correct shape with much less noise.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_6.jpg
+  Figure 6 caption: '[Left] Our experimental setup consists of a camera looking through
+    a glass port into a tank. [Right] Eight LEDs are mounted inside the tank around
+    the camera port illuminating the object placed at the back of the tank.'
+  Figure 7 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_7.jpg
+  Figure 7 caption: Tabulated values for the amount of milk and grape juice added
+    in our experiments, and the associated scattering and extinction coefficients.
+    The coefficients were computed using the data provided in [32].
+  Figure 8 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_8.jpg
+  Figure 8 caption: Cross-sections of the spherical cap reconstruction in turbid medium
+    using various methods compared to ground truth. The clear water reconstruction
+    resembles the ground truth. Only correcting for the backscatter (by subtraction
+    or fluorescence) yields flattened results. Deblurring the backscatter subtracted
+    images recovers the shape but is degraded by noise (the surface is jagged). Deblurring
+    the fluorescence images produces the best results.
+  Figure 9 Link: articels_figures_by_rev_year\2016\Photometric_Stereo_in_a_Scattering_Medium\figure_9.jpg
+  Figure 9 caption: Errors in the reconstructions of four objects as a function of
+    turbidity, compared to clear water reconstruction. Top rows are average percent
+    errors in heights and bottom rows are average angular errors in normals. Removing
+    backscatter by either subtraction or using fluorescence performs similarly. Deblurring
+    the backscatter compensated images significantly improves the reconstructions.
+    In high turbidity where the backscatter is strong compared to the object signal
+    deblurring the backscatter subtracted images degrades due to noise, while deblurring
+    the fluorescence suffers less, as the fluorescence images have a higher SNR.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zak Murez
+  Name of the last author: David J. Kriegman
+  Number of Figures: 13
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: Photometric Stereo in a Scattering Medium
+  Publication Date: 2016-09-27 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2613862
+- Affiliation of the first author: department of electrical engineering, university
+    of surrey, guildford, surrey, united kingdom
+  Affiliation of the last author: department of electrical engineering, university
+    of surrey, guildford, surrey, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_1.jpg
+  Figure 1 caption: RVD-W extraction pipeline using rank-based multi-assignment, residual
+    normalization, cluster-wise whitening and post PCA processing.
+  Figure 10 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_10.jpg
+  Figure 10 caption: RVD-W comparison with RVD-P, RVD, FV and phi Delta +psi d , (a)
+    Holidays, (b) Oxford5k, (c) UKB, (d) Oxford105k, (e) Holidays1M and (f) Oxford1M
+    (all results in mAP(%) except for recall4 for UKB).
+  Figure 2 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_2.jpg
+  Figure 2 caption: Fisher vectors and RVD statistics. The size of codebook is 128,
+    (a) probability distribution of the number of nearest clusters ( K ) that a descriptor
+    is assigned to with soft assignment weight greater than 0.1 in FV, (b) distribution
+    of soft assignment weights corresponding to N N K 1 in FV. About 30 percent of
+    descriptors are assigned with soft assignment weight of 1, (c) distribution of
+    soft assignment weights corresponding to N N K 2 in FV, (d) rank assignment weights
+    used in RVD encoding. In RankA, each descriptor x t is assigned to three nearest
+    clusters, N N K 1 , N N K 2 and N N K 3 , with assignments weights equal to 1,
+    0.5 and 0.25 respectively, (e) performance of RVD as a function of maximum numbers
+    of assigned clusters, (f) performance of FV as a function of the maximum numbers
+    of assigned clusters.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_3.jpg
+  Figure 3 caption: (a) grid search for RankA weights (b) distribution of L1-Norms
+    of residual vectors in RVD scheme.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_4.jpg
+  Figure 4 caption: "RVD aggregation approach: (a) rank-based cluster assignment and\
+    \ L1-normalization of residual vectors, (b) Aggregation of residual vectors belonging\
+    \ to Rank-1 of cluster 1, (c) Aggregation of residual vectors belonging to Rank-2\
+    \ of cluster 1, and (d) RVD cluster-level representation \u03B6 1 ."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_5.jpg
+  Figure 5 caption: (a) Holidays performance as a function of Lp normalization applied
+    to residual errors, (b) energy distribution in each dimension of residual vectors
+    r tj before aggregation into RVD, RVD-P and RVD-W respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_6.jpg
+  Figure 6 caption: "Histogram of euclidean similarity between matching and non-matching\
+    \ descriptors, for three post-PCA normalization methods (a) Whitening (b) P-L2\
+    \ ( \u03B2 =0.5) (c) L1-P ( \u03B2 =0.7)."
+  Figure 7 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_7.jpg
+  Figure 7 caption: Impact of parameters on the Holidays performance for RVD-W and
+    RVD representations (a) as a function of SIFT dimensions d and (b) as a function
+    of vocabulary size n (all results in mAP(%)).
+  Figure 8 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_8.jpg
+  Figure 8 caption: Impact of rank-based aggregation on performance for (a) Holidays,
+    (b) Oxford5k, (c) Holidays1M and (d) Oxford1M (all results in mAP(%)).
+  Figure 9 Link: articels_figures_by_rev_year\2016\Improving_LargeScale_Image_Retrieval_Through_Robust_Aggregation_of_Local_Descrip\figure_9.jpg
+  Figure 9 caption: Impact of L1-normalization of residual vectors on performance
+    of (a) Holidays dataset, (b) Oxford5k dataset. Impact of rank-based weighting
+    on performance of (c) Holidays dataset, (d) Oxford5k dataset.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Syed Sameed Husain
+  Name of the last author: Miroslaw Bober
+  Number of Figures: 13
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Improving Large-Scale Image Retrieval Through Robust Aggregation of
+    Local Descriptors
+  Publication Date: 2016-09-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 RVD-W, RVD-P, RVD and FV Performance Using 16 Bytes Codes
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison with the State of the Art Using Medium Footprint
+      Signatures
+  Table 3 caption:
+    table_text: TABLE 3 Comparison with the State of the Art Using 96128 Dimensional
+      Vectors
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with the State of the Art with Compact Codes via
+      PQ
+  Table 5 caption:
+    table_text: TABLE 5 Comparison with the State of the Art with CNN-Based Compact
+      Codes
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2613873
+- Affiliation of the first author: department of electrical and computer engineering,
+    rutgers university, piscataway, nj
+  Affiliation of the last author: department of electrical and computer engineering,
+    rutgers university, piscataway, nj
+  Figure 1 Link: articels_figures_by_rev_year\2016\Sparse_RepresentationBased_Open_Set_Recognition\figure_1.jpg
+  Figure 1 caption: Overview of the proposed SROSR algorithm. Given training samples,
+    we model tail part of the matched reconstruction error distribution and the sum
+    of non-matched reconstruction error using the statistical EVT. Given a novel test
+    sample, the modeled distributions and the matched and the sum of non-matched reconstruction
+    errors are used to calculate the confidence scores. Then, these scores are fused
+    to obtain the final score for recognition.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\Sparse_RepresentationBased_Open_Set_Recognition\figure_2.jpg
+  Figure 2 caption: Histogram of the matched and non-matched reconstruction errors.
+    Matched reconstruction errors are the errors corresponding to the sparse coefficients
+    of digit 9 and non-matched reconstruction errors are the errors that are generated
+    by the sparse coefficients of all other digits when training samples consists
+    of digits 0 to 9 and the test samples correspond to digit 9. All samples are from
+    the MNIST dataset.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Sparse_RepresentationBased_Open_Set_Recognition\figure_3.jpg
+  Figure 3 caption: Histogram of the sum of non-matched reconstruction errors corresponding
+    to the closed set classes 0 to 5 and the sum of non-matched reconstruction errors
+    corresponding to the open set digits 6 to 9. All samples are from MNIST dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Sparse_RepresentationBased_Open_Set_Recognition\figure_4.jpg
+  Figure 4 caption: Results on the extended Yale B dataset. (a) Openness versus F-measure
+    results. (b) Openness versus accuracy results.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Sparse_RepresentationBased_Open_Set_Recognition\figure_5.jpg
+  Figure 5 caption: Results on the MNIST dataset. (a) Openness versus F-measure results.
+    (b) Openness versus accuracy results.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Sparse_RepresentationBased_Open_Set_Recognition\figure_6.jpg
+  Figure 6 caption: Results on the UIUC attribute dataset. (a) Openness versus F-measure
+    results. (b) Openness versus accuracy results.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Sparse_RepresentationBased_Open_Set_Recognition\figure_7.jpg
+  Figure 7 caption: Results on the Caltech 256 dataset. (a) Openness versus F-measure
+    results. (b) Openness versus accuracy results.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: He Zhang
+  Name of the last author: Vishal M. Patel
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: Sparse Representation-Based Open Set Recognition
+  Publication Date: 2016-09-27 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2613924
+- Affiliation of the first author: school of engineering and computing sciences, durham
+    university, durham, united kingdom
+  Affiliation of the last author: school of engineering and computing sciences, durham
+    university, durham, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_1.jpg
+  Figure 1 caption: Stages of our pipeline to segment (a-b), straighten (c-d) and
+    extract the 3D helix of a Leptospira image [10] (d-f).
+  Figure 10 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_10.jpg
+  Figure 10 caption: Extracted tortuosities from different viewing angles (shown in
+    Table 5 ). If theta is known beforehand, e.g., from the imaging setup, we adjust
+    the straightened curve by dividing its length by mathrmcos(theta) . This stretches
+    the extracted curve to approximately the true 3D length of the target object,
+    correcting much of the distortion caused by non-perpendicular viewing angles and
+    yielding a far more accurate tortuosity.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_2.jpg
+  Figure 2 caption: To straighten the image, we capture the main curve by finding
+    the longest path between extrema in the binary skeleton (Algorithm 1), and calculate
+    a local weighted mean transform from the original and deformed control points
+    (Algorithm 2 ). Original image (a), largest thresholded object (b), skeleton (c),
+    main curve (d), control points (e), and straightening (f-g).
+  Figure 3 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_3.jpg
+  Figure 3 caption: "A pictoral representation of the control point transformation,\
+    \ as described in Algorithm 2, lines 1-12. A selected control point v i is highlighted\
+    \ in red, and only its nearest centerline point c j (along with its \u03B4 neighbours)\
+    \ are shown. The centerline points (red dots) are arranged into a straight line,\
+    \ 'pulling' the control points (green crosses) with them. The weights of the centerline\
+    \ points (Algorithm 2 , lines 11-12) on v i are shown by the size of the dots."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_4.jpg
+  Figure 4 caption: To extract the helical curve from a straightened image (a), we
+    extract a 1D signal called the 'centerline' from the width profile (b), and fit
+    a smooth curve using robust local regression (c). We then extend the peaks and
+    find the midpoints (d-e) before fitting our final curve (f), which is projected
+    back onto the original image (g). (Algorithm 3).
+  Figure 5 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_5.jpg
+  Figure 5 caption: A small section of the helical curve for the Spirulina object
+    (Table 7 b), showing how the control points (green dots) are related to the centerline
+    peaks and midpoints (yellow dots). The helical curve itself (red) passes through
+    all control points.
+  Figure 6 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_6.jpg
+  Figure 6 caption: Comparing the Hausdorff distance between an analytical helix curve
+    of increasing bulge amount b and our 3D construction from a single 2D view of
+    the analytical curve.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_7.jpg
+  Figure 7 caption: The Hausdorff distance from the ground truth synthetic helix with
+    a thickness of 5 corrupted with different types and levels of noise (shown in
+    Table 3) using the same parameters sigma =0.15 and d=0 . The standard deviation
+    is shown in the error bars (transparent shaded regions).
+  Figure 8 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_8.jpg
+  Figure 8 caption: The difference between the analytical helix tortuosity and the
+    tortuosity of the helix extracted from a 2D image corrupted with different types
+    and levels of noise (shown in Table 3) using the same parameters sigma =0.15 and
+    d=0 .
+  Figure 9 Link: articels_figures_by_rev_year\2016\Extracting_D_Parametric_Curves_from_D_Images_of_Helical_Objects\figure_9.jpg
+  Figure 9 caption: We plot the Hausdorff distance for o = [6, 85] with omega and
+    delta held constant at the suggested values omega =20 and delta =50 for the synthetic
+    helices shown in Table 4. Generally for o = [12 .. 40] the Hausdorff distance
+    is flat, low, and stable; however choosing too many or too few control points
+    results in poor locality of the weighted geometric transform. We suggest o=30
+    based on the flat region in this experiment.
+  First author gender probability: 0.92
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Chris G. Willcocks
+  Name of the last author: Boguslaw Obara
+  Number of Figures: 11
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Extracting 3D Parametric Curves from 2D Images of Helical Objects
+  Publication Date: 2016-09-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 An Ordered List of the Steps in Our Pipeline, with Reference
+      to their Original Source where Applicable
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison between Analytical and Extracted Curves
+  Table 3 caption:
+    table_text: TABLE 3 Synthetic Noise Experiment
+  Table 4 caption:
+    table_text: TABLE 4 Straightening Parameter Sensitivity
+  Table 5 caption:
+    table_text: TABLE 5 Synthetic Experiment to Evaluate the Extracted Curve from
+      Different Viewing Angles
+  Table 6 caption:
+    table_text: TABLE 6 Input Parameters and Algorithm Outputs
+  Table 7 caption:
+    table_text: TABLE 7 Extracted Curves from Curved Real-World Images
+  Table 8 caption:
+    table_text: TABLE 8 Extracted Curves from Straight Real-World Images
+  Table 9 caption:
+    table_text: TABLE 9 Algorithm Performance
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2613866
+- Affiliation of the first author: school of computer science, university of birmingham,
+    birmingham, united kingdom
+  Affiliation of the last author: school of computer science, university of adelaide,
+    adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_1.jpg
+  Figure 1 caption: "(a) A hypergraph with 10 vertices and seven hyperedges. The weights\
+    \ of the hyperedges are denoted by w1,w2,\u2026,w7 . The vertical line cuts the\
+    \ green colored hyperedges and separates the vertices into two clusters. (b) In\
+    \ hypergraph NCut, each hyperedge is projected to become a clique (a fully connected\
+    \ subgraph) on a standard graph. The weight of each edge in a clique corresponding\
+    \ to a hyperedge e is w(e)\u03B4(e) . The corresponding cut from (a) affects the\
+    \ edges marked by dotted lines, and the cost of this cut is ( w1 2 +2\xD7 w2 3\
+    \ +4\xD7 w3 4 ) , as predicted by (1). The edges and the corresponding weights\
+    \ are marked with the same color within (b)."
+  Figure 10 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_10.jpg
+  Figure 10 caption: Histogram of sizes of hyperedges sampled by the SWS method (Algorithm
+    1) in a typical run on the EYFDB.
+  Figure 2 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_2.jpg
+  Figure 2 caption: "\u03B1(e|S, S c ) versus \u03B7(e,S) for the range (11) for e\
+    \ of different degrees."
+  Figure 3 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_3.jpg
+  Figure 3 caption: Model instantiation for circle fitting ( p=3 ) using respectively
+    a 4-degree and 12-degree hyperedge.
+  Figure 4 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_4.jpg
+  Figure 4 caption: (a), (b) Average clustering error plotted against number of samples
+    and size of hyperedges on the three-motion checkerboard sequences from Hopkins
+    155 and face images from EYFDB.
+  Figure 5 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_5.jpg
+  Figure 5 caption: "Effect of hyperedge size on different hypergraph projection methods,\
+    \ tested on EYFDB face clustering problem. Number of samples in each run was fixed\
+    \ at 300 (see Section 2.4 for meaning of \u201Csample\u201D)."
+  Figure 6 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_6.jpg
+  Figure 6 caption: A sample iteration of our SWS algorithm (Algorithm 1). (a) Labelling
+    mathbf f based on current hypergraph mathcal H with K=2 unique labels (here, mathcal
+    H is not shown). (b) k -nearest neighbours based on A ( k = 3 ), where two vertices
+    are joined by a solid edge if they are k -nearest neighbours. (c) An example generated
+    graph mathcal Cprime . (d) Clusters in mathcal Cprime that are too small or too
+    large are ignored. The remaining clusters are sampled to form hyperedges.
+  Figure 7 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_7.jpg
+  Figure 7 caption: Characteristics of different hyperedge sampling algorithms for
+    higher order grouping. (a) Labelling mathbf f based on current hypergraph mathcal
+    H with K=2 unique labels. (b) In ISS [11], the current labelling is taken into
+    account. However, it merely samples purely randomly within each cluster. (c) In
+    PS [14], the current labelling is ignored and it simply samples based on proximity.
+    (d) In SWS (Algorithm 1), guidance from mathbf f is exploited. Further, large
+    and variable-sized clusters are produced by probabilistically turning the edges
+    on and off based on the current adjacency matrix A .
+  Figure 8 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_8.jpg
+  Figure 8 caption: Average clustering error of NCut on EYFDB for varying hyperedge
+    degree based on hyperedges sampled using four different methods. Row 1 shows results
+    using 3D subspaces ( p = 3 ), while Row 2 shows results using 9D subspaces ( p
+    = 9 ).
+  Figure 9 Link: articels_figures_by_rev_year\2016\Clustering_with_Hypergraphs_The_Case_for_Large_Hyperedges\figure_9.jpg
+  Figure 9 caption: (a) Sampling accuracy for different degree d . Note that it was
+    almost impossible for RS to generate pure samples. (b) Total runtime of the different
+    sampling methods.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Pulak Purkait
+  Name of the last author: David Suter
+  Number of Figures: 14
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: 'Clustering with Hypergraphs: The Case for Large Hyperedges'
+  Publication Date: 2016-10-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Clustering Error (%) and Runtime (s) of Various Face Subspace
+      Clustering Methods on EFYDB
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Subspace Segmentation Error (%) on Hopkins 155 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Effects of Sampling Method and Hyperedge Size; See Section
+      4.3.4
+  Table 4 caption:
+    table_text: TABLE 4 Pipeline-to-Pipeline Comparisons; See Section 4.3.5
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2614980
+- Affiliation of the first author: xerox research centre europe, meylan, france
+  Affiliation of the last author: xerox research centre europe, meylan, france
+  Figure 1 Link: articels_figures_by_rev_year\2016\Interferences_in_Match_Kernels\figure_1.jpg
+  Figure 1 caption: "We show the effect of pooling a single descriptor encoding (or)\
+    \ with a set of tightly-clustered descriptor encodings (). Two aggregated representations\
+    \ are shown: + = and + = . With sum aggregation (a), the cluster of descriptors\
+    \ dominates the final representations and, and as a result they are very similar\
+    \ to each other. With the proposed democratic (DMK) (b) and Generalised Max Pooling\
+    \ (GMP) (c) aggregations, both descriptors contribute meaningfully, resulting\
+    \ in more distinguishable pooled representations. In this figure, we show the\
+    \ result of the non-regularised GMP. However, in practice, we always use the regularised\
+    \ version in our experiments (with a fixed regularisation partameter \u03BB=1\
+    \ )."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2016\Interferences_in_Match_Kernels\figure_2.jpg
+  Figure 2 caption: Relative contribution of T-embedded descriptor in the match kernel
+    (self-similarity) without (i.e., sum-pooling) and with democratic re-weighting.
+  Figure 3 Link: articels_figures_by_rev_year\2016\Interferences_in_Match_Kernels\figure_3.jpg
+  Figure 3 caption: "Impact of the GMP parameter \u03BB on performance for the T-embedding\
+    \ \u03D5 \u25B3 . Top: Holidays. Bottom: Oxford5k. Results are shown both with\
+    \ and without Rotation and Normalization (RN). mAP is reported as a function of\
+    \ the power-law normalisation exponent \u03B1 . |C|=64 . Note, \u03B1=0 amounts\
+    \ to binarising the vector."
+  Figure 4 Link: articels_figures_by_rev_year\2016\Interferences_in_Match_Kernels\figure_4.jpg
+  Figure 4 caption: "Impact of the parameters on performance for different embeddings\
+    \ and different aggregation methods: Results for FV embeddings are on the top\
+    \ row, while those for T-embedding \u03D5 \u25B3 are on the bottom row. Results\
+    \ are shown (both with and without RN) for sum aggregation \u03C8 s , democratic\
+    \ aggregation \u03C8 d and GMP \u03C8 gmp . mAP is reported as a function of vocabulary\
+    \ size |C| , and of the power-law normalisation exponent \u03B1 (with |C|=64 in\
+    \ this case). Note, \u03B1=0 amounts to binarising the vector."
+  Figure 5 Link: articels_figures_by_rev_year\2016\Interferences_in_Match_Kernels\figure_5.jpg
+  Figure 5 caption: 'Relative weights for descriptors (warmer colours indicate higher
+    descriptor weights), for a sample of the Oxford query images. Left: Database image.
+    Middle: Democratic weights. Right: GMP weights.'
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Naila Murray
+  Name of the last author: Florent Perronnin
+  Number of Figures: 5
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Interferences in Match Kernels
+  Publication Date: 2016-10-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Impact of Our Methods on the Performance
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison with the State of the Art for Short and Intermediate
+      Representations Produced from the Same Descriptors
+  Table 3 caption:
+    table_text: TABLE 3 Comparison with Baselines Produced Using CNN Features
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with Costly Baselines That Involve the Matching
+      of Multiple Regions per Image
+  Table 5 caption:
+    table_text: TABLE 5 CPU Timings (in Seconds) for Generating Representations
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2615621
+- Affiliation of the first author: school of electrical and electronic engineering,
+    yonsei university, seoul, korea
+  Affiliation of the last author: school of electrical and electronic engineering,
+    yonsei university, seoul, korea
+  Figure 1 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_1.jpg
+  Figure 1 caption: Some challenging multi-modal and multi-spectral images such as
+    (from top to bottom) RGB-NIR, flash-noflash images, two images with different
+    exposures, and blur-sharp images. The images in the third and fourth column are
+    the results obtained by warping images in the second column to images in the first
+    column with dense correspondence maps estimated by using DAISY [13] and our DASC
+    descriptor, respectively.
+  Figure 10 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_10.jpg
+  Figure 10 caption: "Sampling pattern transformation in the GI-DASC descriptor. The\
+    \ sampling patterns ( s i,l , t i,l )\u2208 \u039B dasc i is transformed as (\
+    \ s m,l , t m,l )\u2208 \u039B gi\u2212dasc m with G \u03C1 m and G \u03B8 m on\
+    \ superpixel S m , which is applied equally for all i\u2208 S m . It provides\
+    \ the geometric robustness on each superpixel."
+  Figure 2 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_2.jpg
+  Figure 2 caption: Examples of matching cost comparison. Multi-spectral RGB and NIR
+    images have locally non-linear deformation as depicted in A, B, and C. Matching
+    costs computed with different descriptors along A, B, and C's scan-lines are plotted
+    in (c)-(e). Unlike conventional descriptors, the proposed DASC descriptor yields
+    a reliable global minimum.
+  Figure 3 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_3.jpg
+  Figure 3 caption: "Demonstration of the LSS [18] and the DASC descriptor. Within\
+    \ the support window, solid and dotted line box depict source and target patch,\
+    \ respectively. Unlike a center-biased dense max pooling on each bin i (l) in\
+    \ the LSS descriptor, the DASC descriptor incorporates a randomized receptive\
+    \ field pooling using sampling pattern ( s i,l , t i,l )\u2208 \u039B dasc i on\
+    \ \u0393 i , optimized by a discriminative learning."
+  Figure 4 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_4.jpg
+  Figure 4 caption: Visualization of patch-wise receptive fields of the DASC descriptor
+    learned from the training set P built with the Middlebury benchmark [24], multi-modal
+    benchmark [9], and the MPI SINTEL benchmark [11]. Similar to [51], we stacked
+    all patch-wise receptive fields learned from each training image, and normalized
+    them with the maximal value.
+  Figure 5 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_5.jpg
+  Figure 5 caption: Visualization of support window pairs on multi-spectral RGB and
+    NIR images denoted as 'A' in Fig. 2 having gradient orientation variations, and
+    descriptors for these window pairs. Conventional descriptors such as DAISY [13],
+    BRIEF [29], and LSS [18] vary across modality variations. Unlike those methods,
+    our DASC descriptor remains unchanged to modality variations.
+  Figure 6 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_6.jpg
+  Figure 6 caption: Efficient computation framework of the DASC descriptor. In order
+    to reduce a computational load in computing the adaptive self-correlation, it
+    re-arranges the sampling pattern and employs fast EAF scheme. The DASC descriptor
+    is then computed with re-indexing.
+  Figure 7 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_7.jpg
+  Figure 7 caption: Efficient computation framework of the geometry-invariant DASC
+    (GI-DASC) descriptor. To leverage the efficient computation scheme of the DASC,
+    we employ a superpixel-based description with inferred geometric fields on each
+    superpixel using the WMSD detection.
+  Figure 8 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_8.jpg
+  Figure 8 caption: "Demonstration of sampling patterns ( s i,l , t t,l )\u2208 \u039B\
+    \ wmsd i for the WMSD detector and the index set for the o most smallest value\
+    \ \u03A0 o i . It enables us to extract reliable feature points i\u2208 I \u2032\
+    \ with corresponding geometric fields (scale \u03C1 i and rotation \u03B8 i )."
+  Figure 9 Link: articels_figures_by_rev_year\2016\DASC_Robust_Dense_Descriptor_for_MultiModal_and_MultiSpectral_Correspondence_Est\figure_9.jpg
+  Figure 9 caption: "Examples of a superpixel graph-based propagation. With each superpixel\
+    \ graph in (c), (d) for input images in (a), (b), sparse geometric fields (scale\
+    \ G \u2217,\u03C1 , rotation G \u2217,\u03B8 ) in (e)-(h) are propagated into\
+    \ dense geometric fields (scale G \u03C1 , rotation G \u03B8 ) in (i)-(l)."
+  First author gender probability: 0.7
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Seungryong Kim
+  Name of the last author: Kwanghoon Sohn
+  Number of Figures: 28
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: 'DASC: Robust Dense Descriptor for Multi-Modal and Multi-Spectral Correspondence
+    Estimation'
+  Publication Date: 2016-10-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluation of Computational Time
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Quantitative Evaluation on Multi-Spectral and
+      Multi-Modal Images
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Average EPE on the MPI SINTEL [11]
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2016.2615619

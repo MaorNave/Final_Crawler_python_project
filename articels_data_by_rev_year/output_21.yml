@@ -1,0 +1,864 @@
+- Affiliation of the first author: department of computer science and engineering,
+    shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: department of computer science and engineering,
+    shanghai jiao tong university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_1.jpg
+  Figure 1 caption: Overview of the universal representation framework. Given a sentence
+    as input, a group of related images will be retrieved by our image retrieval methods.
+    The text and images are encoded by the text feature extractor and image feature
+    extractor, respectively. Then the two sequences of representations are integrated
+    using multi-head attention to form a joint representation in the same shape as
+    the original text sequence representation. Finally, the joint representation is
+    passed to downstream task-specific layers to give predictions.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_10.jpg
+  Figure 10 caption: Quantitative study of the gating weight lambda .
+  Figure 2 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_2.jpg
+  Figure 2 caption: Illustration of the TILT method. We first transform the existing
+    sentence-image pairs from seed small-scale sentence-image datasets into a topic-image
+    lookup table. For a given sentence, we extract its topic words and the associated
+    images will be retrieved from the lookup table.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_3.jpg
+  Figure 3 caption: Accuracy difference between our method and baseline compared with
+    the coverage percentage of tokens that can be paired with images in each dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_4.jpg
+  Figure 4 caption: Illustration of the gate values lambda with the UVR-TILT method
+    on Multi30K En-De Test2016.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_5.jpg
+  Figure 5 caption: "Examples of sentences that share the same retrieved images, in\
+    \ which the common topic is about \u201Cgirl\u201D. Sentences with similar topics\
+    \ tend to be paired with similar or even the same images, and vice versa. This\
+    \ means that images may provide topic information, which benefits the modeling\
+    \ of similar sentences."
+  Figure 6 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_6.jpg
+  Figure 6 caption: "Visualization of (a) attention weights of the input tokens with\
+    \ regards to the probed token \u201Clock\u201D across different layers ( Y -axis)\
+    \ using the BERT baseline; (b) image-to-word attention from our model. The illustration\
+    \ shows that the images provide fine-grained grounding information about the relationship\
+    \ between concepts and events, e.g., \u201Clock\u201D, \u201Cdoor\u201D, \u201C\
+    fancy\u201D, \u201Chotel\u201D."
+  Figure 7 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_7.jpg
+  Figure 7 caption: "Visualization of (a) attention weights of the input tokens with\
+    \ regards to the ambiguous token \u201Capple\u201D across different layers ( Y\
+    \ -axis) using the BERT baseline; b) image-to-word attention from our model. The\
+    \ illustration shows that the images bridge the connection between \u201Capple\u201D\
+    , \u201Cwatch\u201D, \u201Ctime\u201D, helping disambiguate the meaning of \u201C\
+    apple\u201D."
+  Figure 8 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_8.jpg
+  Figure 8 caption: Influence of the number of images on the BLEU score.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Universal_Multimodal_Representation_for_Language_Understandi\figure_9.jpg
+  Figure 9 caption: BLEU score for different similarity thresholds.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.85
+  Name of the first author: Zhuosheng Zhang
+  Name of the last author: Hai Zhao
+  Number of Figures: 10
+  Number of Tables: 12
+  Number of authors: 7
+  Paper title: Universal Multimodal Representation for Language Understanding
+  Publication Date: 2023-01-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results for the NMT Tasks
+  Table 10 caption:
+    table_text: TABLE 10 Classification Accuracy on Eight Probing Tasks of Evaluating
+      Linguistics Embedded in the Encoder Outputs
+  Table 2 caption:
+    table_text: TABLE 2 Results (BLEU) From the test2016 and test2017 for the MMT
+      Task
+  Table 3 caption:
+    table_text: TABLE 3 Comparison With Public Methods on the Multi30K MMT Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Test Results on the GLUE Benchmark
+  Table 5 caption:
+    table_text: 'TABLE 5 Validation Results on GLUE Datasets in Different Sizes: Small
+      Datasets With Less Than 10 k k Examples (RTE and STS-B), and a Large Dataset
+      With More Than 10 k k Examples (QNLI)'
+  Table 6 caption:
+    table_text: TABLE 6 Ablation for the Image Embedding Operation on En-Ro
+  Table 7 caption:
+    table_text: TABLE 7 Results of MMT With Incomplete Source Texts by Removing Visually
+      Grounded Tokens in the Multi30K Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Results (BLEU Score) of the Multimodal Disambiguation Experiments
+      on WAT'19 English to Hindi Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Selected Eight Probing Tasks [87] to Study What Syntactic
+      and Semantic Properties are Captured by the Encoders
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234170
+- Affiliation of the first author: computer vision lab, university of nottingham,
+    nottingham, u.k.
+  Affiliation of the last author: samsung ai center cambridge, cambridge, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_1.jpg
+  Figure 1 caption: Contrary to previous works that fail to cope with large viewpoint
+    changes [23] or that fail to deal with object symmetries [86], our method finds
+    correspondence across large viewpoint changes, leading to the discovery of landmarks
+    that better represent the object's geometry.
+  Figure 10 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_10.jpg
+  Figure 10 caption: Visual examples of landmarks discovered by [86] (top row), [23]
+    (middle row), and our method (bottom), on LS3D, across a variety of poses. While
+    [23], [86] fail to model large viewpoint changes, our method benefits from having
+    descriptors that can model the same semantic landmark.
+  Figure 2 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_2.jpg
+  Figure 2 caption: Stage 1 of our proposed framework. A neural network is learned
+    with two separate output heads (detector and descriptor head). During training,
+    we alternate between correspondence recovery via clustering and self-training
+    using the recovered correspondences. Training is bootstrapped by generic keypoints.
+    In contrast to recent approaches, our framework enables learning of local features
+    from unpaired image data. Correspondence is recovered via clustering following
+    our Modified-KMeans algorithm. Our method is able to recover missing landmark
+    locations and converge to well-separated features that can be used for accurate
+    correspondence recovery. Dataset feature visualisation created through t-SNE[73].
+  Figure 3 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_3.jpg
+  Figure 3 caption: Proposed negative pair mining strategy compared to [40]. In [40],
+    negative pairs are sampled on keypoint locations with different clustering assignments.
+    Since multiple clusters can track the same landmark, this can lead to inaccurate
+    negative pairs (red line). Sampling negatives from the same image ensures accurate
+    pairs given that by definition, each landmark can only appear once per image.
+  Figure 4 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_4.jpg
+  Figure 4 caption: t-SNE[73] visualisation of local features. Our new algorithm produces
+    more defined clusters compared to those produced by SuperPoint[17] and our previous
+    work [40].
+  Figure 5 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_5.jpg
+  Figure 5 caption: Forward-NME (shown for the first 10 iterative rounds) of training
+    the first stage of our method with varying ratios of real and random points. Experiment
+    is performed on CelebA [34]. Real points are sampled from 15 facial landmarks
+    and further perturbed spatially by a small offset sampled from [-3px,+3px] .
+  Figure 6 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_6.jpg
+  Figure 6 caption: (figure-top) Examples of generic keypoints captured by SuperPoint
+    on facial images along with the corresponding 68 ground-truth landmarks. Generic
+    keypoints capture several object landmark locations (red keypoints) as well as
+    non-corresponding background points (blue keypoints). (table-bottom) Precision
+    of various generic keypoint detectors w.r.t 68-ground-truth landmark locations
+    (on CelebA). True positives are considered for keypoints within 10% of inter-ocular
+    distance to a landmark location. We observe that generic detectors produce a large
+    number of keypoints that overlap with manually annotated landmarks.
+  Figure 7 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_7.jpg
+  Figure 7 caption: 'Evaluation on facial datasets. (Table): Standard comparison on
+    MAFL and AFLW, in terms of forward error. The results of other methods are taken
+    directly from the papers (for the case where all MAFL training images are used
+    to train the regressor and the error is measured w.r.t. to 5 annotated points).
+    (Figures): CED curves for forward and backward errors. We compare our method with
+    [23], [86] (for K=10,30 ). Where possible, we used pre-trained models, otherwise
+    we re-trained these methods using the publicly available code. A set of 300 training
+    images is used to train the regressors. Error is measured w.r.t. the 68-landmark
+    configuration typically used in face alignment.'
+  Figure 8 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_8.jpg
+  Figure 8 caption: Evaluation of the ability of raw unsupervised landmarks to capture
+    supervised landmark locations on CelebA. Each unsupervised landmark is mapped
+    to the best corresponding supervised landmark using the Hungarian Algorithm. Then
+    accuracy is calculated for a distance threshold of 0.2 cdot diod to a landmark
+    location, where diod is the interocular distance. Accuracy is shown for each of
+    the 68-facial landmarks sorted by ascending order of index. Different landmark
+    areas are highlighted with different colours (1-17 are facial contour landmarks,
+    18-27 are landmarks tracking the eyebrows, etc.)
+  Figure 9 Link: articels_figures_by_rev_year\2023\From_Keypoints_to_Object_Landmarks_via_SelfTraining_Correspo\figure_9.jpg
+  Figure 9 caption: Qualitative results of our proposed approach on various object
+    categories. We consistently discover points in key parts corresponding to the
+    eye corners or the contour. Our method assigns a proper landmark index to these
+    points firstly discovered by a keypoint detector and refined through our self-training
+    approach.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Dimitrios Mallis
+  Name of the last author: Georgios Tzimiropoulos
+  Number of Figures: 12
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: 'From Keypoints to Object Landmarks via Self-Training Correspondence:
+    A Novel Approach to Unsupervised Landmark Discovery'
+  Publication Date: 2023-01-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluation of Landmarks learned on the First Stage of our
+      Framework under different Keypoint Initialisation Methods.
+  Table 10 caption:
+    table_text: TABLE 10 Human3.6 Raw Landmark Evaluation
+  Table 2 caption:
+    table_text: TABLE 2 Evaluation of Landmarks learned from the First Stage or our
+      approach under various Number on Training Clusters M.
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Study of the proposed Negative Pair Selection Strategy
+      combined with either Clustering or Equivariance training.
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the First and Second Stages of Our Framework
+      in Terms of Forward-NME
+  Table 5 caption:
+    table_text: TABLE 5 Cross-Dataset Evaluation
+  Table 6 caption:
+    table_text: TABLE 6 Experiments on the Effect of Flipping as a Training Augmentation
+      and at Test Time
+  Table 7 caption:
+    table_text: TABLE 7 Forward-NME on the CatHeads Dataset [84]
+  Table 8 caption:
+    table_text: TABLE 8 BBCPose Regressed Landmark Accuracy (%)
+  Table 9 caption:
+    table_text: TABLE 9 PennAction Raw Landmark Accuracy (%)
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234212
+- Affiliation of the first author: school of artificial intelligence, beijing key
+    laboratory of network system and network culture, beijing university of posts
+    and telecommunications, beijing, china
+  Affiliation of the last author: department of automation, beijing national research
+    center for information science and technology, tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_1.jpg
+  Figure 1 caption: Given an original contactless fingerprint, the proposed algorithm
+    reconstructs its 3D finger shape and then unwarps it. Using the unwarped images,
+    matching scores of contactless-to-contact-based and contactless-to-contactless
+    matchings are improved significantly (53 rightarrow 114, 15 rightarrow 98, 41
+    rightarrow 74). The numbers on lines are matching scores by a commercial fingerprint
+    matcher, VeriFinger SDK 12.0 [13].
+  Figure 10 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_10.jpg
+  Figure 10 caption: Illustrations of different network structures.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_2.jpg
+  Figure 2 caption: The basic methodology of our method. (a) is a hemisphere with
+    equally distributed ridges along the radius. (b) is its projected image into a
+    plane, and local ridge periods are changed due to perspective distortion. (c)
+    is the estimated ridge period map from (b) using the short-time Fourier transform,
+    where the change of period corresponds to a tilted surface. (d) is the unwarped
+    image of (b) using an estimated 3D model, where the perspective distortion is
+    reduced.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_3.jpg
+  Figure 3 caption: Flow diagram of the proposed monocular 3D fingerprint reconstruction
+    and unwarping algorithm.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_4.jpg
+  Figure 4 caption: Key steps for image preprocessing, including enhancement, scaling,
+    and rotation steps.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_5.jpg
+  Figure 5 caption: Three rotation angles of finger pose.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_6.jpg
+  Figure 6 caption: Structure of gradient estimation network.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_7.jpg
+  Figure 7 caption: Details of network structure.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_8.jpg
+  Figure 8 caption: Illustration of reconstructed 3D finger shape and reconstruction
+    error. Most reconstruction errors occur near the border region.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Monocular_D_Fingerprint_Reconstruction_and_Unwarping\figure_9.jpg
+  Figure 9 caption: Illustrations of reconstruction and unwarping results of different
+    poses from the same finger.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.59
+  Name of the first author: Zhe Cui
+  Name of the last author: Jie Zhou
+  Number of Figures: 16
+  Number of Tables: 13
+  Number of authors: 3
+  Paper title: Monocular 3D Fingerprint Reconstruction and Unwarping
+  Publication Date: 2023-01-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Recent 2D Contactless Fingerprint Recognition Researches
+  Table 10 caption:
+    table_text: TABLE 10 Equal Error Rates of Contactless-to-Contact-Based Fingerprint
+      Matching on UNSW Database
+  Table 2 caption:
+    table_text: TABLE 2 Parameters Used in Loss Function
+  Table 3 caption:
+    table_text: TABLE 3 Contactless Fingerprint Databases Used in This Paper
+  Table 4 caption:
+    table_text: TABLE 4 Average Time Cost of Each Step
+  Table 5 caption:
+    table_text: TABLE 5 Evaluation Results on PolyU 3D Database
+  Table 6 caption:
+    table_text: TABLE 6 Evaluation Results on UNSW Database
+  Table 7 caption:
+    table_text: TABLE 7 Numerical Errors of Reconstruction Algorithm on PolyU 3D Database
+  Table 8 caption:
+    table_text: TABLE 8 Reconstruction Errors on PolyU 3D Database by Different Network
+      Structures
+  Table 9 caption:
+    table_text: TABLE 9 Equal Error Rates of Matching Results on UNSW Database by
+      Different Unwarping Algorithms
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3233898
+- Affiliation of the first author: college of computer science and technology, nanjing
+    university of aeronautics and astronautics, nanjing, jiangsu province, china
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of pittsburgh, pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\Gradient_Descent_Ascent_for_Minimax_Problems_on_Riemannian_M\figure_1.jpg
+  Figure 1 caption: Illustration of manifold operations.(a) A vector u in Txmathcal
+    M is mapped to Rx(u) in mathcal M ; (b) A vector v in Txmathcal M is transported
+    to Tymathcal M by mathcal Tyxv (or mathcal Tuv ), where y=Rx(u) and uin Txmathcal
+    M .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Gradient_Descent_Ascent_for_Minimax_Problems_on_Riemannian_M\figure_2.jpg
+  Figure 2 caption: The basic idea of our convergence analysis.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Gradient_Descent_Ascent_for_Minimax_Problems_on_Riemannian_M\figure_3.jpg
+  Figure 3 caption: Experimental results for the robust training task. (a, c) Test
+    accuracy with natural images for MNIST and FashionMNIST datasets. (b, d) Training
+    loss for MNIST and FashionMNIST datasets.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Gradient_Descent_Ascent_for_Minimax_Problems_on_Riemannian_M\figure_4.jpg
+  Figure 4 caption: Experimental results for the distributionally robust optimization
+    task. (a, c) Test accuracy for STL-10 and CIFAR-10 datasets. (b, d) Training loss
+    for STL-10 and CIFAR-10 datasets.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.92
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Feihu Huang
+  Name of the last author: Shangqian Gao
+  Number of Figures: 4
+  Number of Tables: 7
+  Number of authors: 2
+  Paper title: Gradient Descent Ascent for Minimax Problems on Riemannian Manifolds
+  Publication Date: 2023-01-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Benchmark Datasets Used in Our Experiments
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE 2 The DNN Used in Our Experiments
+  Table 3 caption:
+    table_text: TABLE 3 Test Accuracy Against Nature Images and Different Attacks
+      for MNIST
+  Table 4 caption:
+    table_text: TABLE 4 Test Accuracy Against Nature Images and Different Attacks
+      for FashionMNIST
+  Table 5 caption:
+    table_text: TABLE 5 Test Accuracy Against Nature Images and Different Attacks
+      for CIFAR10
+  Table 6 caption:
+    table_text: TABLE 6 Test Accuracy Against Nature Images and Different Attacks
+      for the First 10 Classes of CIFAR100
+  Table 7 caption:
+    table_text: TABLE 7 Test Accuracy Against Nature Images and Different Attacks
+      for STL10
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234160
+- Affiliation of the first author: school of electrical science and engineering, nanjing
+    university, nanjing, china
+  Affiliation of the last author: school of electrical science and engineering, nanjing
+    university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_1.jpg
+  Figure 1 caption: Overview of the proposed adaptive recurrent denoising method.
+  Figure 10 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_10.jpg
+  Figure 10 caption: Qualitative comparisons with existing denoising algorithms on
+    synthetic test video sequences.
+  Figure 2 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_2.jpg
+  Figure 2 caption: Characteristics of noise distribution in low-light imaging. (a)
+    A video frame captured by Canon 5D MarkIII with ISO 25600 under low-light conditions.
+    (b) An image synthesized with i.i.d. AWGN of equal noise variance. (c) The dark
+    field frame of Canon 5D MarkIII, with obvious horizontal streak noise that changes
+    with rows. (d) Intensity histograms of different color channels of the low-light
+    image (a), showing color heterogeneous among channels. (e) The total intensity
+    histogram of (a), over three color channels, with obviously observed clipping
+    effect.
+  Figure 3 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_3.jpg
+  Figure 3 caption: We take real noisy image sequences captured by the three cameras
+    as the input of NAM (the last column), and get the estimated parameters of the
+    corresponding cameras. With the estimated parameters and the corresponding clear
+    images, we synthesize the noisy images shown in the third column, which are similar
+    to the real captured noisy images. For comparison, the second column is the synthesized
+    images based on mGP noise model of equal noise variance. The last two rows are
+    histograms of image captured by Canon 5D MarkIII and the corresponding synthesized
+    images.
+  Figure 4 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_4.jpg
+  Figure 4 caption: All the correlated pixels in a video sequence for a target pixel
+    marked with a red box in the blue sky at time t=30 . The corresponding positions
+    and weights (masks) of these correlated points are accumulated along with time.
+    Note that we only plot correlated enough points whose weights are greater than
+    0.4. Different colors of sampling points represent different time coordinates
+    correspondingly, e.g., the green points are at tapprox 20 , and the yellow points
+    are at tapprox 16 .
+  Figure 5 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_5.jpg
+  Figure 5 caption: Basic noise sources of the entire imaging process.
+  Figure 6 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_6.jpg
+  Figure 6 caption: Calibrated beta nu of channel R in space and frequency domain,
+    including two cameras. (a) Results of ASI294 Pro (rolling shutter). (b) Results
+    of GS3-U3-32S4C (global shutter).
+  Figure 7 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_7.jpg
+  Figure 7 caption: The overall network structure of NAM.
+  Figure 8 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_8.jpg
+  Figure 8 caption: Visualization of the output of NAM.
+  Figure 9 Link: articels_figures_by_rev_year\2023\SemiBlindly_Enhancing_Extremely_Noisy_Videos_With_Recurrent_\figure_9.jpg
+  Figure 9 caption: Detailed network structure of different components of the proposed
+    STLNet, including SFDB, ICGE, ICGD, ICCM and STNA-LSTM. Noted that STNA-LSTM0
+    and STNA-LSTM6 in (b) or (c) with dash lines are not involved in the proposed
+    STLNet. We plot them here for the ablation study.
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.87
+  Name of the first author: Xin Chen
+  Name of the last author: Tao Yue
+  Number of Figures: 24
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Semi-Blindly Enhancing Extremely Noisy Videos With Recurrent Spatio-Temporal
+    Large-Span Network
+  Publication Date: 2023-01-04 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Parameters of the Proposed Practical Noise Model for Canon\
+      \ 5D MarkIII, ASI294MC Pro, Grasshopper3 GS3-U3-32S4C, Sony \u03B1 \u03B17s3,\
+      \ iPhone 14 Pro, GoPro HERO11, and HUAWEI P50 Pro, Calibrated With Two Methods"
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE 2 Camera Settings and Shooting Conditions
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparisons With Existing Denoising Algorithms
+      on Synthetic Test Dataset With Different Noise Models
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Study on Synthetic Video Sequences
+  Table 5 caption:
+    table_text: TABLE 5 MSEs and the Classification Accuracy Comparison
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Study on the Number of STNA-LSTMs
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234026
+- Affiliation of the first author: australian institute for machine learning (aiml),
+    school of computer science, the university of adelaide, adelaide, sa, australia
+  Affiliation of the last author: australian institute for machine learning (aiml),
+    school of computer science, the university of adelaide, adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_1.jpg
+  Figure 1 caption: "Overview of our pre-training and \uFB01ne-tuning paradigm for\
+    \ VLN. Our model is pre-trained with five proxy tasks: Mask Language Modeling\
+    \ (MLM), Trajectory-Instruction Matching (TIM), Trajectory Ordering Modeling (TOM),\
+    \ Group Ordering Modeling (GOM), and Action Prediction with History (APH). We\
+    \ also devise an external memory network for fine-tuning to better utilize history\
+    \ context."
+  Figure 10 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_10.jpg
+  Figure 10 caption: APH versus AP regarding action prediction accuracy.
+  Figure 2 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_2.jpg
+  Figure 2 caption: The architecture of our VLN model.
+  Figure 3 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_3.jpg
+  Figure 3 caption: Illustration of the Masked Language Modeling (MLM) task.
+  Figure 4 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_4.jpg
+  Figure 4 caption: Illustration of the Trajectory-Instruction Matching (TIM) task.
+  Figure 5 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_5.jpg
+  Figure 5 caption: Illustration of the Group Order Modeling (TOM) task.
+  Figure 6 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_6.jpg
+  Figure 6 caption: Illustration of the Group Order Modeling (GOM) task.
+  Figure 7 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_7.jpg
+  Figure 7 caption: Illustration of the Group Order Modeling (APH) task.
+  Figure 8 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_8.jpg
+  Figure 8 caption: Overview of fine-tuning with memory network.
+  Figure 9 Link: articels_figures_by_rev_year\2023\HOP_HistoryEnhanced_and_OrderAware_PreTraining_for_Visionand\figure_9.jpg
+  Figure 9 caption: Details of the memory network.
+  First author gender probability: 0.62
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yanyuan Qiao
+  Name of the last author: Qi Wu
+  Number of Figures: 14
+  Number of Tables: 8
+  Number of authors: 6
+  Paper title: 'HOP+: History-Enhanced and Order-Aware Pre-Training for Vision-and-Language
+    Navigation'
+  Publication Date: 2023-01-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison With Previous VLN Pre-Training Works
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE 2 Comparison With State-of-the-Art Methods on R2R
+  Table 3 caption:
+    table_text: TABLE 3 Comparison With the State-of-the-Art Methods on REVERIE
+  Table 4 caption:
+    table_text: TABLE 4 Comparison With State-of-the-Art Methods on RxR Using English
+      Instructions
+  Table 5 caption:
+    table_text: TABLE 5 Comparison With State-of-the-Art Methods on NDH Measured by
+      the Goal Progress in Meters
+  Table 6 caption:
+    table_text: 'TABLE 6 Ablation Study of the Pre-Training Tasks on Validation Unseen
+      Splits of Three VLN Tasks: R2R, REVERIE, and NDH'
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Study Results of Pre-Training Data on the Validation
+      Unseen Splits of R2R, REVERIE, and RxR Tasks
+  Table 8 caption:
+    table_text: TABLE 8 Inference Time on R2R Validation Unseen Split
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234243
+- Affiliation of the first author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Affiliation of the last author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_1.jpg
+  Figure 1 caption: "t-SNE [17] visualization of embeddings. (a) \u201C\u2022\u201D\
+    \ represent embeddings of co-salient objects \u201Cbanana\u201D. We observe that\
+    \ the embeddings (in the blue circle area) quite near the center are very likely\
+    \ to belong to co-salient objects. We employ them as our co-representation to\
+    \ localize co-salient objects. (b) When many embeddings of irrelevant objects\
+    \ are filtered out by our primary prediction, we can obtain a new center less\
+    \ interfered by irrelevant embeddings. The new center helps search purer co-representation\
+    \ leading to more accurate prediction."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_2.jpg
+  Figure 2 caption: "Overall framework of our CoRP. \u201CPCS\u201D and \u201CRPP\u201D\
+    \ denote the proposed pure co-representation search (Section 3.2) and recurrent\
+    \ proxy purification (Section 3.3). As shown above, when receiving a group of\
+    \ images, the corressponding saliency maps are first predicted by a backbone-shared\
+    \ saliency object detection (SOD) head. A co-representation proxy is generated\
+    \ upon filtering background noise by the saliency maps. With the help of the proxy,\
+    \ PCS searches pure co-representation, which guides co-saliency prediction. RPP\
+    \ feeds back co-saliency maps to calculate a new proxy, which helps searching\
+    \ purer co-representation. With the collaboration of PCS and RPP, the noise in\
+    \ the predictions is iteratively removed. For brevity, we do not draw our encoder-decoder\
+    \ architecture and the SOD head, which shares backbone parameters with this Co-SOD\
+    \ network."
+  Figure 3 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_3.jpg
+  Figure 3 caption: "Visualization of the locations of embeddings in our pure co-representation\
+    \ and the channels of feature mathbf At transformed by our pure co-representation.\
+    \ In the first row, each of the red point \u201C\u2022\u201D in one picture represents\
+    \ one of the top- K spatial positions whose corresponding representation constitutes\
+    \ the pure co-representation. Each heatmap represents a channel of the converted\
+    \ feature (see Section 3.2). It is a correlation map calculated from the deep\
+    \ representation of the target image and the representation noted in the above\
+    \ red point."
+  Figure 4 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_4.jpg
+  Figure 4 caption: "Distribution of the obtained co-representation proxies and corresponding\
+    \ ground-truth ones in different iterations. We visualize all 80 groups in CoCA\
+    \ [13] by t -SNE [17] algorithm. Here, the blue triangle \u201C blacktriangle\
+    \ \u201D means the co-representation proxies masked-averaged by co-saliency maps,\
+    \ and the orange square \u201C blacksquare \u201D denotes the pure co-representation\
+    \ proxies masked-averaged by ground-truth maps. The result shows that the iteration\
+    \ process makes the co-representation proxies approach the ground-truth ones gradually."
+  Figure 5 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_5.jpg
+  Figure 5 caption: Predicitons in different iterations. We can see that the predictions
+    are gradually approaching the ground-truth labels. It is thanks to the gradually
+    purified co-representation in the iteration. Note that the predictions with less
+    foreground noise are conducive to mine purer co-representation.
+  Figure 6 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_6.jpg
+  Figure 6 caption: Visual comparison of our CoRP with six SOTA methods. We demonstrate
+    the predictions from three categories (lemon, chime, and binoculars) belonging
+    to the three benchmark dataset (CoSal2015 [19], CoSOD3k [18], and CoCA [13]).
+    We highlight the results of CoRP with an orange frame.
+  Figure 7 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_7.jpg
+  Figure 7 caption: "The performance of our model on different categories on CoSal2015\
+    \ in terms of S-measure. We show the prediction results of the worst group \u201C\
+    hammer\u201D and the best group \u201Cbear\u201D. These three rows from top to\
+    \ bottom correspond to the input image, ground truth, and our prediction."
+  Figure 8 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_8.jpg
+  Figure 8 caption: Failure cases of our method. From top to bottom are images, ground
+    truths and our predictions. The chopsticks are the co-salient objects of this
+    group.
+  Figure 9 Link: articels_figures_by_rev_year\2023\CoSalient_Object_Detection_With_CoRepresentation_Purificatio\figure_9.jpg
+  Figure 9 caption: Our qualitative results on the co-segmentation datasets.
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Ziyue Zhu
+  Name of the last author: Ming-Ming Cheng
+  Number of Figures: 9
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: Co-Salient Object Detection With Co-Representation Purification
+  Publication Date: 2023-01-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Proportion of the Sparse Locations for Extracting Co-Representation
+      Falling on the Co-Salient Objects
+  Table 10 caption:
+    table_text: TABLE 10 Quantitative Comparisons of Precision ( P P) and Jaccard
+      ( J J) by our CoRP and Other Methods on the Co-Segmentation Benchmark Co-Segmentation
+      Dataset MSRC
+  Table 2 caption:
+    table_text: "TABLE 2 Quantitative Comparisons of Mean Absolute Error ( MAE MAE),\
+      \ Maximum F-Measure [43] ( F max Fmax), S-Measure [44] ( S \u03B1 S\u03B1),\
+      \ and Mean E-Measure [45] ( E \u03BE E\u03BE) by our CoRP and Other Methods\
+      \ on the CoCA [13], CoSOD3k [18], and CoSal2015 [19] Datasets"
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Study of the Proposed CoRP on the CoCA and CoSOD3k
+      Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Influence of the Number of Searched Sparse Positions in PCS
+      on the CoSal2015 and CoSOD3k Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Performance of CoRP Along With Iterations on the CoCA and
+      CoSOD3k Datasets. T denotes the times of iteration.
+  Table 6 caption:
+    table_text: TABLE 6 Results of Our Method With Different Batch Size Settings.
+      n train ntrain and n test ntest Denote Training and Test Input Size, Respectively
+  Table 7 caption:
+    table_text: "TABLE 7 The Performance of our Model With Different \u03B1 \u03B1\
+      \ and \u03B2 \u03B2"
+  Table 8 caption:
+    table_text: TABLE 8 Quantitative Comparisons of Precision ( P P) and Jaccard (
+      J J) by our CoRP and Other Co-Segmentation Methods on the Co-Segmentation Benchmark
+      Dataset Internet
+  Table 9 caption:
+    table_text: TABLE 9 Quantitative Comparisons of Jaccard ( J J) by our CoRP and
+      Other Co-Segmentation Methods on the Co-Segmentation Dataset iCoseg
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234586
+- Affiliation of the first author: national laboratory of pattern recognition, institute
+    of automation, chinese academy of sciences, bejing, china
+  Affiliation of the last author: department of automation, tsinghua university, bejing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_1.jpg
+  Figure 1 caption: The overall structure of Graph Complete Network (GCNet) with the
+    trimodal setting ( M=3 ). This model focuses on the classification task based
+    on incomplete conversational data.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_2.jpg
+  Figure 2 caption: Seven missing patterns for a trimodal dataset.
+  Figure 3 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_3.jpg
+  Figure 3 caption: Comparison of imputation performance with different missing rates.
+    Lower MSE indicates better imputation performance.
+  Figure 4 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_4.jpg
+  Figure 4 caption: Classification performance comparison of GCNet and Lower Bound
+    under different missing rates.
+  Figure 5 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_5.jpg
+  Figure 5 caption: Parameter tuning on the IEMOCAP(four-class) dataset with the missing
+    rate eta =0.3 .
+  Figure 6 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_6.jpg
+  Figure 6 caption: Trends in loss functions on the IEMOCAP(four-class) dataset with
+    the missing rate eta =0.3 .
+  Figure 7 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_7.jpg
+  Figure 7 caption: Visualization the representations of different methods on the
+    IEMOCAP(four-class) test set with the missing rate eta =0.3 . In these figures,
+    we use red, blue, green and purple to represent happiness, sadness, neutral and
+    anger, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_8.jpg
+  Figure 8 caption: T-SNE visualization results on the IEMOCAP(four-class) test set
+    with increasing training iterations (the missing rate eta =0.3 ). In these figures,
+    we use red, blue, green and purple to represent happiness, sadness, neutral and
+    anger, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2023\GCNet_Graph_Completion_Network_for_Incomplete_Multimodal_Lea\figure_9.jpg
+  Figure 9 caption: "Prediction results on incomplete conversational data. \u201C\u2713\
+    \u201D denotes the available modalities and \u201C\xD7\u201D denotes the missing\
+    \ modalities."
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.87
+  Name of the first author: Zheng Lian
+  Name of the last author: Jianhua Tao
+  Number of Figures: 9
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: 'GCNet: Graph Completion Network for Incomplete Multimodal Learning
+    in Conversation'
+  Publication Date: 2023-01-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Statistical Information on IEMOCAP
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE II Statistical Information on CMU-MOSI and CMU-MOSEI
+  Table 3 caption:
+    table_text: TABLE III Comparison of Classification Performance With Different
+      Missing Rates
+  Table 4 caption:
+    table_text: TABLE IV Ablation Results for SGNN and TGNN on the IEMOCAP Dataset
+  Table 5 caption:
+    table_text: Not Avaliable
+  Table 6 caption:
+    table_text: Not Avaliable
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234553
+- Affiliation of the first author: department of automation, state key lab of intelligent
+    technologies and systems, beijing national research center for information science
+    and technology (bnrist), tsinghua university, beijing, china
+  Affiliation of the last author: department of automation, state key lab of intelligent
+    technologies and systems, beijing national research center for information science
+    and technology (bnrist), tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_1.jpg
+  Figure 1 caption: Overview of the proposed deep metric learning with adaptively
+    composite dynamic constraints. Circles and pentagrams denote samples and proxies,
+    respectively. We use colors to indicate the class of each sample or proxy. For
+    a batch of samples, we employ interactive proxy generation (IPG), structural pair
+    sampling (SPS), tuple construction, and adaptive tuple assessment (ATA) to adaptively
+    produce dynamic constraints to train the metric. We formulate the learning of
+    the constraint generator as a meta-learning problem with the meta-objective to
+    maximize the generalization ability of the learned metric. The constraint generator
+    is simultaneously learned with the metric in an online manner.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_10.jpg
+  Figure 10 caption: Visualizations of the sampled pairs the proposed SPS in comparison
+    with the conventional distance-weighted sampling [87].
+  Figure 2 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_2.jpg
+  Figure 2 caption: Illustration of the proposed interactive proxy generation (IPG)
+    module. We map the class-aware embeddings of the samples to a transformed space,
+    where the similarities with the current proxy set are used as weights to aggregate
+    the sample embeddings. We then employ the aggregated embeddings to update the
+    proxy set.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_3.jpg
+  Figure 3 caption: Illustration of the proposed structural pair sampling (SPS) module.
+    Circles and pentagrams denote samples and proxies, respectively. We use colors
+    to indicate the class of each sample or proxy. We first construct a bipartite
+    graph with the proxies and embeddings as two sets of nodes. We then employ a graph
+    neural network to enable message passing through nodes to predict a preservation
+    probability for each sample-proxy pair. We perform the message propagation for
+    F times. We finally use the Gumble-Softmax method [31] to produce differentiable
+    sampled pairs.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_4.jpg
+  Figure 4 caption: Illustration of the proposed adaptive tuple assessment (ATA) module.
+    We use circles to denote samples and their colors to indicate the class. For each
+    loss over a tuple, the assessor generates an adaptive weight combining information
+    about the structure of the tuple with the knowledge of previous inputs and current
+    model status. To achieve this, we pass a latent state through the assessor over
+    the whole training process, containing information learned from previous experiences.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_5.jpg
+  Figure 5 caption: 'Illustration of the proposed online meta-training of the constraint
+    generator and deep metric learning with adaptively composite dynamic constraints.
+    We use circles to denote samples and their colors to indicate the class. At each
+    iteration, the training of our framework consists of three stages: 1) updating
+    the metric once using the generated dynamic constraints on the training subset,
+    2) training the constraint generator to maximize the performance of the updated
+    metric on the validation subset, and 3) training the original metric using the
+    updated adaptive constraints. Note that we only use the updated metric for the
+    training of the constraint generator and discard it after each iteration.'
+  Figure 6 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_6.jpg
+  Figure 6 caption: Performance comparisons using different episode construction methods
+    for the contrastive loss and DML-DC (Cont).
+  Figure 7 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_7.jpg
+  Figure 7 caption: Performance of the contrastive loss and DML-DC (Cont) on the training
+    and test set.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_8.jpg
+  Figure 8 caption: Performance of DML-DC (PA) with different embedding sizes.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Deep_Metric_Learning_With_Adaptively_Composite_Dynamic_Const\figure_9.jpg
+  Figure 9 caption: Visualizations of the proxies generated by the proposed IPG (pentagrams)
+    in comparison with conventional gradient-based proxies (triangles).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.59
+  Name of the first author: Wenzhao Zheng
+  Name of the last author: Jie Zhou
+  Number of Figures: 12
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Deep Metric Learning With Adaptively Composite Dynamic Constraints
+  Publication Date: 2023-01-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Different Deep Metric Learning Methods Under the
+      CSCW Paradigm
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE 2 Experimental Results (%) of DML-DC Compared With Existing
+      Methods Under the Conventional Setting on the CUB-200-2011, Cars196, and Stanford
+      Online Products Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Experimental Results (%) of DML-DC Compared With Existing
+      Methods Under the Conventional Setting on the in-Shop Clothes Retrieval and
+      VihicleID Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Experimental Results (%) of DML-DC Compared With Existing
+      Methods Under the MLRC Setting [53] on the CUB-200-2011 Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Experimental Results (%) of DML-DC Compared With Existing
+      Methods Under the MLRC Setting [53] on the Cars196 Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Experimental Results (%) of DML-DC Compared With Existing
+      Methods Under the MLRC Setting [53] on the Stanford Online Products Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Study of the Design of Each Module in Our DML-DC
+      Framework
+  Table 8 caption:
+    table_text: TABLE 8 Ablation Study of Different Modules of Our DML-DC Framework
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3234536
+- Affiliation of the first author: department of computer science and engineering,
+    pohang university of science and technology (postech), pohang, south korea
+  Affiliation of the last author: department of computer science and engineering,
+    pohang university of science and technology (postech), pohang, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_1.jpg
+  Figure 1 caption: Convolutional Hough matching (CHM) establishes reliable correspondences
+    across images by performing position-aware Hough voting in a high-dimensional
+    geometric transformation space, e.g., translation and scaling.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_10.jpg
+  Figure 10 caption: Learned ktextpsitext6D-4D used in CHMNet. The 6D kernel ( ktextpsitext6D
+    ) consists of four 4D kernels each of which has 55 parameters.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_2.jpg
+  Figure 2 caption: Convolutional Hough matching that carries out geometric voting
+    in 6D space, e.g., translation and scale.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_3.jpg
+  Figure 3 caption: Visualization of learned 6-dimensional CHM kernel ktextpsitext6D
+    (top) and CP-CHM kernel ktextCP-psitext6D (bottom) where Hmathrmk = Wmathrmk =
+    5 and Smathrmk = 3 . See Fig. 4 to see how we visualized them.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_4.jpg
+  Figure 4 caption: 'Description of visualizing learned weights of high-dimensional
+    kernels: (Left) The arrows represent the offset vectors relative to the kernel
+    position (mathbf x, mathbf xprime ) , and the circles mean zero offset. (Right)
+    For straightforward visualization, we decompose a high-dimensional kernel into
+    multiple 4D kernels (tesseracts) and visualize learned weights of each 4D kernel
+    as a set of maps consisting of offset vectors. Darker offsets mean larger weights
+    while brighter ones mean smaller weights.'
+  Figure 5 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_5.jpg
+  Figure 5 caption: Overall architecture of the proposed method that performs (learnable)
+    geometric voting in high-dimensional spaces.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_6.jpg
+  Figure 6 caption: Qualitative results on SPair-71k. Our model predicts reliable
+    matches under large changes in view-point and scale.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_7.jpg
+  Figure 7 caption: Visualization of maxpooled position in scale-space. In each image
+    pair, we show source keypoints (given) and their corresponding target keypoints
+    (predicted) in circles in left and right images respectively. The size (large,
+    medium, and small) of each circle indicates maxpooled position in scale-space.
+    If both circles of a match are large, its match score is pooled from position
+    (sqrt2, sqrt2) in scale space. If the size of one circle is medium and that of
+    the other is small, its match score is from position (1, 1sqrt2) and so on. We
+    show ground-truth target keypoints in crosses with a line that depicts matching
+    error.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_8.jpg
+  Figure 8 caption: Frequencies over the maxpooled positions in scale-space on SPair-71k,
+    PF-PASCAL, and PF-WILLOW.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Convolutional_Hough_Matching_Networks_for_Robust_and_Efficie\figure_9.jpg
+  Figure 9 caption: PR curves on SPair-71k (left) and PF-PASCAL (right) datasets.
+    The superscript dagger denotes our model trained using single-level backbone features.
+  First author gender probability: 0.82
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.92
+  Name of the first author: Juhong Min
+  Name of the last author: Minsu Cho
+  Number of Figures: 18
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Convolutional Hough Matching Networks for Robust and Efficient Visual
+    Correspondence
+  Publication Date: 2023-01-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance on Standard Benchmarks in Accuracy, FLOPs, Per-Pair
+      Inference Time, and Memory Footprint
+  Table 10 caption:
+    table_text: Not Avaliable
+  Table 2 caption:
+    table_text: TABLE 2 Unbiased Evaluation on PF-PASCAL
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Study of CHM Kernels Over Multiple Runs
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Study of Scale-Space Resolutions
+  Table 5 caption:
+    table_text: "TABLE 5 PCK Results With \u03B1 img \u22080.05,0.1 \u03B1img\u2208\
+      0.05,0.1 on PF-PASCAL Under Varying Training Objectives and Keypoint Transfer\
+      \ Methods"
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Study of Core Modules in Our Model
+  Table 7 caption:
+    table_text: Not Avaliable
+  Table 8 caption:
+    table_text: Not Avaliable
+  Table 9 caption:
+    table_text: Not Avaliable
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3233884

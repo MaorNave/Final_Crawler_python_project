@@ -1,0 +1,1117 @@
+- Affiliation of the first author: idaho state university, pocatello, id, usa
+  Affiliation of the last author: utah state university, logan, ut, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_1.jpg
+  Figure 1 caption: An example of a random forest and notation with regards to a particular
+    observation x1 . The red-encircled trees are those in which x1 is out of bag,
+    making up the set of trees S1 . A particular tree in S1 is exhibited. The out-of-bag
+    indices for the tree are given in red (i in O(t)) , while the in-bag indices (i
+    in B(t)) are shown in black. The indices of observations residing in the same
+    terminal node as x1 are given by the set v1(t) . J1(t) gives the in-bag observation
+    indices in the terminal node v1(t) , while M1(t) provides the corresponding multiset.
+    c4(t) denotes the number of repetitions of observation x4 in the tree t .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_2.jpg
+  Figure 2 caption: Random forest predictions are compared here with the proximity-weighted
+    predictions for both regression and classification problems. For each of the datasets
+    listed in supplemental Table B.1, which can be found on the Computer Society Digital
+    Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2023.3263774, the differences
+    were calculated across five random seeds. For classification, the RF-GAP prediction
+    variations tend to increase with node size, although they are still more similar
+    to the RF predictions when compared with the other proximities. For regression,
+    RF-GAP predictions perfectly match the RF predictions regardless of node size.
+    Note that RFProxIH is incompatible with regression tasks.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_3.jpg
+  Figure 3 caption: Training versus test error of the proximity-weighted predictions
+    24 datasets described in the supplemental Table B.1, available online. Errors
+    were averaged across five runs. We see that the original proximities, PBK, and
+    RFProxIH, tend to overfit the training data, as demonstrated by points above the
+    line y=x . The random forest errors and RF-GAP nearly perfectly align in most
+    cases and are each well-described by the line.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_4.jpg
+  Figure 4 caption: These boxplots show the proportion of proximity-weighted OOB and
+    test predictions which do not match the respective random forest predictions.
+    Proximity-based training predictions were compared with the RF out-of-bag errors.
+    RF-GAP proximity predictions most nearly match the random forest predictions for
+    both the training (top) and test (bottom) data, thus, best preserving the geometry
+    learned by the random forest. Datasets were split into 70% training and 30% test
+    data. Errors were averaged across 5 runs. The dataset details can be found in
+    Table B.1, available in the online supplemental material.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_5.jpg
+  Figure 5 caption: "Here is a comparison of MDS embeddings using different RF proximity\
+    \ definitions. Proximities were constructed from a random forest trained on the\
+    \ two-class Sonar dataset (208 observations of 60 variables) from the UCI repository\
+    \ which gave an OOB error rate of 14.9%. Multi-dimensional scaling (MDS) was applied\
+    \ to 1\u2212prox \u2212 \u2212 \u2212 \u2212 \u2212 \u2212 \u2212 \u221A using\
+    \ RF-GAP proximities, the original proximities, OOB proximities (Definition 2),\
+    \ PBK [58], and RFProxIH [60]. Using RF-GAP proximities, the visualization depicts\
+    \ a good representation of the forest's classification problem. For correctly-classified\
+    \ points (dots), there are two clear groupings, while misclassified points (squares)\
+    \ are generally located between the groupings or found within the opposite class\
+    \ cluster, albeit closer to the decision boundary than not. The original definition,\
+    \ PBK, and RFProxIH over-exaggerate the separation between classes. This is apparent\
+    \ in examples in the figure as the two classes appear nearly linearly separable\
+    \ which does not accurately depict the random forest's performance on the dataset.\
+    \ Using only OOB samples to generate the proximities improves upon those three\
+    \ but seems to add some noise to the visualization. There are still two major\
+    \ class clusters, but some correctly classified points are found farther inside\
+    \ the opposite class' cluster compared to the RF-GAP visualization. More examples\
+    \ can be found in Appendix A.7, available in the online supplemental material."
+  Figure 6 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_6.jpg
+  Figure 6 caption: Imputation of values MCAR of the optical digits dataset [62].
+    The experiment was repeated over 5 runs and across 10 iterations. RF-GAP proximities
+    produced the most accurate imputations.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_7.jpg
+  Figure 7 caption: MDS applied to the random forest proximities computed from the
+    Gene Expression Cancer dataset from UCI [62]. The point sizes are inversely proportional
+    to the average proximity of a given observation to all other within-class observations.
+    The misclassifications in RF-GAP, and OOB, are understandable based on the distance
+    from their respective clusters. The original proximities and RFProxIH do not clearly
+    account for the misclassified points. The outlier measure scaling in RF-GAP gives
+    a clear reflection of the distance of points to their respective clusters.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_8.jpg
+  Figure 8 caption: A sorted plot of the outlier measures for the MNIST dataset as
+    provided by RF-GAP. The vertical axis is the outlier measure as described in Section
+    VI-C. The top seven outlying images are labeled with an index and shown in Fig.
+    9.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Geometry_and_AccuracyPreserving_Random_Forest_Proximities\figure_9.jpg
+  Figure 9 caption: The top seven outlying digits per RF-GAP (see Fig. 8). Some of
+    these digits may even be difficult for a human to classify, corroborating the
+    RF-GAP outlier score.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jake S. Rhodes
+  Name of the last author: Kevin R. Moon
+  Number of Figures: 9
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: Geometry- and Accuracy-Preserving Random Forest Proximities
+  Publication Date: 2023-03-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE I The Regression Slopes of Each Proximity Type Corresponding
+      to the Points in Fig. 3. RF-GAP Does Not Exhibit Bias Towards the Training Data
+      as They Have a Slope Close to One, While the Larger Slope of the Other Proximity
+      Definitions Indicates They are Overfitting the Training Data
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II The Average Ranks of the Imputation Scores Across the Various
+      UCI Datasets and Various Percentages of Missing Values. Each Imputation Experiment
+      Was Repeated 100 Times With Different Random Initialization. RF-GAP Generally
+      Produces the Best Imputations Across All Percentages of Missing Values. See
+      Table A.3, available in the online supplemental material, for the Full Imputation
+      Results
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3263774
+- Affiliation of the first author: department of automation, beijing national research
+    center for information science and technology (bnrist), tsinghua university, beijing,
+    china
+  Affiliation of the last author: department of automation, beijing national research
+    center for information science and technology (bnrist), tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2023\GFNet_Global_Filter_Networks_for_Visual_Recognition\figure_1.jpg
+  Figure 1 caption: 'The overall architecture of the Global Filter Network. Our architecture
+    is based on Vision Transformer (ViT) models with some minimal modifications. We
+    replace the self-attention sub-layer with the proposed global filter layer, which
+    consists of three key operations: a 2D discrete Fourier transform to convert the
+    input spatial features to the frequency domain, an element-wise multiplication
+    between frequency-domain features and the global filters, and a 2D inverse Fourier
+    transform to map the features back to the spatial domain. The efficient fast Fourier
+    transform (FFT) enables us to learn arbitrary interactions among spatial locations
+    with log-linear complexity. The connections and differences among the proposed
+    global filter layer, self-attention and spatial MLP are also summarized in the
+    right part (see Section III-C for more details).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\GFNet_Global_Filter_Networks_for_Visual_Recognition\figure_2.jpg
+  Figure 2 caption: Comparisons among GFNet, ViT [20] and ResMLP [64] in (a) FLOPs
+    (b) latency and (c) GPU memory with respect to the number of tokens (feature resolution).
+    The dotted lines indicate the estimated values when the GPU memory has run out.
+    The latency and GPU memory is measured using a single NVIDIA RTX 3090 GPU with
+    batch size 32 and feature dimension 384.
+  Figure 3 Link: articels_figures_by_rev_year\2023\GFNet_Global_Filter_Networks_for_Visual_Recognition\figure_3.jpg
+  Figure 3 caption: ImageNet acc. vs model complexity of Transformer-style architectures.
+    We compare our GFNet models with typical vision Transformer DeiT [65] and MLP-like
+    models ResMLP [64] and gMLP [45]. All models are based on a similar meta architecture
+    and training strategy.
+  Figure 4 Link: articels_figures_by_rev_year\2023\GFNet_Global_Filter_Networks_for_Visual_Recognition\figure_4.jpg
+  Figure 4 caption: Visualization of the learned global filters in GFNet-XS. We visualize
+    the original frequency domain global filters in (a) and show the corresponding
+    spatial domain filters for the first 6 columns in (b). There are more clear patterns
+    in the frequency domain than the spatial domain.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Yongming Rao
+  Name of the last author: Jiwen Lu
+  Number of Figures: 4
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: 'GFNet: Global Filter Networks for Visual Recognition'
+  Publication Date: 2023-04-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparisons of the Proposed Global Filter With Prevalent Operations
+      in Deep Vision Models. H H, W W and D D are the Height, Width and the Number
+      of Channels of the Feature Maps. k k is the Kernel Size of the Depth-Wise Convolution
+      Operation [10]. The Proposed Global Filter is Much More Efficient Than Self-Attention
+      [67] and Spatial MLP [63] While Enabling Global Interactions Among Local Features
+  Table 10 caption:
+    table_text: TABLE X Directly Adapting to Other Resolutions. We Report the top-1
+      Accuracy (%) on the ImageNet Validation Set for GFNet-S and DeiT-S When Directly
+      Adapting to Different Resolutions (From 96 2 2 to 448 2 2) Without Fine-Tuning
+      the Model
+  Table 2 caption:
+    table_text: "TABLE II The Detailed Architectures of Hierarchical GFNet Variants.\
+      \ We Adopt Hierarchical Architectures Where the We Use Patch Embedding Layer\
+      \ to Perform Downsampling. \u201C \u2193n \u2193n\u201D Indicates the Stride\
+      \ of the Downsampling is n n. \u201CGFBlock( D D)\u201D Represents One Building\
+      \ Block of GFNet With Embedding Dimension D D. We Set the MLP Expansion Ratio\
+      \ to 4 for All the Feedforward Networks"
+  Table 3 caption:
+    table_text: "TABLE III Comparisons With Transformer-Style Architectures on ImageNet.\
+      \ We Compare Different Transformer-Style Architectures for Image Classification\
+      \ Including Vision Transformers [65], MLP-Like Models [45], [64] and Our Models\
+      \ That Have Comparable FLOPs and the Number of Parameters. We Report the Top-1\
+      \ Accuracy on the Validation Set of ImageNet as Well as the Number of Parameters\
+      \ and FLOPs. All of Our Models are Trained With 224\xD7224 224\xD7224 Images.\
+      \ We Use \u201C \u2191 \u2191384\u201D to Represent Models Finetuned on 384\xD7\
+      384 384\xD7384 Images for 30 Epochs. Our Models are Highlighted in gray"
+  Table 4 caption:
+    table_text: "TABLE IV Comparisons With Hierarchical Architectures on ImageNet.\
+      \ We Compare Different Hierarchical Architectures for Image Classification,\
+      \ Where We Focus on Representative Baseline Architectures Including Convolutional\
+      \ Neural Networks RegNet [56], Hierarchical MLP-Like Model CycleMLP [6], Hierarchical\
+      \ Vision Transformers Swin [46] and Our Hierarchical Models That Have Comparable\
+      \ FLOPs and Number of Parameters. We Report the Number of Parameters, FLOPs\
+      \ and Top-1 Accuracy on the Validation Set of ImageNet as Well as the Throughput\
+      \ Measured on an Nvidia RTX 3090 GPU With a Fixed Batch Size of 128. All Our\
+      \ Models are Trained and Tested With 224\xD7224 224\xD7224 Images. We Use \u201C\
+      \ \u2191 \u2191384\u201D to Represent Models Finetuned on 384\xD7384 384\xD7\
+      384 Images for 30 Epochs. \u2021 \u2021indicates the Model is Pre-Trained on\
+      \ ImageNet-22 k and Fine-Tuned on ImageNet-1 k. Our Models are Highlighted in\
+      \ gray"
+  Table 5 caption:
+    table_text: TABLE V Results on Transfer Learning Datasets. We Report the top-1
+      Accuracy on the Four Datasets as Well as the Number of Parameters and FLOPs
+  Table 6 caption:
+    table_text: "TABLE VI Semantic Segmentation Results on ADE20 k. We Report the\
+      \ Single-Scale mIoU on the Validation Set. For Our Tiny, Small and Base Models,\
+      \ We Equip Our Models With the Light-Weight Semantic FPN [34] Framework and\
+      \ Train the Model for 80 k Iterations Following [69] to Test the Effectiveness\
+      \ of Our Backbone Model. For Our Large Model, We Report the Performance With\
+      \ Various Segmentation Frameworks Including Semantic FPN [34], UperNet [72]\
+      \ and MaskFormer [9] to Show the Scaling Ability of Our Model. The FLOPs are\
+      \ Tested With 1024\xD71024 1024\xD71024 Input. \u2021 \u2021indicates the Backbone\
+      \ is Pre-Trained on ImageNet-22 k. Our Models are Highlighted in gray"
+  Table 7 caption:
+    table_text: TABLE VII Object Detection and Instance Segmentation Results on COCO.
+      We Compare Our Model With the State-of-The-Art Swin Transformers [46] Using
+      the Prevalent RetinaNet and Cascade Mask R-CNN Frameworks. We Report the Mean
+      Bounding Box AP and Mask AP on the Mini-Val Set as Well as the Number of Parameters
+      and FLOPs. Our Models are Highlighted in gray
+  Table 8 caption:
+    table_text: TABLE VIII Comparisons Among the GFNet and Other Variants Based on
+      the Transformer-Like Architecture on ImageNet. We Show That GFNet Outperforms
+      the ResMLP [64], FNet [40] and Models With Local Depth-Wise Convolutions. We
+      Also Report the Number of Parameters and Theoretical Complexity in FLOPs
+  Table 9 caption:
+    table_text: "TABLE IX Ablation Study on the Global-Local Filters and Dynamic Weights.\
+      \ We Modify the Baseline GFNet-H-Ti Model With Different Strategies to Show\
+      \ the Effects of These Designs. For Designs That Introduce Significant Extra\
+      \ Computation, We Adjust the Number of Blocks in the Third Stage to Fairly Compare\
+      \ Them With the Baseline. We Apply the Global (G), Local (L) and Global-Local\
+      \ (GL) Filters to the 4 Stages ( S 1 \u2212 S 4 S1-S4) and Introduce Dynamic\
+      \ Weights to the Last Two Stages to Test the Effects of These Designs"
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3263824
+- Affiliation of the first author: shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: shanghai jiao tong university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_1.jpg
+  Figure 1 caption: Illustration of our main idea. As shown, we destroy the shapescene
+    parts with certain heuristic methods and there is a huge mismatch between the
+    distorted parts and the normal parts. We can easily distinguish the distorted
+    parts because we know the geometric characteristics of the object. Hence we think
+    a strong representation that encodes effective structure information should also
+    have the ability. We destroy shapescene parts and train a network to distinguish
+    the destroyed parts and restore them to normal in an unsupervised pretext task.
+    Success in the pretext task indicates the network captures strong shape representations,
+    which can transfer well to downstream tasks.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_2.jpg
+  Figure 2 caption: Framework of the proposed self-supervised learning scheme. The
+    framework consists of an Object-Destroying module, a point cloud encoding network
+    and two task-related branches. We design a method cluster to distort object parts.
+    The abnormal part distinguishing branch and abnormal part restoring branch are
+    designed to segment points that belong to destroyed parts and restore the destroyed
+    object to normal respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_3.jpg
+  Figure 3 caption: Visualization of our dragging method. The red arrows denote the
+    dragging process, while the black arrows denote the moving according to the dragging
+    point. sigma is used to normalize the scale. Best viewed in color.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_4.jpg
+  Figure 4 caption: Visualization of normal models (row 1 and 3) and broken models
+    (row 2 and row 4) disorganized by Object-Destroying module.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_5.jpg
+  Figure 5 caption: The summary of experiments performed under shape-based setting
+    and scene-based setting. Performing down-stream tasks with the fixed backbone
+    denotes unsupervised transfer learning or training without fine-tuning. SVM denotes
+    that we use a SVM-based classifier as the classification head. MLP denotes MLP-based
+    classifier in classification and MLP-based point-wise classifier in segmentation.
+    We use VoteNet as the detection architecture in scene-based experiments.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_6.jpg
+  Figure 6 caption: 'The segmentation results on ShapeNetPart dataset. Row 12: Results
+    predicted by the model trained on 1%5% data with encoder fixed. Row 3: Ground
+    truth.'
+  Figure 7 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_7.jpg
+  Figure 7 caption: Visualization results for semantic segmentation on S3DIS and ScanNet.
+    We present results of S3DIS and ScanNet on column 1-3 and column 4-6 respectively.
+    Our method improves the model trained from random initialization significantly.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_8.jpg
+  Figure 8 caption: Visualization results for object detection on SUN RGB-D and ScanNet.
+    We present results of SUN RGB-D and ScanNet on column 1-3 and column 4-6 respectively.
+    We observe that the model pre-trained with our method achieves more accurate object
+    detection than the model trained from random initialization.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Learning_by_Restoring_Broken_D_Geometry\figure_9.jpg
+  Figure 9 caption: Parameter analyses on the point numbers of each distorted part.
+    When the number of destroyed parts is set to 2, we achieve best performance by
+    setting the point numbers of each distorted part to 256.
+  First author gender probability: 0.6
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Jinxian Liu
+  Name of the last author: Hang Wang
+  Number of Figures: 9
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: Learning by Restoring Broken 3D Geometry
+  Publication Date: 2023-04-03 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Shape Classification Results on ModelNet. Results of Both\
+      \ Supervised and Unsupervised Models are Reported. \u201Cunsupervised Transfer\
+      \ Learning\u201D Denotes the Parameters of the Pre-Trained Models are Fixed\
+      \ on Downstream Tasks, While \u201Csupervised Fine-Tuning\u201D Denotes the\
+      \ Pre-Trained Models are Fine-Tuned on Target Tasks. \u201CRI\u201D Denotes\
+      \ the Model is Trained on Target Dataset From Scratch. \u201CMN\u201D Denotes\
+      \ ModelNet. Our Results are Measured Without Using Tricks Like Voting"
+  Table 10 caption:
+    table_text: TABLE X Component Analyses. Accuracy Results on ModelNet40 are Shown
+  Table 2 caption:
+    table_text: "TABLE II Shape Classification Results on ScanNet Object. the Classification\
+      \ Accuracy of Our Method and the State-of-The-Art Unsupervised Method are Reported.\
+      \ \u201CRI\u201D Denotes the Model is Trained on ScanNet Object From Scratch.\
+      \ We Also List the Increments of Pre-Training"
+  Table 3 caption:
+    table_text: TABLE III Shape Part Segmentation Results Without Fine-Tuning. Part
+      Classification Accuracy and Ins.mIoU on ShapeNetPart Datast are Reported. All
+      Compared Methods are Evaluated in a Semi-Supervised Manner (i.e., 1%, 5% of
+      Training Data is Sampled), Where the Parameters of Pre-Trained Models are Fixed
+  Table 4 caption:
+    table_text: "TABLE IV Shape Part Segmentation Results With Fine-Tuning Strategy.\
+      \ \u201CRI\u201D Denotes the Model is Not Pre-Trained. \u201CFT\u201D Denotes\
+      \ the Model is Pre-Trained With the Corresponding Unsupervised Scheme and Fine-Tuned\
+      \ on Target Task"
+  Table 5 caption:
+    table_text: TABLE V Semantic Segmentation Results on S3DIS Area 5 (Fold 1). Per-Category
+      IoU, mIoU and Macc are Reported in the Table. Our Method Achieves Best mIoU
+      and Macc Among All Self-Supervised and Supervised Methods. Wo Dragging Denotes
+      Destroying Samples Without Dragging
+  Table 6 caption:
+    table_text: TABLE VI Object Detection Results on SUN RGB-D. Our Method Achieves
+      the Best mAP0.5 Performance and Ranks Second Using the mAP0.25 as Metric
+  Table 7 caption:
+    table_text: TABLE VII Semantic Segmentation Results on ScanNet Validation Set.
+      Our Method Achieves Comparable Results to CSC
+  Table 8 caption:
+    table_text: TABLE VIII Object Detection Results on ScanNet Validation Set. Our
+      Method Achieves the Best Results Compared With All Self-Supervised Methods Presented
+      in the Table
+  Table 9 caption:
+    table_text: "TABLE IX Relative Performance Gains of PointNet and RSCNN. All Results\
+      \ in This Table are Calculated Under the Fine-Tuned Setting. \u201Cr-Inc\u201D\
+      \ Denotes Relative Performance Improvements"
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3263867
+- Affiliation of the first author: department of automation, beijing national research
+    center for information science and technology (bnrist), tsinghua university, beijing,
+    china
+  Affiliation of the last author: department of automation, beijing national research
+    center for information science and technology (bnrist), tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_1.jpg
+  Figure 1 caption: Illustration of our main idea. CNN models usually leverage the
+    structural downsampling strategy like (a) or cropping the most important rectangular
+    region as (b) to reduce computation related to spatial dimensions. In this paper,
+    we present a Unstructured and data-dependent dynamic spatial sparsification framework
+    (c) that can better exploit the sparsity in the vision data for efficient acceleration
+    with negligible or no computational cost on less informative regions. (d) visualize
+    the attention and CNN predictions of DeiT-S [51] and ConvNeXt [35] model using
+    the visualization method Grad-CAM [48]. Visualization results demonstrate the
+    final prediction in mainstream vision architectures is only based on a subset
+    of the most informative regions, which are distributed non-uniformly in the spatial
+    dimensions. These results suggest it is possible to selectively remove a large
+    proportion of unstructured regions without hurting the performance.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_2.jpg
+  Figure 2 caption: The overall framework of dynamic token sparsification for vision
+    Transformers. The proposed prediction module is inserted between the Transformer
+    blocks to selectively prune less informative tokens conditioned on features produced
+    by the previous layer. By doing so, fewer tokens are processed in the following
+    layers.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_3.jpg
+  Figure 3 caption: The overall framework of asymmetric computation with fast and
+    slow paths for hierarchical models. After the structure-sensitive operations,
+    the feature maps are split up according to the guidance of the prediction module.
+    Slow path and fast path are applied to informative and uninformative features
+    respectively. Feature maps then are reassembled to maintain the structure for
+    the following layers. The pruning operation is adopted in Stage 3 of hierarchical
+    models which takes up most of the computational cost.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_4.jpg
+  Figure 4 caption: Complexityaccuracy tradeoffs. We illustrate model complexity (FLOPs)
+    and ImageNet top-1 accuracy trade-offs. We compare DynamicViT and DynamicCNN with
+    the state-of-the-art image classification models. Our models achieve better trade-offs
+    compared to various models.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_5.jpg
+  Figure 5 caption: Comparisons with conventional acceleration methods. In Fig. (a)
+    and (b), we compare our dynamic token sparsification method with model width scaling.
+    In Fig. (a), We train our DynamicViT based on DeiT models with embedding dimensions
+    varying from 192 to 384 and fix ratio rho =0.7 . We see dynamic token sparsification
+    is more efficient than commonly used model width scaling. In Fig. (b), we measure
+    the throughput of our DynamicViT based on the DeiT-S model and adjust the ratio
+    rho varying from 0.5 to 1.0. We can clearly observe that DynamicViT can achieve
+    a better trade-off between complexity and accuracy and narrow the gap between
+    theoretical complexity and actual throughput on GPU. In Fig. (c), we compare our
+    DynamicViT with the conventional acceleration method by applying our method to
+    the state-of-the-art AutoFormer [6] models. During training, we fix ratio rho
+    =0.9 to fairly compare with AutoFormer. We see our method further improves the
+    trade-off, which suggests spatial sparsity is a new and effective dimension for
+    model acceleration.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_6.jpg
+  Figure 6 caption: Visualization of the progressively sparsified tokens on ImageNet.
+    We show the original input image, attention visualizations of transformer models
+    using method [4], and the sparsification results after the three stages, where
+    the masks represent the corresponding tokens that are discarded. We see our method
+    can gradually focus on the most representative regions in the image, especially
+    activated regions of attention maps, and has better interpretability.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_7.jpg
+  Figure 7 caption: Visualization of the sparsification and prediction results on
+    downstream tasks. The top two rows are from the semantic segmentation task while
+    the bottom two rows are from the object detection task. We use ConvNeXt-S as the
+    baseline model and use our DynamicCNN-S0.9 model to prune 50% of the regions.
+    We present the final sparsified images after three sparsification stages and compare
+    the results of downstream tasks by offering the predictions after and before pruning.
+    Visualization results suggest that our method can focus on informative objects
+    with limited influence on the predictions.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_8.jpg
+  Figure 8 caption: Keeping probabilities of the tokens at each stage. We use our
+    DynamicViT-S0.7 model to generate the decisions for all the images on the ImageNet
+    validation set and compute the keeping probability of each token in all three
+    stages.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Dynamic_Spatial_Sparsification_for_Efficient_Vision_Transformers_and_Convolution\figure_9.jpg
+  Figure 9 caption: Comparisons of throughput on GPU and CPU. We compare the throughput
+    of our dynamic spatial sparsification method with vision Transformer (DeiT-B)
+    and CNN (ConvNeXt-B) baselines. We can observe that our method can accelerate
+    the inference process on multiple devices and architectures.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Yongming Rao
+  Name of the last author: Jiwen Lu
+  Number of Figures: 9
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: Dynamic Spatial Sparsification for Efficient Vision Transformers and
+    Convolutional Neural Networks
+  Publication Date: 2023-04-03 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Results of DynamicViT on ImageNet. We Apply Our Method on\
+      \ Two Representative Vision Transformers: DeiT [51] and LV-ViT [24] With Two\
+      \ Different Sizes: Small and Base (medium). DeiT-S and DeiT-B are Widely Used\
+      \ Isotropic Vision Transformers With a Simple Architecture. LV-ViT-S and LV-ViT-M\
+      \ are State-of-The-Art Vision Transformers. We Report the top-1 Classification\
+      \ Accuracy, Theoretical Complexity in FLOPs, and Throughput for Different Ratios\
+      \ \u03C1 \u03C1. The Throughput is Measured on a Single NVIDIA RTX 3090 GPU\
+      \ With Batch Size Fixed to 128"
+  Table 10 caption:
+    table_text: "TABLE X Results on the Higher Input Resolution. We Apply Our Method\
+      \ With a Larger Input Size (i.e., DeiT-S With 384\xD7384 384\xD7384 Input) and\
+      \ Compare the Image Classification Accuracy With Normally Used 224\xD7224 224\xD7\
+      224 Input Size At Keeping Ratio \u03C1=0.70.5 \u03C1=0.70.5"
+  Table 2 caption:
+    table_text: "TABLE II Comparisons With the State-of-The-Arts on ImageNet. We Compare\
+      \ Our DynamicViT Models With State-of-The-Art Image Classification Models With\
+      \ Comparable FLOPs and the Number of Parameters. We Use the DynamicViT With\
+      \ LV-ViT [24] as the Base Model and Use the \u201C \u03C1 \u03C1\u201D to Indicate\
+      \ the Keeping Ratio. We Also Include the Results of LV-ViT Models as References.\
+      \ We Divide All Models Into Three Groups Based on Their Complexity. The Models\
+      \ are Sorted According to Their top-1 Accuracy on ImageNet in Each Group. Our\
+      \ Models are Highlighted in gray"
+  Table 3 caption:
+    table_text: "TABLE III Results of DynamicCNN and DynamicSwin on ImageNet. We Apply\
+      \ Our Method to Two Representative Hierarchical Models. ConvNeXt [35] is a CNN-Type\
+      \ Model With More Modern Designs and State-of-The-Art Performance. Swin Transformer\
+      \ [34] is a Widely Used Hierarchical Vision Transformer. We Report the top-1\
+      \ Classification Accuracy on the Validation Set of ImageNet as Well as the Number\
+      \ of FLOPs Under Different Sparsification Policies. All of Our Models are Trained\
+      \ and Tested With 224\xD7224 224\xD7224 Images. Our DynamicCNN and DynamicSwin\
+      \ Can Significantly Reduce Model Complexity With Only a Slight Performance Drop"
+  Table 4 caption:
+    table_text: "TABLE IV Results on ADE20 k Semantic Segmentation Using Semantic\
+      \ FPN [26] Framework. We Train Our Models for 40 k Iterations With a Batch Size\
+      \ of 32 to Test the Effectiveness of Our Model. We Report FLOPs Tested With\
+      \ 1024\xD71024 1024\xD71024 Input. We Provide Both the Overall FLOPs and the\
+      \ Backbone FLOPs of the Models. We Report Both Single-Scale (S.S.) and Multi-Scale\
+      \ (M.S.) mIoU on the Validation Set."
+  Table 5 caption:
+    table_text: "TABLE V Results on COCO Object Detection and Instance Segmentation\
+      \ Using Mask-RCNN [18]. We Train Our Models for 12 Epochs With a Batch Size\
+      \ of 16. FLOPs are Computed on 1280\xD7800 1280\xD7800 Image Following Common\
+      \ Practice, and Both Overall FLOPs and Backbone FLOPs are Reported. We Report\
+      \ the Mean Bounding Box AP and Mask AP on the Validation Set."
+  Table 6 caption:
+    table_text: TABLE VI Comparisons of Different Sparsification Strategies. We Investigate
+      Different Methods to Select Redundant Tokens Based on the DeiT-S Model. We Report
+      the top-1 Accuracy on ImageNet for Different Methods. We Fix the Complexity
+      of the Accelerated Models to 2.9 G FLOPs for Fair Comparisons. The Deigns Used
+      in Our Final Models are Highlighted in gray
+  Table 7 caption:
+    table_text: TABLE VII Effects of Different Fast Path Designs for Dynamic Spatial
+      Sparsification for Hierarchical Models. We Investigate Four Different Strategies
+      to Replace the Feed-Forward Networks Based on DynamicCNN-S0.9. We Can Observe
+      That the Simple Linear Projection Achieves the Best Trade-Off. The Bottleneck
+      MLP Architecture Has a Slight Effect on Performance With Fewer FLOPs While Filling
+      Uninformative Features With Learnable Parameters or Zeros Will Significantly
+      Hurt the Performance.
+  Table 8 caption:
+    table_text: TABLE VIII Ablations on Different Losses. We Provide the Results After
+      Removing the Distillation Loss and the KL Loss Based on DynamicViT-S0.7. We
+      Can Observe That the Distill Loss L distill L distill and KL Loss L KL L KL
+      Both Contribute to Better Performance.
+  Table 9 caption:
+    table_text: "TABLE IX Ablations on Keeping Ratio and Pruning Location for Hierarchical\
+      \ Models. We Conduct Experiments Based on DynamicCNN-T. The Model Has [3,3,9,3]\
+      \ Layers in Four Stages ( S 1 \u2212 S 4 ) S1-S4). Keeping Ratio \u03C1=1.0\
+      \ \u03C1=1.0 Signifies No Sparsification is Applied. For Fair Comparisons, We\
+      \ Fix the Complexity of the Accelerated Models to 3.6 G FLOPs."
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3263826
+- Affiliation of the first author: "advanced computing laboratory, institute of computing,\
+    \ universit\xE0 della svizzera italiana (usi), lugano, switzerland"
+  Affiliation of the last author: "advanced computing laboratory, institute of computing,\
+    \ universit\xE0 della svizzera italiana (usi), lugano, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2023\Sparse_Quadratic_Approximation_for_Graph_Learning\figure_1.jpg
+  Figure 1 caption: A simple, undirected, and connected graph mathcal G(V,E,mathbf
+    A) with 4 vertices and 5 edges, with its weighted adjacency mathbf A , degree
+    mathbf T , and combinatorial graph Laplacian mathbf L matrices.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Sparse_Quadratic_Approximation_for_Graph_Learning\figure_2.jpg
+  Figure 2 caption: An illustrated example of the key algorithmic operations of SQUIC-fit.
+    Red edges correspond to negative off-diagonal entries mathbfTheta ij < 0 , and
+    blue edges to positive mathbfTheta ij > 0, ; ine j . (a) The true underlying structure
+    of the M -matrix. (b) The first estimated precision matrix with the scalar regularization
+    parameter lambda . (c) The graphical structure of the negative off-diagonal entries.
+    (d) The second estimated precision matrix with the matrix regularization term
+    mathbfLambda . (e) The final estimated M -matrix after the post-processing step.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Sparse_Quadratic_Approximation_for_Graph_Learning\figure_3.jpg
+  Figure 3 caption: Accuracy comparisons between the different combinatorial graph
+    Laplacian estimation methods measured in terms of F-score (20) and relative error
+    (21). a) F-scores for the lattice grid graph mathcal Gtextgrid(64) . b) F-scores
+    for the random clusters graph mathcal Gtextclust(60) . c) RE for the lattice grid
+    graph mathcal Gtextgrid(64) . d) RE for the random clusters graph mathcal Gtextclust(60)
+    .
+  Figure 4 Link: articels_figures_by_rev_year\2023\Sparse_Quadratic_Approximation_for_Graph_Learning\figure_4.jpg
+  Figure 4 caption: Timing comparisons between the different graph Laplacian estimation
+    methods when learning widehatboldsymbol Theta from synthetic graphs with an increasing
+    number of p . a) Results for the lattice grid graph mathcal Gtextgrid(p) with
+    p in lbrace 16,ldots,16384rbrace . b) Results for the random clusters graph mathcal
+    Gtextclust(p) with p in lbrace 100,ldots,10000rbrace .
+  Figure 5 Link: articels_figures_by_rev_year\2023\Sparse_Quadratic_Approximation_for_Graph_Learning\figure_5.jpg
+  Figure 5 caption: Studying the effect that incorporating the structure of mathbfG
+    in the matrix tuning parameter mathbfLambda has on the retrieval accuracy of widehatmathbfL
+    . a) Results for the lattice grid graph mathcal Gtextgrid(1024) . b) Results for
+    the random clusters graph mathcal Gtextclust(1000) . We use n = 500 samples in
+    both cases.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Sparse_Quadratic_Approximation_for_Graph_Learning\figure_6.jpg
+  Figure 6 caption: "Visualizing the US counties corresponding to the six largest\
+    \ connected components of the estimated widehatboldsymbolTheta with p = 3209 dimensions.\
+    \ The available n = 671 samples describe the number of COVID-19 daily instances.\
+    \ The six components are illustrated in a \u2013 f in descending order according\
+    \ to their size."
+  Figure 7 Link: articels_figures_by_rev_year\2023\Sparse_Quadratic_Approximation_for_Graph_Learning\figure_7.jpg
+  Figure 7 caption: Spectral clustering of the largest connected component of widehatboldsymbolTheta
+    a) Geographical locations of the nodes belonging to each cluster. b) Cardinality
+    of each cluster. (Best viewed in color.)
+  Figure 8 Link: articels_figures_by_rev_year\2023\Sparse_Quadratic_Approximation_for_Graph_Learning\figure_8.jpg
+  Figure 8 caption: Comparison of the graphical structure of the adjacency matrix
+    mathbfA for a subset of the dataset YaleA. The coloring indicates the edges that
+    were removed (in red) from the initial kNN graphical bias, and the edges (in gray)
+    that remained after the application of the two proposed algorithms. (a) Graph
+    estimated with SQUIC-fit with 398 remaining and 68 removed edges. (b) Graph estimated
+    with SQUIC-sqp with 432 remaining and 28 removed edges. (Best viewed in color.)
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Dimosthenis Pasadakis
+  Name of the last author: Olaf Schenk
+  Number of Figures: 8
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: Sparse Quadratic Approximation for Graph Learning
+  Publication Date: 2023-04-03 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Classification Results for the Image Datasets of subsection\
+      \ V-B. We Report the Edge Density \u03F5 \u03B5, and the Accuracy Metrics ACC,\
+      \ NMI. The Best Value Achieved is Presented in Bold, and the Percentages Show\
+      \ How Inferiorly the Other Methods Fared Against It."
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3263969
+- Affiliation of the first author: school of remote sensing and information engineering,
+    wuhan university, wuhan, china
+  Affiliation of the last author: school of remote sensing and information engineering,
+    wuhan university, wuhan, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_1.jpg
+  Figure 1 caption: Number of iterations T required by RANSAC with different subset
+    sizes m and outlier rates eta .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_2.jpg
+  Figure 2 caption: Local reference frames of boldsymbolxi and boldsymbolyi .
+  Figure 3 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_3.jpg
+  Figure 3 caption: Influence functions. Least-squares is a linear function; M-estimators
+    are bounded redescending functions; both l p estimator and our improved l p cost
+    are a family of cost functions with a robustness-control parameter.
+  Figure 4 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_4.jpg
+  Figure 4 caption: Comparison results of outlier pruning.
+  Figure 5 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_5.jpg
+  Figure 5 caption: Registration results on simulated data. Subfigures (a), (b), and
+    (c) plot the angular error E mathbf R , translation error E boldsymbolt , and
+    running time, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_6.jpg
+  Figure 6 caption: 'Our qualitative results on the ETH dataset. Left column: initial
+    correspondence set mathcal H , where green lines and red lines represent inliers
+    and outliers, respectively. Middle column: results of our QGORE pruning. Right
+    column: final registration results of our QGORE+Ada lp pipeline.'
+  Figure 7 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_7.jpg
+  Figure 7 caption: The framework of the proposed laser odometry, which contains three
+    threads, i.e., scan-to-scan, scan-to-submap, and submap-to-map registration threads.
+  Figure 8 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_8.jpg
+  Figure 8 caption: Qualitative evaluation on the KITTI dataset, where blue lines
+    correspond to our estimated trajectories and red ones are the ground truth.
+  Figure 9 Link: articels_figures_by_rev_year\2023\QGORE_QuadraticTime_Guaranteed_Outlier_Removal_for_Point_Cloud_Registration\figure_9.jpg
+  Figure 9 caption: Our reconstructed 3D scene maps on the KITTI dataset. The color
+    of point clouds is rendered by height. The black line inside each subfigure is
+    our estimated trajectory of the vehicle. Sequence 04, 06, and 09 have been rotated
+    for better visualization.
+  First author gender probability: 0.72
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Jiayuan Li
+  Name of the last author: Yongjun Zhang
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'QGORE: Quadratic-Time Guaranteed Outlier Removal for Point Cloud Registration'
+  Publication Date: 2023-04-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparison of the Tightness of Upper Bounds
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Detailed Settings of the Compared Algorithms (MNI Represents
+      Maximum Number of Iterations)
+  Table 3 caption:
+    table_text: TABLE III Detailed Information of the ETH Dataset
+  Table 4 caption:
+    table_text: "TABLE IV Average Angular Error ( E R ER \u2193 \u2193), Translation\
+      \ Error ( E t Et \u2193 \u2193), and Running Time ( \u2193 \u2193) Results on\
+      \ the ETH Dataset"
+  Table 5 caption:
+    table_text: "TABLE V The Lower Bound l l and Subset Size | H \u2032 | |H'| of\
+      \ GORE and QGORE"
+  Table 6 caption:
+    table_text: TABLE VI Comparison Against GORE With a Global Optimiser BnB
+  Table 7 caption:
+    table_text: "TABLE VII Quantitative Evaluation (Metric: ATE(%) \u2193 \u2193)\
+      \ on KITTI Dataset"
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3262780
+- Affiliation of the first author: department of electrical and computer engineering,
+    university of minnesota, minneapolis, mn, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of minnesota, minneapolis, mn, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_1.jpg
+  Figure 1 caption: "Simple regret on Ackley-5 d, Zakharov, DropWave and Eggholder\
+    \ function (from left to right). Dictionary has 4 kernels with distinct forms:\
+    \ RBF with(out) ARD and Mat\xE9rn with nu =32, 52 ."
+  Figure 10 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_10.jpg
+  Figure 10 caption: "Simple regret of EGP-EI versus GP-EI with a preselected kernel\
+    \ on Ackley-5 d, Zakharov, DropWave and Eggholder function (from left to right).\
+    \ Dictionary has 4 kernels with distinct forms: RBF with(out) ARD and Mat\xE9\
+    rn with nu =32, 52 ."
+  Figure 2 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_2.jpg
+  Figure 2 caption: Simple regret on Ackley-5 d, Zakharov, DropWave and Eggholder
+    function (from left to right) using RBF kernels. Dictionary has 11 RBF kernels
+    with lengthscales given by lbrace 10crbrace c=-46 .
+  Figure 3 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_3.jpg
+  Figure 3 caption: "Simple regret on Robot pushing 3D and Robot pushing 4D tasks\
+    \ with dictionary (a) that has 4 kernels with distinct forms: RBF with(out) ARD\
+    \ and Mat\xE9rn with nu =32, 52 ; and (b) that has 11 RBF kernels with characteristic\
+    \ lengthscales given by lbrace 10crbrace c=-46 ."
+  Figure 4 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_4.jpg
+  Figure 4 caption: "The best validation accuracy (so far) versus the number of function\
+    \ evaluations on Breast Cancer, Transportation, Iris, and Wine datasets (from\
+    \ left to right) for the NN hyperparameter tuning task. Dictionary has 4 kernels\
+    \ with distinct forms: RBF with(out) ARD and Mat\xE9rn with nu =32, 52 ."
+  Figure 5 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_5.jpg
+  Figure 5 caption: The best validation accuracy (so far) versus the number of function
+    evaluations on Breast Cancer, Transportation, Iris, and Wine datasets (from left
+    to right) for the NN hyperparameter tuning task. Dictionary has 11 RBF kernels
+    with characteristic lengthscales given by lbrace 10crbrace c=-46 .
+  Figure 6 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_6.jpg
+  Figure 6 caption: "The best validation accuracy (so far) versus the number of function\
+    \ evaluations on Breast Cancer, Transportation, Iris, and Wine datasets (from\
+    \ left to right) for the SVM hyperparameter tuning task. Dictionary has 4 kernels\
+    \ with distinct forms: RBF with(out) ARD and Mat\xE9rn with nu =32, 52 ."
+  Figure 7 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_7.jpg
+  Figure 7 caption: The best validation accuracy (so far) versus the number of function
+    evaluations on Breast Cancer, Transportation, Iris, and Wine datasets (from left
+    to right) for the SVM hyperparameter tuning task. Dictionary has 11 RBF kernels
+    with characteristic lengthscales given by lbrace 10crbrace c=-46 .
+  Figure 8 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_8.jpg
+  Figure 8 caption: "The best validation accuracy (so far) versus the number of function\
+    \ evaluations on Breast Cancer, Transportation, Iris, and Wine datasets (from\
+    \ left to right) for the GradientBoosting hyperparameter tuning task. Dictionary\
+    \ has 4 kernels with distinct forms: RBF with(out) ARD and Mat\xE9rn with nu =32,\
+    \ 52 ."
+  Figure 9 Link: articels_figures_by_rev_year\2023\Surrogate_Modeling_for_Bayesian_Optimization_Beyond_a_Single_Gaussian_Process\figure_9.jpg
+  Figure 9 caption: The best validation accuracy (so far) versus the number of function
+    evaluations on Breast Cancer, Transportation, Iris, and Wine datasets (from left
+    to right) for the GradientBoosting hyperparameter tuning task. Dictionary has
+    11 RBF kernels with characteristic lengthscales given by lbrace 10crbrace c=-46
+    .
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Qin Lu
+  Name of the last author: Georgios B. Giannakis
+  Number of Figures: 11
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Surrogate Modeling for Bayesian Optimization Beyond a Single Gaussian
+    Process
+  Publication Date: 2023-04-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Feasible Values of the Hyperparameters for Different Classification
+      Models
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3264741
+- Affiliation of the first author: department of electrical, computer engineering,
+    drexel university, philadelphia, pa, usa
+  Affiliation of the last author: national research center for mathematics and computer
+    science in the netherlands (cwi), university of amsterdam, amsterdam, the netherlands
+  Figure 1 Link: articels_figures_by_rev_year\2023\The_Cluster_Structure_Function\figure_1.jpg
+  Figure 1 caption: Example MNIST handwritten digits.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\The_Cluster_Structure_Function\figure_2.jpg
+  Figure 2 caption: Curves showing mean and standard deviation of the cluster structure
+    function (CSF) for two different digit sets. Subsets are chosen repeatedly from
+    each digit set, and clustered into K groups. The value of K is chosen as the first
+    K that is one standard deviation smaller than the previous value. The left curve
+    selects the value K=Ktrue , correctly identifying the value of K corresponding
+    to the number of different digits in the set. The right curve incorrectly selects
+    K=5 .
+  Figure 3 Link: articels_figures_by_rev_year\2023\The_Cluster_Structure_Function\figure_3.jpg
+  Figure 3 caption: The ensemble segmentation combines results from different segmentation
+    algorithms using the optimality deficiency to select the best results for overlapping
+    segmentations. Frame segmentations are run at each of a range of different parameter
+    values. The resulting segmentations are each treated as a possible clustering
+    of the underlying pixels into objects. An example is shown here for a single image
+    frame taken from a 1200 frame movie showing the development of live human stem
+    cells (HSCs). The top row shows a raw image (a), the final segmentation results
+    (b) and the overlapping ensemble regions (c). The bottom two rows show different
+    possible combinations of segmentation results from the region shown in the rectangle
+    in (a) and (c). The segmentation results are scored from worst (lowest score)
+    to best (highest score). The optimal set of segmentation results are selected
+    using a greedy optimization to maximize the scores in each overlapping region.
+    Segmentation scores are generated from the convexity, boundary, and background
+    efficiencies.
+  Figure 4 Link: articels_figures_by_rev_year\2023\The_Cluster_Structure_Function\figure_4.jpg
+  Figure 4 caption: Estimating the number of clusters in data generated from K=3 normal
+    distributions, all with Sigma =[1,0;0,1] . The distributions are located along
+    the X axis at multiples [0,1,2]. Cluster Spacing. The cluster structure function
+    (CSF) significantly outperforms the Akaike Information Criteria (AIC). Error bars
+    show 95% confidence intervals from bootstrapping.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Andrew R. Cohen
+  Name of the last author: "Paul M.B. Vit\xE1nyi"
+  Number of Figures: 4
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: The Cluster Structure Function
+  Publication Date: 2023-04-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Confusion Matrix for Spectral Clustering Sets of Random Digits.
+      Each Digit Set Contains 5 of Each Digit [0,9]. The Digit Sets are Clustered
+      Into 10 Clusters. For Evaluation, Each Cluster is Labeled With the Mode (Most
+      Common Element) of the True Digit Values in That Cluster. This Was Repeated
+      Ten Thousand Times. Overall Accuracy of Clustering the Ten Digit Classes is
+      46%
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE II Unsupervised Cluster Structure Function (CSF) (left) and\
+      \ Gap Statistic (right) Estimates of the Number of Unique Digits K K in a MNIST\
+      \ Digit Set. Both CSF and Gap Statistic Predictions K pred Kpred are Correlated\
+      \ With K true Ktrue Except in Case K=1 K=1 (Where Both Exhibit Much Higher Standard\
+      \ Deviation). Omitting K true =1 Ktrue=1, the CSF Correlation is 0.93 ( p=3e\u2212\
+      4 p=3e-4) and the Gap Statistic Correlation is \u22120.84 -0.84 ( p=5e\u2212\
+      3) p=5e-3)"
+  Table 3 caption:
+    table_text: "TABLE III Supervised Cluster Structure Function (CSF) (left) and\
+      \ Gap Statistic (right) Estimates of the Number of Unique Digits K K in a NIST\
+      \ Digit Set. Each Digit Set Contains 100 Digits, Split Equally Among the K K\
+      \ Digit Classes. The Algorithm is Given a Digit Set Sampler That Can Pull Repeatedly\
+      \ From the Same Distribution ( K K Value) With the Goal of Estimating K K. The\
+      \ Results Here Were Generated by Classifying One Hundred Each of Digit Sets\
+      \ With K true \u2208[1..10] Ktrue\u2208[1..10]. A 20-Element Vector Consisting\
+      \ of Mean and Standard Deviations of the CSF and the Gap Statistic Was the Input\
+      \ to a Shallow Feed-Forward Neural Network. Overall Accuracy for the CSF Was\
+      \ 86% [0.84,0.88] and 54% for the Gap Statistic [0.51,0.57]"
+  Table 4 caption:
+    table_text: "TABLE IV Ensemble Segmentation Combines Results From Segmentation\
+      \ Algorithms Run At Different Parameter Settings on 2-D and 3-D Image Data.\
+      \ Optimality Deficiency Estimates the Number of Cells K K in Each Region of\
+      \ Overlapping Segmentations. The Approach Here is Optimizing the Detection (DET)\
+      \ Metric for the Cell Tracking Challenge Datasets. The First Row in Each Group\
+      \ Shows the Ensemble Results and Radius Parameter Settings, the Subsequent Two\
+      \ Rows Show the Best and Worst Performing Single Segmentations. The Ensemble\
+      \ Segmentation Significantly Outperforms the Best Individual Segmentations (\
+      \ p=5e\u22124 p=5e-4)"
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3264690
+- Affiliation of the first author: college of computer science and technology, nanjing
+    university of aeronautics and astronautics, nanjing, china
+  Affiliation of the last author: computer vision lab, eth zurich, zurich, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_1.jpg
+  Figure 1 caption: "Comparisons of seven representative CoSOD approaches and ours\
+    \ on the CoSOD3k dataset [9]. We conduct the comparison of existing representative\
+    \ deep-learning-based CoSOD approaches in terms of both speed (the horizontal\
+    \ axis) and accuracy (the vertical axis). Smaller bubbles mean lighter models.\
+    \ Our GCoNet+ outperforms these models in terms of both efficiency and effectiveness.\
+    \ The \u201CTrain-1, 2, and 3\u201D represents the DUTSclass, COCO-9k, and COCO-SEG\
+    \ datasets, respectively (see Table III for more related details). All the models\
+    \ are tested with batch size 2 on an A100-80 G. Our benchmark for inference speed\
+    \ can be found at https:github.comZhengPeng7CoSODfpscollection."
+  Figure 10 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_10.jpg
+  Figure 10 caption: Class activation maps [118] are obtained on the classification
+    branch. For each comparison cell, the left half results are the activation maps
+    obtained from the original GCoNet [1] using ACM; the right half results are the
+    activation maps generated by our GCoNet+ with extra RACM. As column (a) shows,
+    our GCoNet+ has superiority in precisely putting its attention on the target object
+    next to other objects around. In (b), our GCoNet+ shows better performance in
+    focusing on objects of the correct class though it has some disturbing surroundings.
+    In the last column (c), some complex samples make both models mistaken. Although
+    some wrong attention is put on objects of the wrong classes, our GCoNet+ can still
+    put most of the attention on the right objects and see them as the main parts
+    of the images. The classification activation maps provided here are produced by
+    our GCoNet+ trained on DUTSclass only.
+  Figure 2 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_2.jpg
+  Figure 2 caption: Visualizations of feature maps. (a) Source image and ground truth.
+    (b-f) Feature maps on different levels of the decoder from our GCoNet [1] and
+    GCoNet+ (Train-1 in Table III), captured from high to low levels. The feature
+    maps shown in (b) have the lowest resolution. As (b) shows, our GCoNet+ gives
+    a more global response and does not make a specific prediction in the very early
+    stages, where the quality of feature maps is inadequate for producing precise
+    results. (g) Prediction of co-saliency maps. Compared with GCoNet, GCoNet+ obtained
+    a more global response on the objects and its surrounding.
+  Figure 3 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_3.jpg
+  Figure 3 caption: Pipeline of the proposed Group Collaborative Learning Network
+    plus (GCoNet+). Input images are obtained from two groups and fed into an encoder.
+    Then we employ the GCoM (Group Collaborative Module), where intra-group collaborative
+    learning is conducted for each group by the group affinity module (GAM), and the
+    inter-group collaborative learning is conducted via the group collaborating module
+    (GCM). The original images and RoIs masked by the output are given to the encoder
+    to do an auxiliary classification to make the features of different classes more
+    discriminative to each other. The decoder output is put through the confidence
+    enhancement module (CEM) to make the final result more binarized and easy to use.
+    Furthermore, the RoIs of two groups obtained by the multiplication of original
+    images and predicted saliency maps are measured with a triplet loss to enlarge
+    the distance between inter-group features and reduce the distance between intra-group
+    features.
+  Figure 4 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_4.jpg
+  Figure 4 caption: Group Affinity Module. We first utilize affinity attention to
+    obtain the attention maps of the input features by collaborating all images in
+    a group. Subsequently, the maps are multiplied with the input features to generate
+    the consensus for the group. Then the obtained consensus is used to coordinate
+    the original feature maps and is also fed to the GCM for inter-group collaborative
+    learning.
+  Figure 5 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_5.jpg
+  Figure 5 caption: Group Collaborating Module. Both groups' original feature maps
+    and consensus are fed to the GCM. The predicted output conditioned on the consistent
+    feature and consensus (from the same group) is supervised with the available ground
+    truth labels. Otherwise, it is supervised by the all-zero maps.
+  Figure 6 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_6.jpg
+  Figure 6 caption: Prediction results produced by our GCoNet+ trained with different
+    losses. (a) Source image. (b) Ground truth. (c) Results of GCoNet+ trained with
+    only BCE loss. (d) Results of GCoNet+ trained with only IoU loss. (e) Results
+    of GCoNet+ trained with balanced BCE and IoU loss. All the results here are generated
+    from models trained with the DUTSclass dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_7.jpg
+  Figure 7 caption: Confidence Enhancement Module. After the decoder, we adapt the
+    CEM to bring higher quality and binarization to the predicted saliency maps. CBR
+    means a convolution layer followed by a batch normalization layer and a ReLU activation
+    function.
+  Figure 8 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_8.jpg
+  Figure 8 caption: Group-based Symmetric Triplet Loss. In GST loss, each group is
+    divided averagely into two sub-groups. The sub-groups from the same group pull
+    to each other and push to features of other groups. Phi theta represents the backbone
+    (see Fig. 3).
+  Figure 9 Link: articels_figures_by_rev_year\2023\GCoNet_A_Stronger_Group_Collaborative_CoSalient_Object_Detector\figure_9.jpg
+  Figure 9 caption: Learning curve comparison. We record the overall losses obtained
+    during the training of our baseline (see Section IV-D) with additional RACM and
+    with only original ACM, where DUTSclass is used as the training set.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Peng Zheng
+  Name of the last author: Luc Van Gool
+  Number of Figures: 17
+  Number of Tables: 4
+  Number of authors: 8
+  Paper title: 'GCoNet+: A Stronger Group Collaborative Co-Salient Object Detector'
+  Publication Date: 2023-04-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Quantitative Ablation Studies of the Overall Modification
+      on the Framework of Our GCoNet+. We Conduct the Ablation Studies of Our GCoNet+
+      on the Effectiveness of Overall Modification on the Framework, Including Network
+      Simplification (Net-Sim), Batch Normalization (BN), and Hybrid Loss (HL)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Quantitative Ablation Studies of the Proposed Components
+      in Our GCoNet+. We Conduct the Ablation Studies of Our GCoNet+ on the Effectiveness
+      of the Proposed Components, Including RACM (Recurrent Auxiliary Classification
+      Module), CEM (Confidence Enhancement Module), GST (Group-Based Symmetric Triplet
+      Loss), and Their Combinations
+  Table 3 caption:
+    table_text: "TABLE III Quantitative Comparisons Between Our GCoNet+ and Other\
+      \ Methods. \u201C \u2191 \u2191\u201D (\u201C \u2193 \u2193\u201D) Means That\
+      \ the Higher (Lower) is Better. Methods are Attached With Links to Open-Source\
+      \ Codes or Paper Sources. Since There are Several Datasets Used in the CoSOD\
+      \ Task for Training, We List All the Training Sets Used in Corresponding Methods,\
+      \ i.e., Train-1, 2, and 3 Represent the DUTSclass [16], COCO-9k [17], and COCO-SEG\
+      \ [108], Respectively"
+  Table 4 caption:
+    table_text: TABLE IV Runtime Comparisons of Different Methods. Batch Size is Set
+      as 2 for All Methods During Their Inference on an A100 GPU
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3264571
+- Affiliation of the first author: school of computer science, dalian university of
+    technology, dalian, liaoning, china
+  Affiliation of the last author: school of computer science, dalian university of
+    technology, dalian, liaoning, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_1.jpg
+  Figure 1 caption: 'Surface-generated Colored Semantic Point Cloud Scene Completion.
+    (a) A single-view RGB-D image as input; (b) Visible surface from the RGB-D image,
+    which is represented as the point cloud. In our paper, the color of depth map
+    is for visualization only; (c) Our scene completion result with color label: directly
+    recovering the missing points of the occluded regions; (d) Another view of our
+    result labeled with segmentation.'
+  Figure 10 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_10.jpg
+  Figure 10 caption: Comparisons on the variants of RGB inpainting network. Given
+    incomplete RGB images, we show results of different case compared with the groundtruth.
+    Both the inpainted map and its error map are shown.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_2.jpg
+  Figure 2 caption: The pipeline of our method. Given a single RGB-D image I0 & D0
+    , we first predict its segmentation map S0 , then we convert I0,D0,S0 to a colored
+    semantic labeled point cloud P0 , here shown in two different views. View path
+    planning module is used to seek the next-best-view v1 , under which the point
+    cloud is projected to a new RGB-D image I1 & D1 and a new segmentation image S1
+    , causing holes. In parallel, the P0 is also completed in volumetric space by
+    SSCNet, resulting in Vc . Under the viewpoint v1 , Vc is projected to D1c, S1c
+    using for guiding the inpainting of I1, D1, S1 with image inpainting module. Repeating
+    this process several times, we can achieve the final high-quality colored semantic
+    scene completion.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_3.jpg
+  Figure 3 caption: Details of our volume-guided image inpainting module. The output
+    of segmentation map inpainting network hatSi will be input to both depth inpainting
+    network and RGB inpainting network, as it can provide structure information.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_4.jpg
+  Figure 4 caption: The architecture of a single agent of our A3C. For a point cloud
+    state, MVCNN is used to predict the best view for the next inpainting.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_5.jpg
+  Figure 5 caption: (a) Visualization of voxelization results with different resolutions
+    determined by different grid edge lengths. (b) The relationship between different
+    e on result accuracy (evaluated by CD) and voxelization generating time.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_6.jpg
+  Figure 6 caption: Comparisons against the state-of-the-arts on the 3D-FUTURE test
+    set. Given different inputs and the referenced groundtruth, we show the semantic
+    completion results of four modules, with the corresponding point cloud completeness
+    and accuracy error maps below.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_7.jpg
+  Figure 7 caption: Comparisons against the state-of-the-arts with voxel representation.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_8.jpg
+  Figure 8 caption: Scene semantic completion results against the state-of-the-arts
+    on the ScanNet dataset, with the corresponding point cloud completeness and accuracy
+    error maps below.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Point_Cloud_Scene_Completion_With_Joint_Color_and_Semantic_Estimation_From_Singl\figure_9.jpg
+  Figure 9 caption: Comparisons on the variants of depth inpainting network. Given
+    incomplete depth images, we show results of different case compared with the groundtruth.
+    Both the inpainted map and its error map are shown.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Zhaoxuan Zhang
+  Name of the last author: Xin Yang
+  Number of Figures: 14
+  Number of Tables: 8
+  Number of authors: 6
+  Paper title: Point Cloud Scene Completion With Joint Color and Semantic Estimation
+    From Single RGB-D Image
+  Publication Date: 2023-04-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Quantitative Comparisons Against Existing Methods and Ablation
+      Studies on the 3D-FUTURE Test Set. The CD Metric, C r Cr (Completeness) and
+      A r Ar (Accuracy) (W.r.t Different Thresholds) are Used. The Units of C r Cr
+      and A r Ar are Percentages
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Quantitative Semantic Segmentation Results in Terms of Scene
+      Completion IoU IoU ( Com. Com.) and Scene Semantic IoU IoU on the 3D-FUTURE
+      Test Set
+  Table 3 caption:
+    table_text: TABLE III Quantitative Comparisons Against Existing Methods and Ablation
+      Studies on the ScanNet Dataset. The CD Metric, C r Cr (Completeness) and A r
+      Ar (Accuracy) (W.r.t Different Thresholds) are Used. The Units of C r Cr and
+      A r Ar are Percentages
+  Table 4 caption:
+    table_text: TABLE IV Quantitative Semantic Segmentation Results in Terms of Scene
+      Completion IoU IoU ( Com. Com.) and Scene Semantic IoU IoU on the ScanNet Dataset
+  Table 5 caption:
+    table_text: TABLE V Quantitative Ablation Studies on RGB-D Image Inpainting Network
+  Table 6 caption:
+    table_text: TABLE VI Quantitative Ablation Studies on Segmentation Image Inpainting
+      Network. The Backbone Network for Case13 Case13 is StrucFlow StrucFlow and PartConv
+      PartConv for Others
+  Table 7 caption:
+    table_text: "TABLE VII Quantitative Ablation Studies on Different Action Space\
+      \ Settings. Case a a: \u03B8\u2208 60 \u2218 , 80 \u2218 \u03B8\u220860\u2218\
+      ,80\u2218, \u03D5\u2208\u2212 50 \u2218 ,\u2212 40 \u2218 ,\u2026,\u2212 10\
+      \ \u2218 , 10 \u2218 ,\u2026, 50 \u2218 \u03C6\u2208-50\u2218,-40\u2218,...,10\u2218\
+      ,10\u2218,...,50\u2218. Case b b: \u03B8\u2208 70 \u2218 , 90 \u2218 \u03B8\u2208\
+      70\u2218,90\u2218, \u03D5\u2208\u2212 25 \u2218 ,\u2212 20 \u2218 ,\u2026,\u2212\
+      \ 5 \u2218 , 5 \u2218 ,\u2026, 25 \u2218 \u03C6\u2208-25\u2218,-20\u2218,...,5\u2218\
+      ,5\u2218,...,25\u2218. Case c c: \u03B8\u2208 60 \u2218 , 80 \u2218 \u03B8\u2208\
+      60\u2218,80\u2218, \u03D5\u2208\u2212 25 \u2218 ,\u2212 20 \u2218 ,\u2026,\u2212\
+      \ 5 \u2218 , 5 \u2218 ,\u2026, 25 \u2218 \u03C6\u2208-25\u2218,-20\u2218,...,5\u2218\
+      ,5\u2218,...,25\u2218"
+  Table 8 caption:
+    table_text: TABLE VIII The Parameter Size, Running GPU Memory and the Inference
+      Time of Our Method and Its Components Against the State-of-the-Arts
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3264449

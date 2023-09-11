@@ -1,0 +1,965 @@
+- Affiliation of the first author: school of computing, national university of singapore,
+    singapore
+  Affiliation of the last author: school of computing, national university of singapore,
+    singapore
+  Figure 1 Link: articels_figures_by_rev_year\2023\BiasCompensated_Integral_Regression_for_Human_Pose_Estimation\figure_1.jpg
+  Figure 1 caption: Comparison of the two decoding processes for detection-based methods
+    (pink area) and IPR methods (green area). They share the same encoding (yellow
+    area) and ground truth (gray area) but have different decoding (green and pink
+    areas).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\BiasCompensated_Integral_Regression_for_Human_Pose_Estimation\figure_2.jpg
+  Figure 2 caption: Illustration of the integral regression bias and Phi . Each image
+    depicts a different implicit heatmap overlaid with the predicted joint location
+    indicated by the white square. The bias, i.e., the difference between the heatmap
+    mode and the predicted location, increases with smaller beta . We propose a method
+    to compensate for the bias by partitioning the heatmap into individual regions
+    ( Omega 1 to Omega 4 , see left heatmap) to ensure that the heatmap mode is locally
+    centered. Also, we assume the heatmap is only activated within Phi (see right
+    heatmap).
+  Figure 3 Link: articels_figures_by_rev_year\2023\BiasCompensated_Integral_Regression_for_Human_Pose_Estimation\figure_3.jpg
+  Figure 3 caption: Samples from the COCO dataset separated by their input (bounding
+    box) size, number of joints present in the scene, and the percentage of occlusion
+    (of the present joints). The color of the image border indicates the sample difficulty.
+  Figure 4 Link: articels_figures_by_rev_year\2023\BiasCompensated_Integral_Regression_for_Human_Pose_Estimation\figure_4.jpg
+  Figure 4 caption: Comparisons of the EPE of our method (S) with detection (D) and
+    regression (R) on the divided subbenchmarks. Our method performs the best, i.e.,
+    it has the lowest EPE in 6 of the 9 conditions.
+  Figure 5 Link: articels_figures_by_rev_year\2023\BiasCompensated_Integral_Regression_for_Human_Pose_Estimation\figure_5.jpg
+  Figure 5 caption: (a) When s is small, regression is more localized. (b) From hard
+    to easy, the sigma of detection gradually decreases to 2 but that of regression
+    has no limit. (c) The decrease of sigma generally improves the performance until
+    it is smaller than 2.
+  Figure 6 Link: articels_figures_by_rev_year\2023\BiasCompensated_Integral_Regression_for_Human_Pose_Estimation\figure_6.jpg
+  Figure 6 caption: Toy example of regression update (left) and detection update (right).
+    The black triangle denotes the prediction (expectation value for regression and
+    max value for detection) while the red dot denotes the ground truth position.
+    The arrow shows the movement of the prediction.
+  Figure 7 Link: articels_figures_by_rev_year\2023\BiasCompensated_Integral_Regression_for_Human_Pose_Estimation\figure_7.jpg
+  Figure 7 caption: Comparisons of detection and regression in real world training
+    on an image selected from the COCO val set at epoch 1 and 10. Results of detection
+    have already roughly stabilized while regression can only localize to a small
+    extent in epoch 10 with some background pixels still activated. The right ankle
+    is enlarged for regression in the red box for better visualization. More examples
+    are shown in Appendix H, available in the online supplemental material.
+  Figure 8 Link: articels_figures_by_rev_year\2023\BiasCompensated_Integral_Regression_for_Human_Pose_Estimation\figure_8.jpg
+  Figure 8 caption: (a) Comparison of the mean Average Precision (AP) on COCO validation
+    set between integral regression and detection. Integral regression takes around
+    six time the number of epochs of detection to reach 80% of its final value. (b)
+    Influence of each component on the convergence speed on the COCO validation set.
+    Our proposed components accelerates the training speed of regression method so
+    that it approaches the detection method. (c) EPE of detection decreasing faster
+    than regression, especially at the beginning of training.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Kerui Gu
+  Name of the last author: Angela Yao
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: Bias-Compensated Integral Regression for Human Pose Estimation
+  Publication Date: 2023-04-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Detection Regression EPE Comparison on the COCO Validation
+      Set With a common SBL Backbone, With Separation According to the Number of Present
+      Joints, Input Size, and the Percentage of Occlusions. Presentation Format is
+      Detection Regression. Regression Outperforms Detection With Fewer Joints Present,
+      Smaller Input Sizes and More Occlusion, Though This Phenomenon is Obscured Once
+      All the Factors are Averaged Due to the Dataset Distribution. The Shaded Blue,
+      Green, and Red Represents Easy, Medium, and Hard Samples, Respectively
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Performance and Activation Sum of Regression Baseline and
+      Regression Baseline With Regularizer Loss. Compared With Regression Baseline,
+      the Spread of Heatmaps is Smoother and the Results are Improved for Regression
+      Baseline With Regularizer Loss
+  Table 3 caption:
+    table_text: TABLE III Evaluation of Our Method Competing With State-of-The-Art
+      Methods on COCO Validation Set. 'd' and 'r' Stand for Detection- and Regression-Based
+      Methods, Respectively. Our Proposed Method (+BCIR) Outperforms Both Detection-
+      and Regression-Based (+IPR) Baselines
+  Table 4 caption:
+    table_text: TABLE IV Evaluation of Our Method Competing With State-of-The-Art
+      Methods on COCO Test-Dev Set. 'd' and 'r' Stand for Detection- and Regression-Based
+      Methods, Respectively. Our Proposed Method is Competitive Against State-of-The-Art
+      Detection-Based Methods and Surpasses the Performance of Regression-Based Methods
+      by a Large Margin
+  Table 5 caption:
+    table_text: TABLE V Comparison on MPII Validation Set. Our Method Gains Significant
+      Improvement on the Baselines
+  Table 6 caption:
+    table_text: "TABLE VI Evaluation of Each Component of Our Method on COCO Validation\
+      \ Set. EPE H EPEH Denotes EPE on 'hard' Samples. For L de Lde, \u03BB(t)=1 \u03BB\
+      (t)=1 for T o =120 To=120 Unless Otherwise Indicated. Our Proposed Components\
+      \ Improve the Performance With Respect to the Baseline, Especially on These\
+      \ Hard Samples. A Combination With \u03B2=10 \u03B2=10 is Optimal"
+  Table 7 caption:
+    table_text: TABLE VII Comparisons of EPE on the RHD Test Set. Avg is the Overall
+      Performance and v v is the Visibility of the Samples. The Well-Trained Models
+      Mainly Have Different Performance in Visible Cases and Under the Similar Overall
+      Performance, IPR Performs Much Better in Occluded Cases
+  Table 8 caption:
+    table_text: TABLE VIII Comparison on the RHD Test Set of 2D3D AUC and EPE for
+      Hand Pose Estimation. Our Proposed Method Outperforms the Baseline and Two Detection-Based
+      Methods
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3264742
+- Affiliation of the first author: key laboratory of multimedia trusted perception
+    and efficient computing, ministry of education of china, school of informatics,
+    xiamen university, xiamen, china
+  Affiliation of the last author: key laboratory of multimedia trusted perception
+    and efficient computing, ministry of education of china, school of informatics,
+    xiamen university, xiamen, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Prioritized_Subnet_Sampling_for_ResourceAdaptive_Supernet_Training\figure_1.jpg
+  Figure 1 caption: 'Left: Performance of SlimmableNetwork [5] with uniform width
+    and non-uniform width [6]. Right: Performance of MutualNet [7] with fixed and
+    reduced search spaces.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Prioritized_Subnet_Sampling_for_ResourceAdaptive_Supernet_Training\figure_2.jpg
+  Figure 2 caption: PSS-Net training framework. (a) Initializing the subnet structure
+    space mathcal S . (b) Setting up a set of subnet pools Theta = lbrace pi 1, pi
+    2,ldots , pi Trbrace . (c) Given a resource constraint theta t , sampling a medium-sized
+    subnet structure phi t either from the subnet structure space mathcal S , or from
+    the corresponding subnet pool pi t . (d) Slimmable training for mathcal Nphi max,
+    mathcal Nphi t, mathcal Nphi min . The details are described in Section III and
+    Algorithm 1.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Prioritized_Subnet_Sampling_for_ResourceAdaptive_Supernet_Training\figure_3.jpg
+  Figure 3 caption: Predicted latency versus real latency. We sample 1,000 subnet
+    structures using MobileNet-V1 as the supernet. We obtain a very small root mean
+    square error (RMSE) of 0.5 mu s between real latency and predicted latency, indicating
+    an accurate prediction of our lookup tables.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Prioritized_Subnet_Sampling_for_ResourceAdaptive_Supernet_Training\figure_4.jpg
+  Figure 4 caption: MobileNet-V1, MobileNet-V2 and ResNet-50 experiments under single
+    and multiple types of resource constraints. PSS-Net textF , PSS-Net textG , and
+    PSS-Net textC denote PSS-Net trained under individual constraint of FLOPs, GPU
+    latency, and CPU latency. PSS-Net textM denotes PSS-Net trained under all of the
+    three constraints.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Bohong Chen
+  Name of the last author: Liujuan Cao
+  Number of Figures: 4
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: Prioritized Subnet Sampling for Resource-Adaptive Supernet Training
+  Publication Date: 2023-04-06 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Performance Comparison With the Resource-Adaptive Methods\
+      \ USNet [8] and MutualNet [7]. PSS-Net F F, PSS-Net G G, and PSS-Net C C Denote\
+      \ PSS-Net Trained Under Individual Constraint of FLOPs, GPU Latency, and CPU\
+      \ Latency. PSS-Net M M Denotes PSS-Net Trained Under All of the Three Constraints.\
+      \ Using MobileNet-V1, MobileNet-V2 and ResNet-50 as Backbone Networks. The \u201C\
+      -\u201D Denotes That the Corresponding Method Does not Have a Subnet That Satisfies\
+      \ the Required Constraint"
+  Table 10 caption:
+    table_text: TABLE X Performance Comparison BeforeAfter Fine-Tuning the Best Subnets
+  Table 2 caption:
+    table_text: "TABLE II Performance Comparison With Compact Model Methods Including\
+      \ Model Pruning ( \u25BC blue\u25BE) and NAS ( \u2605 red\u2605). The Model\
+      \ Pruning and PSS-Net Methods in the Left, Middle and Right Columns Use MobileNet-V1,\
+      \ MobileNet-V2 and ResNet-50 as the Supernet Networks, Respectively"
+  Table 3 caption:
+    table_text: TABLE III MobileNet-V1 and MobileNet-V2 TFLite Latency Measured on
+      ARM A72 Single Core CPU
+  Table 4 caption:
+    table_text: TABLE IV Performance of PSS-Net Subnets With Different Parameters.
+      The Backbone is MobileNet-V1
+  Table 5 caption:
+    table_text: TABLE V Complexity Comparison of Training and Storage Costs Among
+      Existing Resource-Adaptive Methods [7], [8], Model Pruning, and Our PSS-Net
+  Table 6 caption:
+    table_text: TABLE VI Comparison With a Random Search
+  Table 7 caption:
+    table_text: TABLE VII Performance Comparison Under Different Low Bounds of Subnets
+  Table 8 caption:
+    table_text: TABLE VIII BN Calibration for Subnets Within Top- k k Performance
+      Metrics
+  Table 9 caption:
+    table_text: "TABLE IX Ablation Studies of the Hyper-Parameters p end pend, \u03B7\
+      \ end \u03B7end, M M, and divisor divisor in the Algorithms of PSS-Net Training\
+      \ and Prioritized Subnet Sampling"
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3265198
+- Affiliation of the first author: school of artificial intelligence, xidian university,
+    xi'an, shaanxi, china
+  Affiliation of the last author: school of artificial intelligence, xidian university,
+    xi'an, shaanxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_1.jpg
+  Figure 1 caption: The imaging schematic of the coded aperture snapshot spectral
+    imaging (CASSI) system.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_10.jpg
+  Figure 10 caption: Reconstructed images of two real scenes (Scene 1 and Scene 4)
+    with 3 out of 28 spectral channels by the competing methods. Zoom in for better
+    view.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_2.jpg
+  Figure 2 caption: Architecture of the proposed network DGSM for spectral compressive
+    imaging (SCI) and single image super-resolution (SISR). The architectures of (a)
+    the overall network, (b) the measurement matrix for SCI (left) and SISR (right),
+    (c) the transposed version of the measurement matrix for SCI (left) and SISR (right).
+  Figure 3 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_3.jpg
+  Figure 3 caption: Architecture of the proposed Transformer-based network for learning
+    the GSM priors. (a) Residual Swin Transformer Block (RSTB). (b) WindowShifted-window
+    Swin Transformer Layer (STLSW-STL).
+  Figure 4 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_4.jpg
+  Figure 4 caption: The visualization (with normalization) of the regularization parameters
+    boldsymbolw learned by DGSM-UNet [10] (middle) and DGSM-Swin (bottom) for SCI.
+    (a) Scene 2. (b) Scene 6. (c) Scene 7. (d) Scene 9.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_5.jpg
+  Figure 5 caption: The visualization (with normalization) of the regularization parameters
+    boldsymbolw learned by DGSM-UNet (middle) and DGSM-Swin (right) for SISR. (a)
+    img035 from BSD100. (b) img088 from BSD100. (c) img005 from Set14. (d) img025
+    from BSD100. (e) img004 from Urban100.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_6.jpg
+  Figure 6 caption: The overview of the used SCI and SISR datasets in simulation and
+    real data experiments. In spectral compressive imaging, we show the corresponding
+    RGB images of HSIs.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_7.jpg
+  Figure 7 caption: Reconstructed images of Scene 5 (a) and Scene 10 (b) with 4 out
+    of 28 spectral channels by the eight deep learning-based methods. The spectral
+    curves (bottom-left) correspond to the selected green box of the RGB image. Zoom
+    in for better view.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_8.jpg
+  Figure 8 caption: Visual quality comparisons of different SISR methods for three
+    sample images in the Urban100 dataset (bicubic-downsampling, times 3 ).
+  Figure 9 Link: articels_figures_by_rev_year\2023\Deep_Gaussian_Scale_Mixture_Prior_for_Image_Reconstruction\figure_9.jpg
+  Figure 9 caption: Visual quality comparisons of different SISR methods for three
+    sample images in the Urban100 dataset (bicubic-downsampling, times 4 ).
+  First author gender probability: 0.87
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Tao Huang
+  Name of the last author: Guangming Shi
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Deep Gaussian Scale Mixture Prior for Image Reconstruction
+  Publication Date: 2023-04-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE I The PSNR in Db (Top Entry in Each Cell) and SSIM (Bottom Entry
+      in Each Cell) Results of the Test Methods on 10 Scenes. The Best Performance
+      is Shown in Bold and the Second Best Performance is Shown in Underline
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Average PSNR and SSIM Results for Bicubic Downsampling Degradation
+      on Five Benchmark Datasets. The Best Performance is Shown in Bold and the Second
+      Best Performance is Shown in Underline
+  Table 3 caption:
+    table_text: TABLE III Ablation Study on the Effects of the w w-Generator
+  Table 4 caption:
+    table_text: TABLE IV Ablation Study on the Effects of the Number of Stages and
+      Swin Transformer Layers (STLs) for SCI
+  Table 5 caption:
+    table_text: TABLE V Parameters, FLOPS, and Performance of the Competing SCI Methods
+  Table 6 caption:
+    table_text: "TABLE VI Parameters, FLOPS, and Performance of the Competing SISR\
+      \ Methods (Bicubic-Downsampling, \xD72 \xD72)"
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3265103
+- Affiliation of the first author: shenzhen key lab of computer vision and pattern
+    recognition, shenzhen institute of advanced technology, chinese academy of sciences,
+    shenzhen, china
+  Affiliation of the last author: shenzhen key lab of computer vision and pattern
+    recognition, shenzhen institute of advanced technology, chinese academy of sciences,
+    shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\CP_Unifying_Point_Cloud_Completion_by_PretrainPromptPredict_Paradigm\figure_1.jpg
+  Figure 1 caption: "Our CP3 paradigm. We unify point cloud completion by the recent\
+    \ prompting scheme in NLP, since we find the incomplete point cloud plays a similar\
+    \ role as the incomplete sentence, e.g., \u201CI love this movie. Overall, it\
+    \ was a movie\u201D. Following this line, we reinterpret point cloud generation\
+    \ and refinement as the prompting and predicting stages, which first generates\
+    \ the imperfect point cloud (like answer: \u201Cgood fantastic\u201D) from the\
+    \ incomplete one, and then refines target point cloud (like output: \u201C++(positive)\u201D\
+    ) from the imperfect one. But different from NLP, point cloud generation is not\
+    \ pretrained, and refinement lacks semantic awareness. Hence, we propose a concise\
+    \ IOI pretraining to boost generation robustness in a self-supervised way, and\
+    \ design a novel semantic guidance to modulate refinement for shape confusion\
+    \ reduction."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\CP_Unifying_Point_Cloud_Completion_by_PretrainPromptPredict_Paradigm\figure_2.jpg
+  Figure 2 caption: IOI pretraining and prompting.
+  Figure 3 Link: articels_figures_by_rev_year\2023\CP_Unifying_Point_Cloud_Completion_by_PretrainPromptPredict_Paradigm\figure_3.jpg
+  Figure 3 caption: Two types of crop procedure of IOI sampling.
+  Figure 4 Link: articels_figures_by_rev_year\2023\CP_Unifying_Point_Cloud_Completion_by_PretrainPromptPredict_Paradigm\figure_4.jpg
+  Figure 4 caption: Structure of SCR network with semantic-guided modulation and multi-scale
+    point deconvolution.
+  Figure 5 Link: articels_figures_by_rev_year\2023\CP_Unifying_Point_Cloud_Completion_by_PretrainPromptPredict_Paradigm\figure_5.jpg
+  Figure 5 caption: Qualitative completion results on the MVP dataset by different
+    methods.
+  Figure 6 Link: articels_figures_by_rev_year\2023\CP_Unifying_Point_Cloud_Completion_by_PretrainPromptPredict_Paradigm\figure_6.jpg
+  Figure 6 caption: TSNE visualization of features before and after semantic guided
+    modulation.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.53
+  Name of the first author: Mingye Xu
+  Name of the last author: Yu Qiao
+  Number of Figures: 6
+  Number of Tables: 15
+  Number of authors: 5
+  Paper title: 'CP3: Unifying Point Cloud Completion by Pretrain-Prompt-Predict Paradigm'
+  Publication Date: 2023-04-07 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Completion Results (L2 Chamfer Distance \xD7 10 4 \xD7104)\
+      \ on MVP Dataset (16,384 Points)"
+  Table 10 caption:
+    table_text: 'TABLE X Ablation Studies of IOI Pretraining: Different Patches of
+      the Multiple Local Patches Crop Procedure'
+  Table 2 caption:
+    table_text: TABLE II Point Cloud Completion Results (F-Score 1%, Higher is Better)
+      on MVP Dataset (16,384 Points)
+  Table 3 caption:
+    table_text: "TABLE III Comparisons on PCN Dataset (L1 Chamfer Distance \xD7 10\
+      \ 3 \xD7103)"
+  Table 4 caption:
+    table_text: TABLE IV Comparisons on MVP Dataset With Various Resolutions
+  Table 5 caption:
+    table_text: "TABLE V Ablation Studies of the CP3 Framework on MVP Dataset With\
+      \ 2048 Points (CD Multiplied by 10 4 104), \u201C\u2713\u201D Means That we\
+      \ Use the Corresponding Strategies, While \u201C\xD7\u201D Means That the Relevant\
+      \ Strategies is not Applicable"
+  Table 6 caption:
+    table_text: "TABLE VI Ablation Studies of the CP3 Framework on MVP Dataset With\
+      \ 2048 Points (CD Multiplied by 10 4 104). \u201CSGM\u201D Means Semantic Guided\
+      \ Modulation"
+  Table 7 caption:
+    table_text: 'TABLE VII Ablation Studies of IOI Pretraining: Different Pretraining
+      Settings'
+  Table 8 caption:
+    table_text: TABLE VIII Comparison of IOI Pretraining and Augmentation
+  Table 9 caption:
+    table_text: 'TABLE IX Ablation Studies of IOI Pretraining: Different Crop Procedure
+      of IOI Sampling'
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3257026
+- Affiliation of the first author: school of computer science and engineering, sun
+    yat-sen university, guangzhou, guangdong, china
+  Affiliation of the last author: cloud and ai bu, huawei, shenzhen, guangdong, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\PSLT_A_LightWeight_Vision_Transformer_With_Ladder_SelfAttention_and_Progressive_\figure_1.jpg
+  Figure 1 caption: "Illustration of prevalent transformer architectures for image\
+    \ classification. (a) ViT [31] with only one stage. (b) Swin Transformer [15],\
+    \ which uses window-based multi-head self-attention and multi-stage blocks. (c)\
+    \ Our proposed PSLT adopts light-weight ladder self-attention (SA) blocks in the\
+    \ final two stages to model long-range dependency of pixels divided in different\
+    \ windows in the same block, and the light-weight convolutional blocks (MobileNetV2\
+    \ [21] block with a squeeze-and-excitation (SE) block [50]) are adopted in the\
+    \ first two stages. The details of PSLT are described in Section III, and the\
+    \ structures of the PSW-MHSA and pixel-adaptive fusion module are shown in Fig.\
+    \ 3. \u201CShift 1\u201D and \u201CShift 2\u201D denotes shift operations with\
+    \ different directions. \u201C d1 \u201D and \u201C d2 \u201D denote the number\
+    \ of channels, and d1=3d2 ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\PSLT_A_LightWeight_Vision_Transformer_With_Ladder_SelfAttention_and_Progressive_\figure_2.jpg
+  Figure 2 caption: Illustration of the window partition for pixel interactions in
+    each block. (a) The original W-MHSA generates windows according to only one strategy
+    to model local attention in each block. (b) The PSW-MHSA produces different windows
+    with multiple strategies and fuses these features to aggregate information from
+    diverse spatial windows.
+  Figure 3 Link: articels_figures_by_rev_year\2023\PSLT_A_LightWeight_Vision_Transformer_With_Ladder_SelfAttention_and_Progressive_\figure_3.jpg
+  Figure 3 caption: "Example of detailed blocks in PSLT. (a) Window-based multi-head\
+    \ self-attention in the Swin Transformer [15]. (b) The ladder self-attention block\
+    \ with two branches for example. The progressive shift mechanism transmits output\
+    \ feature of the previous branch to the subsequent branch, which further enlarges\
+    \ the receptive field. Only the PSW-MHSA is illustrated in detail; LayerNrom and\
+    \ Light FFN are shown in Fig. 1 and omitted here for simplicity. \u201CWP\u201D\
+    \ indicates the window partition. (c) The pixel-adaptive fusion module in the\
+    \ ladder self-attention block. \u201CWeights\u201D denotes the adaptive weights\
+    \ along the channel and spatial dimensions, which is the output of the second\
+    \ fully connected layer. The details of the PSW-MHSA are described in Section\
+    \ III-B1."
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Gaojie Wu
+  Name of the last author: Qi Tian
+  Number of Figures: 3
+  Number of Tables: 15
+  Number of authors: 4
+  Paper title: 'PSLT: A Light-Weight Vision Transformer With Ladder Self-Attention
+    and Progressive Shift'
+  Publication Date: 2023-04-07 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Comparison of Various General-Purpose Backbones. \u201CT\u201D\
+      \ Indicates That the Model Adopts the Transformer Architecture. \u201CAdaptive\u201D\
+      \ Indicates That the Model Can Adapt to the Input Image. \u201CLight\u201D Denotes\
+      \ That the Model Has a Relatively Small Number of Parameters and FLOPs. \u201C\
+      NAS\u201D Denotes That the Model Needs Another Search Process Before Training\
+      \ From Scratch"
+  Table 10 caption:
+    table_text: "TABLE X Comparison of Model Inference. \u201Cmem\u201D Denotes the\
+      \ Peak Memory for Evaluation. \u201CFPS\u201D is the Number of Images Processed\
+      \ for One Second"
+  Table 2 caption:
+    table_text: "TABLE II Comparison of Light-Weight Vision Transformers. \u201CT\u201D\
+      \ Indicates That the Model Adopts the Transformer Architecture. \u201Clocal\u201D\
+      \ Indicates the Modelling of Local Interaction. \u201CGlobal\u201D Indicates\
+      \ the Modelling of Long-Range Interaction. \u201CGSA\u201D Denotes That the\
+      \ Model Adopts Global Self-Attention. \u201CLSA\u201D Denotes That the Model\
+      \ Adopts Local Self-Attention"
+  Table 3 caption:
+    table_text: "TABLE III Specification for PSLT. \u201Cconv2d\u201D and \u201CMBV2Block\u201D\
+      \ Indicate the Standard Convolutional Operation and the Light-Weight Block in\
+      \ the MobileNetV2 [21] With the Squeeze-and-Excitation layer [50]. \u201Cconv2d\
+      \ \u2193 \u2193\u201D and \u201CMBV2Block+SE \u2193 \u2193\u201D Denote the\
+      \ Operation or Block for Downsampling With Stride 2. \u201CFC\u201D Denotes\
+      \ the Fully Connected Layer. PSLT Has a Total of 9.223M Parameters According\
+      \ to the Table"
+  Table 4 caption:
+    table_text: "TABLE IV Image Classification Performance on the ImageNet Without\
+      \ Pretraining. Models With Similar Number of Parameters are Presented for Comparison.\
+      \ \u201Cinput\u201D Indicates the Scale of the Input Images. \u201CTop-1\u201D\
+      \ (\u201CV2 Top-1\u201D) Denotes the top-1 Accuracy on ImageNet (ImageNet-V2).\
+      \ \u201Cparams\u201D Refers to the Number of Trainable Parameters. \u201CFLOPs\u201D\
+      \ is Calculated According to the Corresponding Input Size. \u201C+\u201D Indicates\
+      \ That the Performance is Cited From Mobile-Former [38]. \u201C\u201D Indicates\
+      \ That the Model Was Trained With Distilling From an External Teacher. \u201C\
+      \ \u2021 \u2021\u201D Denotes Extra Techniques are Applied, Such as Multi-Scale\
+      \ sampler [19] and EMA [2]. \u201CPAcc\u201D (\u201CFAcc\u201D) is the Ratio\
+      \ of Top-1 Accuracy to the Number of Parameters (FLOPs)"
+  Table 5 caption:
+    table_text: "TABLE V Image Classification Performance of the Models on the CIFAR-10100\
+      \ Without Pretraining. The top-1 Accuracy Rate on CIFAR-10100 is Reported. \u201C\
+      +\u201D Denotes That Results Were Taken from [71]. \u201CFLOPs\u201D is Not\
+      \ Reported for the Compared Methods in Literatures"
+  Table 6 caption:
+    table_text: "TABLE VI Object Detection Performance on COCO. The AP AP Value on\
+      \ the Validation Set is Reported. \u201CMS\u201D Denotes That Multi-Scale training\
+      \ [14] Was Used. \u201C+\u201D Indicates That the Result is Taken from [14].\
+      \ FLOPs is Calculated At Input Resolution 1280\xD7800 1280\xD7800. \u201C\u201D\
+      \ Denotes That the Model is Trained Based on Sparse R-CNN [72] following [15]"
+  Table 7 caption:
+    table_text: "TABLE VII Object Detection and Instance Segmentation Performance\
+      \ on COCO. A P b APb and A P m APm Denote the Bounding Box AP and Mask AP on\
+      \ the Validation Set, Respectively. \u201CMS\u201D Denotes That Multi-Scale\
+      \ training [14] Was Used. \u201C+\u201D Indicates That the Result Was Taken\
+      \ from [14]. FLOPs is Calculated At Input Resolution 1280\xD7800 1280\xD7800"
+  Table 8 caption:
+    table_text: "TABLE VIII Semantic Segmentation Performance of Different Backbones\
+      \ on the ADE20 K. The Mean Intersection Over Union (MIoU) is Reported. \u201C\
+      +\u201D Indicates That the Result is Taken from [14]. \u201C\u201D Denotes That\
+      \ the Model is Trained Based on UperNet [79] following [15]"
+  Table 9 caption:
+    table_text: "TABLE IX Performance of the Models on the Market-1501 When the Models\
+      \ are First Pretrained on ImageNet. \u201CRank-1\u201D Indicates the rank-1\
+      \ Accuracy Rate. \u201CmAP\u201D Denotes the Mean Average Precision. \u201C\
+      FLOPs\u201D is Not Reported for the Compared Methods in Literatures"
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3265499
+- Affiliation of the first author: department of computer science, school of automotive
+    engineering, tongji university, shanghai, china
+  Affiliation of the last author: department of computer science, key laboratory of
+    embedded system and service computing, ministry of education, tongji university,
+    shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\SparsetoDense_Matching_Network_for_LargeScale_LiDAR_Point_Cloud_Registration\figure_1.jpg
+  Figure 1 caption: 'Different matching schemes for point cloud registration. Green
+    lines: inlier correspondences. Red lines: outlier correspondences. We use blue
+    and yellow points to indicate source and target points that are used, and light
+    blue and light yellow points to indicate points that are not used in a certain
+    scheme.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\SparsetoDense_Matching_Network_for_LargeScale_LiDAR_Point_Cloud_Registration\figure_2.jpg
+  Figure 2 caption: Overview of the proposed SDMNet. Given source and target point
+    clouds Pmathcal S,Pmathcal T , we first use a feature extractor to extract per-point
+    features of both source and target point clouds. Then, we sample a small set of
+    sparse points Xmathcal S from Pmathcal S and then match them to the dense target
+    point cloud Pmathcal T in the sparse matching stage (Section III-B). After that,
+    in the local-dense matching stage, we perform point matching in local spatial
+    neighborhoods of high-confidence sparse correspondences and finally output the
+    rigid transformation (Section III-C).
+  Figure 3 Link: articels_figures_by_rev_year\2023\SparsetoDense_Matching_Network_for_LargeScale_LiDAR_Point_Cloud_Registration\figure_3.jpg
+  Figure 3 caption: Architecture of the proposed neighborhood matching module. Given
+    two local neighborhood clusters mathcal Nmathcal S, mathcal Nmathcal T , we calculate
+    the soft assignment matrix to align two sets of features by solving an optimal
+    transport problem. The output is the neighborhood consensus feature fmathcal N
+    of the certain correspondence.
+  Figure 4 Link: articels_figures_by_rev_year\2023\SparsetoDense_Matching_Network_for_LargeScale_LiDAR_Point_Cloud_Registration\figure_4.jpg
+  Figure 4 caption: Registration recall with different RRE and RTE thresholds on KITTI
+    dataset and NuScenes dataset. Most of the results are borrowed from HRegNet [8].
+  Figure 5 Link: articels_figures_by_rev_year\2023\SparsetoDense_Matching_Network_for_LargeScale_LiDAR_Point_Cloud_Registration\figure_5.jpg
+  Figure 5 caption: Registration recall with different RRE and RTE thresholds on Apollo-SouthBay
+    dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2023\SparsetoDense_Matching_Network_for_LargeScale_LiDAR_Point_Cloud_Registration\figure_6.jpg
+  Figure 6 caption: 'Qualitative visualization of the proposed SDMNet. Each row displays
+    a sample of qualitative registration result. Correspondences with confidence lower
+    than a threshold tau c=0.1 are filtered for better visualization. Blue points:
+    source point cloud. Yellow points: target point cloud. Green lines: estimated
+    correspondences.'
+  Figure 7 Link: articels_figures_by_rev_year\2023\SparsetoDense_Matching_Network_for_LargeScale_LiDAR_Point_Cloud_Registration\figure_7.jpg
+  Figure 7 caption: Inlier ratio of sparse correspondences with and without (wo) soft
+    matching network (SMN).
+  Figure 8 Link: articels_figures_by_rev_year\2023\SparsetoDense_Matching_Network_for_LargeScale_LiDAR_Point_Cloud_Registration\figure_8.jpg
+  Figure 8 caption: Ratio of the number of inlier points after and before the optimal
+    transport (with different feature distance thresholds).
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Fan Lu
+  Name of the last author: Changjun Jiang
+  Number of Figures: 8
+  Number of Tables: 10
+  Number of authors: 7
+  Paper title: Sparse-to-Dense Matching Network for Large-Scale LiDAR Point Cloud
+    Registration
+  Publication Date: 2023-04-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Registration Performance on KITTI Dataset and NuScenes Dataset.
+      Most of the Results are Borrowed From HRegNet [8]. RTE (m)RRE (deg) are Averaged
+      Over Successful Pairs While RTE (m)RRE (deg) are Averaged Over All Pairs
+  Table 10 caption:
+    table_text: TABLE X Registration Performance on 3DMatch Dataset. Most of the Results
+      are Borrowed From DGR [6] Except for PointDSC [7] and DHVR [61]
+  Table 2 caption:
+    table_text: TABLE II Registration Performance on Apollo-SouthBay Dataset. RTE
+      (m)RRE (deg) are Averaged Over Successful Pairs While RTE (m)RRE (deg) are Averaged
+      Over All Pairs
+  Table 3 caption:
+    table_text: "TABLE III Performance on KITTI Dataset Using Point Cloud Pairs in\
+      \ PointDSC [7]. \u201CSDMNet+refine\u201D Means the Proposed SDMNet With Post\
+      \ Refinement Module of PointDSC. The RTE and RRE Thresholds are Set as \u03F5\
+      \ rte =0.6 \u03B5rte=0.6m and \u03F5 rre =5 \u03B5rre=5deg Following [7]"
+  Table 4 caption:
+    table_text: 'TABLE IV Ablation Studies on Number of Sampled Sparse Points ( S
+      S) (Our Implementation: S=1000 S=1000)'
+  Table 5 caption:
+    table_text: 'TABLE V Ablation Studies on Soft Matching Network. M M: Number of
+      Candidate Corresponding Points (Our Implementation: M=4 M=4); wo SMN: SDMNet
+      Without Soft Matching Network; wo L d Ld: Training Without Probabilistic Distance
+      Loss L d Ld'
+  Table 6 caption:
+    table_text: 'TABLE VI Ablation Studies on the Local-Dense Matching Stage. wo Dense:
+      Without Local-Dense Matching Stage; k k: Number of Neighboring Points (Our Implementation:
+      k=8 k=8)'
+  Table 7 caption:
+    table_text: 'TABLE VII Ablation Studies on Neighborhood Consensus Feature. wo
+      f N fN: Without the Proposed Neighborhood Consensus Feature f N fN; With f a
+      N fNa: Replace f N fN With Attention-Based Neighborhood Consensus Feature f
+      a N fNa in HRegNet [8]; f S N , f T N fNS,fNT: Directly Concatenate f S N fNS
+      and f T N fNT Without Alignment; SDMNet: The Naive Implementation by Removing
+      the Soft Matching Network, Neighborhood Consensus Features, and the Local-Dense
+      Matching Stage'
+  Table 8 caption:
+    table_text: TABLE VIII Performance Comparison of the Proposed SDMNet Using IPOT
+      and Sinkhorn Algorithms to Solve Optimal Transport Problem
+  Table 9 caption:
+    table_text: 'TABLE IX Performance of the Proposed SDMNet Using Different Number
+      of Iterations ( L L: Inner Iteration Number; T T: Outer Iteration Number). OT-Time:
+      The Time Costs for Optimal Transport'
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3265531
+- Affiliation of the first author: national engineering research center of robot visual
+    perception and control technology, hunan university, changsha, hunan, china
+  Affiliation of the last author: national engineering research center of robot visual
+    perception and control technology, hunan university, changsha, hunan, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_1.jpg
+  Figure 1 caption: The formation process of the CASSI measurement and the uncoded
+    RGB measurement.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_2.jpg
+  Figure 2 caption: (a) The total variation map of spectral images; (b) the total
+    variation map of prior images; (c) the SSIM and norm of the difference between
+    the total variation map of spectral images and prior images; (d) the gap between
+    the true value and the upper bound on two scenes.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_3.jpg
+  Figure 3 caption: The reference image of testing data from (a) KAIST and (b) CAVE
+    dataset in the simulation.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_4.jpg
+  Figure 4 caption: Reconstructed images of scene 03 of the KAIST dataset with 7 out
+    of 28 spectral channels. Two areas are selected for showing the spectral curve
+    of the reconstructed results. The distribution with significance test of spectra
+    error is provided.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_5.jpg
+  Figure 5 caption: Visual comparison of reconstruction results with PSNR value by
+    model-based methods on the CAVE Scene 10 image.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_6.jpg
+  Figure 6 caption: Visualization of the recovered (a) 20th, (b) 21th, and (c) 22th
+    band on scene 04 of the KAIST.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_7.jpg
+  Figure 7 caption: (a) The reference RGB image and CASSI measurements of Pavia datasets;
+    (b) the reference image and CASSI measurements of two real scenes data.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_8.jpg
+  Figure 8 caption: "Recovered images of the \u201CNinja\u201D and \u201CDoll\u201D\
+    \ scenes with 4 out of 26 spectral channels by different algorithms."
+  Figure 9 Link: articels_figures_by_rev_year\2023\Prior_Image_Guided_Snapshot_Compressive_Spectral_Imaging\figure_9.jpg
+  Figure 9 caption: "Convergence analysis of the (a) loss value and (b) PSNR with\
+    \ iteration going to; the effect of hyperparameter (c) \u03BB , (d) \u03C1 , (e)\
+    \ \u03C4 , and (f) j ."
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.96
+  Name of the first author: Yurong Chen
+  Name of the last author: Hui Zhang
+  Number of Figures: 9
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Prior Image Guided Snapshot Compressive Spectral Imaging
+  Publication Date: 2023-04-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparison of Reconstruction Results on 10 Scenes of the KAIST
+      Dataset and the Running Time of Each Method. The PSNR in Db, SSIM, and SAM Results
+      are Reported
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Comparison of Reconstruction Results on 10 Scenes of the
+      CAVE Dataset and the Running Time of Each Method. The PSNR in Db, SSIM, and
+      SAM Results are Reported
+  Table 3 caption:
+    table_text: TABLE III Comparison of Reconstruction Results on Scene 04 of the
+      KAIST (Sharp Spectral Peaks are Added on the 20Th, 21Th, and 22Th Bands)
+  Table 4 caption:
+    table_text: TABLE IV Comparison of the Robustness of Different Algorithms on Three
+      Cases
+  Table 5 caption:
+    table_text: TABLE V Comparison of the Reconstruction Results of Different DC-CASSI
+      Algorithms on Three Scenes With Changing the Number of Bands
+  Table 6 caption:
+    table_text: TABLE VI Reconstruction Results on 5 Scenes of the KAIST Dataset by
+      Different DC-CASSI Methods With Simulated RGB Image and Demosaicked RGB Image
+  Table 7 caption:
+    table_text: "TABLE VII The Effect of Beam Splitter Factor \u03B1 \u03B1. The Results\
+      \ are Reported on Scene 01 and 02 of the KAIST Dataset. NC Denotes No Consideration\
+      \ of the Factor \u03B1 \u03B1"
+  Table 8 caption:
+    table_text: TABLE VIII Reconstruction Results on 10 Scenes of the KAIST Dataset
+      by Our Method With the Prior Image Generated by Different Methods
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3265749
+- Affiliation of the first author: school of automation, northwestern polytechnical
+    university, xi'an, china
+  Affiliation of the last author: school of automation, northwestern polytechnical
+    university, xi'an, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_1.jpg
+  Figure 1 caption: Meta-training on the base dataset with abundant annotated samples
+    inevitably introduces a bias towards the seen classes rather than being ideally
+    class-agnostic. Even with advanced methods [30], [51], such a thorny problem might
+    arise in both 2D and 3D FSS tasks, e.g., the incorrect activation of the person
+    in (a) and the chair in (b). Note that the label in the upper left corner of the
+    raw query (1st column) represents the class to be segmented; the rectangular box
+    in the baseline prediction (3 rd column) indicates the over-segmented base-class
+    region.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_10.jpg
+  Figure 10 caption: 'Representative segmentation results for illustration. Given
+    the support image and the corresponding mask (last column), the objects contained
+    in the query image can be categorized into the following three cases: (i) base
+    category only, (ii) novel category only, and (iii) both base and novel categories.'
+  Figure 2 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_2.jpg
+  Figure 2 caption: Comparison of our BAM and previous work. (a) Conventional approaches
+    typically employ meta-learning frameworks to train the FSS models, which is inevitably
+    biased towards base classes rather than being ideally class-agnostic, thus hindering
+    the recognition of target objects for novel classes (e.g., cat ()). (b) Our BAM
+    introduces an additional branch, namely the base learner, to explicitly predict
+    the regions of base classes. In this way, the distractor objects (e.g., person
+    () and sofa ()) in the query image can be significantly suppressed after the ensemble
+    module. (c) Extension of our BAM under the generalized FSS setting, where the
+    pixels of both base and novel classes are required to be determined. The refined
+    results are again merged with the output of the base learner to generate comprehensive
+    predictions.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_3.jpg
+  Figure 3 caption: 'Overall architecture of the proposed BAM given the 2D image as
+    input, which is composed of three essential components: a base learner, a meta
+    learner, and an ensemble module. In each training episode, the two learners extract
+    the features of the input image pair (mathbfxmathrms,mathbfxmathrmq) with a shared
+    encoder and make predictions for the specific base category c (note that c denotes
+    the novel category in the meta-testing phase) and the remaining base categories,
+    respectively. Then, the coarse predictions are fed to the ensemble module along
+    with the adjustment factors lbrace psi,omega rbrace to suppress the falsely activated
+    regions of base categories, further producing accurate segmentation results. For
+    ease of understanding, we present the probability maps in the form of segmentation
+    masks, but they are actually two-dimensional floating-point matrices, i.e., mathbfpin
+    [ 0,1 ]H times W . MAP represents the masked average pooling operation [31].'
+  Figure 4 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_4.jpg
+  Figure 4 caption: The calculation process of the adjustment factor psi for the low-level
+    features mathbffmathrmlowmathrms and mathbffmathrmlowmathrmq .
+  Figure 5 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_5.jpg
+  Figure 5 caption: "(a) The content image (marked as \u201C text II \u201D) is transformed\
+    \ according to the style image (marked as \u201C text I \u201D) to produce the\
+    \ final synthetic image. (b) The Gram matrices corresponding to the three images\
+    \ above, where the style factor psi between the current image and the synthetic\
+    \ image is given in the upper right. Smaller values indicate greater style similarity.\
+    \ (c) Appearance maps between the current image ( text I or text II ) and the\
+    \ synthetic image, where the appearance factor omega is presented in the upper\
+    \ right, and larger values indicate greater appearance similarity."
+  Figure 6 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_6.jpg
+  Figure 6 caption: Qualitative results of the proposed BAM and baseline approach
+    under the 1-shot setting. The left panel is from PASCAL-5 i , and the right one
+    is from COCO-20 i . Each row from top to bottom represents the support images
+    with ground-truth (GT) masks (blue), query images with GT masks (green), baseline
+    results (red), and our results (red), respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_7.jpg
+  Figure 7 caption: Notable examples. The first row indicates the inaccuracy of the
+    ground-truth; the second row indicates the local similarity of objects of different
+    categories; the third row indicates the appearance affinity of multiple unseen
+    (novel) categories.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_8.jpg
+  Figure 8 caption: Ablation studies on the low-level features mathbffmathrmlow with
+    ResNet50 backbone. Bi denotes the feature maps extracted from the i -th convolutional
+    block of backbone network. FLOPs stands for floating point operations.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Base_and_Meta_A_New_Perspective_on_FewShot_Segmentation\figure_9.jpg
+  Figure 9 caption: "Comparison of segmentation results under 1-shot and 5-shot settings.\
+    \ The \u201Cimage pool\u201D in the first column represents the support set, where\
+    \ the first (blue-bordered) sample is used for 1-shot segmentation."
+  First author gender probability: 0.78
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Chunbo Lang
+  Name of the last author: Junwei Han
+  Number of Figures: 14
+  Number of Tables: 16
+  Number of authors: 5
+  Paper title: 'Base and Meta: A New Perspective on Few-Shot Segmentation'
+  Publication Date: 2023-04-10 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Performance Comparison on PASCAL-5 i i in mIoU. \u201CMeta\u201D\
+      \ Means the Meta Learner That Shares the Encoder Network E E Pre-Trained by\
+      \ the Base Learner. Results in Bold Denote the Best Performance, While the Underlined\
+      \ Ones Indicate the Second Best. \u201C \u2020 \u2020\u201D Represents Multi-Scale\
+      \ Evaluation"
+  Table 10 caption:
+    table_text: "TABLE X Quantitative Results Under the Generalized Setting With Different\
+      \ Backbones. \u201C E E\u201D Denotes the Ensemble Module. It can be Found That\
+      \ the Proposed Model Performs Significantly Better for Base Categories Than\
+      \ Novel Categories, and \u201C E E\u201D Also Plays an Active Role in the Generalized\
+      \ FSS Task"
+  Table 2 caption:
+    table_text: "TABLE II Average FB-IoU Results for All Folds on PASCAL-5 i i. \u0394\
+      \ \u0394 Denotes the Increments Over 1-Shot Results"
+  Table 3 caption:
+    table_text: "TABLE III Performance Comparison on COCO-20 i i in Terms of mIoU\
+      \ and FB-IoU. \u201CMeta\u201D Means the Meta Learner That Shares the Encoder\
+      \ Network E E Pre-Trained by the Base Learner. Results in Bold Denote the Best\
+      \ Performance, While the Underlined Ones Indicate the Second Best"
+  Table 4 caption:
+    table_text: "TABLE IV Results of 1-Shot Segmentation on FSS-1000 Using mIoU Metric.\
+      \ The Base Learner is Trained on PASCAL-5 i i to Identify the Regions of \u201C\
+      Person\u201D. The Vast Majority of Query Images are Composed of \u201CPerson\u201D\
+      \ and Other Unseen Categories, and are Selected to Assess the Suppression Effect\
+      \ on Irrelevant Regions in a Cross-Domain Fashion"
+  Table 5 caption:
+    table_text: "TABLE V Ablation Studies on Two Learners. From Top (Left) to Bottom\
+      \ (Right): The Segmentation Capability of Learners Changes From Weak to Strong.\
+      \ \u201C\u201D Indicates That the Variant is Used in This Work"
+  Table 6 caption:
+    table_text: TABLE VI Ablation Studies on Ensemble Module. Both Accuracy and Efficiency
+      of Each Scheme are Taken Into Account, Including IoU Metrics, Number of Parameters,
+      Memory Footprint, and Inference Time
+  Table 7 caption:
+    table_text: "TABLE VII Ablation Studies on Training Paradigm. \u201CPT\u201D Denotes\
+      \ the Pre-Training for the Base Learner. \u201CInit.\u201D Represents the Specific\
+      \ Initial Weights of the Ensemble Module"
+  Table 8 caption:
+    table_text: "TABLE VIII Ablation Studies on Weight \u03BB \u03BB of (17). A Larger\
+      \ Value Represents a Greater Weight for the Meta-Learner in the Meta-Training\
+      \ Phase"
+  Table 9 caption:
+    table_text: "TABLE IX Ablation Studies on the 5-Shot Fusion Scheme. \u201CMask-OR\u201D\
+      , \u201CMask-Avg\u201D, and \u201CFeature-Avg\u201D Correspond to the Fusion\
+      \ Schemes Employed in [29], [34], and [51], Respectively"
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3265865
+- Affiliation of the first author: ccai, zhejiang university, hangzhou, zhejiang,
+    china
+  Affiliation of the last author: ccai, zhejiang university, hangzhou, zhejiang, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_1.jpg
+  Figure 1 caption: Examples of the annotated videos from VSPW [8]. The videos with
+    temporal pixel-level annotations are provided, which are from diverse indoor and
+    outdoor scenes.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_10.jpg
+  Figure 10 caption: (a) IoU for each class sorted by the frequency. (b) IoU for each
+    class sorted by the category size. (c) IoU for each scene sorted by the object
+    numbers. (d) Comparisons for indoor and outdoor scenes. (e) Comparisons for things
+    and stuff classes.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_2.jpg
+  Figure 2 caption: (a) The video pixel-level annotation pipeline, including four
+    steps. (b) Interface of the segmentation editor. (c) Semi-supervised VOS model
+    can help to check the consistency of categories. If a generated mask has spots,
+    the adjacent human-annotated frames may contain inconsistent categories.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_3.jpg
+  Figure 3 caption: The qualitative comparison between our annotations and annotations
+    from three human annotators.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_4.jpg
+  Figure 4 caption: (a) The distribution of categories per scene. (b) The distribution
+    of scenes per category. (c) The number of categories per framevideo. (d) The distribution
+    of the resolution for VSPW.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_5.jpg
+  Figure 5 caption: (a) The pipeline for our temporal attention blending (TAB) network.
+    For the current processing frame It , we compute the self-attention map for It
+    and the attention maps between It and each support frame Iksf . The temporal attention
+    maps are blended by average pooling. (b) Detailed implementations of the self-attention
+    and cross frame attention block.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_6.jpg
+  Figure 6 caption: The pipeline for computing the video consistency.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_7.jpg
+  Figure 7 caption: (a) The impact of support frame number K on mIoU. (b) The impact
+    of support frame number K on mVC 8 .
+  Figure 8 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_8.jpg
+  Figure 8 caption: Comparison between uniformly and adjacently selecting support
+    frames. Capturing the contexts from the entire video helps to recognize the semantics.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Temporal_PixelLevel_Semantic_Understanding_Through_the_VSPW_Dataset\figure_9.jpg
+  Figure 9 caption: Comparison on temporal stability (TS, lower is better).
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Jiaxu Miao
+  Name of the last author: Yi Yang
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Temporal Pixel-Level Semantic Understanding Through the VSPW Dataset
+  Publication Date: 2023-04-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparison of Video Scene Parsing Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II The Quantitative Comparison Between Our Annotations and Annotations
+      From Three Human Annotators
+  Table 3 caption:
+    table_text: TABLE III The Impact of the Temporal Range of Support Frames
+  Table 4 caption:
+    table_text: TABLE IV The Impact of the Temporal Blending Strategies
+  Table 5 caption:
+    table_text: TABLE V The Impact of The Temporal Blending Strategies
+  Table 6 caption:
+    table_text: "TABLE VI Comparison on the Validation Set and the Test Set. MVC C\
+      \ C Means We Use a Clip Number C C. \u2217 TDNet Uses Two Distributed ResNet-50\
+      \ Models and the Total Parameter Number is Similar to One ResNet-101"
+  Table 7 caption:
+    table_text: TABLE VII the Performance Comparison on Cityscapes [2], CamVid [6]
+      and Cityscapes-VPS [7]. TAB is Evaluated in the Online Mode for a Fair Comparison
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3266023
+- Affiliation of the first author: school of computing, national university of singapore,
+    singapore
+  Affiliation of the last author: bytedance ai lab, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Deep_LongTailed_Learning_A_Survey\figure_1.jpg
+  Figure 1 caption: The label distribution of a long-tailed dataset (e.g., the iNaturalist
+    species dataset [23] with more than 8,000 classes). The head-class feature space
+    learned on these sampled is often larger than tail classes, while the decision
+    boundary is usually biased towards dominant classes.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Deep_LongTailed_Learning_A_Survey\figure_2.jpg
+  Figure 2 caption: Taxonomy of existing deep long-tailed learning methods.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Deep_LongTailed_Learning_A_Survey\figure_3.jpg
+  Figure 3 caption: Illustrations of existing ensemble-based long-tailed methods.
+    Compared to standard training (a), the trained experts by ensemble-based methods
+    (b-f) may have different expertise, e.g., being skilled in different class distributions
+    or different class subsets (indicated by different colors). For example, BBN and
+    SimCAL train two experts for simulating the original long-tailed and uniform distributions
+    so that they can address the two distributions well. BAGS, LFME, ACE, and ResLT
+    train multiple experts by sampling class subsets, so that different experts can
+    particularly handle different sets of classes. SADE directly trains multiple experts
+    to separately simulate long-tailed, uniform and inverse long-tailed class distributions
+    from a stationary long-tailed distribution, which enables it to handle test sets
+    with agnostic class distributions based on self-supervised aggregation.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Deep_LongTailed_Learning_A_Survey\figure_4.jpg
+  Figure 4 caption: Performance trends of long-tailed learning methods in terms of
+    accuracy and relative accuracy under 200 epochs. Here, the shape of circ indicates
+    the softmax baseline; square indicates class re-balancing; bigtriangleup and diamondsuit
+    are information augmentation and module improvement methods, respectively. Different
+    colors represent different methods.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yifan Zhang
+  Name of the last author: Jiashi Feng
+  Number of Figures: 4
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: 'Deep Long-Tailed Learning: A Survey'
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Statistics of Long-Tailed Datasets
+  Table 10 caption:
+    table_text: TABLE X The Decoupled Training Performance of Various Class-Sensitive
+      Losses Under 200 Training Epochs on ImageNet-LT
+  Table 2 caption:
+    table_text: TABLE II Summary of Existing Deep Long-Tailed Learning Methods Published
+      in the Top-Tier Conferences Before mid-2021
+  Table 3 caption:
+    table_text: TABLE III Summary of Losses
+  Table 4 caption:
+    table_text: TABLE IV Results on ImageNet-LT in Terms of Accuracy (Acc), Upper
+      Reference accuracy (UA), Relative accuracy (RA) Under 90 or 200 Training Epochs
+  Table 5 caption:
+    table_text: TABLE V Accuracy Results on ImageNet-LT Regarding Head, Middle and
+      Tail Classes Under 90 or 200 Training Epochs. In This Table, WS Indicates Weighed
+      Softmax and BS Indicates Balanced Softmax
+  Table 6 caption:
+    table_text: TABLE VI Results on Inaturalist 2018 in Terms of Accuracy Under 200
+      Training Epochs
+  Table 7 caption:
+    table_text: TABLE VII Analysis of Class Re-Balancing on ImageNet-LT Based on ResNeXt-50
+  Table 8 caption:
+    table_text: TABLE VIII Analysis of Whether Transfer-Based Methods (e.g., SSP pre-Training
+      [102]) are Beneficial to Other Types of Long-Tailed Learning
+  Table 9 caption:
+    table_text: TABLE IX Analysis of Whether Augmentation Methods (e.g., RandAugment)
+      are Beneficial to Other Types of Long-Tailed Learning, Based on ResNeXt-50
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268118

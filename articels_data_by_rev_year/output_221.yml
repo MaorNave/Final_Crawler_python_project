@@ -1,0 +1,924 @@
+- Affiliation of the first author: "institut de rob\xF2tica i inform\xE0tica industrial,\
+    \ csic-upc, barcelona, spain"
+  Affiliation of the last author: computer vision laboratory, epfl, lausanne, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_1.jpg
+  Figure 1 caption: "Brain tissue at different resolutions. (a) Image stack acquired\
+    \ using a two-photon light microscope from live brain tissue at a 1 micrometer\
+    \ resolution and a smaller area of the same tissue imaged using an electron microscope,\
+    \ at a 20 nanometer resolution. The orange box in the top image denotes the area\
+    \ from which the EM sample has been extracted. (b) Semi-automated delineation\
+    \ of some dendrites overlaid in magenta and manual segmentation of an axon overlaid\
+    \ in green and a dendrite in yellow. (c) The segmented structures on a black background.\
+    \ Since the resolution is much higher in the EM data, dendritic spines and synapses\
+    \ are clearly visible. (d) Graph representation of the neuronal structures. The\
+    \ red dots, named \u201Cgraph nodes\u201D, are used for a coarse registration\
+    \ of the graphs. The white dots, named \u201Cedge points\u201D, are used for fine\
+    \ alignment. This figure, as with most others in this paper, is best viewed in\
+    \ color."
+  Figure 10 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_10.jpg
+  Figure 10 caption: Light and electron microscopy neuronal trees. (a) Graph structure
+    extracted from the electron microscopy image stack, in red. (b) Segmented light
+    microscope neurons in blue. (c) After the non-linear registration process using
+    ATS-RGM, the EM segmented neuron is deformed and aligned over the LM extracted
+    neuron. (d) Registration using CPD, in yellow, which falls into a local minimum.
+    (e) A zoom over the region where the EM stack has been extracted. The two neurons
+    have been completely aligned. Best viewed in color.
+  Figure 2 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_2.jpg
+  Figure 2 caption: Coarse alignment steps. The initial graph structures are depicted
+    in the top left-most figure, the model graph in red and the target in blue. Exploration
+    of the search space starts by picking randomly two correspondences, highlighted
+    in green, thus roughly fixing scale and orientation. Then, the next match candidate
+    is chosen among the nodes located inside the bounded regions, which are a function
+    of the GPR predicted covariances, shown as black ellipses. Every correspondence
+    added to the hypotheses set helps refining the mapping uncertainty. The final
+    correspondence set defines a coarse alignment of the graphs. Best viewed in color.
+  Figure 3 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_3.jpg
+  Figure 3 caption: "Gaussian noise models for percentage of inliers. (a) Each curve\
+    \ depicts the Gaussian noise model Undefined control sequence omegabi for a given\
+    \ depth u of the tree. (b) Similarly, each curve depicts the noise models for\
+    \ Undefined control sequence omegabi . (c) Likelihood ratio r(\u22C5) between\
+    \ Undefined control sequence omegabi and Undefined control sequence omegabi for\
+    \ each value of u ."
+  Figure 4 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_4.jpg
+  Figure 4 caption: Fine alignment steps. Once a coarse alignment of the two graphs
+    (model in red and target in blue) has been found, the algorithm starts matching
+    points lying on the edges. The assignments (depicted in green) are computed using
+    the Hungarian algorithm and constrained by the graph topology and GP predictions.
+    After a few iterations, the warped structure (top) is completely aligned to the
+    target graph. For each successive plot, we zoom into a smaller region (bottom)
+    to better show the algorithm at work. Best viewed in color.
+  Figure 5 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_5.jpg
+  Figure 5 caption: Quantitative evaluation on synthetic data. Performance tests of
+    all competing methods in different configurations of noise (Exp. 1), deformation
+    (Exp. 2), outliers (Exp. 3) and rotation (Exp. 4). Curves represent the median
+    of the correct correspondences percentage achieved by each method. Below each
+    result, we show the tree model used in the experiments (in blue) and corrupted
+    illustrations of how each parameter affects the transformed graph (in green).
+  Figure 6 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_6.jpg
+  Figure 6 caption: Computational Cost. Processing time required by RANSAC, Greedy-RGM
+    and ATS-RGM as a function of the number of nodes. We computed the median of 20
+    experiments for each of the methods.
+  Figure 7 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_7.jpg
+  Figure 7 caption: 'Retinal fundus images used in [11]. Each row contains a single
+    experiment. (a,b) Two images of the same retina taken from different viewpoints,
+    with the vascular trees overlaid in red and blue. (c) The first tree is overlaid
+    in red over the second image after non-linear transformation, which corresponds
+    to the output of the Greedy-RGM coarse alignment. (d) Final result of our non-rigid
+    registration: the graph from the first image is overlaid in red over the second
+    image. (e) Our result is superposed with the coherent point drift alignment, in
+    yellow. (f) Detail of the rectangle in (e). Our algorithm behaves well on this
+    data set, while CPD fails to recover the correct shape because there are too many
+    non-corresponding branches. Best viewed in color.'
+  Figure 8 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_8.jpg
+  Figure 8 caption: "Angiography images from a beating heart. (a) Two different images\
+    \ with extracted vascular trees overlaid in red. (b) Two other images taken later\
+    \ in the heart cycle with extracted vascular trees overlaid in blue. (c) The original\
+    \ red trees are shown after the non-linear coarse alignment of the tree nodes,\
+    \ obtained using our Greedy-RGM. (d) The resulting warped trees are overlaid in\
+    \ red after non-linear registration. Note that the trees\u2014in particular in\
+    \ the first example\u2014 have distinctly different topologies, which affects\
+    \ our algorithm very little. (e) Comparison with the result obtained using non-linear\
+    \ coherent point drift, in yellow. (f) A zoom of a region of interest. Using the\
+    \ graph intrinsic geometry grants us robustness against vessel bendings and outliers,\
+    \ achieving a better registration of the two shapes. Best viewed in color."
+  Figure 9 Link: articels_figures_by_rev_year\2014\NonRigid_Graph_Registration_Using_Active_Testing_Search\figure_9.jpg
+  Figure 9 caption: Blood vessels in brain tissue. (a) Segmented two photon microscopy
+    data. (b) Segmented bright-field optical microscopy data. (c) Registration of
+    structures using active testing search, in red. (d) Alignment using CPD, in yellow.
+    (e) A view in detail at the results of both ATS-RGM and CPD. Best viewed in color.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Eduard Serradell
+  Name of the last author: Pascal Fua
+  Number of Figures: 10
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: Non-Rigid Graph Registration Using Active Testing Search
+  Publication Date: 2014-07-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Notations Used in This Paper
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Error: Geometric Error on Real Data Sets for the Proposed
+      Approach and Other State of the Art Methods'
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343235
+- Affiliation of the first author: centre for mathematical sciences, faculty of engineering,
+    lund university, sweden
+  Affiliation of the last author: centre for mathematical sciences, faculty of engineering,
+    lund university, sweden
+  Figure 1 Link: articels_figures_by_rev_year\2014\Low_Bias_Local_Intrinsic_Dimension_Estimation_from_Expected_Simplex_Skewness\figure_1.jpg
+  Figure 1 caption: Biases of the ESSa ( d = 1 ), Hill ( k = 24 ), F-O ( alpha = 0.05
+    ) and DANCo ( k = 26 ) estimators for local data sets with uniform distribution
+    and with intrinsic dimensions n = 5 and n = 70 . The number of number of data
+    points vary between 30 and 100.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\Low_Bias_Local_Intrinsic_Dimension_Estimation_from_Expected_Simplex_Skewness\figure_2.jpg
+  Figure 2 caption: MNIST digits 0-9. For each digit we used 500 images of it as the
+    data set and constructed 100 neighborhoods with 50 points each where the dimension
+    was estimated. The extrinsic dimension is 784.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Low_Bias_Local_Intrinsic_Dimension_Estimation_from_Expected_Simplex_Skewness\figure_3.jpg
+  Figure 3 caption: 'Local dimension estimation of patches in a picture of a panda,
+    using neighborhoods with 30 points. Light patches means high dimension, dark patches
+    low dimension. Top row: Original image, ESSa, DANCo; bottom row: Fan, F-O, Hill
+    and kNN estimators. Estimator parameters as in Table 3. Image source: http:newsdesk.si.edusitesdefault
+    filesphotosnzpMeiXiang.jpg'
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kerstin Johnsson
+  Name of the last author: Magnus Fontes
+  Number of Figures: 3
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Low Bias Local Intrinsic Dimension Estimation from Expected Simplex
+    Skewness
+  Publication Date: 2014-07-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Classification Performance P Based on Dimension Estimation
+      of Local Data Sets with 50 Points
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Relative Bias and Coefficient of Variation for Local DimensionEstimation
+      with Neighborhood Sizes 30, 50 and 100 of 17 Different Manifolds Studied in
+      [7]
+  Table 3 caption:
+    table_text: TABLE 3 Area under ROC-Curve and Root Mean SquaredError (RMSE) for
+      Five-Ball Inside Eight-Sphere
+  Table 4 caption:
+    table_text: TABLE 4 1- AUC for Discrimination Using Dimension Estimatesof Gene
+      Expression Data (570 Tumor Samples,Eight Adjacent Normal Samples)
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343220
+- Affiliation of the first author: department of computer and information sciences,
+    temple university, philadelphia, pa
+  Affiliation of the last author: department of computer and information sciences,
+    temple university, philadelphia, pa
+  Figure 1 Link: articels_figures_by_rev_year\2014\Feature_Space_Independent_SemiSupervised_Domain_Adaptation_via_Kernel_Matching\figure_1.jpg
+  Figure 1 caption: The convergence process of SSKMDA1 training over three cross domain
+    sentiment classification tasks.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\Feature_Space_Independent_SemiSupervised_Domain_Adaptation_via_Kernel_Matching\figure_2.jpg
+  Figure 2 caption: The accuracy versus the number of labeled target instances for
+    six cross domain sentiment classification tasks.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Feature_Space_Independent_SemiSupervised_Domain_Adaptation_via_Kernel_Matching\figure_3.jpg
+  Figure 3 caption: Performance of SSKMDA1 with respect to tradeoff parameters for
+    three cross domain sentiment classification tasks.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Feature_Space_Independent_SemiSupervised_Domain_Adaptation_via_Kernel_Matching\figure_4.jpg
+  Figure 4 caption: "The cross language classification results for the six comparison\
+    \ methods on 20 cross language text classification tasks with different numbers\
+    \ of labeled target instances, \u2113 t \u220810,20,50 ."
+  Figure 5 Link: articels_figures_by_rev_year\2014\Feature_Space_Independent_SemiSupervised_Domain_Adaptation_via_Kernel_Matching\figure_5.jpg
+  Figure 5 caption: The convergence process of SSKMDA1 training on cross language
+    text classification tasks.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Feature_Space_Independent_SemiSupervised_Domain_Adaptation_via_Kernel_Matching\figure_6.jpg
+  Figure 6 caption: "Performance of SSKMDA1 with respect to the trade-off parameter\
+    \ \u03BC for cross language text classification tasks."
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.58
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Min Xiao
+  Name of the last author: Yuhong Guo
+  Number of Figures: 6
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Feature Space Independent Semi-Supervised Domain Adaptation via Kernel
+    Matching
+  Publication Date: 2014-07-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Information of Three Domain Pairs
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Accuracies (Percent) for Six Cross Domain Sentiment
+      Classification Tasks on Amazon Product Reviews
+  Table 3 caption:
+    table_text: TABLE 3 Time Analysis (SecondsMinutes) on the Cross Domain Sentiment
+      Classification Tasks
+  Table 4 caption:
+    table_text: TABLE 4 Classification Accuracy Results (Percent) for the Empirical
+      Investigation over the Impact of the Laplacian Regularizers
+  Table 5 caption:
+    table_text: TABLE 5 The Training Time (SecondsMinutes) for all Methods on the
+      Cross Language Text Classification
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343216
+- Affiliation of the first author: department of electronic engineering, tsinghua
+    university, beijing, china
+  Affiliation of the last author: department of electronic engineering, tsinghua university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_1.jpg
+  Figure 1 caption: Visualization of the tasks on the pendigits data. The true labels
+    are indicated by different colors and different symbols. PCA is used to generate
+    the figure.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_10.jpg
+  Figure 10 caption: Hinton diagrams of boldsymbol Omega of DMTRC l on the 20-newsgroups
+    data set.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_2.jpg
+  Figure 2 caption: NMI comparison on the pendigits data set.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_3.jpg
+  Figure 3 caption: Visualization of the shared feature filter learned by DMTFC on
+    the pendigits dataset (i.e. the learned covariance between the features, i.e.
+    mathbf D ). The more grey the grid is, the weaker the filter contributes to the
+    new feature representation.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_4.jpg
+  Figure 4 caption: Hinton diagram of the task relationship learned by DMTRC on the
+    pendigits data set (i.e. the learned covariance between the task-specific models,
+    i.e. mbox Omega ). The grid in green means the tasks are related. The grid in
+    red means the tasks are reverse. The bigger the grid is, the more positivenegative
+    the relationship is.
+  Figure 5 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_5.jpg
+  Figure 5 caption: Clustering performance with respect to the class balance parameter
+    l on the pendigits data set.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_6.jpg
+  Figure 6 caption: Time complexities with respect to the data set size of each task
+    ( n ), feature dimension ( d ), and number of tasks ( m ). The symbol x in the
+    legends mathcal O(x2) and mathcal O(x2) stands for n , d or m in (a), (b) or (c)
+    respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_7.jpg
+  Figure 7 caption: "NMI comparison on the 20-newsgroups dataset. a percent is short\
+    \ for \u201Cexperiments running with a percent data of the data set.\u201D"
+  Figure 8 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_8.jpg
+  Figure 8 caption: Visualizations of mathbf D of DMTFC l on the 20-newsgroups data
+    set.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Convex_Discriminative_Multitask_Clustering\figure_9.jpg
+  Figure 9 caption: Hinton diagrams of boldsymbol Omega of DMTRC l on the 20-newsgroups
+    dataset.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Xiao-Lei Zhang
+  Name of the last author: Xiao-Lei Zhang
+  Number of Figures: 17
+  Number of Tables: 1
+  Number of authors: 1
+  Paper title: Convex Discriminative Multitask Clustering
+  Publication Date: 2014-07-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Task Definition on the 20-Newsgroups Data Set
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343221
+- Affiliation of the first author: national institute of informatics, 2-1-2 hitotsubashi,
+    chiyoda-ku, tokyo, japan
+  Affiliation of the last author: google japan, 6-10-1 roppongi, minato-ku, tokyo,
+    japan
+  Figure 1 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_1.jpg
+  Figure 1 caption: SASH routine for finding approximate k -nearest neighbors.
+  Figure 10 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_10.jpg
+  Figure 10 caption: Average recall and query times achieved by the RCT ( h=4 ) and
+    KD-Tree over 100 queries on the MNIST [35] handwritten digit data set. The error
+    bars represent one standard deviation.
+  Figure 2 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_2.jpg
+  Figure 2 caption: Cover tree routine for finding the nearest neighbor of q
+  Figure 3 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_3.jpg
+  Figure 3 caption: Asymptotic complexities of Rank Cover Tree, Cover Tree, Navigating
+    Nets (NavNet), RanWalk, and LSH, stated in terms of n = |S| , neighbor set size
+    k , and 2 -expansion rate delta . The complexity of NavNet is reported in terms
+    of the doubling constant delta . For the RCT, we show the k -NN complexity bounds
+    derived in Section 5 for several sample rates, both constant and sublinear. phi
+    is the golden ratio (1 + sqrt5) 2 . For the stated bounds, the RCT results are
+    correct with probability at least 1 - frac1nc . The query complexities stated
+    for the CT and NavNet algorithms are for single nearest-neighbor ( 1 -NN) search,
+    in accordance with the published descriptions and analyses for these methods [6],
+    [34]. Although a scheme exists for applying LSH to handle k -NN queries (see Section
+    6), LSH in fact performs (1 + varepsilon) -approximate range search. Accordingly,
+    the complexities stated for LSH are for range search; only the approximate dependence
+    on n is shown, in terms of rho , a positive-valued parameter that depends on the
+    sensitivity of the family of hash functions employed. The dimensional dependence
+    is hidden in the cost of evaluating distances and hash functions (not shown),
+    as well as the value of rho . The query bound for RanWalk is the expected time
+    required to return the exact 1- NN.
+  Figure 4 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_4.jpg
+  Figure 4 caption: Offline construction routine for the Rank Cover Tree.
+  Figure 5 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_5.jpg
+  Figure 5 caption: k -nearest neighbor search for the Rank Cover Tree.
+  Figure 6 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_6.jpg
+  Figure 6 caption: Performance curves obtained for the tested methods on the Amsterdam
+    Library of Object Images, MNIST Database of Hand-Written Digits, and the Forest
+    Cover Type data sets.
+  Figure 7 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_7.jpg
+  Figure 7 caption: Performance curves obtained for the tested methods on the Poker
+    Hands, Chess (King versus King-Rook), and the Gisette data sets.
+  Figure 8 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_8.jpg
+  Figure 8 caption: The Pen-Based Recognition of Handwritten Digits Data Set [4] contains
+    10,992 recordings of handwritten digits. The 16 features represent coordinates
+    obtained by spatial resampling.
+  Figure 9 Link: articels_figures_by_rev_year\2014\RankBased_Similarity_Search_Reducing_the_Dimensional_Dependence\figure_9.jpg
+  Figure 9 caption: A selection of 554,651 documents drawn from the Reuters Corpus
+    Vol. 2 [43] newspaper article data set (RCV2). The (sparse) vectors spanned 320,647
+    keyword dimensions, with TF-IDF weighting. The vector angle distance (equivalent
+    to cosine similarity) was used as the similarity measure.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Michael E. Houle
+  Name of the last author: Michael Nett
+  Number of Figures: 13
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: 'Rank-Based Similarity Search: Reducing the Dimensional Dependence'
+  Publication Date: 2014-07-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Construction Times (in Seconds) for the Various Methods Tested
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Construction Times (in Seconds)between the FLANN
+      and the RCT on the SubspaceProjections of the Reuters Corpus
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343223
+- Affiliation of the first author: department of computer science, ben-gurion university
+    of the negev, beer-sheva 84105, israel
+  Affiliation of the last author: department of computer science, ben-gurion university
+    of the negev, beer-sheva 84105, israel
+  Figure 1 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_1.jpg
+  Figure 1 caption: (A) A natural visual scene which triggers amodal completion. (B)
+    Reproduced from Kanizsa [30]), the gray occluders trigger the perception of rectangles,
+    although the global regular pattern specifically suggest different objects. Here,
+    local continuity cues override contextual information. (C) When this array of
+    circles is occluded in part by the red rectangles, the perception below the occluders
+    changes qualitatively to a wavy pattern, again in contrast to the strong contextual
+    cues in the scene. (D) An example of modal completion where the visual system
+    constructs an illusory objects whose boundaries are clearly observed even where
+    no pictorial cues exist. (E) Illustrated using the black ROI from panel A, the
+    abstract shape completion problem (Problem 1) requires the construction of the
+    single perceptual shape (in red) between two occlusion points (in black), while
+    considering also additional information from the visible part of the contour around
+    these points (e.g., orientation, as marked in white). This problem is severely
+    underconstrained, as normally there would be infinitely many curves (a few shown
+    in yellow) that would satisfy these conditions.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_10.jpg
+  Figure 10 caption: Measuring inducer information. Shown for two examples are the
+    image, the manually marked points on the observed part of the contour (in red
+    or green), the osculating circle (cyan) fitted to these points and the inducer's
+    tangent line (blue). Also shown is the tangent bundle elastica completion (in
+    magenta).
+  Figure 2 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_2.jpg
+  Figure 2 caption: The primary visual cortex can be abstracted as the space T(I)=mathbf
+    R2times mathcal S1 , the unit tangent bundle associated with the image plane I
+    . In this space the curve completion problem requires the construction of a single
+    continuous curve (in red) which abstracts a population of active neurons between
+    two active inducer cells (in green). The perceived completed curve is the projection
+    of the constructed tangent bundle curve down to the image plane (in blue).
+  Figure 3 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_3.jpg
+  Figure 3 caption: The links from and to a cell in V1 can be thought of as links
+    between points in the unit tangent bundle, hence abstracted as tangent (or difference)
+    vectors [45, page 6] in T(I) .
+  Figure 4 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_4.jpg
+  Figure 4 caption: Connection similarity as a possible substrate for elastica in
+    the tangent bundle. With the abstraction of each connection as a tangent bundle
+    tangent vector [45, page 6], the TBE mechanism hypothesizes that each two consecutive
+    links vect1 and vect2 along the activation pattern that represents the completed
+    curve strive to be as similar as possible, i.e., such that their corresponding
+    tangent vectors in the tangent bundle (see insets) are as least different as possible.
+    In the limit, this rate of change becomes the curvature (or bending energy) of
+    the activation pattern as a whole.
+  Figure 5 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_5.jpg
+  Figure 5 caption: On the left are two completed curves for two pairs of co-circular
+    inducers at two scales. Blue curve corresponds to p0,1=[mp 0.5,0,pm 45circ ],k0,1=-1sqrt2
+    . Magenta corresponds to p0,1=[mp sqrt62,0,pm 45circ ],k0,1=-1sqrt3 . If TBE was
+    scale invariant, the two completed curves should be scaled versions of each other.
+    However, their rate of change of curvature g(s) plotted on the right reveals circular
+    behavior in one case (which happens to be the corresponding singular case from
+    Eq. ( 20)) but not in the other. Hence, the model provides neither scale invariance
+    nor roundedness, as indeed reported in psychophysical experiments.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_6.jpg
+  Figure 6 caption: TBE is scale dependent in a way that is qualitatively consistent
+    with perceptual finding. Shown here are a pair of inducers whose distance and
+    curvatures are scaled for different viewing distances. The results indicate flatter
+    completions with increasing scale, as indicated by perceptual findings. The inset
+    compares the TBE behavior (black) compared to the one predicted by scale-invariant
+    (blue) one, in terms of the peak height as a function of inducers distance. The
+    flatter TBE completions for increased scale are indicated by the progressively
+    lower peaks.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_7.jpg
+  Figure 7 caption: The perceptual and computational effect of boundary curvatures.
+    (A) Despite having identical inducers in terms of position and orientation, human
+    observers tend to perceive different completions in these stimuli. (B) The curve
+    penetrating the half disk occluder from the left appears to continue in different
+    ways in these three stimuli, although its orientation and position is fixed in
+    all of them. A plausible explanation for this perceptual outcome may be the different
+    curvature at the point of occlusion. (C) Effect of boundary curvature on elastica
+    in T(I) . We show here the shape of the completed curve for fixed boundary positions
+    and orientation ( pm 45circ ), but varying values of boundary curvatures. hbar
+    =1 in all cases.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_8.jpg
+  Figure 8 caption: 'Examples of tangent bundle elastica for different inducers. Each
+    inducer lt xi,yi,theta i,kappa igt is plotted as a circular arc to express also
+    the curvature information. The positions of the two inducers were fixed for all
+    examples at x0=-0.5,x1=0.5 , y0,1=0 . Orientation and curvature are: (A) theta
+    0=40circ , kappa 0=0.57 , theta 1=-50circ, kappa 1=0.57 (B) theta 0=30circ,kappa
+    0=0.70 , theta 1=-50circ , kappa 1=0.57 (C) theta 0=30circ , kappa 0=0.70 , theta
+    1=-50circ,kappa 1=23 (D) theta 0=20circ , kappa 0=0.70 , theta 1=-30circ , kappa
+    1=2 . hbar =1 in all examples.'
+  Figure 9 Link: articels_figures_by_rev_year\2014\Tangent_Bundle_Elastica_and_Computer_Vision\figure_9.jpg
+  Figure 9 caption: Tangent bundle elastica and the effect of boundary curvature.
+    While the inducers in each of these two pairs of stimuli are identical in terms
+    of position and orientation, note the effect of inducer curvature on the predicted
+    completed contour.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ohad Ben-Shahar
+  Name of the last author: Guy Ben-Yosef
+  Number of Figures: 16
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: Tangent Bundle Elastica and Computer Vision
+  Publication Date: 2014-07-25 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343214
+- Affiliation of the first author: harvard school of engineering and applied sciences,
+    cambridge, ma 02138
+  Affiliation of the last author: harvard school of engineering and applied sciences,
+    cambridge, ma 02138
+  Figure 1 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_1.jpg
+  Figure 1 caption: We infer from a Lambertian image patch a concise representation
+    for the distribution of quadratic surfaces that are likely to have produced it.
+    These distributions naturally encode different amounts of shape information based
+    on what is locally available in the patch, and can be unimodal (row 2 & 4), multi-modal
+    (row 3), or near-uniform (row 1). This inference is done across multiple scales.
+  Figure 10 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_10.jpg
+  Figure 10 caption: Local shape accuracy. We show quantiles (25 percent, median,
+    75 percent) of each patch's mean normal angular error, for the best estimate amongst
+    the N most-likely shape proposals for each patch, for different values of N and
+    for different patch sizes. The quantiles for N=1 correspond to making a hard decision
+    at each patch, and errors for N=21 correspond to the best estimate amongst the
+    full set of proposals.
+  Figure 2 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_2.jpg
+  Figure 2 caption: Four quadratic-patchlighting configurations that produce the same
+    image (left is a=[1,12,0,0,0],l=[23,13,23] ). The lighting is shown as blue arrows.
+    The left pair and right pair are each convex-concave.
+  Figure 3 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_3.jpg
+  Figure 3 caption: Lighting solutions in the cylinder case, when one of the eigenvalues
+    of the surface Hessian is zero. There is a 1D family of lighting (any lighting
+    direction in the blue plane with appropriate strength) for each of the four shapes
+    that can produce the same image.
+  Figure 4 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_4.jpg
+  Figure 4 caption: When Hessian eigenvalues are equal in magnitude, there is a continuous
+    family of patchlighting pairs (given by (32) and (33)) that produce the same image.
+    Note that the first four pairs above are analogous to Fig. 2.
+  Figure 5 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_5.jpg
+  Figure 5 caption: 'Left: Two quadratic surfaces that produce the same image when
+    the light is aligned with one of their common Hessian eigenvectors. For other
+    view and light configurations (e.g., right) their images are distinct.'
+  Figure 6 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_6.jpg
+  Figure 6 caption: The light-centered cone of possible surface normals at any image
+    point projects radially to a conic on the projective plane. We parameterize these
+    conics by the radial projection of spherical angle theta .
+  Figure 7 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_7.jpg
+  Figure 7 caption: Exact and approximate solutions for quadratic shape. Each color
+    corresponds to a pixel in the patch (four are shown in the plot), whose intensity
+    defines a conic curve that the normal vector should lie on. The normal vectors
+    for a quadratic patch should form an affine grid on the projective plane, and
+    good-fit shapes have grids that are well-aligned with the corresponding conics.
+    The top left grid corresponds to an exact fit.
+  Figure 8 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_8.jpg
+  Figure 8 caption: Iso-contours of RMS intensity error for renderings of best-fit
+    shape parameters (a1,a2,a3,a4,a5) when theta is fixed. Close fits occur at very
+    different orientations (four modes here), but for any fixed orientation theta
+    the remaining shape parameters are very constrained.
+  Figure 9 Link: articels_figures_by_rev_year\2014\From_Shading_to_Local_Shape\figure_9.jpg
+  Figure 9 caption: Shape likelihood distributions inferred from image patches. Graphs
+    show likelihood cost Dj over first-order orientation theta j , each of which is
+    associated with a shape proposal aj .
+  First author gender probability: 0.86
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ying Xiong
+  Name of the last author: Todd Zickler
+  Number of Figures: 13
+  Number of Tables: 0
+  Number of authors: 6
+  Paper title: From Shading to Local Shape
+  Publication Date: 2014-07-25 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343211
+- Affiliation of the first author: ece department, carnegie mellon university, pittsburgh,
+    pa
+  Affiliation of the last author: "isr, instituto superior t\xE9cnico, lisboa, portugal"
+  Figure 1 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_1.jpg
+  Figure 1 caption: This work proposes a weakly-supervised method for multi-label
+    image classification. The training set images (a) are labeled with the objects
+    that are present but their location in the image is unknown. Given unseen test
+    images (b), our method is able to classify which classes are present in the image
+    and segment the image into regions that correspond to the classes.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_10.jpg
+  Figure 10 caption: Histograms corrected by our method in the MSRC data set preserve
+    semantic meaning. The input image is shown in (a). The heatmap generated by the
+    class representative histogram is shown in (b). ERS [61] uses the heatmap in (b)
+    and the over segmentation in (c) to produce the segmentation in (d).
+  Figure 2 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_2.jpg
+  Figure 2 caption: The left image represents the original training image that has
+    been labeled with the words grass and cow. Our algorithm decomposes the histogram
+    of this image as a linear combination of two class histogram basis (cow, grass)
+    plus another histogram mathbf hbg modeling errors and the background. Class localization
+    can be visualized on the image by interpreting each histogram as a probability
+    distribution of which words belong to the class. Best seen in color.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_3.jpg
+  Figure 3 caption: Our weakly supervised classification algorithm works by completing
+    a matrix mathbf Zobs as shown above, where the question marks denote unknown entries.
+    We complete this matrix such that it can be factorized into a low rank matrix
+    mathbf Z and an error matrix mathbf E . This ensures that background distributions
+    and featurelabel outliers are captured in mathbf E , since they increase the rank
+    of mathbf Z . In the training submatrix (a), the i th column concatenates the
+    image histogram mathbf hitr with its respective lbrace 0,1rbrace label assignments.
+    Note that a partially labeled example such as the second training image (a) is
+    trivially handled by our framework. In the test submatrix (b), the j th column
+    is a concatenation of histogram mathbf hjtst with unknown assignments. In this
+    transductive setting, the statistics of the test set are also used in the learning.
+    By completing (c), we obtain a representative histogram for each class, in spite
+    of their co-occurrence in the images.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_4.jpg
+  Figure 4 caption: Comparison of nuclear and Frobenius norms as function of one single
+    unknown entry z2,3 for the matrix in (18).
+  Figure 5 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_5.jpg
+  Figure 5 caption: Comparison of results obtained for two-class classification of
+    the random data set in 5. Unlike others, the error correction in Robust LDA (f)
+    and Matrix Completion (e) allow for recovery of the original data.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_6.jpg
+  Figure 6 caption: Comparison of singular value distribution of matrices mathbf X1
+    with histograms of the same class (solid) versus corresponding matrices mathbf
+    X2 of the same dimension with an equal amount of histograms from all classes (dashed)
+    for different classes on the MSRC data set.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_7.jpg
+  Figure 7 caption: Example images of the CMU-Face data set. (a) shows the positive
+    class (wearing sunglasses) and (b) shows the negative class (no sunglasses).
+  Figure 8 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_8.jpg
+  Figure 8 caption: A sliding window search shows that histograms corrected by MC-Pos
+    (24) are most similar to the discriminative region of the eyes in the images.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Matrix_Completion_for_WeaklySupervised_MultiLabel_Image_Classification\figure_9.jpg
+  Figure 9 caption: Illustration of our method for Matrix Completion localization.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Ricardo Cabral
+  Name of the last author: Alexandre Bernardino
+  Number of Figures: 12
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Matrix Completion for Weakly-Supervised Multi-Label Image Classification
+  Publication Date: 2014-07-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Nuclear Norm Ratios (NNR) for All Classes in the MSRC Dataset
+      and for All Classes which Have More than 200 Segments in the SIFTflow Data Set
+      (b)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 AUROC Result Comparison for the CMU Face Data Set
+  Table 3 caption:
+    table_text: TABLE 3 Five-Fold Cross Validation Average AUROC Comparison for Image
+      Classification Taskson MSRC Data Set
+  Table 4 caption:
+    table_text: TABLE 4 Mean Average Precision Classification Task Result Comparison
+      in the PASCAL VOC 2007 Challenge for Two Sets of Features
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343234
+- Affiliation of the first author: ibm research, australia
+  Affiliation of the last author: national university of singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2014\Contextualizing_Object_Detection_and_Classification\figure_1.jpg
+  Figure 1 caption: Illustration of the iterative contextualizing procedure. The object
+    detection and classification tasks utilize context from each other and mutually
+    boost performance iteratively. For better viewing, please see original color PDF
+    file.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\Contextualizing_Object_Detection_and_Classification\figure_2.jpg
+  Figure 2 caption: Illustration of Linear Scaling Instantiation. a) The sample data
+    with SVM hyperplane, red and blue dots representing positive and negative samples.
+    b) The linear scaling functions. The black and blue dashed lines represent two
+    different scaling functions. Each function scales one part of SVM scores with
+    the range of [0,1] . c) Illustration of the relationship between original sample
+    confidence and confidence variation amount from context. The blue and red dots
+    represent positive and negative samples respectively. The x-axis denotes the sample
+    confidence in subject feature space and y-axis denotes the absolute amount of
+    confidence changed by the contextualization procedure. The confidences are converted
+    into probabilistic values within [0,1] indicating strongest negative and positive
+    decisions respectively. For better viewing, please see original color PDF file.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Contextualizing_Object_Detection_and_Classification\figure_3.jpg
+  Figure 3 caption: Illustration of the ambiguity-guided mixture model on a toy problem.
+    The left figure shows the original data. The red and blue dots represent the positive
+    and negative samples. The linear SVM hyperplane is illustrated by the black dashed
+    line. The right figure shows the AMM model with three mixtures (yellow, red and
+    blue). It can be seen that the three mixtures are spreading over the hyperplane
+    where the most ambiguous samples exist. The black dots represent the confidence
+    samples which may not require the context model.
+  Figure 4 Link: articels_figures_by_rev_year\2014\Contextualizing_Object_Detection_and_Classification\figure_4.jpg
+  Figure 4 caption: Representative examples of the baseline (without contextualization)
+    and Context-SVM for classification task. The classification accuracy is promoted
+    via detection contextualization. The first row of the table below each image shows
+    the classes the image belongs to. The second row is the confidence of the baseline
+    while the third row is the refined result after contextualization. For better
+    viewing, please see original color PDF file.
+  Figure 5 Link: articels_figures_by_rev_year\2014\Contextualizing_Object_Detection_and_Classification\figure_5.jpg
+  Figure 5 caption: Representative examples of the baseline (without contextualization)
+    and Context-SVM for detection task. The detection accuracy is promoted via classification
+    contextualization. The left side image is the result before Context SVM and the
+    right side image is the result after contextualization. For better viewing, please
+    see original color PDF file.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Contextualizing_Object_Detection_and_Classification\figure_6.jpg
+  Figure 6 caption: Mean AP values of 20 classes on VOC 2010 trainval dataset along
+    iterative contextualization.
+  Figure 7 Link: articels_figures_by_rev_year\2014\Contextualizing_Object_Detection_and_Classification\figure_7.jpg
+  Figure 7 caption: Illustration of performance improvement with comparison Precision-recall
+    curves of object detection (upper row) and classification (lower row). The performance
+    of baseline (without contextualization) and those of Context-SVM at iteration
+    1-3 are plotted.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Contextualizing_Object_Detection_and_Classification\figure_8.jpg
+  Figure 8 caption: 'Representative examples of the baseline (without contextualization)
+    and Context-SVM at iteration 3. The detections are shown via the detected bounding
+    boxes on images (with proper threshold): the green boxes with dashed lines denote
+    the false alarms from baseline, which are further removed by contextualization
+    and red boxes denote the true detections of both methods. The classification results
+    are compared by the confidences for each object category before (green) and after
+    (red) contextualization. For better viewing, please see original color PDF file.'
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Qiang Chen
+  Name of the last author: Shuicheng Yan
+  Number of Figures: 8
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: Contextualizing Object Detection and Classification
+  Publication Date: 2014-07-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Results of ContextSVM and Its Baseline for Object Detection
+      and Classification Tasks on VOC 2010 TrainVal
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Contextualization Method Comparison on the PASCAL VOC 2010
+      (TrainvalTest) Data Set
+  Table 3 caption:
+    table_text: TABLE 3 Comparison with the State-of-the-Art Performance of Object
+      Classification and Detection on PASCAL VOC 2007 (TrainvalTest)
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with the State-of-the-Art Performance of Object
+      Classification and Detection on PASCAL VOC 2010 (TrainvalTest)
+  Table 5 caption:
+    table_text: TABLE 5 mAP Results of 107 Classes on SUN09 Data Set for Both Object
+      Classification and Detection Tasks
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343217
+- Affiliation of the first author: "computer vision laboratory, i&c faculty, ecole\
+    \ polytechnique f\xE9d\xE9rale de lausanne, lausanne ch-1015, vaud, switzerland"
+  Affiliation of the last author: institute for computer graphics and vision, graz
+    university of technology, graz, austria
+  Figure 1 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_1.jpg
+  Figure 1 caption: Histogram of the L2 norms of 75k FPBoost descriptors extracted
+    from the images of Mikolajczyk data set [19]. The L2 norms are upper-bounded by
+    sqrtsum d=1D , | mathbf bd |12 which equals 4 in this case. A significant portion
+    of the descriptors have a comparable magnitude and, hence, we can use euclidean
+    distance in place of the equivalent inner product to measure descriptor similarity.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_10.jpg
+  Figure 10 caption: Descriptor performances as a function of their memory footprint.
+    For floating-point descriptors we assume 1 byte per dimension as this quantization
+    was reported as sufficient for SIFT [41]. Our BinBoost descriptor offers a significantly
+    lower memory footprint than the floating-point descriptors while providing competitive
+    performances.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_2.jpg
+  Figure 2 caption: Overview of the intensity and gradient-based weak learners. To
+    compute the responses of intensity-based weak learners, we compare the image intensity
+    values after Gaussian smoothing at two locations i and j . Using boosting, we
+    optimize both the locations and Gaussian kernel sizes, S . The gradient-based
+    learners consider the orientations of gradients normalized within a given region.
+    Boosting allows us to find the pooling configuration of the gradient regions and
+    optimize the values of the corresponding thresholds.
+  Figure 3 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_3.jpg
+  Figure 3 caption: "Visualization of the intensity tests (first row) and spatial\
+    \ weight heat maps (second row) employed by BRIEF, ORB, BRISK and our BinBoost\
+    \ 1mbox-256 descriptor trained with intensity-based weak learners on rectified\
+    \ patches from the Liberty data set. BRIEF picks its intensity tests from an isotropic\
+    \ Gaussian distribution around the center of the patch, while the sampling pattern\
+    \ of BRISK is deterministic. The intensity tests of ORB are selected to increase\
+    \ the variance of the responses, while reducing their correlation. This results\
+    \ in a pronounced vertical trend which can also be seen in the case of BinBoost.\
+    \ Nevertheless, the heat maps show that the tests for BinBoost-Intensity are\u2014\
+    similarly to BRIEF\u2014more dense around the center of the patch while the ones\
+    \ used in ORB present a more uniform distribution."
+  Figure 4 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_4.jpg
+  Figure 4 caption: Performance of BinBoost 1mbox-256 with different weak learner
+    types compared with the state-of-the-art binary descriptors and SIFT as a baseline.
+    Out of all descriptors based on intensity tests, BinBoost-Intensity performs the
+    best. This shows that our framework is able to effectively optimize over the other
+    state-of-the-art binary descriptors and boost their performances at no additional
+    computational cost. Nevertheless, the performance of BinBoost-Intensity cannot
+    match that of floating-point SIFT which is outperformed when using the more discriminative
+    gradient-based weak learners (BinBoost-Gradient).
+  Figure 5 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_5.jpg
+  Figure 5 caption: Visualization of the first ten intensity-based weak learners with
+    variable kernel size S trained on the Liberty data set. When optimizing on both
+    the pixel positions and the sizes of the Gaussian kernels, our boosting framework
+    does not yield a clear pattern, in particular there is no clear correlation between
+    the size of the smoothing kernel and the distance to the patch center, contrary
+    to the sampling pattern proposed for BRISK. It nevertheless outperforms BRISK
+    in our experiments.
+  Figure 6 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_6.jpg
+  Figure 6 caption: "Influence of (a) the number of orientation bins q and (b) the\
+    \ number of weak learners K on the descriptor performance for dimensionalities\
+    \ D=8,16,32,64 bits. The performances are optimal with q=8 orientation bins, which\
+    \ is also the number used in SIFT. Increasing the number of weak learners K from\
+    \ K=128 to K=256 provides only a minor improvement\u2014at greatly increased computational\
+    \ cost\u2014and, hence, we choose for our final descriptor K=128 ."
+  Figure 7 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_7.jpg
+  Figure 7 caption: Performance for different dimensionalities D . With D=64 bits,
+    BinBoost reaches its optimal performance as increasing the dimensionality further
+    does not seem to improve the results. In bold red we mark the dimensionality for
+    which BinBoost starts outperforming SIFT. Best viewed in color.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_8.jpg
+  Figure 8 caption: Visualization of the selected weak learners for the first 8 bits
+    learned on 200 k pairs of 32 times 32 patches from the Notre Dame data set (best
+    viewed on screen). For each pixel of the figure we show the average orientation
+    weighted by the weights of the weak learners mathbf bd . For different bits, the
+    weak learners cluster about different regions and orientations illustrating their
+    complementary nature.
+  Figure 9 Link: articels_figures_by_rev_year\2014\Learning_Image_Descriptors_with_Boosting\figure_9.jpg
+  Figure 9 caption: Ninety-five percent error rates for binary descriptors of different
+    dimensionality. For reference, we plot the results obtained with SIFT. BinBoost
+    outperforms the state-of-the-art binary descriptors and the improvement is especially
+    visible for lower dimensionality.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tomasz Trzcinski
+  Name of the last author: Vincent Lepetit
+  Number of Figures: 17
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: Learning Image Descriptors with Boosting
+  Publication Date: 2014-07-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 95 Percent Error Rates for Different Training and Testing
+      Configurations and the Corresponding Results for BinBoost with 64 and 8 Bits
+      and Its Competitors
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Results of Visual Search on the UKBench Data Set [20]: Mean
+      Average Precision (mAP) and Percentage of Correctly Retrieved Images at the
+      First Position (Correct1) Are Reported'
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2343961

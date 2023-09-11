@@ -1,0 +1,982 @@
+- Affiliation of the first author: institute of computing technology, chinese academy
+    of sciences, beijing, china
+  Affiliation of the last author: horizon robotics, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Online_Knowledge_Distillation_via_Mutual_Contrastive_Learning_for_Visual_Recogni\figure_1.jpg
+  Figure 1 caption: Overview of the proposed Mutual Contrastive Learning. f1 and f2
+    denote two different networks. boldsymbolvmi is the embedding vector inferred
+    from fm with the input sample boldsymbolxi . We use green and red colors to represent
+    embeddings from f1 and f2 , respectively. The dashed and dotted arrow denotes
+    the direction we want to push close or apart by a contrastive loss. The core difference
+    between (b) VCL and (c) ICL is using contrastive embeddings from the same or different
+    networks with the anchor. VCL uses the same color between an anchor and contrastive
+    samples, while ICL uses different ones. (a) Positive and negative pairs. (b) Vanilla
+    Contrastive Learning (VCL). (c) Interactive Contrastive Learning (ICL).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Online_Knowledge_Distillation_via_Mutual_Contrastive_Learning_for_Visual_Recogni\figure_2.jpg
+  Figure 2 caption: Overview of MCL between two networks of f1 and f2 modified from
+    [33].
+  Figure 3 Link: articels_figures_by_rev_year\2023\Online_Knowledge_Distillation_via_Mutual_Contrastive_Learning_for_Visual_Recogni\figure_3.jpg
+  Figure 3 caption: Overview of the proposed one-to-one match and weighted all-to-all
+    match. The two-way arrow represents the layer association.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Online_Knowledge_Distillation_via_Mutual_Contrastive_Learning_for_Visual_Recogni\figure_4.jpg
+  Figure 4 caption: Top-1 accuracy (%) of various online KD methods under few-shot
+    scenario with different percentages of training data. The performance is evaluated
+    on the WRN-40-2 backbone. We retain 25%, 50%, 75% and 100% samples of the training
+    set, respectively. We maintain the original test set unchanged.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Online_Knowledge_Distillation_via_Mutual_Contrastive_Learning_for_Visual_Recogni\figure_5.jpg
+  Figure 5 caption: Statistics of layer-matching weights lambda on the same or different
+    architecture pairs. The weight is computed by averaging all training samples.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Online_Knowledge_Distillation_via_Mutual_Contrastive_Learning_for_Visual_Recogni\figure_6.jpg
+  Figure 6 caption: Comparison of two different methods of contrastive sample mining
+    under various numbers of negative samples. The number of negatives is K-2 in the
+    mini-batch-based mining (offset by two since the positive pair is retrieved from
+    the same batch) and K in the memory-bank-based mining.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Online_Knowledge_Distillation_via_Mutual_Contrastive_Learning_for_Visual_Recogni\figure_7.jpg
+  Figure 7 caption: Sensitivity analyses of hyperparameters alpha and beta .
+  Figure 8 Link: articels_figures_by_rev_year\2023\Online_Knowledge_Distillation_via_Mutual_Contrastive_Learning_for_Visual_Recogni\figure_8.jpg
+  Figure 8 caption: T-SNE visualization of embedding spaces for two ResNet-32 (Net1
+    and Net2) with independent training (left) and our MCL (right) on CIFAR-10 dataset
+    [30] from [33]. The clusters in the same circle are from the same class.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Chuanguang Yang
+  Name of the last author: Qian Zhang
+  Number of Figures: 8
+  Number of Tables: 12
+  Number of authors: 6
+  Paper title: Online Knowledge Distillation via Mutual Contrastive Learning for Visual
+    Recognition
+  Publication Date: 2023-03-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Top-1 Accuracy (%) of Online KD Methods by Jointly Training
+      Two Networks With the Same Architecture on CIFAR-100. The Bold Number is the
+      Best Result Among Various Methods, While the underline Number is the Second
+      Best
+  Table 10 caption:
+    table_text: TABLE X Ablation Study of L-MCL and Logit-Based Online KD (OKD) Losses
+      Over the Setup of the Same Network Pairs on CIFAR-100
+  Table 2 caption:
+    table_text: TABLE II Top-1 Accuracy (%) of Online KD Methods by Jointly Training
+      Two Networks With Different Architectures on CIFAR-100. The Bold Number is the
+      Best Result Among Various Methods, While the underline Number is the Second
+      Best
+  Table 3 caption:
+    table_text: TABLE III Top-1 Accuracy (%) of Jointly Training Three Networks With
+      the Same Architecture on CIFAR-100. The Bold Number Represents the Best Result
+      Among Various Methods, While the underline Number Denotes the Second Best
+  Table 4 caption:
+    table_text: TABLE IV Top-1 Accuracy (%) on STL-10 and TinyImageNet Under the Linear
+      Classification Protocol. We Freeze the Feature Extractor Pre-Trained on CIFAR-100
+      and Train a Linear Classifier Over Features After Global Average Pooling
+  Table 5 caption:
+    table_text: TABLE V Top-1 Accuracy (%) of Online KD Methods by Jointly Training
+      Two Networks With the Same Architecture for ImageNet Classification. The Bold
+      Number Represents the Best Result Among Various Methods, While the underline
+      Number Denotes the Second Best
+  Table 6 caption:
+    table_text: TABLE VI Top-1 Accuracy (%) of Online KD Methods by Jointly Training
+      Two Networks With Different Architectures for ImageNet Classification. The Bold
+      Number Represents the Best Result Among Various Methods, While the underline
+      Number Denotes the Second Best
+  Table 7 caption:
+    table_text: TABLE VII Top-1 Accuracy (%) of Online KD Methods by Jointly Training
+      Two Networks With the Same Architecture on Swin Transformer [59] for ImageNet
+      Classification
+  Table 8 caption:
+    table_text: TABLE VIII MAP (%) of Online KD Methods on Transfer Learning to COCO-2017
+      Based on Mask-RCNN Framework for Object Detection and Instance Segmentation.
+      The Pretrained ResNet Backbones are Borrowed From Table V. The Bold Number Represents
+      the Best Result Among Various Methods, While the underline Number Denotes the
+      Second Best
+  Table 9 caption:
+    table_text: TABLE IX Ablation Study of Loss Terms in L-MCL Over the Setup of the
+      Same Network Pairs on CIFAR-100
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3257878
+- Affiliation of the first author: school of computer science and engineering, nanyang
+    technological university, singapore
+  Affiliation of the last author: centre for frontier ai research, agency for science,
+    technology and research, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_1.jpg
+  Figure 1 caption: Illustration of temporal sentence grounding in videos (TSGV).
+  Figure 10 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_10.jpg
+  Figure 10 caption: QSPN architecture, reproduced from Xu et al. [53].
+  Figure 2 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_2.jpg
+  Figure 2 caption: 'Statistics of the collected papers in this survey. Left: number
+    of papers published each year (till September 2022). Right: distribution of papers
+    by venue, where ACL denotes the series of conferences hosted by the Association
+    for Computational Linguistics.'
+  Figure 3 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_3.jpg
+  Figure 3 caption: General pipeline for temporal sentence grounding in videos.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_4.jpg
+  Figure 4 caption: Example of video frames down-sampling.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_5.jpg
+  Figure 5 caption: Illustration of sliding window, proposal generated, anchor-based,
+    and 2D-Map strategies.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_6.jpg
+  Figure 6 caption: Common inputoutput feature formats of feature interactor in TSGV.
+    mathbf pvqin mathbb Rdvq denotes the learned multimodal proposal feature; mathbf
+    Hvq=[mathbf hvq1,ldots,mathbf hvqn]in mathbb Rntimes dvq is the multimodal snippet
+    feature sequence; mathbf hvqin mathbb Rdvq is the pooled multimodal snippet feature.
+    dvq denotes the dimension of output multimodal feature.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_7.jpg
+  Figure 7 caption: Chronological overview of selected supervised TSGV methods in
+    different categories. The methods plotted at the same position on the timeline
+    are published in the same venue.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_8.jpg
+  Figure 8 caption: Taxonomy of methods for TSGV.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Temporal_Sentence_Grounding_in_Videos_A_Survey_and_Future_Directions\figure_9.jpg
+  Figure 9 caption: CTRL architecture, reproduced from Gao et al. [9].
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.87
+  Name of the first author: Hao Zhang
+  Name of the last author: Joey Tianyi Zhou
+  Number of Figures: 21
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: 'Temporal Sentence Grounding in Videos: A Survey and Future Directions'
+  Publication Date: 2023-03-17 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3258628
+- Affiliation of the first author: gaoling school of artificial intelligence, renmin
+    university of china, beijing, china
+  Affiliation of the last author: gaoling school of artificial intelligence, renmin
+    university of china, beijing, china
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.93
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.88
+  Name of the first author: Shaojie Li
+  Name of the last author: Yong Liu
+  Number of Figures: Not Available
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: Learning Rates for Nonconvex Pairwise Learning
+  Publication Date: 2023-03-20 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3259324
+- Affiliation of the first author: national university of defense technology, changsha,
+    china
+  Affiliation of the last author: national university of defense technology, changsha,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_1.jpg
+  Figure 1 caption: Given two low-overlap point clouds, GeoTransformer improves inlier
+    ratio over vanilla transformer significantly, both for superpoint (patch) level
+    (left) and for dense point level (right). A few representative patch correspondences
+    are visualized with distinct colors. Notice how GeoTransformer preserves the spatial
+    consistency of the matching patches across two point clouds. It corrects the wrongly
+    matched patches around the symmetric corners of the chair back (see the yellow
+    point cloud).
+  Figure 10 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_10.jpg
+  Figure 10 caption: Comparison of the correspondences on 4DMatch and 4DLoMatch. GeoTransformer
+    shows two advantages. First, it extracts much denser correspondences, which contributes
+    to more precise description of the deformations. Second, it achieves higher inlier
+    ratio despite significant deformations, which is important for non-rigid registration.
+  Figure 2 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_2.jpg
+  Figure 2 caption: The overall pipeline of our method. The backbone downsamples the
+    input point clouds and learns features in multiple resolution levels. The Superpoint
+    Matching Module extracts high-quality superpoint correspondences between hatmathcal
+    P and hatmathcal Q using the Geometric Transformer which iteratively encodes intra-point-cloud
+    geometric structures and inter-point-cloud geometric consistency. The superpoint
+    correspondences are then propagated to dense points tildemathcal P and tildemathcal
+    Q by the Point Matching Module. Finally, the transformation is computed with a
+    local-to-global registration method.
+  Figure 3 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_3.jpg
+  Figure 3 caption: 'Point-to-node grouping strategy. Each point is assigned to its
+    nearest superpoint. Left: the point cloud (in blue) and the sampled superpoints
+    (in red). Right: the points are color-coded according to the superpoints that
+    they are assigned to.'
+  Figure 4 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_4.jpg
+  Figure 4 caption: 'Geometric self-attention module. Left: The structure of geometric
+    self-attention module. Right: The computation graph of geometric self-attention
+    mechanism.'
+  Figure 5 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_5.jpg
+  Figure 5 caption: 'Geometric structure embedding. Left: An illustration of the pair-wise
+    distance and the triplet-wise angles encoded. Right: The computation graph of
+    the geometric structure embedding.'
+  Figure 6 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_6.jpg
+  Figure 6 caption: 'Feature-based cross-attention module. Left: The structure of
+    feature-based cross-attention module. Right: The computation graph of cross-attention
+    mechanism.'
+  Figure 7 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_7.jpg
+  Figure 7 caption: Comparison of the registration results on 3DLoMatch. GeoTransformer
+    can effectively recognize small overlapping area in complex scenes (see the first
+    and third rows on the right) and distinguish similar objects at different positions
+    (see the second and third rows on the left) thanks to the structure information
+    from geometric self-attention.
+  Figure 8 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_8.jpg
+  Figure 8 caption: Visualizing geometric self-attention scores on four pairs of point
+    clouds. The overlap areas are delineated with purple lines. The anchor patches
+    (in correspondence) are highlighted in red and the attention scores to other patches
+    are color-coded (deeper is larger). Note how the attention patterns of the two
+    matching anchors are consistent even across disjoint overlap areas.
+  Figure 9 Link: articels_figures_by_rev_year\2023\GeoTransformer_Fast_and_Robust_Point_Cloud_Registration_With_Geometric_Transform\figure_9.jpg
+  Figure 9 caption: Comparison of per-frame ATE on Augmented ICL-NUIM. Our GeoTransformer
+    attains better results on most of the frames.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.93
+  Name of the first author: Zheng Qin
+  Name of the last author: Kai Xu
+  Number of Figures: 12
+  Number of Tables: 8
+  Number of authors: 8
+  Paper title: 'GeoTransformer: Fast and Robust Point Cloud Registration With Geometric
+    Transformer'
+  Publication Date: 2023-03-20 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Evaluation Results on 3DMatch and 3DLoMatch. RANSAC is Used\
+      \ for Registration With 50 K Iterations. \u2020 \u2020 Indicates the Lite Model\
+      \ With Shared Geometric Self-Attention. Boldfaced Numbers Highlight the Best\
+      \ and the Second Best are Underlined"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE II Registration Results WO RANSAC on 3DMatch (3DM) and 3DLoMatch\
+      \ (3DLM). The Model Time is the Time for Feature Extraction, While the Pose\
+      \ Time is the Time for Transformation Estimation. The Time is Averaged Over\
+      \ All Point Cloud Pairs in 3DMatch and 3DLoMatch. \u2020 \u2020 Indicates the\
+      \ Lite Model With Shared Geometric Self-Attention. Boldfaced Numbers Highlight\
+      \ the Best and the Second Best are Underlined"
+  Table 3 caption:
+    table_text: TABLE III Registration Results on KITTI Odometry. Boldfaced Numbers
+      Highlight the Best and the Second Best are Underlined
+  Table 4 caption:
+    table_text: TABLE IV Registration Results on ModelNet40. Boldfaced Numbers Hightlight
+      the Best and the Second Best are Underlined
+  Table 5 caption:
+    table_text: TABLE V Registration Results on Augmented ICL-NUIM. ATE (cm) are Reported.
+      Boldfaced Numbers Highlight the Best and the Second Best are Underlined
+  Table 6 caption:
+    table_text: TABLE VI Evaluation Results on 4DMatch and 4DLoMatch. NIR and NFMR
+      are Measured in %. Our Method Uses Shared Geometric Self-Attention. Boldfaced
+      Numbers are the Best and the Second Best are Underlined
+  Table 7 caption:
+    table_text: TABLE VII Ablation Experiments on 3DMatch and 3DLoMatch. The Results
+      are Measured in %. Indicates the Default Settings of GeoTransformer. Boldfaced
+      Numbers are the Best and the Second Best are Underlined
+  Table 8 caption:
+    table_text: TABLE VIII Comparison With Deep Robust Estimators on 3DMatch and KITTI.
+      Boldfaced Numbers are the Best and the Second Best are Underlined
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3259038
+- Affiliation of the first author: s-lab, school of computer science and engineering,
+    nanyang technological university, singapore
+  Affiliation of the last author: s-lab, school of computer science and engineering,
+    nanyang technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2023\Unsupervised_D_Pose_Transfer_With_Cross_Consistency_and_Dual_Reconstruction\figure_1.jpg
+  Figure 1 caption: With a target mesh and a source mesh, X-DualNet provides an unsupervised
+    solution to transfer the pose from the source to the target and preserve the identity
+    information of the target mesh. In the first row, the human meshes are from SMPL
+    [4] and FAUST [5]. In the second row, the animal meshes are from SMAL [6]. X-DualNet
+    can achieve the 3D pose transfer successfully on different human and animal datasets.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Unsupervised_D_Pose_Transfer_With_Cross_Consistency_and_Dual_Reconstruction\figure_2.jpg
+  Figure 2 caption: Overview of X-DualNet. With a main generator GAB , we take two
+    meshes MA and MB as inputs and generate the output Moutput = GAB(MA, MB) . Here,
+    we view MA as the identity mesh and MB as the pose mesh respectively. We also
+    add an ARAP deformer in the training process to fine-tune the body shape of the
+    generated results and get the deformed output hatMoutput . Then we adopt an auxiliary
+    generator Gprime A to reconstruct the mesh MA . Specifically, Gprime A takes MA
+    as the pose mesh and hatMoutput as the identity mesh respectively to generate
+    Mprime A = Gprime A(hatMoutput, MA) . Similarly, we can reconstruct MB with another
+    auxiliary generator Gprime B to generate Mprime B = Gprime B(MB, hatMoutput) .
+    Note that GAB , Gprime A and Gprime B share the same network parameters. The pose
+    transfer procedure is consistent across the main generator and two auxiliary generators.
+    We introduce a reconstruction loss to achieve the dual reconstruction objective
+    Mprime A approx MA and Mprime B approx MB . The generator G contains two modules.
+    In the correspondence learning module, we solve an optimal transport problem to
+    build the correspondence between input meshes with the extracted features Fid
+    and Fpose . The pose transfer module contains several ElaIN residual blocks which
+    help to achieve the 3D pose transfer.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Unsupervised_D_Pose_Transfer_With_Cross_Consistency_and_Dual_Reconstruction\figure_3.jpg
+  Figure 3 caption: Detailed design of our elastic instance normalization. Here, we
+    normalize the features of the warped mesh hwarpi with InstanceNorm and get the
+    mean mu i and standard deviation sigma i . Then, the features of the identity
+    mesh are fed into a convolution layer to get hidi , which shares the same size
+    with hwarpi . We calculate the mean of hwarpi , hidi and concatenate them in channel
+    dimension. A fully-connected layer is employed to compute an adaptive weight wi
+    . We blend gamma i , sigma i and beta i , mu i elastically with wi to get gamma
+    prime and beta prime . gamma i and beta i are learned from hidi . Finally, we
+    scale the normalized hwarpi with gamma prime and shift it with beta prime . The
+    value on the parameter flow means the weight.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Unsupervised_D_Pose_Transfer_With_Cross_Consistency_and_Dual_Reconstruction\figure_4.jpg
+  Figure 4 caption: Qualitative comparison on human data. Our method and 3D-CoreNet
+    can generate better results than NPT and the proposed unsupervised baseline. The
+    surfaces of meshes generated by NPT are not always smooth. And the proposed unsupervised
+    baseline cannot preserve the body shapes very well. The human meshes are from
+    SMPL [4].
+  Figure 5 Link: articels_figures_by_rev_year\2023\Unsupervised_D_Pose_Transfer_With_Cross_Consistency_and_Dual_Reconstruction\figure_5.jpg
+  Figure 5 caption: Qualitative comparison on animal data. Our method and 3D-CoreNet
+    produce satisfactory results on the animal data. NPT produces many artifacts and
+    cannot transfer the pose successfully. The proposed baseline sometimes cannot
+    preserve the shape identity (e.g., the tail) well. The animal meshes are from
+    SMAL [6].
+  Figure 6 Link: articels_figures_by_rev_year\2023\Unsupervised_D_Pose_Transfer_With_Cross_Consistency_and_Dual_Reconstruction\figure_6.jpg
+  Figure 6 caption: Comparison of different conditional normalization layers. We compare
+    our ElaIN with SPAdaIN used in NPT [2] on SMPL [4]. The surface of the mesh has
+    clear artifacts and is not smooth when we replace ElaIN with SPAdaIN. Experiments
+    are carried out on 3D-CoreNet.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Unsupervised_D_Pose_Transfer_With_Cross_Consistency_and_Dual_Reconstruction\figure_7.jpg
+  Figure 7 caption: Qualitative ablation studies of two components in X-DualNet. When
+    we do not add the ARAP deformer in the training loop, the generated results do
+    not preserve the body shape well which can be shown in the green bounding boxes.
+    In the third column, the body shape is sunken from the left and right sides. When
+    we remove the backward correspondence loss mathcal Lcorr in the training, the
+    pose transfer results are not accurate which can be shown in the red bounding
+    boxes. In the fourth column, the right arm is farther from the body than others.
+    And the reason why the right arm of the mesh in the third column looks so close
+    to the body is that the body shape is not well maintained without ARAP deformer.
+    The input human meshes are from SMPL [4]. wo means we remove this component.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Unsupervised_D_Pose_Transfer_With_Cross_Consistency_and_Dual_Reconstruction\figure_8.jpg
+  Figure 8 caption: Pose transfer results on FAUST [5] and MGN [49]. We choose four
+    pose meshes and transfer the poses to the unseen meshes in FAUST and MGN. To evaluate
+    the generalization ability of X-DualNet, we compare it with NPT [2] and 3D-CoreNet.
+    As shown in the first three rows, the results generated by NPT and 3D-CoreNet
+    always have many artifacts on the mesh surfaces. Our results are smoother than
+    theirs. In the last row, NPT does not transfer the pose successfully since they
+    do not learn the shape correspondence. 3D-CoreNet also fails to transfer the pose
+    accurately. Our method has the best performance when meeting unseen poses. More
+    generated results will be given in the supplemental material, available online.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chaoyue Song
+  Name of the last author: Guosheng Lin
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Unsupervised 3D Pose Transfer With Cross Consistency and Dual Reconstruction
+  Publication Date: 2023-03-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Quantitative Comparison. We Compare X-DualNet With NPT, 3D-CoreNet,
+      and the Proposed Unsupervised Baseline on Human and Animal Meshes. For the Evaluation
+      Metrics, the Lower is Better. 3D-CoreNet Has the Best Performance. X-DualNet
+      Achieves Comparable Performances as 3D-CoreNet and Even Outperforms NPT Which
+      is a Fully Supervised Method
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Comparison of Different Conditional Normalization Layers.
+      We Compare Our ElaIN With SPAdaIN Used in NPT [2]. The Lower is Better. Experiments
+      are Carried Out on 3D-CoreNet
+  Table 3 caption:
+    table_text: TABLE III Quantitative Ablation Studies of Two Components in X-DualNet.
+      We Evaluate the Importance of ARAP Deformer and the Backward Correspondence
+      Loss. For PMD, CD, and EMD, the Lower is Better. Wo Means We Remove the Component
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3259059
+- Affiliation of the first author: "dipartimento di ingegneria dell'informazione,\
+    \ media integration and communication center (micc), universit\xE0 degli studi\
+    \ di firenze, firenze, italy"
+  Affiliation of the last author: "dipartimento di ingegneria dell'informazione, media\
+    \ integration and communication center (micc), universit\xE0 degli studi di firenze,\
+    \ firenze, italy"
+  Figure 1 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_1.jpg
+  Figure 1 caption: Upgrading the DCNN representation model with novel data, typically
+    requires the gallery-set to be re-indexed. Learning compatible representations
+    allows to compare the newly learned representation of an input query-set with
+    the old representation of the gallery-set, thus eliminating its computationally
+    intensive re-indexing.
+  Figure 10 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_10.jpg
+  Figure 10 caption: 'Feature spatial configuration with 2-step upgrading (1 class
+    per upgrade) and MNIST dataset with 2D features. Colored cloud points are the
+    features from the test-set and lines represent the classifier prototypes. Compatibility
+    methods compared: (a) IFT; (b) BCT; (c) CoReS.'
+  Figure 2 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_2.jpg
+  Figure 2 caption: 'Multi-model Empirical Compatibility Criterion (5): representation
+    models phi i with i=1,2,ldots,T are sequentially trained. Gray arrows represent
+    self and cross-tests (example with T=4 ).'
+  Figure 3 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_3.jpg
+  Figure 3 caption: Learning with incremental fine-tuning with MNIST dataset for 2D
+    representation. Colored cloud points represent features from the test-set and
+    gray lines represent classifier prototypes. (a) Initial configuration (5 classes);
+    (b) Training by fine-tuning (adding the brown-class). The addition of the new
+    class modifies the spatial configuration and angles between features.
+  Figure 4 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_4.jpg
+  Figure 4 caption: 'Overview of the training procedure of CoReS based on feature
+    stationarity showing: (a) fixed classifier with class prototypes [mathbf wi]i=1K
+    with evidence of those reserved for mathcal Tmathrmold and the upgrade classes
+    mathcal X (both create mathcal Tmathrmnew ), and those reserved for future classes;
+    (b) class prototypes and their parameters x1,x2, ldots xd (parameters are the
+    coordinate vertices of the regular polytope that defines the fixed classifier);
+    (c) two-dimensional representation of the feature space generated by the fixed
+    classifier. The colored point clouds represent the learned features. Prototypes
+    of the future classes are represented with gray arrows. The gray region is the
+    margin imposed by the futureunseen classes. As new features are learned they are
+    pushed out from the margin.'
+  Figure 5 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_5.jpg
+  Figure 5 caption: Compatibility matrices for open set verification on Cifar-10010
+    with 2-step multi-model upgrading with different methods compared. Models are
+    sequentially learned on Cifar-100 with 33%, 66%, 100% of data. Diagonal and off-diagonal
+    elements respectively report the self-test and the cross-test accuracy. Models
+    that do not satisfy the compatibility criterion are highlighted in red.
+  Figure 6 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_6.jpg
+  Figure 6 caption: Compatibility matrices of CoReS and BCT for open set verification
+    on Cifar-10010 with 4-step multi-model upgrading. Diagonal and off-diagonal elements
+    respectively report self-test and cross-test accuracy. Models are sequentially
+    learned on Cifar-100 with 20%, 40%, 60%, 80%, 100% of data. Models that do not
+    satisfy the compatibility criterion are highlighted in red.
+  Figure 7 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_7.jpg
+  Figure 7 caption: Compatibility matrices of CoReS and BCT for open-set verification
+    on Cifar 10010 with 9-step multi-model upgrading. Diagonal and off-diagonal elements
+    report self-test and cross-test accuracy, respectively. Models are sequentially
+    learned with 10%, 20%,..., 100% of training data. Models that do not satisfy compatibility
+    are highlighted in red.
+  Figure 8 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_8.jpg
+  Figure 8 caption: 'Compatibility of CoReS and compared methods (shown color-coded)
+    for open-set face verification on the CASIA-WebFaceLFW dataset with multi-model
+    upgrading. Bins show: (a) AC scores for different number of upgrades; (b) AM scores
+    for different number of upgrades.'
+  Figure 9 Link: articels_figures_by_rev_year\2023\CoReS_Compatible_Representations_via_Stationarity\figure_9.jpg
+  Figure 9 caption: Compatibility matrices of CoReS and compared methods for open-set
+    verification on CASIA-WebFace-LFW dataset with 4-step multi-model upgrading. Models
+    are sequentially learned on CASIA-WebFace with 20%, 40%, 60%, 80%, 100%. Models
+    that do not satisfy compatibility are highlighted in red.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Niccol\xF2 Biondi"
+  Name of the last author: Alberto Del Bimbo
+  Number of Figures: 14
+  Number of Tables: 12
+  Number of authors: 4
+  Paper title: 'CoReS: Compatible Representations via Stationarity'
+  Publication Date: 2023-03-20 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Compatibility Comparative Evaluation for Open Set Verification\
+      \ on Cifar 10010 With One Upgrade. Models are Learned With 50% and Upgraded\
+      \ With 100% of Training Data. Subscripts Indicate the Method Used for Compatibility\
+      \ Learning. Columns Indicate Accuracy ( M M), Whether the Empirical Compatibility\
+      \ Criterion is Verified ( ECC ECC), the Update Gain ( \u0393 \u0393) and the\
+      \ Absolute Gain"
+  Table 10 caption:
+    table_text: 'TABLE X Compatibility of CoReS as a Function of Sequential Class
+      Ordering With 9-Step Upgrading Over 20 Runs: With Alphabetical Order (Alphabetical);
+      With Different Random Permutation of the Classes At Each Run (Random). Mean
+      and Standard Deviation of AC AC and AM AM'
+  Table 2 caption:
+    table_text: "TABLE II Compatibility Evaluation for Open Set Verification on Cifar\
+      \ 10010 With Two Upgrades With CoReS and BCT. Models are Learned With With 33%,\
+      \ and Upgraded With 66% and 100% of Training Data. Columns Indicate accuracy(\
+      \ M M), Whether the Empirical Compatibility Criterion is Verified ( ECC ECC)\
+      \ and the Update Gain ( \u0393 \u0393)"
+  Table 3 caption:
+    table_text: "TABLE III Compatibility of CoReS and BCT for Open-Set Face Verification\
+      \ on the CASIA-WebFaceLFW Dataset With One Upgrade. Models are Learned on CASIA-WebFace\
+      \ With 50% and Upgraded With 100% of Data. Columns Indicate Accuracy ( M M),\
+      \ Whether the Empirical Compatibility Criterion is Verified (ECC) and the Update\
+      \ Gain ( \u0393 \u0393)"
+  Table 4 caption:
+    table_text: TABLE IV Compatibility Evaluation for Person Re-Identification on
+      the Market1501 Dataset for One and Two-Step Upgrading. AC AC and AM AM are Used
+      to Compare CoReS With Other Methods. MAP is Used as evaluation Metric M M
+  Table 5 caption:
+    table_text: "TABLE V Compatibility of CoReS and BCT on the Retrieval Setup of\
+      \ GLDv2 With 1-Step Upgrade. Models are Learned on GLDv2 With 50% of Classes\
+      \ and Upgraded With 100% of Data. Columns Indicate mAP100 ( M M), Whether the\
+      \ Empirical Compatibility Criterion is Verified (ECC) and the Update Gain (\
+      \ \u0393 \u0393)"
+  Table 6 caption:
+    table_text: "TABLE VI Compatibility of CoReS and BCT on the kNN Classification\
+      \ of MET With 1-Step Upgrade. Models are Learned on miniMET With 50% of Classes\
+      \ and Upgraded With 100% of Data. Columns Indicate Accuracy ( M M) and Whether\
+      \ the Empirical Compatibility Criterion is Verified (ECC) and the Update Gain\
+      \ ( \u0393 \u0393)"
+  Table 7 caption:
+    table_text: TABLE VII Compatibility of CoReS for Training From Scratch Without
+      Model Selection (CoReS woMS) and With Model Selection (CoReS wMS) At Each Upgrade,
+      With 9-Step Upgrading Over 20 Runs. Mean and Standard Deviation of AC AC and
+      AM AM
+  Table 8 caption:
+    table_text: TABLE VIII Compatibility of CoReS for Training From a Pre-Trained
+      Model Without (wo MS) and With (w MS) Model Selection At Each Upgrade, With
+      9-Step Upgrading Over 20 Runs. Mean and Standard Deviation of AC AC and AM AM
+      as a Function of the Number of Classes in the Pre-Trained Model
+  Table 9 caption:
+    table_text: 'TABLE IX Compatibility of CoReS for Different Model Initializations
+      At Each Upgrade, With 9-Step Upgrading Over 20 Runs: With Same Random Initialization
+      (Same); With a Different Random Initialization (Random); With Fine Tuning From
+      the Previously Learned Model (Fine-Tuned). Mean and Standard Deviation of AC
+      AC and AM AM'
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3259542
+- Affiliation of the first author: school of mathematics and statistics, xi'an jiaotong
+    university, xi'an, shaanxi, china
+  Affiliation of the last author: school of mathematics and statistics and ministry
+    of education key lab of intelligent networks and network security, xi'an jiaotong
+    university, xian, shaanxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_1.jpg
+  Figure 1 caption: "Illustration of recovery performance of all competing methods\
+    \ in color image inpainting. (a) Observed \u201CEinstein\u201D image with 90%,\
+    \ 95%, 98%, 99% and 99.5% missing pixels (from up to bottom); (b) Recovery obtained\
+    \ by several SOTA methods built under model (1): (b-1) KBR[30], (b-2) SNN[6],\
+    \ (b-3) TNN[31]; (c) Recovery obtained by several SOTA methods built under model\
+    \ (2): (c-1) SPC+TV[24], (c-2) SNN+TV[22], (c-3) TNN+TV[29]; (d) Recovery by our\
+    \ method. It can be seen that our method can still work while all its peers largely\
+    \ failed in the last extreme missing case."
+  Figure 10 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_10.jpg
+  Figure 10 caption: Performance comparison in terms of PSNR of recovered color videos
+    obtained by all competing methods.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_2.jpg
+  Figure 2 caption: 'Illustrations of simultaneous L and S prior structures in correlated
+    gradient tensors. (a-1), (b-1), (c-1): three typical types of visual tensor data:
+    RGB image, HSI and color video; (a-2), (b-2), (c-2): their correlated gradient
+    tensors; (a-3), (b-3), (c-3): the corresponding curves of tensor singular values
+    (upper) and frequency histograms of all their elements (below).'
+  Figure 3 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_3.jpg
+  Figure 3 caption: Manifolds of the TNN, TV and t-CTV norm.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_4.jpg
+  Figure 4 caption: Convergence curves of Algorithm 1 and Algorithm 2.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_5.jpg
+  Figure 5 caption: Phase transitions of t-CTV-TC model (15) with varying t-SVD ranks
+    of mathcal T0 and sampling rates.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_6.jpg
+  Figure 6 caption: Phase transitions of t-CTV-TRPCA model (16) with varying t-SVD
+    ranks of mathcal T0 and sparsity of mathcal E0 .
+  Figure 7 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_7.jpg
+  Figure 7 caption: 'Color image inpainting results by all competing methods. From
+    top to bottom: SR equals 10% , 20% , and 40% , respectively. For better viewing,
+    we display the magnified map of a patch and corresponding error map (difference
+    from the ground truth) under each image. Error maps with less color information
+    indicate better restoration performance.'
+  Figure 8 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_8.jpg
+  Figure 8 caption: 'Color image inpainting results by all competing methods. From
+    top to bottom: SR =0.5%, 1%, 2%,5% .'
+  Figure 9 Link: articels_figures_by_rev_year\2023\Guaranteed_Tensor_Recovery_Fused_Lowrankness_and_Smoothness\figure_9.jpg
+  Figure 9 caption: Color image inpainting results by all competing methods on four
+    types of structured masked images.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Hailin Wang
+  Name of the last author: Deyu Meng
+  Number of Figures: 17
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: Guaranteed Tensor Recovery Fused Low-rankness and Smoothness
+  Publication Date: 2023-03-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Summary of Some Related Works on Tensor Recovery With Joint
+      L+S Priors
+  Table 10 caption:
+    table_text: TABLE X Visual Data Denoising Performances of All Competing Methods
+      Under Different Levels of Noise
+  Table 2 caption:
+    table_text: TABLE II Performance of Model (15) on Synthetic Tensors
+  Table 3 caption:
+    table_text: TABLE III Performance of Model (16) on Synthetic Tensors
+  Table 4 caption:
+    table_text: TABLE IV Objectives of Baseline TNN and TNN+TV Models
+  Table 5 caption:
+    table_text: TABLE V Categories of Related Tensor Completion Methods
+  Table 6 caption:
+    table_text: 'TABLE VI Color Image Inpainting Performances of All Competing Methods
+      Under Different Sampling Rates. Each Result is Averaged Over All Data. The Best
+      and Second Best Result are Highlighted in bold and underline, Respectively.
+      (s: second).'
+  Table 7 caption:
+    table_text: TABLE VII ERGAS Comparison of All Competing Methods on HSIs Inpainting
+      Under SR =5% =5%
+  Table 8 caption:
+    table_text: 'TABLE VIII More Data Inpainting Performances of All Competing Methods
+      Under Different Sampling Rates. (m: minute)'
+  Table 9 caption:
+    table_text: TABLE IX Categories of Related Tensor RPCA Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3259640
+- Affiliation of the first author: department of computer science, university of california
+    irvine, irvine, ca, usa
+  Affiliation of the last author: department of computer science, university of california
+    irvine, irvine, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\Insights_From_Generative_Modeling_for_Neural_Video_Compression\figure_1.jpg
+  Figure 1 caption: Model diagrams for the generative and inference procedures of
+    the current frame mathbf xt , for various neural video compression methods. Random
+    variables are shown in circles; all other quantities are deterministically computed;
+    solid and dashed arrows describe computational dependency during generation (decoding)
+    and inference (encoding), respectively. Purple nodes correspond to neural encoders
+    (CNNs) and decoders (DCNNs), and green nodes implement temporal autoregressive
+    transform. (a) TAT; (b) SSF; (c) STAT or STAT-SSF; the magenta box highlights
+    the additional proposed scale transform absent in SSF, and the red arrow from
+    mathbf wt to mathbf vt ; highlights the proposed (optional) structured prior.
+    (d) SSF-TPSSF-TP+ and (e) STAT-SSF-SP-TP+ illustrate the temporal prior extension
+    based on our proposal; the blue arrow shows the temporal dependency on the previous
+    residual latent mathbf vt-1 , and the green arrow highlights the improved dependency
+    on the previous reconstructed frame hatmathbf xt-1 .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Insights_From_Generative_Modeling_for_Neural_Video_Compression\figure_2.jpg
+  Figure 2 caption: "Visualizing the encodingdecoding computation of the STAT-SSF-SP\
+    \ model on one frame of UVG video \u201CShake-NDry\u201D. See Fig. 1(c) for the\
+    \ model's computation diagram. In this example, the warping prediction boldsymbolhatmu\
+    \ t (bottom, first) incurs a large error around the dog's moving contour but models\
+    \ the mostly static background well, with the residual latents lfloor barmathbf\
+    \ vtrceil taking up an order of magnitude higher bit-rate than lfloor barmathbf\
+    \ wtrceil . The proposed scale parameter boldsymbolhatsigma t (top, second) gives\
+    \ the model extra flexibility when combining the noise hatmathbf yt (bottom, second)\
+    \ with the warping prediction boldsymbolhatmu t to form the reconstruction hatmathbf\
+    \ xt = boldsymbolhatmu t + boldsymbolhatsigma t odot hatmathbf yt (bottom, fourth).\
+    \ The scale boldsymbolhatsigma t downweights contribution from the noise hatmathbf\
+    \ yt in the foreground where it is very costly, and reduces the residual bit-rate\
+    \ mathcal R(lfloor barmathbf vtrceil) (and thus the overall bit-rate) compared\
+    \ to STAT-SSF and SSF, as illustrated in the third and fourth figures in the top\
+    \ row. The (BPP, PSNR) performance for STAT-SSF-SP, STAT-SSF, and SSF [5] are\
+    \ (0.046, 36.97), (0.053, 36.94), and (0.075, 36.97), respectively. Thus, STAT-SSF\
+    \ and SSF here have comparable reconstruction quality to STAT-SSF-SP but worse\
+    \ bit-rate."
+  Figure 3 Link: articels_figures_by_rev_year\2023\Insights_From_Generative_Modeling_for_Neural_Video_Compression\figure_3.jpg
+  Figure 3 caption: Rate-Distortion Performance of various models and ablations. Results
+    are evaluated on (a) UVG and (b) MCLJCV datasets. All the learning-based models
+    (except VCII [51]) are trained on Vimeo-90 k. STAT-SSF-SP-TP+ (proposed) achieves
+    the best performance.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Insights_From_Generative_Modeling_for_Neural_Video_Compression\figure_4.jpg
+  Figure 4 caption: Qualitative comparisons of various methods on a frame from MCL-JCV
+    video 30. Figures in the bottom row focus on the same image patch on top. Here,
+    models with the proposed scale transform (STAT-SSF and STAT-SSF-SP) outperform
+    the ones without, yielding visually more detailed reconstructions at lower rates.
+    The structured prior (STAT-SSF-SP) and temporal prior (STAT-SSF-SP-TP+) reduce
+    the bitrate further.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Insights_From_Generative_Modeling_for_Neural_Video_Compression\figure_5.jpg
+  Figure 5 caption: (a) Ablation study of STAT-SSF-SP, examining the effect of two
+    proposed components, STAT (stochastic temporal autoregressive transform) and SP
+    (structured prior), with R-D results evaluated on the UVG dataset. Compared to
+    STAT-SSF-SP, SSF-SP lacks the learned elementwise scaling transform in STAT (Section
+    II-D), STAT-SSF lacks the structured prior, while SSF [5] lacks both components.
+    See discussion in Section IV-B. (b) Comparison of the Rate-Distortion performance
+    between variable-bitrate models and non-variable-bitrate models.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Insights_From_Generative_Modeling_for_Neural_Video_Compression\figure_6.jpg
+  Figure 6 caption: Rate-Distortion Performance of various models and ablations (see
+    Table I). Results are evaluated on (a) UVG and (b) MCLJCV datasets. The best results
+    are obtained by models with deterministic temporal conditioning (TP+), while the
+    improvement from conditioning on previous latents (TP) is less.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ruihan Yang
+  Name of the last author: Stephan Mandt
+  Number of Figures: 6
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Insights From Generative Modeling for Neural Video Compression
+  Publication Date: 2023-03-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Overview of Various Compression Methods Considered and the
+      Contexts in Which They Appear
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3260684
+- Affiliation of the first author: department of artificial intelligence, school of
+    informatics, media analytics and computing laboratory, xiamen university, xiamen,
+    china
+  Affiliation of the last author: department of artificial intelligence, school of
+    informatics, instititue of artificial intelligence, media analytics and computing
+    laboratory, xiamen university, xiamen, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Training_Compact_CNNs_for_Image_Classification_Using_DynamicCoded_Filter_Fusion\figure_1.jpg
+  Figure 1 caption: Comparison of importance scores before and after fine-tuning.
+    We select high-score filters using the criteria of ell 1 -norm [7] and rank of
+    feature map [8] from a pretrained ResNet-56. It can be observed that filters with
+    high values of ell 1 -norm and rank of feature map have smaller values after fine-tuning.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Training_Compact_CNNs_for_Image_Classification_Using_DynamicCoded_Filter_Fusion\figure_2.jpg
+  Figure 2 caption: 'Training and inference flows of our dynamic-coded filter fusion.
+    Training: In the forward step, the original filters in the i th layer are fused
+    into a smaller group of filters that form the i th fusion layer. The fusion layers
+    make up the network backbone to process the input images. Notice the fused filters
+    are intermediate results. They are unlearnable and provide gradients to update
+    the original filters according to the chain rule. Inference: Since the inference
+    only involves forward propagation, the fused filters are preserved and serve as
+    our compact model for an efficient inference.'
+  Figure 3 Link: articels_figures_by_rev_year\2023\Training_Compact_CNNs_for_Image_Classification_Using_DynamicCoded_Filter_Fusion\figure_3.jpg
+  Figure 3 caption: The ell 1 -norm [7] for different filters (denoted by different
+    colors) at different training epochs (ResNet-56).
+  Figure 4 Link: articels_figures_by_rev_year\2023\Training_Compact_CNNs_for_Image_Classification_Using_DynamicCoded_Filter_Fusion\figure_4.jpg
+  Figure 4 caption: Top-1 accuracy of ResNet-56 for the variants of DCFF on CIFAR-10.
+    DCFF A uses ell 1 -norm as filter importance. DCFF B has no filter fusion. DCFF
+    C uses a fixed temperature t = 1 .
+  Figure 5 Link: articels_figures_by_rev_year\2023\Training_Compact_CNNs_for_Image_Classification_Using_DynamicCoded_Filter_Fusion\figure_5.jpg
+  Figure 5 caption: Analysis of the effect of the temperature t with and without our
+    training-adaptive formulation in (4). The blue dots denote high-score filters
+    in each training epoch. Experiments are conducted using ResNet-56 (Layer 11).
+    A total of 11 filters are preserved.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.78
+  Name of the first author: Mingbao Lin
+  Name of the last author: Rongrong Ji
+  Number of Figures: 5
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Training Compact CNNs for Image Classification Using Dynamic-Coded
+    Filter Fusion
+  Publication Date: 2023-03-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Quantitative Results on CIFAR-10. We Report the Top-1 Classification
+      Accuracy, the FLOPs, the Amount of Parameters, and the Pruning Rate of the Compact
+      Models
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE II Quantitative Results on ILSVRC-2012. We Report the Top-1\
+      \ and Top-5 Accuracy, the FLOPs, the Amount of Parameters, and the Pruning Rate\
+      \ of the Compact Models. \u2217 Shows the Learning Rate With the Cosine Scheduler.\
+      \ DCP \u2217 Denotes our Reproduced Results by Removing the Reconstruction Error"
+  Table 3 caption:
+    table_text: TABLE III Influence of Distance Measurement to the Performance of
+      Pruned ResNet-50. We Report the Top-1 Accuracy on ILSVRC-2012
+  Table 4 caption:
+    table_text: "TABLE IV Performance of Pruned ResNet-50 Using Different Fusion Methods.\
+      \ \u201CInversely\u201D Indicates the Filter Importance as \u2212 I k -Ik in\
+      \ (3). \u201CRandomly\u201D Denotes a Random Measurement in Each Forward Propagation.\
+      \ We Report the Top-1 Accuracy on ILSVRC-2012"
+  Table 5 caption:
+    table_text: TABLE V Performance of Pruned ResNet-50 w.r.t. Different Values of
+      Temperature Parameter T e Te. We Report the Top-1 Accuracy on ILSVRC-2012
+  Table 6 caption:
+    table_text: TABLE VI Performance Comparison of Pruned ResNet-50 Between Manually
+      Defined Per-Layer Pruning Ratio and Structure Searching [40]Global Ranking [58].
+      We Report the Top-1 Accuracy on ILSVRC-2012
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3259402
+- Affiliation of the first author: faculty of engineering and it, university of technology
+    sydney, ultimo, nsw, australia
+  Affiliation of the last author: faculty of engineering and it, university of technology
+    sydney, ultimo, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_1.jpg
+  Figure 1 caption: Proposed coarse-to-fine framework leverages the dynamic patches
+    for robust face alignment. The initial local patches are cropped according to
+    a mean face. Then, the size and position of each patch are adjusted dynamically
+    according to the location and uncertainty predicted in the previous stage for
+    fine-grained representation. The colorBluemathrmblue and colorGreenmathrmgreen
+    point indicate the initial and predicted landmark respectively. The uncertainty
+    of each landmark is shown by colorMelonmathrmpink circle.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_2.jpg
+  Figure 2 caption: Pipeline of the DSLPT. The DSLPT first crops the supporting patch
+    for each landmark from the feature map according to the facial landmarks predicted
+    in the previous stage. The patch is then embedded into a vector as the representation
+    R of the corresponding landmark. Subsequently, they are added with the structure
+    encoding P to retain the structure information of face. A fixed number of landmark
+    queries Q are fed into the inherent relation layer, adaptively aggregating the
+    representations based on a learned inherent relation. Finally, the probability
+    distribution of each landmark is predicted independently from the output features.
+    The rightmost images demonstrate the predicted uncertainty and the inherent relation
+    of different cases. Each landmark is connected with the landmark with the highest
+    cross attention weight.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_3.jpg
+  Figure 3 caption: 'Left: cosine similarity of the structure encodings learned from
+    98 landmarks and 68 landmarks datasets. The high cosine similarity between two
+    encodings indicates the corresponding landmarks are close in the regular face
+    shape. Right: to better visualize, we connect each landmark to the landmark with
+    the highest, second highest and third highest similarity respectively.'
+  Figure 4 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_4.jpg
+  Figure 4 caption: Intuitive example of how the predicted probability distribution
+    determines the patch size. DSLPT takes [ mu -3Sigma,mu +3Sigma ] as the confidence
+    interval, which promises that the probability that the landmarks are within the
+    interval is more than 95%. Then, the size of ROI in the patch coordinate system
+    can be written as max (6Sigma x, 6Sigma y ). The size is finally enlarged Ztimes
+    for background information.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_5.jpg
+  Figure 5 caption: Constructing multi-level feature maps for DSLPT.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_6.jpg
+  Figure 6 caption: Visualized results on WFLW, 300 W, COFW68, AFLW-19 testset. The
+    colorRedmathrmred point and t. The colorGreenmathrmgreen point indicate the ground
+    truth and the predicted landmark respectively. The uncertainty of each landmark
+    is shown by t. The colorMelonmathrmpink circle. Each landmark is connected with
+    the landmark with highest cross attention weigh by t. The colorBluemathrmblue
+    line.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_7.jpg
+  Figure 7 caption: Visualized results of the externallly occluded and self-occluded
+    cases on Masked 300 W, MERL-RAV and AFLW2000-3D. The t. The colorRedmathrmred
+    point and t. The colorGreenmathrmgreen point indicate the ground truth and the
+    predicted landmark respectively. The uncertainty of each landmark is shown by
+    colorMelonmathrmpink circle. Each landmark is connected with the landmark with
+    highest cross attention weigh by colorBluemathrmblue line. The colorOrangemathrmOrange
+    lines represent the 3D facial boundaries.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_8.jpg
+  Figure 8 caption: Statistical attention interactions of MCA and MSA in the final
+    stage on the WFLW test set. Each row indicates the attention weight of corresponding
+    landmark to other landmarks.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Robust_Face_Alignment_via_Inherent_Relation_Learning_and_Uncertainty_Estimation\figure_9.jpg
+  Figure 9 caption: Distribution of 55 mathrmth , 86 mathrmth and 96 mathrmth landmark
+    in patch coordinate system on the occlusion subset of WFLW. The percentage of
+    the landmarks that are within the local patch is also reported in captions.
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.94
+  Name of the first author: Jiahao Xia
+  Name of the last author: Shiping Wen
+  Number of Figures: 9
+  Number of Tables: 19
+  Number of authors: 7
+  Paper title: Robust Face Alignment via Inherent Relation Learning and Uncertainty
+    Estimation
+  Publication Date: 2023-03-23 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Performance Comparisons With Heatmap Regression and Coordinate\
+      \ Regression Methods on WFLW Full Set and Its Subsets. The Normalization Factor\
+      \ of NME is Inter-Ocular Distance. Key: [ Best, Second Best, \u22C6 \u2605=initialized\
+      \ From Scratch]"
+  Table 10 caption:
+    table_text: "TABLE X Performance Comparisons on MERL-RAV. Key: [ Best, Second\
+      \ Best, R34=ResNet34, R50=ResNet50, W18C-L=HRNetW18C-Lite, W18C=HRNetW18 C,\
+      \ \u22C6 \u2605=initialized From Scratch]"
+  Table 2 caption:
+    table_text: "TABLE II Performance Comparisons With State-of-The-Art Methods in\
+      \ FR 0.1 0.1 and AUC 0.1 0.1 on WFLW. Key: [ Best, Second Best, R34=ResNet34,\
+      \ R50=ResNet50, W18C=HRNetW18 C, W18C-L=HRNetW18C-Lite, \u22C6 \u2605=initialized\
+      \ From Scratch]"
+  Table 3 caption:
+    table_text: "TABLE III Performance Comparisons With the State-of-The-Art Methods\
+      \ on 300 W. Key: [ Best, Second Best, R34=ResNet34, R50=ResNet50, W18C-L=HRNetW18C-Lite,\
+      \ W18C=HRNetW18 C, 4HG=4 Hourglass Module, \u22C6 \u2605=initialized From Scratch]"
+  Table 4 caption:
+    table_text: 'TABLE IV Performance Comparisons Under Inter-Ocular Normalization
+      and Inter-Pupil Normalization on within within-Dataset Validation. The Threshold
+      for FR is Set to 0.1. Key: [ Best, Second Best, R34=ResNet34, R50=ResNet50,
+      W18C-L=HRNetW18C-Lite, W18C=HRNetW18C]'
+  Table 5 caption:
+    table_text: "TABLE V Performance Comparisons on Menpo, 300W-Private and COFW68.\
+      \ Key: [ Best, Second Best, R34=ResNet34, R50=ResNet50, W18C-L=HRNetW18C-Lite,\
+      \ W18C=HRNetW18 C, \u22C6 \u2605=initialized From Scratch, \u2020 \u2020=Pretrained\
+      \ on 300W-LP-2D]"
+  Table 6 caption:
+    table_text: "TABLE VI NME box box and |\u03A3 | 1 2 |\u03A3|12 on the Externally\
+      \ Occluded and Unoccluded Landmarks of COFW68. Key: [ Best, Second Best, R34=ResNet34,\
+      \ R50=ResNet50, W18C-L=HRNetW18C-Lite, W18C=HRNetW18 C, \u22C6 \u2605=initialized\
+      \ From Scratch, \u2020 \u2020=Pretrained on 300W-LP-2D]"
+  Table 7 caption:
+    table_text: "TABLE VII Performance Comparisons Under Inter-Ocular Normalization\
+      \ on Cross-Dataset Validation. Key: [ Best, Second Best, R34=ResNet34, R50=ResNet50,\
+      \ W18C-L=HRNetW18C-Lite, W18C=HRNetW18 C, \u22C6 \u2605=initialized From Scratch,\
+      \ \u2020 \u2020=Pretrained on 300W-LP-2D]"
+  Table 8 caption:
+    table_text: "TABLE VIII Performance Comparisons on the Full Set and Frontal Subset\
+      \ of AFLW-19. Key: [ Best, Second Best, R34=ResNet34, R50=ResNet50, W18C-L=HRNetW18C-Lite,\
+      \ W18C=HRNetW18 C, \u22C6 \u2605=initialized From Scratch]"
+  Table 9 caption:
+    table_text: "TABLE IX Performance Comparisons With the State-of-The-Art Methods\
+      \ on Masked 300 W Common Subset, Challenging Subset and Fullset. Key: [ Best,\
+      \ Second Best, R34=ResNet34, R50=ResNet50, W18C-L=HRNetW18C-Lite, W18C=HRNetW18\
+      \ C, \u22C6 \u2605=initialized From Scratch]"
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3260926

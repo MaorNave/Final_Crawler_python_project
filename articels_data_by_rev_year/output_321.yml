@@ -1,0 +1,798 @@
+- Affiliation of the first author: department of electronic engineering, the chinese
+    university of hong kong, hong kong
+  Affiliation of the last author: department of electronic engineering, the chinese
+    university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_1.jpg
+  Figure 1 caption: Examples of missed detections caused by drift and occlusion with
+    the state-of-the-art detector in [30]. Aided by a two-pedestrian detector, the
+    missed pedestrians are detected. The thresholds of both approaches are fixed at
+    one False Positive Per Image (FPPI). Best viewed in color.
+  Figure 10 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_10.jpg
+  Figure 10 caption: Miss rate improvement of the framework for each of the state-of-the-art
+    one-pedestrian detectors on Caltech-Test (left), TUD-Brussels (middle) and ETH
+    (right). X-axis denotes the miss rate improvement.
+  Figure 2 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_2.jpg
+  Figure 2 caption: Visual patterns learned from training data with the HOG feature
+    (first column) and examples detected from testing data (remaining columns). In
+    the first row, pedestrians walk side by side. In the second row, pedestrians on
+    the left are occluded by pedestrians on the right. Our two-pedestrian detector
+    captures visual cues which cannot be learned with a one-pedestrian detector.
+  Figure 3 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_3.jpg
+  Figure 3 caption: Overview of our implementation of the framework introduced in
+    Eq. (1) .
+  Figure 4 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_4.jpg
+  Figure 4 caption: 'The configurations of two-pedestrian samples from the INRIA dataset
+    together with four sample images. In each sample, the left pedestrian is considered
+    as the anchor. X-axis: the horizontal distance between the two pedestrians divided
+    by the width of the left bounding box. Y-axis: the size of the right pedestrian
+    divided by the size of the left pedestrian in log scale. Samples are not uniformly
+    distributed in the configuration space. A single detector cannot handle the large
+    appearance variation. It is reasonable to cluster these samples to train a mixture
+    model.'
+  Figure 5 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_5.jpg
+  Figure 5 caption: "Use two-pedestrian detection result to refine one-pedestrian\
+    \ detection. The detection scores of one-pedestrian \u03BB 1 , two-pedestrians\
+    \ \u03BB 2 and pedestrian-parts \u03BB p are integrated as the evidence to one-pedestrian\
+    \ configuration z 1 . This evidence is added to the result obtained with the one-pedestrian\
+    \ detector. Examples in the left column are obtained at 1 FPPI on the ETH dataset.\
+    \ Although only activations in one scale are shown, two-pedestrian activations\
+    \ at one scale are able to affect a one-pedestrian activation of a closely related\
+    \ scale. This figure is best viewed in color."
+  Figure 6 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_6.jpg
+  Figure 6 caption: The number of samples (Y-axis) with respect to the aspect ratio
+    (X-axis) measured by height divided width (left) and division of the INRIA training
+    samples in Fig. 4 into A=3 groups according the aspect ratio of two-pedestrian
+    bounding box (right). Best viewed in color.
+  Figure 7 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_7.jpg
+  Figure 7 caption: 'Division of the INRIA training samples in each aspect ratio group
+    into S=3 clusters (best viewed in color). Each column corresponds to an aspect
+    ratio. First row: result of Gaussian mixture model. Second: result of spectral
+    clustering in [53]. Third row: result of K-means.'
+  Figure 8 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_8.jpg
+  Figure 8 caption: 'Two-Pedestrian detectors learned for different clusters. Column
+    1: root filter; Column 2: three part filters found from root filter; Column 3:
+    two pedestrian-part filters; Column 4: examples detected by the detectors in the
+    same rows. Red rectangles are two-pedestrian detection results. Blue rectangles
+    indicate pedestrian-part locations. Best viewed in color.'
+  Figure 9 Link: articels_figures_by_rev_year\2014\SinglePedestrian_Detection_Aided_by_TwoPedestrian_Detection\figure_9.jpg
+  Figure 9 caption: The single-pedestrian root filter in [30] and our pedestrian-part
+    filter of mixture type 7.
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Wanli Ouyang
+  Name of the last author: Xiaogang Wang
+  Number of Figures: 16
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Single-Pedestrian Detection Aided by Two-Pedestrian Detection
+  Publication Date: 2014-12-19 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2377734
+- Affiliation of the first author: computer science department, cornell university,
+    new york, ny
+  Affiliation of the last author: computer science department, cornell university,
+    new york, ny
+  Figure 1 Link: articels_figures_by_rev_year\2014\A_HypergraphBased_Reduction_for_HigherOrder_Binary_Markov_Random_Fields\figure_1.jpg
+  Figure 1 caption: "Resources required to reduce t terms of degrees up to d , for\
+    \ an energy function with n variables each of which occurs with up to k other\
+    \ variables. W is the total weight of all positive terms in the higher-order function.\
+    \ Unlike the other algorithms listed, GRD is only defined for terms of limited\
+    \ degree. There is no clear notion of non-submodular edges in the relaxation produced\
+    \ by GRD, so we mark these entries \u201C\u2013\u201D. Non-submodular weight is\
+    \ the total weight of non-submodular edges in the reduced function."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2014\A_HypergraphBased_Reduction_for_HigherOrder_Binary_Markov_Random_Fields\figure_2.jpg
+  Figure 2 caption: "Our main reduction. At left are all the original positive terms\
+    \ containing the common variable x 1 (so \u03B1 i >0 ). At right are all the new\
+    \ terms we obtain from equation (4). The positive terms on top are just the original\
+    \ terms minus x 1 , and the negative terms on bottom are the original terms with\
+    \ y replacing x 1 ."
+  Figure 3 Link: articels_figures_by_rev_year\2014\A_HypergraphBased_Reduction_for_HigherOrder_Binary_Markov_Random_Fields\figure_3.jpg
+  Figure 3 caption: Denoising examples. At left is the noisy input image, with our
+    result in the middle and Ishikawa's at right. Results are shown after 30 iterations.
+    More images are included in the supplemental material, available online. To compare
+    energy values with visual results, the images on the top row have energies 118,014,
+    26,103 and 38,304 respectively; those on the bottom have energies 118,391, 25,865
+    and 38,336.
+  Figure 4 Link: articels_figures_by_rev_year\2014\A_HypergraphBased_Reduction_for_HigherOrder_Binary_Markov_Random_Fields\figure_4.jpg
+  Figure 4 caption: Energy after each fusion move (left), and percentage of pixels
+    labeled by QPBO (center), for the image at top of Fig. 3. Other images from [2]
+    give very similar curves. (right) Fraction of pixels labeled by QPBO vs total
+    weight of non-submodular edges (as a fraction of the total weight of all edges),
+    along with best-fit lines for each method.
+  Figure 5 Link: articels_figures_by_rev_year\2014\A_HypergraphBased_Reduction_for_HigherOrder_Binary_Markov_Random_Fields\figure_5.jpg
+  Figure 5 caption: Comparison of end-to-end performance on benchmarks in [2] at convergence
+    of the fusion move optimization, averaged over all images. Relative performance
+    compared to our method is shown in parentheses.
+  Figure 6 Link: articels_figures_by_rev_year\2014\A_HypergraphBased_Reduction_for_HigherOrder_Binary_Markov_Random_Fields\figure_6.jpg
+  Figure 6 caption: Performance comparison of reductions, on benchmarks in [2], averaged
+    over 30 iterations of fusion move. Relative performance compared to our method
+    in parenthesis.
+  Figure 7 Link: articels_figures_by_rev_year\2014\A_HypergraphBased_Reduction_for_HigherOrder_Binary_Markov_Random_Fields\figure_7.jpg
+  Figure 7 caption: Total size of reductions, on Ishikawa's benchmarks in [2]. Relative
+    performance of our method in parenthesis.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Alexander Fix
+  Name of the last author: Ramin Zabih
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: A Hypergraph-Based Reduction for Higher-Order Binary Markov Random
+    Fields
+  Publication Date: 2014-12-22 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2382109
+- Affiliation of the first author: department of computer science, technion-israel
+    institute of technology, haifa, israel
+  Affiliation of the last author: department of computer science, technion-israel
+    institute of technology, haifa, israel
+  Figure 1 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_1.jpg
+  Figure 1 caption: Multi-region image segmentation.
+  Figure 10 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_10.jpg
+  Figure 10 caption: Comparison of the proposed method and [46]. (a) The original
+    image. (b) Results obtained with our method using the piecewise constant model.
+    (c) Results obtained with our method using the pairwise similarity model (13)
+    and the similarity measure (16). (d) Results reported in [46] .
+  Figure 2 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_2.jpg
+  Figure 2 caption: "The VIIM contour evolution illustration, with Neumann boundary\
+    \ conditions. Left to right: original contour (shown in black) with \u03B5 -level\
+    \ sets (show in red); corresponding level set function \u03D5(x,y) ; \u03B5 -level\
+    \ sets of \u03D5(x,y) and the evolved contour, at different stages of the evolution."
+  Figure 3 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_3.jpg
+  Figure 3 caption: 'Comparison of results produces using the proposed method with
+    two extension velocities F ext described in Section 4. Upper row: the original
+    image (left), results obtained using the extension velocity suggested in this
+    paper. Bottom row: results obtained using the extension velocity suggested in
+    [48].'
+  Figure 4 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_4.jpg
+  Figure 4 caption: Segmentation result obtained with the proposed method, applied
+    with the piecewise constant model, and the results obtained with the algorithms
+    of Chambolle and Pock [19] and Delong et al. [15].
+  Figure 5 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_5.jpg
+  Figure 5 caption: "Comparison of the results obtained with the proposed method,\
+    \ applied with the piecewise constant model, the method of Chambolle and Pock\
+    \ [19], and the manual \u201Cground truth\u201D segmentation [25]."
+  Figure 6 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_6.jpg
+  Figure 6 caption: 'Boundary benchmarks on the BSDS500: Precision-recall plots and
+    the best F-measures obtained for different algorithms.'
+  Figure 7 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_7.jpg
+  Figure 7 caption: Segmentation results obtained using the proposed method with piecewise
+    constant and general region competition models. (a) Original image. (b, c) The
+    piecewise constant model, with (b) heuristic region merging with , and (c) region
+    merging by energy minimization. (d, e) General region competition model, with
+    image intensity pdf modelled by displaystyle 323 -bin histogram, (d) heuristic
+    region merging with displaystyle Tp = 0.3 , and (e) region merging by energy minimization.
+  Figure 8 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_8.jpg
+  Figure 8 caption: Additional segmentation results obtained using the proposed method
+    with piecewise constant and general region competition models, using heuristic
+    merging algorithm with displaystyle Tc = 0.05 and displaystyle Tp = 0.05 , and
+    results of [15], [19]. (a) Original image; (b, d) piecewise constant model, applied
+    in (b) RGB and (d) CIELAB colorspaces; (c, e) general region competition model,
+    with image intensity pdf modelled using [53], applied in (c) RGB and (e) CIELAB
+    colorspaces; (f) results of [15]; (g) results of [19].
+  Figure 9 Link: articels_figures_by_rev_year\2014\MultiRegion_Active_Contours_with_a_Single_Level_Set_Function\figure_9.jpg
+  Figure 9 caption: Segmentation results obtained for various initial contours, with
+    the piecewise constant model and heuristic region merging algorithm. (a, c, e)
+    Initial contours, and (b, d, f) the corresponding segmented images, colored according
+    to mean intensity values in the obtained regions. Results of [15] (g, i, k) and
+    [19] (h, j, l), initialized using the circular initial regions, shown in columns
+    (a, c, e) above, in the second and the fourth rows. See the accompanying text
+    for details.
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Anastasia Dubrovina-Karni
+  Name of the last author: Ron Kimmel
+  Number of Figures: 14
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: Multi-Region Active Contours with a Single Level Set Function
+  Publication Date: 2014-12-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Boundary Benchmarks on BSDS500
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Region Benchmarks on BSDS500
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2385708
+- Affiliation of the first author: department of information technology and electrical
+    engineering, eth zurich, zurich, switzerland
+  Affiliation of the last author: department of electrical and computer engineering,
+    automation and systems research institute, seoul national university, seoul, korea
+  Figure 1 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_1.jpg
+  Figure 1 caption: Overview of our system. The system consists of three parts. The
+    first part is graph learning to convert video data into a video graph. The second
+    is graph editing to extract useful information (event summarization and rare event
+    detection) from the video graph. The last part is graph matching to integrate
+    information from multiple sources (views).
+  Figure 10 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_10.jpg
+  Figure 10 caption: Selection of representative activities detected by DDP-HMM in
+    the subway platform sequence.
+  Figure 2 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_2.jpg
+  Figure 2 caption: Process of learning nodes. Our system spatially and temporally
+    decomposes the video into 3D segments.
+  Figure 3 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_3.jpg
+  Figure 3 caption: Process of learning edges. Our system connects neighbor nodes
+    while weighting on the edges according to causality, frequency, and significance
+    of events. (c) is an initial graph for the graph-structure editing in the next
+    section.
+  Figure 4 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_4.jpg
+  Figure 4 caption: Process of making hypotheses on the relations.
+  Figure 5 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_5.jpg
+  Figure 5 caption: Process of editing the graph-structure. Using MCMC, our method
+    obtains N samples of the graph-structures. Among the samples, the method selects
+    the best graph-structure as the final result of event summarization or rare event
+    detection.
+  Figure 6 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_6.jpg
+  Figure 6 caption: Process of matching the subgraph. (a) Our method obtains multiple
+    graphs from multiple videos. (b) The method then finds the maximum common subgraph
+    among the graphs and combines them.
+  Figure 7 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_7.jpg
+  Figure 7 caption: The results of event summarization recovered by our method in
+    the subway platform (difficult) sequence. The number in each rectangle denotes
+    a node index. The red arrows represent the existence of significant relations
+    among nodes, whereas the red numbers indicate causality.
+  Figure 8 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_8.jpg
+  Figure 8 caption: The results of event summarization recovered by our method in
+    two other subway platform sequences.
+  Figure 9 Link: articels_figures_by_rev_year\2014\A_Unified_Framework_for_Event_Summarization_and_Rare_Event_Detection_from_Multip\figure_9.jpg
+  Figure 9 caption: The results of rare event detection by our method in the subway
+    platform sequence. The red arrows represent the existence of significant relations
+    between nodes with low frequency, denoted by red numbers. The blue arrows describe
+    whether the nodes are spatial or temporal neighbors of each other.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Junseok Kwon
+  Name of the last author: Kyoung Mu Lee
+  Number of Figures: 18
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: A Unified Framework for Event Summarization and Rare Event Detection
+    from Multiple Views
+  Publication Date: 2014-12-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison in Subway Platform (Difficult) Sequence
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Experiment on the Parameters in the Subway Platform (Difficult)
+      Sequence
+  Table 3 caption:
+    table_text: TABLE 3 Comparison in the Disease Sequence
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Our Methods in the PETS 2006 Sequence
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Our Methods in the PETS 2007 Sequence
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2385695
+- Affiliation of the first author: "technicolor, cesson s\xE9vign\xE9, france"
+  Affiliation of the last author: "technicolor, cesson s\xE9vign\xE9, france"
+  Figure 1 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_1.jpg
+  Figure 1 caption: Multi-view segmentation example of foreground object with the
+    proposed automatic method, using sparse inter-view consistency constraints and
+    without resorting to dense 3D reconstruction.
+  Figure 10 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_10.jpg
+  Figure 10 caption: Comparison with GrabCut monocular approach and influence of the
+    number of views on our segmentation results on Art martiaux datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_2.jpg
+  Figure 2 caption: 'Algorithm outline: The approach iterates between soft classification
+    of sparse 3D samples and update of color models. A final foregroundbackground
+    segmentation is performed in images to transfer sparse sample classification to
+    dense pixel grid in each view.'
+  Figure 3 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_3.jpg
+  Figure 3 caption: 'Principle of multi-view object segmentation using sparse 3D samples:
+    In this synthetic scene, the teddy bear satisfies our definition of foreground
+    object and should be the result of our segmentation method. To identify the foreground
+    region, samples (depicted by the spheres) are created in the common visibility
+    volume. A sample is labeled as foreground (blue sphere), if it projects on foreground
+    regions in all the views. In contrast, it is enough for a sample to project to
+    background in one of the views to be labeled as background. This is the case here
+    for the red sphere, classified as background as it projects to background in the
+    middle and rightmost views, even though it projects to foreground in the leftmost
+    view.'
+  Figure 4 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_4.jpg
+  Figure 4 caption: "Graphical model: I s i , the color of the projection in the image\
+    \ i of the sample s , relates color models \u0398 according to its labeling k\
+    \ s . Parameter \u03C0 k is the mixture coefficient (label prior)."
+  Figure 5 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_5.jpg
+  Figure 5 caption: "Support regions for the color models using the assumption that\
+    \ foreground objects are seen in all images. R Int i is the projection of the\
+    \ common field of view that includes all foreground pixels in image i . Pixels\
+    \ in R Ext i are then known background pixels. Color model \u0398 B i is to be\
+    \ learned for background pixels inside R Int i and \u0398 F is to be learned for\
+    \ foreground pixels (shared between the views)."
+  Figure 6 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_6.jpg
+  Figure 6 caption: "Relation between variables in the final segmentation problem:\
+    \ l p i , x p i and I p i are respectively the binary label, the position and\
+    \ the color value of pixel p in image i . Variable \u039E stands for the 3D sample\
+    \ positions and associated posterior label probabilities. Variable \u0398 represents\
+    \ the foregroundbackground color model."
+  Figure 7 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_7.jpg
+  Figure 7 caption: Results on datasets from [30]. We show (green dots) the projection
+    of samples with high foreground probability ( p f s >0.8 ) at convergence, and
+    final segmentation.
+  Figure 8 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_8.jpg
+  Figure 8 caption: 'Results on Pig and Rabbit [21]: The user indicates background
+    region in one view (red stroke). Green dots indicate projection of samples with
+    high foreground probability ( p f s >0.8 ) at convergence. Last column is the
+    final segmentation.'
+  Figure 9 Link: articels_figures_by_rev_year\2014\Sparse_MultiView_Consistency_for_Object_Segmentation\figure_9.jpg
+  Figure 9 caption: Intermediate results of the algorithm on the Bust dataset ( n=13
+    views) with N=50000 samples. Green dots indicate the projection of the 3D samples
+    from set S with high foreground probability ( p f s >0.8 ). Segmentation at each
+    iteration is performed using the method described in Section 3.3. These intermediate
+    segmentation results are used to study algorithm convergence ( Fig. 12).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Abdelaziz Djelouah
+  Name of the last author: "Patrick P\xE9rez"
+  Number of Figures: 22
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Sparse Multi-View Consistency for Object Segmentation
+  Publication Date: 2014-12-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Different Calibrated Multi-View Datasets Used
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Full Evaluation of the Proposed Approach on the Different
+      Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Comparative Results, Using the Proportion of Correctly Labeled
+      Pixels in the Image ( Accuracy in Percent)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2385704
+- Affiliation of the first author: indraprastha institute of information technology
+    (iiit), delhi
+  Affiliation of the last author: indian institute of technology (iit), delhi
+  Figure 1 Link: articels_figures_by_rev_year\2015\Generalized_Flows_for_Optimal_Inference_in_Higher_Order_MRFMAP\figure_1.jpg
+  Figure 1 caption: A gadget for 4 -clique.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Generalized_Flows_for_Optimal_Inference_in_Higher_Order_MRFMAP\figure_2.jpg
+  Figure 2 caption: Flow graph corresponding to three overlapping 4 cliques and a
+    flow path in it.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Generalized_Flows_for_Optimal_Inference_in_Higher_Order_MRFMAP\figure_3.jpg
+  Figure 3 caption: Example flow graph.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Generalized_Flows_for_Optimal_Inference_in_Higher_Order_MRFMAP\figure_4.jpg
+  Figure 4 caption: "(S,T) cut with four edge covers, EC1,\u2026,EC4 ."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Generalized_Flows_for_Optimal_Inference_in_Higher_Order_MRFMAP\figure_5.jpg
+  Figure 5 caption: Flow state before and after re-distributing flow in a gadget.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Generalized_Flows_for_Optimal_Inference_in_Higher_Order_MRFMAP\figure_6.jpg
+  Figure 6 caption: 'Segmentation: sigma of Gaussian noise added is 60 . Numbers in
+    parentheses show primal value and time taken (in seconds) by each algorithm.'
+  Figure 7 Link: articels_figures_by_rev_year\2015\Generalized_Flows_for_Optimal_Inference_in_Higher_Order_MRFMAP\figure_7.jpg
+  Figure 7 caption: GC and IQ comparison at log scale.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.82
+  Name of the first author: Chetan Arora
+  Name of the last author: S.N. Maheshwari
+  Number of Figures: 7
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Generalized Flows for Optimal Inference in Higher Order MRF-MAP
+  Publication Date: 2015-01-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Example Clique Potential
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Unary Potential
+  Table 3 caption:
+    table_text: TABLE 3 Revised Residual Cap
+  Table 4 caption:
+    table_text: TABLE 4 Energy of the Inferred Solution for a 4 Clique Problem at
+      Different Image Sizes
+  Table 5 caption:
+    table_text: TABLE 5 Inference Time in Seconds for a 4 Clique Problem
+  Table 6 caption:
+    table_text: TABLE 6 Time Comp. at Various Clique Sizes
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2388218
+- Affiliation of the first author: department of computer science, nanjing university
+    of information science and technology, nanjing, nanjing, china
+  Affiliation of the last author: department of electrical engineering and computer
+    science, university of california at merced, merced, ca
+  Figure 1 Link: articels_figures_by_rev_year\2015\Object_Tracking_Benchmark\figure_1.jpg
+  Figure 1 caption: Annotated image sequences for performance evaluation. The first
+    frame of each sequence is shown with the initial bounding box of the target object.
+    The 50 targets marked with green bounding boxes are selected for extensive evaluations.
+    The newly added sequences compared to [83] are denoted by a red cross at the upper
+    right corner of each image. Some frames are cropped for better illustration.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Object_Tracking_Benchmark\figure_2.jpg
+  Figure 2 caption: "Evaluation methods for trackers. In each image, the green box\
+    \ represents the ground-truth target location, and the other colors denote the\
+    \ tracker outputs. Dotted boxes represent the initialization of the tracker. OPE\
+    \ is the simplest\u2014initialize the tracker in the first frame and let it track\
+    \ the target until the end of the sequence. In TRE, a tracker starts at different\
+    \ starting frames initialized with the ground-truth bounding box. In SRE, each\
+    \ tracker runs several times with spatially shifted and scaled initializations.\
+    \ The OPER and SRER metrics are used for restarting a tracker for the rest of\
+    \ the sequence if it fails (based on an overlap threshold) at some frame."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Object_Tracking_Benchmark\figure_3.jpg
+  Figure 3 caption: "An OPER virtual run is created from a set of TRE results. From\
+    \ the first frame, it takes parts of the first run in TRE until the average overlap\
+    \ in the test window is less than a given threshold. If a failure is detected,\
+    \ the last run containing the next frame is used, and this process is repeated\
+    \ until the end. It can also be easily extended to SRER virtual runs. Refer to\
+    \ the text and Algorithm 1 in the supplementary material for more details, available\
+    \ online. In the illustrated example, the window size \u03C9 is 4 and the temporal\
+    \ initialization sampling interval \u03C4 is 5."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Object_Tracking_Benchmark\figure_4.jpg
+  Figure 4 caption: Plots of OPE, SRE, and TRE on TB-100 (first row) and TB-50 (second
+    row). The score for each tracker is shown in the legend. The top 10 trackers are
+    presented for the sake of clarity, and the rest are shown as gray dashed curves.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Object_Tracking_Benchmark\figure_5.jpg
+  Figure 5 caption: SRER plots of the overall performance (upper left) and sequences
+    with different attributes. A curve in an SRER plot shows the average overlap scores
+    ( y -axis) and the average number of failures ( x -axis) for the overlap thresholds
+    (dots on the curve), which are varied from 0 to 1. The black circle represents
+    the score when the overlap threshold is 0.5. The values in the legend are the
+    average overlap scores at the threshold of 0.5.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Object_Tracking_Benchmark\figure_6.jpg
+  Figure 6 caption: SRER plots with different averaging window sizes for failure detection.
+    As the window size for failure detection increases, the average overlap scores
+    and the number of failures decrease. However, the trends and ranks of the trackers
+    remain similar.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.54
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yi Wu
+  Name of the last author: Ming-Hsuan Yang
+  Number of Figures: 6
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Object Tracking Benchmark
+  Publication Date: 2015-01-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluated Tracking Algorithms
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Annotated Sequence Attributes with the Threshold Values in
+      the Performance Evaluation
+  Table 3 caption:
+    table_text: TABLE 3 Attribute Distribution
+  Table 4 caption:
+    table_text: TABLE 4 SRER Evaluation Results on the TB-50 Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2388226
+- Affiliation of the first author: yahoo labs, sunnyvale, ca
+  Affiliation of the last author: department of complexity science, and engineering,
+    graduate school of frontier sciences, the university of tokyo. faculty of science
+    bldg. 7, room 514, 7-3-1 hongo, bunkyo-ku, tokyo 113-0033, japan
+  Figure 1 Link: articels_figures_by_rev_year\2015\CrossDomain_Matching_with_SquaredLoss_Mutual_Information\figure_1.jpg
+  Figure 1 caption: "Image matching results. The best method in terms of the mean\
+    \ error and comparable methods according to the t-test at the significance level\
+    \ 1 percent are specified by ' \u2218 '."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\CrossDomain_Matching_with_SquaredLoss_Mutual_Information\figure_2.jpg
+  Figure 2 caption: Image matching result by LSOM. In this case, 234 out of 320 images
+    (73.1 percent) are matched correctly.
+  Figure 3 Link: articels_figures_by_rev_year\2015\CrossDomain_Matching_with_SquaredLoss_Mutual_Information\figure_3.jpg
+  Figure 3 caption: "Unpaired voice conversion results. The best method in terms of\
+    \ the mean spectral distortion and comparable methods according to the t-test\
+    \ at the significance level 1 percent are specified by ' \u2218 '."
+  Figure 4 Link: articels_figures_by_rev_year\2015\CrossDomain_Matching_with_SquaredLoss_Mutual_Information\figure_4.jpg
+  Figure 4 caption: True spectral envelopes and their estimates.
+  Figure 5 Link: articels_figures_by_rev_year\2015\CrossDomain_Matching_with_SquaredLoss_Mutual_Information\figure_5.jpg
+  Figure 5 caption: Images are automatically aligned into complex grid frames expressed
+    in the Cartesian coordinate system.
+  Figure 6 Link: articels_figures_by_rev_year\2015\CrossDomain_Matching_with_SquaredLoss_Mutual_Information\figure_6.jpg
+  Figure 6 caption: Results of synthetic experiments. (a) Synthetic data ( X vs. Y
+    ). (b) Synthetic temporal signals as a function of time. (c) Alignment paths.
+    Here, the alignment error of LSDTW, CTW, and DTW are 31.8, 69.3, and 73.9, respectively.
+    (d) SMI score as a function of the number of iterations.
+  Figure 7 Link: articels_figures_by_rev_year\2015\CrossDomain_Matching_with_SquaredLoss_Mutual_Information\figure_7.jpg
+  Figure 7 caption: Results of video sequence alignment. (a) The mean and variance
+    of alignment error (lower is better) for different methods. (b) The key frames
+    after alignment using LSDTW.
+  Figure 8 Link: articels_figures_by_rev_year\2015\CrossDomain_Matching_with_SquaredLoss_Mutual_Information\figure_8.jpg
+  Figure 8 caption: Mean action classification accuracy with respect to the number
+    of retrieved sequences. (a) Only sequences of subject 9 are used in training to
+    form a database. (b) Sequences of Subjects 9hbox-12 are used in training. (c)
+    Sequences of all subjects ( 9hbox-16 ) are used in training.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Makoto Yamada
+  Name of the last author: Masashi Sugiyama
+  Number of Figures: 8
+  Number of Tables: 0
+  Number of authors: 6
+  Paper title: Cross-Domain Matching with Squared-Loss Mutual Information
+  Publication Date: 2015-01-01 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2388235
+- Affiliation of the first author: department of computer science and technology and
+    also with the beijing key laboratory of materials science knowledge engineering,
+    school of computer and communication engineering, university of science and technology
+    beijing, beijing, china
+  Affiliation of the last author: institute of automation, chinese academy of sciences,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2015\MultiOrientation_Scene_Text_Detection_with_Adaptive_Clustering\figure_1.jpg
+  Figure 1 caption: "Flowchart of text candidates construction: (a) the original image;\
+    \ (b) character candidates extracted by MSER algorithm, where the green ones are\
+    \ characters marked \u201Cis-character\u201D, the red ones are characters marked\
+    \ \u201Cnon-character\u201D, and the blue circles are their circumcircles; (c)\
+    \ text candidates constructed by morphology clustering, where the ligature between\
+    \ two characters showing that they consist of one pair, the blue rectangles are\
+    \ the bounding rectangles of each group; (d) text candidates after orientation\
+    \ clustering, where pairs whose orientations have a huge difference with orientation\
+    \ clusters are dropped; (e) text candidates constructed after projection clustering,\
+    \ where the blue rectangles are the bounding rectangles of each text candidate;\
+    \ and (f) the final detection results, where the green bounding box is the oriented\
+    \ text line detected, while the red box is the de-skewed result."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\MultiOrientation_Scene_Text_Detection_with_Adaptive_Clustering\figure_2.jpg
+  Figure 2 caption: The divisive binary clustering algorithm.
+  Figure 3 Link: articels_figures_by_rev_year\2015\MultiOrientation_Scene_Text_Detection_with_Adaptive_Clustering\figure_3.jpg
+  Figure 3 caption: Experimental results of samples on MSRA-TD500. Our method can
+    handle most multi-orientation scenes. But for curve text (the last image in second
+    row) and short similar multi-line text (the last image in third row), the orientation
+    clustering may fail.
+  Figure 4 Link: articels_figures_by_rev_year\2015\MultiOrientation_Scene_Text_Detection_with_Adaptive_Clustering\figure_4.jpg
+  Figure 4 caption: Experimental results of samples of our method on USTB-SV1K. Detecting
+    blurred, very small, or seriously distorted text is challenging (in the last row).
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Xu-Cheng Yin
+  Name of the last author: Hong-Wei Hao
+  Number of Figures: 4
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Multi-Orientation Scene Text Detection with Adaptive Clustering
+  Publication Date: 2015-01-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance Comparison on MSRA-TD500 Database
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance (%) Comparison on USTB-SV1K Data Set
+  Table 3 caption:
+    table_text: TABLE 3 Performance ( % ) Comparison on ICDAR 2011 Set
+  Table 4 caption:
+    table_text: TABLE 4 Performance ( % ) Comparison on ICDAR 2013 Set
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2388210
+- Affiliation of the first author: department of computing, imperial college london,
+    mountain view, ca, united kingdom
+  Affiliation of the last author: university of cambridge, cambridge, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2015\Variational_Infinite_Hidden_Conditional_Random_Fields\figure_1.jpg
+  Figure 1 caption: Graphical representation of our Variational IHCRF driven by a
+    number of Dirichlet processes incorporated in the model potentials.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Variational_Infinite_Hidden_Conditional_Random_Fields\figure_2.jpg
+  Figure 2 caption: "Visualization of the \u03C0 -'sticks' used to construct the infinite\
+    \ states in our HCRF-DPM. The fictitious model presented here has two observation\
+    \ features f(1),f(2) , 3 labels y 1 , y 2 , y 3 and fewer than 10 important hidden\
+    \ states h 1 , h 2 , h 3 \u2026 Each 'stick' sums up to 1, and the last piece\
+    \ always represents the sum of the lengths that correspond to all hidden states\
+    \ after the 10 th state. Notice that for the \u03C0 e -'sticks' this corresponds\
+    \ to 30 \u03C9 states. For example \u03C0 e ( h 1 , y 3 | h 2 ) controls the probability\
+    \ of transitioning from h 2 to h 1 in a sequence with label y 3 . See text for\
+    \ more details."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Variational_Infinite_Hidden_Conditional_Random_Fields\figure_3.jpg
+  Figure 3 caption: "Hinton Diagrams of \u03C0 -quantities in node and edge features\
+    \ of variational HCRF-DPM models with L=10 on the first row (a-c), L=20 on the\
+    \ second (d-f), L=30 on the third (g-i), L=40 on the fourth (j-l) for ADA2. The\
+    \ first column presents the \u03C0 -quantities for node features: \u03C0 x for\
+    \ observation features in green, \u03C0 y for labels in black. The second and\
+    \ third columns present the \u03C0 e -quantities for labels 1 and 2 respectively.\
+    \ See text for additional details."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Variational_Infinite_Hidden_Conditional_Random_Fields\figure_4.jpg
+  Figure 4 caption: "HCRF-DPM F1 measure (higher F1 means higher perfomance) achieved\
+    \ on the validation set of ADA2. Our model does not show signs of overfitting:\
+    \ the F1 achieved on the validation set does not decrease as the truncation level\
+    \ L , and thus the number of \u03B8 -parameters, increases."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Variational_Infinite_Hidden_Conditional_Random_Fields\figure_5.jpg
+  Figure 5 caption: "Hinton Diagrams of \u03C0 -quantities in node and edge features\
+    \ of variational HCRF-DPM models with L=10 for PAIN2. The first column presents\
+    \ the \u03C0 -quantities for node features: \u03C0 x for observation features\
+    \ in green, \u03C0 y for labels in black. The second and third columns present\
+    \ the \u03C0 e -quantities for labels 1 and 2 respectively. See text for additional\
+    \ details."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Konstantinos Bousmalis
+  Name of the last author: Zoubin Ghahramani
+  Number of Figures: 5
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Variational Infinite Hidden Conditional Random Fields
+  Publication Date: 2015-01-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Transition Matrix of the HMM Producing Sequences for Label
+      1 with States S1, S2, S3 and S4
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Transition Matrix of the HMM Producing Sequences for Label
+      2 with States S1, S2, S3 and S4
+  Table 3 caption:
+    table_text: TABLE 3 Mean and Variance for the Gaussian States of Each HMM
+  Table 4 caption:
+    table_text: TABLE 4 F1 Measure Achieved by Our HCRF-DPM versus the Best, in Each
+      Fold of Each Problem, Finite HCRF and IHCRF-MCMC
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2014.2388228

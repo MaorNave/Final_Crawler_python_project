@@ -1,0 +1,851 @@
+- Affiliation of the first author: "computer vision laboratory, ic faculty, \xE9cole\
+    \ polytechnique f\xE9d\xE9rale de lausanne (epfl), lausanne, switzerland"
+  Affiliation of the last author: "computer vision laboratory, ic faculty, \xE9cole\
+    \ polytechnique f\xE9d\xE9rale de lausanne (epfl), lausanne, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_1.jpg
+  Figure 1 caption: 'Detecting dendrites in a 3D brightfield image stack. Top row:
+    Minimal intensity projection with two enlarged details. Middle row: Comparison
+    of the responses of our method against a recent model based approach [53] and
+    a classification based one [5]. Bottom row: Centerlines detected after performing
+    non-maximum suppression on the response images. Model-based methods have trouble
+    modeling highly irregular structures. Classification-based approaches respond
+    on the whole body of the tubular structure and do not guarantee maximal response
+    at the centerline. Our method combines robustness against image artifacts and
+    accurate centerline localization.'
+  Figure 10 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_10.jpg
+  Figure 10 caption: Tracing Evaluation. Our method is more robust when used to trace
+    linear structures. The accuracy of our method remains constant for large values
+    of the path length L , while the performance of the other methods decrease. OV
+    is the fraction of points on the ground truth path marked as true positives, the
+    larger the better. AD is the average distance between ground truth path and centerlines
+    extracted automatically, the smaller the better. On the simpler Vivo2P dataset
+    all methods perform well; OOF-based measures appear slightly better than the learning-based
+    ones because the ground-truth paths have been generated using a semi-automated
+    tracing tool that relies on OOF [6].
+  Figure 2 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_2.jpg
+  Figure 2 caption: "Learning a regressor for centerline detection. (a) Raw image;\
+    \ (b) Ground truth centerline; (c) The distance transform to the centerline is\
+    \ used to discriminate points close to it; (d) The function we want to learn is\
+    \ maximal at the centerlines and it is thresholded to a constant value when the\
+    \ local window used to compute features does not contain any centerline points;\
+    \ (e) The function learned with our method; (f) Centerline detected after non-maxima\
+    \ suppression on function \u03C6 . In images from (b) to (f), white indicates\
+    \ lower values."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_3.jpg
+  Figure 3 caption: "The function d in the case of x\u2208R . If a centerline point\
+    \ is located in C , the function we want to learn is obtained from the distance\
+    \ transform D C , after thresholding and scaling. The vertical axis has been scaled\
+    \ for visualization purposes."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_4.jpg
+  Figure 4 caption: "Multiscale centerline detection. (a) Input image containing linear\
+    \ structures at different scales. We want to learn a function with local maxima\
+    \ at centerline points along the spatial and radial axes. (b, top): Values of\
+    \ d for the smaller radius r 1 , (b, bottom): values for the larger radius r 2\
+    \ . (c) The learned multiscale approximation \u03A6 for r 1 and r 2 . (d) The\
+    \ centerlines and the radii are detected with non-maxima suppression in the scale-space.\
+    \ (e) Ground truth centerlines. Best viewed in color."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_5.jpg
+  Figure 5 caption: "For each value of radius r , the input image is convolved with\
+    \ a bank of filters to extract a set of image features. The features are used\
+    \ as input to regressors \u03C6 (0) r . The outputs of the regressors are then\
+    \ convolved with other filter banks to extract new features. These features are\
+    \ fed together with the image features to a second layer of regressors \u03C6\
+    \ (1) r . This process is iterated M times. In the final step, the output of the\
+    \ regressors is fed to \u03A6 , a multiscale regressor, that computes the final\
+    \ score map."
+  Figure 6 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_6.jpg
+  Figure 6 caption: "Improvement obtained by iterative regression. (a) Input image\
+    \ I(x) ; (b) Score map \u03C6 (0) (\u22C5) obtained for M=0 , which corresponds\
+    \ to our earlier work [48]; (c) Score map \u03C6 (M) (\u22C5) with M=2 obtained\
+    \ using our new approach as described in Section 3.2; (d) Score map \u03A6(\u22C5\
+    ) obtained by adding the multiscale learning step described in Section 3.3. Both\
+    \ the iterations and the last multiscale regressor help to remove false detections\
+    \ on the background and to obtain a better localization accuracy of the centerlines.\
+    \ For (b), (c), and (d) we show the maximum projection along the radial dimension\
+    \ for visualization purposes."
+  Figure 7 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_7.jpg
+  Figure 7 caption: Centerline Detection Results. (a) Aerial image. (b) Brightfield
+    image stack. (c) VC6 image stack (d) In vivo two-photon image stack. In each case,
+    we show from top to bottom the original image, the maximum projection along the
+    radial component of our regressor's output, centerlines detected by thresholding
+    after non-maximum suppression, and ground truth centerlines.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_8.jpg
+  Figure 8 caption: Precision Recall curves. Our method outperforms the others on
+    all the datasets we considered, both for centerline detection and joint centerline
+    and radius estimation. Using iterative regression allows us to further improve
+    the results.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Multiscale_Centerline_Detection\figure_9.jpg
+  Figure 9 caption: Example of random paths used in the Tracing Evaluation of Section
+    4.3. The ground truth paths are represented in blue. The paths obtained from the
+    MDOF tubularity score are represented in yellow, while those obtained using the
+    tubularity score returned by our method are in red. The paths obtained with our
+    method are most of the time much closer to the ground truth paths. In particular
+    our method is able to follow the linear structure on a longer distance even in
+    case of complex tree topology, such as the Brightfield stack (b) or in images
+    with many background objects, such as the Aerial image (a). In such cases, the
+    paths returned using MDOF are partially on the background or on adjacent structures.
+    In simpler situations, such as for the Vivo2P dataset (c), the two methods are
+    both able to provide the correct path. Best viewed in color.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Amos Sironi
+  Name of the last author: Pascal Fua
+  Number of Figures: 16
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Multiscale Centerline Detection
+  Publication Date: 2015-07-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Main Mathematical Notations Used in the Paper
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Automated Reconstruction Results
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2462363
+- Affiliation of the first author: school of computer science and software engineering,
+    the university of western australia, 35 stirling highway, crawley, wa, australia
+  Affiliation of the last author: school of electrical, electronic and computer engineering,
+    the university of western australia, 35 stirling highway, crawley, wa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_1.jpg
+  Figure 1 caption: 'From left to right: Original image (a). Our framework first detects
+    shadows (c) using the learned features along the boundaries (top image in (b))
+    and the regions (bottom image in (b)). It then extracts the shadow matte (e) and
+    removes it to produce a shadow free image (d).'
+  Figure 10 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_10.jpg
+  Figure 10 caption: ROC curve comparisons of proposed framework with previous works.
+  Figure 2 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_2.jpg
+  Figure 2 caption: The proposed shadow detection framework. (Best viewed in color.)
+  Figure 3 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_3.jpg
+  Figure 3 caption: ConvNet architecture used for automatic feature learning to detect
+    shadows.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_4.jpg
+  Figure 4 caption: 'The proposed shadow removal framework: After the detection of
+    the shadows in the image, we estimate the umbra, penumbra and object-shadow boundary.
+    Given this information, a multi-level color transfer is applied to obtain a crude
+    estimate of shadow-less image. This rough estimate is further improved using the
+    proposed Bayesian formulation which estimates the optimal shadow-less image along
+    with the shadow model parameters.'
+  Figure 5 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_5.jpg
+  Figure 5 caption: 'Detection of object and shadow boundary: We use the gradient
+    profile along the direction perpendicular to a boundary point (four sample profiles
+    are plotted on the anti-diagonal of above figure) to separate the object-shadow
+    boundary (shown in red in lower right image).'
+  Figure 6 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_6.jpg
+  Figure 6 caption: 'Detection of umbra and penumbra regions: With the detected shadow
+    map (second image from left), we estimate the umbra and penumbra regions (rightmost
+    image) by analyzing the gradient profile (fourth image from left) at the boundary
+    points.'
+  Figure 7 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_7.jpg
+  Figure 7 caption: 'Multi-level Color Transfer: (from left to right) (i) Two example
+    images (a and b), with selected shadow regions. (ii) The recovered shadow-less
+    patch using the technique of Wu and Tang [33]. To highlight the difference with
+    the original patch, we also show the difference image in color. (iii) The result
+    of the local color transfer and its difference with the original patch. (iv) The
+    result of the multi-level color transfer. Note that the multi-level transfer removes
+    noise and preserves the local texture.'
+  Figure 8 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_8.jpg
+  Figure 8 caption: "Shadow Removal Steps: (from left to right) (i) An original image\
+    \ with shadow. (ii) An initial estimate of the shadow-less image using a multi-level\
+    \ color transfer strategy. (iii) Improved estimate along the boundaries using\
+    \ in-painting. (iv, v and vi) The Bayesian formulation is optimized to solve for\
+    \ \u03B1 (iv) and \u03B2 matte (vi) and the final shadow-less image (v)."
+  Figure 9 Link: articels_figures_by_rev_year\2015\Automatic_Shadow_Detection_and_Removal_from_a_Single_Image\figure_9.jpg
+  Figure 9 caption: Examples of our results; Images (first, third row) and shadow
+    masks (second, fourth row); Shadows are in white.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Salman H. Khan
+  Name of the last author: Roberto Togneri
+  Number of Figures: 16
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Automatic Shadow Detection and Removal from a Single Image
+  Publication Date: 2015-07-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluation of the Proposed Shadow Detection Scheme, All Performances
+      Are Reported in Terms of Pixel-Wise Accuracies
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Class-Wise Accuracies of Our Proposed Framework in Comparison
+      with the State-of-the-Art Techniques
+  Table 3 caption:
+    table_text: TABLE 3 Results When ConvNets Were Trained and Tested Across Different
+      Datasets
+  Table 4 caption:
+    table_text: 'TABLE 4 Quantitative Evaluation: RMSE Per Pixel for the UIUC Subset
+      of Images. (The smaller RMSE the better )'
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2462355
+- Affiliation of the first author: institute of systems and robotics (isr), university
+    of coimbra, portugal
+  Affiliation of the last author: institute of systems and robotics (isr), university
+    of coimbra, portugal
+  Figure 1 Link: articels_figures_by_rev_year\2015\Bayesian_Constrained_Local_Models_Revisited\figure_1.jpg
+  Figure 1 caption: The Constrained Local Model combines an ensemble of local feature
+    detectors whose locations are constrained to be in a subspace spanned by a linear
+    model. The novel Bayesian global optimization strategy (BCLM) jointly combines
+    all detectors scores, in a MAP sense, using second order updates of the parameters
+    and modelling the prior distribution. The image shows the local search regions
+    for some highlighted landmarks, followed by a column with the detectors responses
+    and their local detectors, respectively.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Bayesian_Constrained_Local_Models_Revisited\figure_2.jpg
+  Figure 2 caption: Qualitative comparison between the three local optimization strategies.
+    The WPR simply chooses the maximum detector response. The GR approximates the
+    response map by a full Gaussian distribution and KDE uses the mean-shift algorithm
+    to move to the nearest mode of the density. Its uncertainty covariance is found
+    using the entire response map centered at the found mode. The two examples in
+    the right show patches under occlusion (typically multimodal responses).
+  Figure 3 Link: articels_figures_by_rev_year\2015\Bayesian_Constrained_Local_Models_Revisited\figure_3.jpg
+  Figure 3 caption: Distribution of face asymmetry in the evaluated datasets.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Bayesian_Constrained_Local_Models_Revisited\figure_4.jpg
+  Figure 4 caption: Fitting performance curves comparing different detectors (linear,
+    quadratic and MOSSE filters) in the IMM, XM2VTS, BioID and LFW database, respectively.
+    The AVG represents the average location provided by the initial estimate [51].
+  Figure 5 Link: articels_figures_by_rev_year\2015\Bayesian_Constrained_Local_Models_Revisited\figure_5.jpg
+  Figure 5 caption: The bar charts display the (normalized) average location error
+    of the most salient facial features in each dataset. The fitting performance curves
+    are shown below. The table holds quantitative values taken by setting a fixed
+    error amount ( e m =0.1 , i.e. the vertical line in the graphics). Each table
+    entry show how many percentage of images converge with less (or equal) RMS error
+    than the reference. The results show that our proposed methods outperform all
+    the other (using all the local strategies WPR, GR and KDE).
+  Figure 6 Link: articels_figures_by_rev_year\2015\Bayesian_Constrained_Local_Models_Revisited\figure_6.jpg
+  Figure 6 caption: Evaluation of the tracking performance of several fitting algorithms
+    on the FGNET Talking Face [39] sequence. The values on legend box are the mean
+    and standard deviation RMS errors, respectively. According, the table in the bottom
+    shows a full comparative view of the same mean and standard deviation RMS errors
+    but for all the evaluated algorithms. The top images show some BCLM-KDE fitting
+    examples in the tested sequence. Best viewed in color.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Bayesian_Constrained_Local_Models_Revisited\figure_7.jpg
+  Figure 7 caption: Face alignment examples in the Labeled Faces the Wild dataset
+    [40] taken using the BCLM-KDE fitting algorithm.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Pedro Martins
+  Name of the last author: Jorge Batista
+  Number of Figures: 7
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: Bayesian Constrained Local Models Revisited
+  Publication Date: 2015-07-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparative View between the Standard First Order, the Second
+      Order (Proposed) and the BCLM (Proposed) Inference Techniques
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2462343
+- Affiliation of the first author: key laboratory of autonomous systems and networked
+    control, ministry of education, guangzhou, p.r. china
+  Affiliation of the last author: cooperative medianet innovation center, shanghai
+    jiaotong university, shanghai, p.r. china
+  Figure 1 Link: articels_figures_by_rev_year\2015\Laplacian_Regularized_LowRank_Representation_and_Its_Applications\figure_1.jpg
+  Figure 1 caption: Clustering on a toy dataset. (a) A synthetic dataset with two
+    intersecting half moons. (b) Clustering result given by LRR, whose accuracy is
+    57 percent. (c) Clustering result given by NSLLRR, whose accuracy is 96.5 percent.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Laplacian_Regularized_LowRank_Representation_and_Its_Applications\figure_2.jpg
+  Figure 2 caption: Illustration of the affinity matrix produced by different methods.
+    a) LRR. b) NSLLRR.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Laplacian_Regularized_LowRank_Representation_and_Its_Applications\figure_3.jpg
+  Figure 3 caption: "Performance of NSLLRR on the CMU-PIE face database, with different\
+    \ parameter settings. a) \u03BB varies. b) \u03B3 varies. c) \u03B2 varies."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Laplacian_Regularized_LowRank_Representation_and_Its_Applications\figure_4.jpg
+  Figure 4 caption: Samples of test databases.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Laplacian_Regularized_LowRank_Representation_and_Its_Applications\figure_5.jpg
+  Figure 5 caption: Classification error rate versus the labeling percentage on the
+    Zoo dataset, based on LRR, normal-graph NSLLRR and NSHLRR.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Laplacian_Regularized_LowRank_Representation_and_Its_Applications\figure_6.jpg
+  Figure 6 caption: The embeddings of the Zoo dataset with eigenvectors corresponding
+    to the second and third smallest eigenvalues. (a) The cluster accuracy is 74 percent.
+    (b) The cluster accuracy is 91 percent.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.64
+  Name of the first author: Ming Yin
+  Name of the last author: Zhouchen Lin
+  Number of Figures: 6
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Laplacian Regularized Low-Rank Representation and Its Applications
+  Publication Date: 2015-07-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Clustering Results on the CMU-PIE Data Set ( Is the Number
+      of Clusters)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Error Rates (Percent) on CMU-PIE, Based on
+      Various Graphs under Different Percentages of Labeled Samples
+  Table 3 caption:
+    table_text: TABLE 3 Classification Error Rates (Percent) on USPS, Based on Various
+      Graphs under Different Percentages of Labeled Samples
+  Table 4 caption:
+    table_text: TABLE 4 Classification Error Rates (Percent) on the Zoo Dataset, Based
+      on Various Methods under Different Percentages of Labeled Samples
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2462360
+- Affiliation of the first author: beijing municipal key lab of multimedia and intelligent
+    software technology, college of metropolitan transportation, beijing university
+    of technology, beijing, china
+  Affiliation of the last author: school of software technology, dalian university
+    of technology, dalian, china
+  Figure 1 Link: articels_figures_by_rev_year\2015\Heterogeneous_Tensor_Decomposition_for_Clustering_via_Manifold_Optimization\figure_1.jpg
+  Figure 1 caption: The Riemannian trust-region algorithm.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Heterogeneous_Tensor_Decomposition_for_Clustering_via_Manifold_Optimization\figure_2.jpg
+  Figure 2 caption: The overall algorithm for (4).
+  Figure 3 Link: articels_figures_by_rev_year\2015\Heterogeneous_Tensor_Decomposition_for_Clustering_via_Manifold_Optimization\figure_3.jpg
+  Figure 3 caption: Errors with iterations. The low errors in the initial phase are
+    due to non satisfiability of constraints.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Heterogeneous_Tensor_Decomposition_for_Clustering_via_Manifold_Optimization\figure_4.jpg
+  Figure 4 caption: The first row shows the Reconstructed Digits 2, 3, 7 and 9 from
+    the learned centroids. The second row shows the reconstructed digits with positive
+    values.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.51
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.96
+  Name of the first author: Yanfeng Sun
+  Name of the last author: Baocai Yin
+  Number of Figures: 4
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Heterogeneous Tensor Decomposition for Clustering via Manifold Optimization
+  Publication Date: 2015-08-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Optimization-Related Ingredients for (12)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results for Random Initialization
+  Table 3 caption:
+    table_text: TABLE 3 Results on the CBCL Face Dataset with 1,200 Randomly Chosen
+      Data (600 from Each Class)
+  Table 4 caption:
+    table_text: TABLE 4 Results for the MNIST Handwritten Digits with 1,000 Randomly
+      Chosen Images (100 from Each Class)
+  Table 5 caption:
+    table_text: TABLE 5 Results on PIE Face Dataset with about 600 Randomly Chosen
+      Data
+  Table 6 caption:
+    table_text: TABLE 6 Results on ORL and YaleB Face Datasets
+  Table 7 caption:
+    table_text: TABLE 7 Results on the DynTex++ Dataset
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2465901
+- Affiliation of the first author: computer science department, university of haifa
+  Affiliation of the last author: computer science department, university of haifa
+  Figure 1 Link: articels_figures_by_rev_year\2015\Recognition_Using_Hybrid_Classifiers\figure_1.jpg
+  Figure 1 caption: "Examples of 1D random projections of the background class. The\
+    \ two histograms on the left correspond to grey-level with 8\xD78 filter size\
+    \ (as common in work on natural image statistics). The projections are clearly\
+    \ non-Gaussian. The other two histograms correspond to BoW of SIFT features (the\
+    \ blue solid line). The projections are very close to Gaussians (dashed red line)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Recognition_Using_Hybrid_Classifiers\figure_2.jpg
+  Figure 2 caption: Relation between the percentage of natural images in the acceptance
+    region (a half-space) and the Gaussian approximation in Eq. (1), tested on the
+    Caltech-256 and Scenes-15 data sets. The plot is zoomed on the [0, 0.3] interval
+    of the probability, which is more relevant to our purpose, as the probability
+    volume of the background in the acceptance region should be small.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Recognition_Using_Hybrid_Classifiers\figure_3.jpg
+  Figure 3 caption: "Histograms of values of the histogram intersection (left), \u03C7\
+    \ 2 (middle), and SPM (left) kernels with randomly selected parameters, applied\
+    \ to many background samples represented by a BoW of SIFT features on Caltech-256."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Recognition_Using_Hybrid_Classifiers\figure_4.jpg
+  Figure 4 caption: Histograms of the background empirical probability values in the
+    acceptance region of the hybrid classifiers.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Recognition_Using_Hybrid_Classifiers\figure_5.jpg
+  Figure 5 caption: 'Left: the relation between the number of vectors required for
+    approximation (with a constant reconstruction error) of unlabeled samples ( y
+    -axis) versus the number of categories these samples were taken from ( x -axis).
+    Right: the relation between the effective PCA dimension of a set of unlabeled
+    samples ( y -axis) versus the number of categories these samples were taken from
+    ( x -axis).'
+  Figure 6 Link: articels_figures_by_rev_year\2015\Recognition_Using_Hybrid_Classifiers\figure_6.jpg
+  Figure 6 caption: Comparison of the classifiers which were trained on clusters.
+    Each point represents one cluster, the x -coordinate correspond to the AUC of
+    LDA classifier, and the y-coordinate to the AUC of a hybrid linear classifier,
+    trained on the same cluster and tested on the all windows from the test set (all
+    object of the category, to which the cluster belongs to, are labeled as positive).
+    The clusters are obtained by partitioning each of 20 categories from PASCAL VOC
+    2007 into varying number of clusters.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Recognition_Using_Hybrid_Classifiers\figure_7.jpg
+  Figure 7 caption: Comparison of the classification performance on 26 letters, obtained
+    by a minimum correlation ensemble of linear hybrid classifiers with that of minimum
+    correlation ensemble of linear SVM [33] on the left, and of linear hybrid on the
+    right. Each corresponds to 1-EER of single letter.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Recognition_Using_Hybrid_Classifiers\figure_8.jpg
+  Figure 8 caption: KL divergence of the projected distribution from normal as a function
+    of a number of categories in the background.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Margarita Osadchy
+  Name of the last author: Dolev Raviv
+  Number of Figures: 8
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Recognition Using Hybrid Classifiers
+  Publication Date: 2015-08-07 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Examples of 1D Projections of Test Images on Separating Hyperplanes\
+      \ Corresponding to Different Hybrid Classifiers: The First Four Distributions\
+      \ Correspond to Classifiers Trained on Different Categories from Caltech-256,\
+      \ the First Two\u2014Linear Classifier, the Third and Fourth\u2014SPM Kernel\
+      \ Classifiers; the Last Two Correspond to SPM Kernel Trained on Two Different\
+      \ Categories from Scene-15"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average EER
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of the Computational and Memory Resources for Kernel
+      SVM versus Kernel Hybrid Classifiers for Caltech 256
+  Table 4 caption:
+    table_text: TABLE 4 Classification Rate Measured as EER, Averaged over 26 Letters
+  Table 5 caption:
+    table_text: TABLE 5 Detection Average Precision (%) on VOC 2007 Test
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2465910
+- Affiliation of the first author: department of electrical engineering, kaist, daejeon,
+    republic of korea
+  Affiliation of the last author: department of electrical engineering, kaist, daejeon,
+    republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_1.jpg
+  Figure 1 caption: Illustrations of the potential problems in minimizing nuclear
+    norm (all singular values). The ground truth subspace (green) is a 1D line corrupted
+    with sparse outliers and noise. In (a), the estimated subspace is biased to the
+    estimated axis that has a smaller nuclear norm but a second singular value larger
+    than the ground truth coordinate. In (b), some inliers located on the ground truth
+    sub-space are regarded as outliers to achieve a smaller singular value.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_10.jpg
+  Figure 10 caption: Convergence behavior of RPCA [31] and our method for the rank
+    2,3 and 4.
+  Figure 2 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_2.jpg
+  Figure 2 caption: "A toy example comparison between the nuclear norm solution and\
+    \ the PSSV solution. The Y-axis represents the magnitude of the nuclear norm and\
+    \ PSSV. The red dots represent the minimum points of the magnitude. The graphs\
+    \ show the nuclear norm and the PSSV of 2\xD72 matrices A=[11;3x] in (a) and [11;1x]\
+    \ in (b) with x varying from 0 to 4. In (a), the minimum point of nuclear norm\
+    \ is at x=1 where the singular values of A are equal to [3.4142,0.5858] (i.e.,\
+    \ rank- 2 ). As for the PSSV, the minimum point is at x=3 with singular values\
+    \ equal to [4.4721,0.0000] (i.e., rank- 1 ). In this toy example, the nuclear\
+    \ norm favors a rank- 2 solution over a rank- 1 solution because the rank- 2 solution\
+    \ provides the minimum nuclear norm. In contrast, the PSSV achieves the lowest\
+    \ rank (rank- 1 ) solution. In (b), when the basis of the first row of A is partially\
+    \ supported by another sample (second row), the nuclear norm and the PSSV both\
+    \ achieve the rank- 1 solution at minima."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_3.jpg
+  Figure 3 caption: "Success ratio for synthetic data with a varying number of columns\
+    \ (observations) n . Comparison between RPCA (nuclear norm) and ours (PSSV) for\
+    \ rank-1,2,3,5,10 cases. The X-axis represents the column size, and the Y\u2013\
+    axis represents the corruption ratio r\u2208[0,0.4] . The color magnitude represents\
+    \ the success ratio [0, 1]. The white dotted lines are provided as a guide for\
+    \ easier comparison."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_4.jpg
+  Figure 4 caption: "Success ratio for synthetic data with a varying number of rows\
+    \ (dimension) m (a-d). Comparison between RPCA (nuclear norm) and ours (PSSV)\
+    \ for the rank-1 case (a,b), and for the rank-3 case (c,d). The Y-axis represents\
+    \ the corruption ratio r\u2208[0,0.4] . The X-axis represents the log scale row\
+    \ size log 10 m\u2208[ log 10 100, log 10 12,800] in (a-d). The color magnitude\
+    \ represents the success ratio [0,1]."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_5.jpg
+  Figure 5 caption: NRMSE comparison on a sufficient sample condition with a rank-
+    3 matrix mathbf O in mathbb R10,000 times 3,000 . Under the sufficient sample
+    case, the nuclear norm and PSSV solutions are very similar.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_6.jpg
+  Figure 6 caption: Comparison for the rank deficiency of the estimated low-rank matrix
+    hatmathbf A for the rank-3 case, obtained by RPCA (a) and our method (b). The
+    red regions indicate rank deficiency, i.e. the rank of the recovered matrix is
+    lower than the constraint rank. The X-axis represents the column size, and the
+    Y-axis represents the corruption ratio r in [0, 0.4] . The color magnitude represents
+    the success ratio [0,1].
+  Figure 7 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_7.jpg
+  Figure 7 caption: Distribution of residual errors with 1,000 different random initializations.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_8.jpg
+  Figure 8 caption: Accuracy comparisons with a varying outlier ratio and deficient
+    number of samples for SVP [27] based and WNNM [11] based methods, LMaFit [39],
+    Zheng et al. [47], Eriksson and van den Hengel [18] , and our method. The experiments
+    consist of small scale problems ( mathbf O in mathbb R30 times 7 with rank-2)
+    in (a,c) and large scale problems ( mathbf O in mathbb R5000 times 20 with rank-3)
+    in (b,d). The cases with well-sampled and under-sampled data on subspaces are
+    shown at the top and bottom rows respectively. The X-axis represents the percentage
+    of outlier, and the Y-axis represents the average error. LMaFit, Zheng et al.
+    and Eriksson et al. are MF methods. MF methods also result in low accuracy under
+    the case of deficient number of samples. Comparing (b) and (d), MF methods are
+    prone to the data under-sampled on subspaces, because bilinear model enforcedly
+    constrains the target rank and excessively attempts to match it.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Partial_Sum_Minimization_of_Singular_Values_in_Robust_PCA_Algorithm_and_Applicat\figure_9.jpg
+  Figure 9 caption: Effects when the target rank is incorrectly set. We set the input
+    target rank N = Ntextrmtrue + ttextrmoffset , where the truth rank Ntextrmtrue
+    = 3 . The lower value the better.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Tae-Hyun Oh
+  Name of the last author: In So Kweon
+  Number of Figures: 23
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: 'Partial Sum Minimization of Singular Values in Robust PCA: Algorithm
+    and Applications'
+  Publication Date: 2015-08-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of the Compared Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Singular Values of Photometric Stereo Input for n=5 in Figs.
+      17 and 18b, 18c
+  Table 3 caption:
+    table_text: TABLE 3 Photometric Stereo Results of Bunny with 5 Percent Corruption
+      Ratio, Additional Specularities and Shadows
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2465956
+- Affiliation of the first author: sri international, 201 washington rd, princeton,
+    nj
+  Affiliation of the last author: school of electrical engineering and computer science,
+    oregon state university, 1148 kelley engineering center, office 2107, corvallis,
+    or
+  Figure 1 Link: articels_figures_by_rev_year\2015\Sum_Product_Networks_for_Activity_Recognition\figure_1.jpg
+  Figure 1 caption: "Our approach: (a) A video is represented by the counting grid\
+    \ model of visual words; every grid point u is assigned a distribution of word\
+    \ counts \u03C0 uz ; space-time windows B b are placed across the counting grid\
+    \ and characterized by a Bag-of-Words model in terms of aggregate distributions\
+    \ of word counts on the grid that fall within the window, \u2211 u\u2208 B b \u03C0\
+    \ uz . (b) Our activity model is the sum-product network that consists of levels\
+    \ of sum and product nodes, ending with space-time windows at terminal nodes;\
+    \ children nodes in the SPN can be shared by multiple parents. (c) SPN inference\
+    \ amounts to parsing, and identifying foreground (green space-time windows). (d)\
+    \ Localization of the activity \u201Cunloading of the trunk\u201D in an example\
+    \ sequence from the VIRAT dataset [1]."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Sum_Product_Networks_for_Activity_Recognition\figure_2.jpg
+  Figure 2 caption: Table of notation used in Sections 3-7 .
+  Figure 3 Link: articels_figures_by_rev_year\2015\Sum_Product_Networks_for_Activity_Recognition\figure_3.jpg
+  Figure 3 caption: A frame from our volleyball videos with the space-time grid of
+    points (blue), and a foreground space-time window B (green), and visual words
+    generated by CG within B (right).
+  Figure 4 Link: articels_figures_by_rev_year\2015\Sum_Product_Networks_for_Activity_Recognition\figure_4.jpg
+  Figure 4 caption: 'Our inference on an example video from the VIRAT dataset: (a)
+    A part of the parse graph using SPN+CG and the inferred foreground (green). (b)
+    CG is equivalent to the counting grid model of [3] which selects all space-time
+    windows as foreground.'
+  Figure 5 Link: articels_figures_by_rev_year\2015\Sum_Product_Networks_for_Activity_Recognition\figure_5.jpg
+  Figure 5 caption: Average classification accuracy of SPN+CG(WS,V) and SPN+CG(S,V)
+    on the Volleyball dataset as a function of the number of training examples.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Sum_Product_Networks_for_Activity_Recognition\figure_6.jpg
+  Figure 6 caption: Confusion matrices of SPN+CG(WS) and SPN+CG(S) on (a) VIRAT, (b)
+    Volleyball, and (c) UT-interactions.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Sum_Product_Networks_for_Activity_Recognition\figure_7.jpg
+  Figure 7 caption: "Foreground localization of SPN+CG on example vides from: (a)\
+    \ the Volleyball dataset showing the activity \u201Csetting the ball to the left\u201D\
+    ; (b) the VIRAT dataset showing the activity \u201Cloading a vehicle\u201D; and\
+    \ (c) the UT-Interaction dataset showing the activity \u201Chugging\u201D. The\
+    \ estimated foreground space-time windows are marked green. SPN+CG correctly localized\
+    \ \u201Chugging\u201D which simultaneously co-occurs next to the activity \u201C\
+    pointing\u201D. We visualize only a subset of points of the counting grid, for\
+    \ clarity."
+  Figure 8 Link: articels_figures_by_rev_year\2015\Sum_Product_Networks_for_Activity_Recognition\figure_8.jpg
+  Figure 8 caption: "An example from the UT-Interaction dataset where SPN+CG correctly\
+    \ detected that the video shows the activity \u201Chugging\u201D, but also wrongly\
+    \ estimated that the space-time window occupied by the activity \u201Cshaking\
+    \ hands\u201D belongs to the foreground of \u201Chugging\u201D. SPN+CG got confused\
+    \ because \u201Cshaking hands\u201D co-occurs very close to the relatively similar\
+    \ activity \u201Chugging\u201D."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Mohamed R. Amer
+  Name of the last author: Sinisa Todorovic
+  Number of Figures: 8
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Sum Product Networks for Activity Recognition
+  Publication Date: 2015-08-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Classification Accuracy in [Percent] of SPN+CG(WS,V)
+      on the VIRAT and Volleyball Datasets Using Different SPN Heights, SPN Widths
+      of Non-Terminal levels, Numbers of Points in the Counting Grid, and Different
+      Sizes of Space-Time Windows
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Classification Accuracy in [Percent] on the KTH, UT-Interactions,
+      VIRAT, and Volleyball Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Recall and Precision (Given in the Parentheses) for Different
+      Sizes of Space-Time Windows
+  Table 4 caption:
+    table_text: TABLE 4 Average Classification Accuracy, Recall, and Precision for
+      Valid (V) and Invalid (I) Architectures Using SPN + CG(S) with Space-Time windows
+      of Sizes m=2,3,4
+  Table 5 caption:
+    table_text: TABLE 5 Average Precision (AP) in [Percent] for Detection on TRECVID
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2465955
+- Affiliation of the first author: department of computer science and engineering,
+    the chinese university of hong kong
+  Affiliation of the last author: department of computer science and engineering,
+    the chinese university of hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_1.jpg
+  Figure 1 caption: Saliency detection with structure confusion. Small-scale strong
+    details easily influence the process and cause erroneous results.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_10.jpg
+  Figure 10 caption: Dataset complexity comparison. (a) and (b) are from MSRA-1000
+    and ECSSD respectively. The latter is visually complex and also has a small foregroundbackground
+    difference. Figure (c) shows the histogram of foregroundbackground difference
+    on two datasets, evaluated on L, a, b channels separately. It manifests that our
+    dataset has more similar foregroundbackground pairs, thus becomes more difficult
+    for saliency detection.
+  Figure 2 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_2.jpg
+  Figure 2 caption: An overview of our hierarchical framework. We extract three image
+    layers from the input, and then compute saliency cues from each of these layers.
+    They are finally fed into a hierarchical inference model to get the final results.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_3.jpg
+  Figure 3 caption: Region-merge results under different scales.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_4.jpg
+  Figure 4 caption: Our region scale is defined as the largest square that a region
+    can contain. In this illustration, the scales of regions a and b are less than
+    5, and that of c is larger than 5.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_5.jpg
+  Figure 5 caption: Efficient computation of scale transform. (a) Initial region map.
+    (b) Map labels and the box filter. (c) Filtered region map. As shown in (c), all
+    colors in R1 are updated compared to the input, indicating a scale smaller than
+    3.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_6.jpg
+  Figure 6 caption: Saliency cue maps in three layers and our final saliency map.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_7.jpg
+  Figure 7 caption: Comparison of inference models with and without the local consistency
+    term. Enforcing local connection makes the final saliency map [16] in (f) less
+    affected by similar color in the background.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_8.jpg
+  Figure 8 caption: Example images from ECSSD. The images in the first row contain
+    complex structures either in the salient foreground or the non-salient background.
+    The second row shows the corresponding objects marked by human.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Hierarchical_Image_Saliency_Detection_on_Extended_CSSD\figure_9.jpg
+  Figure 9 caption: An example that our new CHS model does not outperform previous
+    HS [16] model.
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.91
+  Name of the first author: Jianping Shi
+  Name of the last author: Jiaya Jia
+  Number of Figures: 16
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Hierarchical Image Saliency Detection on Extended CSSD
+  Publication Date: 2015-08-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Comparison for MAE on ECSSD, MSRA-1000, and MSRA-5000
+      Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance of Single-Layer versus Multi-Layer
+  Table 3 caption:
+    table_text: TABLE 3 Performance of Traditional Scale Measure versus Our Scale
+      Measure for F-Measure under 7 Different Scales
+  Table 4 caption:
+    table_text: TABLE 4 The Maximun F-Measure for Different Layer Number
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2465960
+- Affiliation of the first author: "d2, max planck institute for informatics, saarbr\xFC\
+    cken, saarland, germany"
+  Affiliation of the last author: "d2, max planck institute for informatics, saarbr\xFC\
+    cken, saarland, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_1.jpg
+  Figure 1 caption: What makes object detection proposals effective?
+  Figure 10 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_10.jpg
+  Figure 10 caption: 'Comparison between all considered datasets: PASCAL VOC 2007
+    test set, ImageNet 2013 validation set, MS COCO 2014 validation set (see methods
+    legend Fig. 7c).'
+  Figure 2 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_2.jpg
+  Figure 2 caption: "Examples of rotation perturbation. (a) Shows the largest rectangle\
+    \ with the same aspect as the original image that can fit into the image under\
+    \ a 20 degree rotation, and (b) the resulting crop. All other rotations are cropped\
+    \ to the same dimensions, e.g., the \u22125 degree rotation in (c) to the crop\
+    \ in (d)."
+  Figure 3 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_3.jpg
+  Figure 3 caption: Illustration of the perturbation ranges used for the repeatability
+    experiments.
+  Figure 4 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_4.jpg
+  Figure 4 caption: "Example of the image perturbations considered. Top to bottom,\
+    \ left to right: original, blur, illumination, JPEG artefact, rotation, scale\
+    \ perturbations, and \u201Csalt and pepper\u201D noise."
+  Figure 5 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_5.jpg
+  Figure 5 caption: Repeatability results under various perturbations.
+  Figure 6 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_6.jpg
+  Figure 6 caption: Recall versus IoU threshold on the PASCAL VOC 2007 test set.
+  Figure 7 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_7.jpg
+  Figure 7 caption: Recall versus number of proposal windows on the PASCAL VOC 2007
+    test set.
+  Figure 8 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_8.jpg
+  Figure 8 caption: Recall on the ImageNet 2013 validation set.
+  Figure 9 Link: articels_figures_by_rev_year\2015\What_Makes_for_Effective_Detection_Proposals\figure_9.jpg
+  Figure 9 caption: Recall on the MS COCO 2014 validation set.
+  First author gender probability: 0.91
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jan Hosang
+  Name of the last author: Bernt Schiele
+  Number of Figures: 15
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: What Makes for Effective Detection Proposals?
+  Publication Date: 2015-08-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Different Detection Proposal Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 LM-LLDA Detection Results on PASCAL 2007 (with Bounding Box
+      Regression)
+  Table 3 caption:
+    table_text: TABLE 3 Mean Average Precision (mAP) on PASCAL 2007 for Multiple Detectors
+      and Proposal Methods (Using 1,000 Proposals)
+  Table 4 caption:
+    table_text: TABLE 4 Fast R-CNN (Model M) Detection Results (AP) on PASCAL VOC
+      2007
+  Table 5 caption:
+    table_text: "TABLE 5 Fast R-CNN (Model L) Detection Results on PASCAL 2007 Test\
+      \ Using EdgeBoxesAR and Given Access to \u201COracles\u201D that Provide Additional\
+      \ Information to the Detector"
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2465908

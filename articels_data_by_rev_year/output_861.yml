@@ -1,0 +1,852 @@
+- Affiliation of the first author: department of automation, tsinghua university,
+    beijing, china
+  Affiliation of the last author: department of automation, tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_1.jpg
+  Figure 1 caption: The flow-chart of our proposed CA-LBFL approach for face representation.
+    For each training image, we first extract pixel difference vectors (PDV) and learn
+    a discriminative mapping W to project each PDV into context-aware binary codes,
+    where adjacent bits are enforced as equal as possible to enhance the robustness
+    of the descriptor. Then, a codebook is learned by clustering for feature encoding.
+    For each test image, the PDVs are first extracted and then projected into context-aware
+    binary codes using the learned feature mapping. Finally, a histogram feature descriptor
+    is extracted from binary codes with the learned codebook.
+  Figure 10 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_10.jpg
+  Figure 10 caption: ROC curves of different methods on LFW with the image-restricted
+    with label-free outside data setting.
+  Figure 2 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_2.jpg
+  Figure 2 caption: "An illustration to show how to extract a pixel difference vector\
+    \ (PDV) from the original face image in our approach. Given any pixel in the image,\
+    \ we first compute the differences between the central pixel and its (2R+1)\xD7\
+    (2R+1) neighboring pixels, where R is the parameter to set the neighborhood size.\
+    \ Then, these differences are aligned as a vector which becomes the PDV feature\
+    \ of the pixel. R is selected as 1 in this figure for easy illustration, so that\
+    \ the PDV is a 8-dimensional vector as there are eight neighboring pixels selected."
+  Figure 3 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_3.jpg
+  Figure 3 caption: Learning without contextual information in (a) CBFD and (b) our
+    CA-LBFL. CA-LBFL learns context-aware binary codes that adjacent bits tend to
+    be equal. We see that when face images are affected by variations such as varying
+    poses, expressions, illuminations, occlusions, resolutions, and backgrounds, binary
+    codes learned by our method still keep smooth and are more stable compared with
+    context-unaware methods.
+  Figure 4 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_4.jpg
+  Figure 4 caption: An illustration of the physical meaning of J 1 . The formula above
+    represents the number of bitwise changes in each binary code which encourages
+    all-zeros or all-ones descriptors, while the below one prefers one-shift binary
+    descriptors and improves the diversity of learned binary codes.
+  Figure 5 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_5.jpg
+  Figure 5 caption: The flow-chart of face representation approach based on CA-LBFL.
+    We first divide each training face into several non-overlapped regions and learn
+    the feature mapping W and the codebook for each region. Then, we apply the learned
+    filter and the codebook to extract histogram feature for each block and concatenate
+    them into a longer feature for face representation. Lastly, the similarity of
+    face images is measured with the nearest neighbor classifier.
+  Figure 6 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_6.jpg
+  Figure 6 caption: An illustration to show how to extract PDV vectors in different
+    scales at the same position. For pixels in each scale, we first compute the differences
+    between the central pixel and these lr neighboring pixels. Then, these differences
+    are aligned as a vector, which becomes the input vector in this scale. R is selected
+    as 2 in this figure for easy illustration, so that there are two vectors extracted
+    with the lengths of 8 and 16, separately.
+  Figure 7 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_7.jpg
+  Figure 7 caption: An illustration to show how to learn pairs of hash functions to
+    minimize the gap between corresponding binary codes from heterogeneous face images.
+    For the two corresponding PDVs extracted from the same position of heterogeneous
+    face images (NIR image for the left, and VIS image for the right), a pair of hash
+    functions are learned to minimize the difference between the binary codes, as
+    well as to follow the objective in CA-LBFL, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_8.jpg
+  Figure 8 caption: Average area under ROC (%) of LFW dataset with the unsupervised
+    setting versus varying (a) binary code length, (b) dictionary size and (c) bitwise
+    shifts.
+  Figure 9 Link: articels_figures_by_rev_year\2017\ContextAware_Local_Binary_Feature_Learning_for_Face_Recognition\figure_9.jpg
+  Figure 9 caption: ROC curves of different methods on LFW with the unsupervised setting.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.59
+  Name of the first author: Yueqi Duan
+  Name of the last author: Jie Zhou
+  Number of Figures: 12
+  Number of Tables: 13
+  Number of authors: 4
+  Paper title: Context-Aware Local Binary Feature Learning for Face Recognition
+  Publication Date: 2017-05-31 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Average Area Under ROC of LFW Dataset with the Unsupervised\
+      \ Setting versus Varying \u03BB 1 , \u03BB 2 , and \u03BB 3"
+  Table 10 caption:
+    table_text: TABLE 10 Comparisons of the Rank-One Recognition Rate (%) and the
+      Mean Verification Rate (%) with the Standard CASIA NIR-VIS 2.0 Evaluation Protocol,
+      Where VR1 and VR2 Respectively Denote the Mean Verification Rate When the FAR
+      Is Set to 0.1 and 1.0 Percent
+  Table 2 caption:
+    table_text: TABLE 2 Mean Verification Rate (VR) (%) and Area Under ROC (AUC) (%)
+      Comparison with State-of-the-Art Face Descriptors Under the Unsupervised Setting
+      of the Standard LFW Protocol
+  Table 3 caption:
+    table_text: TABLE 3 Mean Verification Rate (VR) and the Standard Error (%) Comparison
+      with State-of-the-Art Face Descriptors Under the Image-Restricted with Label-Free
+      Outside Data Setting of the Standard LFW Protocol
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Mean Verification Rate (VR) and the Standard
+      Error (%) Under the Image-Restricted with Label-Free Outside Data Setting of
+      the Standard LFW Protocol
+  Table 5 caption:
+    table_text: TABLE 5 Memory Cost of Each Local Descriptor (Bit), Final Feature
+      Dimension and Computational Time (ms) of the Proposed CA-LBFL Method Compared
+      with Different Feature Extraction Methods
+  Table 6 caption:
+    table_text: TABLE 6 Recognition Accuracy and the Standard Error (%) Comparison
+      with the Commonly Used Face Descriptors Under the Image-Restricted Setting of
+      the Standard YTF Protocol
+  Table 7 caption:
+    table_text: TABLE 7 Recognition Accuracy and the Standard Error (%) Comparison
+      with the State-of-the-Art Face Verification Methods Under the Image-Restricted
+      Setting of the Standard YTF Protocol
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of Mean Accuracy and the Standard Error (%) Under
+      the Image-Restricted Setting of the Standard YTF Protocol
+  Table 9 caption:
+    table_text: TABLE 9 Rank-One Recognition Rates (%) Comparison with State-of-the-Art
+      Feature Descriptors with the Standard FERET Evaluation Protocol
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2710183
+- Affiliation of the first author: tencent ai lab, shenzhen, china
+  Affiliation of the last author: tencent ai lab, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2017\SubSelective_Quantization_for_Learning_Binary_Codes_in_LargeScale_Image_Search\figure_1.jpg
+  Figure 1 caption: The results on CIFAR. All the subfigures share the same legends.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\SubSelective_Quantization_for_Learning_Binary_Codes_in_LargeScale_Image_Search\figure_2.jpg
+  Figure 2 caption: The results on MNIST and CIFAR at 32 bits. Comparison of the deviation
+    of ITQ-SS and ITQ when changing sampling ratio.
+  Figure 3 Link: articels_figures_by_rev_year\2017\SubSelective_Quantization_for_Learning_Binary_Codes_in_LargeScale_Image_Search\figure_3.jpg
+  Figure 3 caption: The results on Tiny-1M. All the subfigures share the same set
+    of legends.
+  Figure 4 Link: articels_figures_by_rev_year\2017\SubSelective_Quantization_for_Learning_Binary_Codes_in_LargeScale_Image_Search\figure_4.jpg
+  Figure 4 caption: The results of kernel embedding binary encoding on CIFAR.
+  Figure 5 Link: articels_figures_by_rev_year\2017\SubSelective_Quantization_for_Learning_Binary_Codes_in_LargeScale_Image_Search\figure_5.jpg
+  Figure 5 caption: The results of kernel embedding binary encoding on MNIST.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Yeqing Li
+  Name of the last author: Junzhou Huang
+  Number of Figures: 5
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Sub-Selective Quantization for Learning Binary Codes in Large-Scale
+    Image Search
+  Publication Date: 2017-05-31 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2710186
+- Affiliation of the first author: "signal processing group and bioinspired communication\
+    \ systems lab, technische universit\xE4t darmstadt, darmstadt, germany"
+  Affiliation of the last author: "bioinspired communication systems lab and centre\
+    \ for cognitive science, technische universit\xE4t darmstadt, darmstadt, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2017\A_Bayesian_Approach_to_Policy_Recognition_and_State_Representation_Learning\figure_1.jpg
+  Figure 1 caption: "Graphical model of the policy recognition framework. The underlying\
+    \ dynamical structure is that of an MDP whose global control parameter \u0398\
+    \ is treated as a random variable with prior distribution parametrized by \u03B1\
+    \ . The indicator node z is used for the clustering model in Section 2.2. Observed\
+    \ variables are highlighted in gray."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\A_Bayesian_Approach_to_Policy_Recognition_and_State_Representation_Learning\figure_2.jpg
+  Figure 2 caption: "Schematic illustration of the clustering model. The state space\
+    \ S is partitioned into a set of clusters C k , each governed by its own local\
+    \ control parameter \u03B8 k ."
+  Figure 3 Link: articels_figures_by_rev_year\2017\A_Bayesian_Approach_to_Policy_Recognition_and_State_Representation_Learning\figure_3.jpg
+  Figure 3 caption: Schematic illustration of the ddCRP-based clustering applied to
+    the reduced state space model in Section 2.3. Each trajectory state is connected
+    to some other state of the sequence. The connected components of the resulting
+    graph implicitly define the state clustering. Coloring of the background illustrates
+    the spatial cluster extrapolation (see Section A in the supplement, available
+    online). Note that the underlying decision-making process is assumed to be discrete
+    in time; the continuous gray line shown in the figure is only to indicate the
+    temporal ordering of the trajectory states.
+  Figure 4 Link: articels_figures_by_rev_year\2017\A_Bayesian_Approach_to_Policy_Recognition_and_State_Representation_Learning\figure_4.jpg
+  Figure 4 caption: Schematic illustration of the expert policy used in Section 4.1,
+    which applies eight local controllers to sixteen distinct regions. A sample trajectory
+    is shown in color.
+  Figure 5 Link: articels_figures_by_rev_year\2017\A_Bayesian_Approach_to_Policy_Recognition_and_State_Representation_Learning\figure_5.jpg
+  Figure 5 caption: Average policy prediction error at the simulated trajectory states
+    (main figure) and at non-trajectory states (inset). Shown are the empirical mean
+    values and standard deviations, estimated from 100 Monte Carlo runs.
+  Figure 6 Link: articels_figures_by_rev_year\2017\A_Bayesian_Approach_to_Policy_Recognition_and_State_Representation_Learning\figure_6.jpg
+  Figure 6 caption: 'Average EMD values for the prediction task described in Section
+    4.2: (a) circular policy (b,c) MDP policy. Shown are the empirical mean values
+    and standard deviations, estimated from 100 Monte Carlo runs. The EMD values are
+    computed based on (a) the predicted action distributions and (b,c) the predicted
+    next-state distributions. Note that the curves of max-ent (purple) and max-margin
+    (yellow) in subfigure (a) lie on top of each other.'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Adrian \u0160o\u0161i\u0107"
+  Name of the last author: Heinz Koeppl
+  Number of Figures: 6
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: A Bayesian Approach to Policy Recognition and State Representation
+    Learning
+  Publication Date: 2017-06-01 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2711024
+- Affiliation of the first author: "departement d'informatique de l'\xE9cole normale\
+    \ sup\xE9rieure, ensinriacnrs umr, paris, france"
+  Affiliation of the last author: czech institute of informatics, czech technical
+    university in prague, prague, czech republic
+  Figure 1 Link: articels_figures_by_rev_year\2017\NetVLAD_CNN_Architecture_for_Weakly_Supervised_Place_Recognition\figure_1.jpg
+  Figure 1 caption: Our trained NetVLAD descriptor correctly recognizes the location
+    (b) of the query photograph (a) despite the large amount of clutter (people, cars),
+    changes in viewpoint and completely different illumination (night versus daytime).
+    Please see Fig. 7 and the appendix for more examples, which can be found on the
+    Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2017.2711011.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\NetVLAD_CNN_Architecture_for_Weakly_Supervised_Place_Recognition\figure_2.jpg
+  Figure 2 caption: "CNN architecture with the NetVLAD layer. The layer can be implemented\
+    \ using standard CNN layers (convolutions, softmax, L2-normalization) and one\
+    \ easy-to-implement aggregation layer to perform aggregation in Equation (4) (\u201C\
+    VLAD core\u201D), joined up in a directed acyclic graph. Parameters are shown\
+    \ in brackets."
+  Figure 3 Link: articels_figures_by_rev_year\2017\NetVLAD_CNN_Architecture_for_Weakly_Supervised_Place_Recognition\figure_3.jpg
+  Figure 3 caption: "Benefits of supervised VLAD. Red and green circles are local\
+    \ descriptors from two different images, assigned to the same cluster (Voronoi\
+    \ cell). Under the VLAD encoding, their contribution to the similarity score between\
+    \ the two images is the scalar product (as final VLAD vectors are L2-normalized)\
+    \ between the corresponding residuals, where a residual vector is computed as\
+    \ the difference between the descriptor and the cluster's anchor point. The anchor\
+    \ point c k can be interpreted as the origin of a new coordinate system local\
+    \ to the the specific cluster k . In standard VLAD, the anchor is chosen as the\
+    \ cluster centre ( \xD7 ) in order to evenly distribute the residuals across the\
+    \ database. However, in a supervised setting where the two descriptors are known\
+    \ to belong to images which should not match, it is possible to learn a better\
+    \ anchor ( \u22C6 ) which causes the scalar product between the new residuals\
+    \ to be small."
+  Figure 4 Link: articels_figures_by_rev_year\2017\NetVLAD_CNN_Architecture_for_Weakly_Supervised_Place_Recognition\figure_4.jpg
+  Figure 4 caption: 'Google Street View Time Machine examples. Each column shows perspective
+    images generated from panoramas from nearby locations, taken at different times.
+    The goal of this work is to learn from this imagery an image representation that:
+    has a degree of invariance to changes in viewpoint and illumination (a-f); has
+    tolerance to partial occlusions (c-f); suppresses confusing visual information
+    such as clouds (a,c), vehicles (c-f) and people (c-f); and chooses to either ignore
+    vegetation or learn a season-invariant vegetation representation (a-f).'
+  Figure 5 Link: articels_figures_by_rev_year\2017\NetVLAD_CNN_Architecture_for_Weakly_Supervised_Place_Recognition\figure_5.jpg
+  Figure 5 caption: 'Comparison of our methods versus off-the-shelf networks and state-of-the-art.
+    The base CNN architecture is denoted in brackets: (A)lexNet and (V)GG-16. Trained
+    representations ( ) outperform by a large margin off-the-shelf ones ( ), fVLAD
+    (-o-) works better than fmax (-x-), and our fVLAD +whitening ( ) representation
+    based on VGG-16 sets the state-of-the-art on all datasets. [10] only evaluated
+    on Tokyo 247 as the method relies on depth data not available in other datasets.'
+  Figure 6 Link: articels_figures_by_rev_year\2017\NetVLAD_CNN_Architecture_for_Weakly_Supervised_Place_Recognition\figure_6.jpg
+  Figure 6 caption: Place recognition accuracy versus dimensionality. Note the log
+    scale of the x -axis. 128-D NetVLAD performs comparably to the 4times larger 512-D
+    fmax on Tokyo 247. For the same dimension (512-D) NetVLAD convincingly outperforms
+    fmax .
+  Figure 7 Link: articels_figures_by_rev_year\2017\NetVLAD_CNN_Architecture_for_Weakly_Supervised_Place_Recognition\figure_7.jpg
+  Figure 7 caption: 'Examples of retrieval results for challenging queries on Tokyo
+    247. Each column corresponds to one test case: the query is shown in the first
+    row, the top retrieved image using our best method (trained VGG-16 NetVLAD + whitening)
+    in the second, and the top retrieved image using the best baseline (RootSIFT +
+    VLAD + whitening) in the last row. The green and red borders correspond to correct
+    and incorrect retrievals, respectively. Note that our learnt descriptor can recognize
+    the same place despite large changes in appearance due to illumination (daynight),
+    viewpoint and partial occlusion by cars, trees and people.'
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: "Relja Arandjelovi\u0107"
+  Name of the last author: Josef Sivic
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: 'NetVLAD: CNN Architecture for Weakly Supervised Place Recognition'
+  Publication Date: 2017-06-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Partial Training
+  Table 3 caption:
+    table_text: TABLE 3 Time Machine Importance
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with State-of-the-Art Compact Image Representations
+      (256-D) on Image and Object Retrieval
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2711011
+- Affiliation of the first author: interdisciplinary center for security, reliability,
+    trust of the university of luxembourg, luxembourg
+  Affiliation of the last author: interdisciplinary center for security, reliability,
+    trust of the university of luxembourg, luxembourg
+  Figure 1 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_1.jpg
+  Figure 1 caption: "Illustration of the proposed representation. Given a fixed starting\
+    \ point p 1 , the curve is reconstructed by the successive action of the ( g 1\
+    \ ,\u2026, g z\u22121 ) ."
+  Figure 10 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_10.jpg
+  Figure 10 caption: Examples of clustering results for k=2. (a) based on optimal
+    sampling. (b) based on uniform sampling.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_2.jpg
+  Figure 2 caption: Shapes along the geodesic path between the initial shape (first
+    column) and target shape (last column). The odd rows show results from our approach
+    while the even rows are results from [54] . All shapes are represented by 100
+    uniformly sampled and normalized points. We note that results from [54] are smoothed
+    and loses local features of the shapes.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_3.jpg
+  Figure 3 caption: The first set of shapes shows two examples where mathcal S1 deforms
+    to mathcal S1prime . The second set shows the transported deformation to their
+    similar objects mathcal S2 to give mathcal S2prime , respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_4.jpg
+  Figure 4 caption: Two pairs of curves. Under AD, the second pair of curves are more
+    similar than the first, while under RD the first pair are more similar than the
+    second.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_5.jpg
+  Figure 5 caption: Different samplings of a given shape barmathcal S . The red dots
+    denote sampled points. The last sampling xi is a uniform sampling. Note that xi
+    1 and xi 2 do not preserve shape.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_6.jpg
+  Figure 6 caption: Intermediate values of dynamic programming. (a) shows two input
+    shapes. mathcal S1 , coloured in green, is uniformly sampled and barmathcal S2
+    , coloured in red, is to be sampled optimally. (b) shows the search space, defined
+    by the charts Ui , and the cost of selecting a point from barmathcal S2 for the
+    i th position with the color coding. (c-e) shows three optimal sampling paths
+    based on (32) for different values of alpha and beta . The green path is an optimal
+    for alpha =1 and beta =0 , the red path is an optimal for alpha =0 and beta =
+    1 , and finally the yellow path is an optimal sampling for alpha and beta values
+    shown below the figures.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_7.jpg
+  Figure 7 caption: Geodesic paths for different values of alpha and beta . Note the
+    impact of a large beta value on the deformation (geodesic) and the final result.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_8.jpg
+  Figure 8 caption: Geodesic paths between two shapes under different elasticity constraint
+    eta . Note that an objective functional with an appropriate beta value gives a
+    consistent result regardless of the elasticity constraint.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Deformation_Based_Curved_Shape_Representation\figure_9.jpg
+  Figure 9 caption: Optimal versus Uniform sampling. For the optimal case, the green
+    curves are sampled uniformly, and the curves in red optimally. Note that the optimal
+    sampler adjusts the sampling rate while the uniform sampling does not.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Girum Getachew Demisse
+  Name of the last author: "Bj\xF6rn Ottersten"
+  Number of Figures: 15
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Deformation Based Curved Shape Representation
+  Publication Date: 2017-06-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Retrieval Results on Kimia99 Shape Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Retrieval Results on Kimia216 Shape Dataset
+  Table 3 caption:
+    table_text: TABLE 3 MAP on the Flavia Leaf Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Nearest-Neighbour Recognition Rate on the Swedish Leaf Dataset
+  Table 5 caption:
+    table_text: TABLE 5 MAP on the Fighter Jets Dataset with a Gaussian Noise of Different
+      Standard Deviations
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2711607
+- Affiliation of the first author: "analytical minds ltd., beregsur\xE1ny, hungary"
+  Affiliation of the last author: "analytical minds ltd., beregsur\xE1ny, hungary"
+  Figure 1 Link: articels_figures_by_rev_year\2017\Matching_by_Monotonic_Tone_Mapping\figure_1.jpg
+  Figure 1 caption: The position of the template (b) and window (c) in one of the
+    test images (a); the template in (b) almost perfectly matches the window (c) when
+    a PtW measure is used
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Matching_by_Monotonic_Tone_Mapping\figure_2.jpg
+  Figure 2 caption: A test image (left) and a randomly distorted variant (right).
+  Figure 3 Link: articels_figures_by_rev_year\2017\Matching_by_Monotonic_Tone_Mapping\figure_3.jpg
+  Figure 3 caption: The sensitivity of performance to the number of bins (a); linear
+    size of templates (b); level of noise (c); the standard deviation of Gaussian
+    blur (d).
+  Figure 4 Link: articels_figures_by_rev_year\2017\Matching_by_Monotonic_Tone_Mapping\figure_4.jpg
+  Figure 4 caption: The test image and the template in yellow frame (a); the distorted
+    image and the windows identified by MMTM (yellow frame) and MTM (red frame) (b).
+  Figure 5 Link: articels_figures_by_rev_year\2017\Matching_by_Monotonic_Tone_Mapping\figure_5.jpg
+  Figure 5 caption: Sensitivity of performance to local geometric distortions (a);
+    and deviations from monotonic tone mappings (b). Matching rates on the Robust
+    Pattern Matching performance evaluation dataset (c); and using own images (d).
+  Figure 6 Link: articels_figures_by_rev_year\2017\Matching_by_Monotonic_Tone_Mapping\figure_6.jpg
+  Figure 6 caption: Sample images from the robust pattern matching performance evaluation
+    dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Matching_by_Monotonic_Tone_Mapping\figure_7.jpg
+  Figure 7 caption: Some sample images from the database we prepared.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Matching_by_Monotonic_Tone_Mapping\figure_8.jpg
+  Figure 8 caption: 'A test image and the template in white frame (a); the corresponding
+    region of another test image (b); In each distance map the pixel with the highest
+    score is located in the middle of the small white frame, which is zoomed-in in
+    the large white frame: MMTM PWC (c); MMTM PWL (d); MTM PWC (e); MTM PWL (f); RD
+    (g); SR (h); KT (i) and PCC (j). The scale of false coloring: max and min are
+    related to the best and worst score (k).'
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: "Gy\xF6rgy Kov\xE1cs"
+  Name of the last author: "Gy\xF6rgy Kov\xE1cs"
+  Number of Figures: 8
+  Number of Tables: 1
+  Number of authors: 1
+  Paper title: Matching by Monotonic Tone Mapping
+  Publication Date: 2017-06-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Accuracy Scores of Vessel Segmentation Using Various (Dis)similarity
+      Functions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2711613
+- Affiliation of the first author: rapid-rich object search (rose) lab, nanyang technological
+    university, singapore
+  Affiliation of the last author: alibaba ai labs, hang zhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2017\Scene_Segmentation_with_DAGRecurrent_Neural_Networks\figure_1.jpg
+  Figure 1 caption: Two representative datasets for scene segmentation, where images
+    are densely annotated. In contrast, only objects of interests (usually in big
+    size) are segmented out in images from object segmentation datasets (cf. Pascal
+    VOC [1]).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Scene_Segmentation_with_DAGRecurrent_Neural_Networks\figure_2.jpg
+  Figure 2 caption: "Our basic segmentation network essentially consists of three\
+    \ temporal-consecutive functional modules: Local representation, context aggregation\
+    \ and feature map upsampling. Below, an example of the proposed segmentation network\
+    \ is demonstrated that subsumes convolutional network, DAG-RNN and deconvolution\
+    \ network. C denotes the cardinality of semantic classes considered in the target\
+    \ dataset. Shortcut lines (connections) symbolize that the outcoming feature maps\
+    \ (e.g., 28\xD728\xD7512 ) are first locally predicted and then summed with preceding\
+    \ (upsampled) predictions."
+  Figure 3 Link: articels_figures_by_rev_year\2017\Scene_Segmentation_with_DAGRecurrent_Neural_Networks\figure_3.jpg
+  Figure 3 caption: "Illustration of context aggregation. (a), feature tensor (with\
+    \ size of 8\xD78\xD7d ) for the given scene image, and each square denotes one\
+    \ feature vector in the feature tensor; (b), convolution kernel (with the size\
+    \ of 7\xD77\xD7d\xD7m ) is used to aggregate context for local features. The two\
+    \ dashed squares symbolize the field of views of two corresponding local features\
+    \ (highlighted with bluemagenta color); (c), local features are connected in an\
+    \ eight-neighborhood UCG, under which any pair of local features can be mutually\
+    \ communicable; and (d), one of its induced DAG in the southeastern (SE) direction.\
+    \ Context aggregation is achieved by propagating local context based on such DAG\
+    \ topology."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Scene_Segmentation_with_DAGRecurrent_Neural_Networks\figure_4.jpg
+  Figure 4 caption: "An example illustrates the decomposition of an UCG to four complimentary\
+    \ DAGs: U= G 1 ,\u2026, G 4 . Note that any vertex pair can still be mutually\
+    \ communicable in the resulting set of DAGs. For example, local information of\
+    \ the yellow vertex can be routed to magenta vertex via G 1 , meanwhile yellow\
+    \ vertex can glean features from magenta vertex via propagating path in G 4 ."
+  Figure 5 Link: articels_figures_by_rev_year\2017\Scene_Segmentation_with_DAGRecurrent_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Graphical visualization of the class frequencies (left) and weights
+    (right) on the sift Flow datasets [10]. The classes are sorted in the descending
+    order based on their occurrence frequencies in training images.
+  Figure 6 Link: articels_figures_by_rev_year\2017\Scene_Segmentation_with_DAGRecurrent_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Detailed class-wise accuracy comparisons on Pascal Context dataset.
+    The classes are presented in the descending order based on their occurrence frequencies,
+    and rare classes are highlighted with blue color.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Scene_Segmentation_with_DAGRecurrent_Neural_Networks\figure_7.jpg
+  Figure 7 caption: (Best viewed in electronic version with zooming in.) Example of
+    qualitative parsing results on Pascal Context dataset. We present six images (from
+    left to right, top to down) in a block which represent input image, human annotation,
+    label maps predicted by baseline FCN, baseline FCN + CRF [12], DAG-RNN and DAG-RNN
+    + CRF respectively. Examples in the first column demonstrate the case in which
+    recognition accuracies of thing-class pixels (i.e., tv monitor, bird and train)
+    are increased significantly after DAG-RNN is used. The second-column examples,
+    on the other hand, show that DAG-RNN improves the parsing performance for stuff-class
+    pixels (i.e., floor, wall, sign, road, etc). The third-column examples present
+    some failed but very interesting cases, where wrong predictions (such as 'ground'
+    or 'dog') also make sense.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Scene_Segmentation_with_DAGRecurrent_Neural_Networks\figure_8.jpg
+  Figure 8 caption: Two UCGs (with 4, 8 neighborhood system) and their induced DAGs
+    in the northwestern (NW) direction. In comparison with DAG(4), DAG(8) enables
+    information to be propagated in shorter paths, which is critical to prevent the
+    long-range information from vanishing. As an example, the length of propagation
+    path from v9 to v1 in mathcal Gnw8 is halved to that in mathcal Gnw4 (4 rightarrow
+    2 steps) due to the shortcut path.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Bing Shuai
+  Name of the last author: Gang Wang
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Scene Segmentation with DAG-Recurrent Neural Networks
+  Publication Date: 2017-06-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance Comparison on the Pascal Context Dataset (59 Classes)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance Comparison on the Sift Flow Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison on COCO Stuff Dataset (171 Classes)
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Result Comparisons on Scene Segmentation Benchmarks
+  Table 5 caption:
+    table_text: TABLE 5 Detailed Comparison of Context Aggregation Module (CAM) over
+      Different Segmentation Networks
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Result Comparison on Pascal Context Dataset (59
+      Classes, Including 22 (37) Frequent (Rare) Classes)
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Result Comparison of DAG-RNN with Different Number
+      of DAGs
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2712691
+- Affiliation of the first author: "d\xE9partement d'informatique de l'\xE9cole normale\
+    \ sup\xE9rieure, ensinriacnrs umr 8548, paris, france"
+  Affiliation of the last author: "inria, inria grenoble rh\xF4ne-alpes, laboratoire\
+    \ jean kuntzmann, france"
+  Figure 1 Link: articels_figures_by_rev_year\2017\LongTerm_Temporal_Convolutions_for_Action_Recognition\figure_1.jpg
+  Figure 1 caption: 'Video patches for two classes of swimming actions. (a),(c): Actions
+    often contain characteristic, class-specific space-time patterns that last for
+    several seconds. (b),(d): Splitting videos into short temporal intervals is likely
+    to destroy such patterns making recognition more difficult. Our neural network
+    with Long-term Temporal Convolutions (LTC) learns video representations over extended
+    periods of time.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\LongTerm_Temporal_Convolutions_for_Action_Recognition\figure_2.jpg
+  Figure 2 caption: "Network architecture. Spatio-temporal convolutions with 3x3x3\
+    \ filters are applied in the first 5 layers of the network. Max pooling and ReLU\
+    \ are applied in between all convolutional layers. Network input channels C1\u2026\
+    Ck are defined for different temporal resolutions t\u220820,40,60,80,100 and either\
+    \ two-channel motion ( flow-x, flow-y) or three-channel appearance (R,G, B). The\
+    \ spatio-temporal resolution of convolution layers decreases with the pooling\
+    \ operations."
+  Figure 3 Link: articels_figures_by_rev_year\2017\LongTerm_Temporal_Convolutions_for_Action_Recognition\figure_3.jpg
+  Figure 3 caption: 'Illustration of the three optical flow methods and comparison
+    of corresponding recognition performance. From left to right: Original image,
+    MPEG, Farneback and Brox optical flow. The color coding indicates the orientation
+    of the flow. The table on the right presents accuracy of action recognition in
+    UCF101 (split 1) for different inputs. Results are obtained with 60f networks
+    and training from scratch (see text for more details).'
+  Figure 4 Link: articels_figures_by_rev_year\2017\LongTerm_Temporal_Convolutions_for_Action_Recognition\figure_4.jpg
+  Figure 4 caption: Results for the split 1 of UCF101 using LTC networks of i. varying
+    temporal extents t , ii. varying spatial resolutions [high (H), low (L)] and iii.
+    different input modalities (RGB pre-trained on Sports-1M, flow trained from scratch).
+    For faster convergence all networks were trained using 0.5 dropout and a fixed
+    batch size of 10. Classification results are shown for clips (a) and videos (b)
+    computed over all classes and presented for a subset of individual classes for
+    flow input of low spatial resolution (c). The average number of frames in the
+    training set for a class is denoted in parenthesis. (d) shows a distribution of
+    action classes over the optimal temporal extent and (e) indicates correspondnig
+    improvements (see text for details). With the exception of a few classes, most
+    of the classes benefit from larger temporal extents.
+  Figure 5 Link: articels_figures_by_rev_year\2017\LongTerm_Temporal_Convolutions_for_Action_Recognition\figure_5.jpg
+  Figure 5 caption: The highest improvement of long-term temporal convolutions in
+    terms of class accuracy is for JavelinThrow . For 16-frame network, it is mostly
+    confused with the FloorGymnastics class. Here, we visualize sample videos with
+    7 frames extracted at every 8 frames. The intuitive explanation is that both classes
+    start by running for a few seconds and then the actual action takes place. LTC
+    can capture this interval, whereas 16-frame networks fail to recognize such long-term
+    activities.
+  Figure 6 Link: articels_figures_by_rev_year\2017\LongTerm_Temporal_Convolutions_for_Action_Recognition\figure_6.jpg
+  Figure 6 caption: 'Results for network combinations. (Left): Combination of LTC
+    flow networks with different temporal extents on UCF101-split 1. (Right): Combination
+    of flow and RGB networks together with IDT features on UCF101 and HMDB51-splits
+    1. For UCF101, flow is trained from scratch and RGB is pre-trained on Sports-1M.
+    For HMDB51, flow is pre-trained on UCF101 and RGB scores are obtained using C3D
+    feature extractor.'
+  Figure 7 Link: articels_figures_by_rev_year\2017\LongTerm_Temporal_Convolutions_for_Action_Recognition\figure_7.jpg
+  Figure 7 caption: Spatio-temporal filters from the first layer of the network learned
+    with 2-channel, Brox optical flow and 60 frames on UCF101. 18 out of 64 filters
+    are presented. Each cell in the grid represents two 3times 3times 3 filters for
+    2-channel flow input (one for x and one for y ). x and y intensities are converted
+    into vectors in 2D. Third dimension (time) is denoted by putting vectors one after
+    the other in different colors for better visualization ( t = 1 blue, t = 2 red,
+    t = 3 green). We see that LTC is able to learn complex motion patterns for video
+    representation. Better viewed in color.
+  Figure 8 Link: articels_figures_by_rev_year\2017\LongTerm_Temporal_Convolutions_for_Action_Recognition\figure_8.jpg
+  Figure 8 caption: Comparison of 100f and 16f networks by looking at the top activations
+    of filters. Better viewed in color.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: "G\xFCl Varol"
+  Name of the last author: Cordelia Schmid
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Long-Term Temporal Convolutions for Action Recognition
+  Publication Date: 2017-06-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Data Augmentations on UCF101 (Split 1)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Results for Networks with Different Temporal Resolutions
+      and Under Variation of Data Augmentation (MS: Multiscale Cropping) and Dropout
+      (D) for UCF101 (split 1), Trained from Scratch'
+  Table 3 caption:
+    table_text: TABLE 3 Results for Networks with Different Temporal Resolutions for
+      HMDB51 (Split 1) with or without Pre-Training on UCF101
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with the State-of-the-Art on UCF101 and HMDB51
+      (Mean Accuracy Across 3 Splits)
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2712608
+- Affiliation of the first author: college of engineering and computer science, australian
+    national university and data61-csiro, canberra, act, australia
+  Affiliation of the last author: college of engineering and computer science, australian
+    national university and data61-csiro, canberra, act, australia
+  Figure 1 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_1.jpg
+  Figure 1 caption: Overview of our weakly-supervised network with built-in foregroundbackground
+    prior.
+  Figure 10 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_10.jpg
+  Figure 10 caption: Pixel classification accuracy as a function of the bandwidth
+    around the object boundaries on the Pascal VOC validation set. Note that using
+    our fusion-based masks helps improving the accuracy at the boundary of the objects.
+  Figure 2 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_2.jpg
+  Figure 2 caption: Overview of our weakly-supervised network with multi-class masks.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_3.jpg
+  Figure 3 caption: "Built-in foregroundbackground mask. From left to right, we show\
+    \ the input image, the activations of the first, second, third, fourth, and fifth\
+    \ convolutional layers, the results of our fusion strategy, and the final mask\
+    \ after CRF smoothing without and with higher order followed by the ground-truth\
+    \ mask. Note that \u201CFusion\u201D constitutes the unary potential of the dense\
+    \ CRF used to obtain \u201COur mask\u201D."
+  Figure 4 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_4.jpg
+  Figure 4 caption: CAM for each class obtained by the localization network.
+  Figure 5 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_5.jpg
+  Figure 5 caption: Effect of adding localization information to our Fusion map (
+    Q c ).
+  Figure 6 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_6.jpg
+  Figure 6 caption: Effect of using higher-order potentials using regions obtained
+    by the crisp boundary detection method of [32].
+  Figure 7 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_7.jpg
+  Figure 7 caption: Qualitative results from the Pascal VOC validation set.
+  Figure 8 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_8.jpg
+  Figure 8 caption: Failure cases from the Pascal VOC validation set.
+  Figure 9 Link: articels_figures_by_rev_year\2017\Incorporating_Network_Builtin_Priors_in_WeaklySupervised_Semantic_Segmentation\figure_9.jpg
+  Figure 9 caption: Success and failure cases of the localization network.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Fatemeh Sadat Saleh
+  Name of the last author: Stephen Gould
+  Number of Figures: 11
+  Number of Tables: 8
+  Number of authors: 6
+  Paper title: Incorporating Network Built-in Priors in Weakly-Supervised Semantic
+    Segmentation
+  Publication Date: 2017-06-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Per Class IOU on the PASCAL VOC 2012 Validation Set for Methods
+      Trained Using Image Tags
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Per Class IOU on the PASCAL VOC 2012 Test Set for Methods
+      Trained Using Image Tags
+  Table 3 caption:
+    table_text: TABLE 3 Mean IOU on the PASCAL VOC Validation and Test Sets for Other
+      Methods Trained with Higher Level of Supervision or Additional Training Data
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Our ForegroundBackground Masks with Those Obtained
+      Using the Objectness Methods of [25] and [27]
+  Table 5 caption:
+    table_text: TABLE 5 Accuracy of the Multi-Class Masks When Directly Used for Segmentation
+      (without Any Network), Assuming Known Tags at Test Time
+  Table 6 caption:
+    table_text: TABLE 6 Mean IOU on PASCAL VOC val. Set for Different Setups of Our
+      Method
+  Table 7 caption:
+    table_text: TABLE 7 Per Class IOU on Youtube Objects Using Image Tags During Training
+  Table 8 caption:
+    table_text: TABLE 8 Per Class IOU on MS COCO Using Image Tags During Training
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2713785
+- Affiliation of the first author: department of computing, imperial college london,
+    london, united kingdom
+  Affiliation of the last author: department of computing, imperial college london,
+    london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2017\Deep_Canonical_Time_Warping_for_Simultaneous_Alignment_and_Representation_Learni\figure_1.jpg
+  Figure 1 caption: Illustration of the DCTW architecture with two networks, one for
+    each temporal sequence. The model is trained end-to-end, first performing a spatial
+    transformation of the data samples and then a temporal transformation such as
+    the temporal sequences are maximally correlated.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2017\Deep_Canonical_Time_Warping_for_Simultaneous_Alignment_and_Representation_Learni\figure_2.jpg
+  Figure 2 caption: The ground-truth temporal segments () and the corresponding predicted
+    temporal phases () for each of the frames of a video displaying AU12 using DDATW.
+  Figure 3 Link: articels_figures_by_rev_year\2017\Deep_Canonical_Time_Warping_for_Simultaneous_Alignment_and_Representation_Learni\figure_3.jpg
+  Figure 3 caption: Aligning sequences of subjects performing similar actions from
+    the Weizmann database. (left) the three computed features for each of the sequences
+    (1) binary (2) Euclidean (3) Poisson solution. (middle) The aligned sequences
+    using DCTW. (right) Alignment errors for each of the six techniques.
+  Figure 4 Link: articels_figures_by_rev_year\2017\Deep_Canonical_Time_Warping_for_Simultaneous_Alignment_and_Representation_Learni\figure_4.jpg
+  Figure 4 caption: "Temporal phase detection accuracy as defined by the ratio of\
+    \ correctly aligned frames with respect to the total duration for each temporal\
+    \ phase\u2014the higher the better."
+  Figure 5 Link: articels_figures_by_rev_year\2017\Deep_Canonical_Time_Warping_for_Simultaneous_Alignment_and_Representation_Learni\figure_5.jpg
+  Figure 5 caption: "Facial expression alignment of videos S002\u2013005 and S014\u2013\
+    009 from MMI dataset ( Section 5.3). Depicted frames for each temporal phase with\
+    \ duration [ts,te] correspond to the middle of each of the temporal phase, tc=lceil\
+    \ fracts+te2rceil . We also plot the temporal phases ( neutral, onset, apex, and\
+    \ offset) corresponding to (i) the ground truth alignment and (ii) compared methods\
+    \ (DCTW, CTW and GTW)."
+  Figure 6 Link: articels_figures_by_rev_year\2017\Deep_Canonical_Time_Warping_for_Simultaneous_Alignment_and_Representation_Learni\figure_6.jpg
+  Figure 6 caption: Depicted are the last convolutional features (bottom row) using
+    a three-layer architecture showing frames from a video (top row) containing AU12
+    (Lip Corner Puller). The features seem to activate on the presence of smile and
+    squinting of the eyes.
+  Figure 7 Link: articels_figures_by_rev_year\2017\Deep_Canonical_Time_Warping_for_Simultaneous_Alignment_and_Representation_Learni\figure_7.jpg
+  Figure 7 caption: Alignment errors on the task of audio-visual temporal alignment.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: George Trigeorgis
+  Name of the last author: Stefanos Zafeiriou
+  Number of Figures: 7
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Deep Canonical Time Warping for Simultaneous Alignment and Representation
+    Learning of Sequences
+  Publication Date: 2017-06-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Alignment Errors Obtained on the Wisconsin X-Ray Microbeam
+      Database
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Accuracy Using the Available Temporal Phase
+      Labels for MMI (3 Labels) and the Digit Annotations for CUAVE (11 Labels)
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2017.2710047

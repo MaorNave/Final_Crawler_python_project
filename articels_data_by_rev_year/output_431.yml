@@ -1,0 +1,820 @@
+- Affiliation of the first author: electrical engineering department, university of
+    california santa cruz, santa cruz, ca
+  Affiliation of the last author: electrical engineering department, university of
+    california santa cruz, santa cruz, ca
+  Figure 1 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_1.jpg
+  Figure 1 caption: 'Overview of our one shot detection scheme: we aim to detect a
+    given query [15] (e.g., symbol, face, human pose, car, flower) appearing in a
+    visually similar manner in a bigger target image.'
+  Figure 10 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_10.jpg
+  Figure 10 caption: 'Evaluation of proposed detection technique on MIT-CMU face data
+    set in comparison to [6]: (a) precision-recall curve, (b) ROC curve.'
+  Figure 2 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_2.jpg
+  Figure 2 caption: "Laplacian Object: computing a query subspace that preserves intrinsic\
+    \ image geometry\u2014on left, the proposed two-layer hierarchical model is shown\
+    \ where top layer of global context (in the form of an affinity graph) guides\
+    \ the bottom up aggregation of local information from low level descriptors. On\
+    \ right, locality preserving projection [17] with the graph Laplacian is used\
+    \ as a mathematical framework to represent the two-layer hierarchy."
+  Figure 3 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_3.jpg
+  Figure 3 caption: 'Salient features shown after dimensionality reduction of LARK
+    descriptors: (a) query & target images, (b)-(c) salient query (target) features
+    F Q ( F T ) learnt by projecting descriptors H Q ( H T ) along two dominant principal
+    components, (d)-(e) same LARK descriptors projected along two dominant eigenvectors
+    of LPP (one can notice finer local details in these features).'
+  Figure 4 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_4.jpg
+  Figure 4 caption: 'Unifying geodesic framework: the geodesic distance ( d s ij )
+    between the points x i and x j on the image manifold S(x) is used to derive both
+    the LARK descriptors and affinities on the right.'
+  Figure 5 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_5.jpg
+  Figure 5 caption: "Estimation of covariance matrix C from local gradients (shown\
+    \ with black arrows): (a) For LARK descriptors we estimate C \u03A9 i from (13)\
+    \ using the support patch \u03A9 i corresponding to x i as shown in (blue) color.\
+    \ Note, \u03A9 j (in red) corresponding to x j is different from \u03A9 i . To\
+    \ make K ij symmetric (b) shows the rule adopted for defining a common support\
+    \ for x i and x j using the patch \u03A9 ij (shown in yellow) over which C \u03A9\
+    \ ij is estimated (15)."
+  Figure 6 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_6.jpg
+  Figure 6 caption: The illustration of the fast detection algorithm resulting into
+    exact acceleration of matrix cosine similarity computation.
+  Figure 7 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_7.jpg
+  Figure 7 caption: Example detections on UIUC car test set [37] are shown here. (a)
+    Single scale car detection (the query image is shown top left), and (b) Multiscale
+    car detection (the same query image as used in single scale experiment is used
+    here). The FDR alpha is set at 1 percent. The f(rho ) values above the threshold
+    tau corresponding to alpha is embedded inside the displayed bounding box. A red
+    bounding box indicates highest resemblance to query image, and for other colors
+    the colormap shown right depicts relative resemblance.
+  Figure 8 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_8.jpg
+  Figure 8 caption: Precision recall curves obtained from the evaluation of our proposed
+    methodology on UIUC single scale car test set (left), and UIUC multiscale car
+    test set (right) in comparison to other training based state of the arts [37],
+    [38], [39], [40] as well as training-free state of the art methodology [6].
+  Figure 9 Link: articels_figures_by_rev_year\2015\One_Shot_Detection_with_Laplacian_Object_and_Fast_Matrix_Cosine_Similarity\figure_9.jpg
+  Figure 9 caption: Face detection in MIT-CMU face data set [41] is illustrated in
+    the figure above. (a) Example detections along with scale estimation are shown
+    using a query face (bottom left). (b) Sample detections along with pose estimation
+    are shown when the scales as well as orientations of the query both vary in target
+    images. In both the experiments, the FDR alpha is set at 1 percent to determine
+    the threshold tau . The thresholded f(rho ) is shown inside the bounding box.
+    The correct bounding box results from the maximum likelihood estimate of probable
+    set of scales and orientation. The colormap on right is a mapping between color
+    of bounding box and the measure of resemblance in case of multiple detection;
+    the red means highest resemblance.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Sujoy Kumar Biswas
+  Name of the last author: Peyman Milanfar
+  Number of Figures: 18
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: One Shot Detection with Laplacian Object and Fast Matrix Cosine Similarity
+  Publication Date: 2015-07-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Detection Equal Error Rates on UIUC Cars and MIT-CMU Faces
+      (Multiscale and Multi-Orientation)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Detection Rates of Raw LARK and Projected Features
+  Table 3 caption:
+    table_text: TABLE 3 Runtime of Proposed Fast Object Detection in Comparison with
+      Sliding Window Scheme
+  Table 4 caption:
+    table_text: TABLE 4 Runtime of Fast Object Detection with Pose Estimation in Comparison
+      with Sliding Window Scheme
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2453950
+- Affiliation of the first author: australian center for robotic vision at the australian
+    national university, canberra
+  Affiliation of the last author: department of computer science and engineering,
+    university of minnesota, minneapolis
+  Figure 1 Link: articels_figures_by_rev_year\2015\Bayesian_Nonparametric_Clustering_for_Positive_Definite_Matrices\figure_1.jpg
+  Figure 1 caption: Illustration of the measure of purity.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Bayesian_Nonparametric_Clustering_for_Positive_Definite_Matrices\figure_2.jpg
+  Figure 2 caption: "Simulation results: 2a shows accuracy for increasing matrix dimensions\
+    \ keeping the true number of clusters at 50 and each cluster consisting of 100\
+    \ covariances. Fig. 2b shows accuracy for increasing number of true clusters keeping\
+    \ the matrix dimensionality fixed at 5\xD75 and 100 covariances in each cluster.\
+    \ Fig. 2c plots the time taken for 100 iterations of each algorithm using the\
+    \ experiment shown in Fig. 2a. We do not show results for GeoKM and EM for this\
+    \ plot as they are not found to converge in reasonable time, especially for large\
+    \ covariance dimensions. In Fig. 2d, we plot the time taken for clustering until\
+    \ convergence when the dataset size increases from 500 to 50K at the same time\
+    \ the number of true clusters increasing number from 5 to 500, using 5\xD75 covariances."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Bayesian_Nonparametric_Clustering_for_Positive_Definite_Matrices\figure_3.jpg
+  Figure 3 caption: Sample images from the various datasets that we use in our experiments.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Bayesian_Nonparametric_Clustering_for_Positive_Definite_Matrices\figure_4.jpg
+  Figure 4 caption: The red vertical lines in the plots show the result from our DPMM
+    framework for which we do not need to provide the number of clusters K .
+  Figure 5 Link: articels_figures_by_rev_year\2015\Bayesian_Nonparametric_Clustering_for_Positive_Definite_Matrices\figure_5.jpg
+  Figure 5 caption: Comparison of unsupervised clustering algorithms on the four datasets.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Bayesian_Nonparametric_Clustering_for_Positive_Definite_Matrices\figure_6.jpg
+  Figure 6 caption: Figs. 6a, 6b, and 6c show segmentation results for Brodatz textures.
+    Figs. 6d and 6e show results from an aerial image segmentation using our WIW-DPMM
+    method.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Anoop Cherian
+  Name of the last author: Nikolaos Papanikolopoulos
+  Number of Figures: 6
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Bayesian Nonparametric Clustering for Positive Definite Matrices
+  Publication Date: 2015-07-15 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2456903
+- Affiliation of the first author: center for spatial information science university
+    of tokyo, tokyo, japan
+  Affiliation of the last author: center for spatial information science university
+    of tokyo, tokyo, japan
+  Figure 1 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_1.jpg
+  Figure 1 caption: If we represent an image using an ARG, the subgraph pattern (with
+    attribute variations) corresponds to the model of the common objects.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_10.jpg
+  Figure 10 caption: "Rate of change in size of the SAPs mined with different thresholds\
+    \ ( \u03C4 ) (left) and the rate of node insertion (solid curves) and elimination\
+    \ (dotted curves) in different iterations (right)."
+  Figure 2 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_2.jpg
+  Figure 2 caption: Overview from the perspective of graph theory. We define and extract
+    the soft attributed pattern (SAP) from ARGs, and maximize the size of the SAP.
+    This study overcomes a key challenge in graph mining, as we formulate the idea
+    of mining maximal-size common subgraphs in the challenging graph domain of ARGs.
+    This method also extends the concept of unsupervised learning for graph matching.
+    Given an initial graph template and a set of large ARGs, we simultaneously discover
+    the missing nodes, delete redundant nodes, and train attributes, so as to obtain
+    a graphical model with good matching performance.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_3.jpg
+  Figure 3 caption: "Structure modification from different graph templates (object\
+    \ fragments) to SAPs (fuzziness \u03C4=0.4 )."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_4.jpg
+  Figure 4 caption: Overview from the perspective of applicability. We propose a platform
+    for model learning and sample labeling using big visual data, which has a wide
+    range of potential applications.
+  Figure 5 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_5.jpg
+  Figure 5 caption: Visualization of the SAP in Definition 2. Colors in ARGs denote
+    different local and pairwise attributes. Note that in graph matching, we use pairwise
+    attributes (edge colors), rather than simply geometric distance between nodes
+    (although such distances can be used as one of the N Q types of pairwise attributes).
+  Figure 6 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_6.jpg
+  Figure 6 caption: Algorithm flowchart.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_7.jpg
+  Figure 7 caption: Discovery of the missing node y in G . We have demonstrated a
+    direct solution to the determination of y 's matching assignments x k y in the
+    N ARGs that minimize E y ( x k new | G new ,GS) , without requiring any prior
+    knowledge of y 's attributes. The ARGs are connected to each other to construct
+    a Markov random field that solves this problem.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_8.jpg
+  Figure 8 caption: Notation for the ARGs based on line segments of object edges in
+    RGB and RGB-D images [7]. Please see [7], [36] for more details of attribute settings.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Object_Discovery_Soft_Attributed_Graph_Mining\figure_9.jpg
+  Figure 9 caption: Notation for the ARGs that take the SIFT feature points as graph
+    nodes.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Quanshi Zhang
+  Name of the last author: Ryosuke Shibasaki
+  Number of Figures: 15
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: 'Object Discovery: Soft Attributed Graph Mining'
+  Publication Date: 2015-07-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Simultaneous Modeling of All Typical Challenges Using Attributed
+      Graph Mining
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Average Matching Rates
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2456892
+- Affiliation of the first author: intel corporation, hillsboro or 97124 and the department
+    of applied mathematics and statistics, johns hopkins university, baltimore, md
+  Affiliation of the last author: department of applied mathematics and statistics,
+    johns hopkins university, baltimore, md
+  Figure 1 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_1.jpg
+  Figure 1 caption: "An example of adjacency spectral embedding. Example of adjacency\
+    \ spectral embedding (ASE d=2 ) with n=500 . The parameters B and \u03C0 are given\
+    \ in Equation (10). The latent position of this SBM is a mixture of point masses\
+    \ at X 1 =(0.695,\u22120.467 ) T and X 2 =(0.751,0.432 ) T ."
+  Figure 10 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_10.jpg
+  Figure 10 caption: '(Top): Adjacency matrix of adjective noun network, where each
+    class is more likely to communicate with the other class than itself. (Bottom):
+    Vertex classification performance on the adjective and noun network. SRC s demonstrates
+    robust performance compared to 1NN circ ASE hatd , and LDA circ ASE hatd .'
+  Figure 2 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_2.jpg
+  Figure 2 caption: "Scree plot of the occlusion contaminated adjacency matrix. Scree\
+    \ plot of the occlusion contaminated adjacency matrix A occ at occlusion rate\
+    \ p o =0.74 with n=200 . The parameters B un and \u03C0 un are given in Eq. (10).\
+    \ The red dots are the negative eigenvalues of A occ due to occlusion contamination,\
+    \ and the green dots are the positive eigenvalues of A occ . Profile likelihood\
+    \ [29] method always suggests d =2 for this scree plot."
+  Figure 3 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_3.jpg
+  Figure 3 caption: "Scree plot of the linkage reversion contaminated adjacency matrix.\
+    \ Scree plot of the linkage reversion contaminated adjacency matrix A rev at linkage\
+    \ reversion rate p l =0.74 with n=200 . The parameters B un and \u03C0 un are\
+    \ given in Eq. (10). The red dots are the negative eigenvalues of A occ due to\
+    \ linkage reversion, and the green dots are the positive eigenvalues. Profile\
+    \ likelihood method [29] always suggests d =2 for this scree plot."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_4.jpg
+  Figure 4 caption: "The occlusion contamination effect on estimated latent positions.\
+    \ A depiction of the occlusion effect on the latent positions as reflected in\
+    \ the estimated latent positions Z d =2 with n=200 . The parameters B un and \u03C0\
+    \ un are given in Eq. (10). The four-panel displays the latent position estimation\
+    \ for different occlusion rate p o . As p o increases, vertices from different\
+    \ blocks become close in the embedded space. For p o close to 1 , ASE d =2 will\
+    \ eventually yield only one cloud at 0 ."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_5.jpg
+  Figure 5 caption: "The linkage reversion contamination effect on estimated latent\
+    \ positions. A depiction of the linkage reversion effect on the latent positions\
+    \ as reflected in the estimated latent positions Z d =2 with n=200 . The parameters\
+    \ B un and \u03C0 un are given in Eq. (10). The four-panel displays the latent\
+    \ position estimation for different linkage reversion rate p l . As p l increases,\
+    \ vertices from different blocks become close in the embedded space. For p l =1\
+    \ , ASE d =2 will yield two clouds corresponding to SBM( 200 , J 2\xD72 \u2212\
+    \ B un , \u03C0 un )."
+  Figure 6 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_6.jpg
+  Figure 6 caption: 'Classification performance under no contamination. We simulate
+    100 SBMs with Btextun , pi textun given in Equation (10), and show the average
+    the misclassification error over the 100 Monte Carlo replicates. (Left): When
+    the true model dimension d = 2 is known, SRC does not outperform 1NN circ ASE
+    d = 2 or LDA circ ASE d = 2 for n in [20, 120] . (Right): Do the same vertex classification
+    using various s, hatd at n = 110 .'
+  Figure 7 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_7.jpg
+  Figure 7 caption: Classification performance under three types of contamination.
+    We simulate 100 SBMs with Btextun , pi textun given in Eq. (10), set n=200 , contaminate
+    the data accordingly, and present the average misclassification error for the
+    five classifiers over the 100 Monte Carlo replicates. SRC at s=5 exhibits robust
+    performance compared to 1NN circ ASE hatd = 2 and LDA circ ASE hatd = 2 , throughout
+    all type of contamination with varying contamination rates.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_8.jpg
+  Figure 8 caption: Under the same setting of Fig. 7, the first plot varies the choice
+    of neighborhood k in kNN circ ASE, and compare with SRC s with varying s . The
+    other three plots compare the classification error of SRC s , 1NN circ ASE hatd
+    , and LDA circ ASE hatd throughout s=hatd in [1,ldots ,20] . SRC exhibits stable
+    performance with respect to the sparsity level s .
+  Figure 9 Link: articels_figures_by_rev_year\2015\Robust_Vertex_Classification\figure_9.jpg
+  Figure 9 caption: '(Top): The adjacency matrix of the C.elegans neural connectome
+    is sorted according to the classes of the neurons. A three-block structure is
+    exhibited. (Bottom): Vertex classification performance on the C.elegans network.
+    As we vary the sparsity level s and embedding dimension hatd , SRC s demonstrates
+    superior and stable performance compared to 1NN circ ASE hatd and LDA circ ASE
+    hatd .'
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Li Chen
+  Name of the last author: Carey E. Priebe
+  Number of Figures: 13
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: Robust Vertex Classification
+  Publication Date: 2015-07-15 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2456913
+- Affiliation of the first author: centre for quantum computation & intelligent systems
+    and the faculty of engineering and information technology, university of technology,
+    sydney, 81 broadway street, ultimo, nsw 2007, australia
+  Affiliation of the last author: centre for quantum computation & intelligent systems
+    and the faculty of engineering and information technology, university of technology,
+    sydney, 81 broadway street, ultimo, nsw 2007, australia
+  Figure 1 Link: articels_figures_by_rev_year\2015\Classification_with_Noisy_Labels_by_Importance_Reweighting\figure_1.jpg
+  Figure 1 caption: "Accuracy comparison of classification algorithms on synthetic\
+    \ data (m=2, n=1,000). The six different noise rate pairs ( \u03C1 +1 , \u03C1\
+    \ \u22121 ) are: (0.1, 0.1), (0.2, 0.2), (0.3, 0.1), (0.1, 0.3), (0.3, 0.3), and\
+    \ (0.4, 0.4). UB method employing hinge loss was not implemented due to non-convexity."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tongliang Liu
+  Name of the last author: Dacheng Tao
+  Number of Figures: 1
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: Classification with Noisy Labels by Importance Reweighting
+  Publication Date: 2015-07-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Estimating the Noise Rates (Means and Standard Deviations)
+      on Synthetic Data
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Estimating the Noise Rates (Means and Standard Deviations)
+      on UCI Benchmarks
+  Table 3 caption:
+    table_text: TABLE 3 Means and Standard Deviations (Percentage) of Classification
+      Accuracies of All Kernel Hinge-Loss-Based Methods on UCI Benchmarks
+  Table 4 caption:
+    table_text: TABLE 4 Means and Standard Deviations (Percentage) of Classification
+      Accuracies of All Kernel Logistic-Loss-Based Methods on UCI Benchmarks
+  Table 5 caption:
+    table_text: TABLE 5 Means and Standard Deviations (Percentage) of Classification
+      Accuracies of All Linear Hinge-Loss-Based Methods on UCI Benchmarks
+  Table 6 caption:
+    table_text: TABLE 6 Means and Standard Deviations (Percentage) of Classification
+      Accuracies of All Linear Logistic-Loss-Based Methods on UCI Benchmarks
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2456899
+- Affiliation of the first author: center for research on intelligent perception and
+    computing (cripac), institute of automation, chinese academy of sciences (casia),
+    no. 95 zhongguancun east street, beijing, china
+  Affiliation of the last author: center for research on intelligent perception and
+    computing (cripac), institute of automation, chinese academy of sciences (casia),
+    no. 95 zhongguancun east street, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2015\Weakly_Supervised_Large_Scale_Object_Localization_with_Multiple_Instance_Learnin\figure_1.jpg
+  Figure 1 caption: The overview of the proposed framework.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\Weakly_Supervised_Large_Scale_Object_Localization_with_Multiple_Instance_Learnin\figure_2.jpg
+  Figure 2 caption: An illustration of MI-SVM and the proposed method. (a) MI-SVM
+    and MILinear. (b) MILinear with positive bag splitting.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Weakly_Supervised_Large_Scale_Object_Localization_with_Multiple_Instance_Learnin\figure_3.jpg
+  Figure 3 caption: "(a) Comparison of training times for different optimization methods.\
+    \ MILinear: trust region Newton methods; CG: Non-Linear Conjugate Gradient; SCG:\
+    \ Scaled Non-Linear Conjugate Gradient; SGD: Stochastic Gradient Descent. (b)\
+    \ Overlaps of region proposals with groundtruth sorted by scores predicted by\
+    \ MILinear learned on \u201Cbicycle\u201D. This figure shows that after learning\
+    \ a MILinear model, most of the negative instances with low overlaps can be safely\
+    \ filtered out. Note that this also holds for other classes."
+  Figure 4 Link: articels_figures_by_rev_year\2015\Weakly_Supervised_Large_Scale_Object_Localization_with_Multiple_Instance_Learnin\figure_4.jpg
+  Figure 4 caption: "Analysis of bag splitting parameter \u03B7 on the detection performance."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Weakly_Supervised_Large_Scale_Object_Localization_with_Multiple_Instance_Learnin\figure_5.jpg
+  Figure 5 caption: Iterations of bag splitting algorithm on Pascal VOC 2007.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Weakly_Supervised_Large_Scale_Object_Localization_with_Multiple_Instance_Learnin\figure_6.jpg
+  Figure 6 caption: Classwise detection results (Average Precision) on ILSVRC 2013
+    detection dataset. Our method achieves a mAP of 9.63 percent, outperforming the
+    DPM-v5 baseline of 8.99 percent.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Weakly_Supervised_Large_Scale_Object_Localization_with_Multiple_Instance_Learnin\figure_7.jpg
+  Figure 7 caption: Detection results on Pascal VOC 2007 test set. Blue bounding box
+    corresponds to true positive and red box corresponds to false positive. The yellow
+    box is the ground truth.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.68
+  Name of the first author: Weiqiang Ren
+  Name of the last author: Tieniu Tan
+  Number of Figures: 7
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Weakly Supervised Large Scale Object Localization with Multiple Instance
+    Learning and Bag Splitting
+  Publication Date: 2015-07-15 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 10-Fold Average Bag Accuracy Results on MIL Datasets a '
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Class-Wise Localization Accuracy on the VOC07-AllView
+      Training Set a
+  Table 3 caption:
+    table_text: "TABLE 3 Comparison of Average Precision for Object Detection on the\
+      \ VOC07-6 \xD7 2 Test Dataset"
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Detection Results (Average Precision) on VOC2007
+      Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Detection Results (Average Precision) on VOC
+      2012 Val Set
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Classification Results (Average Precision) on
+      VOC2007 Dataset without Using Any Bounding Box Annotations
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2456908
+- Affiliation of the first author: shanghai key lab of intelligent information processing,
+    school of computer science, fudan university, shanghai, china
+  Affiliation of the last author: school of mathematical sciences, peking university,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_1.jpg
+  Figure 1 caption: Examples of pairwise comparisons of subjective visual properties.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_10.jpg
+  Figure 10 caption: Comparing URLR and Huber-LASSO-FL against majority voting (five
+    comparisons per pair).
+  Figure 2 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_2.jpg
+  Figure 2 caption: Better outlier detection can be achieved using our URLR framework
+    than majority voting. Green arrowsedges indicate correct annotations, while red
+    arrows are outliers. The numbers indicate the number of votes received by each
+    edge.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_3.jpg
+  Figure 3 caption: Image interestingness prediction comparative evaluation. Smaller
+    Kendall tau distance means better performance. The mean and standard deviation
+    of each method over 10 trials are shown in the plots.
+  Figure 4 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_4.jpg
+  Figure 4 caption: Qualitative examples of outliers detected by URLR. In each box,
+    there are two images. The left image was annotated as more interesting than the
+    right. Success cases (green boxes) show true positive outliers detected by URLR
+    (i.e., right images are more interesting according to the ground truth). Two failure
+    cases are shown in red boxes (URLR thinks the images on the right are more interesting
+    but the ground truth agrees with the annotation).
+  Figure 5 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_5.jpg
+  Figure 5 caption: Video interestingness prediction comparative evaluation.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_6.jpg
+  Figure 6 caption: Qualitative examples of video interestingness outlier detection.
+    For each pair, the top video was annotated as more interesting than the bottom.
+    Green boxes indicate the annotations are correctly detected as outliers by our
+    URLR and red box indicates a failure case (false positive). All six videos are
+    from the 'food' category.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_7.jpg
+  Figure 7 caption: Relative attribute performance evaluated indirectly as image classification
+    rate (chance = 0.125).
+  Figure 8 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_8.jpg
+  Figure 8 caption: Qualitative results on image relative attribute prediction.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Robust_Subjective_Visual_Property_Prediction_from_Crowdsourced_Pairwise_Labels\figure_9.jpg
+  Figure 9 caption: Comparing URLR and Huber-LASSO-FL on ranking prediction under
+    two error settings. Note that the ranking prediction accuracy is measured using
+    Kendall tau rank correlation which is very similar to Kendall tau distance (see
+    [59]). With rank correlation, the higher the value the better the performance.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Yanwei Fu
+  Name of the last author: Yuan Yao
+  Number of Figures: 12
+  Number of Tables: 1
+  Number of authors: 7
+  Paper title: Robust Subjective Visual Property Prediction from Crowdsourced Pairwise
+    Labels
+  Publication Date: 2015-07-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Dataset Summary
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2456887
+- Affiliation of the first author: computer vision laboratory, eth zurich, switzerland
+  Affiliation of the last author: computer vision laboratory, eth zurich, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_1.jpg
+  Figure 1 caption: The training starts with k initial classes and the corresponding
+    initial model M 0 that can classify these k classes. When a batch of s new classes
+    arrives, the model is incremented to M 1 which is now able to discriminate k+s
+    classes. The incremental learning scenario is open-ended and training continues
+    as new classes become available.
+  Figure 10 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_10.jpg
+  Figure 10 caption: Comparison of a) relative performance and b) test time of NCMF
+    RUST. Nodes were sampled by quality with pi = 0.05 . Different number of classes
+    were used for initialization and we measured at 50 classes and 10 random permutations
+    of the classes. c) Training time for three initial classes over 10 random permutations
+    of the classes. The small standard deviations indicate the limited impact of the
+    order of the classes.
+  Figure 2 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_2.jpg
+  Figure 2 caption: Classification of an image (illustrated by the red cross) by a
+    single tree of Nearest Class Mean forest. (a) The feature vector is extracted,
+    (b) the image is assigned to the closest centroid (colors indicate further direction),
+    (c) the image is assigned the class probability found at the leaf.
+  Figure 3 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_3.jpg
+  Figure 3 caption: 'Illustration of our incremental approaches with NCM forest: a)
+    Update leaf statistics (ULS), b) Incrementally grow tree, c) Retrain subtree (RTST),
+    d) Reuse subtree (RUST). The colors of the centroids (Secondyellow, green) indicate
+    the directions associated with the Voronoi cells. The elements marked in red are
+    modifications to the structure of the tree. In c), the centroids of the root''s
+    right child are re-computed, while in d) only a new centroid is added.'
+  Figure 4 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_4.jpg
+  Figure 4 caption: "Comparison of a) average classification accuracy and b) test\
+    \ time for different sizes of K n \u2282K . While setting | K n | linear to the\
+    \ number of classes performs better than a sublinear growth, it takes much longer\
+    \ at test time."
+  Figure 5 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_5.jpg
+  Figure 5 caption: Measurements at 50 classes of a) performance, b) test time and
+    c) training time of NCMF and SVMF baselines with variable constraints of mu minimal
+    number of training samples at a leaf node. SVMF is much faster at test time and
+    outperforms NCMF, but takes much longer (28x) to train.
+  Figure 6 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_6.jpg
+  Figure 6 caption: Comparison of a) relative performance and b) test time of RUST
+    applied to a NCMF with nodes sampled by quality and pi = 0.05 starting with k
+    initial classes measured at 30, 40 and 50 classes. Increasing the number of initial
+    classes to 20 is beneficial, but has limited impact.
+  Figure 7 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_7.jpg
+  Figure 7 caption: Starting with three initial classes, additional classes are incrementally
+    learned until 50 classes are reached. RTST incremental training of NCMF with different
+    schemes used for node sampling is evaluated. Using uniform sampling or subtree
+    quality instead of subtree size as measure, a smaller number of nodes needs to
+    be updated to achieve a good relative performance. Only a small portion of nodes
+    ( pi ) needs to be updated to achieve a relative performance of over 95 percent.
+    Using the quality criterion in comparison to a uniform distribution results in
+    lower training times.
+  Figure 8 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_8.jpg
+  Figure 8 caption: Measurements at variable number of classes for an incremental
+    training of NCMF starting with three initial classes. For RTST and RUST we used
+    quality weighting with pi =0.05 . 'Update leaf statistics' is faster to train
+    and test, but has inferior performance. 'Incrementally grow tree' is slower than
+    ULS both at train and test time, but achieves 83.5 percent of the baseline's performance
+    at 50 classes. 'Retrain subtree' achieves the best performance (96.0 percent at
+    50 classes), but takes longest to train. 'Reuse subtree' is a good trade-off between
+    training time and relative performance (88.3 percent at 50 classes). The relative
+    differences in training time increase with the growing number of classes.
+  Figure 9 Link: articels_figures_by_rev_year\2015\Incremental_Learning_of_Random_Forests_for_LargeScale_Image_Classification\figure_9.jpg
+  Figure 9 caption: Measurements at 50 classes starting with three initial classes
+    for various incremental learning approaches and forest variants. NCMF is much
+    faster to train, but achieves a lower accuracy than SVMF and takes longer at test
+    time. The advantages and disadvantages of the forest variants for offline learning
+    (baseline) are the same for incremental learning.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Marko Ristin
+  Name of the last author: Luc Van Gool
+  Number of Figures: 15
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Incremental Learning of Random Forests for Large-Scale Image Classification
+  Publication Date: 2015-07-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Baselines and Different Incremental Learning
+      Methods Measured at 50, 500 and 1k Classes of [13] All Starting with the Same
+      Initial Classes
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Training and Test Times for Incremental Approaches Based on
+      NCMF and SVMF
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2459678
+- Affiliation of the first author: "insa-lyon, liris, umr5205, f-69621, universit\xE9\
+    \ de lyon, cnrs, france"
+  Affiliation of the last author: "awabot, villeurbanne, rh\xF4ne-alpes, france"
+  Figure 1 Link: articels_figures_by_rev_year\2015\ModDrop_Adaptive_MultiModal_Gesture_Recognition\figure_1.jpg
+  Figure 1 caption: Overview of our method on an example from the 2014 ChaLearn looking
+    at people dataset.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2015\ModDrop_Adaptive_MultiModal_Gesture_Recognition\figure_2.jpg
+  Figure 2 caption: The ModDrop network operating at three temporal scales corresponding
+    to three durations of dynamic poses.
+  Figure 3 Link: articels_figures_by_rev_year\2015\ModDrop_Adaptive_MultiModal_Gesture_Recognition\figure_3.jpg
+  Figure 3 caption: Single-scale deep architecture. Individual classifiers are pre-trained
+    for each data modality (paths V1, V2, M, A) and then fused using a two-layer fully
+    connected network initialized in a specific way (see Section 4).
+  Figure 4 Link: articels_figures_by_rev_year\2015\ModDrop_Adaptive_MultiModal_Gesture_Recognition\figure_4.jpg
+  Figure 4 caption: Mel-scaled spectrograms of two pairs of audio samples corresponding
+    to two different gestures.
+  Figure 5 Link: articels_figures_by_rev_year\2015\ModDrop_Adaptive_MultiModal_Gesture_Recognition\figure_5.jpg
+  Figure 5 caption: 'On the left: architecture of shared hidden and output layers.
+    On the right: structure of parameters of shared hidden and output layers (corresponds
+    to the architecture on the left).'
+  Figure 6 Link: articels_figures_by_rev_year\2015\ModDrop_Adaptive_MultiModal_Gesture_Recognition\figure_6.jpg
+  Figure 6 caption: Toy network architecture and notations used for derivation of
+    ModDrop regularization properties.
+  Figure 7 Link: articels_figures_by_rev_year\2015\ModDrop_Adaptive_MultiModal_Gesture_Recognition\figure_7.jpg
+  Figure 7 caption: "\u201CMulti-modal\u201D setting for the MNIST dataset."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Natalia Neverova
+  Name of the last author: Florian Nebout
+  Number of Figures: 7
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: 'ModDrop: Adaptive Multi-Modal Gesture Recognition'
+  Publication Date: 2015-07-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Hyper-Parameters (for a Single Temporal Scale)
+  Table 10 caption:
+    table_text: TABLE 10 Effect of ModDrop on ChaLearn 2014+Audio
+  Table 2 caption:
+    table_text: TABLE 2 Official ChaLearn 2014 LAP Challenge (Track 3) Results, Visual
+      Modalities Only
+  Table 3 caption:
+    table_text: TABLE 3 Post-Competition Performance at Different Temporal Scales
+      with Gesture Localization (Jaccard Index)
+  Table 4 caption:
+    table_text: TABLE 4 Official ChaLearn 2014 LAP Challenge Results on Mocap and
+      Video Data (Jaccard Index)
+  Table 5 caption:
+    table_text: TABLE 5 Performance on Visual Modalities (Jaccard Index)
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Proposed and Baseline Approaches to Gesture
+      Recognition from Audio
+  Table 7 caption:
+    table_text: TABLE 7 Experiments on The MNIST Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Effect of ModDrop Training under Occlusion and Noise
+  Table 9 caption:
+    table_text: TABLE 9 Comparison of Different Training Strategies on the ChaLearn
+      2014 LAP Dataset Augmented with Audio
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2461544
+- Affiliation of the first author: centre for quantum computation & intelligent systems
+    and the faculty of engineering and information technology, university of technology,
+    sydney, 81 broadway street, ultimo, nsw, australia
+  Affiliation of the last author: institute for advanced computer studies, university
+    of maryland, college park, md
+  Figure 1 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_1.jpg
+  Figure 1 caption: Local sampling of Dual-Cross Patterns. Sixteen points are sampled
+    around the central pixel O . The sampled points A 0 to A 7 are uniformly spaced
+    on an inner circle of radius R in , while B 0 to B 7 are evenly distributed on
+    the exterior circle with radius R ex .
+  Figure 10 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_10.jpg
+  Figure 10 caption: ROC curves of the MDML-DCPs method and other state-of-the-art
+    methods in the unrestricted paradigm.
+  Figure 2 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_2.jpg
+  Figure 2 caption: Face representation using Dual-Cross Patterns. The normalized
+    face image is encoded by the two cross encoders, respectively. Concatenation of
+    the regional DCP code histograms forms the DCP-based face representation.
+  Figure 3 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_3.jpg
+  Figure 3 caption: Framework of the MDML-DCPs face representation scheme. MDML-DCPs-H1
+    and MDML-DCPs-H2 are extracted from the rectified image by similarity transformation.
+    MDML-DCPs-H3, MDML-DCPs-C1 to C6 are extracted from the affine-transformed image.
+    The MDML-DCPs face representation is the set of the above nine feature vectors.
+  Figure 4 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_4.jpg
+  Figure 4 caption: "(a) The 49 facial feature points detected by the face alignment\
+    \ algorithm. (b) MDML-DCPs-H3 employs 21 facial feature points over all facial\
+    \ components. MDML-DCPs-C1 to C6 respectively select 10 facial feature points\
+    \ on both eyebrows, 12 points on both eyes, 11 points on the left eye and left\
+    \ eyebrow, 11 points on the right eye and right eyebrow, nine points on nose,\
+    \ and 18 points on mouth. Around each facial feature point, MD-DCPs are extracted\
+    \ from J\xD7J (in this figure, J=4 ) non-overlapping regions within the patch\
+    \ of size M\xD7M pixels."
+  Figure 5 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_5.jpg
+  Figure 5 caption: (a) Sample images from FERET (first row), CAS-PEAL-R1 (second
+    row) and FRGC 2.0 (third row) containing typical variations in each database.
+    (b) Samples of normalized images for experiments from Section 5.1 to 5.3.
+  Figure 6 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_6.jpg
+  Figure 6 caption: Sample images from LFW. Images in the two rows are aligned by
+    a similarity transformation and an affine transformation, respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_7.jpg
+  Figure 7 caption: Another two representative grouping modes for the eight sampling
+    directions of DCP. Sampled points of the same colour belong to the same subset.
+  Figure 8 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_8.jpg
+  Figure 8 caption: 'Joint Shannon entropy as a function of Rin and Rex . Three grouping
+    modes are evaluated in this figure: modes (a) and (b) in Fig. 7 and the dual-cross
+    grouping.'
+  Figure 9 Link: articels_figures_by_rev_year\2015\MultiDirectional_MultiLevel_DualCross_Patterns_for_Robust_Face_Recognition\figure_9.jpg
+  Figure 9 caption: Performance comparison between DCP and MsLBP on the four face
+    datasets.
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Changxing Ding
+  Name of the last author: Larry S. Davis
+  Number of Figures: 10
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: Multi-Directional Multi-Level Dual-Cross Patterns for Robust Face Recognition
+  Publication Date: 2015-07-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Feature Size of the Investigated Face Image Descriptors
+  Table 10 caption:
+    table_text: TABLE 10 Mean Verification Accuracy on the LFW View 2 Data
+  Table 2 caption:
+    table_text: TABLE 2 Identification Rates for Different Descriptors on FERET
+  Table 3 caption:
+    table_text: TABLE 3 Rank-1 Identification Rates for Different Face Image Descriptors
+      on the Nine Probe Sets of PEAL
+  Table 4 caption:
+    table_text: TABLE 4 Verification Results on the FRGC 2.0 Experiment 1
+  Table 5 caption:
+    table_text: TABLE 5 Verification Results on the FRGC 2.0 Experiment 4
+  Table 6 caption:
+    table_text: TABLE 6 Mean Verification Accuracy on the LFW View 2 Data
+  Table 7 caption:
+    table_text: TABLE 7 Identification Rates for Different Methods on FERET
+  Table 8 caption:
+    table_text: TABLE 8 Rank-1 Identification Rates for Different Methods on the Nine
+      Probe Sets of PEAL
+  Table 9 caption:
+    table_text: TABLE 9 Verification Rates at 0.1 Percent FAR for Different Methods
+      on the FRGC 2.0 Experiments 1 and 4
+  paper DOI: https://doi.org/10.1109/TPAMI.2015.2462338

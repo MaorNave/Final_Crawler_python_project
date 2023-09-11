@@ -1,0 +1,1006 @@
+- Affiliation of the first author: microsystems research group, school of engineering,
+    newcastle university, newcastle upon tyne, u.k.
+  Affiliation of the last author: centre for artificial intelligence research (cair),
+    university of agder, grimstad, norway
+  Figure 1 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_1.jpg
+  Figure 1 caption: Visualization of Multiclass Tsetlin Machine inference process.
+    Booleanization stage prepares the input features from raw data. Clause computation
+    presents the logic operations involved in generating the Clause Output from input
+    features and trained automata. The inference routine illustrates the summation
+    of the N Clause Outputs multiplied with their polarity for M classes to generate
+    the respective Class sums. The one with the largest class sum is the classification
+    output. Here, F i is the ith input features and Bi and overlineBi are the corresponding
+    ith Boolean features and its complement derived from the Booleanizer.
+  Figure 10 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_10.jpg
+  Figure 10 caption: This figure shows probability of Tsetlin automaton state transition
+    with respect to different s values. The comparison operations with random numbers
+    were performed beta =1 million times and its ratio with sum of TRUE outputs is
+    plotted.
+  Figure 2 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_2.jpg
+  Figure 2 caption: Visualization of a trained TM model of size Mtimes Ntimes l .
+    The range of values TA states can acquire is [1,400]. Any value >!200 is regarded
+    as include while the rest are excludes.
+  Figure 3 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_3.jpg
+  Figure 3 caption: 'Overview of the training procedure followed in Multiclass Tsetlin
+    Machine classification. It begins with the initialization of the Tsetlin Automata
+    with one of two randomly chosen values: middlestatepm 1 . In an epoch, the training
+    procedure iterates over all the datapoints in the training sample space. For each
+    datapoint, two classes receive feedback, one of them is the expected class and
+    the second is any randomly chosen class other than the expected class. They are
+    indicated by expected output ycin (0,1) , with yc=1 indicating the feedback is
+    to the expected class while yc=0 indicating the feedback to random class.'
+  Figure 4 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_4.jpg
+  Figure 4 caption: Overview of the feedback procedure within the class. There are
+    two types of feedback, viz. Type I and Type II. The type of feedback a clause
+    gets depends on the hyperparameters, clause polarity, expected output ( yc ),
+    and probabilities C1 and C2. C1 and C2 determine if a clause will get any feedback
+    based on the comparison with random number, generated from uniform distribution.
+    Similarly, in the Type I feedback, random number is used to determine the probability
+    of an automaton getting increment or decrement in state value. y - Yes, n - No,
+    Inc - Include, Exc - Exclude, T - Threshold hyperparameter and s - the second
+    hyperparameter, as mentioned in Table I.
+  Figure 5 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_5.jpg
+  Figure 5 caption: A comparison of motives and effects of Type I and Type II feedback
+    on clause output and number of includes.
+  Figure 6 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_6.jpg
+  Figure 6 caption: Overview of the Include-Encoding methodology. (a) Clause output
+    from the Tsetlin Machine proposition logic depends only on literals whose corresponding
+    automata are includes. (b) The encoding of include offsets, in a clause, into
+    16-bit integers with two most significant bits (MSB) holding additional information.
+    (c) The MSB holds the information on clause polarity and the bit next to it indicates
+    the change of clause. Four consecutive clauses are shown to explain the flipping
+    of two MSB bits. If an all exclude clause is encountered then the 2nd MSB bit
+    does not flip, it flips only when an include is encountered in the next clause.
+    Inc - Include, Exc - Exclude and Bi and overlineBi are ith literal and its complement.
+  Figure 7 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_7.jpg
+  Figure 7 caption: Data structure and input required in proposed REDRESS inference
+    algorithm. (a) The array with number of includes per class. (b) The array of encoded
+    includes. (c) A bit-packed testing dataset which clubs the corresponding bits
+    of W datapoints into a W -bit integer. f - the number of Boolean features.
+  Figure 8 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_8.jpg
+  Figure 8 caption: This figure shows the mean probability of a clause getting feedback
+    for a particular class sum. The mean is taken for C1 or C2= TRUE over tau times
+    alpha (=1 million) total comparisons for each class sum indicated on the x -axis.
+    tau is total number of training samples and we assume that each class gets same
+    proportion ( alpha ) of feedback hits.
+  Figure 9 Link: articels_figures_by_rev_year\2023\REDRESS_Generating_Compressed_Models_for_Edge_Inference_Using_Tsetlin_Machines\figure_9.jpg
+  Figure 9 caption: 'These figures show the variations in number of feedback received
+    by classes with varying T=lbrace 5,10,20,40,60,100rbrace while training TM: (D=MNIST,;M=10,;N=100,;l=1568,;s=5,;tau
+    =50,000) . For very small or large T , the accuracy deteriorates all through the
+    4 epochs, indicates an existence of optimum range of T values for a dataset. D
+    - name of the dataset, M - the number of classes, N - the number of clauses per
+    class, l - the number of literals( equiv automata) per clause, s - hyperparameter,
+    T - hyperparameter and tau - the number of samples).'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sidharth Maheshwari
+  Name of the last author: Ole-Christoffer Granmo
+  Number of Figures: 17
+  Number of Tables: 6
+  Number of authors: 7
+  Paper title: 'REDRESS: Generating Compressed Models for Edge Inference Using Tsetlin
+    Machines'
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Table of Key Terms for Explaining TM Training and Inference
+      and the REDRESS Methodology
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II An Excerpt From the Tabulated Output of TM Architecture Search
+      Paradigm for MNIST Arranged in the Descending Order of Accuracy. The Data Belongs
+      to Fig. 11
+  Table 3 caption:
+    table_text: TABLE III Enlisting the Optimum TM Model Parameters Obtained From
+      TMASP Runs for Different Datasets
+  Table 4 caption:
+    table_text: TABLE IV Enlisting the BNN Models. All the Stated Models Were Evaluated
+      for Each Dataset. L i i Denotes the Number of Neurons in the i th ith Layer
+  Table 5 caption:
+    table_text: TABLE V Comparison Between REDRESS TM and BNN Models Based on Memory
+      Footprint (mem), Accuracy (Acc), Energy (E) and Inference Time of Testing Dataset.
+      REDRESS Outperforms BNN Models Except for the Values in Blue Colored Cells
+  Table 6 caption:
+    table_text: TABLE VI Memory Footprint Comparison of Compressed Model Obtained
+      From RLE [38] and REDRESS versus Uncompressed TA in Kilo Bytes (kB)
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268415
+- Affiliation of the first author: school of artificial intelligence and computer
+    science, jiangnan university, wuxi, china
+  Affiliation of the last author: centre for vision, speech and signal processing,
+    university of surrey, guildford, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_1.jpg
+  Figure 1 caption: A representation model guided structure versus the empirically
+    designed structure. The empirically designed structure based fusion network requires
+    a lot of experiments to optimise the network architecture, which is a very time-consuming.
+    In contrast, the representation model guided structure can create an appropriate
+    network block using the proposed decomposition model which leads to a fast network
+    structure construction.
+  Figure 10 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_10.jpg
+  Figure 10 caption: The loss values for each item of the proposed loss function with
+    the selected optimal hyperparameters. For the lateral axis, each number indicates
+    10 iterations in training phase.
+  Figure 2 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_2.jpg
+  Figure 2 caption: "The LLRR block architecture. X is the input of the network. \u201C\
+    \ C0 \u201D, \u201C C1 \u201D and \u201C C2 \u201D denote the convolutional layers."
+  Figure 3 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_3.jpg
+  Figure 3 caption: "The framework of LRRNet. Two branches(LLRR Blocks) have same\
+    \ structure and different parameters. Six convolutional layers (\u201C Ccdot \u201D\
+    ) are utilized to construct and fuse the different components."
+  Figure 4 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_4.jpg
+  Figure 4 caption: The network (VGG-16) architecture. The fused image and the source
+    images are fed to the pre-trained VGG-16 to compute the loss function.
+  Figure 5 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_5.jpg
+  Figure 5 caption: The datasets used for testing. From left to right are TNO and
+    VOT2020-RGBT, respectively. The examples of images from these datasets show visible
+    light images (first row) and the infrared images (second row).
+  Figure 6 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_6.jpg
+  Figure 6 caption: An example of the fusion results obtained with different gamma
+    2 and wir . The last row shows a visible spectrum image and the right column presents
+    the infrared image.
+  Figure 7 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_7.jpg
+  Figure 7 caption: The fusion results obtained with different LRRNet parameters(
+    gamma 1=0 , gamma 4=2000 ; gamma 1=10 , gamma 4=0 ).
+  Figure 8 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_8.jpg
+  Figure 8 caption: The LLRR blocks are replaced by eight convolutional layers and
+    dense blocks.
+  Figure 9 Link: articels_figures_by_rev_year\2023\LRRNet_A_Novel_Representation_Learning_Guided_Fusion_Network_for_Infrared_and_Vi\figure_9.jpg
+  Figure 9 caption: Some examples of the fusion results obtained by different feature
+    extractors (convolutional layers, dense blocks and LLRR blocks) in our fusion
+    network.
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Hui Li
+  Name of the last author: Josef Kittler
+  Number of Figures: 15
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: 'LRRNet: A Novel Representation Learning Guided Fusion Network for
+    Infrared and Visible Images'
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I The Average Values of the Six Objective Metrics Obtained\
+      \ With Different Parameters ( \u03B3 2 \u03B32 and w ir wir) on TNO"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE II The Average Values of the Objective Metrics Obtained With\
+      \ Different Values of Parameter ( \u03B3 4 \u03B34) on TNO"
+  Table 3 caption:
+    table_text: TABLE III The Average Values of the Objective Metrics Obtained on
+      TNO With or Without Los s pixel Losspixel and Los s deep Lossdeep
+  Table 4 caption:
+    table_text: TABLE IV The Average Values of the Objective Metrics Obtained With
+      Different Numbers of LLRR Blocks
+  Table 5 caption:
+    table_text: TABLE V The Average Values of the Objective Metrics Obtained by the
+      Existing Fusion Methods and the Proposed LRRNet on TNO
+  Table 6 caption:
+    table_text: TABLE VI The Average Values of the Objective Metrics Obtained by the
+      Existing Fusion Methods and the Proposed LRRNet on VOTRGBT-TNO
+  Table 7 caption:
+    table_text: TABLE VII The Number of Training Parameters for Each Comparative Fusion
+      Methods and LRRNet
+  Table 8 caption:
+    table_text: TABLE VIII The Tracking Results (Evaluation Values) Obtained on the
+      VOT2020-RGBT Dataset
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268209
+- Affiliation of the first author: hidream.ai, beijing, china
+  Affiliation of the last author: hidream.ai, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_1.jpg
+  Figure 1 caption: 'Illustration of (a) Pyramid Vision Transformer block (PVT), (b)
+    Twins block that combines locally-grouped self-attention and spatial reduction
+    attention, (c) Regional-to-Local Attention block in RegionViT, and (d) our proposed
+    Dual block in Dual-ViT. DS: down-sampling operation; MSA: multi-head self-attention;
+    FFN: feed-forward layer; LSA: locally-grouped self-attention. Layer normalization
+    and residual connection are omitted for simplicity.'
+  Figure 10 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_10.jpg
+  Figure 10 caption: GFLOPs and Inference Time versus Performance Curve on ADE20 K
+    for semantic segmentation downstream task.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_2.jpg
+  Figure 2 caption: The detailed architectures.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_3.jpg
+  Figure 3 caption: 'Ablation experiments by comparing different variants of Dual-ViT
+    (small size): (a) is a basic four-stage ViT architecture which employs typical
+    Transformer Block (TB) that consists of MHA and FFN in each stage. (b) replaces
+    the typical Transformer Block with our Dual Block (DB) in the first two stages.
+    (c) is the complete version of Dual-ViT that further replaces the typical Transformer
+    Block with Merge Block (MB) in the last two stages. The next (d)-(f) depict three
+    degraded variants of Dual Block in Variant (c): (d) and (e) removes the self-attention
+    layer and feed-forward layer in the semantic pathway of Dual Block, respectively.
+    (f) exchanges the order of self-attention layer and cross-attention layer in the
+    semantic pathway of Dual Block (i.e., first performing cross-attention, and then
+    employing self-attention).'
+  Figure 4 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_4.jpg
+  Figure 4 caption: Model Parameters versus Accuracy Curve on ImageNet. dagger denotes
+    the using of additional Token Labeling objective via MixToken [46].
+  Figure 5 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_5.jpg
+  Figure 5 caption: GFLOPs versus Accuracy Curve on ImageNet. dagger denotes the using
+    of additional Token Labeling objective via MixToken [46].
+  Figure 6 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_6.jpg
+  Figure 6 caption: Inference Time versus Accuracy Curve on ImageNet. dagger denotes
+    the using of additional Token Labeling objective via MixToken [46].
+  Figure 7 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_7.jpg
+  Figure 7 caption: Memory Size versus Accuracy Curve on ImageNet. dagger denotes
+    the using of additional Token Labeling objective via MixToken [46].
+  Figure 8 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_8.jpg
+  Figure 8 caption: GFLOPs and Inference Time versus Performance Curve on COCO for
+    object detection downstream task.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Dual_Vision_Transformer\figure_9.jpg
+  Figure 9 caption: GFLOPs and Inference Time versus Performance Curve on COCO for
+    instance segmentation downstream task.
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Ting Yao
+  Name of the last author: Tao Mei
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Dual Vision Transformer
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Detailed Architecture Specifications for Three Variants of
+      Dual-ViT in Different Model Sizes, i.e., Dual-ViT-S (Small Size), Dual-ViT-B
+      (Base Size), and Dual-ViT-L (Large Size)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE II Comparison Results of Our Dual-ViT With Other State-of-the-Art\
+      \ Vision Backbones on ImageNet for Image Recognition at Typical Resolution (224\
+      \ \xD7 224)"
+  Table 3 caption:
+    table_text: "TABLE III Comparison Results of Our Dual-ViT With Other State-of-The-Art\
+      \ Vision Backbones on ImageNet for Image Recognition At Higher Resolution (384\
+      \ \xD7 384)"
+  Table 4 caption:
+    table_text: TABLE IV Comparison Results of Our Dual-ViT With Other State-of-The-Art
+      Vision Backbones on COCO for Object Detection and Instance Segmentation Downstream
+      Tasks
+  Table 5 caption:
+    table_text: TABLE V Comparison Results of Dual-ViT With Other State-of-the-Art
+      Vision Backbones on COCO for Object Detection Downstream Task
+  Table 6 caption:
+    table_text: TABLE VI Comparison Results of Our Dual-ViT With Other State-of-the-Art
+      Vision Backbones on ADE20 K for Semantic Segmentation Downstream Task
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268446
+- Affiliation of the first author: institute of information processing, leibniz university
+    hannover, hannover, germany
+  Affiliation of the last author: institute of information processing, leibniz university
+    hannover, hannover, germany
+  Figure 1 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_1.jpg
+  Figure 1 caption: Different from most existing two-stage methods that label the
+    dense relationships between all entity proposals, our one-stage approach can predict
+    the pair proposals directly and generate a sparse scene graph with only visual
+    appearance.
+  Figure 10 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_10.jpg
+  Figure 10 caption: Changes in the parameter number, performance and FPS as the triplet
+    number Nt varies.
+  Figure 2 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_2.jpg
+  Figure 2 caption: Given a set of learned subject and object queries coupled by subject
+    and object encodings, RelTR captures the dependencies between relationships and
+    reasons about the feature context and entity representations, respectively the
+    output of the feature encoder and entity decoder, to directly compute a set of
+    subject and object representations. A pair of subject and object representations
+    with attention heat maps is decoded into a triplet < subject-predicate-object
+    > by feed forward networks (FFNs). CSA, DVA and DEA stand for Coupled Self-Attention,
+    Decoupled Visual Attention and Decoupled Entity Attention. boldsymbolEboldsymbolp
+    , boldsymbolEboldsymbolt , boldsymbolEboldsymbols and boldsymbolEboldsymbolo are
+    the positional, triplet, subject and object encodings respectively. oplus indicates
+    element-wise addition, while otimes indicates concatenation or split.
+  Figure 3 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_3.jpg
+  Figure 3 caption: 'Left: Architecture of the feed-forward network for subjectobject
+    box regression. Right: Architecture of the convolutional mask head.'
+  Figure 4 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_4.jpg
+  Figure 4 caption: The ground truth is assigned to Proposal A while < background-no
+    relation-background > is assigned to Proposal B. However, < background > should
+    not be assigned to the subject of Proposal C and the subject as well as object
+    of Proposal D. BG denotes < background > while X indicates no assignment.
+  Figure 5 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_5.jpg
+  Figure 5 caption: Triplets in which the subject (blue) and object (orange) are the
+    same entity are removed in post-processing. The predicates are usually ambiguous
+    in such cases.
+  Figure 6 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_6.jpg
+  Figure 6 caption: SGDET-R 100 for each relationship category on VG dataset. Long-tail
+    groups are shown with different colors. RelTR almost always performs better than
+    BGNN [50] from of to in front of. The standard deviation of R 100 are respectively
+    11.51 (ours) and 14.15 (BGNN). It indicates that RelTR is more unbiased.
+  Figure 7 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_7.jpg
+  Figure 7 caption: Average precision of relationships and phrases for RelTR and BGNN
+    on Open Images V6. The distribution of relationships in the test set is shown
+    with the black dash line. The average precision of relationships of RelTR is higher
+    than BGNN for 7 of the top-10 high frequency predicates while BGNN generally performs
+    better than RelTR for the low frequency predicates (skateboard to ski). We conjecture
+    that it is attributed to prior knowledge used in BGNN. The overall trend of AP
+    phr is the same as AP rel except hang.
+  Figure 8 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_8.jpg
+  Figure 8 caption: Triplet proposals when only DVA modules are activated. Since the
+    subject and object queries are unaware of each other, the 12th and 74th triplet
+    proposals are duplicated, while the 51th proposal is semantically meaningless.
+    CSA can suppress these failures.
+  Figure 9 Link: articels_figures_by_rev_year\2023\RelTR_Relation_Transformer_for_Scene_Graph_Generation\figure_9.jpg
+  Figure 9 caption: "T -R 50 and T -mR 50 curve on SGDET. \xD7 indicates that the\
+    \ IoU-based assignment strategy is deactivated."
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.91
+  Name of the first author: Yuren Cong
+  Name of the last author: Bodo Rosenhahn
+  Number of Figures: 15
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: 'RelTR: Relation Transformer for Scene Graph Generation'
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Comparison With State-of-The-Art Scene Graph Generation Methods
+      on Visual Genome [19] Test Set
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II R K K, mR K K and zsR k k Performance Comparison
+  Table 3 caption:
+    table_text: TABLE III Results of No-Graph Constraint Recall k k (ng-R K K) and
+      Zero Shot Recall k k (ng-ZsR K K) on Visual Genome
+  Table 4 caption:
+    table_text: TABLE IV SGDET-MR 100 100 for the Head, Body and Tail Groups Which
+      are Partitioned According to the Number of Relationship Instances in the Training
+      Set
+  Table 5 caption:
+    table_text: TABLE V Comparison With Other State-of-The-Art Methods on the Open
+      Images V6 [20] Test Set
+  Table 6 caption:
+    table_text: TABLE VI Comparison With Other Two-Stage Approaches on the VRD Dataset
+      in Relationship and Phrase Detection
+  Table 7 caption:
+    table_text: TABLE VII We Implement Two Long-Tail Techniques for RelTR, Respectively
+      the Bi-Level Resampling (RS) [50], [64], [86] and the Logit Adjustment (LA)
+      [87], [88]
+  Table 8 caption:
+    table_text: TABLE VIII Impact of the Number of Encoder and Decoder Layers on the
+      Performance, Model Size and Inference Speed
+  Table 9 caption:
+    table_text: TABLE IX Coupled Self-Attention (CSA), Decoupled Visual Attention
+      (DVA), Decoupled Entity Attention (DEA), and the Mask Head (Mask) for the Attention
+      Heat Maps are Isolated Separately From the Framework
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268066
+- Affiliation of the first author: samsung ai center, cambridge, u.k.
+  Affiliation of the last author: free university of bozen-bolzano, bolzano, italy
+  Figure 1 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_1.jpg
+  Figure 1 caption: 3D kernel factorization for spatio-temporal learning in video.
+    Majority of previous approaches decompose into channel-wise (CSN), spatial followed
+    by temporal (S3D, TSM), or grouped spatial and spatio-temporal (GST). In these,
+    spatial, temporal, and channel-wise interaction is hard-wired. Our Gate-Shift-Fuse
+    (GSF) leverages group spatial gating and fusion (blocks in green) to control interactions
+    in spatial-temporal decomposition. GSF is lightweight and a building block of
+    high performing video feature extractors.
+  Figure 10 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_10.jpg
+  Figure 10 caption: Accuracy (%) versus complexity (GFLOPs) of state-of-the-art approaches
+    on Something-V1 dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_2.jpg
+  Figure 2 caption: C3D [58] decomposition approaches in comparison to GSF schematics.
+    S3D [72] decomposes C3D into spatial and temporal convolutions while TSM [37]
+    replaces the 1D temporal convolution with fixed channel-wise shifting. GST [38]
+    decomposes C3D into grouped spatial and spatio-temporal convolutions by splitting
+    across the channel dimension. RubiksNet [9] implements learnable spatio-temporal
+    shifting to approximate expensive 3D convolution operation. GSF is inspired by
+    GST and TSM but replaces the hard-wired channel split and concat aggregation with
+    learnable spatial gating and fusion blocks. Compared to RubiksNet that needs to
+    be trained from scratch, GSF can be plugged into any existing 2D CNNs thereby
+    leveraging ImageNet pre-trained weights.
+  Figure 3 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_3.jpg
+  Figure 3 caption: GSF implementation with group gating, forward-backward temporal
+    shift, and fusion. A gate is a single 3D convolution kernel with tanh calibration
+    while fusion consists of a single 2D convolution kernel with sigmoid calibration.
+    Thus very few parameters are added when GSF is used to turn a C2D base model into
+    a spatio-temporal feature extractor.
+  Figure 4 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_4.jpg
+  Figure 4 caption: BN-Inception blocks with GSF. Kernel size and stride of conv and
+    pool layers are annotated inside each block.
+  Figure 5 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_5.jpg
+  Figure 5 caption: ResNet bottleneck layer with GSF. The kernel size and stride of
+    conv layers are annotated inside each block.
+  Figure 6 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_6.jpg
+  Figure 6 caption: t-SNE projection of output features obtained from the layer preceeding
+    the final linear layer for (a) TSN baseline and (b) TSN baseline with GSF. Samples
+    from the 10 action groups defined in [19] are visualized.
+  Figure 7 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_7.jpg
+  Figure 7 caption: Action classes with the highest improvement over TSN baseline.
+    X -axis shows the the number of corrected samples for each class. Y -axis labels
+    are in the format true label (GSF)predicted label (TSN).
+  Figure 8 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_8.jpg
+  Figure 8 caption: Histogram of the gating weights generated by the gating module
+    on videos from SS-v1 dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2023\GateShiftFuse_for_Video_Action_Recognition\figure_9.jpg
+  Figure 9 caption: "Saliency tubes generated by TSN (left) and GSF (right) on sample\
+    \ videos taken from the validation set of Something Something-V1 dataset. Action\
+    \ labels for samples (a)\u2013(d) are shown as text on columns."
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Swathikiran Sudhakaran
+  Name of the last author: Oswald Lanz
+  Number of Figures: 10
+  Number of Tables: 12
+  Number of authors: 3
+  Paper title: Gate-Shift-Fuse for Video Action Recognition
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Model Design Study Done to Determine the Inception Branch
+      That is Most Suitable for Plugging in GSF
+  Table 10 caption:
+    table_text: "TABLE X Comparison to State-of-the-Art on the Validation Set of EPIC-Kitchens-100.\
+      \ \u2217 Results Reported From [5]"
+  Table 2 caption:
+    table_text: TABLE II Model Design Study on GSF-BNInception to Analyze Recognition
+      Accuracy versus Number of Channels Shifted
+  Table 3 caption:
+    table_text: TABLE III Model Design Analysis Done to Determine Where to Plug in
+      GSF on ResNet Bottleneck Layers
+  Table 4 caption:
+    table_text: TABLE IV Model Design Study on GSF-ResNet-50 to Analyze Recognition
+      Accuracy versus Number of Channels Shifted
+  Table 5 caption:
+    table_text: TABLE V Ablation Study on GSF
+  Table 6 caption:
+    table_text: TABLE VI Recognition Accuracy by Varying the Number of GSF Added to
+      BNInception Backbone
+  Table 7 caption:
+    table_text: TABLE VII Recognition Accuracy by Varying the Number of GSF Added
+      to ResNet50 Backbone
+  Table 8 caption:
+    table_text: TABLE VIII Comparison to State-of-the-Art on Something-V1 and Something-V2
+      Datasets
+  Table 9 caption:
+    table_text: TABLE IX Comparison to State-of-the-Art Efficient Architectures on
+      Kinetics400
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268134
+- Affiliation of the first author: national laboratory of pattern recognition, institute
+    of automation, chinese academy of sciences, beijing, china
+  Affiliation of the last author: national laboratory of pattern recognition, institute
+    of automation, chinese academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_1.jpg
+  Figure 1 caption: Speed-accuracy trade-off comparison on the HPatches dataset. Red
+    dots indicate our AWDesc, while grey dots means other state-of-the-art deep learning
+    based methods. The results show that variants of AWDesc can achieve the best trade-off
+    in matching accuracy and speed.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_10.jpg
+  Figure 10 caption: Impact of Smoothing factor. MMA3 and M.S.3 on the HPatches benchmark
+    under different T settings.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_2.jpg
+  Figure 2 caption: 'Matching results under illumination and viewpoint changes. (a)
+    Matching images. (b) Baseline (SuperPoint our impl.). (c) Baseline w Consistent
+    Attention Weighting. (d) Baseline w both Consistent Attention Weighting and Context
+    Augmentation. Green dots: Correct matches. Red dots: Incorrect matches.'
+  Figure 3 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_3.jpg
+  Figure 3 caption: The overview of our AWDesc, which performs local features detection
+    and description end-to-end.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_4.jpg
+  Figure 4 caption: Local Features Detection with Feature Pyramid. Here 3times 3 means
+    3times 3 convolutional layer.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_5.jpg
+  Figure 5 caption: Images (first row) and Consistent Attention Maps (second row)
+    under illumination or viewpoint changes. For consistent attention maps, the colors
+    of pixels that close to red means higher attention score and close to blue means
+    lower score. Meaningless regions (i.e., the sky and ground) and regions with repetitive
+    texture (i.e., trees and brick wall) are given low attention scores.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_6.jpg
+  Figure 6 caption: 'The example of the optimization direction of 2D descriptor. Red
+    arrow: Gradient descent direction. Green arrow: Gradient component of consistent
+    attention omega optimization. Blue arrows: Gradient component of descriptor d
+    optimization.'
+  Figure 7 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_7.jpg
+  Figure 7 caption: The structure of our proposed AWDesc-CA. (a) The structure of
+    our proposed AWDesc-CA. (b) Details of Transfomer Layer in (a). (c) Gated Map
+    in (a). The values of the blue regions are zero and the others are positive values.
+    (d) Receptive fields of proposed modules in (a).
+  Figure 8 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_8.jpg
+  Figure 8 caption: The structure of our AWDesc-Tiny. N in Lightweight Conv block
+    refers to the number of channels of the feature maps.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Attention_Weighted_Local_Descriptors\figure_9.jpg
+  Figure 9 caption: The schematic diagram of local feature description distillation.
+    (a) Training image, dots with different colors represent the sampling locations
+    of different local descriptors. (b) Distilling local descriptors directly. (c)
+    First-order descriptors space distillation, the purple point represents the center
+    point of the descriptors space. (d) Second-order descriptors space distillation.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Changwei Wang
+  Name of the last author: Xiaopeng Zhang
+  Number of Figures: 14
+  Number of Tables: 8
+  Number of authors: 8
+  Paper title: Attention Weighted Local Descriptors
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Ablation Study on HPatches Benchmark
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Relative Pose Estimation Accuracy on ScanNet Dataset
+  Table 3 caption:
+    table_text: TABLE III Ablation Study on HPatches Benchmark
+  Table 4 caption:
+    table_text: TABLE IV Comparison of Running Efficiency on HPatches Dataset
+  Table 5 caption:
+    table_text: TABLE V Number of Keypoints and Matches for Different Methods on HPacthes
+      Dataset
+  Table 6 caption:
+    table_text: TABLE VI Evaluation Results of the InLoc Dataset
+  Table 7 caption:
+    table_text: TABLE VII Evaluation Results of the Aachen Day-Night v1.1 Benchmark
+  Table 8 caption:
+    table_text: TABLE VIII Evaluation on ETH 3D Reconstruction Benchmark
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3266728
+- Affiliation of the first author: cas key lab of network data science and technology,
+    institute of computing technology (ict), chinese academy of sciences (cas), beijing,
+    china
+  Affiliation of the last author: cas key lab of network data science and technology,
+    institute of computing technology (ict), chinese academy of sciences (cas), beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_1.jpg
+  Figure 1 caption: State-driven visual reasoning (top) v.s. transformation-driven
+    visual reasoning (bottom).
+  Figure 10 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_10.jpg
+  Figure 10 caption: Typical failure cases in TRANCE. In the first case, the model
+    finds all objects and actions but they are mismatched. In the second case, the
+    model finds all atomic transformations, but two of them are in reverse order.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_2.jpg
+  Figure 2 caption: 'Illustration of three settings in TRANCE. Basic: Find the single-step
+    transformation between the initial and final state. Event: Find the multi-step
+    transformation between two states. View: Like Event, but the view of the final
+    state is randomly selected from Left, Center, and Right.'
+  Figure 3 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_3.jpg
+  Figure 3 caption: Illustration of an example from TRANCO. The target is to find
+    a sequence of video clips between the initial and the final state.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_4.jpg
+  Figure 4 caption: What we understand about human transformation reasoning (top).
+    Inspired TranNet framework (bottom).
+  Figure 5 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_5.jpg
+  Figure 5 caption: The architecture of TranceNet.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_6.jpg
+  Figure 6 caption: The architecture of TrancoNet.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_7.jpg
+  Figure 7 caption: Results on Event with respect to different steps.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_8.jpg
+  Figure 8 caption: Results for different final views (Center, Left, Right).
+  Figure 9 Link: articels_figures_by_rev_year\2023\Visual_Reasoning_From_State_to_Transformation\figure_9.jpg
+  Figure 9 caption: Results on TRANCO with respect to different steps.
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Xin Hong
+  Name of the last author: Xueqi Cheng
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: 'Visual Reasoning: From State to Transformation'
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Attributes and Values in TRANCE
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Statistics of TRANCO
+  Table 3 caption:
+    table_text: "TABLE III Model and Human Performance on Basic, Event, and View.\
+      \ \u0394 \u0394Acc is the Accuracy Difference Between View and Event"
+  Table 4 caption:
+    table_text: "TABLE IV Results of ResNet \u2212 --T Trained Using REINFORCE [48]\
+      \ With Different Rewards on Event"
+  Table 5 caption:
+    table_text: TABLE V Results on 6.2% Order Sensitive Samples From Event
+  Table 6 caption:
+    table_text: TABLE VI Model Results on TRANCO (R and P are Short for Recall and
+      Precision)
+  Table 7 caption:
+    table_text: TABLE VII Results on TRANCO with Respect to Different Pretraining
+      Strategies
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268093
+- Affiliation of the first author: national key laboratory of human-machine hybrid
+    augmented intelligence, national engineering research center for visual information
+    and applications, and institute of artificial intelligence and robotics, xi'an
+    jiaotong university, xi'an, shaanxi, china
+  Affiliation of the last author: wormpex ai research, bellevue, wa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_1.jpg
+  Figure 1 caption: Contrastive illustration between previous latent-based methods
+    (upper branch) and our proposed method (lower branch). Latent-based methods present
+    multimodal behaviors by multiple latent variables sampled from a prior distribution,
+    while ours presents multimodal behaviors via the mean locations of the full trajectories.
+  Figure 10 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_10.jpg
+  Figure 10 caption: Visualization of the best-predicted trajectory. The predicted
+    trajectory with minimum FDE is selected as the best-predicted trajectory. Some
+    pedestrians are unmarked because there is no record in the dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_2.jpg
+  Figure 2 caption: Comparison between global interaction (upper branch) and our proposed
+    sparse interaction (lower branch). Global interaction assumes a pedestrian interacts
+    with all neighbors at each time step, while our proposed sparse interaction assumes
+    a pedestrian adaptively interacts with partial neighbors at each trajectory snippet.
+  Figure 3 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_3.jpg
+  Figure 3 caption: The framework of our proposed IMP. The naive full trajectories
+    are first normalized by trajectory translation and then fed into the next two
+    parallel branches. The upper branch models the social interaction representation,
+    where the egocentric observed trajectories are first represented by the graph
+    representation matrices and then the snippet-level embedding module embeds the
+    snippet of graph representation matrices to obtain the snippet spatio-temporal
+    embedding E and the isolated snippet temporal embedding Et . Next, E and Et are
+    fed into the sparse learning module to extract sparse interaction features Fs
+    . Et is fed into a standard Transformer block to capture snippet-level temporal
+    dependence features Ft . Fusing Fs and Ft , the sparse spatio-temporal features
+    F are generated as the social interaction representation to represent observed
+    information. The lower branch models the proposed interpretable intention representation.
+    It converts the egocentric full trajectory to its mean location with a specific
+    mode. Supervised by the mean location, a Gaussian Mixture Model (GMM) is estimated
+    based on F to obtain the distribution of the mean locations. Meanwhile, we encode
+    the mean location and then concatenate with F to predict the future trajectory.
+    In inference, we sample multiple mean locations from the GMM to predict diverse
+    future trajectories, which can cover multimodal behaviors.
+  Figure 4 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_4.jpg
+  Figure 4 caption: Illustration of snippet-level embedding. It embeds the non-overlapped
+    snippets on the egocentric observed trajectory to model the temporal continuity
+    of interaction.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_5.jpg
+  Figure 5 caption: Illustration of our proposed sparse learning module. The multi-head
+    global attention is first learned to represent the feature similarity. The subsequent
+    sparse attention learning is used to generate the sparse attention matrix, which
+    drops the non-interactive neighbors out and quantifies the interactive.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_6.jpg
+  Figure 6 caption: Illustration of mean location. The observed trajectory and the
+    future trajectory are concatenated and then converted into its mean location to
+    represent multimodal behaviors. According to the central-limit theorem, the mean
+    locations of a specific mode follow a normal distribution. A GMM is used to model
+    multiple modes jointly.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_7.jpg
+  Figure 7 caption: Visualization of the mean location from training data. (A) is
+    the sampled full trajectories with similar going straight observed trajectory.
+    (B) is the clustered distribution of the mean locations from (A) by the Expectation-Maximization
+    (EM) algorithm. (C) and (D) are the full trajectories and its mean location sampled
+    from (A).
+  Figure 8 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_8.jpg
+  Figure 8 caption: Visualization on the proposed interpratable intention representation.
+    The first row presents the diverse predicted future trajectories and their corresponding
+    mean locations. The second row presents the controllable predicted future trajectory
+    conditioned on the customized mean location.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Representing_Multimodal_Behaviors_With_Mean_Location_for_Pedestrian_Trajectory_P\figure_9.jpg
+  Figure 9 caption: Visualization on spatial sparse interaction. To highlight the
+    interactive neighbors, we neglect the self-interaction, i.e., zeroing the diagonal
+    elements of sparse interaction matrices. The first row presents the interactive
+    scenes, where the trajectory with the minimum FDE is selected from multimodal
+    behaviors as the predicted trajectory. The second row presents the corresponding
+    interactive matrices, where the white color masks the non-interactive neighbors.
+    The color bar shows the weights of interaction. Some pedestrians are unmarked
+    because there is no record in the dataset.
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Liushuai Shi
+  Name of the last author: Gang Hua
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 7
+  Paper title: Representing Multimodal Behaviors With Mean Location for Pedestrian
+    Trajectory Prediction
+  Publication Date: 2023-04-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Ablation Study About Interpretable Intention Representation
+      on ETH-UCY in ADEFDE Metrics. The Lower the Better
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE II Ablation Study About Mean Location on Argoverse and Nuscenes
+      Validation Set in ADEFDE Metrics. The Lower the Better
+  Table 3 caption:
+    table_text: TABLE III Ablation Study About Snippet-Level Embedding on ETH-UCY
+      in ADEFDE Metrics. The Lower the Better
+  Table 4 caption:
+    table_text: TABLE IV Ablation Study About Sparse Learning Module on ETH-UCY in
+      ADEFDE Metrics. The Lower the Better
+  Table 5 caption:
+    table_text: TABLE V Multimodal Trajectory Prediction Comparison With State-of-the-Art
+      Methods on ETH-UCY in ADEFDE Metrics. The Lower the Better
+  Table 6 caption:
+    table_text: TABLE VI Multimodal Trajectory Prediction Comparison With State-of-the-Art
+      Methods on SDD in ADEFDE Metrics. The Lower the Better
+  Table 7 caption:
+    table_text: TABLE VII Comparison of Multimodal Trajectory Prediction Between Our
+      Method and Two Reproduced Methods on Nuscenes and Argoverse Validation Set in
+      ADEFDE Metrics. The Lower the Better
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268110
+- Affiliation of the first author: school of engineering, rmit university, melbourne,
+    vic, australia
+  Affiliation of the last author: school of engineering, rmit university, melbourne,
+    vic, australia
+  Figure 1 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_1.jpg
+  Figure 1 caption: 'Synthetic-to-realistic (S2R) performance comparison for different
+    dense prediction tasks: stereo matching (top row), optical flow (middle row) and
+    semantic segmentation (bottom row). Baseline task networks naively trained on
+    synthetic data only (b) failed to generalize to unseen realistic domains. The
+    proposed ITSA method can substantially improve S2R performance in different tasks,
+    despite training using synthetic data only. (a) Input (b) Baseline (c) ITSA.'
+  Figure 10 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_10.jpg
+  Figure 10 caption: Qualitative illustration of feature maps (unit vector) extracted
+    by semantic segmentation network (FCN) optimized via different training configurations.
+    For each example, the feature maps extracted using the baseline model, Cityscapes
+    fine-tuned model and ITSA model are included in the top to bottom rows, respectively.
+    Similar feature representations are learned by all models at early layers (L1-L3).
+    However, feature maps with random patterns are exploited by the baseline model
+    in penultimate (L4) and final (L5) layers for prediction.
+  Figure 2 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_2.jpg
+  Figure 2 caption: An overview of the proposed shortcut-avoidance strategy to achieve
+    domain generalization in dense prediction networks. The mpsi network represents
+    the task network (for example, stacked 3D hourglass in stereo matching networks,
+    classifier in semantic segmentation networks, and convolutional decoder in optical
+    flow networks). Furthermore, the parameters are shared across the two feature
+    extractor networks ftheta (best viewed in color).
+  Figure 3 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_3.jpg
+  Figure 3 caption: Examples of five different domains in the Digits-DG dataset. The
+    five domains include MNIST, MNIST-M, SVHN, SYN and USPS. Each image in these datasets
+    contains one digit only.
+  Figure 4 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_4.jpg
+  Figure 4 caption: Examples of shortcuts in stereo matching networks. The left and
+    right input images are included in the top two rows. The disparity maps estimated
+    by the baseline PSMNet [24] are included in the third row and ITSA-PSMNet in the
+    bottom row. The performance of the baseline PSMNet deteriorates substantially
+    when the shortcut attributes are distorted or removed from the input stereo images.
+    The corresponding EPE is displayed on the estimated disparity map. Best viewed
+    in color and zoom in for details.
+  Figure 5 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_5.jpg
+  Figure 5 caption: Qualitative results on KITTI 2015 stereo data. For each example,
+    the results of the baseline networks are presented on the top row and the results
+    from our method are included in the bottom row. The corresponding left image and
+    ground-truth are included in column (a). Our method can significantly improve
+    the stereo matching performance even in scenario with poor lighting condition.
+    Best viewed in color and zoom in for details.
+  Figure 6 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_6.jpg
+  Figure 6 caption: Qualitative comparison on out-of-distribution data (e.g. rain
+    and night) provided by the DrivingStereo [59] and the Oxford Robotcar [60]. The
+    estimated disparity maps are generated using the PSMNet [24], GwcNet [50] and
+    CFNet [5]. For each example, the left stereo image and the ground-truth disparity
+    map are included in the left column. Moreover, the disparity maps estimated by
+    the KITTI-2015 [56] fine-tuned networks are included on the top row and the results
+    of our method (ITSA) are included in the bottom row. The corresponding D1 error
+    rate is also included on the predicted disparity map. Our method can significantly
+    improve the performance of these stereo matching networks in challenging unseen
+    domains.
+  Figure 7 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_7.jpg
+  Figure 7 caption: Qualitative results on KITTI 2015 train data for optical flow
+    task. The colorized optical flow predictions (top row) and the error maps with
+    F1 score superimposed (bottom row) are included for each method (lower value indicates
+    better performance). Despite training with synthetic data only, the proposed ITSA
+    can substantially improve the synthetic-to-realistic domain generalization performance
+    of PwcNet [27] and RAFT [7] networks.
+  Figure 8 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_8.jpg
+  Figure 8 caption: Qualitative results on challenging out-of-domain data provided
+    by BDD-100K [68]. The proposed ITSA can significantly improve the performance
+    of semantic segmentation networks in challenging unseen domains. Despite training
+    on synthetic data only, our method has comparable performance as compared to the
+    network fine-tuned on the realistic Cityscapes [69] dataset (CS-fine-tuned).
+  Figure 9 Link: articels_figures_by_rev_year\2023\An_InformationTheoretic_Method_to_Automatic_Shortcut_Avoidance_and_Domain_Genera\figure_9.jpg
+  Figure 9 caption: Qualitative illustration of feature maps extracted by stereo matching
+    network (PSMNet) optimized via different training configurations. The normalized
+    feature vectors (unit vectors) and feature vector magnitude are included in the
+    top and middle rows for each example. The bottom row consists of the estimated
+    disparity maps. The baseline model extracted features with substantial random
+    patterns and failed to generalize to realistic domains. The KITTI fine-tuned (KITTI-Ft)
+    model learns to extract features specific to the training domain. In contrast,
+    our ITSA model consistently extracts features with rich structural details across
+    different realistic domains.
+  First author gender probability: 0.73
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: WeiQin Chuah
+  Name of the last author: Alireza Bab-Hadiashar
+  Number of Figures: 10
+  Number of Tables: 19
+  Number of authors: 5
+  Paper title: An Information-Theoretic Method to Automatic Shortcut Avoidance and
+    Domain Generalization for Dense Prediction Tasks
+  Publication Date: 2023-04-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE I Performance Comparison of Digit Recognition Networks Optimized
+      Via Empirical Risk Minimization (ERM), the Variational Information bottleneck
+      (VIB), Its Robust variant (RIB) and Our Proposed ITSA. While VIB Performs Well
+      in the In-Domain Tests, It Performs Poorly on Out-of-Domain Tests. Top-1 Accuracy
+      (%) is Reported
+  Table 10 caption:
+    table_text: TABLE X Synthetic-to-Realistic Domain Generalization Evaluation of
+      Semantic Segmentation, Using Cityscapes, BDD-100 K and Mapillary Validation
+      Sets. All Methods Were Trained With ResNet-50 as the Backbone, Using the GTAV
+      Synthetic Dataset. Mean Intersection Over union (mIoU) is Employed as Evaluation
+      metric (higher Value Indicates Better Performance). For Each Method, the Base
+      Results are Included in the Top Row, and the Improved Results are Included in
+      the Bottom Row
+  Table 2 caption:
+    table_text: TABLE II Comparison of GPU Memory Requirement and Training Time Per
+      Iteration for the Digital Recognition Networks. The Batch Size Was Set to 12.
+      The RIB [21] Has Significantly Higher GPU Memory Requirement and Processing
+      Time as Compared to Other Counterparts
+  Table 3 caption:
+    table_text: TABLE III Analysis of the Effect of Data Augmentation on the Performance
+      of Stereo Matching Networks. All Networks are Only Trained on the Scene Flow
+      Training Set and the EPE Metric is Employed for evaluation (lower Value Indicates
+      Better Performance). The Results Show That Removing Shortcut Related Artefacts
+      (By Data Augmentation) Negatively Impact the Performance of These Networks.
+      In Particular, Our Proposed Augmentation Can Even Significantly Impact Robust
+      Methods (E.g. CFNet)
+  Table 4 caption:
+    table_text: 'TABLE IV Synthetic-to-Realistic Domain Generalization Evaluation
+      of Stereo Matching Networks, Using KITTI, Middlebury and ETH3D Training Sets.
+      All Methods are Trained on the Scene Flow Dataset and Directly Tested on the
+      Three Real Datasets. Pixel Error Rate With Different Threshold are Employed:
+      KITTI 3-Pixel, Middlebury 2-Pixel and ETH3D 1-Pixel (lower Value Indicates Better
+      Performance)'
+  Table 5 caption:
+    table_text: TABLE V Robustness Evaluation on Anomalous Scenarios. Our method (ITSA)
+      Consistently Enhances the Robustness of Selected Stereo Matching Networks and
+      Outperform the KITTI fine-Tuned (KITTI-FT) Models in the Real-World Anomalous
+      Scenarios Including Rainy and Foggy Weather and Night-Time. The Performance
+      Was Evaluated Using the D1 metric (lower Value Indicates Better Performance)
+  Table 6 caption:
+    table_text: "TABLE VI Analysis of the Effect of Data Augmentation on the Performance\
+      \ of Optical Flow Networks, Using PwcNet [27] and RAFT [7]. All Networks are\
+      \ Trained on the Synthetic FlyingChairs and FlyingThings Train Set, and the\
+      \ EPE Metric is Employed for Evaluation on the FlyingChairs Test set (lower\
+      \ Value Indicates Better Performance). The Results Show That Removing Shortcut\
+      \ Related Artefacts (By Data Augmentation) Negatively Impact the Performance\
+      \ of These Networks. Asterisk ( \u2217 ) Indicates Networks Trained With Asymmetrical\
+      \ Chromatic Augmentation Included"
+  Table 7 caption:
+    table_text: TABLE VII Cross-Domain Generalization Evaluation of Optical Flow Networks,
+      Using KITTI-2015 (realistic) and Sintel (synthetic) Training sets (lower Value
+      Indicates Better Performance). All Methods are Trained on FlyingChairs and FlyingThings3D
+      Datasets Only. Our method (ITSA) Substantially Improve the RAFT Networks and
+      Outperform Existing Methods in Synthetic-to-Real Generalization. The Best Results
+      are in Bold and the Second Best are underlined
+  Table 8 caption:
+    table_text: TABLE VIII Analysis of the Effect of Photometric Transformations and
+      SCP on the In-Domain and Out-of-Domain Performance of Semantic Segmentation
+      Networks. All Networks are Only Trained on the Synthetic GTAV Training Set,
+      and the mIoU Metric is Employed for evaluation (higher Value Indicates Better
+      Performance). The Results Show That Semantic Segmentation Networks Trained on
+      Synthetic Data are Susceptible to Photometric Bias. The Proposed ITSA Can Mitigate
+      Shortcut Learning Beyond Photometric Bias, and Significantly Improves the Synthetic-to-Realistic
+      Domain Generalization Performance
+  Table 9 caption:
+    table_text: "TABLE IX Synthetic-to-Realistic Domain Generalization Evaluation\
+      \ of Semantic Segmentation, Using Cityscapes, BDD-100 K and Mapillary Validation\
+      \ Sets. All Methods Were Trained With ResNet-101 as the Backbone, Using the\
+      \ GTAV Synthetic Dataset. Mean Intersection Over Union (mIoU) is Employed as\
+      \ the Evaluation Metric (A Higher Value Indicates Better Performance). For Each\
+      \ Method, the Base Results are Included in the Top Row, and the Improved Results\
+      \ are Included in the Bottom Row. \u2020For FSDR, We Report the Results Generated\
+      \ Using the Pre-Trained Model Released by the Original Author of FSDR"
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268640
+- Affiliation of the first author: department of computer engineering, vision and
+    learning laboratory, inha university, incheon, south korea
+  Affiliation of the last author: department of computer engineering, vision and learning
+    laboratory, inha university, incheon, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_1.jpg
+  Figure 1 caption: "Proposed deformable part region detector (D-PRD): we use FPN\
+    \ as a feature extractor. In the DPR-Net, kP part boxes for each proposal are\
+    \ transformed by the the part model transformation layer. Here, ast means convolution,\
+    \ and Cls, regression, and part model transformation layers are designed by 1\
+    \ \xD7 1 conv. In FAT-Net, we first learn strong semantic features mathbfxL-11\
+    \ and mathbfxL1 by aggregating different region features with the bottom-up aggregation,\
+    \ and feed both features to classification ( mathcal C ), box ( mathcal B ), mask\
+    \ ( mathcal M ), MaskIoU ( mathcal I ) heads."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_2.jpg
+  Figure 2 caption: Decomposed part regions mathbf dp with different kP .
+  Figure 3 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_3.jpg
+  Figure 3 caption: 'Deformable part region generation: when applying kA anchors for
+    a feature map of a size H times W , H W kA proposals are generated. Each proposal
+    consists of kP boxes with kR coordinates. We learn kP times kR transformation
+    parameters in the part box transformation layer, and transform each part box by
+    applying the predicted outputs in the part box generation layer.'
+  Figure 4 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_4.jpg
+  Figure 4 caption: Comparison of different cascade architectures. In (c), features
+    from transformed part regions of DPR are aggregated per stage n by Tn , and are
+    used for several detection tasks.
+  Figure 5 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_5.jpg
+  Figure 5 caption: Comparison of the Cascade D-PRD with different backbones by changing
+    sigma . Here, sigma represents an IoU score between fixed mathbf dp and transformed
+    hatmathbf dp part boxes within the same RoI box. Here, B and M means box and mask
+    AP scores.
+  Figure 6 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_6.jpg
+  Figure 6 caption: Gradient activations of the Cascade Mask R-CNN [24] (left) and
+    Cascade D-PRD (right) with R50-FPN are compared.
+  Figure 7 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_7.jpg
+  Figure 7 caption: Comparisons with the recent cascade-based detectors in terms of
+    speed and accuracy. All scores are evaluated for single-model single-scale. Our
+    cascade D-PRD achieves the 55.2 AP while showing the better speed than other detectors
+    (i.e. Cascade R-CNN and HTC). Here, SL means the self-learning on the COCO unlabeled
+    dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_8.jpg
+  Figure 8 caption: Detection and instance segmentation results of the Cascade Mask
+    R-CNN (top) and Cascade D-PRD with X101-FPN (bottom) are compared.
+  Figure 9 Link: articels_figures_by_rev_year\2023\Deformable_Part_Region_Learning_and_Feature_Aggregation_Tree_Representation_for_\figure_9.jpg
+  Figure 9 caption: Instance segmentation results on the COCO dataset using our Cascade
+    D-PRD with X101-FPN. We mark a bounding box and mask with the same color for whole
+    objects. The left, right, top, and bottom part boxes are colored with cyan, orange,
+    purple, and red, respectively. The last row shows the examples of inaccurate detections.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Seung-Hwan Bae
+  Name of the last author: Seung-Hwan Bae
+  Number of Figures: 9
+  Number of Tables: 11
+  Number of authors: 1
+  Paper title: Deformable Part Region Learning and Feature Aggregation Tree Representation
+    for Object Detection
+  Publication Date: 2023-04-20 00:00:00
+  Table 1 caption:
+    table_text: "TABLE I Ablation Study: Effects of the Proposed DPR, FAT, and Cascade\
+      \ Methods on the COCO2017 Val Set. Based on our Re-Implemented Mask Scoring\
+      \ R-CNN [42], we Gradually Add the DPR and FAT Networks, and Cascade Scheme\
+      \ (Cascade). We Use the 3\xD7 COCO Training Schedule. Here, Fixed Means That\
+      \ Decomposed Part Methods are not Deformable"
+  Table 10 caption:
+    table_text: "TABLE X Comparison Results on the COCO19 Test-Dev Data Set. \u2217\
+      \ and \u22C6 \u2605 are Multi-Scale Testing and Data Augmentation Results. \u2020\
+      \ \u2020 and \u2218 \u2218 show the Re-Implemented Results by Ours and Our Detector\
+      \ Without Mask Headers. Our Detection and Segmentation Results Can Be Founded\
+      \ in the MSCOCO Evaluation test-Dev2019 (bbox) and in the MSCOCO Evaluation\
+      \ test-Dev2019 (segm), Respectively"
+  Table 2 caption:
+    table_text: "TABLE II For Inference, Comparisons of Detectors With R50-FPN trained\
+      \ During the 1\xD7 Epoch on COCO. We Have Implemented Different Variants of\
+      \ D-PRD (D1-D5) With Different Part Models and Feature Fusion Methods"
+  Table 3 caption:
+    table_text: TABLE III Evaluation With the Different Number of Parts in D-PRD
+  Table 4 caption:
+    table_text: TABLE IV Comparisons of Cascade D-PRD Structures
+  Table 5 caption:
+    table_text: TABLE V Comparison With Different Mutual Information Functions. We
+      Evaluate the Box and Mask APs for Our Detectors When Applying Each Mutual Information
+      Function on the COCO2017 Val Set
+  Table 6 caption:
+    table_text: "TABLE VI Comparison With Other Part Model-Based Detectors. Here,\
+      \ \u2020 \u2020 Indicates Our Re-Implementation Results Using Detectron2"
+  Table 7 caption:
+    table_text: TABLE VII Comparison of Different Cascade Detectors on the COCO2019
+      Test-Dev Datasets
+  Table 8 caption:
+    table_text: TABLE VIII Comparison of the Feature Aggregation Tree by Applying
+      Different Methods on the COCO2017 Val Set. The R50-FPN is Used as a Backbone
+  Table 9 caption:
+    table_text: TABLE IX Comparison Between the RetinaNet [20] and Our Cascade D-PRD
+      wt Ret Detectors on the COCO2017 Val Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2023.3268864
