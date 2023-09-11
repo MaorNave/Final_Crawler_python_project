@@ -1,0 +1,49 @@
+
+
+#please fill the following login email and password for institution params
+login_email_add: "maormoshe.nanikashvili@live.biu.ac.il"
+login_passwd: "NnaniI2608@@"
+#general paths for EX
+journal_url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+chrome_service_path: 'C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe'
+google_url: 'http://www.google.com/'
+#general params
+toggel_for_login_crawler: False
+toggel_for_juornal_crawler: False
+toggel_for_extract_article_info: False
+institution_name: 'Bar Ilan University'
+max_retries: 50
+articels_list_by_year_folder_name: 'articels_lists_by_rev_year'
+articels_data_by_year_folder_name: 'articels_data_by_rev_year'
+article_figuers_main_folder_name: 'articels_figures_by_rev_year'
+names_dict_path: 'names_dict\\names_dict.pickel'
+cover_list_path: 'cover_list/cover_list.yml'
+full_articels_links_list_no_cover_path: 'full_articles_list_copy/full_articels_links_list_no_cover.yml'
+full_output_folder: 'full_output'
+input_df_path: 'Input/output.xlsx'
+figuers_problem_check_string: 'Figures are not available for this document'
+#do stay activated as user - over night run
+activation_stay_key: True
+
+#Xpath dict:
+url_xpath_dict:
+  sign_in_button: '//*[@id="LayoutWrapper"]/div/div/div[3]/div/xpl-root/header/xpl-header/div/xpl-navbar/div/div[1]/div[3]/xpl-login-modal-trigger/a'
+  institution_button: '/html/body/ngb-modal-window/div/div/div/xpl-login-modal/div[1]/div[2]/div/div/xpl-login/div/section/div/div/xpl-seamless-access/div/div[1]/button/div/div[2]/div'
+  students_button: '// *[ @ id = "lachooser-container"] / div[2] / div / div[1] / div[1]'
+  institution_input_element: "//input[@aria-label='Search for your Institution']"
+  institution_email_input: "//*[@id='i0116']"
+  institution_selection_first_item: "/html/body/ngb-modal-window/div/div/div/xpl-login-modal/div[1]/div[2]/div/div/xpl-login/div/section/div/div/div[2]/div[2]/xpl-inst-typeahead/div/div[2]/div"
+  institution_email_passwd_input: '/html/body/div/form[1]/div/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div/div[2]/input'
+  sign_in_activation: '//*[@id="idBtn_Back"]'
+  sign_in_activation_1: '//*[@id="lightbox"]/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[2]'
+  all_issues_botton: '//*[@id="xplMainContentLandmark"]/div/xpl-xpl-delegate/xpl-journals/div/div[1]/div[2]/section/nav/div/div[5]'
+  decades_div: '//*[@id="xplMainContentLandmark"]/div/xpl-xpl-delegate/xpl-journals/div/div[1]/div[3]/section/xpl-past-issue/section/div/div[1]/div/div[2]/ul'
+  years_div: '//*[@id="xplMainContentLandmark"]/div/xpl-xpl-delegate/xpl-journals/div/div[1]/div[3]/section/xpl-past-issue/section/div/div[1]/div/div[3]/ul'
+  volume_div: '//*[@id="xplMainContentLandmark"]/div/xpl-xpl-delegate/xpl-journals/div/div[1]/div[3]/section/xpl-past-issue/section/div/div[1]/div/div[4]'
+  items_per_page: '//*[@id="dropdownPerPageLabel"]'
+  items_per_page_list: '//*[@id="publicationIssueMainContent global-margin-px"]/div[1]/xpl-issue-search-dashboard/div/div[1]/ul/div/div[2]/xpl-rows-per-page-drop-down/div/div'
+  cookies: '/html/body/div[1]/div'
+  papers_div: '//*[@id="publicationIssueMainContent global-margin-px"]/div[2]/div/div[2]/div/xpl-issue-results-list/div[2]'
+  article_title: '//*[@id="xplMainContentLandmark"]/div/xpl-document-details/div/div[1]/section[2]/div/xpl-document-header/section/div[2]/div/div/div[1]/div/div[1]/h1/span'
+  article_data_div: '//*[@id="xplMainContentLandmark"]/div/xpl-document-details/div/div[1]/div/div[2]/section/div[2]/xpl-accordian-section/div/xpl-document-accordion'
+
