@@ -1,0 +1,779 @@
+- Affiliation of the first author: center for research on intelligent perception and
+    computing (cripac), national laboratory of pattern recognition (nlpr), center
+    for excellence in brain science and intelligence technology (cebsit), ai school,
+    university of chinese academy of sciences (ucas), beijing, china
+  Affiliation of the last author: department of computer science, stony brook university,
+    stony brook, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Cyclic_Differentiable_Architecture_Search\figure_1.jpg
+  Figure 1 caption: Comparisons of prior DARTS and our CDARTS. In prior DARTS [7],
+    PDARTS [15], and EnTranNAS [16], the target evaluation network does not engage
+    in the architecture search. In contrast, our CDARTS combines the search and evaluation
+    networks into a joint optimization framework. The blue and gold boxes indicate
+    the search and evaluation networks, respectively.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Cyclic_Differentiable_Architecture_Search\figure_2.jpg
+  Figure 2 caption: Illustration of the proposed CDARTS. CDARTS contains two networks,
+    the search network (left) and the evaluation network (right). The Embedding module
+    maps each stage feature to a one-dimensional vector.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Cyclic_Differentiable_Architecture_Search\figure_3.jpg
+  Figure 3 caption: "Test and validation accuracy ( mean\xB1std ) versus search epochs\
+    \ on NATS-Bench benchmark [95] topology search space S t . DARTSV1 and DARTSV2\
+    \ indicate the first-order and second-order DARTS methods [7], whose results are\
+    \ provided by the benchmark [95]."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Cyclic_Differentiable_Architecture_Search\figure_4.jpg
+  Figure 4 caption: Cells discovered on CIFAR10 and ImageNet. ImageNet cells are deeper
+    than CIFAR10.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Cyclic_Differentiable_Architecture_Search\figure_5.jpg
+  Figure 5 caption: Operation weights and retrain accuracy correlation analysis. Weights
+    Rank indicates the weight sorting of the learned architecture from small to large.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Cyclic_Differentiable_Architecture_Search\figure_6.jpg
+  Figure 6 caption: Ablation of the search epochs and the depth of evaluation network.
+    Evaluation-820 represent the evaluation networks with 820 cells, respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Cyclic_Differentiable_Architecture_Search\figure_7.jpg
+  Figure 7 caption: "Discovered architectures. \u201D MB a b times b \u201D represents\
+    \ the inverted bottleneck MBConv with the expand rate of a and kernel size of\
+    \ b. \u201D DS a b times b \u201D denotes the depthwise separable convolution\
+    \ with the expand rate of a and kernel size of b."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Hongyuan Yu
+  Name of the last author: Haibin Ling
+  Number of Figures: 7
+  Number of Tables: 12
+  Number of authors: 7
+  Paper title: Cyclic Differentiable Architecture Search
+  Publication Date: 2022-02-23 00:00:00
+  Table 1 caption: TABLE 1 The Hyperparameters Used in Search
+  Table 10 caption: TABLE 10 Top-1 Accuracy of big Models
+  Table 2 caption: TABLE 2 Comparison With 10 NAS Methods Provided by NATS-Bench Benchmark
+    [95] Topology Search Space S t St
+  Table 3 caption: TABLE 3 Top-1 Accuracy of Searched Architectures in Five Independent
+    Search Runs on CIFAR10
+  Table 4 caption: TABLE 4 Comparison With SOTA Architectures on CIFAR10 and CIFAR100
+  Table 5 caption: TABLE 5 Results on ImageNet
+  Table 6 caption: TABLE 6 Evaluation of Searched Architectures in Five Independent
+    Search Runs on ImageNet
+  Table 7 caption: TABLE 7 Ablation Study on ImageNet
+  Table 8 caption: TABLE 8 Comparisons of Chain-Structured Search Space Models on
+    ImageNet
+  Table 9 caption: TABLE 9 Object Detection Results of Various Drop-in Backbones on
+    the COCO val2017
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3153065
+- Affiliation of the first author: department of computer science and technology,
+    tsinghua university, beijing, china
+  Affiliation of the last author: department of computer science and technology, tsinghua
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Disentangled_Representation_Learning_for_Recommendation\figure_1.jpg
+  Figure 1 caption: "The whole framework of our proposed SEM-MacridVAE model. The\
+    \ macro disentanglement is accomplished through learning a set of prototypes (macro\
+    \ concepts) based on which the user intention related with each item is inferred.\
+    \ Different colors (blue, yellow and green) in the figure indicate different macro\
+    \ concepts where each macro concept (one color) has one single independent prototype,\
+    \ encoder and decoder (with the same color). The micro disentanglement is achieved\
+    \ by capturing the preferences of the target user over different intentions separately,\
+    \ guaranteed by magnifying the KL divergence where a term penalizing the total\
+    \ correlation can be separated with a factor of \u03B2 . Semantic information\
+    \ included categorical and visual signals extracted from candidate items is utilized\
+    \ to further improve model performance. In particular, visual signals are used\
+    \ to initialize the item factors and prototype representations, and categorical\
+    \ signals serve as the supervisions for learning macro concept C ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Disentangled_Representation_Learning_for_Recommendation\figure_2.jpg
+  Figure 2 caption: Visualization of macro disentanglement for Amazon Musical Instruments
+    with K=4 , where item i is colored according to arg max k c i,k , i.e., the inferred
+    category. The discovered clusters of items (see Fig. 2a) align well with the ground-truth
+    categories (see Fig. 2b, where the color order is chosen such that the connections
+    between the ground-truth categories and the learned clusters are easy to verify).
+    Fig. 2c highlights the importance of using cosine similarity rather than inner
+    product to combat mode collapse, where items are obtained by training a new model
+    that uses inner product instead of cosine, colored according to the value of arg
+    max k c i,k .
+  Figure 3 Link: articels_figures_by_rev_year\2022\Disentangled_Representation_Learning_for_Recommendation\figure_3.jpg
+  Figure 3 caption: Visualization of macro disentanglement for Amazon Home&Kitchen
+    with K=5 , in the same way as Fig. 2.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Disentangled_Representation_Learning_for_Recommendation\figure_4.jpg
+  Figure 4 caption: Visualization of macro disentanglement for Amazon Clothing&Shoes&Jewelry
+    with K=3 , in the same way as Fig. 2.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Disentangled_Representation_Learning_for_Recommendation\figure_5.jpg
+  Figure 5 caption: "Micro disentanglement vs. recommendation performance. By varying\
+    \ the hyper-parameters \u03B2 , we compare the micro disentanglement and recommendation\
+    \ performance. It is observed that SEM-MacridVAE overall outperforms both MacridVAE\
+    \ and multiVAE in terms of both micro disentanglement and recommendation performance\
+    \ under recall20."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Disentangled_Representation_Learning_for_Recommendation\figure_6.jpg
+  Figure 6 caption: Starting from an item representation, we gradually change the
+    value of a target dimension and retrieve the items having similar representations
+    with the changed representations, as is described in Section 3.5. Here we present
+    the retrieved items in Amazon Musical Instruments dataset when varying the target
+    dimension and fixing others.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Disentangled_Representation_Learning_for_Recommendation\figure_7.jpg
+  Figure 7 caption: Starting from an item representation, we gradually change the
+    value of a target dimension and retrieve the items having similar representations
+    with the changed representations, as is described in Section 3.5. Here we present
+    the retrieved items in Amazon Home&Kitchen dataset when varying the target dimension
+    and fixing others.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Disentangled_Representation_Learning_for_Recommendation\figure_8.jpg
+  Figure 8 caption: Starting from an item representation, we gradually change the
+    value of a target dimension and retrieve the items having similar representations
+    with the changed representations, as is described in Section 3.5. Here we present
+    the retrieved items in Amazon Clothing&Shoes&Jewelry dataset when varying the
+    target dimension and fixing others.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.92
+  Name of the first author: Xin Wang
+  Name of the last author: Wenwu Zhu
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Disentangled Representation Learning for Recommendation
+  Publication Date: 2022-02-23 00:00:00
+  Table 1 caption: TABLE 1 Statistics of the Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Results of Recommendation Performance, Where Bold Font
+    Denotes the Winner
+  Table 3 caption: TABLE 3 Ablation Studies on Macro & Micro Disentanglement and Visual
+    & Categorical Signals, Where Bold Font Denotes the Winner
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3153112
+- Affiliation of the first author: school of artificial intelligence, university of
+    chinese academy of sciences, beijing, china
+  Affiliation of the last author: center for research on intelligent system and engineering
+    and national laboratory of pattern recognition, institute of automation, chinese
+    academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_1.jpg
+  Figure 1 caption: The execution flow and comparison of GIT with other video-related
+    vision tasks (VID, MOT, SOT). VID (a) and MOT (b) can only locate limited instances,
+    while SOT (c) and GIT (d) do not constrain the target category. Furthermore, GIT
+    expands the SOT task by canceling the motion continuity assumption, allowing the
+    target to move in a broader and more complex environment. The detailed comparison
+    of GIT with above vision tasks is listed in e. Obviously, GIT is a new visual
+    task without restrictions on target categories and scenarios.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_10.jpg
+  Figure 10 caption: The distribution of object classes (a-b), scene categories (c-d)
+    and motion modes (e-f) in VideoCube and LaSOT [3] (based on WordNet [45]).
+  Figure 2 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_2.jpg
+  Figure 2 caption: Comparison of VideoCube and other tracking benchmarks (OTB2015
+    [1], TrackingNet [2], LaSOT [3], VOT2017 [4], GOT-10k [5]) in the complexity of
+    the environment, the rationality of evaluation, and the completeness of target
+    selection.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_3.jpg
+  Figure 3 caption: Comparison of VideoCube and three representative tracking benchmarks
+    (OTB2015 [1], LaSOT [3], GOT-10k [5]) in video length (a), video resolution (b),
+    and target resolution (c).
+  Figure 4 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_4.jpg
+  Figure 4 caption: Comparison of VideoCube (a) and three representative tracking
+    benchmarks (LaSOT [3] (b), GOT-10k [5] (c), OTB2015 [1] (d)) in video content,
+    video length, number of disappearances, and the absent duration.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_5.jpg
+  Figure 5 caption: Schematic diagram of the human visual tracking experiment.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_6.jpg
+  Figure 6 caption: Construction principles of the VideoCube benchmark. We assume
+    that a scientific benchmark should characterize the specified task and evaluate
+    the model intelligence. Dataset, evaluation system, and performance measurement
+    are three critical points included in constructing a benchmark. The red dotted
+    line expresses the relationship of various fields.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_7.jpg
+  Figure 7 caption: The 6D principle of data collection. We split the films narrative
+    into the spatio-temporal and causal relationship and further decompose them into
+    six dimensions (scene category, spatial continuity, temporal continuity, total
+    frame, motion mode, object class) to provide a more comprehensive description.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_8.jpg
+  Figure 8 caption: The representative data of VideoCube. Each video is strictly selected
+    based on duration, instance classes, main scene categories, main motion modes,
+    spatial consistency, and time consistency.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Global_Instance_Tracking_Locating_Target_More_Like_Humans\figure_9.jpg
+  Figure 9 caption: Data distribution of VideoCube. (a) The distribution of object
+    classes. (b) The distribution of scene categories. (c) The distribution of video
+    duration. (d) The distribution of motion modes.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Shiyu Hu
+  Name of the last author: Kaiqi Huang
+  Number of Figures: 24
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: 'Global Instance Tracking: Locating Target More Like Humans'
+  Publication Date: 2022-02-23 00:00:00
+  Table 1 caption: TABLE 1 Comparison of VideoCube With Popular Single Object Tracking
+    Benchmarks
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3153312
+- Affiliation of the first author: key laboratory of intelligent information processing,
+    chinese academy of sciences (cas), institute of computing technology, cas, beijing,
+    china
+  Affiliation of the last author: key laboratory of intelligent information processing,
+    chinese academy of sciences (cas), institute of computing technology, cas, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_1.jpg
+  Figure 1 caption: The two investigations for FSIR from the dataset. (a) Illustrations
+    of dataset diversity. (b) Illustrations of the few-shot learning tasks sampled
+    from datasets and the few-shot learning method. (c) Illustrations of dataset structures.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_10.jpg
+  Figure 10 caption: High-way experimental results on Open MIC with different splits.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_2.jpg
+  Figure 2 caption: The training and test tasks are formed by randomly sampling from
+    the base and novel categories, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_3.jpg
+  Figure 3 caption: 5-way 1-shot accuracy (%) of different instance density, i.e.,
+    instance number per category is increasing, SG-(L;L)SG-(L;AI) means base and novel
+    categories are from LTED and LTEDARIN branches.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_4.jpg
+  Figure 4 caption: 5-way 1-shot accuracy (%) of different category number, i.e.,
+    base categories for training are increasing, (a) CG-(L,L;L) means base, additional
+    base, novel categories are all from LTED, and (b) CG-(L,AO;L) means base and novel
+    categories are from LTED, but additional base categories are from AROT.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_5.jpg
+  Figure 5 caption: 5-way 1-shot accuracy (%) of different category number, (a) CG-(L,L;AI)
+    means base, additional base categories are all from LTED and novel categories
+    are from ARIN, and (b) CG-(L,AO;AI) means base, additional base, novel categories
+    are from LTED, AROT and ARIN.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_6.jpg
+  Figure 6 caption: 5-way 1-shot accuracy (%) of different categories with the same
+    number of instances in total, (a) CGS-(L,L;L) means base, additional base, novel
+    categories are all from LTED, and (b) CGS-(L,L;AI) means base, additional base
+    categories are from LTED, and novel categories are from ARIN.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_7.jpg
+  Figure 7 caption: 5-way 1-shot accuracy of different categories with the same number
+    of instances in total, (a) CGS-(L,AO;L) means base, novel categories are from
+    LTED, and additional base categories are from AROT, and (b) CGS-(L,AO;AI) means
+    base, additional base, novel categories are from LTED, AROT and ARIN.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_8.jpg
+  Figure 8 caption: Experimental results on a large number of categories with a fixed
+    number of total samples.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Dataset_Bias_in_FewShot_Image_Recognition\figure_9.jpg
+  Figure 9 caption: High-way accuracy on MiniCharacter, MiniImagenet, MiniPlaces,
+    MiniFlower and MiniFood.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Shuqiang Jiang
+  Name of the last author: Weiqing Min
+  Number of Figures: 10
+  Number of Tables: 8
+  Number of authors: 6
+  Paper title: Dataset Bias in Few-Shot Image Recognition
+  Publication Date: 2022-02-24 00:00:00
+  Table 1 caption: TABLE 1 Distances Between Different Datasets With the Metric of
+    Shortest Path Length (SPL) and Word Movers Distance (WMD)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Sampled Categories of Different Groups.
+  Table 3 caption: TABLE 3 The Image Complexity in Different Datasets
+  Table 4 caption: TABLE 4 5-Way 1-Shot Accuracy (%) on Different Datasets With CNN-4ResNet-12
+  Table 5 caption: TABLE 5 Intra-Concept Visual Consistency and Inter-Concept Visual
+    Similarity in Different Datasets
+  Table 6 caption: TABLE 6 The Performance of 5-Way 1-Shot (%) on the Open MIC Dataset
+  Table 7 caption: TABLE 7 5-Way 5-Shot Accuracy (%) on Different Datasets With CNN-4
+  Table 8 caption: TABLE 8 Comparison Results of the Variants withwithout Detected
+    Regions on MIT67SUN397.
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3153611
+- Affiliation of the first author: department of neurobiology and behavior, stony
+    brook university, stony brook, ny, usa
+  Affiliation of the last author: department of neurobiology and behavior, stony brook
+    university, stony brook, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Streaming_Variational_Monte_Carlo\figure_1.jpg
+  Figure 1 caption: "Investigating how the performance of SVMC\u2013measured via RMSE\
+    \ (lower is better) and ELBO (higher is better)\u2013depends on number of gradient\
+    \ steps, N SGD and number of particles used to compute stochastic gradient, L\
+    \ . For each setting, we run 100 realizations of SVMC on the chaotic RNN data\
+    \ from sec. 4.1.2. Solids lines are the average where error bars are the standard\
+    \ error. A) For a fixed number of particles used to compute stochastic gradient,\
+    \ L=4 , the number of gradient steps, N SGD taken at every time step is varied.\
+    \ B) For a fixed number of gradient steps, N SGD =15 , the number of particles\
+    \ used to compute stochastic gradient, L , is varied."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Streaming_Variational_Monte_Carlo\figure_2.jpg
+  Figure 2 caption: "NASCAR Dynamics [51]. (A) True and inferred latent trajectory\
+    \ using SVMC-GP. (B) Filtering and prediction. We show the last 500 steps of filtered\
+    \ states and the following 500 steps of predicted states. (C) Forecasting error.\
+    \ We compare the 500-step predictive MSE (averaged over 100 realizations) of SVMC-GP,\
+    \ SVMC-MLP, and Kalman filter. The transition matrix of the Kalman filter was\
+    \ learned by EM (offline). The periodic tendency is due to the periodic nature\
+    \ of ground truth. (D)\u2013(E) Inferred dynamics as velocity field. For SVMC-GP,\
+    \ posterior variance of dynamics is additionally shown as uncertainty."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Streaming_Variational_Monte_Carlo\figure_3.jpg
+  Figure 3 caption: Winner-Take-All Spiking Neural Network. (A) 4 trials of training
+    data. The neuronal activity was drawn over a 25 sec time window. Each row represents
+    one neuron. Each dot represents that neuron fired within that time bin. (B) Inference.
+    The top-left panel shows the inferred latent trajectories of several trials. In
+    each trial the network started at the initial state, eventually reached either
+    choice (indicated by the color) after the stimulus onset, and finally went back
+    around the initial state after receiving reset signal. The rest three panels show
+    the phase portraits of inferred dynamical system revealing the bifurcation and
+    how the network dynamics were governed at different phases of the experiment.
+    At the spontaneous phase (when the network receive no external input), the latent
+    state is attracted by the middle sink. After the stimulus is onset, the middle
+    sink disappears and the latent state falls into either side driven by noise to
+    form a choice. When the reset is onset, the latent state is pushed back to the
+    only sink that is close to the middle sink of the spontaneous phase, and then
+    the network is ready for a new trial. (C) Simulation from the fitted model. We
+    generated latent trajectory and spike train by replicating the experiments on
+    the fitted model. The result shows that the model can replicate the dynamics of
+    the target network.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Streaming_Variational_Monte_Carlo\figure_4.jpg
+  Figure 4 caption: 'Prediction of nonstationary dynamical system. The colored curves
+    (blue: EKF, red: SVMC) are the RMSEs (solid line: mean, shade: stderr) of one-step-ahead
+    prediction of nonstationary system during online learning (50 trials each run,
+    10 runs). The linear system was changed and the state was perturbed at the 2000th
+    step (center). Both online algorithms quickly learned the change after a few steps.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\Streaming_Variational_Monte_Carlo\figure_5.jpg
+  Figure 5 caption: Prediction performance on 3D data generated from an analog stable
+    oscillator circuit. We compare Dual-EKF and SVMC both with dynamics parameterized
+    with MLP (2-20-2). (A) Normalized MSE of 100 time step prediction using the filtered
+    system. Median and best out of 11 randomly initialized filters are shown. To estimate
+    the normalized MSE, 11 realizations were used, and for ease of visual parsing
+    11 bin moving window averaging was applied. (B) Comparison of normalized MSE of
+    the last 500 time steps.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Yuan Zhao
+  Name of the last author: Il Memming Park
+  Number of Figures: 5
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: Streaming Variational Monte Carlo
+  Publication Date: 2022-02-24 00:00:00
+  Table 1 caption: TABLE 1 Experiment 1 (LDS) With 100 Replication Runs (True Negative
+    Log-Likelihood is 1168.12)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Experiment 2 (Chaotic RNN) With 100 Replication Runs
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3153225
+- Affiliation of the first author: image and video research laboratory, saivt, school
+    of electrical engineering and computer science, queensland university of technology,
+    brisbane, qld, australia
+  Affiliation of the last author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_1.jpg
+  Figure 1 caption: The classic IrisCode depends on the complex-valued Gabor response
+    followed by phase quantization, which is not learned from the data. Existing deep
+    iris recognition networks perform automatic feature learning in the real-valued
+    domain, which cannot adequately capture and retain phase information along the
+    pipeline. This paper proposes to shift processing of the iris texture to a fully
+    complex-valued space, which has a richer representation capacity, better leverages
+    the unique characteristics of the iris texture, and has a strong correspondence
+    with complex Gabor wavelets.
+  Figure 10 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_10.jpg
+  Figure 10 caption: Performance comparison of four real-valued network baselines
+    and the proposed ComplexIrisNet on the ND-CrossSensor-Iris-2013 validation subset.
+    This illustrates the benefits of performing complex-valued operations, which better
+    capture the geometry and explicitly retain the phase information, which justifies
+    its superior accuracy compared to the real-valued counterparts.
+  Figure 2 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_2.jpg
+  Figure 2 caption: ComplexIrisNet architecture. The normalized iris texture image
+    is first fed through a Gabor Block, which generates the complex response to be
+    subsequently processed by complex-valued operations. The following Dense Blocks
+    and Transition Blocks are equipped with fully complex-valued operations, allowing
+    them to process iris features in the complex-valued domain. The feature maps of
+    the last CONV layer in the last Transition layer are used for feature representation.
+  Figure 3 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_3.jpg
+  Figure 3 caption: "Dense Block architecture. Each layer ( x l ) in the block receives\
+    \ the feature maps of all preceding layers ( x 0 ,\u2026, x l\u22121 ) as inputs.\
+    \ Six complex-valued network operations, BN\u2212ReLU\u2212CONV(1\xD71)\u2212\
+    BN\u2212ReLU\u2212CONV(3\xD73) , are performed between two successive layers."
+  Figure 4 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_4.jpg
+  Figure 4 caption: Real-valued versus Complex-valued operators and feature maps.
+    Orange and green blocks denote real-valued and complex-valued feature maps, respectively.
+    Pink and light blue arrows denote real- and complex-valued operations, respectively.
+    While the volumetric shapes of the real- and complex-valued featuremaps look similar,
+    the ways by which they are interpreted and calculated differ in nature.
+  Figure 5 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_5.jpg
+  Figure 5 caption: 'Complex-valued convolution: the complex-valued input I(l) is
+    convolved with a complex-valued kernel k(l) to output a complex-valued output
+    o(l) . For each convolutional layer, multiple kernels, K(l) , are employed to
+    generate the final output O(l) .'
+  Figure 6 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_6.jpg
+  Figure 6 caption: Sample images from the ND-CrossSensor-2013 (first row), CASIA-Iris-Thousand
+    (second row) and UBIRIS.v2 datasets (last row).
+  Figure 7 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_7.jpg
+  Figure 7 caption: Training losses of the ComplexIrisNet on the ND-CrossSensor-Iris-2013
+    training subset.
+  Figure 8 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_8.jpg
+  Figure 8 caption: Performance comparison of different layers of the ComplexIrisNet
+    in terms of False Rejection Rate at 0.1% False Acceptance Rate on the ND-CrossSensor-Iris-2013
+    validation subset.
+  Figure 9 Link: articels_figures_by_rev_year\2022\ComplexValued_Iris_Recognition_Network\figure_9.jpg
+  Figure 9 caption: Architecture comparison of four real-valued baselines and the
+    complex-valued iris network. The complex-valued iris network enables complex-valued
+    feature maps and complex-valued operations through the whole network.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kien Nguyen
+  Name of the last author: Arun Ross
+  Number of Figures: 14
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Complex-Valued Iris Recognition Network
+  Publication Date: 2022-02-24 00:00:00
+  Table 1 caption: TABLE 1 Layer Configuration of the ComplexIrisNet
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Statistics of Three Datasets, ND-CrossSensor-2013, CASIA-Iris-Thousand
+    and UBIRIS.v2, Used in This Research
+  Table 3 caption: TABLE 3 Performance Comparison With State-of-the-Art Handcrafted
+    and Deep Learning Iris Recognition Approaches in Terms of False Rejection Rate
+    at 0.1% 0.1% False Acceptance Rate and Equal Error Rate on the Test Sets of Three
+    Datasets
+  Table 4 caption: TABLE 4 Comparison With the Commercial VeriEye SDK
+  Table 5 caption: TABLE 5 Complexity Analysis
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3152857
+- Affiliation of the first author: department of computing, imperial college london,
+    london, u.k.
+  Affiliation of the last author: department of computer science, university of oxford,
+    u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2022\Improving_Graph_Neural_Network_Expressivity_via_Subgraph_Isomorphism_Counting\figure_1.jpg
+  Figure 1 caption: Vertex (left) and edge (right) induced subgraph counting for a
+    3-cycle and a 3-path. Counts are reported for the blue vertex on the left and
+    for the blue edge on the right. Different colors depict orbits.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Improving_Graph_Neural_Network_Expressivity_via_Subgraph_Isomorphism_Counting\figure_2.jpg
+  Figure 2 caption: '(Left) Decalin and Bicyclopentyl: Non-isomorphic molecular graphs
+    than can be distinguished by GSN, but not the by the WL test [34] (vertices represent
+    carbon atoms and edges chemical bonds). (Right) Rooks 4x4 graph and the Shrikhande
+    graph: the smallest pair of strongly regular non-isomorphic graphs with the same
+    parameters SR(16,6,2,2). GSN can distinguish them with 4-clique counts, while
+    2-FWL fails.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\Improving_Graph_Neural_Network_Expressivity_via_Subgraph_Isomorphism_Counting\figure_3.jpg
+  Figure 3 caption: SR graphs isomorphism test (log scale, smaller values are better).
+    Different colours indicate different substructure sizes.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Improving_Graph_Neural_Network_Expressivity_via_Subgraph_Isomorphism_Counting\figure_4.jpg
+  Figure 4 caption: "(Left) Train (dashed) and test (solid) MAEs for Path-, Tree-\
+    \ and Cycle-GSN-EF as a function of the maximum substructure size k . Vertical\
+    \ bars indicate standard deviation; horizontal bars depict disambiguation scores\
+    \ \u03B4 . (Right) Train (dashed) and test (solid) MAEs for GSN-EF(blue) and MPNN-EF(red)\
+    \ as a function of the dataset fraction used for training."
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Giorgos Bouritsas
+  Name of the last author: Michael M. Bronstein
+  Number of Figures: 4
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Improving Graph Neural Network Expressivity via Subgraph Isomorphism
+    Counting
+  Publication Date: 2022-02-24 00:00:00
+  Table 1 caption: "TABLE 1 Graph Classification Accuracy on TUD Dataset. First, Second,\
+    \ Third Best Methods are Highlighted. For GSN, the Best Performing Substructure\
+    \ is Shown. \u2217 Graph Kernel Methods"
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 MAE in ZINC
+  Table 3 caption: TABLE 3 Test and Validation Performance Metrics for 3 OGB Graph
+    Property Prediction Datasets. First, Second, Third
+  Table 4 caption: TABLE 4 Comparison Between DeepSets and GSN With the Same Structural
+    Features
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3154319
+- Affiliation of the first author: edf recherche et developpement site de chatou,
+    prisme, chatou, france
+  Affiliation of the last author: conservatoire national des arts et metiers, cedric,
+    paris, france
+  Figure 1 Link: articels_figures_by_rev_year\2022\Deep_Time_Series_Forecasting_With_Shape_and_Temporal_Criteria\figure_1.jpg
+  Figure 1 caption: '(a) We illustrate the limitations of the MSE in deterministic
+    forecasting: the three predictions (1,2,3) have the same MSE with respect to the
+    target, contrary to our proposed DILATE loss that favours predictions 2 (correct
+    shape, slight delay) and 3 (correct timing, inaccurate amplitude) over prediction
+    1. (b) In probabilistic forecasting, state-of-the-art methods trained with variants
+    of the MSE (e.g., [1], [2]) loose the ability to produce sharp forecasts (middle).
+    In contrast, our proposed STRIPE++ model ensures both sharp and diverse forecasts
+    (right) that better match the true future distribution (left).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Deep_Time_Series_Forecasting_With_Shape_and_Temporal_Criteria\figure_2.jpg
+  Figure 2 caption: 'The DILATE loss L DILATE for training deterministic deep time
+    series forecasting models is composed of two terms: L shape based on the soft
+    DTW and L time that penalizes the temporal distortions visible on the soft optimal
+    path. The overall loss L DILATE is differentiable, and we provide an efficient
+    implementation of its forward and backward passes.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\Deep_Time_Series_Forecasting_With_Shape_and_Temporal_Criteria\figure_3.jpg
+  Figure 3 caption: Our STRIPE++ model builds upon a forecasting architecture trained
+    with a quality loss L quality enforcing sharp predictions. The latent state is
+    disentangled into a deterministic part h from the encoder and two stochastic codes
+    z s and z t that account for the shape and time variations. First step (figure
+    upper part), we train the predictor with a quality loss, the stochastic codes
+    are sampled from a posterior network. Second step (bottom part), we diversify
+    the predictions with two STRIPE++ shape and time proposal networks trained with
+    a DPP diversity loss (keeping the encoder and decoder frozen).
+  Figure 4 Link: articels_figures_by_rev_year\2022\Deep_Time_Series_Forecasting_With_Shape_and_Temporal_Criteria\figure_4.jpg
+  Figure 4 caption: Qualitative prediction results with the DILATE loss. For each
+    dataset, the MSE training loss leads to non-sharp predictions, whereas the soft-DTW
+    loss can predict sharp variations but has no control over their temporal localization.
+    In contrast, the DILATE loss produces sharp predictions with accurate temporal
+    localization.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Deep_Time_Series_Forecasting_With_Shape_and_Temporal_Criteria\figure_5.jpg
+  Figure 5 caption: "Influence of \u03B1 in the DILATE loss. The shaded areas represent\
+    \ \xB1 std computed over 10 runs."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Deep_Time_Series_Forecasting_With_Shape_and_Temporal_Criteria\figure_6.jpg
+  Figure 6 caption: "Influence of \u03B3 in the DILATE loss. The shaded areas represent\
+    \ \xB1 std computed over 10 runs."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Deep_Time_Series_Forecasting_With_Shape_and_Temporal_Criteria\figure_7.jpg
+  Figure 7 caption: STRIPE++ qualitative predictions on real-world datasets Traffic
+    (a) and Electricity (b).
+  Figure 8 Link: articels_figures_by_rev_year\2022\Deep_Time_Series_Forecasting_With_Shape_and_Temporal_Criteria\figure_8.jpg
+  Figure 8 caption: Influence of the number N of trajectories on quality (higher is
+    better) and diversity for the synthetic-prob dataset.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Vincent Le Guen
+  Name of the last author: Nicolas Thome
+  Number of Figures: 8
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Deep Time Series Forecasting With Shape and Temporal Criteria
+  Publication Date: 2022-02-24 00:00:00
+  Table 1 caption: "TABLE 1 DILATE Forecasting Results on Generic MLP and RNN Architectures,\
+    \ Averaged Over 10 Runs (Mean \xB1 \xB1 Standard Deviation)"
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 DILATE Forecasting Results on State-of-the-art Architectures
+    N-Beats [16] and Informer [17]
+  Table 3 caption: "TABLE 3 STRIPE++ Forecasting Results on the Synthetic Dataset\
+    \ With Multiple Futures, Averaged Over 5 Runs (Mean \xB1 \xB1 std)"
+  Table 4 caption: "TABLE 4 Probabilistic Forecasting Results on the Traffic and Electricity\
+    \ Datasets, Averaged over 5 Runs (Mean \xB1 \xB1 std)"
+  Table 5 caption: TABLE 5 Ablation Study on the Synthetic-Prob Dataset
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3152862
+- Affiliation of the first author: school of electrical engineering, tel aviv university,
+    tel aviv, israel
+  Affiliation of the last author: school of electrical engineering, tel aviv university,
+    tel aviv, israel
+  Figure 1 Link: articels_figures_by_rev_year\2022\A_Function_Space_Analysis_of_Finite_Neural_Networks_With_Insights_From_Sampling_\figure_1.jpg
+  Figure 1 caption: 'Top: The mapping function learned by the network for the two-dimensional
+    projections of the digits 1 and 7 (the blue and yellow scattered points). The
+    yellow and blue colors in the mapping represent outputs for 1 and 7 respectively.
+    Bottom: The Fourier transform of the above mapping. We present in bright yellow
+    the frequencies corresponding to 95% of the energy of the mapped function. Dark
+    yellow and bright blue corresponds to the frequencies the complement to 98% and
+    99% of the energy. It can be clearly seen that the mapping is (approximately)
+    band limited.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\A_Function_Space_Analysis_of_Finite_Neural_Networks_With_Insights_From_Sampling_\figure_2.jpg
+  Figure 2 caption: "Approximation of a band-limited function f(x) using a neural\
+    \ network \u03D5 n trained using only 16 training examples ( y )."
+  Figure 3 Link: articels_figures_by_rev_year\2022\A_Function_Space_Analysis_of_Finite_Neural_Networks_With_Insights_From_Sampling_\figure_3.jpg
+  Figure 3 caption: 'Network error as a function of the number of training samples
+    n . Top: Training with random samples. Bottom: Training with uniform (equispaced)
+    samples. We show in the small rectangles the same plots in log-log scale. Note
+    that the network error scales as 1 n 3 for both random and uniform cases.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\A_Function_Space_Analysis_of_Finite_Neural_Networks_With_Insights_From_Sampling_\figure_4.jpg
+  Figure 4 caption: "Approximation of a band-limited ( K=4 ) function f(x) using a\
+    \ network \u03D5 n trained using only 16 training examples ( y )."
+  Figure 5 Link: articels_figures_by_rev_year\2022\A_Function_Space_Analysis_of_Finite_Neural_Networks_With_Insights_From_Sampling_\figure_5.jpg
+  Figure 5 caption: 'Network error as a function of the number of training samples
+    n for K=4 . Top: Training with random samples. Bottom: Training with uniform (equispaced)
+    samples. We put the same plots in a log-log scale in the small rectangles. Notice
+    that the network error scales as 1n3 in both cases.'
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Raja Giryes
+  Name of the last author: Raja Giryes
+  Number of Figures: 5
+  Number of Tables: 0
+  Number of authors: 1
+  Paper title: A Function Space Analysis of Finite Neural Networks With Insights From
+    Sampling Theory
+  Publication Date: 2022-03-01 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3155238
+- Affiliation of the first author: college of computer science, sichuan university,
+    chengdu, china
+  Affiliation of the last author: college of computer science, sichuan university,
+    chengdu, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_1.jpg
+  Figure 1 caption: 'Our basic idea. Taking a bi-view data as a showcase, we use two
+    oval panels to denote two views, polygons with different colors and shapes to
+    indicate different instances and categories. The grey dotted lines indicate that
+    the cross-view correspondences are available. (a) Complete Information; (b) PVP:
+    some of the cross-view correspondences are unavailable. (c) PSP: some samples
+    are missing (denoted by hollow polygons); (d) Category-level Identification: establish
+    the cross-view correspondences at category level by identifying cross-view and
+    within-category counterparts for each sample, where the desirable correspondences
+    are denoted by colored dotted lines; (e) Category-level Alignment (CA): solve
+    PVP by realigning each sample x (1) i with its counterpart x (2) j ; (f) Category-level
+    Imputation (CI): recovers each missing sample x (1) i by using k counterparts
+    of x (2) i . One could observe that both CA and CI aim at identifying the within-category
+    samples from different views. The only difference between them is that CA aims
+    to identify one counterpart while CI aims to seek multiple ones. In other words,
+    PVP and PSP could be solved by CA and CI which are unified into the same category-level
+    identification framework.'
+  Figure 10 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_10.jpg
+  Figure 10 caption: Performance on NoisyMNIST with different unaligned rates and
+    missing rates. The Heights of the bar denote the performance.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_2.jpg
+  Figure 2 caption: 'The pipeline of the proposed SURE. It consists of three modules,
+    i.e., pair construction, noise-robust optimization, and versatile learning. For
+    pair construction, SURE constructs positive pairs using the known correspondences,
+    and forms negative pairs by random sampling on the fully-aligned and complete
+    data S (v) 2 v=1 . Such a random sampling strategy would inevitably introduce
+    some false-negative pairs (FNPs) which should be treated as positive. To prevent
+    these FNPs from dominating the network update, SURE adopts a two-stage optimization
+    scheme. Specifically, (a) contrastive learning: the network is first warmed up
+    with the vanilla contrastive loss until the mean distance of negatives is larger
+    than the adaptive margin m . Then, SURE switches to (b) noise-robust contrastive
+    learning: it will mitigate or even eliminate the influences of FNPs by reducing
+    (see point B) or even reversing their gradient (see point A). In (a) and (b),
+    the direction and length of the arrows refer to the direction and magnitude of
+    the gradients, respectively. Moreover, to preserve the view-specific information,
+    SURE imposes the versatile learning by reconstructing inputs using the common
+    representation.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_3.jpg
+  Figure 3 caption: "Empirical and mathematical analysis of the vanilla contrastive\
+    \ term (i.e., Eq. (8)) and the proposed noise-robust contrastive term (i.e., Eq.\
+    \ (10)). (a\u2013b) The ratio of the average distance to margin w.r.t. training\
+    \ epochs on NoisyMNIST and Reuters, where NP, FNPvanilla, and FNProbust denote\
+    \ negative pairs, false-negative pairs optimized by Eq. (8), and false-negative\
+    \ pairs optimized by Eq. (10), respectively. The colored regions denote the standard\
+    \ variances under five different initializations. It shows that our loss could\
+    \ prevent the distance of false negatives from wrongly increasing or even reverse\
+    \ the optimization direction to correctly treat them as positive pairs as desired.\
+    \ (c\u2013d) The loss surface of Eqs. (8) and (10). We take points in all three\
+    \ possible cases (A, B, C) as showcases to manifest the robustness of our noise-robust\
+    \ term compared to the vanilla term. Specifically, A, B, and C refer to the false-negative\
+    \ pairs (FNPs) with the distance of d 1 <m3 and m3< d 2 <m , and true negative\
+    \ pairs (TNPs) with the distance of d 3 >m , respectively. In panel (c), the vanilla\
+    \ loss in Eq. (8) monotonously increases the distance for all negative pairs A,\
+    \ B, C and holds no robustness against noisy labels. In contrast, panel (d) illustrates\
+    \ that our robust term in Eq. (10) could decrease the distance of point A while\
+    \ slowly increasing that of B, thus embracing the robustness against noisy labels."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_4.jpg
+  Figure 4 caption: Performance analysis on NoisyMNIST under the PVP setting with
+    unaligned rates vary from 0.0 t0 0.9 with an interval of 0.1.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_5.jpg
+  Figure 5 caption: Visualization of cross-view correspondences on NoisyMNIST. From
+    top to bottom, the rows correspond to the anchor view, the view with the ground
+    truth correspondence, the category-level view realigned by SURE, and the unaligned
+    view, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_6.jpg
+  Figure 6 caption: Performance analysis on NoisyMNIST with different missing rates.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_7.jpg
+  Figure 7 caption: Samples imputed by SURE on NoisyMNIST. The first and second row
+    corresponds to the complete view and missing view, respectively. The last row
+    are the samples recovered by our SURE.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_8.jpg
+  Figure 8 caption: Performance on NoisyMNIST with different of peer numbers.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Robust_MultiView_Clustering_With_Incomplete_Information\figure_9.jpg
+  Figure 9 caption: Clustering comparisons on four widely-used multi-view datasets
+    under the setting where PSP and PVP simultaneously occur. The numbers and bars
+    denote the average performances and standard deviations.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Mouxing Yang
+  Name of the last author: Xi Peng
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Robust Multi-View Clustering With Incomplete Information
+  Publication Date: 2022-03-01 00:00:00
+  Table 1 caption: TABLE 1 Partially View-Unaligned Clustering Comparisons on Four
+    Widely-Used Multi-View Datasets Including Three Handcraft-Feature-Based and the
+    NoisyMNIST Datasets, Where the First and Second Best Results are in Bold and Underline,
+    Respectively
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Time Cost Comparisons (in Seconds)
+  Table 3 caption: TABLE 3 Effectiveness of Two Losses on PVP
+  Table 4 caption: TABLE 4 Effectiveness of Two Losses on PSP
+  Table 5 caption: TABLE 5 Partially Sample-Missing Clustering Comparisons on Four
+    Widely-Used Multi-View Datasets, Where the First and Second Best Results are in
+    Bold and Underline, Respectively
+  Table 6 caption: TABLE 6 Clustering Performance on Different Types of Datasets Under
+    the Setting of PVP, PSP and Both of Them Respectively, Where the First and Second
+    Best Results of Each Setting are in Bold and Underline
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3155499

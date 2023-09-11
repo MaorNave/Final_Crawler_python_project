@@ -1,0 +1,885 @@
+- Affiliation of the first author: college of computer science, sichuan university,
+    chengdu, sichuan, china
+  Affiliation of the last author: school of information and communication engineering,
+    university of electronic science and technology of china, chengdu, sichuan, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_1.jpg
+  Figure 1 caption: Applying deep saliency models DHS [37] and DSS [38], which are
+    fed with an RGB image (1st row) or a depth map (2nd row). Both of the models are
+    trained on a single RGB modality. By contrast, our JL-DCF considers both modalities
+    and thus generates better results (last column).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_10.jpg
+  Figure 10 caption: Visual examples from NLPR, STERE, RGB135, SIP datasets for ablation
+    studies. Generally, the full implementation of JL-DCF (ResNet+CM+RGB-D, highlighted
+    in the red box) achieves the closest results to the ground truth.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_2.jpg
+  Figure 2 caption: Typical schemes for RGB-D saliency detection. (a) Early-fusion.
+    (b) Late-fusion. (c) Middle-fusion.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_3.jpg
+  Figure 3 caption: "Block diagram of the proposed JL-DCF framework for RGB-D SOD.\
+    \ The JL (joint learning) component is shown in gray, while the DCF (densely cooperative\
+    \ fusion) component is shown in light green. CP1 \u223C CP6: Feature compression\
+    \ modules. FA1 \u223C FA6: Feature aggregation modules. CM1 \u223C CM6: Cross-modal\
+    \ fusion modules. \u201CH\u201D denotes the spatial size of output feature maps\
+    \ at a particular stage. See Section 3 for details."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_4.jpg
+  Figure 4 caption: Intermediate feature visualization in CM6, where the RGB and depth
+    features after batch split are visualized. Generally, addition and multiplication
+    operations gather different cross-modal clues, making the features of both dolls
+    enhanced after equation (1).
+  Figure 5 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_5.jpg
+  Figure 5 caption: Inception structure used for the FA modules in Fig. 3. All convolutional
+    and max-pooling layers have stride 1, therefore maintaining spatial feature sizes.
+    Unlike the original Inception module [117], we adapt it to have the same inputoutput
+    channel number k .
+  Figure 6 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_6.jpg
+  Figure 6 caption: Bridging the RGB and RGB-D SOD tasks through JL-DCF, where the
+    JL and DCF components are detailed in Fig. 3. During training, the network of
+    JL-DCF is simultaneously trainedoptimized in an online manner for both tasks.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_7.jpg
+  Figure 7 caption: Precision-recall curves of SOTA methods and the proposed JL-DCF
+    and JL-DCF across six datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_8.jpg
+  Figure 8 caption: Visual comparisons of JL-DCF (trained with only RGB-D data) and
+    JL-DCF (trained with both RGB-D and RGB data) with SOTA RGB-D saliency models.
+    The jointly learned coarse prediction maps ( Scrgb and Scd ) from RGB and depth
+    are also shown together with the final maps ( Sf ) of JL-DCF.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Siamese_Network_for_RGBD_Salient_Object_Detection_and_Beyond\figure_9.jpg
+  Figure 9 caption: Precision-recall curves of SOTA methods and the proposed JL-DCF
+    on DUT-RGBD dataset [69].
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Keren Fu
+  Name of the last author: Ce Zhu
+  Number of Figures: 14
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Siamese Network for RGB-D Salient Object Detection and Beyond
+  Publication Date: 2021-04-16 00:00:00
+  Table 1 caption: "TABLE 1 Quantitative Measures: S-Measure ( S \u03B1 S\u03B1) [124],\
+    \ Max F-Measure ( F max \u03B2 F\u03B2 max ) [125], Max E-Measure ( E max \u03D5\
+    \ E\u03D5 max ) [126] and MAE ( M M) [127] of SOTA Methods and the Proposed JL-DCF\
+    \ and JL\u2212DCF \u2217 JL-DCF (jointly trained with both RGB-D and RGB datasets)\
+    \ on Six RGB-D SOD Datasets"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Details of the Two Extra Convolutional (Conv.) Layers\
+    \ Inserted Into the Side Path1 \u223C \u223CPath6 (for both the VGG-16 and ResNet-101\
+    \ Configuration)"
+  Table 3 caption: TABLE 3 Quantitative Measures on the DUT-RGBD Testing Set (400
+    images) [69]
+  Table 4 caption: TABLE 4 Quantitative Evaluation for Ablation Studies Described
+    in Section 4.4
+  Table 5 caption: "TABLE 5 Further Ablation Analyses, Where Details About \u201C\
+    G\u201D \u223C \u223C\u201CJ\u201D Can be Found in Section 4.4"
+  Table 6 caption: TABLE 6 Average GPU Inference Time (second) of JL-DCF
+  Table 7 caption: TABLE 7 Comparing JL-DCF to Existing RGB-T SOD Models on VT821
+    [136] Dataset
+  Table 8 caption: TABLE 8 Comparing JL-DCF to Existing VSOD Models on Five Widely
+    Used Benchmark Datasets
+  Table 9 caption: TABLE 9 Comparing JL-DCF to Existing Semantic Segmentation Models
+    Transferred to the RGB-D Saliency Task
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3073689
+- Affiliation of the first author: visual computing center, kaust, thuwal, saudi arabia
+  Affiliation of the last author: visual computing center, kaust, thuwal, saudi arabia
+  Figure 1 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_1.jpg
+  Figure 1 caption: Training DeepGCNs. (top) We show the square root of the training
+    loss for GCNs with 7, 14, 28, 56 and 112 layers, with and without residual connections
+    for 100 epochs. We note that adding more layers without residual connections translates
+    to a substantially higher loss and for very deep networks (e.g., 112 layers) even
+    to divergence. (bottom) In contrast, training GCNs with residual connections results
+    in consistent training stability across all depths. All training losses are obtained
+    by training ResGCNs with varying depth but the same hyperparameters for the task
+    of semantic segmentation on the S3DIS dataset.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_2.jpg
+  Figure 2 caption: 'Proposed GCN architecture for point cloud semantic segmentation.
+    (left) Our framework consists of three blocks: a GCN Backbone Block (feature transformation
+    of input point cloud), a Fusion Block (global feature generation and fusion),
+    and an MLP Prediction Block (point-wise label prediction). (right) We study three
+    types of GCN Backbone Block (PlainGCN, ResGCN and DenseGCN) and use two kinds
+    of layer connection (vertex-wise addition used in ResGCN or vertex-wise concatenation
+    used in DenseGCN).'
+  Figure 3 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_3.jpg
+  Figure 3 caption: Dilated Convolution in GCNs. Visualization of dilated convolution
+    on a structured graph arranged in a grid (e.g., 2D image) and on a general structured
+    graph. (top) 2D convolution with kernel size 3 and dilation rate 1, 2, 4 (left
+    to right). (bottom) Dynamic graph convolution with dilation rate 1, 2, 4 (left
+    to right).
+  Figure 4 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_4.jpg
+  Figure 4 caption: Ablation study on area 5 of S3DIS. We compare our reference network
+    (ResGCN-28) with 28 layers, residual graph connections, and dilated graph convolutions
+    with several ablated variants. All models were trained with the same hyper-parameters
+    for 100 epochs on all areas except for area 5 of the S3DIS dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_5.jpg
+  Figure 5 caption: PlainGCN versus ResGCN on area 5 of S3DIS. We compare networks
+    of different depths with and without residual graph connections. All models were
+    trained for 100 epochs on all areas except for area 5 with the same hyper-parameters.
+    Only when residual graph connections are used do the results improve with increasing
+    depth.
+  Figure 6 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_6.jpg
+  Figure 6 caption: ResGCN w BN versus ResGCN wo BN on area 5 of S3DIS. We compare
+    ResGCN models with and without batch normalization. All models were trained for
+    100 epochs on all areas except for area 5 with the same hyper-parameters. Batch
+    normalization is shown to be important for training deep models.
+  Figure 7 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_7.jpg
+  Figure 7 caption: Qualitative Results on S3DIS Semantic Segmentation. We show here
+    the effect of adding residual and dense graph connections to deep GCNs. PlainGCN-28,
+    ResGCN-28, and DenseGCN-28 are identical except for the presence of residual graph
+    connections in ResGCN-28 and dense graph connections in DenseGCN-28. We note how
+    both residual and dense graph connections have a substantial effect on hard classes
+    like board, bookcase, and sofa. These are lost in the results of PlainGCN-28.
+  Figure 8 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_8.jpg
+  Figure 8 caption: Qualitative Results on PartNet Part Segmentation. We show here
+    the effect of adding residual connections to deep GCNs. PlainGCN-28 and ResGCN-28
+    are identical except for the presence of residual connections in ResGCN-28. We
+    note how residual connections have a positive effect on part segmentation compared
+    to PlainGCN-28. Many important parts of the objects are classified incorrectly
+    using PlainGCN-28.
+  Figure 9 Link: articels_figures_by_rev_year\2021\DeepGCNs_Making_GCNs_Go_as_Deep_as_CNNs\figure_9.jpg
+  Figure 9 caption: Memory usage for different GCNs on PPI node classification. We
+    keep the same parameters for different models and compare their m-F1 scores with
+    their total memory usages. All models in the comparison have 256 filters per layer
+    and 56 layers. We notice that our model ResMRGCN uses approximately 16 of the
+    total memory used by ResEdgeConv and gives a better m-F1 score.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Guohao Li
+  Name of the last author: Bernard Ghanem
+  Number of Figures: 9
+  Number of Tables: 8
+  Number of authors: 7
+  Paper title: 'DeepGCNs: Making GCNs Go as Deep as CNNs'
+  Publication Date: 2021-04-19 00:00:00
+  Table 1 caption: TABLE 1 Ablation Study on Area 5 of S3DIS
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Analysis of Over-Smoothing Using the Group Distance Ratio
+    and the Instance Information Gain
+  Table 3 caption: TABLE 3 Comparison of ResGCN-28 With the State-of-the-Art on S3DIS
+    Semantic Segmentation
+  Table 4 caption: TABLE 4 Comparison of ResGCN-28 With Other Methods on PartNet Part
+    Segmentation
+  Table 5 caption: TABLE 5 Comparison of Our GCN Variants With the State-of-the-Art
+    on ModelNet40 Point Cloud Classification
+  Table 6 caption: TABLE 6 Ablation Study on Graph Connections, Network Width, and
+    Network Depth
+  Table 7 caption: TABLE 7 Ablation Study on Network Depth and GCN Variants
+  Table 8 caption: TABLE 8 Comparison of DenseMRGCN-14 With State-of-the-Art on PPI
+    Node Classification
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3074057
+- Affiliation of the first author: department of aeronautics and astronautics, massachusetts
+    institute of technology, cambridge, ma, usa
+  Affiliation of the last author: microsoft research asia (msra), beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_1.jpg
+  Figure 1 caption: Network structure. Our monocular 3D object detector consists of
+    four sub-networks for 2D detection (brown), instance-level depth estimation (green),
+    projected 3D center estimation (blue) and local corner regression (yellow). The
+    output of the four sub-networks are combined to produce the 3D bounding boxes,
+    which are refined to give the final outputs. Best viewed in color. It should be
+    noticed that this overview figure only shows the inference stage. The training
+    is achieved via either fully (see Section 4.3) or weakly (see Section 4.4) supervised
+    learning.
+  Figure 10 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_10.jpg
+  Figure 10 caption: Recall-precision curve of 3D and BEV object detection on KITTI
+    val set. F and W are short for full and weak supervision. The 3D IoU threshold
+    is 0.3. Although MonoGRNet (W) is learned from the weak supervision of 2D bounding
+    boxes, it exhibits promising performance compared to methods with full supervision
+    from 3D bounding boxes.
+  Figure 2 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_2.jpg
+  Figure 2 caption: Notations. (a) illustrates the relationship between the camera
+    coordinate system and the local coordinate system from the birds eye view. (b)
+    shows the 3D bounding box corners defined in the local coordinate system.
+  Figure 3 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_3.jpg
+  Figure 3 caption: "Instance-level depth. (a) Each grid cell g is assigned to a nearest\
+    \ object within a distance \u03C3 scope to the 2D bbox center b i . Objects closer\
+    \ to the camera are assigned to handle occlusion. Here Z 1 c < Z 2 c . (b) An\
+    \ image with detected 2D bounding boxes. (c) Predicted instance depth for each\
+    \ cell."
+  Figure 4 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_4.jpg
+  Figure 4 caption: "Geometry-guided learning of 3D location. (a) illustrates the\
+    \ projective geometry based on which we calculate Z \u02DC c as a pseudo ground\
+    \ truth of Z c to supervise the instance-level depth estimation. (b) shows the\
+    \ motion of the same object across neighbouring frames, where its acceleration\
+    \ should be no greater than a certain threshold. This acceleration constraint\
+    \ is imposed onto the network predictions to increase the 3D object localization\
+    \ performance."
+  Figure 5 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_5.jpg
+  Figure 5 caption: Object-centric transfer learning for local corner estimation.
+    The blue part and green part are the abstraction of the student and teacher networks
+    respectively. The student network is our monocular 3D object detector. This figure
+    shows how the local corner regression branch is learned using easily accessible
+    additional data that is denoted by the source dataset. The teacher network serves
+    as a media transferring knowledge from the source to the target dataset, saving
+    the arduous annotation on the target dataset. The teacher network only deals with
+    local regions with objects of interest, rather than taking the whole image as
+    input.
+  Figure 6 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_6.jpg
+  Figure 6 caption: Efficiency comparison. The inference time of our method MonoGRNet
+    (FW) is 0.06s on a single Geforce GTX Titan X GPU on KITTI [25] dataset. F and
+    W denote fully and weakly supervised respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_7.jpg
+  Figure 7 caption: Qualitative results on KITTI. F and W are short for full and weak
+    supervision. The predicted 3D bounding boxes are shown in images and in the 3D
+    space from an oblique view. The proposed method has satisfactory performance even
+    when the object is far away, occluded, in the shadows or exposed in strong light.
+    3D point clouds (in gray) are only for referenced visualization.
+  Figure 8 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_8.jpg
+  Figure 8 caption: Qualitative results on MS COCO. Our approach demonstrates potentials
+    in general 3D object detection from a monocular image. We use our weakly supervised
+    MonoGRNet (W) on MS COCO, which does not provide ground truth 3D bounding boxes
+    to train the fully supervised MonoGRNet (F).
+  Figure 9 Link: articels_figures_by_rev_year\2021\MonoGRNet_A_General_Framework_for_Monocular_D_Object_Detection\figure_9.jpg
+  Figure 9 caption: Qualitative results on Cityscapes. The experiment was conducted
+    using MonoGRNet (W).
+  First author gender probability: 0.67
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Zengyi Qin
+  Name of the last author: Yan Lu
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: 'MonoGRNet: A General Framework for Monocular 3D Object Detection'
+  Publication Date: 2021-04-20 00:00:00
+  Table 1 caption: TABLE 1 Average precision of 3D Object Detection on KITTI val Set
+    Compared to Previous Fully Supervised Methods.
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Average Precision of Birds Eye View (BEV) Object Detection
+    on KITTI val Set Compared to Previous Fully Supervised Methods
+  Table 3 caption: TABLE 3 Average Precision of 3D and Birds Eye View (BEV) Object
+    Detection on KITTI val Set Compared to Weakly Supervised Baselines
+  Table 4 caption: TABLE 4 Comparison to Fully Supervised Methods Involving LiDAR
+    or Only Monocular Information During Training
+  Table 5 caption: TABLE 5 Average Orientation Similarity on KITTI val
+  Table 6 caption: TABLE 6 Ablation Study on Loss Functions for Weakly Supervised
+    Method on KITTI val Set
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3074363
+- Affiliation of the first author: brain and artificial intelligence laboratory, school
+    of automation, northwestern polytechnical university, xian, shaanxi, china
+  Affiliation of the last author: eecs, university of california at merced, merced,
+    ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_1.jpg
+  Figure 1 caption: Illustration of the weakly supervised learning tasks in computer
+    vision community. The blue area in the top block indicates the conventional fully-supervised
+    learning tasks, while the red area in the top block indicates the weakly supervised
+    learning tasks. The coordinate axes shows different levels of human annotation
+    or supervision requirement, from low cost to high cost. Notice that the high cost
+    annotation can be transformed to low cost annotation easily, e.g., from bounding-box
+    level to image level, whereas the low cost annotation is hard to be transformed
+    to high cost annotation. In the bottom block, we also show the label cost, in
+    terms of annotation time, and the examples of different type of annotations. In
+    this survey, we mainly focus on reviewing the research progress in weakly supervised
+    object localization and detection, i.e., the red dot in the top block.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_10.jpg
+  Figure 10 caption: Examples of the application of weakly supervised object localization
+    or detection approaches in remote sensing imagery analysis. The examples are from
+    [56], [203].
+  Figure 2 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_2.jpg
+  Figure 2 caption: In the left block, taxonomy of the existing approaches for weakly
+    supervised object localization and detection, which includes three main categories
+    and eight subcategories. In the right block, the relationships between the approaches
+    in different categories are shown.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_3.jpg
+  Figure 3 caption: Developments of weakly supervised localization and detection methods.
+    The yellow histogram shows the number of publications in this research field in
+    each year, and the curves show the number of proposed methods each year for a
+    particular category of approach.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_4.jpg
+  Figure 4 caption: Flowchart of the weakly supervised object localization and detection
+    approaches using classic models.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_5.jpg
+  Figure 5 caption: Illustration of different usages of the off-the-shelf deep neural
+    networks by the weakly supervised object localization and detection approaches
+    based on the off-the-shelf deep models.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_6.jpg
+  Figure 6 caption: Illustration of examples from the PASCAL VOC (top block), CUB-200-2011
+    (bottom-left block), and ILSVRC 2016 (bottom-right block) datasets.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_7.jpg
+  Figure 7 caption: Weakly supervised object localization or detection methods for
+    video understanding. The examples are from [129], [197].
+  Figure 8 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_8.jpg
+  Figure 8 caption: Examples of the application of weakly supervised object localization
+    or detection approaches for the analysis of art images. The examples are from
+    [24], [53], [69], where detection results in different colors in the painting
+    images indicate different types of objects.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Object_Localization_and_Detection_A_Survey\figure_9.jpg
+  Figure 9 caption: Examples of the application of weakly supervised object localization
+    or detection approaches in medical image analysis. The examples are from [52],
+    [68], [88].
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Dingwen Zhang
+  Name of the last author: Ming-Hsuan Yang
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: 'Weakly Supervised Object Localization and Detection: A Survey'
+  Publication Date: 2021-04-20 00:00:00
+  Table 1 caption: TABLE 1 Summary of the Approaches for Initialization, Which is
+    a Subcategory in the Weakly Supervised Object Localization and Detection Approaches
+    That Learn by Classic Models
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Summary of the Approaches for Refinement, Which is a Subcategory
+    in the Weakly Supervised Object Localization and Detection Approaches That Learn
+    by Classic Models
+  Table 3 caption: TABLE 3 Approaches for Both Initialization and Refinement, Which
+    is a Subcategory in the Weakly Supervised Object Localization and Detection Approaches
+    That Learn by Classic Models
+  Table 4 caption: TABLE 4 Summary of the Approaches Using Pre-Trained Feature Representations,
+    Which is a Subcategory in the Weakly Supervised Object Localization and Detection
+    Approaches Based on the off-the-Shelf Deep Models
+  Table 5 caption: TABLE 5 Summary of the Approaches Using Visual Cues, Which is a
+    Subcategory in the Weakly Supervised Object Localization and Detection Approaches
+    Based on the off-the-Shelf Deep Models
+  Table 6 caption: TABLE 6 Summary of the Approaches With Fine-Tuned Deep Models,
+    Which is a Subcategory in the Weakly Supervised Object Localization and Detection
+    Approaches Based on the off-the-Shelf Deep Models
+  Table 7 caption: TABLE 7 A Brief Summary of the Approaches Using Single-Network
+    Training Scheme, Which is a Subcategory in the Weakly Supervised Object Localization
+    and Detection Approaches With Deep Weakly Supervised Learning Algorithms
+  Table 8 caption: TABLE 8 A Brief Summary of the Approaches With Multi-Network Training,
+    Which is a Subcategory in the Weakly Supervised Object Localization and Detection
+    Approaches With Deep Weakly Supervised Learning Algorithms
+  Table 9 caption: TABLE 9 Brief Summarization of the Characteristics of the Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3074313
+- Affiliation of the first author: department of electrical engineering, california
+    institute of technology, pasadena, ca, usa
+  Affiliation of the last author: department of electrical engineering, california
+    institute of technology, pasadena, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\LowRank_Riemannian_Optimization_for_GraphBased_Clustering_Applications\figure_1.jpg
+  Figure 1 caption: Performance of the proposed optimization scheme in clustering
+    in terms of running time against the system dimension n for a number of clusters
+    p=4n1000 .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\LowRank_Riemannian_Optimization_for_GraphBased_Clustering_Applications\figure_2.jpg
+  Figure 2 caption: Performance of the proposed Riemannian optimization algorithm
+    against the number of clusters p for a system of dimension n=2000 .
+  Figure 3 Link: articels_figures_by_rev_year\2021\LowRank_Riemannian_Optimization_for_GraphBased_Clustering_Applications\figure_3.jpg
+  Figure 3 caption: "Convergence rate of the conjugate gradient algorithm on the embedded\
+    \ M n p and quotient manifold M \xAF \xAF \xAF \xAF \xAF \xAF n p for n=2000 and\
+    \ p=10 ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\LowRank_Riemannian_Optimization_for_GraphBased_Clustering_Applications\figure_4.jpg
+  Figure 4 caption: Convergence rate of the trust-region algorithm on the embedded
+    mathcal Mnp and quotient manifold overlinemathcal Mnp for n=2000 and p=10 .
+  Figure 5 Link: articels_figures_by_rev_year\2021\LowRank_Riemannian_Optimization_for_GraphBased_Clustering_Applications\figure_5.jpg
+  Figure 5 caption: Performance of Algorithms 1 and 2 in finding the optimal solution
+    without prior knowledge of the rank against the number of clusters p in a system
+    of dimension n=2000 .
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ahmed Douik
+  Name of the last author: Babak Hassibi
+  Number of Figures: 5
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: Low-Rank Riemannian Optimization for Graph-Based Clustering Applications
+  Publication Date: 2021-04-20 00:00:00
+  Table 1 caption: TABLE 1 Embedded and Quotient Manifolds Notations
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance of the Proposed Methods for Clustering
+  Table 3 caption: TABLE 3 Running Time of the Proposed Methods in a System With Large
+    Dimension for a Number of Clusters p=n1000 p=n1000
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3074467
+- Affiliation of the first author: the chinese university of hong kong, hong kong
+  Affiliation of the last author: the chinese university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_1.jpg
+  Figure 1 caption: 'Illustration of CARAFE++ working mechanism. Left: Multi-level
+    FPN features from Mask R-CNN baseline (left to dotted line) and Right: Multi-level
+    FPN features from Mask R-CNN with CARAFE++(right to dotted line). For sampled
+    locations, this figure shows the accumulated reassembled regions in the top-down
+    pathway of FPN. Information inside such a region is reassembled into the corresponding
+    reassembly center.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_2.jpg
+  Figure 2 caption: "The overall framework of CARAFE++ for downsampling. CARAFE++\
+    \ is composed of two key components, i.e., kernel prediction module and content-aware\
+    \ reassembly module. A feature map with size C\xD7H\xD7W is downsampled by a factor\
+    \ of \u03C3(=2) in this figure."
+  Figure 3 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_3.jpg
+  Figure 3 caption: "The overall framework of CARAFE++ for upsampling. A feature map\
+    \ with size C\xD7H\xD7W is upsampled by a factor of \u03C3(=2) in this figure."
+  Figure 4 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_4.jpg
+  Figure 4 caption: Bottleneck architecture with CARAFE++ in ResNet. CARAFE++ can
+    be readily integrated into Bottleneck with strided convolution. CARAFE++ downsamples
+    the input feature map by 2x. And convolution layers with the same kernel size
+    but no stride are applied afterwards.
+  Figure 5 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_5.jpg
+  Figure 5 caption: FPN architecture with CARAFE++. CARAFE++ upsamples a feature map
+    by a factor of 2 in the top-down pathway. It is integrated into FPN by seamlessly
+    substituting the nearest neighbor interpolation.
+  Figure 6 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_6.jpg
+  Figure 6 caption: Comparison of instance segmentation results between baseline (top
+    row) and CARAFE++ (bottom row) on COCO 2017 val.
+  Figure 7 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_7.jpg
+  Figure 7 caption: Comparison of semantic segmentation results between UperNet baseline
+    and UperNet w CARAFE++ on ADE20k.
+  Figure 8 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_8.jpg
+  Figure 8 caption: Comparison of image inpainting results between Gobal&Local baseline
+    and Gobal&Local w CARAFE++ on ADE20k.
+  Figure 9 Link: articels_figures_by_rev_year\2021\CARAFE_Unified_ContentAware_ReAssembly_of_FEatures\figure_9.jpg
+  Figure 9 caption: CARAFE++ performs content-aware reassembly when rescaling a feature
+    map. Red units are reassembled into the green center unit by CARAFE++.
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.64
+  Name of the first author: Jiaqi Wang
+  Name of the last author: Dahua Lin
+  Number of Figures: 9
+  Number of Tables: 16
+  Number of authors: 6
+  Paper title: 'CARAFE++: Unified Content-Aware ReAssembly of FEatures'
+  Publication Date: 2021-04-21 00:00:00
+  Table 1 caption: TABLE 1 Detection and Instance Segmentation Results on MS COCO
+    2017 Test-Dev With 2x Training Schedule
+  Table 10 caption: TABLE 10 Effects of Adopting CARAFE++in Each Component of UperNet
+  Table 2 caption: TABLE 2 Image Classification Results on ImageNet-1k Val
+  Table 3 caption: TABLE 3 Detection Results With Faster R-CNN
+  Table 4 caption: TABLE 4 Detection Results With Faster R-CNN
+  Table 5 caption: TABLE 5 Object Detection Results of Faster R-CNN With CARAFE++
+    in FPN and Backbone
+  Table 6 caption: TABLE 6 Instance Segmentation Results With Mask R-CNN
+  Table 7 caption: TABLE 7 Detection and Instance Segmentation Results of Mask R-CNN
+    With CARAFE++ in Backbone, FPN and Mask Head, Respectively
+  Table 8 caption: "TABLE 8 Instance Segmentation Results of Mask R-CNN 2\xD7 on LVIS\
+    \ v1 Dataset"
+  Table 9 caption: TABLE 9 Semantic Segmentation Results on ADE20k Val
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3074370
+- Affiliation of the first author: ecole polytechnique federale de lausanne faculte
+    informatique et communications, ecublens, switzerland
+  Affiliation of the last author: ecole polytechnique federale de lausanne faculte
+    informatique et communications, ecublens, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_1.jpg
+  Figure 1 caption: We enforce road connectivity by penalizing connections between
+    background regions. (a) Input image and ground truth. (b) A distance map predicted
+    by a U-Net trained without our connectivity loss, and its skeletonization, thickened
+    for visibility. Note that, even though there is a gap between road pixels P 1
+    and P 2 , they remain connected both in the ground truth and in the prediction,
+    because alternative paths exist in the loopy road network. By contrast, background
+    regions A and B connect in the prediction, but not in the ground truth. (c) A
+    distance map predicted by a U-Net trained using our disconnectivity loss and its
+    skeletonization. Our loss function penalizes connections between A and B , preventing
+    gaps in the predicted road.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_2.jpg
+  Figure 2 caption: Handling a potential misalignment between the ground-truth and
+    predicted networks in the image of Fig. 1. The lines have been thickened for better
+    visibility. This misalignment makes imposing connectivity constraints on the pixels
+    belonging to the ground-truth centerline impractical. Instead, we only require
+    that background regions far away from the roads and delimited by a dashed line
+    be disconnected.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_3.jpg
+  Figure 3 caption: Computing L disc . We first tile the ground truth annotation and
+    the distance map computed by our network (1). We use the ground-truth roads to
+    segment each tile into separate regions (2). When there are unwarranted gaps in
+    the distance map, there is a least one path connecting disjoint regions such that
+    the minimum distance map value along that path is not particularly small. We therefore
+    take the cost of the path to be that minimum value (3) and we add to our loss
+    function a term that is the maximum such value for all paths connecting points
+    in the two distinct regions (4). This penalizes paths such as the one shown here
+    and therefore promotes the road graph connectivity.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_4.jpg
+  Figure 4 caption: Comparative results on the RoadTracer dataset. For our results,
+    we overlaid the graphs on the inferred distance maps.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_5.jpg
+  Figure 5 caption: Comparative results on the DeepGlobe dataset. For the results
+    of our method, we overlaid graphs on the inferred distance maps.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_6.jpg
+  Figure 6 caption: Comparative results on the Canals dataset. For the results of
+    our method, we overlaid graphs on the inferred distance maps.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_7.jpg
+  Figure 7 caption: Qualitative results on the Massachusetts dataset. For our method,
+    we overlaid graphs on the inferred distance maps.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_8.jpg
+  Figure 8 caption: Effect of changing alpha in Eq. (2) on the distance map the neural
+    network outputs. As alpha increases, the road map becomes more complete until
+    alpha becomes so large that it promotes spurious connections even where no roads
+    are present in the image.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Promoting_Connectivity_of_NetworkLike_Structures_by_Enforcing_Region_Separation\figure_9.jpg
+  Figure 9 caption: Effect of changing beta in Eq. (4) on the distance map the neural
+    network outputs. As beta is increases, the predictions become more precise. It
+    reduces false positive roads until beta becomes so large that it creates disconnections
+    on actual roads.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Doruk Oner
+  Name of the last author: Pascal Fua
+  Number of Figures: 9
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Promoting Connectivity of Network-Like Structures by Enforcing Region
+    Separation
+  Publication Date: 2021-04-21 00:00:00
+  Table 1 caption: TABLE 1 Comparative Results on the RoadTracer Dataset [8]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparative Results on the DeepGlobe Dataset
+  Table 3 caption: TABLE 3 Comparative Results on the Canals Dataset
+  Table 4 caption: TABLE 4 Comparative Results on the on the Massachusetts Dataset
+  Table 5 caption: "TABLE 5 Impact of \u03B1 on Performance"
+  Table 6 caption: "TABLE 6 Impact of Changing \u03B2 \u03B2 on Performance"
+  Table 7 caption: TABLE 7 The Impact of Window Size on Performance
+  Table 8 caption: TABLE 8 The Impact of Changing the Window Size on Performance
+  Table 9 caption: TABLE 9 Comparison of Cross Entropy and Mean Square Error
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3074366
+- Affiliation of the first author: securifai and the department of computer science,
+    university of bucharest, bucuresti, romania
+  Affiliation of the last author: department of computer science, center for research
+    in computer vision (crcv), university of central florida, orlando, fl, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_BackgroundAgnostic_Framework_With_Adversarial_Training_for_Abnormal_Event_Dete\figure_1.jpg
+  Figure 1 caption: Our anomaly detection framework based on training convolutional
+    auto-encoders with skip connections on top of object detections. In the learning
+    phase, pseudo-abnormal examples are used to train the adversarial decoder branch
+    using gradient ascent. The absolute differences between the inputs and the reconstructions
+    are provided as input to a binary classifier corresponding to each convolutional
+    auto-encoder. In the inference phase, we can label a test sample as abnormal if
+    the average classification score is negative, i.e., the sample is labeled as pseudo-abnormal.
+    Components represented in dashed lines are removed during inference. Best viewed
+    in color.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_BackgroundAgnostic_Framework_With_Adversarial_Training_for_Abnormal_Event_Dete\figure_2.jpg
+  Figure 2 caption: Normal (top), pseudo-abnormal (middle) and abnormal (bottom) examples
+    and optical flow maps with reconstructions provided by the appearance and the
+    motion convolutional auto-encoders, which are trained either without adversarial
+    training (left) or with adversarial training (right). The auto-encoders provide
+    worse reconstructions for pseudo-abnormal and abnormal examples after adversarial
+    training, which is the desired effect. The normal and abnormal samples are selected
+    from the Avenue [12] and the ShanghaiTech [13] test sets, while the pseudo-abnormal
+    examples are select from our pool of generic pseudo-abnormal examples. Best viewed
+    in color.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_BackgroundAgnostic_Framework_With_Adversarial_Training_for_Abnormal_Event_Dete\figure_3.jpg
+  Figure 3 caption: Frame-level anomaly scores (on the vertical axis) provided by
+    our current approach versus the earlier version proposed in [6], for test video
+    03 from Avenue [12]. Ground-truth abnormal events are represented in cyan, our
+    scores are depicted in red and the scores of the earlier method are depicted in
+    blue. Best viewed in color.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_BackgroundAgnostic_Framework_With_Adversarial_Training_for_Abnormal_Event_Dete\figure_4.jpg
+  Figure 4 caption: Frame-level anomaly scores (on the vertical axis) provided by
+    our current approach versus the earlier version proposed in [6], for test video
+    050024 from ShanghaiTech [13]. Ground-truth abnormal events are represented in
+    cyan, our scores are depicted in red and the scores of the earlier method are
+    depicted in blue. Best viewed in color.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_BackgroundAgnostic_Framework_With_Adversarial_Training_for_Abnormal_Event_Dete\figure_5.jpg
+  Figure 5 caption: Frame-level anomaly scores (on the vertical axis) provided by
+    our approach versus the approach of Ionescu et al. [7], for a chunk of video trimmed
+    out from Subway Exit. Ground-truth abnormal events are represented in cyan, our
+    scores are depicted in red and the scores of Ionescu et al. [7] are depicted in
+    blue. Best viewed in color.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_BackgroundAgnostic_Framework_With_Adversarial_Training_for_Abnormal_Event_Dete\figure_6.jpg
+  Figure 6 caption: Frame-level anomaly scores (on the vertical axis) provided by
+    our approach versus the approach of Ionescu et al. [7], for a chunk of video trimmed
+    out from Subway Entrance. Ground-truth abnormal events are represented in cyan,
+    our scores are depicted in red and the scores of Ionescu et al. [7] are depicted
+    in blue. Best viewed in color.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_BackgroundAgnostic_Framework_With_Adversarial_Training_for_Abnormal_Event_Dete\figure_7.jpg
+  Figure 7 caption: True positive (left) versus false positive (middle) and false
+    negative (right) detections of our framework. Examples are selected from the Avenue
+    [12] (first row), the ShanghaiTech [13] (second row), the Subway Exit [23] (third
+    row) and the Subway Entrance [23] (fourth row) data sets. Best viewed in color.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mariana Iuliana Georgescu
+  Name of the last author: Mubarak Shah
+  Number of Figures: 7
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: A Background-Agnostic Framework With Adversarial Training for Abnormal
+    Event Detection in Video
+  Publication Date: 2021-04-21 00:00:00
+  Table 1 caption: TABLE 1 Micro-Averaged AUC, Macro-Averaged AUC, RBDC and TBDC Scores
+    (in % %) of Our Approach Compared to the State-of-the-Art Methods [4], [5], [6],
+    [7], [9], [11], [12], [13], [16], [18], [19], [24], [25], [31], [33], [34], [35],
+    [38], [39], [40], [41], [45], [46], [47] on the Avenue Data Set
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Micro-Averaged AUC, Macro-Averaged AUC, RBDC and TBDC Scores
+    (in % %) of Our Approach Compared to the State-of-the-Art Methods [4], [5], [6],
+    [9], [11], [13], [16], [18], [37], [38], [39], [45], [46], [47] on the ShanghaiTech
+    Data Set
+  Table 3 caption: TABLE 3 Frame-Level AUC, RBDC and TBDC Scores (in % %) of Our Approach
+    Compared to the State-of-the-Art Methods [3], [5], [6], [7], [19], [29], [32],
+    [33], [34], [36] on the Subway Data Set
+  Table 4 caption: TABLE 4 Micro-Averaged AUC, Macro-Averaged AUC, RBDC and TBDC scores
+    (in % %) of Our Approach Compared to the State-of-the-Art Methods [4], [5], [6],
+    [8], [9], [11], [13], [14], [15], [16], [17], [18], [20], [24], [25], [26], [30],
+    [34], [35], [38], [39], [41], [42], [43], [44], [47], [48] on the UCSD Ped2 Data
+    Set
+  Table 5 caption: TABLE 5 Micro-Averaged AUC, Macro-Averaged AUC, RBDC and TBDC scores
+    (in % %) of Our Method for a Series of Cross-Domain Experiments
+  Table 6 caption: TABLE 6 Micro-Averaged AUC, Macro-Averaged AUC, RBDC and TBDC Scores
+    (in % %) Obtained by Making Gradual Design Changes to Our Original Method Presented
+    in [6], Until the Framework Converges to Our Current Proposal
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3074805
+- Affiliation of the first author: department of computer science, northwestern university,
+    evanston, il, usa
+  Affiliation of the last author: department of computer science, northwestern university,
+    evanston, il, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_1.jpg
+  Figure 1 caption: '(a) Scope of this work: Our focal-plane array (FPA) based 3D
+    sensors fill the niche between optical interferometry and ToF cameras in terms
+    of performance, while also avoiding the need for raster scanning [31]. (b) We
+    implement three different FPA-based architectures exploiting different data capture
+    speed, spatial data density, and lock-in frequency.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_2.jpg
+  Figure 2 caption: "(a) Our proposed FPA-based ToF 3D sensor leverages optical interferometry\
+    \ with wavelength diversity. (b) Principle of wavelength diversity: the laser\
+    \ emissions are electromagnetic waves with frequencies of \u03BD 1 and \u03BD\
+    \ 2 . After mixing these two waves, there are a high frequency component ( \u03BD\
+    \ 1 + \u03BD 2 ) and a low frequency one ( | \u03BD 1 \u2212 \u03BD 2 | ). The\
+    \ proposed 3D sensor computationally selects out the frequency of | \u03BD 1 \u2212\
+    \ \u03BD 2 | as the measurement frequency providing a synthetic wavelength \u039B\
+    \ from several meters to several micrometers. The phase map of a rough surface\
+    \ bunny is random due to speckles with single optical wavelengths \u03BB 1 (c)\
+    \ and \u03BB 2 (d). However, we can recover the phase (depth) of the same bunny\
+    \ with a synthetic wavelength \u039B (e) with interferometric depth resolution\
+    \ using the proposed 3D sensor. These are simulated results."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_3.jpg
+  Figure 3 caption: 'Implementation of the proposed 3D sensor with different FPA imagers.
+    (a) Experimental setup: two lasers with closely spaced wavelengths are split into
+    reference (brown) and sample (green) beams. In the reference beam, we use three
+    AOMs to introduce a fixed frequency shift as the detection frequency (more details
+    in Section 3). The reference beam is directed via a custom fiber to the front
+    focal point of the lens (shown in the photo (a-1)). The reflection interferes
+    with the reference beam in front of the sensor plane, producing an interferogram
+    that varies with the detection frequency (a-2). (b) Prototype with a lock-in imager:
+    The sensor demodulates the interferogram and outputs in-phase ( I I ) and quadrature
+    ( I Q ) terms. We get I 2 I + I 2 Q by squaring and summing these two outputs.
+    We then apply a four-phase-shifting method to compute the depth with synthetic
+    wavelength. (c) Prototype with a flutter shutter imager (high lateral resolution):
+    The phase is computed sequentially for each wavelength, and depth is computed
+    from the difference in phase between the two wavelengths. (d) Prototype with a
+    CMOS imager (high lateral resolution and low lock-in frequency): The imager samples
+    the interferogram field at the lock-in frequency in the time domain. We computationally
+    square the sensor output and pass through a temporal band-pass filter. This produces
+    a temporal varying sinusoidal signal that allows depth to be computed from the
+    synthetic wavelength as shown in (e). The results of bunny are simulated.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_4.jpg
+  Figure 4 caption: Imaging a glass stack with a diffuser. (a) shows the test setup
+    for the translucent object. (b-d) show intensities captured by the lock-in sensor
+    under three different synthetic wavelengths. (e-g) are estimated phase maps with
+    corresponding synthetic wavelengths of 3.1mm, 2.1mm, and 1.1mm. (h-j) shows OPDdepth
+    information.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_5.jpg
+  Figure 5 caption: 'Imaging a planar cardboard using the prototype with the lock-in
+    sensor: (a-d) show phase maps at different synthetic wavelengths. (e-h) show ray
+    depth maps after phase unwrapping process. (i-l) are the line-profiles of the
+    ray depth maps across the cardboard. We fit a line curve (red) to the measurements,
+    and quantify the RMSE values between measurements and fitted curve as 2.384mm,
+    1.165mm, 1.192mm, and 1.222mm for synthetic wavelengths of 69.30mm, 33.54mm, 8.69mm,
+    and 1.08mm, respectively.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_6.jpg
+  Figure 6 caption: Imaging a plaster bust with the prototype of a lock-in sensor.
+    (a) Photo of the plaster. (b) Intensity measurement using the lock-in sensor with
+    closeup marked with red box. (c-f) Phase maps with different synthetic wavelengths
+    of 121.07 mm, 6.16 mm, and 3.15 mm. (f-h) Depth maps after unwrapping process
+    with corresponding synthetic wavelengths. (i) Rendered depth based on the depth
+    map of (h).
+  Figure 7 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_7.jpg
+  Figure 7 caption: "Imaging plaster bust with the prototype of the flutter shutter\
+    \ camera: (a) shows the phase maps with Lambda of 42.97 mm. We render the scan\
+    \ from different view angles: front view (b) and side view (c). We apply a low-pass\
+    \ filter on a region (200\xD7200 pixels) marked with black box in (a) and then\
+    \ quantify its standard deviation as 0.376 mm."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_8.jpg
+  Figure 8 caption: Imaging a piezo disc with the prototype using the CMOS imager.
+    (a-c) Phase maps at synthetic wavelengths Lambda of 6.59 mm, 1.65 mm, and 0.94
+    mm. (d-f) Depth maps (after phase unwrapping) at different synthetic wavelengths.
+    (g) Line profiles of depth maps. The RMSE between measurements and fitted ground
+    truth (black dash line) are 1.663 mm, 0.292 mm, 0.106 mm for synthetic wavelengths
+    of 6.59 mm, 1.65 mm, and 0.94 mm, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Exploiting_Wavelength_Diversity_for_High_Resolution_TimeofFlight_D_Imaging\figure_9.jpg
+  Figure 9 caption: Sampling of speckle versus depth performance for a simulated V-groove.
+    (a) Intensity with a sampling of gamma =3.43 for the full frame and its close
+    up in (b). (c-g) Close-ups of intensities with sampling parameters of gamma =1.71,
+    0.69, 0.34, 0.23, and 0.13, respectively. Line profiles of depth map with corresponding
+    speckle size are shown below, and red line marks the ground truth. These results
+    are simulated.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Fengqiang Li
+  Name of the last author: Oliver Cossairt
+  Number of Figures: 9
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: Exploiting Wavelength Diversity for High Resolution Time-of-Flight
+    3D Imaging
+  Publication Date: 2021-04-22 00:00:00
+  Table 1 caption: "TABLE 1 We Show Standard Deviations of Phase ( \u03B4\u03D5 \u03B4\
+    \u03D5) and Ray Depth ( \u03B4z \u03B4z) of a Fixed Point on the Object for 50\
+    \ Repeated Measurements With Corresponding Synthetic Wavelengths ( \u039B \u039B\
+    ) This process is performed on the wrapped phase estimations in Figs. 5a, 5b,\
+    \ 5c, and 5d."
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 The RMSE Between Measurements With Different Sampling\
+    \ Parameters ( \u03B3 \u03B3) and the Ground Truth (Simulated Results)"
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3075156
+- Affiliation of the first author: universite paris-saclay, gif-sur-yvette, france
+  Affiliation of the last author: deepwisdom inc, xiamen, fujian, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_1.jpg
+  Figure 1 caption: Distribution of AutoDL challenge dataset domains with respect
+    to compressed storage size in gigabytes and total number of examples for all 66
+    AutoDL datasets. We see that the text domain varies a lot in terms of number of
+    examples but remains small in storage size. The image domain varies a lot in both
+    directions. Video datasets are large in storage size in general, without surprise.
+    Speech and time series datasets have fewer number of examples in general. Tabular
+    datasets are concentrated and are small in storage size.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_10.jpg
+  Figure 10 caption: Time budget comparison. Comparison of final NAUC performance
+    on 2h versus 20min time budget runs. Points with a NAUC difference (between two
+    settings) larger than 0.05 are annotated. There are only 13 of these out of 72
+    points in total.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_2.jpg
+  Figure 2 caption: Learning curves of top-9 teams (together with one baseline) on
+    the text dataset Viktor from the AutoDL challenge final phase. We observe different
+    patterns of learning curves, revealing various strategies adopted by participating
+    teams. The curve of DeepWisdom goes up quickly at the beginning but stabilizes
+    at an inferior final performance (and also inferior any-time performance) than
+    DeepBlueAI. In terms of number of predictions made during the whole trainpredict
+    process (20 minutes), many predictions are made by DeepWisdom and DeepBlueAI but
+    (much) fewer are made by the other teams. Finally, although different patterns
+    are found, some teams such as teamzhaw, surromind and automlfreiburg show very
+    similar patterns. This is because all teams adopted a domain-dependent approach
+    and some teams simply used the code of Baseline 3 for certain domains (text in
+    this case).
+  Figure 3 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_3.jpg
+  Figure 3 caption: Performance gain in the Final AutoDL challenge We plot ALC versus
+    final NAUC performances of Baseline 3 and Deep Wisdom (the winners of the final
+    AutoDL challenge) on ALL 66 datasets of the AutoDL challenge series benchmark.
+    Different domains are shown with different markers. The dataset name is shown
+    beside each point except the top-right area, which is zoomed in Appendix B, available
+    in the online supplemental material, together with numerical values (Table 6).
+    DeepWisdom (AutoDL challenge winner) shows significant improvement over baseline
+    3, which included top methods of previous challenges in the series.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_4.jpg
+  Figure 4 caption: ALC scores of top 9 teams in AutoDL final phase averaged over
+    repeated evaluations (and Baseline 3, for comparison). The entry of top 6 teams
+    are re-run nine times and three times for other teams. Error bars are shown with
+    (half) length corresponding to the standard deviation from these runs. Some (very
+    rare) entries are excluded for computing these statistics due to failures caused
+    by the challenge platform backend. The team ordering follows that of their average
+    rank in the final phase. The domains of the ten tasks are image, video, speechtimes
+    series, text, tabular (and then another cycle in this order). More information
+    on the task can be found in Table 2.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_5.jpg
+  Figure 5 caption: Global AutoML workflow shared by most participating teams. Dotted
+    arrows indicate optional (i.e., not used by everybody) connections between different
+    components. Components in green are studied in ablation study in Section 5.1.
+    Components in blue are studied both in Section 5.1 and Section 5.2. The modules
+    in the grey shaded area are executed on the CodaLab competition platform (i.e.,
+    online). Meta-learner runs in most cases offline (e.g., with the provided public
+    datasets). Model selector can be executed online but pre-trained with meta-learner
+    offline.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_6.jpg
+  Figure 6 caption: "Ablation study for DeepWisdom : We compare different versions\
+    \ of DeepWisdoms approach, with one component of their workflow disabled. \u201C\
+    DeepWisdomML\u201D represents DeepWisdoms original approach but with Meta-Learning\
+    \ disabled. \u201CDA\u201D code for Data Augmentation and \u201CDL\u201D for Data\
+    \ Loading. The method variants are ordered by their average rank from left to\
+    \ right. Thus we observe that removing Data Augmentation does not make a lot of\
+    \ difference, while removing both Meta-Learning and Data Loading impacts the solution\
+    \ a lot. See Section 5.1.1 for details."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_7.jpg
+  Figure 7 caption: "Ablation study for DeepBlueAI: Comparison of different versions\
+    \ of DeepBlueAIs approach after removing some of the methods components. \u201C\
+    DeepBlueAI AS\u201D represents their approach with Adaptive Strategy disabled.\
+    \ \u201CEL\u201D codes for Ensemble Learning and \u201CSTR\u201D for Scoring Time\
+    \ Reduction. For each dataset, the methods are ordered by their average rank from\
+    \ left to right. While disabling each component separately yields moderate deterioration,\
+    \ disabling all of them yields a significant degradation in performance. See Section\
+    \ 5.1.2."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_8.jpg
+  Figure 8 caption: "Ablation study for automlfreiburg: Comparison of different versions\
+    \ of automlfreiburgs approach. Since the approach addresses only computer vision\
+    \ tasks, only results on image datasets (Ray, Cucumber) and video datasets (Fiona,\
+    \ Yolo) are shown. Average and error bars of ALC scores are computed over 9 runs.\
+    \ \u201Cautomlfreiburg HPO\u201D represents automlfreiburgs approach with default\
+    \ AutoFolio hyperparameters. Likewise, \u201CMLG\u201D stands for the generalist\
+    \ configuration and \u201CMLR\u201D for randomly selecting a configuration from\
+    \ the pool of the most complementary configurations. See Section 5.1.3."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Winning_Solutions_and_PostChallenge_Analyses_of_the_ChaLearn_AutoDL_Challenge_\figure_9.jpg
+  Figure 9 caption: 'Performances of different combinations of components from the
+    three teams: DeepWisdom (DW), DeepBlueAI (DB) and automlfreiburg (AF). The components
+    we consider are (see Section 5.2) Data Loading (DL) from DeepWisdom, ensembling
+    (EN) from DeepBlueAI and hyperparameter optimization (HPO) from automlfreiburg.
+    In the legend, [DW]+EN+HPO, for example, corresponds to the method of DeepWisdom
+    [DW] with the ensembling (EN) component replaced by that of DeepBlueAI, and with
+    the [HPO] component replaced by that of automlfreiburg. The methods are ordered
+    by their average rank over all six considered tasks (3 image tasks and 3 video
+    tasks), which are all from Table 2. The error bars are computed from 3 repeated
+    runs for each method. We see that combining different components from different
+    teams do not improve the ALC score in general.'
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Zhengying Liu
+  Name of the last author: Yang Zhang
+  Number of Figures: 12
+  Number of Tables: 5
+  Number of authors: 25
+  Paper title: Winning Solutions and Post-Challenge Analyses of the ChaLearn AutoDL
+    Challenge 2019
+  Publication Date: 2021-04-23 00:00:00
+  Table 1 caption: TABLE 1 Basic Facts on AutoDL Challenges
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Datasets of the AutoDL Challenge, for Both Phases
+  Table 3 caption: TABLE 3 Summary of the Five Top Ranking Solutions and Their Average
+    Rank in the Final Phase
+  Table 4 caption: TABLE 4 Machine Learning Techniques Applied to Each of the 5 Domains
+    Considered in AutoDL Challenge
+  Table 5 caption: TABLE 5 Combination Study Design Matrix
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3075372

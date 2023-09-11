@@ -1,0 +1,788 @@
+- Affiliation of the first author: school of mathematical sciences, university of
+    science and technology of china, hefei, anhui, china
+  Affiliation of the last author: school of computer science and informatics, cardiff
+    university, cardiff, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_1.jpg
+  Figure 1 caption: Comparison between different registration methods (see Section
+    6) on a pair of partially overlapping point clouds constructed using the monkey
+    model from the EPFL statue dataset [13]. S and T denote the number of points in
+    the source and the target point clouds, respectively. Below each result we show
+    the RMSE according to equation (12), the computational time, and the number of
+    iterations. The log-scale color-coding illustrates the deviation between the transformed
+    source point clouds using the computed alignment and the ground-truth alignment.
+    Our robust point-to-point and point-to-plane ICP methods result in the lowest
+    RMSE values, while being an order of magnitude faster than Sparse ICP.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_10.jpg
+  Figure 10 caption: Examples of registration results with different methods on the
+    ETH laser registration dataset [62], with color-coding for the deviation from
+    the ground-truth alignment. The plots on the left show the alpha -recall rates
+    of each method for the point cloud sequences in the dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_2.jpg
+  Figure 2 caption: Target energy and RMSE plots for Anderson-accelerated ICP methods
+    on a pair of point clouds, using different transformation representations and
+    stabilization strategies. Our formulation outperforms AA-ICP [11] as well as a
+    Euler angle-based method using our stabilization strategy. For Euler angle-based
+    methods, we use solid triangle symbols to highlight the iterates that are close
+    to the gimbal lock.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_3.jpg
+  Figure 3 caption: "The graphs of function \u03C8 \u03BD (x) with different parameters.\
+    \ As \u03BD decreases, the function \u03C8 \u03BD approaches the \u2113 0 norm."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_4.jpg
+  Figure 4 caption: "Registration results via optimization (13) with different values\
+    \ of parameter \u03BD , on a pair of point clouds with partial overlap. The color-coding\
+    \ shows the deviation between the transformed positions of each source point using\
+    \ the computed alignment and ground-truth alignment, with the histograms showing\
+    \ the distribution of the deviation among the source points. For this model, a\
+    \ smaller value of \u03BD leads to a more accurate result."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_5.jpg
+  Figure 5 caption: RMSE plots for optimization (13) with different settings of nu
+    , on a pair of point clouds in the Apartment sequence from the ETH laser registration
+    dataset [62]. Gradually reducing nu from nu max to nu min results in the lowest
+    RMSE.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_6.jpg
+  Figure 6 caption: Comparison between different registration methods on partially
+    overlapping point clouds with added noises and outliers, constructed using the
+    Aquarius model from the EPFL statue dataset [13]. The plot on the top-right shows
+    the resulting RMSE values with different ratios ( 1% , 3% , 5% , 20% , and 50%
+    ) of outliers added to the source point cloud.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_7.jpg
+  Figure 7 caption: Examples of registration results using different methods on partially
+    overlapping point clouds, with RMSE and computational time shown below each result.
+    The log-scale color-coding visualizes the deviation between the computed alignment
+    and the ground-truth alignment.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_8.jpg
+  Figure 8 caption: Registration results on simulated Kinect point clouds from the
+    Stanfard bunny model, with different overlap ratios, and different amounts of
+    rotation between the initial alignment to the ground truth.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Fast_and_Robust_Iterative_Closest_Point\figure_9.jpg
+  Figure 9 caption: Examples of registration results using different methods on eight
+    sequences from the RGB-D SLAM dataset [65], with color-coding to visualize the
+    deviation from the ground-truth alignment. The plots on the right show the alpha
+    -recall rates of different methods for each point cloud sequence from the dataset.
+  First author gender probability: 0.94
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Juyong Zhang
+  Name of the last author: Bailin Deng
+  Number of Figures: 12
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Fast and Robust Iterative Closest Point
+  Publication Date: 2021-01-26 00:00:00
+  Table 1 caption: "TABLE 1 Average Computational Time (in Seconds) and AverageMedian\
+    \ RMSE ( \xD7 10 \u22123 \xD710-3) for Different Registration Methods on Partially\
+    \ Overlapping Point Cloud Pairs Constructed From Five Models, With Five Pairs\
+    \ for Each Model (see Fig. 7)"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Average Computational Time (in Seconds) and AverageMedian\
+    \ RMSE ( \xD7 10 \u22122 \xD710-2) Using Different Registration Methods for Eight\
+    \ Sequences From the RGB-D SLAM Dataset [65], With Best Performance Numbers Highlighted\
+    \ in Bold Fonts"
+  Table 3 caption: "TABLE 3 Average Computational Time (in Seconds) and AverageMedian\
+    \ RMSE ( \xD7 10 \u22123 \xD710-3) for Different Registration Methods on Point\
+    \ Cloud Pairs in Eight Sequences From the ETH Laser Registration Dataset [62]"
+  Table 4 caption: "TABLE 4 Average Computational Time (in Seconds) and AverageMedian\
+    \ RMSE ( \xD7 10 \u22122 \xD710-2) Using Different Registration Methods for the\
+    \ 3DMatch Dataset [66]"
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054619
+- Affiliation of the first author: school of software and c-fair, shandong university,
+    shandong, jinan, china
+  Affiliation of the last author: department of computer science, university of warwick,
+    coventry, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\EventStream_Representation_for_Human_Gaits_Identification_Using_Deep_Neural_Netw\figure_1.jpg
+  Figure 1 caption: (a) DVS sensor generates asynchronous event-stream when a subject
+    is walking in front of it. The positive intensity changes (+1) are denoted in
+    red and negative intensity changes (-1) are in blue. Red changes to yellow and
+    blue changes to green gradually with time. (b) Noisy events stream caused by a
+    rotating dot (adapted from [13]).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\EventStream_Representation_for_Human_Gaits_Identification_Using_Deep_Neural_Netw\figure_2.jpg
+  Figure 2 caption: Workflow of EV-Gait-Graph3D.
+  Figure 3 Link: articels_figures_by_rev_year\2021\EventStream_Representation_for_Human_Gaits_Identification_Using_Deep_Neural_Netw\figure_3.jpg
+  Figure 3 caption: Network architecture of the proposed EV-Gait.
+  Figure 4 Link: articels_figures_by_rev_year\2021\EventStream_Representation_for_Human_Gaits_Identification_Using_Deep_Neural_Netw\figure_4.jpg
+  Figure 4 caption: Visualization of the event streams (accumulated over 20ms) of
+    ten different identities in the DVS128-Gait-Day dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2021\EventStream_Representation_for_Human_Gaits_Identification_Using_Deep_Neural_Netw\figure_5.jpg
+  Figure 5 caption: Examples from the original CASIA-B dataset (top row) and visualization
+    of the corresponding event streams (accumulated over 20ms) in our converted EV-CASIA-B
+    dataset (bottom row).
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yanxiang Wang
+  Name of the last author: Hongkai Wen
+  Number of Figures: 5
+  Number of Tables: 14
+  Number of authors: 7
+  Paper title: Event-Stream Representation for Human Gaits Identification Using Deep
+    Neural Networks
+  Publication Date: 2021-01-27 00:00:00
+  Table 1 caption: TABLE 1 Recognition Accuracy and Number of Remaining Events After
+    Downsampling With Different Values of MaxNumEvents
+  Table 10 caption: TABLE 10 The Recognition Accuracy of EV-Based Deep Recognition
+    Networks With Different Number of Training Samples Per Subject (Highest Accuracy
+    in Each Line is Highlighted)
+  Table 2 caption: TABLE 2 Recognition Accuracy and Number of Edges of EV-Gait-3DGraph
+    With Different Neighboring Range
+  Table 3 caption: TABLE 3 Recognition Accuracy of EV-Gait-3DGraph With Different
+    Sizes of Convolution Kernel and the Impact of Graph-ResNet
+  Table 4 caption: TABLE 4 Recognition Accuracy and Number of Grids of EV-Gait-3DGraph
+    With Different Pooling Size of the Last MaxPooling Layer
+  Table 5 caption: TABLE 5 The Impact on Recognition Accuracy When Removing One of
+    the Graph-Based Convolution Layers
+  Table 6 caption: TABLE 6 Recognition Accuracy of EV-Gait-IMG With Different Representation
+    Setups
+  Table 7 caption: TABLE 7 Recognition Accuracy of EV-Gait-IMG With Different Convolution
+    Kernel Sizes
+  Table 8 caption: TABLE 8 The Impact on Recognition Accuracy When Removing One of
+    the FC ConvolutionResblock Layers
+  Table 9 caption: TABLE 9 Recognition Accuracy of Different EV-Based Gait Recognition
+    Approaches
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054886
+- Affiliation of the first author: wangxuan institute of computer technology, peking
+    university, beijing, china
+  Affiliation of the last author: wangxuan institute of computer technology, peking
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_1.jpg
+  Figure 1 caption: Illustration of the dynamic text style transfer with glyph stylistic
+    degree control. We propose a novel Shape-Matching GAN++ to render artistic text
+    based on reference (a) style images or (e) style videos, and allow users to (b)
+    control the glyph deformation in a fast and continuous manner to effectively adjust
+    the stylistic degree and select the most desired one. Our network provides users
+    with a practical tool for (d) poster design and (e) artistic text animation rendering.
+  Figure 10 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_10.jpg
+  Figure 10 caption: 'Comparison with state-of-the-art methods on dynamic text style
+    transfer. For each group: (a) Four consecutive frames of the reference style with
+    the target text in the lower-left corner. (b) Results of UT-Effect [2]. (c) Results
+    of Shape-Matching GAN. (d) Results of Shape-Matching GAN++.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_2.jpg
+  Figure 2 caption: Illustration of three style scales in text style transfer. (a)
+    Style image and text image. (b) From top to bottom, our style transfer results
+    under an increasing glyph deformation. (c) and (d) From top to bottom, stylization
+    results by Neural Style Transfer [6] under an increasing texture strength and
+    stroke size, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_3.jpg
+  Figure 3 caption: 'Overview of bidirectional shape matching. Left: we backward simplify
+    a leaf-like structure map into three coarse levels. Right: The resulting coarse-to-fine
+    image pairs constitute forward shape mappings in (a) slight, (b) moderate, and
+    (c) heavy deformation degrees.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_4.jpg
+  Figure 4 caption: Framework of shape-matching GAN.
+  Figure 5 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_5.jpg
+  Figure 5 caption: Illustration of sketch module G B for backward structure transfer.
+  Figure 6 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_6.jpg
+  Figure 6 caption: Illustration of controllable ResBlock.
+  Figure 7 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_7.jpg
+  Figure 7 caption: Framework of Shape-Matching GAN++. For simplicity, we omit the
+    discriminators and loss functions.
+  Figure 8 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_8.jpg
+  Figure 8 caption: Comparison with state-of-the-art methods on four styles of fire,
+    maple, lightning, water. (a) Input style and its structure map. (b) Target text.
+    (c) Image Analogy [38]. (d) Neural Style Transfer [6] with spatial control [31].
+    (e) Neural Doodle [39]. (f) T-Effect [1]. (g) UT-Effect [2]. (h) Results of the
+    proposed Shape-Matching GAN. For UT-Effect [2] and Shape-Matching GAN, the deformation
+    degrees are manually selected.
+  Figure 9 Link: articels_figures_by_rev_year\2021\ShapeMatching_GAN_Scale_Controllable_Dynamic_Artistic_Text_Style_Transfer\figure_9.jpg
+  Figure 9 caption: 'Qualitative comparison between Shape-Matching GAN and UT-Effect
+    [2]. For the first column, from top to bottom: target text, style image, the enlarged
+    patches from the style image, and their corresponding structure maps. Remaining
+    columns: Results by (a) UT-Effect [2] with resolution level evenly increasing
+    from 1 to 7; (b) the proposed method with ell evenly increasing from 0 to 1. The
+    red box region is shown enlarged at the bottom with the corresponding structure
+    map for better visual comparison.'
+  First author gender probability: 0.85
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.94
+  Name of the first author: Shuai Yang
+  Name of the last author: Jiaying Liu
+  Number of Figures: 18
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: 'Shape-Matching GAN++: Scale Controllable Dynamic Artistic Text Style
+    Transfer'
+  Publication Date: 2021-01-28 00:00:00
+  Table 1 caption: TABLE 1 User Preference Ratio of Image Analogy [38], Neural Style
+    Transfer [6], Doodle [39], T-Effect [1], UT-Effect [2], and Shape-Matching GAN
+    on Eighteen Different Static Styles
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 User Preference Ratio of UT-Effect [2], Shape-Matching
+    GAN [5] and Shape-Matching GAN++ on Six Different Dynamic Styles
+  Table 3 caption: "TABLE 3 Running Time of the Proposed Method on 256\xD7256 256\xD7\
+    256 Sub-Images and Testing Frames"
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3055211
+- Affiliation of the first author: "dipartimento di ingegneria \u201Cenzo ferrari,\u201D\
+    , universit\xE0 degli studi di modena e reggio emilia, modena, italy"
+  Affiliation of the last author: "dipartimento di ingegneria \u201Cenzo ferrari,\u201D\
+    , universit\xE0 degli studi di modena e reggio emilia, modena, italy"
+  Figure 1 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_1.jpg
+  Figure 1 caption: "Example of scan masks. Gray squares identify current pixels to\
+    \ be labeled using information extracted from white pixels. (a) is the classical\
+    \ mask adopted when exploring a 3\xD73 neighborhood in 8-connectivity, (b) and\
+    \ (c) are improved versions commonly employed in CCL."
+  Figure 10 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_10.jpg
+  Figure 10 caption: Average run-time experimental results on 2D CCL algorithms on
+    GPU on the Hamlet dataset in milliseconds. The star identifies novel algorithms
+    generated with graphgen. Lower is better.
+  Figure 2 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_2.jpg
+  Figure 2 caption: OR-decision table for the Rosenfeld mask adopted in CCL.
+  Figure 3 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_3.jpg
+  Figure 3 caption: Example of 3-dimensional hypercube partitioning. In this case
+    splits are performed, in order, on index j=0 , j=2 , and j=1 of the k -cubes.
+    Underlined values represent the concept of indifference.
+  Figure 4 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_4.jpg
+  Figure 4 caption: Optimal DTree obtained using the algorithm presented in Section
+    2.1 and starting from the OR-decision table of Fig. 2. Internal nodes (ellipsis)
+    represent the conditions to be checked, and leaves (rectangles) contain the actions
+    to be performed, which are identified by integer numbers. The root of the tree,
+    also a condition, is represented by a octagon.
+  Figure 5 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_5.jpg
+  Figure 5 caption: Example of YAML Configuration File Which Defines the SAUF CCL
+    Algorithm [38] in graphgen. pixelset identifies pixel names, their position inside
+    the scanning mask and the mask shift size along x and y axes. conditions and actions
+    represent respectively the list of conditions to check and actions to perform.
+    For each rule, a set of equivalent actions is provided (rules).
+  Figure 6 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_6.jpg
+  Figure 6 caption: "Unitary horizontal shift for the 3times 3 mask during image scan.\
+    \ Pixels named with \u201CX\u201D were inside the mask in the previous iteration\
+    \ while pixels named with \u201CY\u201D are currently inside."
+  Figure 7 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_7.jpg
+  Figure 7 caption: (a) forest of DTrees obtained by applying state prediction on
+    the ODTree of Fig. 4. In this example also the tree used for the first pixel of
+    the row (tree to the left) is reduced considering external pixels constraints
+    (Section 2.2.2). (b) is the DRAG originated from the compression of the forest
+    (a). Leaves contain the action to be performed (left) and the index of the next
+    treenode (right). Root nodes are identified by an octagon (the starting one) or
+    by circles (all the others) and have an index (left) plus the condition to be
+    checked (right).
+  Figure 8 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_8.jpg
+  Figure 8 caption: Excerpt of the C++ Code Generated by graphgen for the DRAG of
+    Fig. 6b. This example depicts the image scanning approach employed by graphgen-generated
+    algorithms, the action performed in the leaves, the jump to the next tree, and
+    the jump within conditions to reuse existing subtrees.
+  Figure 9 Link: articels_figures_by_rev_year\2021\One_DAG_to_Rule_Them_All\figure_9.jpg
+  Figure 9 caption: Sample images from the YACCLAB datasets. From left to right 3DPeS,
+    Fingerprints, Hamlet, Medical, MIRflickr, Tobacco800, XDOCS, Hilbert, Mitochondria,
+    and OASIS.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Federico Bolelli
+  Name of the last author: Costantino Grana
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: One DAG to Rule Them All
+  Publication Date: 2021-01-28 00:00:00
+  Table 1 caption: TABLE 1 Average Run-Time Experimental Results on 2D CCL Algorithms
+    in Milliseconds
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Average Run-Time Experimental Results of Thinning Algorithms
+    in Milliseconds
+  Table 3 caption: TABLE 3 Average Run-Time Experimental Results on Chain-Code Algorithms
+    in Milliseconds
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3055337
+- Affiliation of the first author: department of computer science, university of maryland,
+    college park, md, usa
+  Affiliation of the last author: department of computer science, university of maryland,
+    college park, md, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Forecasting_Action_Through_Contact_Representations_From_First_Person_Video\figure_1.jpg
+  Figure 1 caption: "Illustration of representations involved in the Anticipation\
+    \ Module \u03A6 where the scenario depicts a person reaching into the oven. RGB\
+    \ video feeds into the Anticipation Module which produces Contact Anticipation\
+    \ Maps and a localization of the Next Active Object Segmentation. Visualization\
+    \ colors in the Contact Anticipation Maps vary from blue (large time to contact)\
+    \ to red (pixels belonging to hands or objects in contact)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Forecasting_Action_Through_Contact_Representations_From_First_Person_Video\figure_2.jpg
+  Figure 2 caption: "Overview of our proposed approach. The input video of 900 frames\
+    \ is fed in sliding window fashion with windows of size 8 to the Anticipation\
+    \ Module. Anticipation module \u03A6 consists of two networks: a) The Contact\
+    \ Anticipation Network, which outputs Contact Anticipation Maps (Map K), a representation\
+    \ which feeds into b) the Next Active Object Network, producing a Next Active\
+    \ Object (N.A.O.) Segmentation. The \u2A01 denotes addition; \u2A02 denotes multiplication.\
+    \ Refer to Sections 3.1.2 and 3.1.3 for the architectural details. The Anticipation\
+    \ Module \u03A6 s output is in turn is fed into Ego-OMG, which in turn produces\
+    \ labels for action anticipation and prediction."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Forecasting_Action_Through_Contact_Representations_From_First_Person_Video\figure_3.jpg
+  Figure 3 caption: Illustration of annotations added to a portion of the EPIC Kitchens
+    dataset in construction of our augmented dataset. The left and right columns contain
+    added annotations for the left and right hands, respectively. The middle column
+    illustrates associated clip frames. The annotations consist of segmentations of
+    hands and Active and Next Active Objects. Pixels belonging to (Next) Active Objects
+    are assigned non-negative values relative to the time-of-contact (T.O.C). Colors
+    vary from white to blue based on remaining time to contact, with values of 0 associated
+    with both Next Active Objects and hands. Background pixels are colored black,
+    represented with values of -1.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Forecasting_Action_Through_Contact_Representations_From_First_Person_Video\figure_4.jpg
+  Figure 4 caption: "Overview of Ego-OMGs architecture. Ego-OMG consists of two streams:\
+    \ 1) The top stream consists of the extraction of a discretized sequence of states\
+    \ from an unconstrained egocentric video clip x of 900 frames using the Contact\
+    \ Anticipation Network \u03A6 . The nodes predicted by \u03A6 are embedded through\
+    \ GCN layers and then fed to an LSTM. This is then followed by a 1-layer MLP W\
+    \ g to generate softmax scores for the anticipated future action. 2) The second\
+    \ stream generates softmax scores for the anticipated future action through feeding\
+    \ a short history (the last 32 frames of x ) of video to a CSN model. A 1-layer\
+    \ MLP W f processes the concatenated L2-normalized softmax scores to perform action\
+    \ anticipation and prediction."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Forecasting_Action_Through_Contact_Representations_From_First_Person_Video\figure_5.jpg
+  Figure 5 caption: The Anticipation Module outputs Contact Anticipation Maps (second
+    column) and Next Active Object segmentations (third column). The Contact Anticipation
+    Maps contain continuous values of estimated time-to-contact between hands and
+    the rest of the scene (visualizations varying between red for short anticipated
+    time-to-contact, and blue for long anticipated time-to-contact). The predicted
+    Next Active Object segmentations contain the object of anticipated near-future
+    contact, shown in blue in the third column. Predictions are shown over the EPIC
+    Kitchens and the EGTEA Gaze+ datasets.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0
+  Gender of the first author: Not Available
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Eadom Dessalene
+  Name of the last author: Yiannis Aloimonos
+  Number of Figures: 5
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Forecasting Action Through Contact Representations From First Person
+    Video
+  Publication Date: 2021-01-28 00:00:00
+  Table 1 caption: TABLE 1 Action Anticipation Results on the EPIC Kitchens Test Set
+    for Seen Kitchens (S1) and Unseen Kitchens (S2) During the EPIC Kitchens Action
+    Anticipation Challenge
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Action Anticipation and Action Prediction Accuracy Results\
+    \ Over Validation Set for CSN Stream, GCN Stream and CSN + GCN Stream Over Varying\
+    \ Anticipation Times \u03C4 a \u03C4a Seconds and Varying Observation Rates p\
+    \ p"
+  Table 3 caption: TABLE 3 Evaluation of Localizations Produced by the Next Active
+    Object Predictions
+  Table 4 caption: TABLE 4 Evaluation of Classification Accuracy With Respect to the
+    Next Active Object Predictions
+  Table 5 caption: TABLE 5 Ablation Experiments Showing Anticipation and Prediction
+    Top-1 Accuracy, Performed Over Anticipation Module Components
+  Table 6 caption: "TABLE 6 Action Anticipation Accuracies Over Validation Set With\
+    \ Anticipation Time \u03C4 a =1 \u03C4a=1 Second, Over GCN and GloVe Embedding\
+    \ Ablations"
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3055233
+- Affiliation of the first author: department of computer science, bilkent university,
+    ankara, turkey
+  Affiliation of the last author: nvidia, santa clara, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Unsupervised_Disentanglement_of_Pose_Appearance_and_Background_from_Images_and_V\figure_1.jpg
+  Figure 1 caption: This figure depicts an overview of our training pipeline on video
+    data. Given an image frame x , we produce T cj (x) and T temp (x) , which are
+    appearance and pose perturbed variants of x respectively. The model learns to
+    combine the appearance information from T temp (x) , and combine it with the pose
+    from the T cj (x) in order to reconstruct foreground object from the foreground
+    decoder. Foreground masks are predicted as part of the pipeline to separate the
+    foreground rendering from the background rendering. Specifically, the background
+    is rendered from a UNet that learns to extract clean backgrounds from T temp (x)
+    . This allows the learned pose representation to focus on the more dynamic foreground
+    object. The pose encoder and MaskNet are each depicted twice as they are applied
+    twice during the forward pass.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Unsupervised_Disentanglement_of_Pose_Appearance_and_Background_from_Images_and_V\figure_2.jpg
+  Figure 2 caption: Landmark analysis experiments.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Unsupervised_Disentanglement_of_Pose_Appearance_and_Background_from_Images_and_V\figure_3.jpg
+  Figure 3 caption: Qualitative results of our landmark prediction pipeline. From
+    top to bottom, we show our regressed annotated keypoint predictions, our predicted
+    foreground mask, and the underlying landmark activation heatmaps. Datasets are
+    BBC Pose, Human3.6M, and CelebAMAFL respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Unsupervised_Disentanglement_of_Pose_Appearance_and_Background_from_Images_and_V\figure_4.jpg
+  Figure 4 caption: Additional qualitative results for regressed annotated keypoint
+    predictions. Rows show test image results for BBC Pose, Human3.6M, and CelebAMAFL,
+    respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Unsupervised_Disentanglement_of_Pose_Appearance_and_Background_from_Images_and_V\figure_5.jpg
+  Figure 5 caption: From left to right input image, thin-plate-spline warped image,
+    reconstructed background, predicted foreground, mask, and reconstructed output.
+    The first three rows belong to our method and the last row shows results of the
+    median filtering experiment.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Unsupervised_Disentanglement_of_Pose_Appearance_and_Background_from_Images_and_V\figure_6.jpg
+  Figure 6 caption: We base our main evaluation to LPIPS score which closely correlates
+    with human perception. We also provide SSIM and PSNR metrics for completeness.
+    Our method achieves significantly better LPIPS score than state-of-the-art methods
+    and competitive SSIM and PSNR scores on both KTH and BAIR datasets. It also shows
+    a large improvement over our controlled baseline.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Unsupervised_Disentanglement_of_Pose_Appearance_and_Background_from_Images_and_V\figure_7.jpg
+  Figure 7 caption: Qualitative results on KTH action test dataset comparing our method
+    to prior work. Our baseline produces a sharp foreground, but the background does
+    not match that of the initial frames. Our proposed factorized rendering significantly
+    improves the background fidelity. The bottom fours rows shows our factorized outputs.
+    From top to bottom, we have estimated landmarks representation via LSTM, the rendered
+    foreground conditioned on estimated landmarks (parameterized as 2DGaussian) and
+    appearance vector encoded from the first frame, the predicted blending mask conditioned
+    on estimated landmarks, and the rendered background (first image on bottom row)
+    followed by the composite output.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Unsupervised_Disentanglement_of_Pose_Appearance_and_Background_from_Images_and_V\figure_8.jpg
+  Figure 8 caption: Qualitative results on the BAIR dataset. SAVP deterministic model
+    outputs blurry robot arm. SVGLP and SAVP (stochastic) models outputs artifacts
+    at the pixels previously occluded by the robot arm. Baseline model is not able
+    to reconstruct the objects perfectly. Please zoom into see each object is slightly
+    different than the corresponding ground-truth object. Our method separates robot
+    arm and background image, outputs a realistic video.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Aysegul Dundar
+  Name of the last author: Bryan Catanzaro
+  Number of Figures: 8
+  Number of Tables: 1
+  Number of authors: 6
+  Paper title: Unsupervised Disentanglement of Pose, Appearance and Background from
+    Images and Videos
+  Publication Date: 2021-01-29 00:00:00
+  Table 1 caption: TABLE 1 Evaluation of Landmark Accuracy on Human3.6M, BBC Pose,
+    and MAFL
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3055560
+- Affiliation of the first author: "eth zurich, z\xFCrich, switzerland"
+  Affiliation of the last author: tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_1.jpg
+  Figure 1 caption: With the hierarchical human body representation (b), we explore
+    structures for complete human semantic understanding (c). Here - - and indicate
+    dependency and (de-)compositional relations, respectively. We first propose a
+    compositional neural information fusion (CNIF) based parser (d), which fuses information
+    from three sources, i.e., direct , bottom-up , and top-down processes, to infer
+    each part. For clarity, we only show the information fusion of lower-body node.
+    We further develop a more powerful part-relation aware human parser (PRHP) (e),
+    which isequipped with three distinct relation networks (, , and ) to address specific
+    constraints of different part relations (i.e., decomposition, composition, and
+    dependency). In addition, iterative inference () is performed for better approximation.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_10.jpg
+  Figure 10 caption: Visualizations of typical failure cases on PASCAL-Person-Part
+    test set [7].
+  Figure 2 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_2.jpg
+  Figure 2 caption: Given an input image (a), our CNIF based human parser performs
+    compositional and conditional neural information fusion over the human semantic
+    graph (c) for hierarchical parsing (b). See Section 3.2.2 for details.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_3.jpg
+  Figure 3 caption: Illustration of our conditional neural information fusion network
+    for hierarchical human parsing. See Section 3.2.3 for details.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_4.jpg
+  Figure 4 caption: "Illustration of our compositional inference and conditional fusion\
+    \ (Section 3.2.3). (a) Input image. (b) Parsing results of direct inference. (c)\
+    \ Conditional information fusion, where the arrows with darker colors indicate\
+    \ higher values of gates \u03B4 . For clarity, in ( \u22C5 ) we only show the\
+    \ gate values for a few inference processes. (d) Parsing results w compositional\
+    \ inference and conditional fusion. (e) Parsing results of compositional inference\
+    \ only. The improved regions are highlighted in white circles."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_5.jpg
+  Figure 5 caption: Our PRHP model for hierarchical human parsing during training
+    (Section 3.3). The main components in the flowchart are marked by (a)-(h).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_6.jpg
+  Figure 6 caption: "Illustration of our decompositional relation modeling (Section\
+    \ 3.3.1). (a) Decompositional relations between the upper-body node ( u ) and\
+    \ its constituents ( C u ). (b) With the decompositional attentions att dec u,v\
+    \ ( h u ) v\u2208 C u , F dec learns how to break down the upper-body node and\
+    \ generates more tractable features for its constituents. In the relation adapted\
+    \ feature F dec ( h u ) , the responses from the background and other irrelevant\
+    \ parts are suppressed."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_7.jpg
+  Figure 7 caption: "Illustration of our compositional relation modeling (Section\
+    \ 3.3.1). (a) Compositional relations between the lower-body node ( v ) and its\
+    \ constituents ( C v ). (b) The compositional attention att com v ([ h u \u2032\
+    \ , h u ]) gathers information from all the constituents C v and lets F com enhance\
+    \ all the lower-body related features of C v ."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_8.jpg
+  Figure 8 caption: Illustration of our dependency relation modeling (Section 3.3.1).
+    (a) Dependency relations between the upper-body node ( u ) and its siblings (
+    mathcal Ku ). (b) The dependency attention lbrace !mathtt attu,v!textdepbig (!Ftextcont(boldsymbolhu!)!big)!rbrace
+    !vin mathcal Ku! , derived from u s contextual information Ftextcont(boldsymbolhu)
+    , gives separate importance for different siblings mathcal Ku .
+  Figure 9 Link: articels_figures_by_rev_year\2021\Hierarchical_Human_Semantic_Parsing_With_Comprehensive_PartRelation_Modeling\figure_9.jpg
+  Figure 9 caption: Visual comparison on PASCAL-Person-Part test [7]. Our CNIF (c)
+    and PRHP (d) generate more accurate predictions, compared to other famous methods
+    [71], [98], [101] (e-g). The improved labeled results by our parser are denoted
+    in red boxes. See Section 4.3 for details.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Wenguan Wang
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Hierarchical Human Semantic Parsing With Comprehensive Part-Relation
+    Modeling
+  Publication Date: 2021-01-29 00:00:00
+  Table 1 caption: TABLE 1 Comparison Results on LIP val [6])
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Per-Class Comparison Results on PASCAL-Person-Part test
+    [7]
+  Table 3 caption: TABLE 3 Comparison Results on ATR test [18]
+  Table 4 caption: TABLE 4 Comparison Results on Fashion Clothing test [19]
+  Table 5 caption: TABLE 5 Comparison Results on PPSS test [68]
+  Table 6 caption: TABLE 6 Ablation Study (Section 4.5) for CNIF Model on PASCAL-Person-Part
+    test [7]
+  Table 7 caption: TABLE 7 Ablation Study (Section 4.5) for PRHP Model on PASCAL-Person-Part
+    test [7]
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3055780
+- Affiliation of the first author: visual intelligence laboratory, department of mechanical
+    engineering, korea advanced institute of science and technology, daejeon, republic
+    of korea
+  Affiliation of the last author: visual intelligence laboratory, department of mechanical
+    engineering, korea advanced institute of science and technology, daejeon, republic
+    of korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\Knowledge_Distillation_and_StudentTeacher_Learning_for_Visual_Intelligence_A_Rev\figure_1.jpg
+  Figure 1 caption: Illustrations of KD methods with S-T frameworks. (a) for model
+    compression and for knowledge transfer, e.g., (b) semi-supervised learning and
+    (c) self-supervised learning.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Knowledge_Distillation_and_StudentTeacher_Learning_for_Visual_Intelligence_A_Rev\figure_2.jpg
+  Figure 2 caption: Hierarchically-structured taxonomy of knowledge distillation with
+    S-T learning.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Knowledge_Distillation_and_StudentTeacher_Learning_for_Visual_Intelligence_A_Rev\figure_3.jpg
+  Figure 3 caption: An illustration of general feature-based distillation.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Knowledge_Distillation_and_StudentTeacher_Learning_for_Visual_Intelligence_A_Rev\figure_4.jpg
+  Figure 4 caption: 'Graphical illustration for KD with multiple teachers. The KD
+    methods can be categorized into six types: (a) KD from the ensemble of logits;
+    (b) KD from the ensemble of feature representations via some similarity matrices;
+    (c) unifying various data sources from the same network (teacher) model A to generate
+    various teacher models; (d) obtaining hierarchical or stochastic sub-teacher networks
+    given one teacher network; (e) training a versatile student network from multiple
+    heterogeneous teachers; (f) online KD from diverse peers via ensemble of logits.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Knowledge_Distillation_and_StudentTeacher_Learning_for_Visual_Intelligence_A_Rev\figure_5.jpg
+  Figure 5 caption: Graphical illustration of cross-modal KD methods. (a) supervised
+    cross-modal KD from the teacher with one modality to the student with another
+    modality. (b) unsupervised cross-modal KD with one teacher. (c) unsupervised cross-modal
+    KD with multiple teachers, each of which is transferring the discriminative knowledge
+    to the student.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Knowledge_Distillation_and_StudentTeacher_Learning_for_Visual_Intelligence_A_Rev\figure_6.jpg
+  Figure 6 caption: An illustration of online KD methods. (a) Online KD with individual
+    student peer learning from each other, (b) online KD with student peers sharing
+    trunk (head) structure, and (c) online KD by assembling the weights of each student
+    to form a teacher or group leader.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Knowledge_Distillation_and_StudentTeacher_Learning_for_Visual_Intelligence_A_Rev\figure_7.jpg
+  Figure 7 caption: "An illustration of self-distillation methods. (a) born-again\
+    \ distillation. Note that T and S 1 ,\u2026, S n can be multi-tasks. (b) distillation\
+    \ via deep supervision where the deepest branch (B n ) is used to distill knowledge\
+    \ to shallower branches. (c) distillation via data augmentation (e.g., rotation,\
+    \ cropping). (d) distillation with network architecture transformation (e.g.,\
+    \ changing convolution filters)."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.56
+  Name of the first author: Lin Wang
+  Name of the last author: Kuk-Jin Yoon
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: 'Knowledge Distillation and Student-Teacher Learning for Visual Intelligence:
+    A Review and New Outlooks'
+  Publication Date: 2021-01-29 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3055564
+- Affiliation of the first author: school of computers, guangdong university of technology,
+    guangzhou, china
+  Affiliation of the last author: department of computer science, hong kong baptist
+    university, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_1.jpg
+  Figure 1 caption: Structural difference between ordinal and nominal attributes from
+    the perspective of graph. The black nodes stand for possible values and the edges
+    reflect the spatial relationships among possible values.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_10.jpg
+  Figure 10 caption: Convergence curves of HD-NDW on mixed, ordinal, and nominal data
+    sets. The circles indicate the moments that Step 2 of Algorithm 1 is triggered,
+    and the boxes indicate the moments of convergence of Algorithm 1.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_2.jpg
+  Figure 2 caption: "Converting a nominal attribute A s into a set of ordinal attributes\
+    \ B s : Each nominal possible value o s g is converted into an ordinal attribute\
+    \ A g with two ordered possible values o s g and \xAC o s g ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_3.jpg
+  Figure 3 caption: "Computation process of Eq. (10). In step 1, we have u rs m =[0.5,0.3,0.2\
+    \ ] \u22A4 , i.e., the upper histogram, and u rs h =[0.2,0.2,0.6 ] \u22A4 , i.e.,\
+    \ the lower histogram. To transform u rs m into u rs h , we first subtract them\
+    \ and obtain the histogram [0.3,0.1,\u22120.4 ] \u22A4 in step 2. The slash-filled\
+    \ bins indicate supplies, and the dot-filled bin indicates demand. Then, 0.3 supply\
+    \ at the first place is moved to the second place with 0.1 supply, the moving\
+    \ cost is (0.3\xD71)2 = 0.15. In step 3, the total 0.4 supply at the second place\
+    \ is moved to the third place with 0.4 demand, the moving cost is (0.4\xD71)2\
+    \ = 0.2. Since the supply and demand exactly offset each other after step 3, the\
+    \ transforming is completed in step 4, and the total transforming cost is 0.15\
+    \ + 0.2 = 0.35."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_4.jpg
+  Figure 4 caption: "Bonferroni-Dunn (BD) test on the performance of (a) methods proposed\
+    \ in recent five years, and (b) all the compared methods. Critical Difference\
+    \ (CD) for the two-tailed BD tests in (a) at confidence interval 95 percent (\
+    \ \u03B1 = 0.05) and 90 percent ( \u03B1 = 0.1) are 2.05 and 1.86, respectively.\
+    \ CD for the two-tailed BD tests in (b) at confidence interval 95 percent ( \u03B1\
+    \ = 0.05) and 90 percent ( \u03B1 = 0.1) are 3.58 and 3.28, respectively. The\
+    \ counterparts rank outside the CD intervals are believed to be significantly\
+    \ different from HD-NDW."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_5.jpg
+  Figure 5 caption: t-SNE visualization of the representations produced by UNTIE,
+    DLC, and HD-NDW on Assistant data set. The three types of markers indicate data
+    objects belonging to different true clusters.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_6.jpg
+  Figure 6 caption: Gray scale maps of the ICD matrices produced by UNTIE, DLC, and
+    HD-NDW on Assistant data set. Darker on the main diagonal and lighter on the other
+    locations indicate a better distance metric.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_7.jpg
+  Figure 7 caption: Gray scale maps of the intra-attribute distance matrices of the
+    two ordinal attributes of Assistant data set produced by various distance metrics.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_8.jpg
+  Figure 8 caption: Clustering performance of various distance measures on mixed,
+    ordinal, and nominal data sets, where a better measure yields a higher value.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learnable_Weighting_of_IntraAttribute_Distances_for_Categorical_Data_Clustering_\figure_9.jpg
+  Figure 9 caption: Clustering performance of HD-NDW and its version without NDW (non-NDW
+    for short) on mixed, ordinal, and nominal data sets. A higher value indicates
+    a better clustering performance.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Yiqun Zhang
+  Name of the last author: Yiu-ming Cheung
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: Learnable Weighting of Intra-Attribute Distances for Categorical Data
+    Clustering with Nominal and Ordinal Attributes
+  Publication Date: 2021-02-03 00:00:00
+  Table 1 caption: TABLE 1 Fragment of Lymphography Data Set
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Style of Notations and Explanation of Symbols
+  Table 3 caption: TABLE 3 Statistics of the 15 Utilized Data Sets
+  Table 4 caption: TABLE 4 Clustering Performance of Various Clustering Algorithms
+    on Mixed and Ordinal Categorical Data Sets
+  Table 5 caption: TABLE 5 Clustering Performance of Various Clustering Algorithms
+    on Nominal Data Sets
+  Table 6 caption: TABLE 6 Wilcoxon Signed-Rank Test on the Performance of HD-NDW
+    versus DLC and HD-NDW versus UNTIE
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3056510
+- Affiliation of the first author: institute of high performance computing (ihpc),
+    agency for science, technology and research (astar), singapore, singapore
+  Affiliation of the last author: institute for infocomm research (i2r), the agency
+    for science, technology and research (astar), singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_1.jpg
+  Figure 1 caption: Highly imbalanced training original data.
+  Figure 10 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_10.jpg
+  Figure 10 caption: Margin distribution comparison between wo. and w. LA-batch after
+    training. Larger margins indicate more robustness.
+  Figure 2 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_2.jpg
+  Figure 2 caption: 'Comparison between without and with the LA-Batch on the ShanghaiTech
+    Part B dataset: x -axis represents the ground truth and y -axis represents the
+    estimated number.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_3.jpg
+  Figure 3 caption: "Zooming function r t =g( \u03B1 t ) , where \u03BB=23 and \u03B3\
+    =10 ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_4.jpg
+  Figure 4 caption: Locality-aware data augmentation.
+  Figure 5 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_5.jpg
+  Figure 5 caption: Analysis of Locality-Aware Data Partition. Fig. 5a shows training
+    curve comparison between with and without LADP. The bars in Fig. 5b shows the
+    statistics of the bin partition and the curve represents the mean pairwise log
+    distance in each bin of LSH and random hashing.
+  Figure 6 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_6.jpg
+  Figure 6 caption: 'Examples of patches in a training batch: The first row and second
+    row show the patches in a training batch with LADP and without LADP respectively.
+    With LADP, the image patches are more diverse in both the number of people and
+    background.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_7.jpg
+  Figure 7 caption: Training distribution comparison between wo and w LADA.
+  Figure 8 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_8.jpg
+  Figure 8 caption: Effect of batch and patch size.
+  Figure 9 Link: articels_figures_by_rev_year\2021\LocalityAware_Crowd_Counting\figure_9.jpg
+  Figure 9 caption: 'Highly imbalanced margins in training data for adversarial training
+    on cifar10: The majority of samples congest on the decision boundary with small
+    margins after adversarial training.'
+  First author gender probability: 0.87
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Joey Tianyi Zhou
+  Name of the last author: Hongyuan Zhu
+  Number of Figures: 10
+  Number of Tables: 10
+  Number of authors: 7
+  Paper title: Locality-Aware Crowd Counting
+  Publication Date: 2021-02-03 00:00:00
+  Table 1 caption: TABLE 1 Crowd Counting Performance Comparison on the Mall Dataset
+  Table 10 caption: TABLE 10 Robustness Evaluation Under White-Box Attacks on Cifar10
+    Dataset
+  Table 2 caption: TABLE 2 Crowd Counting Performance Comparison on the ShanghaiTech
+    Dataset
+  Table 3 caption: TABLE 3 Crowd Counting Performance Comparison on the Expo Dataset
+  Table 4 caption: TABLE 4 Crowd Counting Performance Comparison on the UCFCC50 Dataset
+  Table 5 caption: TABLE 5 Crowd Counting Performance Comparison on the UCF-QNRF Dataset
+  Table 6 caption: TABLE 6 Compare LA-Batch With Other Optimization Alternatives on
+    Different Backbones
+  Table 7 caption: TABLE 7 Parameter Analysis on ShanghaiTech B Data
+  Table 8 caption: TABLE 8 Training Time of Different Methods per Epoch
+  Table 9 caption: TABLE 9 Robustness Evaluation Under White-Box Attacks on STL10
+    Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3056518

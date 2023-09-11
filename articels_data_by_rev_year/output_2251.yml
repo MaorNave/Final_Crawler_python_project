@@ -1,0 +1,844 @@
+- Affiliation of the first author: "max-planck-institut fur informatik, saarbr\xFC\
+    cken, germany"
+  Affiliation of the last author: "max-planck-institut fur informatik, saarbr\xFC\
+    cken, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_1.jpg
+  Figure 1 caption: We present the first learning-based approach for dense monocular
+    human performance capture using weak multi-view supervision that not only predicts
+    the pose but also the space-time coherent non-rigid deformations of the model
+    surface.
+  Figure 10 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_10.jpg
+  Figure 10 caption: Comparisons to related work [15], [16], [27], [47] on our in-the-wild
+    sequences showing S1 and S4. Our approach can recover the deformations of clothing
+    in contrast to [47] and gives more stable and accurate results in 3D compared
+    to [27]. Moreover, note that in contrast to previous work [15], [16], our method
+    regresses space-time coherent geometry, which follows the structure of the human
+    body.
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_2.jpg
+  Figure 2 caption: Character models. Here, we show the character model of S1 to S4
+    (top to bottom) of our new dataset. It consists of the textured mesh, the underlying
+    embedded deformation graph as well as the attached skeleton.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_3.jpg
+  Figure 3 caption: Overview of our approach. Our method takes a single segmented
+    image as input. First, our pose network, PoseNet, is trained to predict the joint
+    angles and the camera relative rotation using sparse multi-view 2D joint detections
+    as weak supervision. Second, the deformation network, DefNet, is trained to regress
+    embedded graph rotation and translation parameters to account for non-rigid deformations.
+    To train DefNet, multi-view 2D joint detections and silhouettes are used for supervision.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_4.jpg
+  Figure 4 caption: Ablation for number of cameras used during training. The most
+    significant improvement happens when adding one additional camera to the monocular
+    setting. But also adding further cameras consistently improves the result as the
+    yellow circles indicate.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_5.jpg
+  Figure 5 caption: Ablation for number of frames used during training. The more frames
+    we used during training the better the result becomes as the network can better
+    sample the possible pose and deformation space.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_6.jpg
+  Figure 6 caption: Our result from the input view and a reference view that was not
+    used for tracking. Note that our DefNet can even regress deformations along the
+    camera viewing axis of the input camera (second column) and it can correctly deform
+    surface parts that are occluded (fourth column).
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_7.jpg
+  Figure 7 caption: Qualitative results. Each row shows results for a different person
+    with varying types of apparel. We visualize input frames and our reconstruction
+    overlayed to the corresponding frame. Note that our results precisely overlay
+    to the input. Further, we show our reconstructions from a virtual 3D viewpoint.
+    Note that they also look plausible in 3D.
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_8.jpg
+  Figure 8 caption: Results on our evaluation sequences where input views (IV) and
+    reference views (RV) are available. Note that our reconstruction also precisely
+    overlays on RV even though they are not used for tracking.
+  Figure 9 Link: articels_figures_by_rev_year\2021\A_Deeper_Look_into_DeepCap_Invited_Paper\figure_9.jpg
+  Figure 9 caption: Qualitative comparison to other methods [15], [16], [27], [47]
+    on our green screen evaluation sequences. Note that our results overlay more accurately
+    to the input view and also look more plausible from a reference view that was
+    not used for tracking. Ground truth global translation is used to match the reference
+    view for the results of [27], [47]. Since PIFu [15] and DeepHuman [16] output
+    meshes with varying topology in a canonical volume without an attached root, it
+    is not possible to apply the ground truth translation and therefore we show the
+    reference view without overlay.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Marc Habermann
+  Name of the last author: Christian Theobalt
+  Number of Figures: 13
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: A Deeper Look into DeepCap (Invited Paper)
+  Publication Date: 2021-06-30 00:00:00
+  Table 1 caption: TABLE 1 Skeletal Pose Accuracy
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Surface Deformation Accuracy
+  Table 3 caption: TABLE 3 Ablation Study
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3093553
+- Affiliation of the first author: bnrist, tsinghua university, beijing, china
+  Affiliation of the last author: department of electrical engineering and computer
+    sciences, university of california, berkeley, berkeley, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Affective_Image_Content_Analysis_Two_Decades_Review_and_New_Perspectives\figure_1.jpg
+  Figure 1 caption: Examples of relevance and importance of AICA to infer humans emotional
+    status. Images are from the FI dataset [4].
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Affective_Image_Content_Analysis_Two_Decades_Review_and_New_Perspectives\figure_2.jpg
+  Figure 2 caption: 'Illustration of the affective gap. (a) Overview: the commonly
+    extracted low-level features cannot well represent high-level emotions. (b) Examples:
+    the first pair of images have a similar object (rose) but evoke different emotions,
+    while the second pair of images exhibit entirely different content (car versus
+    house) but evoke similar emotions.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Affective_Image_Content_Analysis_Two_Decades_Review_and_New_Perspectives\figure_3.jpg
+  Figure 3 caption: The context information also plays an important role in AICA.
+    (a) The image without and with the detailed scene context evoke different emotions
+    (surprise versus happy). (b) The textual contexts can also influence the emotion
+    perception of the same image (sad versus excited).
+  Figure 4 Link: articels_figures_by_rev_year\2021\Affective_Image_Content_Analysis_Two_Decades_Review_and_New_Perspectives\figure_4.jpg
+  Figure 4 caption: Illustration of the perception subjectivity [17]. For the original
+    image (a) uploaded to Flickr, different viewers may have different emotion perceptions
+    (b). The emotion labels are obtained using the keywords in italic based on the
+    comments from these viewers.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Affective_Image_Content_Analysis_Two_Decades_Review_and_New_Perspectives\figure_5.jpg
+  Figure 5 caption: 'Illustration of domain shift. (a) The images from ArtPhoto [8]
+    and FI [4] datasets have different styles: artistic versus social. (b) The emotion
+    classification performance (%) significantly drops if the trained dataset is different
+    from the tested dataset on both ArtPhoto and FI datasets by fine-tuning the ResNet-101
+    model [18].'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Affective_Image_Content_Analysis_Two_Decades_Review_and_New_Perspectives\figure_6.jpg
+  Figure 6 caption: Organization of different technical components in this survey.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Affective_Image_Content_Analysis_Two_Decades_Review_and_New_Perspectives\figure_7.jpg
+  Figure 7 caption: Milestones in both general affective computing (above line, blue)
+    and affective image content analysis (below line, red).
+  Figure 8 Link: articels_figures_by_rev_year\2021\Affective_Image_Content_Analysis_Two_Decades_Review_and_New_Perspectives\figure_8.jpg
+  Figure 8 caption: Quantitative comparison and ranking of different datasets. (a)
+    Estimated label noise ratio of different datasets. rho -1 means the noise ratio
+    of negative sentiment, and rho +1 means the noise ratio of positive sentiment.
+    rho m is the mean noise ratio. (b) The confusion matrix between different datasets
+    on sentiment polarity classification, which can reflect the bias between any two
+    datasets.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sicheng Zhao
+  Name of the last author: Kurt Keutzer
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 8
+  Paper title: 'Affective Image Content Analysis: Two Decades Review and New Perspectives'
+  Publication Date: 2021-07-02 00:00:00
+  Table 1 caption: TABLE 1 Representative Emotion Models Employed in AICA
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison Between CES and DES
+  Table 3 caption: 'TABLE 3 Released Datasets for AICA, Where Images and Annotators
+    Represent the Total Number of Images and Annotators (f: Female, m: Male)'
+  Table 4 caption: TABLE 4 Summary of Hand-Crafted Features on Different Levels That
+    Have Been Used for AICA
+  Table 5 caption: TABLE 5 Experimental Comparison Between Local and Global Features
+    Measured by Average Classification Accuracy and Rank
+  Table 6 caption: TABLE 6 Experimental Results of Different Features on Widely-Used
+    Datasets
+  Table 7 caption: TABLE 7 Average Results of Different Features (PAEF [119], Sun
+    [7], SentiBank [10], MVSO [78], Pre-Trained VGG-16 [114]) for the Same Classifier
+  Table 8 caption: TABLE 8 Experimental Results of Learning-Based Methods on Widely-Used
+    Datasets
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3094362
+- Affiliation of the first author: "department of mathematical sciences, university\
+    \ of copenhagen, k\xF8benhavn, denmark"
+  Affiliation of the last author: "department of mathematical sciences, university\
+    \ of copenhagen, k\xF8benhavn, denmark"
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Causal_Framework_for_Distribution_Generalization\figure_1.jpg
+  Figure 1 caption: Plots illustrating the straight-forward idea behind the impossibility
+    results in Proposition 4.7 (left) and Proposition 4.9 (right). Both plots visualize
+    the case of univariate variables. Under well-behaved interventions on X (left;
+    here using confounding-removing interventions) which extend the support of X ,
+    generalization is impossible without further restrictions on the function class
+    mathcal F . This holds true even if Assumption 1 is satisfied. Indeed, although
+    the candidate model (blue line) coincides with the causal model (green dashed
+    curve) on the support of X , it may perform arbitrarily bad on test data generated
+    under support-extending interventions. Under interventions on A (right) generalization
+    is impossible even under strong assumptions on the function class mathcal F (here,
+    mathcal F is the class of all linear functions). Any support-extending intervention
+    on A shifts the marginal distribution of X by an amount which depends on the (unknown)
+    function g , resulting in a distribution of (X,Y) which, in general, cannot be
+    identified from the observational distribution. Without further restrictions on
+    the function class mathcal G , any candidate model apart from the causal model
+    may result in arbitrarily large worst-case risk.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Causal_Framework_for_Distribution_Generalization\figure_2.jpg
+  Figure 2 caption: A sample dataset from the model (10) with alpha A = sqrt13 , alpha
+    H = sqrt23 , alpha varepsilon = 0 . The true causal function is indicated by a
+    green dashed line. For each method, we show 20 estimates of this function, each
+    based on an independent sample from (10). For values within the support of the
+    training data (vertical dashed lines mark the inner 90 percent quantile range),
+    NPREGIV-1 correctly estimates the causal function well. As expected, when moving
+    outside the support of X , the estimates become unreliable, and we gain an increasing
+    advantage by exploiting the linear extrapolation assumed by the NILE.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Causal_Framework_for_Distribution_Generalization\figure_3.jpg
+  Figure 3 caption: Predictive performance under confounding-removing interventions
+    on X for different confounding- and intervention strengths (see alpha values in
+    the grey panel on top). The right panel corresponds to the same parameter setting
+    as in Fig. 2. The plots in each panel are based on data sets of size n=200 , generated
+    from N = 100 different models of the form (10). For each model, we draw a different
+    function f , resulting in a different minimax solution (see Appendix D for details
+    on the sampling procedure), available in the online supplemental material. The
+    performances under individual models are shown by thin lines; the average performance
+    (11) across all models is indicated by thick lines. In all considered models,
+    the optimal prediction error (green dashed line) is equal to mathbb E[xi Y2] (by
+    consistency, for any fixed function f , NILEs worst-case risk converges pointwise
+    to this value for increasing sample size). The grey area indicates the inner 90
+    percent quantile range of X in the training distribution; the white area can be
+    seen as an area of generalization.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Causal_Framework_for_Distribution_Generalization\figure_4.jpg
+  Figure 4 caption: Predictive performance for varying instrument strength. If the
+    instruments have no influence on X ( alpha A = 0 ), the second term in the objective
+    function (8) is effectively constant in theta , and the NILE therefore coincides
+    with the OLS estimator (which uses lambda =0 ). This guards the NILE against the
+    large variance which most IV estimators suffer from in a weak instrument setting.
+    For increasing influence of A , it clearly outperforms both alternative methods
+    for large intervention strengths.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Causal_Framework_for_Distribution_Generalization\figure_5.jpg
+  Figure 5 caption: Comparison between the NILE and several alternative procedures
+    for learning a nonlinear causal function, based on the same experimental setup
+    as in [60]. The estimated functions are evaluated on the support (no generalization).
+    NILE outperforms the competing methods.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Rune Christiansen
+  Name of the last author: Jonas Peters
+  Number of Figures: 5
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: A Causal Framework for Distribution Generalization
+  Publication Date: 2021-07-07 00:00:00
+  Table 1 caption: TABLE 1 Summary of Conditions Under Which Generalization is Possible.
+    Corresponding Impossibility Results are Shown in Propositions 4.2, 4.7, and 4.9
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 List of Algorithms to Learn the Generalizing Function From
+    Data, the Considered Model Class, Types of Interventions, Support Under Interventions,
+    and Additional Model Assumptions. Sufficient Conditions for Assumption 1 are Given,
+    for Example, in the IV Literature by Generalized Rank Conditions, see Appendix
+    B, Available in the Online Supplemental Material.
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3094760
+- Affiliation of the first author: ai graduate school and the school of electrical
+    engineering and computer science, gist, gwangju, south korea
+  Affiliation of the last author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_1.jpg
+  Figure 1 caption: 'Examples of the DISC: We provide stereo image sequences with
+    corresponding ground-truth data including depth map, surface normal, optical flow,
+    semantic label and camera poses for both before and after disaster scenarios.
+    With DISC, we propose a CNN-based visual localization to infer 6-DoF camera poses,
+    which is robust to extremely changing conditions. The visual localization is trained
+    on pre-disaster scenarios and is then tested on post-disaster scenarios. Figure
+    (c) elaborates the localization process where among 4 pose queries (red and green),
+    the green estimated pose is the best candidate compared to the ground truth pose
+    (blue).'
+  Figure 10 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_10.jpg
+  Figure 10 caption: An example of unsupervised (pixel-level) domain adaptation using
+    [68] from DISC to a real image domain.
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_2.jpg
+  Figure 2 caption: Virtual 3D models to generate the DISC with various scene contexts,
+    light conditions and materials. (Indoor) furniture shop, living room, office,
+    police station, residence, warehouse, school and old castle. (Outdoor) city scape1,
+    city scape2, suburban and park. (Underground) subway station, tunnel and underpass.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_3.jpg
+  Figure 3 caption: An example of simulating fire scenarios. (a) Soot image samples.
+    (b) Soot patch composition. (c) Adding light sources.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_4.jpg
+  Figure 4 caption: Examples of reflection changes over time in DISC.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_5.jpg
+  Figure 5 caption: An example of simulating collapse scenarios. (a) Before collapse.
+    (b) Cracking 3D model. (c) Scattering small debris.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_6.jpg
+  Figure 6 caption: Comparison labeling fluids such as flame and smoke in Unity with
+    in the video editing program.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_7.jpg
+  Figure 7 caption: 'An example of provided labels for fire cases. Dark gray: smoke
+    (soft label), light yellow: fire (soft label), gray: smoke, red: fire, yellow:
+    furniture, orange: wall, purple: ceiling. The soft label represents a highly detailed
+    transparency-preserving segmentation of flame and smoke.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_8.jpg
+  Figure 8 caption: Color code for label in DISC.
+  Figure 9 Link: articels_figures_by_rev_year\2021\A_LargeScale_Virtual_Dataset_and_Egocentric_Localization_for_Disaster_Responses\figure_9.jpg
+  Figure 9 caption: Examples of semantic segmentation benchmark.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Hae-Gon Jeon
+  Name of the last author: Martial Hebert
+  Number of Figures: 21
+  Number of Tables: 7
+  Number of authors: 8
+  Paper title: A Large-Scale Virtual Dataset and Egocentric Localization for Disaster
+    Responses
+  Publication Date: 2021-07-07 00:00:00
+  Table 1 caption: TABLE 1 Semantic Segmentation for 15 Classes Without and With Finetuning
+    (FT) on the DISC
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 A Quantitative Evaluation of Semantic Segmentation on Real-World
+    Images Without and With Finetuning (FT) on the DISC
+  Table 3 caption: TABLE 3 Surface Normal From Single Images
+  Table 4 caption: TABLE 4 Stereo Matching
+  Table 5 caption: TABLE 5 Optical Flow
+  Table 6 caption: TABLE 6 Comparison Results on Section 3 for Simulating Severe Conditions
+  Table 7 caption: TABLE 7 Ablation Experiment on Our Buildings on Fire and Destruction
+    Dataset
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3094531
+- Affiliation of the first author: national key laboratory for novel software technology,
+    nanjing university, nanjing, jiangsu, china
+  Affiliation of the last author: national key laboratory for novel software technology,
+    nanjing university, nanjing, jiangsu, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Cascaded_Algorithm_Selection_With_ExtremeRegion_UCB_Bandit\figure_1.jpg
+  Figure 1 caption: Illustration of the cascaded algorithm selection (CASE) framework.
+    The lower-level of CASE is shown in the right-hand side that is an anytime hyper-parameter
+    tuning process which contains Sample and Evaluate steps. The upper-level of CASE
+    is shown in the left-hand side, which is an arm selection strategy that decides
+    which arm should be pulled in the next iteration.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Cascaded_Algorithm_Selection_With_ExtremeRegion_UCB_Bandit\figure_2.jpg
+  Figure 2 caption: "Illustration of the extreme-region on the probability density\
+    \ function (PDF) of a distribution. We assume that the feedback distributions\
+    \ of two arms obey the Gaussian distributions: G 1 (0.5, 0.15 2 ) and G 2 (0.6,\
+    \ 0.05 2 ) . With a constant \u03C1 , we define the extreme-region as a probability\
+    \ Pr[X>\u03C1] . In this figure, we set \u03C1=0.7 . The shaded areas under the\
+    \ PDF lines are the extreme-regions of two arms."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Cascaded_Algorithm_Selection_With_ExtremeRegion_UCB_Bandit\figure_3.jpg
+  Figure 3 caption: Illustration of the convergence curve of the hyper-parameter tuning
+    process. We apply a derivative-free optimization method to optimize the hyper-parameters
+    of DecisionTree on the dataset Adult. The total sample budget is 200. We run this
+    experiment for 10 independent times. The average convergence curve is plotted.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Cascaded_Algorithm_Selection_With_ExtremeRegion_UCB_Bandit\figure_4.jpg
+  Figure 4 caption: Illustration of the empirical results on synthetic tasks. Fig.
+    a.1-3 are hyper-parameter studies ( R eoi 1 ) of ER-UCB-S on stationary arms.
+    Fig. a.4 is the hyper-parameter study ( R eoi 1 ) of ER-UCB-N on non-stationary
+    arms. Fig. b. 1-2 are the regret curves of compared methods on stationary and
+    non-stationary arms. The red dashed line is the expectation of the best arm selection
+    strategy.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Cascaded_Algorithm_Selection_With_ExtremeRegion_UCB_Bandit\figure_5.jpg
+  Figure 5 caption: "Illustration of \u03D5( a t+ b ) at T i =40,80,200 . For clearly\
+    \ illustration, we only report the results of A 1 and A 3 . The dash lines are\
+    \ the estimated lines. The solid lines are the ground-truth lines. Red lines are\
+    \ illustrated for A 1 . Black lines are illustrated for A 3 ."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Yi-Qi Hu
+  Name of the last author: Yang Yu
+  Number of Figures: 5
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Cascaded Algorithm Selection With Extreme-Region UCB Bandit
+  Publication Date: 2021-07-07 00:00:00
+  Table 1 caption: TABLE 1 The Performance of Compared Methods on the Stationary Setting
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Performance of Compared Methods on the Non-Stationary
+    Setting
+  Table 3 caption: TABLE 3 The Performances of all Compared Methods on 3 AutoML Tasks
+    (full Results are available in the Appendix, available in the online supplemental
+    material)
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3094844
+- Affiliation of the first author: cnrs, inria, irisa, umr 6074, university bretagne
+    sud, lorient cedex, france
+  Affiliation of the last author: cnrs, inria, irisa, umr 6074, university bretagne
+    sud, lorient cedex, france
+  Figure 1 Link: articels_figures_by_rev_year\2021\Wasserstein_Adversarial_Regularization_for_Learning_With_Label_Noise\figure_1.jpg
+  Figure 1 caption: AR versus WAR. Given a number of samples, both methods regularize
+    along adversarial directions (arrows in the left panel), leading to updated decision
+    functions (right panel). While both regularizations prevent the classifier to
+    overfit on the noisy labelled sample, AR also tends oversmooth between similar
+    classes (wolfdog and husky), while WAR preserves them by changing the adversarial
+    direction.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Wasserstein_Adversarial_Regularization_for_Learning_With_Label_Noise\figure_2.jpg
+  Figure 2 caption: 'Illustration of the regularization geometry for different losses
+    in the adversarial training. (top) Regularization values on the simplex of class
+    probabilities. Each corner stands for a class. All losses are computed with respect
+    to a prediction represented as the green x. Colors are as follows: white is zero
+    while darker is bigger. In the case of WAR, the ground cost C is given on the
+    left. (Down) Classification boundaries when using these losses for regularization.
+    The unregularized classifier (CCE) is given on the left.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Wasserstein_Adversarial_Regularization_for_Learning_With_Label_Noise\figure_3.jpg
+  Figure 3 caption: Comparison of the original and the corrupted ground truths for
+    the semantic segmentation experiment.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Wasserstein_Adversarial_Regularization_for_Learning_With_Label_Noise\figure_4.jpg
+  Figure 4 caption: Semantic segmentation maps obtained on the test set of the ISPRS
+    Vaihingen dataset (tile 12 of the original data). The top row shows the full image,
+    and the second row shows a close-up of the area delineated in orange.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kilian Fatras
+  Name of the last author: Nicolas Courty
+  Number of Figures: 4
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Wasserstein Adversarial Regularization for Learning With Label Noise
+  Publication Date: 2021-07-07 00:00:00
+  Table 1 caption: "TABLE 1 Test Accuracy ( % %) of Different Models on Fashion-MNIST\
+    \ (F-M), Cifar-10 (C-10), and Cifar-100 (C-100) Dataset With Varying Noise Rates\
+    \ (0 \u2013 40 percent)"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Comparison of Variants of WAR With AR With Varying Noise\
+    \ Rates (0 \u2013 40 percent)"
+  Table 3 caption: "TABLE 3 Test Accuracy (in %) of Adversarial Regularization Methods:\
+    \ AR, WAR 0\u22121 0-1, WAR w2v w2v and WAR embed embed With Different \u03B2\
+    \ \u03B2 Values on CIFAR-10 Dataset With 40 percent Noise Level"
+  Table 4 caption: TABLE 4 Test Accuracy of Different Models on Clothing1M Dataset
+    With ResNet-50
+  Table 5 caption: TABLE 5 Per Class F1 Scores, Average F1 Score, and Overall Accuracy
+    ( % %) on the Test Set of Vaihingen
+  Table 6 caption: TABLE 6 Test Accuracy on CIFAR10 Dataset With 40 percent Openset
+    Samples From SVHN and ImageNet32
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3094662
+- Affiliation of the first author: intelligent vehicles group, tu delft, delft, cd,
+    the netherlands
+  Affiliation of the last author: intelligent vehicles group, tu delft, delft, cd,
+    the netherlands
+  Figure 1 Link: articels_figures_by_rev_year\2021\Semantic_Scene_Completion_Using_Local_Deep_Implicit_Functions_on_LiDAR_Data\figure_1.jpg
+  Figure 1 caption: Illustration of the semantic scene completion task and the output
+    of our method. Sensors are limited in their resolution and restricted to a single
+    perspective of their surroundings. A LiDAR scan (herein depicted as black points)
+    is characterized by a varying degree of sparsity caused either by distance (A),
+    occlusions from objects (B) or sensor blind spots (C). Our method is able to complete
+    the sparse scan geometrically and semantically and can be applied to large spatial
+    extents as typically found in outdoor environments. The underlying representation
+    is not tied to a fixed output resolution and describes the scene using a continuous
+    function (right side, color indicates semantic class). Therefore the geometry
+    does not exhibit quantization artifacts resulting from a discretization into voxels
+    (left side).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Semantic_Scene_Completion_Using_Local_Deep_Implicit_Functions_on_LiDAR_Data\figure_2.jpg
+  Figure 2 caption: 'Network architecture: The feature extractor creates a top-view
+    feature map of the input point cloud. The CNN-encoder outputs feature maps at
+    three different resolutions that make up the latent representation of the 3D scene.
+    The decoder classifies individual coordinates within the 3D scene extent. Latent
+    feature vectors and relative-coordinates are processed by conditioned batch normalization
+    in the decoder.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Semantic_Scene_Completion_Using_Local_Deep_Implicit_Functions_on_LiDAR_Data\figure_3.jpg
+  Figure 3 caption: 'Left to right, top to bottom: Input points, ground truth accumulated
+    points, mesh visualization of continuous output function, derived voxelization
+    at 20cm edge length. Geometric details can be represented more accurately by our
+    continuous output function as compared to the voxelization resolution of the Semantic
+    KITTI dataset. Our method does not cause artifacts on slanted surfaces (e.g.,
+    road plane) or edges between objects.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Semantic_Scene_Completion_Using_Local_Deep_Implicit_Functions_on_LiDAR_Data\figure_4.jpg
+  Figure 4 caption: 'Columns from left to right: Completed scene, accumulated LiDAR
+    as ground truth, ground segmentation, and corresponding ground truth. Each row
+    displays qualitative results and ground truth for a single scene on the Semantic
+    KITTI validation set. The single LiDAR scan used as input for our method is depicted
+    as an overlay of black points. The far-right section in each scene view demonstrates
+    that our approach is able to operate on areas that include hardly any LiDAR measurements
+    anymore. The method is data-based and takes advantage of experience from the training
+    dataset to facilitate predictions based on the larger context of the scene. This
+    is particularly visible from the completed courses of streets and sidewalks. We
+    provide more qualitative results from diverse scenes of the test set in the supplemental
+    material, available online.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Semantic_Scene_Completion_Using_Local_Deep_Implicit_Functions_on_LiDAR_Data\figure_5.jpg
+  Figure 5 caption: LiDAR scan (green) projected into reference RGB image. The vertical
+    field of view of the KITTI LiDAR sensor only covers a range up to a few degrees
+    over the horizon. Nevertheless, the resulting scene completion training targets
+    cover objects at more than 2m over the ground since they are accumulated from
+    more distant ego-positions.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Semantic_Scene_Completion_Using_Local_Deep_Implicit_Functions_on_LiDAR_Data\figure_6.jpg
+  Figure 6 caption: Our dataset ((a) static scene) and the official benchmark ((b)
+    spatio-temporal tubes) handle dynamic objects differently. We remove all free
+    space targets within the shadows of dynamic objects (marked as black regions)
+    to obtain a consistent static scene. We evaluate the same model on both variants
+    to measure this difference quantitatively. The impact on overall reconstruction
+    performance in terms of IoU for occupied and free space class is marginal because
+    of the prevalence of voxels belonging to static objects. However, the impact on
+    IoU of small object classes that are primarily dynamic (e.g., Person, Bicyclist)
+    is significant and leads to an increase in mIoU over all classes of about 2.1
+    % . The comparison highlights that our method is in fact able to recognize smaller
+    traffic participants. But an additional requirement to predict their motion will
+    hide this ability.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Semantic_Scene_Completion_Using_Local_Deep_Implicit_Functions_on_LiDAR_Data\figure_7.jpg
+  Figure 7 caption: Precision-recall curve for the occupied class. We plot the (m)IoU
+    values for occupied, free and semantic classes of the baseline network variant.
+    Markers are at the free space thresholds that are evaluated, interpolation in
+    between.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Semantic_Scene_Completion_Using_Local_Deep_Implicit_Functions_on_LiDAR_Data\figure_8.jpg
+  Figure 8 caption: 'Left: Top-view scene completion. Right: Magnitude of the gradient
+    of the free space probability w.r.t. the surface normal. The top row demonstrates
+    a highly predictable completion of road surface, the boundaries of the sidewalk,
+    and a car in proximity to the ego-vehicle. Far away from the ego-vehicle, the
+    bottom row shows how our method guesses the most likely classification of each
+    individual scene coordinate in the absence of almost all evidence from actual
+    measurements. The scene completion function is softer at these object boundaries
+    (red surfaces).'
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Christoph B. Rist
+  Name of the last author: Dariu M. Gavrila
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Semantic Scene Completion Using Local Deep Implicit Functions on LiDAR
+    Data
+  Publication Date: 2021-07-07 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Scene Completion Results for Our Method and
+    Recently Published Approaches on the Semantic KITTI Scene Completion Benchmark
+    (in Intersection-Over-Union, Higher is Better)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Network Parameter Count for Architecture Variants
+  Table 3 caption: TABLE 3 Quantitative Results of Baseline and Ablations on the Validation
+    Set (Higher is Better)
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3095302
+- Affiliation of the first author: center for data science, peking university, beijing,
+    china
+  Affiliation of the last author: beijing institute of big data research, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Adaptive_Progressive_Continual_Learning\figure_1.jpg
+  Figure 1 caption: "The illustration shows the adaptive progressive network framework\
+    \ when the t th task arrives. The network controller focuses on building a task\
+    \ network for current task t adaptively.(e.g., RCL uses reinforcement learning\
+    \ to determine the number of nodes or convolution kernels for expanding network\
+    \ while BOCL employs Bayesian optimization to conduct this.) The gray area in\
+    \ the left of illustration means that the task network parameters from task 1\
+    \ to task t\u22121 are fixed and only perform inference procedure. The information\
+    \ is passed to current t th task network through knowledge extractor . For example,\
+    \ the knowledge extractor can be simply implemented by connecting the feature\
+    \ maps from task network 1 to t\u22121 directly to current task network t (e.g.,\
+    \ in RCL) or can employ a attention mechanism to select the useful ones to pass\
+    \ (e.g., in BOCL)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Adaptive_Progressive_Continual_Learning\figure_2.jpg
+  Figure 2 caption: (a) RCL adaptively expands each layer of the network when t th
+    task arrives. (b) The controller implemented as a RNN to determine how many filters
+    to add for the new task.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Adaptive_Progressive_Continual_Learning\figure_3.jpg
+  Figure 3 caption: (a) BOCL expands the network adaptively when t th task arrives.
+    (b) How Bayesian optimization works in our BOCL.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Adaptive_Progressive_Continual_Learning\figure_4.jpg
+  Figure 4 caption: (a) Average test accuracy for all datasets. (b) Number of parameters
+    after all tasks finished. (c) Training time for different methods.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Adaptive_Progressive_Continual_Learning\figure_5.jpg
+  Figure 5 caption: Average test accuracy v.s. model complexity for RCL, DEN and PGN.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Adaptive_Progressive_Continual_Learning\figure_6.jpg
+  Figure 6 caption: Test accuracy on the first task as more tasks are learned.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Adaptive_Progressive_Continual_Learning\figure_7.jpg
+  Figure 7 caption: Average test accuracy on all tasks as the number of trials increases.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Adaptive_Progressive_Continual_Learning\figure_8.jpg
+  Figure 8 caption: Experiments on the influence of the parameter alpha for evaluating
+    the performance.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Ju Xu
+  Name of the last author: Zhanxing Zhu
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Adaptive Progressive Continual Learning
+  Publication Date: 2021-07-07 00:00:00
+  Table 1 caption: TABLE 1 Results on 10-Split Incremental CIFAR-100 Measuring Average
+    Test Accuracy, Training Time, and Number of Parameters
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 RCLs Reduction on the Number of Parameters
+  Table 3 caption: TABLE 3 Results on Sequence of 5-Datasets Measuring Average Test
+    Accuracy(ACC), Size of Final Network(Arch), and Training Time(Time)
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3095064
+- Affiliation of the first author: department of production and management engineering,
+    democritus university of thrace, xanthi, greece
+  Affiliation of the last author: department of production and management engineering,
+    democritus university of thrace, xanthi, greece
+  Figure 1 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_1.jpg
+  Figure 1 caption: "Feature space division in R 2 with the ReLU activation function:\
+    \ (a) The differential vector w \xAF 12 = w \xAF 1 \u2212 w \xAF 2 divides the\
+    \ space into two halves, with the positive one denoting the subspace with z 1\
+    \ > z 2 and vise versa. (b) The same applies for every differential vector. (c)\
+    \ The positive subspaces intersection of the differential vectors that include\
+    \ w \xAF 1 , i.e., w \xAF 12 and w \xAF 13 , define the locus ( D 1 ) of A 1 class,\
+    \ while (d) the same applies for the rest of the classes loci ( D 2 and D 3 )."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_10.jpg
+  Figure 10 caption: Percentage of the accurately classified feature vectors extracted
+    by the unimodal feature extractors on (a) RML [44] and (b) BAUM-1s [46], using
+    k -NN with dc and kin [3,39] . The larger the value of k , the bigger the gap
+    between the succeeded percentage on the training (red) and the corresponding testing
+    (blue) vectors.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_2.jpg
+  Figure 2 caption: Feature space division in R 3 (a) without and (b) with the exploitation
+    of the ReLU activation function.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_3.jpg
+  Figure 3 caption: "Plane of variations defined by the feature vector a \xAF e and\
+    \ the weight w \xAF 1 of the prevailing class A 1 . Each variation of a \xAF e\
+    \ , including its norm and its orientation, takes place onto this plane."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_4.jpg
+  Figure 4 caption: "The diagrams of the outputs neurons for an input sample of class\
+    \ A 1 as a function of: (a) \u03B8 r , (b) R and (c) as a multi-variable function,\
+    \ as well as the corresponding diagrams of the Softmax outputs over: (a) \u03B8\
+    \ r , (b) R and (c) both of them. Note that within a range centered around \u03B8\
+    \ r =0 , the feature vectors membership in the prevalent class is evident."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_5.jpg
+  Figure 5 caption: Clifford Algebras basic components and operations.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_6.jpg
+  Figure 6 caption: "The mean and standard deviation of \u2202 S j \u2202R and \u2202\
+    \ S j \u2202 \u03B8 i during training on CIFAR-10 [43]."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_7.jpg
+  Figure 7 caption: Cosine distance ( dc ) matrices between the feature vectors with
+    ReLU on both the training (first row) and testing set (second row) of CIFAR-10.
+    Notice that the lower the scale factor, hence the radius of the feature vectors
+    hypersphere, the higher the angular similarity between the feature vectors of
+    the same class, wrt. the rest. The testing sets classification performance is
+    not considerably affected.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_8.jpg
+  Figure 8 caption: Experimental setup for studying the correlation between the input
+    datas distribution and the division in mathcal F . A class with larger diversity
+    among the training dataset occupies a smaller subspace.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Deep_Feature_Space_A_Geometrical_Perspective\figure_9.jpg
+  Figure 9 caption: 'Cosine distance ( dc ) matrices between the feature vectors and
+    the corresponding performance on Da for: the (a) training and (b) testing set
+    of the visual feature extractor, as well as the (c) training and (d) testing set
+    of the audio feature extractor.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ioannis Kansizoglou
+  Name of the last author: Antonios Gasteratos
+  Number of Figures: 12
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: 'Deep Feature Space: A Geometrical Perspective'
+  Publication Date: 2021-07-07 00:00:00
+  Table 1 caption: TABLE 1 Number of Differential Vectors Based on the Number of the
+    Target Classes
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Convolutional Architecture
+  Table 3 caption: TABLE 3 Evaluation of Feature Space F F
+  Table 4 caption: TABLE 4 Angles (in Degrees) Between the Differential Vectors of
+    Each Class in F F
+  Table 5 caption: TABLE 5 3D Point Cloud Statistics Regarding the Diversity of Each
+    Class Within the Training Dataset
+  Table 6 caption: TABLE 6 Centrality and Separability Ratio Between the Testing and
+    Training Set of D a Da for Both Visual and Audio Feature Extractors
+  Table 7 caption: TABLE 7 Classification Performance (%) of Fusion Models Under Different
+    Training Strategies
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3094625
+- Affiliation of the first author: department of informatics, bioinformatics & computational
+    biology - i12, technical university of munich (tum), garchingmunich, germany
+  Affiliation of the last author: department of informatics, bioinformatics & computational
+    biology - i12, technical university of munich (tum), garchingmunich, germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\ProtTrans_Toward_Understanding_the_Language_of_Life_Through_SelfSupervised_Learn\figure_1.jpg
+  Figure 1 caption: "Feature extraction overview - We give a general overview on how\
+    \ ProtTrans models can be used to derive features (embeddings) for arbitrary protein\
+    \ sequences either on the level of single amino acids or whole proteins and how\
+    \ they can be used for classification tasks on both levels. First, an example\
+    \ protein sequence \u201DSEQ\u201D is tokenized and positional encoding is added.\
+    \ The resulting vectors are passed through any of our ProtTrans models to create\
+    \ context-aware embeddings for each input token, i.e., each amino acid. Here,\
+    \ we used the last hidden state of the Transformers attention stack as input for\
+    \ downstream prediction methods. Those embeddings can either be used directly\
+    \ as input for prediction tasks on the level of individual tokens, e.g., a CNN\
+    \ can be used to predict an amino acids secondary structure. Alternatively, those\
+    \ embeddings can be concatenated and pooled along the length-dimension to get\
+    \ fixed-size embedding irrespective of the input length, i.e., global average\
+    \ pooling is applied. The resulting protein-level embedding can be used as input\
+    \ for predicting aspects of proteins, e.g., a FNN can be used to predict a proteins\
+    \ cellular localization."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\ProtTrans_Toward_Understanding_the_Language_of_Life_Through_SelfSupervised_Learn\figure_2.jpg
+  Figure 2 caption: 'Large scale dataset training: The figure shows the overhead of
+    increasing the number of nodesgpus for both ProtTXL (blue; low) and ProtBert (red;
+    high). The overhead increases slightly from 1 to 2 nodes but remains constant
+    even when scaling up to 936 nodes with a total of 5616 GPUs. Having a low overhead
+    means the model has a near-linear scale-up across thousands of GPUs, upper-bounded
+    by the theoretical scale-up.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\ProtTrans_Toward_Understanding_the_Language_of_Life_Through_SelfSupervised_Learn\figure_3.jpg
+  Figure 3 caption: 'Protein LMs learned constraints. t-SNE projections visualized
+    information extracted by the unsupervised protein LMs (here best-performing ProtT5-XL-U50;
+    upper row: before training (Random), and lower row: after pre-training on BFD
+    & UniRef50. (A) The left-most column highlights single amino acids by biophysical
+    features. (B) The middle column annotates protein structural class (taken from
+    SCOPe). (C) The right-most column distinguishes proteins according to the kingdom
+    of life in which it is native. Although the random projections on top may suggest
+    some adequacy of the clusters, the trained models shown on the lower row clearly
+    stood out. Incidentally, the comparison of the two also highlighted the potential
+    pitfalls of using t-SNE projections from many dimensions onto 2D: although random,
+    the human might see some correct patterns even in the top row. Most impressive
+    might be the fine-grained distinctions of biophysical features of amino acids
+    (A), however, more surprising are the classifications of entire proteins according
+    to structural class (B) and organism (C). For these, we created embeddings through
+    global average pooling over the representations extracted from the last layer
+    of ProtT5-U50 (average over protein length, i.e., per-protein embeddings; Fig.
+    1).'
+  Figure 4 Link: articels_figures_by_rev_year\2021\ProtTrans_Toward_Understanding_the_Language_of_Life_Through_SelfSupervised_Learn\figure_4.jpg
+  Figure 4 caption: 'Per-residue (token-level) performance for secondary structure
+    prediction: CASP12 (red) and NEW364 (blue) constitute two test sets. Protein LMs
+    trained here are shown in the left panel of the figure. Additions of BFD mark
+    pre-training on the largest database BFD, U50 mark pre-training with BFD and refining
+    with UniRef50. We included protein LMs described elsewhere (marked as: protein
+    LMs others, namely ESM-1b [67], DeepProtVec and DeepSeqVec [56]). All embeddings
+    were input to the same CNN architecture. Two approaches used amino acids instead
+    of embeddings as input (marked as: no LMs: DeepOneHot [56] - one-hot encoding
+    - and DeepBLOSUM62 [56] - input BLOSUM62 [69] substitution matrix), as well as,
+    to the current state-of-the-art (SOA) method NetSurfP-2.0 [15], and Jpred4 [70],
+    RaptorX [71], [72], Spider3 [73]. The rightmost four methods use MSA as input
+    (marked as: MSA input evolutionary information). While only rotT5-XL-U50 reached
+    the SOA without using MSAs, several protein LMs outperformed other methods using
+    MSA. All protein LMs other than the context-free DeepProtVec improved significantly
+    over methods using only amino acid information as input. One interpretation of
+    the difference between the two data sets is that CASP12 provided a lower and NEW364
+    an upper limit. The top row shows the complete range from 0-100, while the lower
+    row zooms into the range of differences relevant here.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\ProtTrans_Toward_Understanding_the_Language_of_Life_Through_SelfSupervised_Learn\figure_5.jpg
+  Figure 5 caption: "Effect of MSA size. We used our new test set (NEW364) to analyze\
+    \ the effect of the size of an MSA upon secondary structure prediction (Q3) for\
+    \ the two top methods (both reaching Q3=84.3%): NetSurfP-2.0 (using MSA) and ProtT5-XL-U50\
+    \ (not using MSA). As proxy for MSA size served Neff, the number of effective\
+    \ sequences [74] (clustered at 62 percent PIDE): leftmost bars: MSAs with Neff=1,\
+    \ middle: Neff&\u226410 , right: Neff>10. As expected ProtT5-XL-U50 tended to\
+    \ reach higher levels than NetSurfP-2.0 for smaller families. Less expected was\
+    \ the almost on par performance for larger families."
+  Figure 6 Link: articels_figures_by_rev_year\2021\ProtTrans_Toward_Understanding_the_Language_of_Life_Through_SelfSupervised_Learn\figure_6.jpg
+  Figure 6 caption: "Number of pre-training correlated with performance. We plotted\
+    \ 3-state secondary structure prediction performance (Q3) on NEW364 for all pLMs\
+    \ trained here against the number of samples seen during pre-training (training\
+    \ steps times global batch-size in K). For simplicity, we dropped the \u201DProt\u201D\
+    \ prefix from all models. Despite the vastly different pLMs, the high Spearmans\
+    \ rho of 0.62 indicated a common trend: more pre-training samples: better prediction."
+  Figure 7 Link: articels_figures_by_rev_year\2021\ProtTrans_Toward_Understanding_the_Language_of_Life_Through_SelfSupervised_Learn\figure_7.jpg
+  Figure 7 caption: 'Per-protein (sentence-level) performance: The prediction of location
+    in 10 states (lower bars in cyan: Q10: percentage of proteins with 1 of 10 classes
+    correctly predicted) and the classification of membraneother (higher bars in magenta:
+    Q2: percentage of proteins correctly classified in either of two classes). Embeddings
+    were derived from pLMs by mean-pooling, i.e., averaging over the length of the
+    entire protein (Fig. 1). Abbreviations as in Table 4 except for one method using
+    neither pLMs nor MSA (no LM no MSA: DeepLoc-BLOSUM62 [16]), and two methods using
+    MSAs (MSA input evolutionary information): the current state-of-the-art (SOA)
+    method (performance marked by horizontal thin lines in magenta and cyan) DeepLoc
+    [16], and LocTree2 [77]. Almost all pLMs outperformed LocTree2 and a version of
+    DeepLoc not using MSAs (DeepLoc-BLOSUM62). Only, ProtT5-XXL-U50 and ProtT5-XL-U50
+    outperformed the SOA. A recent method optimized location prediction from ProtT5
+    embeddings through a light-attention mechanism; it clearly outperformed the SOA
+    without using MSAs (LAProtT5 & LAProtT5-U50[78]). The top row shows the complete
+    range from 0-100, while the lower row zooms into the range of observed differences.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\ProtTrans_Toward_Understanding_the_Language_of_Life_Through_SelfSupervised_Learn\figure_8.jpg
+  Figure 8 caption: 'Inference speed comparison: The time required to generate protein
+    representations for the human proteome (20.353 proteins) is compared using either
+    our protein LMs or mmseqs2 (protein sequence search tool [45] used to generate
+    evolutionary information; NetSurfP-2.0 [15] parameters are used). Here, we used
+    mmseqs2 (red bar) to search each protein in the human proteome against two large
+    protein database (UniRef90 and UniRef100 with 113M and 216M proteins, respectively).
+    Only embedding or search time is reported, i.e., no pre-processing or pre-training
+    was measured. mmseqs2 was run on an Intel Skylake Gold 6248 processor with 40
+    threads, SSD and 377GB main memory, while protein LMs were run on a single Nvidia
+    Quadro RTX 8000 with 48GB memory using half precision and dynamic batch size depending
+    on sequence length (blue bar).'
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Ahmed Elnaggar
+  Name of the last author: Burkhard Rost
+  Number of Figures: 8
+  Number of Tables: 2
+  Number of authors: 12
+  Paper title: 'ProtTrans: Toward Understanding the Language of Life Through Self-Supervised
+    Learning'
+  Publication Date: 2021-07-07 00:00:00
+  Table 1 caption: TABLE 1 Data Protein LM - UniRef50 and UniRef100 Cluster the UniProt
+    Database at 50 and 100 percent Pairwise Sequence Identity (100 percent Implying
+    That Duplicates are Removed) [32]; BFD Combines UniProt With Metagenomic Data
+    Keeping Only One Copy for Duplicates [24], [33]
+  Table 10 caption: Not Available
+  Table 2 caption: 'TABLE 2 Large-Scale Deep Learning: The Table Shows the Configurations
+    for Pre-Training the Protein LMs Introduced Here (ProtTXL, ProtBert, ProtXLNet,
+    ProtAlbert, ProtElectra, ProtT5) Using Either Summit, a TPU Pod v2 or a TPU Pod
+    v3'
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3095381

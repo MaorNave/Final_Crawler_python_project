@@ -1,0 +1,928 @@
+- Affiliation of the first author: national key laboratory of science and technology
+    on multi-spectral information processing, school of artificial intelligence and
+    automation, huazhong university of science and technology, wuhan, china
+  Affiliation of the last author: "department of computer science, eth z\xFCrich,\
+    \ z\xFCrich, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_1.jpg
+  Figure 1 caption: Pipeline of PatchMatch multi-view stereo. Given multi-view images
+    and their corresponding camera parameters, PatchMatch multi-view stereo uses a
+    popular four-step pipeline to output depth maps and normal maps. Except for the
+    first step, the last three steps are iteratively implemented to make the algorithm
+    converge.
+  Figure 10 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_10.jpg
+  Figure 10 caption: Graphical model of planar prior assistance. Given priori plane
+    hypothesis boldsymboltheta textp , the observation boldsymbolXitextsrc on source
+    images and the visibility information boldsymbolZtextsrc , the optimal hypothesis
+    boldsymboltheta is inferred.
+  Figure 2 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_2.jpg
+  Figure 2 caption: Texture richness for different scales. (a) Original Image. (b)
+    The zoomed-in version of the white box in (a). (c) The downsampled version of
+    (b). (d) Depth map obtained with the original scale. (e) Depth map obtained with
+    the multi-scale scheme. The patch windows in red are kept the same size.
+  Figure 3 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_3.jpg
+  Figure 3 caption: Propagation scheme. The circles represent the pixels in the image.
+    (a) Sequential propagation. (b) Symmetric checkerboard propagation. The solid
+    yellow circles in (b) show the sampled points.
+  Figure 4 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_4.jpg
+  Figure 4 caption: Adaptive checkerboard propagation scheme. The circles represent
+    the pixels in the image. The light red areas show sampling regions. The solid
+    yellow circles show the sampled points.
+  Figure 5 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_5.jpg
+  Figure 5 caption: Graphical model of view selection. At each iteration, given candidate
+    hypotheses boldsymbolTheta , the observation boldsymbolXj corresponding to the
+    hypotheses on source image boldsymbolIj , and the visibility of neighboring pixels
+    on source image boldsymbolIj is boldsymbolZnj , the visibility of pixel boldsymbolp
+    on source image boldsymbolIj , Zj , is inferred.
+  Figure 6 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_6.jpg
+  Figure 6 caption: Overview of ACMM. The initial depth maps of the coarsest scale
+    are obtained by our basic MVS model with only photometric consistency (Section
+    5), Then, ACMH with geometric consistency enforces geometric consistency to enhance
+    multi-view coherence (Section 6). After upsampling the estimation of the previous
+    scale to the current scale, detail restorer is implemented to correct the errors
+    in details. Subsequently, geometric consistency is also implemented to optimize
+    the previous estimation. At each scale, geometric consistency is enforced to enhance
+    coherence and prevent the reliable estimates in low-textured areas from the previous
+    scale being impaired by photometric consistency (Section 6).
+  Figure 7 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_7.jpg
+  Figure 7 caption: Absolute error maps and photometric consistency cost maps on Fountain-P11
+    dataset for different methods. (a) shows the absolute error map of our method
+    without detail restorer. Its depth map is obtained by upscaling the estimation
+    of the penultimate scale. Details are not preserved. (b) shows the photometric
+    consistency cost map of (a). (c) shows the absolute error map of our basic MVS
+    model. Its details are better preserved than (a). (d) shows the photometric consistency
+    cost map of (c). (e) shows the difference map of (b) and (d). The cost difference
+    of the erroneous estimates in details is more discriminative than the cost difference
+    of the reliable estimation in low-textured areas. (f) shows the absolute error
+    map of ACMM. For absolute error maps, green pixels encode missing ground truth
+    data, red pixels encode an absolute error larger than 2cm , and pixels with absolute
+    errors between 0 and 2cm are encoded in gray [255, 0].
+  Figure 8 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_8.jpg
+  Figure 8 caption: Overview of ACMP. ACMP contains two stages. In the first stage,
+    we generate planar models. In the second stage, with the help of planar models,
+    we leverage planar prior assistance to optimize depth maps.
+  Figure 9 Link: articels_figures_by_rev_year\2022\MultiScale_Geometric_Consistency_Guided_and_Planar_Prior_Assisted_MultiView_Ster\figure_9.jpg
+  Figure 9 caption: (a) images; (b) ground truth; (c) sparse correspondences; (d)
+    triangulation; (e) planar model directly calculated from (d); (f) planar prior
+    assisted PatchMatch MVS; (g) geometric consistency.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Qingshan Xu
+  Name of the last author: Marc Pollefeys
+  Number of Figures: 14
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Multi-Scale Geometric Consistency Guided and Planar Prior Assisted
+    Multi-View Stereo
+  Publication Date: 2022-08-19 00:00:00
+  Table 1 caption: TABLE 1 Percentage of Pixels With Absolute Errors Below 2cm 2cm
+    and 10cm 10cm on Strecha Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Percentage of Pixels With Absolute Errors Below 2cm 2cm
+    and 10cm 10cm on the High-Resolution Multi-View Training Datasets of ETH3D Benchmark
+  Table 3 caption: TABLE 3 Comparison Results of the Proposed Methods With Different
+    Settings on the High-Resolution Multi-View Training Datasets of ETH3D Benchmark
+  Table 4 caption: TABLE 4 Point Cloud Evaluation on the High-Resolution Multi-View
+    Training Datasets of ETH3D Benchmark Showing Accuracy Completeness F 1 F1 Score
+    (in %) at Different Evaluation Thresholds (Including 2cm 2cm and 10cm 10cm)
+  Table 5 caption: TABLE 5 Point Cloud Evaluation on the High-Resolution Multi-View
+    Test Datasets of ETH3D Benchmark Showing Accuracy Completeness F 1 F1 Score (in
+    %) at Different Evaluation Thresholds (Including 2cm 2cm and 10cm 10cm)
+  Table 6 caption: TABLE 6 Point Cloud Evaluation on the Intermediate Datasets of
+    Tanks and Temples Dataset Showing F 1 F1 Score (in %) at Given Evaluation Thresholds
+  Table 7 caption: TABLE 7 Runtime (in Second) of Depth Map Generation for Different
+    Methods on Strecha Dataset
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200074
+- Affiliation of the first author: department of computer engineering, middle east
+    technical university, ankara, turkey
+  Affiliation of the last author: department of computer engineering, middle east
+    technical university, ankara, turkey
+  Figure 1 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_1.jpg
+  Figure 1 caption: "(Left) A sample \u201Cmouse detection, shown with yellow bounding\
+    \ box, by HoughNet. (Right) The locations that vote for this detection. Colors\
+    \ indicate vote strength. In addition to the local votes originating from the\
+    \ mouse itself, there are strong votes from nearby \u201Ckeyboard objects, which\
+    \ shows that HoughNet is able to utilize both short and long-range evidence for\
+    \ detection. More examples can be seen in Fig. 7."
+  Figure 10 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_10.jpg
+  Figure 10 caption: Sample car detection of HoughNet from KITTI dataset and its vote
+    map. We show a correctly detected object, marked with a blue 3D bounding box.
+    In addition to the local votes, strong votes come from road and buildings.
+  Figure 2 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_2.jpg
+  Figure 2 caption: Overview of the processing pipeline of HoughNet.
+  Figure 3 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_3.jpg
+  Figure 3 caption: "A log-polar \u201Cvote field used in the voting module of HoughNet.\
+    \ Numbers indicate region ids. A vote field is parametrized by the number of angle\
+    \ bins, and the number and radii of eccentricity bins, or rings. In this particular\
+    \ vote field, there are a total of 13 regions, 6 angle bins and 3 rings. The radii\
+    \ of the rings are 2, 8 and 16, respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_4.jpg
+  Figure 4 caption: "Voting process for a single class. Visual evidence prediction\
+    \ (VEP) branch outputs H\xD7W\xD7R dimensional visual evidence tensor for the\
+    \ class. Here the voting process is illustrated for just a single location (i,j)\
+    \ and for 3 regions of the vote field shown with yellow, green and blue colors.\
+    \ The values at (i,j) corresponding to these 3 regions are added as votes to the\
+    \ appropriate locations in the Object Presence Map tensor. These locations are\
+    \ determined by the vote field shown at top left. Votes from all locations are\
+    \ similarly accumulated in the Object Presence Map."
+  Figure 5 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_5.jpg
+  Figure 5 caption: (Left) Overall processing pipeline of HoughNet for video object
+    detection. (Right) Temporal vote field.
+  Figure 6 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_6.jpg
+  Figure 6 caption: Performance validation for COCO minitrain. The x -axis is the
+    val2017 performance (AP on the left, AP50 on the right) of a model when it is
+    trained on minitrain. The y -axis is the performance of the model when it is trained
+    on the full COCO training set, train2017. Fitted lines with Pearson correlation
+    coefficients 0.74 and 0.92, respectively for AP and AP 50 , show strong positive
+    correlation.
+  Figure 7 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_7.jpg
+  Figure 7 caption: "Sample detections of HoughNet and their vote maps. In the \u201C\
+    detection columns, we show a correctly detected object, marked with a yellow bounding\
+    \ box. In the \u201Cvoters columns, the locations that vote for the detection\
+    \ are shown. Colors indicate vote strength based on the standard \u201Cjet colormap\
+    \ (red is high, blue is low; Fig. 1). In the top row, there are three \u201Cmouse\
+    \ detections. In all cases, in addition to the local votes (that are on the mouse\
+    \ itself), there are strong votes coming from nearby \u201Ckeyboard objects. This\
+    \ voting pattern is justified given that mouse and keyboard objects frequently\
+    \ co-appear. A similar behavior is observed in the detections of \u201Cbaseball\
+    \ bat, \u201Cbaseball glove and \u201Ctennis racket in the second row, where they\
+    \ get strong votes from \u201Cball objects that are far-away. In the first example\
+    \ of the bottom row, \u201Cdining table detection gets strong votes from the candle\
+    \ object, probably because they co-occur frequently. Candle is not among the 80\
+    \ classes of COCO dataset. Similarly, in the second example in the bottom row,\
+    \ \u201Cdining table has strong votes from objects and parts of a standard living\
+    \ room. In the last example, partially occluded bird gets strong votes (stronger\
+    \ than the local votes on the bird itself) from the tree branch."
+  Figure 8 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_8.jpg
+  Figure 8 caption: "Object detection voting activity among 10 vote-getter classes\
+    \ (rows) and 15 vote-giver classes (columns) on the COCO dataset. Color decodes\
+    \ voting activity (red: high, blue: low). Each detection in a vote-getter class\
+    \ might get votes from multiple object classes. For example, the cup objects (i.e.,\
+    \ the \u201Ccup row) get relatively high votes from cup, person, dining table\
+    \ and bowl classes. The full 80 times 80 matrix is provided in the supplementary\
+    \ material."
+  Figure 9 Link: articels_figures_by_rev_year\2022\HoughNet_Integrating_Near_and_LongRange_Evidence_for_Visual_Detection\figure_9.jpg
+  Figure 9 caption: A scalable variant of our voting process. Instead of having a
+    separate visual evidence tensor for each of the C classes, we create N ( N < <
+    C ) visual evidence tensors that are shared and common to all classes.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Nermin Samet
+  Name of the last author: Emre Akbas
+  Number of Figures: 12
+  Number of Tables: 15
+  Number of authors: 3
+  Paper title: 'HoughNet: Integrating Near and Long-Range Evidence for Visual Detection'
+  Publication Date: 2022-08-22 00:00:00
+  Table 1 caption: TABLE 1 Ablation Experiments for the Vote Field
+  Table 10 caption: TABLE 10 Effect of Voting Module for the 3D Object Detection Task
+    on KITTI
+  Table 2 caption: TABLE 2 Comparing Our Voting Module to an Equivalent Dilated Convolution
+    Filter, in Terms of Number of Parameters and the Spatial Filter Size, on COCO
+    Val2017 Set
+  Table 3 caption: TABLE 3 HoughNet Results on COCO Val2017 Set for Different Training
+    Setups
+  Table 4 caption: TABLE 4 Comparison of Object Detection with Baseline (OAP) on Val2017
+  Table 5 caption: TABLE 5 Comparison with the State-Of-The-Art on COCO Test-Dev
+  Table 6 caption: TABLE 6 Effect of Voting Module on Three Major Error Types, Namely,
+    Localisation (Loc), False Positive (FP) and False Negative (FN), as Measured by
+    the LRP Metric [19], [20]
+  Table 7 caption: TABLE 7 Ablation Experiments for the Scalable Voting Module
+  Table 8 caption: TABLE 8 Results of Video Object Detection on ImageNet VID Validation
+    Set
+  Table 9 caption: TABLE 9 Effect of voting module for the instance segmentation task
+    on COCO val2017 set
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200413
+- Affiliation of the first author: department of computer science and engineering,
+    john hopcroft center, moe key lab of artificial intelligence, ai institute, shanghai
+    jiao tong university, shanghai, china
+  Affiliation of the last author: computer science and engineering, the hong kong
+    university of science and technology, clear water bay, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2022\Quantifying_the_Knowledge_in_a_DNN_to_Explain_Knowledge_Distillation_for_Classif\figure_1.jpg
+  Figure 1 caption: (a) Visualization of the information-discarding process through
+    different layers of VGG-16 on the CUB200-2011 dataset. Input units with darker
+    colors discard less information. (b) Comparison of the coherency of different
+    explanation methods. Our method coherently measures how input information is gradually
+    discarded through layers, and enables fair comparisons of knowledge representations
+    between different layers. In comparison, CAM [79] and gradient explanations [59]
+    cannot generate coherent magnitudes of importance values through different layers
+    for fair comparisons. More analysis is presented in Section 3.2.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Quantifying_the_Knowledge_in_a_DNN_to_Explain_Knowledge_Distillation_for_Classif\figure_2.jpg
+  Figure 2 caption: "Positive correlation between the ratio of foreground knowledge\
+    \ points \u03BB and the classification accuracy of DNNs on the CUB200-2011 dataset."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Quantifying_the_Knowledge_in_a_DNN_to_Explain_Knowledge_Distillation_for_Classif\figure_3.jpg
+  Figure 3 caption: "Visualization of knowledge points. The dark color indicates the\
+    \ low-entropy value H i . Image regions with low pixel-wise entropies H i are\
+    \ considered as knowledge points. In a real implementation, to improve the stability\
+    \ and efficiency of the computation, we divide the image into 16\xD716 grids,\
+    \ and each grid is taken as a \u201Cpixel\u201D to compute the entropy H i ."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Quantifying_the_Knowledge_in_a_DNN_to_Explain_Knowledge_Distillation_for_Classif\figure_4.jpg
+  Figure 4 caption: Procedure of learning foreground knowledge points w.r.t. weight
+    distances. According to information-bottleneck theory, a DNN tends to learn various
+    knowledge points in early epochs and then discard knowledge points irrelevant
+    to the task later. Strictly speaking, a DNN learns new knowledge points and discards
+    old points during the entire course of the learning process. The epoch hatmx encodes
+    the richest foreground knowledge points.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Quantifying_the_Knowledge_in_a_DNN_to_Explain_Knowledge_Distillation_for_Classif\figure_5.jpg
+  Figure 5 caption: Detours of learning knowledge points. We visualize sets of foreground
+    knowledge points learned after different epochs. The green box indicates the union
+    of knowledge points learned during all epochs. The (1-rho) value denotes the ratio
+    of knowledge points that are discarded during the learning process to the union
+    set of all learned knowledge points. A larger rho value indicates DNN is optimized
+    with fewer detours.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Quantifying_the_Knowledge_in_a_DNN_to_Explain_Knowledge_Distillation_for_Classif\figure_6.jpg
+  Figure 6 caption: Visualization of knowledge points encoded in the text FC1 layer
+    of VGG-11. Generally, the student network exhibited a larger Ntext pointtext fg
+    value and a smaller Ntext pointtext bg value than the baseline network.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Quantifying_the_Knowledge_in_a_DNN_to_Explain_Knowledge_Distillation_for_Classif\figure_7.jpg
+  Figure 7 caption: Comparison of Ntext pointtext fg , Ntext pointtext bg and all
+    knowledge points Ntext pointtext all= Ntext pointtext fg+ Ntext pointtext bg between
+    fine-tuning a pre-trained VGG-16 network and learning a VGG-16 network from scratch
+    on the Tiny-ImageNet dataset. Metrics were measured at the highest convolutional
+    layer. The fine-tuning process made the DNN encode new foreground knowledge points
+    more quickly and enabled it to be optimized with fewer detours than learning from
+    scratch.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Quanshi Zhang
+  Name of the last author: Zhefan Rao
+  Number of Figures: 7
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Quantifying the Knowledge in a DNN to Explain Knowledge Distillation
+    for Classification
+  Publication Date: 2022-08-22 00:00:00
+  Table 1 caption: TABLE 1 Comparisons of Different Explanation Methods in Terms of
+    the Coherency
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparisons Between the Student Network and the Baseline
+    Network (B) for the Image Classification on the CUB200-2011 Dataset, Where the
+    Student Network Distilled From the FC 1 FC1 Layer of a Larger Teacher Network
+  Table 3 caption: TABLE 3 Comparisons Between the Student Network (S) and the Baseline
+    Network (B) for Image Classification on the CUB200-2011 Dataset, Respectively
+  Table 4 caption: TABLE 4 Comparisons of Knowledge Points Encoded in the Teacher
+    Network (T), the Student Network (S) and the Baseline Network (B) for Image Classification
+  Table 5 caption: TABLE 5 Comparisons Between the Student Network (S) and the Baseline
+    Network (B) for Image Classification
+  Table 6 caption: TABLE 6 Comparisons Between the Student Network (S) and the Baseline
+    Network (B) for the Question-Answering and the Sentiment Classification Tasks,
+    Respectively
+  Table 7 caption: TABLE 7 Comparisons Between the Student Network (S) and the Baseline
+    Network (B) for the Classification of 3D Point Clouds
+  Table 8 caption: TABLE 8 Comparisons Between the Student Network (S) and the Baseline
+    Network (B) for Image Classification on the MSCOCO Dataset
+  Table 9 caption: TABLE 9 Comparisons Between the Student Network (S) and the Baseline
+    Network (B) for Image Classification on the Tiny-ImageNet Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200344
+- Affiliation of the first author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Affiliation of the last author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2022\Fully_Convolutional_Networks_for_Panoptic_Segmentation_With_PointBased_Supervisi\figure_1.jpg
+  Figure 1 caption: Compared with previous method, which often utilizes separate branches
+    to handle things and stuff in Fig. 1a, Panoptic FCN Fig. 1b represents things
+    and stuff uniformly with generated kernels. Here, an example with box-based stream
+    for things and FCN-based branch for stuff is given in Fig. 1a. The shared backbone
+    is omitted for concision.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Fully_Convolutional_Networks_for_Panoptic_Segmentation_With_PointBased_Supervisi\figure_2.jpg
+  Figure 2 caption: The framework of Panoptic FCN. The proposed framework mainly contains
+    three components, namely kernel generator, kernel fusion, and feature encoder.
+    In kernel generator, position head is designed to locate and classify object centers
+    along with stuff regions; kernel head in each stage is used to generate kernel
+    weights for both things and stuff. Then, kernel fusion is utilized to merge kernel
+    weights with the same identity from different stages. And feature encoder is adopted
+    to encode the high-resolution feature with details. With the generated kernel
+    weight for each instance, both things and stuff can be predicted with a simple
+    convolution directly.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Fully_Convolutional_Networks_for_Panoptic_Segmentation_With_PointBased_Supervisi\figure_3.jpg
+  Figure 3 caption: Toy example for different types of point-based annotations. We
+    adopt random or boundary points for annotation, regardless of extreme points inside
+    each instance.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Fully_Convolutional_Networks_for_Panoptic_Segmentation_With_PointBased_Supervisi\figure_4.jpg
+  Figure 4 caption: Toy example for P 10 target generation. The light red points and
+    green region denote the utilized points and the corresponding generated segmentation
+    target, respectively. The dark red points and the purple one represent the unused
+    annotation and the simulated instance center, respectively. Annotated random points
+    in Fig. 4c are omitted for concision.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Fully_Convolutional_Networks_for_Panoptic_Segmentation_With_PointBased_Supervisi\figure_5.jpg
+  Figure 5 caption: Speed-Accuracy trade-off curve on the COCO val set. Results are
+    compared with Res50 except DeeperLab [5] with Xception-71 [77]. The latency is
+    measured end-to-end from single input to panoptic result. Details are given in
+    Table 18.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Fully_Convolutional_Networks_for_Panoptic_Segmentation_With_PointBased_Supervisi\figure_6.jpg
+  Figure 6 caption: Curve of point number on the COCO val set with mathrm1times training
+    schedule. The network outperforms 70% of the fully-supervised version with point-based
+    annotation mathcal P10 .
+  Figure 7 Link: articels_figures_by_rev_year\2022\Fully_Convolutional_Networks_for_Panoptic_Segmentation_With_PointBased_Supervisi\figure_7.jpg
+  Figure 7 caption: Curve of boundary point ratio on the COCO val set with mathrm1times
+    schedule and point-based annotation mathcal P20 . The network outperforms 80%
+    of the fully supervised version.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Fully_Convolutional_Networks_for_Panoptic_Segmentation_With_PointBased_Supervisi\figure_8.jpg
+  Figure 8 caption: Qualitative results of Panoptic FCN on four widely-adopted datasets.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.77
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.91
+  Name of the first author: Yanwei Li
+  Name of the last author: Jiaya Jia
+  Number of Figures: 8
+  Number of Tables: 22
+  Number of authors: 9
+  Paper title: Fully Convolutional Networks for Panoptic Segmentation With Point-Based
+    Supervision
+  Publication Date: 2022-08-22 00:00:00
+  Table 1 caption: TABLE 1 Statistics of Boundary Point Annotations on COCO Training
+    Set
+  Table 10 caption: TABLE 10 Comparison With Different Settings of the Feature Encoder
+    on the COCO val Set
+  Table 2 caption: TABLE 2 Comparison With Different Settings of Kernel Generator
+    on the COCO val Set
+  Table 3 caption: TABLE 3 Comparison With Different Positional Settings on the COCO
+    val Set
+  Table 4 caption: TABLE 4 Comparison With Different Similarity Thresholds of Kernel
+    Fusion on the COCO val Set
+  Table 5 caption: TABLE 5 Comparison With Different Methods of Removing Repetitive
+    Predictions
+  Table 6 caption: TABLE 6 Comparison With Different Channel Numbers of the Feature
+    Encoder on the COCO val Set
+  Table 7 caption: TABLE 7 Comparison With Different Feature Types for the Feature
+    Encoder on the COCO val Set
+  Table 8 caption: TABLE 8 Comparison With Different Settings of Weighted Dice Loss
+    on the COCO val Set
+  Table 9 caption: TABLE 9 Comparisons With Different Settings of Center Type on the
+    COCO val Set
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200416
+- Affiliation of the first author: college of intelligence and computing, tianjin
+    university, tianjin, china
+  Affiliation of the last author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_1.jpg
+  Figure 1 caption: Comparison of open set methods using prototype learning (a), proposed
+    method (b), and auto-encoder (c). Prototype learning models each class with several
+    prototype points, and it has limited fitting ability and learns completely compact
+    representations. Auto-encoder models known samples with a continuous low-dimensional
+    manifold but some inter-class regions are devoured and misclassified into a known
+    space. CSSR models each known class on an individual manifold represented by an
+    AE. It fits known samples well while releasing the regions devoured by a single
+    AE.
+  Figure 10 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_10.jpg
+  Figure 10 caption: Known and unknown samples that CSSR or plain linear model fails
+    to identify.
+  Figure 2 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_2.jpg
+  Figure 2 caption: Structure of individual AEs. Note that we operate the reconstruction
+    process at the pixel level. It takes the semantic feature map as input and outputs
+    the reconstruction error at each pixel.
+  Figure 3 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_3.jpg
+  Figure 3 caption: Comparison of open space modeled by (a) CSSR, and (b) CSSR with
+    mean squared reconstruction error. We set up a trivial experiment, where four
+    classes generated from different Gaussian distributions are used for training.
+    Then, we tested the entire feature space for unknown detection. The bright yellow
+    and dark blue regions correspond to the open space and the close space identified
+    by the different methods, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_4.jpg
+  Figure 4 caption: Visualization of the class-specific feature activation for CSSR.
+    We took six categories from Cifar10 as known classes and the remaining four as
+    unknown. Note that the magnitude for each feature is normalized across the six
+    known classes; we sorted each curve to have increasing order for better visualization.
+  Figure 5 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_5.jpg
+  Figure 5 caption: Overall architecture of our proposed model. The backbone network
+    ( mathcal B ) takes an image as input and extracts its semantic feature map mathbf
+    z . The AE ( mathcal Ac ) with respect to class c encodes and reconstructs the
+    pixelwise semantic representation mathbf z . Subsequently, we take the pixelwise
+    reconstruction errors of class-specific AEs as logits and make pixelwise SoftMax
+    on the logits multiplied by gamma . Then, global average pooling is applied to
+    reduce the pixelwise predictions to a general prediction for the whole image.
+    For unknown inference, the model uses the pixelwise reconstruction errors corresponding
+    to the predicted class and semantic features as input, and scores the unknownness
+    for the image. Finally, a threshold is determined ensuring 95% known samples are
+    correctly accepted; samples are rejected if their unknown scores are below the
+    threshold.
+  Figure 6 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_6.jpg
+  Figure 6 caption: Unknown inference process. Before inference on test samples, we
+    obtain first- and second-order statistics (corresponding to P2 and P3 in the figure,
+    respectively) from the raw training set. Then, the normalization coefficients
+    ( frac1Std(s) ) are obtained from the augmented training set for individual scores.
+    The final score weights are calculated by the product of normalization coefficients
+    and predefined weights, i.e., tildew=fracwStd(s) , which forms the score function
+    by sall(Z,c) = sum i tildewi times si(Z,c) .
+  Figure 7 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_7.jpg
+  Figure 7 caption: The performance of individual score function in the unknown detection
+    experiment. Note the standard deviations are calculated by the five randomized
+    trials under different known-unknown splits.
+  Figure 8 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_8.jpg
+  Figure 8 caption: Open set recognition accuracy against varying Openness for CSSR
+    and baseline.
+  Figure 9 Link: articels_figures_by_rev_year\2022\ClassSpecific_Semantic_Reconstruction_for_Open_Set_Recognition\figure_9.jpg
+  Figure 9 caption: Comparison of the amount of GPU memory used (a) and the amount
+    of time consumed in one epoch training (b). The values are collected by training
+    ResNet18-based models on ImageNet-1000 with batch size 128. The number of samples
+    are kept the same when varying the number of classes.
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Hongzhi Huang
+  Name of the last author: Ming-Ming Cheng
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Class-Specific Semantic Reconstruction for Open Set Recognition
+  Publication Date: 2022-08-22 00:00:00
+  Table 1 caption: TABLE 1 AUROC Comparison Between Different Methods on Unknown Detection
+    Tasks
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Open Set Classification Results on the CIFAR-10 Dataset
+    With Various Unknown Datasets Added in the Test Phase
+  Table 3 caption: TABLE 3 Distinguishing CIFAR10 From Near OOD Dataset CIFAR100 and
+    far OOD Dataset SVHN Under Various Metrics
+  Table 4 caption: TABLE 4 Ablation Study on Various Architectures
+  Table 5 caption: TABLE 5 AUROC Comparison on Different Score Functions for Ablation
+    Models Trained on ImageNet-30
+  Table 6 caption: TABLE 6 Closed Performance Comparison on CIFAR10
+  Table 7 caption: TABLE 7 Results on splited ImageNet-1000
+  Table 8 caption: TABLE 8 Open set Recognition for Large-Scale Classification, Where
+    Samples From Imagenet-1000 are Known and Samples From iNaturalist Serve as the
+    Unknowns
+  Table 9 caption: TABLE 9 Entire Training Time for Different Methods on ImageNet-1000
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200384
+- Affiliation of the first author: school of information science, university of science
+    and technology of china, hefei, china
+  Affiliation of the last author: school of information science, university of science
+    and technology of china, hefei, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Uncertainty_Guided_Collaborative_Training_for_Weakly_Supervised_and_Unsupervised\figure_1.jpg
+  Figure 1 caption: The training and testing stage of attention based methods. (1)
+    In the training stage, the attention weight is used to aggregate segment features
+    for video classification. Besides, the aggregated video features are used for
+    clustering in the next round to generate video-level pseudo labels. (2) In the
+    testing stage, action localization results are generated by performing threshold
+    truncation on the combination of the foreground attention weight and class activation
+    sequence. As a key component, the attention weight is of great importance in both
+    training and testing stages. However, without the ground-truth supervision, the
+    attention weight of existing attention based methods tend to be noisy.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Uncertainty_Guided_Collaborative_Training_for_Weakly_Supervised_and_Unsupervised\figure_2.jpg
+  Figure 2 caption: (a) The typical framework for attention based methods. The uncertainty
+    branch is newly added in the proposed training strategy and is only used during
+    training. (b) The proposed uncertainty guided collaborative training strategy.
+    The teacher models of RGB and FLOW streams provide segment-level pseudo labels
+    for each other, which enables the RGB and Flow models to promote each other in
+    a collaborative way. The predicted uncertainty serves as a decay term in the pseudo
+    label loss, which can reduce the negative impact of noisy pseudo labels during
+    the training stage.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Uncertainty_Guided_Collaborative_Training_for_Weakly_Supervised_and_Unsupervised\figure_3.jpg
+  Figure 3 caption: Results of false positive analysis. The left part represents the
+    original WSAL-BM, and the right part represents WSAL-BM with UGCT.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Uncertainty_Guided_Collaborative_Training_for_Weakly_Supervised_and_Unsupervised\figure_4.jpg
+  Figure 4 caption: Results of false negative analysis. The upper part represents
+    the original WSAL-BM, and the bottom part represents WSAL-BM with UGCT.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Uncertainty_Guided_Collaborative_Training_for_Weakly_Supervised_and_Unsupervised\figure_5.jpg
+  Figure 5 caption: Results of sensitive analysis. The upper part represents the original
+    WSAL-BM, and the bottom part represents WSAL-BM with UGCT.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Uncertainty_Guided_Collaborative_Training_for_Weakly_Supervised_and_Unsupervised\figure_6.jpg
+  Figure 6 caption: Performance of different Clustering-Model Updating iterations
+    for UAL. Results indicate that the performance continues to grow until 3 iterations.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Uncertainty_Guided_Collaborative_Training_for_Weakly_Supervised_and_Unsupervised\figure_7.jpg
+  Figure 7 caption: Visualization of the foreground attention weight with and without
+    our training strategy. For each method, figs from top to bottom are input videos,
+    ground-truth, predictions of RGB (wo UGCT), predictions of FLOW model (wo UGCT),
+    predictions of RGB (with UGCT), predictions of FLOW model (with UGCT). These results
+    indicate that the RGB and FLOW model can indeed help to improve each other.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Uncertainty_Guided_Collaborative_Training_for_Weakly_Supervised_and_Unsupervised\figure_8.jpg
+  Figure 8 caption: Action categories that have top-5 performance gain.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Wenfei Yang
+  Name of the last author: Feng Wu
+  Number of Figures: 8
+  Number of Tables: 14
+  Number of authors: 4
+  Paper title: Uncertainty Guided Collaborative Training for Weakly Supervised and
+    Unsupervised Temporal Action Localization
+  Publication Date: 2022-08-22 00:00:00
+  Table 1 caption: TABLE 1 Performance Evaluation of Each Trick, Results are Reported
+    on the THUMOS14 Test Dataset
+  Table 10 caption: TABLE 10 Performance Comparison Between Hard and Soft Pseudo Labels
+    on the THUMOS14 Dataset
+  Table 2 caption: TABLE 2 Detection Performance Comparison With State-of-the-Art
+    Methods on the THUMOS14 Testing Set
+  Table 3 caption: TABLE 3 Detection Performance Comparison With State-of-the-Art
+    Methods on the ActivityNet1.2 Validation Set, Where (Ours) Represents Our Re-Implementation
+  Table 4 caption: TABLE 4 Detection Performance Comparison With State-of-the-Art
+    Methods on the ActivityNet1.3 Validation Set, Where (Ours) Represents Our Re-Implementation
+  Table 5 caption: TABLE 5 Ablation Studies About the Proposed UGCT on the THUMOS14
+    Dataset
+  Table 6 caption: TABLE 6 Performance Comparison With Different RGB-FLOW Fusion Ways
+    on the THUMOS14 Dataset
+  Table 7 caption: TABLE 7 Performance Comparison With and wo Teacher Models for Pseudo
+    Label Generation on the THUMOS14 Dataset
+  Table 8 caption: TABLE 8 Different Ways for Pseudo Label Generation
+  Table 9 caption: TABLE 9 Performance Comparison With Different Ways for Pseudo Label
+    Generation on the THUMOS14 Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200399
+- Affiliation of the first author: "departmento de ingenier\xEDa el\xE9ctrica y electr\xF3\
+    nica, bogot\xE1, colombia"
+  Affiliation of the last author: "departamento de ingenier\xEDa biom\xE9dica, universidad\
+    \ de los andes, bogot\xE1, colombia"
+  Figure 1 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_1.jpg
+  Figure 1 caption: "Deep reinforcement learning methods in the context of multi-task\
+    \ learning. (A) Standard methods learn, for each task c , the parameters of a\
+    \ prototypical neural network that determines the policy \u03C0(a|s,c) . (B) Goal-based\
+    \ methods parametrize the task as a goal vector that allows using a single neural\
+    \ network to perform multiple tasks. This usually makes learning harder because\
+    \ of interference between tasks. (C) State abstraction-based methods learn task-agnostic\
+    \ parameters related to the actions and to a classifier of states (the set of\
+    \ categories S \u03D5 of this classifier are the abstractions). A task-dependent\
+    \ tabular policy \u03C0 \u03D5 (a| s \u03D5 ,c) may provide a prior to learn faster\
+    \ the policies \u03C0(a|s,c) ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_2.jpg
+  Figure 2 caption: "Abstractions as equivariant sets. (A) A deterministic policy\
+    \ from states to actions \u03C0 \u2217 (s,c) determines a partition of the state-space\
+    \ in multiple regions s \u03D5 when a single task is considered. States corresponding\
+    \ to the same action (i.e., in the same region) can be considered equivalent (in\
+    \ the case of a non-deterministic policy \u03C0 \u2217 (\u22C5|s,c) , the states\
+    \ would belong to each partition s \u03D5 \u2208 S \u03D5 with certain probability).\
+    \ (B) In a multitask setting, the abstractions correspond to the intersections\
+    \ of the partitions provided by the policies. States corresponding to the same\
+    \ intersection s \u03D5 can be considered equivalent since the agent behaves the\
+    \ same in them, only depending on the task. (C) For example, s , s \u2032 , and\
+    \ s \u2032\u2032 correspond to the same action in the task c 2 , but in c 1 the\
+    \ action in s \u2032\u2032 is different. Consequently, in a third task, information\
+    \ about the action of s would provide us with more information about the action\
+    \ to take in s \u2032 than the action in s \u2032\u2032 ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_3.jpg
+  Figure 3 caption: 'Agents and tasks used to learn abstractions. Abstraction learning
+    tasks: Hopper: in all tasks the agent is rewarded by moving horizontally to the
+    right. The reward is larger if the height or the velocity of the agent is high
+    or low, depending on the task; Ant: in all of the tasks the ant is rewarded by
+    moving as fast as possible. In the tasks with green spherical targets, the ant
+    receives a positive or a negative reward when it is inside a target and these
+    targets last for a finite amount of steps; Lander: the agent is rewarded by getting
+    close to earth and landing satisfactorily, and it is punished by crashing and
+    spending fuel. Transference tasks: Ant: the agent is re-trained in the previous
+    tasks as well as in a new maze with cross shape. The ant only receives a positive
+    reward when it reaches the exit, which is a green spherical target 4 ; Lander:
+    the agent uses its abstractions in two landing tasks with gravitational fields
+    not previously experienced.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_4.jpg
+  Figure 4 caption: "Abstractions learned by the Hopper agent after optimizing Eq.\
+    \ (1). The agent is able to abstract concepts corresponding to shapes (e.g., leg\
+    \ extended, flexed, and inclined) and motions (e.g., jumping, landing, and falling)\
+    \ (A) Progression of abstractions activated during two trajectories. The number\
+    \ indicates the abstraction most closely related to the state shown. (B) t-SNE\
+    \ projection of several trajectories. The color of each point corresponds to its\
+    \ associated abstraction, and the colors are the same as those used in (A). It\
+    \ can be noticed that abstractions provide a disentangled partition of the states.\
+    \ This indicates that the policies \u03C0(z|s,c) do provide a natural partition\
+    \ of the state-space. Now, while the states are being separated in regions, this\
+    \ separation does not seem to depend strongly on the distance of the original\
+    \ configurations. Furthermore, the projection of progressive steps in (A) appear\
+    \ close in multiple locations, not a single one. The fact that the similarity\
+    \ of these steps is identified for different configurations indicates that the\
+    \ abstractions are not dividing the trajectories arbitrarily."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_5.jpg
+  Figure 5 caption: 'Abstractions learned by the Ant agent. In this case, the classifier
+    is able to learn concepts like having a free path, being in front, to the right,
+    or to the left of a wall, or being close or inside of a target. In all cases the
+    points represent the xy position of the ant and their color the abstraction identified.
+    The arrows indicate the orientation of the ant. Several common abstractions can
+    be identified across the tasks: red - insidein front of target, purple - target
+    in the line of sight, orange - wall in front (far), green - wall in front (close),
+    blue - free path to walk, yellow - wall to the right, brown - wall to the left,
+    etc. In (A, B) the points correspond to samples stored in memory, while in (C,
+    D) they are trajectories followed by the ant in a single episode. Additionally,
+    in (C) the ant enters the targets since they correspond to a positive reward,
+    while in (D) the opposite happens.'
+  Figure 6 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_6.jpg
+  Figure 6 caption: Acceleration rate J tt of the Ant and Lander agents for two different
+    thresholds. The thresholds correspond to percentages of the difference between
+    the initial and maximum return. The vertical black lines specify the minimum and
+    maximum values. The horizontal red lines correspond to the reference J tt =1 .
+  Figure 7 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_7.jpg
+  Figure 7 caption: Policy learning curves of the Ant agent in the 2 tasks where the
+    abstractions are learned. The blue, purple, and brown curves correspond to the
+    case where the agent uses the baseline method SAC. The purple and brown lines
+    include the Reptile weight initialization. The rest of the curves correspond to
+    the cases where abstractions are used to learn high-level policies pi phi through
+    TRMC. Each curve corresponds to the average of 8 different seeds and the shades
+    represent the population standard error.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_8.jpg
+  Figure 8 caption: Abstraction transference to the AntCrossMaze task. We compared
+    the performances of the standard method SAC and the same method endowed with information
+    abstractions (IA). Each curve corresponds to the average of 6 different seeds
+    and 18 test episodes per data-point. The shades represent the population standard
+    error. The number of steps required to escape from the maze decreases faster when
+    the abstractions are used as priors. Similarly, the mean returns increase faster
+    since the agent is successful more times in finding the exit.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Information_Optimization_and_Transferable_State_Abstractions_in_Deep_Reinforceme\figure_9.jpg
+  Figure 9 caption: Policy learning curves of the Lunar Lander agent in 2 unknown
+    tasks. The titles indicate the components gx and gy of the gravitational field.
+    The blue curves correspond to the case where the agent uses the baseline method
+    DDQN. The orange ones correspond to the cases where information abstractions (IA)
+    are used to learn high-level policies pi phi . Each curve corresponds to the average
+    of 4 different seeds and the shades represent the population standard error.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Diego Gomez
+  Name of the last author: Luis Felipe Giraldo
+  Number of Figures: 9
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Information Optimization and Transferable State Abstractions in Deep
+    Reinforcement Learning
+  Publication Date: 2022-08-22 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200726
+- Affiliation of the first author: state key laboratory of modern optical instrumentation,
+    zhejiang university, hangzhou, china
+  Affiliation of the last author: state key laboratory of modern optical instrumentation,
+    zhejiang university, hangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_1.jpg
+  Figure 1 caption: Manufacturing biases adaptation and comparisons. (a) centrosymmetric
+    PSF calculated by the proxy camera of different machining samples (Best viewed
+    with zoom). (b) magnified comparisons of the photographs taken in the same scene.
+    We show the measured degradation of each Phone (converted to sRGB for visualization)
+    and our restoration output from the same ISP pipeline. And the results of high-end
+    DSLR cameras are shown for reference (captured under same aperture for comparisons).
+  Figure 10 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_10.jpg
+  Figure 10 caption: Comparisons with built-in ISP. Note that the built-in ISP smooths
+    out the cords, yet our method restores it (marked with the red arrow).
+  Figure 2 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_2.jpg
+  Figure 2 caption: Overview of the perturbed optical system model. (a) We simulate
+    the imaging results of the ideal edge by the cameras parameters (top) and acquire
+    the measured edge by photographing with real devices (bottom). (b) The procedure
+    from edge profile to SFR goes through projection, differential, and DFT. In this
+    way, we obtain the SFRA of ideal design and the measured edge (detailed in Section
+    3.1.2). (c) Set the measured SFRAs as targets to optimize the system parameters
+    and predict the proxy camera by damped least-squares iteration (detailed in Section
+    3.2).
+  Figure 3 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_3.jpg
+  Figure 3 caption: Overview of the dynamic postprocessing pipeline. (a) an optical
+    degradation correction module is embedded into the ISP pipeline of mobile terminal.
+    (b) we propose a dynamic postprocessing model based on dilated Omni-dimensional
+    dynamic convolution, aiming at self-adaptively tackling the stochastic manufacturing
+    deviation. All the layer configurations are marked with different colored blocks.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_4.jpg
+  Figure 4 caption: "Qualitative evaluation on PSF and imaging simulation. We visualize\
+    \ the centrosymmetric PSFs ( 10\xD7 resampling for detailed comparisons) of the\
+    \ proxy cameras constructed from one machining sample of the Phone (the measured\
+    \ PSFs are shown in the sensor resolution). For the proxy camera, the resolutions\
+    \ of PSFs are 50, 50, 80, 80, and 120 of FoV 0.1, 0.3, 0.5, 0.7, and 0.9, respectively.\
+    \ And in measurement, the resolutions of PSFs are 5, 8, and 12 for FoV 0.1, 0.5,\
+    \ and 0.9. We present the imaging simulation results and their SSIM compared with\
+    \ actual measurements."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_5.jpg
+  Figure 5 caption: Non-uniform deblurring on real photographs of Phone. We mark the
+    corresponding regions with white boxes and present the indicators.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_6.jpg
+  Figure 6 caption: Performance under different noise level. The leftright part shows
+    the accuracy of proxy camera construction under singlemultiple frames. The upperlower
+    part presents the MTFSSIM evaluation. The noise level is plotted in the purple
+    line.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_7.jpg
+  Figure 7 caption: Adaptation for manufacturing deviation. (a) we show the magnified
+    patch to illustrate the image quality mutation of Phone. The actual checkers restoration
+    of different machining samples are present for comparison. And we evaluate the
+    average SFR (MTF) enhancements on the machining samples of test set. (b) the natural
+    photograph restoration when applied on different machining samples of Phone.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_8.jpg
+  Figure 8 caption: Ablation study on the proxy camera construction (accuracy evaluation
+    on the SSIM between the simulated images and the natural photographs). And Ablation
+    study on the whole pipeline (restoration assesment on the test synthetic data
+    sets).
+  Figure 9 Link: articels_figures_by_rev_year\2022\Computational_Optics_for_Mobile_Terminals_in_Mass_Production\figure_9.jpg
+  Figure 9 caption: Ablation on the dynamic processing ISP. We evaluate the performance
+    when placing the optical degradation correction model at different positions of
+    ISP pipeline.
+  First author gender probability: 0.68
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.83
+  Name of the first author: Shiqi Chen
+  Name of the last author: Yueting Chen
+  Number of Figures: 13
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: Computational Optics for Mobile Terminals in Mass Production
+  Publication Date: 2022-08-22 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Proximity Between Real Devices and Proxy Camera
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Results on Sythetic Data and Real Photographs
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200725
+- Affiliation of the first author: university of science and technology of china,
+    hefei, china
+  Affiliation of the last author: university of science and technology of china, hefei,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_1.jpg
+  Figure 1 caption: (a) SPAD-based pulsed LiDAR imaging system, which contains a pulsed
+    laser source and a SPAD detector. (b) The spatial intensity distribution of the
+    light spot is modeled by a 2D Gaussian kernel g xy . (c) Illustration of long-range
+    temporal correlation. The signal photon detections (red) from the same distribution
+    are correlated with each other, while the background photon detections (blue)
+    are much randomly distributed and not correlated with each other nor signal photon
+    detections. (d) Illustration of long-range spatial correlation. The neighborhoods
+    that have similar geometry (red and blue boxes) have similar depth values.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_10.jpg
+  Figure 10 caption: "The reconstruction results on three real-world indoor scenes\
+    \ captured by an indoor single-photon imaging prototype [25]. Input measurements\
+    \ with a resolution of 256\xD7 256\xD71536 are cropped into 64\xD764 patches in\
+    \ the spatial dimension, and the reconstruction results are stitched together\
+    \ to obtain final results with a spatial resolution of 256\xD7256. Mea. denotes\
+    \ the input measurement, while Inten. denotes the captured intensity image by\
+    \ a standard vision camera."
+  Figure 2 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_2.jpg
+  Figure 2 caption: "The flowchart of our proposed unified network for depth and intensity\
+    \ reconstruction from the input photon-efficient measurement. \u201CC\u201D, \u201C\
+    D\u201D, and \u201CDE\u201D with rectangular blocks denote the 3D convolution,\
+    \ 3D dilated convolution, and 3D deconvolution, respectively. The following numbers\
+    \ \u201C1\u201D, \u201C3\u201D, and \u201C6\u201D denote the kernel sizes. \u201C\
+    C\u201D, \u201CR\u201D, and \u201CM\u201D with circular blocks denote the concatenation,\
+    \ the residual connection, and the matrix multiplication. \u201CDS\u201D with\
+    \ a rectangular block denotes the downsampling operator along the temporal dimension.\
+    \ \u201C F \u201D with a cuboid block denotes the output feature from the Encoder.\
+    \ The Intensity Decoder generates a 2D intensity image I , while the Depth Decoder\
+    \ generates a 2D depth map d companied with a 2D noise map b ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_3.jpg
+  Figure 3 caption: (a)(b) DepthIntensity reconstruction performance of different
+    network configurations against noise levels. (c)(d) DepthIntensity reconstruction
+    performance of different network configurations against FoV sizes.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_4.jpg
+  Figure 4 caption: (a) Depth reconstruction performance against temporal dimension
+    of features after downsampling. (b) Improvements of NLB over BAS against noise
+    levels.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_5.jpg
+  Figure 5 caption: (a)(b) DepthIntensity reconstruction performance of NLB and BAS
+    in generalization to unseen noise levels. The networks are trained on data with
+    different configurations of noise levels. (c)(d) DepthIntensity reconstruction
+    performance of NLB and BAS in generalization to unseen FoV sizes. The networks
+    are trained on data simulated on 9 typical noise levels with different configurations
+    of FoV sizes.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_6.jpg
+  Figure 6 caption: (a) Quantitative comparisons of different loss functions for depth
+    reconstruction performance. (b) Quantitative comparisons of different loss functions
+    for intensity reconstruction performance.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_7.jpg
+  Figure 7 caption: Thumbnails of our test scenes from the Middlebury dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_8.jpg
+  Figure 8 caption: 'Comparisons of different methods in recovering depth maps and
+    intensity images for the Art (upper part) and Reindeer (lower part) scenes on
+    different noise levels: 10:2, 2:50, and 1:100. GT denotes the ground-truth depth
+    and intensity provided in the dataset.'
+  Figure 9 Link: articels_figures_by_rev_year\2022\Boosting_PhotonEfficient_Image_Reconstruction_With_A_Unified_Deep_Neural_Network\figure_9.jpg
+  Figure 9 caption: "Comparisons of different methods in recovering depth maps and\
+    \ intensity images for the Art (upper part) and Reindeer (lower part) scenes on\
+    \ different sizes of FoV: 3\xD73, 5\xD75, and 7\xD77 under noise level of 10:10.\
+    \ GT denotes the ground-truth depth and intensity provided in the dataset."
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Jiayong Peng
+  Name of the last author: Feihu Xu
+  Number of Figures: 13
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Boosting Photon-Efficient Image Reconstruction With A Unified Deep
+    Neural Network
+  Publication Date: 2022-08-22 00:00:00
+  Table 1 caption: TABLE 1 Details of Each Block
+  Table 10 caption: Not Available
+  Table 2 caption: 'TABLE 2 Quantitative Comparisons of Different Methods in Reconstructing
+    Depth Intensity on Data Without Multiple Returns Under Different Noise Levels
+    (Signal Photon: Noise Photon)'
+  Table 3 caption: TABLE 3 Quantitative Comparisons of Different Methods in Reconstructing
+    Depth Intensity on Data With Multiple Returns Under Different FoV sizes
+  Table 4 caption: "TABLE 4 The Running Time (s) of Different Methods Averaged on\
+    \ 8 Test Scenes With a Resolution of 72 \xD7 88 \xD7 1024"
+  Table 5 caption: TABLE 5 Quantitative Comparisons of Different Backbones (3D Unet,
+    Swin Transformer, and 3D DDF (Our Choice)) in Reconstructing Depth Intensity on
+    Data Without Multiple Returns under Different Noise Levels
+  Table 6 caption: TABLE 6 Quantitative Comparisons of Different Backbones (3D Unet,
+    Swin Transformer, and 3D DDF (Our Choice)) in Reconstructing Depth Intensity on
+    Data With Multiple Returns Under Different FoV sizes
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3200745
+- Affiliation of the first author: college of electrical and information, xian polytechnic
+    university, xian, china
+  Affiliation of the last author: data61, csiro, epping, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_1.jpg
+  Figure 1 caption: Definitions of interest points.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_10.jpg
+  Figure 10 caption: Examples of the interest point detection results by an interest
+    point detector under different light conditions.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_2.jpg
+  Figure 2 caption: Main challenges for interest point detection.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_3.jpg
+  Figure 3 caption: Classification of the IFI extraction techniques in the existing
+    interest point detection methods.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_4.jpg
+  Figure 4 caption: Representative interest point detection methods. Starting from
+    the Harris method [20], first-order intensity variation based interest point detection
+    methods gained remarkable popularity. In 1993, Lindeberg [31] presented a Laplacian
+    of Gaussian method for detecting blobs from images in a multi-scale space. Along
+    this approach, second-order intensity variation based blob detection methods (e.g.,
+    Harris-Laplace [21], SIFT [42], SURF [43], and KAZE [44]) were proposed for achieving
+    blob detection. In 1997, Smith and Brady [39] proposed the SUSAN method which
+    marks the beginning of self-dissimilarity based interest point detection. In 1998,
+    Mokhtarian and Suomela [45] proposed the CSS method which represents the edge
+    contour based interest point detection methods and it received considerable popularity.
+    In 2006, Rosten et al. [46] proposed the FAST detector which is one of the first
+    machine learning methods for interest point detection. Subsequently, the ORB [47]
+    and BRISK [48] algorithms are optimized for the FAST detector [46]. In 2016, Yi
+    et al. [49] proposed the LIFT detector which is one of the first deep learning
+    methods for interest point detection. And then, LCC [50], Quad-Network [23], LF-Net
+    [51], SuperPoint [52], and D2-Net [53] were proposed by Lenc and Vedaldi, Savinov
+    et al. Ono et al. Zhang and Rusinkiewicz, and Dusmanu et al. respectively further
+    promoting the development of deep learning based interest point detection. In
+    2020 and 2021, FOAGDD [37] and SOGGDD [34] were proposed by Zhang and Sun which
+    proved for the first time that first-order and second-order intensity variation
+    information along multiple directions contributes significantly in improving the
+    performance of interest point detection.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_5.jpg
+  Figure 5 caption: A point on a step edge and an L-type corner (the red dots) are
+    shown in (a)-(b) in the first column. Their corresponding second-order isotropic
+    Gaussian directional derivatives (SOIGDDs) are shown in the second column.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_6.jpg
+  Figure 6 caption: Average repeatabilities of the fifteen methods under image rotation,
+    uniform scaling, non-uniform scaling, shear transformation, lossy JPEG compression,
+    and noise degradations.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_7.jpg
+  Figure 7 caption: Mean matching accuracy results of the fifteen detection methods
+    with Hard-Net++ [196].
+  Figure 8 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_8.jpg
+  Figure 8 caption: Examples of SOIGDD changes with image affine image transformation.
+    (a) A blob-type interest point, (b) the blob-type interest point undergoing an
+    affine image transformation.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Image_Feature_Information_Extraction_for_Interest_Point_Detection_A_Comprehensiv\figure_9.jpg
+  Figure 9 caption: Examples of the adjacent interest points detection results by
+    an interest point detector. (a) A local Chinese chessboard image, (b) the adjacent
+    interest points detection results from the FOAGDD method.
+  First author gender probability: 0.76
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Junfeng Jing
+  Name of the last author: Changming Sun
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: 'Image Feature Information Extraction for Interest Point Detection:
+    A Comprehensive Review'
+  Publication Date: 2022-08-24 00:00:00
+  Table 1 caption: TABLE 1 Popular Datasets for Performance Evaluation on Interest
+    Point Detection
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Comparison Results for SfM ( \u2020 \u2020 Denotes That\
+    \ the Result is Provided by [199])"
+  Table 3 caption: TABLE 3 Comparisons on Execution Time and Memory Usage (Image Size
+    is in Pixels. Execution Time and Memory Usage are in Second and MB Respectively)
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3201185

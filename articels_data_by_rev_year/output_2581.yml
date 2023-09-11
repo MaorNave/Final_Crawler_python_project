@@ -1,0 +1,868 @@
+- Affiliation of the first author: beijing key laboratory of human computer interactions,
+    institute of software, chinese academy of sciences, beijing, china
+  Affiliation of the last author: beijing key laboratory of human computer interactions,
+    institute of software, chinese academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_1.jpg
+  Figure 1 caption: Illustration of our cascaded pose-guided 3D alignments and feature
+    extraction in 3D space. Although the point clouds of the same hand pose from different
+    viewpoints (row 1 versus row 2) and the point clouds of different hand poses (row
+    1 and row 2 versus row 3) are quite different, they become similar for palm and
+    finger parts using palm alignment and finger alignment (see col 3 and col 7),
+    respectively. The hand shapes in the fourth and sixth column are only used for
+    a clear illustration of alignment transformations.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_10.jpg
+  Figure 10 caption: Comparison to the cascaded method [10] (spatial attention net).
+    (a) NYU. (b) ICVL.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_2.jpg
+  Figure 2 caption: Illustration of different data representations and alignments
+    (2D3D).
+  Figure 3 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_3.jpg
+  Figure 3 caption: "Illustration of our recurrent hand pose network using cascaded\
+    \ pose-guided alignments. We first convert the input hand foreground depth to\
+    \ point cloud. Then we adopt multiple recurrent iterations to estimate the 3D\
+    \ hand pose. Specifically, we introduce several LSTM modules among multiple palm\
+    \ stages to refine the hand pose. In each recurrent iteration, we adopt a multi-stage\
+    \ network (i.e., global, palm and finger stages) to predict hand joints by iterative\
+    \ pose regression and cascaded pose-guided 3D alignment, and we adopt the hand\
+    \ pose of the previous iteration to align the input point cloud of the current\
+    \ iteration. \u201CPointNet Encoder\u201D denotes the network before the last\
+    \ multi-layer perception (MLP) of PointNet++. \u201C A 0,g \u201D is the transformation\
+    \ via the estimated hand pose P 0,global of the global stage in the initial recurrent\
+    \ iteration, \u201C A t,p \u201D are the transformations to align each finger\
+    \ via the estimated hand pose of the palm stage P t,palm in the t -th recurrent\
+    \ iteration, and \u201C A t \u201D is the transformation via the composited hand\
+    \ pose \u201C P t \u201D of the palm stage and the finger stage in the t -th recurrent\
+    \ iteration. \u201C \u2297 \u201D denotes matrix multiplication."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_4.jpg
+  Figure 4 caption: Illustration of the hand skeleton models for the main benchmark
+    datasets. (a) Hand joints in NYU hand dataset [20], which contains 14 joints.
+    (b) Hand joints in ICVL hand dataset [7], which contains 16 joints. (c) Hand joints
+    in MSRA hand dataset, which contains 21 joints.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_5.jpg
+  Figure 5 caption: Illustration of the coordinate systems for the pose-guided alignments.
+    (a)(b), (c)(d) and (e)(f) show palm and ring finger coordinate systems of NYU,
+    ICVL and MSRA datasets, respectively. The number in a bracket indicates the order
+    index to obtain a direction.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_6.jpg
+  Figure 6 caption: "Illustration of the pose-guided 3D alignment for point clouds.\
+    \ We use the predicted hand joints from the previous stage to get an alignment\
+    \ transformation to a canonical pose. \u201C \u2297 \u201D denotes matrix multiplication."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_7.jpg
+  Figure 7 caption: Comparison to SoTA methods on NYU [20], MSRA [8], ICVL [7] datasets.
+    We show percentage of frames in the testing examples under different error thresholds.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_8.jpg
+  Figure 8 caption: Comparison to SoTA methods on NYU [20], MSRA [8], ICVL [7] datasets.
+    We show mean joint errors for all the test examples. The palm and fingers are
+    indexed as palm, thumb, index, middle, ring, pinky, wrist. The definitions of
+    joint symbols R, M, P, D and T can be found in Fig. 4.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Recurrent_D_Hand_Pose_Estimation_Using_Cascaded_PoseGuided_D_Alignments\figure_9.jpg
+  Figure 9 caption: Influence of stages on NYU, MSRA and ICVL dataset. We show mean
+    joint errors for all the test examples.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Xiaoming Deng
+  Name of the last author: Hongan Wang
+  Number of Figures: 14
+  Number of Tables: 7
+  Number of authors: 10
+  Paper title: Recurrent 3D Hand Pose Estimation Using Cascaded Pose-Guided 3D Alignments
+  Publication Date: 2022-03-16 00:00:00
+  Table 1 caption: TABLE 1 Definitions of the Hand Parts in the NYU and ICVL Datasets
+    for the Pose-Guided Alignment
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Mean Joint Error Comparison of Our Method with SoTA Methods
+    on NYU, MSRA and ICVL Datasets
+  Table 3 caption: TABLE 3 Error Lower Bound (In Mm) of Our Model on NYU Dataset
+  Table 4 caption: TABLE 4 Comparison of Mean Joint Errors (In Mm) in the Palm Stage
+    Using Our Pose-Guided Alignment, PCA and T-Net Alignments
+  Table 5 caption: TABLE 5 Comparison of Mean Joint Errors (In Mm) with Different
+    Kinds of Feature Extraction (Feat.) and Alignment (Align.)
+  Table 6 caption: TABLE 6 Comparison of Mean Joint Error (In Mm) with Different Recurrent
+    Iterations T T of LSTM Module on NYU Dataset
+  Table 7 caption: TABLE 7 Inference FPS With Different Recurrent Iterations T T of
+    LSTM Module
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3159725
+- Affiliation of the first author: department of automation, beijing national research
+    center for information science and technology (bnrist), tsinghua university, beijing,
+    china
+  Affiliation of the last author: department of automation, beijing national research
+    center for information science and technology (bnrist), tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\PointGLR_Unsupervised_Structural_Representation_Learning_of_D_Point_Clouds\figure_1.jpg
+  Figure 1 caption: 'Illustration of our main idea. We propose to learn representations
+    in an unsupervised manner from data structures by training the networks to solve
+    two problems: reasoning the whole object from a single part and reasoning detailed
+    structures from the global representation.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\PointGLR_Unsupervised_Structural_Representation_Learning_of_D_Point_Clouds\figure_2.jpg
+  Figure 2 caption: The overall framework of our unsupervised feature learning approach.
+    The representations are learned by connecting local structures and global shapes.
+    We map the local representations at different levels and global representations
+    to the shared feature space and use a self-supervised metric learning objective
+    to mine semantic knowledge from data. By further incorporating self-reconstruction
+    and normal estimation tasks, powerful representations that contain rich semantic
+    and structural information can be learned.
+  Figure 3 Link: articels_figures_by_rev_year\2022\PointGLR_Unsupervised_Structural_Representation_Learning_of_D_Point_Clouds\figure_3.jpg
+  Figure 3 caption: 'Hierarchical reasoning with structural proxies for 3D scenes.
+    Given a point cloud of a 3D scene, we perform hierarchical bidirectional reasoning
+    by constructing the global representation (orange point) as well as the structural
+    proxies of the scene (blue points). The reasoning task is divided into two sub-tasks:
+    1) bidirectional reasoning between the local features and structural proxies (left),
+    and 2) bidirectional reasoning between the structural proxies and the global representation
+    (right).'
+  Figure 4 Link: articels_figures_by_rev_year\2022\PointGLR_Unsupervised_Structural_Representation_Learning_of_D_Point_Clouds\figure_4.jpg
+  Figure 4 caption: "ModelNet40 classification accuracy (%) of our unsupervised models\
+    \ and their supervised counterparts. We report the median \xB1 standard deviation\
+    \ across 3 identical runs."
+  Figure 5 Link: articels_figures_by_rev_year\2022\PointGLR_Unsupervised_Structural_Representation_Learning_of_D_Point_Clouds\figure_5.jpg
+  Figure 5 caption: The robustness of our method on sampling density and the number
+    of training samples compared to the supervised baseline.
+  Figure 6 Link: articels_figures_by_rev_year\2022\PointGLR_Unsupervised_Structural_Representation_Learning_of_D_Point_Clouds\figure_6.jpg
+  Figure 6 caption: Effects of unsupervised pre-training. We plot the 3D detection
+    training loss and the validation mAP0.25 of VoteNet withwithout unsupervised pre-training
+    on ScanNet.
+  Figure 7 Link: articels_figures_by_rev_year\2022\PointGLR_Unsupervised_Structural_Representation_Learning_of_D_Point_Clouds\figure_7.jpg
+  Figure 7 caption: Visualization of unsupervised representations on the test set
+    of ModelNet40 using t-SNE. Best viewed in color.
+  Figure 8 Link: articels_figures_by_rev_year\2022\PointGLR_Unsupervised_Structural_Representation_Learning_of_D_Point_Clouds\figure_8.jpg
+  Figure 8 caption: Visualization of the similarity scores between the local features
+    from the first abstraction level and the global feature on the test set of ModelNet40.
+    Best viewed in color.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.59
+  Name of the first author: Yongming Rao
+  Name of the last author: Jie Zhou
+  Number of Figures: 8
+  Number of Tables: 12
+  Number of authors: 3
+  Paper title: 'PointGLR: Unsupervised Structural Representation Learning of 3D Point
+    Clouds'
+  Publication Date: 2022-03-16 00:00:00
+  Table 1 caption: TABLE 1 Classification Accuracy (%) of Three Different Training
+    Strategies on ModelNet40
+  Table 10 caption: TABLE 10 3D Object Detection Results on ScanNet Validation Set
+  Table 2 caption: TABLE 2 Comparisons of the Classification Accuracy (%) of Our Method
+    Against the State-of-the-Art unsupervised 3D Representation Learning Methods on
+    ModelNet40 and ModelNet10
+  Table 3 caption: TABLE 3 Comparisons of the Single-View Classification Accuracy
+    (%) of Our Method Aganist the State-of-the-Art supervised Point Cloud Models on
+    ModelNet40
+  Table 4 caption: TABLE 4 Comparisons of the Single-View Classification Accuracy
+    (%) of Our Method Aganist the State-of-the-Art supervised Point Cloud Models on
+    ScanObjectNN
+  Table 5 caption: TABLE 5 Cross Dataset Evaluation
+  Table 6 caption: TABLE 6 Ablation Study
+  Table 7 caption: TABLE 7 Complexity Analysis
+  Table 8 caption: TABLE 8 Part Segmentation Results on ShapeNet Part Benchmark
+  Table 9 caption: TABLE 9 Few-Shot Classification Results on ModelNet40
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3159794
+- Affiliation of the first author: amazon robotics ai, seattle, wa, usa
+  Affiliation of the last author: valeo.ai, paris, france
+  Figure 1 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_1.jpg
+  Figure 1 caption: Overview of the proposed cross-modal learning for domain adaptation.
+    Here, a 2D and a 3D network take an image and a point cloud as inputs respectively
+    and predict their own 3D segmentation labels. Note, that the 2D predictions are
+    uplifted to 3D. The proposed cross-modal learning enforces consistency between
+    the 2D and 3D predictions via mutual mimicking, which proves beneficial in both
+    unsupervised and semi-supervised domain adaptation.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_2.jpg
+  Figure 2 caption: "Our architecture for cross-modal unsupervised learning for domain\
+    \ adaptation. There are two independent network streams: a 2D stream (in red)\
+    \ which takes an image as input and uses a U-Net-style 2D ConvNet [12], as well\
+    \ as a 3D stream (in blue) which takes a point cloud as input and uses a U-Net-Style\
+    \ 3D SparseConvNet [13]. The size of the first dimension of feature output tensors\
+    \ of both streams is N , equal to the number of 3D points. To achieve this equality,\
+    \ we project the 3D points, where labels exist, into the image and sample the\
+    \ 2D features at the corresponding pixel locations. The four segmentation outputs\
+    \ consist of the main predictions P 2D , P 3D and the mimicry predictions P 2D\u2192\
+    3D , P 3D\u21922D . We transfer knowledge across modalities using KL divergences\
+    \ D KL ( P 3D \u2225 P 2D\u21923D ) , where the objective of the 2D mimicry prediction\
+    \ is to estimate the main 3D prediction, and, vice versa, D KL ( P 2D \u2225 P\
+    \ 3D\u21922D ) ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_3.jpg
+  Figure 3 caption: Single-head versus dual-head architecture. (a) Naive way of enforcing
+    consistency directly between main segmentation heads. (b) Our proposal of a dual-head
+    architecture to uncouple the mimicry from the main segmentation head for more
+    robustness.
+  Figure 4 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_4.jpg
+  Figure 4 caption: 'Cross-modal training with adaptation. (a) xMUDA learns from supervision
+    on the source domain (plain lines) and self-supervision on the target domain (dashed
+    lines) thanks to cross-modal learning between 2D3D. (b) We consider four data
+    subsets: Source 2D, Target 2D, Source 3D and Target 3D. In contrast to existing
+    techniques, xMUDA introduces a cross-modal self-training mechanism for UDA.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_5.jpg
+  Figure 5 caption: Overview of the five proposed DA scenarios. We generate the nuScenes-Lidarseg
+    [10] splits using metadata. The third and fourth DA scenarios use both SemanticKITTI
+    [2] as target-domain dataset and either the synthetic VirtualKITTI [56] or the
+    real A2D2 dataset [57] as source-domain dataset. Note that we show the A2D2SemanticKITTI
+    scenario with LiDAR overlay to visualize the density difference and resulting
+    domain gap. Last, Waymo OD [58] features a source-domain dataset in the cities
+    of San Francisco (SF), Phoenix (PHX) and Mountain View (MTV) and a target-domain
+    dataset in Kirkland (KRK). We evaluate xMUDA on scenarios 1-4 and xMoSSDA on scenarios
+    1, 4, 5 and 3 in supplementary.
+  Figure 6 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_6.jpg
+  Figure 6 caption: "Qualitative results for xMUDA. We show the ensembling result\
+    \ (2D+3D) on the target test set for UDA Baseline (PL) and mathrmxMUDAmathrmPL\
+    \ . \u2013nuScenes-Lidarseg: USASingapore: UDA Baseline (PL) fails to correctly\
+    \ classify the bus while mathrmxMUDAmathrmPL succeeds. \u2013nuScenes-Lidarseg:\
+    \ DayNight: A motorcycle in oncoming traffic. The visual appearance is very different\
+    \ during the day (motorcycle visible) than during the night (only the headlight\
+    \ visible). The uni-modal UDA baseline is not able to learn this new appearance.\
+    \ However, if information between camera and robust-at-night LiDAR is exchanged\
+    \ in mathrmxMUDAmathrmPL , it is possible to detect the motorcycle correctly at\
+    \ night. \u2013A2D2SemanticKITTI: mathrmxMUDAmathrmPL helps to stabilize and increase\
+    \ segmentation performance when there are sensor changes (3x16-layer LiDAR with\
+    \ different angles to 64-layer LiDAR). \u2013VirtualKITTISemanticKITTI: The UDA\
+    \ baseline (PL) poorly segments the building and road while mathrmxMUDAmathrmPL\
+    \ succeeds."
+  Figure 7 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_7.jpg
+  Figure 7 caption: "Qualitative results for xMoSSDA. We show the ensembling result\
+    \ (2D+3D) on the target test set for the supervised baseline (trained on mathcal\
+    \ S + mathcal Tell ), xMUDAPL (trained on mathcal S + mathcal Tu ) and xMoSSDAPL\
+    \ (trained on mathcal S + mathcal Tell + mathcal Tu ). \u2013 nuScenes-Lidarseg:\
+    \ USASingapore: A bush is mistakenly classified as vehicle by the supervised baseline\
+    \ and xMUDAPL, but correctly classified as vegetation by xMoSSDAPL. \u2013 A2D2SemanticKITTI:\
+    \ The bike in the center is not distinguished from Nature background by the supervised\
+    \ baseline, but is so by xMUDAPL, although still wrongly classified, while xMoSSDAPL\
+    \ is correct. \u2013 Waymo OD: SF,PHX,MTVKRK: Segmentation of the pedestrian with\
+    \ xMUDAPL is better than with the supervised baseline while it is best with xMoSSDAPL."
+  Figure 8 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_8.jpg
+  Figure 8 caption: Architectures for fusion. (a) In Vanilla Fusion the 2D and 3D
+    features are concatenated, fed into a linear layer with ReLU to mix them and followed
+    by another linear layer and softmax to obtain a fused prediction boldsymbolPmathrmfuse
+    . (b) In xMUDA Fusion, we add two uni-modal outputs boldsymbolPmathrm2D to mathrmfuse
+    and boldsymbolPmathrm3D to mathrmfuse that are used to mimic the fusion output
+    boldsymbolPmathrmfuse .
+  Figure 9 Link: articels_figures_by_rev_year\2022\CrossModal_Learning_for_Domain_Adaptation_in_D_Semantic_Segmentation\figure_9.jpg
+  Figure 9 caption: 'Single versus Dual Head Architecture. mIoU of both architectures
+    on nuScenes-Lidarseg [10]: USASingapore for different values of the target loss
+    weight lambda t , with lambda s = 1.0 .'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Maximilian Jaritz
+  Name of the last author: "Patrick P\xE9rez"
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Cross-Modal Learning for Domain Adaptation in 3D Semantic Segmentation
+  Publication Date: 2022-03-17 00:00:00
+  Table 1 caption: TABLE 1 Size of the Splits in Frames for All Proposed DA Scenarios
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 xMUDA Experiments on 3D Semantic Segmentation
+  Table 3 caption: TABLE 3 xMoSSDA Experiments on 3D Semantic Segmentation
+  Table 4 caption: TABLE 4 Comparison of the Fusion Methods
+  Table 5 caption: TABLE 5 Benefit of the Proposed Cross-Modal Loss in Supervised
+    Learning
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3159589
+- Affiliation of the first author: department of automation, xiamen university, xiamen,
+    china
+  Affiliation of the last author: school of mathematics and physics, university of
+    portsmouth, portsmouth, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2022\Unsupervised_Feature_Selection_via_Graph_Regularized_Nonnegative_CP_Decompositio\figure_1.jpg
+  Figure 1 caption: The framework of CPUFS.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Unsupervised_Feature_Selection_via_Graph_Regularized_Nonnegative_CP_Decompositio\figure_2.jpg
+  Figure 2 caption: "Illustration of \u03B3\u2212diag ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Unsupervised_Feature_Selection_via_Graph_Regularized_Nonnegative_CP_Decompositio\figure_3.jpg
+  Figure 3 caption: NMI curves of different unsupervised feature selection methods
+    on the ten datasets.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Unsupervised_Feature_Selection_via_Graph_Regularized_Nonnegative_CP_Decompositio\figure_4.jpg
+  Figure 4 caption: ACC curves of different unsupervised feature selection methods
+    on the ten datasets.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Unsupervised_Feature_Selection_via_Graph_Regularized_Nonnegative_CP_Decompositio\figure_5.jpg
+  Figure 5 caption: Parameter sensitivity analysis of CPUFS on the FashionMNIST and
+    UMIST datasets.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Unsupervised_Feature_Selection_via_Graph_Regularized_Nonnegative_CP_Decompositio\figure_6.jpg
+  Figure 6 caption: Running time and convergence analyses of CPUFS on the Pixraw10P,
+    Orlraws10P and FashionMNIST datasets.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Bilian Chen
+  Name of the last author: Zhening Li
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Unsupervised Feature Selection via Graph Regularized Nonnegative CP
+    Decomposition
+  Publication Date: 2022-03-17 00:00:00
+  Table 1 caption: TABLE 1 Summary of Frequently-Used Notations
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Detailed Statistics of the Ten Datasets
+  Table 3 caption: TABLE 3 Visualization of the Selected Features
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3160205
+- Affiliation of the first author: state key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Affiliation of the last author: state key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Generalized_Knowledge_Distillation_via_Relationship_Matching\figure_1.jpg
+  Figure 1 caption: An illustration of strengthening a student model on the target
+    task via distilling the knowledge from a teacher model. In standard Knowledge
+    Distillation (KD), teacher and student share the same set of classes. In cross-task
+    KD, a teacher is learned from images with fully non-overlapping classes, while
+    its learning experience is distilled to facilitate the training of the student
+    model. Generalized KD is a more general case of the previous two, where the student
+    could have the same, different, or partially overlapped classes w.r.t. the teacher.
+    The red dotted line indicates the distillation flow for the embedding backbone
+    and the top-layer classifier, respectively, in our proposed model.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Generalized_Knowledge_Distillation_via_Relationship_Matching\figure_2.jpg
+  Figure 2 caption: An illustration of the proposed RElationship FacIlitated Local
+    cLassifiEr Distillation (ReFilled) approach. The embedding and the top-layer classifier
+    of the student distill the dark knowledge from the teachers corresponding components,
+    respectively. First, the student organizes instances into tuples and aligns their
+    similarity comparisons with the teacher (left plot), introducing richer supervision
+    such as the similar and dissimilar levels of relationships. ReFilled then matches
+    classification confidences between two models over instances in the target task.
+    We construct an embedding-based classifier with teachers class prototypes (denoted
+    by stars), which provides the posterior classification probability over both in-task
+    and cross-task categories.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Generalized_Knowledge_Distillation_via_Relationship_Matching\figure_3.jpg
+  Figure 3 caption: "The averaged norm differences between the vanilla cross-entropy\
+    \ loss in Eq. 1 and the KD objective in Eq. 2 over the gradient of all top-layer\
+    \ classifiers, i.e., mean c \u2225 \u2202 O ce \u2202 w c \u2212 \u2202 O kd \u2202\
+    \ w c \u2225 2 is shown in red. Its LKD counterpart of the average gradient between\
+    \ Eq. 1 and Eq. 10 is shown in yellow. When the number of classes in the target\
+    \ task grows, the norm difference based on the KD objective decreases fast, which\
+    \ indicates weaker additional supervision introduced by the distillation term.\
+    \ However, such a decrease is mitigated with LKD loss."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Generalized_Knowledge_Distillation_via_Relationship_Matching\figure_4.jpg
+  Figure 4 caption: "An illustration of the \u201Csliding windows\u201D to generate\
+    \ different configurations of teachers and students classes."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Generalized_Knowledge_Distillation_via_Relationship_Matching\figure_5.jpg
+  Figure 5 caption: The mean accuracy on GKD tasks upon CUB (upper) and CIFAR-100
+    (lower). The overlap ratio of students label space w.r.t. teachers changes from
+    0% (cross-task KD) to 100% (standard KD). The architecture of teacher is MobileNet-1.0
+    and WRN-(40,2) for CUB and CIFAR, respectively. We vary the architecture of the
+    student. ReFilled mathrmEMB only distills the embedding from the teacher, and
+    ReFilled - does not utilizes the adaptive weights to select the helpful knowledge
+    from the teacher.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Generalized_Knowledge_Distillation_via_Relationship_Matching\figure_6.jpg
+  Figure 6 caption: (a) Teachers weight distribution of instances belonging to both
+    seen classes and unseen classes. For simplicity, lambda is set to 1 and lambda
+    iin (0, 1] . The weights of instances from seen classes are observably higher
+    than those of unseen classes, and it is easy to recognize unseen classes. (b)
+    The change of accuracy when the number of instances per class (shot) varies. The
+    overlap ratio of students labels space w.r.t. teachers is set to 0%. The width
+    multiplier of student is set to 1. T:1NN means the nearest neighbour classifier
+    based on teachers embedding network. T:LR means the logistic regression classifier
+    trained on teachers embedding network. T:FT means fine-tuning teachers embedding
+    network together with a linear classifier.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Generalized_Knowledge_Distillation_via_Relationship_Matching\figure_7.jpg
+  Figure 7 caption: Visualization of teachers most confident images (largest lambda
+    i values) in SEEN classes along with teachers most confidentunconfident images
+    in UNSEEN classes. Although classes in the students training set are unseen to
+    the teacher, our instance-specific weighting strategy assigns higher weights to
+    those images similar to teachers confident images.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Generalized_Knowledge_Distillation_via_Relationship_Matching\figure_8.jpg
+  Figure 8 caption: The tSNE [70] of the vanilla student training (left) and the improved
+    embedding after the 1st stage of ReFilled (right) over 10 classes sampled from
+    CIFAR-100.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.54
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.91
+  Name of the first author: Han-Jia Ye
+  Name of the last author: De-Chuan Zhan
+  Number of Figures: 8
+  Number of Tables: 17
+  Number of authors: 3
+  Paper title: Generalized Knowledge Distillation via Relationship Matching
+  Publication Date: 2022-03-17 00:00:00
+  Table 1 caption: "TABLE 1 Mean Accuracy of Student Models on CUB. The Overlap Ratio\
+    \ of Students Label Space W.r.t. Teachers is Fixed to 50%. The \u201Cteachers\
+    \ EMB\u201D Baseline Only Applies When It Has the Same Architecture (Same Embedding\
+    \ Dimension) With the Student. We Set Teacher to MobileNet-1.0 and Vary the Width\
+    \ Multiplier of the Student in 1,0.75,0.5,0.25 1,0.75,0.5,0.25"
+  Table 10 caption: TABLE 10 the Average Classification Results of Knowledge Distillation
+    Methods on CUB Based on MobileNets. We Fix the Teachers Width Multiplier to 1.0,
+    and Change the Students Multipliers
+  Table 2 caption: TABLE 2 Mean Accuracy of Student on CIFAR-100. The Class Overlap
+    Ratio Between Student and Teacher is 60%. We Set Teacher to WRN-(40,2) and Vary
+    the (Depth, Width) of the Student
+  Table 3 caption: TABLE 3 Mean Accuracy of Student Models on CUB. The Overlap Ratio
+    of Students Label Space W.r.t. Teachers is Fixed to 50%
+  Table 4 caption: TABLE 4 Mean Accuracy of Student Models on CIFAR-100. The Overlap
+    Ratio of Students Label Space W.r.t. Teachers is 60%
+  Table 5 caption: "TABLE 5 Mean Accuracy on CUB Using One-Stage Learning With Additional\
+    \ Balance Hyper-Parameter \u03B3 \u03B3 (Denoted as ReFilled \u03B3 \u03B3) and\
+    \ the Proposed Two-Stage Learning. The Overlap Ratio of Students Label Space W.r.t.\
+    \ Teachers is Set to 50% (upper) and 0% (lower) for GKD and Cross-Task KD, Respectively"
+  Table 6 caption: TABLE 6 Mean Accuracy of Student on CUB. The Class Overlap Ratio
+    Between Student and Teacher is 0%. We Set Teacher as MobileNet-0.75 and Vary the
+    Width Multiplier of the Student
+  Table 7 caption: TABLE 7 Mean Accuracy of Student on CIFAR-100. The Overlap Ratio
+    of Students Label Space W.r.t. Teachers is Fixed to 0%. We Set Teacher as a WRN-(40,
+    2), While Varying the Depth of the Students ResNet Model. ReFilled Achieves the
+    Best Performance Among Others
+  Table 8 caption: TABLE 8 Mean Accuracy of Student Models on Dogs Dataset. The Teacher
+    is Trained on 200 Classes From CUB. We Set Teacher as MobileNet-1.0 and Vary the
+    Width Multiplier of the Student
+  Table 9 caption: TABLE 9 the Average Classification Results of Knowledge Distillation
+    Methods on CIFAR-100 Based on the Wide ResNet. We Fix the Teacher With (Depth,
+    Width) =(40,2) =(40,2), and Set the Students Capacity With Different (Depth, Width)
+    Values.
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3160328
+- Affiliation of the first author: huawei technologies ltd, noahs ark lab, london,
+    u.k.
+  Affiliation of the last author: queen mary university of london (work done while
+    at huawei), london, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2022\Diagnosing_and_Preventing_Instabilities_in_Recurrent_Video_Processing\figure_1.jpg
+  Figure 1 caption: 'The recurrent video denoiser from [10] is applied to 3 sequences
+    of 1600 frames downloaded from vimeo.com. Above: The PSNR per frame is stable
+    for a number of frames varying between 200 and 1500, before plunging below 0 on
+    all 3 sequences (indicated by red stars). Below: The performance drops manifest
+    themselves in the form of strong colorful artifacts and black masks on the output
+    images (see also Appendix A which can be found on the Computer Society Digital
+    Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2022.3160350).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Diagnosing_and_Preventing_Instabilities_in_Recurrent_Video_Processing\figure_2.jpg
+  Figure 2 caption: For untrained models over random inputs, feedforward architectures
+    produce stable outputs (single-frame, multi-frame, feature-shifting) while recurrent
+    architectures diverge (frame-recurrence, feature-recurrence, RLSP).
+  Figure 3 Link: articels_figures_by_rev_year\2022\Diagnosing_and_Preventing_Instabilities_in_Recurrent_Video_Processing\figure_3.jpg
+  Figure 3 caption: "Temporal Receptive Field (TRF) as a diagnostic tool. The input\
+    \ sequence X is optimized to trigger instabilities in the output sequence Y .\
+    \ The sequences have been horizontally compressed to fit the page width. In the\
+    \ rest of the paper, we plot TRFs every 5 frames for convenience, but the optimization\
+    \ is always performed on sequences of 81 frames ( \u03C4=40 )."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Diagnosing_and_Preventing_Instabilities_in_Recurrent_Video_Processing\figure_4.jpg
+  Figure 4 caption: Outputs produced by VResNet-feat in video denoising. Without SRN-C
+    (No constraint), instabilities appear between frame 40 and frame 80 of the chosen
+    video sequence. With SRN-C-2.0-0.1, the outputs are artifact-free on the entire
+    video sequence.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Diagnosing_and_Preventing_Instabilities_in_Recurrent_Video_Processing\figure_5.jpg
+  Figure 5 caption: Outputs produced by VResNet-feat in video super-resolution. Without
+    SRN-C (No constraint), instabilities appear between frame 20 and frame 40 of the
+    chosen video sequence. With SRN-C-2.0-0.05, the outputs are artifact-free on the
+    entire video sequence.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Thomas Tanay
+  Name of the last author: Gregory Slabaugh
+  Number of Figures: 5
+  Number of Tables: 5
+  Number of authors: 7
+  Paper title: Diagnosing and Preventing Instabilities in Recurrent Video Processing
+  Publication Date: 2022-03-17 00:00:00
+  Table 1 caption: TABLE 1 Size, Processing Speed and Performance of the Different
+    Video Denoising Methods Considered, Measured on the First Frame ( PSNR 1 PSNR1),
+    Last Frame ( PSNR 7 PSNR7), and Averaged Over All the Frames ( PSNR mean PSNRmean)
+    on the Vimeo-90 k Septuplet Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Instabilities in 6 Models With 2 Backbone Architectures\
+    \ and 3 Types of Recurrences. For Each Model, We Show the Performance on the 7th\
+    \ Frame of the Vimeo-90 k Validation Dataset ( PSNR 7 PSNR 7), the 1 st and 9\
+    \ th Deciles of the Instability Onsetson a Sequence of About 2h20 min ( \u221E\
+    \ \u221E Means No Instabilities Observed). We Also Show the Singular Value Spectrum\
+    \ Averaged Over the Convolutions of the Model, Computed as in [46], and the Temporal\
+    \ Receptive Field Computed Using Our Method"
+  Table 3 caption: "TABLE 3 SRN and SRN-C With Different Values of \u03B1 \u03B1 and\
+    \ \u03B2 \u03B2 on VResNet-Feat. The Table is Organized in the Same Way as Table\
+    \ 2"
+  Table 4 caption: TABLE 4 Summary Table. We Compare the Performances of VResNet-Feat
+    Stabilised With Different Variants of SRN-C
+  Table 5 caption: TABLE 5 Video Super-Resolution. The Table is Organized in the Same
+    Way as Tables 2 and 3
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3160350
+- Affiliation of the first author: department of computer science, hong kong baptist
+    university, kowloon tong, hong kong
+  Affiliation of the last author: department of computer science, hong kong baptist
+    university, kowloon tong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_1.jpg
+  Figure 1 caption: "Illustration of variational autoencoders (VAEs) for text generation.\
+    \ The latent variable language model contains two networks. The encoder q \u03D5\
+    \ (z|x) maps an input x to a continuous latent variable z , parameterized by a\
+    \ Gaussian distribution with parameters \u03BC,\u03C3 . The decoder p \u03B8 (x|z)\
+    \ applies the variable to reconstruct the input. During training, the model is\
+    \ trained to predict words conditioned on the history words sampled from the true\
+    \ data distribution; During generation, the model generates words conditioned\
+    \ on the words sampled from the model itself."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_2.jpg
+  Figure 2 caption: "The composition of multiple encoders f= f 1 \u2218 f 2 \u2218\
+    \u22EF\u2218 f L can gradually flatten the data manifold in a manner that the\
+    \ prior distribution p( z L ) fits the marginal distribution q \u03D5 ( z L )\
+    \ well."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_3.jpg
+  Figure 3 caption: FPPL-RPPL curves of different approaches (poor results are not
+    provided). The tunable hyperparameters include softmax sampling with temperature
+    t=0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0 and top- k sampling with k=10,25,50,100,150,200,250,300
+    .
+  Figure 4 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_4.jpg
+  Figure 4 caption: "Visualizations of the means of q \u03D5 ( z 1 |x) and q \u03D5\
+    \ ( z 2 | z 1 ) ."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_5.jpg
+  Figure 5 caption: Recall rate of k in lbrace 20, 50, 80rbrace nearest neighbours
+    retrieved via latent variables. We compute normalized edit distance in [0, 1]
+    , which is the Levenshtein distance divided by the maximum length of two texts.
+    In addition, label information is considered for Yelp dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_6.jpg
+  Figure 6 caption: SVD on the class-specific representations on Yelp dataset. The
+    bar plot illustrates the first singular value and the sum of all the other singular
+    values averaged across the classes.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_7.jpg
+  Figure 7 caption: Images retrieved from Omniglot and CIFAR-10 test dataset using
+    InfoMaxHVAE, BIVA and NVAE (top-down) in two latent spaces.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_8.jpg
+  Figure 8 caption: Images generated via linear interpolation in mathbf z1 (first
+    row) and mathbf z2 (second row) spaces on CelebA dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Learning_Hierarchical_Variational_Autoencoders_With_Mutual_Information_Maximizat\figure_9.jpg
+  Figure 9 caption: "Ablation studies with different values of alpha (a), the number\
+    \ of layers (b), and tau (c), in terms of NLL and KL, on the Yelp dataset, as\
+    \ well as different number of layers (d), in terms of bitsdim and KL on CIFAR-10\
+    \ dataset. Note that \u201CNone\u201D corresponds to the original mathbb IoperatornameTLB\
+    \ ."
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Dong Qian
+  Name of the last author: William K. Cheung
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Learning Hierarchical Variational Autoencoders With Mutual Information
+    Maximization for Autoregressive Sequence Modeling
+  Publication Date: 2022-03-21 00:00:00
+  Table 1 caption: TABLE 1 Language Modeling Results on PTB, SNLI, Yahoo, and Yelp
+    Datasets, Reported as mean (stdev) Using 5 Random Seeds
+  Table 10 caption: Not Available
+  Table 2 caption: 'TABLE 2 Comparison on the Sentences Generated From 1: VAE-MINE,
+    2: HVAE and 3: InfoMaxHVAE on Yahoo Dataset by Sampling the Gaussian Prior and
+    Followed by Greedy Decoding Strategy'
+  Table 3 caption: "TABLE 3 Sentences Generated by Linearly Interpolating Between\
+    \ the Encodings of Two Sentences \u201Ca Man Fixes an Oven in a Kitchen.\u201D\
+    \ and \u201CThere is a Boy Looking at the Camera.\u201D"
+  Table 4 caption: 'TABLE 4 Sentences Selected From the Yelp Test Set Using 1: VAE-MINE,
+    2: InfoMaxHVAE ( z 1 z1), and 3: InfoMaxHVAE ( z 2 z2).'
+  Table 5 caption: TABLE 5 Image Modeling Results on Omniglot, CelebA and CIFAR-10
+    Datasets, Reported as mean (stdev) Using 5 Random Seeds
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3160509
+- Affiliation of the first author: aragon institute of engineering research, universidad
+    de zaragoza, zaragoza, spain
+  Affiliation of the last author: aragon institute of engineering research, universidad
+    de zaragoza, zaragoza, spain
+  Figure 1 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_1.jpg
+  Figure 1 caption: "Sketch of the construction procedure for the deep neural network\
+    \ able to perceive sloshing phenomena. In the first step (first row), we must\
+    \ unveil the intrinsic dimensionality of the problem. To that end, we train a\
+    \ sparse autoencoder from computational full-field data. Once the number of variables\
+    \ governing the physics has been determined, we must train a structure-preserving\
+    \ neural network, able to integrate in time the state of the system. Thus, at\
+    \ step 2 in the figure, given the state of the system at time t , the decoder\
+    \ will output the state of the system at time t+\u0394t . But the main difficulty\
+    \ is that during runtime we do not have access to the high-dimensional state of\
+    \ the system, only a portion of it, represented in red in the input vector of\
+    \ the network. These values correspond to the position of the free surface of\
+    \ the fluid. Thus, the encoder must be substituted in step 3 by a GRU that takes\
+    \ the near history of the free surface to convert it into the reduced-order encoding\
+    \ of the system that will feed the thermodynamics-informed time integrator."
+  Figure 10 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_10.jpg
+  Figure 10 caption: Detail of the comparison of glycerine (left) and water (right)
+    with the prediction. The third column of both liquids compares the predicted fluid
+    volume (in blue), the free surface of the liquid volume (green) and the target
+    free surface (in red). The RMSE and the Hausdorff distance (HD) that correspond
+    to each snapshot are indicated.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_2.jpg
+  Figure 2 caption: Representation of a GRU cell. The three main paths indicated represent
+    the update and reset gates, the new memory cell, and their connection to update
+    the new hidden state transmitted to the next later.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_3.jpg
+  Figure 3 caption: Simulation results. Learning of the dynamics in the latent manifold.
+    Dashed lines represent the time evolution of the latents that aimed to be emulated.
+    Lines in blue represent the result of the SPNN in the latent manifold.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_4.jpg
+  Figure 4 caption: Comparison of the reconstruction of the integration provided by
+    the SPNN (right) with the ground truth (left). The selected snapshots correspond
+    to peaks of the sloshing dynamics of glycerine. Specifically, we present the comparison
+    for snapshots 1, 33, and 64 of the collection. The height of the cup is 7 cm ,
+    and it is filled up to 5.6 cm approximately.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_5.jpg
+  Figure 5 caption: Time evolution of selected state variables evaluated at 21 random
+    particles. The graph shows a comparison between the simulated fields with the
+    ground truth for the validation simulation of the algorithm.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_6.jpg
+  Figure 6 caption: Representation of the data acquisition system. The free surface
+    is the tracked element of the algorithm to perform learning and the simulation
+    of the dynamics.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_7.jpg
+  Figure 7 caption: Color and depth stream before (up) and after (down) applying the
+    required filters to reconstruct the depth map of the streaming.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_8.jpg
+  Figure 8 caption: Representation of the color frame and its conversion to a binarized
+    image to seek the free surface. The area defined for searching is represented
+    in the color frame as well as the points of the free surface detected in the black
+    and white image.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Physics_Perception_in_Sloshing_Scenes_With_Guaranteed_Thermodynamic_Consistency\figure_9.jpg
+  Figure 9 caption: Results for a 12 seconds video of a glass of glycerine. Eight
+    snapshots of the sloshing sequence were selected for comparison. The selected
+    snapshots have indexes 560, 565, 568, 572, 578 from left to right. The second
+    row corresponds to the fluid reconstruction and prediction provided in the previous
+    snapshot. From rows three to ten we show the additional information obtained from
+    the reconstruction and simulation (velocity, energy, and stress fields, respectively).
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Beatriz Moya
+  Name of the last author: "El\xEDas Cueto"
+  Number of Figures: 12
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: Physics Perception in Sloshing Scenes With Guaranteed Thermodynamic
+    Consistency
+  Publication Date: 2022-03-22 00:00:00
+  Table 1 caption: TABLE 1 Training Parameters for Each SAE
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Loss Comparison Among SAE, kPCA and POD
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3160100
+- Affiliation of the first author: department of automation, beijing national research
+    center for information science and technology (bnrist), tsinghua university, beijing,
+    china
+  Affiliation of the last author: department of automation, beijing national research
+    center for information science and technology (bnrist), tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Learning_Deep_Binary_Descriptors_via_Bitwise_Interaction_Mining\figure_1.jpg
+  Figure 1 caption: Comparison of the reliability between DeepBit [34] and GraphBit.
+    We define the reliability of each bit as the Shannon entropy that measures the
+    uncertainty of the binary descriptor according to (1). Binary codes with low reliability
+    represent visual information in high uncertainty, which are sensitive to noise
+    in binarization with bit reversion. In Fig. 1a, the position and color of the
+    dots demonstrate the reliability of binary codes, and the arrows represent the
+    directed bitwise interaction. Fig. 1b shows the mean reliability averaged on all
+    elements for 16-bit, 32-bit and 64-bit binary descriptors on CIFAR-10 [31]. DeepBit
+    fails to consider the reliability of learned binary descriptors and obtains hash
+    codes with ambiguous bits, while our GraphBit learns more confident binary codes
+    due to the mined bitwise interaction. Moreover, D-GraphBit further improves the
+    reliability with dynamic bitwise interaction that is optimal for different input
+    samples. (Best viewed in color.)
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Learning_Deep_Binary_Descriptors_via_Bitwise_Interaction_Mining\figure_2.jpg
+  Figure 2 caption: Comparison among the proposed GraphBit, GraphBit+ and D-GraphBit,
+    where the rectangles with colorful circles represent the learned binary descriptors.
+    The purple and orange circles mean reliable and ambiguous bits respectively, and
+    the red arrows demonstrate instruction that eliminates ambiguity in the binary
+    codes. GraphBit and GraphBit+ mine the fixed bitwise interaction for different
+    input samples via non-differentiable reinforcement learning and differentiable
+    hypergraph optimization respectively. In order to acquire the optimal solution
+    for various input samples, D-GraphBit obtains the dynamic bitwise interaction
+    for each instance via the efficient GraphMiner based on graph convolutional networks.
+    (Best viewed in color.)
+  Figure 3 Link: articels_figures_by_rev_year\2022\Learning_Deep_Binary_Descriptors_via_Bitwise_Interaction_Mining\figure_3.jpg
+  Figure 3 caption: The flowchart of the proposed GraphBit. For each input image,
+    we first learn a normalized feature by the deep hashing model with the VGG16 architecture
+    where the softmax layer is substituted with a fully-connected layer followed by
+    a sigmoid function. The normalized feature ranges from 0 to 1, parameterizing
+    the possibility of being binarized into one. Then, we simultaneously mine the
+    bitwise interaction via reinforcement learning and optimize the parameters of
+    the deep hashing model with the mined bitwise interaction, which eliminates the
+    ambiguity of the binary descriptors with enhanced reliability.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Learning_Deep_Binary_Descriptors_via_Bitwise_Interaction_Mining\figure_4.jpg
+  Figure 4 caption: An example of deep reinforcement learning based bitwise interaction
+    mining. We sequentially add directed connections of the 4th-5th bits, the 1st-3rd
+    bits, the 6th-5th bits and the 6th-3rd bits, and then remove the connection of
+    the 4th-5th bits. We repeat the process of bitwise interaction mining until finalizing
+    the structure of graph.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Learning_Deep_Binary_Descriptors_via_Bitwise_Interaction_Mining\figure_5.jpg
+  Figure 5 caption: The pipeline of the presented D-GraphBit. The deep hashing model
+    first learns the binary descriptor distribution without bitwise interaction, which
+    is then mapped to the interaction space by the encoder. The interaction reasoning
+    network mines the dynamic bitwise interaction in the interaction space and the
+    decoder transforms the interacted node features to the distribution of reliable
+    hash codes, so that the ambiguous bits are eliminated with the optimal bitwise
+    interaction.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Learning_Deep_Binary_Descriptors_via_Bitwise_Interaction_Mining\figure_6.jpg
+  Figure 6 caption: (a) shows the mAP variation of GraphBit with different interaction
+    density, and (b) demonstrates that in GraphBit+ and D-GraphBit respectively. (c)
+    illustrates the performance change of GraphBit, GraphBit+ and D-GraphBit with
+    different beta , and (d) depicts the mAP for GraphBit+ and D-GraphBit w.r.t. gamma
+    in the overall objective. The binary descriptor length was set to 32.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Learning_Deep_Binary_Descriptors_via_Bitwise_Interaction_Mining\figure_7.jpg
+  Figure 7 caption: Comparison of PrecisionRecall curves on the CIFAR-10 dataset under
+    varying binary lengths (a) 16 bits, (b) 32 bits and (c) 64 bits with the state-of-the-art
+    unsupervised binary descriptors.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Learning_Deep_Binary_Descriptors_via_Bitwise_Interaction_Mining\figure_8.jpg
+  Figure 8 caption: Comparison of ROC curves on the Brown dataset with several binary
+    descriptors, where six train-test combinations were adopted.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Ziwei Wang
+  Name of the last author: Jiwen Lu
+  Number of Figures: 8
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Learning Deep Binary Descriptors via Bitwise Interaction Mining
+  Publication Date: 2022-03-23 00:00:00
+  Table 1 caption: TABLE 1 MAP (%) on CIFAR-10, NUS-WIDE and ImageNet-100 for Image
+    Retrieval With Binary Descriptors in Different Code Lengths, Where the Bitwise
+    Interaction Types and the Search Methods Were Varied
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 MAP (%) of Top 1,000 Returned Images With Different Unsupervised
+    Binary Descriptors on CIFAR-10, NUS-WIDE and ImageNet-100
+  Table 3 caption: TABLE 3 Comparison of 95% Error Rates (FPR95) on the Brown Dataset
+    With the State-of-the-Art Binary Descriptors, Where Six Train-Test Combinations
+    Were Applied
+  Table 4 caption: TABLE 4 MAP (%) of Unsupervised Binary Codes on HPatches
+  Table 5 caption: TABLE 5 Comparison of the Storage Cost, the Inference Latency and
+    the Training Cost Accross Different Descriptor Extraction Models
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3161600
+- Affiliation of the first author: "department of mathematics and computer science,\
+    \ universit\xE0 degli studi di palermo, palermo, italy"
+  Affiliation of the last author: "department of mathematics and computer science,\
+    \ universit\xE0 degli studi di palermo, palermo, italy"
+  Figure 1 Link: articels_figures_by_rev_year\2022\SIFT_Matching_by_Context_Exposed\figure_1.jpg
+  Figure 1 caption: "(a) The candidate match sets G \u21CA for different blob matching\
+    \ configurations on a toy example input D . Some setups may always lead to the\
+    \ same G \u21CA set, regardless of D , as for the third and fourth setup rows.\
+    \ This is not the case of the seventh setup row, where the same G \u21CA output\
+    \ is due to the choice of D . (b) Visual representations of NNR and FGINN. If\
+    \ it holds for D that D ij \u2264 D ia \u2264 D ib \u2264 D ic and the spatial\
+    \ configuration of the associated patch ellipses is the one reported in the figure,\
+    \ for the match (i,j) then D ij D ia , D ij D ib and D ij D ic are the values\
+    \ of NNR, FGINN using keypoint distance and FGINN using the overlap error, respectively\
+    \ (see the text for details, best viewed in color)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\SIFT_Matching_by_Context_Exposed\figure_2.jpg
+  Figure 2 caption: (left) original Delaunay triangulation (blue), convex hull (red),
+    alpha shape boundary edges (solid orange), border fattening (dashed orange), and
+    final contour edges (purple). (right) final Delaunay triangulation with keypoint-only
+    marked edges (green) (see text for details, best viewed in color and zoomed in).
+  Figure 3 Link: articels_figures_by_rev_year\2022\SIFT_Matching_by_Context_Exposed\figure_3.jpg
+  Figure 3 caption: "DTM computation steps. The first and second images of the input\
+    \ pair are superimposed on the left and on the right, respectively, together with\
+    \ their associated Delaunay triangulations (blue). Initial matches are obtained\
+    \ from the best configuration given by HarrisZ+SOSNet with blob matching (see\
+    \ Section 5). The first and second iterations i of DTM 1 are reported as the first\
+    \ and second rows, respectively. For these rows, on the left, the clusters of\
+    \ vector flows for the retained (green and red) and pruned (yellow and light red)\
+    \ matches are shown. The clusters of correct (green and yellow) and wrong (red\
+    \ and light red) matches can be established as well, according to the evaluation\
+    \ protocol described in Section 5. Corresponding contraction (orange) and expansion\
+    \ (yellow) clusters are indicated on the right. Image (e) reports the final filtered\
+    \ matches at the fourth last iteration i \xAF of DTM 1 , while image (f) shows\
+    \ the final matches after the last iteration i=0 of DTM 2 . In this last image\
+    \ the colored clusters indicate the matches before DTM 2 (green and red) and those\
+    \ added (yellow and light red), correct (green and yellow) or wrong (red and light\
+    \ red) (see text for details, best viewed in color and zoomed in)."
+  Figure 4 Link: articels_figures_by_rev_year\2022\SIFT_Matching_by_Context_Exposed\figure_4.jpg
+  Figure 4 caption: "Visual representation of the normalized recall on a given set\
+    \ of many-to-many matches (i,j) (green). | Z \u2193| |=4 and | Z |\u2193 |=5 by\
+    \ counting the numbers of elements (red) in the row and column outer sets, respectively.\
+    \ In the example |Z|=min(4,5)=4 (see text for details, best viewed in color and\
+    \ zoomed in)."
+  Figure 5 Link: articels_figures_by_rev_year\2022\SIFT_Matching_by_Context_Exposed\figure_5.jpg
+  Figure 5 caption: (a) mAP for blob matching averaged on the image pairs of the planar
+    and non-planar datasets for different setups and (b) for Harrisz+SOSNet only,
+    with ground-truth matches estimated by method D (see text for details, best viewed
+    in color and zoomed in).
+  Figure 6 Link: articels_figures_by_rev_year\2022\SIFT_Matching_by_Context_Exposed\figure_6.jpg
+  Figure 6 caption: Detailed mAP of blob matching with (a) HarrisZ+SOSNet and (b)
+    SIFT+RootSIFT for different setups averaged on the whole dataset. mathcal W(a,b)
+    values corresponding to a , b , min (a,b) , max (a,b) and (2ab)(a+b) are reported
+    in order inside each vertical sub-band (see text for details, best viewed in color
+    and zoomed in).
+  Figure 7 Link: articels_figures_by_rev_year\2022\SIFT_Matching_by_Context_Exposed\figure_7.jpg
+  Figure 7 caption: Average precision and recall values of the local spatial filters
+    on the planar, non-planar and SUN3D datasets. The recall is computed with respect
+    to ground truth matches obtained by blob matching, results withoutwith 1SAC are
+    in bluered. Average running times (s) for the baselinebest configuration are reported
+    alongside in the legend (see text for details, best viewed in color and zoomed
+    in).
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Fabio Bellavia
+  Name of the last author: Fabio Bellavia
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 1
+  Paper title: SIFT Matching by Context Exposed
+  Publication Date: 2022-03-23 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3161853

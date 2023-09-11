@@ -1,0 +1,811 @@
+- Affiliation of the first author: school of computer science and ningbo institute,
+    northwestern polytechnical university, xian, shaanxi, china
+  Affiliation of the last author: monash university, clayton, vic, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_1.jpg
+  Figure 1 caption: The overall architecture of our proposed model for end-to-end
+    text spotting in natural scene images. The network takes an image as input, and
+    outputs both text bounding boxes and text labels in one single forward pass. The
+    entire network is trained end-to-end.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_10.jpg
+  Figure 10 caption: Comparison between polygon and quadrangle fitting results on
+    total-text.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_2.jpg
+  Figure 2 caption: "The structure of the LSTM decoder used in this work. The holistic\
+    \ feature h W , a \u201CSTART\u201D token and the previous outputs are input into\
+    \ LSTM subsequently, terminated by an \u201CEND\u201D token. At each time step\
+    \ t , the output y t is computed by \u03C6(\u22C5) with the current hidden state\
+    \ and the attention output as inputs."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_3.jpg
+  Figure 3 caption: Box refinement according to character alignment indexed by attention
+    weights.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_4.jpg
+  Figure 4 caption: "Examples of text spotting results on ICDAR2013. The red bounding\
+    \ boxes are both detected and recognized correctly. The green bounding boxes are\
+    \ missed words. The new model can cover more scales of text compared to the conference\
+    \ version [10]. For example, \u201CSIXTH\u201D and \u201CEDITION\u201D in the\
+    \ third image can be covered, which have a big space between characters."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_5.jpg
+  Figure 5 caption: Examples of text spotting results on ICDAR2015. The red bounding
+    boxes are both detected and recognized correctly. The green bounding boxes are
+    missed words, and the blue labels are wrongly recognized. With the employed 2D
+    attention mechanism, our network is able to detect and recognize oriented text
+    with a single forward pass in cluttered natural scene images.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_6.jpg
+  Figure 6 caption: Text spotting examples on Total-Text. The red bounding boxes are
+    both detected and recognized correctly. The blue ones are recognized incorrectly.
+    The use of 2D attention mechanism enables our model detect and recognize curved
+    text with a single forward pass in cluttered natural scene images.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_7.jpg
+  Figure 7 caption: Text spotting examples on COCO-Text. The red bounding boxes are
+    both detected and recognized correctly. The blue labels are wrongly recognized.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_8.jpg
+  Figure 8 caption: Attention mechanism based sequence decoding process by varying-size
+    and fixed-size RoI features separately. The heat maps show that at each time step,
+    the position of the character to be decoded has higher attention weights, so that
+    the corresponding local features are extracted and assist the text recognition.
+    However, if we use the fixed-size RoI pooling, information may be lost during
+    pooling, especially for a long word, which leads to an incorrect recognition result.
+    In contrast, the varying-size RoI pooling preserves more information and leads
+    to a correct result.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Towards_EndtoEnd_Text_Spotting_in_Natural_Scenes\figure_9.jpg
+  Figure 9 caption: Visualization of 2D attention heat map for each word proposal
+    by aggregating attention weights at all character decoding steps. The results
+    show that the 2D attention model can approximately localize characters, which
+    provides assistance in both word recognition and bounding box rectification. Images
+    are from ICDAR2015 in the first row and Total-Text in the second row. The red
+    bounding boxes are both detected and recognized correctly. The green bounding
+    boxes are missed words.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Peng Wang
+  Name of the last author: Chunhua Shen
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Towards End-to-End Text Spotting in Natural Scenes
+  Publication Date: 2021-07-09 00:00:00
+  Table 1 caption: TABLE 1 Text Spotting Results on ICDAR2013 Dataset
+  Table 10 caption: TABLE 10 Ablation Experiments on Box Refinement Manner
+  Table 2 caption: TABLE 2 Text Spotting Results on ICDAR2015 Dataset
+  Table 3 caption: TABLE 3 Text Detection and Text Spotting Results on Total-Text
+    Dataset
+  Table 4 caption: TABLE 4 Text Detection and Text Spotting Results on COCO-Text Dataset
+  Table 5 caption: TABLE 5 Experiments on Multi-Task Learning
+  Table 6 caption: TABLE 6 Text Detection Results on ICDAR2013, ICDAR2015, and Total-Text
+  Table 7 caption: TABLE 7 Ablation Experiments on RoI Pooling Manner
+  Table 8 caption: TABLE 8 Ablation Study on RoI Feature Encoding Methods
+  Table 9 caption: TABLE 9 Ablation Experiments on Model Architecture
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3095916
+- Affiliation of the first author: department of information engineering, the chinese
+    university of hong kong, hong kong
+  Affiliation of the last author: s-lab, nanyang technological university, singapore,
+    singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_1.jpg
+  Figure 1 caption: The relation between performance and network depth for different
+    image regions. The noisy image is shown on the left. The restored outputs and
+    the ground-truth image regions are presented on the right. Each curve represents
+    the MSE loss of the corresponding region. The bold boxes denote a good trade-off
+    between performance and complexity for each region. Zoom in for best view.
+  Figure 10 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_10.jpg
+  Figure 10 caption: The architecture of dynamic block and pathfinder for addressing
+    mixed distortions.
+  Figure 2 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_2.jpg
+  Figure 2 caption: Framework Overview. Path-Restore is composed of a multi-path CNN
+    and a pathfinder. The multi-path CNN contains N dynamic blocks, each of which
+    has M optional paths. The number of paths is made proportional to the number of
+    distortion types we aim to address. The pathfinder is able to dynamically select
+    paths for different image regions according to their contents and distortions.
+  Figure 3 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_3.jpg
+  Figure 3 caption: The architecture of dynamic block and pathfinder in Path-Restore-Mask.
+    For simplicity, we show a special case with two paths. The pathfinder, depicted
+    at the bottom left corner, contains three strided convolutions and a ConvLSTM
+    [45]. It predicts a policy mask with two channels, both of which are then up-sampled
+    by nearest-neighbor interpolation to select eligible regions for the corresponding
+    paths.
+  Figure 4 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_4.jpg
+  Figure 4 caption: The architecture of dynamic block and pathfinder for all the denoising
+    tasks.
+  Figure 5 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_5.jpg
+  Figure 5 caption: Qualitative results on the Darmstadt Noise Dataset [2]. Path-Restore
+    recovers clean results with sharp edges.
+  Figure 6 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_6.jpg
+  Figure 6 caption: The policy of path selection on DND [2]. The green color represents
+    a short path while the red color represents a long path. Dark regions with severe
+    noise are processed more than bright regions with slight noise.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_7.jpg
+  Figure 7 caption: "Qualitative results of spatially variant (type \u201Cpeaks\u201D\
+    ) Gaussian denoising. While most visual results are comparable, Path-Restore recovers\
+    \ textured regions better than DnCNN since these regions are processed with long\
+    \ paths."
+  Figure 8 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_8.jpg
+  Figure 8 caption: "The policy of path selection for uniform Gaussian denoising \u03C3\
+    =30 . The pathfinder learns to select long paths for the objects with detailed\
+    \ textures while process the smooth background with short paths."
+  Figure 9 Link: articels_figures_by_rev_year\2021\PathRestore_Learning_Network_Path_Selection_for_Image_Restoration\figure_9.jpg
+  Figure 9 caption: "The policy of path selection for spatially variant (type \u201C\
+    linear\u201D) Gaussian denoising. The pathfinder learns a dispatch policy based\
+    \ on both the content and the distortion, i.e., short paths for smooth and clean\
+    \ regions while long paths for textured and noisy regions."
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Ke Yu
+  Name of the last author: Chen Change Loy
+  Number of Figures: 19
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: 'Path-Restore: Learning Network Path Selection for Image Restoration'
+  Publication Date: 2021-07-13 00:00:00
+  Table 1 caption: TABLE 1 Settings of Architecture and Reward for Different Tasks
+  Table 10 caption: "TABLE 10 Quantitative Comparisons to Category-Specific Denoising\
+    \ [26] on CBSD68 Dataset With Gaussian Noise \u03C3=30 \u03C3=30"
+  Table 2 caption: TABLE 2 Results of Real-World Denoising on the Darmstadt Noise
+    Dataset [2]
+  Table 3 caption: TABLE 3 Results of Real-World Denoising on the SIDD Dataset [52]
+  Table 4 caption: TABLE 4 PSNR and Average FLOPs of Blind Gaussian Denoising on CBSD68
+    and DIV2K-T50 Datasets
+  Table 5 caption: TABLE 5 Results of Addressing Mixed Distortions on DIV2K-T50 [58]
+    Compared With Two Variants of RL-Restore [27]
+  Table 6 caption: TABLE 6 Quantitative Evaluation of Path-Restore-Mask on the Darmstadt
+    Noise Dataset [2] and the Smartphone Image Denoising Dataset [52]
+  Table 7 caption: TABLE 7 Ablation Study on the Number of Paths in a Dynamic Block
+  Table 8 caption: TABLE 8 Ablation Study on Training Datasets and the Pathfinder
+  Table 9 caption: TABLE 9 Total Parameters of Each Method on Different Tasks
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3096255
+- Affiliation of the first author: department of electronic engineering and computer
+    science, gwangju institute of science and technology, gwangju, korea
+  Affiliation of the last author: department of mechanical engineering, korea advanced
+    institute of science and technology, daejeon, korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_1.jpg
+  Figure 1 caption: Reconstructing high-definition and high-resolution intensity images
+    solely from events in end-to-end learning. Our method (E2SRI) recovers more details
+    with fewer artifacts when compared to the recent methods of event-to-intensity
+    reconstruction using conditional generative adversarial network (EG) [36], events-to-video
+    generation (EV) [24], and the event-to-image reconstruction, restoration, and
+    super-resolution (ER) [37].
+  Figure 10 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_10.jpg
+  Figure 10 caption: "Qualitative comparison of synthesizing SR intensity frames directly\
+    \ with supervised training (E2SRI), directly with unsupervised training (ER [37],\
+    \ stage 3), and also indirectly as a downstream application for intensity-frame\
+    \ reconstruction (EV [24]+MISR [8], both with supervised training) on the \u201C\
+    ESC\u201D dataset. E2SRI produces higher quality details such as written text,\
+    \ lines, edges, and patterns. (g)-(k) and (r)-(v) are enlarged regions from (b)-(f)\
+    \ and (l)-(q) respectively."
+  Figure 2 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_2.jpg
+  Figure 2 caption: Overview of our end-to-end event to super-resolved intensity image
+    framework. The input stacks SB N n+m and the central stack SB N n are given to
+    the optical flow estimation network (FNet) to create the optical flow ( F n+m
+    ). The flow and stacks are concatenated and given to the event feature rectification
+    (EFR) network to rectify the event features. Its output R E n+m is given to the
+    super-resolution network (SRNet) together with the previous state ( Stat e n )
+    to create intermediate outputs I n+m and the next state ( Stat e n+m ). All intermediate
+    outputs are concatenated and given to the mixer ( Mix ) network, which creates
+    the final output ( O n ). Finally, the O n is compared to the training ground
+    truth (GT) using the similarity network (Sim) to compute the error ( Err ).
+  Figure 3 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_3.jpg
+  Figure 3 caption: "Illustrating an event stream in the form of stacking based on\
+    \ the number of events (SBN) with separate stacks (SS) or overlapping stacks (OS)\
+    \ in a sequence of 3S stacks. Temporal locations of the active pixel sensor (APS)\
+    \ frames are shown as dark-gray rhombuses. Light-gray rhombuses show the location\
+    \ of virtual APS frames that are used in the inference and do not respond to an\
+    \ actual APS frame. The central stack is shown as \u201C Stack 0\u201D together\
+    \ with its next ( Stack+1 ) or previous ( Stack-1 ) stack. The Yellow-colored\
+    \ boxes indicate the amount of shared overlapping events ( L1 and L2 ) in time.\
+    \ Note that the amount of events in a stack sets the length of the stack in time,\
+    \ which is not necessarily the same from one stack or overlapping region to another."
+  Figure 4 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_4.jpg
+  Figure 4 caption: Detailed data flow in the proposed method with sample outputs.
+    This figure is based on a third stack ( SB N n+m ). Therefore, the previous inputs,
+    optical flow, and intermediate outputs are faded. The APS frame is resized to
+    the size of the output ( O n ) for comparison.
+  Figure 5 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_5.jpg
+  Figure 5 caption: "Detailed architecture of the proposed SRNet augmented with the\
+    \ visualized intermediate data (the green blocks in Fig. 2). Four main residual\
+    \ networks ( RNets ) are designed to function as a large encoder-decoder. RNet-A\
+    \ is used to update the hidden state, while RNet-B and RNet-C act as an encoder\
+    \ and a decoder, respectively, to map the events and hidden states to a super-resolved\
+    \ intensity output ( I n+m ). The text in each box indicates the layer type (Conv,\
+    \ ConvT), number of filters ( F1 or F2 ), kernel size ( K ), stride ( S ), and\
+    \ padding ( P ) (e.g., Conv F1 312 implies the convolutional layer with one filter,\
+    \ and having kernel size of 3, stride of 1, and padding of 2). The highlighted\
+    \ gray boxes indicate the length of the repeating blocks or stages (e.g., \xD7\
+    5 for RNet-C ). RNet-A consists of a series of encoder and decoder blocks that\
+    \ form an hourglass network. For 2\xD7 and 4\xD7 SR, we set F1F2KSP to 25664622\
+    \ and 25664842, respectively."
+  Figure 6 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_6.jpg
+  Figure 6 caption: Internal-state recurrence of our network by a longer recurrent
+    path with outer recurrent steps (curvy arrows). As an example, the recurrent steps
+    that are shown in a bracket create a temporal window consisting of 4R recurrent
+    steps (columns) of the recurrent 3S sequence of stacks. The gradient information
+    is backpropagated through all the stacks forming this temporal window during training.
+    At inference, we use a single outer recurrent step (only one column); however,
+    we pass the state to the next column, as it makes the inference speed four times
+    faster. The connection network (CN) is a sigmoid function used to prevent gradient
+    explosion.
+  Figure 7 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_7.jpg
+  Figure 7 caption: "Complimentary (scarlet box) and Duo-Pass (scarlet box with Duo-Pass\
+    \ title) schemes with S3 stacks in a sequence. For reference, we also illustrate\
+    \ the original scheme in the green box. The central stack is highlighted with\
+    \ a yellow boundary in the middle, and all other stacks are compared to this stack\
+    \ for optical flow computation. By using the event-only output of the main network\
+    \ as a low-resolution input (central stack) for the \u201CComplementary\u201D\
+    \ method, we obtain the \u201CDuo-Pass\u201D network, which can add more details\
+    \ to the original intensity image."
+  Figure 8 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_8.jpg
+  Figure 8 caption: Qualitative comparison of our downscaled outputs for a comparison
+    with EV and EG on a sample sequence from [21]. E2SRI reconstructs more structural
+    details and does not create any darkening artifacts. (f)-(i) are enlarged regions
+    from (b)-(e) respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\ESRI_Learning_to_SuperResolve_Intensity_Images_From_Events\figure_9.jpg
+  Figure 9 caption: Qualitative comparison between the processes of synthesizing super-resolution
+    (SR) intensity frames directly (E2SRI) and super-resolving the frames pipelined
+    to intensity-frame reconstruction (EV [24]+multi-image SR (MISR [8])) on the IJRR
+    real-world dataset. E2SRI produces higher quality details such as written text,
+    lines, edges, and patterns. (f)-(i) are enlarged regions from (b)-(e) respectively.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.56
+  Name of the first author: Mohammad Mostafavi
+  Name of the last author: Kuk-Jin Yoon
+  Number of Figures: 20
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: 'E2SRI: Learning to Super-Resolve Intensity Images From Events'
+  Publication Date: 2021-07-14 00:00:00
+  Table 1 caption: TABLE 1 Comparison of Recent Event-to-Intensity Reconstruction
+    Methods
+  Table 10 caption: TABLE 10 Effect of Reducing the Size of the SR Network in Terms
+    of the Number of Stages in the Residual Networks, i.e., RNet- A,B,C,D A,B,C,D,
+    and its Base Filter Sizes of F1,F2 F1,F2 on the Output Quality and Temporal Consistency
+  Table 2 caption: TABLE 2 Comparison With the State-of-the-Art Intensity-Image Synthesis
+    Methods for the IJRR Real-World Sequences
+  Table 3 caption: TABLE 3 Temporal Stability Error Evaluation (Eq. (6))
+  Table 4 caption: TABLE 4 Extended Comparison With the State-of-the-Art Learning-Based
+    Event for Intensity-Frame Reconstruction Methods (EG [36] and EV [24]) on an Extended
+    List of Non-High-Dynamic-Range, Real-World Sequences From IJRR
+  Table 5 caption: TABLE 5 Quantitative Comparison of Super-Resolved Intensity Images
+    Constructed From Events Directly With Supervised Training (E2SRI), Directly With
+    Unsupervised Training (ER [37], Stage 3), and Also Indirectly as a Downstream
+    Application for Intensity-Frame Reconstruction, i.e., EV Combined With Single-Image
+    SR (SISR) [4] or Multi-Image SR (MISR) [8] Methods All Trained With Supervision
+  Table 6 caption: TABLE 6 Ablation Study of the Loss Function
+  Table 7 caption: TABLE 7 Effect of Sequence Size ( 1S 1S, 3S 3S, and 7S 7S) on the
+    Quantitative Metrics
+  Table 8 caption: TABLE 8 Effect of Optical Flow Estimation Network ( FNet FNet)
+  Table 9 caption: TABLE 9 Effect of Network Architecture for Computing LPIPS
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3096985
+- Affiliation of the first author: national key laboratory for novel software technology,
+    nanjing university, nanjing, jiangsu, china
+  Affiliation of the last author: national key laboratory for novel software technology,
+    nanjing university, nanjing, jiangsu, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_1.jpg
+  Figure 1 caption: "The comparison of regret among different algorithms with the\
+    \ default \u03C4=20 on synthetic data for the PDS method and CMD method."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_10.jpg
+  Figure 10 caption: The comparison of training loss, test accuracy, and running time
+    of one epoch among different algorithms on fine-tuning VGG19 for CIFAR10.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_2.jpg
+  Figure 2 caption: "The comparison of regret among different algorithms with different\
+    \ \u03B7 on synthetic data for the PDS method and CMD method."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_3.jpg
+  Figure 3 caption: "The comparison of regret and running time among different algorithms\
+    \ with different \u03C4 on synthetic data for the CMD method."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_4.jpg
+  Figure 4 caption: "The detailed comparison between ADA-FD and ADA-FFD with different\
+    \ \u03C4 and ADA-FULL on synthetic data for the CMD method."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_5.jpg
+  Figure 5 caption: The comparison of mistakes and test accuracy among different algorithms
+    on Gisette for the PDS method and CMD method.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_6.jpg
+  Figure 6 caption: The comparison of mistakes and test accuracy among different algorithms
+    on Epsilon for the PDS method and CMD method.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_7.jpg
+  Figure 7 caption: The comparison of running time among different algorithms on Gisette
+    and Epsilon for the CMD method.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_8.jpg
+  Figure 8 caption: The comparison of training loss and test accuracy among different
+    algorithms on training CNN.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Efficient_Adaptive_Online_Learning_via_Frequent_Directions\figure_9.jpg
+  Figure 9 caption: The comparison of running time costed by one epoch of each algorithm
+    on training CNN.
+  First author gender probability: 0.5
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Yuanyu Wan
+  Name of the last author: Lijun Zhang
+  Number of Figures: 10
+  Number of Tables: 1
+  Number of authors: 2
+  Paper title: Efficient Adaptive Online Learning via Frequent Directions
+  Publication Date: 2021-07-14 00:00:00
+  Table 1 caption: TABLE 1 Datasets Used in Experiments
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3096880
+- Affiliation of the first author: department of electrical engineering and computer
+    science, advanced imaging and collaborative information processing group, university
+    of tennessee, knoxville, tn, usa
+  Affiliation of the last author: department of electrical engineering and computer
+    science, advanced imaging and collaborative information processing group, university
+    of tennessee, knoxville, tn, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_1.jpg
+  Figure 1 caption: Given a reference style photo taken at night, the content image
+    is stylized as if it was taken at night. (a) Style image. (b) Content image. Photorealistic-stylized
+    images with (c) global-based method [7] without local color changes, (d) PhotoWCT
+    [3] with structure distortion, (e) WCT 2 [6] with abrupt color changes between
+    sky and buildings, and (f) our method (NL-MAT) with global consistency. (g-k)
+    Sub-images of (b)-(f), respectively.
+  Figure 10 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_10.jpg
+  Figure 10 caption: 'Visual comparison with patch-based photorealistic methods. 1st
+    column: reference style image. 2nd column: content image. 3rd column: Liao et
+    al. [10]. 4th column: He et al. [11]. 5th column: proposed NL-MAT.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_2.jpg
+  Figure 2 caption: The non-local nature of context. For example, the similar context
+    regions, the trees, although possess similar color, are scattered at disjoint
+    regions across the image.
+  Figure 3 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_3.jpg
+  Figure 3 caption: 'Dictionary-based image decomposition. Note: The darker the shades,
+    the larger the proportions.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_4.jpg
+  Figure 4 caption: Flowchart of the proposed NL-MAT.
+  Figure 5 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_5.jpg
+  Figure 5 caption: Network structure of the shared stick-breaking encoder and the
+    affine-transfer decoder.
+  Figure 6 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_6.jpg
+  Figure 6 caption: "The representations extracted with NL-MAT from the content image\
+    \ (top) and style image (bottom). Ten color bases are assumed and the representations\
+    \ of the top four most contributing color bases are shown. Brighter color indicates\
+    \ higher proportion (or coefficient) value. Columns 2\u20135 show the representation\
+    \ slices of the content (top) and style (bottom) images corresponding to the proportions\
+    \ of their corresponding color bases. With the sparsity constraint, different\
+    \ objects have different dominant color bases, thus the representation is context-sensitive.\
+    \ With the mutual discriminative network, the extracted representations of the\
+    \ content and style images are encouraged to be matched with each other, i.e.,\
+    \ tree-to-tree, sky-to-sky."
+  Figure 7 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_7.jpg
+  Figure 7 caption: The affine relationship between the bases of the content image
+    and the style image with representation matching, i.e., D s =a D c +b .
+  Figure 8 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_8.jpg
+  Figure 8 caption: Structure of the mutual discriminative network.
+  Figure 9 Link: articels_figures_by_rev_year\2021\NonLocal_Representation_Based_Mutual_AffineTransfer_Network_for_Photorealistic_S\figure_9.jpg
+  Figure 9 caption: Flowchart of the style transfer procedure.
+  First author gender probability: 0.86
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Ying Qu
+  Name of the last author: Hairong Qi
+  Number of Figures: 18
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: Non-Local Representation Based Mutual Affine-Transfer Network for Photorealistic
+    Stylization
+  Publication Date: 2021-07-14 00:00:00
+  Table 1 caption: TABLE 1 Capabilities of the State-of-the-Art Photorealistic Stylization
+    Approaches
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 User Study
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3095948
+- Affiliation of the first author: national key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Affiliation of the last author: national key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Error_Bounds_of_Imitating_Policies_and_Environments_for_Reinforcement_Learning\figure_1.jpg
+  Figure 1 caption: "A \u201Chard\u201D deterministic MDP. Green arrows indicate state\
+    \ transitions under the experts actions, blue arrows indicate state transitions\
+    \ under non-experts actions. Digits on arrows are corresponding rewards. Initial\
+    \ state is s0 while s1 and s2 are two absorbing states."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Error_Bounds_of_Imitating_Policies_and_Environments_for_Reinforcement_Learning\figure_2.jpg
+  Figure 2 caption: "A class of MDPs named \u201CReset Cliff\u201D for Proposition\
+    \ 1. Green arrows indicate state transitions under the experts actions, blue arrows\
+    \ indicate state transitions under non-experts actions. Digits besides the arrows\
+    \ are the corresponding rewards. The initial distribution d 0 =(\u03B7,\u2026\
+    ,\u03B7,1\u2212(|S|\u22122)\u03B7,0) where \u03B7= 1 m+1 . At any state except\
+    \ the bad state b , if the agent plays expert action, the agent is renewed according\
+    \ to d 0 . Otherwise, the agent transitions into the bad state b ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Error_Bounds_of_Imitating_Policies_and_Environments_for_Reinforcement_Learning\figure_3.jpg
+  Figure 3 caption: "A class of MDPs named \u201CStandard Imitation\u201D for Proposition\
+    \ 2. Green arrows indicate state transitions under the experts actions, blue arrows\
+    \ indicate state transitions under non-experts actions. Digits besides the arrows\
+    \ are the corresponding rewards. Each state is absorbing and d 0 =(\u03B7,\u2026\
+    ,\u03B7,1\u2212(|S|\u22121)\u03B7) , where \u03B7= 1 m+1 . At each state, if the\
+    \ agent takes the expert action (shown in green), it gets +1 reward. Otherwise,\
+    \ the agent gets 0 reward."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Error_Bounds_of_Imitating_Policies_and_Environments_for_Reinforcement_Learning\figure_4.jpg
+  Figure 4 caption: "Policy value gap ( V \u03C0 E \u2212 V \u03C0 ) on \u201CReset\
+    \ Cliff\u201D and \u201CStandard Imitation\u201D with different effective planning\
+    \ horizons. The solid lines are the mean of results and the shaded region corresponds\
+    \ to a 95 percent confidence interval over 15 random seeds (same with the following\
+    \ figures)."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Error_Bounds_of_Imitating_Policies_and_Environments_for_Reinforcement_Learning\figure_5.jpg
+  Figure 5 caption: "Relative performance of imitated policies with different discount\
+    \ factors \u03B3 ."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Error_Bounds_of_Imitating_Policies_and_Environments_for_Reinforcement_Learning\figure_6.jpg
+  Figure 6 caption: "Policy evaluation errors ( \u03B3=0.999 ) of environment models\
+    \ trained by BC and GAIL."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Error_Bounds_of_Imitating_Policies_and_Environments_for_Reinforcement_Learning\figure_7.jpg
+  Figure 7 caption: Episode length of simulation on the empirical environment models
+    trained by BC and GAIL for Walker2d-v2.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Tian Xu
+  Name of the last author: Yang Yu
+  Number of Figures: 7
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: Error Bounds of Imitating Policies and Environments for Reinforcement
+    Learning
+  Publication Date: 2021-07-14 00:00:00
+  Table 1 caption: "TABLE 1 Discounted Returns ( \u03B3=0.999 \u03B3=0.999) With Different\
+    \ Gradient Penalty Coefficients \u03BB \u03BB"
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3096966
+- Affiliation of the first author: digital medical research center, school of basic
+    medical sciences, fudan university, shanghai, china
+  Affiliation of the last author: digital medical research center, school of basic
+    medical sciences, fudan university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_1.jpg
+  Figure 1 caption: "(a) A 2D illustration showing that the angular distance between\
+    \ point x i1 and x i2 is invariant when they are jointly rotated by R but changes\
+    \ when they are jointly translated by t . (b) and (c) Toy example of matching\
+    \ an RIF3D constructed from 3D points x i1 , x i2 , x i3 and an RIF2D constructed\
+    \ from 2D points y j1 , y j2 , y j3 , where y j1 , y j2 and y j3 are the projections\
+    \ of x i1 , x i2 and x i3 , respectively, and the optimal translation t \u2217\
+    \ is (0,0,0). (c) is a plot of the L2 distance between the RIF3D and the RIF2D\
+    \ when the 3D points are jointly translated by t , whose X, Y coordinates fall\
+    \ in the range of [-1, 1] and whose Z coordinate is zero."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_10.jpg
+  Figure 10 caption: The results for frame 230 of scene1. The images are the panoramic
+    image and the 2D features (top), 3D building points projected onto the image using
+    the ground truth camera pose (middle-top), 3D building points projected onto the
+    image using the GPETD camera pose (middle-bottom), and the 3D building points
+    projected onto the image using the GOPAC camera pose (bottom).
+  Figure 2 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_2.jpg
+  Figure 2 caption: Constructing collinear subset to eliminate ambiguity in correspondences.
+    In this special case, p m1,m2,m3 = p n1,n2,n3 , which means if q k1,k2,k3 =F(
+    p m1,m2,m3 ,t) then q k1,k2,k3 =F( p n1,n2,n3 ,t) . In other words, we cannot
+    tell which RIF fearture correponds to q k1,k2,k3 . Therefore there will be ambiguity
+    in correspondences for these two RIF triplets. In our method, we only consider
+    the subset p m1,m2,m3 constructed from collinear points, which eliminates ambiguity
+    in correspondences significantly.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_3.jpg
+  Figure 3 caption: "A 2D illustration of the angular distance bounds between point\
+    \ x i1 and x i2 when they are moved by a translation cube centered at point t\
+    \ 0 . \u03B3 min and \u03B3 max are the lower and upper bounds of the angular\
+    \ distance, respectively. (a) Bound derived from the results in [9]. (b) Bound\
+    \ derived from the results in [8]. (c) Bound proposed in this paper, where the\
+    \ joint movement of x i1 and x i2 is considered. The joint movement of two points\
+    \ is transformed into an equivalent form of the movement of the origin O , both\
+    \ of which result in the same bounds of the angular distance."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_4.jpg
+  Figure 4 caption: "Special cases of the relative position between the point pair\
+    \ x m1 , x m2 and the translation cube T . (a) Either x m1 or x m2 is in T . (b)\
+    \ Both x m1 and x m2 are in T . (c) Neither x m1 nor x m2 is in T , but the line\
+    \ segment x m1 x m2 \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF\
+    \ \xAF \xAF \xAF \xAF intercepts with T . (d) Line segment x m1 x m2 \xAF \xAF\
+    \ \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF does not\
+    \ intersect with T , but line x m1 x m2 \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF\
+    \ \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF intersects with T ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_5.jpg
+  Figure 5 caption: "Illustration of the construction of the ETS. The cube with black\
+    \ edges is the translation cube T , and the special-shaped 3D solid with brown\
+    \ and blue edges is the ETS, which is the region constructed by rotating the blue\
+    \ 2D translation rectangle about the line x m1 x m2 \xAF \xAF \xAF \xAF \xAF \xAF\
+    \ \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF and tightly encloses the translation\
+    \ cube. x is an arbitrary point in the ETS, and x \u2032 is its corresponding\
+    \ point that has the same angular distance with respect to x m1 and x m2 in the\
+    \ 2D translation rectangle."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_6.jpg
+  Figure 6 caption: "Illustration of how to construct the 2D translation rectangle.\
+    \ V min and V max are the nearest and farthest vertex of the translation cube\
+    \ T to line x m1 x m2 \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF\
+    \ \xAF \xAF \xAF \xAF , respectively. After projection of the eight vertexes of\
+    \ T onto line x m1 x m2 \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF\
+    \ \xAF \xAF \xAF \xAF \xAF , FP left and FP right are the two farthest projections\
+    \ in each direction. (a) Illustration of how to determine V min , V max , FP left\
+    \ and FP right in 3D space. (b) Illustration of how to construct the 2D translation\
+    \ rectangle on the 2D plane passing through line x m1 x m2 \xAF \xAF \xAF \xAF\
+    \ \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF and V max ."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_7.jpg
+  Figure 7 caption: (a) Runtime and (b) Success rate of RANSAC, SoftPOSIT, GOPAC,
+    GS and GPETD with respect to the number of points.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_8.jpg
+  Figure 8 caption: The median runtime and success rate of GPETD, SoftPOSIT, GOPAC
+    and RANSAC with respect to 3D outliers (a), 2D outliers (b) and 2D&3D outliers
+    (c).
+  Figure 9 Link: articels_figures_by_rev_year\2021\Efficient_and_OutlierRobust_Simultaneous_Pose_and_Correspondence_Determination_b\figure_9.jpg
+  Figure 9 caption: Structured outliers experiments. (a) Experiments setup. (b) Average
+    runtime (seconds) with respect to the number of tetrahedrons in 100 repeated experiments.
+    (c) Success rate with respect to the number of tetrahedrons in 100 repeated experiments.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Chen Wang
+  Name of the last author: Manning Wang
+  Number of Figures: 14
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Efficient and Outlier-Robust Simultaneous Pose and Correspondence Determination
+    by Branch-and-Bound and Transformation Decomposition
+  Publication Date: 2021-07-14 00:00:00
+  Table 1 caption: TABLE 1 Mean Runtime and Iteration of Successful Cases and the
+    Number of Failed Cases (cannot terminate in 1200 s) in Solving 50 SPCD Problems
+    of Different Point Numbers by Using Three Different Bounds
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Results of the Data612D3D Dataset
+  Table 3 caption: TABLE 3 The Results of CITY Dataset Scan 01
+  Table 4 caption: TABLE 4 The Results of the Door Dataset
+  Table 5 caption: TABLE 5 The Results of DTU Robot Image Data Sets SET011
+  Table 6 caption: TABLE 6 The Results of DTU Robot Image Data Sets SET013
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3096842
+- Affiliation of the first author: inria, cnrs, grenoble inp, ljk, university grenoble
+    alpes, grenoble, france
+  Affiliation of the last author: "cnrs, umr 7190, institut jean le rond dalembert,\
+    \ sorbonne universit\xB4, paris, france"
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_1.jpg
+  Figure 1 caption: "Three cloth motion sequences simulated with the same material\
+    \ but different friction coefficients at contact ( \u03BC ). Top: \u03BC=0.0 ,\
+    \ Centre: \u03BC=0.5 , Bottom: \u03BC=0.6 . Differences are significant between\
+    \ \u03BC=0.0 and \u03BC=0.5 , but more subtle between \u03BC=0.5 and \u03BC=0.6\
+    \ ."
+  Figure 10 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_10.jpg
+  Figure 10 caption: Extension of our synthetic dataset, with renderings more similar
+    to the new cloth on cloth dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_2.jpg
+  Figure 2 caption: "Histogram of \u03BC for all material substrate pairs."
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_3.jpg
+  Figure 3 caption: Physical validation of Argus [22] under a constrained setting
+    that is well understood in physics [32]. After proper calibration of the simulator,
+    we observe simulations (dotted curve) that are in very good agreement with the
+    theory (black curve).
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_4.jpg
+  Figure 4 caption: 'Dataset Examples: First and second row show corresponding frames
+    from real and synthetic data respectively. Third row shows 3 viewpoints rendered
+    in the simulated dataset.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_5.jpg
+  Figure 5 caption: Proposed architecture to estimate friction conditioned on material
+    parameters. The coloured inlay shows the baseline model, which is augmented with
+    material class information to form the conditional friction model.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_6.jpg
+  Figure 6 caption: Cumulative error plots for all datasets.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_7.jpg
+  Figure 7 caption: Cumulative error plots for dataset High-accurate-small-timestep
+    (red, black, light blue, green) and simulated test data (dark blue).
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_8.jpg
+  Figure 8 caption: The figure shows an excerpt from our new Cloth to Cloth friction
+    evaluation dataset. This dataset includes a cloth stretched out as a substrate
+    and another cloth sliding over it using a motorised clamp.
+  Figure 9 Link: articels_figures_by_rev_year\2021\A_Visual_Approach_to_Measure_ClothBody_and_ClothCloth_Friction\figure_9.jpg
+  Figure 9 caption: Distribution of baseline friction values for cloth to cloth dataset.
+    The orange bars are outside the range of our synthetic training data.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Abdullah Haroon Rasheed
+  Name of the last author: Arnaud Lazarus
+  Number of Figures: 13
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: A Visual Approach to Measure Cloth-Body and Cloth-Cloth Friction
+  Publication Date: 2021-07-16 00:00:00
+  Table 1 caption: TABLE 1 Parameter Specifications of 3 Datasets, Generated for Varying
+    Levels of Accuracy
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Architecture Details for a Feature Extractor Block
+  Table 3 caption: TABLE 3 Results on Simulated Test Data
+  Table 4 caption: TABLE 4 Results on Unseen Viewpoints
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3097547
+- Affiliation of the first author: school of computer science, university of adelaide,
+    adelaide, sa, australia
+  Affiliation of the last author: monash university, clayton, vic, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_1.jpg
+  Figure 1 caption: Example results of Hu et al. [5] (first row) and our method (second
+    row). By enforcing the geometric constraints of virtual normals, our reconstructed
+    3D point cloud can represent better shape of sofa (see the part in the green dash
+    box) and the recovered surface normal shows much fewer errors (in green) even
+    though the absolute relative error (rel) of our predicted depth is only slightly
+    better than Hu et al. (0.108 versus 0.115).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_10.jpg
+  Figure 10 caption: Validation error during the training process. The validation
+    error of the proposed multi-curriculum learning method is always lower than that
+    of the MCL-R and baseline.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_2.jpg
+  Figure 2 caption: Qualitative comparison of depth and reconstructed 3D point cloud
+    between our method and that of the recent learning relative depth method [6].
+    The first row is the predicted depth and reconstructed 3D point cloud from the
+    depth of Xian et al. [6], while the second row is ours. The relative depth model
+    fails to recover the 3D geometric shape of the scene (see the distorted elephant
+    and ground area). Ours does much better. Note that this test image is sampled
+    from the DIW dataset, which does not overlap with our training data.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_3.jpg
+  Figure 3 caption: Overview of our framework. Our monocular depth prediction method
+    inputs an image to an encoder-decoder network and outputs the depth. During training,
+    we reconstruct the 3D point cloud from the depth and construct a virtual normal
+    loss on the 3D point cloud to supervise the network. During the inference, the
+    surface normal can be directly recovered from the point cloud.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_4.jpg
+  Figure 4 caption: "Robustness of VN to depth noise. Because of noise, point P C\
+    \ may vary to P C \u2032 . However, as there is a long distance constraint for\
+    \ virtual normal, the direction of virtual normal will not vary significantly."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_5.jpg
+  Figure 5 caption: Illustration of fitting point clouds to obtain the local surface
+    normal. The directions of the surface normals is fitted with different sampling
+    sizes on a real point cloud (a). Because of noise, the surface normals vary significantly.
+    (b) compares the angular difference between surface normals computed with different
+    sample sizes in Mean Difference Error. The error can vary significantly.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_6.jpg
+  Figure 6 caption: Robustness of virtual normal and surface normal against data noise.
+    (a) The ideal surface and noisy surface. (b) The Mean Difference Error (Mean)
+    is applied to evaluate the robustness of virtual normal and surface normal against
+    different noise level. Our proposed virtual normal is more robust.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_7.jpg
+  Figure 7 caption: "The geometric model of an imaging system. A \u2217 is the ground-truth\
+    \ location for an object. A is the predicted location by learning metric depth\
+    \ method, while A \u2032 is the predicted location by our learning affine-invariant\
+    \ depth method."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_8.jpg
+  Figure 8 caption: Illustration of the impact of the samples size. The more samples
+    will promote the performance. The experiment is conducted on the NYUD-V2 dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Virtual_Normal_Enforcing_Geometric_Constraints_for_Accurate_and_Robust_Depth_Pre\figure_9.jpg
+  Figure 9 caption: Testing on images captured by a phone.
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Wei Yin
+  Name of the last author: Chunhua Shen
+  Number of Figures: 11
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: 'Virtual Normal: Enforcing Geometric Constraints for Accurate and Robust
+    Depth Prediction'
+  Publication Date: 2021-07-16 00:00:00
+  Table 1 caption: TABLE 1 Comparison With Previous RGB-D Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Results on NYUD-V2
+  Table 3 caption: TABLE 3 Depth Prediction Results on the KITTI Dataset
+  Table 4 caption: TABLE 4 The Effectiveness of VNL
+  Table 5 caption: TABLE 5 Evaluation of the Surface Normal on NYUD-V2
+  Table 6 caption: TABLE 6 Comparison With State-of-the-Art Methods on Five Zero-Shot
+    Datasets
+  Table 7 caption: TABLE 7 Comparison of Different Training Methods on Five Zero-Shot
+    Datasets and Our DiverseDepth Dataset
+  Table 8 caption: TABLE 8 The Effectiveness of Different Losses for Zero-Shot Evaluation
+    on Five Datasets
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3097396
+- Affiliation of the first author: shenzhen campus, sun yat-sen university, shenzhen,
+    china
+  Affiliation of the last author: sun yat-sen university, guangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Adversarial_Reinforced_Instruction_Attacker_for_Robust_VisionLanguage_Navigation\figure_1.jpg
+  Figure 1 caption: The overview of our proposed method. At timestep t , the DR-Attacker
+    receives the visual observation and original instruction, and generates the perturbed
+    instruction mathbf Itprime by substituting the selected target word with the best
+    candidate word according to the attack score. The victim navigator, which receives
+    the perturbed instruction, is enforced to maximize the navigation reward RNav
+    with an adversarial setting and reasoning the actual attacked words by DR-Attacker
+    to enhance the model robustness.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Adversarial_Reinforced_Instruction_Attacker_for_Robust_VisionLanguage_Navigation\figure_2.jpg
+  Figure 2 caption: "The forward processes of the DR-Attacker and the navigator. The\
+    \ attack score p a ( a t ) is calculated by the element-wise multiplication of\
+    \ the word importance vector \u03B2 t and the substitution impact matrix \u03B3\
+    \ t . After performing the perturbation operation on the original instruction\
+    \ u ~ to generate perturbed instruction u ~ \u2032 , the decoder of the navigator\
+    \ gets the perturbed instruction u ~ \u2032 and the attended visual feature f\
+    \ v t to predict the navigation action a \u2032 t at timestep t . The updated\
+    \ hidden state h ~ t of the decoder and the target word feature f w are used to\
+    \ calculate the actual attacked word prediction probability p c (c) ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Adversarial_Reinforced_Instruction_Attacker_for_Robust_VisionLanguage_Navigation\figure_3.jpg
+  Figure 3 caption: The construction details of target word set and candidate substitution
+    word set on VLN. The target word set is constructed for each instruction by conducting
+    string match between the instruction and the instruction vocabulary which only
+    contains words indicating visual objects and locations. The candidate substitution
+    word set for each target word is built by collecting the remaining target words
+    in the same instruction.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Adversarial_Reinforced_Instruction_Attacker_for_Robust_VisionLanguage_Navigation\figure_4.jpg
+  Figure 4 caption: The construction details of target word set and candidate substitution
+    word set on NDH. Since the last answer in the instruction generally contains the
+    guiding information, we only construct the target word set and perform the perturbation
+    operation for the last answer in the instruction for each instance.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Adversarial_Reinforced_Instruction_Attacker_for_Robust_VisionLanguage_Navigation\figure_5.jpg
+  Figure 5 caption: The comparison results of different types of adversarial attacking
+    mechanisms on VLN. NE (m), SR (%) and SPL (%) are reported for both Val Seen and
+    Val Unseen scenes. Apart from NE, lower value indicates better results.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Adversarial_Reinforced_Instruction_Attacker_for_Robust_VisionLanguage_Navigation\figure_6.jpg
+  Figure 6 caption: "The visualization examples of perturbed instructions, panoramic\
+    \ views, and language attention weights (instance (b)) during trajectories on\
+    \ VLN. The words in red, blue and green color represent the actual attacked word\
+    \ by DR-Attacker (A), the predicted attacked word by the navigator (P), and the\
+    \ substitution word (S), respectively. Yellow bounding box denotes the visual\
+    \ object or location at the current scene. \u201CBaseline\u201D and \u201COurs\u201D\
+    \ represent the navigators trained without and with perturbed instructions, respectively.\
+    \ Words in the bracket represent the actual attacked word by the DR-Attacker.\
+    \ Best viewed in color."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Adversarial_Reinforced_Instruction_Attacker_for_Robust_VisionLanguage_Navigation\figure_7.jpg
+  Figure 7 caption: "The visualization examples of perturbed instructions, panoramic\
+    \ views, and language attention weights (A2 in instance (b)) during trajectories\
+    \ on NDH. The words in red, blue and green color represent the actual attacked\
+    \ word by DR-Attacker (A), the predicted attacked word by the navigator (P), and\
+    \ the substitution word (S), respectively. Yellow bounding box denotes the visual\
+    \ object or location at the current scene. \u201CBaseline\u201D and \u201COurs\u201D\
+    \ represent the navigators trained without and with perturbed instructions, respectively.\
+    \ Words in the bracket represent the actual attacked word by the DR-Attacker.\
+    \ Best viewed in color."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Bingqian Lin
+  Name of the last author: Liang Lin
+  Number of Figures: 7
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: Adversarial Reinforced Instruction Attacker for Robust Vision-Language
+    Navigation
+  Publication Date: 2021-07-16 00:00:00
+  Table 1 caption: TABLE 1 The Comparison Results With State-of-the-Art Methods on
+    R2R Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Comparison Results With State-of-the-Art Methods on
+    CVDN Dataset
+  Table 3 caption: TABLE 3 The Comparison of Training Time, Data and Device Between
+    PREVALENT [23] and Our Method on NDH
+  Table 4 caption: TABLE 4 The Ablation Study Results on R2R Dataset
+  Table 5 caption: TABLE 5 The Ablation Study Results on CVDN Dataset
+  Table 6 caption: TABLE 6 The Ablation Study Results on CVDN Dataset
+  Table 7 caption: TABLE 7 The Comparison Results of Different Adversarial Attacking
+    Mechanisms in Attacking and Promoting the Navigation Performance on CVDN Dataset
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3097435

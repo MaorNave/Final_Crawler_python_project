@@ -1,0 +1,838 @@
+- Affiliation of the first author: university of liverpool, liverpool, uk
+  Affiliation of the last author: institute of information science, beijing jiaotong
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Affinity_Attention_Graph_Neural_Network_for_Weakly_Supervised_Semantic_Segmentat\figure_1.jpg
+  Figure 1 caption: The difference between our built graph and that of previous approach
+    [21]. (a) Superpixel based approach [21]. (b) Our approach. The numbers along
+    the edges indicate the edge values, soft edge allows any edge weights between
+    0 and 1.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Affinity_Attention_Graph_Neural_Network_for_Weakly_Supervised_Semantic_Segmentat\figure_2.jpg
+  Figure 2 caption: "An example of generating pixel-level seed labels. Given an image\
+    \ with its label, we first generate M I from image-level label using a classification\
+    \ CNN and SEAM [38] method. Meanwhile, bounding box label is transferred to pixel-level\
+    \ label M B using Grab-cut. Finally, M I and M B are integrated together to get\
+    \ the pixel-level seed label M F . Each color represents one class and \u201C\
+    white\u201D means the pixel label is unknown."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Affinity_Attention_Graph_Neural_Network_for_Weakly_Supervised_Semantic_Segmentat\figure_3.jpg
+  Figure 3 caption: The framework of our proposed A 2 GNN. First, we generate pixel-level
+    seed labels using the bounding box and the image-level label. Then our affinity
+    CNN is used to convert images to graphs. Meanwhile, we select confident labels
+    from pixel-level seed labels as the node labels (The node labels in the white
+    region are unknown). Finally, A 2 GNN uses the graph data as input and the node
+    labels as supervision to produce pseudo labels.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Affinity_Attention_Graph_Neural_Network_for_Weakly_Supervised_Semantic_Segmentat\figure_4.jpg
+  Figure 4 caption: Converting an image to a graph using our affinity CNN. During
+    inference, the given image will be converted to a graph, in which a node is a
+    pixel in the concatenated feature maps from the last three blocks and its feature
+    is the corresponding pixel feature. The weight of graph edges is defined as the
+    predicted affinity and they are represented as an adjacency matrix, in which each
+    row corresponds to all edges between one node and all nodes.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Affinity_Attention_Graph_Neural_Network_for_Weakly_Supervised_Semantic_Segmentat\figure_5.jpg
+  Figure 5 caption: "Our proposed affinity attention layer. E is the adjacent matrix\
+    \ which provides soft edges information. H l is the input feature of the layer\
+    \ and H l+1 is the output feature. P l is the computed affinity attention matrix.\
+    \ w l is the learning parameter and \u03B2 is the weighting factor. With the attention\
+    \ mechanism and the soft edges, it can ensure accurate feature propagation."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Affinity_Attention_Graph_Neural_Network_for_Weakly_Supervised_Semantic_Segmentat\figure_6.jpg
+  Figure 6 caption: Qualitative results of our A 2 GNN and other state-of-the-art
+    approaches on PASCAL VOC 2012 val dataset. (a) Original image. (b) Ground truth
+    of semantic segmentation. (c) SDI [5] for BSSS. (d) Our results for BSSS. (e)
+    BBTP [7] for BSIS. (f) Our results for BSIS.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Affinity_Attention_Graph_Neural_Network_for_Weakly_Supervised_Semantic_Segmentat\figure_7.jpg
+  Figure 7 caption: "Comparison between our A 2 GNN and other GNNs (GCN [22], GAT\
+    \ [62], AGNN [32]) on Pascal VOC 2012 training set. \u201CCE\u201D means only\
+    \ cross-entropy loss is used."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Affinity_Attention_Graph_Neural_Network_for_Weakly_Supervised_Semantic_Segmentat\figure_8.jpg
+  Figure 8 caption: "Qualitative results of our A 2 GNN on PASCAL VOC 2012 val dataset.\
+    \ We show the results from different levels of supervision signals (3rd \u2013\
+    \ 6th rows). Stronger supervision signals (e.g., scribble) produce more accurate\
+    \ results than weaker signals (e.g., point, image-level label)."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Bingfeng Zhang
+  Name of the last author: Yao Zhao
+  Number of Figures: 8
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Affinity Attention Graph Neural Network for Weakly Supervised Semantic
+    Segmentation
+  Publication Date: 2021-05-25 00:00:00
+  Table 1 caption: TABLE 1 Comparison With Other Approaches on PASCAL VOC 2012 val
+    and Test Sets for BSSS
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison With Other Approaches on PASCAL VOC 2012 val
+    Dataset for BSIS
+  Table 3 caption: TABLE 3 Comparison With Other Approaches on COCO Test-Dev Dataset
+    for Weakly Supervised Instance Segmentation
+  Table 4 caption: TABLE 4 Ablation studies on Pascal VOC 2012 Training Dataset for
+    BSSS
+  Table 5 caption: TABLE 5 Comparison With Other State-of-the-Arts on PASCAL VOC 2012
+    val and Test Datasets
+  Table 6 caption: TABLE 6 Performance Comparison in mIoU (%) for Evaluating the Pseudo
+    Labels on the PASCAL VOC Training Data Set
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3083269
+- Affiliation of the first author: institute of artificial intelligence, beihang university,
+    beijing, china
+  Affiliation of the last author: sea ai lab (sail), singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_1.jpg
+  Figure 1 caption: The makeup transfer results of PSGAN++ in terms of pose and expression
+    robust, partial, degree-controllable, detail-preserving (highlights and blush)
+    makeup transfer. Makeup removal results are also shown.
+  Figure 10 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_10.jpg
+  Figure 10 caption: Partial makeup transfer results. Given a source image, the transferred
+    images are generated by transferring the lipstick from the reference 2 and other
+    makeup from the reference 1.
+  Figure 2 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_2.jpg
+  Figure 2 caption: "Illustration of the workflow of our PSGAN++. The PSGAN++ can\
+    \ transfer and remove makeup. For makeup transfer, PSGAN++ takes the source image\
+    \ x and the reference image y 1 as input to produce transferred image x ~ . The\
+    \ MDNet distills makeup matrices \u03B3 y 1 and \u03B2 y 1 from the reference\
+    \ image, and the AMM module applies the adapted makeup matrices \u03B3 ~ y 1 and\
+    \ \u03B2 ~ y 1 to the decoder part of STNet to achieve makeup transfer. For makeup\
+    \ removal, PSGAN++ takes the with-makeup image y r as input to produce de-makeup\
+    \ image y ~ r . The IDNet extracts the identify matrices \u03B3 y r and \u03B2\
+    \ y r from y r , which are then fed to the STNet for makeup removal."
+  Figure 3 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_3.jpg
+  Figure 3 caption: "(a) Illustration of AMM module. Green blocks with 136 ( 68\xD7\
+    2 ) channels indicate relative position features of the pixels, which are then\
+    \ concatenated with C -channel visual features. Thus, the attention map is computed\
+    \ for each pixel in the source image based on the similarities of relative positions\
+    \ and visual appearances. The adapted makeup matrices \u03B3 ~ y 1 and \u03B2\
+    \ ~ y 1 are produced by the AMM module, which are then multiplied and added to\
+    \ feature maps of MANet element-wisely. The orange and gray blocks indicate visual\
+    \ features with makeup and without makeup respectively. (b) Attention maps for\
+    \ a specific red point in the source image. Note that we only calculate attentive\
+    \ values for pixels that belong to the same facial region. Thus, there are no\
+    \ response values on the lip and eye of the reference image."
+  Figure 4 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_4.jpg
+  Figure 4 caption: Details of the makeup region loss.
+  Figure 5 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_5.jpg
+  Figure 5 caption: Visualization of the selected K landmarks around nose and cheeks.
+  Figure 6 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_6.jpg
+  Figure 6 caption: Qualitative comparison over frontal faces and neutral expressions.
+    PSGAN++ is able to preserve the face structure when transferring the makeup.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_7.jpg
+  Figure 7 caption: Qualitative comparison over different poses and expressions. PSGAN++
+    is able to realize makeup transfer regardless of different poses.
+  Figure 8 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_8.jpg
+  Figure 8 caption: AMM module (the 4th column) could resolve the bad result (the
+    3rd column) due to pose and expression differences between source and reference
+    images.
+  Figure 9 Link: articels_figures_by_rev_year\2021\PSGAN_Robust_DetailPreserving_Makeup_Transfer_and_Removal\figure_9.jpg
+  Figure 9 caption: The attention maps with different weights on visual features given
+    a red point on the skin in the source image (the 1st column).
+  First author gender probability: 0.72
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Si Liu
+  Name of the last author: Shuicheng Yan
+  Number of Figures: 17
+  Number of Tables: 5
+  Number of authors: 7
+  Paper title: 'PSGAN++: Robust Detail-Preserving Makeup Transfer and Removal'
+  Publication Date: 2021-05-25 00:00:00
+  Table 1 caption: TABLE 1 Comparison With Existing Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Ratio Selected as Best (%)
+  Table 3 caption: TABLE 3 Our Method is ExpressionPose Preserving by Calculating
+    the Cosine Similarity Between Landmarks
+  Table 4 caption: TABLE 4 Our Method is Identity Preserving Using ArcFace and FID
+    Metric
+  Table 5 caption: TABLE 5 The Face Verification Results on the CMF Dataset (%)
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3083484
+- Affiliation of the first author: department of control and simulation, faculty of
+    aerospace engineering, micro air vehicle laboratory (mavlab), delft university
+    of technology, hs delft, the netherlands
+  Affiliation of the last author: department of control and simulation, faculty of
+    aerospace engineering, micro air vehicle laboratory (mavlab), delft university
+    of technology, hs delft, the netherlands
+  Figure 1 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_1.jpg
+  Figure 1 caption: Schematic of the FlowNetS architecture [17]. The contracting part
+    compresses spatial information through the use of strided convolutions (c), while
+    the expanding part uses upconvolutions (u) for refinement. The predict-flow (pf)
+    layers transform feature map activations into dense flow estimates (f). The feature
+    map corresponding to the output of the c6 layer (gray dashed box) is studied in
+    Sections 4 and 5, while the flow refinement process (blue dashed box) is discussed
+    in Section 6.
+  Figure 10 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_10.jpg
+  Figure 10 caption: Convolution response of a dilation filter dw with a translating
+    plane wave s evaluated with spatiotemporal frequencies at k integer multiples
+    of the fundamental frequency. In the psi plot, a larger phase difference corresponds
+    to a darker color with black being equal to or greater than pi 2 . A red mask
+    is applied to frequency components with low power. The dashed lines indicate the
+    Gaussian pattern perceived by the spectral fitting procedure.
+  Figure 2 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_2.jpg
+  Figure 2 caption: Illustration of the half-magnitude profile in the 3D frequency
+    domain of a spatiotemporal Gabor filter. The three ranges along which the responses
+    of the Gabor half-magnitude profile are evaluated for the spectral response profile
+    fitting process are shown in color.
+  Figure 3 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_3.jpg
+  Figure 3 caption: "Location of peak response r 0 per c6 filter in the spatiotemporal\
+    \ frequency domain in response to translating plane waves. Left: Half spatial\
+    \ wavelength \u03BB 0 2 and orientation \u03B8 0 corresponding to peak response\
+    \ r 0 per filter. Right: Half spatial wavelength \u03BB 0 2 and temporal frequency\
+    \ f t 0 corresponding to peak response r 0 per filter. In both plots, the black\
+    \ dashed lines indicate the peak of the distribution in the half spatial wavelength\
+    \ dimension, which is around 200 pixels."
+  Figure 4 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_4.jpg
+  Figure 4 caption: 'Quantitative results of the spectral Gabor filter fitting process.
+    Left: Boxplot containing the total normalized cost L norm per filter (592 filters).
+    Right 3x3 plots: Row-wise, the measured responses of three different c6 filters
+    and their corresponding Gabor fits. The blue, green, and red c6 filters correspond
+    to the crosses at the median, near the 75th percentile and near the upper whisker
+    limit of the boxplot, respectively.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_5.jpg
+  Figure 5 caption: "Orientation cost L \u03B8 per filter as a function of \u03C6\
+    \ 0 ."
+  Figure 6 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_6.jpg
+  Figure 6 caption: "Qualitative results of the error patterns of the spectral Gabor\
+    \ fitting process. The spectral response profiles are shown as a function of spatial\
+    \ frequency F and orientation \u03B8 . Data shows to the measured response of\
+    \ a c6 filter, Fit is the response of the corresponding fitted Gabor filter, and\
+    \ Error shows their difference. Evaluations are with respect to f t 0 and \u03C6\
+    \ 0 . (A) c6 filter whose response profile is accurately captured by the Gabor\
+    \ model. (B) Red c6 filter from Fig. 4, which activates on opposite spatial frequencies.\
+    \ (C) c6 filter with a very weak directional bias. (D) Noisy c6 filter pattern\
+    \ (further discussed in Section 5). (E) For this c6 filter, the spectral response\
+    \ profile for three different temporal frequency f t values is visualized. Two\
+    \ different Gaussian peak responses at opposite orientation can be observed at\
+    \ f t =0.3 and f t =0.5 cycles per frame. The blue and red lines correspond to\
+    \ the axes of the 2D representation of this filter shown in Fig. 7."
+  Figure 7 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_7.jpg
+  Figure 7 caption: Spatiotemporal frequency representation of the measured filter
+    response in Fig. 6 E. The positive and negative F -axes correspond to the blue
+    and red lines in Fig. 6 E.
+  Figure 8 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_8.jpg
+  Figure 8 caption: "Bandwidth of spatial frequency F , orientation \u03B8 , and temporal\
+    \ frequency f t of the fitted Gabor filters of the 75 percent active c6 filters\
+    \ with the lowest L norm ."
+  Figure 9 Link: articels_figures_by_rev_year\2021\How_Do_Neural_Networks_Estimate_Optical_Flow_A_NeuropsychologyInspired_Study\figure_9.jpg
+  Figure 9 caption: 'Illustration of how the network is able to decrease the extent
+    of the filter response in the temporal domain. Top: Fit and measured data for
+    the median c6 filter (see Fig. 4). Middle: The response of the fitted Gabor filter
+    without the bias term and ReLU non-linearity. Bottom: Response of the fitted Gabor
+    filter when the number of frames is increased.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: David B. de Jong
+  Name of the last author: Guido C. H. E. de Croon
+  Number of Figures: 14
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: How Do Neural Networks Estimate Optical Flow? A Neuropsychology-Inspired
+    Study
+  Publication Date: 2021-05-25 00:00:00
+  Table 1 caption: TABLE 1 Result of the Gabor Spectral Response Fitting Procedure
+    for Different Convolutional Layers of the Encoder Part of FlowNetS
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3083538
+- Affiliation of the first author: "ecole normale sup\xE9rieure, inria, paris, france"
+  Affiliation of the last author: coml, enscnrsehessinriapsl research university,
+    paris, france
+  Figure 1 Link: articels_figures_by_rev_year\2021\IntPhys__A_Benchmark_for_Visual_Intuitive_Physics_Understanding\figure_1.jpg
+  Figure 1 caption: 'Popular end-to-end applications involving scene understanding
+    and proposed evaluation method based on physical plausibility judgments. Visual
+    tasks aim at recovering high level structure from low level (pixel) information:
+    for instance, recovering 3D structure from static or dynamic images (e.g., [17],
+    [18]) or tracking objects (e.g., [19], [20]). Motor tasks aim at predicting the
+    visual outcome of particular actions (e.g., [21]) or to plan an action in order
+    to reach a given outcome (e.g., [22]). Language tasks requires the artificial
+    system to translate input pixels into a verbal description, either through captioning
+    [23] or visual question answering (VQA [24]). All of these tasks involve indirectly
+    some notion of intuitive physics. Our proposed test directly measures physical
+    understanding in a task- and model-agnostic way.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\IntPhys__A_Benchmark_for_Visual_Intuitive_Physics_Understanding\figure_2.jpg
+  Figure 2 caption: Landmark of intuitive physics acquisition in infants ([6], [7],
+    [25], [27]). Each box is an experiment showing a particular ability at a given
+    age. An exhaustive review can be found in [28].
+  Figure 3 Link: articels_figures_by_rev_year\2021\IntPhys__A_Benchmark_for_Visual_Intuitive_Physics_Understanding\figure_3.jpg
+  Figure 3 caption: Illustration of the minimal sets design with object permanence.
+    Schematic description of a static condition with one versus two objects and one
+    occluder. In the two possible movies (green arrows), the number of objects remains
+    constant despite the occlusion. In the two impossible movies (red arrows), the
+    number of objects changes (goes from 1 to 2 or from 2 to 1).
+  Figure 4 Link: articels_figures_by_rev_year\2021\IntPhys__A_Benchmark_for_Visual_Intuitive_Physics_Understanding\figure_4.jpg
+  Figure 4 caption: Illustration of the dynamic 2 condition. In the two possible movies
+    (green arrows), the number of objects remains constant despite the occlusion.
+    In the two impossible movies (red arrows), the number of objects changes temporarily
+    (goes from 0 to 1 to 0 or from 1 to 0 to 1).
+  Figure 5 Link: articels_figures_by_rev_year\2021\IntPhys__A_Benchmark_for_Visual_Intuitive_Physics_Understanding\figure_5.jpg
+  Figure 5 caption: Examples of frames from the training set.
+  Figure 6 Link: articels_figures_by_rev_year\2021\IntPhys__A_Benchmark_for_Visual_Intuitive_Physics_Understanding\figure_6.jpg
+  Figure 6 caption: Results of our baselines on blocks O1 , O2 , O3 , in cases where
+    the impossible event occurs in the open (visible) or behind an occluder (occluded).
+    Y -axis represents the losses LR (see Equation (1)) for the relative performance
+    and LA (see Equation (2)) for the absolute performance.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ronan Riochet
+  Name of the last author: Emmanuel Dupoux
+  Number of Figures: 6
+  Number of Tables: 5
+  Number of authors: 7
+  Paper title: 'IntPhys 2019: A Benchmark for Visual Intuitive Physics Understanding'
+  Publication Date: 2021-05-26 00:00:00
+  Table 1 caption: TABLE 1 List of the Conceptual Blocks of the Intuitive Physics
+    Framework
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 CNN for Forward Prediction (13941315 Parameters)
+  Table 3 caption: TABLE 3 Generator G (14729347 Parameters)
+  Table 4 caption: TABLE 4 Discriminator D (7629698 Parameters)
+  Table 5 caption: TABLE 5 Average Error Rate on Plausibility Judgments Collected
+    in Humans Using MTurk for IntPhys 2019 Test Set
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3083839
+- Affiliation of the first author: department of computer science and software engineering,
+    university of western australia, crawley, wa, australia
+  Affiliation of the last author: department of computer science and software engineering,
+    university of western australia, crawley, wa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_1.jpg
+  Figure 1 caption: 'Left: (Top) A single perturbation alters the category of source
+    class samples (Ostrich) to the target label of choice (German Shepherd) while
+    inhibiting the influence of fooling on non-source classes (Jelly fish). The adversarial
+    examples are shown for ResNet-50 [13]. (Bottom) A variant of the perturbation
+    reveals that the constituting signals exploit correlation between the salient
+    visual features of the incorrect class to fool deep models. The shown perturbations
+    fool VGG-16 [14]. Right: (Top) Using an image distribution I , we iteratively
+    generate and refine a perturbation p for a classifier to extract geometric patterns
+    deemed salient for an object category by the classifier. Anchoring the perturbation
+    with different seed images d n we can allow output variety. (Bottom) Attacking
+    an adversarially robust classifier with our perturbations enables visually appealing
+    image manipulation.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_10.jpg
+  Figure 10 caption: Representative inpainting results. The masked image is used as
+    the seed. Both methods restore images using the same robust model provided by
+    Santurkar et al. [15], with the same perturbation budget. See Section A-12 of
+    the supplementary material, available online for more images. For each output
+    image, PSNRSSIMLPIPS values are also provided. For LPIPS, lower values are more
+    desirable.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_2.jpg
+  Figure 2 caption: "Visually salient geometric patterns emerge with more iteration\
+    \ of Algorithm 1a (supplementary material, available online) that are further\
+    \ refined with Algorithm 2. The refined perturbation is shown after post-refinement\
+    \ 100 iterations of the former. The Nail patterns are computed for VGG-16 with\
+    \ \u03B7=10 . We follow [1] for perturbation visualization."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_3.jpg
+  Figure 3 caption: "Representative perturbations and adversarial images for \u2113\
+    \ \u221E -bounded case ( \u03B7=15 ). A row shows perturbations for the same source\
+    \ \u2192 target fooling of the mentioned models. An adversarial example for each\
+    \ model is also shown for reference (left). Following [1], the perturbations are\
+    \ magnified 10x, shifted by 128 and clamped to 0-255 for better visualization."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_4.jpg
+  Figure 4 caption: Representative face ID switching examples for VGGFace model. Sample
+    clean target ID image is provided for reference.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_5.jpg
+  Figure 5 caption: Adding a single perturbation to a mobile camera video is able
+    to consistently fool VGG-16 with high confidence (conf.) in real-time to misclassify
+    a Coffee mug into a Ping-pong ball. Frames of a random clip are marked with their
+    number.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_6.jpg
+  Figure 6 caption: Patterns resembling salient visual features of the target class
+    emerge with perturbations allowed to achieve 100 percent fooling rate on unseen
+    data without norm restrictions. Representative perturbations for VGG-16 are shown
+    for ImageNet validation set.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_7.jpg
+  Figure 7 caption: Max-label hopping during transformations with proposed unbounded
+    adversarial perturbations. Setup of Table 3 is employed for transforming the four
+    labels.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_8.jpg
+  Figure 8 caption: Well-localized visually salient features of the target class (label
+    given) emerge by accumulating the gradient based perturbations with the explanation
+    objective. The shown perturbations are computed for VGG-16 with ImageNet samples,
+    excluding the target class samples. Perturbations for the same target are generated
+    with different seeds for variety. Further images are also provided in Section
+    A-9 of supplementary material, available online.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Attack_to_Fool_and_Explain_Deep_Networks\figure_9.jpg
+  Figure 9 caption: Image generation by attacking (adversarially) robust ResNet. The
+    generated images are adversarial examples of the shown seeds. The intended class
+    labels are mentioned on the left. We follow the setup of Santurkal et al. [15]
+    to generate images with both techniques. See Section A-11 of the supplementary
+    material, available online for further images. The confidence score of the robust
+    classifier on the generated images is also reported.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Naveed Akhtar
+  Name of the last author: Ajmal Mian
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Attack to Fool and Explain Deep Networks
+  Publication Date: 2021-05-26 00:00:00
+  Table 1 caption: "TABLE 1 Fooling Ratios (%) with \u03B7=15 \u03B7=15 for \u2113\
+    \ \u221E \u2113\u221E and 4,500 for \u2113 2 \u21132-Norm Bounded Perturbations\
+    \ for ImageNet Models"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Switching Face Identities for VGGFace Model (% Fooling):\
+    \ The Switched Identities in the Original Dataset are, F 1 1: n000234 \u2192 \u2192\
+    \ n008779, F 2 2: n000282 \u2192 \u2192 n006494, F 3 3: n000314 \u2192 \u2192\
+    \ n007087, F 4 4: n000558 \u2192 \u2192 n001800, F 5 5: n005814 \u2192 \u2192\
+    \ n006402"
+  Table 3 caption: "TABLE 3 Average \u2113 2 \u21132-Norms of the Perturbations to\
+    \ Achieve 95 percent Fooling on MobileNet-V2 [16]"
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3083769
+- Affiliation of the first author: department of computing, imperial college london,
+    london, u.k.
+  Affiliation of the last author: department of computing, imperial college london,
+    london, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_1.jpg
+  Figure 1 caption: The proposed deep fitting approach can reconstruct high quality
+    texture and geometry from a single image with precise identity recovery. The reconstructions
+    in the figure and the rest of the paper are represented by a vector of size 700
+    floating points and rendered without any special effects. We would like to highlight
+    that the depicted texture is reconstructed by our model and none of the features
+    taken directly from the image.
+  Figure 10 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_10.jpg
+  Figure 10 caption: Our method successfully preserve identity so that distribution
+    of cosine similarity of samedifferent pairs is separable by thresholding.
+  Figure 2 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_2.jpg
+  Figure 2 caption: Detailed overview of the proposed approach. A 3D face reconstruction
+    is rendered by a differentiable renderer (shown in purple). Cost functions are
+    mainly formulated by means of identity features on a pretrained face recognition
+    network (shown in gray) and they are optimized by flowing the error all the way
+    back to the latent parameters ( p s , p e , p t ,c,i , shown in green) with gradient
+    descent optimization. End-to-end differentiable architecture enables us to use
+    computationally cheap and reliable first order derivatives for optimization thus
+    making it possible to employ deep networks as a generator (i.e., statistical model)
+    or as a cost function.
+  Figure 3 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_3.jpg
+  Figure 3 caption: 'Overview of the approach with regression network. The network
+    is end-to-end connected with the differentiable renderer and the lost functions
+    of GANFit. It benefits from the activations of all layers of a pretrained face
+    recognition network and detection of a hourglass landmark detector. The network
+    is trained similar to GANFit optimization: 1) alignment 2) full objective. The
+    only difference is that now the regression network is being optimized instead
+    of the trainable latent parameters of GANFit.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_4.jpg
+  Figure 4 caption: An example of the proposed improvements to stabilize GANFit reconstruction.
+    (a) the input image. (b) estimated reconstruction by FastGANFit. (c) fitting after
+    initialization by FastGANFit (referred as GANFit++). (d-i) randomly resulting
+    reconstructions given random initial textures (referred as GANFit).
+  Figure 5 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_5.jpg
+  Figure 5 caption: Example fits of our approach for the images from various datasets.
+    Please note that our fitting approach is robust to occlusion (e.g., glasses),
+    low resolution and black-white in the photos and generalizes well with ethnicity,
+    gender and age. The reconstructed textures are very well at capturing high frequency
+    details of the identities; likewise, the reconstructed geometries from 3DMM are
+    surprisingly good at identity preservation thanks to the identity features used,
+    e.g., crooked nose at bottom-left, dull eyes at bottom-right and chin dimple at
+    top-left.
+  Figure 6 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_6.jpg
+  Figure 6 caption: Comparison of our qualitative results with other state-of-the-art
+    methods in MoFA-Test dataset. Rows 2-4 show comparison of textured geometry with
+    original expression, rows 5-8 show comparison of textured geometry with neutral
+    expression and rows 9-11 compare only shapes.
+  Figure 7 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_7.jpg
+  Figure 7 caption: Qualitative comparison between GANFit, FastGANFit, GANFit++ (as
+    mentioned in Section 5.2.4) and their variants with variational auto-encoder (VAE)
+    and principal component analysis (PCA) (as mentioned in Section 5.4.2) for texture
+    model. Convergence plots show the cost function over the iterations of GANFit
+    (gray, 10 random initialization), GANFit++ (blue, 3 random initialization), and
+    initialization by FastGANFit (red).
+  Figure 8 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_8.jpg
+  Figure 8 caption: Qualitative comparison with [46], [61] by overlaying the reconstructions
+    on the input images. Our method can generate high fidelity texture with accurate
+    shape, camera and illumination fitting.
+  Figure 9 Link: articels_figures_by_rev_year\2021\FastGANFIT_Generative_Adversarial_Network_for_High_Fidelity_D_Face_Reconstructio\figure_9.jpg
+  Figure 9 caption: Cosine similarity distributions of rendered and real images LFW
+    based on activations at the embedding layer of VGG-face network[34]. Our method
+    achieves more than 0.5 similarity on average which [20] has 0.35 average similarity
+    and [54] 0.16 average similarity.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Baris Gecer
+  Name of the last author: Stefanos Zafeiriou
+  Number of Figures: 14
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: 'Fast-GANFIT: Generative Adversarial Network for High Fidelity 3D Face
+    Reconstruction'
+  Publication Date: 2021-05-27 00:00:00
+  Table 1 caption: TABLE 1 Benchmark Results on the MICC Florence 3D Faces Dataset
+    (MICC) for Shape Estimation Using Point-to-Plane Distance and Identity (Cosine)
+    Similarity Between the Original Frames and the Rendered Reconstruction
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Evaluation of Various Texture Models in the UV Space by\
+    \ Fr\xE9chet Inception Distance (FID) Scores"
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3084524
+- Affiliation of the first author: liesmars, wuhan university, wuhan, china
+  Affiliation of the last author: school of computer science, wuhan university, wuhan,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Unmixing_Convolutional_Features_for_Crisp_Edge_Detection\figure_1.jpg
+  Figure 1 caption: Qualitative comparison between the prior arts of deep edge detection
+    (HED [8] and RCF [9]) and our proposed CATS. The top row displays an example image
+    and its edge annotations from the BSDS500 dataset [21]. The final edge predictions
+    and the multi-level side edge maps estimated by different edge detection approaches
+    are listed in rows. In the bottom line, we leverage our proposed CATS on RCF [9]
+    to obtain the most precisely-located side edge maps and final edge prediction.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Unmixing_Convolutional_Features_for_Crisp_Edge_Detection\figure_2.jpg
+  Figure 2 caption: An illustration of confusing pixels. The left image displays edges
+    predicted by RCF [9] and the right image is the enlarged rectangle region (red
+    box) in the left image. Pixels in different colors in the right image indicate
+    the ground truth edge pixels (purple), the confusing pixels of edges (blue), and
+    the dark shadows in texture regions (light green).
+  Figure 3 Link: articels_figures_by_rev_year\2021\Unmixing_Convolutional_Features_for_Crisp_Edge_Detection\figure_3.jpg
+  Figure 3 caption: The mechanism of the CoFusion block.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Unmixing_Convolutional_Features_for_Crisp_Edge_Detection\figure_4.jpg
+  Figure 4 caption: Qualitative comparison between the prior arts of deep edge detection
+    and our proposed CATS on the BSDS500 dataset [21].
+  Figure 5 Link: articels_figures_by_rev_year\2021\Unmixing_Convolutional_Features_for_Crisp_Edge_Detection\figure_5.jpg
+  Figure 5 caption: The precision-recall curves of the CATS-based and the compared
+    original models on BSDS500 and NYUDv2 datasets. (a) and (c) depict the results
+    under the standard evaluation, while (b) and (d) are the results of the crispness-emphasized
+    evaluation.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Unmixing_Convolutional_Features_for_Crisp_Edge_Detection\figure_6.jpg
+  Figure 6 caption: Qualitative comparison between the prior arts of deep edge detection
+    and our proposed CATS on the NYUDv2 dataset [27].
+  Figure 7 Link: articels_figures_by_rev_year\2021\Unmixing_Convolutional_Features_for_Crisp_Edge_Detection\figure_7.jpg
+  Figure 7 caption: The weight maps generated by the CoFusion block in CATS-RCF for
+    multi-level side edges on the NYUDv2 dataset [27]. The results show the different
+    attention preference of multi-level side edges for non-edge region smoothing and
+    edge details.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.97
+  Name of the first author: Linxi Huan
+  Name of the last author: Gui-Song Xia
+  Number of Figures: 7
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: Unmixing Convolutional Features for Crisp Edge Detection
+  Publication Date: 2021-05-27 00:00:00
+  Table 1 caption: TABLE 1 Parameter Setting of the Tracing Loss in Experiments
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Analysis on the BSDS500 Dataset
+  Table 3 caption: TABLE 3 Quantitative Analysis on the NYUDv2 Dataset
+  Table 4 caption: TABLE 4 Evaluation Results on Multicue Dataset
+  Table 5 caption: TABLE 5 The Numerical Results for Ablation Study
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3084197
+- Affiliation of the first author: school of computer science and engineering, sun
+    yat-sen university, guangzhou, china
+  Affiliation of the last author: institute of automation, chinese academy of sciences,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Deep_Graph_Metric_Learning_for_Weakly_Supervised_Person_ReIdentification\figure_1.jpg
+  Figure 1 caption: 'The weakly supervised person re-id in this work is to find the
+    raw video clips where a given target person appears: each target person has a
+    captured image sequence in the training probe set, while the training gallery
+    set is composed of raw video clips with multiple weak video-level labels and the
+    instance-level label and the ground-truth location for each person instance (i.e.,
+    the ground-truth bounding boxes of person instances) is absent from the labeling
+    process. The bounding boxes shown in the training gallery set are used for illustration.
+    The ground-truth information (regarding the frame and the location in the frame
+    for each person) is not provided during the training process. (Best viewed in
+    color).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Deep_Graph_Metric_Learning_for_Weakly_Supervised_Person_ReIdentification\figure_2.jpg
+  Figure 2 caption: The construction of the spatial and temporal graph. Each F t indicates
+    a frame at time step t . For each frame F t , the spatial graph is constructed
+    first according to the neighborhood relationship among person instances (i.e.,
+    the detected person bounding boxes) inside a frame; then, for each person, a temporal
+    graph is constructed along the temporal dimension. (Best viewed in color).
+  Figure 3 Link: articels_figures_by_rev_year\2021\Deep_Graph_Metric_Learning_for_Weakly_Supervised_Person_ReIdentification\figure_3.jpg
+  Figure 3 caption: The overall architecture of deep graph metric learning (DGML)
+    for weakly supervised re-id. First, the the spatial graphs SG t and temporal graphs
+    TG c are constructed from the raw video in the training gallery set, and meanwhile
+    the temporal graphs TG y j for the image sequence in the training probe set are
+    also constructed. Then, we forward these graphs to the graph metric function f
+    g and obtained the learned spatial and temporal graph node features. After that,
+    the class distribution vector is obtained by feeding forward these learned graph
+    features to the weak classifier W . Finally, the deep graph metric learning (DGML)
+    is performed on the learned node features and the class distribution vector to
+    acquire discriminative features along with the intra-video spatial graph constraint
+    and the inter-video spatial graph constraint. In addition, weakly supervised regularization
+    (WSR) is proposed to process the learned spatial graph and temporal graphs by
+    utilizing the multiple weak video-level labels to learn discriminative features
+    by means of a weak identity loss and a cross-video alignment loss. (Best viewed
+    in color).
+  Figure 4 Link: articels_figures_by_rev_year\2021\Deep_Graph_Metric_Learning_for_Weakly_Supervised_Person_ReIdentification\figure_4.jpg
+  Figure 4 caption: The distribution of the numbers of annotated multiple weak video-level
+    labels for the raw video clips in the training gallery set on the WL-DukeMTMC-REID
+    and WL-MARS datasets. (Best viewed in color).
+  Figure 5 Link: articels_figures_by_rev_year\2021\Deep_Graph_Metric_Learning_for_Weakly_Supervised_Person_ReIdentification\figure_5.jpg
+  Figure 5 caption: Illustration of the bag-to-bag weakly supervised setting. The
+    training set (no matter the training probe or training gallery sets) is composed
+    only of raw video clips with multiple weak video-level labels. (Best viewed in
+    color). (see Section 4.9).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Deep_Graph_Metric_Learning_for_Weakly_Supervised_Person_ReIdentification\figure_6.jpg
+  Figure 6 caption: The spatial-temporal pattern on DukeMTMC-VideoReID dataset. We
+    present six spatial-temporal pattern maps which show the move of people from camera
+    1 to other six cameras. And the ordinate is the same-identity probability of sequence
+    pairs in the corresponding time interval. All of six maps have corresponding peak
+    values which indicate that it exists a specific walking pattern between a camera
+    pair. (Best viewed in color).
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Jingke Meng
+  Name of the last author: Liang Wang
+  Number of Figures: 6
+  Number of Tables: 19
+  Number of authors: 4
+  Paper title: Deep Graph Metric Learning for Weakly Supervised Person Re-Identification
+  Publication Date: 2021-05-28 00:00:00
+  Table 1 caption: TABLE 1 Notations and Descriptions for Section 3
+  Table 10 caption: TABLE 10 The Impact of the Training Sample Size on the Model Performance
+    of the WL-DukeMTMC-REID and WL-MARS Datasets ( % %)
+  Table 2 caption: TABLE 2 Detailed Information of the One Real and Three Simulated
+    Datasets for the Weakly Supervised Person Re-Id
+  Table 3 caption: TABLE 3 A Comparison With Related Unsupervised and One-Shot Re-Id
+    Methods
+  Table 4 caption: TABLE 4 Comparison ( % %) to the State-of-the-Art MIML Methods
+  Table 5 caption: TABLE 5 Comparison ( % %) to the State-of-the-Art MTMCT Method
+  Table 6 caption: TABLE 6 Comparison ( % %) to the State-of-the-Art Person Search
+    Method
+  Table 7 caption: TABLE 7 Ablation Study of the Proposed Deep Graph Metric Learning
+    (DGML) Method
+  Table 8 caption: TABLE 8 Comparison ( % %) of the Aggregate Function in Our Proposed
+    Deep Graph Metric Learning (DGML) Method on the WL-DukeMTMC-REID and WL-MARS Datasets
+  Table 9 caption: TABLE 9 The Influence of the Length of the Raw Video on the Model
+    Performance
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3084613
+- Affiliation of the first author: department of electrical engineering, information
+    systems laboratory (isl), stanford university, stanford, ca, usa
+  Affiliation of the last author: department of electrical engineering, information
+    systems laboratory (isl), stanford university, stanford, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_1.jpg
+  Figure 1 caption: "Transform quantization of CNN layers. Given weight matrices \u0398\
+    \ 1 , \u0398 2 ,\u2026, \u0398 L of an L -layer CNN, we represent each one as\
+    \ \u0398 l = S l T l (a) and quantize both the kernel matrix T l and the basis\
+    \ S l optimally (b). In (b), the bar lengths illustrate the bit-depths needed\
+    \ to quantize \u0398 l directly (gray bars), or S l T l in the transform domain\
+    \ (blue and orange bars) for the same performance. Elements corresponding to zero\
+    \ bit-depth assignments ( R k =0 ) are indicated as white blocks in (a)."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_10.jpg
+  Figure 10 caption: Average PSNR and SSIM of denoised set12 images for noise variances
+    15, 25, 35, 55, 75, and 95, produced by transform-quantized DRUNet [62] at different
+    bit-rates. Denoising performance of DRUNet starts to drop below 2 bits per weight.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_2.jpg
+  Figure 2 caption: "Coding gains due to the KLT and the ELT applied onto the rows\
+    \ of weight matrices \u0398 l . Convolution and fully-connected layers of ResNet-18\
+    \ exhibit KLT coding gains of 1\u20137 dB and ELT ones of 1\u201312 dB (left plots),\
+    \ where the blue and the orange bars indicate the gain components due to the decorrelation\
+    \ of weights and gradients, respectively. A coding gain of G produces a rate-saving\
+    \ of 1 2 log 2 G . The per-matrix coding gains can be broken down further into\
+    \ per-column coding-gains shown in the right sub-plots for layers 3 of ResNet-18\
+    \ (right)."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_3.jpg
+  Figure 3 caption: "Rate\u2013distortion optimal layer bit-depth assignment. For\
+    \ a given rate\u2013distortion trade-off \u03BB , we sweep the bit-depth\u2013\
+    distortion curve of each layer (blue and orange lines) to find the bit-depth values\
+    \ R l where the slope is equal to \u2212\u03BB (black dots)."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_4.jpg
+  Figure 4 caption: "The KLT and the ELT. Elements \u03B8 1 and \u03B8 2 of columns\
+    \ \u03B8 of weight matrix \u0398\u2208 R 2\xD7512 , shown as dots in (a), are\
+    \ correlated with an underlying Gaussian distribution depicted by the level sets.\
+    \ Elements \u03B3 1 and \u03B3 2 of \u03B3=(\u2202y\u2202\u03B8) (not shown) are\
+    \ correlated with covariance matrix C \u03B3\u03B3 . The KLT U t of \u03B8 is\
+    \ an orthogonal projection t= U t \u03B8 of \u03B8 onto u 1 and u 2 , and induces\
+    \ quantization cells that are square in the domain of \u03B8 (b) but parallelograms\
+    \ in the domain of \u03B6= C 12 \u03B3\u03B3 \u03B8 (c). On the other hand, the\
+    \ ELT U t is a biorthogonal projection of \u03B8 onto \u03C5 1 and \u03C5 2 ,\
+    \ and induces cells that are parallelograms in the domain of \u03B8 (d) but square\
+    \ in the domain of \u03B6 (e), minimizing distortion in the output domain."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_5.jpg
+  Figure 5 caption: "Log10 output distortion (left plots) and top-1 accuracy (right\
+    \ plots) of Resnet-18 and 50 quantized with row (solid curves) and column (dotted\
+    \ curves) variants of the KLT (blue curves) and the ELT (orange curves). All transforms\
+    \ have better rate\u2013accuracy trade-offs than no transform (gray curves), providing\
+    \ a rate saving of 1 bit across all rates. Bit-rates of the KLT and the ELT include\
+    \ bits spent on the transform matrices."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_6.jpg
+  Figure 6 caption: ResNet-18 transform overheads as percentages of the number of
+    elements in boldsymbolTheta l . Row (left) and column (right) transform overheads
+    shown. Layers 7, 12, 17, and 20 are fully connected.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_7.jpg
+  Figure 7 caption: Percentages of non-zero rows of transformed weight matrices mathbf
+    Tl at bit-rates R=1.1 and 2.1 bits for ResNet-34 (left), and R=1.1 and 3.1 bits
+    for ResNet-50 (right). Percentages of non-zero rows at lower and higher bit-rates
+    visualized as blue and blue + orange bars, respectively. See Fig. 9 for retrained
+    and non-retrained classification accuracies at these bit-rates.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_8.jpg
+  Figure 8 caption: "Weight and output distortions against quantization step-size\
+    \ Delta at bit-depths of R = 2 and 4 (left, shown for the first row-KLT element\
+    \ of layer 9 in ResNet-18). The step-size that minimizes the weight distortion\
+    \ Dmathrmsrc (orange lines) does not necessarily minimize the output distortion\
+    \ Dmathrmout and incurs a 1\u20132-bit-rate loss compared with using the optimal\
+    \ quantization step-size for the output (right, shown for layers 9 and 18 of ResNet-18)."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Transform_Quantization_for_CNN_Compression\figure_9.jpg
+  Figure 9 caption: "Rate\u2013accuracy curves of transform-quantized AlexNet and\
+    \ ResNets on the ImageNet validation set, with retraining (blue lines), and without\
+    \ retraining (orange lines). Unquantized baselines shown as gray lines. All CNNs\
+    \ retrained on the training set for 3 epochs maximum. Shown for the row-KLT case.\
+    \ Retrained row-ELT results are similar (no distinction exists between the KLT\
+    \ and the ELT after retraining)."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sean I. Young
+  Name of the last author: Bernd Girod
+  Number of Figures: 13
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Transform Quantization for CNN Compression
+  Publication Date: 2021-05-28 00:00:00
+  Table 1 caption: TABLE 1 Quantization Times of Different CNNs on Intel Xeon 6132
+    2.60GHz + Nvidia Quadro RTX 8000
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Classification Accuracies of CNN Models Compressed Using
+    Transform Quantization and Other Methods
+  Table 3 caption: TABLE 3 Acceleration of ResNet-50 Due to Zero-Quantization (Row-ELT)
+    or Pruning (Others) of Convolution Kernels
+  Table 4 caption: TABLE 4 Acceleration of Transform-Quantized (Row-KLT) MobileNet-v2
+    on Google TPU and MIT Eyeriss
+  Table 5 caption: "TABLE 5 PSNR (dB) of 2\u20134x Upsampled Images Using Transform-Quantized\
+    \ EDSR (row-KLT wo Retraining)"
+  Table 6 caption: TABLE 6 Intra-Kernel Transform Coding Gains (dB) for AlexNet
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3084839
+- Affiliation of the first author: singapore management university, singapore, singapore
+  Affiliation of the last author: osaka university, osaka, japan
+  Figure 1 Link: articels_figures_by_rev_year\2021\Shell_Theory_A_Statistical_Model_of_Reality\figure_1.jpg
+  Figure 1 caption: "Visualizing a hierarchical generative process. Generators are\
+    \ denoted A \u03B8 n i . Squared distance of A \u03B8 3 3 to every other data-point\
+    \ is almost-surely two times the average variance of their most recent common\
+    \ ancestral generator. From Corollary 1, v A > v \u03B8 1 1 > v \u03B8 2 2 > v\
+    \ \u03B8 3 3 . Thus, more closely related data-points are also geometrically closer\
+    \ to each other."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Shell_Theory_A_Statistical_Model_of_Reality\figure_2.jpg
+  Figure 2 caption: 'Two dimensional projections of high dimensional distinctive-shells.
+    Parent shells are in bold, while child shells are dotted. Each projection preserves
+    a different attribute. Radius invariant projection: The distinctive-shell of each
+    child generator has a smaller radius than its parent. Volume invariant projection:
+    High dimensions cause small changes of radius to induce huge changes of volume.
+    Thus, the distinctive-shells of child generators occupy an infinitesimally small
+    percentage of their parents distinctive-shell. As a result, independently generated
+    instances of a parent will almost-never enter a childs distinctive-shell. Projection
+    with invariant distance to center: For illustrative purposes, the previous two
+    projections have taken liberties with the location of the child distinctive-shells.
+    In reality, child distinctive-shells lie on their parents distinctive-shell. This
+    allows a parent distinctive-shell to serve as an identifier for almost-all instances
+    of its child generators.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Shell_Theory_A_Statistical_Model_of_Reality\figure_3.jpg
+  Figure 3 caption: 'Histogram of distances from inlier class mean; inliers are denoted
+    with orange and anomalies with blue. Left: Interpreting the histogram as distance
+    from distinctive-shell re-centers it. Inlier distances can be modeled as a zero
+    mean, Gaussian perturbation of the shell. Anomalies can be identified as data
+    points that cannot be explained with the Gaussian. Right: Iteratively re-normalizing
+    the data based on hypothesized anomalies widens the gap between inliers and anomalies,
+    enabling finer anomaly detection results.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Shell_Theory_A_Statistical_Model_of_Reality\figure_4.jpg
+  Figure 4 caption: ROC scores for anomaly detection algorithms. Shell fitting provides
+    significant improvement over classic one-class SVM. Assira is a two class data-set,
+    in which the problem of anomaly detection is no longer well defined when anomalies
+    exceed 20 percent. This is elaborated in Section 8.1.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Shell_Theory_A_Statistical_Model_of_Reality\figure_5.jpg
+  Figure 5 caption: Anomaly based ranking of airplane images crawled from the internet
+    based; anomaly scores decrease from left to right, top to bottom. Shell based
+    anomaly detection provides rankings which are noticeably more consistent than
+    that of one-class SVM.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Shell_Theory_A_Statistical_Model_of_Reality\figure_6.jpg
+  Figure 6 caption: Log histogram of pairwise distances between unit-vectored ResNet
+    features descriptions [34] of STL-10 images [38]. The distances seem to abide
+    by our predicted statistical maximum, which is much lower than the geometric maximum.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Wen-Yan Lin
+  Name of the last author: Yasuyuki Matsushita
+  Number of Figures: 6
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: 'Shell Theory: A Statistical Model of Reality'
+  Publication Date: 2021-05-28 00:00:00
+  Table 1 caption: TABLE 1 AUROC Scores of One-Class Learners
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 AUROC Scores of One-Class Learners Using Different Features
+  Table 3 caption: 'TABLE 3 Top: Training and Test Time of One-Class Learning Algorithms'
+  Table 4 caption: TABLE 4 Mean Accuracy and Mean Average Precision on Multi-Class
+    Classification Problems
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3084598

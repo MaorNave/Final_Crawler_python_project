@@ -1,0 +1,825 @@
+- Affiliation of the first author: "instituto de sistemas e rob\xF3tica, instituto\
+    \ superior t\xE9cnico, lisbon, portugal"
+  Affiliation of the last author: "instituto de sistemas e rob\xF3tica, instituto\
+    \ superior t\xE9cnico, lisbon, portugal"
+  Figure 1 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_1.jpg
+  Figure 1 caption: Short axis LV volume model representation from the base (basal
+    slice) to the apex (apical slice).
+  Figure 10 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_10.jpg
+  Figure 10 caption: Dice coefficient over the cardiac anatomy area for I. Sunnybrook
+    dataset and II. ACDC Validation Set, showing the clear performance degradation
+    of FCN-8s as the area decreases.
+  Figure 2 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_2.jpg
+  Figure 2 caption: Overview of the CyCoSeg proposal.
+  Figure 3 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_3.jpg
+  Figure 3 caption: Automatic ROI detection block. The red arrows represent the input
+    and output used for training purposes only, whereas in the testing phase, only
+    the input image is used (green arrows).
+  Figure 4 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_4.jpg
+  Figure 4 caption: Examples of ring-shaped probability maps R SSN obtained from the
+    SSN probability map M SSN , and corresponding GT mask.
+  Figure 5 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_5.jpg
+  Figure 5 caption: D-ASM keypoint detector architecture. The numbers represent the
+    features channel dimensions. The input is a image patch extracted from the image,
+    centered at each landmark x (t) i (red). From the patch a set Y i of J i keypoints
+    (green) is detected (in the example J i =6 ).
+  Figure 6 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_6.jpg
+  Figure 6 caption: I. Learning curves of FCN-8s on ACDC dataset. II. Evolution of
+    CyCoSeg performance over FCN-8s learning process for the Validation Set.
+  Figure 7 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_7.jpg
+  Figure 7 caption: "Effect in CyCoSeg of the collaboration parameters: I. Parameter\
+    \ \u03B1 from (6) and II. Parameter \u03B3 from (7). Both values were simultaneously\
+    \ optimized through a grid search, in the range of [0:1[. The optimal values are\
+    \ \u03B3=0.4 and \u03B1=0.05 . Results for ACDC Validation Set."
+  Figure 8 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_8.jpg
+  Figure 8 caption: "Robustness to error propagation within CyCoSeg. I. Effect of\
+    \ imposing a perturbation on the D-ASM proposal, M D\u2212ASM , within CyCoSeg.\
+    \ The boxplots show the propagation of the error to the other model, SSN without\
+    \ the final combination in (7) - CyCoSeg (FCN-8s) - and the overall performance\
+    \ - CyCoSeg. II. Effect of imposing a perturbation on the SSN proposal R SSN ,\
+    \ within CyCoSeg. The boxplots show the propagation of the error to the other\
+    \ model D-ASM without the final combination in (7) - CyCoSeg (D-ASM) - and the\
+    \ overall performance - CyCoSeg. Examples of the resulting mask perturbations\
+    \ are also represented. All the experiments are compared when no perturbation\
+    \ is imposed (Normal) and for ACDC Validation Set."
+  Figure 9 Link: articels_figures_by_rev_year\2021\CyCoSeg_A_Cyclic_Collaborative_Framework_for_Automated_Medical_Image_Segmentatio\figure_9.jpg
+  Figure 9 caption: 'Performance evolution as the CyCoSeg models collaborate in comparison
+    with the corresponding baseline approaches: D-ASM, FCN-8s and ensemble. Ablation
+    study for ACDC Validation Set.'
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Daniela O. Medley
+  Name of the last author: Jacinto C. Nascimento
+  Number of Figures: 14
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: 'CyCoSeg: A Cyclic Collaborative Framework for Automated Medical Image
+    Segmentation'
+  Publication Date: 2021-09-16 00:00:00
+  Table 1 caption: TABLE 1 Summary of Classical Segmentation Approaches for LV Segmentation
+    in Short Axis CMR Images
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 SSN Optimization Algorithm Configurations
+  Table 3 caption: TABLE 3 Comparison of Proposed ROI Detector and Viola Jones Cascade
+    Detector [74] Using the Average and Maximum Distance Metrics
+  Table 4 caption: TABLE 4 CyCoSeg Shape Model Experiments Using FCN-8s Optimized
+    With SGD for the SSN Model
+  Table 5 caption: TABLE 5 Performance of Baseline Models, Ensemble, Deep Mutual Learning
+    (DML), and CyCoSeg for Both ACDC Validation Set and Sunnybrook
+  Table 6 caption: TABLE 6 Inference Time Analysis Comparison Between the Different
+    Baseline Architectures, a Conventional Ensemble Between FCN-8s and D-ASM, and
+    CyCoSeg Using FCN-8s or FCN-Resnet101 as SSN
+  Table 7 caption: TABLE 7 Comparison With State of the Art on ACDC Test Set, Using
+    FCN-Resnet101 as the SSN Model in CyCoSeg
+  Table 8 caption: TABLE 8 Comparison With State of the Art on Sunnybrook Dataset,
+    Using FCN-Resnet101 as the SSN Model in CyCoSeg
+  Table 9 caption: TABLE 9 Performance of the Baseline Models, D-ASM and FCN-Resnet101,
+    and CyCoSeg for the Segmentation of Lungs and Kidneys on CT Scans Datasets, Testifying
+    for the Ability of CyCoSeg to Generalize to Other Anatomical Structures
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3113077
+- Affiliation of the first author: department of computational and data sciences,
+    indian institute of science, bangalore, karnataka, india
+  Affiliation of the last author: department of computational and data sciences, indian
+    institute of science, bangalore, karnataka, india
+  Figure 1 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_1.jpg
+  Figure 1 caption: Class similarity matrix computed for the Teacher model trained
+    over CIFAR-10 dataset. Note that the class labels are mentioned and the learned
+    similarities are meaningful.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_2.jpg
+  Figure 2 caption: Visualizing the DIs synthesized from the Teacher model trained
+    on the CIFAR-10 dataset for different choices of output softmax vectors (i.e.,
+    output class probabilities). Note that the figure shows 2 DIs per class in each
+    column, each having a different spread over the labels. However, only the top-2
+    confidences in the sampled softmax corresponding to each DI are mentioned on top
+    for clarity.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_3.jpg
+  Figure 3 caption: Performance (Test Accuracy) comparison of Data samples versus
+    Data Impressions (without augmentation). Note that the x -axis denotes the number
+    of DIs or original training samples (in % ) used for performing Knowledge Distillation
+    with respect to the size of the training data.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_4.jpg
+  Figure 4 caption: Performance (Test Accuracy) comparison of the ZSKD with Class
+    Impressions [5] and proposed Data Impressions (without augmentation). Note that
+    the x -axis denotes the number of DIs or CIs (in %) used for performing Knowledge
+    Distillation with respect to the training data size.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_5.jpg
+  Figure 5 caption: Proposed approach for source free unsupervised domain adaptation
+    using data impressions.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_6.jpg
+  Figure 6 caption: "TSNE Plots to visualize the source free domain adaptation of\
+    \ USPS \u2192 MNIST through our proposed approach via Data Impressions."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_7.jpg
+  Figure 7 caption: Proposed approach for continual learning using data impressions
+    in the absence of old class data.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_8.jpg
+  Figure 8 caption: Performance comparison of incremental learning experiments on
+    CIFAR-100 dataset with a step size of 20 classes.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Mining_Data_Impressions_From_Deep_Models_as_Substitute_for_the_Unavailable_Train\figure_9.jpg
+  Figure 9 caption: Visualization of the UAPs crafted from CIFAR-10 data impressions.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Gaurav Kumar Nayak
+  Name of the last author: Anirban Chakraborty
+  Number of Figures: 9
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: Mining Data Impressions From Deep Models as Substitute for the Unavailable
+    Training Data
+  Publication Date: 2021-09-16 00:00:00
+  Table 1 caption: TABLE 1 Performance of the Proposed ZSKD Framework on the MNIST
+    Dataset
+  Table 10 caption: TABLE 10 Comparison of Fooling Rates (in %) of UAPs Crafted From
+    Class Impressions and Data Impressions
+  Table 2 caption: TABLE 2 Performance of the Proposed ZSKD Framework on the Fashion
+    MNIST Dataset
+  Table 3 caption: TABLE 3 Performance of the Proposed ZSKD Framework on the CIFAR-10
+    Dataset
+  Table 4 caption: TABLE 4 Performance Measures to Evaluate the Robustness Transfered
+    Under Distillation Using Data Impressions for Different Datasets
+  Table 5 caption: TABLE 5 ZSKD Performance Using Data Impressions From VGG Teacher
+    Architecture on CIFAR-10
+  Table 6 caption: TABLE 6 ZSKD Performance Using Data Impressions From Resnet-18
+    Teacher Architecture for CIFAR-10
+  Table 7 caption: TABLE 7 Comparison With Source Dependent Domain Adaptation Works
+  Table 8 caption: TABLE 8 Comparison With SDDA
+  Table 9 caption: TABLE 9 Comparison With SHOT
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3112816
+- Affiliation of the first author: heidelberg collaboratory for image processing and
+    interdisciplinary center for scientific computing, heidelberg university, heidelberg,
+    germany
+  Affiliation of the last author: heidelberg collaboratory for image processing and
+    interdisciplinary center for scientific computing, heidelberg university, heidelberg,
+    germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_1.jpg
+  Figure 1 caption: The pipeline of the proposed approach. We simultaneously split
+    the training data and the embedding space at every division step t . At every
+    t number of sub-problems, which are optimized jointly, increases. C (t) k denotes
+    the cluster of images belonging to sub-problem k and f (t) k is the subspace of
+    the embedding space assigned to it. All network parameters are shared across all
+    steps t .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_2.jpg
+  Figure 2 caption: 'Comparison of the retrieval results on CARS for our approach
+    with 4 subspaces and the baseline approach (no division in subspaces). First 4
+    rows show retrieved nearest neighbors using different subspaces. The 5th row:
+    The results for the sum of all subspaces. Green border: True positive, red border:
+    False positive. The queries and retrieved images are taken from the test set.
+    Subspace 3 makes similar mistakes as the baseline model, but our subspaces are
+    able to correct each other which yields more accurate results when all subspaces
+    are combined together.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_3.jpg
+  Figure 3 caption: 'Visualization of the images sharing the same GT class label but
+    splitted across several clusters by the proposed division procedure ( K max =4)
+    for a model trained on CUB. Different border colors correspond to different clusters.
+    We can see that the clustering splits the classes according to different visual
+    modes. For example, for class 44 (frigatebird): Female and juvenile frigatebirds
+    have white chests while adult males are entirely black save for the the bright
+    red throat pouch, which is also captured by our clustering.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_4.jpg
+  Figure 4 caption: (a) Recall1 and (b) loss for the baseline ( K max =1 ) and our
+    proposed approach ( K max =32 ) during training on the SOP with margin loss [24].
+    (c) For our approach we show NMI between the produced clusters and the GT classes
+    in red, and NMI between clusters at the current and the previous division steps
+    in blue.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_5.jpg
+  Figure 5 caption: '(a) Effective manifold dimensionality (ED) of the SOP training
+    data in: (i) the embedding space of the baseline with margin loss and d=512 ,
+    (ii) the final embedding space of our model. Our model uses the embedding space
+    more effectively and is able to learn lower dimensional embedding manifold compared
+    to the baseline. The ED decreases even more if we consider the individual clusters
+    only after projecting them into their respective embedding subspaces (see (iii)
+    for mean dimensionality over 32 clusters). (b) Distribution of the sizes of clusters
+    obtained by our division approach during training on SOP. Error bars show mean
+    and standard deviation of the sizes computed over different epochs when the clusters
+    are updated.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_6.jpg
+  Figure 6 caption: Recall1 score for our approach and the baseline margin loss method
+    [24] trained using different embedding sizes d on SOP dataset. In contrast to
+    the baseline method, our approach enables more efficient utilization of larger
+    embeddings and does not overfit even for a very large embedding size.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_7.jpg
+  Figure 7 caption: We visualize Train Recall1 versus Test Recall1 on SOP dataset
+    for every training epoch. The plot shows that the proposed model ( K max =32 )
+    better generalizes on previously unseen test classes and displays less overfitting
+    to train classes compared to the baseline ( K max =1 ). We omitted the first 2
+    epochs for compactness of the figure.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_8.jpg
+  Figure 8 caption: (a) and (b) Inter- and intra-class variance for our models with
+    different number of sub-problems K max trained with margin loss [24] on SOP dataset.
+    K max =1 is the baseline. (c) Expected ratio between the distance to the nearest
+    example from the same class and the distance to the nearest example from a different
+    class. The lower this ratio, the more likely that the nearest neighbor has the
+    same class label. Intra-class variance grows with K max because it becomes more
+    likely for a class to be splitted into different modes by our division step. Hence,
+    with higher K max , classes become less compact, with more overlap in their periphery,
+    because our method does not enforce all positives to contract together.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Improving_Deep_Metric_Learning_by_Divide_and_Conquer\figure_9.jpg
+  Figure 9 caption: Low-dimensional projection of the embedding vectors produced by
+    UMAP [102] for models trained on the SOP dataset with margin loss. We compare
+    baseline ( K max =1 ) to our models with K max =4 and K max =32 . (1st row) we
+    visualize embedding for training data, where color encodes class label (11318
+    classes); (2nd row) embedding for train (in blue) and test data (in red) together.
+    The embeddings produced by our model with 32 clusters have fewer high-density
+    hubs and are more uniformly distributed in the space while still maintaining the
+    superior retrieval performance. We computed expected average distance between
+    sample and its ten nearest neighbors in the embedding space ( E D 10 ) for the
+    baseline model on train (0.918) and on test (0.953). E D 10 increases for our
+    model with K max =32 to 1.044 and 1.069 correspondingly. While the E D 10 is becoming
+    closer to a uniform distribution on the unit sphere (1.290), the distance to nearest
+    positive decreases relative to the distance to nearest negative. This provides
+    an extra evidence that our model utilizes the embedding space in its entirety
+    more effectively. Zoom-in for details.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Artsiom Sanakoyeu
+  Name of the last author: "Bj\xF6rn Ommer"
+  Number of Figures: 9
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: Improving Deep Metric Learning by Divide and Conquer
+  Publication Date: 2021-09-16 00:00:00
+  Table 1 caption: TABLE 1 Evaluation of Different Data Division Strategies on Stanford
+    Online Products [29] ( K max =32 Kmax=32), CUB200-2011 [27], and CARS196 [28]
+    ( K max =4 Kmax=4)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Evaluation of Different Subspace Learning Methods on Stanford
+    Online Products, CUB200-2011, CARS196, and In-Shop Clothes
+  Table 3 caption: TABLE 3 Evaluation of the Models Trained With Different Division
+    Frequency on SOP Dataset (Fixed Masks)
+  Table 4 caption: TABLE 4 Evaluation of the Models Trained With Different Maximal
+    Number of Sub-Problems K max Kmax on SOP Dataset (Fixed Masks)
+  Table 5 caption: TABLE 5 Performance on Different Datasets Using Various Image Augmentation
+    Settings
+  Table 6 caption: TABLE 6 Comparison of Our Approach With the State-of-the-Art Methods
+  Table 7 caption: TABLE 7 Recallk on the Small, Medium, and Large Test Sets of PKU
+    VehicleID [6] Dataset
+  Table 8 caption: TABLE 8 Recallk, NMI, and mARP on In-Shop Clothes [30]
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3113270
+- Affiliation of the first author: department of mechanical engineering, visual intelligence
+    laboratory, korea advanced institute of science and technology (kaist), daejeon,
+    south korea
+  Affiliation of the last author: department of mechanical engineering, visual intelligence
+    laboratory, korea advanced institute of science and technology (kaist), daejeon,
+    south korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_1.jpg
+  Figure 1 caption: The proposed joint framework for single image reconstruction and
+    super-resolution from low resolution (LR) events, showing the potential for (a)
+    HDR, (b) sharp image reconstruction, and (c) color events. The results from the
+    two phases can be used as intermediate representations of events for (d) high-level
+    tasks (e.g., semantic segmentation, object recognition, and detection), thus bundling
+    event-based and mainstream vision.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_10.jpg
+  Figure 10 caption: 'Experimental results for HDR image reconstruction. From left
+    to right: Low-dynamic-range APS images, stacked events, initial image reconstruction
+    in Phase 1, clean image reconstruction in Phase 1, and image super-resolution
+    (x4) in Phase 2.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_2.jpg
+  Figure 2 caption: 'Illustration of the proposed framework comprising two phases
+    via unsupervised adversarial learning. Phase 1 is the event to image reconstruction,
+    which achieves two sub-goals: Initial LR image reconstruction and clean LR image
+    reconstruction. Phase 2 is the event to image super-resolution to reconstruct
+    HR intensity images.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_3.jpg
+  Figure 3 caption: Proposed SR network in Phase 2 based on [58]. Instead of using
+    RIR blocks, we added dense connections for every two layers and changed them to
+    residual dense blocks (RDB). In addition, we added a non-local attention module
+    at the beginning and end of the RDB blocks. See the text for more details.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_4.jpg
+  Figure 4 caption: 'Visual comparison of different methods on the ESIM dataset [53].
+    From left to right: APS image, stacked events, E2VID [41], Wang [53], initial
+    image reconstruction, clean image reconstruction of Phase 1, and SR of Phase 2.
+    The second row shows the cropped patches of each corresponding image in the first
+    row.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_5.jpg
+  Figure 5 caption: "Comparison of SR image reconstruction results ( \xD74 ) based\
+    \ on different SR networks in Phase 2. From left to right: (a) stacked events,\
+    \ (b) with the proposed SR network NRDN, and (c) with RRDB [58]."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_6.jpg
+  Figure 6 caption: "Qualitative comparison of proposed method with [33] for HR image\
+    \ reconstruction ( \xD72 ) from events. From left to right: (a) stacked events,\
+    \ (b) SR results [33], (c) proposed method in Phase 2, and (d) GT HR images."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_7.jpg
+  Figure 7 caption: Visual comparison of different methods on Ev-RW dataset [34].
+    From left to right, (a) HF [46], (b) MR [35], (c) E2VID [41], (d) Wang et al.
+    [53], (e) initial image reconstruction in Phase 1, (f) clean image reconstruction
+    in Phase 1, and (g) image super-resolution in Phase 2.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_8.jpg
+  Figure 8 caption: 'Visual results on the DDD17 dataset. From left to right: (a)
+    stacked events, (b) initial image reconstruction in Phase 1, (c) clean image reconstruction
+    in Phase 1, and (d) image super-resolution (x2) in Phase 2.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\Joint_Framework_for_Single_Image_Reconstruction_and_SuperResolution_With_an_Even\figure_9.jpg
+  Figure 9 caption: 'Experimental results on E2VID dataset. From left to right: (a)
+    stacked events, (b) initial image reconstruction of Phase 1, (c) clean image reconstruction
+    of Phase 1, and (d) image super-resolution (x2) in Phase 2.'
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.56
+  Name of the first author: Lin Wang
+  Name of the last author: Kuk-Jin Yoon
+  Number of Figures: 16
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: Joint Framework for Single Image Reconstruction and Super-Resolution
+    With an Event Camera
+  Publication Date: 2021-09-20 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Comparison of Initial (First Stage) and Clean
+    (Second Stage) Image Reconstruction in Phase 1 (With and Without TL and Stochastic
+    Noise) Using Supervised Methods [41], [53], Based on Dataset [53]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Evaluation of Phase 2 on ESIM-SR Dataset With
+    Bicubic Upsampling Method and Results of TL and Stochastic Noise Application
+  Table 3 caption: TABLE 3 Qualitative Comparison of Super-Resolved Intensity Images
+    Between the Proposed and Concurrent Supervised Methods [33]
+  Table 4 caption: TABLE 4 Comparison of Phase 1 (LR Image Reconstruction) With Prior
+    Methods on the Event Camera Dataset [34]
+  Table 5 caption: TABLE 5 Quantitative Evaluation on the DDD17 Dataset
+  Table 6 caption: TABLE 6 Quantitative Evaluation of the Super-Resolution Results
+    for Semantic Segmentation
+  Table 7 caption: "TABLE 7 Image Reconstruction Time Taken to Process N=10K N=10K\
+    \ Events With Resolution of 240\xD7180 240\xD7180"
+  Table 8 caption: TABLE 8 Comparison of Different Network Structures for the Reconstruction
+    Quality of SR Images From Events
+  Table 9 caption: "TABLE 9 Image Reconstruction Time Taken to Process N=10K N=10K\
+    \ Events With Resolution of 240\xD7180 240\xD7180"
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3113352
+- Affiliation of the first author: department of computer science and technology,
+    national engineering laboratory for video technology, peking university, beijing,
+    china
+  Affiliation of the last author: northwestern university, evanston, il, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_1.jpg
+  Figure 1 caption: 'While a traditional RGB camera captures images at high spatial
+    resolution, an event camera is capable of recording motion at high speed. (a)
+    Data from our hybrid camera. Between two consecutive frames are high speed events;
+    (b) Left: the event image (accumulated over time) has low resolution and unconventional
+    noise. Right: the RGB image reveals rich spatial details.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_10.jpg
+  Figure 10 caption: Event self-guiding filtering results on our RGB-DAVIS data.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_2.jpg
+  Figure 2 caption: The framework of guided event filtering (GEF). Our imaging prototype
+    consists of a high-resolution RGB camera and an event camera DAVIS240. To process
+    the two streams of input signals, we first perform motion compensation to associate
+    local events to image edges using our proposed joint contrast maximization (JCM)
+    algorithm. Guided image filtering is then performed by setting the intensity or
+    the motion compensated event image as guidance. The filtered output is a denoised
+    and super-resolved event frame. The final output of GEF is a volume of densely
+    distributed events that preserves the statistical characteristics of the original
+    events. By generating high quality events, GEF has broad applications.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_3.jpg
+  Figure 3 caption: (a) A latent edge signal (gray curve) triggers a set of (noisy)
+    events due to motion. (b) In contrast maximization (CM) [3], the events are warped
+    back at t ref to form a histogram (purple). (c) In our joint contrast maximization
+    (JCM), an image is formed jointly by the events (purple) and the intensity image
+    edge (green).
+  Figure 4 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_4.jpg
+  Figure 4 caption: Comparison between CM and JCM [3] for flow estimation w.r.t. event
+    noise.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_5.jpg
+  Figure 5 caption: Comparison between image-guided filtering and event self-guided
+    filtering w.r.t. image blur degradation. (a) We consider and simulate the motion
+    blur (numbers indicate the lengths of motion). (b) We use 20 clear (no blur) images
+    to generate event simulation data, and then blur the guidance images with different
+    blur kernels to perform GEF event denoising, compare the changes in denoising
+    performance, and then determine the self-guiding switching threshold on blur parameter.
+    (c) We convert the threshold from the blur parameter to the similarity between
+    Q e - Q l . The shaded area indicates the recommended threshold range.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_6.jpg
+  Figure 6 caption: (a) The purple histograms denote the denoised or upsampled Q e
+    obtained with GEF, we warped them back into the space-time volume along the computed
+    flow direction to restore the ternary representation. (b) Histogram of the distribution
+    of time errors in real data (light blue bars), and a Gaussian function (green
+    curve) fitted to data with time errors.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_7.jpg
+  Figure 7 caption: Our RGB-DAVIS imaging system.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_8.jpg
+  Figure 8 caption: Guided upsampling results on our RGB-DAVIS data.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Guided_Event_Filtering_Synergy_Between_Intensity_Images_and_Neuromorphic_Events_\figure_9.jpg
+  Figure 9 caption: Space-time volume redistribution results on our RGB-DAVIS data.
+    We choose a 3D view for each example that helps to make a significant visual comparison.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Peiqi Duan
+  Name of the last author: Aggelos K. Katsaggelos
+  Number of Figures: 18
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: 'Guided Event Filtering: Synergy Between Intensity Images and Neuromorphic
+    Events for High Performance Imaging'
+  Publication Date: 2021-09-20 00:00:00
+  Table 1 caption: TABLE 1 Object Tracking Performance on 8 Samples of EventNFS [61]
+    Dataset (Greener Blocks Represent Better Performance With Higher IoU Index)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Frame Prediction Performance on 7 Samples of EventNFS [61]
+    Dataset (Red Numbers Represent the Best Performances)
+  Table 3 caption: TABLE 3 Motion Deblurring Performance on 9 Sequences of EventNFS
+    [61] Dataset (Red Numbers Represent the Best Performances)
+  Table 4 caption: TABLE 4 HDR Reconstruction Performance on 7 Sequences and 665 Images
+    of EventNFS [61]
+  Table 5 caption: TABLE 5 Image SR Reconstruction Performance on 3 Samples of EventNFS
+    [61] Dataset
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3113344
+- Affiliation of the first author: department of computer science, university of texas
+    at austin, austin, tx, usa
+  Affiliation of the last author: department of computer science, university of texas
+    at austin, austin, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_1.jpg
+  Figure 1 caption: "Our goal is to transfer CNNs trained on planar images to 360\
+    \ \u2218 images. Our approach adapts the kernels in CNNs to account for the distortion\
+    \ in 360 \u2218 images and reproduce the output of the source CNN on the tangent\
+    \ plane projection."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_10.jpg
+  Figure 10 caption: Comparison between ordinary Faster R-CNN and spherical Faster
+    R-CNN. The spherical Faster R-CNN model 1) replaces the ordinary CNN with a SphConv
+    network for feature extraction, 2) projects features to tangent planes before
+    applying the region proposal network (RPN) and object detector network, and 3)
+    replaces non-maximum suppression (NMS) with spherical NMS introduced in Fig. 9.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_2.jpg
+  Figure 2 caption: "Two existing strategies for applying CNNs to 360 \u2218 images.\
+    \ Top: The first strategy unwraps the 360 \u2218 input into a single planar image\
+    \ using a global projection (most commonly equirectangular projection), then applies\
+    \ the CNN on the distorted planar image. Bottom: The second strategy samples multiple\
+    \ tangent planar projections to obtain multiple perspective images, to which the\
+    \ CNN is applied independently to obtain local results for the original 360 \u2218\
+    \ image. Strategy I is fast but inaccurate; Strategy II is accurate but slow.\
+    \ The proposed approach learns to replicate flat filters on spherical imagery,\
+    \ offering both speed and accuracy."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_3.jpg
+  Figure 3 caption: The objective for a spherical convolution network (SphConv) is
+    to mimic the output of a source model on perspective projection images at tangent
+    plane while taking equirectangular projection as input. This can be considered
+    as a knowledge distillation across different projections.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_4.jpg
+  Figure 4 caption: "Inverse perspective projections P \u22121 to equirectangular\
+    \ projections at different polar angles \u03B8 . The same square image will distort\
+    \ to different sizes and shapes depending on \u03B8 . Because equirectangular\
+    \ projection unwraps the 180 \u2218 longitude, a line will be split into two if\
+    \ it passes through the 180 \u2218 longitude, which causes the double curve in\
+    \ \u03B8= 36 \u2218 ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_5.jpg
+  Figure 5 caption: The shape of spherical kernel.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_6.jpg
+  Figure 6 caption: "Spherical kernel. The kernel weights in spherical kernel are\
+    \ tied only along each row of the equirectangular image (i.e., \u03D5 ), and each\
+    \ kernel convolves along the row to generate 1D output. Note that the kernel size\
+    \ differs at different rows and layers, and it expands near the top and bottom\
+    \ of the image."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_7.jpg
+  Figure 7 caption: The connection between Spherical Kernel and KTN.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_8.jpg
+  Figure 8 caption: "KTN consists of row dependent channel-wise projections that resize\
+    \ the kernel to the target size and depth separable convolution blocks. It takes\
+    \ a source kernel K and \u03B8 as input and generates an output kernel K \u03A9\
+    \ . K \u03A9 is then applied to the 360 \u2218 image in its equirectangular projection\
+    \ at row y=\u03B8H\u03C0 . The transformation accounts for the distortion in equirectangular\
+    \ projection, while maintaining cross-channel interactions."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learning_Spherical_Convolution_for____Recognition\figure_9.jpg
+  Figure 9 caption: Spherical non-maximum suppression. We approximate rectangular
+    proposals using cones on the sphere and then cast the cone overlap problem into
+    a sector overlap problem, which can be computed more efficiently than computing
+    the exact overlap between proposals.
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Yu-Chuan Su
+  Name of the last author: Kristen Grauman
+  Number of Figures: 16
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: "Learning Spherical Convolution for 360 \u2218 360\u2218 Recognition"
+  Publication Date: 2021-09-20 00:00:00
+  Table 1 caption: TABLE 1 Comparison of Different Approaches
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Model Accuracy
+  Table 3 caption: TABLE 3 Average Precision of Object Detection on ERA [53]
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3113612
+- Affiliation of the first author: department of electrical and computer engineering,
+    national university of singapore, singapore, singapore
+  Affiliation of the last author: department of computing, the hong kong polytechnic
+    university, hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_1.jpg
+  Figure 1 caption: Distribution of the activation value a l i of ReLU neurons in
+    the pre-trained ANN layers. Here, the horizontal axis represents the activation
+    values, while the vertical axis represents the number of neurons in a log scale.
+    The majority of neurons output low activation values and the number of neurons
+    decreases rapidly as the activation value increases. The dotted lines mark the
+    99th percentile of the number of neurons in each layer.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_2.jpg
+  Figure 2 caption: Illustration of the proposed PTL framework. (A) The whole training
+    process is organized into separate stages. (B) Details of the hybrid network at
+    the training stage 2. Note that the SNN Layer 1 performs neural encoding following
+    the process described in Section 3.4. (C) Details of the training processes at
+    stage 2. (D) Illustration of the adaptive training scheduler.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_3.jpg
+  Figure 3 caption: Illustration of the quantization-aware training that can be incorporated
+    into the proposed PTL framework. The full precision weight and bias terms of ANN
+    neurons are quantized to the desired precision before sharing with the coupled
+    spiking neurons.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_4.jpg
+  Figure 4 caption: Illustration of learning curves on the Cifar-10 dataset. (A) ANN
+    models. (B) SNN models trained with spike count-based tandem learning [24]. (C)
+    SNN models trained with time-based surrogate gradient learning [17]. It is worth
+    noting that the jump of learning curves at Epoch 50 is due to the learning rate
+    decay.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_5.jpg
+  Figure 5 caption: Illustration of the training progresses of the AlexNet and VGG-11
+    on the Cifar-10 dataset ( Ns=16 , Tp=6 ). The shaded regions correspond to different
+    training stages. After replacing each ANN layer with an equivalent SNN layer at
+    the beginning of each training stage, the validation and test accuracies can be
+    quickly restored with the proposed PTL framework. In these experiments, to allow
+    searching for a better SNN model, the early termination did not apply during the
+    last conversion stage.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_6.jpg
+  Figure 6 caption: (A) Classification accuracy as a function of the encoding time
+    window on the Cifar-10 dataset. The horizontal dashed line refers to the accuracy
+    of the pre-trained ANN. (B) The ratio of total synaptic operations between SNN
+    and ANN as a function of encoding time window on the Cifar-10 dataset. (C) Classification
+    accuracy as a function of the patience period defined in the adaptive scheduler.
+    (D) Finishing epoch as a function of the patience period. All experimental results
+    are summarized over 5 independent runs with spiking AlexNet. The error bars represent
+    one standard deviation across the 5 runs.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_7.jpg
+  Figure 7 caption: "(A) Illustration of the SNN-based speech separation approach\
+    \ to solving the cocktail party problem. (B) Illustration of the proposed SNN-based\
+    \ speech separation network. It takes two speakers mixture as input and outputs\
+    \ two independent streams for each individual speaker. \u201C1d-Conv\u201D indicates\
+    \ a 1-dimensional convolution. \u201C1\xD71 Conv\u201D is a convolution with a\
+    \ 1\xD71 kernel. \u201Cd-Conv\u201D is a dilated convolution. \u201CDeconv\u201D\
+    \ is a deconvolution (also known as transposed convolution). \u201CReLU\u201D\
+    \ is a rectified linear unit function. \u201CBN\u201D represents batch normalization.\
+    \ otimes refers to the element-wise multiplication."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_8.jpg
+  Figure 8 caption: Illustration of the reconstructed images from spiking autoencoder
+    ( Ns=32 ) on the MNIST dataset. For each pair of digits, the left side is the
+    original image and the right side is the reconstruction by SNN.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Progressive_Tandem_Learning_for_Pattern_Recognition_With_Deep_Spiking_Neural_Net\figure_9.jpg
+  Figure 9 caption: The example of male-male mixture speech separated by SNN-based
+    speech separation network.
+  First author gender probability: 0.92
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.53
+  Name of the first author: Jibin Wu
+  Name of the last author: Kay Chen Tan
+  Number of Figures: 9
+  Number of Tables: 4
+  Number of authors: 7
+  Paper title: Progressive Tandem Learning for Pattern Recognition With Deep Spiking
+    Neural Networks
+  Publication Date: 2021-09-21 00:00:00
+  Table 1 caption: TABLE 1 Comparison of Classification Accuracy of Different SNN
+    Implementations on the Cifar-10 and ImageNet-12 Test Sets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of the Classification Results as a Function
+    of Weight Precision
+  Table 3 caption: TABLE 3 Comparison of the Image Reconstruction Results as a Function
+    of the Encoding Time Window Size N s Ns
+  Table 4 caption: TABLE 4 Comparative Study Between ANN and SNN on Speech Separation
+    Tasks Under Both Closed and Open Condition
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3114196
+- Affiliation of the first author: state key laboratory of integrated services networks,
+    school of computer science and technology, xidian university, xian, shaanxi, china
+  Affiliation of the last author: school of computer science and technology, xidian
+    university, xian, shaanxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_1.jpg
+  Figure 1 caption: Examples of user tags and manual labels on Flickr images. Black
+    boxes indicate noises.
+  Figure 10 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_10.jpg
+  Figure 10 caption: Retrieval results obtained by (a) TelecomNet-DRSCH and (b) DRSCH
+    in MIR Flickr-1M for two queries. Each query is shown on the left, with top ranked
+    images shown to the right.
+  Figure 2 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_2.jpg
+  Figure 2 caption: The proposed weakly-supervised deep hashing framework. In the
+    first stage, we pre-train a CNN hashing model by jointly learning image sem-vectors
+    and hash codes. It is weakly-supervised since the training of the hashing model
+    is guided by the more robust sem-vectors which get useful information from tagging
+    data and image content. The second stage performs supervised fine-tuning where
+    any existing supervised deep hashing training method can be used.
+  Figure 3 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_3.jpg
+  Figure 3 caption: Illustration of GTelecomNet. The key components of GTelecomNet
+    include the Semantic Network and the Hashing Network. The Semantic Network first
+    constructs the semantic space to embed tags, then fuses the tag embeddings to
+    obtain the observed sem-vector via an Attention Pooling Layer, finally completes
+    the observed sem-vector to solve the tag incompleteness issue. The Hashing Network
+    is essentially a multi-scale CNN network. It generates the image multi-scale features
+    to learn hashing codes and image proposals. The image level and tag level semantic
+    information is ultilized to train the Hashing Network.
+  Figure 4 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_4.jpg
+  Figure 4 caption: Performance comparison on the NUS-WIDE dataset w.r.t three evaluation
+    metrics.
+  Figure 5 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_5.jpg
+  Figure 5 caption: Performance comparison on the MIR Flickr-1M dataset w.r.t three
+    evaluation metrics.
+  Figure 6 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_6.jpg
+  Figure 6 caption: 'Training time on the NUS-WIDE dataset. (Base Net: VGG16).'
+  Figure 7 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_7.jpg
+  Figure 7 caption: Cosine similarities between the densesparsified tags representations
+    (originalsemantic tag vectors) of the MIR Flickr-1M dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_8.jpg
+  Figure 8 caption: Tag importance weights ( w i[c] C i c=1 ) visualization of GTelecomNet.
+    Each image is relevant to C i tags and the importance weights of the tags are
+    shown in the colorbar.
+  Figure 9 Link: articels_figures_by_rev_year\2021\TelecomNet_TagBased_WeaklySupervised_Modally_Cooperative_Hashing_Network_for_Ima\figure_9.jpg
+  Figure 9 caption: "Parameter study for GTelecomNet on the NUS-WIDE dataset: (a)\
+    \ varying \u03BB when \u03C1=2,\u03BC=0.1 ; (b) varying \u03C1 when \u03BB=20,\u03BC\
+    =0.1 ; (c) varying \u03BC when \u03BB=20,\u03C1=2 ."
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Wei Zhao
+  Name of the last author: Quan Wang
+  Number of Figures: 11
+  Number of Tables: 4
+  Number of authors: 8
+  Paper title: 'TelecomNet: Tag-Based Weakly-Supervised Modally Cooperative Hashing
+    Network for Image Retrieval'
+  Publication Date: 2021-09-21 00:00:00
+  Table 1 caption: TABLE 1 Statistics for the Datasets Used in the Experiments
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Comparison by Precision Within Hamming Radius
+    2 on the NUS-WIDE Dataset and MIR Flickr-1M Dataset
+  Table 3 caption: TABLE 3 Top-Ranked Words Per Dimension for Dense Representations
+    (Original Tag Vectors, t c C c=1 tcc=1C) and Sparsified Representations (Semantic
+    Tag Vectors, u c C c=1 ucc=1C) of the MIR Flickr-1M Dataset
+  Table 4 caption: TABLE 4 Comparison of the Proposed Weakly-Supervised Hashing Learning
+    Algorithm to Supervised Methods on Training With Tagging Data Only
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3114089
+- Affiliation of the first author: state key laboratory of computer science, institute
+    of software, chinese academy of sciences, beijing, china
+  Affiliation of the last author: school of computer science, faculty of engineering,
+    university of sydney, darlington, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_Versatile_Convolution_Filters_for_Efficient_Visual_Recognition\figure_1.jpg
+  Figure 1 caption: "An illustration of the proposed spatial versatile convolution\
+    \ filter. Given the input data (a), there are four sub-regions (b) covered by\
+    \ a 5\xD75 convolution filter with stride 2, and their convolution results are\
+    \ stacked into a feature map (c). In contrast, a spatial versatile filter will\
+    \ be applied three times on each sub-region with different secondary filters,\
+    \ i.e., 5\xD75 blue, 3\xD73 green, and 1\xD71 red in (b) to generate three feature\
+    \ maps (d)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_Versatile_Convolution_Filters_for_Efficient_Visual_Recognition\figure_2.jpg
+  Figure 2 caption: An illustration of the proposed channel versatile filters. The
+    original filter can generate only one feature map for the given input data, and
+    the proposed method can provide multiple feature maps simultaneously according
+    to the channel stride parameters. Each color represents a secondary filter and
+    its corresponding feature map.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_Versatile_Convolution_Filters_for_Efficient_Visual_Recognition\figure_3.jpg
+  Figure 3 caption: An illustration of the proposed versatile filters method for generating
+    secondary filters using primary filters and different mask strategies, i.e., shared
+    and separate associated masks, which can be selected according to the practical
+    requirement. Wherein, associated masks in the same color are exactly the same
+    one. Better view in the color version.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_Versatile_Convolution_Filters_for_Efficient_Visual_Recognition\figure_4.jpg
+  Figure 4 caption: "The performance of the proposed L-Versatile versus s and \u03BB\
+    \ ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_Versatile_Convolution_Filters_for_Efficient_Visual_Recognition\figure_5.jpg
+  Figure 5 caption: ImageNet Top-1 Error versus MUL.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_Versatile_Convolution_Filters_for_Efficient_Visual_Recognition\figure_6.jpg
+  Figure 6 caption: Example objection detection results on MS COCO. (The figure is
+    better viewed in color).
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_Versatile_Convolution_Filters_for_Efficient_Visual_Recognition\figure_7.jpg
+  Figure 7 caption: "Image super-resolution results of the baseline VDSR model and\
+    \ the proposed versatile filters, where the top line are results of the Baby (\
+    \ \xD74 ) image, and the bottom line are results of the Butterfly ( \xD72 ) image."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.93
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kai Han
+  Name of the last author: Dacheng Tao
+  Number of Figures: 7
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: Learning Versatile Convolution Filters for Efficient Visual Recognition
+  Publication Date: 2021-09-21 00:00:00
+  Table 1 caption: TABLE 1 The Performance of the Proposed Spatial Versatile Filters
+    on CIFAR-10
+  Table 10 caption: TABLE 10 The Object Detection Results on MS COCO
+  Table 2 caption: TABLE 2 The Performance of the Proposed Channel Versatile Filters
+    on CIFAR-10
+  Table 3 caption: TABLE 3 Statistics for Versatile Filters on ImageNet
+  Table 4 caption: TABLE 4 Comparison of the Proposed Versatile Filters and Other
+    State-of-the-Art Model Compression Methods on ImageNet
+  Table 5 caption: TABLE 5 Comparison of Inference Latency of ResNet Networks
+  Table 6 caption: TABLE 6 Combination of the Proposed Versatile Filters and Post-Training
+    Quantization Method
+  Table 7 caption: TABLE 7 Comparison With State-of-the-Art Portable CNNs on ImageNet
+  Table 8 caption: TABLE 8 Comparison of Inference Latency of Small Networks
+  Table 9 caption: TABLE 9 Comparison With NAS Searched Efficient Neural Networks
+    on ImageNet
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3114368
+- Affiliation of the first author: department of computer science and engineering,
+    university of minnesota, minneapolis, mn, usa
+  Affiliation of the last author: department of computer science and engineering,
+    university of minnesota, minneapolis, mn, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_1.jpg
+  Figure 1 caption: Attention is an essential mechanism that affects task performances
+    in visual question answering. (a) People who answer correctly look at the most
+    relevant ROIs in the reasoning process (i.e., jeans, girl, and bag). (b) Incorrect
+    answers can be caused by misdirected attention towards salient distractors (i.e.,
+    the skirt).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_10.jpg
+  Figure 10 caption: Examples for studying the inconsistency between attention accuracy
+    and reasoning performance. From left to right are questions with ground truth
+    (GT) and predicted answers, input images, and attention maps for the two models.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_2.jpg
+  Figure 2 caption: AiR-E scores of Correct and Incorrect human attention maps. They
+    measure the alignment between attention and the bounding boxes of ROIs.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_3.jpg
+  Figure 3 caption: Network architecture of the proposed AiR-M method.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_4.jpg
+  Figure 4 caption: Distributions of answer accuracy and eye fixations of humans.
+    (a) Histogram of human answer accuracy. (b) Center biases of the correct and incorrect
+    attention.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_5.jpg
+  Figure 5 caption: Example question-answer pairs (column 1), images (column 2), ROIs
+    at each reasoning step (columns 3-5), and attention maps (columns 6-11).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_6.jpg
+  Figure 6 caption: Spatiotemporal accuracy of attention throughout the reasoning
+    process. (a) shows the AiR-E of different reasoning steps for human aggregated
+    attention and single-glimpse machine attention, (b)-(c) AiR-E scores for decomposed
+    human attention with correct and incorrect answers, (d)-(f) AiR-E for multi-glimpse
+    machine attention. For heat maps shown in (b)-(f), the x -axis denotes the different
+    reasoning steps while the y -axis corresponds to the indices of attention maps.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_7.jpg
+  Figure 7 caption: Qualitative comparison between attention supervision methods,
+    where Baseline refers to UpDown [5]. For each row, from left to right are the
+    questions and the correct answers, input images, and attention maps learned by
+    different methods. The predicted answers associated with each attention mechanism
+    are shown below its respective attention map.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_8.jpg
+  Figure 8 caption: Alignment between the attention and reasoning process supervised
+    with the AiR-M method.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Attention_in_Reasoning_Dataset_Analysis_and_Modeling\figure_9.jpg
+  Figure 9 caption: Qualitative results for attention supervision with incorrect attention.
+    For sample show in each row, from left to right are input image with ground truth
+    question and answer, model attention learned without supervision, model attention
+    learned with our correct attention [18], model attention learned with our AiR-C
+    method. The model predicted answers are shown at the bottom.
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Shi Chen
+  Name of the last author: Qi Zhao
+  Number of Figures: 10
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: 'Attention in Reasoning: Dataset, Analysis, and Modeling'
+  Publication Date: 2021-09-22 00:00:00
+  Table 1 caption: TABLE 1 A Comparison Between Different Eye-Tracking Datasets
+  Table 10 caption: TABLE 10 VQA Accuracy on the GQA Test Sets (Test-Dev and Test-Standard)
+    and IQVA Test Set
+  Table 2 caption: TABLE 2 Semantic Operations of the Reasoning Process
+  Table 3 caption: TABLE 3 Spatial and Semantic Alignment Scores Between Aggregated
+    Attention and Attention Over Time
+  Table 4 caption: TABLE 4 Quantitative Evaluation of AiR-E Scores and Task Performance
+  Table 5 caption: TABLE 5 Pearsons r r Between Attention Accuracy (AiR-E) and Task
+    Performance
+  Table 6 caption: TABLE 6 Spearmans Rank Correlation Between Machine Attention Mechanisms
+    for Different Answers
+  Table 7 caption: TABLE 7 Comparative Results on GQA Test Sets (Test-Dev and Test-Standard)
+  Table 8 caption: TABLE 8 Experimental Results of AiR-M Under Different Supervision
+    Strategies
+  Table 9 caption: TABLE 9 AiR-E Scores of the Supervised Attention Mechanisms
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3114582

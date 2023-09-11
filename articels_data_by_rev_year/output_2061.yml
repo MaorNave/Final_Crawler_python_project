@@ -1,0 +1,718 @@
+- Affiliation of the first author: wangxuan institute of computer technology, peking
+    university, beijing, china
+  Affiliation of the last author: wangxuan institute of computer technology, peking
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_1.jpg
+  Figure 1 caption: 'Illustration of typical architectures for feed-forward frameworks.
+    The networks are divided into three categories: GDN-based networks (a)-(c), residual
+    block-based networks (d)-(e), and multiscale networks (f).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_2.jpg
+  Figure 2 caption: Illustration of the backbones of the multistage recurrent framework
+    and its variations. The main feature of these designs is that the residue for
+    one stage is taken as the input at the next stage. (a) and (b) show the vanilla
+    structure and its improved stateful form [10]. (c)-(e) show different cross-stage
+    connections [21].
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_3.jpg
+  Figure 3 caption: Illustration of entropy modeling methods. (a)-(c) Binary methods
+    and variations with the masking and context model, including (a) direct modeling
+    [10], (b) masked modeling [23], [29], [52], and (c) the binary context model [17].
+    (d) Spatial context model for latent code maps [25], [27], [34]. (e) Hyperprior
+    entropy model [24].
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_4.jpg
+  Figure 4 caption: "Overall architecture of the multilayer image compression framework.\
+    \ The probability distribution of the innermost layer of the hyperprior is approximated\
+    \ with a zero-mean Gaussian distribution, where the scale values \u03C3 are channelwise\
+    \ independent and spatially shared."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_5.jpg
+  Figure 5 caption: Information aggregation subnetwork for the reconstruction of the
+    decoded image. The main latent representation (Main Repr.) and the two layers
+    of hyperrepresentations (L1 Repr. and L2 Repr.) are aggregated for the reconstruction.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_6.jpg
+  Figure 6 caption: Rate-Distortion Curves. The methods include PCS18-ReLU, PCS18-GDN
+    [53], ICLR18-Factorized, ICLR18-HyperPrior [24], NeurIPS18 [25], ICLR19 [34],
+    CVPR17-RNN [17], CVPR18-Condition [27], BPG-4:4:4 [9], VTM8-4:4:4 [8] and JPEG
+    [1]. We conduct the evaluation on the three datasets Kodak, Tecnick and CLIC 2019
+    (validation set). PSNR and MS-SSIM are used as the distortion metrics. We convert
+    the MS-SSIM values to decibels ( -10log 10(1-d) , where d refers to the MS-SSIM
+    value) for a clear illustration, following [24].
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_7.jpg
+  Figure 7 caption: Rate-Distortion curves by different aggregation methods. The methods
+    vary in aggregated feature forms (Hyper and Mean), feature granularity (Fine and
+    Fine+Coarse), and fusion stage (SYN and IAR).
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_8.jpg
+  Figure 8 caption: Visualization of the reconstructed images by the proposed method,
+    ICLR18-Hyperprior, and BPG.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learning_EndtoEnd_Lossy_Image_Compression_A_Benchmark\figure_9.jpg
+  Figure 9 caption: Evaluation of perceptual distance [15] (a lower value corresponds
+    to better quality) with respect to PSNR and MS-SSIM for different methods. The
+    methods correspond to those in Fig. 6.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.94
+  Name of the first author: Yueyu Hu
+  Name of the last author: Jiaying Liu
+  Number of Figures: 9
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: 'Learning End-to-End Lossy Image Compression: A Benchmark'
+  Publication Date: 2021-03-11 00:00:00
+  Table 1 caption: TABLE 1 Summary of Important Contributions of Image Compression
+    in Recent Years
+  Table 10 caption: TABLE 10 Encoding and Decoding Time (seconds) for Various Methods
+  Table 2 caption: TABLE 2 Description of Different Entropy Models Utilized in Learned
+    Image Compression
+  Table 3 caption: TABLE 3 Structure of the Signal-Preserving Hypertransform
+  Table 4 caption: TABLE 4 Structure of the Probability Estimation Network
+  Table 5 caption: TABLE 5 Structure of the Information-Aggregation Reconstruction
+    Network, Corresponding to Fig. 5
+  Table 6 caption: TABLE 6 Specifications of BD-Rate Range on Different Testing Datasets
+  Table 7 caption: TABLE 7 Evaluation of the BD-Rate on Different Methods (optimized
+    by PSNR) on Different Image Sets
+  Table 8 caption: TABLE 8 BD-Rate Evaluation for the Coarse-to-Fine Hyperprior Model
+    at Different Resolutions, With the Single-Layer Hyperprior as the Anchor
+  Table 9 caption: TABLE 9 BD-Rate Corresponding With R-D Curves in Fig. 7
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3065339
+- Affiliation of the first author: department of statistics, university of washington,
+    seattle, wa, usa
+  Affiliation of the last author: department of computer science, university of washington,
+    seattle, wa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_1.jpg
+  Figure 1 caption: "(left) Schematic for modeling Granger causality using cMLPs.\
+    \ If the outgoing weights for series j , shown in dark blue, are penalized to\
+    \ zero, then series j does not Granger-cause series i . (center) The group lasso\
+    \ penalty jointly penalizes the full set of outgoing weights while the hierarchical\
+    \ version penalizes the nested set of outgoing weights, penalizing higher lags\
+    \ more. (right) Schematic for modeling Granger causality using a cLSTM. If the\
+    \ dark blue outgoing weights to the hidden units from an input x (t\u22121)j are\
+    \ zero, then series j does not Granger-cause series i ."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_10.jpg
+  Figure 10 caption: Proposed architecture for detecting nonlinear Granger causality
+    that combines aspects of both the cLSTM and cMLP models. A separate hidden representation,
+    htj , is learned for each series j using an RNN. At each time point, the hidden
+    states are each fed into a sparse cMLP to predict the individual output for each
+    series xti . Joint learning of the whole network with a group penalty on the input
+    weights of the individual cMLPs would allow the network to share information about
+    hidden features in each htj while also allowing interpretable structure learning
+    between the hidden states of each series and each output.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_2.jpg
+  Figure 2 caption: Example of group sparsity patterns of the first layer weights
+    of a cMLP with four first layer hidden units and four input series with maximum
+    lag k=4 . Differing sparsity patterns are shown for the three different structured
+    penalties of group lasso (GROUP) from Equation (9), group sparse group lasso (MIXED)
+    from equation (10) and hierarchical lasso (HIER) from equation (11).
+  Figure 3 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_3.jpg
+  Figure 3 caption: Example of the group sparsity patterns in a sparse cLSTM model
+    with a four dimensional hidden state and four input series. Due to the group lasso
+    penalty on the columns of W , the W f , W in , W o , and W c matrices will share
+    the same column sparsity pattern.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_4.jpg
+  Figure 4 caption: Example multivariate linear (VAR) and nonlinear (Lorenz, DREAM,
+    and MoCap) series that we analyze using both cMLP and cLSTM models. Note as the
+    forcing constant, F , in the Lorenz model increases, the data become more chaotic.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_5.jpg
+  Figure 5 caption: Qualitative results of the cMLP automatic lag selection using
+    a hierarchical group lasso penalty and maximal lag of K = 5 . The true data are
+    from a VAR(3) model. The images display results for a single cMLP (one output
+    series) and a VAR model using various penalty strengths lambda . The rows of each
+    image correspond to different input series while the columns correspond to the
+    lag, with k = 1 at the left and k = 5 at the right. The magnitude of each entry
+    is the L2 norm of the associated input weights of the neural network after training.
+    The true lag interactions are shown in the rightmost image. Brighter color represents
+    larger magnitude.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_6.jpg
+  Figure 6 caption: "(Top) AUROC and (bottom) AUPR (given in % ) results for our proposed\
+    \ regularized cMLP and cLSTM models and the set of methods\u2013 OKVAR, LASSO,\
+    \ and G1DBN presented in [33]. These results are for the DREAM3 size-100 networks\
+    \ using the original DREAM3 data sets."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_7.jpg
+  Figure 7 caption: ROC curves for the cMLP () and cLSTM () models on the five DREAM
+    datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_8.jpg
+  Figure 8 caption: (Top) Example time series from the MoCap data set paired with
+    their particular motion behaviors. (Bottom) Skeleton visualizations of 12 possible
+    exercise behavior types observed across all sequences analyzed in the main text.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Neural_Granger_Causality\figure_9.jpg
+  Figure 9 caption: Nonlinear Granger causality graphs inferred from the human MoCap
+    data set using the regularized cLSTM model. Results are displayed for a range
+    of lambda values. Each node corresponds to one location on the body.
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Alex Tank
+  Name of the last author: Emily B. Fox
+  Number of Figures: 10
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Neural Granger Causality
+  Publication Date: 2021-03-11 00:00:00
+  Table 1 caption: TABLE 1 Comparison of AUROC for Granger Causality Selection Among
+    Different Approaches, as a Function of the Forcing Constant F F and the Length
+    of the Time Series T T
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of AUROC for Granger Causality Selection Among
+    Different Approaches, as a Function of the VAR Lag Order and the Length of the
+    Time Series T T
+  Table 3 caption: TABLE 3 AUROC Comparisons Between Different cMLP Granger Causality
+    Selection Penalties on Simulated Lorenz-96 Data as a Function of the Input Model
+    Lag, K K
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3065601
+- Affiliation of the first author: media analytics and computing lab, department of
+    artificial intelligence, school of informatics, xiamen university, xiamen, china
+  Affiliation of the last author: national engineering laboratory for video technology
+    (nelvt), school of electronics engineering and computer science, peking university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_1.jpg
+  Figure 1 caption: The overall framework of the proposed MIGO-NAS to find architectures
+    under different constraints on arbitrary search spaces. We first turn the original
+    optimization problem of architecture search into a differentiable objective with
+    a specific distribution by means of stochastic relaxation. Second, a multivariate
+    information-geometric optimization method (Section 3.1) is proposed to optimize
+    the distribution that concentrates around a branch of architectures with high
+    performance. Then, architectures are generated by dynamic programming (Section
+    3.2) under different hardware constraints within a few seconds on a single CPU.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_2.jpg
+  Figure 2 caption: An illustration of the proposed distribution optimization method.
+    A batch of samples are randomly sampled in the search space and generate corresponding
+    f for ranking. For those samples that have a high rank, we employ a high positive
+    f to increase the corresponding probability, and vice versa.
+  Figure 3 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_3.jpg
+  Figure 3 caption: "Values of f \u03B8 t on different rank( \u03B1 i ) . The transformation\
+    \ function equation (7) and the proposed log function equation (8) with \u03B2\
+    =0.2 and 0.4, respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_4.jpg
+  Figure 4 caption: "L2 distance between the optimal minimum \u03B1 \u2217 and the\
+    \ searched results for each epoch of different test functions."
+  Figure 5 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_5.jpg
+  Figure 5 caption: The time cost of the proposed method and Bayesian optimization.
+    Other geometry optimization methods have similar time costs with our method, therefore
+    we only include our method for a better illustration.
+  Figure 6 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_6.jpg
+  Figure 6 caption: L2 distance between the optimal minimum alpha and the searched
+    results obtained by the proposed method with different gamma and pruning steps
+    T .
+  Figure 7 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_7.jpg
+  Figure 7 caption: The rastrigin function optimization performance of ASNG [27],
+    dynamic ASNG and the proposed optimization method with different lambda (left)
+    and fracNM (right).
+  Figure 8 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_8.jpg
+  Figure 8 caption: The probability of each operation and edge in the block-wise search
+    space through the search process. Each subgraph represents a specific edge in
+    the architecture search space, and the lines in each subgraph represents different
+    operations in the edge.
+  Figure 9 Link: articels_figures_by_rev_year\2021\MIGONAS_Towards_Fast_and_Generalizable_Neural_Architecture_Search\figure_9.jpg
+  Figure 9 caption: The architectures of MIGO-NAS 200 (top), MIGO-NAS 400 (middle)
+    and MIGO-NAS 600 (bottom). K, E denote the kernel size and expand ratio in the
+    inverted bottleneck of mobilenet backbone, respectively.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.74
+  Name of the first author: Xiawu Zheng
+  Name of the last author: Yonghong Tian
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 9
+  Paper title: 'MIGO-NAS: Towards Fast and Generalizable Neural Architecture Search'
+  Publication Date: 2021-03-12 00:00:00
+  Table 1 caption: TABLE 1 Test Error Rates and Search Costs for Our Discovered Architectures,
+    and Other NAS Architectures on NAS-Bench-1Shot1 [53] or NAS-Bench-201 [54]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Test Error Rates for the Proposed Optimization Method and
+    ASNG [27] Under Different Settings on NAS-Bench-201
+  Table 3 caption: "TABLE 3 Test Error Rates (mean \xB1 \xB1 std | | best) for Our\
+    \ Searched Architectures, Human-Designed Networks and Other NAS Architectures\
+    \ on CIFAR-10"
+  Table 4 caption: TABLE 4 Test Error Rates for Our Discovered Architectures, Human-Designed
+    Networks and Other NAS Architectures on CIFAR-100 and fashionMNIST (FMNIST)
+  Table 5 caption: TABLE 5 Comparison With the State-of-the-Art Image Classification
+    Networks on ImageNet Under the Mobile Settings
+  Table 6 caption: TABLE 6 Average Precision (AP) and FLOPs of Different Backbones
+    on the PASCAL VOC Object Detection Dataset
+  Table 7 caption: TABLE 7 Semantic Segmentation mIOU, Parameter Size, FLOPs, GPU
+    Latency and CPU Latency of Different Backbones on the Cityscapes Dataset
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3065138
+- Affiliation of the first author: department of industrial & systems engineering,
+    texas a&m university, college station, tx, usa
+  Affiliation of the last author: department of industrial & systems engineering,
+    texas a&m university, college station, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Graph_Regularized_Autoencoder_and_its_Application_in_Unsupervised_Anomaly_Detect\figure_1.jpg
+  Figure 1 caption: "Autoencoder framework using feed-forward neural networks. Blue\
+    \ circles represent nodesneurons, dotted lines represent neuron connections, and\
+    \ the subscripts, \u03D5 and \u03B8 , represent the hyperparameters used in the\
+    \ networks."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Graph_Regularized_Autoencoder_and_its_Application_in_Unsupervised_Anomaly_Detect\figure_2.jpg
+  Figure 2 caption: Formation of an MST. The left panel is the initial graph. In the
+    right panel, the dark black edges form the MST. The total MST weight is 109.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Graph_Regularized_Autoencoder_and_its_Application_in_Unsupervised_Anomaly_Detect\figure_3.jpg
+  Figure 3 caption: MST regularized autoencoder can maintain the structural similarity
+    in low-dimensional representation.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Graph_Regularized_Autoencoder_and_its_Application_in_Unsupervised_Anomaly_Detect\figure_4.jpg
+  Figure 4 caption: Post hoc analysis on the ranking data obtained by the Friedman
+    test.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Graph_Regularized_Autoencoder_and_its_Application_in_Unsupervised_Anomaly_Detect\figure_5.jpg
+  Figure 5 caption: Effect of changing the number of hidden layers on the MST-regularized
+    autoencoder.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Graph_Regularized_Autoencoder_and_its_Application_in_Unsupervised_Anomaly_Detect\figure_6.jpg
+  Figure 6 caption: Effect of changing the dropout rate on the MST-regularized autoencoder.
+    In (a)-(c), the bold dark-green line corresponds to the dropout rate of 0.5.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Graph_Regularized_Autoencoder_and_its_Application_in_Unsupervised_Anomaly_Detect\figure_7.jpg
+  Figure 7 caption: F1-score versus noise standard deviation for 8 benchmark datasets.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.53
+  Name of the first author: Imtiaz Ahmed
+  Name of the last author: Yu Ding
+  Number of Figures: 7
+  Number of Tables: 12
+  Number of authors: 4
+  Paper title: Graph Regularized Autoencoder and its Application in Unsupervised Anomaly
+    Detection
+  Publication Date: 2021-03-17 00:00:00
+  Table 1 caption: TABLE 1 Strategy Adopted Regarding Parameters and Components of
+    the Graph Regularized Framework
+  Table 10 caption: TABLE 10 Performance of GAN-Based Anomaly Detection With and Without
+    the MST Regularizer
+  Table 2 caption: TABLE 2 Summary of Autoencoder Models
+  Table 3 caption: TABLE 3 Anomaly Detection Benchmark Datasets
+  Table 4 caption: TABLE 4 Performance Comparison of Autoencoder Variants in Terms
+    of Anomaly Detection
+  Table 5 caption: TABLE 5 F1-Score Produced by Autoencoder Variants
+  Table 6 caption: TABLE 6 The p-Values of Pairwise Comparisons Between the Competing
+    Approaches
+  Table 7 caption: TABLE 7 Comparison Between Reconstruction Loss Based Detection
+    and Those Using an Existing Anomaly Detection Methods After the MST-Regularizer
+    (LE)
+  Table 8 caption: TABLE 8 Change in F1-Score Using the New Denoising Approach Under
+    the LE Formulation
+  Table 9 caption: TABLE 9 F1-Scores Produced by the Competing Approaches
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3066111
+- Affiliation of the first author: department of civil, geological, and mining engineering,
+    polytechnique montreal, montreal, qc, canada
+  Affiliation of the last author: department of civil engineering, mcgill university,
+    montreal, qc, canada
+  Figure 1 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_1.jpg
+  Figure 1 caption: 'Illustration of matrixtensor time series and the prediction problem
+    in the presence of missing values (green: observed data; white: missing data;
+    red: prediction).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_2.jpg
+  Figure 2 caption: 'A graphical illustration of the rolling prediction scheme using
+    temporal matrix factorization (green: observed data; white: missing data; red:
+    prediction).'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_3.jpg
+  Figure 3 caption: "An overview graphical model of BTMF (time lag set: 1,2,\u2026\
+    ,d ). The shaded nodes ( y i,t ) are the observed data in \u03A9 ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_4.jpg
+  Figure 4 caption: A graphical illustration of CP factorization.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_5.jpg
+  Figure 5 caption: Imputed speed (mph) of BTMF on data set (L) with 60 percent RM.
+    Black dots show the partially observed (training) data, while red curves show
+    the imputed speed values by BTMF.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_6.jpg
+  Figure 6 caption: 'Predicted metro passenger flow (red curves) of BTMF (time horizon:
+    delta =6 ) at 40 percent NM missing scenario versus actual observations (black
+    curves) for data set (H). In these panels, white rectangles represent non-random
+    missing (i.e., volume observations are lost in a whole day).'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_7.jpg
+  Figure 7 caption: 'Predicted movement speed (red curves) of BTMF (time horizon:
+    delta =6 ) at 40 percent NM missing scenario versus actual observations (black
+    dots) for data set (L). In these panels, white rectangles represent non-random
+    missing (i.e., speed observations are lost in a whole day).'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_8.jpg
+  Figure 8 caption: 'Examples of six pick-updrop-off pairs. We show the predicted
+    time series using BTTF (time horizon: delta =2 ) under 40 percent NM (red curves)
+    and the actual observations (blue curves). In these panels, white rectangles represent
+    non-random missing.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\Bayesian_Temporal_Factorization_for_Multidimensional_Time_Series_Prediction\figure_9.jpg
+  Figure 9 caption: "Examples of passenger flow volume matrices at two time slots.\
+    \ We show the predicted volume using BTTF under the actual observations and 40\
+    \ percent NM data. Note that panels in the first row show the results during 8:00\
+    \ a.m.\u20149:00 a.m. of June 27, and the second row corresponds to the time interval\
+    \ of 9:00 a.m.\u201410:00 a.m. of June 27."
+  First author gender probability: 0.98
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.55
+  Name of the first author: Xinyu Chen
+  Name of the last author: Lijun Sun
+  Number of Figures: 9
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Bayesian Temporal Factorization for Multidimensional Time Series Prediction
+  Publication Date: 2021-03-17 00:00:00
+  Table 1 caption: TABLE 1 Performance Comparison (In MAPERMSE) for Imputation Tasks
+    on Data Sets (G), (H), (S), and (L)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Comparison (In MAPERMSE) for Prediction Tasks
+    on Data Sets (G), (H), (S), and (L) With Different Time Horizons
+  Table 3 caption: TABLE 3 Performance Comparison (In MAPERMSE) for Imputation Tasks
+    on Data Sets (N) and (P)
+  Table 4 caption: TABLE 4 Performance Comparison (In MAPERMSE) for Prediction Tasks
+    on Data Sets (N) and (P) With Different Time Horizons
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3066551
+- Affiliation of the first author: school of engineering and information technology
+    (seit), university of new south wales, canberra, nsw, australia
+  Affiliation of the last author: key laboratory of geographic information science,
+    east china normal university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Moving_Vehicle_Detection_for_Remote_Sensing_Video_Surveillance_With_Nonstationar\figure_1.jpg
+  Figure 1 caption: Local misalignment in satellite videos can cause false alarms
+    in MOD. (a) Local misalignment and false alarms. (b) Optical flows.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Moving_Vehicle_Detection_for_Remote_Sensing_Video_Surveillance_With_Nonstationar\figure_2.jpg
+  Figure 2 caption: Flowchart of the proposed MCMD model.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Moving_Vehicle_Detection_for_Remote_Sensing_Video_Surveillance_With_Nonstationar\figure_3.jpg
+  Figure 3 caption: "Mapping from optical flow o i,j to confidence m i,j using difference\
+    \ \u03B1 ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Moving_Vehicle_Detection_for_Remote_Sensing_Video_Surveillance_With_Nonstationar\figure_4.jpg
+  Figure 4 caption: "MOD performance by B-MCMD with varying \u03BB 2 with fixed \u03BB\
+    \ 1 and \u03BB 3 on Video No.0 in Skysat dataset. (a) Recall. (b) Precision. (c)\
+    \ F 1 ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Moving_Vehicle_Detection_for_Remote_Sensing_Video_Surveillance_With_Nonstationar\figure_5.jpg
+  Figure 5 caption: "Visualization on the foreground mask of Video No.0 in SkySat\
+    \ dataset by B-MCMD with increasing \u03BB 2 ."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Moving_Vehicle_Detection_for_Remote_Sensing_Video_Surveillance_With_Nonstationar\figure_6.jpg
+  Figure 6 caption: Optical flow results and the detection results obtained by the
+    proposed B-MCMD, O-MCMD and eight existing state-of-the-art methods on selected
+    videos from SkySat dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Moving_Vehicle_Detection_for_Remote_Sensing_Video_Surveillance_With_Nonstationar\figure_7.jpg
+  Figure 7 caption: Optical flow results and the detection results obtained by the
+    proposed B-MCMD, O-MCMD and eight existing state-of-the-art methods on selected
+    videos from Jilin-1 dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Moving_Vehicle_Detection_for_Remote_Sensing_Video_Surveillance_With_Nonstationar\figure_8.jpg
+  Figure 8 caption: Optical flow results and the detection results obtained by the
+    proposed B-MCMD method and four existing state-of-the-art methods on selected
+    videos from CLIF 2006 dataset.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.79
+  Name of the first author: Junpeng Zhang
+  Name of the last author: Kun Tan
+  Number of Figures: 8
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Moving Vehicle Detection for Remote Sensing Video Surveillance With
+    Nonstationary Satellite Platform
+  Publication Date: 2021-03-17 00:00:00
+  Table 1 caption: TABLE 1 Information on the Evaluation Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Detection Performance Comparison Against the State-of-the-Art
+    Algorithms on SkySat Dataset
+  Table 3 caption: TABLE 3 Detection Performance Comparison Against the State-of-the-Art
+    Algorithms on Jilin-1 Dataset
+  Table 4 caption: TABLE 4 Ablation Study in Terms of the F 1 F1 Score for MOD on
+    the SkySat and Jilin-1 Datasets
+  Table 5 caption: TABLE 5 Detection Performance Comparison Against Four State-of-the-Art
+    Methods on the CLIF 2006 Dataset
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3066696
+- Affiliation of the first author: "cidetec-instituto polit\xE9cnico nacional, mexico\
+    \ city, mexico"
+  Affiliation of the last author: "laboratory of medical robotics and biosignals,\
+    \ upibi-instituto polit\xE9cnico nacional, mexico city, mexico"
+  Figure 1 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_1.jpg
+  Figure 1 caption: Three-layer DDNN.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_2.jpg
+  Figure 2 caption: EEG data collection.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_3.jpg
+  Figure 3 caption: General procedure that solves the classification tasks.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_4.jpg
+  Figure 4 caption: "Training phase graphs of class \u201Ccircle\u201D."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_5.jpg
+  Figure 5 caption: Final weights of the DDNN structure.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_6.jpg
+  Figure 6 caption: Evaluation of a pattern with the different weights.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_7.jpg
+  Figure 7 caption: Comparison of the classification errors for each DDNN structure
+    evaluating the same pattern.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_8.jpg
+  Figure 8 caption: Comparison of the accumulative classification errors obtained
+    with the three DDNN evaluating the same pattern.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Deep_Learning_Adapted_to_Differential_Neural_Networks_Used_as_Pattern_Classifica\figure_9.jpg
+  Figure 9 caption: Comparison between the accuracy of the networks.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: D. Llorente-Vidrio
+  Name of the last author: I. Chairez
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Deep Learning Adapted to Differential Neural Networks Used as Pattern
+    Classification of Electrophysiological Signals
+  Publication Date: 2021-03-18 00:00:00
+  Table 1 caption: TABLE 1 Confusion Matrix of the Six Proved Algorithms
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Obtained of Pattern Classification With the
+    Different Neural Networks Structures
+  Table 3 caption: TABLE 3 Time Comparison
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3066996
+- Affiliation of the first author: department of electrical and computer engineering,
+    university of california, santa barbara, santa barbara, ca, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    hong kong university of science and technology, kowloon, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_1.jpg
+  Figure 1 caption: (a) The on-screen position error between a demo video and a captured
+    video. The red point in the diagram corresponds to the difference between two
+    snapshots from (b) the demo video and (c) the captured video.
+  Figure 10 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_10.jpg
+  Figure 10 caption: The camera dynamically estimates the next camera pose based on
+    its actual observation and the network prediction.
+  Figure 2 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_2.jpg
+  Figure 2 caption: The filming style is represented as the relative motion between
+    the camera and the subject. p c t and p s t represent the poses of the camera
+    and the subject in the world coordinate at time t , respectively. The pose p includes
+    6 DOF ( x , y , z , roll , yaw and pitch .)
+  Figure 3 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_3.jpg
+  Figure 3 caption: Our proposed framework for one-shot imitation filming.
+  Figure 4 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_4.jpg
+  Figure 4 caption: Exemplar videos with the style (A) fly-through (B) fly-by (C)
+    follow (D) orbiting and (E) super-dolly.
+  Figure 5 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_5.jpg
+  Figure 5 caption: 'The style feature extractor which consists of three modules:
+    1) frame-level feature extraction; 2) snippet-level embedding; and 3) video-level
+    embedding'
+  Figure 6 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_6.jpg
+  Figure 6 caption: The network architecture for training the snippet-level embedding
+    network which consists of two independent autoencoders. Given the frame-level
+    feature within each snippet as input, we learn the snippet-level embedding network
+    (i.e., the encoder module) by minimizing the reconstruction error of the input
+    features.
+  Figure 7 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_7.jpg
+  Figure 7 caption: The network architecture for training the video-level embedding
+    network which consists of a video-level embedding network and a multi-class classifier.
+    The video-level embedding network consists of two concurrent sub-networks with
+    an attention mechanism for the foreground and background embeddings, respectively.
+    Given a sequence of snippet embedding as inputs, we learn the video-level embedding
+    network by minimizing the classification error.
+  Figure 8 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_8.jpg
+  Figure 8 caption: 'Left: the warping path generated from two videos with the same
+    style. Right: the matching snippets in each row share similar relative positions
+    of the subject.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\OneShot_Imitation_Drone_Filming_of_Human_Motion_Videos\figure_9.jpg
+  Figure 9 caption: "The network architecture for training the camera motion predictor.\
+    \ Given two consecutive snippets (represented as a light red box and a light blue\
+    \ box) from the content video, we utilize DTW to find the corresponding matching\
+    \ snippets (represented as a dark red box and a dark blue box) in the demo video.\
+    \ In the training process, the network is trained to predict the next motion for\
+    \ both videos, a c t+1 and a s t \u2032 +1 , simultaneously. This network design\
+    \ learns the style-related context from the input observation o c t and the style\
+    \ feature of the demo video v s . Note that the modules Subnet21 and Subnet22\
+    \ share the same weights. In the training phase, we only update the parameters\
+    \ of the network within the dashed box. In the testing phase, we ignore the module\
+    \ Subnet22."
+  First author gender probability: 0.72
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Chong Huang
+  Name of the last author: Kwang-Ting Cheng
+  Number of Figures: 18
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: One-Shot Imitation Drone Filming of Human Motion Videos
+  Publication Date: 2021-03-18 00:00:00
+  Table 1 caption: TABLE 1 Statistics of Our Annotated Data
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Design of the Four Network Baselines
+  Table 3 caption: "TABLE 3 Comparison of Action Prediction Error Among Three Baselines\
+    \ ( \u03C9 \u03C9: rads rads, \u03C1 \u03C1: rad rad, s s: Normalized)"
+  Table 4 caption: TABLE 4 Runtime of Different Modules (ms)
+  Table 5 caption: TABLE 5 Subjective Quality of the Captured Videos With the Basic
+    Style
+  Table 6 caption: TABLE 6 Subjective Quality of the Captured Videos With the Mixed
+    Style
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3067359
+- Affiliation of the first author: institute of interdisciplinary information sciences,
+    tsinghua university, beijing, china
+  Affiliation of the last author: institute of interdisciplinary information sciences,
+    tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_1.jpg
+  Figure 1 caption: 'The architecture of ResNet18 trained by self-distillation. (i)
+    The whole neural networks can be divided into three sections: backbone, attention
+    modules and shallow classifiers. (ii) The backbone section is just identical to
+    the original model. (iii) Additional attention modules are attached after the
+    intermediate features of the backbone. (iv) Features refined by attention modules
+    will be fed into the shallow classifiers, which consists of a bottleneck layer
+    and a fully connected layer. (v) All the attention modules and shallow classifiers
+    are dropped in the inference period, indicating that there is no additional parameters
+    and computation penalty in self-distillation.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_10.jpg
+  Figure 10 caption: "Hyper-parameters sensitivity study of \u03B1 and \u03BB on CIFAR100\
+    \ with ResNet18."
+  Figure 2 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_2.jpg
+  Figure 2 caption: "Four kinds of distillation path in self-distillation. Each distillation\
+    \ path indicates a scheme on how to choose the teacher and student classifiers.\
+    \ A \u2192 B indicates classifier A is the teacher of classifier B."
+  Figure 3 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_3.jpg
+  Figure 3 caption: The architecture of attention modules and shallow classifiers.
+    (i) The attention module consists of a convolution layer for downsampling and
+    a bilinear interpolation layer for upsampling. The attention mask learned by these
+    two layers is utilized to enhance the original features by a dot product operation.
+    (ii) The shallow classifier is composed of several pairs of depthwise and pointwise
+    layers which are designed to downsample the feature with few parameters and computation.
+    N in the figure is decided by the depth of the shallow classifiers.
+  Figure 4 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_4.jpg
+  Figure 4 caption: "Experiment results of self-distillation on CIFAR100. MAC indicates\
+    \ the multiply\u2013accumulate operation of neural networks."
+  Figure 5 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_5.jpg
+  Figure 5 caption: "Experiment results of self-distillation on ImageNet. MAC indicates\
+    \ the multiply\u2013accumulate operation of neural networks."
+  Figure 6 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Comparison experiments with two kinds of pruning methods in WideResNet40-2
+    on CIFAR10 and CIFAR100.
+  Figure 7 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_7.jpg
+  Figure 7 caption: Comparison between self-distillation with the other dynamic inference
+    methods on ImageNet with ResNet101.
+  Figure 8 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_8.jpg
+  Figure 8 caption: The relation between the threshold and the number of images classified
+    by this classifier on CIFAR100 with ResNet18. Note that there are 10K images in
+    the testing set totally.
+  Figure 9 Link: articels_figures_by_rev_year\2021\SelfDistillation_Towards_Efficient_and_Compact_Neural_Networks\figure_9.jpg
+  Figure 9 caption: Experiments on the relation between the accuracy of the deepest
+    classifier and the number of classifiers.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.97
+  Name of the first author: Linfeng Zhang
+  Name of the last author: Kaisheng Ma
+  Number of Figures: 17
+  Number of Tables: 11
+  Number of authors: 3
+  Paper title: 'Self-Distillation: Towards Efficient and Compact Neural Networks'
+  Publication Date: 2021-03-18 00:00:00
+  Table 1 caption: TABLE 1 Experiment Results of Accuracy (%) on CIFAR100
+  Table 10 caption: TABLE 10 Ablation Study on the Loss Function With ResNet18 on
+    CIFAR100
+  Table 2 caption: TABLE 2 Experiment Results of Accuracy (%) on ImageNet
+  Table 3 caption: TABLE 3 Comparison With Other Knowledge Distillation Methods on
+    CIFAR100
+  Table 4 caption: TABLE 4 Experiments Results of Accuracy (%) in Point Cloud Classification
+  Table 5 caption: TABLE 5 Experiments Results of Dynamic Inference on CIFAR100 With
+    Different Thresholds
+  Table 6 caption: TABLE 6 Experiments Results of Dynamic Inference on ImageNet With
+    Different Thresholds
+  Table 7 caption: TABLE 7 Experiments of Different Distillation Path in Self-Distillation
+  Table 8 caption: TABLE 8 Accuracy of Different Attention Modules in ResNet18 on
+    CIFAR100
+  Table 9 caption: TABLE 9 Experiment Results of Self-Distillation With Shallow Classifiers
+    in Different Position Schemes on CIFAR100
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3067100
+- Affiliation of the first author: school of information science and engineering,
+    shandong university, qingdao, china
+  Affiliation of the last author: bnrist, the department of computer science and technology,
+    moe-key laboratory of pervasive computing, tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\VideoBased_Facial_MicroExpression_Analysis_A_Survey_of_Datasets_Features_and_Alg\figure_1.jpg
+  Figure 1 caption: Six macro-expressions and six micro-expressions, sampled from
+    the same person, in the MMEW dataset (see Section 3). While macro-expressions
+    can be analyzed based on a single image, micro-expressions need to be analyzed
+    across an image sequence due to their low intensity. For micro-expressions, the
+    subtle changes outlined in red boxes are explained in the supplemental material,
+    which can be found on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2021.3067464.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\VideoBased_Facial_MicroExpression_Analysis_A_Survey_of_Datasets_Features_and_Alg\figure_2.jpg
+  Figure 2 caption: 'Two distinct neural pathways exist for conveying facial behavior:
+    namely, the pyramidal and extrapyramidal tract neural pathways. The former is
+    responsible for macro-expressions with voluntary facial actions, while the latter
+    is responsible for spontaneous facial expressions. In high-risk scenarios, such
+    as lying, both pathways are activated and engage in a back-and-forth battle, resulting
+    in the fleeting leakage of genuine emotions in the form of micro-expressions.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\VideoBased_Facial_MicroExpression_Analysis_A_Survey_of_Datasets_Features_and_Alg\figure_3.jpg
+  Figure 3 caption: 'Snapshots of six micro-expression datasets. From left to right
+    and from top to bottom, these are as follows: MEVIEW [28], SAMM [29], SMIC [30],
+    CASME [31], CASME II [32], and CAS(ME) 2 [33].'
+  Figure 4 Link: articels_figures_by_rev_year\2021\VideoBased_Facial_MicroExpression_Analysis_A_Survey_of_Datasets_Features_and_Alg\figure_4.jpg
+  Figure 4 caption: Micro and macro-expression for the same person on the CAS(ME)
+    2 dataset. The first row is the original images, while the second row corresponds
+    to the zoomed local regions of the micro-expression apex and the macro-expression
+    of the same expression.
+  Figure 5 Link: articels_figures_by_rev_year\2021\VideoBased_Facial_MicroExpression_Analysis_A_Survey_of_Datasets_Features_and_Alg\figure_5.jpg
+  Figure 5 caption: "ROC results of three methods \u2014 MDMD, HOG and LBP \u2014\
+    \ on CAS(ME) 2 in terms of micro-expression spotting."
+  Figure 6 Link: articels_figures_by_rev_year\2021\VideoBased_Facial_MicroExpression_Analysis_A_Survey_of_Datasets_Features_and_Alg\figure_6.jpg
+  Figure 6 caption: 'Comparisons of three alignment algorithms. Due to the space limitations,
+    we only show four frames here. From left to right: (a) an original image sequence;
+    (b) results yielded by ASM+LWM [32]; (c) results yielded by DRMF+OFA [85]; (d)
+    results yielded by JCFDA [113].'
+  Figure 7 Link: articels_figures_by_rev_year\2021\VideoBased_Facial_MicroExpression_Analysis_A_Survey_of_Datasets_Features_and_Alg\figure_7.jpg
+  Figure 7 caption: The highest recognition rates of LBP-TOP with three alignment
+    and two interpolation algorithms on MMEW.
+  Figure 8 Link: articels_figures_by_rev_year\2021\VideoBased_Facial_MicroExpression_Analysis_A_Survey_of_Datasets_Features_and_Alg\figure_8.jpg
+  Figure 8 caption: Confusion matrices predicted by TLCNN on MMEW and SAMM. (a) MMEW;
+    (b) SAMM.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xianye Ben
+  Name of the last author: Yong-Jin Liu
+  Number of Figures: 8
+  Number of Tables: 9
+  Number of authors: 7
+  Paper title: 'Video-Based Facial Micro-Expression Analysis: A Survey of Datasets,
+    Features and Algorithms'
+  Publication Date: 2021-03-19 00:00:00
+  Table 1 caption: TABLE 1 Main Differences Between Macro- and Micro-Expressions
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Seven Publicly Released Micro-Expression Datasets
+  Table 3 caption: TABLE 3 Emotional Facial Action Coding System for Macro-Expressions
+  Table 4 caption: TABLE 4 The Micro-Expression Categories and AU Labeling
+  Table 5 caption: TABLE 5 Comparison of Representative Micro-Expression Spotting
+    Algorithms
+  Table 6 caption: TABLE 6 Micro-Expression Recognition Algorithms
+  Table 7 caption: TABLE 7 Recognition Rates (%) of Micro-Expressions Using Hand-Crafted
+    Features With Different Classifiers on MMEW and SAMM
+  Table 8 caption: TABLE 8 Recognition Rates (%) of Micro-Expressions Using the State-of-the-Art
+    Methods on MMEW and SAMM
+  Table 9 caption: TABLE 9 Data Sources and Recognition Rates (%) of the Pre-Training,
+    Fine-Tuning and Testing Phases
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3067464

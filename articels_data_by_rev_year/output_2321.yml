@@ -1,0 +1,749 @@
+- Affiliation of the first author: department of electrical engineering and computer
+    science, massachusetts institute of technology, cambridge, ma, usa
+  Affiliation of the last author: department of electrical engineering and computer
+    science, massachusetts institute of technology, cambridge, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_1.jpg
+  Figure 1 caption: Efficient 3D models should reduce memory footprint and avoid random
+    memory accesses. (a) Off-chip DRAM accesses take two orders of magnitude more
+    energy than arithmetic operations (640pJ versus 3pJ), whereas the bandwidth is
+    two orders of magnitude lower (30GBs versus 668GBs). Efficient 3D model should
+    reduce the memory footprint, which is the bottleneck of voxel-based methods. (b)
+    Random memory access is inefficient since it cannot take advantage of the DRAM
+    burst and will cause bank conflicts, whereas contiguous memory access does not
+    suffer from the above issue. Efficient 3D model should avoid random memory accesses,
+    which is the bottleneck of point-based methods.
+  Figure 10 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_10.jpg
+  Figure 10 caption: MinkowskiNet usually has a higher error recognizing small objects
+    and region boundaries, while our SPVNAS recognizes small objects better thanks
+    to the high-resolution point-based branch.
+  Figure 2 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_2.jpg
+  Figure 2 caption: Both conventional voxel-based and point-based models are inefficient.
+    (a) Voxel-based models suffer from the large information loss at acceptable GPU
+    memory consumption. (b) Point-based model suffer from large irregular memory access
+    and dynamic kernel computation overheads.
+  Figure 3 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_3.jpg
+  Figure 3 caption: Point-Voxel Convolution (PVConv) is composed of a low-resolution
+    voxel-based branch and a high-resolution point-based branch. The voxel-based branch
+    extracts coarse-grained neighborhood information, which is supplemented by fine-grained
+    individual point features extracted from the point-based branch.
+  Figure 4 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_4.jpg
+  Figure 4 caption: We propose a two-stage 3D Neural Architecture Search (3D-NAS)
+    framework to automatically design efficient 3D deep learning architectures. (a)
+    In the first stage, we train a super network that supports all candidate networks
+    within the design space. (b) In the second stage, we perform evolutionary architecture
+    search to find the best candidate network given a specific resource constraint.
+  Figure 5 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_5.jpg
+  Figure 5 caption: PVConv is more efficient and effective at smaller resolutions
+    while SPVConv is more efficient at larger resolutions. Here, the GPU latency is
+    measured on NVIDIA GTX 1080 Ti.
+  Figure 6 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_6.jpg
+  Figure 6 caption: 'Two branches are providing complementary information: the voxel-based
+    branch focuses on the large, continuous parts, while the point-based focuses on
+    the isolated, discontinuous parts.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_7.jpg
+  Figure 7 caption: PVCNN achieves real-time 3D object segmentation with 2,048 input
+    points on edge devices. With PVNAS, we further boost the efficiency on NVIDIA
+    Jetson Nano, achieving 8.3 FPS with 10,000 input points.
+  Figure 8 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_8.jpg
+  Figure 8 caption: PVCNN achieves a much better trade-off between accuracy and efficiency
+    than the point-based and voxel-based baselines on S3DIS.
+  Figure 9 Link: articels_figures_by_rev_year\2021\PVNAS_D_Neural_Architecture_Search_With_PointVoxel_Convolution\figure_9.jpg
+  Figure 9 caption: An efficient 3D primitive (SPVConv) and a well-designed network
+    architecture (3D-NAS) are both important to the performance of SPVNAS.
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Zhijian Liu
+  Name of the last author: Song Han
+  Number of Figures: 13
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: 'PVNAS: 3D Neural Architecture Search With Point-Voxel Convolution'
+  Publication Date: 2021-09-01 00:00:00
+  Table 1 caption: TABLE 1 Family of Point-Voxel Convolution
+  Table 10 caption: TABLE 10 Results of Outdoor Object Detection on KITTI (One-Stage)
+  Table 2 caption: TABLE 2 Comparison Between PVConv and SPVConv in Large Outdoor
+    Scenes
+  Table 3 caption: TABLE 3 Results of Object Part Segmentation on ShapeNet Part
+  Table 4 caption: TABLE 4 Results of Fine-Grained Object Part Segmentation on PartNet
+  Table 5 caption: TABLE 5 Results of Indoor Scene Segmentation on S3DIS
+  Table 6 caption: TABLE 6 Results of Outdoor Scene Segmentation on SemanticKITTI
+    (3D)
+  Table 7 caption: TABLE 7 Results of Outdoor Scene Segmentation on SemanticKITTI
+    (2D)
+  Table 8 caption: TABLE 8 Results of Outdoor Scene Segmentation on nuScenes
+  Table 9 caption: TABLE 9 Results of Outdoor Object Detection on KITTI (Two-Stage)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3109025
+- Affiliation of the first author: electronic information school, wuhan university,
+    wuhan, china
+  Affiliation of the last author: department of computer science, stony brook university,
+    stony brook, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_1.jpg
+  Figure 1 caption: "The family of loss functions: quadratic ( \u2113 2 ) loss, absolute\
+    \ ( \u2113 1 ) loss, truncated quadratic (truncated \u2113 2 ) loss and maximum\
+    \ consensus loss."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_10.jpg
+  Figure 10 caption: The cumulative distribution functions of Homography error (horizontal
+    axis) of the estimated homography transformation on the HPatches dataset. The
+    more accurate the method is, the closer its curve is to the top.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_2.jpg
+  Figure 2 caption: Evaluation of the performances of EES, EAS, and DPCP-PSGM based
+    on synthetic data (left) and real 3D point cloud data (right) w.r.t. noise level.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_3.jpg
+  Figure 3 caption: 'Frame 153 of dataset KITTI-CITY-5: an illustrative example of
+    3D point cloud road plane fitting, raw image, projection of annotated 3D point
+    cloud onto the image, and detected inliersoutliers using a ground-truth threshold
+    on the distance to the hyperplane for each method. Blue indicates classified inlier
+    points and red indicates the opposite. The noise level is 0.12, the outlier ration
+    is 0.67. The AUC value for EES, EAS, and DPCP-PSGM are 0.971, 0.932, and 0.757.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_4.jpg
+  Figure 4 caption: Evaluation of different formulations for the detection of homography-related
+    correspondences. From left to right, the cumulative distribution of AUC of different
+    formulations on the homogr and the EVD dataset, and the robustness test against
+    outlier rate with homogr. For the cumulative distribution, the better the method
+    performs, the closer its curve is to the top.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_5.jpg
+  Figure 5 caption: Representative examples for homography-related correspondences
+    detection. From top to bottom, the correspondences detected by EAS-a, EAS-b, EAS-c,
+    EAS-d, and the ground-truth inliers. From left to right, CapitalRegion, and WhiteBoard
+    from homogr, and dum and vin from EVD.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_6.jpg
+  Figure 6 caption: A qualitative comparison of EAS-F, EAS-A, EES, GD, and IBCO on
+    homogr, EVD, kusvod2, and AdelaideRMF. The first row presents the cumulative distribution
+    of each method w.r.t. the mean geometric error, and the second row presents the
+    cumulative distribution of each method w.r.t. the runtime. The better the method
+    performs, the closer its curve is to the top.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_7.jpg
+  Figure 7 caption: Some representative examples of EAS-A for homography estimation.
+    The first row presents the correspondences detected by EAS-A, and the second row
+    presents the refined results after the post-processing stage. The adopt image
+    pairs are ExtremeZoom, WhiteBoard from homogr, and dum and fox from EVD.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_8.jpg
+  Figure 8 caption: Some representative examples of EAS-A for fundamental matrix estimation.
+    The first and second row present the correspondences detected by EAS-A in two
+    iterations, and the third row presents the refined results after the post-processing
+    stage. The adopted image pairs are box, rotunda and castle from kusvod2, and elderhalla
+    from AdelaideRMF.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Efficient_Deterministic_Search_With_Robust_Loss_Functions_for_Geometric_Model_Fi\figure_9.jpg
+  Figure 9 caption: "The ablation experiment for the hyper-parameters introduced in\
+    \ the deterministic annealing strategy, i.e., \u03B1 0 and \u03B3 . The performance\
+    \ is indicated by the cumulative distribution of the geometric error in the combination\
+    \ of the four datasets homogr, EVD, kusvod2, and AdelaideRMF. The better the method\
+    \ performs, the closer its curve is to the top."
+  First author gender probability: 0.9
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Aoxiang Fan
+  Name of the last author: Haibin Ling
+  Number of Figures: 17
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Efficient Deterministic Search With Robust Loss Functions for Geometric
+    Model Fitting
+  Publication Date: 2021-09-02 00:00:00
+  Table 1 caption: TABLE 1 The Recall of Each Method for Fundamental Matrix Estimation
+    on the Four Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3109784
+- Affiliation of the first author: school of computer science and engineering, university
+    of electronic science and technology of china, chengdu, china
+  Affiliation of the last author: school of computer science and engineering, university
+    of electronic science and technology of china, chengdu, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_1.jpg
+  Figure 1 caption: A comparison among typical domain adaptation (left), source data-absent
+    domain adaptation (middle) and target data-absent domain adaptation (right). Typical
+    domain adaptation methods fail to handle the source or target data-absent cases.
+    Our method explicitly explores unseen distributions related to the source domain(s)
+    to help the model generate to the target domain.
+  Figure 10 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_10.jpg
+  Figure 10 caption: "The t-SNE features learned by EISNet and our method for DG task\
+    \ R\u2192S on PACS. We provide both the class-level feature in (a), (b) and domain-level\
+    \ feature in (c) and (d) for better understanding. Best viewed in color."
+  Figure 2 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_2.jpg
+  Figure 2 caption: 'The framework of our proposed method. Our framework consists
+    of two alternative steps: generating adversarial examples and harnessing adversarial
+    examples. In the first step, we employ an generator G to generate smooth and diverse
+    perturbations for training samples x t (we use target data when source data is
+    absent and vice versa). In the second step, we learn from the generated examples
+    to generalize better to the target domain. Some additional regularizations are
+    used to stabilize the training. These two steps are performed alternatively until
+    convergence. The models in dashline are frozen. We use pseudo labels for target
+    samples by clustering when source data is not accessible. Best viewed in color.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_3.jpg
+  Figure 3 caption: Illumination of our mutual information maximization.
+  Figure 4 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_4.jpg
+  Figure 4 caption: "The hyper-parameter sensitivity analysis w.r.t (a) \u03F5 (b)\
+    \ \u03BB mi (c) \u03BB cls and (d) \u03BB reg in our method. Task A\u2192D and\
+    \ D\u2192A on Office-31 under the SFUDA setting are chosen for evaluation."
+  Figure 5 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_5.jpg
+  Figure 5 caption: "The hyper-parameter sensitivity analysis w.r.t \u03BB sim (a)\
+    \ and \u03BB adv (b) in our method. We choose tasks R\u2192S on PACS and task\
+    \ R\u2192A on Office-31 under the DG setting as examples. Both of them are base\
+    \ on ResNet-18 backbone."
+  Figure 6 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_6.jpg
+  Figure 6 caption: "The training process of our model on Office-31. We take A \u2192\
+    \ W and D \u2192 A on Office-31 as examples."
+  Figure 7 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_7.jpg
+  Figure 7 caption: "The qualitative results on Office-Home for DG task R\u2192A .\
+    \ The yellow label is the ground-truth and the gray label is the predicted label."
+  Figure 8 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_8.jpg
+  Figure 8 caption: "Comparison of the original images with adversarial images generated\
+    \ by our method on Office-31. The magnitude \u03F5 is switched to 0, 10, 100 and\
+    \ 200, respectively."
+  Figure 9 Link: articels_figures_by_rev_year\2021\DivergenceAgnostic_Unsupervised_Domain_Adaptation_by_Adversarial_Attacks\figure_9.jpg
+  Figure 9 caption: "The t-SNE features from the last bottleneck layer of our ResNet\
+    \ backbone before and after adaptation for SFUDA task. We take A \u2192 W on Office-31\
+    \ as an example. Different colors represent different classes in (a), (b) and\
+    \ represent different domains in (c), (d). It is worth noting that source data\
+    \ are not available in our setting. We visualize the source samples as auxiliary\
+    \ information for the sake of a better understanding in (c) and (d). One should\
+    \ focus on the target samples in this figure. Best viewed in color."
+  First author gender probability: 0.92
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Jingjing Li
+  Name of the last author: Heng Tao Shen
+  Number of Figures: 10
+  Number of Tables: 10
+  Number of authors: 6
+  Paper title: Divergence-Agnostic Unsupervised Domain Adaptation by Adversarial Attacks
+  Publication Date: 2021-09-03 00:00:00
+  Table 1 caption: TABLE 1 Accuracy(%) on VisDA-2017 for Typical Unsupervised Domain
+    Adaptation (ResNet-101)
+  Table 10 caption: TABLE 10 Comparison Between Different Adversarial Attack Strategies
+    for Domain Generalization Task on PACS Using AlexNet
+  Table 2 caption: TABLE 2 Accuracy(%) on Office-31 for Source-Free Unsupervised Domain
+    Adaptation (ResNet-50)
+  Table 3 caption: TABLE 3 Accuracy(%) on Office-Home for Source-Free Unsupervised
+    Domain Adaptation (ResNet-50)
+  Table 4 caption: TABLE 4 Accuracy(%) on VisDA-2017 for Source-Free Unsupervised
+    Domain Adaptation (ResNet-101)
+  Table 5 caption: TABLE 5 Accuracy(%) on Office-31 for Domain Generalization (ResNet-18)
+  Table 6 caption: TABLE 6 Domain Generalization Results on PACS Using AlexNet and
+    ResNet Backbone
+  Table 7 caption: TABLE 7 Domain Generalization Results on Office-Home Using ResNet18
+    Backbone
+  Table 8 caption: TABLE 8 Results of the Significance Test Over Four Relatively Hard
+    Tasks on Office-31
+  Table 9 caption: TABLE 9 Ablation Study on Office-31 With the SFUDA Setting
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3109287
+- Affiliation of the first author: department of statistics, rice university, houston,
+    tx, usa
+  Affiliation of the last author: department of statistical science, duke university,
+    durham, nc, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_Asymmetric_and_Local_Features_in_MultiDimensional_Data_Through_Wavelets\figure_1.jpg
+  Figure 1 caption: "Illustration of the correspondence between RDPs and permutations.\
+    \ In the tree representation, A 2,0 =0,1,4,5 means the node A 2,0 contains the\
+    \ (0, 1, 4, 5)th elements of \u03A9 . The coloring code for the observations is\
+    \ red for 2 and white for 1. From level 0 to level 3, edges that are thicker than\
+    \ others are the partitions of the current level; nodes at the last level are\
+    \ all atomic."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_Asymmetric_and_Local_Features_in_MultiDimensional_Data_Through_Wavelets\figure_2.jpg
+  Figure 2 caption: "Comparison of various methods based on 100 randomly selected\
+    \ 512\xD7512 images from ImageNet. The method of RM is off the chart (not plotted\
+    \ here). The maximum standard errors at \u03C3\u22080.1,0.3,0.5,0.7 among all\
+    \ methods are (0.001,0.042,0.071,0.058)\xD7 10 \u22123 for MSE, and (0.002,0.062,0.065,0.058)\xD7\
+    \ 10 \u22122 for MAE, respectively. The running time of each method in seconds\
+    \ is 7.2 (WARP), 76.9 (SHAH), 7.9 (AWS), 10.7 (CRP), 8.7 (Wedgelet), 2.1\xD7 10\
+    \ 3 (BPFA), and less than 1 (1D-Haar, TI-2D-Haar, and RM), based on one test image\
+    \ without cycle spinning at \u03C3 = 0.3 including both tuning and estimation\
+    \ steps."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_Asymmetric_and_Local_Features_in_MultiDimensional_Data_Through_Wavelets\figure_3.jpg
+  Figure 3 caption: "Comparison of energy concentration for three methods\u2014WARP,1D\
+    \ Haar, and 2D Haar\u2014on ImageNet images. Column (a) plots the true image,\
+    \ Column (b) compares WARP versus 1D DWT, and Column (c) compares WARP versus\
+    \ 2D DWT. In Columns (b) and (c), the red and blue lines correspond to the right\
+    \ y axis, plotting the number of coefficients to attain a specific energy level\
+    \ ( x axis) by deterministic DWT and WARP, respectively. The black curve corresponds\
+    \ to the left y axis and is 100% less the ratio of the blue and red curves, indicating\
+    \ the percentage reduction in the number of wavelet coefficients to achieve the\
+    \ same sum of squares by WARP."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_Asymmetric_and_Local_Features_in_MultiDimensional_Data_Through_Wavelets\figure_4.jpg
+  Figure 4 caption: Scalability of various methods using 2D and 3D images. Each line
+    is the running time taken by the estimation step ( y -axis) using the corresponding
+    method versus the number of locations in the image ( x -axis).
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_Asymmetric_and_Local_Features_in_MultiDimensional_Data_Through_Wavelets\figure_5.jpg
+  Figure 5 caption: "Two retinal OCT datasets (titled \u201CObs.\u201D) and reconstructed\
+    \ images using TI-2D-Haar, SHAH, AWS, CRP, Wedgelet, BPFA, and WARP. The two metrics\
+    \ following each method are the MSE ( \xD7 10 \u22124 ) and MAE ( \xD7 10 \u2212\
+    2 ) respectively. The \u201Cnoiseless\u201D reference is an registered and averaged\
+    \ image."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_Asymmetric_and_Local_Features_in_MultiDimensional_Data_Through_Wavelets\figure_6.jpg
+  Figure 6 caption: "Reconstructed images using WARP based on the noisy observation\
+    \ and its four nearby slices. The two metrics following each method are the MSE\
+    \ ( \xD7 10 \u22124 ) and MAE ( \xD7 10 \u22122 ) respectively. The \u201Cnoiseless\u201D\
+    \ reference is an registered and averaged image."
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.97
+  Name of the first author: Meng Li
+  Name of the last author: Li Ma
+  Number of Figures: 6
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: Learning Asymmetric and Local Features in Multi-Dimensional Data Through
+    Wavelets With Recursive Partitioning
+  Publication Date: 2021-09-08 00:00:00
+  Table 1 caption: "TABLE 1 MSE ( \xD7 10 \u22123 \xD710-3) of WARP and DnCNN on 12\
+    \ Widely Used Test Images and BSD68"
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Mean PSNR for 18 Foveal Images Reconstructed by BRFOE,
+    K-SVD, PGPD, BM3D, MSBTD, SSR, and WARP
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3110403
+- Affiliation of the first author: department of computer science and information
+    engineering, national taiwan university, taipei, taiwan
+  Affiliation of the last author: department of electrical and computer engineering,
+    virginia tech, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_1.jpg
+  Figure 1 caption: Seeing through obstructions. We present a learning-based method
+    for recovering clean images from a given short sequence of images taken by a moving
+    camera through obstructing elements such as (a) windows, (b) fence, or (c) adherent
+    raindrop.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_10.jpg
+  Figure 10 caption: Occlusion removal. The proposed method can also be applied to
+    other obstruction removal tasks, e.g., adherent raindrop, fence, and occlusion.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_2.jpg
+  Figure 2 caption: Algorithmic overview. We reconstruct the backgroundreflection
+    layers in a coarse-to-fine manner. At the coarsest level, we estimate uniform
+    flow fields for both the background and reflection layers, and reconstruct coarse
+    backgroundreflection layers by averaging the aligned frames. At level l , we apply
+    (1) the backgroundreflection reconstruction modules to decompose an image, and
+    (2) the PWC-Net to predict the refined flow fields for both layers. Our framework
+    progressively reconstructs the backgroundreflection layers and flow fields until
+    the finest level.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_3.jpg
+  Figure 3 caption: "Overview of layer reconstruction module. At level l , we first\
+    \ upsample the background flows V l\u22121 B,j\u2192k from level l\u22121 to warp\
+    \ and align the input frames I l j with the keyframe I l k . We then compute the\
+    \ difference maps between the background-registered frames and the keyframe. For\
+    \ each non-keyframe image, we group the following five frames as a group: (1)\
+    \ background-registered frames I ~ l B,j\u2192k , (2) difference maps D l B,j\u2192\
+    k , (3) visibility masks M l B,j\u2192k , (4) upsampled background ( B l\u2212\
+    1 k ) \u2191 2 , and (5) reflection layers ( R l\u22121 k ) \u2191 2 . After collecting\
+    \ these T\u22121 groups, where T is the number of input frames, we apply convolutional\
+    \ layers (with weights sharing) to extract the features from each group. We then\
+    \ apply a max operation to collapse these groups into one feature map. The background\
+    \ reconstruction network takes the collapsed feature as input, and learns to predict\
+    \ the residual map of the background keyframe. We add the predicted residual map\
+    \ to the upsampled background frame ( B l\u22121 k ) \u2191 2 and generate the\
+    \ reconstructed background frame B l k at level l . For the reflection layer reconstruction,\
+    \ we use the same architecture but learn a different set of network parameters.\
+    \ Thanks to the use of max operation, our layer reconstruction module is able\
+    \ to take an arbitrary number of input frames."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_4.jpg
+  Figure 4 caption: Overview of the fence removal task.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_5.jpg
+  Figure 5 caption: Visual results on controlled sequences [20]. For each sequence,
+    we show the keyframe (left), recovered background layer (middle), and reflectionocclusion
+    layer (right).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_6.jpg
+  Figure 6 caption: Visual results on the collected controlled sequences. For each
+    sequence, from left to right, we show the keyframe, the ground-truth background,
+    the ground-truth obstruction (if available), the background layer and reflectionocclusion
+    layer recovered by our method.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_7.jpg
+  Figure 7 caption: Visual comparisons of background-reflection separation on natural
+    sequences provided by [20].
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_8.jpg
+  Figure 8 caption: Visual comparisons of background-reflection separation on natural
+    sequences.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learning_to_See_Through_Obstructions_With_Layered_Decomposition\figure_9.jpg
+  Figure 9 caption: Effect of pre-training, online optimization, and meta-learning.
+    All three steps are crucial to achieving high-quality results.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yu-Lun Liu
+  Name of the last author: Jia-Bin Huang
+  Number of Figures: 20
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Learning to See Through Obstructions With Layered Decomposition
+  Publication Date: 2021-09-10 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Evaluation on Controlled Sequences [20]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Comparisons on Collected Controlled Scenes
+  Table 3 caption: TABLE 3 Quantitative Comparison of Reflection Removal on Synthetic
+    Sequences
+  Table 4 caption: TABLE 4 Ablations
+  Table 5 caption: TABLE 5 Ablation Study on the Number of Pyramid Levels
+  Table 6 caption: TABLE 6 Effect of Realistic Training Data Generation
+  Table 7 caption: TABLE 7 Ablation Study on the Input Features
+  Table 8 caption: TABLE 8 Running Time Comparison (in seconds) of the Proposed Method
+  Table 9 caption: TABLE 9 Running Time Comparison (in seconds)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3111847
+- Affiliation of the first author: intelligent systems department, delft university
+    of technology, delft, cd, the netherlands
+  Affiliation of the last author: department of electrical & systems engineering,
+    university of pennsylvania, philadelphia, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\EdgeNets_Edge_Varying_Graph_Neural_Networks\figure_1.jpg
+  Figure 1 caption: "Edge varying graph filters. Each edge varying matrix \u03A6 (k)\
+    \ acts as a different shift operator that locally combines the graph signal. (Top-left)\
+    \ The colored discs are centered at five reference nodes and their coverage shows\
+    \ the amount of local information needed to compute z (1) = \u03A6 (1:0) x at\
+    \ these nodes. The coverage of the discs in the other graphs shows the signal\
+    \ information needed by the reference nodes to produce the successive outputs.\
+    \ (Bottom) Schematic illustration of the edge varying filter output of order K=3\
+    \ ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\EdgeNets_Edge_Varying_Graph_Neural_Networks\figure_2.jpg
+  Figure 2 caption: Permutation equivariance of machine learning on graphs. Many tasks
+    in machine learning on graphs are equivariant to permutations (cf. Proposition
+    1) but not all are. E.g., we expect agents 3, 5, 8, and 12 to be interchangeable
+    from the perspective of predicting product ratings from the ratings of other nodes.
+    But from the perspective of community classification we expect 3 and 5 or 8 and
+    12 to be interchangeable, but 3 and 5 are not interchangeable with 8 and 12.
+  Figure 3 Link: articels_figures_by_rev_year\2021\EdgeNets_Edge_Varying_Graph_Neural_Networks\figure_3.jpg
+  Figure 3 caption: Hybrid edge varying filter [cf. (17)]. The nodes in set I=2,7
+    are highlighted. Nodes 2 and 7 have edge varying parameters associated with their
+    incident edges. All nodes, including 2 and 7, also use the global parameter a
+    k as in a regular convolutional graph filter.
+  Figure 4 Link: articels_figures_by_rev_year\2021\EdgeNets_Edge_Varying_Graph_Neural_Networks\figure_4.jpg
+  Figure 4 caption: Jacobi autoregressive moving average filter. The input signal
+    mathbf x is processed by a parallel bank of filters. One of this filters is a
+    convolutional filter of the form in (14) operating w.r.t. the shift operator mathbf
+    S (highlighted in red). The remaining filters operate w.r.t. scaled shift operators
+    [cf. (30)] (highlighted in blue). All filter outputs are summed together to yield
+    the overall Jacobi ARMA output.
+  Figure 5 Link: articels_figures_by_rev_year\2021\EdgeNets_Edge_Varying_Graph_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Higher-order graph attention filters. (a) Graph convolutional
+    attention filter. The input features mathbf Xl-1 are shifted by the same edge
+    varying shift operator boldsymbolPhi (mathbf B, mathbf e) and weighted by different
+    parameter matrices mathbf Ak . The edge varying parameters in all boldsymbolPhi
+    (mathbf B, mathbf e) are parameterized by the same matrix mathbf B and vector
+    mathbf e following the attention mechanism. (b) Edge varying GAT filter. The input
+    features mathbf Xl-1 are shifted by different edge varying shift operators boldsymbolPhi
+    (k)(mathbf Bk, mathbf ek) and weighted by different parameter matrices mathbf
+    Ak . The edge varying parameters in the different boldsymbolPhi (k)(mathbf Bk,
+    mathbf ek) are parameterized by a different matrix mathbf Bk and vector mathbf
+    ek following the attention mechanism.
+  Figure 6 Link: articels_figures_by_rev_year\2021\EdgeNets_Edge_Varying_Graph_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Source localization test error in the stochastic block model graph.
+    The y- axis scale is deformed to improve visibility. The thick bar interval indicates
+    the average performance for different parameter choices (e.g., filter order, attention
+    heads). The circle marker represents the mean value of this interval. The thin
+    line spans an interval of one standard deviation from the average performance.
+    The convolutional-based approaches perform better than attention-based. We attribute
+    the poor performance of the attention techniques to the slow learning rate. Both
+    the GAT and the edge variant GAT required more than 40 epochs to reach a local
+    minimum. However, the graph convolutional attention network (GCAT) does not suffer
+    from the latter issue leading to faster learning.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Elvin Isufi
+  Name of the last author: Alejandro Ribeiro
+  Number of Figures: 6
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: 'EdgeNets: Edge Varying Graph Neural Networks'
+  Publication Date: 2021-09-13 00:00:00
+  Table 1 caption: TABLE 1 Properties of Different Graph Neural Network Architectures
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Source Localization Test Error in Facebook Subnetwork
+  Table 3 caption: TABLE 3 Authorship Attribution Test Error
+  Table 4 caption: TABLE 4 Average RMSE on User Graph
+  Table 5 caption: TABLE 5 Average RMSE on Movie Graph
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3111054
+- Affiliation of the first author: the university of adelaide, adelaide, sa, australia
+  Affiliation of the last author: bytedance ai lab, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\SOLO_A_Simple_Framework_for_Instance_Segmentation\figure_1.jpg
+  Figure 1 caption: "SOLO framework. We reformulate the instance segmentation as two\
+    \ sub-tasks: category prediction and instance mask generation problems. An input\
+    \ image is divided into a uniform grids, i.e., S\xD7S . Here, we illustrate the\
+    \ grid with S=5 . If the center of an object falls into a grid cell, that grid\
+    \ cell is responsible for predicting the semantic category (top) and masks of\
+    \ instances (bottom). We do not show the feature pyramid network (FPN) here for\
+    \ simpler illustration."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\SOLO_A_Simple_Framework_for_Instance_Segmentation\figure_2.jpg
+  Figure 2 caption: "SOLO variants. I is the input feature after FCN-backbone representation\
+    \ extraction. Black dashed arrows denote convolutions. k=i\u22C5S+j . \u201C \u2297\
+    \ \u201D denotes element-wise multiplication. \u201C \u229B \u201D denotes the\
+    \ dynamic convolution operation."
+  Figure 3 Link: articels_figures_by_rev_year\2021\SOLO_A_Simple_Framework_for_Instance_Segmentation\figure_3.jpg
+  Figure 3 caption: Vanilla Head architecture. At each FPN feature level, we attach
+    two sibling sub-networks, one for instance category prediction (top) and one for
+    instance mask segmentation (bottom). In the mask branch, we concatenate the x
+    , y coordinates and the original features to encode spatial information. Here,
+    numbers denote spatial resolution and channels. In this figure, we assume 256
+    channels as an example. Arrows denote either convolution or interpolation. Align
+    means bilinear interpolation. During inference, the mask branch outputs are further
+    upsampled to the original image size.
+  Figure 4 Link: articels_figures_by_rev_year\2021\SOLO_A_Simple_Framework_for_Instance_Segmentation\figure_4.jpg
+  Figure 4 caption: 'Python code of Matrix NMS. mm: matrix multiplication; T: transpose;
+    triu: upper triangular part.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\SOLO_A_Simple_Framework_for_Instance_Segmentation\figure_5.jpg
+  Figure 5 caption: "Comparison of instance segmentation performance of SOLO and other\
+    \ methods on the COCO test-dev. (a) The proposed method outperforms a range of\
+    \ state-of-the-art algorithms. All methods are evaluated using one Tesla V100\
+    \ GPU. (b) SOLOv2 obtains higher-quality masks compared with Mask R-CNN. Mask\
+    \ R-CNNs mask head is typically restricted to 28\xD728 resolution, leading to\
+    \ inferior prediction at object boundaries."
+  Figure 6 Link: articels_figures_by_rev_year\2021\SOLO_A_Simple_Framework_for_Instance_Segmentation\figure_6.jpg
+  Figure 6 caption: Instance segmentation results of different numbers of training
+    epochs. Ours is the SOLOv2 model with denser grid. The models are trained on MS
+    COCO train2017 with 36 epochs, and tested on val2017.
+  Figure 7 Link: articels_figures_by_rev_year\2021\SOLO_A_Simple_Framework_for_Instance_Segmentation\figure_7.jpg
+  Figure 7 caption: Mask feature behavior. Each plotted subfigure corresponds to one
+    of the 64 channels of the last feature map prior to mask prediction. The mask
+    features appear to be position-sensitive (orange box on the left), while a few
+    mask features are position-agnostic and activated on all instances (white box
+    on the right). Best viewed on screens.
+  Figure 8 Link: articels_figures_by_rev_year\2021\SOLO_A_Simple_Framework_for_Instance_Segmentation\figure_8.jpg
+  Figure 8 caption: SOLOv2 for object detection. Speed-accuracy trade-off of bounding-box
+    detection on the COCO test-dev.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Xinlong Wang
+  Name of the last author: Lei Li
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: 'SOLO: A Simple Framework for Instance Segmentation'
+  Publication Date: 2021-09-13 00:00:00
+  Table 1 caption: TABLE 1 Instance Segmentation Mask AP (%) on COCO test-dev
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Instance Segmentation Results on the LVISv0.5 Validation
+    Dataset
+  Table 3 caption: TABLE 3 Instance Segmentation Results on the Cityscapes val
+  Table 4 caption: TABLE 4 Ablation Experiments for Vanilla SOLO
+  Table 5 caption: TABLE 5 Ablation Experiments for SOLOv2
+  Table 6 caption: TABLE 6 Other Improvements on SOLOv2 with ResNet-101 Backbone
+  Table 7 caption: "TABLE 7 SOLOv2 for Panoptic Segmentation \u2013 Results on MS\
+    \ COCO val2017"
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3111116
+- Affiliation of the first author: discipline of business analytics, university of
+    sydney business school, university of sydney, sydney, nsw, australia
+  Affiliation of the last author: discipline of business analytics, university of
+    sydney business school, university of sydney, sydney, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Improved_Variance_Reduction_Methods_for_Riemannian_NonConvex_Optimization\figure_1.jpg
+  Figure 1 caption: PCA problem on Grassmann manifold.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Improved_Variance_Reduction_Methods_for_Riemannian_NonConvex_Optimization\figure_2.jpg
+  Figure 2 caption: Additional PCA results on Syn dataset.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Improved_Variance_Reduction_Methods_for_Riemannian_NonConvex_Optimization\figure_3.jpg
+  Figure 3 caption: LRMC problem on Grassmann manifold.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Improved_Variance_Reduction_Methods_for_Riemannian_NonConvex_Optimization\figure_4.jpg
+  Figure 4 caption: RKM problem on SPD manifold.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Andi Han
+  Name of the last author: Junbin Gao
+  Number of Figures: 4
+  Number of Tables: 1
+  Number of authors: 2
+  Paper title: Improved Variance Reduction Methods for Riemannian Non-Convex Optimization
+  Publication Date: 2021-09-13 00:00:00
+  Table 1 caption: TABLE 1 Comparison of IFO Gradient Complexity on General Non-Convex
+    Problems
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3112139
+- Affiliation of the first author: electrical, computer, and energy engineering, arizona
+    state university, tempe, az, usa
+  Affiliation of the last author: electrical, computer, and energy engineering, arizona
+    state university, tempe, az, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\TBFA_Targeted_BitFlip_Adversarial_Weight_Attack\figure_1.jpg
+  Figure 1 caption: Demonstration of Targeted Bit-Flip Attack (T-BFA) on the identified
+    vulnerable bits achieving three distinct types of targeted attack objective.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\TBFA_Targeted_BitFlip_Adversarial_Weight_Attack\figure_2.jpg
+  Figure 2 caption: Overview of T-BFA searching algorithm.
+  Figure 3 Link: articels_figures_by_rev_year\2021\TBFA_Targeted_BitFlip_Adversarial_Weight_Attack\figure_3.jpg
+  Figure 3 caption: 'Type II: 1-to-1 attack on ResNet-20 between source class and
+    target class. The left subplot shows post attack test accuracy and the right subplot
+    shows average number of bit-flips required for the attack.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\TBFA_Targeted_BitFlip_Adversarial_Weight_Attack\figure_4.jpg
+  Figure 4 caption: 'Type III: 1-to-1 (S) attack post attack test accuracy, attack
+    success rate and avg. of bit-flips for five rounds of attacks for both Resnet-20
+    and VGG-11 Networks.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\TBFA_Targeted_BitFlip_Adversarial_Weight_Attack\figure_5.jpg
+  Figure 5 caption: "Summary of attacking adversarial trained ResNet-20 model with\
+    \ N-to-1 and 1-to-1 attack. We report the of bit-flips required to reach \u223C\
+    \ 100 % ASR. The source class is 3 and target class is 5. Here, we report the\
+    \ average of five individual rounds."
+  Figure 6 Link: articels_figures_by_rev_year\2021\TBFA_Targeted_BitFlip_Adversarial_Weight_Attack\figure_6.jpg
+  Figure 6 caption: "Summary of attacking adversarial trained ResNet-20 model with\
+    \ Type III 1-to-1 (S). We report the post attack accuracy and of bit-flips required\
+    \ to reach \u223C 99.0 % ASR for all cases. The source class is 3 and target class\
+    \ is 5."
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.9
+  Name of the first author: Adnan Siraj Rakin
+  Name of the last author: Deliang Fan
+  Number of Figures: 6
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: 'T-BFA: Targeted Bit-Flip Adversarial Weight Attack'
+  Publication Date: 2021-09-16 00:00:00
+  Table 1 caption: TABLE 1 Threat Model of Targeted Bit-Flip Attack (T-BFA), Same
+    as BFA [16], [19]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Test Data Splitting to Conduct Targeted Attack From Source
+    Class t p tp to Target Class t q tq
+  Table 3 caption: TABLE 3 Pre-Attack Test Accuracy of Individual Class ( i i)
+  Table 4 caption: "TABLE 4 N-to-1 Attack: Number of Bit-Flips (mean \xB1 \xB1 std)\
+    \ Required to Classify all the Input Images to a Corresponding Target Class With\
+    \ 100% ASR"
+  Table 5 caption: TABLE 5 Performance of T-BFA Variants on ImageNet (From Hen Class
+    (i.e., label 8) to Goose Class (i.e., label 99))
+  Table 6 caption: TABLE 6 Comparison With Competing Methods
+  Table 7 caption: TABLE 7 T-BFA Attack on DNNs Running in a Real Computer
+  Table 8 caption: TABLE 8 T-BFA Performance Against Existing BFA Defense Techniques
+    [32]
+  Table 9 caption: TABLE 9 Summary of Possible Directions to Improve Resistance Against
+    T-BFA
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3112932
+- Affiliation of the first author: institute for brain and cognitive sciences, tsinghua
+    university, beijing, china
+  Affiliation of the last author: institute for brain and cognitive sciences, tsinghua
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_1.jpg
+  Figure 1 caption: Our system reconstructs a detailed and textured portrait after
+    the subject self-rotates in front of an RGBD sensor.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_10.jpg
+  Figure 10 caption: Qualitative comparison against fusion methods. (a) Reference
+    depth input, (b), (c), and (d) are the results by PIFusion, DynamicFusion [13]
+    and DoubleFusion [16].
+  Figure 2 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_2.jpg
+  Figure 2 caption: System pipeline. In the first frame, we utilize RGBD-PIFu to generate
+    a roughly correct inner model as a prior. Then we perform PIFusion to generate
+    large and accurate partial scans while the performer is turning around in front
+    of the RGBD sensor. Then, we conduct lightweight bundle adjustment to merge all
+    the partial scans and generate an accurate and detailed geometric portrait. Finally,
+    we perform non-rigid texture optimization to jointly optimize vertex colors and
+    warp fields and generate a high-quality textured portrait.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_3.jpg
+  Figure 3 caption: Comparison of RGBD-PIFu and PIFu [7]. (a) Reference color image;
+    (b) RGBD-PIFu result; (c) PIFu result.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_4.jpg
+  Figure 4 caption: "Illustration of bundle adjustment with joint optimization. The\
+    \ bundle deformations are optimized to \u201Cloop\u201D these partial scans in\
+    \ the reference frame, while the live warp fields are optimized to deform the\
+    \ partial scans to fit live input."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_5.jpg
+  Figure 5 caption: Effects of non-rigid texture optimization. (a) Textured results
+    without non-rigid texture optimization [25], (b) original color input, (c) textured
+    results with non-rigid texture optimization. Non-rigid texture optimization eliminates
+    many blurred artifacts (red arrows in the figure) and the optimized texture is
+    much clearer and very close to the original color input.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_6.jpg
+  Figure 6 caption: Example data items of the evaluation dataset. In each row, the
+    right is a single-view RGBD sequence in which a performer self-rotates a circle,
+    and the left 3D model is the ground truth of the human body in the first frame
+    of the sequence.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_7.jpg
+  Figure 7 caption: Examples of 3D portraits acquired by our system.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_8.jpg
+  Figure 8 caption: High-quality textured results reconstructed by our method and
+    comparisons against the results by the CVPR version [25]. (a)(b) Textured results
+    by our method and [25], respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Robust_and_Accurate_D_SelfPortraits_in_Seconds\figure_9.jpg
+  Figure 9 caption: "Quantitative comparison against other state-of-the-art methods.\
+    \ Visualizations of per-vertex point-to-surface errors of results reconstructed\
+    \ by our method (a), DynamicFusion [13] (b), DoubleFusion [16] (c), the method\
+    \ proposed by Wang et al. [21] (d) and IF-Net [32] (e), respectively, and (f)\
+    \ is the ground-truth model. The top and bottom rows are evaluated on the \u201C\
+    REALDATA1\u201D and \u201CREALDATA2\u201D cases from our evaluation dataset, respectively."
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.89
+  Name of the first author: Zhe Li
+  Name of the last author: Yebin Liu
+  Number of Figures: 21
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Robust and Accurate 3D Self-Portraits in Seconds
+  Publication Date: 2021-09-16 00:00:00
+  Table 1 caption: TABLE 1 Essential Terms and Concepts Used in the Methodology Section
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Numerical Comparison Against Other State-of-the-Art Methods
+    on the Average Per-Vertex Point-to-Surface (P2S) Error and Standard Deviation
+    (cm) Using the Proposed Dataset
+  Table 3 caption: TABLE 3 Quantitative Ablation Study of the Live Depth Term, Live
+    Silhouette Term, and Bundle Adjustment
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3113164

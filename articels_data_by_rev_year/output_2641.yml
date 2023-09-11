@@ -1,0 +1,815 @@
+- Affiliation of the first author: department of computer science and engineering,
+    sogang university, seoul, south korea
+  Affiliation of the last author: kim jaechul graduate school of ai, korea advanced
+    institute of science and technology (kaist), seoul, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_1.jpg
+  Figure 1 caption: "WSOL 2016-2019. Recent improvements in WSOL performances may\
+    \ be an overestimation of the actual advances due to (1) different amount of implicit\
+    \ full supervision through validation and (2) a fixed score-map threshold (usually\
+    \ \u03C4=0.2 ) to generate object boxes. Under our evaluation protocol with the\
+    \ same validation set sizes and oracle \u03C4 for each method, CAM is still the\
+    \ best. In fact, our few-shot learning baseline, i.e. using the validation supervision\
+    \ (10 samplesclass) at training time, outperforms existing WSOL methods. These\
+    \ results are obtained from ImageNet."
+  Figure 10 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_10.jpg
+  Figure 10 caption: CAM pixel value distributions. On ImageNet and OpenImages test.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_2.jpg
+  Figure 2 caption: "WSOL as MIL. WSOL is interpreted as a patch classification task\
+    \ trained with multiple-instance learning (MIL). The score map s(X) is thresholded\
+    \ at \u03C4 to estimate the mask T ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_3.jpg
+  Figure 3 caption: 'Ill-posed WSOL: An example. Even the true posterior s(M)=p(Y|M)
+    may not lead to the correct prediction of T if background cues are more associated
+    with the class than the foreground cues (e.g. p(duck|water)>p(duck|feet) ).'
+  Figure 4 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_4.jpg
+  Figure 4 caption: 'Ducks. Random duck images on Flickr. They contain more lake than
+    feet pixels: p(textwater|textduck)gg p(textfeet|textduck) .'
+  Figure 5 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_5.jpg
+  Figure 5 caption: CUB version 2. Sample images.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_6.jpg
+  Figure 6 caption: Masks for CUBV2. We automatically annotate the CUBV2 dataset using
+    Cascade Mask R-CNN [15], [52].
+  Figure 7 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_7.jpg
+  Figure 7 caption: Proxy ImageNet ranking. Ranking of hyperparameters is largely
+    preserved between the models trained on the full train-weaksup and its 10% proxy.
+    Kendalls tau is 0.743.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_8.jpg
+  Figure 8 caption: Selecting tau . Measuring performance at a fixed threshold tau
+    can lead to a false sense of improvement. Compared to CAM, HaS and ACoL expand
+    the score maps, but they do not necessarily improve the box qualities (IoU) at
+    the optimal tau star . Predicted and ground-truth boxes are shown as green and
+    yellow boxes.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Evaluation_for_Weakly_Supervised_Object_Localization_Protocol_Metrics_and_Datase\figure_9.jpg
+  Figure 9 caption: 'Performance by operating threshold tau . CUB and ImageNet: BoxAcc
+    versus tau , OpenImages: PxPrec versus PxRec. ResNet architecture results are
+    used.'
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.87
+  Name of the first author: Junsuk Choe
+  Name of the last author: Hyunjung Shim
+  Number of Figures: 17
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: 'Evaluation for Weakly Supervised Object Localization: Protocol, Metrics,
+    and Datasets'
+  Publication Date: 2022-04-25 00:00:00
+  Table 1 caption: TABLE 1 Calibration and thresholding in WSOL
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Dataset Statistics
+  Table 3 caption: TABLE 3 In-Distribution Ranking Preservation
+  Table 4 caption: TABLE 4 Hyperparameter Search Spaces
+  Table 5 caption: TABLE 5 Previously Reported WSOL Results
+  Table 6 caption: TABLE 6 Re-Evaluating WSOL
+  Table 7 caption: TABLE 7 Classification Performance of WSOL Methods
+  Table 8 caption: TABLE 8 WSOL Results With Max Normalization
+  Table 9 caption: TABLE 9 WSOL Evaluation for Visual Interpretability Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3169881
+- Affiliation of the first author: tianjin key lab of machine learning, college of
+    intelligence and computing, tianjin university, tianjin, china
+  Affiliation of the last author: cloud & ai, huawei technologies, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_1.jpg
+  Figure 1 caption: The overview of our black-box adversarial attack framework. The
+    attacker first uses PAM to adaptively set attack parameters to improve the query
+    efficiency for transfer-based attacks. TAM generates intermediate adversarial
+    examples on the substitute model according to parameters set by PAM. NCM takes
+    the intermediate examples generated by transfer-based attack as the starting point
+    for sampling, and uses the remaining number of queries with the assistance of
+    STM to compress the magnitude of adversarial noise.
+  Figure 10 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_10.jpg
+  Figure 10 caption: Comparison of adversarial examples generated by CISA, I-FGSM,
+    Boundary, and BBA on ImageNet dataset. The intermediate and final adversarial
+    noises are demonstrated as Noise (CI) and Noise (CISA), respectively. The labels
+    and misclassification categories are noted under original images and adversarial
+    examples. The rightmost column compares the noise magnitude of five adversarial
+    attacks in ell 2 norm.
+  Figure 2 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_2.jpg
+  Figure 2 caption: The pipeline of CISA under the new black-box adversarial attack
+    framework. CISA optimizes the parameter setting, the initialization of adversarial
+    examples, the noise compression and the transition function according to PAM,
+    TAM, NCM and STM, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_3.jpg
+  Figure 3 caption: Illustration of Gaussian Stepsize Adjustment.
+  Figure 4 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_4.jpg
+  Figure 4 caption: Dual-direction iteration in Iterative Trajectory Diversification.
+  Figure 5 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_5.jpg
+  Figure 5 caption: The relationship between the distance from the original image
+    and the misclassification probability.
+  Figure 6 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_6.jpg
+  Figure 6 caption: 'Distribution of z with sigma 1 : sigma 2 = 3 :1 (a) and sigma
+    1 : sigma 2 = 1 :1 (b) when N=2 .'
+  Figure 7 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_7.jpg
+  Figure 7 caption: Customization of variance in Customized Sampling.
+  Figure 8 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_8.jpg
+  Figure 8 caption: Median ell 2 distance of adversarial noise under different query
+    number T .
+  Figure 9 Link: articels_figures_by_rev_year\2022\QueryEfficient_BlackBox_Adversarial_Attack_With_Customized_Iteration_and_Samplin\figure_9.jpg
+  Figure 9 caption: Mean noise ratio under different query number T .
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yucheng Shi
+  Name of the last author: Qi Tian
+  Number of Figures: 10
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: Query-Efficient Black-Box Adversarial Attack With Customized Iteration
+    and Sampling
+  Publication Date: 2022-04-25 00:00:00
+  Table 1 caption: TABLE 1 Comparison Under the New Black-Box Adversarial Attack Framework
+    on Tiny-Imagenet With res-18 as Target and inc-V3 as Substitute
+  Table 10 caption: "TABLE 10 Median and Average \u2113 2 \u21132 Distance of Adversarial\
+    \ Perturbation Against Adversarially Trained Models and Ensemble Model on Tiny-Imagenet"
+  Table 2 caption: TABLE 2 Comparison Under the New Black-Box Adversarial Attack Framework
+    on Tiny-Imagenet With Inc-Res as Target and Nasnet as Substitute
+  Table 3 caption: TABLE 3 Comparison Under the New Black-Box Adversarial Attack Framework
+    on ImageNet With inc-101 as Target and vgg-19 as Substitute
+  Table 4 caption: TABLE 4 Comparison Under the New Black-Box Adversarial Attack Framework
+    on ImageNet With Densenet as Target and Senet as Substitute
+  Table 5 caption: TABLE 5 Comparison Under the New Black-Box Adversarial Attack Framework
+    on CIFAR-10 With res-101 as Target and vgg-16 as Substitute
+  Table 6 caption: "TABLE 6 Median and Average \u2113 2 \u21132 Distance of Adversarial\
+    \ Perturbations Between Four Models on Tiny-Imagenet"
+  Table 7 caption: "TABLE 7 Median and Average \u2113 2 \u21132 Distance of Adversarial\
+    \ Perturbations Between Four Models on ImageNet"
+  Table 8 caption: TABLE 8 Ablation Study of CISA on Tiny-ImageNet
+  Table 9 caption: TABLE 9 Success Rate of 9 Transfer-Based Attacks on Tiny-ImageNet
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3169802
+- Affiliation of the first author: department of computer science, nagoya institute
+    of technology, nagoya, aichi, japan
+  Affiliation of the last author: center for advanced intelligence project, riken,
+    chuo, tokyo, japan
+  Figure 1 Link: articels_figures_by_rev_year\2022\Safe_RuleFit_Learning_Optimal_Sparse_Rule_Model_by_Meta_Safe_Screening\figure_1.jpg
+  Figure 1 caption: Illustrative example of sparse rule models. Here, a rule corresponds
+    to a (hyper)rectangle in the input space. Among a large number of possible rules
+    (hyper-rectangles), only a small subset of them (three rules in this example)
+    are used in the prediction model.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Safe_RuleFit_Learning_Optimal_Sparse_Rule_Model_by_Meta_Safe_Screening\figure_2.jpg
+  Figure 2 caption: Schematic formulation of meta safe screening (mSS) in the proposed
+    SRF method.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Safe_RuleFit_Learning_Optimal_Sparse_Rule_Model_by_Meta_Safe_Screening\figure_3.jpg
+  Figure 3 caption: "Illustrative example of all possible rules to be considered in\
+    \ the case of a two-dimensional dataset represented by red crosses. Here, the\
+    \ vertical lines indicate members of \u03C9 (1) , while the horizontal lines indicate\
+    \ members of \u03C9 (2) . Any rectangles defined by selecting any two vertical\
+    \ lines (any two elements of \u03C9 (1) ) and any two horizontal lines (any two\
+    \ elements of \u03C9 (2) ) correspond to the rules to be considered."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Safe_RuleFit_Learning_Optimal_Sparse_Rule_Model_by_Meta_Safe_Screening\figure_4.jpg
+  Figure 4 caption: Example of a closed rule (in red) with non-closed rules (in orange).
+  Figure 5 Link: articels_figures_by_rev_year\2022\Safe_RuleFit_Learning_Optimal_Sparse_Rule_Model_by_Meta_Safe_Screening\figure_5.jpg
+  Figure 5 caption: Rules with various combinations of input features, formulated
+    as effective feature set (EFS). Given a set of rules, fewer number of distinct
+    EFSs means the fewer number of plots representing the region the rule is satisfied,
+    that is, easier to interpret.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Safe_RuleFit_Learning_Optimal_Sparse_Rule_Model_by_Meta_Safe_Screening\figure_6.jpg
+  Figure 6 caption: Example of groups in GSRF. Rules in the same group have the same
+    EFS.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Safe_RuleFit_Learning_Optimal_Sparse_Rule_Model_by_Meta_Safe_Screening\figure_7.jpg
+  Figure 7 caption: "Number of enumerated rules and computation times by SRF for PAGEBLOCKS\
+    \ dataset. The left is the number of all possible rules, of candidate active rules\
+    \ identified by SRF, and of rules truly active at last. The center is the ratios\
+    \ of the number of former two rules. The right is the computation times. Since\
+    \ (B) is tried for several random choices of input features (Appendix B.7.1, available\
+    \ in the online supplemental material), there are multiple points (except for\
+    \ \u201Call possible rules\u201D in yellow) for each M , d and \u201Cmaxefs\u201D\
+    ."
+  Figure 8 Link: articels_figures_by_rev_year\2022\Safe_RuleFit_Learning_Optimal_Sparse_Rule_Model_by_Meta_Safe_Screening\figure_8.jpg
+  Figure 8 caption: Comparisons in prediction accuracy and number of rules between
+    the models with and without linear terms for ABALONE (regression) and PAGEBLOCKS
+    (classification) datasets. The left is the prediction accuracy (MSE for regressions,
+    AUC for binary classifications), and the right is the number of active rules (rule
+    k such that checkwkne 0 ). The standard errors (error bars) are taken for ten
+    randomized trials.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hiroki Kato
+  Name of the last author: Ichiro Takeuchi
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: 'Safe RuleFit: Learning Optimal Sparse Rule Model by Meta Safe Screening'
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Datasets Used in Experiments Except for Exp.3 (Available
+    at UCI Machine Learning Repository [34])
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Datasets Used in Exp.3 (All for Regressions, Available
+    at UCI Machine Learning Repository [34])
+  Table 3 caption: TABLE 3 Accuracy of the Proposed SRF, Linear Models (LASSO, Logistic
+    Regression), and Nonlinear Models (Kernel Ridge, Kernel SVM)
+  Table 4 caption: TABLE 4 Average of Similarity Scores Between Methods
+  Table 5 caption: TABLE 5 Computational Cost (Time in Seconds and Number of Accessed
+    Nodes in the Tree) of SRF and REPR
+  Table 6 caption: 'TABLE 6 Parameter Setups for Exp.4: Scalability of SRF'
+  Table 7 caption: TABLE 7 Averages of dEFS and Accuracy Measures With the Proposed
+    SRF and GSRF When (Approximately) 100 Rules are Retrieved
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3167993
+- Affiliation of the first author: beijing national research center for information
+    science and technology (bnrist), beijing, china
+  Affiliation of the last author: beijing national research center for information
+    science and technology (bnrist), beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_1.jpg
+  Figure 1 caption: Comparisons of identities and faces for our WebFace data and public
+    training sets.
+  Figure 10 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_10.jpg
+  Figure 10 caption: Performance comparisons of SFR under the FRUITS. The FMR-FNMR
+    plots for All pairs verification are drawn, and models are ranked in legend according
+    to FNMRFMR=1e-5 (lower FNMR is better).
+  Figure 2 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_2.jpg
+  Figure 2 caption: Birth date, nationality, profession distributions of WebFace260M,
+    and pose (yaw), age, race distributions of WebFace42M.
+  Figure 3 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_3.jpg
+  Figure 3 caption: Visualization of the WebFace data. For each sub-figure, the top
+    part is the randomly selected faces from WebFace260M, while the bottom part shows
+    cleaned faces (also randomly selected) from WebFace42M. Loose cropped faces are
+    shown.
+  Figure 4 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_4.jpg
+  Figure 4 caption: The proposed Cleaning Automatically by Self-Training (CAST). First,
+    an initial Teacher trained with MS1MV2 is utilized to clean WebFace260M. Then
+    a Student model is trained on the cleaned WebFace data. The CAST is performed
+    by switching the Student as the Teacher until high-quality 42M faces are obtained.
+    Every intra-classinter-class cleaning is conducted on the initial WebFace260M
+    utilizing different Teacher models.
+  Figure 5 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_5.jpg
+  Figure 5 caption: Inter and intra class similarity distributions during different
+    stages of CAST. Since initial folders are very noisy, score distributions are
+    severely overlapped. Cleaner training set is obtained after more iterations. 100K
+    folders are randomly selected here for showing the statistic changes during iterations.
+  Figure 6 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_6.jpg
+  Figure 6 caption: Illustration of the reserved and the rejected face samples. Green
+    and red boxes denote reserved faces and faces rejected by our CAST, respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_7.jpg
+  Figure 7 caption: 'Visualization of our test set. Random faces of a certain identity
+    are shown in each row. 1-6 columns: Controlled, 7-12 columns: Wild, 13-18 columns:
+    Masked.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_8.jpg
+  Figure 8 caption: Speed and performance of our distributed training system, which
+    achieves almost linear acceleration with comparable performance. 100% data (WebFace42M)
+    is used in this experiment.
+  Figure 9 Link: articels_figures_by_rev_year\2022\WebFaceM_A_Benchmark_for_MillionScale_Deep_Face_Recognition\figure_9.jpg
+  Figure 9 caption: Performance of ArcFace models (ResNet-100) trained on the WebFace
+    envelopes counterparts trained on the public training data.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.59
+  Name of the first author: Zheng Zhu
+  Name of the last author: Jie Zhou
+  Number of Figures: 11
+  Number of Tables: 13
+  Number of authors: 11
+  Paper title: 'WebFace260M: A Benchmark for Million-Scale Deep Face Recognition'
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Training Sets for Deep Face Recognition
+  Table 10 caption: TABLE 10 Configuration and Inference Time of SFR Baselines
+  Table 2 caption: TABLE 2 The Identities and Images Statistics During Different Cleaning
+    Stages
+  Table 3 caption: TABLE 3 The Statistics of Our Test Set, Including SFR, MFR, and
+    UFR Evaluations
+  Table 4 caption: TABLE 4 Speed and Performance Comparisons of Distributed Training
+  Table 5 caption: TABLE 5 Performance Comparisons of Our WebFace and Public Training
+    Data
+  Table 6 caption: TABLE 6 Performance (%) of ArcFace Models Trained With ResNet-14
+    on Different Portions of WebFace Data. TARFAR=1e-4 on IJB-C is Reported
+  Table 7 caption: TABLE 7 Comparisons of CAST and Other Data Cleaning Pipelines
+  Table 8 caption: TABLE 8 Performance (%) of Different TeacherStudent Models and
+    Various Data for Initial Teacher Model
+  Table 9 caption: TABLE 9 Comparisons of Different Intra-Class Cleaning Strategies
+    for MS1M
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3169734
+- Affiliation of the first author: college of intelligence and computing, tianjin
+    university, tianjin, china
+  Affiliation of the last author: college of computer science and software engineering,
+    shenzhen university, shenzhen, guangdong, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_1.jpg
+  Figure 1 caption: "Different weighted pathways (a\u2013c) and augmented pathway\
+    \ (d) for context exchange between the pixels. The SPP (a) and deformable models\
+    \ (b) formulate the pathway as the shared weight w of the convolutional kernel.\
+    \ The non-local attention model (c) uses the correlation between the pixels to\
+    \ construct the pathway. The augmented attention model (d) uses the prescribed\
+    \ pathway that includes the in-between pixels (e.g., the yellow dots v k and v\
+    \ l ), which are connected by the sub-pathway (e.g., e p k,l ). The sub-pathway\
+    \ is associated with the correlation between the connected pixels. We learn the\
+    \ pathway (e) passing through a series of configurable regions (e.g., the regions\
+    \ r k and r l ), which are connected by the sub-pathway (e.g., e r k,l ) associated\
+    \ with the correlation between the regions."
+  Figure 10 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_10.jpg
+  Figure 10 caption: "Sensitivities of the mean IoU (a), the increase in the GPU memory\
+    \ (b), the increase in the number of parameters (c) and the increase in the FLOPS\
+    \ (d) to the number of fusion regions. All performances are evaluated on the Cityscapes\
+    \ validation set. These computational overheads (b\u2013d) are calculated independently,\
+    \ apart from the computation of the backbone network."
+  Figure 2 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_2.jpg
+  Figure 2 caption: The illustration of the context exchange between source and target
+    pixels. In the traveling stage (b), each source pixel (blue dot) on the backbone
+    feature map propagates its feature along a sequence of regions (blue rectangles),
+    which enrich the context and yielding the intermediate enriched feature map. During
+    the adapting stage (c), the traveling feature is passed through the fusion regions
+    (green rectangles), where the regional content is updated. In the gathering stage
+    (d), the information of the fusion region is gathered at the target pixel (orange
+    dot). This stage uses the reverse sequence of regions (orange rectangles) and
+    forms the gathering map for segmentation (e). Here, we only show a pair of source
+    and target pixels for brevity.
+  Figure 3 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_3.jpg
+  Figure 3 caption: The encoder-decoder architecture of our approach. We input the
+    image into the encoder network, producing the backbone feature maps at different
+    levels. Each backbone feature map is fed into the module of context exchange,
+    to compute the augmented feature map. The context exchange, which consists of
+    the context traveling, adaption, and gathering, is detailed in the dashed box
+    at the bottom. During the context exchange, the orange arrow indicates the feature
+    injection. Each small rectangle in blueorange denotes an enriched feature, which
+    is produced after feature injection.
+  Figure 4 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_4.jpg
+  Figure 4 caption: Given the backbone feature map (a), we conduct information traveling
+    to produce the information flow map (b) and the ROI-upsample map (c). We combine
+    (b) and (c) to achieve the intermediate feature map (d). We provide the details
+    of the feature injection and ROI-upsample in the orange and blue boxes, respectively.
+    For brevity, we only show two sequential regions for the source pixel b n on the
+    backbone feature map B, where the location l n,t (or l n,t+1 ) indicates the center
+    of the first (or the last) configurable region for b n . The context traveling
+    is done from the first to the last configurable regions.
+  Figure 5 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_5.jpg
+  Figure 5 caption: We feed the information flow map (a) and the intermediate feature
+    map (b) to the attention component that yields the adaption features (c). We provide
+    the details of the attention component in the purple box.
+  Figure 6 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_6.jpg
+  Figure 6 caption: Given the adaption features (a) and gathering feature map (b),
+    we gather the useful context to compute the information flow map (c) and ROI-upsample
+    map (d). We combine (c) and (d) to form the target pixels on the augmented feature
+    map (e). For brevity, we only show two sequential regions for the target pixel
+    r o on the gathering feature map R, where the location l n,t (or l n,t+1 ) indicates
+    the center of the first (or the last) configurable region for r o . The context
+    gathering is done from the last to the first configurable regions.
+  Figure 7 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_7.jpg
+  Figure 7 caption: "Sensitivities of the mean IoU (a), the increase in the GPU memory\
+    \ (b), the increase in the number of parameters (c), and the increase in the FLOPS\
+    \ (d) to the number of regions along the CCP. All of the performances are evaluated\
+    \ on the Cityscapes validation set. These computational overheads (b\u2013d) are\
+    \ calculated independently, apart from the computation of the backbone network.\
+    \ The size of the input image is 769\xD7769 ."
+  Figure 8 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_8.jpg
+  Figure 8 caption: Visualization of CCPs at different stages of network learning.
+    We take the images from the Cityscapes validation set (the first two rows) and
+    the COCO-Stuff-10 K validation set (the last two rows). For simplicity, only a
+    single pixel and the associated CCP are shown in each image. Each CCP has two
+    localized regions as default.
+  Figure 9 Link: articels_figures_by_rev_year\2022\TAGNet_Learning_Configurable_Context_Pathways_for_Semantic_Segmentation\figure_9.jpg
+  Figure 9 caption: Sensitivities of the mean IoU (a) and the increase in the FLOPS
+    (b) to the size of regions. We evaluate the results on the Cityscapes validation
+    set.
+  First author gender probability: 0.64
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.96
+  Name of the first author: Di Lin
+  Name of the last author: Hui Huang
+  Number of Figures: 14
+  Number of Tables: 9
+  Number of authors: 7
+  Paper title: 'TAGNet: Learning Configurable Context Pathways for Semantic Segmentation'
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Important Notations Used in This Paper
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparisons With Attention Models
+  Table 3 caption: TABLE 3 Different Strategies of Using Multiple Scales in Network
+    Training and Testing. We Use the Interval of 0.25 in Each Set of Scales. We Report
+    the Segmentation Accuracy on the Cityscapes Validation Set, in Terms of Mean IoU
+    (%)
+  Table 4 caption: TABLE 4 Different Strategies of Using Multiple Layers of Backbone
+    Feature Maps. We Report the Segmentation Accuracy on the Cityscapes Validation
+    Set, in Terms of Mean IoU (%)
+  Table 5 caption: TABLE 5 Ablation Study of TAG Stages on the Cityscapes Validation
+    Set With Mean IoU (%)
+  Table 6 caption: TABLE 6 Different Strategies of Using the Enriched Features. We
+    Report the Segmentation Accuracy on the Cityscapes Validation Set, in Terms of
+    Mean IoU (%)
+  Table 7 caption: TABLE 7 Comparisons With State-of-The-Art Methods on the Cityscapes
+    Dataset, in Terms of Mean IoU (%)
+  Table 8 caption: TABLE 8 Comparisons With State-of-The-Art Methods on the PASCAL
+    VOC 2012 Dataset, in Terms of Mean IoU (%)
+  Table 9 caption: TABLE 9 Comparisons With State-of-The-Art Methods on the COCO-Stuff
+    Dataset, in Terms of Mean IoU (%)
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3165034
+- Affiliation of the first author: fudan university, shanghai, china
+  Affiliation of the last author: school of data science, fudan university, shanghai,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_1.jpg
+  Figure 1 caption: Multi-View Shape Generation. From multiple input images, we produce
+    shapes aligning well to input (c and d) and arbitrary random (e) camera viewpoint.
+    Single view based approach, e.g., Pixel2Mesh (P2M) [1], usually generates shape
+    looking good from the input viewpoint (c) but significantly worse from others.
+    Naive extension with multiple views (MVP2M, Section 4.2) does not effectively
+    improve the quality.
+  Figure 10 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_10.jpg
+  Figure 10 caption: Qualitative Examples with or without differentiable renderer.
+  Figure 2 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_2.jpg
+  Figure 2 caption: Overview of our framework. Our method takes a small number of
+    color images with ground truth or predicted camera poses as inputs and generates
+    3D meshes. The pretrained VGG-16 is used to extract perceptual features from input
+    images. Details about the coarse shape generation and the MDN are shown in Fig.
+    3.
+  Figure 3 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_3.jpg
+  Figure 3 caption: Shape Generation Pipeline. Our 3D shape generation system consists
+    of a 2D CNN extracting image features and a GCN deforming an ellipsoid to target
+    shape. A coarse shape is generated from multi-view version Pixel2Mesh [1] or DISN
+    [4] and refined iteratively in Multi-View Deformation Network. To leverage cross-view
+    information, our network pools perceptual features from multiple input images
+    for hypothesis locations in the area around each vertex and predicts the optimal
+    deformation.
+  Figure 4 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_4.jpg
+  Figure 4 caption: Deformation Hypothesis and Perceptual Feature Pooling. (a) Deformation
+    Hypothesis Sampling. We sample 42 deformation hypotheses from a level-1 icosahedron
+    and build a GCN among hypotheses and the vertex. (b) Cross-View Perceptual Feature
+    Pooling. The 3D vertex coordinates are projected to multiple 2D image planes using
+    camera intrinsics and extrinsics. Perceptual features are pooled using bilinear
+    interpolation, and feature statistics are kept on each hypothesis.
+  Figure 5 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_5.jpg
+  Figure 5 caption: Deformation Reasoning. The goal is to reason a good deformation
+    from the hypotheses and pooled features. We first estimate a weight (green circle)
+    for each hypothesis using a GCN. The weights are normalized by a softmax layer
+    (yellow circle), and the output deformation is the weighted sum of all the deformation
+    hypotheses.
+  Figure 6 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_6.jpg
+  Figure 6 caption: Network Architecture of Camera Pose Estimation Network. Our camera
+    pose estimation network predicts transformation from canonical view to camera
+    view. The rotation is represented as a continuous 6D vector [69] and the translation
+    is defined as 1D distance between object center and camera. The predicted camera
+    poses and the ground truth value are applied to the canonical view point cloud
+    respectively to calculate the loss.
+  Figure 7 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_7.jpg
+  Figure 7 caption: Quantitative Results of Cross-Category Generalization. (a) Improved
+    F-score( tau ) and absolute F-score( tau ) of MDN trained on 12 out of 13 categories
+    and tested on the one left. (b) MDN trained on 1 category and tested on the others.
+    Each block represents the improved F-score( tau ) of MDN trained on horizontal
+    category and tested on vertical category.
+  Figure 8 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_8.jpg
+  Figure 8 caption: Qualitative Results of Cross-Category Generalization. Coarse means
+    results from MVP2M. Except indicates that results are generated from the model
+    that has not been trained with the same category. All indicates that the model
+    has been trained with data from all categories.
+  Figure 9 Link: articels_figures_by_rev_year\2022\PixelMesh_D_Mesh_Generation_and_Refinement_From_MultiView_Images\figure_9.jpg
+  Figure 9 caption: Robustness to Initialization. Our model is robust to added noise,
+    shift, and input mesh from other sources.
+  First author gender probability: 0.86
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Chao Wen
+  Name of the last author: Yanwei Fu
+  Number of Figures: 18
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: 'Pixel2Mesh++: 3D Mesh Generation and Refinement From Multi-View Images'
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Comparison to Multi-View Shape Generation Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison to Multi-View Shape Generation Methods
+  Table 3 caption: TABLE 3 Comparison to Baselines and Our Variants
+  Table 4 caption: TABLE 4 Performance w.r.t. Input View Numbers
+  Table 5 caption: TABLE 5 Quantitative Camera Pose Estimation Comparison
+  Table 6 caption: TABLE 6 Robustness of Different Methods
+  Table 7 caption: TABLE 7 Quantitative Ablation Study
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3169735
+- Affiliation of the first author: cccd key lab of ministry of culture and tourism,
+    university of science and technology of china, hefei, china
+  Affiliation of the last author: national university of singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\Reinforced_Causal_Explainer_for_Graph_Neural_Networks\figure_1.jpg
+  Figure 1 caption: A real example of explaining the mutagenicity classification of
+    a molecule graph. (a-c) show explanations of SA, GNNExplainer, and RC-Explainer,
+    respectively, where the important edges are highlighted with red color and the
+    top-3 edges are listed. Best viewed in color.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Reinforced_Causal_Explainer_for_Graph_Neural_Networks\figure_2.jpg
+  Figure 2 caption: Illustration of the proposed RC-Explainer framework. (a) Sequential
+    decision process to generate the explanatory subgraph. (b) One step from the state
+    G 1 to the state G 2 . Best viewed in color.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Reinforced_Causal_Explainer_for_Graph_Neural_Networks\figure_3.jpg
+  Figure 3 caption: Accuracy curves of all explainers over different selection ratios.
+    Best viewed in color.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Reinforced_Causal_Explainer_for_Graph_Neural_Networks\figure_4.jpg
+  Figure 4 caption: Selected explanations for each explainer, where the top 20% edges
+    are highlighted. Note that some edges have the same nodes. In Visual Genome, the
+    objects involved in the edges are blurred based on the edge attributions; meanwhile,
+    in Mutagenicity, a darker color of a bond indicates the larger attribution for
+    the prediction.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Reinforced_Causal_Explainer_for_Graph_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Showcasing the sequential decision process of explaining one graph
+    in Mutagenicity.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Reinforced_Causal_Explainer_for_Graph_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Showcasing the failure cases of RC-Explainer.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.92
+  Name of the first author: Xiang Wang
+  Name of the last author: Tat-Seng Chua
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: Reinforced Causal Explainer for Graph Neural Networks
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Dataset Statistics With Model Configurations
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Predictive Accuracy of Explanations Derived From Explainers
+  Table 3 caption: TABLE 3 Other Quantitative Analyses for Explainers w.r.t. Contrastivity
+    Metrics, Sanity Check, and Time Complexity
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3170302
+- Affiliation of the first author: brain-inspired application technology center (batc)
+    and the cross media (x-)language intelligence lab, school of electronic information
+    and electrical engineering, shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: brain-inspired application technology center (batc)
+    and the cross media (x-)language intelligence lab, school of electronic information
+    and electrical engineering, shanghai jiao tong university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Optimal_Transport_for_Unsupervised_Denoising_Learning\figure_1.jpg
+  Figure 1 caption: "Problem setting. For a source X\u223C p X , a degraded version\
+    \ Y is observed according to some conditional distribution p Y|X . Given Y , a\
+    \ restoration X is obtained according to some conditional distribution p X |Y\
+    \ . f denotes a network for restoration."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Optimal_Transport_for_Unsupervised_Denoising_Learning\figure_2.jpg
+  Figure 2 caption: Network architecture used in the proposed method, (a) A residual
+    U-Net as the generator, (b) A discriminator as the one used in [35].
+  Figure 3 Link: articels_figures_by_rev_year\2022\Optimal_Transport_for_Unsupervised_Denoising_Learning\figure_3.jpg
+  Figure 3 caption: Visual comparison on synthetic noisy images with different noise
+    conditions. The PSNRPILPIPS results are provided in the brackets. The images are
+    enlarged for clarity.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Optimal_Transport_for_Unsupervised_Denoising_Learning\figure_4.jpg
+  Figure 4 caption: "Visual comparison on synthetic noisy depth images in the case\
+    \ of Gaussian noise with \u03C3=25 . The images are enlarged for clarity."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Optimal_Transport_for_Unsupervised_Denoising_Learning\figure_5.jpg
+  Figure 5 caption: Visual comparison on real-world microscopy images, where the pseudo
+    ground-truth is obtained by averaging over 50 realizations of each scene. The
+    PSNRPILPIPS results are provided in the brackets. The images are enlarged for
+    clarity.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Optimal_Transport_for_Unsupervised_Denoising_Learning\figure_6.jpg
+  Figure 6 caption: Visual comparison on real-world photographic images, where the
+    pseudo ground-truth is obtained by averaging over 10 realizations of each scene.
+    The PSNRPILPIPS results are provided in the brackets. The images are enlarged
+    for clarity.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Optimal_Transport_for_Unsupervised_Denoising_Learning\figure_7.jpg
+  Figure 7 caption: Visual comparison on real-world depth images from the NYU dataset
+    [62] captured by Kinect. The colorization and the cross-bilateral filter methods
+    are RGB-D fusion methods.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Optimal_Transport_for_Unsupervised_Denoising_Learning\figure_8.jpg
+  Figure 8 caption: "Visual comparison on a real-world raw depth image captured by\
+    \ a commercial ToF camera. The RGB image is only used as a reference of the scene,\
+    \ which is not aligned with the depth image.\u201COT denoising\u201D denotes our\
+    \ model trained on synthetic depth images with Gaussian noise as in Section 5.3."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Wei Wang
+  Name of the last author: Peilin Liu
+  Number of Figures: 8
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Optimal Transport for Unsupervised Denoising Learning
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Distortion Comparison (PSNRSSIM) on Synthetic
+    Noisy RGB Images With Gaussian, Poisson and Brown Gaussian Noise
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Perceptual Quality Comparison (PILPIPS) on
+    Synthetic Noisy RGB Images With Gaussian, Poisson and Brown Gaussian Noise
+  Table 3 caption: "TABLE 3 Results of Our Method for Different Values of \u03BB \u03BB\
+    \ in the Condition of Gaussian Noise With \u03C3=15 \u03C3=15"
+  Table 4 caption: TABLE 4 Quantitative Comparison on Synthetic Noisy Depth Images
+    With Gaussian Noise
+  Table 5 caption: TABLE 5 Quantitative Comparison on Real-World Microscopy Images
+  Table 6 caption: TABLE 6 Quantitative Comparison on Real-World Photographic Images
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3170155
+- Affiliation of the first author: bnrist, department of computer science and technology,
+    tsinghua university, beijing, china
+  Affiliation of the last author: bnrist, department of computer science and technology,
+    tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\MotifGCNs_With_Local_and_NonLocal_Temporal_Blocks_for_SkeletonBased_Action_Recog\figure_1.jpg
+  Figure 1 caption: Comparisons of sample-independent and sample-dependent GCNs for
+    action recognition on NTU-RGB+D (X-Sub evaluation), in terms of accuracy. Our
+    model proposed in this paper achieves the best performance among all the sample-independent
+    and sample-dependent methods. Specifically, it achieves higher accuracy by a relative
+    large margin (88.9% v.s. 86.6%) than the previous state-of-the-art method AS-GCN
+    in the same category. The previous GCN-based methods (on the left side of the
+    dashed line) use raw data of joint coordinates as input, while the recent methods
+    (on the right side of the dashed line) use preprocessed joint data. More details
+    about the data preprocessing and comparison results can be found in Section 4.6.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\MotifGCNs_With_Local_and_NonLocal_Temporal_Blocks_for_SkeletonBased_Action_Recog\figure_2.jpg
+  Figure 2 caption: Skeletal graphs modeled by four sample-dependent GCNs. These GCN
+    methods construct dependencies between the current joint (shown in red color)
+    and its related joints in different partitions (shown in different colors). The
+    dependencies are predefined (shown as black solid lines) or learned from training
+    (shown as black dotted lines). The joints and the physical connections that are
+    not considered for the graph convolution operation on the current joint are shown
+    in grey. (a) Motif-GCN [23] uses predefined relationships between the current
+    joint and its related joints in different partitions. (b) AGCN [18] learns sample-dependent
+    relationships between all pairwise joints. (c) AS-GCN [19] adopts predefined relationships
+    between the current joint and its 1-hop to 4-hop neighbors (shown in purple, blue,
+    green and magenta), and learns sample-dependent links between arbitrary pairwise
+    joints. (d) Our proposed SMotif-GCN learns sparse sample-dependent relationships
+    between the current joint and its non-physically connected joints. The physically
+    connected dependencies are predefined on 1-ring neighborhood. Skeletal graphs
+    modeled by different sample-independent GCNs are illustrated in Fig. A3 of the
+    appendix, which can be found on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2022.3170511.
+  Figure 3 Link: articels_figures_by_rev_year\2022\MotifGCNs_With_Local_and_NonLocal_Temporal_Blocks_for_SkeletonBased_Action_Recog\figure_3.jpg
+  Figure 3 caption: "Our model takes a sequence ( F frames) of skeletons ( V joints)\
+    \ as input and uses multiple layers of spatio-temporal modules (STMs) to generate\
+    \ higher-level feature maps. There are nine layers of STMs with an initial spatio-temporal\
+    \ head unit. C i ( i=0,1,\u2026,9 ) represents the number of channels. The structure\
+    \ of the initial head unit is the same as the STM except that no residual connection\
+    \ is used in the head unit. The non-local temporal block is only used in the 7-th\
+    \ STM, so it is shown in a dotted line block. Then, the feature maps are fed into\
+    \ a Softmax classifier to get the final class score for recognizing actions in\
+    \ 30 classes (e.g., Kinetics-M dataset). More details of the overall architecture\
+    \ and the structure of the STM can be found in Section 4.2."
+  Figure 4 Link: articels_figures_by_rev_year\2022\MotifGCNs_With_Local_and_NonLocal_Temporal_Blocks_for_SkeletonBased_Action_Recog\figure_4.jpg
+  Figure 4 caption: Illustration of feature map flow in the local temporal block with
+    (a) Dense Connectivity and (b) Partial Dense Connectivity. In (a), each layer
+    takes all preceding feature maps as input. In (b), the feature maps of the first
+    layer are split into two parts with equal channels. One part of feature maps goes
+    though dense connections, while the other part of feature maps is directly concatenated
+    with the output of densely concatenated layers.
+  Figure 5 Link: articels_figures_by_rev_year\2022\MotifGCNs_With_Local_and_NonLocal_Temporal_Blocks_for_SkeletonBased_Action_Recog\figure_5.jpg
+  Figure 5 caption: The architecture of our proposed GCN-based model, which is composed
+    of multiple spatio-temporal modules (STMs). The non-local spatio-temporal module
+    (NL STM) is used before the last two STMs to further expand the temporal dependency.
+  Figure 6 Link: articels_figures_by_rev_year\2022\MotifGCNs_With_Local_and_NonLocal_Temporal_Blocks_for_SkeletonBased_Action_Recog\figure_6.jpg
+  Figure 6 caption: Architecture of the spatio-temporal module (STM). It contains
+    a sparse motif-based graph convolution (SMotif-GC) sub-module, which adopts a
+    sparse motif adjacency matrix (SMAM), for modeling spatial information. A local
+    temporal block that contains three dense layers and a transition layer (TransLayer)
+    is used to encode features with local time windows. The dense layer is implemented
+    with a combination of BN-RELU-Conv operation. A residual connection (shown with
+    an arrow in dark red) is added to each STM by a shortcut connection from input
+    to output and an element-wise sum operation. A non-local temporal block is used
+    only in the last stage of our network, so it is shown in a dotted line block.
+    oplus denotes element-wise sum operation, and otimes denotes matrix multiplication.
+  Figure 7 Link: articels_figures_by_rev_year\2022\MotifGCNs_With_Local_and_NonLocal_Temporal_Blocks_for_SkeletonBased_Action_Recog\figure_7.jpg
+  Figure 7 caption: "Illustration of the sparse motif adjacency matrices in SMotif-GCN\
+    \ for (a) \u201CClapping\u201D and (b) \u201CCheck time\u201D test action samples\
+    \ from the NTU-RGB+D dataset (X-Sub). The updated adjacency matrices of different\
+    \ layers, and corresponding graph topologies of latent dependencies among joints\
+    \ are shown in different columns. The importance of the latent dependency is denoted\
+    \ by the gray scale (the darker, the more important) of the element in the adjacency\
+    \ matrix. The red lines represent the latent dependencies whose importance values\
+    \ are in the top 20, and the thickness of each line represents the importance\
+    \ of the relationship between pairwise joints."
+  Figure 8 Link: articels_figures_by_rev_year\2022\MotifGCNs_With_Local_and_NonLocal_Temporal_Blocks_for_SkeletonBased_Action_Recog\figure_8.jpg
+  Figure 8 caption: Performance comparison of SMotif-GCN approach using different
+    settings of lambda on the NTU-RGB+D dataset (X-View). The blue line represents
+    experiment results with different lambda values used for the loss function in
+    Eq. (8), while the red dashed line indicates the performance of Motif-GC without
+    sparsity.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.53
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yu-Hui Wen
+  Name of the last author: Yong-Jin Liu
+  Number of Figures: 8
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Motif-GCNs With Local and Non-Local Temporal Blocks for Skeleton-Based
+    Action Recognition
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Ablation Studies on NTU-RGB+D and Kinetics-M Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Evaluation of Different Settings of Growth rate (GR) for
+    Integrating the LTB Into Motif-GCN+NLTB Model on the NTU-RGB+D and Kinetics-M
+    Datasets
+  Table 3 caption: TABLE 3 Evaluation of NLTB Integrated Into Different STMs of Motif-GCN+LTB
+    Model on the NTU-RGB+D and Kinetics-M Datasets
+  Table 4 caption: TABLE 4 Skeleton-Based Action Recognition Performance on the NTU-RGB+D
+    Dataset
+  Table 5 caption: TABLE 5 The Accuracies of Our Proposed SMotif-GCN+TBs Model With
+    Different Data Preprocessing Methods, Evaluated on the NTU-RGB+D Dataset
+  Table 6 caption: TABLE 6 Skeleton-Based Action Recognition Performance on the NTU-RGB+D-120
+    Dataset
+  Table 7 caption: TABLE 7 The Accuracies of Our Proposed SMotif-GCN+TBs Model With
+    Different Data Preprocessing Methods, Evaluated on the NTU-RGB+D-120 Dataset
+  Table 8 caption: TABLE 8 Skeleton-Based Action Recognition Performance on the Kinetics-M
+    Dataset in Terms of Top-1 and Top-5 Accuracies
+  Table 9 caption: TABLE 9 Skeleton-Based Action Recognition Performance on the Kinetics
+    Dataset in Terms of Top-1 and Top-5 Accuracies
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3170511
+- Affiliation of the first author: department of electrical and computer engineering,
+    yale-nus college, national university of singapore, singapore
+  Affiliation of the last author: department of electrical and computer engineering,
+    yale-nus college, national university of singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_1.jpg
+  Figure 1 caption: Incorrect 3D multi-person pose estimation from existing top-down
+    (2nd row) and bottom-up (3 rd row) methods. The top-down method is RootNet [35],
+    the bottom-up method is SMAP [55]. The input images are from MuPoTS-3D dataset
+    [56]. The top-down method suffers from inter-person occlusion and the bottom-up
+    method is sensitive to scale variations (i.e., the 3D poses of the two persons
+    in the back are inaccurately estimated). Our method substantially outperforms
+    the state-of-the-art.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_10.jpg
+  Figure 10 caption: 'Results of our method compared with that of SMAP [55] (i.e.,
+    the SOTA bottom-up method) and RootNet [35] (i.e., the SOTA top-down method) on
+    MuPoTS dataset. Results from four video clips are included: top-left, top-right,
+    bottom-left, and bottom-right. For each video clip, the first row is the frames
+    from the video clip; the second row is the result of SMAP; the third row is the
+    result of RootNet; the fourth row is the result of our method. It is observed
+    from these results that the SOTA methods suffer from inter-person occlusions while
+    our method can handle these challenges and produce accurate camera-centric 3D
+    multi-person pose estimation.'
+  Figure 2 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_2.jpg
+  Figure 2 caption: 'The overview of our framework. Our proposed method comprises
+    four major components: 1) A top-down network to estimate fine-grained instance-wise
+    3D pose. 2) A bottom-up network to generate a global-aware camera-centric 3D pose.
+    3) An integration network to generate final estimation based on paired poses from
+    top-down and bottom-up to take benefits from both networks. 4) A test time optimization
+    process to refine the obtained integrated 3D poses for the final result. Note
+    that the semi-supervised learning part is a training strategy so it is not included
+    in this figure.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_3.jpg
+  Figure 3 caption: Examples of estimated heatmaps of human joints. The left image
+    shows the input frame overlaid with an inaccurate detection bounding box (i.e.,
+    only one person detected). The middle image shows the estimated heatmap of existing
+    top-down methods. The right image shows the heatmap of our top-down network.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_4.jpg
+  Figure 4 caption: 'The illustration of our SSL pipeline. The SSL aims to keep two
+    consistency: reprojection and multi-perspective.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_5.jpg
+  Figure 5 caption: Interaction IoUs of 3DPW test set.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_6.jpg
+  Figure 6 caption: Examples of results from our whole framework compared with different
+    baseline results on two video clips on 3DPW dataset. First row shows the images
+    from two video clips; second row shows the results from SMAP [55]; third row shows
+    the result of of our bottom-up (BU) network; fourth row shows the results of our
+    top-down (TD) network; last row shows the results of our full model. Wrong estimations
+    are labeled with red circles.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_7.jpg
+  Figure 7 caption: Qualitative results of the estimated 2D poses overlaying on input
+    images and the estimated 3D poses visualized in novel viewpoints (virtual camera
+    rotated by 0, 45, 90 degrees clockwise). Different colors are used for different
+    persons in both 2D and 3D human poses for better visualization purpose. Top frame
+    from Posetrack dataset, bottom example from 3DPW dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_8.jpg
+  Figure 8 caption: Failure cases of our method. Example frames are from PoseTrack
+    dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Dual_Networks_Based_D_MultiPerson_Pose_Estimation_From_Monocular_Video\figure_9.jpg
+  Figure 9 caption: Qualitative results of TTO module. Major improvements of the TTO
+    module are highlighted in red circles. Video clips are from PoseTrack dataset.
+  First author gender probability: 0.53
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yu Cheng
+  Name of the last author: Robby T. Tan
+  Number of Figures: 11
+  Number of Tables: 12
+  Number of authors: 3
+  Paper title: Dual Networks Based 3D Multi-Person Pose Estimation From Monocular
+    Video
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Summary of the Top-Down and Bottom-Up 2D3D Human Pose Estimation
+    Methods and the Coordinate Systems of the Obtained Human Pose Results
+  Table 10 caption: TABLE 10 Quantitative Results on JTA Dataset
+  Table 2 caption: TABLE 2 Summary of the Differences Between 3D Human Pose Estimation
+    and Multi-Person Pose Estimation
+  Table 3 caption: TABLE 3 Ablation Study on MuPoTS-3D Dataset
+  Table 4 caption: TABLE 4 Ablation Study on MuPoTS-3D Dataset
+  Table 5 caption: TABLE 5 Parameter Analysis of Different Number of Poses to Check
+    in the Inter-Person Discriminator on MuPoTS-3D Dataset
+  Table 6 caption: TABLE 6 Ablation Study of Test Time Optimization on Human3.6 M
+    Dataset
+  Table 7 caption: TABLE 7 Ablation Study on the Number of Temporal Window Lengths
+    for Different Motion Trajectory Order Using Ground-Truth 3D Poses on Human3.6
+    M Dataset
+  Table 8 caption: TABLE 8 Runtime of Each Component
+  Table 9 caption: TABLE 9 Quantitative Evaluation on Multi-Person 3D Dataset, MuPoTS-3D
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3170353

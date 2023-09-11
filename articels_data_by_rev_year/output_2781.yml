@@ -1,0 +1,850 @@
+- Affiliation of the first author: s-lab, nanyang technological university, singapore
+  Affiliation of the last author: s-lab, nanyang technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\Domain_Generalization_A_Survey\figure_1.jpg
+  Figure 1 caption: Example images from three domain generalization benchmarks manifesting
+    different types of domain shift. In (a), the domain shift mainly corresponds to
+    changes in font style, color and background. In (b), dataset-specific biases are
+    clear, which are caused by changes in environmentscene and viewpoint. In (c),
+    image style changes are the main reason for domain shift.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Domain_Generalization_A_Survey\figure_2.jpg
+  Figure 2 caption: Domain alignment is commonly applied to a pair of source domains,
+    either in the feature space (orange arrows) or the classifiers output (green arrows),
+    or both.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Domain_Generalization_A_Survey\figure_3.jpg
+  Figure 3 caption: A commonly used meta-learning paradigm [33] in domain generalization.
+    The source domains (i.e., art, photo and cartoon from PACS [37]) are divided into
+    disjoint meta-source and meta-target domains. The outer learning, which simulates
+    domain shift using the meta-target data, back-propagates the gradients all the
+    way back to the base parameters such that the model learned by the inner algorithm
+    with the meta-source data improves the outer objective. The red arrows in this
+    figure denote the gradient flow through the second-order differentiation.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Domain_Generalization_A_Survey\figure_4.jpg
+  Figure 4 caption: "Based on the formulation of the transformation A(\u22C5) , existing\
+    \ data augmentation methods can be categorized into four groups. a) The first\
+    \ group enhances the generalization of the classifier f by applying hand-engineered\
+    \ image transformations like random crop or color augmentation to simulating domain\
+    \ shift. b) The second group is based on adversarial gradients obtained from either\
+    \ a category classifier ( h=f ) or a domain classifier. c) The third group models\
+    \ A(\u22C5) using neural networks, such as random CNNs [191], an off-the-shelf\
+    \ style transfer model [29], or a learnable image generator [35]. d) The final\
+    \ group injects perturbation into intermediate features in the task model."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Domain_Generalization_A_Survey\figure_5.jpg
+  Figure 5 caption: Common image transformations used as data augmentation in domain
+    generalization [39], [186], [187], [188].
+  Figure 6 Link: articels_figures_by_rev_year\2022\Domain_Generalization_A_Survey\figure_6.jpg
+  Figure 6 caption: Common pretext tasks used for self-supervised learning in domain
+    generalization. One can use a single pretext task, like solving Jigsaw puzzles
+    [240] or predicting rotations [241], or combine multiple pretext tasks in a multi-task
+    learning fashion.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Kaiyang Zhou
+  Name of the last author: Chen Change Loy
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: 'Domain Generalization: A Survey'
+  Publication Date: 2022-08-01 00:00:00
+  Table 1 caption: TABLE 1 Commonly Used Domain Generalization Datasets (Categorized
+    Mainly Based on Applications)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison Between Domain Generalization and its Related
+    Topics
+  Table 3 caption: TABLE 3 Categorization of Domain Generalization (DG) Methods
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3195549
+- Affiliation of the first author: media analytics and computing laboratory, department
+    of artificial intelligence, school of informatics, xiamen university, xiamen,
+    china
+  Affiliation of the last author: media analytics and computing laboratory, department
+    of artificial intelligence, school of informatics, xiamen university, xiamen,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\xN_Pattern_for_Pruning_Convolutional_Neural_Networks\figure_1.jpg
+  Figure 1 caption: "Comparison between existing pruning scenarios (weight pruning\
+    \ and filter pruning) and our 1\xD7N pruning when sparsifying convolutional weights\
+    \ with a shape of 8 \xD76\xD73\xD7 3 in this illustration. Given a full model,\
+    \ weight pruning removes some weights in the filters and filter pruning removes\
+    \ the whole filters. In contrast, our 1\xD7N pruning removes consecutive N output\
+    \ kernels with the same input channel index (N=4 in this illustration). Best viewed\
+    \ in colors."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\xN_Pattern_for_Pruning_Convolutional_Neural_Networks\figure_2.jpg
+  Figure 2 caption: "Workflow of filter rearrangement. We rearrange the weight matrix\
+    \ in the output channel dimension using the \u2113 1 norm of each filter. Then,\
+    \ similar rearrangement is applied to the next-layer weight matrix in the input\
+    \ channel dimension. As results, more influential kernels with larger \u2113 1\
+    \ norms are preserved for accuracy improvements, as validated using MobileNet-V2.\
+    \ Best viewed in colors."
+  Figure 3 Link: articels_figures_by_rev_year\2022\xN_Pattern_for_Pruning_Convolutional_Neural_Networks\figure_3.jpg
+  Figure 3 caption: "Encoding and decoding of our 1\xD7N pruning pattern. Our pruning\
+    \ pattern results in a sparse matrix with constant-size blocks, enabling it to\
+    \ be encoded by Block Compressed Sparse Row Format (BSR) to save the memory storage.\
+    \ In the decoding process, we calculate the outputs in a block-wise manner where\
+    \ the block-wise vectorized operation is applied in parallel to realize practical\
+    \ speedups. Best viewed in colors."
+  Figure 4 Link: articels_figures_by_rev_year\2022\xN_Pattern_for_Pruning_Convolutional_Neural_Networks\figure_4.jpg
+  Figure 4 caption: "Performance comparison of our 1\xD7N pruning against weight pruning\
+    \ and filter pruning under different pruning rates. The experiment is conducted\
+    \ using MobileNet-V2 (left) and ResNet-50 (right). Best viewed in colors."
+  Figure 5 Link: articels_figures_by_rev_year\2022\xN_Pattern_for_Pruning_Convolutional_Neural_Networks\figure_5.jpg
+  Figure 5 caption: "Performance and latency comparison between our 1\xD7N (N=4) pruning\
+    \ against weight pruning and filter pruning. The experiment is conducted using\
+    \ MobileNet-V2 on the mobile platform of Pixel2 equipped with a Snapdragon 835\
+    \ CPU (left), and the embedded platform of Zeropi equipped with a Cortex-a7 CPU\
+    \ (right). Best viewed in colors."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Mingbao Lin
+  Name of the last author: Rongrong Ji
+  Number of Figures: 5
+  Number of Tables: 3
+  Number of authors: 9
+  Paper title: 1xN Pattern for Pruning Convolutional Neural Networks
+  Publication Date: 2022-08-02 00:00:00
+  Table 1 caption: "TABLE 1 Performance Studies of Our 1\xD7N Pruning With and Without\
+    \ Filter Rearrangement"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Performance Studies of Our 1\xD7N Pruning With Kernel-Wise\
+    \ Pruning"
+  Table 3 caption: "TABLE 3 Performance Comparison of Our 1\xD7N Pruning Against Weight\
+    \ Pruning and Filter Pruning"
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3195774
+- Affiliation of the first author: department of computer science and engineering,
+    shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: department of computer science and engineering,
+    hong kong university of science and technology, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_1.jpg
+  Figure 1 caption: Ownership verification processes composed of backdoor-based watermarks
+    and feature-based watermarks
+  Figure 10 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_10.jpg
+  Figure 10 caption: This figure describes performance of FedIPR under differential
+    privacy strategies using random noise to protect exchanged model information.
+    In a federated learning setting of 10 clients, respectively, figure (a)-(b) illustrate
+    feature-based detection rate eta F and backdoor-based detection rate eta T under
+    varying differential private noise sigma , where the dot lines illustrate the
+    main task accuracy Accmain .
+  Figure 2 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_2.jpg
+  Figure 2 caption: An illustration of federated DNN (FedDNN) watermark Embedding
+    and Verification scheme. Private watermarks are generated and embedded into the
+    local models, which are then aggregated using the FedAvg algo. (the left panel).
+    In case the federated model is plagiarized, each client may invoke verification
+    processes to extract watermarks from the plagiarized model in both black-box and
+    white-box manner to claim hisher ownership of the federated model (the right panel).
+  Figure 3 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_3.jpg
+  Figure 3 caption: Different clients in federated learning adopt different regularization
+    terms to embed feature-based watermarks
+  Figure 4 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_4.jpg
+  Figure 4 caption: "The optimal bit-length and the acceptable range of watermark\
+    \ bit-length that provide strong confidence of ownership verification. As shown\
+    \ in figure, K=10,M=896 , and \u03B7 F =0.98 (we take by default) in case 1, the\
+    \ optimal bit-length for p-value is N opt =MK=90 , for an acceptable level \u03B1\
+    =0.0001 , the acceptable range of watermark bit-length is from N=18 to N=550 ."
+  Figure 5 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_5.jpg
+  Figure 5 caption: 'Layer structure of a convolution layer: normalization layer weights
+    mathbf Wgamma (in green) are used to embed watermarks, and the watermarks extracted
+    in a white-box manner with a secret embedding matrix.'
+  Figure 6 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_6.jpg
+  Figure 6 caption: 'Layer structure of an encoder block: normalization layer weights
+    mathbf Wgamma (in green) are used to embed feature-based watermarks which are
+    extracted in white-box manner.'
+  Figure 7 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_7.jpg
+  Figure 7 caption: Figure (a)-(d), respectively, illustrate the main task accuracy
+    Accmain in image and text classification tasks with varying number K of total
+    clients (from 10 to 100), the results are based on cases of varying settings of
+    feature-based and backdoor-based watermarks, the main task accuracy Accmain of
+    FedIPR has slight dropped (not more than 2%) compared to FedAvg scheme.
+  Figure 8 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_8.jpg
+  Figure 8 caption: Figure (a)-(d), respectively, illustrate the feature-based watermark
+    detection rate eta F in image and text classification tasks with varying bit-length
+    per client, in SFL with K = 5, 10, 20 clients, the dot vertical line indicates
+    MK , which is the theoretical bound given by Theorem 1.
+  Figure 9 Link: articels_figures_by_rev_year\2022\FedIPR_Ownership_Verification_for_Federated_Deep_Neural_Network_Models\figure_9.jpg
+  Figure 9 caption: Figure provides the lower bound (red dot line) of feature-based
+    watermark detection rate eta F given by Theorem 1, and the empirical results (blue
+    line) are demonstrated to be above the theoretical bound (Case 2) in a SFL setting
+    of K=5 clients.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Bowen Li
+  Name of the last author: Qiang Yang
+  Number of Figures: 14
+  Number of Tables: 14
+  Number of authors: 5
+  Paper title: 'FedIPR: Ownership Verification for Federated Deep Neural Network Models'
+  Publication Date: 2022-08-02 00:00:00
+  Table 1 caption: TABLE 1 Notations Used in This Article
+  Table 10 caption: TABLE 10 Statistical Significance of Backdoor-Based Watermarks
+    Under Defensive Aggregation, Where 10 Clients Train AlexNet With CIFAR10 Dataset
+  Table 2 caption: TABLE 2 Reported Investigation Setting of Robustness
+  Table 3 caption: TABLE 3 Reported Experiment Results Under Different Settings for
+    Proposed Feature-Based Watermarks and Backdoor-Based Watermarks
+  Table 4 caption: TABLE 4 In the FedIPR Setting With 20 Clients, Table Shows the
+    Main Task Accuracy Ac c main Accmain With Different Watermarking Methods, the
+    CIFAR10 and CIFAR100 Datasets are Correspondly Trained With AlexNet and ResNet
+  Table 5 caption: TABLE 5 In the Worst Case of Detection Rate, Table Shows the Statistical
+    Significance of Feature-Based Watermarks
+  Table 6 caption: TABLE 6 Table Presents the Superior Backdoor-Based Watermark Detection
+    Rate (Above 95%)
+  Table 7 caption: TABLE 7 In the Worst Cases of Detection Rate, Table Shows Statistical
+    Significance of Backdoor-Based Watermarks
+  Table 8 caption: TABLE 8 In the Worst Case of Detection Rate, Table Shows the Statistical
+    Significance of Watermarks Under Differential Privacy Strategy Using Random Noise
+  Table 9 caption: TABLE 9 In the Worst Case of Detection Rate, Table Shows Statistical
+    Significance of Watermarks Under Client Selection Strategy.
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3195956
+- Affiliation of the first author: guangxi key lab of multi-source information mining
+    & security, guangxi normal university, guilin, china
+  Affiliation of the last author: guangxi key lab of multi-source information mining
+    & security, guangxi normal university, guilin, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_1.jpg
+  Figure 1 caption: 'Different scale or aspect ratio handing methods: multi-scale
+    search (such as SiamFC, ECO), anchor-based (such as SiamRPN, SiamRPN++), and anchor-free
+    (such as ours) trackers.'
+  Figure 10 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_10.jpg
+  Figure 10 caption: Success and precision plots on LaSOT [27].
+  Figure 2 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_2.jpg
+  Figure 2 caption: The tracking results predicted by the fusion scores (combined
+    classification scores and target-aware scores) and classification scores. The
+    red and blue bounding boxes correspond to the highest fusion and classification
+    scores, respectively. Fus and Cls represent the fusion and classification scores,
+    respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_3.jpg
+  Figure 3 caption: "The framework of the proposed Siamese box adaptive network. The\
+    \ left sub-figure shows its main structure, where \u03C6(x ) 3 , \u03C6(x ) 4\
+    \ , \u03C6(x ) 5 , \u03C6(z ) 3 , \u03C6(z ) 4 , and \u03C6(z ) 5 denote the feature\
+    \ maps of the backbone network. P cls\u2212all , P reg\u2212all , and P tar\u2212\
+    all denote the classification, regression and target-aware map, respectively.\
+    \ The right sub-figure shows each SiamBAN head, where DW-Corr means depth-wise\
+    \ cross-correlation operation."
+  Figure 4 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_4.jpg
+  Figure 4 caption: Illustrations of classification labels and regression targets.
+    Prediction values and supervision signals are as shown in this figure, where E
+    1 and E 2 represent the two ellipses, respectively. We use a cross entropy and
+    an IoU loss for classification and box regression, respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_5.jpg
+  Figure 5 caption: Expected averaged overlap performance on VOT2018 [23]. SiamRPNpp
+    is SiamRPN++, the same below.
+  Figure 6 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_6.jpg
+  Figure 6 caption: Expected averaged overlap performance on VOT2019 [24].
+  Figure 7 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_7.jpg
+  Figure 7 caption: 'Comparison of EAO on VOT2019 [24] for the following visual attributes:
+    camera motion, illumination change, occlusion, size change and motion change.
+    Frames that do not correspond to any of the five attributes are marked as unassigned.
+    The values in parentheses indicate the EAO range of each attribute and overall
+    of the trackers.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_8.jpg
+  Figure 8 caption: Success and precision plots on OTB100 [25].
+  Figure 9 Link: articels_figures_by_rev_year\2022\SiamBAN_TargetAware_Tracking_With_Siamese_Box_Adaptive_Network\figure_9.jpg
+  Figure 9 caption: Success and precision plots on UAV123 [26].
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Zedu Chen
+  Name of the last author: Xianxian Li
+  Number of Figures: 13
+  Number of Tables: 11
+  Number of authors: 7
+  Paper title: 'SiamBAN: Target-Aware Tracking With Siamese Box Adaptive Network'
+  Publication Date: 2022-08-02 00:00:00
+  Table 1 caption: TABLE 1 The Backbone Architecture of Our SiamBAN
+  Table 10 caption: TABLE 10 AUC on OTB100 [25] for Different Variants of Our SiamBAN
+    by Modifying the Classification Branch
+  Table 2 caption: TABLE 2 Detailed Comparisons on VOT2018 [23]
+  Table 3 caption: TABLE 3 Detailed Comparisons on VOT2019 [24]
+  Table 4 caption: TABLE 4 Detailed Comparisons on TrackingNet [28] in Terms of AUC,
+    Precision (P) and Normalized Precision (P norm norm)
+  Table 5 caption: TABLE 5 The Performance of Our SiamBAN With Different Backbones
+    as the Feature Extractors on OTB100 [25]
+  Table 6 caption: TABLE 6 Quantitative Comparison Results of Our Tracker and its
+    Variants With Different Detection Heads and Different Label Assignment Methods
+    on OTB100 [25]
+  Table 7 caption: TABLE 7 AUC Under Different Combinations of the Post-Processing
+    Operations on OTB100 [25]
+  Table 8 caption: TABLE 8 AUC Under Different Weighting Parameter Values of Our Multi-Task
+    Loss Function on OTB100 [25]
+  Table 9 caption: "TABLE 9 AUC Under Different Values of Target-Aware Weight \u03C9\
+    \ \u03C9 on OTB100 [25]"
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3195759
+- Affiliation of the first author: department of computer science, hong kong baptist
+    university, hong kong sar, china
+  Affiliation of the last author: department of computer science, hong kong baptist
+    university, hong kong sar, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Key_Point_Sensitive_Loss_for_LongTailed_Visual_Recognition\figure_1.jpg
+  Figure 1 caption: 'Different kinds of points in feature space. Key points: the points
+    located in Zone 1 have small distance from the anchor vectors of both Class 1
+    and Class 2. Non-key points: the points falling in Zone 2 are far away from the
+    anchor vectors of Class 1 and Class 2. Simple points: the points located in Zone
+    3 (or Zone 4) have smaller distance with the anchor vector of Class 1 (or Class
+    2).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Key_Point_Sensitive_Loss_for_LongTailed_Visual_Recognition\figure_2.jpg
+  Figure 2 caption: "Class boundaries of different loss functions, where angular distance\
+    \ is used. The \u03B8 1 axis represents angular distance between sample features\
+    \ and the anchor vector of Class 1, while the \u03B8 2 axis is for the angular\
+    \ distance of Class 2. Shaded points with red textures represent key points. The\
+    \ denser the texture, the more important this is."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Key_Point_Sensitive_Loss_for_LongTailed_Visual_Recognition\figure_3.jpg
+  Figure 3 caption: "Margins of different loss functions and their comparison under\
+    \ binary-classes scenarios, where the \u03B8 1 and \u03B8 2 axes represent the\
+    \ angular distance between the sample features and the class anchor vectors of\
+    \ w 1 and w 2 , respectively, and m 1,2 and m \u2032 1,2 represent class margins."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Key_Point_Sensitive_Loss_for_LongTailed_Visual_Recognition\figure_4.jpg
+  Figure 4 caption: Schematic plot of angle penalty and cosine penalty.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Key_Point_Sensitive_Loss_for_LongTailed_Visual_Recognition\figure_5.jpg
+  Figure 5 caption: Feature distribution of different loss functions. A ResNet-32
+    is trained on 3 classes from CIFAR-10. 5000, 500 and 1000 samples for Class 1,
+    Class 2 and Class 3 are randomly selected, respectively. (a1)-(d1) are the feature
+    distributions obtained by different loss functions on training data, and (a2)-(d2)
+    are on testing data.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Key_Point_Sensitive_Loss_for_LongTailed_Visual_Recognition\figure_6.jpg
+  Figure 6 caption: Per-classgroup error rates obtained by different optimization
+    strategies on CIFAR-10100-LT with the imbalance ratio rho = 100 . Head classes
+    are with low indices. Conversely, tailed-classes are with higher indices. For
+    CIFAR-100-LT, we aggregate the classes into 10 groups.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Key_Point_Sensitive_Loss_for_LongTailed_Visual_Recognition\figure_7.jpg
+  Figure 7 caption: Per-classgroup error rates obtained by different techniques on
+    CIFAR-10100-LT datasets with rho = 100 . Head classes are with low indices. Conversely,
+    tailed-classes are with higher indices. For CIFAR-100-LT, the classes are aggregated
+    into 10 groups.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Mengke Li
+  Name of the last author: Zhikai Hu
+  Number of Figures: 7
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Key Point Sensitive Loss for Long-Tailed Visual Recognition
+  Publication Date: 2022-08-03 00:00:00
+  Table 1 caption: TABLE 1 Summary of Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Summary of Basic Setting
+  Table 3 caption: TABLE 3 Top-1 Error Rates ( % %) Comparison on Long-tailed CIFAR
+    Datasets
+  Table 4 caption: TABLE 4 Top-1 Error Rates ( % %) Comparison on ImageNet-LT and
+    iNaturalist 2018
+  Table 5 caption: TABLE 5 Top-1 error rates ( % %) on long-tailed CIFAR dataset
+  Table 6 caption: TABLE 6 Comparison of KPS Combined with mixup in Terms of Top-1
+    Error Rates ( % %)
+  Table 7 caption: TABLE 7 Comparison of KPS Combined with MiSLAS in Terms of Top-1
+    Error Rates ( % %)
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3196044
+- Affiliation of the first author: cas key laboratory of gipas, university of science
+    and technology of china, hefei, anhui, china
+  Affiliation of the last author: cas key laboratory of gipas, university of science
+    and technology of china, hefei, anhui, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_1.jpg
+  Figure 1 caption: The problem we study in this work. The wireless positioning trajectories
+    of pedestrians carrying mobile phones can be obtained by existing cellular networks
+    and WiFi positioning. Video data are captured when pedestrians walk to the monitoring
+    areas of cameras. We consider the area within a preset sensing radius centered
+    on the camera as the sensing area of the wireless trajectory fragments. When a
+    pedestrian carrying a mobile phone enters the sensing area of the wireless fragments,
+    the fragment of the wireless positioning trajectory within the sensing area is
+    the sensed wireless fragment. The wireless fragment may belong to the same pedestrian
+    as one of the videos captured by this camera during its time range.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_10.jpg
+  Figure 10 caption: "(a) The influence of the sensing radius of wireless trajectories\
+    \ on the performance of UMTF on WP-ReID dataset. (b) The accuracy changes (%)\
+    \ of model F(\u22C5) and MMGN as the number of training epochs increases on WP-ReID\
+    \ dataset. (c) The accuracy changes (%) of model F(\u22C5) as the increase of\
+    \ the epochs MMGN participates in the training in UMTF. For example, the value\
+    \ at Epoch=50 is the accuracy of F(\u22C5) that trained for 80 epochs, while the\
+    \ MMGN is removed from UMTF after 50th epoch and wireless data is only involved\
+    \ in the first 50 training epoches."
+  Figure 2 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_2.jpg
+  Figure 2 caption: The occlusion, blur and clothing changes examples on existing
+    person re-identification datasets, which introduce many challenges for existing
+    methods that rely on visual data. Each row in the figure contains two video sequences
+    belonging to the same person, each with three frames.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_3.jpg
+  Figure 3 caption: The overall workflow of our unsupervised multimodal training framework
+    (UMTF). NNA is the nearest neighbor association. MMDA is the multimodal data association
+    strategy. MMGN means the multimodal graph neural network. The CNN model obtained
+    from the initial training stage is sent to the second training stage to be alternately
+    trained with MMGN. The CNN model and MMGN generate pseudo visual labels and pseudo
+    multimodal labels to guide and promote each other in the multiple iterations and
+    updates.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_4.jpg
+  Figure 4 caption: The process of multimodal data association (MMDA). The circular
+    area (the area inside the dotted circle) with a preset radius around each camera
+    is regarded as the wireless fragment sensing area. The part of a pedestrians wireless
+    positioning trajectory T m located in a wireless sensing area is regarded as a
+    wireless fragment T r m . In this example, 4 wireless fragments T r m 4 r=1 are
+    sensed when the pedestrian pass by 4 surveillance cameras. We use different markers
+    to represent video sequences. Video sequences with the same marker share the same
+    person identity. The number in a marker is the serial number of the corresponding
+    wireless fragment. Taking T 1 m as an example, during the time range of T 1 m
+    , 5 video sequences of pedestrians are captured by the corresponding camera, which
+    are denoted as a video set V 1 m . The video sequence (red circle) of the target
+    pedestrian is mixed in the video set V 1 m . MMDA is dedicated to correctly associating
+    the wireless trajectory of the target person with its video sequences (red circles).
+  Figure 5 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_5.jpg
+  Figure 5 caption: "The architecture of the multimodal graph convolutional module\
+    \ (MGM). S\u2208 R N\xD7N\xD7M are the wireless similarity between N videos. X\u2208\
+    \ R N\xD72048 are the features of N video sequences. The output features Z\u2208\
+    \ R N\xD7512 are the video features updated with wireless information. \u2299\
+    \ denotes the element-wise multiplication. \xD7 is the matrix multiplication."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_6.jpg
+  Figure 6 caption: "The overall architecture of the multimodal graph neural network\
+    \ (MMGN). MGM denotes the multimodal graph convolutional module. S\u2208 R N\xD7\
+    N\xD7M are the wireless similarity between N videos. X\u2208 R N\xD72048 are the\
+    \ features of N video sequences."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_7.jpg
+  Figure 7 caption: Examples of the matching results of our method. Each row in the
+    figure contains two videos belonging to the same person, each with six frames.
+    The first two rows of videos are from WP-ReID dataset, and the videos in the next
+    two rows are from Campus4K. These videos are difficult to match correctly by existing
+    vision-based methods because of clothes changing, blur and occlusion issues. Thanks
+    to the reliability of the wireless signals, our method avoids the interference
+    of visual factors and matches them correctly.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_8.jpg
+  Figure 8 caption: The effect of the number of heads in the multi-head mechanism
+    of MMGN on the performance of UMTF.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Unsupervised_Person_ReIdentification_With_Wireless_Positioning_Under_Weak_Scene_\figure_9.jpg
+  Figure 9 caption: "(a) The number of video sequences assigned pseudo visual labels\
+    \ or pseudo multimodal labels as a percentage of the total number of videos. (b)\
+    \ The prediction accuracies of pseudo labels, which takes adjusted mutual information\
+    \ (AMI) as the evaluation metric. (c) The impact of the number of wireless signals\
+    \ on the performance of model F(\u22C5) and MMGN on WP-ReID dataset."
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yiheng Liu
+  Name of the last author: Houqiang Li
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Unsupervised Person Re-Identification With Wireless Positioning Under
+    Weak Scene Labeling
+  Publication Date: 2022-08-04 00:00:00
+  Table 1 caption: TABLE 1 The Definition of Different Mathematical Notations in Our
+    Method
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Ablation Study of UMTF
+  Table 3 caption: TABLE 3 The Impact of MMGN Trained by Different Combinations Of
+    Loss functions on the Performance of UMTF
+  Table 4 caption: TABLE 4 Performance Comparison With the State-of-the-Art Methods
+    on WP-ReID
+  Table 5 caption: TABLE 5 Performance Comparison With the State-of-the-Art Unsupervised
+    Methods on Campus4K
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3196364
+- Affiliation of the first author: college of computer, national university of defense
+    technology, changsha, hunan, china
+  Affiliation of the last author: scientific computing & imaging institute and department
+    of mathematics, university of utah, salt lake city, ut, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_1.jpg
+  Figure 1 caption: An example of an undirected graph with six nodes. Each node owns
+    its data, executes computations locally, and only communicates with its neighbors.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_10.jpg
+  Figure 10 caption: 'Training LSTM for SHAKESPEARE classification with DFedAvgM using:
+    different communication bits but fix local epoch to one (first row) and different
+    local epochs but fix the communication bits to 16 (second row). More local epoch
+    does not help in accelerating training or protect data privacy. Using higher precision
+    communication can slightly improve the performance in accuracy; as shown in the
+    top two panels, the accuracy and AUC versus communication round are very close
+    when different quantization levels are used. Overall, using 16 bits has slight
+    advantages over using 1 or 4 bits in terms of accuracy but does not show a remarkable
+    difference in membership privacy protection.'
+  Figure 2 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_2.jpg
+  Figure 2 caption: Comparison of communication and training styles of traditional
+    decentralized stochastic gradient descent (DSGD) and the proposed decentralized
+    federated average with momentum (DFedAvgM). In DSGD, each client will communicate
+    with its neighbors after one single training step. In DFedAvgM, however, each
+    client will communicate with its neighbors after multiple training iterations.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_3.jpg
+  Figure 3 caption: An illustration of ring graph (left), 3-regular expander graph
+    (middle), and 4-regular expander graph (right) with 10 graph nodes.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_4.jpg
+  Figure 4 caption: 'Training CNN for IID MNIST classification with DFedAvgM using:
+    different communication bits but fix local epoch to one (left column) and different
+    local epochs but fix the communication bits to 16 (right column). Different quantized
+    DFedAvgM performs almost similar, and more local epoch can accelerate training
+    at the cost of faster privacy leakage. CR: communication round.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_5.jpg
+  Figure 5 caption: 'Training CNN for Non-IID MNIST classification with DFedAvgM using:
+    different communication bits but fix local epoch to one (left column) and different
+    local epochs but fix the communication bits to 16 (right column). Different quantized
+    DFedAvgM does not lead to much difference in performance. More local epoch does
+    not help in accelerating training or protect data privacy.'
+  Figure 6 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_6.jpg
+  Figure 6 caption: 'Training 2NN for IID MNIST classification with DFedAvgM using:
+    different communication bits but fix local epoch to one (first column) and different
+    local epochs but fix the communication bits to 16 (second column). Different quantized
+    DFedAvgM performs almost similar, and more local epoch can accelerate training
+    at the cost of faster privacy leakage.'
+  Figure 7 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_7.jpg
+  Figure 7 caption: 'Training 2NN for Non-IID MNIST classification with DFedAvgM using:
+    different communication bits but fix local epoch to one (first column) and different
+    local epochs but fix the communication bits to 16 (second column). Different quantized
+    DFedAvgM does not lead to much difference in performance. More local epoch does
+    not help in accelerating training or protect data privacy.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_8.jpg
+  Figure 8 caption: 'The efficiency comparison between DSGD, FedAvg, DFedAvgM, and
+    DFedAvgM-E3 in training 2NN for IID MNIST classification. (a) and (c): test loss
+    and test accuracy versus communication round. (b) and (d): test loss and test
+    accuracy versus communication bits. DFedAvgM and DFedAvgM-E3 perform on par with
+    FedAvg in terms of communication rounds, but DFedAvgM and DFedAvgM-E3 are significantly
+    more efficient than FedAvg from the communication cost viewpoint. CR: communication
+    round; CB: communication bits.'
+  Figure 9 Link: articels_figures_by_rev_year\2022\Decentralized_Federated_Averaging\figure_9.jpg
+  Figure 9 caption: 'The efficiency comparison between DSGD, FedAvg, DFedAvgM, DFedAvgM-E3,
+    and DFedAvgM-E4 in training 2NN for Non-IID MNIST classification. (a) and (c):
+    test loss and test accuracy versus communication round. (b) and (d): test loss
+    and test accuracy versus communication bits. In terms of communication round,
+    FedAvg outperforms DFedAvgM and DSGD, but the performance gap between FedAvg and
+    decentralized federated learning can be closed by using a better communication
+    graph, as shown by the result in DFedAvgM-E3 and DFedAvgM-E4. In terms of communication
+    bits, DFedAvgM, DFedAvgM-E3, and DFedAvgM-E4 enjoy significant communication advantages
+    over DSGD and FedAvg. CR: communication round; CB: communication bits.'
+  First author gender probability: 0.87
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Tao Sun
+  Name of the last author: Bao Wang
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Decentralized Federated Averaging
+  Publication Date: 2022-08-04 00:00:00
+  Table 1 caption: TABLE 1 Three Advantages of Decentralized FedAvg Over FedAvg
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Communication Cost, at a Given Test Accuracy, of FedAvg,
+    DFedAvgM, and DFedAvgM-E3 in Training 2NN for IID MNIST Classification
+  Table 3 caption: TABLE 3 Given a Test Accuracy, the Communication Cost of FedAvg,
+    DFedAvgM, and DFedAvgM-E3E4 in Training 2NN for Non-IID MNIST Classification
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3196503
+- Affiliation of the first author: institute for datability science, osaka university,
+    suita, osaka, japan
+  Affiliation of the last author: institute of scientific and industrial research,
+    osaka university, suita, osaka, japan
+  Figure 1 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_1.jpg
+  Figure 1 caption: (a) High spatio-temporal resolution video that cannot be captured
+    and processed due to various environmental and budgetary constraints. (b) Low
+    spatial resolution and high frame rate video that does not have the detail of
+    the object features. (c) High spatial resolution and low frame rate video that
+    does not have the detail of the motion features.(d) Coded exposure image that
+    has same amount of data as (b) and (c), but the amount of information is same
+    as (a).
+  Figure 10 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_10.jpg
+  Figure 10 caption: Our prototype camera system using a Liquid Crystal on Silicon
+    (LCoS)
+  Figure 2 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_2.jpg
+  Figure 2 caption: Our proposed SVC2D action classification network along with the
+    encoding network. During training, both networks are optimized together.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_3.jpg
+  Figure 3 caption: Encoding network for coded exposure with p=8 and L=16 . This network
+    emulates the capturing process of the coded exposure image using binary weight
+    of either 0 or 1, where 1 represents exposure and 0 represents no exposure.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_4.jpg
+  Figure 4 caption: Shift variant convolution (SVConv2D) with p=8 .
+  Figure 5 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_5.jpg
+  Figure 5 caption: Our proposed framework for distilling knowledge into the SVC2D
+    network. The top box (dashed) contain the C3D teacher network along with corresponding
+    AxCNNs. The bottom box contain the SVC2D network along with corresponding AxCNNs.
+    Note that all the AxCNNs are temporarily added during training and removed during
+    inference. Structure of AxCNNs is discussed in Section 3.3. For simplicity, we
+    do not show the max-pool, activation, and batch normalization layers here. Furthermore,
+    each of the the CE layer in the teacher-side AxCNNs is followed by a SVConv2D
+    layer which is also not depicted here.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_6.jpg
+  Figure 6 caption: 'Difference between scene-related vs temporal-related datasets.
+    Top: Pushing something from right to left action class from the Something 2 -v2
+    dataset. Horizontal flipping of frames gives the opposite action class which is
+    Pushing something from left to right. Bottom: Horse Riding action class from the
+    UCF-101 dataset. Only one frame is enough for prediction.'
+  Figure 7 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_7.jpg
+  Figure 7 caption: Comparison of compression methods by exposure type. (a) The coded
+    exposure image was generated using the coded exposure pattern and used for training
+    of SVC2D. (b) The long exposure image was generated by averaging L frames of video
+    and used for training of C2D. (c) The short exposure image was generated by choosing
+    one frame from L frames of video and used for training of C2D. (d) The video was
+    used for training of C3D without compression. This is the upper bound case using
+    all the frames.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_8.jpg
+  Figure 8 caption: Compression length L vs action recognition accuracy on the Something
+    2 -v2 dataset. The horizontal axis is the number of frames to be compressed, and
+    the vertical axis is the recognition accuracy. Only in the case of the video,
+    the recognition accuracy without compression is shown.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Action_Recognition_From_a_Single_Coded_Image\figure_9.jpg
+  Figure 9 caption: Spatial-temporal diagram of the optimized exposure pattern for
+    action recognition on Something 2 -v2 (top), UCF-101 (middle), and Kinetics-400
+    (bottom) datasets. Vertical axis shows the temporal dimension and horizontal axis
+    shows the spatial dimension. White pixels represent exposure and black pixels
+    represent no exposure.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sudhakar Kumawat
+  Name of the last author: Yasushi Yagi
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Action Recognition From a Single Coded Image
+  Publication Date: 2022-08-04 00:00:00
+  Table 1 caption: TABLE 1 Details of the Benchmark Human Action Recognition Datasets
+    Used for Evaluation. Something 2 2-V2 is a Temporal-Related Dataset. Kinetics-400
+    and UCF-101 are Scene-Related Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance of Various Approaches and Networks on the Something
+    2 2-V2 (SS-V2), Kinetics-400 (K-400), and UCF-101 Datasets.
+  Table 3 caption: TABLE 3 Block Size p p of the Exposure Pattern vs Action Recognition
+    Accuracy on the Something 2 2-V2 Dataset.
+  Table 4 caption: TABLE 4 Performance of the Teacher-Side AxCNNs on Something 2 2-V2.
+  Table 5 caption: TABLE 5 Comparing the Performance of SVResNet-18 on the Something
+    2 2-V2 Dataset.
+  Table 6 caption: TABLE 6 Comparing the Performance of SVC2D Model on the New Test
+    Dataset Captured by Our Prototype Camera on the Top 25 Classes of Something 2
+    2-V2 Dataset.
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3196350
+- Affiliation of the first author: school of mathematics and statistics and ministry
+    of education key lab of intelligent networks and network security, xian jiaotong
+    university, xian, shaanxi, china
+  Affiliation of the last author: school of mathematics and statistics and ministry
+    of education key lab of intelligent networks and network security, xian jiaotong
+    university, xian, shaanxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Fourier_Series_Expansion_Based_Filter_Parametrization_for_Equivariant_Convolutio\figure_1.jpg
+  Figure 1 caption: "(a) Illustration of filter parametrization by linear combination\
+    \ of basis functions, and the filter rotation based on it. All the filters are\
+    \ with circular shape masks for better rotation. (b)-(d) The representations (upper)\
+    \ and correlated \u03C04 rotations (lower) of a given 2D filter, by adopting harmonics\
+    \ bases [3], 2D Fourier bases [8] and the proposed bases as the basis functions,\
+    \ respectively. (e) The original filter (upper) and its \u03C04 rotation (lower)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Fourier_Series_Expansion_Based_Filter_Parametrization_for_Equivariant_Convolutio\figure_2.jpg
+  Figure 2 caption: (a) A typical input cartoon image. (b)-(c) Outputs of randomly
+    initialized CNN and proposed rotation equivariant convolution network, respectively,
+    where the demarcated areas are zoomed in 3 times for easy observation.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Fourier_Series_Expansion_Based_Filter_Parametrization_for_Equivariant_Convolutio\figure_3.jpg
+  Figure 3 caption: "(a) Illustrations of the 2D Fourier bases \u03D5 c kl , with\
+    \ p=11,k,l=0,1,\u2026,p\u22121 . The discretization of high frequency bases in\
+    \ black boxes are symmetrical to the low frequency bases in red box. (b) The 45\
+    \ \u2218 rotation results of 2D Fourier bases. (c)-(d) illustration of rotating\
+    \ \u03D5 c 1,1 and \u03D5 c 10,10 by 45 \u2218 . Note that \u03D5 c 1,1 is the\
+    \ same as \u03D5 c 10,10 , but their rotation results are different to each other,\
+    \ which is due to the heavy aliasing effect in \u03D5 c 10,10 . (e)-(f) Illustrations\
+    \ of the proposed basis set (cosine part) and its 45 \u2218 rotation."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Fourier_Series_Expansion_Based_Filter_Parametrization_for_Equivariant_Convolutio\figure_4.jpg
+  Figure 4 caption: "Illustration of an example network constructed by the proposed\
+    \ equivariant convolutions, where we set the transformation group S ( A i , B\
+    \ i \u2208S ) as 2\u03C0i3 rotations, i=1,2,3 . (a)-(c) Equivariant convolutions\
+    \ of the input layer, intermediate layers, and output layer, respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Fourier_Series_Expansion_Based_Filter_Parametrization_for_Equivariant_Convolutio\figure_5.jpg
+  Figure 5 caption: "(a) A discretization of the functional filter (29) and its \u03C0\
+    4 rotation, with filter size p=11 and mesh size h=15 . (b)-(d) The representations\
+    \ and the corresponding \u03C04 rotations of the given 2D filter, where harmonics\
+    \ bases [3], 2D Fourier bases [8] and the proposed bases in this study are adopted\
+    \ as basis functions, respectively. (e) A discretization of the functional filter\
+    \ (29), with filter size p=5 and mesh size h=12 . (f)-(i) The representations\
+    \ and the corresponding \u03C04 rotations of the given 2D filter, by adopting\
+    \ PDO bases [5], harmonics bases [3], 2D Fourier bases [8] and the proposed bases\
+    \ in this study as basis functions, respectively."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Fourier_Series_Expansion_Based_Filter_Parametrization_for_Equivariant_Convolutio\figure_6.jpg
+  Figure 6 caption: (a) A typical input cartoon image. (b)-(c) Outputs of randomly
+    initialized CNN and F-Conv, respectively, where the demarcated areas are zoomed
+    in 5 times for easy observation.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Fourier_Series_Expansion_Based_Filter_Parametrization_for_Equivariant_Convolutio\figure_7.jpg
+  Figure 7 caption: '(a) A sample of high-resolution image from the Urban100 [31]
+    dataset. (b) From upper to lower: the 2 times super-resolution images restored
+    by the EDSR, RDN and RCAN methods, respectively, where the convolution operators
+    are set as commonly used convolutions, i.e., CNN. (c)-(f) From upper to lower:
+    the super-resolution images restored by the EDSR, RDN and RCAN methods, respectively,
+    where the convolution operators are set as G-CNN, E2-CNN, PDO-eConv and the proposed
+    F-Conv, respectively. All the involved methods are trained without data argumentation.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\Fourier_Series_Expansion_Based_Filter_Parametrization_for_Equivariant_Convolutio\figure_8.jpg
+  Figure 8 caption: '(a) A sample of high resolution image from the Urban100 [31]
+    dataset. (b) From upper to lower: the 4 times super-resolution images restored
+    by the EDSR, RDN and RCAN methods, respectively, where the convolution operators
+    are set as commonly used convolutions, i.e., CNN. (c)-(f) From upper to lower:
+    the super-resolution images restored by the EDSR, RDN and RCAN methods, respectively,
+    where the convolution operators are set as G-CNN, E2-CNN, PDO-eConv and the proposed
+    F-Conv, respectively. All the involved methods are trained with data argumentation.'
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.68
+  Name of the first author: Qi Xie
+  Name of the last author: Deyu Meng
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Fourier Series Expansion Based Filter Parametrization for Equivariant
+    Convolutions
+  Publication Date: 2022-08-05 00:00:00
+  Table 1 caption: TABLE 1 The Involved Concepts and Notations for Equivariant Convolutions
+    (eConv) in the Continuous and Discrete Domains, Respectively
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 The RMSE (mean \xB1 standard Deviation Over 1000 Random\
+    \ Generated Samples) of Filter Parametrization on Continuous Functions, Obtained\
+    \ by All Competing Methods Under Different Filter Sizes"
+  Table 3 caption: "TABLE 3 The RMSE (mean \xB1 standard Deviation Over 1000 Random\
+    \ Generated Samples) of Filter Parametrization of Random Initialization Filters,\
+    \ Obtained by All Competing Methods Under Different Filter Sizes"
+  Table 4 caption: TABLE 4 Average Equivariant Error of Feature Maps Between Rotation
+    Free and Rotated Inputs on 100 Image in the Div2k Testing Samples
+  Table 5 caption: TABLE 5 Results of All Competing Methods With Similar Simple Network
+    Architecture on MNIST-Rot-12 k
+  Table 6 caption: TABLE 6 Results of Leading Board Methods and Ours on MNIST-Rot-12
+    k
+  Table 7 caption: "TABLE 7 The Average SR Results (mean \xB1 \xB1 Deviation) of All\
+    \ Competing Methods on 4 Exploited Image Datasets, Including Urban100 [31], B100\
+    \ [32], Set14 [33] and Set5 [34]. The Results in the Upper and Lower Parts are\
+    \ Produced by Networks Trained Without and With Data Argumentation, Respectively"
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3196652
+- Affiliation of the first author: department of automation, bnrist, tsinghua university,
+    beijing, china
+  Affiliation of the last author: department of automation, bnrist, tsinghua university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_1.jpg
+  Figure 1 caption: "Examples for GFNet. \u201CFLOPs\u201D refers to the proportion\
+    \ of the computation required by GFNet (with 96 \xD7 96 image patches) versus\
+    \ processing the entire 224 \xD7 224 image."
+  Figure 10 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_10.jpg
+  Figure 10 caption: Comparisons of MS-GFNet and the original GFNet on top of ResNet
+    and EfficientNet. Top-1 accuracy versus Multiply-Adds on ImageNet under the Budgeted
+    batch classification setting are reported.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_2.jpg
+  Figure 2 caption: The comparison of GFNet and RA-CNN [15]. As a representative example,
+    the computational cost (i.e., FLOPs) is computed based on the standard setting
+    on ImageNet [1] with the ResNet-50 [3] backbone network, where GFNet adopts 96x96
+    patches. GFNet is computationally more efficient, and can capture the class-discriminative
+    regions in any shape or size flexibly. In contrast, RA-CNN [15] is designed to
+    attend to the discriminative patterns concentrated in a small region of the original
+    images. This mechanism is tailored for the fine-grained recognition task, but
+    tends to be sub-optimal in more general and complex scenarios (e.g., on the large-scale
+    comprehensive visual datasets like ImageNet).
+  Figure 3 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_3.jpg
+  Figure 3 caption: "An overview of GFNet. Given an input image x , the model iteratively\
+    \ processes a sequence of patches x ~ 1 , x ~ 2 ,\u2026 . The first input x ~\
+    \ 1 is a low-resolution version of x , and it is processed by the global encoder\
+    \ f g (Glance Step). The following ones x ~ 2 ,\u2026 are high-resolution patches\
+    \ cropped from x , which are fed into the local encoder f l (Focus Stage). At\
+    \ each step, GFNet produces a prediction with a classifier f c , as well as decides\
+    \ the location of the next image patch using a patch proposal network \u03C0 .\
+    \ This sequential decision process is terminated once sufficient confidence is\
+    \ obtained."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_4.jpg
+  Figure 4 caption: "The architecture of the patch proposal network \u03C0 ."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_5.jpg
+  Figure 5 caption: "The value of rewards when the centre of the 2 rd patch is located\
+    \ at each location in a GF-ResNet-50 ( T=5 , H \u2032 = W \u2032 =96 ), indicated\
+    \ by heat maps. The original images are shown on the left. We assume that the\
+    \ samples shown in (b) may confuse the learning of the patch selection policy\
+    \ using the reward proposed in Eq. (4), where all the actions will be encouraged."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_6.jpg
+  Figure 6 caption: Comparisons of the vanilla GFNet and Multi-scale GFNet (MS-GFNet).
+    The later allows the model to dynamically adjust the size of patches, such that
+    high accuracy can be achieved with both small and relatively sufficient computational
+    budgets. Note that the computational cost of both GFNet and MS-GFNet can be adjusted
+    online without additional training.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_7.jpg
+  Figure 7 caption: Top-1 accuracy versus Multiply-Adds on ImageNet. The proposed
+    GFNet framework is implemented on top of state-of-the-art efficient networks.
+    Figures (a-e) present the results of Budgeted batch classification, while Figures
+    (f) shows the Anytime prediction results.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_8.jpg
+  Figure 8 caption: Top-1 accuracy versus inference latency (ms) on ImageNet. The
+    inference speed is measured on an iPhone XS Max. We implement GFNet based on MobileNet-V3
+    and ResNet.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Glance_and_Focus_Networks_for_Dynamic_Visual_Recognition\figure_9.jpg
+  Figure 9 caption: "Visualization results of the GF-ResNet-50 ( T=5 , H \u2032 =\
+    \ W \u2032 =96 ). The boxes indicate the patch locations, and the color denotes\
+    \ whether the prediction is correct at current step (green: correct; red: wrong).\
+    \ Note that x ~ 1 is the resized input image. The indices of the steps and the\
+    \ current confidence on the ground truth labels (shown at the top of images) are\
+    \ presented in the upper left corners of boxes."
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.67
+  Name of the first author: Gao Huang
+  Name of the last author: Shiji Song
+  Number of Figures: 17
+  Number of Tables: 8
+  Number of authors: 7
+  Paper title: Glance and Focus Networks for Dynamic Visual Recognition
+  Publication Date: 2022-08-08 00:00:00
+  Table 1 caption: TABLE 1 Actual Speed on GPU Devices
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparisons of the Contrastive Reward With the Original
+    One. The results of three GFNets on ImageNet are reported. We present the Top-1
+    accuracy after the training stage II with fixed length of the input sequence (denoted
+    by t t).
+  Table 3 caption: TABLE 3 Top-1 Accuracy of MS-GFNet (ResNet-50) on ImageNet Under
+    the Budgeted Batch Classification Setting
+  Table 4 caption: TABLE 4 Results of Traffic Sign Recognition on the Swedish Traffic
+    Signs Dataset, Which Consists of 960 x 1,280 Road-Scene Images Collected on Real
+    Moving Vehicles
+  Table 5 caption: TABLE 5 Ablation Study on the Components of GFNet
+  Table 6 caption: "TABLE 6 Comparisons of Different Architectures of the Patch Proposal\
+    \ Network \u03C0 \u03C0"
+  Table 7 caption: TABLE 7 Comparisons of Various Early-Termination Criterions in
+    Budgeted Batch Classification
+  Table 8 caption: TABLE 8 Effects of Varying Training Hyper-Parameters, Where lr
+    lr Refers to the Learning Rate
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3196959

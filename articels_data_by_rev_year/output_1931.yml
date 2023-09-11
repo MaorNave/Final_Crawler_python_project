@@ -1,0 +1,888 @@
+- Affiliation of the first author: department of computer science and engineering,
+    hong kong university of science and technology, hong kong
+  Affiliation of the last author: department of information engineering and computer
+    science, university of trento, trento, tn, italy
+  Figure 1 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_1.jpg
+  Figure 1 caption: The proposed model targets multi-scale structured deep representation
+    learning and could be applied into different pixel-wise prediction problems involving
+    both discrete and continuous prediction variables, i.e. (a) monocular depth estimation
+    on KITTI, (b) object contour detection on BSDS500, and (c) semantic segmentation
+    on Pascal-Context. The first, second and third columns are input RGB images, ground-truth
+    and predicted results, respectively.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_10.jpg
+  Figure 10 caption: Qualitative semantic segmentation results on the Pascal-Context
+    dataset. The representative Dilated FCN method [5] is compared.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_2.jpg
+  Figure 2 caption: An illustration of different schemes for multi-scale deep feature
+    learning and fusion. (a) the traditional approach (e.g., concatenation, weighted
+    averaging), (b) the proposed CRF implementing multi-scale feature fusion, and
+    (c) the proposed Attention-Gated-CRF based approach.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_3.jpg
+  Figure 3 caption: An overview of the profposed Probabilistic Graph Attention Network
+    (PGA-Net) for monocular depth detection. The symbols C , D , M and L denote the
+    convolution, the deconvolution, the max-pooling operation and optimization loss,
+    respectively. AG-CRF represents the proposed attention-gated CRF model with conditional
+    kernels (CK) for structured multi-scale feature learning, which is fully differentiable
+    and supports end-to-end training with a multi-scale CNN network. PGA-Net consists
+    of two hierarchies. The hierarchy 1 generates rich multi-scale features which
+    are refined by AG-CRFs, and then are passed to hierarchy 2 for final prediction.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_4.jpg
+  Figure 4 caption: "The detailed computing flow of the mean-field updating of the\
+    \ proposed conditional kernel AG-CRF model. The symbol \u2297 denotes the convolutional\
+    \ operation. The ones with green color represent the operation for the conditional\
+    \ kernel prediction. The symbols \u2299 and \u2295 denote element-wise multiplication\
+    \ and addition operation, respectively. The symbols \u25EF\u03C3 and \xA9 represent\
+    \ a sigmoid and a concatenation operation, respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_5.jpg
+  Figure 5 caption: The visualization of the learned attention maps in the proposed
+    AG-CRF model. Our attention is a pixel-wise attention, i.e. simultaneously learning
+    both spatial- and channel-wise attention. We visualize the attention by uniformly
+    sampling four attention channels of the attention map. The learned attentions
+    could capture distinct meaningful parts of the features for guiding the message
+    passing. These attention maps are learned on the KITTI dataset for the task of
+    monocular depth estimation.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_6.jpg
+  Figure 6 caption: Examples of predictions from different multi-scale features on
+    BSDS500. The first column is the input test images. The 2nd to the 5th columns
+    show the predictions from different multi-scale features. The last column shows
+    the final contour map after standard NMS.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_7.jpg
+  Figure 7 caption: Precision-Recall Curves on the BSDS500 [11] and NYUD-V2 [12] test
+    sets. The proposed PGA-Net achieves the best performance among the competitors
+    on the ODS metric on both datasets. The results on NYUD-V2 are all based on the
+    RGB and HHA data.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_8.jpg
+  Figure 8 caption: Qualitative examples of monocular depth prediction on the KITTI
+    raw dataset. The comparison with other competive methods including Eigen et al.
+    [30], Zhou et al. [93], Garg et al. [75] and Godard et al. [87] are presented.
+    We perform bilinear interpolation on the sparse ground-truth depth maps for better
+    visualization.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Probabilistic_Graph_Attention_Network_With_Conditional_Kernels_for_PixelWise_Pre\figure_9.jpg
+  Figure 9 caption: Training curves of our approach and the baseline model (i.e. ours
+    with the proposed AG-CRFs disabled) in terms of both the mIoU and PixAcc metrics
+    on the Pascal-Context dataset. The number of overall training epochs is 80.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Dan Xu
+  Name of the last author: Nicu Sebe
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Probabilistic Graph Attention Network With Conditional Kernels for
+    Pixel-Wise Prediction
+  Publication Date: 2020-12-10 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 BSDS500 Dataset: Quantitative Results'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Performance Comparison on NYUD-V2 RGB Dataset
+      for the Contour Detection Task With the Official TrainingTesting Protocols
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Performance Analysis of the Proposed PGA-Net
+      on NYUD-V2 RGB Dataset for the Contour Detection Task
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Comparison With the State of the Art Methods
+      on the KITTI Raw Dataset for Monocular Depth Estimation
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Perzformance Analysis of the Proposed PGA-Net
+      With the ResNet 50 Backbone on Pascal-Context for the Semantic Segmentation
+      Task
+  Table 6 caption:
+    table_text: TABLE 6 Overall Performance Comparison With State of the Art Methods
+      on the val Set of the PASCAL-Context Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3043781
+- Affiliation of the first author: institute of science and engineering, kanazawa
+    university, kakuma, kanazawa, ishikawa, japan
+  Affiliation of the last author: institute of science and engineering, kanazawa university,
+    kakuma, kanazawa, ishikawa, japan
+  Figure 1 Link: articels_figures_by_rev_year\2020\Acceleration_of_NonRigid_Point_Set_Registration_With_Downsampling_and_Gaussian_P\figure_1.jpg
+  Figure 1 caption: Our approach to accelerating non-rigid registration. The target
+    and source point sets are colored blue and red, respectively. Blank circles represent
+    the points removed during downsampling. Gray arrows v 1 and v 2 represent displacement
+    vectors estimated from the downsampled point sets. After downsampling and registration,
+    we interpolate the displacement vectors corresponding to the removed source points
+    using Gaussian process regression.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Acceleration_of_NonRigid_Point_Set_Registration_With_Downsampling_and_Gaussian_P\figure_2.jpg
+  Figure 2 caption: Synthetic datasets. Each shape colored red was created by deforming
+    the shape colored blue non-linearly. Asian Dragon and Lucy were downsampled for
+    visualization. In experiments, we used red and blue shapes as the source and target
+    shapes, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Acceleration_of_NonRigid_Point_Set_Registration_With_Downsampling_and_Gaussian_P\figure_3.jpg
+  Figure 3 caption: Application to the Lucy data containing more than ten million
+    points. (a) Input point sets. (b) Point sets downsampled by voxel grid resampling.
+    (c) Registration of the downsampled point sets by the BCPD algorithm. (d) Interpolation
+    of the displacement vectors corresponding to removed source points. For visualization,
+    the dataset (a) and the result (d) were downsampled, although BCPD++ was applied
+    to the original dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Acceleration_of_NonRigid_Point_Set_Registration_With_Downsampling_and_Gaussian_P\figure_4.jpg
+  Figure 4 caption: "(a) Registration accuracy and computing time versus the number\
+    \ of downsampled points M \u2032 and N \u2032 under L=100 . (b) Registration accuracy\
+    \ and computing time versus the number of Nystr\xF6m points L under M \u2032 =\
+    \ N \u2032 =50,000 . (c) Effect of low-rank approximations for the Armadillo dataset.\
+    \ BCPD+ indicates the acceleration without low-rank approximations. BCPD+ execution\
+    \ failed at M \u2032 = N \u2032 =50,000 because of excessive memory consumption."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Acceleration_of_NonRigid_Point_Set_Registration_With_Downsampling_and_Gaussian_P\figure_5.jpg
+  Figure 5 caption: "Effect of acceleration parameters M \u2032 and N \u2032 on BCPD++\
+    \ performance for small, noisy data. (a) Registration accuracy and runtime. (b)\
+    \ Comparison between BCPD++ and BCPD. The left and right vertical axes represent\
+    \ the ratio of BCPD++ accuracy to BCPD accuracy and the ratio of BCPD++ runtime\
+    \ to BCPD runtime, respectively."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Acceleration_of_NonRigid_Point_Set_Registration_With_Downsampling_and_Gaussian_P\figure_6.jpg
+  Figure 6 caption: Application to human body data. The numbers in parentheses represent
+    acceleration parameters Mprime and Nprime for BCPD++. The computing times listed
+    in the attached tables include IO, downsampling, registration, and interpolation
+    time. The row VB loops indicates the number of iterations required for convergence
+    in the registration step. RMSD represents the root-mean-squared distance between
+    the shapes deformed by BCPD++ and BCPD.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Acceleration_of_NonRigid_Point_Set_Registration_With_Downsampling_and_Gaussian_P\figure_7.jpg
+  Figure 7 caption: Comparison of registration methods using D-FAUST data. The y -axis
+    represents the rate of successful registrations for 50 shape pairs. Each shape
+    pair comprises shapes at frame t and t+Delta t . We defined a registration as
+    being successful if the corresponding accuracy was less than a value specified
+    by the x -axis.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Osamu Hirose
+  Name of the last author: Osamu Hirose
+  Number of Figures: 7
+  Number of Tables: 3
+  Number of authors: 1
+  Paper title: Acceleration of Non-Rigid Point Set Registration With Downsampling
+    and Gaussian Process Regression
+  Publication Date: 2020-12-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison Using Datasets Containing at Least 100,000 Points
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison Using Small Data With Artificial Disturbance
+  Table 3 caption:
+    table_text: TABLE 3 Performance Evaluation With SHREC19 Data
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3043769
+- Affiliation of the first author: department of machine intelligence, key laboratory
+    of machine perception (ministry of education) and cooperative medianet innovation
+    center, peking university, beijing, china
+  Affiliation of the last author: faculty of engineering, ubtech sydney artificial
+    intelligence centre and the school of computer science, university of sydney,
+    darlington, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Optimizing_Latent_Distributions_for_NonAdversarial_Generative_Networks\figure_1.jpg
+  Figure 1 caption: Image generation results obtained on MNIST, Fashion-MNIST, CIFAR-10,
+    CelebA (crop size is set as 160), and LSUN datasets.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Optimizing_Latent_Distributions_for_NonAdversarial_Generative_Networks\figure_2.jpg
+  Figure 2 caption: Image reconstruction results on FMNIST, CelebA (crop size is set
+    as 160), and LSUN datasets.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Optimizing_Latent_Distributions_for_NonAdversarial_Generative_Networks\figure_3.jpg
+  Figure 3 caption: Interpolation results obtained by (a) GLO and (b) ours on the
+    CelebA64 dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Optimizing_Latent_Distributions_for_NonAdversarial_Generative_Networks\figure_4.jpg
+  Figure 4 caption: 'FID score over generator iterations for three models: WGAN-GP,
+    GLO, and GLDO.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\Optimizing_Latent_Distributions_for_NonAdversarial_Generative_Networks\figure_5.jpg
+  Figure 5 caption: High-resolution generation results on CelebA128 and LSUN128 datasets.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Optimizing_Latent_Distributions_for_NonAdversarial_Generative_Networks\figure_6.jpg
+  Figure 6 caption: High-resolution interpolation results on CelebA128 and LSUN128
+    datasets.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Optimizing_Latent_Distributions_for_NonAdversarial_Generative_Networks\figure_7.jpg
+  Figure 7 caption: FID obtained by different models and loss functions on the CelebA
+    dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Optimizing_Latent_Distributions_for_NonAdversarial_Generative_Networks\figure_8.jpg
+  Figure 8 caption: "FID obtained by different \u03F5 on the CelebA dataset."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tianyu Guo
+  Name of the last author: Dacheng Tao
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: Optimizing Latent Distributions for Non-Adversarial Generative Networks
+  Publication Date: 2020-12-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Generated Results Obtained From Different Models on Several
+      Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Reconstruction Results (PSNR) Obtained From Different Models
+      on Several Datasets
+  Table 3 caption:
+    table_text: TABLE 3 FID Scores of Interpolation Results
+  Table 4 caption:
+    table_text: TABLE 4 Precision and Recall Performance Summarized by F 18 F18 and
+      F 8 F8 Scores
+  Table 5 caption:
+    table_text: TABLE 5 Comparison With Mapping Network Methods
+  Table 6 caption:
+    table_text: TABLE 6 Generation Quality Obtained on Various Regularization
+  Table 7 caption:
+    table_text: TABLE 7 Model Architecture for Datasets
+  Table 8 caption:
+    table_text: TABLE 8 FID Scores Obtained on the CelebA Dataset With 108 Crop Size
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3043745
+- Affiliation of the first author: institute of artificial intelligence and the school
+    of electronic information and communications, huazhong university of science and
+    technology, wuhan, p.r. china
+  Affiliation of the last author: school of electronic information and communications,
+    huazhong university of science and technology, wuhan, p.r. china
+  Figure 1 Link: articels_figures_by_rev_year\2020\FNA_Fast_Network_Adaptation_via_Parameter_Remapping_and_Architecture_Search\figure_1.jpg
+  Figure 1 caption: The framework of our proposed FNA++. First, we select an pre-trained
+    network as the seed network N s and expand N s to a super network N sup which
+    is the representation of the search space. The parameters of N s are remapped
+    to N sup and architecture adaptation is performed. Then we derive the target architecture
+    Arch t based on the parameter distribution in N sup . Before parameter adaptation,
+    we remap the parameters of N sup to Arch t . Finally, we adapt the parameters
+    of Arch t to get the target network N t .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\FNA_Fast_Network_Adaptation_via_Parameter_Remapping_and_Architecture_Search\figure_2.jpg
+  Figure 2 caption: Parameters are remapped on three levels. (a) shows the depth-level
+    remapping. The parameters of the new network are remapped from the corresponding
+    layers in the seed network. The parameters of new layers are remapped from the
+    last layer in the seed network. (b) shows the width-level remapping. For parameters
+    with fewer channels (left), the seed parameters are remapped to the new network
+    with corresponding channels. For parameters with more channels (right), the seed
+    parameters are remapped to corresponding channels and parameters in new channels
+    are assigned with 0 (denoted as the white cuboid). (c) shows the kernel-level
+    remapping. For parameters in a smaller kernel (left), the central part of seed
+    parameters are remapped to the new kernel. For parameters in a larger kernel (right),
+    the seed parameters are remapped to the central part of the new kernel. The values
+    of the other part are assigned with 0.
+  Figure 3 Link: articels_figures_by_rev_year\2020\FNA_Fast_Network_Adaptation_via_Parameter_Remapping_and_Architecture_Search\figure_3.jpg
+  Figure 3 caption: "The searchable ResNet blocks in FNA++, including the basic block\
+    \ (left) and the bottleneck block (right). The first convolution in the basic\
+    \ block and the middle convolution in the bottleneck block are searchable, while\
+    \ the kernel size is denoted as \u201C k\xD7k \u201D and the group number is denoted\
+    \ as \u201C g \u201D."
+  Figure 4 Link: articels_figures_by_rev_year\2020\FNA_Fast_Network_Adaptation_via_Parameter_Remapping_and_Architecture_Search\figure_4.jpg
+  Figure 4 caption: "Training loss (upper) and mAP (bottom) comparisons between two\
+    \ remapping mechanisms on MS-COCO, i.e., remapping parameters from the seed network\
+    \ N s (red) and from the super network N sup (blue). Remapping from the super\
+    \ network greatly accelerates the training convergence in early epochs and achieves\
+    \ higher performance. With the training schedule lengthened ( 2\xD7 ), the performance\
+    \ gap between two remapping mechanisms narrows. As SSDLite training takes long\
+    \ epochs, two remapping mechanisms achieve the same results."
+  Figure 5 Link: articels_figures_by_rev_year\2020\FNA_Fast_Network_Adaptation_via_Parameter_Remapping_and_Architecture_Search\figure_5.jpg
+  Figure 5 caption: Parameter Remapping on the kernel-level with a dilation manner.
+  Figure 6 Link: articels_figures_by_rev_year\2020\FNA_Fast_Network_Adaptation_via_Parameter_Remapping_and_Architecture_Search\figure_6.jpg
+  Figure 6 caption: Comparisons between the architecture adaptation processes with
+    the seed (left) and search without the seed (right). We use the curve to represent
+    the architecture space, which is supposed to be a high-dimensional space, but
+    we plot the 2-D curve for simplicity. Each point in the curve represents an architecture,
+    and the minimum point is a solution for adaptation. Left shows the adaptation
+    process with a seed, where the search is a architecture-level fine-tuning and
+    is performed near the seed. Right shows the search without a seed, where the starting
+    point of the search is randomly selected, and it is hard to find the solution
+    in the new task because of the large search range.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.72
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Jiemin Fang
+  Name of the last author: Xinggang Wang
+  Number of Figures: 6
+  Number of Tables: 16
+  Number of authors: 7
+  Paper title: 'FNA++: Fast Network Adaptation via Parameter Remapping and Architecture
+    Search'
+  Publication Date: 2020-12-14 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Search Space With MobileNetV2 [29] as the Seed Network
+  Table 10 caption:
+    table_text: TABLE 10 Object Detection Results of RetinaNet on MS-COCO With NAS
+      Networks as the Seed Networks
+  Table 2 caption:
+    table_text: TABLE 2 Semantic Segmentation Results on the Cityscapes Validation
+      Set
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Computational Cost on the Semantic Segmentation
+      Task
+  Table 4 caption:
+    table_text: TABLE 4 Object Detection Results on MS-COCO
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Computational Cost on the Object Detection Task
+  Table 6 caption:
+    table_text: TABLE 6 Human Pose Estimation Results on the MPII Validation Set
+  Table 7 caption:
+    table_text: TABLE 7 Optional Block Types in ResNet Search Space
+  Table 8 caption:
+    table_text: TABLE 8 Object Detection Results of RetinaNet on MS-COCO With ResNets
+      [2] as the Seed Networks
+  Table 9 caption:
+    table_text: TABLE 9 Search Space With NAS Networks as the Seed Networks
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3044416
+- Affiliation of the first author: university of massachusetts, amherst, amherst,
+    ma, usa
+  Affiliation of the last author: university of massachusetts, amherst, amherst, ma,
+    usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_1.jpg
+  Figure 1 caption: Our shape parser produces a program that generates an input 2D
+    or 3D shape. On top is an input image of 2D shape, its program and the underlying
+    parse tree where primitives are combined with boolean operations. On the bottom
+    is an input voxelized 3D shape, the induced program, and the resulting shape from
+    its execution.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_10.jpg
+  Figure 10 caption: Results for our logo dataset. a) Target logos, b) output shapes
+    from CSGNet and c) inferred primitives from output program. Circle primitives
+    are shown with red outlines, triangles with green and squares with blue.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_2.jpg
+  Figure 2 caption: 'Overview of our approach. Our neural shape parser consists of
+    two parts: first at every time step encoder takes as input a target shape (2D
+    or 3D) and outputs a feature vector through CNN. Second, a decoder maps these
+    features to a sequence of modeling instructions yielding a visual program. The
+    rendering engine processes the program and outputs the final shape. The training
+    signal can either come from ground truth programs when such are available, or
+    in the form of rewards after rendering the predicted programs.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_3.jpg
+  Figure 3 caption: Two proposed architectures of our neural shape parser CSGNet (left),
+    CSGNetStack (right). CSGNet takes the target shape as input and encodes it using
+    a CNN, whereas in CSGNetStack, the target shape is concatenated with stack S t
+    along the channel dimension and passes as input to the CNN encoder at every time
+    step. Empty entries in the stack are shown in white.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_4.jpg
+  Figure 4 caption: Example program execution. Each row in the table from the top
+    shows the instructions, program execution, and the current state of the stack
+    of the shift-reduce CSG parser. On the right is a graphical representation of
+    the program. An instruction corresponding to a primitive leads to push operation
+    on the stack, while an operator instruction results in popping the top two elements
+    of the stack and pushing the result of applying this operator.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_5.jpg
+  Figure 5 caption: Samples of our synthetically generated programs. 2D samples are
+    in the top row and 3D samples in the bottom. For clarity, the shapes are rendered
+    in their original, high-resolution mesh format before voxelization.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_6.jpg
+  Figure 6 caption: 'Performance (Left: IOU, right: chamfer distance) of models by
+    changing training size on our synthetic dataset. Training is done using x% of
+    the complete dataset, where x is shown on the horizontal axis. The top- k beam
+    sizes used during decoding at test time are shown in the legend. The performance
+    of CSGNet (our basic non-stack neural shape parser) is shown in blue and the performance
+    of CSGNetStack (our variant that uses the execution stack) is shown in lime. The
+    above plots show the average of the metrics evaluated at four different training
+    runs.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_7.jpg
+  Figure 7 caption: Comparison of performance on synthetic 2D dataset. a) Input image,
+    b) NN-retrieved image, c) top-1 prediction of CSGNet, d) top-1 prediction of CSGNetStack,
+    e) top-10 prediction of CSGNet, and f) top-10 prediction of CSGNetStack.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_8.jpg
+  Figure 8 caption: Comparison of performance on the 2D CAD dataset. a) Target image,
+    b) NN retrieved image, c) best result from beam search on top of CSGNet fine-tuned
+    with RL, d) best result from beam search on top of CSGNetStack fine-tuned with
+    RL, and refining results using the visually guided search on the best beam result
+    of CSGNet (e) and CSGNetStack (f).
+  Figure 9 Link: articels_figures_by_rev_year\2020\Neural_Shape_Parsers_for_Constructive_Solid_Geometry\figure_9.jpg
+  Figure 9 caption: 'Performance (Left: IOU, Right: chamfer distance) of CSGNet and
+    CSGNetStack on the test split of the 2D CAD dataset wrt the size of the synthetic
+    dataset used to pre-train the two architectures. Pre-training is done using x%
+    of the complete synthetic dataset ( x is shown on the horizontal axis) and fine-tuning
+    is done on the complete CAD dataset. CSGNetStack performs better while using less
+    proportion of the synthetic dataset for pretraining. Increasing the size of pretraining
+    dataset beyond 15 percent leads to decrease in performance, which hints at slight
+    overfitting on the synthetic dataset domain.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Gopal Sharma
+  Name of the last author: Subhransu Maji
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Neural Shape Parsers for Constructive Solid Geometry
+  Publication Date: 2020-12-14 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Reward Shaping
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Statistics of Our 2D and 3D Synthetic Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of a NN Baseline With the Supervised Network Without
+      Stack (CSGNet) and With Stack (CSGNetStack) on the Synthetic 2D Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Various Approaches on the CAD Shape Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of the Supervised Network (3D- CSGNetStack CSGNetStack
+      and 3D- CSGNet CSGNet) With NN Baseline on the 3D Dataset
+  Table 6 caption:
+    table_text: TABLE 6 MAP of Detectors on the Synthetic 2D Shape Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3044749
+- Affiliation of the first author: department of computer technology, university of
+    alicante, alicante, spain
+  Affiliation of the last author: forth, institute of computer science, heraklion,
+    greece
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Review_on_Deep_Learning_Techniques_for_Video_Prediction\figure_1.jpg
+  Figure 1 caption: "A pedestrian appeared from behind the white car with the intention\
+    \ of crossing the street. The autonomous car must make a call: hit the emergency\
+    \ braking routine or not. This all comes down to predict the next frames ( Y t+1\
+    \ ,\u2026, Y t+m ) given a sequence of context frames ( X t\u2212n ,\u2026, X\
+    \ t ) , where n and m denote the number of context and predicted frames, respectively.\
+    \ From these predictions at a representation level (RGB, high-level semantics,\
+    \ etc.) a decision-making system would make the car avoid the collision."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Review_on_Deep_Learning_Techniques_for_Video_Prediction\figure_2.jpg
+  Figure 2 caption: At top, a deterministic environment where a geometric object,
+    e.g., a black square, starts moving following a random direction. At bottom, probabilistic
+    outcome. Darker areas correspond to higher probability outcomes. As uncertainty
+    is introduced, probabilities get blurry and averaged. Figure inspired by [38].
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Review_on_Deep_Learning_Techniques_for_Video_Prediction\figure_3.jpg
+  Figure 3 caption: Classification of video prediction models.
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Review_on_Deep_Learning_Techniques_for_Video_Prediction\figure_4.jpg
+  Figure 4 caption: Representation of transformation-based approaches. (a) Vector-based
+    with a bilinear interpolation. (b) Kernel-based applying transformations as a
+    convolutional operation. Figure inspired by [114].
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sergiu Oprea
+  Name of the last author: Antonis Argyros
+  Number of Figures: 4
+  Number of Tables: 8
+  Number of authors: 7
+  Paper title: A Review on Deep Learning Techniques for Video Prediction
+  Publication Date: 2020-12-15 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Summary of the Most Widely Used Datasets for Video Prediction
+      (SR: SyntheticReal, st: stereo, de: depth, ss: semantic segmentation, is: instance
+      segmentation, sem: semantic, IO: IndoorOutdoor environment, bb: bounding box,
+      Act: Action label, ann: annotated, env: environment, ToF: Time of Flight, vp:
+      camera viewpoints respect human).'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Summary of Video Prediction Models (c: convolutional; r:\
+      \ recurrent; v: variational; ms: multi-scale; st: stacked; bi: bidirectional;\
+      \ P: Percepts; M: Motion; PL: Perceptual Loss; AL: Adversarial Loss; SR: using\
+      \ SyntheticReal datasets; SS: Semantic Segmentation; D: Depth; S: State; Po:\
+      \ Pose; O: Odometry; IS: Instance Segmentation; MS: Multi-Step prediction; npf:\
+      \ num. of predicted frames, \u22C6 \u2605 1-5, \u22C6\u22C6 \u2605\u2605 5-10,\
+      \ \u22C6\u22C6\u22C6 \u2605\u2605\u2605 10-100, \u22C6\u22C6\u22C6\u22C6 \u2605\
+      \u2605\u2605\u2605 over 100 frames; ood: tested on out-of-domain tasks)."
+  Table 3 caption:
+    table_text: TABLE 3 Results on M-MNIST (Moving MNIST)
+  Table 4 caption:
+    table_text: TABLE 4 Results on KTH Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Results on Caltech Pedestrian
+  Table 6 caption:
+    table_text: TABLE 6 Results on UCF-101 Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Results on SM-MNIST (Stochastic Moving MNIST), BAIR Push and
+      Cityscapes Datasets
+  Table 8 caption:
+    table_text: TABLE 8 Results on Cityscapes Dataset
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3045007
+- Affiliation of the first author: cognitive computing lab, baidu research, bellevue,
+    wa, usa
+  Affiliation of the last author: department of statistics, university of california,
+    los angeles, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_1.jpg
+  Figure 1 caption: 'An illustration of mode seeking and mode shifting. The red curves
+    and blue curves represent the energy landscapes of the true model and the learned
+    model, respectively. The red crosses indicate observed data, and the blue circles
+    indicate the synthesized data. (1) mode searching by Langevin dynamics: finding
+    low energy modes in the energy landscape of the model and placing the synthesized
+    examples around the found modes. (2) model shifting (and sharpening) by model
+    update: shifting the low energy modes toward the observed examples. (3) mode chasing:
+    researching low energy modes in the updated energy landscape of the model. (4)
+    mode matching: the modes in the learned energy landscape eventually match the
+    ones in the data distribution after a few iterations of mode searching and shifting.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_2.jpg
+  Figure 2 caption: Generating 3D objects. Each row displays one experiment, where
+    the first three 3D objects are some observed examples, columns 4, 5, 6, 7, 8,
+    and 9 are 6 of the synthesized 3D objects sampled from the learned model by Langevin
+    dynamics. For the last four synthesized objects (shown in columns 6, 7, 8, and
+    9), their nearest neighbors retrieved from the training set are shown in columns
+    10, 11, 12, and 13.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_3.jpg
+  Figure 3 caption: 3D object recovery by sampling from the conditional generative
+    VoxelNet models. In each category, the first row displays the original 3D objects,
+    the second row shows the corrupted 3D objects, and the third row displays the
+    recovered 3D objects by running Langevin dynamics starting from the corrupted
+    objects. (a) chair (b) night stand (c) toilet (d) sofa.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_4.jpg
+  Figure 4 caption: "3D object super resolution by conditional generative VoxelNet.\
+    \ The first row displays some original 3D objects ( 64\xD764\xD764 voxels). The\
+    \ second row shows the corresponding low resolution 3D objects ( 16\xD716\xD7\
+    16 voxels). The last row displays the corresponding super resolution results which\
+    \ are obtained by sampling from the conditional generative VoxelNet by running\
+    \ 10 steps of Langevin dynamics initialized with the objects shown in the second\
+    \ row."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_5.jpg
+  Figure 5 caption: "Synthesis by 3D generators. (a) toilet (b) sofa. The 3D generators\
+    \ are trained by the generative VoxelNet via MCMC teaching. The 3D shapes are\
+    \ generated by first sampling Z from N(0, I d ) and then mapping Z to 3D shape\
+    \ space via g(Z;\u03B1) ."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_6.jpg
+  Figure 6 caption: Interpolation between latent vectors of the 3D objects on the
+    two ends. (a) toilet (b) sofa. The 3D generators are trained via MCMC teaching
+    on each category. For each row in each category, the 3D shapes are generated from
+    the learned generator model g(Z; alpha) with linear interpolation in latent space
+    (i.e., (1-rho)cdot Z0 +rho cdot Z1 ), where Z0 and Z1 are latent vectors of the
+    3D objects on the two ends, rho is discretized into 8 values within [0,1].
+  Figure 7 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_7.jpg
+  Figure 7 caption: "3D shape arithmetic in the latent space. Each row of images show\
+    \ that the obtained \u201Cpart\u201D vector can be added to a new object. The\
+    \ latent space is of 100 dimensions. The size of 3D shape is 32 times 32 times\
+    \ 32 voxels."
+  Figure 8 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_8.jpg
+  Figure 8 caption: 'Synthesized 3D shapes at multi-grids by 3D multi-grid sampling.
+    (a) toilet (b) sofa. From top to bottom: 16 times 16 times 16 grid, 32 times 32
+    times 32 grid, 64 times 64 times 64 grid and 128 times 128 times 128 grid. Synthesized
+    example at each grid is obtained by 20 steps Langevin sampling initialized from
+    the synthesized examples at the previous coarser grid, starting from the 1 times
+    1 times 1 grid.'
+  Figure 9 Link: articels_figures_by_rev_year\2020\Generative_VoxelNet_Learning_EnergyBased_Models_for_D_Shape_Synthesis_and_Analys\figure_9.jpg
+  Figure 9 caption: Generating high resolution 3D objects with 128 times 128 times
+    128 voxels by the generative VoxelNet. (a) toilet (b) sofa.
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.86
+  Name of the first author: Jianwen Xie
+  Name of the last author: Ying Nian Wu
+  Number of Figures: 9
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: 'Generative VoxelNet: Learning Energy-Based Models for 3D Shape Synthesis
+    and Analysis'
+  Publication Date: 2020-12-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Inception Scores of Different Models Learned From 10 3D Object
+      Categories
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Softmax Class Probability
+  Table 3 caption:
+    table_text: TABLE 3 Classification Errors on the Synthesized Examples
+  Table 4 caption:
+    table_text: TABLE 4 Recovery Errors in Occlusion Experiments
+  Table 5 caption:
+    table_text: TABLE 5 3D Object Classification on ModelNet10 Dataset
+  Table 6 caption:
+    table_text: "TABLE 6 A Comparison of Fr\xE9chet Inception Distance (FID) Scores\
+      \ and Computation Times (seconds per epoch \xD7 number of epochs) Between Single-Grid\
+      \ and Multi-Grid Models on Generating 128\xD7128\xD7128 128\xD7128\xD7128 3D\
+      \ Shapes"
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3045010
+- Affiliation of the first author: pca lab, key laboratory of intelligent perception
+    and systems for high-dimensional information of ministry of education, school
+    of computer science and engineering, nanjing university of science and technology,
+    nanjing, jiangsu, p.r. china
+  Affiliation of the last author: riken center for advanced intelligence project,
+    tokyo, japan
+  Figure 1 Link: articels_figures_by_rev_year\2020\Centroid_Estimation_With_Guaranteed_Efficiency_A_General_Framework_for_Weakly_Su\figure_1.jpg
+  Figure 1 caption: "The pipeline of our method. Based on a weakly-labeled dataset\
+    \ S \u02DC corrupted from S , we build two auxiliary sets S 1 \u02DC and S 2 \u02DC\
+    \ , which respectively yields an unbiased estimate of the centroid of S as \u03BC\
+    \ \u02D8 1 (S) and \u03BC \u02D8 2 (S) . Then \u03BC \u02D8 1 (S) and \u03BC \u02D8\
+    \ 2 (S) are linearly combined with the optimized coefficient \u03B2 to form a\
+    \ both unbiased and statistically efficient centroid estimate \u03BC \u02D8 (S)\
+    \ . Finally, an effective risk estimator of any hypothesis h on S \u02DC is derived\
+    \ as R \u02DC (h, S \u02DC ) ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Centroid_Estimation_With_Guaranteed_Efficiency_A_General_Framework_for_Weakly_Su\figure_2.jpg
+  Figure 2 caption: "The comparison on variances and estimation errors of the three\
+    \ estimators \u03BC \u02D8 (S) , \u03BC \u02D8 1 (S) and \u03BC \u02D8 2 (S) ,\
+    \ respectively. The numerical values are annotated above the bars, and the smallest\
+    \ record among the three estimators in variance comparison or estimation error\
+    \ comparison on a certain dataset is highlighted in red color."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Centroid_Estimation_With_Guaranteed_Efficiency_A_General_Framework_for_Weakly_Su\figure_3.jpg
+  Figure 3 caption: "Performance variation of CEGE w.r.t. inaccurate \u03C0 ."
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chen Gong
+  Name of the last author: Masashi Sugiyama
+  Number of Figures: 3
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'Centroid Estimation With Guaranteed Efficiency: A General Framework
+    for Weakly Supervised Learning'
+  Publication Date: 2020-12-15 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 The Decomposition of Commonly Adopted Loss Functions [17],\
+      \ [18], Where z=yh(x) z=yh(x) is the Functional Margin, and [\u22C5 ] + =max(\u22C5\
+      ,0) [\xB7]+=max(\xB7,0)"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Summary of Main Mathematical Notations
+  Table 3 caption:
+    table_text: TABLE 3 Summary of Various WSL Tasks Under CEGE Framework
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the Mean Test Accuracies of Various Approaches
+      on SSL Task
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of the Mean Test Accuracies of Various Approaches
+      on PUL Task
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of the Mean Bag Test Accuracies of Various Approaches
+      on MIL Task
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of the Mean Test Accuracies of Various Approaches
+      on LNL Task
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3044997
+- Affiliation of the first author: school of electronic and information engineering,
+    south china university of technology, guangzhou, china
+  Affiliation of the last author: school of electronic and information engineering,
+    south china university of technology, guangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_1.jpg
+  Figure 1 caption: Adversarial examples of 2D images and 3D point clouds corresponding
+    to the same object categories from the PASCAL3D+ dataset [29]. Adversarial images
+    are obtained by using C&W attack [19] against the Inception-V3 [30] model of image
+    classification. Adversarial point clouds are obtained respectively by using the
+    method [11] and our proposed Geo A 3 against PointNet model [4].
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_2.jpg
+  Figure 2 caption: Results of ablation study by removing individual terms from our
+    proposed geometry-aware regularizer (8), where CD stands for the term of Chamfer
+    distance, HD for that of Hausdorff distance, and Curvature for that of consistency
+    of local curvatures. Each input, benign point cloud contains 1,024 points, to
+    which adversarial attacks are applied. Results are from a bottle instance that
+    is attacked against PointNet [4], targeting at the categories of bed, bookshelf,
+    monitor, sofa, and toilet. All the shown examples conduct the attacks successfully.
+    Lens of different colors are used to highlight the differences among the comparative
+    methods; those of the same color refer to the same surface area located on different
+    results. Comparative results from instances of other categories are of similar
+    quality.
+  Figure 3 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_3.jpg
+  Figure 3 caption: "Sensitivity analysis of our method with respect to the values\
+    \ of \u03BB 1 and \u03BB 2 in the geometry-aware regularizer (8). We plot both\
+    \ the attack success rate (%), under the SOR defense [24] of 5 percent point dropping,\
+    \ and geometric regularity (17) by varying the values of either \u03BB 1 (left)\
+    \ or \u03BB 2 (right) around their respective default values of \u03BB 1 =0.1\
+    \ and \u03BB 2 =1 . Experiments are conducted on point clouds of 1,024 points\
+    \ using PointNet [4] as the model of classifier."
+  Figure 4 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_4.jpg
+  Figure 4 caption: "Sensitivity analysis on a range of fixed \u03B2 values in the\
+    \ Geo A 3 objective (10). Experiments are conducted on clouds of 1,024 points\
+    \ using PointNet [4]. More results on PointNet++ [5] and DGCNN [6] are of similar\
+    \ comparative quality; they are included in the Appendix, available in the online\
+    \ supplemental material."
+  Figure 5 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_5.jpg
+  Figure 5 caption: Adversarial examples from our proposed GeoA3 . Results are organized
+    in a matrix form where each off-diagonal entry presents the adversarial point
+    cloud obtained by attacking an example instance from a certain category against
+    PointNet [4], targeting at one of the remaining nine categories, and the diagonal
+    entry presents the input, benign point cloud.
+  Figure 6 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_6.jpg
+  Figure 6 caption: Qualitative comparisons among adversarial results generated by
+    different methods. Each point cloud contains 1,024 points. Results are from a
+    bottle instance that is attacked against PointNet [4], targeting at the categories
+    of bed, bookshelf, monitor, sofa, and toilet. All the shown results can successfully
+    make the targeted attacks. Lens of different colors are used to highlight the
+    differences among the comparative methods; those of the same color refer to the
+    same surface area located on different results. Results of different methods from
+    other instances and targeting categories are of similar comparative quality.
+  Figure 7 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_7.jpg
+  Figure 7 caption: The interface we use to conduct subjective user studies by uploading
+    onto Amazon Mechanical Turk a triple of point cloud snapshots including the benign
+    one, the adversarial one generated by Xiang et al. [11], and the adversarial one
+    generated by our GeoA3 . All the uploaded results attack PointNet [4] successfully.
+  Figure 8 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_8.jpg
+  Figure 8 caption: Results of adversarial point cloud, its mesh reconstruction, and
+    re-sampling of points from our proposed Geo+A3 -IterNormPro and Tsai et al. [34].
+    Red circles highlight the irregularities in the results of Tsai et al. [34]. A
+    green tick indicates a successful attack, and a red cross indicates a failed attack.
+  Figure 9 Link: articels_figures_by_rev_year\2020\GeometryAware_Generation_of_Adversarial_Point_Clouds\figure_9.jpg
+  Figure 9 caption: Example meshes, their printed objects, and scanned point clouds.
+    These results are obtained by first 3D-printing the mesh mathcal Sprime constructed
+    from an adversarial mathcal Pprime generated by our Geo+A3 -IterNormPro, and then
+    scanning the printed object to have the point cloud mathcal Qprime . UnionTech
+    Lite600HD 3D printer (materials of 9400 resin) is used for this purpose. Accompanying
+    each example is the category predicted by the PointNet [4] model of classifier
+    before and after attack; a green tick indicates a successful attack, and a red
+    cross indicates a failed attack.
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.65
+  Name of the first author: Yuxin Wen
+  Name of the last author: Kui Jia
+  Number of Figures: 9
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Geometry-Aware Generation of Adversarial Point Clouds
+  Publication Date: 2020-12-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Studies on Our Proposed Geo A 3 GeoA3 (10)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Studies on the Misclassification Loss (9) Used in
+      Our Proposed Geo A 3 GeoA3
+  Table 3 caption:
+    table_text: TABLE 3 Adversarial Results When Respectively Sampling Different Numbers
+      of Points From Each CAD Model as the Working Point Clouds
+  Table 4 caption:
+    table_text: TABLE 4 Comparative Results of Different Methods for Adversarial Point
+      Clouds
+  Table 5 caption:
+    table_text: TABLE 5 Results of Subjective Study on Amazon Mechanical Turk, by
+      Comparing Our Proposed Geo A 3 GeoA3 With Xiang et al. [11]
+  Table 6 caption:
+    table_text: TABLE 6 Evaluation of Surface-Level Adversarial Effects for Results
+      Generated by Different Methods
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3044712
+- Affiliation of the first author: national laboratory of pattern recognition, institute
+    of automation of chinese academy of sciences, beijing, p.r. china
+  Affiliation of the last author: national laboratory of pattern recognition, institute
+    of automation of chinese academy of sciences, beijing, p.r. china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Convolutional_Prototype_Network_for_Open_Set_Recognition\figure_1.jpg
+  Figure 1 caption: An illustration of convolutional prototype network and different
+    loss functions. (a) The CPN is the combination of CNN feature extractor and prototype
+    classifier, (b) under discriminative loss, the prototypes of class 1 is drawn
+    closer to the feature f 1 of class 1 and the prototypes of other classes are pushed
+    away, (c) under generative loss, the representation (prototype or density function)
+    of each class is driven to cover the samples of this class.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Convolutional_Prototype_Network_for_Open_Set_Recognition\figure_2.jpg
+  Figure 2 caption: The learned representations of CPN under different loss functions
+    on MNIST dataset.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Convolutional_Prototype_Network_for_Open_Set_Recognition\figure_3.jpg
+  Figure 3 caption: Effect of prototype number K in each class on CIFAR-10.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Convolutional_Prototype_Network_for_Open_Set_Recognition\figure_4.jpg
+  Figure 4 caption: Normal image (a) and generated noises [Gaussian noise (b) and
+    synthetic noise (c)] on ImageNet.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hong-Ming Yang
+  Name of the last author: Cheng-Lin Liu
+  Number of Figures: 4
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: Convolutional Prototype Network for Open Set Recognition
+  Publication Date: 2020-12-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Test Accuracy of Different Methods on MNIST (%)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Test Accuracy of Different Methods on CIFAR-10 (%)
+  Table 3 caption:
+    table_text: TABLE 3 Test Accuracy of Different Methods on OLHWDB (%)
+  Table 4 caption:
+    table_text: TABLE 4 Open-Set Recognition Performance of Different Methods on Standard
+      Datasets
+  Table 5 caption:
+    table_text: 'TABLE 5 Open-Set Recognition on Extension Datasets: Area Under ROC
+      Curve (AUC)'
+  Table 6 caption:
+    table_text: TABLE 6 Open-Set Recognition Performance of Different Methods on ImageNet
+  Table 7 caption:
+    table_text: TABLE 7 Open-Set Recognition Performance of Different Discriminative
+      Loss Functions
+  Table 8 caption:
+    table_text: TABLE 8 Performance of Different Methods for Detecting Noises (AUC
+      Score)
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3045079

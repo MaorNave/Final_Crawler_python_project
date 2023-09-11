@@ -1,0 +1,721 @@
+- Affiliation of the first author: ben-gurion university of the negev, beersheba,
+    israel
+  Affiliation of the last author: ben-gurion university of the negev, beersheba, israel
+  Figure 1 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_1.jpg
+  Figure 1 caption: "Explaining network errors with SIGN. An ILSVRC-2012 [8] dataset\
+    \ image of a pineapple (red-circled), falsely classified by VGG-16 to the \u201C\
+    swing\u201D class. This is a partial inference graph with \u201Cswing\u201D as\
+    \ the inferred class at the top, and the three most influential visual words from\
+    \ a high level layer (block5conv1 layer), forming it. The three visual words show\
+    \ what the network found to be the most important features for classification\
+    \ of the inspected image. Each such word is represented using six images containing\
+    \ it, with the visual word itself in a red rectangle. The analyzed image is presented\
+    \ above each visual word, with red dots showing where this visual word is found.\
+    \ As seen in the graph, the image is classified based on three \u201Cswing\u201D\
+    -related visual words describing \u201Crope,\u201D \u201Csand\u201D and \u201C\
+    grass\u201D. The full inference graph is seen in Fig. 9 Section 4.3."
+  Figure 10 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_10.jpg
+  Figure 10 caption: Partial image inference graph of a correctly classified zebra
+    image. The figure presents only the main contributing visual words from the three
+    bottom modelled layers.
+  Figure 2 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_2.jpg
+  Figure 2 caption: Illustration of SIGN framework flow. (A) Modeling neural network
+    layers as arising from a probabilistic generative model, and forming a visual
+    word dictionary to each modeled layer. Training the generative model can be simultaneously
+    with the network or post-hoc. (B) Forward pass through the modeled network on
+    a subset inputted test images. Calculate the co-occurrence matrix statistics for
+    all visual words that appear in the image. Apply Node Selection Algorithm on the
+    matrix to obtain the most explanatory visual words. Produce an image inference
+    graph of words as nodes and their connection strengths as edges. (C) The same
+    as (B) but with a subset of analyzed images that represent a class predicted by
+    the network.
+  Figure 3 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_3.jpg
+  Figure 3 caption: A graphical model for MLP networks. Each orange rectangle is a
+    layer activation vector after the ReLU operation. Activation x l [d] of neuron
+    d in layer l is assumed to be generated from a rectified Gaussian density, resetting
+    values lower than zero to zero. y l [d] is the parent of x l [d] , describing
+    the original Gaussian density before it was rectified. h l is a hidden variable
+    generating the hidden vector of multivariate Gaussians Y l . h l takes K l different
+    states, creating a mixture of multivariate Gaussians for layer l .
+  Figure 4 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_4.jpg
+  Figure 4 caption: "Two inference paths in MLP. We show the main decision junctions\
+    \ for an example six-layer MLP network. The analyzed examples are presented on\
+    \ the left. Cluster representatives are chosen using the l 2 metric. In each decision\
+    \ junction, the points of the sub-cluster chosen by the example are marked with\
+    \ full circles in cyan (top) blue (bottom) Top: The path of a misclassified CIFAR10\
+    \ car example is shown. The main decision points occurred in layers fc-2 \u2013\
+    \ fc-4, with the critical decision made in layer fc-3 where the abnormal appearance\
+    \ of the example misled the network to consider the car as a truck. Bottom: The\
+    \ path of a misclassified MNist \u201C9\u201D digit example is shown. The input\
+    \ image traversing main decision clusters through layers fc-1 \u2013 fc-4, where\
+    \ the main flawed decision is made in layer fc-3, where the open head of the \u201C\
+    9\u201D image misleads the network to consider as \u201C4\u201D digit."
+  Figure 5 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_5.jpg
+  Figure 5 caption: 'Cluster development across layers. Cluster similarity matrices
+    for increasing layer indices in MLP and CNN networks trained for CIFAR10 classification.
+    In each matrix, euclidean distances between cluster centers for clusters of a
+    single layer are shown. Clusters are ordered by their dominant class (clusters
+    with dominant class 1, followed by all clusters with dominant class 2, etc.).
+    Layer index and average cluster purity (%) are shown above each matrix. Top: MLP
+    activity. Growing similarity between clusters with the same dominant class can
+    be seen by the appearance of a block diagonal structure, from layer 3 onwards.
+    This indicates convergence toward a single class-specific representation as layers
+    progress. Bottom: CNN activity. Clusters of add-layers of ResNet blocks 1, 3,
+    5, 7 and 8 are presented. Here, no similarity is formed with layer growth; each
+    class is represented by multiple localized visual words, which have unrelated
+    activity patterns.'
+  Figure 6 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_6.jpg
+  Figure 6 caption: 'Cluster development for an extreme overfit case. Cluster distances
+    and average purity for a network trained with random labels are shown. Top: Cluster
+    similarity matrices for layers 1-5. Bottom: Typical clusters at these layers.
+    For each cluster the (pseudo) label histogram is shown, as well as some representative
+    cluster images. An abrupt transition from input-dominated to output-dominated
+    representation occurs in the transformation between the third and fourth layers.'
+  Figure 7 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_7.jpg
+  Figure 7 caption: 'Classification accuracy analysis as a function of dictionary
+    size and layer depth. Error rates of linear classifiers, based on clustervisual
+    word histograms are shown. All experiments conducted on five ResNet20 conv-layers,
+    trained on CIFAR10. Left: Error rates based on SIGN generative and discriminative
+    loss functions (Eqs. (16) and (17)), as a function of dictionary size. Right:
+    Error rates of SIGN clustering method and plain clustering based on the maximal
+    active channel (see text for explanation).'
+  Figure 8 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_8.jpg
+  Figure 8 caption: "Pineapple inference graph. The graph is generated by training\
+    \ a model on the \u201Cpineapple\u201D class and its neighboring classes. The\
+    \ top node is a visual word of the output layer, representing the predicted class\
+    \ \u201Cpineapple\u201D. The lower levels in the graph show the three most influential\
+    \ words in preceding modeled layers (block5conv1,..., block1conv1). Visual words\
+    \ are manifested by the six representative examples for which P(hl=k|xpl) is the\
+    \ highest. For modeled layer block5conv1, examples are presented by showing the\
+    \ example image with a rectangle highlighting the receptive field of the words\
+    \ location. For lower layers, the receptive field patches themselves are shown.\
+    \ Images are annotated by their true label. Arrows are shown for the two most\
+    \ significant connections for each lower visual word. When the log-ratio term\
+    \ (right element in Eq. (25)) is positive, it is colored (1) black: 0 < log-ratio\
+    \ < 1 , (2) light green: 1 leq log-ratio < 2 , (3) mild green: 2 leq log-ratio\
+    \ < 3 , or (4) dark green: 3 leq log-ratio. In addition, a tag above each visual\
+    \ word was added by the authors for convenience. The figure is best inspected\
+    \ by zooming in on clusters of interest."
+  Figure 9 Link: articels_figures_by_rev_year\2022\SIGN_Statistical_Inference_Graphs_Based_on_Probabilistic_Network_Activity_Interp\figure_9.jpg
+  Figure 9 caption: "An image inference graph of an erroneous image. An image inference\
+    \ graph for a pineapple image wrongly classified to the class \u201Cswing\u201D\
+    . The model is trained using \u201Cpineapple\u201D and its neighboring classes\
+    \ (same as in Fig. 8), where the neighbor class \u201Cswing\u201D is included.\
+    \ The graph is generated by applying the node selection algorithm (Section 3.3)\
+    \ to a set Omega containing this single erroneous image. The analyzed image is\
+    \ shown on the top of each cluster node, with red dots marking spatial locations\
+    \ assigned to the cluster. In the top node, the pineapple object is marked in\
+    \ red circle for clarification."
+  First author gender probability: 0.77
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yael Konforti
+  Name of the last author: Aharon Bar-Hillel
+  Number of Figures: 14
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: 'SIGN: Statistical Inference Graphs Based on Probabilistic Network
+    Activity Interpretation'
+  Publication Date: 2022-06-13 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3181472
+- Affiliation of the first author: bnrist, kliss, school of software, blbci, thuibcs,
+    tsinghua university, beijing, china
+  Affiliation of the last author: media analytics and computing laboratory, department
+    of artificial intelligence, school of informatics, institute of artificial intelligence,
+    fujian engineering research center of trusted artificial intelligence analysis
+    and application, xiamen university, xiamen, fujian, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\HGNN_General_Hypergraph_Neural_Networks\figure_1.jpg
+  Figure 1 caption: Examples of high-order correlation and multi-modal data in real
+    world. In social media data, the high-order correlation among microblogs can contain
+    connections from the geo-locations, tags and relationships among users. For each
+    social post, it may contain different types of data, such as images, videos, texts,
+    and emoticons.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\HGNN_General_Hypergraph_Neural_Networks\figure_2.jpg
+  Figure 2 caption: The comparison between graph and hypergraph. (a) The example and
+    representation of graph and hypergraph. (b) The general strategy of the hypergraph
+    for multi-modalmulti-type data.
+  Figure 3 Link: articels_figures_by_rev_year\2022\HGNN_General_Hypergraph_Neural_Networks\figure_3.jpg
+  Figure 3 caption: The proposed hypergraph neural network framework (HGNN + ). In
+    the left part, a hypergraph is employed to model raw multi-modaltype data. H is
+    generated to indicate hypergraph structure and X denotes the vertex feature extracted
+    from raw data. In the right part, Hypergraph Convolution Module shows one hypergraph
+    convolution process and the red line from the module allows stacking multiple
+    hypergraph convolution layers for deeper vertex embedding extraction.
+  Figure 4 Link: articels_figures_by_rev_year\2022\HGNN_General_Hypergraph_Neural_Networks\figure_4.jpg
+  Figure 4 caption: Illustration for hyperedge group generation.
+  Figure 5 Link: articels_figures_by_rev_year\2022\HGNN_General_Hypergraph_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Examples of two types of hypergraphs.
+  Figure 6 Link: articels_figures_by_rev_year\2022\HGNN_General_Hypergraph_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Rooted subtree of graph and 2-uniform hypergraph. The correlation
+    among six vertices is shown in left, which is represented by graph and two-uniform
+    hypergraph, respectively. Note that for fair comparison the selected graph and
+    two-uniform hypergraph own the same connection structure. In the right part shows
+    the rooted subtree of graph and two-uniform hypergraph from vertex v 1 , which
+    reveals the message passing path in multi-layer GNNHGNN + .
+  Figure 7 Link: articels_figures_by_rev_year\2022\HGNN_General_Hypergraph_Neural_Networks\figure_7.jpg
+  Figure 7 caption: A t-SNE visualization of graph-based methods and hypergraph-based
+    methods on the Cooking-200 dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2022\HGNN_General_Hypergraph_Neural_Networks\figure_8.jpg
+  Figure 8 caption: A framework illustration of THU-DH toolbox.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Yue Gao
+  Name of the last author: Rongrong Ji
+  Number of Figures: 8
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: 'HGNN+: General Hypergraph Neural Networks'
+  Publication Date: 2022-06-13 00:00:00
+  Table 1 caption: TABLE 1 Notations and Definitions
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Detailed Information of Five Datasets With Graph Structure
+  Table 3 caption: TABLE 3 Experimental Results When Using 5 Samples Per Category
+    for Training
+  Table 4 caption: TABLE 4 Experimental Results When Using Ten Samples Per Category
+    for Training
+  Table 5 caption: 'TABLE 5 Ablation Study: Comparison on the Effectiveness of Different
+    Hyperedge Groups With HGNN + +'
+  Table 6 caption: TABLE 6 Comparison of HGNN and HGNN+
+  Table 7 caption: 'TABLE 7 Ablation Study: Comparison on Different Convolutional
+    Strategies When Five Samples are Used for Training'
+  Table 8 caption: TABLE 8 Experimental Results on the ModelNet40 and NTU Dataset
+  Table 9 caption: TABLE 9 Experimental Results on Cooking-200 and MovieLens2k-v2
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3182052
+- Affiliation of the first author: singapore university of technology and design,
+    singapore
+  Affiliation of the last author: singapore university of technology and design, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\Human_Action_Recognition_From_Various_Data_Modalities_A_Review\figure_1.jpg
+  Figure 1 caption: Illustration of RGB-based deep learning methods for HAR. (c) and
+    (d) are originally shown in [66].
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Human_Action_Recognition_From_Various_Data_Modalities_A_Review\figure_2.jpg
+  Figure 2 caption: Illustration of deep learning frameworks for skeleton-based HAR.
+    (a) Skeleton sequences can be processed by RNN and LSTM as time series. (b) Skeleton
+    sequences can be converted to 2D pseudo-images and then be fed to 2D CNNs for
+    feature learning. (c) The joint dependency structure can naturally be represented
+    via a graph structure, and thus GCN models are also suitable for this task. (a)-(c)
+    are originally shown in [152], [160], [175].
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.51
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Zehua Sun
+  Name of the last author: Jun Liu
+  Number of Figures: 2
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: 'Human Action Recognition From Various Data Modalities: A Review'
+  Publication Date: 2022-06-14 00:00:00
+  Table 1 caption: TABLE 1 Action Samples of Different Data Modalities (With Pros
+    and Cons)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Comparison of RGB Video-Based Deep Learning
+    Methods for HAR on the UCF101, HMDB51, and Kinectis-400 Datasets
+  Table 3 caption: TABLE 3 Performance of Skeleton-Based Deep Learning HAR Methods
+    on NTU RGB+D and NTU RGB+D 120 Datasets
+  Table 4 caption: TABLE 4 Performance of Depth, Infrared, Point Cloud, and Event
+    Stream-Based Deep Learning HAR Methods
+  Table 5 caption: TABLE 5 Performance Comparison of Multi-Modality Fusion-Based HAR
+    Methods on MSRDailyActivity3D (M), UTD-MHAD (U), and NTU RGB+D (N) Datasets
+  Table 6 caption: TABLE 6 Some Representative Benchmark Datasets with Various Data
+    Modalities for HAR
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3183112
+- Affiliation of the first author: key laboratory of intelligent education technology
+    and application of zhejiang province, zhejiang normal university, jinhua, china
+  Affiliation of the last author: key laboratory of knowledge engineering with big
+    data (the ministry of education of china), hefei university of technology, hefei,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Are_Graph_Convolutional_Networks_With_Random_Weights_Feasible\figure_1.jpg
+  Figure 1 caption: Robustness analysis for the selection range of random input weights.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Are_Graph_Convolutional_Networks_With_Random_Weights_Feasible\figure_2.jpg
+  Figure 2 caption: Comparison of running time (a) and required GPU memory (b) on
+    different sizes of graphs.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Are_Graph_Convolutional_Networks_With_Random_Weights_Feasible\figure_3.jpg
+  Figure 3 caption: Comparison of sensitivity on L for both testing accuracy (a) and
+    training time complexity (b).
+  Figure 4 Link: articels_figures_by_rev_year\2022\Are_Graph_Convolutional_Networks_With_Random_Weights_Feasible\figure_4.jpg
+  Figure 4 caption: Test performance comparison for GCNII models with a different
+    number of random layers.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.92
+  Name of the first author: Changqin Huang
+  Name of the last author: Xindong Wu
+  Number of Figures: 4
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: Are Graph Convolutional Networks With Random Weights Feasible?
+  Publication Date: 2022-06-15 00:00:00
+  Table 1 caption: TABLE 1 Summary of the Datasets Used in Our Experiments
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Summary of Results in Terms of Classification Accuracies
+    for Cora, Pubmed, and NELL
+  Table 3 caption: TABLE 3 Performance Comparison on Cora, Pubmed, and Reddit With
+    a Larger Training Dataset
+  Table 4 caption: TABLE 4 Test Accuracy (%) Comparison With Other Previous State-of-the-Art
+    Frameworks
+  Table 5 caption: TABLE 5 Comparison of Test Accuracy (%) and params Between AGDN-Based
+    Models and Their Variants With Random Weights
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3183143
+- Affiliation of the first author: center for research on intelligent perception and
+    computing (cripac), national laboratory of pattern recognition (nlpr), center
+    for excellence in brain science and intelligence technology (cebsit), institute
+    of automation, chinese academy of sciences (casia), university of chinese academy
+    of sciences (ucas), beijing, china
+  Affiliation of the last author: center for research on intelligent perception and
+    computing (cripac), national laboratory of pattern recognition (nlpr), center
+    for excellence in brain science and intelligence technology (cebsit), institute
+    of automation, chinese academy of sciences (casia), university of chinese academy
+    of sciences (ucas), beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_1.jpg
+  Figure 1 caption: Visualization of several widely used feature representations of
+    gait. (a) Traditional gait templates and (b) data-driven gait features learned
+    by deep CNN models.
+  Figure 10 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_10.jpg
+  Figure 10 caption: Baseline performance (%) of different feature representations
+    on CASIA-E in Scene1.
+  Figure 2 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_2.jpg
+  Figure 2 caption: The layout of cameras. A set of two cameras are fixed in a tripod.
+    In each set, the low and high cameras are with different vertical views. The four
+    blue solid lines illustrate the walking routes of subjects. Please see text for
+    more details.
+  Figure 3 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_3.jpg
+  Figure 3 caption: "Example images of CASIA-E, reflecting view changes (horizontal\
+    \ and vertical views), clothing changes and bag changes from top to down. \u201C\
+    L\u201D and \u201CH\u201D indicate videos captured by the low and the high cameras,\
+    \ respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_4.jpg
+  Figure 4 caption: Distributions of subjects with respect to age, height, weight,
+    and month.
+  Figure 5 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_5.jpg
+  Figure 5 caption: Example images of the three outdoor scenes of CASIA-E. From left
+    to right are simple static background, complex static background and complex dynamic
+    background, respectively. Note that the lighting condition is varying at different
+    time, e.g., capturing at AM and PM would meet quite different lighting directions,
+    which naturally increases the proposed datasets difficulty and complexity.
+  Figure 6 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_6.jpg
+  Figure 6 caption: The pipeline of data pre-processing. The raw images are first
+    cropped according to the detection bounding boxes. Then the person images is segmented
+    into binary silhouettes to produce the GEIs for final feature learning.
+  Figure 7 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_7.jpg
+  Figure 7 caption: "Examples of GEIs with different vertical and horizontal views.\
+    \ \u201CL\u201D and \u201CH\u201D indicate videos captured by the low and the\
+    \ high cameras, respectively."
+  Figure 8 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_8.jpg
+  Figure 8 caption: "The structures of GEI-Net and Deep Two-Stream CNN model. C: convolution\
+    \ layers; FC: fully-connected layers; P: pooling layer; LRN: local response normalization\
+    \ layer; S: stride of convolution or pooling; C1 (327\xD77+S1) means that C1 is\
+    \ a convolutional layer with 32 filters. Each filter is with a size of 7\xD7 7,\
+    \ and the stride S is 1."
+  Figure 9 Link: articels_figures_by_rev_year\2022\CASIAE_A_Large_Comprehensive_Dataset_for_Gait_Recognition\figure_9.jpg
+  Figure 9 caption: Examples of segmented masks in three outdoor scenes. The adopted
+    method is compared with Mask R-CNN [18], DeeplabV3+ [7], and JPPNet [31]. As Scene3
+    contains dynamic and complex objects in the background, the segmentation is slightly
+    worse than the other two scenes.
+  First author gender probability: 0.7
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Chunfeng Song
+  Name of the last author: Liang Wang
+  Number of Figures: 14
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: 'CASIA-E: A Large Comprehensive Dataset for Gait Recognition'
+  Publication Date: 2022-06-15 00:00:00
+  Table 1 caption: TABLE 1 Summary of the Existing Gait Datasets Attributes
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance (%) of Deep TS-CNN in Cross-Scene Evaluation
+  Table 3 caption: TABLE 3 Performance (%) of TS-CNN in Cross-Walking-Style Evaluation
+  Table 4 caption: TABLE 4 Performance (%) of TS-CNN in Cross-Dressing Evaluation
+  Table 5 caption: TABLE 5 Performance (%) of TS-CNN in Cross-Vertical-View Evaluation
+  Table 6 caption: TABLE 6 Comparison of Cross-Horizontal-View Evaluation for ACCtop1,
+    Excluding the Identical-View Cases
+  Table 7 caption: TABLE 7 Competition Results of IAPR Technical Committee on Biometrics
+    (TC4-HID2020)
+  Table 8 caption: TABLE 8 Performance (%) of TS-CNN and GaitSet [6] in the Thermal
+    Infrared Subset Evaluation
+  Table 9 caption: TABLE 9 Summary of Experimental Benchmark
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3183288
+- Affiliation of the first author: department of electrical engineering and computer
+    sciences, university of california, berkeley, ca, usa
+  Affiliation of the last author: department of electrical engineering and computer
+    sciences, university of california, berkeley, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Exploring_Simple_and_Transferable_RecognitionAware_Image_Processing\figure_1.jpg
+  Figure 1 caption: Image processing aims for images that look visually pleasing for
+    human, but not those accurately recognized by machines. In this work we try to
+    enhance output images recognition accuracy. Zoom in for details.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Exploring_Simple_and_Transferable_RecognitionAware_Image_Processing\figure_2.jpg
+  Figure 2 caption: "Left: RA (Recognition-Aware) processing. In addition to the image\
+    \ processing loss, we add a recognition loss using a fixed recognition model R\
+    \ , for the processing model P to optimize. Right: RA with transformer. \u201C\
+    Recognition Loss\u201D stands for the dashed box in the left figure. A Transformer\
+    \ T is introduced between the output of P and input of R , to optimize recognition\
+    \ loss. We cut the gradient from recognition loss flowing to P , such that P only\
+    \ optimizes the image processing loss and the image quality is not affected."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Exploring_Simple_and_Transferable_RecognitionAware_Image_Processing\figure_3.jpg
+  Figure 3 caption: Examples where outputs of RA processing models can be correctly
+    classified but those from plain processing models cannot. PSNRSSIMclass prediction
+    is shown below each output image. Slight differences between images from plain
+    processing and RA processing models could be noticed when zoomed in.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Exploring_Simple_and_Transferable_RecognitionAware_Image_Processing\figure_4.jpg
+  Figure 4 caption: Different models decision boundaries are similar, especially along
+    the RA direction (horizontal axis).
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zhuang Liu
+  Name of the last author: Trevor Darrell
+  Number of Figures: 4
+  Number of Tables: 17
+  Number of authors: 7
+  Paper title: Exploring Simple and Transferable Recognition-Aware Image Processing
+  Publication Date: 2022-06-15 00:00:00
+  Table 1 caption: TABLE 1 Accuracy (%) on ImageNet Classification
+  Table 10 caption: TABLE 10 Transfer From ImageNet Classification to PASCAL VOC Object
+    Detection (mAP), Using Unsupervised RA
+  Table 2 caption: TABLE 2 mAP on VOC Object Detection
+  Table 3 caption: TABLE 3 Transfer Between Recognition Architectures (ImageNet Accuracy%)
+  Table 4 caption: TABLE 4 Transfer Between Recognition Architectures, Evaluated on
+    PASCAL VOC Object Detection (mAP)
+  Table 5 caption: TABLE 5 Transfer Between Recognition Architectures Using Unsupervised
+    RA, on ImageNet Classification (Accuracy %)
+  Table 6 caption: TABLE 6 Transfer Between Architectures Using RA With Transformer
+    ( T T), on ImageNet Classification (Accuracy %)
+  Table 7 caption: TABLE 7 Transfer From ImageNet Classification to PASCAL VOC Object
+    Detection (mAP)
+  Table 8 caption: TABLE 8 Transfer Between Different Object Categories (500-Way Accuracy
+    %)
+  Table 9 caption: TABLE 9 Transfer From PASCAL VOC Object Detection to ImageNet Classification
+    (Accuracy %)
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3183243
+- Affiliation of the first author: school of computer science and technology, xian
+    jiaotong university, xian, shaanxi, china
+  Affiliation of the last author: school of computer science, carnegie mellon university,
+    pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\TNZSTAD_Transferable_Network_for_ZeroShot_Temporal_Activity_Detection\figure_1.jpg
+  Figure 1 caption: 'Diagram of transferable network for zero-shot temporal activity
+    detection (TN-ZSTAD). Purple part: the input RGB frames of videos are resized
+    into fixed height and width; Green part: a 3D convolutional backbone extracts
+    a set of deep features for input videos, and a positional encoding produces the
+    position embeddings; Pink part: Activity graph transformer (AGT) outputs a set
+    of activity candicates with an encoder and decoder module; Orange part: Zero-shot
+    detection subnet (ZSDN) predicts the classes and start-end times of the seen and
+    unseen activities by utilizing label embedding information.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\TNZSTAD_Transferable_Network_for_ZeroShot_Temporal_Activity_Detection\figure_2.jpg
+  Figure 2 caption: Analysis on distribution transfer loss L trs3 .
+  Figure 3 Link: articels_figures_by_rev_year\2022\TNZSTAD_Transferable_Network_for_ZeroShot_Temporal_Activity_Detection\figure_3.jpg
+  Figure 3 caption: "The influence of clustering transfer loss L trs1 , reconstruction\
+    \ transfer loss L trs2 , and distribution transfer loss L trs3 (trade-off \u03B2\
+    \ 1 , \u03B2 2 , and \u03B2 3 ) in ZSDN subnet for TN-ZSTAD."
+  Figure 4 Link: articels_figures_by_rev_year\2022\TNZSTAD_Transferable_Network_for_ZeroShot_Temporal_Activity_Detection\figure_4.jpg
+  Figure 4 caption: Some correctincorrect prediction results of TN-ZSTAD ( AGT + L
+    trs1 + L trs2 + L trs3 ) on THUMOS14.
+  Figure 5 Link: articels_figures_by_rev_year\2022\TNZSTAD_Transferable_Network_for_ZeroShot_Temporal_Activity_Detection\figure_5.jpg
+  Figure 5 caption: Proportion analysis of four types of prediction errors on THUMOS14
+    and ActivityNet datasets.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Lingling Zhang
+  Name of the last author: Alex Hauptmann
+  Number of Figures: 5
+  Number of Tables: 9
+  Number of authors: 7
+  Paper title: 'TN-ZSTAD: Transferable Network for Zero-Shot Temporal Activity Detection'
+  Publication Date: 2022-06-16 00:00:00
+  Table 1 caption: TABLE 1 Detailed Comparison of Five Variants
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Zero-Shot Temporal Activity Detection Results on THUMOS14
+    w.r.t mAP (%) at Different IoU Thresholds
+  Table 3 caption: "TABLE 3 Per-Unseen Class AP (%) at IoU Threshold \u03B1=0.5 \u03B1\
+    =0.5 on THUMOS14 Dataset"
+  Table 4 caption: "TABLE 4 Per-Unseen Class AP (%) on Charades Dataset With our Method\
+    \ ( AGT \u2217 AGT+ L trs1 Ltrs1+ L trs2 Ltrs2+ L trs3 Ltrs3)"
+  Table 5 caption: TABLE 5 Zero-Shot Temporal Activity Detection Results on Charades
+    w.r.t Standard and Post-Process mAP (%)
+  Table 6 caption: "TABLE 6 Zero-Shot Temporal Activity Detection Results on ActivityNet\
+    \ w.r.t mAP (%) at IoU \u03B1=0.5 \u03B1=0.5"
+  Table 7 caption: "TABLE 7 The Influence of Activity Query Number for TN-ZSTAD on\
+    \ THUMOS14 (mAP at IoU Threshold \u03B1=0.1 \u03B1=0.1)"
+  Table 8 caption: TABLE 8 The Influence of Activity Query Number for TN-ZSTAD on
+    Charades (Standard mAP)
+  Table 9 caption: TABLE 9 The Influence of Head Number in AGTs Attention Module for
+    TN-ZSTAD
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3183586
+- Affiliation of the first author: tmcc, cs, nankai university, tianjin, china
+  Affiliation of the last author: national laboratory of pattern recognition, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_1.jpg
+  Figure 1 caption: 'Search space comparison between searching for network architecture
+    and receptive field combinations. Left: Network architecture search mostly searches
+    for several operations with different functions. Right: The search space of receptive
+    field combinations is huge. The white, green, blue nodes, and orange shade represent
+    the dilation rate candidates, the sparse search space in global search, one of
+    the global searched results, and the local search space, respectively.'
+  Figure 10 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_10.jpg
+  Figure 10 caption: Visualization of the local searched receptive fields of stage
+    4 and decoder in Deeplab V3 on the semantic segmentation task.
+  Figure 2 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_2.jpg
+  Figure 2 caption: Illustration of one iteration in our genetic-based global search
+    algorithm. Step1. Gradually sparse random sampling initial receptive field combinations;
+    Step2. Crossover between segments of the receptive field combinations; Step3.
+    Randomly mutating the receptive fields to generate new individuals; Step4. Selecting
+    individuals for the next iteration based on estimated performance of models trained
+    with early stopping strategy.
+  Figure 3 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_3.jpg
+  Figure 3 caption: "The approximated probability mass function of dilation rates\
+    \ is determined by the multi-dilated convolutional layer with shared convolutional\
+    \ weights. d i is the dilation rate, and \u03B1 i is the PMF in Eq. (4)."
+  Figure 4 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_4.jpg
+  Figure 4 caption: Visualization of receptive field combinations changes during the
+    EGI local searching process.
+  Figure 5 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Visualization of the global-to-local searched structures of three
+    datasets with the MS-TCN baseline. Each row represents the dilations of one structure,
+    which contains four stages.
+  Figure 6 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Performance comparison between our proposed genetic-based search
+    and random search during the global search stage.
+  Figure 7 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_7.jpg
+  Figure 7 caption: Visualization of average dilation rates in each stage and the
+    range of performance of global-searched structures.
+  Figure 8 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_8.jpg
+  Figure 8 caption: Visualization of the local-searched structures of Faster-RCNN
+    [2] for object detection (OB) and Mask-RCNN [4] for instance segmentation (IN).
+    S2-S4 denotes stage 2 to stage 4 of the ResNet backbone. FPN, RPN, and MASK mean
+    the feature pyramid network, region proposal network, and the mask segmentation
+    head in Faster-RCNN and Mask-RCNN.
+  Figure 9 Link: articels_figures_by_rev_year\2022\RFNext_Efficient_Receptive_Field_Search_for_Convolutional_Neural_Networks\figure_9.jpg
+  Figure 9 caption: Visualization and probability of each receptive field in the parallel
+    searched structure of ResNet-50 based Faster-RCNN (a) and Mask-RCNN (b) when S
+    = 3 during searching. S2-S4 denotes stage 2 to stage 4 of the ResNet backbone.
+    FPN, RPN, and MASK mean the feature pyramid network, region proposal network,
+    and the mask segmentation head in Faster-RCNN and Mask-RCNN.
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Shanghua Gao
+  Name of the last author: Liang Wang
+  Number of Figures: 13
+  Number of Tables: 17
+  Number of authors: 5
+  Paper title: 'RF-Next: Efficient Receptive Field Search for Convolutional Neural
+    Networks'
+  Publication Date: 2022-06-17 00:00:00
+  Table 1 caption: TABLE 1 Performance of the Global and Local Searching Stages of
+    Our Global-to-Local Searching Method Using MS-TCN [12] as the Baseline
+  Table 10 caption: TABLE 10 Performance of Local Search on Instance Segmentation
+    With COCO [121] Dataset Using Mask-RCNN as the Baseline Method
+  Table 2 caption: TABLE 2 Details of Three Temporal Action Segmentation Datasets
+  Table 3 caption: TABLE 3 Cooperation With Existing Temporal Action Segmentation
+    Methods. We Perform the Whole Search Pipeline Based on MS-TCN [12]
+  Table 4 caption: TABLE 4 Comparison With Existing Temporal Action Segmentation Methods
+    on the 50Salads and GTEA Datasets
+  Table 5 caption: TABLE 5 Ablation About the Proposed EGI Local Search
+  Table 6 caption: TABLE 6 GPU Hours of the Global and Local Search on Different Temporal
+    Action Segmentation Datasets Using the RTX 2080Ti GPU Based on the MS-TCN Method
+  Table 7 caption: TABLE 7 Cross-Validation Performance (F0.1) of Searched Structures
+    Among the Fold 1 of Different Datasets. Arch-Dataset Indicates the Structure is
+    Searched on Which Dataset
+  Table 8 caption: TABLE 8 Performance of Local Search on Object Detection With COCO
+    [121] Dataset Using Faster-RCNN as the Baseline Method
+  Table 9 caption: TABLE 9 Cross-Validation Performance (F0.1) of Searched Structures
+    Among Different Folds of the BreakFast Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3183829
+- Affiliation of the first author: school of mathematics and statistics and ministry
+    of education key lab of intelligent networks and network security, xian jiaotong
+    university, xian, shaanxi, china
+  Affiliation of the last author: school of mathematics and statistics and ministry
+    of education key lab of intelligent networks and network security, xian jiaotong
+    university, xian, shaanxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_1.jpg
+  Figure 1 caption: "Pre-defined LR schedules used in our paper for (a) image and\
+    \ (b) text classification experiments. (c) Visualization of how we input current\
+    \ loss f t to MLR-SNet, which then outputs a proper LR \u03B1 t to help SGD find\
+    \ a better minima. LR schedules meta-learned by the proposed MLR-SNet on (d) image\
+    \ and (e) text classification experiments (meta-training stage). (f) The predicted\
+    \ LR schedules, learned from CIFAR-10, on image (TinyImageNet) and text (Penn\
+    \ Treebank) classification datasets (meta-test stage)."
+  Figure 10 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_10.jpg
+  Figure 10 caption: Test accuracy on CIFAR-10 with different network architectures
+    for our transferred MLR-SNet in the meta-test stage.
+  Figure 2 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_2.jpg
+  Figure 2 caption: The structure and computational graph of our proposed MLR-SNet.
+  Figure 3 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_3.jpg
+  Figure 3 caption: Changing tendencies in terms of training loss (left column) and
+    test accuracy (middle column) in iterations of all comparison methods on image
+    classification datasets in the meta-train stage. The LR schedules (right column)
+    employed by all methods are also compared.
+  Figure 4 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_4.jpg
+  Figure 4 caption: Changing tendencies in terms of training perplexity (left column)
+    and test perplexity (middle column) in iterations of all comparison methods on
+    text classification datasets in the meta-train stage. The LR schedules (right
+    column) employed by all methods are also compared.
+  Figure 5 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_5.jpg
+  Figure 5 caption: Test accuracy on CIFAR-10 with ResNet-18 with different settings
+    of (a) network layers and (b)hidden layer nodes of MLR-SNet architectures.
+  Figure 6 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_6.jpg
+  Figure 6 caption: Test accuracy on CIFAR-10 with ResNet-18 with different settings
+    of (a) learning rates and (b) weight decays of meta-optimizer Adam.
+  Figure 7 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_7.jpg
+  Figure 7 caption: (a) The LR variation curves along iterations with the same input
+    loss (we set it as 5) predicted by a single meta-learned MLR-SNet obtained at
+    certain epoch of meta-training stage. As is shown, when iteration increases, the
+    LR is almost constant. This implies that the meta-learned MLR-SNet at certain
+    epoch fails to predict the long trajectories LR. (b) The recording test accuracy
+    on CIFAR-100 with ResNet-18 using different meta-test strategies.
+  Figure 8 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_8.jpg
+  Figure 8 caption: Test accuracy on CIFAR-100 of ResNet-18 with varying epochs for
+    our transferred MLR-SNet in the meta-test stage.
+  Figure 9 Link: articels_figures_by_rev_year\2022\MLRSNet_Transferable_LR_Schedules_for_Heterogeneous_Tasks\figure_9.jpg
+  Figure 9 caption: Test accuracy with different datasets for our transferred MLR-SNet
+    in the meta-test stage.
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Jun Shu
+  Name of the last author: Zongben Xu
+  Number of Figures: 14
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: 'MLR-SNet: Transferable LR Schedules for Heterogeneous Tasks'
+  Publication Date: 2022-06-20 00:00:00
+  Table 1 caption: TABLE 1 Test Accuracy (%) of CIFAR Datasets With SGD Baselines
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Test Accuracy (%) of CIFAR Dataset With SGDM Baselines
+  Table 3 caption: TABLE 3 Test Perplexity on the Penn Treebank Dataset
+  Table 4 caption: TABLE 4 Variants Constructed From Meta-Training Tasks
+  Table 5 caption: TABLE 5 Test Accuracy (%) on CIFAR-10 and CIFAR-100 Training Sets
+    of Compared Models Trained on CIFAR-10-C and CIFAR-100-C with Hand-Designed LR
+    Schedules and Meta-Trained MLR-SNet (Meta-Training)
+  Table 6 caption: TABLE 6 Test Accuracy (%) on CIFAR-10 and CIFAR-100 Training Sets
+    of Compared Models Trained on CIFAR-10-C and CIFAR-100-C with Hand-Designed LR
+    Schedules and Transferred MLR-SNet (Meta-Test)
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3184315
+- Affiliation of the first author: speech and audio team, bytedance ai lab, singapore
+  Affiliation of the last author: speech and audio team, bytedance ai lab, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_1.jpg
+  Figure 1 caption: Two strategies of using transfer kernel for transfer regression.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_10.jpg
+  Figure 10 caption: Performance analysis on the number of target labelled data.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_2.jpg
+  Figure 2 caption: Two-domain scenario comparison on linear functions.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_3.jpg
+  Figure 3 caption: Two-domain scenario comparison on nonlinear functions.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_4.jpg
+  Figure 4 caption: The heat map of the relatedness.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_5.jpg
+  Figure 5 caption: The comparison results of multi-source tasks.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_6.jpg
+  Figure 6 caption: The results on UJIIndoorLoc dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_7.jpg
+  Figure 7 caption: The results on Sarcos dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_8.jpg
+  Figure 8 caption: UJIIndoorLoc output distributions.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Transfer_Kernel_Learning_for_MultiSource_Transfer_Gaussian_Process_Regression\figure_9.jpg
+  Figure 9 caption: Sarcos output distributions.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.97
+  Name of the first author: Pengfei Wei
+  Name of the last author: Zejun Ma
+  Number of Figures: 12
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Transfer Kernel Learning for Multi-Source Transfer Gaussian Process
+    Regression
+  Publication Date: 2022-06-21 00:00:00
+  Table 1 caption: TABLE 1 Comparison of the Ensemble Strategy and All-in-One Strategy
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Notations and Descriptions
+  Table 3 caption: TABLE 3 Experimental Configuration
+  Table 4 caption: TABLE 4 Dataset Statistics
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3184696

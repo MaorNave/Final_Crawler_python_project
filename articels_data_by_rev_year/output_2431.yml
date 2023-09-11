@@ -1,0 +1,837 @@
+- Affiliation of the first author: department of electrical and electronic engineering,
+    personal robotics lab, imperial college london, london, u.k.
+  Affiliation of the last author: department of electrical and electronic engineering,
+    personal robotics lab, imperial college london, london, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\Robust_EventBased_Vision_Model_Estimation_by_Dispersion_Minimisation\figure_1.jpg
+  Figure 1 caption: Dispersion minimisation framework overview. Our framework estimates
+    the model parameters that minimise the events dispersion. The input may consist
+    of only events or augmented events, e.g., with depth. We propose a batch mode,
+    whereby dispersion minimisation is achieved by transforming a batch of events
+    according to candidate model parameters and evaluating a dispersion measure. We
+    also propose an incremental mode, whereby the model parameters are incrementally
+    estimated on an event-by-event basis. Our framework does not rely on any intermediate
+    representation, e.g., IWE. The images shown are formed by accumulating the events
+    onto the image plane and are only included to aid visualisation.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Robust_EventBased_Vision_Model_Estimation_by_Dispersion_Minimisation\figure_2.jpg
+  Figure 2 caption: Consider a square moving with a constant linear velocity in the
+    z-direction, i.e., moving perpendicularly away from the camera, and the corresponding
+    events generated, as depicted on the left column. The goal is to estimate the
+    6-DOF motion the object undergoes. From top to bottom, we show the events generated
+    in 3D space, e.g., which can be obtained by augmenting the events with depth information,
+    the corresponding events projected and accumulated onto the image plane, and zoom-in
+    for better visualisation. In the middle column, we show the transformed depth-augmented
+    events according to the motion parameters estimated using the proposed framework
+    directly in 3D. In the right column, we show the transformed depth-augmented events
+    according to the motion parameters estimated using the CMax framework [3], which
+    projects and accumulates the depth-augmented events onto the IWE to then compute
+    its variance for the optimisation procedure. The proposed framework can accurately
+    estimate the 6-DOF transformation model parameters, whereas the CMax framework
+    can not.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Robust_EventBased_Vision_Model_Estimation_by_Dispersion_Minimisation\figure_3.jpg
+  Figure 3 caption: "(Left) In the DMin approach, all features pairwise distances\
+    \ are computed. (Right) In the ADMin approach, the feature space is discretised\
+    \ and each feature f k is convolved with a truncated kernel K \u03A3 ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Robust_EventBased_Vision_Model_Estimation_by_Dispersion_Minimisation\figure_4.jpg
+  Figure 4 caption: (a) Original events accumulated onto the image plane. Respective
+    transformed events according to the estimated parameters (b) without data whitening
+    and (c) with data whitening. The spatial covariance of the original events is
+    similar to the covariance of the respective transformed events by applying data
+    whitening.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Robust_EventBased_Vision_Model_Estimation_by_Dispersion_Minimisation\figure_5.jpg
+  Figure 5 caption: Estimated trajectories on the (top) indoorflying1 and (bottom)
+    outdoordrivingday1 sequences [33].
+  Figure 6 Link: articels_figures_by_rev_year\2021\Robust_EventBased_Vision_Model_Estimation_by_Dispersion_Minimisation\figure_6.jpg
+  Figure 6 caption: Qualitative optical flow estimation on the (top row) indoorflying1
+    and (bottom row) outdoordrivingday1 sequences [33].
+  Figure 7 Link: articels_figures_by_rev_year\2021\Robust_EventBased_Vision_Model_Estimation_by_Dispersion_Minimisation\figure_7.jpg
+  Figure 7 caption: Runtime versus accuracy comparison. A real-time ratio of 0 means
+    real-time processing. The preceding W. indicates that the data whitening step
+    described in Section 3.4 was applied.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Urbano Miguel Nunes
+  Name of the last author: Yiannis Demiris
+  Number of Figures: 7
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Robust Event-Based Vision Model Estimation by Dispersion Minimisation
+  Publication Date: 2021-11-23 00:00:00
+  Table 1 caption: TABLE 1 6-DOF Estimation Accuracy Comparison on the IndoorFlying1
+    and OutdoorDrivingday1 Sequences [33]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative 6-DOF Estimation Comparison on the INDOORFLYing1
+    and OutdoorDrivingday1 Sequences [33]
+  Table 3 caption: TABLE 3 Rotational Motion Estimation Accuracy Comparison on the
+    BoxesRotation and PosterRotation Sequences [34]
+  Table 4 caption: TABLE 4 Motion Estimation on Planar Scenes Accuracy Comparison
+    on the PosterTranslation and Poster6Dof Sequences [34]
+  Table 5 caption: TABLE 5 Quantitative Optical Flow Estimation Comparison on the
+    Classroom and ConferenceTranslation Sequences [9]
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3130049
+- Affiliation of the first author: department of computer engineering, middle east
+    technical university (metu), ankara, turkey
+  Affiliation of the last author: department of computer engineering, middle east
+    technical university (metu), ankara, turkey
+  Figure 1 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_1.jpg
+  Figure 1 caption: "Three different object detection results (for an image from COCO\
+    \ [1]) with very different PR curves but the same AP. First Row: Blue, white and\
+    \ orange colors denote ground-truth, TPs and FPs respectively. Numbers are confidence\
+    \ scores, s , of the detections. Second row: PR curves for the corresponding detections.\
+    \ Red crosses indicate optimal points designated by oLRP Error. Third row: AP\
+    \ and oLRP Error results of the detection results. Comparing LRP Error and AP,\
+    \ (i) In terms of \u201Ccompleteness\u201D (Section 1.1): While the localisation\
+    \ quality of the TPs in (c) is worse than (a) and (b), AP does not penalize (c)\
+    \ more, while oLRP Error does. (ii) In terms \u201Cinterpretability\u201D (Section\
+    \ 1.1): AP is unable to identify the difference among (a), (b) and (c) despite\
+    \ they have very different problems. On the other hand, oLRP Error, as an interpretable\
+    \ metric, demonstrates the strengths and weaknesses of each scenario with its\
+    \ components corresponding to each performance aspect."
+  Figure 10 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_10.jpg
+  Figure 10 caption: "s-LRP curves of different object detectors for the arbitrarily\
+    \ chosen \u201Cperson\u201D and \u201Cbroccoli\u201D classes from COCO, whose\
+    \ PR curves are demonstrated in Fig. 7 (see Fig. S4 in Supp.Mat, which can be\
+    \ found on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2021.3130188.\
+    \ for s-LRP curves of the \u201Czebra\u201D, and \u201Cbus\u201D). The minimum-achievable\
+    \ LRP Error is oLRP Error (i.e. marked by \u201Cx\u201D). Note that for some detectors\
+    \ (e.g. ATSS), the performance with respect to s changes abruptly implying sensitivity\
+    \ to thresholding. F. R-CNN: Faster R-CNN, C. R-CNN: Cascade R-CNN."
+  Figure 2 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_2.jpg
+  Figure 2 caption: 'Example visual detection tasks considered in the paper. Keypoint
+    detection is illustrated for the person class only. Image: COCO [1]. Ground truth
+    plots: Detectron2 [11].'
+  Figure 3 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_3.jpg
+  Figure 3 caption: An illustration that shows how a transition from a FP to TP is
+    handled differently by PQ and LRP Error. (a) An example image from COCO [1]. (b)
+    Segmentation masks for the ground truth with different IoU . The ground truth
+    is split into 10 approximately equal slices. Orange line is the threshold where
+    the detection is still a FP, hence a single pixel added makes the detection a
+    TP. (c) How PQ and LRP Error changes for different IoU . While LRP Error is zeroth-order
+    continuous, PQ is a discontinuous function and allows large jumps.
+  Figure 4 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_4.jpg
+  Figure 4 caption: "A visual comparison of AP and LRP Error. (a) A PR curve. The\
+    \ cross marks a hypothetical optimal-recall-precision point (oRP) (e.g. the point\
+    \ where F1-measure is maximized). (b) A localisation, recall and precision curve,\
+    \ where \u201CMean lq\u201D is the average localisation quality of TPs. Unlike\
+    \ any performance measure obtained via a PR curve (e.g. AP), LRP Error intuitively\
+    \ combines these performance aspects (Eq. (3)), and instead of area under the\
+    \ curve, uses the minimum of LRP Error values, defined as oLRP Error, as the performance\
+    \ metric. (c) An s-LRP curve. Its minimum is oLRP Error."
+  Figure 5 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_5.jpg
+  Figure 5 caption: "How LRP Error, PR Error (i.e. 1-(Precision \xD7 Recall)) and\
+    \ PQ Error (i.e. 1-PQ) behave over different inputs. Mean lq is the avg. localisation\
+    \ qualities of TPs. PR Error ignores localisation and PQ overpromotes classification\
+    \ compared to localisation. The space is uniformly discretized. Error combinations\
+    \ of up to 20 ground truths and 50 detections are shown."
+  Figure 6 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_6.jpg
+  Figure 6 caption: The relation of LRP Error with (a) precision error (1-precision),
+    (b) recall error (1-recall) and (c) PQ error (1-PQ) using the examples from Fig.
+    5. LRP Error is an upper bound for precision, recall and PQ errors. Since LRP
+    Error includes recall (precision) and localisation in addition to precision (recall)
+    error, the correlation between precision (recall) error and LRP Error is not strong.
+    On the other hand, with similar definitions LRP Error and PQ evaluate similarly,
+    but still their difference increases when Mean lq decreases since PQ suppresses
+    the effect of localisation by promoting classification more.
+  Figure 7 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_7.jpg
+  Figure 7 caption: "PR curves of four arbitrary classes from COCO. The curves are\
+    \ drawn for \u03C4=0.50 . The lines with different redblue tones represent onetwo-stage\
+    \ detectors. While A P 50 considers AUC of PR curve, LRP Error combines localisation,\
+    \ recall and precision errors, and hence oLRP Errors, marked with crosses, are\
+    \ found in the top right part of the curves. Thus, different from AP, oLRP Error\
+    \ is not affected by low-precision detections in the tail of the PR curves (e.g.\
+    \ one-stage detectors in (b), (d)). C.f. Table 4 for AP & oLRP Error values, F.\
+    \ R-CNN: Faster R-CNN, C. R-CNN: Cascade R-CNN."
+  Figure 8 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_8.jpg
+  Figure 8 caption: "The effect of interpolating the PR curve on A P C using COCO\
+    \ dataset on (a) the \u201Cperson\u201D class, the class with the most number\
+    \ of examples, (b) the \u201Ctoaster\u201D class, the class with the least number\
+    \ of examples. Red: AP without interpolation. Blue: Additional A P C after interpolation.\
+    \ The numbers on the bars indicate this additional A P C points due to interpolation.\
+    \ While the effect of interpolation is negligible for the \u201Cperson\u201D class,\
+    \ there is a significant effect of interpolation (i.e. 2.2% A P C on average,\
+    \ up to 6.2% ) on the performance of the toaster class (i.e. the class with the\
+    \ minimum number of examples) for all the detectors. C.R-CNN: Cascade R-CNN, F.R-CNN:\
+    \ Faster R-CNN."
+  Figure 9 Link: articels_figures_by_rev_year\2021\One_Metric_to_Measure_Them_All_Localisation_Recall_Precision_LRP_for_Evaluating_\figure_9.jpg
+  Figure 9 caption: Class-level LR P FP versus LR P FN comparison on COCO dataset
+    (with COCO Stuff). Overall, there is a tendency of larger LR P FN error than LR
+    P FP error. This is more obvious for things classes. It is not possible to make
+    the same observation using RQ.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Kemal Oksuz
+  Name of the last author: Emre Akbas
+  Number of Figures: 11
+  Number of Tables: 12
+  Number of authors: 4
+  Paper title: 'One Metric to Measure Them All: Localisation Recall Precision (LRP)
+    for Evaluating Visual Detection Tasks'
+  Publication Date: 2021-11-23 00:00:00
+  Table 1 caption: TABLE 1 A Comparison of LRP Error and PQ for the Detectors (i.e.
+    Detector 1 and Detector 2) in Scenarios (a) and (b) in Fig. 1
+  Table 10 caption: TABLE 10 Evaluating Scale-Based Partitions of COCO
+  Table 2 caption: TABLE 2 Comparison of AP, PQ and LRP Error in Terms of Desired
+    Properties
+  Table 3 caption: TABLE 3 Performance Comparison of Methods for Soft-Prediction Tasks
+    (i.e. Object Detection, Keypoint Detection and Instance Segmentation) on COCO
+    2017 Val
+  Table 4 caption: "TABLE 4 Performance Comparison of Several Object Detectors for\
+    \ Two Arbitrarily Selected Classes From COCO Dataset Essentially to Provide Insight\
+    \ on the Components of oLRP Error, Namely, \u201CPerson\u201D and \u201CBroccoli\u201D\
+    , on COCO 2017 Val"
+  Table 5 caption: TABLE 5 Evaluation of the Same Model Using Two Different Evaluation
+    APIs, i.e. Pascal API and COCO API
+  Table 6 caption: TABLE 6 Detector-Level Performance Results of Panoptic Segmentation
+    Methods as Hard Predictions on COCO Dataset (With COCO-Stuff)
+  Table 7 caption: TABLE 7 Evaluating Mask R-CNN With Different Backbones on LVIS
+    v1.0
+  Table 8 caption: "TABLE 8 Effect of Number of Detections (Det) on AP and oLRP Error\
+    \ on LVIS v1.0 When Detections are Limited Per Image (detsim), and, as Suggested\
+    \ by Dave et al. [31] as \u201CFixed\u201D Version, Per Class (detscl)"
+  Table 9 caption: TABLE 9 Evaluating Faster R-CNN With R101 Using 30 and 200 Top-Scoring
+    Proposals on Open Images val Set
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3130188
+- Affiliation of the first author: school of computer science and engineering, sun
+    yat-sen university, guangzhou, guangdong, china
+  Affiliation of the last author: school of computer science and engineering, sun
+    yat-sen university, guangzhou, guangdong, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_1.jpg
+  Figure 1 caption: Visual comparison of intrinsic images produced by our method and
+    two recent learning-based methods on four real-world images with diverse illumination
+    conditions and scenes. Fan et al. [26] is a supervised method trained on the IIW
+    dataset [21], while Liu et al. [27] is an unsupervised method trained on uncorrelated
+    datasets of natural image, reflectance and shading. R and S denote recovered reflectance
+    and shading, respectively. Compared with the results of [26] and [27], our recovered
+    reflectance images barely contain unwanted shading residuals, and have more natural
+    colors and brightness. Please also see the supplementary material, which can be
+    found on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2021.3129795
+    for the visual comparisons with more methods.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_10.jpg
+  Figure 10 caption: Visual comparison with the state-of-the-art supervised method
+    Fan et al. [26] and unsupervised method Liu et al. [27] on the SAW dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_2.jpg
+  Figure 2 caption: The schematic illustration of our unsupervised intrinsic decomposition
+    network (UIDNet). It consists of two fully convolutional encoder-decoder architectures,
+    i.e., the reflectance prediction network (RPN) and the shading prediction network
+    (SPN), which aim to predict reflectance R and shading S of the input image I by
+    encouraging the internal self-similarity of reflectance R . RPN and SPN receive
+    random noise as input, and are jointly trained to reconstruct the input image
+    I with the predicted reflectance R and shading S . The entire network is trained
+    with a reconstruction loss L rec and a reflectance structure consistency loss
+    L rsc . Particularly, we incorporate wavelet pooling into RPN and use frequency
+    separated skip connections ( c 2 , c 3 , c 4 are high frequency channels) for
+    preserving the reflectance discontinuities. Best view in color.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_3.jpg
+  Figure 3 caption: "The hard concrete distribution with varying \u2113 and \u03C4\
+    \ . The horizontal and vertical axes denote the value of the soft gates g and\
+    \ the corresponding probability P(g) , respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_4.jpg
+  Figure 4 caption: Visual comparison of intrinsic images produced by our method with
+    and without the reflectance structure consistency loss L rsc in Eq. (12). As shown,
+    adopting the loss L rsc helps obtain better reflectance without suffering from
+    the texture-copy problem.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_5.jpg
+  Figure 5 caption: Visual comparison of reflectance produced by our method using
+    L 2 and L 1 reconstruction loss. As shown, L 2 norm results in overly smoothed
+    reflectance, while L 1 norm produces clearer and more accurate reflectance.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_6.jpg
+  Figure 6 caption: The intermediate reflectance prediction (top) and RSG map (bottom)
+    at different numbers of iterations. As shown, the shading discontinuities are
+    gradually removed from the RSG map with the increase of iterations, and the refined
+    RSG map helps obtain improved reflectance.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_7.jpg
+  Figure 7 caption: The schematic illustration of the conv block and the output layer
+    in the UIDNet. BN refers to batch normalization.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_8.jpg
+  Figure 8 caption: Visual comparison with the state-of-the-art methods on the MIT
+    dataset. Apart from the 1st column, odd-number rows show predicted reflectance,
+    while even-numbered rows show predicted shading. (a) Input. (b) Ground truth.
+    (c) Bell et al. [21]. (d) SIRFS [63]. (e) Narihira et al. [30]. (f) Fan et al.
+    [26]. (g) Liu et al. [27]. (h) Our method.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Unsupervised_Intrinsic_Image_Decomposition_Using_Internal_SelfSimilarity_Cues\figure_9.jpg
+  Figure 9 caption: Visual comparison with the state-of-the-art supervised method
+    Fan et al. [26] and unsupervised method Liu et al. [27] on the IIW dataset.
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Qing Zhang
+  Name of the last author: Wei-Shi Zheng
+  Number of Figures: 23
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: Unsupervised Intrinsic Image Decomposition Using Internal Self-Similarity
+    Cues
+  Publication Date: 2021-11-23 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Comparison Between our Method and the State-of-the-art
+    Methods on the MIT Dataset [64]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Comparison Between our Method and the State-of-the-art
+    Methods on the IIW Dataset [21]
+  Table 3 caption: TABLE 3 Quantitative Comparison Between our Method and the State-of-the-art
+    Methods on the SAW Dataset [70]
+  Table 4 caption: TABLE 4 Comparison of Quantitative Results (WHDR) Produced by our
+    Method Using Four Different Receptive Fields on Three Resolution Levels of the
+    Input Image in Figure 18
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3129795
+- Affiliation of the first author: google research, seoul, south korea
+  Affiliation of the last author: department of electrical and computer engineering,
+    automation and systems research institute (asri), seoul national university, seoul,
+    south korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\TestTime_Adaptation_for_Video_Frame_Interpolation_via_MetaLearning\figure_1.jpg
+  Figure 1 caption: Motivation of the proposed adaptive frame interpolation method.
+    Our video frame interpolation framework incorporates a test-time adaptation process
+    followed by scene-adapted inference. The adaptation process utilizes the additional
+    information from the input frames at test-time, and is quickly performed with
+    only a single gradient update to the network parameters.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\TestTime_Adaptation_for_Video_Frame_Interpolation_via_MetaLearning\figure_2.jpg
+  Figure 2 caption: Feasibility test for test-time adaptation. The upper graph shows
+    that fine-tuning with the test input data can improve performance in general,
+    but the number of required steps greatly differs for each sequence. The lower
+    graph shows a zoomed-in version of the shaded region in the upper graph, additionally
+    denoting the large performance gain obtained with SepConv+MetaVFI with a single
+    gradient update. The solid lines denote the fine-tuned result of our feasibility
+    test, and the dotted lines show the results with the proposed MetaVFI algorithm.
+  Figure 3 Link: articels_figures_by_rev_year\2021\TestTime_Adaptation_for_Video_Frame_Interpolation_via_MetaLearning\figure_3.jpg
+  Figure 3 caption: "Overview of the training process for the proposed video frame\
+    \ interpolation network. Left: Each task T i consists of three frame triplets\
+    \ chosen from a video sequence where two are used for task-wise adaptation (i.e.,\
+    \ inner-loop update) and one is used for meta-update (i.e., outer-loop update).\
+    \ Right: Network parameters \u03B8 are adapted by gradient descent on loss L in\
+    \ T i using triplets in D T i and stored for each task. Meta-update is performed\
+    \ by minimizing the sum of each loss L out T i using the triplets in D \u2032\
+    \ T i for all tasks."
+  Figure 4 Link: articels_figures_by_rev_year\2021\TestTime_Adaptation_for_Video_Frame_Interpolation_via_MetaLearning\figure_4.jpg
+  Figure 4 caption: Qualitative results on VimeoSeptuplet [7] dataset for recent frame
+    interpolation algorithms. Note how our +MetaVFI (Meta-SGD) outputs infer motion
+    substantially better than the Baseline or Re-trained models and generate realistic
+    textures similar to the ground truth.
+  Figure 5 Link: articels_figures_by_rev_year\2021\TestTime_Adaptation_for_Video_Frame_Interpolation_via_MetaLearning\figure_5.jpg
+  Figure 5 caption: Qualitative results on Middlebury-OTHERS [53] dataset for SepConv
+    [6]. We show the cropped regions for Beanbags and Urban2 sequences. Note how meta-training
+    helps in fixing most of the errors in the baseline models occurring due to large
+    motion.
+  Figure 6 Link: articels_figures_by_rev_year\2021\TestTime_Adaptation_for_Video_Frame_Interpolation_via_MetaLearning\figure_6.jpg
+  Figure 6 caption: Qualitative results on HD [31] dataset for SepConv [6] and DAIN
+    [30]. We show the cropped regions for Temple1, ParkScene, and BlueSky sequences.
+    Note how the artifacts are removed for +MetaVFI (Meta-SGD) results.
+  Figure 7 Link: articels_figures_by_rev_year\2021\TestTime_Adaptation_for_Video_Frame_Interpolation_via_MetaLearning\figure_7.jpg
+  Figure 7 caption: Qualitative results on SNU-FILM [1] dataset (Hard setting) for
+    recent frame interpolation algorithms. Our +MetaVFI (Meta-SGD) output handles
+    the regions with large motion better than the Baseline or Re-trained models, thereby
+    substantially reducing the ghost artifacts and blurs to generate sharper boundaries
+    and restore missing objects.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Myungsub Choi
+  Name of the last author: Kyoung Mu Lee
+  Number of Figures: 7
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Test-Time Adaptation for Video Frame Interpolation via Meta-Learning
+  Publication Date: 2021-11-23 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Results on VimeoSeptuplet [7] Dataset for
+    Two Representative Frame Interpolation Models Trained by the Proposed Algorithm
+    With Different Meta-Learning Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Results for Meta-Training for Recent Frame
+    Interpolation Algorithms
+  Table 3 caption: TABLE 3 Effects on Varying the the Number of Inner-Loop Updates
+  Table 4 caption: TABLE 4 Effects on Varying the Learning Rates for the Inner-Loop
+    Updates
+  Table 5 caption: TABLE 5 Effects on Varying the Batch Configuration for Inner-Loop
+    Adaptation
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3129819
+- Affiliation of the first author: artificial intelligence and machine learning, sas
+    institute inc., cary, nc, usa
+  Affiliation of the last author: artificial intelligence and machine learning, sas
+    institute inc., cary, nc, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_1.jpg
+  Figure 1 caption: A block diagram of the proposed automated distributed active learning
+    (AutoDAL) system with two worker machines.
+  Figure 10 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_10.jpg
+  Figure 10 caption: The performance comparison of automatic selection of active learning
+    based model using F1AUC vs the number of normal transactions per fraud transaction.
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_2.jpg
+  Figure 2 caption: Comparison of the accuracy using USDM [27], AER [28], Auto-WEKA
+    [1], auto-sklearn [29], ASSL+US [19], DAL and the proposed AutoDAL-CME algorithms
+    for five benchmark datasets with different percentages of labeled data varying
+    from 0.1% to 20%.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_3.jpg
+  Figure 3 caption: Comparison of the accuracy using USDM, AER, Auto-WEKA, auto-sklearn,
+    ASSL+US, DAL and the proposed AutoDAL-CME and AutoDAL-SOAR algorithms for five
+    benchmark datasets when the percentage of labeled data is 1%.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_4.jpg
+  Figure 4 caption: The comparison of misclassification error versus the number of
+    iterations for the proposed AutoDAL-CME and AutoDAL-SOAR algorithms, Auto-WEKA
+    and auto-sklearn for benchmark datasets, where the horizontal axis represents
+    the number of iterations and the vertical axis represents the misclassification
+    error (%).
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_5.jpg
+  Figure 5 caption: The performance comparison with MCLR[20] for the average precision
+    and recall performance for five UCI datasets on evaluation of distributed active
+    learning performance under the same 20 computing node.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_6.jpg
+  Figure 6 caption: The comparison of precision and recall curves for ECG signal classification
+    on different classes including class S, V, F and Q ((a)-(d)), where AutoDAL-SOAR
+    is compared to USDM, AER, Auto-WEKA, auto-sklearn and ASSL+US. For each method,
+    the area under the curve (AUC) is reported as a measure for the imbalanced dataset.
+    (e) evaluates the total average accuracy for different active learning methods
+    with 95 percent confidence intervals and the supervised learning methods are implemented
+    with half of data for training and the rest half for cross-validation. (f) demonstrates
+    the average accuracy versus number of machines for the proposed AutoDAL-SOAR.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_7.jpg
+  Figure 7 caption: 'The comparison of precision and recall curves for ECG signal
+    classification on using five different loss functions under automatic hyperparameter
+    tuning where for all the loss functions including the proposed two novel loss
+    functions: CME and SOAR and three comparative loss functions: Expected error reduction
+    loss, variance reduction loss and information density loss. The performance is
+    reported by the averaging results for all the classes.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_8.jpg
+  Figure 8 caption: The performance comparison with AOW-ELM [21] and MB-CB [22] for
+    F1 score using area under the curve (F1AUC) vs the number of positive samples
+    per negative samples for ECG dataset on evaluation on the performance of imbalanced
+    dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2021\A_Unified_Framework_for_Automatic_Distributed_Active_Learning\figure_9.jpg
+  Figure 9 caption: The performance comparison with autoencoder-based approach[33]
+    for fraud detection using the area under learning curve (ALC) with 95% confidence
+    intervals where the horizontal axis represents the label percent and the vertical
+    axis presents the area under the curve (AUC).
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xu Chen
+  Name of the last author: Brett Wujek
+  Number of Figures: 10
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: A Unified Framework for Automatic Distributed Active Learning
+  Publication Date: 2021-11-23 00:00:00
+  Table 1 caption: TABLE 1 Ablation Study Results in Terms of the Average Precision
+    and Recall Metric Using Area Under the Curve (%) on UCI Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of CPU Running Time (Seconds) for Different
+    Active Learning Algorithms Implemented With Python
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3129793
+- Affiliation of the first author: department of electronic engineering, hanyang university,
+    seoul, korea
+  Affiliation of the last author: department of electrical engineering, university
+    of southern california, los angeles, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\CommunicationEfficient_Randomized_Algorithm_for_MultiKernel_Online_Federated_Lea\figure_1.jpg
+  Figure 1 caption: Description of the proposed pM-KOFL.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\CommunicationEfficient_Randomized_Algorithm_for_MultiKernel_Online_Federated_Lea\figure_2.jpg
+  Figure 2 caption: "Comparisons of the proposed eM-KOFL and pM-KOFL in terms of a\
+    \ chosen kernel index. The y -axis measures P( p t = p \xAF t ) empirically using\
+    \ Twitter data."
+  Figure 3 Link: articels_figures_by_rev_year\2021\CommunicationEfficient_Randomized_Algorithm_for_MultiKernel_Online_Federated_Lea\figure_3.jpg
+  Figure 3 caption: Comparisons of MSE performances of various algorithms on online
+    regressions tasks.
+  Figure 4 Link: articels_figures_by_rev_year\2021\CommunicationEfficient_Randomized_Algorithm_for_MultiKernel_Online_Federated_Lea\figure_4.jpg
+  Figure 4 caption: Comparisons of MSE performances of various algorithms on time-series
+    prediction tasks.
+  Figure 5 Link: articels_figures_by_rev_year\2021\CommunicationEfficient_Randomized_Algorithm_for_MultiKernel_Online_Federated_Lea\figure_5.jpg
+  Figure 5 caption: Impact of partial (node) participation and non-IID data on the
+    MSE performance of the proposed pM-KOFL when K=100 .
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.54
+  Name of the first author: Songnam Hong
+  Name of the last author: Jeongmin Chae
+  Number of Figures: 5
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: Communication-Efficient Randomized Algorithm for Multi-Kernel Online
+    Federated Learning
+  Publication Date: 2021-11-23 00:00:00
+  Table 1 caption: 'TABLE 1 Comparisons of Communication Overhead for Various KOFL
+    Methods ( M M: the Size of Random Features in (4) and P P: the Number of Kernels)'
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Summary of Real Datasets for Experiments
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3129809
+- Affiliation of the first author: google research, amsterdam, netherlands
+  Affiliation of the last author: google research, zurich, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2021\Factors_of_Influence_for_Transfer_Learning_Across_Diverse_Appearance_Domains_and\figure_1.jpg
+  Figure 1 caption: 'We explore transfer learning across a wide variety of image domain
+    and task types. We show here example images for the 20 datasets we consider, highlighting
+    their visual diversity. We grouped them into manually defined image domains: consumer
+    in orange, driving in green, synthetic in red, aerial in purple, underwater in
+    blue, close-ups in yellow, and indoor in magenta.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Factors_of_Influence_for_Transfer_Learning_Across_Diverse_Appearance_Domains_and\figure_2.jpg
+  Figure 2 caption: "Schematic illustrations of the backbone (a) and task type specific\
+    \ network architectures (b \u2013 f). Red and purple blocks are trainable (backbone\
+    \ and task type specific networks respectively), while blue blocks have no trainable\
+    \ parameters."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Factors_of_Influence_for_Transfer_Learning_Across_Diverse_Appearance_Domains_and\figure_3.jpg
+  Figure 3 caption: Illustration of the apperance distribution of the datasets, according
+    to different feature encoding networks, using t-SNE. Fig. 3a visualizes the semantic
+    segmentation datasets using features extracted from the multi-source network.
+    Figs. 3b and 3c visualizes the COCO and SUN RGB-D datasets using networks trained
+    on different task types (ILSVRC12 indicates classification).
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Thomas Mensink
+  Name of the last author: Vittorio Ferrari
+  Number of Figures: 3
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: Factors of Influence for Transfer Learning Across Diverse Appearance
+    Domains and Task Types
+  Publication Date: 2021-11-23 00:00:00
+  Table 1 caption: TABLE 1 Overview of the 20 Datasets Used in This Paper
+  Table 10 caption: "TABLE 10 Kendall- \u03C4 \u03C4 Correlation Between Transfer\
+    \ Gains and Dataset Distance for Semantic Segmentation in the Small Source Small\
+    \ Target Setting (Section 5.4)"
+  Table 2 caption: TABLE 2 Number of Parameters in the Backbone and the Respective
+    Task Heads
+  Table 3 caption: TABLE 3 Comparison of Our Task Type Specific Networks to Recent
+    Networks on Standard Benchmarks
+  Table 4 caption: TABLE 4 Relative Improvement Gains for the Small Target Training
+    Setting
+  Table 5 caption: TABLE 5 Results for Transfer Learning in the Full Target Training
+    Setting
+  Table 6 caption: TABLE 6 Results for Transfer Learning in the Small Source and Small
+    Target Setting
+  Table 7 caption: TABLE 7 Percentage of Experiments for Which we Measured PositiveNegative
+    Transfer Effects of a Certain Magnitude
+  Table 8 caption: TABLE 8 Transfer Effects Induced by the Best Available Source for
+    Each Target Task
+  Table 9 caption: TABLE 9 Domain Distance Between Datasets (Eq. (1), Asymmetric)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3129870
+- Affiliation of the first author: naval surface warfare center panama city division,
+    panama city, fl, usa
+  Affiliation of the last author: department of statistics, florida state university,
+    tallahassee, fl, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_1.jpg
+  Figure 1 caption: Illustration of different potential solutions for matching curves
+    with different shapes and flexible right boundaries.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_10.jpg
+  Figure 10 caption: Clustering results on the COVID-19 data set for the elastic metric
+    with fixed endpoints, method (b). The figure description is the same as that of
+    Fig. 9.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_2.jpg
+  Figure 2 caption: Phase-amplitude separation of uncensored functional data using
+    SRVF representation.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_3.jpg
+  Figure 3 caption: "Alignment of two functions using elastic partial matching. Each\
+    \ row shows an example with the same two functions except that the labels f 1\
+    \ and f 2 have been reversed in the second row. The first column shows the original\
+    \ functions, the second column shows the aligned functions, and the third column\
+    \ shows the optimal diffeomorphism g \u2208G used in the alignment. The red circle\
+    \ on each diffeomorphism represents its pivot point, which in this case is the\
+    \ minimum censoring point b=min c 1 , c 2 ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_4.jpg
+  Figure 4 caption: Simulated data set with three classes. The left-most panel shows
+    all functions plotted in the same window and colored according to class label.
+    The remaining three panels plot each of the three classes separately.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_5.jpg
+  Figure 5 caption: "United States and European COVID-19 normalized infection rate\
+    \ curves truncated at three different right boundaries \u2013 July 31, September\
+    \ 30, and November 30 of the year 2020. For each panel, the time axis indicates\
+    \ the number of days since the first recorded case. In the first and second columns,\
+    \ the US and European data is plotted separately for ease of visualization, and\
+    \ in the third column they are plotted together."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_6.jpg
+  Figure 6 caption: Examples of pairwise elastic function registrations. The first
+    row shows three pairwise alignment examples for the simulated dataset. In each
+    panel, the blue and red curves are the original censored functions f 1 and f 2
+    , the yellow curve is the aligned version of f 2 using standard elastic registration
+    with fixed and matched endpoints, and the purple curve is the aligned version
+    of f 2 using our novel elastic partial matching methodology with floating right
+    endpoint. The second row provides the associated optimal diffeomorphisms that
+    achieve the alignments, plotted in the same color scheme and time axis scale.
+    The third and fourth rows are the same as the first and second but instead using
+    examples from the COVID-19 data set. Here, we restrict example pairs to be from
+    the set of US states and European countries truncated at July 31.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_7.jpg
+  Figure 7 caption: Four numerical experiments to test our elastic partial matching
+    algorithm performance. The results of Experiments (1) through (4) are shown from
+    left to right.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_8.jpg
+  Figure 8 caption: "Simulated data set classes resulting from the implementation\
+    \ of the Bayesian clustering algorithm. The top row shows the results for method\
+    \ (a), the L 2 metric with fixed and identical endpoints; the middle row shows\
+    \ the results for method (b), the standard elastic metric with fixed and identical\
+    \ endpoints; and the bottom row shows results for method (c), our novel elastic\
+    \ partial matching. The first two columns show the pairwise similarity matrices\
+    \ and the corresponding block diagonal class inclusion matrices, colorized according\
+    \ to class label. The remaining panels are the individual clusters plotted separately,\
+    \ with each y -axis scaled so that the maximum value is equal to that of the maximum\
+    \ y -value of the associated cluster. For methods (b) and (c), plots of individual\
+    \ classes show function members that have been mutually aligned within classes.\
+    \ The number in the bottom of each panel here represents the average cross-sectional\
+    \ variance for that cluster ( \xD7 10 \u22124 )."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Shape_Analysis_of_Functional_Data_With_Elastic_Partial_Matching\figure_9.jpg
+  Figure 9 caption: "Clustering results on the COVID-19 data set for the L 2 metric,\
+    \ method (a). Rows 1 and 4 correspond to the July 31 dataset, rows 2 and 5 correspond\
+    \ to the September 30 dataset, and rows 3 and 6 to the November 30 dataset. The\
+    \ first three rows show a US state & European country map colorized according\
+    \ to class label, the pairwise similarity matrix, and the pairwise class inclusion\
+    \ matrix. The next three rows show the corresponding clusters and their cross-sectional\
+    \ mean curves in black. The average cross-sectional variance ( \xD7 10 \u2212\
+    6 ) is shown in the upper left corner of each cluster panel."
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Darshan Bryner
+  Name of the last author: Anuj Srivastava
+  Number of Figures: 12
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: Shape Analysis of Functional Data With Elastic Partial Matching
+  Publication Date: 2021-11-24 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3130535
+- Affiliation of the first author: peng cheng laboratory, shenzhen, guangdong, china
+  Affiliation of the last author: state key laboratory of vr system and technology,
+    scse, beihang university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_1.jpg
+  Figure 1 caption: A video shot at night is composed of a sequence of short-exposure
+    images. Although existing optical flow methods could work on long-exposure bright
+    images (showed in the 2nd column), they cannot work on short-exposure videos.
+    Even if we scale the brightness by 25 times or we apply the DnCNN [5] denoising
+    method afterward (showed in the 3rd and 4th column), it still leads to suboptimal
+    results. However, our method works well with the short-exposure images with simple
+    brightness scaling (showed in the 5th column).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_10.jpg
+  Figure 10 caption: Experiment of choosing different external amplification ratio.
+    The second column Scale to 0.4 means that we scale the mean brightness intensity
+    of each of the third column original images to a mean value of 0.4. And the fourth
+    column Scale (1125s) to 0.05 sim 0.95 means that we scale the mean brightness
+    intensity of the one image whose original exposure time is 1125s to different
+    brightness, from a mean value of 0.05 to 0.95. The optical flow results are produced
+    by PWC-Net [19] mix-trained on our synthetic and real datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_2.jpg
+  Figure 2 caption: A demonstration of how our Various Brightness Optical Flow (VBOF)
+    dataset is created. We fix the cameras position, aperture, and ISO, and change
+    the exposure time to collect various exposure image pairs of the same movement.
+    The optical flow of the well-exposed image pair is shared with underexposed image
+    pairs.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_3.jpg
+  Figure 3 caption: Conditional GAN pix2pix [30] is applied for the sRGB-to-raw synthesis.
+    After training on our VBOF dataset which contains sRGB-raw pairs, we used the
+    trained model to process FlyingChairs [6] dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_4.jpg
+  Figure 4 caption: With the noise parameter analysis of the Canon, Sony, and Fujifilm
+    images of different exposure levels, we can synthesize low-light images of different
+    exposures. The fourth column analysis shows the difference between a regular denoising
+    dataset - Darmstadt Noise Dataset (DND) [31] and the See in the Dark (SID) [3]
+    dataset which is collected in actual dark environments and includes extreme low-light
+    images like our VBOF dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_5.jpg
+  Figure 5 caption: 'The overall pipeline. The training dataset consists of three
+    parts: synthetic FCGN, collected VBOF (indoor static), and published SMID [14]
+    (outdoor dynamic). Note that we show images of various brightness for clear demonstration
+    but we scale their intensity to a uniform value as training data. To create optical
+    flow labels for the non-synthetic data, we create two teacher-student network
+    pairs. With the progressively created pseudo labels, we conduct a mix-up training
+    with randomly sampled image pairs from the three datasets. Finally, we iteratively
+    update the optical flow pseudo labels created by the second student network and
+    keep the most accurate optical flow labels for release.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_6.jpg
+  Figure 6 caption: This figure shows the generalization ability of our synthetic
+    FCGN. We train RAFT [22] on FlyingChairs [6] and our FCGN. The first test sample
+    is from the Nikon part of the VBOF and the second one is from SMID [14] dataset
+    collected by a Sony camera.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_7.jpg
+  Figure 7 caption: This figure shows samples of the iteratively updated optical flow
+    labels. The left 2 samples are from our VBOF dataset and the right 2 samples are
+    from the SMID [14] dataset which both need created pseudo labels for training.
+    Even on well-exposed images collected in low-light environments, our method is
+    also effective especially in the low-light parts of the image.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_8.jpg
+  Figure 8 caption: We show that image denoising is not effective for low-light optical
+    flow estimation. For every row, we put the name of the input image and optical
+    flow model on the left. We use PWC-Net [19] and RAFT [22] trained on FlyingChairs
+    [6], our collected VBOF, synthetic FCGN, and our mix-up dataset containing FCGN
+    and VBOF (Sony, Canon, Fujifilm part), and tested on VBOF (Nikon part). The test
+    set of VBOF is additionally denoised by a traditional method Non-local Means [2]
+    and a deep-learning method DnCNN [5].
+  Figure 9 Link: articels_figures_by_rev_year\2021\Optical_Flow_in_the_Dark\figure_9.jpg
+  Figure 9 caption: The final generalization test in practical night scenes with new
+    cameras. The experiments are conducted on RAFT [22] trained on the FCplus (sintel),
+    which is fine-tuned gradually from FlyingChairs [6] to Sintel [7], our synthetic
+    FCGN, and our mixed-up dataset of FCGN, VBOF, and SMID [14], and tested on data
+    we additionally collected by new cameras in practical night scenes.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Mingfang Zhang
+  Name of the last author: Feng Lu
+  Number of Figures: 10
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Optical Flow in the Dark
+  Publication Date: 2021-11-24 00:00:00
+  Table 1 caption: TABLE 1 Details of Our Various Brightness Optical Flow (VBOF) Dataset.
+  Table 10 caption: TABLE 10 Test on Popular General-Purpose Optical Flow Datasets
+  Table 2 caption: TABLE 2 Noise Intensity Details of Our Synthetic FlyingChairs-GAN&Noise
+    (FCDN) Dataset and Various Brightness Optical Flow (VBOF) Dataset
+  Table 3 caption: TABLE 3 Comparison of Low-Light Effect Synthesis Methods
+  Table 4 caption: TABLE 4 Comparison of the Noise Intensity Choice
+  Table 5 caption: TABLE 5 Benefits of Introducing GAN Into Our Synthesis
+  Table 6 caption: TABLE 6 Benefits of Iterative Training for Optical Flow Label Update
+  Table 7 caption: TABLE 7 Comparison of Different Training Policy
+  Table 8 caption: TABLE 8 Evaluation of Our Methods Generalization Ability on Different
+    Optical Flow CNN Models, and How Image Denoising Affect Their Low-Light Performance
+  Table 9 caption: TABLE 9 Experiment of Choosing Different External Amplification
+    Ratio
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3130302
+- Affiliation of the first author: shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: shanghai jiao tong university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_1.jpg
+  Figure 1 caption: PointNet++ part segmentation results on rotated shapes. When trained
+    on objects with canonical orientations and evaluated on rotated ones, PointNet++
+    is unaware of their orientations and fails to segment their parts out.
+  Figure 10 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_10.jpg
+  Figure 10 caption: 'Segmentation robustness visualization for PRIN. From left to
+    right: we sample a subset of 2048, 1024, 512, 256 points from test point clouds
+    respectively. We observe that our method is robust to missing points and gives
+    consistent results.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_2.jpg
+  Figure 2 caption: PRIN Architecture. Our network takes sparse points as input, and
+    then uses Density-Aware Adaptive Sampling to transform the signals into spherical
+    voxel grids. The spherical voxel signals are then passed through several Spherical
+    Voxel Convolution layers, ending with a feature at each spherical voxel grid.
+    Any point feature can be extracted by point re-sampling, which is used to do point-wise
+    part segmentation. All these voxel features can also be max-pooled to get a global
+    feature, which is suitable for classification.
+  Figure 3 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_3.jpg
+  Figure 3 caption: Spherical distortion. An input point cloud is first sampled into
+    discretized angle bins, though such equal-sized angle bins are distorted in euclidean
+    space. Therefore, we propose Density Aware Adaptive Sampling (DAAS).
+  Figure 4 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_4.jpg
+  Figure 4 caption: "Our spherical voxel convolution that achieves point-wise rotation\
+    \ invariance, a.k.a. rotation equivariant. Applying a rotation to the input signal\
+    \ and do Spherical Voxel Convolution is equivalent to applying the same rotation\
+    \ to the original convolution results. The absolute equivariant error is almost\
+    \ zero, with maximum 4.77\xD7 10 \u22127 due to the floating point precision.\
+    \ Also notice that \u03C8 is constant on the third dimension \u03B3 in order to\
+    \ fulfill the constraint (31). We slightly abuse the notation \u03C8 for \u03C8\
+    \ T for a better illustration."
+  Figure 5 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_5.jpg
+  Figure 5 caption: SPRIN Architecture. SPRIN directly operates on sparse point clouds
+    with several sparse spherical correlation layers. Farthest point sampling and
+    kNN grouping are leveraged to aggregate information from low level to high level.
+    Max and average pooling layers follows to extract global features, and finally
+    a classification score is given by fully-connected layers.
+  Figure 6 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_6.jpg
+  Figure 6 caption: Visualization of results. We compare the results of various methods
+    on rotated point clouds, which are trained on the non-rotated dataset. Both PRIN
+    and SPRIN generalize well to unseen orientations.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_7.jpg
+  Figure 7 caption: 3D point matching results for PRIN. Point matching results between
+    the query object features (left) and the retrieved ones (right) under different
+    orientations.
+  Figure 8 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_8.jpg
+  Figure 8 caption: 'Chair alignment with its back on the top. Left: A misalignment
+    induces large KL divergence. Right: Required labels fulfilled with small KL divergence.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\PRINSPRIN_On_Extracting_PointWise_Rotation_Invariant_Features\figure_9.jpg
+  Figure 9 caption: Feature visualization of rotated point clouds. The input point
+    cloud is rotated twice and sampled with DAAS or uniform sampling for further computation.
+    Colors indicate correspondence in the feature space. Our DAAS sampled signal achieves
+    much better correspondence than uniform sampling.
+  First author gender probability: 0.77
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Yang You
+  Name of the last author: Cewu Lu
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 8
+  Paper title: 'PRINSPRIN: On Extracting Point-Wise Rotation Invariant Features'
+  Publication Date: 2021-11-25 00:00:00
+  Table 1 caption: TABLE 1 Shape Part Segmentation Results on ShapeNet Part Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Classification Results on ModelNet40 Dataset
+  Table 3 caption: TABLE 3 Classification Results on ScanObjectNN Dataset
+  Table 4 caption: TABLE 4 3D Descriptor Matching Results for Various Methods
+  Table 5 caption: TABLE 5 Ablation Study
+  Table 6 caption: TABLE 6 Ablation Study on the Selection of Rotation Invariant Features
+  Table 7 caption: TABLE 7 Qualitative Results for Segmentation Robustness
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3130590

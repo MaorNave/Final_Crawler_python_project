@@ -1,0 +1,839 @@
+- Affiliation of the first author: cognitive computing lab, baidu research, bellevue,
+    wa, usa
+  Affiliation of the last author: department of statistics, university of california,
+    los angeles, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_1.jpg
+  Figure 1 caption: "Diagram of fast thinking and slow thinking conditional learning.\
+    \ Given a condition, the initializer initializes the solver, which refines the\
+    \ initial solution. The initializer provides the initial solution via direct mapping\
+    \ (see \u2460), i.e., ancestral sampling, which is a fast thinking process, while\
+    \ the solver refines the initial solution via Langevin sampling that optimizes\
+    \ the objective function (\u2461), which is a slow thinking process. The initializer\
+    \ learns the mapping from the solvers refinement (see \u2462), while the solver\
+    \ learns the objective function by comparing to the observed solution (see \u2463\
+    )."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_10.jpg
+  Figure 10 caption: Style transfer. The trained initializer can disentangle the style
+    and the category such that the style information can be inferred from a testing
+    image and transferred to other categories. The first column shows testing images.
+    The other columns show style transfer by the model, where the style latent variable
+    X of each row is set to the value inferred from the testing image in the first
+    column by the Langevin inference. Each column corresponds to a different category
+    label C .
+  Figure 2 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_2.jpg
+  Figure 2 caption: "Learning step. (a) Learn-mapping by mapping shift: In the initialize\
+    \ stage, the initializer generates the latent noise vector (see \u2460), and maps\
+    \ it along with the input condition to the initial solution (see \u2461). The\
+    \ solver outputs the refined solution after refining the initial solution (see\
+    \ \u2462). The learning of the initializer is to shift its mapping from the initial\
+    \ solution toward the refined solution (see \u2463). (b) Learn-objective by objective\
+    \ shift: In the solve stage, the solver finds high value region or mode in its\
+    \ objective function via an iterative algorithm (see \u2460). Those modes corresponds\
+    \ to the refined solution. The learning of the solver is to shift the high value\
+    \ region or mode of its objective function from the refined solution toward the\
+    \ observed solution (see \u2461)."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_3.jpg
+  Figure 3 caption: "Network architecture of initializer (category-to-image synthesis).\
+    \ (1) early concatenation: a decoder \u03A8 takes as input the concatenation of\
+    \ the condition vector C and the latent noise vector X\u223CN(0, I d ) , and outputs\
+    \ an image Y . (2) late concatenation: a decoder takes as input only the latent\
+    \ noise vector X\u223CN(0, I d ) , and outputs an image Y , in which the condition\
+    \ C is concatenated with the output of an intermediate layer. \u03A8 2 is the\
+    \ sub-network after concatenation, while \u03A8 1 is the sub-network before concatenation."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_4.jpg
+  Figure 4 caption: "Network architecture of solver (category-to-image synthesis).\
+    \ (1) early concatenation: an encoder \u03A6 takes as input the depth concatenation\
+    \ of the spatially replicated condition vector C and the image Y , and outputs\
+    \ a scalar. The value function f(Y,C;\u03B8) is defined as \u03A6([Y,C])\u2212\
+    \u2225Y \u2225 2 2 s 2 . (2) late concatenation: an encoder takes as input only\
+    \ the image Y , and outputs the negative energy, in which the condition C is concatenated\
+    \ with the output of an intermediate layer. \u03A6 2 is the sub-network after\
+    \ concatenation, while \u03A6 1 is the sub-network before concatenation."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_5.jpg
+  Figure 5 caption: "Generated MNIST handwritten digits. Each column is conditioned\
+    \ on one class label and each row is a different synthesized sample. The size\
+    \ of the generated images is 28\xD728 ."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_6.jpg
+  Figure 6 caption: "Generated fashion MNIST images. Each column is conditioned on\
+    \ one class label and each row is a different synthesized sample. The size of\
+    \ the generated images is 28\xD728 ."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_7.jpg
+  Figure 7 caption: Image generation by the models at different training epochs. For
+    each epoch t , 25 examples of synthesized images are displayed. The numbers in
+    parentheses are the corresponding FID scores that reflect the qualities of the
+    synthesized images. The images at the same position of image matrix of different
+    training epochs are generated from the same condition.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_8.jpg
+  Figure 8 caption: "Model analysis on fashion-MNIST dataset. (a) Influence of the\
+    \ number of latent dimension d of the fast-thinking initializer. We set l=16 and\
+    \ \u03B4=0.0008 . (b) Influence of the number l of Langevin refinement steps by\
+    \ the slow-thinking solver. We set d=64 and \u03B4=0.0008 . (c) Influence of the\
+    \ step size \u03B4 of Langevin refinement of the slow-thinking solver. We set\
+    \ d=128 and l=16 ."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Cooperative_Training_of_Fast_Thinking_Initializer_and_Slow_Thinking_Solver_for_C\figure_9.jpg
+  Figure 9 caption: "Generated Cifar-10 object images. Each row is conditioned on\
+    \ one category label. The first two columns are training images, and the remaining\
+    \ columns display generated images conditioned on their labels. The image size\
+    \ is 32\xD732 pixels. The categories are airplane, automobile, bird, cat, deer,\
+    \ dog, frog, horse, ship, and truck from top to bottom."
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.86
+  Name of the first author: Jianwen Xie
+  Name of the last author: Ying Nian Wu
+  Number of Figures: 16
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Cooperative Training of Fast Thinking Initializer and Slow Thinking
+    Solver for Conditional Learning
+  Publication Date: 2021-03-26 00:00:00
+  Table 1 caption: "TABLE 1 The Fr\xE9chet Inception Distance (FID) Scores of Different\
+    \ Models Trained on MNIST and Fashion-MNIST Datasets, the Smaller the FID, the\
+    \ Better the Performance"
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of Computational Time (in seconds) Per Epoch
+    With Different Numbers of Langevin Refinement Steps and Different Numbers of Latent
+    Dimensions for Class-Conditioned Image Generation on Fashion-MNIST Dataset
+  Table 3 caption: TABLE 3 Inception Scores of Different Models Trained on Cifar-10
+    Dataset
+  Table 4 caption: TABLE 4 Human Perceptual Tests for Image-to-Image Synthesis
+  Table 5 caption: TABLE 5 Comparison With the Baseline Methods for Image Inpainting
+    on the CMP Facade Dataset and Paris Streetview Dataset
+  Table 6 caption: TABLE 6 Comparison of Model Complexity With the Baseline Methods
+    for Image Inpainting on CMP Facade Dataset
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3069023
+- Affiliation of the first author: nanyang technological university, singapore, singapore
+  Affiliation of the last author: university of surrey, guildford, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_Generalisable_OmniScale_Representations_for_Person_ReIdentification\figure_1.jpg
+  Figure 1 caption: Example images from four person re-ID datasets showing that discriminative
+    and generalisable features are essential for re-ID. Each sub-figure contains,
+    from left to right, a query image, a true match, and a false match (distractor).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_Generalisable_OmniScale_Representations_for_Person_ReIdentification\figure_2.jpg
+  Figure 2 caption: 'A schematic of OSNet building block. R: Receptive field size.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_Generalisable_OmniScale_Representations_for_Person_ReIdentification\figure_3.jpg
+  Figure 3 caption: "(a) Standard and (b) Lite 3\xD73 convolution. DW: Depth-Wise."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_Generalisable_OmniScale_Representations_for_Person_ReIdentification\figure_4.jpg
+  Figure 4 caption: "(a) Baseline bottleneck. (b) OSNet bottleneck. AG: Aggregation\
+    \ Gate. The firstlast 1\xD71 layers used to reducerestore feature dimension."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_Generalisable_OmniScale_Representations_for_Person_ReIdentification\figure_5.jpg
+  Figure 5 caption: "Our architecture search space consists of four different omni-scale\
+    \ residual (OSR) blocks each with a learnable parameter \u03C0 . During a forward\
+    \ pass, the selected candidate is determined by sampling discrete actions (one-hot)\
+    \ from a categorical distribution parameterised by the architecture parameters.\
+    \ To make the computational graph differentiable, we relax the discrete variables\
+    \ to continuous representations using the Gumbel-Softmax [21], [22]. IN: Instance\
+    \ Normalisation [14]."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_Generalisable_OmniScale_Representations_for_Person_ReIdentification\figure_6.jpg
+  Figure 6 caption: Image clusters of similar gating vectors. The visualisation shows
+    that the proposed unified aggregation gate is capable of learning the combination
+    of homogeneous and heterogeneous scales conditioned on the input data.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_Generalisable_OmniScale_Representations_for_Person_ReIdentification\figure_7.jpg
+  Figure 7 caption: Visual attention insight. Each triplet contains, from left to
+    right, the original image, activation map of OSNet, and the single-scale baseline.
+    OSNet can detect subtle differences between visually similar persons.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Kaiyang Zhou
+  Name of the last author: Tao Xiang
+  Number of Figures: 7
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: Learning Generalisable Omni-Scale Representations for Person Re-Identification
+  Publication Date: 2021-03-26 00:00:00
+  Table 1 caption: TABLE 1 Omni-Scale Network Architecture for Person Re-ID
+  Table 10 caption: TABLE 10 Cross-Domain Results on the More Challenging MSMT17 Dataset
+  Table 2 caption: TABLE 2 Statistics of Person Re-ID Datasets
+  Table 3 caption: TABLE 3 Results on Big Re-ID Datasets
+  Table 4 caption: TABLE 4 Comparison With Deep Methods on Small Re-ID Datasets at
+    Rank-1
+  Table 5 caption: TABLE 5 Ablation Study on Omni-Scale Residual Learning
+  Table 6 caption: "TABLE 6 Results of Varying Width Multiplier \u03B2 \u03B2 and\
+    \ Resolution Multiplier \u03B3 \u03B3 for OSNet"
+  Table 7 caption: TABLE 7 Ablation Study for Instance Normalisation and Architecture
+    Search
+  Table 8 caption: TABLE 8 Performance of OSNet-AIN in the Same-Domain Re-ID Setting
+  Table 9 caption: TABLE 9 Comparison With Current State-of-the-Art Unsupervised Domain
+    Adaptation Methods in the Cross-Domain Re-ID Setting
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3069237
+- Affiliation of the first author: media analytics and computing lab, department of
+    artificial intelligence, school of informatics, xiamen university, xiamen, china
+  Affiliation of the last author: media analytics and computing lab, department of
+    artificial intelligence, school of informatics, xiamen university, xiamen, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Evolving_Fully_Automated_Machine_Learning_via_LifeLong_Knowledge_Anchors\figure_1.jpg
+  Figure 1 caption: The search space on a machine learning pipeline consisting of
+    different components for different modalities in the proposed Fully-AutoML paradigm.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Evolving_Fully_Automated_Machine_Learning_via_LifeLong_Knowledge_Anchors\figure_2.jpg
+  Figure 2 caption: The proposed evolutionary algorithm with life-long knowledge anchor.
+    We define the optimal solutions searched for previous datasets as knowledge anchors,
+    and record the corresponding meta information (such as labels, length, and size
+    of the datasets). Given a new dataset, we first calculate the distance between
+    the new dataset and the recorded datasets and sample the knowledge anchors according
+    to the distances as a part of the initial population in the evolutionary algorithm.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Evolving_Fully_Automated_Machine_Learning_via_LifeLong_Knowledge_Anchors\figure_3.jpg
+  Figure 3 caption: The model selection search space. The selection process is also
+    divided into two steps, first selecting the model to be used, and then choosing
+    the corresponding hyper-parameters. Note that, during this process, the selection
+    of each model is independent, which means that we may choose multiple models as
+    an ensemble.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Evolving_Fully_Automated_Machine_Learning_via_LifeLong_Knowledge_Anchors\figure_4.jpg
+  Figure 4 caption: Mean and standard deviation of the performance in the different
+    algorithms (left) and search spaces (right) on toutiaonewsdata. For the left figure,
+    all the search algorithms are compared by employing the proposed joint search
+    space. For the right figure, all the search spaces are compared under the proposed
+    algorithm. The abbreviations have the same meaning as in Table 1. Similarly, and
+    - denote two components are searched integrally and hierarchically, respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Evolving_Fully_Automated_Machine_Learning_via_LifeLong_Knowledge_Anchors\figure_5.jpg
+  Figure 5 caption: "The ablation study of the proposed method with random search,\
+    \ evolution algorithm (EA) and Bayesian optimization (BO) on toutiaonewsdata.\
+    \ \u201Cknowledge anchor\u201D denote that we directly employ the sampled knowledge\
+    \ anchors as the final pipeline to obtain the ALC score."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Evolving_Fully_Automated_Machine_Learning_via_LifeLong_Knowledge_Anchors\figure_6.jpg
+  Figure 6 caption: ALC and search time (s) on ChnSentiCorp (left) and toutiaonewsdata
+    (right) with different ratio of knowledge anchor, which is found on O4.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Evolving_Fully_Automated_Machine_Learning_via_LifeLong_Knowledge_Anchors\figure_7.jpg
+  Figure 7 caption: ALC and search time (s) with different knowledge anchors on O4
+    (left) and O5 (right). The similarity between O4 and ChnSentiCorp is 0.861 while
+    the similarity between O5 and ChnSentiCorp is 0.775.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Evolving_Fully_Automated_Machine_Learning_via_LifeLong_Knowledge_Anchors\figure_8.jpg
+  Figure 8 caption: Mean and standard deviation ALC score accorss ten datasets in
+    AutoDL challenge [59].
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Xiawu Zheng
+  Name of the last author: Rongrong Ji
+  Number of Figures: 8
+  Number of Tables: 12
+  Number of authors: 12
+  Paper title: Evolving Fully Automated Machine Learning via Life-Long Knowledge Anchors
+  Publication Date: 2021-03-29 00:00:00
+  Table 1 caption: TABLE 1 Comparison Between Our Framework and Other Widely-Used
+    AutoML Frameworks
+  Table 10 caption: TABLE 10 Tabular Task Results, Compared With the DNN Model Released
+    by fase.ai With a Default Hyperparams Setting
+  Table 2 caption: TABLE 2 Summary of the Operations and the Number of Hyperparameters
+    That We Consider for Each Component in the Search Space
+  Table 3 caption: TABLE 3 The Meta-Models and Meta-Datasets for Different Datasets
+  Table 4 caption: TABLE 4 Datasets Used in This Paper With Specific Modality, Size,
+    Train Number, Test Number and Label Length, Details of Which are Also Available
+    in [59]
+  Table 5 caption: TABLE 5 The Searched Model Backbones, Pretrained Datasets for Multi-Modality
+    Data
+  Table 6 caption: TABLE 6 Image Task Results, Compared With the Previous AutoCV2
+    [59] First Solution
+  Table 7 caption: TABLE 7 Video Task Results, Compared With the Previous AutoCV2
+    [59] First Solution
+  Table 8 caption: TABLE 8 Speech Task Results, Compared With the AutoSpeech Winners
+    Solutions on Data01 to Data05
+  Table 9 caption: TABLE 9 Text Task Results, Compared With AutoNLP First Solution
+    (DeepBlue)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3069250
+- Affiliation of the first author: school of electronic engineering, queen mary university
+    of london, london, u.k.
+  Affiliation of the last author: department of engineering, department of development
+    and regeneration, ku leuven, leuven, belgium
+  Figure 1 Link: articels_figures_by_rev_year\2021\XSleepNet_MultiView_Sequential_Model_for_Automatic_Sleep_Staging\figure_1.jpg
+  Figure 1 caption: "Illustration of multi-view learning with simple concatenation\
+    \ and XSleepNet. Joint multi-view learning with simple concatenation (a) and its\
+    \ resulting validation loss in comparison with that of single-view training (b).\
+    \ Joint multi-view learning with XSleepNet (c) and its resulting validation loss\
+    \ in comparison with that of single-view training. In (a) and (c), the dashed\
+    \ lines represent the gradient flows. \u0398 , o , and L denote a network stream\
+    \ corresponding to one input view, a learned feature vector, and a loss value,\
+    \ respectively. The superscripts, i.e., (1) and (2), indicate the input view specifically.\
+    \ In addition, in (c), w denotes a weight and the superscript () indicates the\
+    \ joint network branch."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\XSleepNet_MultiView_Sequential_Model_for_Automatic_Sleep_Staging\figure_2.jpg
+  Figure 2 caption: The architecture of XSleepNet. The network streams in orange and
+    blue correspond to the raw and time-frequency image inputs, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2021\XSleepNet_MultiView_Sequential_Model_for_Automatic_Sleep_Staging\figure_3.jpg
+  Figure 3 caption: "Theoretical illustration of the interrelation between L (k) train\
+    \ (n) , L (k) \u22C4 (n) , L (k) train ( n 0 ) and L (k) \u22C4 ( n 0 ) in XSleepNet1\
+    \ (a); and the interrelation between \u03B8 (k) train (n) , \u03B8 (k) \u22C4\
+    \ (n) , \u03B8 (k) train ( n 0 ) and \u03B8 (k) \u22C4 ( n 0 ) in XSleepNet2 (b)."
+  Figure 4 Link: articels_figures_by_rev_year\2021\XSleepNet_MultiView_Sequential_Model_for_Automatic_Sleep_Staging\figure_4.jpg
+  Figure 4 caption: An overview on the overall performance obtained by XSleepNet1,
+    XSleepNet2, and the developed baselines.
+  Figure 5 Link: articels_figures_by_rev_year\2021\XSleepNet_MultiView_Sequential_Model_for_Automatic_Sleep_Staging\figure_5.jpg
+  Figure 5 caption: Progression of the validation losses and the adaptive loss weights
+    during the training course of one MASS cross-validation fold. (a) The validation
+    losses of the FCNN+RNN, ARNN+RNN, and Naive Fusion baselines; (b) The validation
+    losses of the three classification branches of XSleepNet1 and (d) their respective
+    adaptive loss weights; (c) The validation losses of the three classification branches
+    of XSleepNet2 and (e) their respective adaptive loss weights. It should be emphasized
+    that the adaptive loss weights in (c) were denoised with a 10-point moving average
+    filter before plotting; the original ones are expectedly much noisier.
+  Figure 6 Link: articels_figures_by_rev_year\2021\XSleepNet_MultiView_Sequential_Model_for_Automatic_Sleep_Staging\figure_6.jpg
+  Figure 6 caption: The validation losses during the training course of the SHHS database.
+    (a) The validation losses of the FCNN+RNN, ARNN+RNN, and Naive Fusion baselines;
+    (b) The validation losses of the three classification branches of XSleepNet1;
+    (c) The validation losses of the three classification branches of XSleepNet2.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Huy Phan
+  Name of the last author: Maarten De Vos
+  Number of Figures: 6
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: 'XSleepNet: Multi-View Sequential Model for Automatic Sleep Staging'
+  Publication Date: 2021-03-31 00:00:00
+  Table 1 caption: TABLE 1 Summary of the Employed Databases
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Comparison Between XSleepNet1, XSleepNet2,
+    the Baselines, and Previous Works on the Experimental Databases
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3070057
+- Affiliation of the first author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Affiliation of the last author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_1.jpg
+  Figure 1 caption: 3D human pose and shape estimation from real low-resolution images
+    captured from a surveillance camera (top) and a sports video (bottom). SOTA method
+    [7] that works well for high-resolution images performs poorly at low-resolution
+    ones (note the orientation of the estimated human face and the posture of the
+    arms and legs).
+  Figure 10 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_10.jpg
+  Figure 10 caption: Qualitative evaluation of the texture estimation network. HR
+    represents the corresponding high-resolution image.
+  Figure 2 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_2.jpg
+  Figure 2 caption: "Overview of the proposed RSC-Net. The resolution-aware network\
+    \ f RA is trained with a combination of the basic loss (omitted in the figure\
+    \ for simplicity), self-supervision loss and contrastive feature loss. The modules\
+    \ with the same colors are shared across different resolutions, while the matrix\
+    \ \u03B1 is resolution-dependent. x i R i=1 represents the different resolution\
+    \ versions of the same image, where R is the number of resolutions considered\
+    \ in this work. We resize the different resolution inputs with bicubic interpolation\
+    \ before feeding them into the network. Note that in real implementation, we split\
+    \ the R resolutions into P ranges to ease the training burden (see the text in\
+    \ Section 3.2). During the training phase, we jointly train the RSC-Net with all\
+    \ different resolution images. During inference, we first decide the resolution\
+    \ range of the input image and then choose the suitable row of parameters in \u03B1\
+    \ for usage in the network."
+  Figure 3 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_3.jpg
+  Figure 3 caption: Extension for handling video input. We first use the proposed
+    RSC-Net to extract features for each frame and then apply a Temporal Recurrent
+    module (TR) [6] to improve the per-frame results.
+  Figure 4 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_4.jpg
+  Figure 4 caption: "Textured 3D human reconstruction from a single low-resolution\
+    \ image. We show an overview of the reconstruction process in (a). Note that the\
+    \ RSC-Net in (a) also outputs the camera parameter \u03B4( x L ) which is omitted\
+    \ in the figure for clarity. The detailed architecture of the proposed texture\
+    \ estimation network is illustrated in (b). The main difference between the baseline\
+    \ texture estimation network [57] and our model is the global context module G\
+    \ detailed in (c). The \u201Cflatten\u201D in (c) represents the feature flattening\
+    \ layer which reshapes the feature map into a one-dimensional vector. \u201Cunflatten\u201D\
+    \ is the inverse-operation reshaping the global feature vector into feature maps.\
+    \ \u201CFC\u201D is the fully-connected layer."
+  Figure 5 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_5.jpg
+  Figure 5 caption: Intermediate results for training the texture estimation network.
+    x H is a high-resolution image from the training dataset, and x L is the corresponding
+    low-resolution version synthesized with bicubic interpolation. M and T represent
+    the predicted 3D body mesh and UV map. R is the textured output rendered with
+    Pytorch3D [58].
+  Figure 6 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_6.jpg
+  Figure 6 caption: "Visual comparisons with the state-of-the-art methods on challenging\
+    \ low-resolution input. The input image has a resolution of 32\xD732 . The results\
+    \ of high-resolution images are also included as references."
+  Figure 7 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_7.jpg
+  Figure 7 caption: Visual examples of real-world images obtained from the Internet.
+    SOTA method [7] that works well for high-resolution images performs poorly at
+    low-resolution ones.
+  Figure 8 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_8.jpg
+  Figure 8 caption: Qualitative evaluation of the proposed method on a low-resolution
+    video sequence from 3DPW [48]. Our video model (c) generates more accurate and
+    temporally smoother predictions. The result of the corresponding high-resolution
+    video (d) is also included as a reference. Note that the results of the single
+    image model (b) is not as temporally-coherent (e.g., the hand and body size).
+  Figure 9 Link: articels_figures_by_rev_year\2021\D_Human_Pose_Shape_and_Texture_From_LowResolution_Images_and_Videos\figure_9.jpg
+  Figure 9 caption: Qualitative evaluation of the proposed method on a low-resolution
+    video sequence from H36M [49]. Our video model (c) generates more accurate and
+    temporally smoother predictions. The result of the corresponding high-resolution
+    video (d) is also included as a reference. Note that the results of the single
+    image model (b) is not as temporally-coherent (e.g., the movement of the hand).
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xiangyu Xu
+  Name of the last author: Fernando De la Torre
+  Number of Figures: 14
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: 3D Human Pose, Shape and Texture From Low-Resolution Images and Videos
+  Publication Date: 2021-03-31 00:00:00
+  Table 1 caption: TABLE 1 Results on the 3DPW [48], MPI-INF-3DHP [50], and H36M [49]
+    Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Results on the LSP Dataset [61]
+  Table 3 caption: TABLE 3 Quantitative Evaluation on Low-Resolution Videos
+  Table 4 caption: TABLE 4 Quantitative Evaluation of the Proposed Texture Estimation
+    Network Against the Baseline Model [57] on the Test Set of Market-1501 [67]
+  Table 5 caption: TABLE 5 Comparison of the MPJPE on High-Resolution Images
+  Table 6 caption: TABLE 6 Ablation Study of the Proposed Method
+  Table 7 caption: TABLE 7 Analysis of the Alternative Training Strategies
+  Table 8 caption: TABLE 8 Effectiveness of the Proposed Texture Estimation Network
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3070002
+- Affiliation of the first author: department of computer science and technology,
+    tsinghua university, beijing, china
+  Affiliation of the last author: department of computer science and technology, tsinghua
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Survey_on_Curriculum_Learning\figure_1.jpg
+  Figure 1 caption: Illustration of the curriculum learning (CL) concept (The fruit
+    images are from [106]). CL is a training strategy for machine learning that trains
+    from easier data to harder data, imitating human curricula. Specifically, CL initially
+    trains the model on a small and easy subset. With the progress of the training,
+    CL gradually introduces more harder examples into the subset, and finally trains
+    the model on the whole training dataset. This CL strategy can improve both model
+    performance and convergence rate, compared with direct training on the whole training
+    dataset. Q t here stands for a reweighting of the training data distribution P
+    at the t th training epoch (See details in Section 2).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Survey_on_Curriculum_Learning\figure_2.jpg
+  Figure 2 caption: A categorization of CL methods and the corresponding illustrations.
+    We divide the existing methods into predefined CL and automatic CL, the latter
+    of which including Self-paced Learning, Transfer Teacher, RL Teacher and Other
+    Automatic CL. As shown in the illustrations, most CL methods comply with the general
+    framework of Difficulty Measurer + Training Scheduler in Section 4.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Survey_on_Curriculum_Learning\figure_3.jpg
+  Figure 3 caption: Illustration of the continuation method from [5], which is the
+    essence of the CL [6]. It starts from optimizing a heavily smoothed version of
+    the objective, and gradually moves to the target objective. Tracking the local
+    minima throughout the training guides the model towards better parameter space
+    and makes it more generalizable.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Survey_on_Curriculum_Learning\figure_4.jpg
+  Figure 4 caption: Illustration of the CL from the data distribution perspective
+    [27]. The left part demonstrates the data distribution shifts from the easy subset
+    (the solid curve, which is assumed to approximate the testing distribution P target
+    (x) well) to the full training set P train (x) (the red dashed curve). The right
+    part shows the corresponding weighting scheme to enable this distribution shift.
+    The center peak of curves refers to the high-confidence clean data, while the
+    tails refer to the noisy data in the distributions. As shown in the left part,
+    P target (x) is cleaner than P train (x) .
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Survey_on_Curriculum_Learning\figure_5.jpg
+  Figure 5 caption: Visualization of common continuous schedulers. The horizontal
+    axis t stands for the training epoch number, and the vertical axis lambda is the
+    corresponding proportion of the easiest training data subset. Baseline is without
+    curriculum and involves the whole training set from the beginning. The Baby Step
+    scheduler is also visualized for comparison.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_Survey_on_Curriculum_Learning\figure_6.jpg
+  Figure 6 caption: Visualization of functions of best example weight vi w.r.t. losses
+    li (the l - v functions) of the SP-regularizers in Table 5. The age parameter
+    lambda (the threshold for non-zero weights) for many of the functions are set
+    as 0.8. The Huber, Cauchy, L1-L2, and Welsch belong to the implicit SP-regularizers
+    in [16], which are not presented in the table.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_Survey_on_Curriculum_Learning\figure_7.jpg
+  Figure 7 caption: Illustration of different machine learning paradigms from the
+    perspective of data distribution. Different paradigms aim to solve different distribution
+    discrepancies among training and testing data, while we see similar mechanisms
+    among some of them, which help us understand their connections and may potentially
+    inspire new methodologies. For curriculum learning, we illustrate Definition 2,
+    and the curriculum can be both predefined and automatically learned. Note that
+    Tj stands for different tasks, while T(i) is the modified distribution at the
+    i th step in training.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.92
+  Name of the first author: Xin Wang
+  Name of the last author: Wenwu Zhu
+  Number of Figures: 7
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: A Survey on Curriculum Learning
+  Publication Date: 2021-03-31 00:00:00
+  Table 1 caption: TABLE 1 Suitable Application Scenes of CL
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Common Types of Predefined Difficulty Measurer
+  Table 3 caption: TABLE 3 Predefined CL Versus Automatic CL
+  Table 4 caption: "TABLE 4 Comparison of the Automatic CL Methodologies, Except \u201C\
+    Other Automatic CL\u201D"
+  Table 5 caption: "TABLE 5 Common Types of SP-Regularizers g(v;\u03BB) g(v;\u03BB\
+    ) and the Corresponding Close-Formed Solutions v \u2217 (l;\u03BB) v(l;\u03BB)"
+  Table 6 caption: TABLE 6 Representatives of Transfer Teacher. Diff. = Different
+  Table 7 caption: TABLE 7 Representatives of RL Teacher. Acc. = Accuracy, Thres.
+    = Threshold
+  Table 8 caption: "TABLE 8 Representatives of \u201COther Automatic CL\u201D Automatic\
+    \ CL Methods"
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3069908
+- Affiliation of the first author: school of computer science and engineering, southeast
+    university, nanjing, china
+  Affiliation of the last author: school of computer science and engineering, southeast
+    university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\MultiLabel_Classification_With_LabelSpecific_Feature_Generation_A_Wrapped_Approa\figure_1.jpg
+  Figure 1 caption: "Performance of Wrap, Wrap \u03BA and the degenerated version\
+    \ Wrap deg in terms of each evaluation metric."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\MultiLabel_Classification_With_LabelSpecific_Feature_Generation_A_Wrapped_Approa\figure_2.jpg
+  Figure 2 caption: 'Predictive performance of Wrap (linear mode) with varying parameter
+    configurations (data set: slashdot; evaluation metric: hamming loss).'
+  Figure 3 Link: articels_figures_by_rev_year\2021\MultiLabel_Classification_With_LabelSpecific_Feature_Generation_A_Wrapped_Approa\figure_3.jpg
+  Figure 3 caption: "The objective function value (i.e., predictive loss) of Wrap\
+    \ (first row) and Wrap \u03BA (second row) changes as the number of iterations\
+    \ increases on four data sets birds, CAL500, emotions and medical."
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.53
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Ze-Bang Yu
+  Name of the last author: Min-Ling Zhang
+  Number of Figures: 3
+  Number of Tables: 7
+  Number of authors: 2
+  Paper title: 'Multi-Label Classification With Label-Specific Feature Generation:
+    A Wrapped Approach'
+  Publication Date: 2021-03-31 00:00:00
+  Table 1 caption: TABLE 1 Pseudo-Code of Wrap
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Characteristics of the Experimental Data Sets
+  Table 3 caption: "TABLE 3 Experimental Results of the Comparing Approaches on the\
+    \ First Eight Data Sets ( \u2193 \u2193: the smaller the better; \u2191 \u2191\
+    : the larger the better)"
+  Table 4 caption: "TABLE 4 Experimental Results of the Comparing Approaches on the\
+    \ Other Eight Data Sets ( \u2193 \u2193: the smaller the better; \u2191 \u2191\
+    : the larger the better)"
+  Table 5 caption: "TABLE 5 Summary of the Friedman Statistics F F FF in Terms of\
+    \ Each Evaluation Metric and the Critical Value at 0.05 Significance Level for\
+    \ Wrap and Wrap \u03BA \u03BA ( comparing approaches k=8 k=8, data sets T=16 T=16)"
+  Table 6 caption: "TABLE 6 Comparison of Wrap (control approach) Against Other Comparing\
+    \ Approaches With Holms procedure as the Post-Hoc Test in Terms of Each Evaluation\
+    \ Metric (significance level \u03B1=0.05 \u03B1=0.05, comparing approaches k=8\
+    \ k=8)"
+  Table 7 caption: "TABLE 7 Comparison of Wrap \u03BA \u03BA (control approach) Against\
+    \ Other Comparing Approaches With Holms procedure as the Post-Hoc Test in Terms\
+    \ of Each Evaluation Metric (significance level \u03B1=0.05 \u03B1=0.05, comparing\
+    \ approaches k=8 k=8)"
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3070215
+- Affiliation of the first author: graduate school of informatics, kyoto university,
+    kyoto, japan
+  Affiliation of the last author: graduate school of informatics, kyoto university,
+    kyoto, japan
+  Figure 1 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_1.jpg
+  Figure 1 caption: 'Kaleidoscopic imaging system consists of multiple planer mirrors.
+    Up: two mirrors. Bottom: three mirrors. The projections of the reflected target
+    object in each chamber are recognized as the target observed by the virtual cameras,
+    which are generated by the planer mirrors.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_10.jpg
+  Figure 10 caption: Corresponding points in (a) Npi = 2 and (b) Npi = 3 case. (a)
+    Two pairs langle boldsymbol q0,boldsymbol q1rangle and langle boldsymbol q2,boldsymbol
+    q12rangle (red) are available on mirror pi 1 (blue). (b) Three pairs langle boldsymbol
+    q0,boldsymbol q1rangle,langle boldsymbol q2,boldsymbol q12rangle and langle boldsymbol
+    q3,boldsymbol q13rangle (red) are available on mirror pi 1 (blue).
+  Figure 2 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_2.jpg
+  Figure 2 caption: "The mirror geometry. A mirror \u03C0 of normal n and distance\
+    \ d reflects a 3D point p to p \u2032 , and they are projected to q and q \u2032\
+    \ , respectively."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_3.jpg
+  Figure 3 caption: Chamber assignment. The magenta region indicates the base chamber.
+    The red, green, and blue regions indicate the chambers corresponding to the first,
+    second, and third reflections, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_4.jpg
+  Figure 4 caption: "The red boxes show examples of base structures in the case of\
+    \ (a) N \u03C0 =2 and (b) N \u03C0 =3 . The red point indicates the point assumed\
+    \ as the base chamber and the dotted boxes indicate doublets. The red dotted lines\
+    \ indicate the reflection pairs, and the blue lines indicate the discovered mirrors."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_5.jpg
+  Figure 5 caption: "Sign ambiguity of n and corresponding triangulations. p i (i=0,1)\
+    \ and p \u2032 i are estimated from possible mirror parameters of \u03C0 1 and\
+    \ \u03C0 \u2032 1 , i.e., ( n 1 , d 1 ) and (\u2212 n 1 , d 1 ) , respectively.\
+    \ Both of these mirror parameters satisfy Eq. (2), and p \u2032 i appears as \u2212\
+    \ p i ."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_6.jpg
+  Figure 6 caption: "The 3D point p is closer to the camera than its reflection p\
+    \ \u2032 from triangle inequality."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_7.jpg
+  Figure 7 caption: To obtain second reflections, the mirrors should be facing each
+    other, boldsymbol nitop boldsymbol nj < 0 as in (b). In boldsymbol nitop boldsymbol
+    nj geq 0 cases as in (a), the first reflection boldsymbol p2 on pi 2 is reflected
+    behind mirror pi 1 and cannot be reflected by pi 1 as the second reflection.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_8.jpg
+  Figure 8 caption: Configurations satisfying Eq. (15) but not (a) Proposition 1 or
+    (b) Proposition 2. The color codes are identical to Fig. 3.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Structure_of_Multiple_Mirror_System_From_Kaleidoscopic_Projections_of_Single_D_P\figure_9.jpg
+  Figure 9 caption: Discontinuity. The third reflection boldsymbol p121 is not visible
+    from the camera since the viewing ray (the green dotted line in the left image)
+    intersects with not the mirror pi 1 but pi 2 . The boundary of such visibility
+    appears as the discontinuity boundary in the image (the magenta lines in the right
+    image)[6].
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kosuke Takahashi
+  Name of the last author: Shohei Nobuhara
+  Number of Figures: 26
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: Structure of Multiple Mirror System From Kaleidoscopic Projections
+    of Single 3D Point
+  Publication Date: 2021-04-01 00:00:00
+  Table 1 caption: TABLE 1 The Reprojection Errors of Linear Solutions and Optimized
+    Solutions by Each Method
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 The Number and Percentage of Candidates That Passed Each\
+    \ Pruning Constraint in Case of \u03C3 q =0 \u03C3q=0 and \u03C3 q =2 \u03C3q=2"
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3070347
+- Affiliation of the first author: uc berkeley icsi, berkeley, ca, usa
+  Affiliation of the last author: uc berkeley icsi, berkeley, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_1.jpg
+  Figure 1 caption: Spatial transformers learn several global transformations at each
+    layer to obtain different local point neighborhoods. We show transformed point
+    clouds at different layers learned by spatial transformers for different instances
+    of a category (e.g., tables). Compared with previous works adopting fixed local
+    neighborhoods, dynamic point neighborhoods make the network more powerful in learning
+    semantics from point clouds. For example, corresponding geometric transformations
+    capture similar semantic information even high intra-class spatial variations
+    exist. The second transformation at layer 1 deforms different tables to be more
+    semantically similar, and makes parsing the part of table base easier. Furthermore,
+    the proposed transformer is a stand-alone module and can be easily added to existing
+    point cloud processing networks.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_10.jpg
+  Figure 10 caption: Part segmentation performance (average mIOU) of deformable transformers
+    at different layers. When applying all transformers at three layers, the performance
+    is highest. Removing transformers at different layer lead to performance drop.
+    Removing transformers at layer 3 gives the most performance drop.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_2.jpg
+  Figure 2 caption: At each layer, we apply multiple spatial transformers to deform
+    the input point cloud for learning different neighborhoods. We show local neighborhoods
+    of input point cloud examples with and without deformable transformers. Different
+    colors indicate different neighborhoods, and intensities indicate distances to
+    the central point. The dynamic neighborhood enhance the network capacity to learn
+    from objects with large spatial variations. Rotating table and earphone for better
+    visualizations.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_3.jpg
+  Figure 3 caption: Geometric transformations. We illustrate how a grey square transforms
+    after rigid, affine, projective and deformable transformations.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_4.jpg
+  Figure 4 caption: "The point cloud segmentation network with spatial transformers.\
+    \ Our network consists of several spatial transformers. At each layer, we learn\
+    \ k transformation matrices A to apply to the input point cloud P , and compute\
+    \ the corresponding point affinity matrices based on their k -NN graphs. For each\
+    \ sub transformation, we can learn a sub-feature, and then concatenate all features\
+    \ to form an output feature of dimension f\xD7N . The output feature will be used\
+    \ for the next spatial transformer block for feature learning. By stacking several\
+    \ such transformation learning blocks and finally a fully connected layer of dimension\
+    \ C (the number of class), we can map the input point cloud to the C\xD7N segmentation\
+    \ map."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_5.jpg
+  Figure 5 caption: The object detection network. We add spatial transformers to the
+    the point feature learning network of [39] for obtaining dynamic local neighborhoods.
+    Transformers only affect feature learning but not point coordinates for grouping.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_6.jpg
+  Figure 6 caption: Spatial transformers lead to higher accuracy and more rotation
+    invariance on ModelNet40. We report classification errors for different baselines,
+    without and with spatial transformers, with or without random rotations. Transformers
+    consistently lead to the lower errors than fixed graph baselines, and the improvement
+    is larger upon random rotations.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_7.jpg
+  Figure 7 caption: Spatial transformers improve the part segmentation performance.
+    We show part segmentation results of different baselines, where different parts
+    are marked with different colors. With spatial transformers, part segmentation
+    for objects with less rigid and more complicated structures improves (1st and
+    2nd row, lamp). The segmentation consistency within each part also improves (3rd
+    row, rocket).
+  Figure 8 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_8.jpg
+  Figure 8 caption: Transforming both point cloud coordinates and features for dynamic
+    local neighborhoods leads to the largest gain. We report different parts of deformable
+    transformers performance gain over fixed local neighborhood baseline on ShapeNet
+    part segmentation. 0 percent means achieving the same accuracy as fixed local
+    neighborhood baseline and negative value means achieving worse accuracy than fixed
+    neighborhood baseline. Compared with preserving either affine part AP or feature
+    part CF , deformable spatial transformers ( AP+CF ) achieves largest gains on
+    every category, specifically 8 percent gains on earphone and rocket.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Transformer_for_D_Point_Clouds\figure_9.jpg
+  Figure 9 caption: Spatial transformers improve semantic segmentation results. We
+    show qualitative visualizations for semantic segmentation of deformable spatial
+    transformers and the fixed local neighborhood baseline. The first column is the
+    input point cloud, the second and the third column shows the fixed graph and our
+    spatial transformer results, and the last column is the ground truth. Points belonging
+    to different semantic regions are colored differently. We observe better and more
+    consistent segmentation result with our spatial transformer, specifically for
+    the areas circled in red.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Jiayun Wang
+  Name of the last author: Stella X. Yu
+  Number of Figures: 13
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Transformer for 3D Point Clouds
+  Publication Date: 2021-04-01 00:00:00
+  Table 1 caption: TABLE 1 Spatial Transformers Improves ModelNet40 Classification
+    Accuracy
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Spatial Transformers Improve Part Segmentation Performance
+  Table 3 caption: TABLE 3 Spatial Transformers Improve Semantic Segmentation Performance
+  Table 4 caption: TABLE 4 Spatial Transformers Improve Object Detection Performance
+  Table 5 caption: TABLE 5 Performance of Different Number of Deformable Transformation
+    Modules
+  Table 6 caption: TABLE 6 Model Size and Test Time on ShapeNet Part Segmentation
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3070341
+- Affiliation of the first author: niantic, san francisco, ca, usa
+  Affiliation of the last author: visual learning lab, heidelberg university, heidelberg,
+    germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_1.jpg
+  Figure 1 caption: Top. Our system accurately re-localizes within a known environment
+    given a single image. We show estimated camera positions in purple and ground
+    truth in cyan. In this instance, the system was trained using RGB images and associated
+    ground truth poses, only (gray trajectory), In particular, the scene geometry,
+    displayed as a 3D model, was discovered by the system, automatically. Bottom.
+    To visualize the re-localization quality, we render the learned 3D geometry using
+    estimated poses over gray-scale input images.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_10.jpg
+  Figure 10 caption: 'Effect of Data Augmentation. Left: Average percentage of correctly
+    localized frames on 7Scenes[3] and 12Scenes[82], as well as average median translations
+    errors for Cambridge Landmarks[26], with and without using geometric training
+    data augmentation (random rotation and scaling). Right: We show qualitative results
+    on the 7Scenes Stairs sequence when training in RGB-only mode (i.e., without using
+    a 3D model of the scene).'
+  Figure 2 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_2.jpg
+  Figure 2 caption: Scene Coordinates [3]. Top. Every surface point in a 3D environment
+    has a unique 3D coordinate in the local coordinate frame. We visualize 3D scene
+    coordinates by mapping XYZ to the RGB cube. Bottom. A 3D scene model together
+    with ground truth camera poses allows us to render ground truth scene coordinates
+    for images, e.g., to serve as training targets. We can also create training targets
+    from depth maps instead of a 3D model, or from ground truth poses alone by optimizing
+    the re-projection error over multiple frames.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_3.jpg
+  Figure 3 caption: 'System Overview. The system consists of two stages: Scene coordinate
+    regression using a CNN (top) and differentiable pose estimation (bottom). The
+    network is fully convolutional and produces a dense but sub-sampled output. Pose
+    estimation employs a minimal solver (PnP[66] for RGB images or Kabsch[49] for
+    RGB-D images) within a RANSAC[53] robust estimator. The final camera pose estimate
+    is also refined. To allow for end-to-end training, all components need to be differentiable.
+    While the Kabsch solver is inherently differentiable, we describe differentiable
+    approximations for PnP and RANSAC.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_4.jpg
+  Figure 4 caption: DSAC Computation Graph [79]. Nodes without frames represent inputs
+    to the system, nodes with square frames represent deterministic operations, nodes
+    with circular frames represent sampling operations. Arrows denote an input relation.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_5.jpg
+  Figure 5 caption: "Indoor Localization Accuracy. We report the average percentage\
+    \ of correctly re-localized frames below an error threshold of 5cm and 5 \u2218\
+    \ on the 7Scenes [3] and 12Scenes [82] datasets. We group methods by utilized\
+    \ data, i.e., RGB: neither a 3D model or depth maps at training and test time,\
+    \ RGB + 3D model: a 3D model or depth maps at training time but not at test time,\
+    \ RGB-D: depth maps at training time and at test time. See the main text for references\
+    \ to all methods."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_6.jpg
+  Figure 6 caption: 'Results for Indoor Scenes. First Row: Camera positions of training
+    frames in gray and of test frames in cyan for all scenes of the 7Scenes [3] dataset.
+    Remaining Rows: Estimated camera positions of test frames, color coded by position
+    error. We also state the percentage of test frames with a pose error below 5 cm
+    and 5 circ . Each row represents a different training setup. For a more informative
+    visualization, we show the ground truth 3D scene model as a faint backdrop, and
+    we connect consecutive frames within 50 cm tolerance.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_7.jpg
+  Figure 7 caption: Median Errors for Indoor Scenes. For all test sequences of the
+    7Scenes [3] dataset, we select the frame with the median pose estimation error.
+    We show the original input frame in gray scale, and a rendered overlay in color
+    using the estimated pose and the ground truth 3D model. We write the associated
+    median pose error below each instance. Each row represents a different training
+    setup.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_8.jpg
+  Figure 8 caption: 'Results for Outdoor Scenes. First Row: Camera positions of training
+    frames in gray and of test frames in cyan for scenes of the Cambridge Landmarks
+    [26] dataset. Remaining Rows: Estimated camera positions of test frames, color
+    coded by position error. We also state the percentage of test frames with a position
+    error below 0.5 percent of the scene size. We derive the threshold for each scene
+    from the scene extent given in [26]. In particular, we use 35 cm for St. Marys
+    Church, 45 cm for Great Court, 22 cm for Old Hospital, 38 cm for Kings College
+    and 15 cm for Shop Facade. Each row represents a different training setup. For
+    a more informative visualization, we show the ground truth 3D scene model as a
+    faint backdrop, and we connect consecutive frames within 5 m tolerance.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\Visual_Camera_ReLocalization_From_RGB_and_RGBD_Images_Using_DSAC\figure_9.jpg
+  Figure 9 caption: Median Errors for Outdoor Scenes. For all test sequences of the
+    Cambridge Landmarks [26] dataset, we select the frame with the median pose estimation
+    error. We show the original input frame in gray scale, and a rendered overlay
+    in color using the estimated pose and a 3D scene model generated from the ground
+    truth structure-from-motion point cloud. We write the associated median pose error
+    below each instance. Each row represents a different training setup.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Eric Brachmann
+  Name of the last author: Carsten Rother
+  Number of Figures: 14
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Visual Camera Re-Localization From RGB and RGB-D Images Using DSAC
+  Publication Date: 2021-04-02 00:00:00
+  Table 1 caption: TABLE 1 Information Available at Training and Test Time
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Outdoor Localization Accuracy
+  Table 3 caption: TABLE 3 Comparison of Network Architecture
+  Table 4 caption: TABLE 4 Scene Compression Analysis
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3070754

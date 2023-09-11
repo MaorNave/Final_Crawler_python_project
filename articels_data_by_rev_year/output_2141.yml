@@ -1,0 +1,859 @@
+- Affiliation of the first author: department of electrical and computer engineering,
+    northeastern university, boston, ma, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    northeastern university, boston, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Stopping_Criterion_Design_for_Recursive_Bayesian_Classification_Analysis_and_Dec\figure_1.jpg
+  Figure 1 caption: Proposed probabilistic graphical model representing the s th sequence
+    for a RBC.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Stopping_Criterion_Design_for_Recursive_Bayesian_Classification_Analysis_and_Dec\figure_2.jpg
+  Figure 2 caption: Decision geometry for recursive classification where true class
+    is a . (a) The initialization of the system with a prior probability ( p 0 ) and
+    (S) region. The system terminates once the posterior yields within the (S) region
+    (dashed). (b) Stopping boundaries for (M1) and (M3) are visualized. Highlighted
+    region is the decision region for a enforced by (C) . (c) Three different perspectives
+    in S R design (entropy:diagonal-stripestop, confidence:vertical-stripesleft, proposed:blue-stripesright),
+    we want to tilt the confidence boundary towards u n as illustrated with dashed
+    arrows to achieve early stopping. (d) The origin of the simplex u n and special
+    points defined in (4). Equi-entropy contours and corresponding posterior threshold
+    lines are in solid black. The intersection point is at v n (See Observation 1).
+  Figure 3 Link: articels_figures_by_rev_year\2021\Stopping_Criterion_Design_for_Recursive_Bayesian_Classification_Analysis_and_Dec\figure_3.jpg
+  Figure 3 caption: "Effect of number of possible categories (different colorline\
+    \ codes) on the decision boundary. (a) represents the difference between entropy\
+    \ values of the probabilities v n , w n for a given confidence level \u03C4 .\
+    \ (b) represents the \u03C4 and \u03C4 ~ values where H( w n ( \u03C4 ~ ))=H(\
+    \ v n (\u03C4)) ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Stopping_Criterion_Design_for_Recursive_Bayesian_Classification_Analysis_and_Dec\figure_4.jpg
+  Figure 4 caption: Monte Carlo simulated trajectories for probability evolution in
+    3D simplex. To simulate the trajectories we sample evidence from lognormal distributions.
+    (a) Each color represent 100 simulated examples from a different starting point
+    and dashed lines representing the means of the trajectories. Observe the case
+    where one of the classes is already disfavored (one between a, c), if decision
+    boundary does not intersect with the edge, that results in immediate termination.
+    (b) Three different perspectives for S R design. We observe that the behavior
+    of entropy (black) and confidence threshold (blue) are similar if trajectories
+    are considered. In the method section we propose a region design using an equi-distance
+    curves wrt. to the corners (red).
+  Figure 5 Link: articels_figures_by_rev_year\2021\Stopping_Criterion_Design_for_Recursive_Bayesian_Classification_Analysis_and_Dec\figure_5.jpg
+  Figure 5 caption: "Summary of operation characteristics of the methods using the\
+    \ starting conditions for recursive classification presented in Tables 3 and 4\
+    \ respectively on top and bottom. For our experiments we use \u03B5 + \u223Clognorm(0.6,\
+    \ 0.5 2 ) and \u03B5 \u2212 \u223Clognorm(0, 0.5 2 ) . We run 5000 recursive classification\
+    \ simulations and report average accuracies and average sequences for different\
+    \ \u03C4 values. Each line in the figure are drawn with a collection of (accuracy,\
+    \ sequence) points where each are computed for \u03C4=[0.65,0.69,0.72,0.76,0.79,0.83,0.86,0.9]\
+    \ from left to right. We omit (M5) as it spends way more sequences. Observe that\
+    \ (M4) staggers, especially for the disfavored case (left). (MP) allows us to\
+    \ select an operation point that favors accuracy in the disfavored and gains speed\
+    \ by losing marginal accuracy where the posterior is following a central path\
+    \ (right)."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Stopping_Criterion_Design_for_Recursive_Bayesian_Classification_Analysis_and_Dec\figure_6.jpg
+  Figure 6 caption: EEG driven Rapid Serial Visual Presentation (RSVP) keyboard typing
+    interface. (a) The stimuli is flashed in the middle of the screen while the user
+    is informed with the text above. (b) The user is conducting copying the phrase
+    task (multiple copy letter tasks). The user is informed about the required phrase.
+    EEG is collected on top of the scalp non-invasively.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Stopping_Criterion_Design_for_Recursive_Bayesian_Classification_Analysis_and_Dec\figure_7.jpg
+  Figure 7 caption: "Number of recursion spent and accuracy plots for recursive classification\
+    \ in BCI typing system. Each scenario is generated using human-in-the-loop calibration\
+    \ data trained generative models. In each figure results are presented in ascending\
+    \ order of performance measures (area under receiver operation characteristics\
+    \ curve (AUC)). Number of queries in each recursion from top to bottom, 5, 10,\
+    \ 15 respectively. Legend covers methods from left to right and dots on the figures\
+    \ represent respective accuracy values. The users tried to type \u201CA\u201D\
+    \ without any language model (uniform prior information). Top to bottom legend\
+    \ order is from left to right for each block."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Stopping_Criterion_Design_for_Recursive_Bayesian_Classification_Analysis_and_Dec\figure_8.jpg
+  Figure 8 caption: "The same implementation as described in Fig. 7. The difference\
+    \ here is the subjects were supported by a language model trying to type \u201C\
+    ITO\u201D given \u201CIT\u201D and hence even though \u201CO\u201D is not the\
+    \ top letter it is one of the likely letters."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.6
+  Name of the first author: "Aziz Ko\xE7anao\u011Fullar\u0131"
+  Name of the last author: "Deniz Erdo\u011Fmu\u015F"
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: 'Stopping Criterion Design for Recursive Bayesian Classification: Analysis
+    and Decision Geometry'
+  Publication Date: 2021-04-28 00:00:00
+  Table 1 caption: "TABLE 1 Conventional Stopping Criteria, Here c cs \u2208R \u2208\
+    R Denote the Limits of the Criteria"
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 A Toy Example With 3 Class Recursive Classification
+  Table 3 caption: TABLE 3 Toy Example Employing the Properties Listed in Table 2
+  Table 4 caption: TABLE 4 Toy Example Employing the Properties Listed in Table 2
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3075915
+- Affiliation of the first author: institute of automation, chinese academy of sciences
+    (casia), beijing, china
+  Affiliation of the last author: institute of automation, chinese academy of sciences
+    (casia), beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_1.jpg
+  Figure 1 caption: An illustration of the challenges. (a) Background snippets are
+    unconstrained and inconsistent. (b) The video snippet, showing an action of Clean
+    and Jerk, consists of three atom actions, i.e., lift, clean, and jerk. (c) An
+    example of multi-label video that consists of two different actions.
+  Figure 10 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_10.jpg
+  Figure 10 caption: The sensitivity of temperature gamma s . We conduct the experiments
+    on the Thumos14 dataset. The full model represents the full model without prototype
+    updating strategy. The wo mathcal Lcl removes the multi-label clustering loss
+    on the basis of the full model.
+  Figure 2 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_2.jpg
+  Figure 2 caption: Illustration of I3D features of the action of CricketBowling and
+    CricketShot and their corresponding multi-label features. Usually, the multi-label
+    features have their distinct distribution, but are highly related with the corresponding
+    single-label instances, similar ideas are widely adopted in data augmentation
+    [28], semi-supervised learning [29], [30] and unsupervised learning [31], etc.
+  Figure 3 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_3.jpg
+  Figure 3 caption: The overview of the proposed method. Our model is based on the
+    prototypical network, and consists of two branches, namely a-branch (top) and
+    s-branch (bottom). During training, the snippets are first forwarded into the
+    feature embedding module. And then a temporal attention module is employed to
+    generates both foreground and background attention weights. For the a-branch,
+    a prototype embedding module is used, which takes label features as input and
+    outputs class-wise prototypes P a . For the s-branch, we randomly initialize the
+    sub-prototypes P s . For both branches, we employ a prototype matching process
+    to obtain snippet-wise classification scores corresponding to the two types of
+    prototypes. Then the snippet-wise classification scores are pooled over time with
+    foreground and background attention weights into two video-level classification
+    scores. For the s-branch, we transform the classification scores from sub-prototypes
+    granularity to class granularity according to a correspondence matrix S , which
+    shows the affinity between class-wise prototypes and sub-prototypes. Finally,
+    we use a multi-label clustering loss to learn compact features and reject background
+    under the multi-label setting. (Best viewed in color).
+  Figure 4 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_4.jpg
+  Figure 4 caption: Illustration of the class-wise prototypes (stars) and sub-prototypes
+    (triangles). Some sub-prototypes only belong to one action (such as the prototypes
+    in green), which can be perceived as the representations of single-label variations
+    (e.g., sub-actions). Meanwhile. some prototypes correspond to multiple categories
+    (such as the prototype in yellow), which can be used as centers for multi-label
+    instances.
+  Figure 5 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_5.jpg
+  Figure 5 caption: Visualization of the features and the sub-prototypes of Billiards.
+    The dots in dark blue are features of the current video, while the red dots are
+    the features of other videos of Billiards. Stars are the sub-prototypes. (Best
+    viewed in color).
+  Figure 6 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_6.jpg
+  Figure 6 caption: Illustration of class-wise Average Precision. Performance of baseline
+    model and the one with co-occurrence GCN are shown.
+  Figure 7 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_7.jpg
+  Figure 7 caption: An example of the learned co-occurrence matrix A+B on the Thumos14
+    dataset. The values in yellow box represent the original relations in matrix A
+    , while the values in red box show the recovered relations between HammerThrow
+    and ThrowDiscus. (The darker the color, the bigger the value.)
+  Figure 8 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_8.jpg
+  Figure 8 caption: Visualization of the learned features of testing set under different
+    model settings. The generalization ability of the model to unknown background
+    is improved with the addition of different background modeling components.
+  Figure 9 Link: articels_figures_by_rev_year\2021\TwoBranch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_\figure_9.jpg
+  Figure 9 caption: The learned embedding features (F), sub-prototypes (P) and updated
+    sub-prototypes (UP). We only show the updated sub-prototypes and their corresponding
+    un-updated ones.
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Linjiang Huang
+  Name of the last author: Liang Wang
+  Number of Figures: 15
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Two-Branch Relational Prototypical Network for Weakly Supervised Temporal
+    Action Localization
+  Publication Date: 2021-04-28 00:00:00
+  Table 1 caption: TABLE 1 Detection Performance Comparisons Over the Thumos14 Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Results on the MultiThumos Dataset
+  Table 3 caption: TABLE 3 Results on ActivityNet1.2 Validation Set
+  Table 4 caption: TABLE 4 Results on ActivityNet1.3 Validation Set
+  Table 5 caption: TABLE 5 Ablation Study on the Prototype Embedding Module
+  Table 6 caption: TABLE 6 Comparison on the Way of Generating Temporal Attention
+    Weights for the Temporal Attention Module
+  Table 7 caption: TABLE 7 Ablation Studies on Thumos14 and MultiThumos
+  Table 8 caption: TABLE 8 Ablation Studies About the Two-Side Design
+  Table 9 caption: TABLE 9 Comparison of the Number of Parameters, FLOPs and Average
+    mAP of Different Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3076172
+- Affiliation of the first author: department computer science and engineering, university
+    of bologna, bologna, italy
+  Affiliation of the last author: department computer science and engineering, university
+    of bologna, bologna, italy
+  Figure 1 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_1.jpg
+  Figure 1 caption: Continual adaptation on real images. We show the reference image
+    of a stereo pair from DrivingStereo [9] (a) and the disparity maps computed by
+    MADNet when trained on synthetic data only (b) or adapted online by either MAD
+    (c) or MAD++ (d).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_10.jpg
+  Figure 10 caption: Qualitative results for different continual adaptation strategies.
+    We show, across time, the reference image of a stereo pair from DrivingStereo
+    Dusky sequence and different adaptation strategies among those reported in Table
+    10 (MAD++ uses SGM labels).
+  Figure 2 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_2.jpg
+  Figure 2 caption: "Generic design of a modular adaptive network. The network N is\
+    \ organized as a set of non-overlapping modules [ \u0398 1 ,\u2026, \u0398 p ]\
+    \ and is trained to estimate a set of corresponding outputs [ y 1 ,\u2026, y p\
+    \ ] . During adaptation, a full forward pass (red line) is performed to obtain\
+    \ the outputs, on which losses [ L 1 ,\u2026, L p ] are computed. By selecting\
+    \ a single L i , only one of the back-propagation routes (dashed lines) is followed\
+    \ so to update a single module \u0398 i ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_3.jpg
+  Figure 3 caption: Deployment of on-camera disparity computation within MAD++. During
+    the forward pass (green arrows) the acquired frames are processed by MADNet to
+    predict a disparity map as well as, in parallel, by a dedicated platform on-board
+    the camera (e.g., an FPGA) to compute proxy disparity labels. During the backward
+    pass (red arrows), the network is updated so as to minimize the loss given by
+    the discrepancy between the predicted and proxy disparities.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_4.jpg
+  Figure 4 caption: Proxy labels by the considered stereo pipelines. The first row
+    depicts a reference image from DrivingStereo (a) alongside the available ground-truth
+    disparities (b). The next two rows report the raw disparities and proxy labels
+    (i.e. filtered disparities) obtained by the WILD (c),(d) and SGM (e),(f) pipelines.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_5.jpg
+  Figure 5 caption: Adaptation speed on Campus. MAD++ adapts much faster than MAD,
+    rapidly converging to the same error level as FULL and FULL++ (blue and red solid
+    lines, almost completely overlapped).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_6.jpg
+  Figure 6 caption: Comparison between different proxy labels. We show a reference
+    image (a) from the City domain and proxy labels sourced by SGM (b) and WILD (c).
+  Figure 7 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_7.jpg
+  Figure 7 caption: Raw LIDAR for proxy supervision. We show a reference image (a)
+    from the City domain alongside proxy labels sourced by raw Lidar (b), with the
+    latter exhibiting wrong measurements at depth boundaries.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_8.jpg
+  Figure 8 caption: Percentage of update steps across MADNets modules over time. Update
+    frequency (%) for Theta i, i in [2,dots,6] MAD (top) and MAD++ with SGM proxy
+    labels (bottom) as function of the processed frames. Experiment dealing with continual
+    adaptation from synthetic pre-training on Campus rightarrow City rightarrow Residential
+    rightarrow Road.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Continual_Adaptation_for_Deep_Stereo\figure_9.jpg
+  Figure 9 caption: Performance versus speed with different adaptation rates. FPS
+    versus D1-all measurements for Algorithm 1 (blue) and Algorithm 2 (red) when adapting
+    every K=1,2,5,10 frames. Solid lines represent linear interpolations between measurements.
+    Results dealing with continual adaptation from synthetic pre-training on Campus
+    rightarrow City rightarrow Residential rightarrow Road.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Matteo Poggi
+  Name of the last author: Luigi Di Stefano
+  Number of Figures: 11
+  Number of Tables: 12
+  Number of authors: 5
+  Paper title: Continual Adaptation for Deep Stereo
+  Publication Date: 2021-04-28 00:00:00
+  Table 1 caption: TABLE 1 MADNet Architecture
+  Table 10 caption: TABLE 10 Online Adaptation on DrivingStereo
+  Table 2 caption: TABLE 2 Comparison Between Stereo Architectures on the KITTI 2015
+    Test Set Without Adaptation
+  Table 3 caption: TABLE 3 Online Adaptation Within a Single Domain
+  Table 4 caption: TABLE 4 Online Adaptation Across Different Domains
+  Table 5 caption: TABLE 5 Comparison of Online Adaptation Strategies Across Different
+    Domains
+  Table 6 caption: TABLE 6 Online Adaptation Within a Single Domain After Fine-Tuning
+  Table 7 caption: TABLE 7 Online Adaptation Across Different Domains After Fine-Tuning
+  Table 8 caption: TABLE 8 Online Adaptation Within a Single Domain With Proxy Supervision
+    From Raw LIDAR
+  Table 9 caption: TABLE 9 Online Adaptation Across Different Domains With Proxy Supervision
+    From Raw LIDAR
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3075815
+- Affiliation of the first author: intelligence and sensing lab, institute for datability
+    science, osaka university, osaka, japan
+  Affiliation of the last author: electrical engineering and computer science and
+    engineering, indian institute of technology gandhinagar, gujarat, india
+  Figure 1 Link: articels_figures_by_rev_year\2021\Depthwise_SpatioTemporal_STFT_Convolutional_Neural_Networks_for_Human_Action_Rec\figure_1.jpg
+  Figure 1 caption: Illustration of bottleneck versions of various 3D convolutional
+    layers and its variations. (a) Standard 3D convolutional layer-based block used
+    in I3D [16]. (b) Standard 3D depthwise (DW) convolutional layer-based block used
+    in ir-CSN [17]. (c) The ST-STFT block. (d) Factorized 3D convolutional layer-based
+    block used in S3D [9]. (e) Factorized + depthwise 3D convolutional layer-based
+    block. (f) 3D depthwise (DW) convolutional layer-based block used in ip-CSN [17].
+    (g) The S-STFT block. (h) The T-STFT block. Note that here instead of using 3D-STFT,
+    2D-STFT or 1D-STFT, we will use a common notation 3D-STFT for the STFT kernels
+    in all the three variations of the STFT blocks. The dimension(s) of the information
+    captured by the STFT block will be denoted by the filter size. DW denotes depthwise.
+    T and NT denotes trainable and non-trainable, respectively.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Depthwise_SpatioTemporal_STFT_Convolutional_Neural_Networks_for_Human_Action_Rec\figure_2.jpg
+  Figure 2 caption: "A visualization of the output of the 3D-STFT layer applied to\
+    \ the input layer for c=1 , n=3 , and K=13 . First, the Fourier coefficients are\
+    \ extracted in the local 3\xD73\xD73 neighborhood of each pixel position of the\
+    \ input (at 13 frequency variables) to output a feature map of size 26\xD7t\xD7\
+    h\xD7w . The output feature maps are then linearly combined using weights u 1\
+    \ ,..., u 13 and fed into the next layer. Note that the STFT layer can be applied\
+    \ to any intermediate feature map in 3D CNN. Here, for simplicity, we visualize\
+    \ it on the input (first) layer."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Depthwise_SpatioTemporal_STFT_Convolutional_Neural_Networks_for_Human_Action_Rec\figure_3.jpg
+  Figure 3 caption: Frequency variables when K=13 .
+  Figure 4 Link: articels_figures_by_rev_year\2021\Depthwise_SpatioTemporal_STFT_Convolutional_Neural_Networks_for_Human_Action_Rec\figure_4.jpg
+  Figure 4 caption: Frequency points used to compute the 3D STFT. The selected frequency
+    points are marked as red dots. The other frequency points in the green dots are
+    ignored, as they are the conjugates of the selected ones.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Depthwise_SpatioTemporal_STFT_Convolutional_Neural_Networks_for_Human_Action_Rec\figure_5.jpg
+  Figure 5 caption: Proposed STFT block-based network architectures. Here X is either
+    ST, S, or T.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Depthwise_SpatioTemporal_STFT_Convolutional_Neural_Networks_for_Human_Action_Rec\figure_6.jpg
+  Figure 6 caption: 'Difference between scene-related versus temporal-related datasets.
+    Top: Apply Eye Makeup action class from the UCF-101 dataset. Only one frame is
+    enough for prediction. Bottom: Sliding Two Fingers Down action class from the
+    Jester dataset. Reversing the order of frames gives the opposite label which is
+    Sliding Two Fingers Up.'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sudhakar Kumawat
+  Name of the last author: Shanmuganathan Raman
+  Number of Figures: 6
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Depthwise Spatio-Temporal STFT Convolutional Neural Networks for Human
+    Action Recognition
+  Publication Date: 2021-04-29 00:00:00
+  Table 1 caption: TABLE 1 Details of the Benchmark Human Action Recognition Datasets
+    Used for Evaluation
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison With Similar Backbone Networks
+  Table 3 caption: "TABLE 3 Performance Results of the Fourier Baseline Networks With\
+    \ Same Random Projections Across Layers (Denoted as \u201CSame\u201D) and Different\
+    \ Random Projections Across Layers (Denoted as \u201CDifferent\u201D)"
+  Table 4 caption: TABLE 4 Effect of Different Activation Functions on the Performance
+    of the ST-STFT Network
+  Table 5 caption: TABLE 5 Performance of the X-STFT Networks on the Something 2 2v1
+    and v2 Datasets Compared With the State-of-the-Art Methods
+  Table 6 caption: TABLE 6 Performance of the X-STFT Networks on the Diving-48 Dataset
+    Compared With the State-of-the-Art Methods
+  Table 7 caption: TABLE 7 Performance of the X-STFT Networks on the Jester Dataset
+    Compared With the State-of-the-Art Methods
+  Table 8 caption: TABLE 8 Performance of the X-STFT Networks on the Kinetics-400
+    Dataset Compared With the State-of-the-Art Methods
+  Table 9 caption: TABLE 9 Performance of the X-STFT Networks on the UCF-101 and HMDB-51
+    Datasets Compared With the State-of-the-Art Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3076522
+- Affiliation of the first author: school of information science and technology, university
+    of science and technology of china, hefei, china
+  Affiliation of the last author: school of information science and technology, university
+    of science and technology of china, hefei, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_1.jpg
+  Figure 1 caption: Some semantic image synthesis results produced by our method.
+    Our method can not only handle the synthesis from a pure semantic segmentation
+    mask (left six columns) but also support controllable synthesis via different
+    reference style images (right two columns). For the controllable image generation,
+    the input semantic masks are given on the first row, and the reference style images
+    are displayed in the upper right corner of the generated results (second and third
+    rows).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_10.jpg
+  Figure 10 caption: "High-resolution synthesis ( 256\xD7512 ) results on the Cityscapes\
+    \ dataset. Our method produces realistic images with faithful spatial alignment\
+    \ and semantic meaning."
+  Figure 2 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_2.jpg
+  Figure 2 caption: "Visualization of learned modulation parameters \u03B3,\u03B2\
+    \ at the shallowest layer for two example semantic masks from the ADE20k dataset,\
+    \ where the original pre-trained SPADE generator is used. Obviously, \u03B3,\u03B2\
+    \ for the same semantic class are almost identical within each semantic region."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_3.jpg
+  Figure 3 caption: "Statistical histograms of \u03B3 (left) and \u03B2 (right) for\
+    \ the \u201Cbuilding,\u201D \u201Csky,\u201D \u201Ctree,\u201D \u201Chuman,\u201D\
+    \ and \u201Ccar\u201D (from top to bottom) classes from the ADE20k validation\
+    \ dataset on SPADE blocks with various resolutions of input masks. It can be seen\
+    \ that the distribution of \u03B3 and \u03B2 is concentrated and the centralized\
+    \ trend becomes more obvious as the resolution of input mask goes higher."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_4.jpg
+  Figure 4 caption: "The illustration diagrams of SPADE (left) and our class-adaptive\
+    \ normalization layer CLADE with a guided sampling operation (right). Using a\
+    \ shallow modulation network consisting of two convolutional layers to model the\
+    \ modulation parameters \u03B3,\u03B2 as the function of input semantic mask,\
+    \ SPADE can add the semantic information lost in the normalization step back.\
+    \ Unlike SPADE, CLADE does not introduce any external modulation network but instead\
+    \ uses an efficient guided sampling operation to sample class-adaptive modulation\
+    \ parameters for each semantic region."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_5.jpg
+  Figure 5 caption: 'Left: the relative ratios of the parameter and FLOPs between
+    each SPADECLADE and its following convolutional layer in the generator. The ratios
+    of parameter and FLOPs for SPADE are the same and shown in orange, while the ratios
+    of parameter and FLOPs for CLADE are shown in yellow and green respectively. Since
+    the ratio of FLOPs for CLADE is very small, it is almost invisible in the figure.
+    Middle and right: the numbers of absolute parameters and FLOPs of different convolution
+    layers. x -axis indicates the layer index from deep to shallow.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_6.jpg
+  Figure 6 caption: The illustration of class-adaptive normalization layer (CLADE)
+    with intra-class positional encoding (ICPE). The positional encoding map is calculated
+    from the semantic segmentation map. d 0 and d 1 represent the positional encoding
+    along the x,y dimension.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_7.jpg
+  Figure 7 caption: Architecture of our generator. By default, we feed the downsampled
+    semantic mask to the generator. When processing multi-modal image generation,
+    the input of generator is replaced by a random noise. For style-guided synthesis,
+    a style encoder is used to guide the specified distribution.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_8.jpg
+  Figure 8 caption: Visual comparison results on the ADE20k (top five rows) and ADE20k-outdoor
+    (bottom five rows) dataset. It shows that images generated by our method are very
+    comparable or even slightly better than SPADE. Compared to Pix2pixHD, SPADE and
+    CLADE are overall more realistic.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Efficient_Semantic_Image_Synthesis_via_ClassAdaptive_Normalization\figure_9.jpg
+  Figure 9 caption: Visual comparison results on the challenging COCO-Stuff dataset.
+    Though very diverse categories and small structures exist in this dataset, our
+    method can work very well and generate very high-fidelity results.
+  First author gender probability: 0.68
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.53
+  Name of the first author: Zhentao Tan
+  Name of the last author: Nenghai Yu
+  Number of Figures: 12
+  Number of Tables: 8
+  Number of authors: 9
+  Paper title: Efficient Semantic Image Synthesis via Class-Adaptive Normalization
+  Publication Date: 2021-04-29 00:00:00
+  Table 1 caption: TABLE 1 Performance and Complexity Comparison With Other Semantic
+    Image Synthesis Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Runtime Comparison Between SPADE and CLADE on a Single-Threaded
+    CPU (Intel(R) Xeon(R) Gold 6148 CPU 2.40 GHz)
+  Table 3 caption: TABLE 3 Detailed Comparison With SPADE and CLADE on the ADE20k
+    (Col 2-4), Cityscapes (Col 5-7), and COCO-Stuff (Col 8-10) Datasets
+  Table 4 caption: TABLE 4 Performance Comparison With a Lightweight Model of SPADE
+    on Four Datasets
+  Table 5 caption: TABLE 5 User Study Results
+  Table 6 caption: TABLE 6 Ablation Results on ADE20k-outdoor and Cityscapes by Mixing
+    SPADE and CLADE With the Transition Points at Different Resolutions
+  Table 7 caption: TABLE 7 Comparison With Different Positional Encoding Map Embedding
+    on the ADE20k, ADE20k-outdoor and Cityscapes Datasets in Terms of FID
+  Table 8 caption: TABLE 8 Performance and Complexity Comparison When Applying CLADE
+    onto Some Recent SPADE-Based Methods
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3076487
+- Affiliation of the first author: state key lab of cad&cg, zhejiang university, hangzhou,
+    zhejiang, china
+  Affiliation of the last author: state key lab of cad&cg, zhejiang university, hangzhou,
+    zhejiang, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_1.jpg
+  Figure 1 caption: The proposed system estimates an instance disparity map, i.e.,
+    pixel-wise disparities only on foreground objects, for stereo 3D object detection.
+    This design leads to better disparity estimation accuracy and faster run-time
+    speed.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_10.jpg
+  Figure 10 caption: Failure cases. The ground-truth bounding boxes and the pseudo-GT
+    point clouds are visualized in red, while the predictions are visualized in green.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_2.jpg
+  Figure 2 caption: Disp R-CNN architecture. Disp R-CNN has three stages. First, the
+    input images are passed through a Mask R-CNN to detect 2D bounding boxes and instance
+    segmentation masks. Then, the instance disparity estimation network (iDispNet)
+    takes the cropped RoI images as input and estimates an instance disparity map.
+    Finally, the instance disparity map is converted to an instance point cloud and
+    fed into the 3D detector for 3D bounding box regression.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_3.jpg
+  Figure 3 caption: The crop-and-align process aligns the left and right RoIs by cutting
+    off a global offset. As a result, the instance disparity D i (p) distributes in
+    a much narrower range compared to the full-frame disparity D f (p) , which makes
+    it possible to reduce the disparity search range when constructing the disparity
+    cost volume and leads to faster inference.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_4.jpg
+  Figure 4 caption: The object shape reconstruction process for the car category.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_5.jpg
+  Figure 5 caption: 'The dimension regularization during pseudo-GT generation penalizes
+    a voxel if it is outside of the 3D bounding box and has a negative TSDF value,
+    thus enforcing the shape surface to stay inside the 3D bounding box. From left
+    to right: object shapes without and with dimension regularization.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_6.jpg
+  Figure 6 caption: The human body is reconstructed by jointly fitting the SMPL model
+    to point clouds and minimizing the reprojection error of 2D joints.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_7.jpg
+  Figure 7 caption: Qualitative results for the car category on the KITTI object validation
+    set. The rows from top to bottom present 3D bounding box prediction, instance
+    disparity estimation, and our disparity pseudo-ground-truth, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_8.jpg
+  Figure 8 caption: Qualitative results for pedestrian and cyclist categories on the
+    KITTI object validation set. The rows from top to bottom present 3D bounding box
+    prediction, instance disparity estimation, and our disparity pseudo-ground-truth,
+    respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Shape_Prior_Guided_Instance_Disparity_Estimation_for_D_Object_Detection\figure_9.jpg
+  Figure 9 caption: Qualitative comparison of disparity estimation results between
+    PSMNet and our iDispNet. 3D ground-truth bounding boxes are shown in red. Disparity
+    error maps are shown as well, where the larger value indicates the worse disparity.
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.69
+  Name of the first author: Linghao Chen
+  Name of the last author: Xiaowei Zhou
+  Number of Figures: 12
+  Number of Tables: 10
+  Number of authors: 9
+  Paper title: Shape Prior Guided Instance Disparity Estimation for 3D Object Detection
+  Publication Date: 2021-04-29 00:00:00
+  Table 1 caption: TABLE 1 3D Object Detection Results for the Car Category on the
+    KITTI Object Validation Set
+  Table 10 caption: TABLE 10 Detection Precision Using iDispNet With Different Disparity
+    Search Ranges and RoI Input Sizes
+  Table 2 caption: TABLE 2 3D Object Detection Results for the Pedestrian Category
+    on the KITTI Object Validation Set
+  Table 3 caption: TABLE 3 3D Object Detection Results for the Cyclist Category on
+    the KITTI Object Validation Set
+  Table 4 caption: TABLE 4 3D Object Detection Results on the KITTI Object Test Set
+  Table 5 caption: TABLE 5 3D Object Detection Results for the Pedestrian Category
+    on the KITTI Object Test Set
+  Table 6 caption: TABLE 6 3D Object Detection Results for the Cyclist Category on
+    the KITTI Object Test Set
+  Table 7 caption: TABLE 7 Disparity EPE and Depth RMSE Comparison, Evaluated on the
+    KITTI Validation Set for the Car Category
+  Table 8 caption: TABLE 8 2D Detection AP, Evaluated on the KITTI Validation Set
+    for the Pedestrian and Cyclist Categories Using 0.5 as IoU Threshold
+  Table 9 caption: TABLE 9 Running Time Comparison
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3076678
+- Affiliation of the first author: department of engineering science, university of
+    oxford, oxford, u.k.
+  Affiliation of the last author: department of engineering science, university of
+    oxford, oxford, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_1.jpg
+  Figure 1 caption: 'Unsupervised learning of 3D deformable objects from in-the-wild
+    images. Left: Training uses only single views of the object category with no additional
+    supervision at all (i.e. no ground-truth 3D information, multiple views, or any
+    prior model of the object). Right: Once trained, our model reconstructs the 3D
+    pose, shape, albedo and illumination of a deformable object instance from a single
+    image with excellent fidelity.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_10.jpg
+  Figure 10 caption: Training only on frontal faces. The model trained on only frontal
+    faces is still able to learn 3D shape, despite producing artifacts (first row),
+    but it does not generalize to other views (second row).
+  Figure 2 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_2.jpg
+  Figure 2 caption: "Photo-geometric autoencoding. Our network \u03A6 decomposes an\
+    \ input image I into depth, albedo, viewpoint and lighting, together with a pair\
+    \ of confidence maps. It is trained to reconstruct the input without external\
+    \ supervision."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_3.jpg
+  Figure 3 caption: Reconstruction of faces, cats and cars. Our unsupervised model
+    recovers accurate 3D shape from only a single input image.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_4.jpg
+  Figure 4 caption: Reconstruction of faces in paintings and cartoons. The model trained
+    on real faces in CelebA generalizes well to abstract faces in paintings and cartoons.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_5.jpg
+  Figure 5 caption: Re-lighting results. Our model disentangles albedo and shading
+    from a single input image, which allows us to relight the objects with novel lighting
+    conditions.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_6.jpg
+  Figure 6 caption: Frame-by-frame reconstruction on video sequences. Even though
+    our model does not use videos for training, it produces temporally consistent
+    reconstructions on video sequences.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_7.jpg
+  Figure 7 caption: "Symmetry plane and asymmetry detection. (a): our model can reconstruct\
+    \ the \u201Cintrinsic\u201D symmetry plane of an in-the-wild object even though\
+    \ the appearance is highly asymmetric. (b): asymmetries (highlighted in red) are\
+    \ detected and visualized using confidence map \u03C3 \u2032 ."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_8.jpg
+  Figure 8 caption: Ablation study. Refer to Section 4.3.2 for details.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Probably_Symmetric_Deformable_D_Objects_From_Images_in_\figure_9.jpg
+  Figure 9 caption: 'Asymmetric perturbation. Top: examples of the perturbed dataset.
+    Bottom: reconstructions with and without confidence maps. Confidence allows the
+    model to correctly reconstruct the 3D shape with the asymmetric texture.'
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.82
+  Name of the first author: Shangzhe Wu
+  Name of the last author: Andrea Vedaldi
+  Number of Figures: 14
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Unsupervised Learning of Probably Symmetric Deformable 3D Objects From
+    Images in the Wild (Invited Paper)
+  Publication Date: 2021-04-29 00:00:00
+  Table 1 caption: 'TABLE 1 Comparison With Selected Prior Work: Supervision, Goals,
+    and Data'
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison With Baselines
+  Table 3 caption: TABLE 3 Ablation Study
+  Table 4 caption: TABLE 4 Asymmetric Perturbation
+  Table 5 caption: TABLE 5 Training on Frontal Faces
+  Table 6 caption: TABLE 6 3DFAW Keypoint Depth Evaluation
+  Table 7 caption: TABLE 7 Performance on Feng et al. [91] Benchmark
+  Table 8 caption: TABLE 8 Performance on NoW et al. [21] Benchmark
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3076536
+- Affiliation of the first author: school of electrical and information engineering,
+    tianjin university, tianjin, china
+  Affiliation of the last author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Figure 1 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_1.jpg
+  Figure 1 caption: "The increasing number of publications on pedestrian detection\
+    \ from the year 2000 to 2019, obtained through Google scholar search with the\
+    \ key-words: allintitle: \u201Cpedestrian detection\u201D."
+  Figure 10 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_10.jpg
+  Figure 10 caption: Example pedestrians under different types of occlusion (i.e.,
+    inter-class and intra-class occlusions). Some examples of inter-class occlusion
+    are shown in the left, where the level of occlusion varies from heavy to bare.
+    Some examples of intra-class occlusion are shown in the right, where intra-class
+    occlusion occurs between different pedestrians.
+  Figure 2 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_2.jpg
+  Figure 2 caption: 'Detection performance improvements, in terms of log-average miss
+    rate (lower is better), on Caltech test set [43] in past decade. Top: we show
+    the performance comparison on the reasonable (R) set. Bottom: We show the comparison
+    on the heavy occluded (HO) set. The white cross hatch in bar indicates that more
+    accurate annotations [241] are used for training and test. The white line hatch
+    in bar indicates that motion cue is utilized in addition to appearance information.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_3.jpg
+  Figure 3 caption: Most pedestrian detection approaches typically comprise three
+    consecutive steps. The first step, proposal generation, involves generating candidate
+    proposals from an input image. The second step, proposal classification (and regression),
+    involves assigning the proposals to either the positive class (pedestrian) or
+    the negative class (background). Consequently, the post-processing step aims to
+    suppress duplicate bounding-boxes belonging to the same pedestrian. In proposal
+    generation and proposal classification, feature extraction is the key. A variety
+    of feature extraction strategies ranging from handcrafted to deep features have
+    been used in the literature.
+  Figure 4 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_4.jpg
+  Figure 4 caption: 'Visualization of the deep features and handcrafted features used
+    in pedestrian detection. On the left (before the red dotted line): different layers
+    (P2, P3, and P4) of the feature pyramid network [110]. Here, we show feature channels
+    with maximum responses. On the right (after the red dotted line): handcrafted
+    features of three color channels (i.e., LUV) followed by gradient magnitude (last
+    column).'
+  Figure 5 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_5.jpg
+  Figure 5 caption: 'Two different classes of single-spectral pedestrian detection
+    approaches: handcrafted features based and deep features based methods. We further
+    categorize the handcrafted based methods into channel features based and deformable
+    part model based approaches. Further, deep features based pedestrian detection
+    methods are categorized into hybrid and pure CNN based approaches.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_6.jpg
+  Figure 6 caption: Some typical features in channel features based methods, including
+    SquaresChntrs [5], Chntrs [42], InformedHaar [239], LDCF [132], Checkererbords
+    [243], and NNNF [17]. The feature freedom degree in shape and space (local or
+    non-local) becomes larger from left to right.
+  Figure 7 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_7.jpg
+  Figure 7 caption: Architectures of deep features based methods. (a) and (b) show
+    two techniques in hybrid methods, while (c) is pure CNN based method. In (a),
+    CNN extracts deep features for proposal generation and a shallow classifier is
+    used for proposal classification. In (b), a handcrafted features based method
+    is used for proposal generation and CNN is for proposal classification. In (c),
+    pure CNN is used for both proposal generation and classification in an end-to-end
+    fashion.
+  Figure 8 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_8.jpg
+  Figure 8 caption: Statistics of deep features based methods. The left part shows
+    the change in the number of methods belonging different classes. Here, feature
+    in legend indicates the union of feature-fused and attention-based methods which
+    both aim to improve feature description ability. We ignore the anchor-free methods
+    and others due to the limited number of these methods. The right part shows the
+    percentage of different classes.
+  Figure 9 Link: articels_figures_by_rev_year\2021\From_Handcrafted_to_Deep_Features_for_Pedestrian_Detection_A_Survey\figure_9.jpg
+  Figure 9 caption: Example pedestrians at various scales. From left to right, pedestrians
+    vary from small scale to large scale. Pedestrians of different scales have large-scale
+    variations and small-scale pedestrians are relatively noisy and blurry.
+  First author gender probability: 0.69
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Jiale Cao
+  Name of the last author: Ling Shao
+  Number of Figures: 10
+  Number of Tables: 15
+  Number of authors: 5
+  Paper title: 'From Handcrafted to Deep Features for Pedestrian Detection: A Survey'
+  Publication Date: 2021-04-30 00:00:00
+  Table 1 caption: TABLE 1 Comparison With Object Detection and Human Detection
+  Table 10 caption: TABLE 10 Improving Generic Object Detector for Pedestrian Detection
+    on the CityPersons Validation Set
+  Table 2 caption: TABLE 2 Summary of 21 Typical Handcrafted Features Based Methods
+    for Pedestrian Detection
+  Table 3 caption: TABLE 3 Summary of 45 Typical Deep Features Based Methods for Pedestrian
+    Detection
+  Table 4 caption: TABLE 4 Summary of 12 Typical Methods for Multispectral Pedestrian
+    Detection
+  Table 5 caption: TABLE 5 Summary of Pedestrian Datasets
+  Table 6 caption: TABLE 6 Miss Rates (MR) of 30 State-of-the-Art Methods on Caltech
+    Pedestrian Dataset
+  Table 7 caption: TABLE 7 Average Precisions (AP) of 21 State-of-the-Art Methods
+    on the KITTI Test Set
+  Table 8 caption: TABLE 8 Miss Rates (MR) of 17 State-of-the-Art Methods on CityPersons
+    Validation Set
+  Table 9 caption: TABLE 9 Miss Rates of State-of-the Art Detectors on KAIST R Test
+    Set Using the Annotations Provided by [113]
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3076733
+- Affiliation of the first author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Affiliation of the last author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_1.jpg
+  Figure 1 caption: 'Example pictures from [12] reveal that semantic lines may help
+    in the photographic composition. (a): a photo was taken with an arbitrary pose.
+    (b): a photo fits the golden ratio principle [21], [33] which is obtained by the
+    method described in[12] using so-called prominent lines in the image. (c): Our
+    detection results are clean and comprise only a few meaningful lines that are
+    potentially helpful in the photographic composition. (d): Line detection results
+    by the classical line detection algorithms often focus on fine detailed straight
+    edges.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_10.jpg
+  Figure 10 caption: Illustration of the bipartite graph matching in evaluation. (a)
+    An example image with 3 ground-truth lines ( g1, g2, g3 ) and 4 predictions (
+    p1, p2, p3, p4 ). (b) the corresponding bipartite graph. The edge between a pair
+    of nodes represents the similarity ( mathcal S in Eq. (10)) between lines. (c)
+    after maximum matching of a bipartite graph, each node in a subgraph is connected
+    with no more than 1 node from the other subgraph. (d) true positive (TP), false
+    positive (FP) and false negative (FN).
+  Figure 2 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_2.jpg
+  Figure 2 caption: The pipeline of our proposed method. DHT is short for the proposed
+    Deep Hough Transform, and RHT represents the Reverse Hough Transform. CTX means
+    the context-aware line detector which contains multiple convolutional layers.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_3.jpg
+  Figure 3 caption: "A line can be parameterized by bias r l and slope \u03B8 l ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_4.jpg
+  Figure 4 caption: '(a): Features along a line in the feature space (blue, left)
+    are accumulated to a point (hatrl,hattheta l) in the parametric space (red, right).
+    (b): Illustration of the proposed context-aware feature aggregation. Features
+    of nearby lines in the feature space (left) are translated into neighbor points
+    in the parametric space (right). In the parametric space, a simple 3times 3 convolutional
+    operation can easily capture contextual information for the central line (orange).
+    Best viewed in color.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_5.jpg
+  Figure 5 caption: '(a): Two pairs of lines with similar relative position could
+    have very different IOU scores. (b): Even humans cannot determine which area (blue
+    or red) should be considered as the intersection in the IOU-based metric [11].
+    (c) and (d): Our proposed metric considers both euclidean distance and angular
+    distance between a pair of lines, resulting in consistent and reasonable scores.
+    Best viewed in color.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_6.jpg
+  Figure 6 caption: Example lines with various EA-scores ( mathcal S in Eq. (10)).
+    The larger the EA-score is, the more similar the lines are.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_7.jpg
+  Figure 7 caption: Example images and annotations (yellow lines) of NKL. Images of
+    NKL present diverse scenes and rich line annotations.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_8.jpg
+  Figure 8 caption: Histogram chart of number of lines. Lines of our dataset are more
+    fairly distributed compared to SEL.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Deep_Hough_Transform_for_Semantic_Line_Detection\figure_9.jpg
+  Figure 9 caption: Category distribution of SEL (a) and NKL (b) datasets. Category
+    labels are obtained through a Places365 pretrained model. There are 327 (totally
+    365) scene labels presented in NKL dataset, in contrast to 167 in SEL dataset.
+    The labels of NKL are also more fairly distributed compared to that of SEL.
+  First author gender probability: 0.93
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Kai Zhao
+  Name of the last author: Ming-Ming Cheng
+  Number of Figures: 14
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Deep Hough Transform for Semantic Line Detection
+  Publication Date: 2021-05-03 00:00:00
+  Table 1 caption: TABLE 1 Number of Images and Lines in SEL [11] and NKL
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Comparisons on the SEL [11] and NKL Dataset
+  Table 3 caption: TABLE 3 Quantitative Speed Comparisons
+  Table 4 caption: TABLE 4 Ablation Study for Each Component
+  Table 5 caption: "TABLE 5 Performance DHT+ER With Different \u03B4 r \u03B4r"
+  Table 6 caption: "TABLE 6 Performance With and Without ER ( \u03B4 r =5 \u03B4r=5)\
+    \ Using Different Backbones and Datasets"
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3077129
+- Affiliation of the first author: department of electrical and computer engineering,
+    carnegie mellon university, pittsburgh, pa, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    carnegie mellon university, pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_1.jpg
+  Figure 1 caption: Illustration of the expected marginal independence of extracted
+    discriminative representation d (red), latent variation l (green), and semantic
+    variation label s (blue). d is used to predict the main-recognition task label
+    y . The task-relevant s is inherently related to y and can also become nuisance
+    factors in some specific tasks (e.g., hair colorgender for makeup-tolerant FRbias-free
+    classification). d and task-relevant s are related to y as masked with gray oval.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_10.jpg
+  Figure 10 caption: Using MI-FLF to swap some face attributes s , while keeping their
+    d (i.e., ID) and l (i.e., background). Given an input image (left), we show its
+    reconstruction result without attributes changes and with hair color or expression
+    changes.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_2.jpg
+  Figure 2 caption: The proposed Feature-level Frankenstein (FLF) framework. With
+    the encoders E d and E l , the input x is encoded into discriminative representation
+    d and latent variation l . We maximize the information of y in d by minimizing
+    the main task classification CE loss of using d to predict y [Eq. (1)]. In contrast,
+    we maximize the main task classification CE loss of using l to predict y to dispel
+    the information of y in l [Eq. (2)]. d is also expected to be independent of the
+    semantic variation s when the label of the detrimental semantic variation is available.
+    Specifically, we maximize the CE loss of using d to predict s [Eq. (3)]. The combination
+    of ( d,l,s ) can be reconstructed to x ~ via the decoder to ensure these three
+    parts are complementary to each other [Eq. (4)].
+  Figure 3 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_3.jpg
+  Figure 3 caption: The proposed Mutual Information Regularized Feature-level Frankenstein
+    (MI-FLF) framework, where the input x is encoded into d,l,s . The combination
+    of ( d,l,s ) can be reconstructed to x ~ via decoder. The MI is computed to assess
+    the independence between these factors. We explicitly enforce the disentanglement
+    of d,l and s by minimizing three pair-wise mutual information terms.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_4.jpg
+  Figure 4 caption: Samples in MNIST (left) and SVHN (right) dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_5.jpg
+  Figure 5 caption: The digital number recognition accuracies of the proposed and
+    baseline CNNs that are trained using MNIST+SVHN and tested on MNIST (a) and SVHN
+    (b).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_6.jpg
+  Figure 6 caption: A visualization grid of MNIST image swapping using MI-FLF. We
+    fix the semantic variation to index the MNIST dataset, while swap the discriminative
+    representation and latent variations. The images are generated using l (writing
+    style) from the leftmost digit and d (number) from the digit at the top of the
+    column using (a) our MI-FLF. Results are comparable to (b) [63] with triplet-training,
+    which requires more than three times the training time of our method.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_7.jpg
+  Figure 7 caption: A visualization grid of SVHN image swapping using MI-FLF. We extract
+    l (writing style and background, etc.) from the leftmost column digits, and d
+    (number 0-9) from the top row digits. Then, we fix the semantic variation label
+    s to index the SVHN dataset to make image generation. d can be extracted from
+    the SVHN (a) or MNIST (b).
+  Figure 8 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_8.jpg
+  Figure 8 caption: t-SNE [61] visualization of images in Extended YaleB. The original
+    images (c) are clustered according to their lighting environments, while the discriminative
+    representation learned by our framework (a) is better at clustering according
+    to the identities than conventional CNN (b) and the original images (c).
+  Figure 9 Link: articels_figures_by_rev_year\2021\Mutual_Information_Regularized_FeatureLevel_Frankenstein_for_Discriminative_Reco\figure_9.jpg
+  Figure 9 caption: t-SNE visualization of extracted d from 10,000 CelebA images using
+    VGG (left) and MI-FLF (right) respectively. We use bluered points to denote the
+    samples with the gender label of malefemale. The classification accuracy of gender
+    is 96.2 and 57.3 percent for VGG and MI-FLF respectively.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xiaofeng Liu
+  Name of the last author: B.V.K. Vijaya Kumar
+  Number of Figures: 10
+  Number of Tables: 12
+  Number of authors: 5
+  Paper title: Mutual Information Regularized Feature-Level Frankenstein for Discriminative
+    Recognition
+  Publication Date: 2021-05-04 00:00:00
+  Table 1 caption: TABLE 1 Summary of the Experiments, Their Used Datasets, the to-be-Disentangled
+    Semantic Variations s s, and Latent Variation l l
+  Table 10 caption: TABLE 10 Face Attribute Recognition Accuracy on CelebA and LFWA
+    Dataset
+  Table 2 caption: TABLE 2 Classification Accuracy Comparisons
+  Table 3 caption: TABLE 3 Mutual Information for Variations Being Reduced on DIGITS
+    Dataset
+  Table 4 caption: TABLE 4 Mutual Information for Variations Being Reduced on Extended
+    YaleB Dataset
+  Table 5 caption: TABLE 5 Classification Error Rate Comparisons Following the Setting
+    and Backbones in [17]
+  Table 6 caption: TABLE 6 Summary of the 40 Face Attributes Provided With the CelebA
+    and LFWA Datasets
+  Table 7 caption: TABLE 7 Comparisons of the Rank-1 Accuracy and TPRFPR=0.1% on Three
+    Makeup Datasets
+  Table 8 caption: TABLE 8 Face Recognition on DFW 2018 Dataset
+  Table 9 caption: TABLE 9 Face Recognition Accuracy on CelebA Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3077397

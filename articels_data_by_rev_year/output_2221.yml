@@ -1,0 +1,758 @@
+- Affiliation of the first author: department of computing, imperial college london,
+    london, u.k.
+  Affiliation of the last author: department of computing, imperial college london,
+    london, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_1.jpg
+  Figure 1 caption: Comparisons of Triplet [3], Tuplet [12], ArcFace and sub-center
+    ArcFace. Triplet and Tuplet conduct local sample-to-sample comparisons with euclidean
+    margins within the mini-batch. By contrast, ArcFace and sub-center ArcFace conduct
+    global sample-to-class and sample-to-subclass comparisons with angular margins.
+  Figure 10 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_10.jpg
+  Figure 10 caption: Angle distributions of both positive and negative pairs on LFW,
+    YTF, CFP-FP, CPLFW, AgeDB and CALFW. The red histogram indicates positive pairs
+    while the blue histogram indicates negative pairs. All angles are represented
+    in degree. ([IBUG-500K, ResNet100, ArcFace]).
+  Figure 2 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_2.jpg
+  Figure 2 caption: "Training the deep face recognition model by the proposed ArcFace\
+    \ loss ( K =1) and sub-center ArcFace loss (e.g. K =3). Based on a \u2113 2 normalization\
+    \ step on both embedding feature x i \u2208 R 512 and all sub-centers W\u2208\
+    \ R 512\xD7N\xD7K , we get the subclass-wise similarity score S\u2208 R N\xD7\
+    K by a matrix multiplication W T x i . After a max pooling step, we can easily\
+    \ get the class-wise similarity score S \u2032 \u2208 R N\xD71 . Afterwards, we\
+    \ calculate the arccos \u03B8 y i and get the angle between the feature x i and\
+    \ the ground truth center W y i . Then, we add an angular margin penalty m on\
+    \ the target (ground truth) angle \u03B8 y i . After that, we calculate cos( \u03B8\
+    \ y i +m) and multiply all logits by the feature scale s . Finally, the logits\
+    \ go through the softmax function and contribute to the cross entropy loss."
+  Figure 3 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_3.jpg
+  Figure 3 caption: Toy examples under the Norm-Softmax and ArcFace loss on 8 identities
+    with 2D features. Dots indicate samples and lines refer to the center direction
+    of each identity. Based on the feature normalization, all face features are pushed
+    to the arc space with a fixed radius. The geodesic distance margin between closest
+    classes becomes evident as the additive angular margin penalty is incorporated.
+  Figure 4 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_4.jpg
+  Figure 4 caption: "Target logit analysis. (a) \u03B8 j distributions from start\
+    \ to end during ArcFace training. (2) Target logit curves for softmax, SphereFace,\
+    \ ArcFace, CosFace and combined margin penalty ( cos( m 1 \u03B8+ m 2 )\u2212\
+    \ m 3 )."
+  Figure 5 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_5.jpg
+  Figure 5 caption: Decision margins of different loss functions under binary classification
+    case. The dashed line represents the decision boundary, and the grey areas are
+    the decision margins.
+  Figure 6 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_6.jpg
+  Figure 6 caption: (a) The sub-classes of one identity from the CASIA dataset [56]
+    after using the sub-center ArcFace loss ( K=10 ). Noisy samples and hard samples
+    (e.g. profile and occluded faces) are automatically separated from the majority
+    of clean samples. (b) Angle distribution of samples from the dominant and non-dominant
+    sub-classes. Clean data are automatically isolated by the sub-center ArcFace.
+  Figure 7 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_7.jpg
+  Figure 7 caption: "Data distribution of ArcFace ( K =1) and the proposed sub-center\
+    \ ArcFace ( K =3) before and after dropping non-dominant sub-centers. MS1MV0 [37]\
+    \ is used here. K=3\u21931 denotes sub-center ArcFace with non-dominant sub-centers\
+    \ dropping."
+  Figure 8 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_8.jpg
+  Figure 8 caption: ArcFace is not only a discriminative model but also a generative
+    model. Given a pre-trained ArcFace model, a random input tensor can be gradually
+    updated into a pre-defined identity by using the gradient of the ArcFace loss
+    as well as the face statistic priors stored in the Batch Normalization layers.
+  Figure 9 Link: articels_figures_by_rev_year\2021\ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition\figure_9.jpg
+  Figure 9 caption: IBUG-500K statistics. We show the (a) gender, (b) race, (c) yaw
+    pose, (d) age, and (e) image number distributions of the proposed large-scale
+    training dataset.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jiankang Deng
+  Name of the last author: Stefanos Zafeiriou
+  Number of Figures: 16
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: 'ArcFace: Additive Angular Margin Loss for Deep Face Recognition'
+  Publication Date: 2021-06-09 00:00:00
+  Table 1 caption: TABLE 1 Face Datasets for Training and Testing
+  Table 10 caption: TABLE 10 FID and Cosine Similarity of Different Model Inversion
+    Results
+  Table 2 caption: TABLE 2 Verification Results ( % %) of Different Loss Functions
+    ([CASIA, ResNet50, Loss])
+  Table 3 caption: TABLE 3 Ablation Experiments of Different Settings of the Proposed
+    Sub-Center ArcFace on MS1MV0, MS1MV3, and Celeb500K
+  Table 4 caption: TABLE 4 Verification Performance ( % %) of Different Methods on
+    LFW and YTF
+  Table 5 caption: TABLE 5 Verification Performance ( % %) of Different Methods on
+    CFP-FP, CPLFW, AgeDB, and CALFW
+  Table 6 caption: TABLE 6 Face Identification and Verification Evaluation of Different
+    Methods on MegaFace Challenge1 Using FaceScrub as the Probe Set
+  Table 7 caption: TABLE 7 1:1 Verification (TPRFPR = 1e-4) on IJB-B and IJB-C
+  Table 8 caption: TABLE 8 1:1 Verification (TPRFPR = 1e-5) and 1:N Identification
+    (Rank-1) on IJB-B and IJB-C
+  Table 9 caption: TABLE 9 Verification Results ( % %) on the LFR2019-Image (TPRFPR
+    = 1e-8) and LFR2019-Video (TPRFPR = 1e-4) Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3087709
+- Affiliation of the first author: department of computer science and statistics,
+    university of california, los angeles (ucla), los angeles, ca, usa
+  Affiliation of the last author: department of computer science and statistics, university
+    of california, los angeles (ucla), los angeles, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Monocular_D_Pose_Estimation_via_Pose_Grammar_and_Data_Augmentation\figure_1.jpg
+  Figure 1 caption: Illustration of human pose grammar, which expresses the knowledge
+    of human body configuration. We consider three kinds of human body dependencies
+    and relations in this paper, i.e., kinematics (red), symmetry (blue) and motor
+    coordination (green).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Monocular_D_Pose_Estimation_via_Pose_Grammar_and_Data_Augmentation\figure_2.jpg
+  Figure 2 caption: 'The proposed deep grammar network. Our model consists of two
+    major components: i) a base network constituted by two submodules encoding appearance
+    and geometry features given the input image and the detected 2D pose, ii) a pose
+    grammar network encoding human body dependencies and relations w.r.t. kinematics,
+    symmetry and motor coordination. Each grammar is represented as a Bi-directional
+    RNN among certain joints. The current state of a joint is composed of the hidden
+    states of its related joints and the encoded input feature from itself. See text
+    for detailed explanations.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Monocular_D_Pose_Estimation_via_Pose_Grammar_and_Data_Augmentation\figure_3.jpg
+  Figure 3 caption: Illustration of virtual camera simulation. The black camera icons
+    stand for real camera settings while the white camera icons simulated virtual
+    camera settings.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Monocular_D_Pose_Estimation_via_Pose_Grammar_and_Data_Augmentation\figure_4.jpg
+  Figure 4 caption: Examples of learned 2D atomic poses in probability distribution
+    p(U| U ) .
+  Figure 5 Link: articels_figures_by_rev_year\2021\Monocular_D_Pose_Estimation_via_Pose_Grammar_and_Data_Augmentation\figure_5.jpg
+  Figure 5 caption: Qualitative results of our method on MPII dataset. For each sample
+    pair, we show the input image overlayed with the estimated 2D pose (left) and
+    the estimated 3D pose from a novel view (right). Best viewed in color.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Monocular_D_Pose_Estimation_via_Pose_Grammar_and_Data_Augmentation\figure_6.jpg
+  Figure 6 caption: Illustration of how symmetry constraints help pose estimation.
+    Even when certain body parts are occludedmis-detected in the input image, our
+    model could still predict reasonable 3D pose configurations.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Monocular_D_Pose_Estimation_via_Pose_Grammar_and_Data_Augmentation\figure_7.jpg
+  Figure 7 caption: Illustration of four different viewpoint augmentation strategies.
+    See text for detailed explanations.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Yuanlu Xu
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: 7
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Monocular 3D Pose Estimation via Pose Grammar and Data Augmentation
+  Publication Date: 2021-06-09 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Comparisons of Average euclidean Distance
+    (in mm) Between the Estimated Pose and the Ground-Truth on Human3.6M Under Protocol
+    1, Protocol 2, Protocol 3, and the Proposed Protocol 44
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Comparisons of the Mean Reconstruction Error
+    (mm) on HumanEva-I
+  Table 3 caption: TABLE 3 Quantitative Comparisons of Average euclidean Distance
+    (in mm) Between the Estimated Pose and the Ground-Truth on HHOI
+  Table 4 caption: TABLE 4 Ablation Studies of Features and Loss Terms on Human3.6M
+    Under Protocol 1, 2 and 4
+  Table 5 caption: TABLE 5 Ablation Studies of Pose Grammar on Human3.6M Under Protocol
+    1, 2 and 4
+  Table 6 caption: TABLE 6 Ablation Studies of Viewpoint Augmentation, Pose Sampling
+    and Augmentation for Other Methods on Human3.6M Under Protocol 1, 2, and 4
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3087695
+- Affiliation of the first author: department of computer science and engineering,
+    iiit delhi, new delhi, delhi, india
+  Affiliation of the last author: department of computer science and engineering,
+    iit jodhpur, jodhpur, rajasthan, india
+  Figure 1 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_1.jpg
+  Figure 1 caption: (a) VLRLR face images captured in an unconstrained environment
+    often contain limited information content, rendering face recognition challenging.
+    (b) Existing techniques for VLRLR image classification often focus only on the
+    image, feature, or classification space. The proposed DeriveNet models both the
+    image and classification space for VLRLR recognition, while implicitly learning
+    effective features.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_2.jpg
+  Figure 2 caption: 'Sample HR and VLRLR images from different datasets: (a)(b-c)
+    VLR digitface recognition and (d) VLRLR face recognition in drone-shot videos.
+    The top and the bottom row contains the HR and VLRLR images, respectively.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_3.jpg
+  Figure 3 caption: 'Illustration of the training phase of the proposed DeriveNet
+    model for VLR face recognition. HR and VLR images are used as input, followed
+    by a convolutional neural network based feature extractor. The extracted embedding
+    are provided as input to two modules: (i) the reconstruction module and the (ii)
+    classification module. During testing, a given VLR input image is passed through
+    the feature extractor, followed by the classification module for obtaining the
+    predicted class.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_4.jpg
+  Figure 4 caption: Diagrammatic representation of the DeriveNet model for a four
+    class classification problem, with an input of class-1. The extracted embeddings
+    are provided as input to the reconstruction and classification modules. The distance
+    between the centers of the reconstructions are provided as margins to the proposed
+    Derived-Margin softmax loss for learning a VLRLR classifier.
+  Figure 5 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_5.jpg
+  Figure 5 caption: Class activation maps obtained using the (i) DeriveNet model and
+    the native (ii) Softmax based model. DeriveNet appears to focus more on the biometric
+    regions of eyes and nose, while the Softmax based model appears to focus more
+    on the hair and other soft features.
+  Figure 6 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_6.jpg
+  Figure 6 caption: Sample images correctly identified via the proposed DeriveNet
+    model, which are not identified by the other variants used for the ablation study.
+  Figure 7 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_7.jpg
+  Figure 7 caption: "(a) t-SNE plots on the features of (i) Softmax based model and\
+    \ (ii) DeriveNet model. A larger margin is observed between the features learned\
+    \ via DeriveNet. (b) Convergence plot of the DeriveNet model, and (c) Effect of\
+    \ \u03BB (Eq. (1)) on the SVHN dataset."
+  Figure 8 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_8.jpg
+  Figure 8 caption: "Score distributions of the correct and incorrect classes for\
+    \ different resolutions on the UCCS dataset. The earth movers distance was also\
+    \ calculated between the same class and different class scores for each resolution:\
+    \ 24.55 ( 8\xD78 ), 24.65 ( 16\xD716 ), 24.72 ( 24\xD724 ), and 24.71 ( 32\xD7\
+    32 ). The distance for the smallest resolution ( 8\xD78 ) is the least, thus suggesting\
+    \ a smaller variation between the scores, as compared to the other resolutions."
+  Figure 9 Link: articels_figures_by_rev_year\2021\DeriveNet_for_Very_Low_Resolution_Image_Classification\figure_9.jpg
+  Figure 9 caption: (a-b) CMC curves on the DroneSURF dataset for the two protocols.
+    DeriveNet improves the rank-1 accuracy by over 20 percent on both protocols. Comparison
+    has also been performed with Amato et al. [2]. (c) Sample challenging cases from
+    the DroneSURF dataset which were (i) correctly classified and (ii) mis-classified
+    by the proposed DeriveNet model.
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Maneet Singh
+  Name of the last author: Mayank Vatsa
+  Number of Figures: 9
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: DeriveNet for (Very) Low Resolution Image Classification
+  Publication Date: 2021-06-11 00:00:00
+  Table 1 caption: TABLE 1 Rank-1 Identification Accuracy (%) on the SCface Dataset
+    [11] for LR Face Recognition
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Rank-1 Accuracy (%) on the UCCS Dataset [30] for VLR Face\
+    \ Recognition ( 16\xD716 16\xD716), with 80\xD780 80\xD780 HR Images"
+  Table 3 caption: "TABLE 3 Top-1 and Top-5 Accuracy (%) on the SVHN Dataset [24]\
+    \ for VLR Digit Recognition ( 8\xD78 8\xD78)"
+  Table 4 caption: TABLE 4 Performance of the DeriveNet Model With and Without Multi-Resolution
+    Pyramid Based Data Augmentation During Training
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3088756
+- Affiliation of the first author: faculty of information technology, monash university,
+    clayton, vic, australia
+  Affiliation of the last author: faculty of information technology, monash university,
+    clayton, vic, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Effective_Training_of_Convolutional_Neural_Networks_With_LowBitwidth_Weights_and\figure_1.jpg
+  Figure 1 caption: Demonstration of the guided training strategy. Dashed lines show
+    the guidance loss.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Effective_Training_of_Convolutional_Neural_Networks_With_LowBitwidth_Weights_and\figure_2.jpg
+  Figure 2 caption: The two-stage training approach on ResNet-50.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Effective_Training_of_Convolutional_Neural_Networks_With_LowBitwidth_Weights_and\figure_3.jpg
+  Figure 3 caption: The progressive training approach on AlexNet.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Effective_Training_of_Convolutional_Neural_Networks_With_LowBitwidth_Weights_and\figure_4.jpg
+  Figure 4 caption: The stochastic precision training approach on ResNet-50.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Effective_Training_of_Convolutional_Neural_Networks_With_LowBitwidth_Weights_and\figure_5.jpg
+  Figure 5 caption: Both student and teacher are fine-tuned from the pretrained models.
+    We use ResNet-50 as illustration.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Effective_Training_of_Convolutional_Neural_Networks_With_LowBitwidth_Weights_and\figure_6.jpg
+  Figure 6 caption: Student is learnt from scratch while teacher is fine-tuned. PreResNet-50
+    is used here.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Effective_Training_of_Convolutional_Neural_Networks_With_LowBitwidth_Weights_and\figure_7.jpg
+  Figure 7 caption: Joint training versus fixed teacher using AlexNet on ImageNet.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Effective_Training_of_Convolutional_Neural_Networks_With_LowBitwidth_Weights_and\figure_8.jpg
+  Figure 8 caption: Mean posterior probability visualization.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Bohan Zhuang
+  Name of the last author: Chunhua Shen
+  Number of Figures: 8
+  Number of Tables: 13
+  Number of authors: 6
+  Paper title: Effective Training of Convolutional Neural Networks With Low-Bitwidth
+    Weights and Activations
+  Publication Date: 2021-06-14 00:00:00
+  Table 1 caption: TABLE 1 Accuracy (%) of Different Comparing Methods on the ImageNet
+    Validation Set
+  Table 10 caption: TABLE 10 Accuracy (%) of PreResNets on the ImageNet Validation
+    Set With SP and KD
+  Table 2 caption: TABLE 2 Accuracy (%) of Different Comparing Methods With SP on
+    the ImageNet Validation Set
+  Table 3 caption: TABLE 3 Accuracy (%) of Different Stochastic Policies on the ImageNet
+    Validation Set
+  Table 4 caption: TABLE 4 Accuracies of the Quantized ResNet Using Joint Training
+    Approach and Finetuning
+  Table 5 caption: TABLE 5 Accuracies of the Quantized PreResNet Using Joint Training
+    Approach and Finetuning
+  Table 6 caption: TABLE 6 The Accuracy of the Quantized PreResNet Using the Joint
+    Training Approach, Which is Learnt From Scratch
+  Table 7 caption: TABLE 7 The Accuracy of the Quantized PreResNet Using the Fixed
+    Full-Precision Teacher
+  Table 8 caption: TABLE 8 Abalation Study on the Guidance Signals With ResNet-50
+    on ImageNet
+  Table 9 caption: TABLE 9 Accuracy (%) of ResNets on the ImageNet Validation Set
+    Using SP and KD
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3088904
+- Affiliation of the first author: webank ai lab, shenzhen, china
+  Affiliation of the last author: webank, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_1.jpg
+  Figure 1 caption: "Two threat models considered in this work i.e., removal attack\
+    \ and ambiguity attack, and the proposed solution to defeat both attacks. (a)\
+    \ Removal attack aims to remove or overwrite original watermark B , by modifying\
+    \ DNN model weights W to W \u2032 (marked red); (b) Ambiguity attack aims to forge\
+    \ counterfeit watermarks ( T \u2032 , s \u2032 ) without modifying DNN model weights\
+    \ W (see Proposition 1 and Section 3.2); (c) A non-invertible verification scheme\
+    \ is proposed to defeat ambiguity attacks, whereas the attacker Bob is unable\
+    \ to forge a new watermark that can pass both verification process V and fidelity\
+    \ process F (see Definition 1 and Section 4.4)."
+  Figure 10 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_10.jpg
+  Figure 10 caption: Ownership verification scheme mathcal V2 . Note that the public
+    and private trained network mathbb N share the same weights mathbf W .
+  Figure 2 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_2.jpg
+  Figure 2 caption: Visual explanation for processes E,F,V,I defined in Definition
+    1.
+  Figure 3 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_3.jpg
+  Figure 3 caption: A comparison of the distributions of watermarks and extracted
+    features.
+  Figure 4 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_4.jpg
+  Figure 4 caption: Sample of the trigger set images used in ambiguity attacks on
+    trigger-set based method in Section 3.2.2.
+  Figure 5 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_5.jpg
+  Figure 5 caption: Distribution of the real X b and fake X T trigger set images.
+    It shows that the fake trigger set images are hardly distinguishable from the
+    real ones.
+  Figure 6 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_6.jpg
+  Figure 6 caption: (a) Passport layer and (b) Classification accuracies modulated
+    by different passports in CIFAR10, e.g., given counterfeit passports, the DNN
+    models performance will be deteriorated instantaneously to fend off illegal usage.
+  Figure 7 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_7.jpg
+  Figure 7 caption: 'Example of different types of passports: (a) random patterns,
+    (b) fixed image and (c) candidate images used to generate random shuffled passports
+    (see text in Section 4.2).'
+  Figure 8 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_8.jpg
+  Figure 8 caption: 'Randomly shuffled passports in a 5-layered passport AlexNet mathbf
+    p . From left to right: Conv1 to Conv5 layers where the 4 passports in Conv2 to
+    Conv5 corresponding to the first 4 channel of each layer.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\DeepIPR_Deep_Neural_Network_Ownership_Verification_With_Passports\figure_9.jpg
+  Figure 9 caption: Ownership verification scheme mathcal V1 . mathbb N[] is an untrained
+    network, mathbb N[mathbf W] is a trained network with weights mathbf W . mathbb
+    N[mathbf W,mathbf s] is a trained network with weights mathbf W and embedded with
+    signature mathbf s .
+  First author gender probability: 0.9
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Lixin Fan
+  Name of the last author: Qiang Yang
+  Number of Figures: 19
+  Number of Tables: 12
+  Number of authors: 4
+  Paper title: 'DeepIPR: Deep Neural Network Ownership Verification With Passports'
+  Publication Date: 2021-06-14 00:00:00
+  Table 1 caption: TABLE 1 All Notations
+  Table 10 caption: TABLE 10 A Comparison of the Accuracy of AlexNet(s) in CIFAR10
+    Classification Task When a Correct (Top), Partially Correct (Middle) or Totally
+    Wrong (Bottom) Signature is Used
+  Table 2 caption: TABLE 2 Accuracy of the Classification Task M M and Detection Rate
+    of RealFake Embedded Watermarks E[V] E[V] (Both in %) With Two Representative
+    Watermark-Based DNN Methods [1], [2], Before (Trained With CIFAR10) and After
+    the DNN Weights are Fine-Tuning for a Transfer Learning Task (i.e., CIFAR100 and
+    Caltech-101)
+  Table 3 caption: TABLE 3 A Comparison of the Three Passport-Based Ownership Verification
+    Schemes Depicted in Section 4.4
+  Table 4 caption: TABLE 4 (Left:) AlexNet p p Architecture
+  Table 5 caption: "TABLE 5 Training Parameters for CIFAR10100 on AlexNet p p and\
+    \ ResNet p p-18, Respectively ( \u2020 \u2020 the Learning Rate is Scheduled as\
+    \ 0.01, 0.001 and 0.0001 Between Epochs [1-100], [101-150] and [151-200] Respectively)"
+  Table 6 caption: TABLE 6 Detection Rate (in %) of the Trigger Set Images (Before
+    and After Fine-Tuning) Used in Scheme V 3 V3 to Complement Passport-Based Verifications
+  Table 7 caption: 'TABLE 7 Removal Attack (Fine-Tuning): M M Denotes Model Classification
+    Accuracy (in %)'
+  Table 8 caption: TABLE 8 Summary of Overall Passport Model Performances Under Three
+    Different Ambiguity Attack Modes, fake fake
+  Table 9 caption: "TABLE 9 Sample of the Learned Scale Factor \u03B3 \u03B3 and Respective\
+    \ Signs (+-) From the 48 Out of 256 Channels From Conv5 of AlexNet p p When we\
+    \ Embed Signature s = this and is"
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3088846
+- Affiliation of the first author: research institute for future media computing,
+    college of computer science and software engineering, guangdong laboratory of
+    artificial intelligence & digital economy (sz), shenzhen university, shenzhen,
+    guangdong, china
+  Affiliation of the last author: research institute for future media computing, college
+    of computer science and software engineering, guangdong laboratory of artificial
+    intelligence & digital economy (sz), shenzhen university, shenzhen, guangdong,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_1.jpg
+  Figure 1 caption: An example of ZSDA task, where the K -task is the fruit image
+    analysis and the Q -task is the animal image analysis, respectively. The source
+    domain consists of photo images and the target domain consists of clipart images.
+    We first capture the domain correlation based on dual-domain samples in K -task,
+    and then synthesize the non-available X q t to preserve the domain correlation
+    in Q -task.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_10.jpg
+  Figure 10 caption: Illustration of input examples to our CoCoGAN at 3 stages.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_2.jpg
+  Figure 2 caption: "Illustration of our proposed method. The CoCoGAN in (a) extends\
+    \ CoGAN with a binary conditioning variable c , which chooses the task for the\
+    \ network to deal with. The GAN s processes the source-domain data and the GAN\
+    \ t processes the target-domain data. The double-headed arrows connect the shared\
+    \ layers between the two branches. The alignment consistency across domains is\
+    \ achieved with the help of two classifiers \u03D5 s (\u22C5) and \u03D5 t (\u22C5\
+    ) in (b). Specifically, we train them to predict the category label of the samples\
+    \ in K -task, and expect them to produce the same soft labels for a pair of corresponding\
+    \ samples ( x q s , x q t ) in Q -task, i.e., \u03D5 s ( x q s )= \u03D5 s ( x\
+    \ q t ) . The global alignment across tasks in representation space is achieved\
+    \ by confusing the two classifiers \u03C8 s (\u22C5) and \u03C8 t (\u22C5) in\
+    \ (c)."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_3.jpg
+  Figure 3 caption: Illustration of sample images of 4 datasets and their counterparts
+    in 3 different domains. The first row shows the original images. We use the method
+    in [66] to obtain the second row, a Canny detector to obtain the third row, and
+    the negation procedure to obtain the fourth row.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_4.jpg
+  Figure 4 caption: "Illustration of accuracy values with respect to different parameter\
+    \ settings in the adaptation direction of G\u2192C with ( K , Q )=( D N , D M\
+    \ )."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_5.jpg
+  Figure 5 caption: "Two t-SNE visualizations of both K -task (marked by \u201C +\
+    \ \u201D) and Q -task (marked by \u201C \u2218 \u201D)."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_6.jpg
+  Figure 6 caption: "Illustration of generated non-available target-domain images\
+    \ by our method in C\u2212dom , E\u2212dom , and N\u2212dom ."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_7.jpg
+  Figure 7 caption: Illustration of FID [73] between generated and real images.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_8.jpg
+  Figure 8 caption: Illustration of mis-classified Q -task samples and their groundtruth
+    categories in DomainNet. As seen from left to right, these samples can actually
+    be better described by those K -task labels, corresponding to T-Shirt, Monkey,
+    face, tree, and flower, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learning_Across_Tasks_for_ZeroShot_Domain_Adaptation_From_a_Single_Source_Domain\figure_9.jpg
+  Figure 9 caption: Illustration of accuracy values with respect to different number
+    of shared layers in generators ( s g ) and discriminators ( s f ). The horizontal
+    axis represents the value of s f and the vertical axis represents the accuracy.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.86
+  Name of the first author: Jinghua Wang
+  Name of the last author: Jianmin Jiang
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 2
+  Paper title: Learning Across Tasks for Zero-Shot Domain Adaptation From a Single
+    Source Domain
+  Publication Date: 2021-06-14 00:00:00
+  Table 1 caption: TABLE 1 List of Accuracy Values (%) on D M DM, D F DF, D N DN and
+    D E DE (Bold-Red Indicates the Best and bold-black Indicates the 2nd Best)
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Variations of Accuracy When Different Supervisory Signals\
+    \ are Applied, Where \u2032\u2032 \u2713 \u2032\u2032 \u2713 Denotes a Corresponding\
+    \ Supervisory Signal is Adopted"
+  Table 3 caption: "TABLE 3 Taking G\u2212dom G-dom as the Source Domain, the Average\
+    \ Overlap Ratios Between the Generated Target-Domain Images and the Ones Obtained\
+    \ by the Procedure Described Above"
+  Table 4 caption: TABLE 4 The Mean and Standard Deviation of the Classification Accuracy
+    (%) for Both the Baselines and the Proposed on VisDA2017, Where the Q Q-Task has
+    5,6,7 5,6,7 and 8 Categories
+  Table 5 caption: TABLE 5 The Average Accuracy (%) on Office-Home
+  Table 6 caption: TABLE 6 The Mean and Standard Deviation of the Classification Accuracy
+    (%) Achieved by the Benchmarks and the Proposed on DomainNet
+  Table 7 caption: TABLE 7 The Accuracy of 13-Class Semantic Segmentation on NYUv2
+    and SUN RGBD
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3088859
+- Affiliation of the first author: center for future media, university of electronic
+    science and technology of china, chengdu, china
+  Affiliation of the last author: center for future media, university of electronic
+    science and technology of china, chengdu, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Universal_Weighting_Metric_Learning_for_CrossModal_Retrieval\figure_1.jpg
+  Figure 1 caption: "Existing cross-modal retrieval methods attempted to project visual\
+    \ features \u03C8(v) and text features \u03D5(t) into a shared embedding space.\
+    \ A triplet loss was adopted to jointly optimize the network, which encourages\
+    \ the similarity scores of positive pairs larger than all negative pairs. Take\
+    \ image-text retrieval as an example. Points with the same shape are from the\
+    \ same modality."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Universal_Weighting_Metric_Learning_for_CrossModal_Retrieval\figure_2.jpg
+  Figure 2 caption: "The weight value of the positive pair should decrease as its\
+    \ similarity score increases, and the weight value of the negative pair should\
+    \ increase as its similarity score increases. For relative similarity, its weight\
+    \ value should increase as the relative similarity score increases. Note that\
+    \ relative similarity is defined as the difference between the similarity scores\
+    \ of negative and positive pairs, i.e., ( S ij \u2212 S ii ) ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Universal_Weighting_Metric_Learning_for_CrossModal_Retrieval\figure_3.jpg
+  Figure 3 caption: 'Illustration of universal weighting metric learning framework
+    for cross-modal retrieval. Points with the same shape are from the same modality.
+    P is the only positive sample of an anchor, N 1 , N 2 , and N 3 are the negative
+    samples of an anchor. Left: Simple sampling strategy; Right: Universal weighting
+    metric learning framework.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Universal_Weighting_Metric_Learning_for_CrossModal_Retrieval\figure_4.jpg
+  Figure 4 caption: (a)-(c). Triplet loss versus Relative-Similarity Polynomial Loss.
+    (a) Performance curves of SCAN on MS-COCO validation set; (b) Performance curves
+    of GSMN on Flickr30K validation set; (c) Performance curves of GSMN on MS-COCO
+    validation set. (d) Performance curves of SCAN with different polynomial losses
+    on MS-COCO validation set.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Universal_Weighting_Metric_Learning_for_CrossModal_Retrieval\figure_5.jpg
+  Figure 5 caption: Qualitative results for GSMN on MS-COCO dataset. For each query,
+    we report top-3 ranked results, where true matches are marked as blue.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Jiwei Wei
+  Name of the last author: Heng Tao Shen
+  Number of Figures: 5
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Universal Weighting Metric Learning for Cross-Modal Retrieval
+  Publication Date: 2021-06-14 00:00:00
+  Table 1 caption: TABLE 1 Experimental Results on Flickr30K
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Experimental Results on MS-COCO
+  Table 3 caption: TABLE 3 Experimental Results on MSVD
+  Table 4 caption: TABLE 4 Experimental Results on MSR-VTT
+  Table 5 caption: TABLE 5 Experimental Results on TGIF
+  Table 6 caption: TABLE 6 The Effect of b 1 b1 and b 2 b2 on the Validation Set of
+    MSR-VTT
+  Table 7 caption: TABLE 7 The Effect of e 1 e1 and e 2 e2 on the Validation Set of
+    Flickr30K
+  Table 8 caption: TABLE 8 Experimental Results With the High-Order Polynomial Loss
+    on Flickr30K Dataset
+  Table 9 caption: TABLE 9 Experimental Results on Fine-Grained Image Retrival Dataset
+    CUB-200-2011
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3088863
+- Affiliation of the first author: "computer vision lab, eth z\xFCrich, z\xFCrich,\
+    \ switzerland"
+  Affiliation of the last author: "computer vision lab, eth z\xFCrich, z\xFCrich,\
+    \ switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_1.jpg
+  Figure 1 caption: "The architecture of the proposed DRUNet denoiser prior. DRUNet\
+    \ takes an additional noise level map as input and combines U-Net [20] and ResNet\
+    \ [36]. \u201CSConv\u201D and \u201CTConv\u201D represent strided convolution\
+    \ and transposed convolution, respectively."
+  Figure 10 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_10.jpg
+  Figure 10 caption: The eight testing Gaussian kernels for SISR. (a)-(d) are isotropic
+    Gaussian kernels; (e)-(f) are anisotropic Gaussian kernels.
+  Figure 2 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_2.jpg
+  Figure 2 caption: "Grayscale image denoising results of different methods on image\
+    \ \u201CMonarch\u201D from Set12 dataset with noise level 50."
+  Figure 3 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_3.jpg
+  Figure 3 caption: "Color image denoising results of different methods on image \u201C\
+    163085\u201D from CBSD68 dataset with noise level 50."
+  Figure 4 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_4.jpg
+  Figure 4 caption: An example to show the generalizability advantage of the proposed
+    bias-free DRUNet. The noise level of the noisy image is 200.
+  Figure 5 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_5.jpg
+  Figure 5 caption: "The values of \u03B1 k and \u03C3 k at k th iteration with respect\
+    \ to different number of iterations K = 8, 24, and 40."
+  Figure 6 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_6.jpg
+  Figure 6 caption: Six classical testing images. (a) Cameraman; (b) House; (c) Monarch;
+    (d) Butterfly; (e) Leaves; (f) Starfish.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_7.jpg
+  Figure 7 caption: Visual results comparison of different deblurring methods on Leaves.
+    The blur kernel is visualized in the upper right corner of the blurry image. The
+    noise level is 7.65(3%).
+  Figure 8 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_8.jpg
+  Figure 8 caption: (a)-(e) Visual results and PSNR results of x k and z k at different
+    iterations; (f) Convergence curves of PSNR ( y -axis) for x k and z k with respect
+    to number of iterations ( x -axis).
+  Figure 9 Link: articels_figures_by_rev_year\2021\PlugandPlay_Image_Restoration_With_Deep_Denoiser_Prior\figure_9.jpg
+  Figure 9 caption: Visual results and PSNR results of x k and z k at different iterations
+    of the proposed DPIR with blind DRUNet denoiser. The testing image is same as
+    in Figs. 7 and 8.
+  First author gender probability: 0.93
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Kai Zhang
+  Name of the last author: Radu Timofte
+  Number of Figures: 15
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Plug-and-Play Image Restoration With Deep Denoiser Prior
+  Publication Date: 2021-06-14 00:00:00
+  Table 1 caption: TABLE 1 Average PSNR(dB) Results of Different Methods With Noise
+    Levels 15, 25 and 50 on the Widely-Used Set12 and BSD68 [3], [44], [49] Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Average PSNR(dB) Results of Different Methods for Noise
+    Levels 15, 25 and 50 on CBSD68 [3], [44], [49], Kodak24, and McMaster Datasets
+  Table 3 caption: TABLE 3 Average PSNR(dB) Results of Different Methods for JPEG
+    Image Deblocking With Quality Factors 10, 20, 30 and 40 on Classic5 and LIVE1
+    Datasets
+  Table 4 caption: 'TABLE 4 The PSNR Results Comparison With Different Cases (i.e,
+    Case 1: DRUNet Without Residual Blocks, Case 2: DRUNet With Less Training Data
+    as in [18], Case 3: DRUNet Without Removing the Biases, and Case 4: DRUNet Without
+    Taking Noise Level Map as Input) With Noise Levels 15, 25 and 50 on Set12 Dataset'
+  Table 5 caption: "TABLE 5 Runtime (in Seconds), FLOPs (in G) and Max GPU Memory\
+    \ (in GB) of Different Methods on Images of Size 256\xD7256 and 512\xD7512 With\
+    \ Noise Level 50"
+  Table 6 caption: TABLE 6 PSNR(dB) Results of Different Methods on Set6 for Image
+    Deblurring
+  Table 7 caption: "TABLE 7 PSNR Results With Different Combinations of K K and \u03C3\
+    \ 1 \u03C31 on the Testing Image From Fig. 7"
+  Table 8 caption: TABLE 8 Average PSNR(dB) Results of Different Methods for Single
+    Image Super-Resolution on CBSD68 Dataset
+  Table 9 caption: TABLE 9 Demosaicing Results of Different Methods on Kodak and McMaster
+    Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3088914
+- Affiliation of the first author: university of bonn, bonn, germany
+  Affiliation of the last author: university of bonn, bonn, germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\Fast_Weakly_Supervised_Action_Segmentation_Using_Mutual_Consistency\figure_1.jpg
+  Figure 1 caption: Average inference time per video (seconds) versus average mean
+    over frames (MoF) accuracy (%) for weakly supervised action segmentation approaches
+    on the Breakfast dataset [18]. The average MoF is calculated over 5 traininginference
+    iterations. The proposed approach (MuCon-full) provides the best trade-off between
+    inference time and accuracy. More details are provided in Section 5.5.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Fast_Weakly_Supervised_Action_Segmentation_Using_Mutual_Consistency\figure_2.jpg
+  Figure 2 caption: "Our proposed network consists of three subnetworks (gray). The\
+    \ temporal backbone f t embeds the input features in the hidden representation\
+    \ Z which is used for two branches. While the frame classification branch f c\
+    \ predicts framewise class probabilities Y for action segmentation, the segment\
+    \ generation branch f s predicts the segment representation S for action segmentation.\
+    \ We train our network using two loss functions. While the transcript prediction\
+    \ loss L t enforces that the predicted transcript A matches the ground-truth transcript\
+    \ A , our proposed mutual consistency (MuCon) loss L \u03BC enforces that the\
+    \ two representations are consistent."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Fast_Weakly_Supervised_Action_Segmentation_Using_Mutual_Consistency\figure_3.jpg
+  Figure 3 caption: "Visualization of the segment generation branch and the loss functions.\
+    \ (a) Segment generation branch f s and the transcript prediction loss L t . Given\
+    \ the hidden video representation Z , we use a sequence to sequence network with\
+    \ attention. The transcript prediction loss L t compares the predicted action\
+    \ class probabilities a m with the ground-truth action label a m . (b) Mutual\
+    \ consistency loss L \u03BC . Given the predicted lengths L , a set of masks w\
+    \ m are generated using differentiable sampling by the mask generation module\
+    \ (MG). The loss then measures for each segment the consistency of the estimated\
+    \ framewise class probabilities Y with the ground-truth action a m ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Fast_Weakly_Supervised_Action_Segmentation_Using_Mutual_Consistency\figure_4.jpg
+  Figure 4 caption: Examples of different masks for three consecutive action segments.
+    The top row shows regular masks with different shapes while the bottom row shows
+    masks generated with added 10 percent overlap. The left, middle and right figures
+    depict box, bell, and trapezoid shaped masks.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Fast_Weakly_Supervised_Action_Segmentation_Using_Mutual_Consistency\figure_5.jpg
+  Figure 5 caption: Using beam search to reduce the inference time of CDFL. The blue
+    squares show the performance of CDFL with different values for the beam size.
+    The x -axis is the total inference time for split 1 of the Breakfast dataset in
+    log scale.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Fast_Weakly_Supervised_Action_Segmentation_Using_Mutual_Consistency\figure_6.jpg
+  Figure 6 caption: MoF accuracy (%) for training with mixed supervision. The x -axis
+    denotes the percentage of videos that are fully annotated. The average accuracy
+    for 5 runs on split 1 of the Breakfast dataset is reported.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Fast_Weakly_Supervised_Action_Segmentation_Using_Mutual_Consistency\figure_7.jpg
+  Figure 7 caption: Qualitative examples for weakly supervised action segmentation
+    on the Breakfast dataset. Each figure visualizes a different video from the test
+    set of split 1. We compare the results from MuCon, NNV, and CDFL with the ground
+    truth (GT). Each row shows the result for the entire duration of a video and the
+    colored segments show when the actions occur in the video.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Fast_Weakly_Supervised_Action_Segmentation_Using_Mutual_Consistency\figure_8.jpg
+  Figure 8 caption: Qualitative examples for different levels of supervision on the
+    Breakfast dataset. Each figure visualizes a different video from the test set
+    of split 1. GT visualizes the ground truth segmentation and Weak, Mixed, and Full
+    visualize the output of MuCon trained with weak, mixed (10 percent), or full supervision,
+    respectively.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yaser Souri
+  Name of the last author: Juergen Gall
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Fast Weakly Supervised Action Segmentation Using Mutual Consistency
+  Publication Date: 2021-06-14 00:00:00
+  Table 1 caption: TABLE 1 Ablation Experiments on Split 1 of the Breakfast Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of Accuracy, Training, and Inference Time
+  Table 3 caption: TABLE 3 Friedman Statistical Test Results
+  Table 4 caption: TABLE 4 Comparison to the State-of-the-Art
+  Table 5 caption: TABLE 5 Effect of the MuCon Loss on the Accuracy in the Fully Supervised
+    Setting
+  Table 6 caption: TABLE 6 Comparison With the State-of-the-Art for Fully Supervised
+    Action Segmentation on the Breakfast Dataset
+  Table 7 caption: TABLE 7 Training With Mixed Supervision
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3089127
+- Affiliation of the first author: department of computer science, william & mary,
+    williamsburg, va, usa
+  Affiliation of the last author: department of computer science, william & mary,
+    williamsburg, va, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_1.jpg
+  Figure 1 caption: Weight sparsity schemes by different pruning techniques.
+  Figure 10 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_10.jpg
+  Figure 10 caption: "(a) The CPU and GPU execution time ( y \u2013axis) for a single\
+    \ weight matrix as changing the number of blocks ( x \u2013axis); (b) The CPU\
+    \ execution time (left y \u2013axis) and accuracy (right y \u2013axis) for VGG-16\
+    \ on CIFAR-10 as changing the block size."
+  Figure 2 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_2.jpg
+  Figure 2 caption: Illustration of the proposed BCR pruning.
+  Figure 3 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_3.jpg
+  Figure 3 caption: Relation of accuracy and performance with regularity.
+  Figure 4 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_4.jpg
+  Figure 4 caption: GRIM overview.
+  Figure 5 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_5.jpg
+  Figure 5 caption: 'GRIMs compiler-based optimization and code generation flow: compiler
+    takes both DSL and layerwise IR (as an example in Fig. 6) to generate low-level
+    CC++ and OpenCL. This low-level code is further optimized with matrix reordering
+    and our BCRC compact model storage (+Reorder), the register-level load redundancy
+    elimination (+LRE), and other optimizations like vectorization (+Vectorization).
+    Finally, the code is further tuned by the auto-tuning module and deployed on mobile
+    devices.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_6.jpg
+  Figure 6 caption: A layerwise IR example.
+  Figure 7 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_7.jpg
+  Figure 7 caption: Matrix reordering.
+  Figure 8 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_8.jpg
+  Figure 8 caption: BCRC compact storage.
+  Figure 9 Link: articels_figures_by_rev_year\2021\GRIM_A_General_RealTime_Deep_Learning_Inference_Framework_for_Mobile_Devices_Bas\figure_9.jpg
+  Figure 9 caption: Register level LRE.
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Wei Niu
+  Name of the last author: Bin Ren
+  Number of Figures: 17
+  Number of Tables: 6
+  Number of authors: 9
+  Paper title: 'GRIM: A General, Real-Time Deep Learning Inference Framework for Mobile
+    Devices Based on Fine-Grained Structured Weight Sparsity'
+  Publication Date: 2021-06-16 00:00:00
+  Table 1 caption: TABLE 1 BCR Pruning with Optimized Block Size Versus Other Pruning
+    Methods on CIFAR-10
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 BCR Pruning with Optimized Block Size Versus Other Pruning
+    Methods on ImageNet
+  Table 3 caption: TABLE 3 BCR Pruning with Optimized Block Size Versus Other Methods
+    on TIMIT
+  Table 4 caption: TABLE 4 VGG CONV Layers Characteristics
+  Table 5 caption: TABLE 5 DNN Acceleration Frameworks on Mobile
+  Table 6 caption: TABLE 6 Comparison Between GRIM and PatDNN
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3089687

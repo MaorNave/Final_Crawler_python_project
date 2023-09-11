@@ -1,0 +1,723 @@
+- Affiliation of the first author: university politehnica of bucharest, bucharest,
+    romania
+  Affiliation of the last author: "university politehnica of bucharest, bucure\u015F\
+    ti, romania"
+  Figure 1 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_1.jpg
+  Figure 1 caption: 'Architecture of our Iterative Knowledge Exchange (IKE) system.
+    The Graph Module (left) and the Network Module (right), exchange information over
+    several cycles (outer loops) until convergence (Algorithm 1). The Graph Module
+    discovers the main object in the video as the strongest cluster of the space-time
+    graph with one-to-one correspondences between graph nodes and video pixels. The
+    segmentation solution is the principal eigenvector of a novel Feature-Motion matrix
+    ( A ) computed efficiently with a specially designed power iteration algorithm
+    (Algorithm 2: inner loop of Graph Module). Then, the Network Module is trained
+    from scratch, using the segmentation result of the graph as pseudo-ground truth.
+    The computed deep representations ( s ), along with the graph segmentation results
+    ( x ) are used to complete node-level features and reinitialize the space-time
+    graph model for a new cycle (outer loop). We emphasize that the gray-colored functions
+    ( g , power iteration equation, and computation of adjacency matrix A ) are only
+    conceptual entities, as the actual algorithm avoids explicitly computing M and
+    A , drastically reducing the computational burden and memory usage (Section 4.3).
+    In Section 4.4, we provide theoretical guarantees that our power iteration equivalent
+    algorithm indeed converges to the main eigenvector of A , which is the optimal
+    solution of the relaxed problem (Eq. (1)). In extensive tests, the proposed IKE
+    system significantly boosts its performance over several cycles (Fig. 9, Table
+    3). [Best viewed in color].'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_10.jpg
+  Figure 10 caption: Qualitative results of our unsupervised system, for both Network
+    and Graph Modules for all 4 datasets considered. For YouTube-Objects and DAVSOD,
+    the ground truth is sometimes rough, and our results tend to be, in those cases,
+    more refined than the annotations. This emphasizes the difficulty of obtaining
+    highly accurate human annotations.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_2.jpg
+  Figure 2 caption: Visual representation of the space-time graph structure. We illustrate
+    the process of creating long-range edges that define our graph. Colored curves
+    indicate motion chains, formed by following the optical flow vectors, forward
+    and backward in time, sequentially from one frame to the other. Black dotted curves
+    correspond to graph edges, defined between nodes connected through at least one
+    motion chain. Consequently, two nodes are connected if and only if at least one
+    chain of optical flow vectors links them through consecutive intermediate frames.
+    Precisely two flows are going out from a given node (one in each direction), but
+    there could be any number of incoming chains from any direction reaching a node
+    (including none). The motion chain weight associated with each existing edge is
+    a Gaussian kernel of the inter-frame (temporal) distance between its vertices.
+    The set of edges, along with their weights, construct the graph motion matrix
+    M . Based on M and the feature matrix F , we define the final graph adjacency
+    matrix, termed the Feature-Motion matrix A=PMP (Section 4.2). [Best viewed in
+    color].
+  Figure 3 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_3.jpg
+  Figure 3 caption: "Collection of node features along motion chains: for a node j\
+    \ , the features forming feature vector f j are collected along the two outgoing\
+    \ motion chains (one forward, one backward), from different features of pixels\
+    \ associated to nodes met along the chains. Thus f j is obtained by concatenating\
+    \ \u03B3 j+k , k\u2208[\u2212q,q] , where \u03B3 j+k are the features of pixel\
+    \ j+k (met along the chain) and q defines the chain size. By considering the temporal\
+    \ dimension in constructing node-level features, we capture distinctive, object-specific\
+    \ local spatio-temporal patterns. The graphs feature matrix F is formed by stacking\
+    \ all the node-level feature vectors. [Best viewed in color]."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_4.jpg
+  Figure 4 caption: The Network Module. We use a UNet-like architecture with residual
+    blocks. Our networks input is a RGB image, while the output is the segmentation
+    mask associated with the primary object of the video sequence. The network is
+    trained considering the pseudo ground truth provided by the Graph Module. Further,
+    the learned representation will reinitialize the graph optimization problem in
+    a new cycle. The presented segmentation maps are only illustrative. [Best viewed
+    in color].
+  Figure 5 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_5.jpg
+  Figure 5 caption: Evolution of segmentation solution x over several iterations of
+    our graph optimization algorithm (Algorithm 2). We present the evolution of both
+    propagation and projection steps (followed by normalization), considering random
+    initial node labels x (0) .
+  Figure 6 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_6.jpg
+  Figure 6 caption: Convergence analysis of the Graph Module considering different
+    initial node labels x (0) and two optical flow methods. The flow solutions will
+    define two different Feature-Motion matrices, and in consequence, different converge
+    points. a) Evolution of J Mean b) Evolution of cosine similarity between x and
+    ground truth c)-i) visual representation of initial node labels x (0) . Experiments
+    were conducted on full DAVIS2016 dataset. [Best viewed in color].
+  Figure 7 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_7.jpg
+  Figure 7 caption: 'Evolution of J Mean for different node feature chain sizes. The
+    experiment was conducted considering our graph optimization algorithms unsupervised
+    formulation on three datasets: DAVIS2016, YouTube-Objects, and SegTrackv2. In
+    general, longer chains are preferred. [Best viewed in color].'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_8.jpg
+  Figure 8 caption: "Visualization of representative Feature-Motion matrices, along\
+    \ with their first 6 eigenvalues. We consider both the unsupervised and supervised\
+    \ cases and two optical flow methods. Nodes (one per matrix rawcolumn) are reordered\
+    \ such that the ones belonging to the main object of interest come first, with\
+    \ indices smaller than the background nodes. Above each matrix, we show the ground\
+    \ truth node labels (white - object; black - background). Matrices and eigenvalues\
+    \ are presented for the video car-roundabout(DAVIS dataset), using 5 frames at\
+    \ a resolution of 16\xD716 . The supervised case produces slightly stronger clusters."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Iterative_Knowledge_Exchange_Between_Deep_Learning_and_SpaceTime_Spectral_Cluste\figure_9.jpg
+  Figure 9 caption: Performance evolution of full IKE system. We follow both Graph
+    and Network over several cycles. The Graph runs for an additional cycle to benefit
+    from the best representation of the Network. Even though the Network usually overcomes
+    the Graph during the first cycle, the Graph exceeds the Network at convergence.
+    The two modules complementarity becomes evident when we consider the case without
+    the Network, row b), with a huge performance drop compared to row a). Even when
+    starting from strong supervised features, row c), IKE still brings a significant
+    performance boost. [Best viewed in color].
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Emanuela Haller
+  Name of the last author: Marius Leordeanu
+  Number of Figures: 13
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Iterative Knowledge Exchange Between Deep Learning and Space-Time Spectral
+    Clustering for Unsupervised Segmentation in Videos
+  Publication Date: 2021-10-14 00:00:00
+  Table 1 caption: TABLE 1 Performance of Unsupervised Graph Module (1st cycle)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance of Supervised Graph Module (1st cycle)
+  Table 3 caption: TABLE 3 The Relative Percentage Change Between Cycles
+  Table 4 caption: TABLE 4 Quantitative Comparison on DAVSOD Dataset for the Video
+    Salient Object Detection Task
+  Table 5 caption: TABLE 5 Quantitative Comparison on SegTrackv2 Dataset for the Zero-Shot
+    Video Object Segmentation Task
+  Table 6 caption: TABLE 6 Quantitative Comparison on YouTube-Objects Dataset for
+    the Zero-Shot Video Object Segmentation Task
+  Table 7 caption: TABLE 7 Quantitative Comparison on DAVIS2016 Dataset for the Zero-Shot
+    Video Object Segmentation Task
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3120228
+- Affiliation of the first author: department of electrical engineering (esat-stadius),
+    ku leuven, leuven, belgium
+  Affiliation of the last author: department of electrical engineering (esat-stadius),
+    ku leuven, leuven, belgium
+  Figure 1 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_1.jpg
+  Figure 1 caption: Benefits of D-FS against SGQ in time cost (a), and the reduction
+    on the required nodes in fifth-degree rules (b).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_2.jpg
+  Figure 2 caption: Relationship between quadrature based methods.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_3.jpg
+  Figure 3 caption: "Comparison of h(z) versus the distance z:=\u2225z \u2225 2 across\
+    \ ORF, SSR (a) and S-FS (b). Since h S-FS (z) is no loner a radial function of\
+    \ z due to Q depending on z , we just present the univariate case of h S-FS (z)\
+    \ for intuitive display."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_4.jpg
+  Figure 4 caption: Empirical distribution of z in four datasets used in this paper.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_5.jpg
+  Figure 5 caption: Results on the Gaussian kernel in terms of approximation error
+    (top), time cost (middle), and test accuracy (bottom).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_6.jpg
+  Figure 6 caption: Results on the first-order arc-cosine kernel in terms of approximation
+    error (top), time cost (middle), and test accuracy (bottom).
+  Figure 7 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_7.jpg
+  Figure 7 caption: Benefits of our S-FS rule in Eq. (16) against RFF across the Gaussian
+    kernel on the magic04 data set.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_8.jpg
+  Figure 8 caption: Kernel approximation (top), time cost (middle), and test accuracy
+    (bottom) across the Gaussian kernel.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Towards_a_Unified_Quadrature_Framework_for_LargeScale_Kernel_Machines\figure_9.jpg
+  Figure 9 caption: Kernel approximation error (top) and test accuracy (bottom) across
+    the first-order arc-cosine kernel.
+  First author gender probability: 0.71
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Fanghui Liu
+  Name of the last author: Johan A. K. Suykens
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Towards a Unified Quadrature Framework for Large-Scale Kernel Machines
+  Publication Date: 2021-10-14 00:00:00
+  Table 1 caption: TABLE 1 The Maximum Radius of the Hyper-Ball S d (r) Sd(r) Under
+    Various d d
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Relationship Between Typical Kernel Approximation Methods
+  Table 3 caption: TABLE 3 Dataset Statistics and the Number of Nodes in Fifth-Degree
+    Rules
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3120183
+- Affiliation of the first author: college of computer, national university of defense
+    technology, changsha, hunan, china
+  Affiliation of the last author: college of computer, national university of defense
+    technology, changsha, hunan, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Adaptive_Temporal_Difference_Learning_With_Linear_Function_Approximation\figure_1.jpg
+  Figure 1 caption: "Runtime mean squared Bellman error (RMSBE) versus episode in\
+    \ Mountain Car when \u03BB=0 , 0.3, 0.5 and 0.7."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Adaptive_Temporal_Difference_Learning_With_Linear_Function_Approximation\figure_2.jpg
+  Figure 2 caption: "RMSBE versus episode in Acrobot when \u03BB=0 , 0.3, 0.5 and\
+    \ 0.7."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Adaptive_Temporal_Difference_Learning_With_Linear_Function_Approximation\figure_3.jpg
+  Figure 3 caption: RMSBE versus episode in Acrobot when step size is large. The maximum
+    RMSBE is capped since both ALRR and vanilla TD diverge.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Adaptive_Temporal_Difference_Learning_With_Linear_Function_Approximation\figure_4.jpg
+  Figure 4 caption: "RMSBE versus episode in CartPole when \u03BB=0 , 0.3, 0.5 and\
+    \ 0.7."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Adaptive_Temporal_Difference_Learning_With_Linear_Function_Approximation\figure_5.jpg
+  Figure 5 caption: "RMSBE versus episode in Navigation when \u03BB=0 , 0.3, 0.5 and\
+    \ 0.7."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Adaptive_Temporal_Difference_Learning_With_Linear_Function_Approximation\figure_6.jpg
+  Figure 6 caption: RMSBE versus episode in Cartpole when step size is large. The
+    maximum RMSBE is capped.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Adaptive_Temporal_Difference_Learning_With_Linear_Function_Approximation\figure_7.jpg
+  Figure 7 caption: RMSBE versus episode in random MDP with sparse state features.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.87
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Tao Sun
+  Name of the last author: Dongsheng Li
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: Adaptive Temporal Difference Learning With Linear Function Approximation
+  Publication Date: 2021-10-14 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3119645
+- Affiliation of the first author: "eth zurich, z\xFCrich, switzerland"
+  Affiliation of the last author: "university of t\xFCbingen, t\xFCbingen, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2021\Generalized_FewShot_Video_Classification_With_Video_Retrieval_and_Feature_Genera\figure_1.jpg
+  Figure 1 caption: Our 3D CNN approach combines a few class-labeled videos (time-consuming
+    to obtain) and tag-labeled videos.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Generalized_FewShot_Video_Classification_With_Video_Retrieval_and_Feature_Genera\figure_2.jpg
+  Figure 2 caption: 'Our approach comprises two learning stages: representation learning
+    and few-shot learning. In representation learning, we train a R(2+1)D CNN using
+    the base classes starting from a pretrained model. In few-shot learning, we propose
+    to expand the few-shot training set of novel classes by either retrieving videos
+    from another tag-labeled video dataset or generating video features from semantic
+    embeddings. Our video retrieval algorithm first estimates a list of candidate
+    videos for each class from YFCC100M [9] using their tags, followed by selecting
+    the best matching short clips from the retrieved videos using visual features.
+    Those clips serve as additional training examples to learn classifiers that generalize
+    to novel classes at test time. Moreover, we propose to learn the feature generator
+    that sythesizes video features from a semantic embedding with generative adversarial
+    networks.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Generalized_FewShot_Video_Classification_With_Video_Retrieval_and_Feature_Genera\figure_3.jpg
+  Figure 3 caption: Results of our TSL baseline, our TSL with retrieval (w retrieval),
+    with feature generation (w VFGAN) and with both techniques (w both) on Kinetics,
+    UCF101 and SomethingV2 datasets in the many-way 1-shot video classification setting.
+    More specifically, we go beyond the prior 5-way classification setting and evaluate
+    5, 10, 15 and 24 (all) of the novel classes in each testing episode. We report
+    the top-1 accuracy of novel classes.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Generalized_FewShot_Video_Classification_With_Video_Retrieval_and_Feature_Genera\figure_4.jpg
+  Figure 4 caption: 'The effect of increasing the number of retrieved clips, left:
+    on Kinetics, right: on UCF101. Both experiments are conducted on the 1-shot 5-way
+    classification task, reporting top-1 accuracy in the few-shot video classification
+    (FSV) setting.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Generalized_FewShot_Video_Classification_With_Video_Retrieval_and_Feature_Genera\figure_5.jpg
+  Figure 5 caption: 'Comparing with a meta semi-supervised method i.e., ICI [30] under
+    different numbers of tag-labeled video clips, left: on Kinetics, right: on UCF101.
+    Both experiments are conducted on the 1-shot 5-way few-shot video classification
+    (FSV) setting.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Generalized_FewShot_Video_Classification_With_Video_Retrieval_and_Feature_Genera\figure_6.jpg
+  Figure 6 caption: 'Model analysis of our VFGAN on Kinetics, UCF101 and SomethingV2.
+    Left column: measuring the top-1 base class accuracy of the classifier trained
+    with generated features w.r.t the VFGAN training epoch. Right column: increasing
+    the number of generated VFGAN features per class w.r.t. novel class accuracy in
+    the 1-shot 5-way setting.'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Yongqin Xian
+  Name of the last author: Zeynep Akata
+  Number of Figures: 6
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: Generalized Few-Shot Video Classification With Video Retrieval and
+    Feature Generation
+  Publication Date: 2021-10-15 00:00:00
+  Table 1 caption: TABLE 1 Statistics of Our Data Splits on Kinetics, UCF101 and SomethingV2
+    Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparing With the State-of-the-art Few-Shot Video Classification
+    Methods
+  Table 3 caption: TABLE 3 Generalized Few-Shot Video Classification With Our TSL
+    Baseline, Our TSL With Retrieval (TSL w Retrieval), Feature Generation (TSL w
+    VFGAN) and Both (TSL w Both) on Kinetics, UCF101 and SomethingV2 in the 5-Way
+    Tasks
+  Table 4 caption: TABLE 4 Ablation Study on 5-Way 1-Shot Video Classification Task
+    on Kinetics, UCF101 and SomethingV2
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3120550
+- Affiliation of the first author: school of mathematics and statistics, xian jiaotong
+    university, xian, china
+  Affiliation of the last author: school of mathematics and statistics, xian jiaotong
+    university, xian, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_1.jpg
+  Figure 1 caption: "The architecture of VAE model. VAE contains two parts, an encoder\
+    \ and a decoder. The encoder is used to obtain the variable features. In general,\
+    \ the reparameterization trick is used. Decoder is used to transform features\
+    \ into original variable structures. In this figure, \u2297 means element-wise\
+    \ product."
+  Figure 10 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_10.jpg
+  Figure 10 caption: The AUC curves obtained by five methods on KIBA dataset with
+    new-drug setting and new-target setting.
+  Figure 2 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_2.jpg
+  Figure 2 caption: The graphical structure for Co-VAE model.
+  Figure 3 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_3.jpg
+  Figure 3 caption: The architecture of the GatedCNN. The input is divided into two
+    units after convolution, unit A and unit B. Unit A is multiplied with sigmoid
+    (B) to obtain the output.
+  Figure 4 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_4.jpg
+  Figure 4 caption: 'The structure diagram for the Co-VAE model. The Co-VAE is divided
+    into five parts: drug encoder, target encoder, drug decoder, target decoder and
+    reg block. The drug encoder and target encoder are used to extract the features
+    of drug SMILES and target sequences, respectively, the drug decoder and target
+    decoder are used to reconstruct drug SMILES and target sequences, and the Reg
+    block obtains the affinity value based on the features of the input drug SMILES
+    and target sequence.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_5.jpg
+  Figure 5 caption: The frequency histogram of the affinities in Davis and KIBA dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_6.jpg
+  Figure 6 caption: The two experimental settings illustrated in affinities matrix
+    from Davis dataset [20], where the rows and columns correspond to the drugs and
+    targets, respectively. The affinities matrix is split into training data, test
+    data (white part) and validation data (black part).
+  Figure 7 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_7.jpg
+  Figure 7 caption: Ground truth affinities ( x -axis) versus predicted affinities
+    ( y -axis) for new-drug setting (top) and new-target setting (bottom) by five
+    methods on the Davis dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_8.jpg
+  Figure 8 caption: Ground truth affinities( x -axis) versus predicted affinities
+    ( y -axis) for new-drug setting (top) and new-target setting (bottom) by five
+    methods on the KIBA dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2021\CoVAE_DrugTarget_Binding_Affinity_Prediction_by_CoRegularized_Variational_Autoen\figure_9.jpg
+  Figure 9 caption: MSE for each single test drug in Davis dataset by five different
+    methods.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Tianjiao Li
+  Name of the last author: Limin Li
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: 'Co-VAE: Drug-Target Binding Affinity Prediction by Co-Regularized
+    Variational Autoencoders'
+  Publication Date: 2021-10-15 00:00:00
+  Table 1 caption: TABLE 1 The Parameter Settings of the Co-VAE Model
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Average CI, MSE, MAE and r 2 m rm2 Obtained by Five
+    Methods for the Davis Dataset and KIBA Dataset With Two Settings
+  Table 3 caption: TABLE 3 The Statistical Analysis of the Generated Drugs by GAN,
+    SeqGAN, AAE, VAE and Co-VAE on the KIBA Dataset
+  Table 4 caption: TABLE 4 New Generated Drugs That Could be Found in KIBA Dataset,
+    With the Corresponding Input Drugs and Their PubChem CID, SMILES Strings and Activated
+    Target Names
+  Table 5 caption: TABLE 5 New Generated Drugs That are not in KIBA Dataset, With
+    the Corresponding Input Drugs and Their SMILES Strings and Chemical Structure
+    Diagram Drew by Rdkit
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3120428
+- Affiliation of the first author: elmore family school of electrical and computer
+    engineering, purdue university, west lafayette, in, usa
+  Affiliation of the last author: elmore family school of electrical and computer
+    engineering, purdue university, west lafayette, in, usa
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hamad Ahmed
+  Name of the last author: Jeffrey Mark Siskind
+  Number of Figures: 0
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: "Confounds in the Data\u2014Comments on \u201CDecoding Brain Representations\
+    \ by Multimodal Learning of Neural Activity and Visual Features\u201D"
+  Publication Date: 2021-10-19 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3121268
+- Affiliation of the first author: department of computer science, university of rochester,
+    rochester, ny, usa
+  Affiliation of the last author: department of computer science, university of rochester,
+    rochester, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\MultiScale_D_Temporal_Adjacency_Networks_for_Moment_Localization_With_Natural_La\figure_1.jpg
+  Figure 1 caption: "Examples of the 2D temporal map. (a) Dense Single-scale 2D Temporal\
+    \ Map: the black vertical and horizontal axes represent the start and the duration\
+    \ indices while the gray axes represent the corresponding start timestamp and\
+    \ duration of a moment. The values in the 2D map, highlighted by red color, indicate\
+    \ the matching scores between the moment candidates and the target moment. Here,\
+    \ \u03C4 is a predefined short duration. The white boxes in the map indicate invalid\
+    \ moments. (b) Sparse Multi-Scale 2D Temporal Map: the sparse multi-scale 2D temporal\
+    \ map is composed of a series of 2D maps under different time units ( \u03C4 ,\
+    \ 2\u03C4 and 4\u03C4 in this figure). The color of boxes and axes follow the\
+    \ previous definition. In addition, the gray boxes on the 2D map represent the\
+    \ valid moments that are not selected. In this configuration, we are able to reduce\
+    \ the computational cost by modeling on smaller maps."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\MultiScale_D_Temporal_Adjacency_Networks_for_Moment_Localization_With_Natural_La\figure_2.jpg
+  Figure 2 caption: 'Our proposed framework. The framework is composed of three modules:
+    the language encoding module, the 2D temporal feature map extraction module, and
+    the multi-scale 2D temporal adjacency network.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\MultiScale_D_Temporal_Adjacency_Networks_for_Moment_Localization_With_Natural_La\figure_3.jpg
+  Figure 3 caption: 'Comparing Charades-STA, ActivityNet Captions and TACoS. Left:
+    comparing video duration. Middle: comparing target moment duration. Right: comparing
+    the ratio between target moment duration and video duration.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\MultiScale_D_Temporal_Adjacency_Networks_for_Moment_Localization_With_Natural_La\figure_4.jpg
+  Figure 4 caption: 'Comparisons on inference speed and memory cost of three types
+    of feature map. N is the number of video clips. Left: inference speed. Right:
+    memory cost.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\MultiScale_D_Temporal_Adjacency_Networks_for_Moment_Localization_With_Natural_La\figure_5.jpg
+  Figure 5 caption: 'Comparisons on inference speed and memory cost with other baselines
+    on TACoS. Left: inference speed. Right: memory cost. MS-2D-TAN (small) is a MS-2D-TAN
+    model with small size, where its hidden units are set to H=64 .'
+  Figure 6 Link: articels_figures_by_rev_year\2021\MultiScale_D_Temporal_Adjacency_Networks_for_Moment_Localization_With_Natural_La\figure_6.jpg
+  Figure 6 caption: Prediction examples of our model and the baselines. The map is
+    predicted by our full model.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Songyang Zhang
+  Name of the last author: Jiebo Luo
+  Number of Figures: 6
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Multi-Scale 2D Temporal Adjacency Networks for Moment Localization
+    With Natural Language
+  Publication Date: 2021-10-19 00:00:00
+  Table 1 caption: TABLE 1 Performance Comparison on Charades-STA
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Comparison on ActivityNet Captions
+  Table 3 caption: TABLE 3 Performance Comparison on TACoS
+  Table 4 caption: TABLE 4 Ablation Study on the Feature Extraction Method, the Type
+    of 2D Temporal Map and 2D-TAN
+  Table 5 caption: TABLE 5 Performance Comparison on the Type of Query on TACoS
+  Table 6 caption: TABLE 6 Ablation Study on Receptive Field Size
+  Table 7 caption: TABLE 7 Ablation Study on Hyperparameters
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3120745
+- Affiliation of the first author: college of equipment management and uav engineering,
+    air force engineering university, xian, china
+  Affiliation of the last author: school of computer science and school of artificial
+    intelligence, optics and electronics (iopen), northwestern polytechnical university,
+    xian, china
+  Figure 1 Link: "articels_figures_by_rev_year\\2021\\Sparse_PCA_via_\u2113_p_\u2113\
+    pNorm_Regularization_for_Unsupervised_Feature_Selection\\figure_1.jpg"
+  Figure 1 caption: Feature selection results on the two-moon data set.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: "articels_figures_by_rev_year\\2021\\Sparse_PCA_via_\u2113_p_\u2113\
+    pNorm_Regularization_for_Unsupervised_Feature_Selection\\figure_2.jpg"
+  Figure 2 caption: "Clustering results of different unsupervised feature selection\
+    \ methods. (a)\u2013(j) ACC results. (k)\u2013(t) NMI results."
+  Figure 3 Link: "articels_figures_by_rev_year\\2021\\Sparse_PCA_via_\u2113_p_\u2113\
+    pNorm_Regularization_for_Unsupervised_Feature_Selection\\figure_3.jpg"
+  Figure 3 caption: Feature selection results of SPCAFS on PIE data set (From 50 to
+    900 features, and 50 pixels are added at each step).
+  Figure 4 Link: "articels_figures_by_rev_year\\2021\\Sparse_PCA_via_\u2113_p_\u2113\
+    pNorm_Regularization_for_Unsupervised_Feature_Selection\\figure_4.jpg"
+  Figure 4 caption: Feature selection results of different methods on PIE data set
+    (From 50 to 900 features, and 50 pixels are added at each step).
+  Figure 5 Link: "articels_figures_by_rev_year\\2021\\Sparse_PCA_via_\u2113_p_\u2113\
+    pNorm_Regularization_for_Unsupervised_Feature_Selection\\figure_5.jpg"
+  Figure 5 caption: Convergence curve of SPCAFS on PalmData, Imm40, SRBCTML and LEUML
+    data sets.
+  Figure 6 Link: "articels_figures_by_rev_year\\2021\\Sparse_PCA_via_\u2113_p_\u2113\
+    pNorm_Regularization_for_Unsupervised_Feature_Selection\\figure_6.jpg"
+  Figure 6 caption: ACC and NMI of SPCAFS under different gamma , m on Imm40 data
+    set.
+  Figure 7 Link: "articels_figures_by_rev_year\\2021\\Sparse_PCA_via_\u2113_p_\u2113\
+    pNorm_Regularization_for_Unsupervised_Feature_Selection\\figure_7.jpg"
+  Figure 7 caption: ACC and NMI of SPCAFS under different p on Imm40, SRBCTML data
+    sets.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zhengxin Li
+  Name of the last author: Xuelong Li
+  Number of Figures: 7
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: "Sparse PCA via \u2113 2,p \u21132,p-Norm Regularization for Unsupervised\
+    \ Feature Selection"
+  Publication Date: 2021-10-19 00:00:00
+  Table 1 caption: TABLE 1 Comparison of Computational Complexity
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Details of the Experimental Data Sets
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3121329
+- Affiliation of the first author: department of computer science, smart data analytics
+    group, university of bonn, bonn, germany
+  Affiliation of the last author: department of computer science, smart data analytics
+    group, university of bonn, bonn, germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\LogicENN_A_Neural_Based_Knowledge_Graphs_Embedding_Model_With_Logical_Rules\figure_1.jpg
+  Figure 1 caption: The results for rankings by LogicENN, TransE, RotatE, ComplEx,
+    and QuatE over positive and negative triples (corresponding to symmetric ( IsNeighborOf
+    ) and antisymmetric ( SupervisorOf ) relations). The first 27 triples are positive
+    (ideally should be ranked 1) and the last 9 triples are negative (should be ranked
+    high). Among the experimented models, only LogicENN provides the ideal ranking
+    where the positive triples get ranking 1, and the negative triples get a high
+    ranking.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\LogicENN_A_Neural_Based_Knowledge_Graphs_Embedding_Model_With_Logical_Rules\figure_2.jpg
+  Figure 2 caption: "LogicENN: The hidden layer mapping, which is universal according\
+    \ to the universal approximation theory of NN, is shared between entities and\
+    \ relations. One output node is associated with each relation. L i is the number\
+    \ of nodes in the i th hidden layer, w l ij is the weight of the l th hidden layer\
+    \ connecting i th node of current layer to the j th node of the next layer and\
+    \ \u03B2 i,j is the weight connecting the i th node of last hidden layer to the\
+    \ j th output node associated to the j th relation in KG. Nr is the number of\
+    \ relations in the KG. f r ht is the score of (h,r,t) . d is the embedding dimension."
+  Figure 3 Link: articels_figures_by_rev_year\2021\LogicENN_A_Neural_Based_Knowledge_Graphs_Embedding_Model_With_Logical_Rules\figure_3.jpg
+  Figure 3 caption: "DLogicENN: The model is a combination of two LogicENNs. In the\
+    \ bottom model (Single LogicENN Original Relation), the rules are injected using\
+    \ the original relation i . In the top model (Single LogicENN Reverse Relation)\
+    \ the reverse relations \u2212i are used for rule injection. h,t are shared between\
+    \ two neural networks, and prediction for relation i i.e. f i ht is performed\
+    \ by aggregation of the corresponding output of each NNs i.e. f \u2212i t,h ,\
+    \ f \u2212oi h,t ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\LogicENN_A_Neural_Based_Knowledge_Graphs_Embedding_Model_With_Logical_Rules\figure_4.jpg
+  Figure 4 caption: "Statistics of difference vectors of equivalence relations ( \u0394\
+    \ Equivalence ) and implication relations ( \u0394 Implication )."
+  Figure 5 Link: articels_figures_by_rev_year\2021\LogicENN_A_Neural_Based_Knowledge_Graphs_Embedding_Model_With_Logical_Rules\figure_5.jpg
+  Figure 5 caption: Convergence of loss with respect to training steps for each of
+    the rules when inverse and symmetric are grounded.
+  Figure 6 Link: articels_figures_by_rev_year\2021\LogicENN_A_Neural_Based_Knowledge_Graphs_Embedding_Model_With_Logical_Rules\figure_6.jpg
+  Figure 6 caption: Negative sampling effect on UMLs and Kinship dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2021\LogicENN_A_Neural_Based_Knowledge_Graphs_Embedding_Model_With_Logical_Rules\figure_7.jpg
+  Figure 7 caption: Convergence of loss with respect to training steps for each of
+    the rules when inverse and symmetric rules are converted.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Mojtaba Nayyeri
+  Name of the last author: Hamed Shariat Yazdi
+  Number of Figures: 7
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: 'LogicENN: A Neural Based Knowledge Graphs Embedding Model With Logical
+    Rules'
+  Publication Date: 2021-10-20 00:00:00
+  Table 1 caption: TABLE 1 Comparison of Score Functions of the State-of-the-Art Relevant
+    Models
+  Table 10 caption: Not Available
+  Table 2 caption: 'TABLE 2 Formulation and Representation of Rules (NC: Not Considered
+    for Implementation)'
+  Table 3 caption: TABLE 3 Link Prediction Results
+  Table 4 caption: TABLE 4 Link Prediction Results on DB100K
+  Table 5 caption: TABLE 5 Link Prediction Results on UMLs and Kinship
+  Table 6 caption: TABLE 6 Testing Time in UMLs
+  Table 7 caption: TABLE 7 Number of Model Parameters
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3121646
+- Affiliation of the first author: department of intelligence science and technology,
+    graduate school of informatics, kyoto university, kyoto, japan
+  Affiliation of the last author: department of intelligence science and technology,
+    graduate school of informatics, kyoto university, kyoto, japan
+  Figure 1 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_1.jpg
+  Figure 1 caption: Our method enables video-rate, per-pixel surface normal and depth
+    recovery of dynamic underwater objects without any artificial constraints on one
+    another such as smoothness. The recovered oriented points retain intricate surface
+    details including sharp geometric features that would otherwise be hard to capture
+    with conventional methods.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_10.jpg
+  Figure 10 caption: Quantitative evaluation with static non-Lambertian objects. (a)
+    Room-light appearance. (b) Ground truth and (c)(d) Recovered surface normals and
+    depth from methods described in Sections 4 and 5. (e) Error maps obtained after
+    aligning 3D reconstruction results (d) with the ground truth. E d is the mean
+    absolute error in millimeter and E n is the mean angular error in degree. (f)
+    Recovered 3D surface as oriented point clouds from two different viewpoints. The
+    results show that our method can accurately reconstruct per-pixel surface normals
+    and depth even for objects with non-Lambertian reflectance.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_2.jpg
+  Figure 2 caption: We leverage (a) wavelength-dependent near-infrared light absorption
+    by water (reprinted from [16]) which can be modeled with (b) the Beer-Lambert
+    law that relates light attenuation with the absorption coefficient and light path
+    length. We derive the theory for and implement (c) a multi-wavelength imaging
+    system to achieve simultaneous estimation of depth and surface normals from multi-path
+    light attenuation and surface shading due to multi-directional near-infrared lighting.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_3.jpg
+  Figure 3 caption: For the minimal image configuration case of K=4 , we show that
+    the base light source depicted as l 1 must lie within the convex cone of the auxiliary
+    light sources (a). If this condition is not met (b), a global and unique estimate
+    is not guaranteed.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_4.jpg
+  Figure 4 caption: Quantitative evaluation with synthetic Lambertian objects. (a)
+    Input images synthesized with the base light source. (b)(c) Normal and depth maps
+    estimated by the proposed method. (d)(e) Normal map computed from the estimated
+    depth map and vice versa. Our method achieves higher accuracy for both.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_5.jpg
+  Figure 5 caption: Quantitative evaluation with synthetic non-Lambertian objects.
+    (a) Input image synthesized with the base light source. (b)(c) Normal and depth
+    maps estimated by the proposed method in Section 4. (d) (e) Normal and depth maps
+    estimated by the proposed method in Section 5. Note that the object surface is
+    recovered in the common surface region that received sufficient light from all
+    light sources. Our method accurately reconstructs both surface normals and depth
+    values even for the objects with non-Lambertian reflection.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_6.jpg
+  Figure 6 caption: Estimation errors at different image bit depths. Colors denote
+    different objects.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_7.jpg
+  Figure 7 caption: Estimation errors at different noise levels. Colors denote different
+    numbers of auxiliary light sources.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_8.jpg
+  Figure 8 caption: We implement a video-rate surface normal and shape from water
+    imaging system using four light sources each placed with a Fresnel lens and a
+    near-infrared bandpass filter and a custom-built multi-wavelength camera. A visible
+    spectrum light source is used to also capture texture. This texture light source
+    does not interfere with the near-infrared light sources.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Surface_Normals_and_Shape_From_Water\figure_9.jpg
+  Figure 9 caption: Quantitative evaluation with static Lambertian objects captured
+    with our multi-wavelength near-infrared imaging system using a regular near-infrared
+    camera with interchangeable band-pass filters. (a) Room-light appearance. (b)(c)
+    Ground truth and recovered surface normals and depth, and (d) error maps obtained
+    after aligning 3D reconstruction results with the ground truth. E d is the mean
+    absolute error in millimeter and E n is the mean angular error in degree. (e)
+    Recovered 3D surface as oriented point clouds from two different viewpoints. The
+    results show that our method successfully recovers both surface normals and depth
+    at each pixel and retain geometric details as evident in the zoomed-in insets.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.8
+  Name of the first author: Meng-Yu Jennifer Kuo
+  Name of the last author: Ko Nishino
+  Number of Figures: 12
+  Number of Tables: 1
+  Number of authors: 5
+  Paper title: Surface Normals and Shape From Water
+  Publication Date: 2021-10-21 00:00:00
+  Table 1 caption: TABLE 1 Nomenclature
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3121963

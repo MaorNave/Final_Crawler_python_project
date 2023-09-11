@@ -1,0 +1,796 @@
+- Affiliation of the first author: the school of mechano-electronic engineering, xidian
+    university, xian, shaanxi, china
+  Affiliation of the last author: the department of computer science, aberystwyth
+    university, aberystwyth, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_1.jpg
+  Figure 1 caption: Some examples showing the incomplete segmentation of the salient
+    object. (a) Input image; (b) GT; (c) DLS [21]; (d) ELE [22]; (e) MDF [17]; (f)
+    OURS.
+  Figure 10 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_10.jpg
+  Figure 10 caption: Illustrations for the part-object relationships. Type-4 capsules
+    (panel) and type-7 capsules (pedestrians) make up type-6 capsules (a whole object)
+    in the higher ConvCaps1 layer based on their approximately equal votes to the
+    higher capsule. Here, we visualize the capsule activation values since they are
+    the saliency probabilities of the entities.
+  Figure 2 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_2.jpg
+  Figure 2 caption: Graphical illustration of the part-object relationships. Coordinates
+    with different colors represent poses of different parts. Given an image, an object
+    (badminton) is composed by several associated parts (base and wing). Conversely,
+    these relevant parts (base and wing), which share familiar properties of the object
+    (badminton), can make up a complete object (badminton). To this end, CapsNet first
+    infers poses of different parts of the image, and then votes associated parts
+    to their whole object.
+  Figure 3 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_3.jpg
+  Figure 3 caption: Comparison between TSPORTNet and CapsNet (i.e., Single-Stream
+    PORTNet (SSPORTNet)). All types of capsules of the second convolutional capsule
+    layer in TSPORTNet and CapsNet are displayed here. Compared with the original
+    CapsNet, the proposed TSPORTNet produces more discriminative capsules, which are
+    capable of identifying the salient object from backgrounds.
+  Figure 4 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_4.jpg
+  Figure 4 caption: Output capsules of two streams. Obviously, the pattern of each
+    capsule type keeps up with the change of the input image. However, those types
+    of capsules that activate the salient parts remain unchanged, e.g., type-4 of
+    stream 1 and type-4 of stream 2, which indicates that pattern assignments do not
+    necessarily change, given different input images.
+  Figure 5 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_5.jpg
+  Figure 5 caption: 'Output CWMs of TSPORTNet. Top: Images; Bottom: CWM. Some issues
+    occur on CWM: blurry object boundaries, bright spots on the background region,
+    and un-smooth salient regions.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_6.jpg
+  Figure 6 caption: Overview of the proposed network architecture. The image is first
+    input to FLNet to learn deep features (described in the following Fig. 7), which
+    are then fed to TSPORTNet. In TSPORTNet, capsules in the PrimaryCaps layer, constructed
+    from deep feature maps, are divided into two groups, which are then fed into two
+    identical streams. These two streams are integrated into the ClassCaps layer.
+    By exploring part-object relationships, TSPORTNet produces a CWM, which is fed
+    into WGNet to guide multi-level feature maps of FLNet (FM i ( i=1,2,3,4 ) are
+    described in Fig. 7). The final saliency map is computed by integrating the outputs
+    of TSPORTNet and WGNet.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_7.jpg
+  Figure 7 caption: The architecture of FLNet. The input image first undergoes five
+    stacked convolutional layers, each of which is followed by concatenating four
+    dilation convolutional layers. On top of that, different layers are integrated
+    in a deep-to-shallow manner.
+  Figure 8 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_8.jpg
+  Figure 8 caption: Capsules construction. The context features of FLNet are downsampled
+    for efficient computation. In the following, two branches emerge for pose matrix
+    construction and activation construction, which are finally integrated to compose
+    capsules.
+  Figure 9 Link: articels_figures_by_rev_year\2021\PartObject_Relational_Visual_Saliency\figure_9.jpg
+  Figure 9 caption: "Process of PORTNet by taking ConvCaps1 as an example. In the\
+    \ figure, v ij represents the vote matrix from capsule i in one type of low-level\
+    \ capsules to capsule j in one type of high-level capsules. m low \u2217 a low\
+    \ \u2217 and m high \u2217 a high \u2217 are pose matricesactivation values of\
+    \ low-level and high-level capsules, respectively."
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Yi Liu
+  Name of the last author: Jungong Han
+  Number of Figures: 22
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Part-Object Relational Visual Saliency
+  Publication Date: 2021-01-22 00:00:00
+  Table 1 caption: TABLE 1 Details of TSPORTNet
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Comparisons of F \u03B2 F\u03B2 and MAE Values for Different\
+    \ Ablation Analyses on ECSSD [65]"
+  Table 3 caption: "TABLE 3 F \u03B2 F\u03B2, MAE, S m Sm, and E m Em Values of Different\
+    \ Methods"
+  Table 4 caption: TABLE 4 Running Time of Some Methods
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3053577
+- Affiliation of the first author: department of computer science, boston university,
+    boston, ma, usa
+  Affiliation of the last author: department of computer science, boston university,
+    boston, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Guided_Zoom_Zooming_into_Network_Evidence_to_Refine_FineGrained_Model_Decisions\figure_1.jpg
+  Figure 1 caption: 'Pipeline of Guided Zoom. A conventional CNN outputs class conditional
+    probabilities for an input image. Salient patches could reveal that evidence is
+    weak. We refine the class prediction of the conventional CNN by introducing two
+    modules: 1) Evidence CNN determines the consistency between the evidence of a
+    test image prediction and that of correctly classified training examples of the
+    same class. 2) Decision Refinement uses the output of Evidence CNN to refine the
+    prediction of the conventional CNN.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Guided_Zoom_Zooming_into_Network_Evidence_to_Refine_FineGrained_Model_Decisions\figure_2.jpg
+  Figure 2 caption: A conventional CNN is used to obtain salient image regions that
+    highlight the evidence for predictions, together with the predicted class conditional
+    probabilities. In our model, fine-grained classification decisions are improved
+    by comparing consistency of the evidence for the incoming test image with the
+    evidence seen for correct classifications in training. In this demonstration,
+    although the conventional CNN predicts with highest probability the class YellowThroatedVireo,
+    Evidence CNN is able to provide guidance for predicting the ground-truth class
+    YellowBreastedChat (highlighted in blue) due to visual similarity of the evidence
+    of this class with that of the generated evidence pool.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Guided_Zoom_Zooming_into_Network_Evidence_to_Refine_FineGrained_Model_Decisions\figure_3.jpg
+  Figure 3 caption: Most salient patches extracted from the conventional CNN using
+    the spatial grounding approach contrastive Excitation Backprop (cEB). Such patches
+    are then used to train the Evidence CNN to differentiate zoomed in details for
+    each class. Image patches are presented from two sample classes of (a) CUB-201-2011
+    Birds, (b) Stanford Dogs, (c) FGVC-Aircraft, and (d) Stanford Cars.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Guided_Zoom_Zooming_into_Network_Evidence_to_Refine_FineGrained_Model_Decisions\figure_4.jpg
+  Figure 4 caption: Implicit part detection obtained as a result of two iterations
+    of adversarial erasing. The first column shows four images from the class Chihuahua
+    in the Stanford Dogs dataset. From the second to the forth column we present the
+    most, the second and the third most salient patches detected for the four images.
+    Assigning the same class label to the different parts of a single dog image enforces
+    implicit part-label correlation.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Guided_Zoom_Zooming_into_Network_Evidence_to_Refine_FineGrained_Model_Decisions\figure_5.jpg
+  Figure 5 caption: 'Sample image from each dataset to demonstrate the extraction
+    of patches during two rounds of adversarial erasing: finding the first ( l=0 ),
+    second ( l=1 ), and third ( l=2 ) most-salient evidence for a BlackFootedAlbatross
+    bird, an EnglishFoxhound dog, a 707-320 aircraft, and a AudiS5Convertible2012
+    car. For example, the most salient evidence for the bird image is the head, followed
+    by the tail, followed by the right wing.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Guided_Zoom_Zooming_into_Network_Evidence_to_Refine_FineGrained_Model_Decisions\figure_6.jpg
+  Figure 6 caption: 'A t-SNE feature representation for images input to a conventional
+    CNN (left), and for patches input to Evidence CNN (right) for the three similar
+    classes of bird species presented in Fig. 2: YellowThroatedVireo (blue), YellowBreastedChat
+    (orange), CommonYellowthroat (green). A circle represents a training feature,
+    and cross represents a test feature. The features are extracted from the pool5
+    layer of ResNet-101. Features extracted from the patches are more discriminative
+    compared to original images, and are therefore better separated. In addition,
+    Evidence CNN uses the class coherence of patches to make the overall system more
+    robust.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Guided_Zoom_Zooming_into_Network_Evidence_to_Refine_FineGrained_Model_Decisions\figure_7.jpg
+  Figure 7 caption: Sample saliency images produced by cEB, RISE, and Grad-CAM for
+    a CrestedAuklet bird, an AfghanHound dog, and an A318 aircraft, and a BMW6SeriesConvertible2007
+    car.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Sarah Adel Bargal
+  Name of the last author: Stan Sclaroff
+  Number of Figures: 7
+  Number of Tables: 3
+  Number of authors: 7
+  Paper title: 'Guided Zoom: Zooming into Network Evidence to Refine Fine-Grained
+    Model Decisions'
+  Publication Date: 2021-01-25 00:00:00
+  Table 1 caption: TABLE 1 We Compare Guided Zoom (GZ) Classification Accuracy With
+    State-of-the-Art Weakly-Supervised Methods (Do Not Use Any Sort of Annotation
+    Apart From the Image Label) and Some Representative Methods That Use Additional
+    Supervision Such as Part Annotations for Fine-Grained Classification of This Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Ablation Study Varying the Number of Top Classes k k Used
+    to Refine the ResNet-101 Model Prediction, and the Number of Adversarial Erasing
+    Iterations L L
+  Table 3 caption: TABLE 3 We Compare Classification Accuracy of a Vanilla ResNet-101
+    With Guided Zoom (GZ) Adopting Two Different Techniques for Populating Our Evidence
+    Pool, Using (a) Multiple Grounding (MG) Techniques, and (b) Adversarial Erasing
+    (AE) to Extract Evidence Patches With Three Different Saliency Techniques
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054303
+- Affiliation of the first author: university of florence, firenze, italy
+  Affiliation of the last author: university of florence, firenze, italy
+  Figure 1 Link: articels_figures_by_rev_year\2021\On_InductiveTransductive_Learning_With_Graph_Neural_Networks\figure_1.jpg
+  Figure 1 caption: Evaluation of the state transition function for node 1 (a). The
+    corresponding encoding network (b).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\On_InductiveTransductive_Learning_With_Graph_Neural_Networks\figure_2.jpg
+  Figure 2 caption: "Difference between the performance of the inductive\u2013transductive\
+    \ GNN and the pure inductive model."
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Giorgio Ciano
+  Name of the last author: Franco Scarselli
+  Number of Figures: 2
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: "On Inductive\u2013Transductive Learning With Graph Neural Networks"
+  Publication Date: 2021-01-25 00:00:00
+  Table 1 caption: "TABLE 1 Performance of the Inductive\u2013Transductive GNN"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Performance of the Inductive\u2013Transductive GCN"
+  Table 3 caption: TABLE 3 Accuracy Scores of the GNN on the Subgraph Dataset for
+    Each Test (the Standard Deviation is Reported in Brackets) With Different Graph
+    Densities
+  Table 4 caption: TABLE 4 GNN Accuracy Results for the Web Spam Dataset (the Standard
+    Deviation is Reported in Brackets)
+  Table 5 caption: "TABLE 5 GCN Accuracy Results for the ogb\u2013arXiv Dataset (the\
+    \ Standard Deviation is Reported in Brackets)"
+  Table 6 caption: "TABLE 6 GraphSAGE Accuracy Results for the ogb\u2013arXiv Dataset\
+    \ (the Standard Deviation is Reported in Brackets)"
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054304
+- Affiliation of the first author: department of electrical and computer engineering,
+    shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: moe key lab of artificial intelligence, ai institute,
+    qing yuan research institute, shanghai jiao tong university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_1.jpg
+  Figure 1 caption: Interactiveness Knowledge Learning. (a) HOI datasets contain implicit
+    interactiveness knowledge. We can learn it better by performing explicit interactiveness
+    discrimination, and utilize it to improve the HOI detection performance. (b) Interactiveness
+    knowledge is beyond the HOI categories and can be learned across datasets, which
+    can bring greater performance improvement.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_10.jpg
+  Figure 10 caption: The heatmaps of interactiveness attention based on mathbf Rmathbf
+    Cmathbf D3 on HICO-DET and Default mathbf Rmathbf Cmathbf D on HAKE-HOI. The pixels
+    with higher interactiveness probabilities are presented with brighter red color.
+    We can find that part-level interactiveness knowledge localizes the most informative
+    parts effectively. With the interactiveness heatmap, we can take further insight
+    into the model.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_2.jpg
+  Figure 2 caption: HOIs within an image can be represented as a HOI graph. Human
+    and object can be seen as nodes, whilst the interactions are represented as edges.
+    Exhaustive pairing of all nodes would import overmuch non-interactive edges and
+    do damage to detection performance. Our Non-Interaction Suppression can effectively
+    reduce non-interactive pairs. Thus the dense graph would be converted to a sparse
+    graph and then be classified.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_3.jpg
+  Figure 3 caption: The overview of our TIN framework. Interactiveness Network D utilizes
+    interactiveness to reduce false positives caused by overmuch non-interactive pair
+    candidates. Some conventional modules are also included, namely, Representation
+    Network R and Classification Network C . R is responsible for feature extraction
+    from detected instances. C utilizes node and edge features to perform HOI classification.
+    In testing, D is utilized in two stages. First, D evaluates the interactiveness
+    of edges by exploiting the learned interactiveness knowledge and impose NIS on
+    C . Second, combined with interactiveness score from D , C will process the sparse
+    graph and classify the remaining edges.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_4.jpg
+  Figure 4 caption: "The architeture of Interactiveness Network D . There are eleven\
+    \ interactiveness binary classifiers in D , i.e., ten for part interactivenesses\
+    \ and one for instance interactiveness (illustrated in the upper right part).\
+    \ For the part-level classifier, the i th part feature f p i together with f h\
+    \ , f o and f sp , are concatenated and input to FCs and Sigmoid to generate the\
+    \ part interactiveness probability p D ( p i ,o) . Meanwhile, we utilize part\
+    \ interactivenesses to select the important parts, i.e. f \u2032 p i = p D ( p\
+    \ i ,o) \u2217 f p i . For the instance-level classifier, we concatenate the ten\
+    \ re-weighted part features f \u2032 p i ( 1\u2264i\u226410 ) and input them to\
+    \ FCs to generate the instance interactivenss score s D (h,o) . Finally, consistency\
+    \ between two levels is constructed as the objective."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_5.jpg
+  Figure 5 caption: "Inputs of the spatial-pose stream. Three kinds of maps are included:\
+    \ pose map, human map and object map. Person 2 in two images both have interaction\
+    \ \u201Cfeed\u201D with giraffes. But two pairs of Person 1 and giraffe are all\
+    \ non-interactive. Their poses and locations are helpful for the interactiveness\
+    \ discrimination."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_6.jpg
+  Figure 6 caption: The illustration of the relationship between part-level and instance-level
+    interactiveness. Person 1 is inferred to interact with the horse from the features
+    of his hands and feet, while Person 2 and Person 3 are not interacting with the
+    horse based on the same reason.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_7.jpg
+  Figure 7 caption: "The illustration of P(\u22C5) within Low-grade Suppressive Function.\
+    \ Its input is object detection score. High-grade detected objects will be emphasized\
+    \ and distinguished with low-grade ones. In addition, P(0)=5.15E\u221205 and P(1)=9.99E\u2212\
+    01 ."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_8.jpg
+  Figure 8 caption: Visualization of sample HOI detections. Subjects and objects are
+    represented with blue and red bounding boxes. While interactions are marked by
+    green lines linking the box centers.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Transferable_Interactiveness_Knowledge_for_HumanObject_Interaction_Detection\figure_9.jpg
+  Figure 9 caption: Visualized effects of NIS. Green lines mean accurate HOIs, while
+    purple lines mean non-interactive pairs which are suppressed. Without NIS, C would
+    generate false positive predictions for these non-interactive pairs in one-stage
+    inference, which are shown by the purple texts below the images. Even some extremely
+    hard scenarios can be discovered and suppressed, such as mis-groupings between
+    person and object close to each other, person and object in clutter scene.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Yong-Lu Li
+  Name of the last author: Cewu Lu
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Transferable Interactiveness Knowledge for Human-Object Interaction
+    Detection
+  Publication Date: 2021-01-25 00:00:00
+  Table 1 caption: TABLE 1 Mode Setting Details
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Results Comparison on HICO-DET [9]
+  Table 3 caption: TABLE 3 Results Comparison on V-COCO [13]
+  Table 4 caption: TABLE 4 Results Comparison on HAKE-HOI
+  Table 5 caption: TABLE 5 Non-interactive Pairs Reduction After Performing NIS
+  Table 6 caption: TABLE 6 Interactiveness Detection Results Comparison on HICO-DET
+    [9] and HAKE-HOI
+  Table 7 caption: TABLE 7 Body Parts Interactiveness Attention Pattern of RC D 3
+    RCD3 on HICO-DET [9]
+  Table 8 caption: TABLE 8 Results of Ablation Studies
+  Table 9 caption: TABLE 9 Performance and computation comparison on interactiveness
+    network with separateshare interactiveness classifier for Ten body parts.
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054048
+- Affiliation of the first author: college of computer science and artificial intelligence,
+    wenzhou university, wenzhou, china
+  Affiliation of the last author: department of computer science, university of manitoba,
+    winnipeg, mb, canada
+  Figure 1 Link: articels_figures_by_rev_year\2021\Referring_Segmentation_in_Images_and_Videos_With_CrossModal_SelfAttention_Networ\figure_1.jpg
+  Figure 1 caption: Referring segmentation in images and videos. Given an image (top
+    two examples) or a clip of a video (bottom example) with a referring expression,
+    the segmentation mask is produced according to the corresponding expression query.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Referring_Segmentation_in_Images_and_Videos_With_CrossModal_SelfAttention_Networ\figure_2.jpg
+  Figure 2 caption: '(Best viewed in color) Illustration of our cross-modal self-attention
+    mechanism. It is composed of three joint operations: self-attention over language
+    (shown in red), self-attention over image representation (shown in green), and
+    cross-modal attention between language and image (shown in blue). The visualizations
+    of linguistic and spatial feature representations (in bottom row) show that the
+    proposed model can focus on specific key words in the language and spatial regions
+    in the image that are necessary to produce precise referring segmentation masks.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Referring_Segmentation_in_Images_and_Videos_With_CrossModal_SelfAttention_Networ\figure_3.jpg
+  Figure 3 caption: An overview of our approach. The proposed model consists of three
+    components including multimodal feature generation, cross-modal self-attention
+    (CMSA) and a gated multi-level fusion. Multimodal feature generation are constructed
+    from the visual feature, the spatial coordinate feature and the language feature
+    for each word. For referring segmentation in video, a clip of adjacent frames
+    is used to extract temporal correlation feature by cross-frame self-attention
+    (CFSA) for producing visual feature of the current frame as shown in the gold
+    box. Then the multimodal feature at each level is fed to a cross-modal self-attention
+    module to build long-range dependencies across individual words and spatial regions.
+    Finally, the gated multi-level fusion module combines the features from different
+    levels to produce the final segmentation mask. The red arrows and gold arrows
+    show the input and output for the image and video, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Referring_Segmentation_in_Images_and_Videos_With_CrossModal_SelfAttention_Networ\figure_4.jpg
+  Figure 4 caption: "An illustration of the process of generating the cross-modal\
+    \ self-attentive (CMSA) feature from an image and a language expression (\u201C\
+    man in yellow shirt\u201D). We use \u2297 and \u2295 to denote matrix multiplication\
+    \ and element-wise summation, respectively. The softmax operation is performed\
+    \ over each row which indicates the attentions across each visual and language\
+    \ cell in the multimodal feature. The word attention-aware pooling summarizes\
+    \ word-level features for multimodal representation of the referring expression.\
+    \ We also visualize the internal linguistic and spatial representations. Please\
+    \ refer to Sections 4.3 and 4.4 for more details."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Referring_Segmentation_in_Images_and_Videos_With_CrossModal_SelfAttention_Networ\figure_5.jpg
+  Figure 5 caption: 'Qualitative examples of referring image segmentation: (a) original
+    image; (b) visualization of the linguistic representation (attentions to word
+    at each of the three feature levels); (c) segmentation mask; and (d) ground truth.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Referring_Segmentation_in_Images_and_Videos_With_CrossModal_SelfAttention_Networ\figure_6.jpg
+  Figure 6 caption: 'Qualitative examples of actor and action video segmentation.
+    From left to right: the first three and last three examples represent segmentation
+    masks for different frames in a video according to the query expressions.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Referring_Segmentation_in_Images_and_Videos_With_CrossModal_SelfAttention_Networ\figure_7.jpg
+  Figure 7 caption: (Best viewed in color) Visualization of spatial feature representation.
+    These spatial heatmaps show the responses of the network to different query expressions.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Referring_Segmentation_in_Images_and_Videos_With_CrossModal_SelfAttention_Networ\figure_8.jpg
+  Figure 8 caption: Some failure examples of our model. In the first two rows, we
+    show examples of failure cases in images. Here we show the original image (first
+    column), the output of our method (second column) and the ground-truth (third
+    column). The failures of images are due to factors such as language ambiguity
+    (first row), and similar object appearance and occlusion (second row). We also
+    show a failure case of video in the last two rows. Row 3 shows frames in a video
+    and row 4 shows the corresponding outputs of our method. Our model fails to precisely
+    segment the object in the last frame because of the disappearing of the fast moving
+    object.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Linwei Ye
+  Name of the last author: Yang Wang
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: Referring Segmentation in Images and Videos With Cross-Modal Self-Attention
+    Network
+  Publication Date: 2021-01-26 00:00:00
+  Table 1 caption: TABLE 1 Ablation Study of Variants for Cross-Modal Self-Attention
+    Module
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Ablation Study on the UNC Val Set
+  Table 3 caption: TABLE 3 Comparison of Segmentation Performance With the State-of-the-Art
+    Methods on the UNC Dataset in Terms of precX and IoU
+  Table 4 caption: TABLE 4 Comparison of Segmentation Performance With the State-of-the-Art
+    Methods on the UNC+ Dataset in Terms of precX and IoU
+  Table 5 caption: TABLE 5 Comparison of Segmentation Performance With the State-of-the-Art
+    Methods on the G-Ref Dataset in Terms of precX and IoU
+  Table 6 caption: TABLE 6 Comparison of Segmentation Performance With the State-of-the-Art
+    Methods on ReferIt Dataset in Terms of precX and IoU
+  Table 7 caption: TABLE 7 Comparison of Segmentation Performance With the State-of-the-Art
+    Methods on A2D Sentences Dataset in Terms of precX, meanIoU, and Overall IoU
+  Table 8 caption: TABLE 8 Comparison of Segmentation Performance With the State-of-the-Art
+    Methods on JHMDB Sentences Dataset in Terms of precX, Overall IoU, and Mean IoU
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054384
+- Affiliation of the first author: school of computer science, university of technology
+    sydney, ultimo, nsw, australia
+  Affiliation of the last author: school of computer science, university of technology
+    sydney, ultimo, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\NATSBench_Benchmarking_NAS_Algorithms_for_Architecture_Topology_and_Size\figure_1.jpg
+  Figure 1 caption: 'Middle: the macro skeleton of each architecture candidate. Top:
+    The size search space S s in NATS-Bench. In S s , each candidate architecture
+    has different configuration for the channel size. Bottom: The topology search
+    space S t in NATS-Bench. In S t , each candidate architecture has different cell
+    topology.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\NATSBench_Benchmarking_NAS_Algorithms_for_Architecture_Topology_and_Size\figure_2.jpg
+  Figure 2 caption: The ranking of each architecture on three datasets, sorted by
+    the ranking in CIFAR-10.
+  Figure 3 Link: articels_figures_by_rev_year\2021\NATSBench_Benchmarking_NAS_Algorithms_for_Architecture_Topology_and_Size\figure_3.jpg
+  Figure 3 caption: The training and test accuracy versus the number of parameters
+    and FLOPs for each architecture candidate.
+  Figure 4 Link: articels_figures_by_rev_year\2021\NATSBench_Benchmarking_NAS_Algorithms_for_Architecture_Topology_and_Size\figure_4.jpg
+  Figure 4 caption: The correlation between the validation accuracy and the test accuracy
+    for all architecture candidates in S t and S s .
+  Figure 5 Link: articels_figures_by_rev_year\2021\NATSBench_Benchmarking_NAS_Algorithms_for_Architecture_Topology_and_Size\figure_5.jpg
+  Figure 5 caption: Ranking stability of top 20% architectures on different datasets
+    over the topology search space S t .
+  Figure 6 Link: articels_figures_by_rev_year\2021\NATSBench_Benchmarking_NAS_Algorithms_for_Architecture_Topology_and_Size\figure_6.jpg
+  Figure 6 caption: We report the Kendall rank correlation coefficient between the
+    accuracy on six sets, i.e., CIFAR-10 validation set (C10-V), CIFAR-10 test set
+    (C10-T), CIFAR-100 validation set (C100-V), CIFAR-100 test set (C100-T), ImageNet-16-120
+    validation set (I120-V), and ImageNet-16-120 test set (I120-T).
+  Figure 7 Link: articels_figures_by_rev_year\2021\NATSBench_Benchmarking_NAS_Algorithms_for_Architecture_Topology_and_Size\figure_7.jpg
+  Figure 7 caption: The test accuracy of the searched architecture candidate over
+    time. We run different searching algorithms 500 times on three datasets. We plot
+    the test accuracy of their searched model at each timestamp for the corresponding
+    dataset. This test accuracy is evaluated after fully training the model on the
+    corresponding dataset and averaged over 500 runs. We report more details including
+    the accurate numbers and variance in Table 4.
+  Figure 8 Link: articels_figures_by_rev_year\2021\NATSBench_Benchmarking_NAS_Algorithms_for_Architecture_Topology_and_Size\figure_8.jpg
+  Figure 8 caption: The test accuracy of the searched architecture candidate after
+    each search epoch. We run different searching algorithms three times on three
+    datasets. We plot the test accuracy of their searched model after each search
+    epoch for the corresponding dataset. This test accuracy is evaluated after fully
+    training the model on the corresponding dataset and averaged over three runs.
+    We report more details including the accurate numbers and variance in Table 4.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Xuanyi Dong
+  Name of the last author: Bogdan Gabrys
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: 'NATS-Bench: Benchmarking NAS Algorithms for Architecture Topology
+    and Size'
+  Publication Date: 2021-01-26 00:00:00
+  Table 1 caption: TABLE 1 We Summarize the Important Characteristics of NAS-Bench-101
+    and NATS-Bench
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Training Hyperparameters H 0 H0 for all Candidate Architectures
+    in S s Ss and S t St
+  Table 3 caption: TABLE 3 The Utility of Our NATS-Bench for Different NAS Algorithms
+  Table 4 caption: TABLE 4 We Evaluate 13 Different Searching Algorithms in Our NATS-Bench
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054824
+- Affiliation of the first author: computer science department, university of oxford,
+    oxford, u.k.
+  Affiliation of the last author: institute for artificial intelligence, state key
+    laboratory of intelligent technology and systems, beijing national research center
+    for information science and technology, and the department of computer science
+    and technology, tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Convolutional_Neural_Networks_With_Gated_Recurrent_Connections\figure_1.jpg
+  Figure 1 caption: "Illustration of the RCL and GRCL. (a) Structures of the RCL and\
+    \ GRCL. The black dots denote neurons. The red and green arrows denote the feedforward\
+    \ and recurrent connections, respectively. With the gates denoted by triangles\
+    \ operating on the recurrent connections, the figure illustrates a GRCL; otherwise,\
+    \ it illustrates an RCL. (b) Desired RFs in the GRCL in recognizing the pear and\
+    \ blueberry. Left: The red squares and green squares denote the classical RF and\
+    \ the desired non-classical RF of a neuron. Right: Desired strength of the non-classical\
+    \ RF. For clarity, only the x coordinate of RF is shown. The threshold \u03C1\
+    \ determines the size of the effective RF, i.e., only regions in the RF where\
+    \ the strength is larger than \u03C1 are counted."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Convolutional_Neural_Networks_With_Gated_Recurrent_Connections\figure_2.jpg
+  Figure 2 caption: Time-unfolded version of the RCL (a) and the GRCL (b) with T=3
+    . The diagram in (b) without the red arrows corresponds to the model presented
+    in the preliminary work [17].
+  Figure 3 Link: articels_figures_by_rev_year\2021\Convolutional_Neural_Networks_With_Gated_Recurrent_Connections\figure_3.jpg
+  Figure 3 caption: 'Left: GRCNN with three GRCL blocks for object Recognition on
+    CIFAR and SVHN. The adjacent blocks are connected by a transition layer that is
+    responsible for downsampling. Right: The transition layer which is similar to
+    the bottleneck layer used for downsampling in [4], [39]. For clarity, batch normalization
+    layers and activation layers are omitted.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Convolutional_Neural_Networks_With_Gated_Recurrent_Connections\figure_4.jpg
+  Figure 4 caption: Loss curves (upper) and test error rate curves (lower) of the
+    RCNN with weight sharing and the original GRCNN with weight sharing. The horizontal
+    axis represents the training epoch.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Convolutional_Neural_Networks_With_Gated_Recurrent_Connections\figure_5.jpg
+  Figure 5 caption: Outputs of the gates in GRCNN given CIFAR-10 images. (a,b) The
+    output values of the gates in different layers given two sample input images.
+    Every layer had 128 gates but for clarity only the first 32 gates in every layer
+    are shown. The 15 layers belong to three GRCLs (five per GRCL). Other layers in
+    the model including intermediate layers between GRCLs are not shown. Note that
+    the gates with the same index over 128 in different GRCLs do not have a direct
+    relation. That is why the strips break at the boundaries of different GRCLs. (c)
+    The mean output of the gates over 128 gates and 10,000 training images. Error
+    bars indicate the standard deviation. (d) The mean of the variance of the gate
+    outputs within each GRCL.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Convolutional_Neural_Networks_With_Gated_Recurrent_Connections\figure_6.jpg
+  Figure 6 caption: "Two sample images from the ICDAR2003 dataset. In the first example,\
+    \ for recognizing the character \u201Ch\u201D, the classical RF (red square) and\
+    \ desired non-classical RF (green) of GRCNN are shown. If the non-classical RF\
+    \ covers unrelated information, such as the characters \u201Cp\u201D and \u201C\
+    i,\u201D it will distract the model."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Convolutional_Neural_Networks_With_Gated_Recurrent_Connections\figure_7.jpg
+  Figure 7 caption: Sample images from MS COCO dataset. The objects are cluttered
+    together and differ significantly in scale. For example, in the first example,
+    the baseball bat is very small compared with the player.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Jianfeng Wang
+  Name of the last author: Xiaolin Hu
+  Number of Figures: 7
+  Number of Tables: 9
+  Number of authors: 2
+  Paper title: Convolutional Neural Networks With Gated Recurrent Connections
+  Publication Date: 2021-01-26 00:00:00
+  Table 1 caption: TABLE 1 Test Error Rates of RCNN and GRCNN on CIFAR-10 (%)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Test Error Rates of Various Models on CIFAR and SVHN (%)
+  Table 3 caption: TABLE 3 Inference Time of Different Models on the Test Set of CIFAR-10
+    (Seconds)
+  Table 4 caption: TABLE 4 GRCNN Configuration for ImageNet Classification
+  Table 5 caption: TABLE 5 Top-1 and Top-5 Error Rates on the ImageNet-2012 Validation
+    With Different Popular Architectures (Single-Crop Test Error Rates) (%)
+  Table 6 caption: TABLE 6 Compared With Two Models Having Adaptive Receptive Fields
+    in Terms of Error Rate on the ImageNet-2012 Validation Set With Single-Crop Protocol
+    (%)
+  Table 7 caption: TABLE 7 The Configuration of GRCNN in Scene Text Recognition
+  Table 8 caption: TABLE 8 Scene Text Recognition Accuracies of Different Models
+  Table 9 caption: TABLE 9 Detection Results of Anchor-Based One-Stage Detectors on
+    MS COCO Test-dev Set
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054614
+- Affiliation of the first author: school of computer science, wuhan university, wuhan,
+    hubei, china
+  Affiliation of the last author: singapore management university, and salesforce
+    research asia, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\Deep_Learning_for_Person_ReIdentification_A_Survey_and_Outlook\figure_1.jpg
+  Figure 1 caption: 'The flow of designing a practical person Re-ID system, including
+    five main steps: 1) Raw Data Collection, (2) Bounding Box Generation, 3) Training
+    Data Annotation, 4) Model Training, and 5) Pedestrian Retrieval.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Deep_Learning_for_Person_ReIdentification_A_Survey_and_Outlook\figure_2.jpg
+  Figure 2 caption: Four different feature learning strategies. a) Global Feature,
+    learning a global representation for each person image in Section 2.1.1; b) Local
+    Feature, learning part-aggregated local features in Section 2.1.2; c) Auxiliary
+    Feature, learning the feature representation using auxiliary information, e.g.,
+    attributes [71], [72] in Section 2.1.3 and d) Video Feature, learning the video
+    representation using multiple image frames and temporal information [73], [74]
+    in Section 2.1.4.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Deep_Learning_for_Person_ReIdentification_A_Survey_and_Outlook\figure_3.jpg
+  Figure 3 caption: Three kinds of widely used loss functions in the literature. (a)
+    Identity Loss [42], [82], [118], [140]; (b) Verification Loss [94], [141] and
+    (c) Triplet Loss [14], [22], [57]. Many works employ their combinations [87],
+    [137], [141], [142].
+  Figure 4 Link: articels_figures_by_rev_year\2021\Deep_Learning_for_Person_ReIdentification_A_Survey_and_Outlook\figure_4.jpg
+  Figure 4 caption: An illustration of re-ranking in person Re-ID. Given a query example,
+    an initial rank list is retrieved, where the hard matches are ranked in the bottom.
+    Using the top-ranked easy positive match (1) as query to search in the gallery,
+    we can get the hard match (2) and (3) with similarity propagation in the gallery
+    set.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Deep_Learning_for_Person_ReIdentification_A_Survey_and_Outlook\figure_5.jpg
+  Figure 5 caption: State-of-the-arts (SOTA) on four image-based person Re-ID datasets.
+    Both the Rank-1 accuracy (%) and mAP value (%) are reported. For CUHK03 [43],
+    the detected data under the setting [58] is reported. For Market-1501, the single
+    query setting is used. The best result is highlighted with a red star. All the
+    listed results do not use re-ranking or additional annotated information.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Deep_Learning_for_Person_ReIdentification_A_Survey_and_Outlook\figure_6.jpg
+  Figure 6 caption: State-of-the-arts (SOTA) on four widely used video-based person
+    Re-ID datasets. The Rank-1 accuracies (%) over years are reported. mAP values
+    (%) on MARS [8] and Duke-Video [144] are reported. For Duke-Video, we refer to
+    the settings in [144]. The best result is highlighted with a red star. All the
+    listed results do not use re-ranking or additional annotated information.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Deep_Learning_for_Person_ReIdentification_A_Survey_and_Outlook\figure_7.jpg
+  Figure 7 caption: Difference between the widely used CMC, AP and the negative penalty
+    (NP) measurements. True matching and false matching are bounded in green and red
+    boxes, respectively. Assume that only three correct matches exist in the gallery,
+    rank list 1 gets better AP, but gets much worse NP than rank list 2. The main
+    reason is that rank list 1 contains too many false matchings before finding the
+    hardest true matching. For consistency with CMC and mAP, we compute the inverse
+    negative penalty (INP), e.g., INP = 1- NP. Larger INP means better performance.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Deep_Learning_for_Person_ReIdentification_A_Survey_and_Outlook\figure_8.jpg
+  Figure 8 caption: The framework of the proposed AGW baseline using the widely used
+    ResNet50 [80] as the backbone network.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mang Ye
+  Name of the last author: Steven C. H. Hoi
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 6
+  Paper title: 'Deep Learning for Person Re-Identification: A Survey and Outlook'
+  Publication Date: 2021-01-26 00:00:00
+  Table 1 caption: TABLE 1 Closed-World Versus Open-world Person Re-ID
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Statistics of Some Commonly Used Datasets for Closed-World
+    Person Re-ID
+  Table 3 caption: TABLE 3 Statistics of SOTA Unsupervised Person Re-ID on Two Image-Based
+    Datasets
+  Table 4 caption: TABLE 4 Comparison With the State-of-the-Arts on Single-Modality
+    Image-Based Re-ID
+  Table 5 caption: TABLE 5 Comparison With the State-of-the-Arts on Two Image Re-ID
+    Datasets, Including CUHK03 and MSMT17
+  Table 6 caption: TABLE 6 Comparison With the State-of-the-Arts on four Video-Based
+    Re-ID Datasets, Including MARS [8], DukeVideo [144], PRID2011 [126], and iLIDS-VID
+    [7]
+  Table 7 caption: TABLE 7 Comparison With the State-of-the-Arts on Two Partial Re-ID
+    Datasets, Including Partial-REID and Partial-iLIDS
+  Table 8 caption: TABLE 8 Comparison With the State-of-the-Arts on Cross-Modality
+    Visible-Infrared Re-ID
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054775
+- Affiliation of the first author: "department of mathematics and statistics, uit\
+    \ the arctic university of norway, troms\xF8, norway"
+  Affiliation of the last author: "faculty of informatics, universit\xE0 della svizzera\
+    \ italiana, lugano, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2021\Graph_Neural_Networks_With_Convolutional_ARMA_Filters\figure_1.jpg
+  Figure 1 caption: The ARMA convolutional layer. Same color indicates that the weights
+    are shared.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Graph_Neural_Networks_With_Convolutional_ARMA_Filters\figure_2.jpg
+  Figure 2 caption: "In (a, b), the empirical filter responses of two GCS stacks for\
+    \ T=1,2,3 ; the black lines indicate the analytical response of an ARMA 1 filter\
+    \ with similar parameters. In (c), the empirical response of a GCN with T=1,2,3\
+    \ layers. In (d, e), the original components of the input graph signal X (in black),\
+    \ and the components of the graph signal X \xAF processed by two GCS stacks for\
+    \ T=1,2,3 (in color). In (f), the components of X \xAF processed by a GCN with\
+    \ T=1,2,3 layers."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Graph_Neural_Networks_With_Convolutional_ARMA_Filters\figure_3.jpg
+  Figure 3 caption: While each GCS stack behaves as a low-pass filter, an ARMA layer
+    with K=3 can implement filters of different shapes. The ARMA layer in (a) implements
+    a high-pass filtering operation that dampens low frequencies. The ARMA layer in
+    (b) implements a band-pass filtering operation that mostly allows medium frequencies.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Graph_Neural_Networks_With_Convolutional_ARMA_Filters\figure_4.jpg
+  Figure 4 caption: Training times on the PPI dataset, obtained with an Nvidia Titan
+    Xp GPU.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Filippo Maria Bianchi
+  Name of the last author: Cesare Alippi
+  Number of Figures: 4
+  Number of Tables: 12
+  Number of authors: 4
+  Paper title: Graph Neural Networks With Convolutional ARMA Filters
+  Publication Date: 2021-01-26 00:00:00
+  Table 1 caption: TABLE 1 Node Classification Accuracy
+  Table 10 caption: TABLE 10 Hyperparameters for Graph Classification and Graph Regression
+  Table 2 caption: TABLE 2 Graph Signal Classification Accuracy
+  Table 3 caption: TABLE 3 Graph Classification Accuracy
+  Table 4 caption: TABLE 4 Graph Regression Mean Squared Error
+  Table 5 caption: TABLE 5 Summary of the Node Classification Datasets
+  Table 6 caption: TABLE 6 Hyperparameters for Node Classification
+  Table 7 caption: TABLE 7 Summary of the Graph Regression Dataset
+  Table 8 caption: TABLE 8 Hyperparameters for Graph Classification and Graph Regression
+  Table 9 caption: TABLE 9 Summary of the Graph Classification Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054830
+- Affiliation of the first author: department electrical engineering, center for processing
+    speech and images, ku leuven, leuven, belgium
+  Affiliation of the last author: center for processing speech and images, ku leuven,
+    leuven, belgium
+  Figure 1 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_1.jpg
+  Figure 1 caption: A taxonomy of deep learning approaches for jointly solving multiple
+    dense prediction tasks.
+  Figure 10 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_10.jpg
+  Figure 10 caption: Performance profile of MTL methods for the semantic segmentation
+    and depth estimation tasks on NYUD-v2. We show the results obtained with different
+    hyperparameter settings in the same color. Bottom-right is better.
+  Figure 2 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_2.jpg
+  Figure 2 caption: Historically multi-task learning using deep neural networks has
+    been subdivided into soft- and hard-parameter sharing schemes.
+  Figure 3 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_3.jpg
+  Figure 3 caption: In this work, we discriminate between encoder- and decoder-focused
+    models depending on where the task interactions take place.
+  Figure 4 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_4.jpg
+  Figure 4 caption: The architecture of cross-stitch networks [5] and NDDR-CNNs [7].
+    The activations from all single-task networks are fused across several encoding
+    layers. Different feature fusion mechanisms were used in each case.
+  Figure 5 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_5.jpg
+  Figure 5 caption: The architecture of MTAN [8]. Task-specific attention modules
+    select and refine features from several layers of a shared encoder.
+  Figure 6 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_6.jpg
+  Figure 6 caption: The architecture in PAD-Net [13]. Features extracted by a backbone
+    network are passed to task-specific heads to make initial task predictions. The
+    task features from the different heads are then combined through a distillation
+    unit to make the final predictions. Note that, auxiliary tasks can be used in
+    this framework, i.e., tasks for which only the initial predictions are generated,
+    but not the final ones.
+  Figure 7 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_7.jpg
+  Figure 7 caption: The architecture in PAP-Net [14]. Features extracted by a backbone
+    network are passed to task-specific heads to make initial task predictions. The
+    task features from the different heads are used to calculate a per-task pixel
+    affinity matrix. The affinity matrices are adaptively combined and diffused back
+    into the task features space to spread the cross-task correlation information
+    across the image. The refined features are used to make the final task predictions.
+  Figure 8 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_8.jpg
+  Figure 8 caption: The architecture in Joint Task-Recursive Learning [15]. The features
+    of two tasks are progressively refined in an intertwined manner based on past
+    states.
+  Figure 9 Link: articels_figures_by_rev_year\2021\MultiTask_Learning_for_Dense_Prediction_Tasks_A_Survey\figure_9.jpg
+  Figure 9 caption: The architecture in Multi-Scale Task Interaction Networks [16].
+    Starting from a backbone that extracts multi-scale features, initial task predictions
+    are made at each scale. These task features are then distilled separately at every
+    scale, allowing the model to capture unique task interactions at multiple scales,
+    i.e., receptive fields. After distillation, the distilled task features from all
+    scales are aggregated to make the final task predictions. To boost performance,
+    a feature propagation module is included to pass information from lower resolution
+    task features to higher ones.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Simon Vandenhende
+  Name of the last author: Luc Van Gool
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: 'Multi-Task Learning for Dense Prediction Tasks: A Survey'
+  Publication Date: 2021-01-26 00:00:00
+  Table 1 caption: TABLE 1 A Qualitative Comparison Between Task Balancing Techniques
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 MTL Benchmarks Used in the Experiments Section
+  Table 3 caption: TABLE 3 Overview of Our Experiments on NYUD-v2 and PASCAL
+  Table 4 caption: TABLE 4 Overview of the Used Hyperparameter Settings in Our Grid
+    Search Procedure
+  Table 5 caption: TABLE 5 Comparison of Deep Architectures and Optimization Strategies
+    for MTL on NYUD-v2 and PASCAL
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3054719

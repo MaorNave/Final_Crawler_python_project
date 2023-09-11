@@ -1,0 +1,897 @@
+- Affiliation of the first author: data61csiro (former nicta) and the australian national
+    university, canberra, act, australia
+  Affiliation of the last author: mitsubishi electric research labs (merl), cambridge,
+    ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_1.jpg
+  Figure 1 caption: Fig. 1a illustrates the notion of tensors, their order and modes.
+    Fig. 1b illustrates the matrix-vector order outer-product.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_2.jpg
+  Figure 2 caption: "Figs. 2a and 2b show how SCK works \u2013 kernel G \u03C3 2 compares\
+    \ exhaustively e.g. hand-related joint i for every frame in sequence A with every\
+    \ frame in sequence B . Kernel G \u03C3 3 compares exhaustively the frame indexes.\
+    \ Fig. 2c shows this burden is avoided by linearization \u2013 third-order statistics\
+    \ on feature maps \u03D5( x is ) and z(sN) for joint i are captured in tensor\
+    \ X i and whitened by EPN to obtain V i which are concatenated over i=1,\u2026\
+    ,J to represent a sequence. The final sequence tensors are vectorized per video\
+    \ by vec and fed to an SVM."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_3.jpg
+  Figure 3 caption: "Order r statistics from Eq. (7) can be understood by studying\
+    \ the linearization in Eq. (10). For a given joint i at time sN (normalized frame\
+    \ number), we embed a 3D joint coordinate x is (all centered w.r.t. hip) via function\
+    \ \u03D5(\u22C5) into a non-linear Hilbert space representing an RBF kernel according\
+    \ to Eq. (2). Similarly, we embed the time sN via function z(\u22C5) (also by\
+    \ Eq. (2)). Finally, \u2297 r performs the third-order outer-product on concatenated\
+    \ embeddings aggregated next over frames s (note \u2211 s ). The interpretation:\
+    \ the Gaussians soft-divide the the Cartesian coordinate system along x , y ,\
+    \ z direction, resp., and time sN . Thus, triplets (x,y,z) , (x,y,sN) , (x,z,sN)\
+    \ , and (y,z,sN) assigned into such a soft-divided space capture locally three-way\
+    \ occurrences. They factor out one spatial (or time) variable at a time (note\
+    \ invariance to such a variable)."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_4.jpg
+  Figure 4 caption: "Fig. 4a shows that kernel G \u03C3 \u2032 2 in DCK captures spatio-temporal\
+    \ dynamics by measuring displacement vectors from any given body-joint to remaining\
+    \ joints spatially- and temporally-wise (i.e. see dashed lines). Fig. 4b shows\
+    \ that comparisons performed by G \u03C3 \u2032 2 for any selected two joints\
+    \ are performed all-against-all temporally-wise which is computationally expensive.\
+    \ Fig. 4c shows the encoding steps in the proposed linearization which is fastn.\
+    \ We collect all X i i \u2032 for joints i\u2264 i \u2032 , whiten them by EPN\
+    \ to obtain V i i \u2032 , concatenate, vectorize them per video with vec and\
+    \ fed to an SVM. We introduced color-coded body jointsframe numbers to show how\
+    \ we assemble a single X i i \u2032 ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_5.jpg
+  Figure 5 caption: 'Third-order statistics from Eq. (19) can be understood by studying
+    the linearization in Eq. (20). For a given pair of joints i!leq !iprime at times
+    sN and sprime N (normalized frame numbers), we embed displacement vectors mathbf
+    xis!-!mathbf xiprime sprime of 3D joint coordinates mathbf xis and mathbf xiprime
+    sprime via function boldsymbolphi (cdot) into a non-linear Hilbert space representing
+    an RBF kernel according to Eq. (2). Similarly, we embed the starting and ending
+    times sN and sprime N via function mathbf z(cdot) (also by Eq. (2)). Finally,
+    otimes performs the third-order outer-product on concatenated displacement and
+    time embeddings aggregated next over frames s and sprime (note sum ssprime ).
+    The interpretation: the Gaussians soft-divide the Cartesian coordinate system
+    along x , y , z direction, resp., as well as time direction ( sN and sprime N
+    ). We project displacements along x , y , z directions of Cartesian coordinates
+    and assign each projection to Gaussians. Thus, triplets ([x;y;z],s,sprime ) assigned
+    into such a soft-divided space capture locally displacements of pairs of joints
+    on the time grid (3-way soft-histogram). For DCK ;oplus in Section 4.6 we use
+    velocity vectors fracmathbf xis!-!mathbf xiprime sprime max (1,|sprime !!-!s|)
+    (c.f. displacement vectors) with short- and long-term estimates depending on sprime
+    !!-!s (3-way soft-histogram of short- and long-term speeds).'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_6.jpg
+  Figure 6 caption: 'Fine-grained action instances (MPII Cooking Activities [25])
+    from two different action categories: cut-in (left) and slicing (right).'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_7.jpg
+  Figure 7 caption: Fig. 7a illustrates the classification accuracy on Florence3d-Action
+    for the sequence compatibility kernel when varying radii sigma 2 (body-joints
+    subkernel) and sigma 3 (temporal subkernel). Fig. 7b evaluates behavior of SCK
+    w.r.t. the number of pivots Z2 and Z3 . Fig. 7c demonstrates effectiveness of
+    our slice-wise Eigenvalue Power Normalization in tackling burstiness by varying
+    parameter gamma . Fig. 7d shows effectiveness of equalizing the factors in non-symmetric
+    tensor representation by HOSVD Eigenvalue Power Normalization by varying gamma
+    .
+  Figure 8 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_8.jpg
+  Figure 8 caption: Fig. 8a enumerates the body-joints in the Florence3D-Action dataset.
+    The table below lists subsets A-I of the body-joints used to build representations
+    eval. in Fig. 8b, which shows the accuracy of our dynamics compatibility kernel
+    w.r.t. these subsets.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Tensor_Representations_for_Action_Recognition\figure_9.jpg
+  Figure 9 caption: 'The intuitive principle of the EPN. Given a discrete spectrum
+    following a Beta distribution in Fig. 9a, the pushforward measures by MaxExp and
+    Gamma in Figs. 9b and 9c are very similar for large eta (and small gamma ). Note
+    that both EPN functions in bottom plots whiten the spectrum (map most values to
+    be close to 1) thus removing burstiness. Fig. 9d illustrates the principle of
+    detecting higher-order occurrence(s) in one of binomZr subspaces represented by
+    mathcal Emathbf u,mathbf v,boldsymbolw (we write mathcal E for simplicity). Fig.
+    9d (top) No EPN: mathcal E(theta,alpha) , (middle) MaxExp: 1!-!(1!-!mathcal E(theta,alpha))eta
+    and (bottom) Gamma: mathcal E(theta,alpha)gamma . Note how MaxExpGamma reach high
+    detection values close to borders. Refer Section 6 for def. of mathcal E(theta,alpha)
+    .'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Piotr Koniusz
+  Name of the last author: Anoop Cherian
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Tensor Representations for Action Recognition
+  Publication Date: 2021-08-24 00:00:00
+  Table 1 caption: "TABLE 1 Evaluations of (Top) SCKDCK, (Middle) Our Improved SCK\
+    \ \u2295 \u2295 DCK \u2295 \u2295, (Bottom) the State of the Art on Florence3D-Action"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Evaluations of (Top) SCKDCK, (Middle) Our Improved SCK\
+    \ \u2295 \u2295 DCK \u2295 \u2295 and (Bottom) the State of the Art on UTKinect-Action"
+  Table 3 caption: "TABLE 3 Results of (Top) SCKDCK, (Middle) Our Improved SCK \u2295\
+    \ \u2295 DCK \u2295 \u2295 and (Bottom) the State of the Art on MSR-Action3D"
+  Table 4 caption: "TABLE 4 Results on Our SCK and the Improved SCK \u2295 \u2295\
+    \ on (Top) Skeleton Sequences and (Middle) Two-Stream Networks"
+  Table 5 caption: "TABLE 5 SCK and SCK \u2295 \u2295 Combined With ST-GCN versus\
+    \ ST-GCN [75] Alone on Kinetics [36] Skeletons Extracted by OpenPose [5]"
+  Table 6 caption: "TABLE 6 Results (mAP%) for (Top) Our HOK [30] and Improved SCK\
+    \ \u2295 \u2295"
+  Table 7 caption: "TABLE 7 Evaluations of (Top) Our Improved SCK \u2295 \u2295"
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3107160
+- Affiliation of the first author: department of computer science, university of warwick,
+    coventry, u.k.
+  Affiliation of the last author: department of computer science, university of warwick,
+    coventry, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\MultiCamera_Trajectory_Forecasting_With_Trajectory_Tensors\figure_1.jpg
+  Figure 1 caption: 'Multi-camera trajectory forecasting. We introduce a novel formulation
+    of the trajectory forecasting task which considers multiple camera views. Companion
+    video: https:youtu.beIjlNEvKQ634.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\MultiCamera_Trajectory_Forecasting_With_Trajectory_Tensors\figure_2.jpg
+  Figure 2 caption: Trajectory tensors. Our proposed trajectory tensors are an intuitive
+    data representation capable of representing object trajectories in multiple camera
+    views, null trajectories, and associated uncertainty.
+  Figure 3 Link: articels_figures_by_rev_year\2021\MultiCamera_Trajectory_Forecasting_With_Trajectory_Tensors\figure_3.jpg
+  Figure 3 caption: MCTF models. We introduce 2 coordinate-trajectory based (left)
+    and 3 trajectory-tensor based (right) approaches for MCTF. (a) A recurrent encoder-decoder
+    adapted from [10]. (b) A 1D-CNN adapted from [9]. (c) A CNN approach with separated
+    layers for spatial and temporal feature extraction. (d) A CNN approach with 3D
+    convolutions for extracting spatial and temporal features simultaneously. (e)
+    A hybrid CNN-GRU approach which uses a CNN to extract spatial features which are
+    passed to an GRU for extracting temporal features. Note that for coordinate trajectory
+    models, a separate model is created for each camera. In contrast, trajectory tensor
+    models use a single unified model for all cameras. Each model is trained with
+    either the which, when, or where MCTF formulation.
+  Figure 4 Link: articels_figures_by_rev_year\2021\MultiCamera_Trajectory_Forecasting_With_Trajectory_Tensors\figure_4.jpg
+  Figure 4 caption: Precision-recall plots. Precision and recall of each model for
+    all three problem formulations. Best viewed in colour.
+  Figure 5 Link: articels_figures_by_rev_year\2021\MultiCamera_Trajectory_Forecasting_With_Trajectory_Tensors\figure_5.jpg
+  Figure 5 caption: Heatmap size and smoothing. Impact on results of using different
+    heatmap sizes and levels of smoothing ( sigma ). Results shown are computed by
+    5 fold cross validation.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.65
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Olly Styles
+  Name of the last author: Victor Sanchez
+  Number of Figures: 5
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Multi-Camera Trajectory Forecasting With Trajectory Tensors
+  Publication Date: 2021-08-26 00:00:00
+  Table 1 caption: TABLE 1 Which Results
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 When Results
+  Table 3 caption: TABLE 3 Where Results
+  Table 4 caption: TABLE 4 Multi-View Trajectory Tensor Results
+  Table 5 caption: TABLE 5 Multi-Target Multi-Camera Trajectory Forecasting Results
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3107958
+- Affiliation of the first author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Affiliation of the last author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Figure 1 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_1.jpg
+  Figure 1 caption: 'Comparison of different saliency models. Salient object detection
+    models highlight all salient objects equally in each image, as shown in column
+    (c). In this paper, we aim at detecting instance-level relative saliency ranking,
+    which assigns different saliency values to different salient objects to denote
+    their degrees of saliency. (a) and (b): Three example images and their corresponding
+    GT saliency maps. (d): In [12], the authors predicted pixel-wise saliency ranking,
+    without actually differentiating object instances. (e): In [13], saliency ranking
+    is inferred based on attention shift, and only less than five objects are considered.
+    (f): Our model shows more accurate and practical results for relative saliency
+    ranking. To facilitate the discrimination of different rank orders, we also mark
+    the rank orders on each salient instance.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_10.jpg
+  Figure 10 caption: Visual comparison of the saliency maps of our proposed model,
+    RSDNet [12], and ASSR [13]. Our model can segment salient instances and rank their
+    saliency orders well, obtaining saliency maps very similar to the GT.
+  Figure 2 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_2.jpg
+  Figure 2 caption: Limitations of previous saliency ranking datasets. We show the
+    limitations of the PASCAL-S dataset [20] in the first four columns and those of
+    the Siris dataset [13] in the last four columns. The second and the third row
+    indicate their saliency ranking annotations and the eye gaze saliency maps, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_3.jpg
+  Figure 3 caption: Examples of our proposed dataset. For each image, we show our
+    annotated salient instances and the saliency maps from the SALICON [67] dataset.
+    Based on these two kinds of annotations, we generate relative saliency ranking
+    maps, as shown in the last column.
+  Figure 4 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_4.jpg
+  Figure 4 caption: Comparison of the average saliency scores among 80 COCO categories
+    on our proposed dataset. For better visualization, we plot the histograms of log(1+
+    S j ) for each category j .
+  Figure 5 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_5.jpg
+  Figure 5 caption: Network architecture of our proposed model. We first use our improved
+    Mask R-CNN to obtain salient instance segmentation results. A person head is also
+    added in parallel with the box and mask heads to estimate each instance as being
+    a person or not. Then, we fuse ResNet features to get a fused saliency feature
+    map F , from which we can extract instance features, as well as local and global
+    context features for saliency ranking inference. We build a graph reasoning model
+    to incorporate instance interaction relations, local and global contrast inference,
+    and the person prior knowledge, hence obtaining the updated instance features
+    f u i . Finally, we predict the saliency scores for the salient instances and
+    rank them to obtain the final saliency ranking map.
+  Figure 6 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_6.jpg
+  Figure 6 caption: "Illustration of the our proposed graph reasoning module. From\
+    \ the segmented salient instances and the saliency ranking feature map F , we\
+    \ construct instance nodes I i N i=1 , local context nodes L i N i=1 , person\
+    \ prior nodes P i N i=1 , and M\xD7M global context nodes G i M 2 i=1 . Then,\
+    \ we build an interaction relation graph G r , a local contrast graph G l , a\
+    \ global contrast graph G g , and a person prior graph G p . In G r , each I i\
+    \ is connected to each other and themselves. In G l and G p , only L i or P i\
+    \ is connected to I i , respectively. In G g , all G j are connected to each I\
+    \ i ."
+  Figure 7 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_7.jpg
+  Figure 7 caption: Illustration of the limitations of the SOR metric [12] and the
+    SSOR metric [13]. Both of them can not include the consideration of the segmentation
+    quality into the evaluation satisfactorily.
+  Figure 8 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_8.jpg
+  Figure 8 caption: Illustration of the computation process of the proposed SA-SOR
+    metric. We use circles to denote instance masks. We first rank the segmented instances
+    based on their predicted saliency scores, as shown in columns (a) and (b). We
+    use an ascending rank order for both predicted ranks and GT ranks, i.e., larger
+    rank values indicate higher degrees of saliency and 1 is the lowest rank. Then,
+    we match the segmented instances with the GT, obtaining the matching results in
+    column (c), where green circles indicate matched instances and red circles represent
+    instances that cannot be matched with the GT. Next, we obtain the predicted rank
+    order in column (d) by skipping the rank orders of the 3rd and 2nd segmented instances
+    (which are redundant) and setting the rank of the 2nd instance (which is missed
+    in the segmentation result) as 0. Finally, we compute the Pearson correlation
+    as the SA-SOR score.
+  Figure 9 Link: articels_figures_by_rev_year\2021\InstanceLevel_Relative_Saliency_Ranking_With_Graph_Reasoning\figure_9.jpg
+  Figure 9 caption: Qualitative comparison among models using different graphs. We
+    show the comparison among five models in Table 2, including the baseline model
+    I, the model mathcal Gr in row III in Table 2, the model mathcal Gr + mathcal
+    Gl in row IV, the model mathcal Gr + mathcal Gl + mathcal Gg in row V, and the
+    model mathcal Gr + mathcal Gl + mathcal Gg + mathcal Gp in row VI.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Nian Liu
+  Name of the last author: Ling Shao
+  Number of Figures: 12
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Instance-Level Relative Saliency Ranking With Graph Reasoning
+  Publication Date: 2021-08-26 00:00:00
+  Table 1 caption: TABLE 1 Statistical Comparison of Three Saliency Ranking Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Ablation Study on the Effectiveness of the Four Proposed
+    Graph Reasoning Models
+  Table 3 caption: TABLE 3 Influence of the Subgraph Number K K on the Interaction
+    Relation Graph G r Gr
+  Table 4 caption: TABLE 4 Ablation Study on how Many Global Context Nodes Should
+    be Used in G g Gg
+  Table 5 caption: TABLE 5 Ablation Study on the Effectiveness of the Proposed Ranking
+    Loss
+  Table 6 caption: TABLE 6 Quantitative Comparison of Our Proposed Model With RSDNet
+    [12] and ASSR [13] on Three Datasets
+  Table 7 caption: TABLE 7 Quantitative Comparison of Our Proposed Model With Ten
+    State-of-the-Art SOD Methods and Nine EFP Models
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3107872
+- Affiliation of the first author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Affiliation of the last author: hefei university of technology, hefei, anhui, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_1.jpg
+  Figure 1 caption: Parameters versus performance of SOD models.
+  Figure 10 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_10.jpg
+  Figure 10 caption: Visualization of the number of channels of CSNet feature extractor.
+    Gray is CSNet with the fixed channel, Yellow and Green are the CSNet-L trained
+    with standarddynamic weight decay, respectively. The horizontal axis indicates
+    ILBlocks of the feature extractor starting from the early stage.
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_2.jpg
+  Figure 2 caption: Illustration of our salient object detection pipeline, which uses
+    gOctConv to extract both within-stage and cross-stage multi-scale features in
+    a highly efficient way. Sim. and CC. gOctConv denote the simplified and cross-stage
+    instances of gOctConv, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_3.jpg
+  Figure 3 caption: While originally designed to be a replacement for the traditional
+    convolution unit, the OctConv [6] takes two highlow-resolution inputs from the
+    same stage with a fixed number of feature channels. Our gOctConv allows an arbitrary
+    number of input resolutions from both within-stage and cross-stage conv features
+    with a learnable number of channels.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_4.jpg
+  Figure 4 caption: The average standard deviation of outputs among channels after
+    the BatchNorm and activation layer in models trained wo dynamic weight decay.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_5.jpg
+  Figure 5 caption: Distribution of gamma in Eqn. (5) for models trained wo dynamic
+    weight decay.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_6.jpg
+  Figure 6 caption: Distribution of images in the classification dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_7.jpg
+  Figure 7 caption: Distribution of images of selected categories in the SOD dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_8.jpg
+  Figure 8 caption: The relative performance changes of F-measure after removing a
+    certain category in training SOD models. Each row shows the performance change
+    on images with all categories of a model trained without a certain category. Removing
+    a category during training does not clearly influence the test performance of
+    that category, which proves that the SOD model is not sensitive to the category
+    information.
+  Figure 9 Link: articels_figures_by_rev_year\2021\A_Highly_Efficient_Model_to_Study_the_Semantics_of_Salient_Object_Detection\figure_9.jpg
+  Figure 9 caption: Class activation maps comparison between the SOD model finetuned
+    on all stages (ALL) and the FC layer (FC) for the classification task. CAM of
+    the model finetuning on all stages focus on objects required by the classification,
+    while CAM of the model finetuning on only the FC layer has no specific category-related
+    focus.
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Ming-Ming Cheng
+  Name of the last author: Meng Wang
+  Number of Figures: 14
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: A Highly Efficient Model to Study the Semantics of Salient Object Detection
+  Publication Date: 2021-08-26 00:00:00
+  Table 1 caption: "TABLE 1 Architecture for the Cross-Stage Fusion Part Using Four\
+    \ Stages in CSNet\xD71"
+  Table 10 caption: "TABLE 10 Pruning With Fixed ThresholdRatio in the CSNet\xD72-L"
+  Table 2 caption: "TABLE 2 Architecture for the Feature Extractor in CSNet\xD71"
+  Table 3 caption: TABLE 3 The Top-1 acc. of Classification Task Using Models Transferred
+    From the SOD Task
+  Table 4 caption: "TABLE 4 Complexity of Different Tasks Based on the CSNet\xD71.5"
+  Table 5 caption: "TABLE 5 Using Features From Different Stages of the Extractor\
+    \ in CSNet\xD72-L as the Input of the Cross-Stage Fusion Part"
+  Table 6 caption: TABLE 6 Performance of CSNet With the Fixed Split-Ratio of Channels
+    in gOctConvs, and CSNet With Learnable Channels
+  Table 7 caption: TABLE 7 Performance and Complexity Comparison With State-of-the-Art
+    SOD Methods
+  Table 8 caption: "TABLE 8 Run-Time of Models Using 224 \xD7 224 Input on a Single\
+    \ Core i7-8700K CPU"
+  Table 9 caption: TABLE 9 Incorporating Dynamic Weight Decay into Pruning Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3107956
+- Affiliation of the first author: department of population health sciences, weill
+    cornell medicine, new york, ny, usa
+  Affiliation of the last author: department of population health sciences, weill
+    cornell medicine, new york, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\ADP__SGD_Asynchronous_Decentralized_Parallel_Stochastic_Gradient_Descent_With_Di\figure_1.jpg
+  Figure 1 caption: Two communication networks.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\ADP__SGD_Asynchronous_Decentralized_Parallel_Stochastic_Gradient_Descent_With_Di\figure_2.jpg
+  Figure 2 caption: CIFAR-10 convergence comparison between SYNC and ADPSGD under
+    various levels of noise injection (i.e., differential privacy budget). SYNC and
+    ADPSGD achieve similar level of utilities (i.e., test accuracy).
+  Figure 3 Link: articels_figures_by_rev_year\2021\ADP__SGD_Asynchronous_Decentralized_Parallel_Stochastic_Gradient_Descent_With_Di\figure_3.jpg
+  Figure 3 caption: CIFAR-10 convergence when a random learner is slowed down by 2X
+    in each iteration with medium level of noise injection (we omit displaying other
+    levels of noise for the sake of brevity). ADPSGD runs significantly faster than
+    SYNC due to its asynchronous nature.
+  Figure 4 Link: articels_figures_by_rev_year\2021\ADP__SGD_Asynchronous_Decentralized_Parallel_Stochastic_Gradient_Descent_With_Di\figure_4.jpg
+  Figure 4 caption: SWB300 convergence comparison between SYNC and ADPSGD under various
+    levels of noise injection (i.e., differential privacy budget). SYNC and ADPSGD
+    achieve similar level of utilities (i.e., held-out loss).
+  Figure 5 Link: articels_figures_by_rev_year\2021\ADP__SGD_Asynchronous_Decentralized_Parallel_Stochastic_Gradient_Descent_With_Di\figure_5.jpg
+  Figure 5 caption: SWB300 convergence when one random learner is slowed down by 2X
+    (left) and one learner is slowed down by 10X (right), with medium level noise
+    injection (we omit displaying other levels of noise for the sake of brevity).
+    ADPSGD runs significantly faster than SYNC due to its asynchronous nature.
+  Figure 6 Link: articels_figures_by_rev_year\2021\ADP__SGD_Asynchronous_Decentralized_Parallel_Stochastic_Gradient_Descent_With_Di\figure_6.jpg
+  Figure 6 caption: When batch size is 2X larger and learning rate is 2X larger, ADPSGD
+    converges whereas SYNC does not, with small level of noise injection (we omit
+    displaying other levels of noise for the sake of brevity).
+  Figure 7 Link: articels_figures_by_rev_year\2021\ADP__SGD_Asynchronous_Decentralized_Parallel_Stochastic_Gradient_Descent_With_Di\figure_7.jpg
+  Figure 7 caption: CIFAR-10 convergence when one learner is slowed down by 10X in
+    each iteration with medium level of noise injection (we omit displaying other
+    levels of noise for the sake of brevity). ADPSGD runs significantly faster than
+    SYNC due to its asynchronous nature.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Jie Xu
+  Name of the last author: Fei Wang
+  Number of Figures: 7
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: 'A(DP) 2 2SGD: Asynchronous Decentralized Parallel Stochastic Gradient
+    Descent With Differential Privacy'
+  Publication Date: 2021-08-27 00:00:00
+  Table 1 caption: TABLE 1 Model Size and Training Time
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Convergence Comparison
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3107796
+- Affiliation of the first author: department of mechanical engineering, national
+    university of singapore, singapore, singapore
+  Affiliation of the last author: department of computer science, national university
+    of singapore, singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_1.jpg
+  Figure 1 caption: We generate dense and complete objects given sparse and incomplete
+    scans. The resolutions of input and output are 2,048 and 16,384, respectively.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_2.jpg
+  Figure 2 caption: 'An illustration of our whole pipeline. The entire architecture
+    includes three parts. The left part shows the self-supervised (SS) strategies
+    (Section 3.4), which includes resampling (Section 3.4.1) and MixUp (Section 3.4.2).
+    The right top branch is the completion sub-network (Section 3.2), which includes
+    three components: Feature extraction, coarse reconstruction and dense reconstruction.
+    The dense reconstruction is an iterative refinement sub-network with a lifting
+    module in each step. The right bottom branch is an auto-encoder for the partial
+    reconstruction (Section 3.3). It shares the feature extractor with the completion
+    sub-network but removes the skip-connection and refinement step from the shape
+    completion branch.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_3.jpg
+  Figure 3 caption: The architecture of the lifting module.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_4.jpg
+  Figure 4 caption: The results from the different stages of the completion process.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_5.jpg
+  Figure 5 caption: Some point cloud examples obtained by the MixUp operation.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_6.jpg
+  Figure 6 caption: Qualitative comparison on the PCN dataset. Point resolutions for
+    the output and ground truth are 16,384.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_7.jpg
+  Figure 7 caption: Qualitative comparison on the ModelNet dataset. The resolution
+    for partial points and ground truth are 2,048.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_8.jpg
+  Figure 8 caption: Qualitative results on the real-world dataset. The first two rows
+    are the cars from the KITTI dataset, and the last two rows are the tables from
+    the MatterPort dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Cascaded_Refinement_Network_for_Point_Cloud_Completion_With_SelfSupervision\figure_9.jpg
+  Figure 9 caption: Qualitative comparison between two variants of chamfer distance.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Xiaogang Wang
+  Name of the last author: Gim Hee Lee
+  Number of Figures: 9
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Cascaded Refinement Network for Point Cloud Completion With Self-Supervision
+  Publication Date: 2021-08-30 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Comparison for Point Cloud Completion on Eight
+    Categories of Objects From the PCN Dataset
+  Table 10 caption: TABLE 10 Ablation Studies on the ModelNet Dataset
+  Table 2 caption: TABLE 2 Quantitative Comparisons on the PCN Dataset
+  Table 3 caption: TABLE 3 Quantitative Comparison for Point Cloud Completion on Eight
+    Categories Objects of Completion3D Benchmark
+  Table 4 caption: TABLE 4 Quantitative Comparison for Point Cloud Completion on Ten
+    Categories Objects From the ModelNet Dataset
+  Table 5 caption: TABLE 5 Quantitative Comparisons on the ModelNet Dataset
+  Table 6 caption: TABLE 6 Quantitative Comparisons for Semi-Supervised Learning on
+    Ten Categories of Objects on the ModelNet Dataset
+  Table 7 caption: TABLE 7 Quantitative Comparisons on the Real-World Datasets
+  Table 8 caption: TABLE 8 Space and Time Comparisons of Different Methods
+  Table 9 caption: TABLE 9 Ablation Studies on the Bed Category of the ModelNet Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3108410
+- Affiliation of the first author: "faculty of mathematics and computer science, jagiellonian\
+    \ university, krak\xF3w, poland"
+  Affiliation of the last author: "faculty of mathematics and computer science, jagiellonian\
+    \ university, krak\xF3w, poland"
+  Figure 1 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_1.jpg
+  Figure 1 caption: Bounding regions constructed by OneFlow and typical log-likelihood
+    flow-based density model (LL-Flow). LL-Flow puts a similar weight to both blobs
+    and marks a few examples from the smaller one as nominal data. OneFlow finds a
+    bounding region with a minimal volume for a fixed percentage of data. To minimize
+    the volume it focuses on a bigger blob and considers the smaller one as anomalies.
+  Figure 10 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_10.jpg
+  Figure 10 caption: Comparing bounding regions constructed by the proposed OneFlow
+    with a flow-based density model (LL-Flow).
+  Figure 2 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_2.jpg
+  Figure 2 caption: OneFlow finds a bounding region with a minimal volume for a fixed
+    percentage of data using a hypersphere in the latent space of flow model.
+  Figure 3 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_3.jpg
+  Figure 3 caption: Mesh representations generated by OneFlow (right) for the shapes
+    represented as 3D point clouds (left). Our method automatically removes outliers,
+    which may be generated from other shapes in the background, and gives an explicit
+    parametric form of the boundary of objects using the inverse mapping of the flow
+    model.
+  Figure 4 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_4.jpg
+  Figure 4 caption: Box plots for rankings calculated on MNIST (left) and Fashion-MNIST
+    (right) using AUC score. The median ranking is marked by a line, while the average
+    ranking is marked with a number. The results of cometitive methods (except DSVDD,
+    LL-Flow and LL-Flow-Gen) are taken from [37].
+  Figure 5 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_5.jpg
+  Figure 5 caption: Best nominal (left) and worst nominal (right) examples determined
+    by OneFlow for MNIST (top) and Fashion-MNIST (bottom).
+  Figure 6 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_6.jpg
+  Figure 6 caption: AUC obtained for one nominal class (in columns) and one anomaly
+    class (in rows) by OneFlow (left) and OneFlow-Gen (right) on MNIST dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_7.jpg
+  Figure 7 caption: AUC obtained for one nominal class (in columns) and one anomaly
+    class (in rows) by OneFlow (left) and OneFlow-Gen (right) on Fashion-MNIST dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_8.jpg
+  Figure 8 caption: Box plots of ranks calculated using AUC (left) and F1 (right)
+    on datasets from PIDForest benchmark. The median ranking is marked by a line,
+    while the average ranking is marked with a number. The results of comparative
+    methods (except LL-Flow and LL-Flow-Gen) are taken from [52].
+  Figure 9 Link: articels_figures_by_rev_year\2021\OneFlow_OneClass_Flow_for_Anomaly_Detection_Based_on_a_Minimal_Volume_Region\figure_9.jpg
+  Figure 9 caption: Distance of Fashion-MNIST nominal data (blue) and MNIST (representing
+    outliers) data (red) from the center of bounding hypersphere in the latent space
+    of OneFlow (left) and LL-Flow (right). The percentage of detected outliers equals
+    92.47% for OneFlow and 89.59% for LL-Flow.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "\u0141ukasz Maziarka"
+  Name of the last author: "Przemys\u0142aw Spurek"
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: 'OneFlow: One-Class Flow for Anomaly Detection Based on a Minimal Volume
+    Region'
+  Publication Date: 2021-08-30 00:00:00
+  Table 1 caption: TABLE 1 Performance on Two Anomaly Detection Datasets (Measured
+    by Precision, Recall, and F1 Score)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparing the Length of Decision Boundaries and the Volume
+    of Bounding Regions Constructed by OneFlow and LL-Flow for 2D Examples (Lower
+    is Better)
+  Table 3 caption: TABLE 3 Comparison of the Flow Backbone Model for OneFlow
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3108223
+- Affiliation of the first author: cvlab, epfl, lausanne, switzerland
+  Affiliation of the last author: cvlab, school of computer and communication sciences,
+    epfl, lausanne, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_1.jpg
+  Figure 1 caption: Weight Sharing NAS benchmarking. Green blocks indicate which aspects
+    of NAS are benchmarked in different works. A search algorithm usually consists
+    of a search space that encompasses many architectures, and a policy to select
+    the best one. (a) Early works fixed and compared the metrics on the proxy task,
+    which doesnt allow for a holistic comparison between algorithms. (b) The NASBench
+    benchmark series partially alleviates the problem by sharing the stand-alone training
+    protocol and search space across algorithms. However, the design of the weight-sharing
+    backbone network, a.k.a. super-net, and training protocol is still not controlled.
+    (c) We fill this gap by benchmarking existing techniques to construct and train
+    the shared-weight backbone. We provide a controlled evaluation across three benchmark
+    spaces.
+  Figure 10 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_10.jpg
+  Figure 10 caption: Loss landscapes. (Better see in color) of a standalone network
+    versus the super-net ( n=300 ).
+  Figure 2 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_2.jpg
+  Figure 2 caption: "Constructing and training a super-net. Here, we formally introduce\
+    \ the components of super-net construction and training. The super-net is a composition\
+    \ of all architectures within a search space. Each architecture is defined by\
+    \ a tabular architecture encoding. It consists of macro and cell parameters, which\
+    \ define the global structure and cell architecture, respectively. We define the\
+    \ mapping function from a set of encodings into a super-net as f ws and the super-net\
+    \ training protocol given a set of hyperparameters \u03A9 as P ws . We focus on\
+    \ cell-based search spaces that are widely adopted in the literature [6], [28].\
+    \ Note that some recent works remove the topology search within a cell to simplify\
+    \ the search space [7] but can still be classified as cell-based."
+  Figure 3 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_3.jpg
+  Figure 3 caption: Kendall-Tau versus Sparse Kendall-Tau. Kendall-Tau is not robust
+    when many architectures have similar performance. Minor performance differences
+    can lead to large perturbations in the ranking. Our sparse Kendall-Tau alleviates
+    this by dismissing minor differences in performance.
+  Figure 4 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_4.jpg
+  Figure 4 caption: Ranking disorder examples. We randomly select 12 runs from our
+    experiments. For each sub-plot, 0 indicates the architecture ground-truth rank,
+    and 1 indicates the ranking according to their super-net accuracy. These plots
+    evidence that the ranking disorder does not follow a particular pattern.
+  Figure 5 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_5.jpg
+  Figure 5 caption: Reproducing NASBench-101.
+  Figure 6 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_6.jpg
+  Figure 6 caption: Super-net evaluation. We collect all experiments across 3 benchmark
+    spaces. (Top) Pairwise plots of super-net accuracy, final performance, and the
+    sparse Kendall-Tau. Each point corresponds to statistics computed over a trained
+    super-net. (See Section 3.2.1 for more details about metrics computation.) Note
+    that for super-net accuracy, we filter the super-net accuracy below 40% to avoid
+    statistics of ill-trained super-net. (Bottom) Spearman correlation coefficients
+    between the metrics.
+  Figure 7 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_7.jpg
+  Figure 7 caption: 'Comparing sparse Kendall-Tau and final search accuracy. Here,
+    we provide a toy example to illustrate why one cannot rely on the final search
+    accuracy to evaluate the quality of the super-net. Let us consider a search space
+    with only 30 architectures, whose accuracy ranges from 95.3% to 87% on the CIFAR-10
+    dataset, and we run a search algorithm on top. (a) describes a common scenario:
+    we run the search for multiple times, yielding a best architecture with 93.1%
+    accuracy. While this may seem good, it does not give any information about the
+    quality of the search or the super-net. If we had full knowledge about the performance
+    of every architecture in this space, we would see that this architecture is close
+    to the average performance and hence no better than random. In (b), the sparse
+    Kendall-Tau allows us to diagnose this pathological case. A small sparse Kendall-Tau
+    implies that there is a problem with super-net training.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_8.jpg
+  Figure 8 caption: Batch normalization in standalone and super-net training.
+  Figure 9 Link: articels_figures_by_rev_year\2021\An_Analysis_of_SuperNet_Heuristics_in_WeightSharing_NAS\figure_9.jpg
+  Figure 9 caption: Validation of BN. We plot histograms of the super-net accuracy
+    for different hyper-parameter settings. Tracking statistics (left) leads to many
+    architectures with random performance. Without tracking (right), learning the
+    affine parameters (affine-true) increases accuracy on NASBench-101 and NASBench-201,
+    but strongly decreases it for DARTS-NDS.
+  First author gender probability: 0.53
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Kaicheng Yu
+  Name of the last author: Mathieu Salzmann
+  Number of Figures: 18
+  Number of Tables: 14
+  Number of authors: 3
+  Paper title: An Analysis of Super-Net Heuristics in Weight-Sharing NAS
+  Publication Date: 2021-08-30 00:00:00
+  Table 1 caption: TABLE 1 Summary of Factors
+  Table 10 caption: TABLE 10 Final Results
+  Table 2 caption: TABLE 2 Search Spaces
+  Table 3 caption: TABLE 3 Comparison of Kendall Tau (KdT) and Spearman Ranking (SpR)
+    With Their Sparse Variants
+  Table 4 caption: TABLE 4 Low Fidelity Estimates Under Same Computational Budget,
+    Reporting Stand-Alone Model Accuracy (SAA) and Sparse Kendall-Tau (S-KdT) on NASBench-201
+  Table 5 caption: TABLE 5 Dynamic Channels on NASBench-101
+  Table 6 caption: TABLE 6 Ablation Study on Disabling Dynamic Channels
+  Table 7 caption: TABLE 7 A Fair Comparison Between the Baseline Dynamic Channeling
+    With Randomly Sampling Sub-Spaces and Our Disable Dynamic Channeling Approach
+  Table 8 caption: TABLE 8 Comparison of Operations on the Nodes or on the Edges
+  Table 9 caption: TABLE 9 Comparison of Different Mappings f ws fws
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3108480
+- Affiliation of the first author: south china university of technology, huizhou,
+    china
+  Affiliation of the last author: university of adelaide, adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_1.jpg
+  Figure 1 caption: Comparison of the warping results. In Figure (a), we follow previous
+    methods by using TPS [1] and STN [2] to warp the curved text region into a rectangular
+    shape. In Figure (b), we use generated Bezier curves and the proposed BezierAlign
+    to warp the results, leading to improved accuracy.
+  Figure 10 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_10.jpg
+  Figure 10 caption: Comparison between cubic Bezier curve (left) and 4th-order Bezier
+    curve (right). There are some slight differences.
+  Figure 2 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_2.jpg
+  Figure 2 caption: The framework of the proposed ABCNet v2. We use cubic Bezier curves
+    and BezierAlign to extract multi-scale curved sequence features using the Bezier
+    curve detection results. We concatenate coordinate channels to encode the position
+    coordinates in FPN output features before sending to BezierAlign. The overall
+    framework is end-to-end trainable with high efficiency. Here purple dots represent
+    the control points of the cubic Bezier curve.
+  Figure 3 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_3.jpg
+  Figure 3 caption: Cubic Bezier curves. b i represents the control points. The green
+    lines form a control polygon, and the black curve is the cubic Bezier curve. Note
+    that with only two end-points b 1 and b 4 , the Bezier curve degenerates to a
+    straight line.
+  Figure 4 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_4.jpg
+  Figure 4 caption: Example results of Bezier curve generation. Green lines are the
+    final Bezier curve results. Red dash lines represent the control polygon, and
+    the 4 red end points represent the control points. Zoom in for better visualization.
+  Figure 5 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_5.jpg
+  Figure 5 caption: Comparison between previous sampling methods and BezierAlign.
+    The proposed BezierAlign can more accurately sample features of the text region,
+    which is essential for achieving good recognition accuracy. Note that the alignment
+    procedure is applied to intermediate convolution features.
+  Figure 6 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_6.jpg
+  Figure 6 caption: Data distribution in the ABCNet v2 with the max value marked in
+    the figure. We can see that the abnormal large values have a low occurrence frequency.
+  Figure 7 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_7.jpg
+  Figure 7 caption: Qualitative results of ABCNet v2 on various datasets. The detection
+    results are shown with blue bounding boxes. Prediction confidence scores are also
+    shown. Best viewed on screen.
+  Figure 8 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_8.jpg
+  Figure 8 caption: Examples of english Bezier curve synthesized data.
+  Figure 9 Link: articels_figures_by_rev_year\2021\ABCNet_v_Adaptive_BezierCurve_Network_for_RealTime_EndtoEnd_Text_Spotting\figure_9.jpg
+  Figure 9 caption: Examples of Chinese Bezier curve synthesized data.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Yuliang Liu
+  Name of the last author: Hao Chen
+  Number of Figures: 13
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: 'ABCNet v2: Adaptive Bezier-Curve Network for Real-Time End-to-End
+    Text Spotting'
+  Publication Date: 2021-08-30 00:00:00
+  Table 1 caption: TABLE 1 Structure of the Recognition Branch, Which is a Simplified
+    Version of CRNN [58]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Energy Consumption of Different Operations in 45nm CMOS
+    Process
+  Table 3 caption: TABLE 3 Computational Ability (Ops per Cycle per SM) Comparison
+    on Nvidia Turing Architecture
+  Table 4 caption: TABLE 4 Ablation Study for BezierAlign
+  Table 5 caption: TABLE 5 Ablation Study on Both Total-Text and SCUT-CTW1500 Datasets
+  Table 6 caption: TABLE 6 Detection Results on Total-Text, SCUT-CTW1500, MSRA-TD500,
+    and ICDAR 2015 Datasets
+  Table 7 caption: TABLE 7 End-to-End Text Spotting Results on Total-Text, and SCUT-CTW1500
+  Table 8 caption: TABLE 8 Comparison With Mask TextSpotter v3 Using Large-Scale Training
+    Set
+  Table 9 caption: TABLE 9 Quantization Results of ABCNet v2 (ResNet-18 as the Backbone)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3107437
+- Affiliation of the first author: department of eecs, peking university, beijing,
+    china
+  Affiliation of the last author: department of eecs, peking university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_1.jpg
+  Figure 1 caption: 'Example of how parsing errors can be alleviated with assistance
+    of pose and edge. (a) An input image. (b)-(e) are parsing results of various methods.
+    (b) Parsing baseline [16]. (c) Fusion of parsing and edge through feature concatenation
+    [1]. (d) Fusion of parsing and pose through post processing [15]. (e) Our method.
+    (f) Parsing GroundTruth. (b) shows two types of parsing errors: Boundary ambiguity
+    (white box) and body structure inconsistency (red box). The fusion of boundary
+    features (c) or keypoint features (d) may mitigate one of them. The two types
+    of errors are both alleviated in (e) because we take the advantage of both boundary
+    and keypoints by learning their correlation with parsing. By comparison, the proposed
+    strategy is superior to concatenation or post processing.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_10.jpg
+  Figure 10 caption: "Sample edge detection results of baseline BDCN \u201Cbaseline\
+    \ (B)\u201D and ours on LIP. \u201COurs (B)\u201D and \u201COurs (H)\u201D are\
+    \ models using BDCN and HRNetV2-W48 as the backbone, respectively. \u201Cbaseline\
+    \ (B)\u201D tends to detect very minor edges including stripes on upper-clothes\
+    \ in the top row and wrinkles on pants in the bottom row. We observe that our\
+    \ models ignore the very detailed and noisy textures and thus have more desirable\
+    \ human boundaries."
+  Figure 2 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_2.jpg
+  Figure 2 caption: 'Illustration of the complementary cues of three correlated tasks:
+    parsing, edge and pose. They analyze human from three different perspectives and
+    are highly associated. Human parsing aims to partition each pixel to a category,
+    exploiting the semantic context. Human body edge detection extracts the distinguishable
+    borders between adjacent parts to facilitate pixel-wise parsing and keypoint localization.
+    Pose estimation predicts the locations of human body joints, providing rational
+    body part structure. Correlating the three tasks can attain the complementary
+    cues from the other two tasks to support the main task, which is specified from
+    one of parsing, pose and edge.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_3.jpg
+  Figure 3 caption: Overall architecture of our system. It has a backbone, three feature
+    encoders and a heterogeneous non-local (HNL) module. The backbone can be either
+    task-specific or unified. It extracts the shared feature of the three tasks. The
+    parsing, pose, edge encoders generate the corresponding features F p , F k and
+    F b . HNL aggregates these features into a hybrid representation F h , correlates
+    it with the main task feature F m (specified from one of the three features F
+    p , F k , and F b ), and obtains the main task result O m . For example, if human
+    parsing is the main task, the main task feature F m is the parsing feature F p
+    , and it is correlated with F h . Finally, the network outputs the refined parsing
+    map O m . The whole model is end-to-end trainable.
+  Figure 4 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_4.jpg
+  Figure 4 caption: "The Heterogeneous Non-Local (HNL) module. It aggregates parsing,\
+    \ edge and pose features F p , F b and F k into a hybrid feature F h . Then it\
+    \ calculates the relationship between F h and the main task feature F m (m\u2208\
+    p,k,b) , producing the relation map S . Symbols F 1 , F 2 , and F 3 represent\
+    \ intermediate feature maps, and we utilize F r as the refined feature to generate\
+    \ the final main task result O m ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_5.jpg
+  Figure 5 caption: 'Examples visualizing how auxiliary tasks benefit the main task.
+    Two example models are used: correlating parsing and edge (top row), and correlating
+    parsing and pose (bottom row). We specify two query points in Column (a): a point
+    on the border of arm (top row), and a point on left shoe (bottom row), and show
+    the corresponding relation maps produced by HNL in Column (g). Column (d) is the
+    groundtruth of parsing and Column (e) is the prediction of edge (or pose). The
+    parsing only baseline in (b) has erroneous predictions highlighted in white boxes.
+    As auxiliary tasks, edge extracts borders between adjacent parts, and pose provides
+    rational body part structure to the main task. By correlating parsing feature
+    with edge pose feature, the higher response areas (marked in red) in the relation
+    map are discovered that contribute to the feature of the query (red point). Through
+    the weighted sum in Eq. (3), the proposed model aggregates main-task features
+    with the help of the complementary auxiliary tasks and eliminates errors of the
+    baseline.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_6.jpg
+  Figure 6 caption: 'Qualitative comparisons between CorrPM (our conference version)[20]
+    and this paper. Our method extends [20] to an end-to-end model. Specifically,
+    in this paper, we input the entire image into the network and output human parsing
+    map directly. In comparison, the conference version [20] uses Mask R-CNN to generate
+    single human images (i) and (ii), performs single human parsing and then merges
+    the parsing results. In fact, when people are close (e.g., hug each other), unsatisfying
+    results may be yielded: 1) one persons limb can be wrongly segmented as someone
+    elses (yellow box); 2) some parts maybe lost (green box); 3) during merging, duplicate
+    predictions in one pixel will cause pixel ambiguity (white box). Instead of capturing
+    the mask-level relationships, we remove Mask R-CNN and explore image-level correlations
+    in an end-to-end fashion which avoids the above problems. So the network can acquire
+    task dependency from the entire image, and the prediction cannot be harmed by
+    the occluded body parts (missed by Mask R-CNN in red box).'
+  Figure 7 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_7.jpg
+  Figure 7 caption: MPII does not provide parsing and edge groundtruths, so we generate
+    them to train HTCorrM that implements pose estimation as main task. Examples are
+    shown in this figure. (a) Image. (b) Parsing labels generated by [20]. (c) Edge
+    labels as the boundaries between two adjacent part categories in (b). We observe
+    that they are reasonable and relatively accurate to provide reliable supervision.
+  Figure 8 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_8.jpg
+  Figure 8 caption: "Qualitative comparisons of DeepLabV2 [16], CE2P [1], CorrPM[20]\
+    \ and the proposed HTCorrM (extension to [20]) on (a) multi-human parsing dataset\
+    \ dataset CIHP, and (b) single-human parsing dataset LIP. \u201COurs (D)\u201D\
+    \ and \u201COurs (H)\u201D are models using DeepLabV2 and HRNetV2-W48 as the backbone,\
+    \ respectively. In (a), our model is precise on clothes by exploring relationship\
+    \ over the entire image to distinguish clothes between different individuals.\
+    \ In (b), HTCorrM eliminates parsing errors (e.g., inaccurate boundaries between\
+    \ upper-clothes and pants in the first row). Some poor predictions are shown in\
+    \ white rectangles."
+  Figure 9 Link: articels_figures_by_rev_year\2021\On_the_Correlation_Among_Edge_Pose_and_Parsing\figure_9.jpg
+  Figure 9 caption: Qualitative pose estimation predictions on LIP. These examples
+    contain occlusions, various human poses and cluster backgrounds. From the results
+    of baseline model and ours, we observe that parsing and edge are beneficial for
+    pose estimation. For instance, in column 5, the right wrist is missing in the
+    baseline since the right arm is occluded by the leg. In comparison, parsing and
+    edge feature provide contextual cues for the system to find this hard point.
+  First author gender probability: 0.7
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Ziwei Zhang
+  Name of the last author: Yuan Li
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: On the Correlation Among Edge, Pose and Parsing
+  Publication Date: 2021-09-01 00:00:00
+  Table 1 caption: "TABLE 1 Comparison of Feature Fusion Methods on Human Parsing.\
+    \ \u201CEA\u201D Represents Solving the Edge Ambiguity Problem and \u201CBI\u201D\
+    \ Represents Solving the Boundary Inconsistency Problem. Prior Methods use Either\
+    \ Edge or Pose to Solve a Single Problem in Parsing. Different from Them, We Aggregate\
+    \ Parsing, Edge and Pose Feature and Explore the Correlation Among Them Which\
+    \ Shows Superior Accuracy to Other Fusion Strategies. Note that \u201CAccuracy\u201D\
+    \ is for Indication Purpose Only; Please Refer to Section 4.3 for Specific Numbers"
+  Table 10 caption: 'TABLE 10 Impact of Auxiliary Task (Pose and Edge) Accuracy on
+    the Main Task (Parsing) on LIP. (a): We Present the Pose Estimation Accuracy (PCKh,
+    %) and Parsing Accuracy (mIoU, %) Obtained by Two Pose Encoders Structures (for
+    Details see Section 3.2). (b): We use Two Edge Decoders (for Details see Section
+    3.2), and Obtain Different Edge Detection Accuracy (ODS, OIS) and Parsing Accuracy
+    (mIoU, %). The Edge Encoder in (a) and the Pose Encoder in (b) are Fixed, as Described
+    in Section 3.2. We use the Unified Backbone HRNetV2-W48. When the Accuracy of
+    Pose and Edge Auxiliary Tasks is Increased, We Observe Improvement of the Main
+    Task'
+  Table 2 caption: "TABLE 2 Method Comparison on the Single-Human Parsing Dataset\
+    \ LIP. Per-class IoU (%) and mean IoU (%) are shown. \u201COurs (DeepLabV2)\u201D\
+    \ and \u201COurs (HRNetV2-W48)\u201D Denote our Method Utilizing two Backbones\
+    \ DeepLabV2 and HRNetV2-W48, Respectively. Both are seen to be Effective and Achieve\
+    \ Competitive Accuracy. Using HRNetV2-W48 as Backbone Outperforms the DeepLabV2\
+    \ Backbone on 14 out of 20 Classes, e.g., Glove, Glass and Scarf. \u201C\u201D\
+    \ Denotes our Implementation. Comparing with [55], We use a Smaller Resolution\
+    \ of Training Images ( 384\xD7384 384\xD7384 Versus 473\xD7473 473\xD7473), and\
+    \ We do not use the Augmentation Strategy (e.g., Flip Testing). So our Implementation\
+    \ is Slightly Lower than Reported"
+  Table 3 caption: TABLE 3 Method Comparison on Single-Human Parsing Dataset ATR in
+    Terms of Accuracy (Acc), Foreground Accuracy (F.g.Acc), Precision (Pre), Recall
+    (Rec), and F-1 Score
+  Table 4 caption: TABLE 4 Method Comparison on the Multi-Human Parsing Dataset CIHP.
+    mIoU (%) is Reported. DeepLabV2 with the ResNet101 Architecture is the Task-Specific
+    Backbone. HRNetV2-W48 is the Unified Backbone. We Observe that our Method is Very
+    Competitive Compared with the State of the Art and that the Two Backbones Have
+    Very Close Accuracy
+  Table 5 caption: TABLE 5 Method Comparison on the MPII Validation Set for Pose Estimation.
+    Our Model Achieves 90.7% in Mean PCKh and the Highest Score in Almost all the
+    Joints. Especially, for Elbow and Wrist Which are Prone to be Occluded, We Improve
+    their PCKh by 1.0% and 0.6%, Respectively
+  Table 6 caption: TABLE 6 Method Comparison on the LIP Validation Set for Pose Estimation.
+    We Adopt HRNetV2-W48 as Backbone, Whose GFLOPs are Almost the Same as Hourglass.
+    Our Model Reports Higher PCKh than State-of-the-Art Methods Such as PIL, MuLA
+    and GCM
+  Table 7 caption: "TABLE 7 Variant Comparison on the Multi-Human Parsing Dataset\
+    \ CIHP. We Adopt DeepLabV2 as Baseline, Which Achieves 50.58% mIoU. \u201CSA\u201D\
+    : Self-Attention Module; \u201CMTL\u201D: Multi-Task Learning; \u201CConcat\u201D\
+    : Feature Concatenation; \u201CCorrelation\u201D: the Proposed Correlation Strategy;\
+    \ \u201C\u2713\u201D Stands for Selecting One Feature and \u201C\u2713\u2713\u201D\
+    \ Means Fusing the Same Two Features. \u201C \u2020 \u2020\u201D Means Pose Annotations\
+    \ are Generated by [56], and the Rest of the Experiments use [2] as the Pose Labels"
+  Table 8 caption: "TABLE 8 Analysis of Computational Complexity versus Accuracy on\
+    \ MPII and LIP. We Use Training Inference time (Seconds Per Iteration), Number\
+    \ of Parameters and GFLOPs to Measure Complexity, and PCKh for Accuracy. Two Backbones\
+    \ (Baselines) and the State-of-the-Art Method MuLA [14] are Compared. The Main\
+    \ Conclusion is that Our Method Adds Marginal Computational Overheads to the Baselines\
+    \ and has Lower Complexity than MuLA. \u201C \u2020 \u2020\u201D Means Removing\
+    \ \u201CDuplicated\u201D Features in HNL"
+  Table 9 caption: TABLE 9 Evaluation of the Benefit of Parsing and Pose to Edge Detection
+    on the LIP Validation Set. ODS and OIS are Used as Metrics. We Adopt BDCN [13]
+    and HRNetV2-W48 [55] as Backbones, Respectively. By Correlating Edge with Parsing
+    and Pose, the Performance of Edge Detection is Improved
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3108771

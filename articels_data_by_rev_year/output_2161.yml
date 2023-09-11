@@ -1,0 +1,882 @@
+- Affiliation of the first author: key lab of intelligent information processing of
+    chinese academy of sciences (cas), institute of computing technology, chinese
+    academy of sciences, beijing, china
+  Affiliation of the last author: key lab of intelligent information processing of
+    chinese academy of sciences (cas), institute of computing technology, chinese
+    academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_1.jpg
+  Figure 1 caption: "The motivation of our work. (a) Image completion network. It\
+    \ is built on an encoder-decoder pipeline. The information of the visible \u201C\
+    yellow\u201D pixel can only be propagated to the occluded \u201Cred\u201D pixel\
+    \ by stacking multiple convolutional layers, which is computationally inefficient.\
+    \ (b) Region feature completion with spatial contexts. By representing each body\
+    \ region as a feature, one single spatial completion module can propagate the\
+    \ information among any two positions. (c) Region feature completion with long-term\
+    \ temporal contexts."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_10.jpg
+  Figure 10 caption: Learned Assignment Matrix S of RFCnet-wo- Lap and RFCnet for
+    input image.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_2.jpg
+  Figure 2 caption: The overall architecture of Region Feature Completion (RFC) block.
+    The Adaptive Partition Unit (APU) is First used to divide input feature maps into
+    multiple regions. The Foreground-Guided Region Feature Extractor is then employed
+    to produce a body-aware probability map for each frame, which is then added to
+    the divided regions to generated discriminative region features. Then, we sequentially
+    feed the video region features into Spatial Region Feature Completion (SRFC) and
+    Temporal Region Feature Completion (TRFC) modules to recover the features of occluded
+    regions. Finally, the Reverse Projection operation projects the completed region
+    features to original space, which makes RFC compatible with existing CNN architecture.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_3.jpg
+  Figure 3 caption: Adaptive Partition Unit (APU) (a) An example of APU. (b) The architecture
+    of APU. In M t , the values of gray-color pixels are 1 and the values of white-color
+    pixels are 0.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_4.jpg
+  Figure 4 caption: "An example of region encoding and decoding of SRFC module. SRFC\
+    \ processes each frame independently. For simplicity, we omit the subscript t\
+    \ and denote region feature f t as f . In the region-encoding, the features of\
+    \ divided regions f i N i=1 are aggregated to a few clusters c k K k=1 by an assignment\
+    \ matrix S\u2208 R N\xD7K . S ik indicates the probability of assigning region\
+    \ R i to c k , and a darker color indicates a higher probability value in this\
+    \ figure. SRFC constrains to assign the regions with similar appearance or close\
+    \ position to a cluster. So each cluster gathers the features of most correlated\
+    \ regions and usually represents a body part. In this figure, c 1 , c 2 and c\
+    \ 3 correspond to the pants, upper-body and boots respectively. In the region-decoding,\
+    \ c i K i=1 are distributed to output region features o i N i=1 by S . So the\
+    \ occluded region can use the correlated cluster to recover its feature. For example,\
+    \ R 6 can use c 3 to recover its feature to represent the boots."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_5.jpg
+  Figure 5 caption: The architecture of SRFC module. It is mainly composed of a region-encoder
+    and a region-decoder. The region-encoder maps the input N region lbrace Rirbrace
+    i=1N to K clusters lbrace ckrbrace k=1K . Specifically, it First takes the region
+    appearance feature f and position encoding L as inputs, and outputs an assignment
+    matrix Sin mathbb RNtimes K . Here Sik indicates the probability of assigning
+    region Ri to ck . Then each cluster ck is obtained by summing lbrace firbrace
+    i=1N weighted by the normalized k th column of S . With the proposed appearance
+    and position assignment regularization, the highly correlated regions (with similar
+    appearances or close positions) tend to have consistent assignment vectors. In
+    this way, each cluster can aggregate the features of most correlated regions to
+    describe a body part. The region-decoder then uses the clusters to predict new
+    region feature zin mathbb RNtimes D . Here zi is obtained by summing lbrace ckrbrace
+    k=1K weighted by the i th row of S . In this way, the occluded regions can use
+    the information of the most correlated cluster to recover its feature. Finally,
+    we adopt a residual learning strategy to ease the completion task.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_6.jpg
+  Figure 6 caption: The architecture of (TRFC) module for the i th region in t th
+    frame. Operations for other regions are the same.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_7.jpg
+  Figure 7 caption: The top-1 accuracy and mAP using fixed partition and adaptive
+    partition strategies (APU) with different region numbers on Occluded-DukeMTMC
+    dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_8.jpg
+  Figure 8 caption: (a) Learned Partition Regions. Images and corresponding APUs partition
+    results of RFCnet and RFCnet trained without key-points constraint Lk . (b) Learned
+    Foreground Maps. Images and corresponding foreground maps generated by RFCnet
+    and RFCnet trained without foreground maps constraint Lf .
+  Figure 9 Link: articels_figures_by_rev_year\2021\Feature_Completion_for_Occluded_Person_ReIdentification\figure_9.jpg
+  Figure 9 caption: The partition results of APU in the scenario where input person
+    images only contain a few body parts.
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Ruibing Hou
+  Name of the last author: Xilin Chen
+  Number of Figures: 17
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Feature Completion for Occluded Person Re-Identification
+  Publication Date: 2021-05-13 00:00:00
+  Table 1 caption: TABLE 1 The Tracklets Ratio With a Certain Fraction of Occluded
+    Frames on Query and Gallery Set of Occluded-DukeMTMC-VideoReID
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Ratio of Video Frames With a Certain Fraction of Occlusion
+    on Query and Gallery Set of Occluded-DukeMTMC-VideoReID
+  Table 3 caption: TABLE 3 Occluded Dataset Details
+  Table 4 caption: TABLE 4 Comparison With State-of-the-Arts on Image Occluded reID
+    Dataset, Occluded-DukeMTMC
+  Table 5 caption: TABLE 5 Comparison With State-of-the-Arts on Video Occluded reID
+    Dataset, Occluded-DukeMTMC-VideoReID
+  Table 6 caption: TABLE 6 Comparison With State-of-the-Arts on Market-1501, DukeMTMC,
+    CUHK03, and MSMT17 Datasets
+  Table 7 caption: TABLE 7 Comparison With Related Methods on MARS and DukeMTMC-VideoReID
+    Datasets
+  Table 8 caption: TABLE 8 Ablation Study on Image Occluded reID Task
+  Table 9 caption: TABLE 9 Ablation Study on Video Occluded reID Task
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3079910
+- Affiliation of the first author: institute of artificial intelligence, beihang university,
+    beijing, china
+  Affiliation of the last author: school of computer science and engineering, sun
+    yat-sen university, guangzhou, guangdong, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_1.jpg
+  Figure 1 caption: "Illustration of our progressive referring segmentation method\
+    \ on image and video data. (a)(e) Input referring expression, image and video.\
+    \ (b)(f) Our model first perceives all the entities described in the expression\
+    \ based on entity words and attribute words, e.g., \u201Cman\u201D, \u201Cwhite\
+    \ frisbee\u201D and \u201Cgirl\u201D (orange masks and blue outline). (c)(f) After\
+    \ finding out all the candidate entities that may be referred by the input expression,\
+    \ our model exploits relational word, e.g., \u201Cholding\u201D and \u201Cin\u201D\
+    , to highlight the entity involved with the relationship (green arrow) and suppress\
+    \ the others which are not involved. (g) For video data, our model further utilizes\
+    \ action word \u201Cbouncing\u201D to aggregate temporal context information from\
+    \ neighbor frames for better localizing the referent in a changing video. (d)(h)\
+    \ Based on the progressive comprehension results, our model can finally determine\
+    \ the referent as output (purple mask). (Best viewed in color)."
+  Figure 10 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_10.jpg
+  Figure 10 caption: 'Top: Segmentation results w and wo relation-aware reasoning.
+    Bottom: Segmentation results w and wo action-aware reasoning.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_2.jpg
+  Figure 2 caption: Overview of our proposed method using referring image segmentation
+    as an example. Visual features and linguistic features are first progressively
+    aligned by our CMPC-I module. Then multi-level multimodal features are fed into
+    our TGFE module for information communication across different levels. Finally,
+    multi-level features are fused with ConvLSTM for final prediction.
+  Figure 3 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_3.jpg
+  Figure 3 caption: Illustration of our CMPC-I module which consists of two stages.
+    First, visual features X I are bilinearly fused with linguistic features q of
+    entity words and attribute words for Entity Perception (EP) stage. Second, multimodal
+    features M I from EP stage are fed into Relation-Aware Reasoning (RAR) stage for
+    feature enhancement. A multimodal fully-connected graph G S is constructed with
+    each vertex corresponds to an image region on M . The adjacency matrix of G S
+    is defined as the product of the matching degrees between vertexes and relational
+    words in the expression. Graph convolution is utilized to reason among vertexes
+    so that the referent could be highlighted during the interaction with correlated
+    vertexes.
+  Figure 4 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_4.jpg
+  Figure 4 caption: Illustration of the action-aware reasoning stage of our CMPC-V
+    module. We ignore previous EP and RAR stages for clarity. We first conduct dot-product
+    attention between video features MV and action sentence feature qa to obtain the
+    dense attention maps DV on all the frames of the video snippet. Then, DV is applied
+    on MV to aggregate global temporal features tildePV of all the frames. We construct
+    a fully-connected temporal graph mathcal GT based on tildePV and perform graph
+    convolution on it to reason temporal context. Finally, reasoned temporal context
+    are projected back to the feature of the center frame barMVctr to yield the image-format
+    temporal context hatPV .
+  Figure 5 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_5.jpg
+  Figure 5 caption: Visualization of words classification probabilities on four benchmark
+    datasets. (a) Original image. (b) Ground-truth. (c) Prediction of our model. (d)
+    Word classification probabilities of our model. Types include Entity, Attribute
+    (Attr) and Relation (Rel). Darker color denotes larger probability.
+  Figure 6 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_6.jpg
+  Figure 6 caption: Segmentation results of random word type assignment. (a) Original
+    images. (b) Ground truth masks for referred objects. (c) Segmentation results
+    of our model with correct word categories. (d) Segmentation results of our model
+    with randomly assigned word categories.
+  Figure 7 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_7.jpg
+  Figure 7 caption: Qualitative results of referring image segmentation. (a) Original
+    image. (b) Results of the multi-level baseline model (row 7 in Table 5). (c) Results
+    of our model (row 12 in Table 5). (d) Ground-truth.
+  Figure 8 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_8.jpg
+  Figure 8 caption: Qualitative results of referring video segmentation. (a)(c)(e)
+    Results of baseline model (row 1 in Table 6) (b)(d)(f) Results of our full video
+    model (row 5 in Table 6). Colors of masks correspond to different expressions.
+  Figure 9 Link: articels_figures_by_rev_year\2021\CrossModal_Progressive_Comprehension_for_Referring_Segmentation\figure_9.jpg
+  Figure 9 caption: Visualization of affinity maps between images and expressions
+    in our CMPC-I module. (a) Original image. (b)(c) Affinity maps of only entity
+    words and full expressions in the test samples. (d) Ground-truth. (e) Affinity
+    maps of expressions manually modified by us.
+  First author gender probability: 0.72
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Si Liu
+  Name of the last author: Guanbin Li
+  Number of Figures: 10
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: Cross-Modal Progressive Comprehension for Referring Segmentation
+  Publication Date: 2021-05-13 00:00:00
+  Table 1 caption: TABLE 1 Comparison With State-of-the-Art Methods on Four Datasets
+    for Referring Image Segmentation
+  Table 10 caption: TABLE 10 Experiments of Graph Convolution on UNC Val Set and G-Ref
+    Val Set in Terms of Overall IoU
+  Table 2 caption: TABLE 2 Comparison With State-of-the-Art Methods on A2D Sentences
+    for Referring Video Segmentation
+  Table 3 caption: TABLE 3 Comparison With State-of-the-Art Methods on JHMDB Sentences
+    for Referring Video Segmentation
+  Table 4 caption: TABLE 4 Comparison With State-of-the-Art Methods on Refer-Youtube-VOS
+    Dataset
+  Table 5 caption: TABLE 5 Ablation Studies of CMPC-I and TGFE Modules on UNC Val
+    Set
+  Table 6 caption: TABLE 6 Ablation Studies of our CMPC-V Modules on A2D Sentence
+    Test Set
+  Table 7 caption: TABLE 7 Ablation Studies of Different Ways to Obtain Adjacency
+    Matrix in AAR on A2D Dataset
+  Table 8 caption: TABLE 8 Overall IoUs of Different Numbers of Feature Exchange Rounds
+    in TGFE Module on UNC Val Set
+  Table 9 caption: TABLE 9 Ablation Studies of Necessary Words Extracting (NW) on
+    UNC Val Set
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3079993
+- Affiliation of the first author: department of computer science, university of hong
+    kong, hong kong
+  Affiliation of the last author: department of computer science, university of hong
+    kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_1.jpg
+  Figure 1 caption: "First Row: Comparisons between Cartesian representation and polar\
+    \ representation. \u201CRep.\u201D indicates representation. (a) shows an original\
+    \ image. (b) is its corresponding pixel-wise mask. (c) and (d) represent the mask\
+    \ by using contours in the Cartesian coordinates and Polar coordinates (a center\
+    \ and ray lengths at twelve angles), respectively. Second Row: Comparisons between\
+    \ our PolarMask and the popular Mask R-CNN, where PolarMask is a bounding box-free\
+    \ method because polar coordinate is a unified and more flexible representation\
+    \ than bounding box (e.g., a bounding box is a polar mask with only four rays).\
+    \ Polar representation has more advantages than bounding boxes. For example, when\
+    \ the object instances are rotated and crowded, the original bounding boxes are\
+    \ not tied and the adjacent boxes are easily suppressed by non-maximum suppression\
+    \ (NMS) as shown by the boxes in red dots, leading to mis-detected instances.\
+    \ Our PolarMask system directly predicts center point and ray lengths of the object\
+    \ in the polar coordinate without relying on bounding box, thus being suitable\
+    \ in challenging situations such as heavy rotations and crowded objects."
+  Figure 10 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_10.jpg
+  Figure 10 caption: Upper Bound Analysis. Larger number of rays would model instance
+    masks with higher IoU. And mass-center is more effective to represent an instance
+    than the box-center. For example, 90 rays improve 0.4 percent compared to 72 rays,
+    and the result is saturated when the number of rays approaches 120.
+  Figure 2 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_2.jpg
+  Figure 2 caption: "The overall pipeline of PolarMask compared to the previous representative\
+    \ methods. \u201CGen\u201D means generation. \u201CDet\u201D represents detection\
+    \ and \u201CConv\u201D is convolution operation. We can see all the two-stage\
+    \ methods (e.g., MNC(a), FCIS(b) and Mask R-CNN(c)) and one stage method Yolact(d)\
+    \ rely on box detection results, following the paradigm of \u201Cdetect then segment\u201D\
+    . Although TensorMask(e) does not need box predictions, its architecture is also\
+    \ complex. It models instances as 4D tensor by using \u201CStructured Tensors\
+    \ Generation\u201D and uses \u201CTensor Align\u201D to align features, leading\
+    \ to slow inference speed. The proposed PolarMask(f) is much simpler than other\
+    \ methods in pipeline design and does not need box predictions."
+  Figure 3 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_3.jpg
+  Figure 3 caption: "Mask Assembling. Polar Representation provides a directional\
+    \ angle. The contour points are connected one by one start from 0 \u2218 (bold\
+    \ line) and assemble the whole contour. The mask is naturally obtained as the\
+    \ pixels inside the contour are the mask result."
+  Figure 4 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_4.jpg
+  Figure 4 caption: "Polar Centerness. (a) is the original image. (b) is the rays\
+    \ regression with a inappropriate center. (c) is the rays regression with an appropriate\
+    \ center. d min and d max are the minimum and maximum distance of rays. Polar\
+    \ Centerness is used to down-weight such regression tasks as the high diversity\
+    \ of rays lengths as shown in red lines in the middle plot. These examples are\
+    \ hard to optimize and produce low-quality masks. In (b), the d min d max \u2192\
+    0 and in (c), the d min d max \u21921 , which means the positive sample in (c)\
+    \ is better than (b) and has higher loss weight during training. During inference,\
+    \ the polar centerness predicted by the network is multiplied to the classification\
+    \ score, thus can down-weight the low-quality masks."
+  Figure 5 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_5.jpg
+  Figure 5 caption: The overall pipeline of PolarMask system. The left part contains
+    the backbone and feature pyramid to extract features of different levels. The
+    middle part is the two heads for classification and polar mask regression. H,W,C
+    are the height, width, channels of feature maps, respectively, and k is the number
+    of categories (e.g., k=80 on the COCO dataset), n is the number of rays (e.g.,
+    n=36 ).
+  Figure 6 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_6.jpg
+  Figure 6 caption: Mask IoU in Polar Representation. Mask IoU (interaction area over
+    union area) in the polar coordinate can be calculated by integrating the differential
+    IoU area in terms of differential angles. Polar IoU loss optimizes the mask regression
+    as a whole, instead of optimizing each ray separately like L1 loss, leading to
+    better performance.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_7.jpg
+  Figure 7 caption: Refined feature pyramid. The feature maps from different stages
+    are integrated into the same size and added, then a non-local block is used for
+    context modeling. At last, the refined feature is integrated to original sizes
+    and a shortcut operate is adopted to get the final feature representation in multiple
+    scales.
+  Figure 8 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_8.jpg
+  Figure 8 caption: The advantage of PolarMask++ on heavy crowd and rotate scene compared
+    with Mask R-CNN. (a) shows a representative original image with large rotations
+    from a text detection dataset MSRA-TD500 [67]. (b) Detection result of PolarMask++.
+    (c) Detection result of Mask R-CNN. The blue solid box and red dot boxes in (c)
+    are the remained and suppressed results by NMS. It shows that polar representation
+    has more advantages than bounding boxes in such situation, because bounding boxes
+    are not tied and the highly-overlapped boxes are easily suppressed by NMS, leading
+    to mis-detected instance. However, our PolarMask system directly predicts center
+    point and ray lengths of object in the polar coordinate without relying on bounding
+    box, thus being suitable in challenging situations such as heavy rotation and
+    crowded objects.
+  Figure 9 Link: articels_figures_by_rev_year\2021\PolarMask_Enhanced_Polar_Representation_for_SingleShot_Instance_Segmentation_and\figure_9.jpg
+  Figure 9 caption: "Comparisons of visualization results of PolarMask++ when using\
+    \ Smooth-\u01411 loss and Polar IoU loss. Polar IoU Loss achieves more accurate\
+    \ contour of instance, while Smooth-\u01411 Loss exhibits artifacts."
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.5
+  Name of the first author: Enze Xie
+  Name of the last author: Ping Luo
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: 'PolarMask++: Enhanced Polar Representation for Single-Shot Instance
+    Segmentation and Beyond'
+  Publication Date: 2021-05-14 00:00:00
+  Table 1 caption: TABLE 1 Instance Segmentation Mask AP on the COCO test test- dev
+    dev
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Single-Scale Results on Rotate Object Detection Dataset
+    ICDAR2015
+  Table 3 caption: TABLE 3 The Single-Scale Results on Cell Segmentation Dataset DSB2018
+  Table 4 caption: TABLE 4 Ablation Experiments for the Proposed PolarMask++ on MSCOCO
+    Dataset
+  Table 5 caption: TABLE 5 Effectiveness of Mask Refinement
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3080324
+- Affiliation of the first author: school of electrical engineering and computer science,
+    washington state university, pullman, wa, usa
+  Affiliation of the last author: department of computer science and engineering,
+    texas a&m university, college station, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Line_Graph_Neural_Networks_for_Link_Prediction\figure_1.jpg
+  Figure 1 caption: Illustration of our proposed model based on line graph neural
+    networks. The two target nodes in the graph are marked with double circles. To
+    predict the existence of the link, an h -hop enclosing subgraph centered on two
+    target nodes is extracted. A node labeling function is employed to assign the
+    label for each node to represent the structural importance to the target link.
+    To learn the feature of the target link, we transform the enclosing subgraph into
+    a corresponding line graph. The graph convolution networks are used to learn the
+    feature that is employed to predict the existence of link.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Line_Graph_Neural_Networks_for_Link_Prediction\figure_2.jpg
+  Figure 2 caption: Illustration of the line graph transformation procedure. Each
+    node in the line graph corresponds to a unique edge in the original graph and
+    is marked with the name of two end nodes.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Line_Graph_Neural_Networks_for_Link_Prediction\figure_3.jpg
+  Figure 3 caption: Training loss and test AUC comparison between our proposed LGLP
+    and SEAL method. The training loss and testing AUC on BUP, C.ele, EML, and SMG
+    dataset. The training loss and testing AUC of LGLP are marked with blue and orange
+    solid lines. Those of SEAL are marked with blue, orange dashed lines.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Line_Graph_Neural_Networks_for_Link_Prediction\figure_4.jpg
+  Figure 4 caption: AUC comparison on all datasets for Katz, PR, SR, SEAL, and LGLP
+    using different percent of training links. On each dataset, we take 30, 40, 50,
+    60, 70, and 80 percent of all the links in G as the training set. Our proposed
+    method LGLP is marked with solid line and all baseline methods are marked with
+    dashed lines in different colors.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Line_Graph_Neural_Networks_for_Link_Prediction\figure_5.jpg
+  Figure 5 caption: t -SNE visualization on EML, ADV, HPD, and GRQ datasets. Positive
+    links are shown as green, and negative links are shown as cyan.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.78
+  Name of the first author: Lei Cai
+  Name of the last author: Shuiwang Ji
+  Number of Figures: 5
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Line Graph Neural Networks for Link Prediction
+  Publication Date: 2021-05-14 00:00:00
+  Table 1 caption: TABLE 1 Summary of Datasets Used in Our Experiments
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 AUC Comparison With Baseline Methods (80 percent Training
+    Links)
+  Table 3 caption: TABLE 3 AP Comparison With Baseline Methods (80 percent Training
+    Links)
+  Table 4 caption: TABLE 4 AUC Comparison With Baseline Methods (50 percent Training
+    Links)
+  Table 5 caption: TABLE 5 AP Comparison With Baseline Methods (50 percent Training
+    Links)
+  Table 6 caption: TABLE 6 Comparison on Cora Dataset Using Plain Graph and Attributed
+    Graph (50 percent Training Links)
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3080635
+- Affiliation of the first author: school of artificial intelligence, beijing university
+    of posts and telecommunications, beijing, china
+  Affiliation of the last author: kuaishou technology, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_1.jpg
+  Figure 1 caption: High-quality estimated results of face albedo, refined normal,
+    diffuse shading, and specular highlights from a single image by our HyFRIS-Net.
+    The specular component is scaled by 1.7 for better visualization (applied to all
+    visualizations throughout the paper).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_10.jpg
+  Figure 10 caption: Comparison with MLFace [17] on albedo, shading, shape, and reconstruction.
+    MLFace [17] uses 3DMM to fit the face image which loses face details. In our results,
+    such details are faithfully recovered.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_2.jpg
+  Figure 2 caption: An example of our hybrid illumination model. (a) The Eucalyptus
+    Grove environment map [39]. (b) The 2nd-order SH approximation of (a). (c) The
+    pre-defined lobe axes of distant lights in our implementation.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_3.jpg
+  Figure 3 caption: The framework of our method. A face image and its initial normal
+    map are warped to the texture space by fitting a 3DMM model; then they are used
+    as the input of HyFRIS-Net to estimate the parametric illumination (Spherical
+    Harmonics + Distant Light), non-parametric albedo map and refined normal map.
+    The dashed arrows identify our self-evolving paths.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_4.jpg
+  Figure 4 caption: Comparison with MLFace [17] and SfSNet [21] on MLFace test dataset.
+    We achieve higher quality on each estimation component, including a clean separation
+    of diffuse and specular reflectionillumination, correct facial hair handling,
+    and a refined face shape with more details. Red boxes indicate noticeable differences.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_5.jpg
+  Figure 5 caption: Comparison with NeuralFace [4] and SfSNet [21] on face albedo
+    estimation using images from the same subjects.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_6.jpg
+  Figure 6 caption: Comparison with FaceProbe [20] and FaceSHR [22] on specular highlight
+    separation using calibrated images from the FaceProbe dataset. The numbers on
+    the top right corner are the RMSE, and the bottom right corner is SSIM values.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_7.jpg
+  Figure 7 caption: Comparison with FaceProbe [20] and FaceSHR [22] on specular highlight
+    separation using uncalibrated images.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_8.jpg
+  Figure 8 caption: Quantitative evaluation for illumination estimation using the
+    MultiPIE dataset [50]. We sample 5 camera directions around the frontal face direction,
+    namely 130 , 140 , 051 , 050 , 041 , and 051 is the frontal camera direction.
+    The result is significantly improved by our method, especially on top-1 accuracy.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Hybrid_Face_Reflectance_Illumination_and_Shape_From_a_Single_Image\figure_9.jpg
+  Figure 9 caption: Comparison with Pix2Vertex [23] and SfSNet [21] on face shape
+    estimation. We compute the angular error (in degrees) between the estimated normal
+    and ground truth normal and our results have smaller errors.
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.72
+  Name of the first author: Yongjie Zhu
+  Name of the last author: Yu-Wing Tai
+  Number of Figures: 17
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Hybrid Face Reflectance, Illumination, and Shape From a Single Image
+  Publication Date: 2021-05-14 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Evaluation for Specular Highlight Separation
+    on the FaceProbe Dataset [20]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Evaluation for Face Shape Estimation on the
+    Florence Dataset [51]
+  Table 3 caption: TABLE 3 Ablation Study on Different Backbones for the Illumination
+    Estimation Network
+  Table 4 caption: TABLE 4 Ablation Study on Training Losses
+  Table 5 caption: TABLE 5 Ablation Study on Self-Evolving Training
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3080586
+- Affiliation of the first author: department of computer science, iowa state university,
+    ames, ia, usa
+  Affiliation of the last author: department of computer science and engineering,
+    texas a&m university, college station, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Graph_UNets\figure_1.jpg
+  Figure 1 caption: An illustration of the cluster-based graph pooling layer (a) and
+    the selection-based graph pooling layer (b). In cluster-based pooling methods,
+    each node is assigned to clusters with computed probabilities in the coarsened
+    graph. In selection-based pooling methods, a portion of nodes are selected to
+    formed the coarsened graph.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Graph_UNets\figure_2.jpg
+  Figure 2 caption: "An illustration of the proposed graph pooling layer with k=2\
+    \ . \xD7 and \u2299 denote matrix multiplication and element-wise product, respectively.\
+    \ We consider a graph with 4 nodes, and each node has 5 features. By processing\
+    \ this graph, we obtain the adjacency matrix A \u2113 \u2208 R 4\xD74 and the\
+    \ input feature matrix X \u2113 \u2208 R 4\xD75 of layer \u2113 . In the projection\
+    \ stage, p\u2208 R 5 is a trainable projection vector. By matrix multiplication\
+    \ and sigmoid(\u22C5) , we obtain y that are scores estimating scalar projection\
+    \ values of each node to the projection vector. By using k=2 , we select two nodes\
+    \ with the highest scores and record their indices in the top-k-node selection\
+    \ stage. We use the indices to extract the corresponding nodes to form a new graph,\
+    \ resulting in the pooled feature map X ~ \u2113 and new corresponding adjacency\
+    \ matrix A \u2113+1 . At the gate stage, we perform element-wise multiplication\
+    \ between X ~ \u2113 and the selected node scores vector y ~ , resulting in X\
+    \ \u2113+1 . This graph pooling layer outputs A \u2113+1 and X \u2113+1 , which\
+    \ are the adjacency matrix and feature matrix of the coarsened graph, respectively."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Graph_UNets\figure_3.jpg
+  Figure 3 caption: An illustration of the proposed graph unpooling (gUnpool) layer.
+    In this example, a graph with seven nodes is down-sampled using a gPool layer,
+    resulting in a coarsened graph with four nodes and position information of selected
+    nodes. The corresponding gUnpool layer uses the position information to reconstruct
+    the original graph structure by using empty feature vectors for unselected nodes.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Graph_UNets\figure_4.jpg
+  Figure 4 caption: An illustration of the proposed graph U-Nets (g-U-Nets). In this
+    example, each node in the input graph has two features. The input feature vectors
+    are transformed into low-dimensional representations using a GCN layer. After
+    that, we stack two encoder blocks, each of which contains a gPool layer and a
+    GCN layer. In the decoder part, there are also two decoder blocks. Each block
+    consists of a gUnpool layer and a GCN layer. For blocks in the same level, encoder
+    block uses skip connection to fuse the low-level spatial features from the encoder
+    block. The output feature vectors of nodes in the last layer are network embedding,
+    which can be used for various tasks such as node classification and link prediction.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Graph_UNets\figure_5.jpg
+  Figure 5 caption: An illustration of the attention operator. It first computes similarity
+    scores between boldsymbolqi and key vectors. The resulting coefficient vector
+    is normalized by a softmax function. The response boldsymboloi is computed by
+    taking the weighted summation over value vectors.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Graph_UNets\figure_6.jpg
+  Figure 6 caption: An illustration of the proposed attention-based pooling layer
+    (a) and attention-based unpooling layer (b). In the attention-based pooling layer,
+    we employ an attention operator to generate ranking scores. In the attention-based
+    unpooling layer, we use an attention operator to compute features for restored
+    nodes.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Graph_UNets\figure_7.jpg
+  Figure 7 caption: Visualization of the coarsened graphs by gPool (b) and that by
+    attnPool (c). Here, green nodes are selected by our pooling algorithms. Given
+    the same input graph, the coarsened graph produced by attnPool is much better
+    connected compared to that by gPool.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.78
+  Name of the first author: Hongyang Gao
+  Name of the last author: Shuiwang Ji
+  Number of Figures: 7
+  Number of Tables: 12
+  Number of authors: 2
+  Paper title: Graph U-Nets
+  Publication Date: 2021-05-17 00:00:00
+  Table 1 caption: TABLE 1 The Cora, Citeseer, and Pubmed Datasets Used in Node classification
+    Experiments [37], [38]
+  Table 10 caption: TABLE 10 Comparison of the g-U-Nets attn attn With Previous State-of-the-Art
+    Models on Point Cloud Classification Tasks on ModelNet40 Dataset
+  Table 2 caption: TABLE 2 Results of Transductive Learning Experiments in Terms of
+    Node Classification Accuracies on Cora, Citeseer, and Pubmed Datasets
+  Table 3 caption: TABLE 3 Results of Inductive Learning Experiments in Terms of Graph
+    Classification Accuracies on D&D, PROTEINS, COLLAB, and IMDB-MULTI Datasets
+  Table 4 caption: TABLE 4 Comparison of g-U-Nets With and Without gPool or gUnpool
+    Layers (g-U-Nets - gPool) in Terms of Node Classification Accuracy on Cora, Citeseer,
+    and Pubmed Datasets
+  Table 5 caption: TABLE 5 Comparison of g-U-Nets With and Without Graph Connectivity
+    Augmentation (g-U-Nets - aug) in Terms of Node Classification Accuracy on Cora,
+    Citeseer, and Pubmed Datasets
+  Table 6 caption: TABLE 6 Comparison of Different Network Depths in Terms of Node
+    Classification Accuracy on Cora, Citeseer, and Pubmed Datasets
+  Table 7 caption: TABLE 7 Comparison of the g-U-Nets With and Without Pooling or
+    Unpooling Layers (g-U-Nets - gPool) in Terms of the Node Classification Accuracy
+    and the Number of Parameters on IMDB-BINARY Dataset
+  Table 8 caption: TABLE 8 Comparison of Different Hyper-Parameter k k in Terms of
+    Graph Classification Accuracy on MUTAG, IMDB-BINARY, and IMDB-MULTI Datasets
+  Table 9 caption: TABLE 9 Comparisons Between g-U-Nets attn attn and Previous State-of-the-Art
+    Models on Graph Classification Datasets Including MUTAG, IMDB-BINARY, PTC, REDDIT-BINARY,
+    REDDIT-MULTI5K, and REDDIT-MULTI12K Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3081010
+- Affiliation of the first author: nanjing university of science and technology, nanjing,
+    china
+  Affiliation of the last author: the university of adelaide, adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Anisotropic_Convolutional_Neural_Networks_for_RGBD_Based_Semantic_Scene_Completi\figure_1.jpg
+  Figure 1 caption: "The overall network structure of the AIC-Net. AIC-Net has a hybrid\
+    \ feature extractor which consists of two parallel branches to capture the features\
+    \ from RGB and depth images, respectively. Each feature extractor branch contains\
+    \ a projection layer to project the 2D features to 3D space. We use stacked dimensional\
+    \ decomposition convolutions, which can be DDR, KSA or KMA, together with an additional\
+    \ feature aggregation component to fuse the information from the two modalities\
+    \ at multiple stages, which is followed by three 1\xD71\xD71 voxel-wise convolutions,\
+    \ a.k.a point-wise convolution in [45], to predict occupancy and object labels\
+    \ per voxel simultaneously. A 3D lightweight ASPP module shown in Fig. 2 is designed\
+    \ as the feature aggregation component for DDR based AIC-Net; otherwise two cascaded\
+    \ KSA (KMA) modules are adopted for KSA (KMA) based AIC-Net."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Anisotropic_Convolutional_Neural_Networks_for_RGBD_Based_Semantic_Scene_Completi\figure_2.jpg
+  Figure 2 caption: "3D lightweight atrous spatial pyramid pooling (LW-ASPP). LW-ASPP\
+    \ uses multiple parallel DDR blocks with different dilation rates. The dilated\
+    \ DDR with dilation rate \u03C4 is implemented by setting a dilation rate \u03C4\
+    \ along each of three dimensional convolutions within the DDR block."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Anisotropic_Convolutional_Neural_Networks_for_RGBD_Based_Semantic_Scene_Completi\figure_3.jpg
+  Figure 3 caption: Illustration of the Dimensional Decomposition Residual (DDR) module.
+    We decompose 3D convolution into three consecutive dimensional convolutions, each
+    of which has kernel size k . A shortcut connection is adopted by following the
+    residual design.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Anisotropic_Convolutional_Neural_Networks_for_RGBD_Based_Semantic_Scene_Completi\figure_4.jpg
+  Figure 4 caption: "Bottleneck version of dimensional decomposition modules, i.e.,\
+    \ DDR, KSA and KMA. The first convolution reduces the number of channels from\
+    \ D to D \u2032 ( D \u2032 <D ) and the last convolution restores the channels\
+    \ back to D ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Anisotropic_Convolutional_Neural_Networks_for_RGBD_Based_Semantic_Scene_Completi\figure_5.jpg
+  Figure 5 caption: Illustration of kernel-selection anisotropic (KSA) convolution.
+    We maintain a set of kernels with different kernel sizes for each dimension and
+    adopt a (1 times 1 times 1) point-wise convolution to learn voxel-dependent kernel
+    selection weights to select proper kernels for each dimension.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Anisotropic_Convolutional_Neural_Networks_for_RGBD_Based_Semantic_Scene_Completi\figure_6.jpg
+  Figure 6 caption: Illustration of kernel-modulation anisotropic (KMA) convolution.
+    We use a single kernel with size k for each dimension and adopt a (1 times 1 times
+    1) point-wise convolution to learn voxel-dependent kernel modulation factors to
+    modulate the dimensional kernels.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Anisotropic_Convolutional_Neural_Networks_for_RGBD_Based_Semantic_Scene_Completi\figure_7.jpg
+  Figure 7 caption: Illustration of the 2D fusion based AIC-Net, where the fusion
+    of the features from the two modalities are performed in the 2D space. 2D dimensional
+    decomposition convolutions are designed to encode the fuse the 2D features.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Anisotropic_Convolutional_Neural_Networks_for_RGBD_Based_Semantic_Scene_Completi\figure_8.jpg
+  Figure 8 caption: Qualitative visualization on NYUCAD. From left to right are input
+    RGB-D image, the ground truth, results generated by SSCNet, AIC-Net (DDR), AIC-Net
+    (KSA), and AIC-Net (KMA). (Best viewed in color.)
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.53
+  Name of the first author: Jie Li
+  Name of the last author: Yu Liu
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: Anisotropic Convolutional Neural Networks for RGB-D Based Semantic
+    Scene Completion
+  Publication Date: 2021-05-18 00:00:00
+  Table 1 caption: TABLE 1 The Comparison With State-of-the-Art on the NYU Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Comparison With State-of-the-Art on the NYUCAD Dataset
+  Table 3 caption: TABLE 3 The Comparison of Our AIC-Net Variants With Other Methods
+    in Terms of Parameter Size, FLOPs and SSC Performance
+  Table 4 caption: TABLE 4 The Comparison of the DDR Based AIC-Net With RGB-D or Single
+    Modality as Input
+  Table 5 caption: TABLE 5 The Comparison of KSA Based AIC-Nets Using Different Dimensional
+    Kernel Sets in the KSA Modules on NYUCAD Dataset
+  Table 6 caption: TABLE 6 The Comparison of KSA Based AIC-Nets With and Without Using
+    Kernel Section Weights on Both NYU Dataset and NYUCAD Dataset
+  Table 7 caption: TABLE 7 The Comparison of KMA Based AIC-Nets With and Without Using
+    Modulation Factors on NYUCAD Dataset
+  Table 8 caption: TABLE 8 The Comparison Between 2D Fusion and 3D Fusion Based on
+    AIC-Net (DDR and KSA) on NYU Dataset and NYUCAD Dataset
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3081499
+- Affiliation of the first author: ccai, college of computer science and technology,
+    zhejiang university, hangzhou, zhejiang, china
+  Affiliation of the last author: ccai, college of computer science and technology,
+    zhejiang university, hangzhou, zhejiang, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_1.jpg
+  Figure 1 caption: 'CI: Collaborative integration. There are two foreground sheep
+    (pink and blue) in the sequence. Top: The contempt of background matching leads
+    to a prediction confusion. Bottom: we relieve the confusion problem by introducing
+    background matching (dot-line arrow).'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_10.jpg
+  Figure 10 caption: Qualitative results of CFBI+ on the DAVIS-2017 testing split
+    and YouTube-VOS 2018 validation split. These videos cover many of the most challenging
+    VOS cases, including similar objects, small objects, occlusion, and blur. In the
+    first four videos, CFBI+ performs well on similar objects, small objects, and
+    occlusion. Especially for the third video, there are 10 similar targets (dancers)
+    in total and many similar people in the background. Besides, all the targets continuously
+    occlude each other. However, CFBI+ does not collapse under such a complicated
+    case and correctly track every dancer. In the last video, we show one of the worst
+    cases on the DAVIS-2017 testing split, where CFBI+ fails to segment all the motorbike
+    parts. The blur caused by such a strong halo makes it difficult for CFBI+ to distinguish
+    the motorbikes appearance.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_2.jpg
+  Figure 2 caption: "An overview of CFBI. F-G denotes Foreground-Background. We use\
+    \ red and blue to indicate foreground and background separately. The deeper the\
+    \ red or blue color, the higher the confidence. Given the first frame ( t=1 ),\
+    \ previous frame ( t=T\u22121 ), and current frame ( t=T ), we first extract their\
+    \ pixel-wise embedding by using a backbone network. Second, we separate the first\
+    \ and previous frame embeddings into the foreground and background pixels based\
+    \ on their masks. After that, we use F-G pixel-level matching and instance-level\
+    \ attention to guide our collaborative ensembler network to generate a prediction."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_3.jpg
+  Figure 3 caption: The moving rate of objects across two adjacent frames is largely
+    variable for different sequences. Examples are from YouTube-VOS [21].
+  Figure 4 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_4.jpg
+  Figure 4 caption: The trainable part of the instance-level attention. C e denotes
+    the channel dimension of pixel-wise embedding. H , W , C denote the height, width,
+    channel dimension of CE features.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_5.jpg
+  Figure 5 caption: 'An overview of CFBI+. S : the stride of feature maps. First,
+    CFBI+ extracts three features with different scales ( S=4,8,16 ) from backbone,
+    ResNet101-DeepLabV3+ [43]. And then, we use the Feature Pyramid Network (FPN)
+    [44] to fuse the information from small scales to large scales and reduce the
+    channel dimensions of three features. After this, we do all the matching processes
+    of CFBI on each scale. The output of each scale will be sent to the consistent
+    stage of Collaborative Ensembler (CE).'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_6.jpg
+  Figure 6 caption: An illustration of l -atrous object pixel set. Atrous matching
+    improves computational efficiency by periodically filtering out referred object
+    pixels without loss of resolution. (a) Yellow points indicate the referred object
+    pixel set used in the original matching process. All the object (red dog) pixels
+    are sampled. (b) (c) 2-atrous and 3-atrous object pixel set. Referred pixels are
+    sampled out with a period of 2 or 3 pixels vertically and horizontally.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_7.jpg
+  Figure 7 caption: When using normal random-crop, some red windows contain few or
+    no foreground pixels. For reliving this problem, we propose balanced random-crop.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_8.jpg
+  Figure 8 caption: An illustration of the sequential training. In each step, the
+    previous mask comes from the previous prediction (the green lines) except for
+    the first step, whose previous mask comes from the ground-truth (GT) mask (the
+    blue line).
+  Figure 9 Link: articels_figures_by_rev_year\2021\Collaborative_Video_Object_Segmentation_by_MultiScale_ForegroundBackground_Integ\figure_9.jpg
+  Figure 9 caption: Qualitative comparison between CFBI and CFBI+ on the DAVIS-2017
+    validation split. In the first video, CFBI fails to segment one hand of the right
+    person (the white box), while CFBI+ generates an accurate boundary between two
+    similar persons. In the second video, CFBI entirely loses two tiny objects (cellphones).
+    In contrast, CFBI+ successfully predicts their masks.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Zongxin Yang
+  Name of the last author: Yi Yang
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Collaborative Video Object Segmentation by Multi-Scale Foreground-Background
+    Integration
+  Publication Date: 2021-05-18 00:00:00
+  Table 1 caption: TABLE 1 The Quantitative Evaluation on YouTube-VOS [21]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Quantitative Evaluation on DAVIS 2017 [20]
+  Table 3 caption: TABLE 3 The Quantitative Evaluation on the DAVIS-2016 Validation
+    Set [19]
+  Table 4 caption: TABLE 4 Ablation of Background Embedding on the DAVIS-2017 Validation
+    Split
+  Table 5 caption: TABLE 5 Ablation of Atrous Matching
+  Table 6 caption: TABLE 6 Ablation of Multi-Scale Matching
+  Table 7 caption: TABLE 7 Ablation of Other Components on the DAVIS-2017 Validation
+    Split
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3081597
+- Affiliation of the first author: school of engineering and applied sciences, harvard
+    university, cambridge, ma, usa
+  Affiliation of the last author: school of engineering and applied sciences, harvard
+    university, cambridge, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Unique_Geometry_and_Texture_From_Corresponding_Image_Patches\figure_1.jpg
+  Figure 1 caption: The left of each row is a collection of four image patches generated
+    by orthographic projections of a single flat texture process, shown right. We
+    want to understand the conditions that are sufficient for the correct viewing
+    geometries and flat texture process to be recovered from the image patches, when
+    neither the flat texture process nor the viewing geometries are known or labeled
+    beforehand.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Unique_Geometry_and_Texture_From_Corresponding_Image_Patches\figure_2.jpg
+  Figure 2 caption: Each transformation T i maps to a point ( x i , y i , z i ) in
+    this three-dimensional space, and in particular to a point on the red cone. The
+    set of modified transformations T i B lies on a translated cone, with the translation
+    determined by B . One example is shown in blue. A non-orthogonal B exists only
+    if a particular set of observed transformations T i N i=1 corresponds to points
+    contained in a planar slice of the original cone (e.g., on the black curve).
+  Figure 3 Link: articels_figures_by_rev_year\2021\Unique_Geometry_and_Texture_From_Corresponding_Image_Patches\figure_3.jpg
+  Figure 3 caption: "Example of ambiguous shape from texture, using \u03BB=0.5 in\
+    \ Eq. (2). (a) Input image. (b-c) Correct interpretation: true surface normals\
+    \ and frontal texture element, and true surface from new viewpoint. (d-e) Alternative\
+    \ interpretation: frontal texture element transformed by B \u22121 , surface normals\
+    \ from warps transformed by B , and surface obtained by integrating the gradient\
+    \ defined by the alternative surface normals. The texture elements are scaled\
+    \ \xD72 for clarity."
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.59
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Dor Verbin
+  Name of the last author: Todd Zickler
+  Number of Figures: 3
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Unique Geometry and Texture From Corresponding Image Patches
+  Publication Date: 2021-05-18 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3081360
+- Affiliation of the first author: intelligent information processing laboratory and
+    school of automation, hangzhou dianzi university, hangzhou, zhejiang, china
+  Affiliation of the last author: department of psychiatry and department of computer
+    science, university of north carolina at chapel hill, chapel hill, nc, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_1.jpg
+  Figure 1 caption: Our group-wise hub identification method opts to find the common
+    hub nodes where the removal of hub nodes results in similar network communities
+    across individuals (middle) and similar graph embeddings (right) across individual
+    networks. In light of this, node 1 is more optimal of being the common hub node
+    for both networks than node 8.
+  Figure 10 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_10.jpg
+  Figure 10 caption: Replicability in terms of the consensus of common hub nodes being
+    identified in pairwise test and retest groups by sorting-based (a), graph-embedding+voting
+    (b), and our group-wise hub identification method (c). Nodes in orange belong
+    to DMN while blue nodes stand for non-DMN.
+  Figure 2 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_2.jpg
+  Figure 2 caption: "The advantage of measuring the similarity between graph embeddings\
+    \ using geodesic distance on Grassmannian manifold (right) over Euclidean space\
+    \ (left). F 1 and F 2 are the graph embeddings after selecting node 1 as common\
+    \ hub node in Fig. 1. F \u2032 1 and F \u2032 2 are the graph embeddings after\
+    \ selecting node 8 as common hub node in Fig. 1. Since node 1 is more optimal\
+    \ than node 8 to be the common hub node, the distance between F 1 and F 2 is supposed\
+    \ to be smaller than that of F \u2032 1 and F \u2032 2 . It is clear that the\
+    \ Grassmannian algebra is more effective in characterizing the intrinsic relationship\
+    \ among graph embeddings than classic Euclidean operations. For better visualization,\
+    \ we reduce the dimension of graph embedding by PCA and use 3D Cartesian space\
+    \ and a 3D sphere to represent Euclidean and Grassmannian manfold, respectvely."
+  Figure 3 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_3.jpg
+  Figure 3 caption: Hub identification results on three simulated networks (a) by
+    using conventional sorting-based+voting method (b), graph-embedding+voting method
+    (c), and our groupwise hub identification method (d). Green and orange nodes belong
+    to two distinct communities. Hollow and solid circles respectively represent the
+    ground truth of connector hub and non-connector hub in the synthesized network.
+    The identified common hub node by each method is marked in the red box.
+  Figure 4 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_4.jpg
+  Figure 4 caption: Typical network synthesized for evaluating the hub identification
+    performance w.r.t. population size (a) in section 3.1.3 and noisy links (b) in
+    section 3.1.4. Green and orange designate the module information. The notation
+    of nodes is the same as in Fig. 3.
+  Figure 5 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_5.jpg
+  Figure 5 caption: The curves of overlap ratio between the ground truth and identified
+    hub nodes (a) and mean geodesic distance (b) w.r.t. the population size by using
+    sorting-based+voting (green), graph-embedding+voting (orange), and our group-wise
+    hub identification method (blue).
+  Figure 6 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_6.jpg
+  Figure 6 caption: The hub identification accuracy in terms of the overlap ratio
+    between the ground truth and identified hubs (a) and consistency of the resulting
+    graph embeddings in terms of geodesic distance (b) by sorting-based+voting (green),
+    graph-embedding+voting (orange), and our group-wise hub identification method
+    (blue).
+  Figure 7 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_7.jpg
+  Figure 7 caption: The location of common hub nodes and their statistical power comparison
+    between NC, MCI, and AD. (a) Distribution of common hub nodes. Statistical tests
+    for difference in cortical thickness at common hub nodes identified by sorting-based+voting
+    (b), graph-embedding+voting (c), and our proposed group-wise hub identification
+    method (d).
+  Figure 8 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_8.jpg
+  Figure 8 caption: Replicability test in terms of the consensus of common hub nodes
+    being identified in pairwise test and retest groups by sorting-based (a), graph-embedding+voting
+    (b), and our group-wise hub identification method (c).
+  Figure 9 Link: articels_figures_by_rev_year\2021\GroupWise_Hub_Identification_by_Learning_Common_Graph_Embeddings_on_Grassmannian\figure_9.jpg
+  Figure 9 caption: The consensus of common hub nodes being identified across different
+    population networks sampled and resampled from the same ADNI structural brain
+    network dataset.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Defu Yang
+  Name of the last author: Guorong Wu
+  Number of Figures: 11
+  Number of Tables: 2
+  Number of authors: 7
+  Paper title: Group-Wise Hub Identification by Learning Common Graph Embeddings on
+    Grassmannian Manifold
+  Publication Date: 2021-05-19 00:00:00
+  Table 1 caption: TABLE 1 Algorithm for Group-Wise Hub Identification
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Demographic Information of Selected ADNI Scans
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3081744

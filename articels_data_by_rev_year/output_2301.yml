@@ -1,0 +1,808 @@
+- Affiliation of the first author: pattern recognition and intelligent system laboratory,
+    school of artificial intelligence, beijing university of posts and telecommunications,
+    beijing, china
+  Affiliation of the last author: pattern recognition and intelligent system laboratory,
+    school of artificial intelligence, beijing university of posts and telecommunications,
+    key laboratory of trustworthy distributed computing and service, ministry of education,
+    beijing university of posts and telecommunications, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_1.jpg
+  Figure 1 caption: The average faces of different skin tone bins of IDS database
+    which consist of the average pixel values computed from aligned faces.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_10.jpg
+  Figure 10 caption: The ROC curves of (a) Center loss, (b) Spereface (c) Arcface,
+    (d) VGGFace2 evaluated on all pairs of IDS-4. The cosine similarity thresholds
+    of different skin tone bins are showed at each axis point (FAR= lbrace 10e-6,10e-5,10e-4,10e-3,10e-2,10e-1rbrace
+    ).
+  Figure 2 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_2.jpg
+  Figure 2 caption: The skin tone distributions of BUPT-Globalface and BUPT-Balancedface
+    datasets.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_3.jpg
+  Figure 3 caption: IDS statistics. We show yaw pose, pitch pose, age and gender distribution
+    of eight testing bins of IDS-8.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_4.jpg
+  Figure 4 caption: Some images examples of our IDS. One can see from the figure that
+    faces in our dataset are from diversity regions around world and exhibit variability
+    in factors such as pose, age, and expression.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_5.jpg
+  Figure 5 caption: 'An illustration of our method. At iteration step t , Margin parameters
+    learning: first, given a mini-batch of training samples, we use SGD to update
+    the model parameters widehatwt+1 on the basis of the current parameters wt and
+    margins mgt (step 1 and 2). Then, a mini-batch of meta samples is sent to the
+    updated model (step 3). Guided by our meta skewness loss, a meta-gradient (high-order
+    gradient) is back-propagated from meta data to training data, respectively, to
+    update the margins mgt+1 (step 4). Model parameters learning: with a fixed margin
+    for Tone-I subjects and the updated margins mgt+1 for other faces, we use adaptive
+    margin loss and training data to update the model parameters wt+1 such that it
+    performs fairly across people with different skin tones.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_6.jpg
+  Figure 6 caption: Main flowchart of the proposed algorithm. Notice that widehatwt+1
+    here is a variable instead of a quantity, which makes widehatwt+1(mgt) a function
+    of mgt and the gradient in Eqs. (9) and (10) be able to be computed by backward-on-backward
+    differentiation.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_7.jpg
+  Figure 7 caption: The ROC curves of (a) Baidu, (b) Face++, (c) Amazon and (d) Microsoft
+    evaluated on 6K pairs of IDS-4. Due to limited number of negative pairs, the performances
+    cannot be reliably estimated at lower FPR values. Besides, once API fails to detect
+    faces, we assume that it will give an incorrect verification result whatever decision
+    thresholds are.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_8.jpg
+  Figure 8 caption: The ROC curves of (a) Baidu, (b) Face++, (c) Amazon and (d) Microsoft
+    evaluated on 3K pairs of IDS-8. Due to limited number of negative pairs, the performances
+    cannot be reliably estimated at lower FPR values.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Meta_Balanced_Network_for_Fair_Face_Recognition\figure_9.jpg
+  Figure 9 caption: The feature space of Arcface(CASIA) model.
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Mei Wang
+  Name of the last author: Weihong Deng
+  Number of Figures: 17
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: Meta Balanced Network for Fair Face Recognition
+  Publication Date: 2021-08-12 00:00:00
+  Table 1 caption: TABLE 1 Bias With Respect to Skin Tone in Commercial APIs and SOTA
+    FR Algorithms
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Bias With Respect to Skin Tone in Commercial APIs and SOTA
+    FR Algorithms
+  Table 3 caption: "TABLE 3 Verification Accuracy (%) of ResNet-34 Models Trained\
+    \ With CASIA-Webface [25] and Our Balancedface \u2217 "
+  Table 4 caption: TABLE 4 Results on the Verification Experiments by Varying Distribution
+    in the Training Set
+  Table 5 caption: TABLE 5 Verification Accuracy (%) of Methods Trained With Different
+    Loss Function ([BUPT-Globalface-4, ResNet34, loss])
+  Table 6 caption: TABLE 6 Verification Accuracy (%) of Methods Trained With Different
+    Loss Function ([BUPT-Globalface-8, ResNet34, loss])
+  Table 7 caption: TABLE 7 Verification Accuracy (%) of Methods Trained With Different
+    Loss Function ([BUPT-Balancedface-4, ResNet34, loss])
+  Table 8 caption: TABLE 8 Verification Accuracy (%) of Methods Trained With Different
+    Loss Function ([BUPT-Balancedface-8, ResNet34, loss])
+  Table 9 caption: TABLE 9 Verification Accuracy (%) of Other Debiasing Methods Trained
+    With Arcface Loss ([BUPT-Globalface-4, ResNet34, Arcface])
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3103191
+- Affiliation of the first author: national laboratory of pattern recognition (nlpr),
+    institute of automation, chinese academy of sciences (casia), beijing, china
+  Affiliation of the last author: department of electrical and computer engineering,
+    national university of singapore (nus), singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_1.jpg
+  Figure 1 caption: The pipeline of hypothesis transfer with information maximization.
+    The source model consists of a feature encoding module and a classifier module
+    (hypothesis). SHOT keeps the hypothesis frozen and utilizes the feature encoding
+    module as initialization for target domain learning.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_10.jpg
+  Figure 10 caption: "The t-SNE feature visualizations for a 65-way classification\
+    \ UDA task Ar \u2192 Cl on Office-Home. Circles in red denote unseen source data\
+    \ and circles in olive denote target data. Best viewed in colors."
+  Figure 2 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_2.jpg
+  Figure 2 caption: "The t-SNE visualizations for a 5-way classification task. Solid\
+    \ \u2218 denotes unseen source data and \u2217 denotes target data. Different\
+    \ colors represent different classes. Best viewed in colors."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_3.jpg
+  Figure 3 caption: The pipeline of hypothesis transfer with self-supervised learning.
+    Besides the common target model, we impose a rotation classifier h c after the
+    feature encoding module g t . h c is parameterized by a linear classifier, which
+    aims to predict the relative rotation of a target sample.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_4.jpg
+  Figure 4 caption: The pipeline of the labeling transfer strategy with semi-supervised
+    learning. Both the feature encoding module g t and the classification module h
+    t are learned via the MixMatch [29] algorithm.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_5.jpg
+  Figure 5 caption: "Ablation study of label smoothing (LS) and batch normalization\
+    \ (BN) and weight normalization (WN) in the network for a 65-way classification\
+    \ UDA task Ar \u2192 Cl on Office-Home. src (val) denotes the accuracy in the\
+    \ source validation test, and src-only is short for source-model-only. Best viewed\
+    \ in colors."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_6.jpg
+  Figure 6 caption: "Accuracies of different variants during training for a 65-way\
+    \ classification UDA task Ar \u2192 Re on Office-Home (15 epochs)."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_7.jpg
+  Figure 7 caption: "Performance sensitivity of 3 parameters \u03B3 1 , \u03B3 2 ,\
+    \ T c within SHOT."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_8.jpg
+  Figure 8 caption: "Images of the source domain, the low-entropy target split, and\
+    \ the high-entropy target split for Ar \u2192 Cl on Office-Home (closed-set)."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Source_DataAbsent_Unsupervised_Domain_Adaptation_Through_Hypothesis_Transfer_and\figure_9.jpg
+  Figure 9 caption: "Values of different loss functions and the accuracy during training\
+    \ for a 65-way classification UDA task Ar \u2192 Cl on Office-Home (15 epochs)."
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jian Liang
+  Name of the last author: Jiashi Feng
+  Number of Figures: 11
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Source Data-Absent Unsupervised Domain Adaptation Through Hypothesis
+    Transfer and Labeling Transfer
+  Publication Date: 2021-08-12 00:00:00
+  Table 1 caption: TABLE 1 Classification Accuracies (%) on Digits Dataset for Vanilla
+    Closed-Set UDA
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Classification Accuracies (%) on Small-Sized Office Dataset
+    for Vanilla Closed-Set UDA (ResNet-50)
+  Table 3 caption: TABLE 3 Classification Accuracies (%) on Medium-Sized Office-Home
+    Dataset for Vanilla Closed-Set UDA (ResNet-50)
+  Table 4 caption: TABLE 4 Classification Accuracies (%) on Large-Scale VisDA-C Dataset
+    for Vanilla Closed-Set UDA (ResNet-101)
+  Table 5 caption: TABLE 5 Classification Accuracies (%) on Office-Caltech (ResNet-101)
+    and Office-Home (ResNet-50) and PACS (ResNet-18) for Multi-Source UDA
+  Table 6 caption: TABLE 6 Classification Accuracies (%) on Office-Home and VisDA-C
+    for Partial-Set UDA (ResNet-50)
+  Table 7 caption: TABLE 7 Classification Accuracies (%) on Office-Home Dataset for
+    Semi-Supervised DA (VGG16 on One-Shot Setting)
+  Table 8 caption: "TABLE 8 Accuracies for ImageNet \u2192 \u2192Caltech"
+  Table 9 caption: TABLE 9 Classification Accuracies (%) on Large-Scale VisDA-C Dataset
+    for Vanilla Closed-Set UDA (ResNet-50)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3103390
+- Affiliation of the first author: department of applied mathematics and statistics
+    (ams), center for imaging science (cis), and the mathematical institute for data
+    science (minds), johns hopkins university, baltimore, md, usa
+  Affiliation of the last author: department of applied mathematics and statistics,
+    johns hopkins university, baltimore, md, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Simple_Spectral_Failure_Mode_for_Graph_Convolutional_Networks\figure_1.jpg
+  Figure 1 caption: "Geometry for the canonical case where ASE succeeds but GCN fails.\
+    \ The top panel shows the density: the black line represents density of f X ,\
+    \ while the green line and red line represent the class-conditional density of\
+    \ f X|0 and f X|1 . The bottom panel shows one sample data generation with n=1000\
+    \ and m=100 : the green crosses and red crosses are training points from f X|0\
+    \ and f X|1 respectively with known label, while the black crosses are the remaining\
+    \ test points. Round dots are ASE after Procrustes with same color setting. Contours\
+    \ are from kernel density estimation of red dots and green dots. For this case,\
+    \ indicated by the vertical line at | \u03B8 E \u2212 \u03B8 \u22A5 |=\u03C032\
+    \ in Fig. 2, both ASE into dimension d \u2032 =1 and unsupervised two-layer GCN\
+    \ perform poorly while ASE into two dimensions has nearly optimal performance."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Simple_Spectral_Failure_Mode_for_Graph_Convolutional_Networks\figure_2.jpg
+  Figure 2 caption: Performance for the canonical case where ASE succeeds but two-layer
+    unsupervised GCN fails. ERM in the legend stands for empirical risk minimization
+    classifier. We run 100 Monte Carlo replicates and report the average classification
+    error.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Simple_Spectral_Failure_Mode_for_Graph_Convolutional_Networks\figure_3.jpg
+  Figure 3 caption: Effects of changing mn on the classification performance for different
+    methods. Vertical dash line indicates mn=0.1 used in Fig. 2.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Simple_Spectral_Failure_Mode_for_Graph_Convolutional_Networks\figure_4.jpg
+  Figure 4 caption: Adding parameter cross validation results for unsupervised GCN,
+    and include semisupervised GCN. The curves for GCN models are obtained without
+    hyper-parameter search, while the stars represent the best results after hyper-parameter
+    search.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Carey E. Priebe
+  Name of the last author: Tianyi Chen
+  Number of Figures: 4
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: A Simple Spectral Failure Mode for Graph Convolutional Networks
+  Publication Date: 2021-08-13 00:00:00
+  Table 1 caption: TABLE 1 Computing the Angle Difference (Rounded to Two Digits)
+    Between Unsupervised GCN Embedding and the Eigenvectors of Approximately Regular
+    Graphs at n=1000 n=1000
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3104733
+- Affiliation of the first author: faculty of mathematics and physics, charles university,
+    prague, czech republic
+  Affiliation of the last author: faculty of mathematics and physics, charles university,
+    prague, czech republic
+  Figure 1 Link: articels_figures_by_rev_year\2021\Survey_and_Evaluation_of_Neural_D_Shape_Classification_Approaches\figure_1.jpg
+  Figure 1 caption: 'Illustration of 3D representations used as neural network input
+    Volumetric grid (Section 3), Multiple-viewpoints renderings (Section 4), Point
+    cloud (Section 5), and Mesh (included in Section 6). Example shape: ModelNet40
+    airplane0627.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Survey_and_Evaluation_of_Neural_D_Shape_Classification_Approaches\figure_2.jpg
+  Figure 2 caption: Reported accuracies of the surveyed methods over time. Datasets
+    and input representations are denoted by different colors and shapes.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Survey_and_Evaluation_of_Neural_D_Shape_Classification_Approaches\figure_3.jpg
+  Figure 3 caption: VoxNet [25] architecture. c is the number of output categories.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Survey_and_Evaluation_of_Neural_D_Shape_Classification_Approaches\figure_4.jpg
+  Figure 4 caption: Multi-view architecture [44], as used in [13]. The numbers below
+    the diagram denote tensor sizes; c is the number of output categories.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Survey_and_Evaluation_of_Neural_D_Shape_Classification_Approaches\figure_5.jpg
+  Figure 5 caption: PointNet [61] architecture. n denotes the number of input points,
+    c is the number of classes.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Survey_and_Evaluation_of_Neural_D_Shape_Classification_Approaches\figure_6.jpg
+  Figure 6 caption: "The measured accuracies on different datasets. The bars show\
+    \ the test set accuracy at the epoch with the best validation accuracy and same-colored\
+    \ mathsfY and \u2022 mark the highest achieved accuracy on the test and validation\
+    \ subsets on the same dataset, respectively. circ marks accuracies reported on\
+    \ ModelNet40 and mathsfY marks the replicated test set accuracy on the point clouds\
+    \ provided by Qi et al. [61] using 1024 points (qi1024)."
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Martin Mirbauer
+  Name of the last author: "Elena \u0160ikudov\xE1"
+  Number of Figures: 6
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Survey and Evaluation of Neural 3D Shape Classification Approaches
+  Publication Date: 2021-08-18 00:00:00
+  Table 1 caption: TABLE 1 Taxonomy of the Surveyed Approaches
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3102676
+- Affiliation of the first author: school of software, tsinghua university, beijing,
+    china
+  Affiliation of the last author: school of software, tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_1.jpg
+  Figure 1 caption: Cross-domain gesture recognition, where persons may be at different
+    locations and orientations relative to Wi-Fi links, and environments (e.g., lab,
+    home, etc.). In this example, one male and one female are performing clapping
+    gestures in two domains.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_10.jpg
+  Figure 10 caption: t-SNE visualization of outlier and resident samples (7 and 8
+    are outliers).
+  Figure 2 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_2.jpg
+  Figure 2 caption: Dominant DFS of gesture differs with person orientations and locations.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_3.jpg
+  Figure 3 caption: Complex gestures cause multiple DFS components.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_4.jpg
+  Figure 4 caption: Accuracy of adversarial learning drops without target domain data.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_5.jpg
+  Figure 5 caption: System overview.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_6.jpg
+  Figure 6 caption: Relationship between the BVP and DFS profiles. Each velocity component
+    in BVP is projected onto the normal direction of a link, and contributes to the
+    power of the corresponding radial velocity component in the DFS profile.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_7.jpg
+  Figure 7 caption: The BVP series of a pushing and pulling gesture. The main velocity
+    component corresponding to the persons hand is highlighted with red circles in
+    all snapshots.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_8.jpg
+  Figure 8 caption: Diagram of dynamic link selection algorithm.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Widar_ZeroEffort_CrossDomain_Gesture_Recognition_With_WiFi\figure_9.jpg
+  Figure 9 caption: Structure of gesture recognition model.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yi Zhang
+  Name of the last author: Zheng Yang
+  Number of Figures: 31
+  Number of Tables: 2
+  Number of authors: 7
+  Paper title: 'Widar3.0: Zero-Effort Cross-Domain Gesture Recognition With Wi-Fi'
+  Publication Date: 2021-08-18 00:00:00
+  Table 1 caption: TABLE 1 Performance on Different Dates
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Outlier Detection Performance
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3105387
+- Affiliation of the first author: college of science and engineering, james cook
+    university, cairns, qld, australia
+  Affiliation of the last author: college of science and engineering, james cook university,
+    cairns, qld, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_1.jpg
+  Figure 1 caption: Occlusion handling and estimated depth by different methods in
+    the StillLife scene from the HCI Blender [11] light field dataset. The table cloth
+    is occluded by the wooden ball. The black pixels in (c)(g)(h) indicate there are
+    occlusions. The occlusion map (c) generated by the LFOCC [8] is far away from
+    the real occlusion in (g). The proposed method produces better initial and final
+    depth estimates, especially for preserving depth boundaries.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_2.jpg
+  Figure 2 caption: Consistency analysis. The orange part indicates the foreground
+    which occludes the blue background. The transparency of the orange part is for
+    better visualization. The photo-consistency in the unoccluded region (blue part
+    in line EC ) of a correctly refocused line (line EC ) is stronger than that derived
+    from the spatial consistency in an incorrectly refocused line (line KJ ).
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_3.jpg
+  Figure 3 caption: Pixel deviation histogram comparison between correctly and incorrectly
+    refocused light field images. When the pixel deviation is less than 0.005, the
+    pixel probability of correct refocusing is higher than that of incorrect refocusing.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_4.jpg
+  Figure 4 caption: Effectiveness of the basic vote cost and the distinguishing cost.
+    The basic vote cost (b) can preserve sharp and clean edges. The addition of the
+    distinguishing cost (c) further removes draw errors caused by an identical basic
+    vote cost.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_5.jpg
+  Figure 5 caption: Comparison of different costs to estimate the depth of a pixel
+    in a occlusion diffusion region. The proposed OAVC successfully produces the accurate
+    depth estimate, while other costs fail the challenge due to ineffective occlusion
+    handling.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_6.jpg
+  Figure 6 caption: Initial depth estimates using different costs demonstrates the
+    inherent occlusion-aware of the vote cost. The defocus cost (b) generates blurry
+    depth estimates at the edges due to occlusion diffusion. The LFOCC cost (c) has
+    a lot of artifacts at the edges, while there is obvious noise along the edges
+    in depth generated by the CAE (d). The proposed occlusion-aware vote cost (e)
+    produces cleaner and sharper depth estimates. The reader is encouraged to zoom
+    in for details.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_7.jpg
+  Figure 7 caption: Effectiveness of the initial depth refined by the weighted median
+    filter.
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_8.jpg
+  Figure 8 caption: Visual comparison of estimated depth by different methods on dense
+    and sparse synthetic light field datasets. The numbers after GT in the sub caption
+    are the disparity ranges. The StillLife and Furniture are from HCI Blender [11]
+    and Inria Sparse [23], respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\A_Novel_OcclusionAware_Vote_Cost_for_Light_Field_Depth_Estimation\figure_9.jpg
+  Figure 9 caption: Visual comparison of estimated depth by different methods on Stanford
+    real-world light field images [26] captured by Lytro Illum.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.87
+  Name of the first author: Kang Han
+  Name of the last author: Tao Huang
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: A Novel Occlusion-Aware Vote Cost for Light Field Depth Estimation
+  Publication Date: 2021-08-18 00:00:00
+  Table 1 caption: TABLE 1 Comparison of the Cumulative Pixel Probabilities of a Variety
+    of Deviation Values Under Correct and Incorrect Refocusing
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 MSE and BadPix Results of the Comparison Methods on the
+    Dense and Sparse Light Field Datasets
+  Table 3 caption: TABLE 3 Backgammon Fattening Results of the Comparison Methods
+  Table 4 caption: TABLE 4 Q25 Results of the Comparison Methods
+  Table 5 caption: TABLE 5 BadPix Performance With Varying Vote Thresholds on the
+    Dense (0.07) and Sparse (0.3) Light Field Datasets
+  Table 6 caption: TABLE 6 Average Run Time in Seconds per Light Field Image
+  Table 7 caption: TABLE 7 Surface Normal Accuracy of the Comparison Methods on the
+    4D Light Field Benchmark
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3105523
+- Affiliation of the first author: data61csiro (formerly known as nicta), canberra,
+    act, australia
+  Affiliation of the last author: data61csiro (formerly known as nicta), canberra,
+    act, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_1.jpg
+  Figure 1 caption: "Our end-to-end classification setting (Fig. 1a). We pass an image\
+    \ (or patches) via CNN and extract feature vectors \u03D5 from its last conv.\
+    \ layer and augment them by encoded spatial coordinates c . We perform pooling\
+    \ on a second-order matrix M by the Element-wise or Spectral Power Normalization\
+    \ G i or G \u02C6 i , resp. Index i indicates the operator i.e., MaxExp or Gamma.\
+    \ Fig. 1b shows the taxonomy of pooling. We distinguish element-wise and spectral\
+    \ operators (which operate on autocorrelationcovariance or the graph Laplacian\
+    \ matrices). Element-wise and spectral operators can be further divided into working\
+    \ with non-negative R + and real R values, and S + S ++ and Krein ( K ) spaces,\
+    \ resp. We derive so-called element-wise and spectral MaxExp operators, and we\
+    \ show that spectral MaxExpGamma (on autocorrelationcovariance) are approx. equivalent\
+    \ to the time-reversed Heat Diffusion Process (on the loopy graph Laplacian).\
+    \ MaxExp makes the underlying multivariate Gaussian closer to isotropic. Equivalently,\
+    \ the strong connections in the graph (thick edges) become weaker (thin lines)\
+    \ and more equalized."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_10.jpg
+  Figure 10 caption: "Evaluations on the Open MIC dataset. Fig. 10a shows 1-shot mean\
+    \ accuracy on Protocol I. Each point is averaged over 12 possible testing results\
+    \ from train-test pairs x \u2192 y where we use p1: shn+hon+clv, p2: clk+gls+scl,\
+    \ p3: sci+nat, p4: shx+rlc. Fig. 10b shows 1-shot mean accuracy on Protocol II.\
+    \ Training is performed on source images and testing on target images for every\
+    \ exhibition. Then every point in the plot is average over results on 10 exhibitions."
+  Figure 2 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_2.jpg
+  Figure 2 caption: "Gamma, AsinhE, MaxExp, and SigmE are illustrated in Figs. 2a\
+    \ and 2b while derivatives of Gamma and AsinhE are shown in Fig. 2c. Lastly, Gamma\
+    \ for several values of \u03B3 is shown in Fig. 2d from which its similarity to\
+    \ MaxExp in range 0\u20131 is clear."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_3.jpg
+  Figure 3 caption: "The profile of HDP is shown in Fig. 3a. Note the similarity of\
+    \ HDP to MaxExp. Fig. 3b shows that MaxExp and Gamma given by g MaxExp (\u03BB\
+    ) and g Gamma (\u03BB) are in fact upper bounds of HDP ( g HDP (\u03BB) )."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_4.jpg
+  Figure 4 caption: "The intuitive principle of the SPN. Given a discrete eigenspectrum\
+    \ following a Beta distribution in Fig. 4a, the push-forward distributions of\
+    \ MaxExp and HDP in Figs. 4b and 4d are very similar. For small \u03B3 , Gamma\
+    \ in Fig. 4c is also similar to MaxExp and HDP. Note that all three SPN functions\
+    \ whiten the spectrum (map the majority of values to be \u223C 1) thus reversing\
+    \ diffusion (acting as a spectral detector)."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_5.jpg
+  Figure 5 caption: "Fig. 5a shows our few-shot pipeline. We use feature encoding\
+    \ and similarity networks. Power Normalized second-order (SOP) support-query pairs\
+    \ are formed and passed to the similarity net. Support-query pairs of the same\
+    \ class receive positive labels. Fig. 5b is the \u03BA ratio w.r.t the J -shot\
+    \ value (see Eq. (27)). The curves show that as J grows (0 denotes the regular\
+    \ classification), the similarity learner has to memorize \u03BA\xD7 more co-occurrence\
+    \ (k,l) configurations if MaxExp is not used. The curves show for larger N ( N\u221D\
+    \ image size), not using MaxExp requires even more memorization."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_6.jpg
+  Figure 6 caption: The network architecture used in our SoSN model.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_7.jpg
+  Figure 7 caption: Each column shows examples of images from the Flower102, MIT67,
+    FMD, and Food-101 dataset, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_8.jpg
+  Figure 8 caption: Each column shows examples of fine-grained objects from the Open
+    MIC dataset which look similar but belong to different classes.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Power_Normalizations_in_FineGrained_Image_FewShot_Image_and_Graph_Classification\figure_9.jpg
+  Figure 9 caption: "Performance w.r.t. hyperparameters. Figs. 9a and 9b: \u03B2 -centering\
+    \ on Flower102 and \u03B1 for spatial coordinate encoding on FMD. Figs. 9c and\
+    \ 9d: The accuracy w.r.t. the \u03B7 \u2032 and \u03B7 parameters given SigmE\
+    \ and the spectral MaxExp."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Piotr Koniusz
+  Name of the last author: Hongguang Zhang
+  Number of Figures: 11
+  Number of Tables: 11
+  Number of authors: 2
+  Paper title: Power Normalizations in Fine-Grained Image, Few-Shot Image and Graph
+    Classification
+  Publication Date: 2021-08-24 00:00:00
+  Table 1 caption: TABLE 1 A Collection of Power Normalization Functions
+  Table 10 caption: TABLE 10 Evaluations on the Food-101 Dataset (5-way acc. Given)
+  Table 2 caption: TABLE 2 Spectral Power Normalizations
+  Table 3 caption: TABLE 3 The Flower102 Dataset
+  Table 4 caption: TABLE 4 The Food-101 Dataset
+  Table 5 caption: TABLE 5 The MIT67 Dataset
+  Table 6 caption: TABLE 6 The FMD Dataset
+  Table 7 caption: TABLE 7 The ImageNet 2012 Dataset
+  Table 8 caption: TABLE 8 Evaluations on the miniImageNet Dataset (5-way acc. Given)
+  Table 9 caption: TABLE 9 Evaluations on the Flower102 Dataset (5-way acc. Given)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3107164
+- Affiliation of the first author: department of ece & asri, seoul national university,
+    seoul, korea
+  Affiliation of the last author: department of ece & asri, seoul national university,
+    seoul, korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_1.jpg
+  Figure 1 caption: "\xD74 SR results on a real-world LR image. (a) LR image magnified\
+    \ with bicubic interpolation. (b) Result of RRDB [8]. (c) Result of KernelGAN\
+    \ [19] + ZSSR [20]. (d) Our unsupervised approach (ADL + RRDB) reconstructs a\
+    \ sharp and visually pleasing output without artifacts and aliasing compared with\
+    \ the existing methods. (e) Ground-truth patch from RealSR-V3 [14]. Images are\
+    \ cropped from Canon045.png."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_2.jpg
+  Figure 2 caption: Our two-stage approach for unpaired SR. (a) We first optimize
+    a downsampling model D to synthesize I LR from I HR . The primary goal is to learn
+    the distribution of downsampled images rather than a proper downsampling function.
+    (b) Using generated pairs, we train the SR model S , which can also be generalized
+    to the target LR images I LR . Dotted lines represent latent components that are
+    not available in the entire learning process. Blue items show learned elements
+    in each stage, and red elements denote the actual goal we want to achieve.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_3.jpg
+  Figure 3 caption: "Differences between the ground-truth and learned LR images under\
+    \ various configurations. (a) A reference HR. (b) A ground-truth LR patch I LR\
+    \ = ( I HR \u2217k) \u21932 we want to synthesize, where the kernel k is unknown.\
+    \ (c) The corresponding bicubic-downsampled LR which is different from I LR .\
+    \ (d) The absolute difference between I LR and generated LR from our downsampling\
+    \ model is visualized with color-coding, where red pixels indicate large differences.\
+    \ (e)-(h) Difference between I LR and outputs from the learned downsampler under\
+    \ (2), where the bicubic downsampling operator is used for L data . Difference\
+    \ maps are normalized for better visualization. See more details in Section 4.2."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_4.jpg
+  Figure 4 caption: Different formulation for the data term. We visualize how pixels
+    in I Down is constrained to I HR depending on the data term L data . (a) Data
+    loss from a predetermined kernel. (b) In the proposed LFL, we apply low-pass filters
+    to HR and downsampled images so that image contents can be preserved across different
+    scales regardless of the downsampling model. (c) In our adaptive data term, the
+    orange kernel is learned from training samples and iteratively adjusted inside
+    the training loops rather than handcrafted.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_5.jpg
+  Figure 5 caption: Examples of bicubic and randomly selected Gaussian kernels with
+    corresponding times 2 LR images. (a) We use DIV2K [7] 0869.png for the HR image
+    mathbf ItextHR . (b)-(f) We note that the bicubic kernel k0 contains positive
+    (green) and small negative (red) values together. The former two Gaussian kernels
+    k1 and k2 are isotropic, while later kernels k3 and k4 are anisotropic. We note
+    that there exist subtle differences between images from different downsampling
+    kernels. (g)-(k) We also visualize downsampled images mathbf ItextDown from the
+    proposed ADL formulation. Here, mathcal Di and barki refer to the downsampling
+    CNN mathcal D and approximated kernel bark in Algorithm 1 that are learned on
+    the synthetic DIV2K dataset from ki . Kernel boundaries are cropped for better
+    visualization. Best viewed with digital zoom.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_6.jpg
+  Figure 6 caption: Qualitative times 4 SR results on the various datasets. Patches
+    in each row are from the synthetic DIV2K [7] dataset 0820.png ( k1 ), 0853.png
+    ( k4 ), RealSR-V3 [14] dataset Canon006.png, and Nikon041.png, respectively. The
+    RRDB [8] model is used as a backbone SR architecture for our ADL as well as the
+    Oracle.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_7.jpg
+  Figure 7 caption: Evolution of the retrieved times 2 degradation kernel bark in
+    the proposed ADL. We visualize the estimated kernels from (6) on two different
+    datasets. For simplicity, we refer 1,741 iterations as one epoch. Since we apply
+    the ADL after 10 warm-up epochs, downsampling networks in (a) and (b) are trained
+    under LFL, not ADL. Furthermore, (a) and (b) visualize the linear approximations
+    of the learned downsamplers after a certain number of training epochs rather than
+    the approximated kernels bark . In the RealSR-V3 [14] dataset, no ground-truth
+    kernel is available for the Nikon camera configuration. We crop image boundaries
+    for better illustration.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_8.jpg
+  Figure 8 caption: Perceptual times 4 SR results on the DPED dataset. We note that
+    no ground-truth HR images exist for the dataset. Therefore, quantitative comparison
+    on the DPED images nor the oracle model is not available. mathcal P denotes the
+    RRDB [8] model learned with (9) to reconstruct more realistic textures and sharper
+    details. From the top, patches are cropped from the DPED-val 20.png, 49.png, and
+    63.png, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Toward_RealWorld_SuperResolution_via_Adaptive_Downsampling_Models\figure_9.jpg
+  Figure 9 caption: Effect of preprocessing on the DPED dataset. In ADL, appropriate
+    preprocessing is required for more effective learning. Patches are cropped from
+    DPED-val 45.png, 63.png, and 84.png, respectively.
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Sanghyun Son
+  Name of the last author: Kyoung Mu Lee
+  Number of Figures: 9
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Toward Real-World Super-Resolution via Adaptive Downsampling Models
+  Publication Date: 2021-08-24 00:00:00
+  Table 1 caption: TABLE 1 Evaluation of LR Images From Our Unsupervised Downsampler
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Training Configurations of Different SR Methods
+  Table 3 caption: TABLE 3 Blind Super-Resolution Results on Synthetic LR Images
+  Table 4 caption: TABLE 4 Blind Super-Resolution Results on Realistic LR Images
+  Table 5 caption: TABLE 5 Ablation Studies on the Proposed Method
+  Table 6 caption: TABLE 6 Ablation Study About the Proposed ADL Method
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3106790
+- Affiliation of the first author: department of computer science and engineering,
+    artificial intelligence graduate school, ulsan national institute of science and
+    technology, ulsan, republic of korea
+  Affiliation of the last author: school of mechanical and aerospace engineering,
+    seoul national university, seoul, republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_1.jpg
+  Figure 1 caption: 'Linear SLAM on the ICL-NUIM dataset [10]. The proposed L-SLAM
+    generates a consistent global planar map using a linear Kalman filter framework
+    instead of an expensive pose graph optimization. Left top: The tracked planar
+    features following the Manhattan structure are overlaid on top of the RGB images.
+    Left bottom: AR application results in the red circles with the international
+    space station and Elks head 3D models. Right: Global planar map and non-planar
+    regions are rendered by back-projecting the RGB-D images from the estimated camera
+    trajectory with L-SLAM. We omit the ceiling planar features for visibility.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_10.jpg
+  Figure 10 caption: 'The estimated camera trajectories on the TUM RGB-D dataset.
+    The estimated camera trajectories with L-SLAM (magenta) and ground-truth (black)
+    for the TUM RGB-D dataset in clockwise order: fr3strnotexfar, fr3strnotexnear,
+    fr3largecabinet, and fr3strtexfar.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_2.jpg
+  Figure 2 caption: Overview of the proposed L-SLAM algorithm. We highlight key components
+    (boxes filled in grey) of the proposed approach for our main contributions. Blue-dashed
+    box indicates the components of LPVO [18].
+  Figure 3 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_3.jpg
+  Figure 3 caption: "Manhattan world versus Atlanta world: (a) Manhattan frame represented\
+    \ by a rotation matrix R=[ r 1 , r 2 , r 3 ]\u2208SO(3) and the corresponding\
+    \ scene satisfying the Manhattan world. (b) Atlanta frame modeled by a rotation\
+    \ matrix R and an angle set \u03B1 m M m=2 [42] and a scene structure following\
+    \ the Atlanta world."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_4.jpg
+  Figure 4 caption: "Overview of the tracking-by-detection scheme. (a) Given a surface\
+    \ normal distribution N k at the k th frame with the previous local AF V k\u2212\
+    1 L (dashed arrows), we independently perform (b) mean shift-based AF tracking\
+    \ and (c) BnB-based AF detection. (d) We then apply the association step; associate\
+    \ tracked AF V k T and detected AF V k D into the local AF V k L (local association),\
+    \ where the orange arrows indicate the associated directions and the black arrow\
+    \ denotes a potential direction. In the global association, we associate the local\
+    \ AF V k L with the global AF V G , in which the typical arrows represent activated\
+    \ directions and the dashed purple arrow describes the de-activated direction.\
+    \ (e) As output, we obtain the updated local AF and global AF, where a new horizontal\
+    \ direction (cyan arrow) is born."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_5.jpg
+  Figure 5 caption: Example of the Kalman filter components for L-SLAM. (a) Example
+    of 3D indoor scene [49] with a specific view point (red color), and (b) the corresponding
+    RGB image. Results of plane detections supporting (c) the Manhattan frame and
+    (d) the Atlanta frame are overlaid on top of the RGB images, respectively, and
+    (e,f) the corresponding color-coded planar features are drawn in a 3-D space,
+    where we exclude a set of planes describing the vertical direction for better
+    visualization purpose. The detailed descriptions of each variable, the definition
+    of the state vector, and the measurement model for (g) the Manhattan world and
+    (h) the Atlanta world in Kalman filter.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_6.jpg
+  Figure 6 caption: 'Evaluation of the proposed tracking-by-detection on the synthetic
+    sequence. (a) Example of generated ground truth data with possible scenarios such
+    as birth, death, and revival. The corresponding results: (b) BnB-based AF detection
+    method [42], (c) MF tracking method (Manhattan only), and (d) the proposed method.
+    In contrast to the other comparison methods, our approach maintains a consistent
+    association between consecutive frames.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_7.jpg
+  Figure 7 caption: Selected motion estimation results of the proposed algorithm in
+    the ICL-NUIM dataset. The first and second columns show the structure-aware planar
+    features for mapping and localizing the camera position in the proposed L-SLAM
+    algorithm. Vertical surfaces are red or green and horizontal surfaces are blue
+    depending on their orientation. The magenta and black lines in the third column
+    represent the estimated and the ground-truth trajectories, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_8.jpg
+  Figure 8 caption: 'Qualitative result of office room sequences from the ICL-NUIM
+    dataset. Left: Synthetic scene 3D reconstruction of an office room from the ICL-NUIM
+    dataset, displaying both planar and non-planar regions with the estimated (magenta)
+    and the ground-truth (black) trajectories. Right: Color output, surface normal
+    map, non-planar regions only with gray scale, and orthogonal planar regions only
+    with RGB scale in clock-wise order. The ceilings are not shown for visibility.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\Linear_RGBD_SLAM_for_Structured_Environments\figure_9.jpg
+  Figure 9 caption: Qualitative result on fr3strnotexnearof the TUM RGB-D dataset.
+    Top and side views of the global 3D planar map generated by the proposed L-SLAM
+    algorithm from fr3strnotexnear (left). The structure-aware planar features are
+    overlaid on top of the original images of the respective scenes in clockwise order
+    (right).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Kyungdon Joo
+  Name of the last author: Hyoun Jin Kim
+  Number of Figures: 15
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Linear RGB-D SLAM for Structured Environments
+  Publication Date: 2021-08-24 00:00:00
+  Table 1 caption: TABLE 1 Advantages of L-SLAM Over Existing EKF-SLAM Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Computational Time Analysis
+  Table 3 caption: TABLE 3 Robustness of Rotation Estimation According to Variant
+    Noises
+  Table 4 caption: 'TABLE 4 Evaluation Results of ATE RMSE (unit: m) on ICL-NUIM Benchmark'
+  Table 5 caption: 'TABLE 5 Evaluation Results of ATE RMSE (unit: m) on TUM RGB-D
+    Benchmark'
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3106820
+- Affiliation of the first author: department of computer science and technology,
+    peking university, beijing, china
+  Affiliation of the last author: department of computer science and technology, peking
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_1.jpg
+  Figure 1 caption: '(a): Image-space has infinite open space, but deep responses
+    of most unknowns distribute finite low magnitude areas of deep space [6]. (b)-(d):
+    LENET++ DEEP RESPONSES TO KNOWNS AND UNKNOWNS. MNIST (blue) is used for known
+    training, and KMNIST (green), SVHN (yellow) and CIFAR-100 (orange) are used for
+    open set evaluation, where their similarity with MNIST gradually decreased. The
+    network in (b) was trained by Softmax, while the networks in (c) and (d) are trained
+    with Prototype Learning [3] and our novel Adversarial Reciprocal Prototype Learning
+    (ARPL). This paper addresses how to improve recognition by reducing the overlap
+    between the deep features from known samples and the features from different unknown
+    samples. In an application, a score threshold should be chosen to optimally separate
+    various unknown from known samples. Unfortunately, such a threshold is difficult
+    to find for either (b) or (c). A better separation is achievable with (d).'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_10.jpg
+  Figure 10 caption: The influence of ABN and FT on the accuracy of known and AUROC
+    for detecting unknown in the training process, where MNIST is the known dataset
+    and KMNIST is the unknown dataset. ABN can ensure that confining samples do not
+    made a negative effect on the classifier, and FT further enhances the ability
+    to distinguish unknown classes.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_2.jpg
+  Figure 2 caption: How to identify a cat in the OSR setting? Most methods focus on
+    learning the potentially representative features of cats as prototypes. In contrast,
+    Reciprocal Points, as potentially representative features of non-cats, identify
+    the cat by otherness. Here these Reciprocal Points constitute an instantiated
+    representation of the extra-class space, which can potentially be used to reduce
+    the uncertainty when solving the OSR problem.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_3.jpg
+  Figure 3 caption: An overview of the proposed Adversarial Reciprocal Point Learning
+    (ARPL) approach for open set recognition. (a) Reciprocal Points for Single Class
+    promote each known class far away from their reciprocal points. (b) Multi-Class
+    Adversarial Fusion induces the confrontation between multi-category bounded spaces
+    constructed by reciprocal points. As a result, the known classes are pushed to
+    the periphery of the feature space, and the unknown classes are limited in the
+    bounded space. (c) Instantiated Adversarial Enhancement generates more valid and
+    more diverse confusing samples to promote the reliability of the classifier.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_4.jpg
+  Figure 4 caption: The visualization of the feature responses of the neural network
+    to the samples from the confused generator. (a) is trained only by ARPL. (b) is
+    trained by ARPL+CS. The red points represent the embedding of the confusing samples
+    generated through instantiated adversarial enhancement.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_5.jpg
+  Figure 5 caption: The basic framework of training the confused generator. Here,
+    the generator maps a latent variable zi to the generated confusing sample G(zi)
+    , and the discriminator focuses on discriminating the real and generated samples.
+    The classifier with ABN is trained by ARPL and FT. An adversarial mechanism between
+    the known classes and reciprocal points is introduced here. On the one hand, the
+    generated images let the discriminator identify positive samples (i.e., those
+    close to known samples). On the other hand, the generated images should be samples
+    unknown to the classifier, so the embedding feature of the neural network with
+    respect to these samples is close to all reciprocal points.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_6.jpg
+  Figure 6 caption: (a) Several retrieval examples from KMNIST. The orange circle
+    represents the known class number 7, and the orange triangle represents the reciprocal
+    point corresponding to number 7. The red sample in the upper left corner indicates
+    a failure case, which is very similar to the known class number 3. (b) Generated
+    confusing images from adversarial training with the ARPL classifier on MNIST.
+    The topmost and bottommost correspond to the known training images.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_7.jpg
+  Figure 7 caption: (1) The first row is visualization in the learned feature space
+    of MNIST as known and KMNIST, SVHN, CIFAR100 as unknown. Color shapes in the middle
+    are data of unknown, and circles in color are data of known samples. Different
+    colors represent different classes. Colored triangles represent the reciprocal
+    points learned of different known categories. (2) The second row is the maximum
+    distance distribution between features and reciprocal points.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_8.jpg
+  Figure 8 caption: Ablation experiments on lambda with CIFAR10 as known data and
+    CIFAR100 as unknown data.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Adversarial_Reciprocal_Points_Learning_for_Open_Set_Recognition\figure_9.jpg
+  Figure 9 caption: (1) The first row is the Area Under the Receiver Operating Characteristic
+    (AUROC) applied to the data from MNIST as known and KMNIST, SVHN, CIFAR100 as
+    unknown. (2) The second row is Open Set Classification Rate curves provided for
+    the same algorithms. Compared with AUROC, more significant differences could be
+    observed through Open Set Classification Rate curves.
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.74
+  Name of the first author: Guangyao Chen
+  Name of the last author: Yonghong Tian
+  Number of Figures: 13
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Adversarial Reciprocal Points Learning for Open Set Recognition
+  Publication Date: 2021-08-24 00:00:00
+  Table 1 caption: TABLE 1 The AUROC Results of on Detecting Known and Unknown Samples
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Open Set Classification Rate (OSCR) Curve Results of
+    Open Set Recognition
+  Table 3 caption: TABLE 3 Distinguishing In- and Out-of-Distribution Test Set Data
+    for Image Classification Under Various Validation Setups
+  Table 4 caption: TABLE 4 Test Accuracy of Different Methods on CIFAR10, CIFAR100,
+    and Air-300
+  Table 5 caption: TABLE 5 Performance of Three Methods Using DomainNet
+  Table 6 caption: TABLE 6 Open Set Recognition Performance of Different Methods on
+    the Larger and More Difficult Datasets, Where ImageNet-1K as the Known Dataset
+    and ImageNet-O as the Unknown Dataset
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3106743

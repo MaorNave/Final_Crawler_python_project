@@ -1,0 +1,757 @@
+- Affiliation of the first author: school of cyber science and technology, beihang
+    university, beijing, china
+  Affiliation of the last author: department of automation, tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_1.jpg
+  Figure 1 caption: Illustration of the difference among (a) single image hiding [7],
+    (b) traditional dual image hiding [8], and (c) our multiple image hiding.
+  Figure 10 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_10.jpg
+  Figure 10 caption: Visual comparisons of the stego-2 images in dual image hiding
+    by different approaches. The values in the bracket are the PSNRSSIM values. The
+    stego-2 image is obtained by hiding both the secret-1 and secret-2 images into
+    the cover image. The first row represents the original and the enlarged parts
+    of the cover image, secret-1 image and secret-2 image. The second row shows the
+    enlarged parts of the stego-2 images for different methods. The third row shows
+    the residual errors between the stego-2 and the cover images (enhanced 5x). Better
+    viewing in electronic version after enlarging.
+  Figure 2 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_2.jpg
+  Figure 2 caption: The concealing and revealing results while hiding image in LL,
+    HL, LH and HH sub-bands,respectively. The higher values of PSNR and SSIM indicate
+    better image quality. (a) represents the concealing results of coverstego image
+    pair and (b) represents the revealing results of secretrecovered secret image
+    pair.
+  Figure 3 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_3.jpg
+  Figure 3 caption: The hiding results with one and two secret images, by traditional
+    methods LSB [9], HiDDeN [33], Baluja [7], and Weng et al. [24]. The first row
+    visualizes the enlarged parts of the stego-1 images with only secret-1 image hidden.
+    The second row shows the results of stego-2 images with both secret-1 and secret-2
+    images hidden. Better view in electronic version.
+  Figure 4 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_4.jpg
+  Figure 4 caption: "The general framework of DeepMIH in dual image hiding case. In\
+    \ the forward concealing process, a secret image x secret\u22121 is hidden in\
+    \ a cover image x cover through the first invertible hiding network (IHNN1) to\
+    \ generate a stego image x stego\u22121 . The importance map module receives x\
+    \ secret\u22121 , x cover and x stego\u22121 to generate an importance map to\
+    \ guide the next image hiding. Then the stego image x stego\u22121 is regarded\
+    \ as a \u201Cnew\u201D cover image in the second invertible network (IHNN2) to\
+    \ hide another secret image x secret\u22122 to generate the second stego image\
+    \ x stego\u22122 . In the backward revealing process, the x stego\u22122 is first\
+    \ fed to IHNN2 with a randomly sampled z 2 to recover x cr\u22122 and x sr\u2212\
+    2 . Then, x cr\u22122 and a randomly sampled z 1 is fed to IHNN1 to recover x\
+    \ sr\u22121 ."
+  Figure 5 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_5.jpg
+  Figure 5 caption: The architecture of our invertible hiding neural network (IHNN).
+    The IHNN is composed of the DWTIWT module and invertible hiding module. The left
+    blue arrows indicate the forward concealing process and the right red arrows indicate
+    the backward revealing process. Note that in IHNN, the backward revealing is the
+    inverse process of forward concealing, and thereby they share the same network
+    parameters.
+  Figure 6 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_6.jpg
+  Figure 6 caption: The architecture of our importance map (IM) module.
+  Figure 7 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_7.jpg
+  Figure 7 caption: The general framework of our DeepMIH for S (S>2) secret image
+    hiding. The yellow blocks represent the IHNNs, the green blocks represent the
+    IM module, and S denotes the number of secret images.
+  Figure 8 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_8.jpg
+  Figure 8 caption: Visualization of the stego images, recovered secret images and
+    importance map in dual image hiding by our DeepMIH method. The error maps of the
+    stego and recovered secret images are enhanced by 20x for better visualization.
+    Better viewing in electronic version after enlarging.
+  Figure 9 Link: articels_figures_by_rev_year\2022\DeepMIH_Deep_Invertible_Network_for_Multiple_Image_Hiding\figure_9.jpg
+  Figure 9 caption: Visualization of the wavelet sub-bands after DWT of different
+    images in dual image hiding. For better visualization, the LH, HL, and HH sub-bands
+    are enhanced by 10x. Better viewing in electronic version after enlarging.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Zhenyu Guan
+  Name of the last author: Yipeng Li
+  Number of Figures: 14
+  Number of Tables: 11
+  Number of authors: 7
+  Paper title: 'DeepMIH: Deep Invertible Network for Multiple Image Hiding'
+  Publication Date: 2022-01-10 00:00:00
+  Table 1 caption: TABLE 1 Summary of Notations in This Paper
+  Table 10 caption: TABLE 10 The User Study of DeepMIH on the Stego Images With S=3
+  Table 2 caption: TABLE 2 Benchmark Comparisons on Different Datasets, With the Best
+    Results in Bold and the Second Bests Underlined
+  Table 3 caption: TABLE 3 The Detection Accuracy Using SRNet [61]
+  Table 4 caption: TABLE 4 The Detection Accuracy Using Zhu-Net [62]
+  Table 5 caption: TABLE 5 The Detection Accuracy Using SiaStegNet [63]
+  Table 6 caption: TABLE 6 Ablation Study on Wavelet Transform, Low-Frequency Wavelet
+    Loss and Importance Map (IM) Module
+  Table 7 caption: TABLE 7 The Performance Comparison on COCO [59] Dataset With and
+    Without the Use of the Perceptual Loss
+  Table 8 caption: TABLE 8 The PSNR (dB) and SSIM Results of Our DeepMIH With Different
+    Number of Secret Images on COCO Dataset
+  Table 9 caption: TABLE 9 The Performance Comparison of Hiding Images in Concatenation
+    or Hiding Images in Series on COCO Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3141725
+- Affiliation of the first author: department of computer science, robotics and big
+    data labs, university of haifa, haifa, israel
+  Affiliation of the last author: department of computer science, robotics and big
+    data labs, university of haifa, haifa, israel
+  Figure 1 Link: articels_figures_by_rev_year\2022\Fast_and_Accurate_LeastMeanSquares_Solvers_for_High_Dimensional_Data\figure_1.jpg
+  Figure 1 caption: "Overview of Algorithm 1 and the steps in Section 1.3. Images\
+    \ left to right: Steps I and II (Partition and sketch steps): A partition of the\
+    \ input weighted set of n=48 points (in blue) into k=8 equal clusters (in circles)\
+    \ whose corresponding means are \u03BC , \u2026, \u03BC 8 (in red). The mean of\
+    \ P (and these means) is x (in green). Step III (Coreset step): Caratheodory (sub)set\
+    \ of d+1=3 points (bold red) with corresponding weights (in green) is computed\
+    \ only for these k=8\u226An means. Step IV (Recover step): the Caratheodory set\
+    \ is replaced by its corresponding original points (dark blue). The remaining\
+    \ points in P (bright blue) are deleted. Step V (Recursive step): Previous steps\
+    \ are repeated until only d+1=3 points remain. This procedure takes O(logn) iterations\
+    \ for k=2d+2 ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Fast_and_Accurate_LeastMeanSquares_Solvers_for_High_Dimensional_Data\figure_2.jpg
+  Figure 2 caption: Experimental results; see Table 3.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Fast_and_Accurate_LeastMeanSquares_Solvers_for_High_Dimensional_Data\figure_3.jpg
+  Figure 3 caption: Experimental results; see Table 3.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Fast_and_Accurate_LeastMeanSquares_Solvers_for_High_Dimensional_Data\figure_4.jpg
+  Figure 4 caption: Experimental results with competing methods; see Table 3.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Fast_and_Accurate_LeastMeanSquares_Solvers_for_High_Dimensional_Data\figure_5.jpg
+  Figure 5 caption: 'Running linear regression on the output of either: SVD-FUNC,
+    QR-FUNC, or our algorithm LINREG-BOOST.'
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.86
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Alaa Maalouf
+  Name of the last author: Dan Feldman
+  Number of Figures: 5
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Fast and Accurate Least-Mean-Squares Solvers for High Dimensional Data
+  Publication Date: 2022-01-11 00:00:00
+  Table 1 caption: TABLE 1 Table of Notations
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Four LMS Solvers That Were Tested With Algorithm 5
+  Table 3 caption: TABLE 3 Summary of Experimental Results
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3139612
+- Affiliation of the first author: department of computer science and engineering,
+    the hong kong university of science and technology, clear water bay, hong kong,
+    china
+  Affiliation of the last author: department of computer science and engineering,
+    the hong kong university of science and technology, clear water bay, hong kong,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_1.jpg
+  Figure 1 caption: Illustration of unimodal and multimodal inconsistency. In unimodal
+    inconsistency, similar input video frames are mapped to moderately different processed
+    frames within the same mode by f . In multimodal inconsistency, similar input
+    video frames may be mapped to processed frames within two or more modes by f .
+    A function g is to improve the temporal consistency for these two cases. Note
+    that g is not our model.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_10.jpg
+  Figure 10 caption: Analysis of blind temporal consistency via DVP. Both data fidelity
+    Fdata (a) and temporal inconsistency Ewarp (b) are increasing in the process of
+    training. (c) shows the results of our model after training for 1, 50, or 500
+    epochs. Our model can maintain a good balance between data fidelity and temporal
+    consistency after training for 50 epochs. After 500 epochs, our model overfits
+    the processed frames.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_2.jpg
+  Figure 2 caption: The overview of our framework for blind video temporal consistency.
+    The previous learning-based method [29] requires a large-scale dataset which consists
+    of input frames I t T t=1 and processed frames P t T t=1 pairs to train the network.
+    Different from this, our pipeline directly trains on a test video. The network
+    g is trained to mimic the image operator f . Note that network g is not a specific
+    type of network so that our pipeline can adapt to different tasks. For each iteration,
+    only one frame is used for training.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_3.jpg
+  Figure 3 caption: A confidence map can be calculated to exclude outliers.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_4.jpg
+  Figure 4 caption: 'A toy example that demonstrates deep video prior. The green dots
+    are the processed frames; the blue triangles are the output of the network; the
+    red stars are the center of processed frames. (a): Training by DVP on P t 8 t=1
+    with unimodal inconsistency. (b): Training by DVP on P t 8 t=1 with multimodal
+    inconsistency. (c): Training by DVP and IRT on P t 8 t=1 with multimodal inconsistency.
+    For all the cases, in the beginning, the outputs O t 8 t=1 tend to be consistent
+    with each other. After 200 iterations, outputs O t 8 t=1 tend to separate from
+    each other and completely overfit the processed frames P t 8 t=1 after 1000 iterations.
+    In (b), we notice that the output at the 200th iteration is not close to any ground
+    truth. That is to say, our output has performance degradation performance if we
+    only use the DVP for multimodal inconsistency. In (c), in cooperation with DVP
+    and IRT strategy, we can handle the challenging multimodal inconsistency.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_5.jpg
+  Figure 5 caption: An example of video propagation via DVP. Only the first input
+    frame has color and our method is able to propagate the color information to all
+    the other gray frames.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_6.jpg
+  Figure 6 caption: The framework of video propagation via DVP. We only train on a
+    few key frames and apply the trained network to infer other input images.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_7.jpg
+  Figure 7 caption: The PSNR on target images decreases with the distance to the reference
+    frame in video color propagation. The PSNR is calculated in the RGB space.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_8.jpg
+  Figure 8 caption: 'The input frames are processed by colorization [65] and white
+    balancing [18] respectively. As shown in these two examples, the results of Lai
+    et al. [29] look similar to the processed video but fail to preserve long-term
+    consistency. Also, the results by Bonneel et al. [3] have obvious performance
+    decay: the color is changed in an undesirable way. Our method solves the multimodal
+    inconsistency with IRT by producing a video with long-term consistency for the
+    main mode.'
+  Figure 9 Link: articels_figures_by_rev_year\2022\Deep_Video_Prior_for_Video_Consistency_and_Propagation\figure_9.jpg
+  Figure 9 caption: Mean intensity of frames on dehazing [15]. The video obtained
+    by DVP is temporally consistent.
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Chenyang Lei
+  Name of the last author: Qifeng Chen
+  Number of Figures: 15
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: Deep Video Prior for Video Consistency and Propagation
+  Publication Date: 2022-01-11 00:00:00
+  Table 1 caption: TABLE 1 Our Method Achieves Comparable Numerical Performance Compared
+    With Bonneel et al. [3] and Lai et al. [29]
+  Table 10 caption: TABLE 10 Quantitative Comparisons for the Effectiveness of Different
+    Augmentation Techniques
+  Table 2 caption: 'TABLE 2 Comparisons Among Our Method and Other Blind Temporal
+    Consistency Methods: Bonnel et al. [3], Lai et al. [29]'
+  Table 3 caption: TABLE 3 On Average, Our Results are Significantly Preferred in
+    the User Study on Blind Temporal Consistency
+  Table 4 caption: TABLE 4 Quantitative Results of Different Acceleration Strategies
+    for Blind Temporal Consistency via DVP
+  Table 5 caption: TABLE 5 Quantitative Results With Different Stopping Epoch Selection
+    Methods
+  Table 6 caption: TABLE 6 Quantitative Results of Different Network Architectures
+    for Blind Temporal Consistency via DVP
+  Table 7 caption: TABLE 7 Quantitative Comparisons of Video Propagation via DVP and
+    DeepRemaster [21]
+  Table 8 caption: TABLE 8 Quantitative Results for Video Object Segmentation
+  Table 9 caption: TABLE 9 Ablation Experiment for Progressive Propagation With Pseudo
+    Labels (PPPL)
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3142071
+- Affiliation of the first author: school of engineering science, simon fraser university,
+    burnaby, bc, canada
+  Affiliation of the last author: school of engineering science, simon fraser university,
+    burnaby, bc, canada
+  Figure 1 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_1.jpg
+  Figure 1 caption: 'A flowchart of the proposed 3-step PC sub-sampling strategy:
+    i) graph balancing (Sections 6 and 7), ii) similarity transform via GDPA [1],
+    and iii) graph sampling via GDAS [2].'
+  Figure 10 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_10.jpg
+  Figure 10 caption: SR reconstruction results obtained using GTV SR method from different
+    methods of sub-sampled Armadillo models under 0.2 sub-sampling ratio (Point total
+    in the ground truth model is 172,974). Here the surfaces are colorized by the
+    distance from the ground truth surface (color-map is included).
+  Figure 2 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_2.jpg
+  Figure 2 caption: 'Examples of three-nodes signed graphs: balanced (left) and unbalanced
+    (right).'
+  Figure 3 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_3.jpg
+  Figure 3 caption: An illustrative example of a 4-node line graph from [27].
+  Figure 4 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_4.jpg
+  Figure 4 caption: "An illustration of GDAS from [27] \xA92019 IEEE. (a) sampling\
+    \ node 3. (b) scaling node 3. (c) scaling nodes 2 and 3. (d) Discs after sampling\
+    \ node 3. (e) Discs after scaling node 3. (f) Discs after scaling nodes 2 and\
+    \ 3."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_5.jpg
+  Figure 5 caption: An example of an 8-node graph mathcal G with sets mathcal S= lbrace
+    1, 2, 3, 4rbrace and mathcal C= lbrace 5, 6rbrace .
+  Figure 6 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_6.jpg
+  Figure 6 caption: An example of consistent edges mathcal Fj and inconsistent edges
+    mathcal Hj connecting node jin mathcal C to mathcal S when beta j=1 (left), and
+    consistent edges mathcal Hj and inconsistent edges mathcal Fj when beta j-1 (right).
+    For simplicity, we omit edges connecting nodes within set mathcal S .
+  Figure 7 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_7.jpg
+  Figure 7 caption: An example for edge weight updating. A cycle i rightarrow j rightarrow
+    k with inconsistent negative edge (j,i) need to be removed (left); updated edge
+    weights after removing the negative inconsistent edge (right).
+  Figure 8 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_8.jpg
+  Figure 8 caption: An example of a PC model (left) and its associated sub-clouds
+    (right). Each color represents a different sub-cloud.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Point_Cloud_Sampling_via_Graph_Balancing_and_Gershgorin_Disc_Alignment\figure_9.jpg
+  Figure 9 caption: SR reconstruction results obtained using FGTV SR method from different
+    methods of sub-sampled Bunny models under 0.2 sub-sampling ratio (Point total
+    in the ground truth model is 35,947). Here the surfaces are colorized by the distance
+    from the ground truth surface (color-map is included).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chinthaka Dinesh
+  Name of the last author: "Ivan V. Baji\u0107"
+  Number of Figures: 12
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: Point Cloud Sampling via Graph Balancing and Gershgorin Disc Alignment
+  Publication Date: 2022-01-13 00:00:00
+  Table 1 caption: TABLE 1 PC Models Used to Test the Proposed Algorithms
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Average SR Reconstruction C2C(\xD7 10 \u22122 ) C2C(\xD7\
+    10-2) Error per PC Model for Different Sub-Sampling Algorithms (the Proposed Methods\
+    \ and Existing Model-Based Methods) Using Different PC SR Methods"
+  Table 3 caption: "TABLE 3 Average SR Reconstruction C2P(\xD7 10 \u22123 ) C2P(\xD7\
+    10-3) Error per PC Model for Different Sub-Sampling Algorithms (the Proposed Methods\
+    \ and Existing Model-Based Methods) Using Different PC SR Methods"
+  Table 4 caption: "TABLE 4 Comparisons Between Mean \u03BB min (B)(\xD7 10 \u2212\
+    3 ) \u03BBmin(B)\xD710-3 via AGBS [38] Method and Mean \u03BB min (B)(\xD7 10\
+    \ \u22123 ) \u03BBmin(B)\xD710-3 via Proposed Method"
+  Table 5 caption: TABLE 5 RE and DCS of Balanced Graphs Obtained From AGBS [38] Method
+    and the Proposed Method for Different PC Models
+  Table 6 caption: TABLE 6 Computational Complexity of Different Sub-Sampling Methods
+  Table 7 caption: TABLE 7 Average Execution Time (in Seconds) and Programming Language
+    for Different Sub-Sampling Methods
+  Table 8 caption: "TABLE 8 Average SR Reconstruction C2C(\xD7 10 \u22122 ) C2C(\xD7\
+    10-2) Error per PC Model for Different Sub-Sampling Algorithms (the Proposed Method\
+    \ and Existing Deep Learning Based Methods) Using Different PC SR Methods"
+  Table 9 caption: "TABLE 9 Average SR Reconstruction C2P(\xD7 10 \u22123 ) C2P(\xD7\
+    10-3) Error per PC Model for Different Sub-Sampling Algorithms (the Proposed Methods\
+    \ and Existing Deep Learning Based Methods) Using Different PC SR Methods"
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3143089
+- Affiliation of the first author: graduate school of science and engineering, hacettepe
+    university, ankara, turkey
+  Affiliation of the last author: computer engineering department, hacettepe university,
+    ankara, turkey
+  Figure 1 Link: articels_figures_by_rev_year\2022\Towards_ZeroShot_Sign_Language_Recognition\figure_1.jpg
+  Figure 1 caption: Illustration of the proposed zero-shot sign language recognition
+    (ZSSLR) approach. Two separate streams are used for both visual and auxiliary
+    class representations. Visual representation is obtained by encoding body and
+    estimated hand streams through spatiotemporal deep architectures. Class embeddings
+    are obtained by encoding textual dictionary definitions and attribute combinations.
+    We learn a compatibility function that links the visual representation to the
+    auxiliary class embeddings for zero-shot recognition.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Towards_ZeroShot_Sign_Language_Recognition\figure_2.jpg
+  Figure 2 caption: Example sequences and corresponding textual descriptions from
+    the ASL-Text (upper half) and MS-ZSSLR-WC (bottom half) datasets. For visualization
+    purposes, only the person regions of the videos are shown.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Towards_ZeroShot_Sign_Language_Recognition\figure_3.jpg
+  Figure 3 caption: t-SNE visualization of sign descriptions using BERT-[70] embeddings.
+    Nearby descriptions typically correspond to visually similar signs. Best viewed
+    in color, with zoom.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Towards_ZeroShot_Sign_Language_Recognition\figure_4.jpg
+  Figure 4 caption: ASL-Text validation set accuracy as a function of textual embedding
+    dimensionality, in the case of combined text and attribute class embeddings. The
+    768 bin corresponds using the original textual embeddings, without applying a
+    reduction layer.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Towards_ZeroShot_Sign_Language_Recognition\figure_5.jpg
+  Figure 5 caption: Correct (first four rows) and incorrect (last two rows) zero-shot
+    prediction examples on the ASL-Text and MS-ZSSLR-C datasets. The textual descriptions
+    of the predicted and ground-truth (separately for incorrect predictions) classes
+    are shown for each case.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Towards_ZeroShot_Sign_Language_Recognition\figure_6.jpg
+  Figure 6 caption: Influence of the attributes on the confidence scores of correct
+    classified samples of five randomly chosen classes. Each row corresponds to a
+    class and each column corresponds to an attribute. Shown numerical values indicate
+    the average influence of an attribute on the corresponding class confidence scores.
+    Thick boxes show the positive attribute relations according to the attribute based
+    class definitions. Lighter colors correspond to higher values. Best viewed in
+    color with zoom.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Towards_ZeroShot_Sign_Language_Recognition\figure_7.jpg
+  Figure 7 caption: Influence of positive attributes on the confidence scores of correctly
+    classified test samples, averaged over classes. Only the attributes positively
+    associated with at least 10 unseen classes are shown.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Towards_ZeroShot_Sign_Language_Recognition\figure_8.jpg
+  Figure 8 caption: Influence of the attributes on the confidence scores of zero-shot
+    misclassifications. Each row corresponds to a misclassification case, denoted
+    as ground-truth class rightarrow predicted class. Shown numerical values indicate
+    the average influence score according to Eq. (8). Thick boxes and circles indicate
+    that the corresponding attribute belongs to the corresponding predicted and ground-truth
+    classes, respectively. Lighter colors indicate to higher values, colors in each
+    row are predicted independently for better visualization. Best viewed in color
+    with zoom.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Yunus Can Bilge
+  Name of the last author: Nazli Ikizler-Cinbis
+  Number of Figures: 8
+  Number of Tables: 11
+  Number of authors: 3
+  Paper title: Towards Zero-Shot Sign Language Recognition
+  Publication Date: 2022-01-13 00:00:00
+  Table 1 caption: TABLE 1 Statistics of the Origin Datasets; ASLLVD and MS-ASL
+  Table 10 caption: TABLE 10 Generalized Zero-Shot Learning (GZSL) Results on MS-ZSSLR-C
+  Table 2 caption: TABLE 2 Statistics of the Proposed ZSSLR Benchmark Datasets
+  Table 3 caption: TABLE 3 Comparison of ZSL Models on ASL-Text
+  Table 4 caption: TABLE 4 Evaluation of Two-Stream Spatiotemporal Representation
+    on ASL-Text
+  Table 5 caption: TABLE 5 Evaluation of Two-Stream Spatiotemporal Representation
+    on MS-ZSSLR-C
+  Table 6 caption: TABLE 6 Comparison of Different Temporal Units With LLE Method
+    on ASL-Text and MS-ZSSLR-C Datasets
+  Table 7 caption: TABLE 7 Evaluation of Auxiliary Knowledge Sources on ASL-Text and
+    MS-ZSSLR-C Datasets, Using LLE Model With Body and Hand Streams
+  Table 8 caption: TABLE 8 Evaluation Over the MS-ZSSLR-C and MS-ZSSLR-W Dataset Combinations
+  Table 9 caption: TABLE 9 Generalized Zero-Shot Learning (GZSL) Results on ASL-Text
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3143074
+- Affiliation of the first author: department of mathematics, indian institute of
+    space science and technology, thiruvananthapuram, kerala, india
+  Affiliation of the last author: department of mathematics, indian institute of space
+    science and technology, thiruvananthapuram, kerala, india
+  Figure 1 Link: articels_figures_by_rev_year\2022\Neighborhood_Preserving_Kernels_for_Attributed_Graphs\figure_1.jpg
+  Figure 1 caption: Example for hierarchy.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Neighborhood_Preserving_Kernels_for_Attributed_Graphs\figure_2.jpg
+  Figure 2 caption: (a) Two sample graphs G 1 and G 2 , (b) WL color refinement, (c)
+    direct product graph, (d) separation of neighborhood preserving or structurally
+    similar edges(bold lines) and dissimilar edges(dashed lines).
+  Figure 3 Link: articels_figures_by_rev_year\2022\Neighborhood_Preserving_Kernels_for_Attributed_Graphs\figure_3.jpg
+  Figure 3 caption: "Two nodes u,v in the graph G and two nodes u \u2032 , v \u2032\
+    \ in the graph G \u2032 with the same WL refined labels and corresponding edges\
+    \ having similar label. The product graph G P containing additional pair of nodes\
+    \ and an additional edge."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Neighborhood_Preserving_Kernels_for_Attributed_Graphs\figure_4.jpg
+  Figure 4 caption: "Convolution as vectorization for a sample of two WL refined edge\
+    \ addresses w1 and w2 . (a) and (b) represents node attributes in G,Gprime with\
+    \ an address w1 and w2 respectively. (c) represents arranging attribute vectors\
+    \ to compute convolution as a vectorization process, oplus denotes concatenation\
+    \ and \xD7 denotes Hadamard product."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Neighborhood_Preserving_Kernels_for_Attributed_Graphs\figure_5.jpg
+  Figure 5 caption: Runtime comparison of pairwise and global computation of NP kernel
+    for synthetic graphs at graph density 20%, 40%, 60%, and 80% respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Neighborhood_Preserving_Kernels_for_Attributed_Graphs\figure_6.jpg
+  Figure 6 caption: The plot of cardinality of WL refined edge addresses and percentage
+    of kernel values getting updated against WL iterations for the datasets.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Asif Salim
+  Name of the last author: S. Sumitra
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Neighborhood Preserving Kernels for Attributed Graphs
+  Publication Date: 2022-01-18 00:00:00
+  Table 1 caption: TABLE 1 Classification Accuracy of the Proposed Kernels With State-of-the-Arts
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Classification Accuracy in MNIST Dataset
+  Table 3 caption: TABLE 3 Runtime of the Proposed Kernels With State-of-the-Arts
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3143806
+- Affiliation of the first author: state key laboratory for novel software technology,
+    nanjing university, nanjing, jiangsu, china
+  Affiliation of the last author: department of electrical, computer and biomedical
+    engineering, ryerson university, toronto, on, canada
+  Figure 1 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_1.jpg
+  Figure 1 caption: An effective multi-scale and -feature scheme is leveraged in our
+    normal refinement paradigm. We explore different types of feature representations
+    from an input point cloud (black arrows), and incorporate them into Refine-Net
+    (blue arrows). The green arrow denotes the normal estimation effort to obtain
+    the initial normals which are further processed by a multi-scale scheme in the
+    refinement.
+  Figure 10 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_10.jpg
+  Figure 10 caption: 'Visual comparison of estimated normals on two real-scanned models.
+    The average normal angular errors (mean) are: (1st row) 8.3, 10.2, 8.7, 8.7, 7.9,
+    7.8, 7.0; (2nd row) 10.0, 11.9, 10.0, 10.2, 10.2, 9.5, 8.6. Our Refine-Net is
+    better at recovering facial details of the two models and is able to remove noise
+    on flat areas.'
+  Figure 2 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_2.jpg
+  Figure 2 caption: Visual comparison of estimated normal results, in which normals
+    are rendered to RGB colors. The proposed Refine-Net is better at recovering details
+    and sharp edges. (a) is the depth image (noisy input) with high resolution zoom-ins.
+    (d) is the original RGB image. (b) and (e) show the normal estimation result of
+    Nesti-Net [21] and the corresponding refined result by our network. (c) is our
+    initial normal result, and (f) is the result of our full pipeline. Clear improvements
+    can be observed from tiny objects (in the red bounding box) and sharp feature
+    regions (in the black bounding box).
+  Figure 3 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_3.jpg
+  Figure 3 caption: 'The overall architecture of Refine-Net. For a target point, its
+    initial normal is first extended to a multi-scale version using bilateral filtering.
+    Then, in each branch, the normal feature is extracted and refined using a multi-feature
+    scheme: 1) Point Module introduces the additional point feature from a local patch
+    to produce a new feature in the first refinement; 2) Height-map Module uses the
+    constructed height-maps to further improve the normal; 3) Connection Module is
+    designed to combine the normal feature and the learned transformation T in each
+    step of the refinement. Finally, the outputs from all branches are collected to
+    predict the final normal.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_4.jpg
+  Figure 4 caption: "Structure of our connection module. Three alternative choices\
+    \ (top) for constructing a transformation matrix T are provided when inputting\
+    \ a normal vector V\u2208 R 3 (refinement 1). If the input is a normal feature\
+    \ V\u2208 R q (refinement 2), we propose to leverage the weight matrix option\
+    \ (bottom)."
+  Figure 5 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_5.jpg
+  Figure 5 caption: Three candidate patches around the target point (red point) are
+    shown. The patch centered at the target point (left) is unsuitable for the estimation
+    since it contains undesired points from other sides of the edge. Instead, we propose
+    to select a better neighboring patch (right) which is more consistent for detecting
+    the underlying surface. The multi-scale scheme makes more choices available to
+    further promote estimation robustness.
+  Figure 6 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_6.jpg
+  Figure 6 caption: Selection for the best-fitting normal of the green point. (a)
+    represents the input points near a sharp edge and the ground truth normal NGT
+    . (b) and (c) describe two selected anisotropic normals and the corresponding
+    patch points. The black arrow denotes the signed distance from pi to pmathbf refj
+    , which determines the better one (patch 2).
+  Figure 7 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_7.jpg
+  Figure 7 caption: 'Visual comparison of estimated normals with other methods: PCA
+    [26], HF [44], PCV [18], PCPNet [22] and Nesti-Net [21]. We also give our MFPS
+    and Refine-Net results. The 1st and 3rd rows denote the normal results rendered
+    in RGB colors. The average normal angular errors (mean) are: (1st row) 4.34, 6.37,
+    1.63, 1.49, 5.37, 1.66, 0.88; (3rd row) 8.14, 6.27, 5.60, 5.71, 6.22, 6.16, 4.99.
+    The 2nd and 4th rows denote the normal errors, mapped to a heatmap according to
+    the color bar on the right. It can be seen that more errors occur near sharp edges
+    (2nd row) and facial details (4th row). Our method suffers the least from these
+    challenges.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_8.jpg
+  Figure 8 caption: "Visual comparison of estimated normals on synthetic models. \u201C\
+    PCP+Ours\u201D indicates that Refine-Net takes PCPNet [22] results as initial\
+    \ normals. \u201CNesti+Ours\u201D indicates the Nesti-Net [21] results as initial\
+    \ normals. By applying our normal refinement system, the over-smoothed sharp edge\
+    \ (1st row) is recovered and tiny details on the wings of gargoyle (2nd row) are\
+    \ clearer to observe."
+  Figure 9 Link: articels_figures_by_rev_year\2022\RefineNet_Normal_Refinement_Neural_Network_for_Noisy_Point_Clouds\figure_9.jpg
+  Figure 9 caption: Visual comparison of normal estimation results on the scanned
+    point clouds from the NYU Depth V2 dataset [57]. We show the scanned depth map
+    (noisy input) in (a) and the corresponding RGB image in (g). PCPNet [22] and Nesti-Net
+    [21] tend to smooth the captured small objects and edges. Our method clearly produces
+    better normal results with nice geometric details.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Haoran Zhou
+  Name of the last author: Xiao-Ping Zhang
+  Number of Figures: 16
+  Number of Tables: 8
+  Number of authors: 9
+  Paper title: 'Refine-Net: Normal Refinement Neural Network for Noisy Point Clouds'
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Normal Estimation Results on the Synthetic PCPNet Dataset
+    [22], Evaluated as Angular RMS Errors
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of Normal Estimation Errors on the Synthetic
+    Dataset [23], Evaluated as Mean Angular Error (Mean) and Root Mean Square Error
+    (Rmse)
+  Table 3 caption: TABLE 3 Comparison of Normal Estimation Accuracy Using PGP5 and
+    PGP10 on the Synthetic Dataset [23]
+  Table 4 caption: TABLE 4 Comparison of Normal Estimation Results on Real-Scanned
+    Dataset From Wang et al. [23]
+  Table 5 caption: TABLE 5 Comparison of Complexity and Execution Times (1K Points)
+    of Different Normal Estimation Networks
+  Table 6 caption: TABLE 6 Network Architecture Details of Height-map Modules for
+    Refine-Net (Left) and Ablation Network (Right)
+  Table 7 caption: TABLE 7 The Normal Estimation Errors of Ablation Networks on the
+    Synthetic Dataset [23]
+  Table 8 caption: TABLE 8 Comparison of the L1 and L2 Losses on the PCPNet Dataset
+    [22], Evaluated as RMS Errors
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3145877
+- Affiliation of the first author: meituan inc., beijing, china
+  Affiliation of the last author: zhejiang university, hangzhou, zhejiang, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Instance_and_Panoptic_Segmentation_Using_Conditional_Convolutions\figure_1.jpg
+  Figure 1 caption: CondInst uses instance-aware mask heads to predict the mask for
+    each instance. K is the number of instances to be predicted. Note that each output
+    map only contains the mask of one instance. The filters in the mask head vary
+    with different instances, which are dynamically-generated and conditioned on the
+    target instance. ReLU is used as the activation function (excluding the last conv.
+    layer).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Instance_and_Panoptic_Segmentation_Using_Conditional_Convolutions\figure_2.jpg
+  Figure 2 caption: "The overall architecture of CondInst. C 3 , C 4 and C 5 are the\
+    \ feature maps of the backbone network (e.g., ResNet-50). P 3 to P 7 are the FPN\
+    \ feature maps as in [10], [42]. F bottom is the bottom branchs output, whose\
+    \ resolution is the same as that of P 3 . Following [32], the bottom branch aggregates\
+    \ the feature maps P 3 , P 4 and P 5 . F ~ bottom is obtained by concatenating\
+    \ the relative coordinates to F bottom . The classification head predicts the\
+    \ class probability p x,y of the target instance at location (x,y) , same as in\
+    \ FCOS. The controller generates the filter parameters \u03B8 x,y of the mask\
+    \ head for the instance. Similar to FCOS, there are also center-ness and box heads\
+    \ in parallel with the controller (not shown in the figure for simplicity). Note\
+    \ that the heads in the dashed box are repeatedly applied to P 3 \u22EF P 7 .\
+    \ The mask head is instance-aware, and is applied to F ~ bottom as many times\
+    \ as the number of instances in the image (refer to Fig. 1)."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Instance_and_Panoptic_Segmentation_Using_Conditional_Convolutions\figure_3.jpg
+  Figure 3 caption: Illustration of CondInst for panoptic segmentation by attaching
+    a semantic segmentation branch. The semantic segmentation branch follows [38].
+    Results from the instance segmentation and segmentation segmentation branches
+    are combined together using the same post-processing as in [17].
+  Figure 4 Link: articels_figures_by_rev_year\2022\Instance_and_Panoptic_Segmentation_Using_Conditional_Convolutions\figure_4.jpg
+  Figure 4 caption: 'Qualitative results without relative coordinates or bottom features
+    as inputs to the dynamic mask heads. From top to bottom: only with relative coordinates,
+    only with bottom features and with both. We can see that the bottom features are
+    crucial to the details of the instance masks, and relative coordinates can help
+    the model distinguish between different instances.'
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.77
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Zhi Tian
+  Name of the last author: Chunhua Shen
+  Number of Figures: 4
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: Instance and Panoptic Segmentation Using Conditional Convolutions
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Instance Segmentation Results With Different Architectures
+    of the Mask Head on the MS-COCO val2017 val2017 Split
+  Table 10 caption: TABLE 10 Panoptic Segmentation on the COCO Test Test- Dev Dev
+    Data
+  Table 2 caption: TABLE 2 Instance Segmentation Results by Varying the Number of
+    Channels of the Bottom Branchs Output (i.e., C bottom Cbottom) on the MS-COCO
+    val2017 val2017 Split
+  Table 3 caption: TABLE 3 Ablation Study of the Input to the Mask Head on MS-COCO
+    val2017 val2017 Split
+  Table 4 caption: TABLE 4 Instance Segmentation Results on MS-COCO val2017 val2017
+    Split by Varying the FPN Feature Level for the Bottom Module
+  Table 5 caption: TABLE 5 The Instance Segmentation Results on MS-COCO val2017 val2017
+    Split by Changing the Factor Used to Upsample the Mask Predictions
+  Table 6 caption: TABLE 6 Instance Segmentation Results With Different NMS Algorithms
+  Table 7 caption: TABLE 7 Instance Segmentation Comparisons With State-of-the-Art
+    Methods on MS-COCO Test Test- Dev Dev
+  Table 8 caption: TABLE 8 The Mask AP and Inference Speed of the Real-Time CondInst
+    Models on the COCO Test Test- Dev Dev Data
+  Table 9 caption: "TABLE 9 Instance Segmentation Results on Cityscapes val val (\u201C\
+    AP [ val val]\u201D Column) and Test Test (Remaining Columns) Splits"
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3145407
+- Affiliation of the first author: school of computer science, nankai university,
+    tianjin, china
+  Affiliation of the last author: sea ai lab, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\Vision_Permutator_A_Permutable_MLPLike_Architecture_for_Visual_Recognition\figure_1.jpg
+  Figure 1 caption: Basic architecture of the proposed Vision Permutator. The evenly
+    divided image patches are tokenized with linear projection first and then fed
+    into a sequence of Permutators for feature encoding. A global average pooling
+    layer followed by a fully-connected layer is finally used to predict the class.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Vision_Permutator_A_Permutable_MLPLike_Architecture_for_Visual_Recognition\figure_2.jpg
+  Figure 2 caption: Basic structure of the proposed Permute-MLP layer. The proposed
+    Permute-MLP layer contains three branches that are responsible for encoding features
+    along the height, width, and channel dimensions, respectively. The outputs from
+    the three branches are then combined using element-wise addition, followed by
+    a fully-connected layer for feature fusion.
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Qibin Hou
+  Name of the last author: Jiashi Feng
+  Number of Figures: 2
+  Number of Tables: 8
+  Number of authors: 6
+  Paper title: 'Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition'
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Configurations of Different Vision Permutator Models
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Top-1 Accuracy Comparison With the Recent MLP-Like Models
+    on ImageNet [3], ImageNet Real [44], and ImageNet-V2 [45]
+  Table 3 caption: TABLE 3 Top-1 Accuracy Comparison With Classic CNNs and Vision
+    Transformers on ImageNet [3], ImageNet Real [44], and ImageNet-V2 [45]
+  Table 4 caption: TABLE 4 Role of Fine-Level Token Representation Encoding
+  Table 5 caption: TABLE 5 Role of the Model Scale
+  Table 6 caption: TABLE 6 Ablation on Data Augmentation Methods
+  Table 7 caption: TABLE 7 Ablation on Vision Permutator.
+  Table 8 caption: 'TABLE 8 Results of Finetuning the Pretrained ViP-S7 to Downstream
+    Datasets: CIFAR10, CIFAR100, and iNaturalist 2021 [49]'
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3145427
+- Affiliation of the first author: school of cyber science and technology, beihang
+    university, beijing, china
+  Affiliation of the last author: department of computer science, university of illinois
+    at chicago, chicago, il, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Reinforced_Incremental_and_CrossLingual_Event_Detection_From_Social_Messages\figure_1.jpg
+  Figure 1 caption: Incremental life-cycle and cross-lingual transferring mechanisms
+    in FinEvent architecture.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Reinforced_Incremental_and_CrossLingual_Event_Detection_From_Social_Messages\figure_2.jpg
+  Figure 2 caption: The architecture of the proposed FinEvent.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Reinforced_Incremental_and_CrossLingual_Event_Detection_From_Social_Messages\figure_3.jpg
+  Figure 3 caption: Long-tailed distribution and data imbalance challenge in social
+    stream. The curve and bar indicate the density and count of messages in one event,
+    respectively. The order of magnitude of message count is 10 3 .
+  Figure 4 Link: articels_figures_by_rev_year\2022\Reinforced_Incremental_and_CrossLingual_Event_Detection_From_Social_Messages\figure_4.jpg
+  Figure 4 caption: Cluster visualization of message representations in the detection
+    stage.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Reinforced_Incremental_and_CrossLingual_Event_Detection_From_Social_Messages\figure_5.jpg
+  Figure 5 caption: Multi-agent reinforcement learning process in the online maintenance
+    stage. We summarize the epochs of all time periods. Note that each process from
+    fluctuation to stability is a pre-training or maintenance stage. The figure contains
+    a total of one pre-training process and seven maintenance processes.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Reinforced_Incremental_and_CrossLingual_Event_Detection_From_Social_Messages\figure_6.jpg
+  Figure 6 caption: Deep reinforcement learning process in the online detection stage.
+    We show the DRL-DBSCAN parameter adjustment and NMI change process of block M7
+    as an example of DRL-DBSCAN, where the green marked points represents the final
+    convergence parameter.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hao Peng
+  Name of the last author: Philip S. Yu
+  Number of Figures: 6
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Reinforced, Incremental and Cross-Lingual Event Detection From Social
+    Messages
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Glossary of Notations
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Offline Evaluation Results on the Twitter Dataset.
+  Table 3 caption: TABLE 3 Incremental Evaluation NMIs
+  Table 4 caption: TABLE 4 Incremental Evaluation AMIs
+  Table 5 caption: TABLE 5 Incremental Evaluation ARIs
+  Table 6 caption: TABLE 6 Ablation Study for Neighbor Sampler Strategy, Intra-Relation
+    Aggregation AG G intra AGGintra and Inter-Relation Aggregation AG G inter AGGinter
+  Table 7 caption: TABLE 7 Preserving Thresholds in the Detection Stage
+  Table 8 caption: TABLE 8 DBSCAN Parameters in the Detection Stage
+  Table 9 caption: TABLE 9 Cross-Lingual Transferring Evaluation on French Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3144993

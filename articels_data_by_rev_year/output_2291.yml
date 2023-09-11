@@ -1,0 +1,798 @@
+- Affiliation of the first author: "\xE9cole polytechnique f\xE9d\xE9rale de lausanne,\
+    \ computer vision laboratory, lausanne, switzerland"
+  Affiliation of the last author: "\xE9cole polytechnique f\xE9d\xE9rale de lausanne,\
+    \ computer vision laboratory, lausanne, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_1.jpg
+  Figure 1 caption: From people flow to crowd density. (a) Original image. (b) Optical
+    flow. Red denotes people moving right and blue moving left. The overlaid orange
+    box encloses people moving slowly or not at all, the pink box people moving left,
+    and the green box people moving right. (c) Estimated flow of people moving right.
+    People moving left, such as those in the pink box, do not contribute to it, whereas
+    those in the green box do. (d) Flow of people moving left. The situations within
+    the pink and green box are reversed. (e) Estimated flow of people staying within
+    the same grid location from one time instant to the next, such as those within
+    the orange box. They are not necessarily static. They may simply not have had
+    time to change location between the two time instants. (f) Estimated flow of people
+    moving up. As no one does, it is almost zero everywhere. (g) Density map inferred
+    by summing all the flows incident on a particular location. (h) Ground truth density
+    map.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_10.jpg
+  Figure 10 caption: Ground plane density estimation in Venice. An image and its corresponding
+    ground plane density map estimation.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_2.jpg
+  Figure 2 caption: "People flows. (a) The crowd density at time t at a given location\
+    \ can only come from neighboring grid locations at time t\u22121 and flow to neighboring\
+    \ grid locations at time t+1 , in both cases including the location itself. (b)\
+    \ For each location not at the boundary of the image plane, there are nine locations\
+    \ reachable within a single time step, including the location itself. For locations\
+    \ at the edge of the image plane, we add a tenth location that represents the\
+    \ rest of the world. It allows for flows of people who either leave the image\
+    \ or enter it from outside."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_3.jpg
+  Figure 3 caption: 'Model architecture: Two consecutive RGB image frames are fed
+    to the same encoder network that relies on the CAN scale-aware feature extractor
+    of [24]. These multi-scale features are further concatenated and fed to a decoder
+    network to produce the final people flow maps.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_4.jpg
+  Figure 4 caption: Our active learning pipeline. We first annotate a fraction of
+    the training image patches, use them to train the network while minimizing the
+    consistency and adversarial loss terms, and then run inference on the others.
+    We then select patches where the people conservation constraints are most violated
+    for further human annotation and iterate the process.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_5.jpg
+  Figure 5 caption: "Spatial people conservation constraint. An image from Venice\
+    \ [24] dataset, we could split this image into 4\xD74 patches. Any adjacent a\xD7\
+    a patches would constitute a super-patch. The spatial people conservation constraint\
+    \ hold between any super-patch and all the patches inside it. For example, if\
+    \ we only annotate the 15th patch, one of the people conservation constraint is\
+    \ that the number of people in a super-patch that consists of the 11th, 12th,\
+    \ 15th and 16th patches, equals to the sum of the number of people in the 11th,\
+    \ 12th, 15th and 16th patches."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_6.jpg
+  Figure 6 caption: Estimated optical flow in FDST. An image and the corresponding
+    optical flow estimated using PWC-Net [82].
+  Figure 7 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_7.jpg
+  Figure 7 caption: Ground-truth optical flow in CrowdFlow. (Left) Original image.
+    (Right) Corresponding optical flow map.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_8.jpg
+  Figure 8 caption: Density estimation in CrowdFlow. People are running counterclockwise.
+    The estimated people density map is close to the ground-truth one. It was obtained
+    by summing the flows towards the 9 neighbors of Fig. 2b. They are denoted by the
+    arrows and the circle. The latter corresponds to people not moving and is, correctly,
+    empty. Note that the flow of people moving down is highest on the left of the
+    building, moving right below the building, and moving up on the right of the building,
+    which is also correct. Inevitably, there is also some noise in the estimated flow,
+    some of which is attributable to body shaking while running.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Counting_People_by_Estimating_People_Flows\figure_9.jpg
+  Figure 9 caption: Density estimation in FDST. People mostly move from left to right.
+    The estimated people density map is close to the ground-truth one. It was obtained
+    by summing the flows towards the 9 neighbors of Fig. 2b. They are denoted by the
+    arrows and the circle. Strong flows occur in (g),(h), and (i), that is, moving
+    left, moving right, or not having moved. Note that the latter does not mean that
+    the people are static but only that they have not had time to change grid location
+    between the two time instants.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Weizhe Liu
+  Name of the last author: Pascal Fua
+  Number of Figures: 13
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Counting People by Estimating People Flows
+  Publication Date: 2021-08-05 00:00:00
+  Table 1 caption: TABLE 1 Notations
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparative Results on Different Datasets
+  Table 3 caption: TABLE 3 People Flow versus People Densities
+  Table 4 caption: TABLE 4 Training the Optical Flow Regressor
+  Table 5 caption: TABLE 5 Using the Spatial Loss Term and Reversing the Flows
+  Table 6 caption: TABLE 6 Ablation Study of Annotation Interval Value on CrowdFlow,
+    FDST and UCSD
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3102690
+- Affiliation of the first author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, china
+  Affiliation of the last author: university of california at merced, merced, ca,
+    usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_1.jpg
+  Figure 1 caption: One synthetic example of the proposed joint filtering on image
+    deblurring. Our method is based on a spatially variant linear representation model
+    (SVLRM), where the target image (i.e., the deblurred image (f)) can be linearly
+    represented by the guidance image (i.e., the short exposure image in (b)). The
+    proposed approach estimates the linear representation coefficients (i.e., (g))
+    by a deep convolutional neural network which is constrained by the SVLRM. As the
+    SVLRM is able to capture the structural details of the input and guidance image
+    well (see (f)), our method generates better results than those based on the local
+    linear representation model (e.g., [2]) and the state-of-the-art methods on each
+    task (e.g., image deblurring [23], [24]).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_10.jpg
+  Figure 10 caption: One real example from [73] on flash image deblurring. The proposed
+    approach generates a much clearer result.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_2.jpg
+  Figure 2 caption: Problems of the local linear representation model (1) in joint
+    filtering. As shown in (b) and (c), the linear representations computed by local
+    image patches do not model the structural information of the guidance image well.
+    By applying the linear representation model (3), the target image (d) contains
+    extraneous textures, and the edges are not preserved well. In contrast, the proposed
+    spatially variant linear representation model (5) can better capture the structural
+    information of the guidance and input images and determine whether the structural
+    details of the guidance image should be transferred to the target image, leading
+    to a better target image in (h).
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_3.jpg
+  Figure 3 caption: "Architecture and parameters of the proposed network based on\
+    \ the SVLRM. \u201CCR\u201D denotes the convolutional layer followed by a non-linear\
+    \ LeakyReLU function and \u201CC\u201D denotes the convolutional layer."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_4.jpg
+  Figure 4 caption: "On the depth image upsampling application ( \xD78 ). The proposed\
+    \ method generates the depth images with sharper boundaries."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_5.jpg
+  Figure 5 caption: On the depth image restoration application (8 percent noise level).
+    The parts enclosed in the red boxes in (f) are over-smoothed. The proposed method
+    generates the depth images with sharper boundaries.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_6.jpg
+  Figure 6 caption: On the scale-aware filtering application. The comparisons in (b-d)
+    are obtained from the reported results. The proposed method is able to remove
+    the small-scale textures while preserving the main sharp structures.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_7.jpg
+  Figure 7 caption: On the image denoising application. The proposed method generates
+    the images with clearer structures.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_8.jpg
+  Figure 8 caption: One real image denoising example from the SIDD dataset [63]. The
+    proposed approach generates the images with clearer characters.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learning_Spatially_Variant_Linear_Representation_Models_for_Joint_Filtering\figure_9.jpg
+  Figure 9 caption: One real example from [73] on image deblurring. The proposed approach
+    is able to estimate effective representation coefficients. Thus the deblurred
+    image contains clearer structures and textures.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jiangxin Dong
+  Name of the last author: Ming-Hsuan Yang
+  Number of Figures: 16
+  Number of Tables: 10
+  Number of authors: 6
+  Paper title: Learning Spatially Variant Linear Representation Models for Joint Filtering
+  Publication Date: 2021-08-06 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Evaluations for the Depth Image Upsampling
+    Problem on the Synthetic Benchmark Dataset [42] in Terms of RMSE
+  Table 10 caption: TABLE 10 Run-Time (Seconds) Performance
+  Table 2 caption: TABLE 2 Quantitative Evaluations for the Depth Image Restoration
+    Problem on the Benchmark Dataset [48] in Terms of PSNR, SSIM, and RMSE
+  Table 3 caption: TABLE 3 Quantitative Evaluations for the Image Denoising Problem
+    on the BSDS Dataset [51] in Terms of PSNR, SSIM, and RMSE
+  Table 4 caption: TABLE 4 Quantitative Evaluations for the Natural Image Denoising
+    Problem on the SIDD Validation Dataset [63] in Terms of PSNR
+  Table 5 caption: TABLE 5 Comparisons With Local Linear Model-Based Methods on Depth
+    Image Denoising Using the Test Dataset [48]
+  Table 6 caption: TABLE 6 Comparisons With End-to-End Methods on Image Denoising
+  Table 7 caption: TABLE 7 Comparisons With Hand-Crafted Priors on Image Denoising
+  Table 8 caption: TABLE 8 Ablation Study on the Network Design of the Proposed SVLRM
+  Table 9 caption: TABLE 9 Effect of the Proposed SVLRM and the Higher-Order Representation
+    Models on Depth Image Denoising in Terms of PSNR, SSIM, and RMSE
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3102575
+- Affiliation of the first author: aalto university, espoo, finland
+  Affiliation of the last author: tu darmstadt, darmstadt, germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\Continuous_Action_Reinforcement_Learning_From_a_Mixture_of_Interpretable_Experts\figure_1.jpg
+  Figure 1 caption: Performance of our algorithm on four pybullet locomotion tasks
+    with 10, 20, and 40 clusters. Our algorithm is compared to PPO and TRPO with neural
+    network and linear policy. All plots averaged over 25 runs, showing mean and 95
+    percent confidence interval.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Continuous_Action_Reinforcement_Learning_From_a_Mixture_of_Interpretable_Experts\figure_2.jpg
+  Figure 2 caption: Performance of the interpetable algorithm on three additional
+    Openai-Gym environments. Our algorithm is run with 5, 10 and 20 clusters, and
+    compared to TRPO and PPO with a neural policy and TRPO with a linear policy. Plots
+    show the average reward and 95 percent confidence interval, out of 25 independent
+    runs.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Continuous_Action_Reinforcement_Learning_From_a_Mixture_of_Interpretable_Experts\figure_3.jpg
+  Figure 3 caption: Three clusters out of ten and their associated activation on the
+    HopperBulletEnv-v0 environment learned by our algorithm.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Continuous_Action_Reinforcement_Learning_From_a_Mixture_of_Interpretable_Experts\figure_4.jpg
+  Figure 4 caption: Four clusters out of ten and their associated activation on the
+    HalfCheetahBulletEnv-v0 environment learned by our algorithm.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Continuous_Action_Reinforcement_Learning_From_a_Mixture_of_Interpretable_Experts\figure_5.jpg
+  Figure 5 caption: Performance of TRPO and PPO using a differentiable version of
+    a mixture of expert policy, with and without an entropy constraint, on four pybullet
+    locomotion tasks. We plot our algorithm and TRPO with a neural network policy
+    as reference. All plots averaged over 24 runs, showing mean and 95 percent confidence
+    interval.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Continuous_Action_Reinforcement_Learning_From_a_Mixture_of_Interpretable_Experts\figure_6.jpg
+  Figure 6 caption: Four clusters out of ten and their associated activation on the
+    HalfCheetahBulletEnv-v0 environment learned by PPO and a differentiable version
+    of the mixture of expert policy.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.91
+  Name of the first author: Riad Akrour
+  Name of the last author: Jan Peters
+  Number of Figures: 6
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Continuous Action Reinforcement Learning From a Mixture of Interpretable
+    Experts
+  Publication Date: 2021-08-10 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3103132
+- Affiliation of the first author: pattern recognition and intelligent system laboratory,
+    school of artificial intelligence, beijing university of posts and telecommunications,
+    beijing, china
+  Affiliation of the last author: pattern recognition and intelligent system laboratory,
+    school of artificial intelligence, beijing university of posts and telecommunications,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_1.jpg
+  Figure 1 caption: "Probabilistic graphical model of the Gaussian process embedded\
+    \ channel attention (GPCA) module. X\u2208 R C\xD7W\xD7H are the input feature\
+    \ maps, where C , W , and H are the number of channels, the width, and the height,\
+    \ respectively. Meanwhile, the final output Y\u2208 R C\xD7W\xD7H of the GPCA\
+    \ module is obtained by scaling X with the attention mask vector V\u2208 R C .\
+    \ Each element in V is generated by the corresponding elements in U\u2208 R C\
+    \ . Then, it is transferred and bounded into the interval [0,1]. U is the channel\
+    \ weight vector, optimized by a Gaussian process (GP) with the Gram matrix K\u2208\
+    \ R C\xD7C . K directly represents the channel correlations in X and is calculated\
+    \ by a kernel function with parameters \u0398 ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_2.jpg
+  Figure 2 caption: Development stages of attention mechanisms for visual tasks in
+    recent years. The traditional attention mechanisms are commonly based on convolutional
+    operations and pooling, while the GPCA module is derived within the probabilistic
+    framework.
+  Figure 3 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_3.jpg
+  Figure 3 caption: Structure of the proposed GPCA module.
+  Figure 4 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_4.jpg
+  Figure 4 caption: Probability density function (PDF) comparisons of the proposed
+    Sigmoid-Gaussian approximation ( qS ) with the beta distribution ( p ), the Gaussian
+    approximation ( qG ) and the Laplace approximation ( qL ) used in [53], and concrete
+    approximation ( qC ) proposed in [54]. The Kullback-Leibler (KL) divergences are
+    calculate from all the approximations to their corresponding true beta PDFs with
+    different alpha and beta .
+  Figure 5 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_5.jpg
+  Figure 5 caption: Visualization of feature maps of the last convolutional layer
+    in the VGG16 model on the miniImageNet dataset. The proposed GPCA module is compared
+    with the baseline (the VGG16 model without any attention modules introduced) and
+    two referred methods (SENet [11] and SRP [19]). Red means the highest concentration,
+    while blue is the fully contrary.
+  Figure 6 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_6.jpg
+  Figure 6 caption: Examples of WSOL results on the CUB-200-2011 dataset. The proposed
+    GPCA module is compared with two attention modules (SENet and SRP) and two WSOL
+    methods (CAM and ADL). The correctly predicted WSOL results are shown. The blue
+    bounding boxes are the predicted results and the red ones are the ground truths.
+  Figure 7 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_7.jpg
+  Figure 7 caption: 'Examples of detection results on the VOC2007 dataset. The proposed
+    GPCA module is compared with the baseline (the SSD model without any attention
+    modules introduced) and four referred methods (SENet, SRP, ECA, and GCT). The
+    correct predicted detection results with IoU higher than 0.5 are shown. Each color
+    corresponds to an object category (green: Motor bike; pink: Person; brown: Boat;
+    grey: Cow; light blue: Horse) and the black bounding boxes are the ground truths.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_8.jpg
+  Figure 8 caption: "The values of the attention masks in (a) the SENet and (d) the\
+    \ GPCA modules with the ResNet18 on the ImageNet- 32!times !32 dataset. We also\
+    \ zoomed in channel 70-80 (dashed boxes in (a) and (d)) for better illustration\
+    \ in (b) and (e), respectively. The histograms of the values are illustrated in\
+    \ (c) for the SENet and in (f) for the GPCA, respectively. The modules in each\
+    \ subfigure is named as \u201Cattention namestageIDblockID\u201D."
+  Figure 9 Link: articels_figures_by_rev_year\2021\GPCA_A_Probabilistic_Framework_for_Gaussian_Process_Embedded_Channel_Attention\figure_9.jpg
+  Figure 9 caption: Boxplots of the attention masks at different depths in the GPCA
+    module with the ResNet18 on the ImageNet- 32times 32 dataset. The x-axis denotes
+    the channel index. The modules in each subfigure are named as GPCA stageID blockID.
+    GPCA 21 and GPCA 31 are selected as examples. For better illustration, we selected
+    parts of the channels and draw the corresponding boxplots.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Jiyang Xie
+  Name of the last author: Jun Guo
+  Number of Figures: 9
+  Number of Tables: 13
+  Number of authors: 5
+  Paper title: 'GPCA: A Probabilistic Framework for Gaussian Process Embedded Channel
+    Attention'
+  Publication Date: 2021-08-10 00:00:00
+  Table 1 caption: TABLE 1 Statistics of Image Classification Datasets Including the
+    Class Number, the Training and Test Sample Number, and the Input Image Size
+  Table 10 caption: TABLE 10 The Means and Standard Deviations of mIoU (%) and mACC
+    (%) for the Task of Semantic Segmentation in Different Backbones on the CityScapes
+    Dataset, the p p-Values ( p p) of the Students t t-Test Between mIoUs or mACCs
+    of the Proposed Method and the Other Methods
+  Table 2 caption: TABLE 2 The Means and Standard Deviations of the Accuracies (%)
+    on the Cifar-10 and the Cifar-100 Datasets, and the p p-Values ( p p) of the Students
+    t t-Test Between the Accuracies of the Proposed Method and the Other Methods
+  Table 3 caption: TABLE 3 The Means and Standard Deviations of Test Accuracies (acc.,
+    %) on the miniImageNet Dataset, and the p p-Values ( p p) of the Students t t-Test
+    Between the Accuracies of the Proposed Method and the Other Methods
+  Table 4 caption: "TABLE 4 The Means and Standard Deviations of Both Top-1 and Top-5\
+    \ Test Accuracies (acc., %) on the ImageNet- 32\xD732 32\xD732 Dataset, and the\
+    \ p p-Values ( p p) of the Students t t-Test Between the Accuracies of the Proposed\
+    \ Method and the Other Methods"
+  Table 5 caption: TABLE 5 The Means and Standard Deviations of Both Top-1 and Top-5
+    Test Accuracies (acc., %) on the ImageNet Dataset, and the p p-Values ( p p) of
+    the Students t t-Test Between the Accuracies of the Proposed Method and the Other
+    Methods
+  Table 6 caption: TABLE 6 Ablation Studies
+  Table 7 caption: TABLE 7 The Means and Standard Deviations of Top-1 and Top-5 Localization
+    Accuracies (loc. acc., %), the Classification Accuracies (cls. acc., %), and the
+    p p-Values ( p p) of the Students t t-Test Between the Accuracies of the Proposed
+    Method and the Other Methods on the CUB-200-2011 Dataset
+  Table 8 caption: TABLE 8 The Means of AP (%) of Each Class, the Means and Standard
+    Deviations of mAP (%) on the VOC2007 Dataset, and the p p-Values ( p p) of the
+    Students t t-Test Between the mAPs of the Proposed Method and the Other Methods
+  Table 9 caption: TABLE 9 Means and Standard Deviations of AP (%) in Different Cases
+    on the COCO Dataset, and the p p-Values ( p p) of the Students t t-Test Between
+    the APs of the Proposed Method and the Other Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3102955
+- Affiliation of the first author: "department of computer science, visual recognition\
+    \ group, department of cybernetics, czech technical university, prague and the\
+    \ machine perception research laboratory, sztaki, budapest and also with the computer\
+    \ vision and geometry group, eth z\xFCrich, z\xFCrich, switzerland"
+  Affiliation of the last author: department of cybernetics, visual recognition group,
+    czech technical university, prague, czechia
+  Figure 1 Link: articels_figures_by_rev_year\2021\Marginalizing_Sample_Consensus\figure_1.jpg
+  Figure 1 caption: Example image pairs from the datasets used for testing the robust
+    estimators. The inliers of MAGSAC++, selected adaptively by the proposed procedure,
+    are visualized.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Marginalizing_Sample_Consensus\figure_2.jpg
+  Figure 2 caption: "Weighting functions for robust fitting. For MAGSAC++, we use\
+    \ \u03C3 max =2\u03C3 as an example and degrees-of-freedom \u03BD=2 (e.g., 2D\
+    \ line fitting) and 4 (e.g., problems with point correspondences)."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Marginalizing_Sample_Consensus\figure_3.jpg
+  Figure 3 caption: 'The mean Average Accuracy of the tested robust estimators on
+    fundamental matrix, relative pose and homography estimation. For each problem,
+    the methods are ordered according to their scores. We used all scenes from the
+    test set of the CVPR IMW 2020 PhotoTourism challenge. For F and E estimation,
+    the methods were tested on a total of 54450 image pairs. Abbrevations used: OpenCV
+    RANSAC (RANSAC), GC-RANSAC + DEGENSAC (GC + DEG), GC-RANSAC + DEGENSAC + MAGSAC++
+    scoring (GC + DEG + M++). Higher value is better.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Marginalizing_Sample_Consensus\figure_4.jpg
+  Figure 4 caption: "The mean Average Accuracy (top row; higher is better) and average\
+    \ processing time (bottom; in seconds; lower is better) plotted as the function\
+    \ of the inlier-outlier threshold (or its upper limit; horizontal axis) parameter.\
+    \ For fundamental matrix and relative pose estimation, only scene British Museum\
+    \ was used. Homographies were estimated from both the EVD and HPatches datasets.\
+    \ The threshold (horizontal axis) is shown on a logarithmic scale \u2013 the right\
+    \ half of the plots covers a significantly larger area than the left one."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Marginalizing_Sample_Consensus\figure_5.jpg
+  Figure 5 caption: The inliers of the estimated homography selected by the proposed
+    adaptive strategy with varying the parameter n min which controls the minimum
+    number of required inliers.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Marginalizing_Sample_Consensus\figure_6.jpg
+  Figure 6 caption: "The average results of iteratively re-weighted least-squares\
+    \ fitting using different robust weights (i.e., the proposed MAGSAC++, MSAC, Tukey\
+    \ bisquare, Huber and redescending Huber weights) when fitting 2D lines. The methods\
+    \ were repeated 10000 times using each parameter setting. (Left) The angular error,\
+    \ in degrees, of the estimated lines are plotted as the function of inlier-outlier\
+    \ threshold multiplier. The actual threshold is calculated by multiplying the\
+    \ noise \u03C3 by the values shown on the horizontal axis. (Middle) The angular\
+    \ error is plotted as the function of the noise \u03C3 added to the point coordinates.\
+    \ (Right) The angular error is plotted as the function of the outlier ratio."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Marginalizing_Sample_Consensus\figure_7.jpg
+  Figure 7 caption: 'The avg. model error (left) and the number of returned inliers
+    (right) of adaptive threshold selection techniques are plotted as the function
+    of the image noise (in pixel). Synthetic scene: points from a 2D line with zero-mean
+    Gaussian-noise and uniformly distributed outliers (in total, 100 points), 10000
+    runs on each setting.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Marginalizing_Sample_Consensus\figure_8.jpg
+  Figure 8 caption: The inliers of the estimated fundamental matrix selected by the
+    proposed adaptive strategy with varying the parameter n min which controls the
+    minimum number of required inliers.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Daniel Barath
+  Name of the last author: Jiri Matas
+  Number of Figures: 8
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: Marginalizing Sample Consensus
+  Publication Date: 2021-08-10 00:00:00
+  Table 1 caption: TABLE 1 The Average Processing Times (in Milliseconds) and Errors
+    (in Pixels) in the Estimated Homographies (H), Fundamental (F) and Essential (E)
+    Matrices Using Different Methods for Solving the Linear Systems in Their Solvers
+    When Estimating the Model Parameters From a Minimal ( m m) or a Larger-Than-Minimal
+    ( >m >m) Sample. Each test is repeated 100 000 times. The size of the larger-than-minimal
+    sample is selected uniformly randomly from range [m+1,1000] [m+1,1000]. For error
+    calculation, the re-projection was used for homographies, and Sampson-distance
+    for fundamental and essential matrices. The tested methods solving linear systems
+    are the ones implemented in the Eigen library.
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Insensitivity (16) to the Inlier-Outlier Threshold
+    (or its Upper Bound) is Shown on Fundamental Matrix (F), Essential Matrix (E),
+    and Homography (H) Fitting. The best values are shown in red, the second best
+    ones are in blue.
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3103562
+- Affiliation of the first author: school of computer science and technology, beijing
+    institute of technology, beijing, china
+  Affiliation of the last author: microsoft research asia, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_1.jpg
+  Figure 1 caption: Raw denoising results of images from three real-world datasets,
+    i.e., the See-in-the-Dark (SID) dataset [22], the Dark Raw Video (DRV) dataset
+    [28] and our Extreme Low-light Denoising (ELD) dataset, where we present (a) the
+    short-exposure low-light image; (b) amplified noisy input image from (a); (c)
+    the denoised output by the well-known denoising method BM3D [11]; (g) the long-exposure
+    reference image; (d-f) the outputs of UNets [30] trained with (d) synthetic data
+    generated by the signal-dependent heteroscedastic Gaussian noise model (G+P) [29],
+    (e) paired real data of [22], [28], and (f) synthetic data generated by our proposed
+    noise model respectively. All images were converted from raw Bayer space to sRGB
+    for visualization; similarly hereinafter. (Best viewed with zoom).
+  Figure 10 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_10.jpg
+  Figure 10 caption: Image capture setup and some sample images from our ELD dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_2.jpg
+  Figure 2 caption: Overview of electronic imaging pipeline and visualization of noise
+    source and resulting image at each stage.
+  Figure 3 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_3.jpg
+  Figure 3 caption: Estimation of the overall system gain K for the three cameras.
+    The noisy signal variance ( y -axis) and the underlying true signal value ( x
+    -axis) satisfy a linear function whose slope implies K at the measured ISO (1600)
+    setting.
+  Figure 4 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_4.jpg
+  Figure 4 caption: "Normalized density histogram (with bin size set to 0.5) of the\
+    \ color-wise DC noise component \u03BC c from different cameras (14-bit depth)."
+  Figure 5 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_5.jpg
+  Figure 5 caption: Centralized Fourier spectrum of the bias frames captured by three
+    cameras.
+  Figure 6 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_6.jpg
+  Figure 6 caption: Normal probability plots of row noise data for three cameras.
+    The resulting image looks close to a straight line if the data are approximately
+    normally distributed.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_7.jpg
+  Figure 7 caption: 'Distribution fitting of read noise for three cameras. Left: probability
+    plot against the Gaussian distribution. Middle: Tukey lambda PPCC plot that determines
+    the optimal lambda (shown in red line). Right: probability plot against the Tukey
+    Lambda distribution. A higher R2 indicates a better fit.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_8.jpg
+  Figure 8 caption: Simulated and real bias frames of three cameras; A higher R2 indicates
+    a better fit. (Best viewed with zoom).
+  Figure 9 Link: articels_figures_by_rev_year\2021\PhysicsBased_Noise_Modeling_for_Extreme_LowLight_Photography\figure_9.jpg
+  Figure 9 caption: Linear least-square fitting from estimated noise parameter samples
+    (blue dots) from three cameras. Upper and lower figures show the joint distributions
+    of (K, sigma TL) and (K, sigma r) respectively, where we sample the noise parameters
+    from the blue shadow regions.
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Kaixuan Wei
+  Name of the last author: Jiaolong Yang
+  Number of Figures: 24
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Physics-Based Noise Modeling for Extreme Low-Light Photography
+  Publication Date: 2021-08-10 00:00:00
+  Table 1 caption: TABLE 1 Summary of Our Noise Model
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Results on Sony Set of the SID Dataset
+  Table 3 caption: TABLE 3 Quantitative Results of Different Methods on Our ELD Dataset
+    Which Contains Four Representative Cameras
+  Table 4 caption: TABLE 4 Quantitative Results on Fuji Set of SID Dataset
+  Table 5 caption: TABLE 5 Color Image (RGB2RGB) Denoising Results on SID Sony Dataset
+  Table 6 caption: TABLE 6 Performance Comparison of Learning Models Applied to Different
+    Stages of the Image Processing Pipeline
+  Table 7 caption: TABLE 7 Quantitative Results on Static Video Clips From DRV Dataset
+  Table 8 caption: TABLE 8 Quantitative Results on Synthetic Dynamic Video Clips From
+    Our Collected Dynamic Video Dataset
+  Table 9 caption: TABLE 9 Quantitative Results of Downstream Vision Applications
+    on SID Sony Set (DepthDetection) and Our Collected Moved Scenes (Flow)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3103114
+- Affiliation of the first author: school of computer science and technology, university
+    of chinese academy of sciences, beijing, china
+  Affiliation of the last author: key laboratory of big data mining and knowledge
+    management (bdkm), school of computer science and technology, university of chinese
+    academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\MetaWrapper_Differentiable_Wrapping_Operator_for_User_Interest_Selection_in_CTR_\figure_1.jpg
+  Figure 1 caption: Comparison between traditional wrapper method and meta-wrapper.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\MetaWrapper_Differentiable_Wrapping_Operator_for_User_Interest_Selection_in_CTR_\figure_2.jpg
+  Figure 2 caption: Overview of meta-wrapper method ( N=2 for example).
+  Figure 3 Link: articels_figures_by_rev_year\2021\MetaWrapper_Differentiable_Wrapping_Operator_for_User_Interest_Selection_in_CTR_\figure_3.jpg
+  Figure 3 caption: Multi-task learning perspective.
+  Figure 4 Link: articels_figures_by_rev_year\2021\MetaWrapper_Differentiable_Wrapping_Operator_for_User_Interest_Selection_in_CTR_\figure_4.jpg
+  Figure 4 caption: Ablation study on public datasets.
+  Figure 5 Link: articels_figures_by_rev_year\2021\MetaWrapper_Differentiable_Wrapping_Operator_for_User_Interest_Selection_in_CTR_\figure_5.jpg
+  Figure 5 caption: Comparison of training and inference time.
+  Figure 6 Link: articels_figures_by_rev_year\2021\MetaWrapper_Differentiable_Wrapping_Operator_for_User_Interest_Selection_in_CTR_\figure_6.jpg
+  Figure 6 caption: Hyperparameter study on public datasets.
+  Figure 7 Link: articels_figures_by_rev_year\2021\MetaWrapper_Differentiable_Wrapping_Operator_for_User_Interest_Selection_in_CTR_\figure_7.jpg
+  Figure 7 caption: Overfitting on synthetic data with strong noises.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.69
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.89
+  Name of the first author: Tianwei Cao
+  Name of the last author: Qingming Huang
+  Number of Figures: 7
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: 'Meta-Wrapper: Differentiable Wrapping Operator for User Interest Selection
+    in CTR Prediction'
+  Publication Date: 2021-08-10 00:00:00
+  Table 1 caption: TABLE 1 Performance Comparison on Public Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Statistics of Datasets
+  Table 3 caption: TABLE 3 Methods (M1-M4) w.r.t Components (C1-C4)
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3103741
+- Affiliation of the first author: university of sydney, camperdown, nsw, australia
+  Affiliation of the last author: jd explore academy, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Heatmap_Regression_via_Randomized_Rounding\figure_1.jpg
+  Figure 1 caption: An intuitive example of the heatmap representation for the numerical
+    coordinate. Given the numerical coordinate x i =( x i , y i ) , we then have the
+    corresponding heatmap h i with the maximum activation point located at the position
+    ( x i , y i ) .
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Heatmap_Regression_via_Randomized_Rounding\figure_2.jpg
+  Figure 2 caption: "The main deep learning-based heatmap regression for semantic\
+    \ landmark localization framework. Specifically, during the inference stage, we\
+    \ decode the predicted heatmaps h p =( h p 1 ,\u2026, h p K ) to obtain the predicted\
+    \ numerical coordinates x p =( x p 1 ,\u2026, x p K ) ; During the training stage,\
+    \ we encode the ground truth numerical coordinates x g =( x g 1 ,\u2026, x g K\
+    \ ) to generate the ground truth heatmaps h g =( h g 1 ,\u2026, h g K ) ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Heatmap_Regression_via_Randomized_Rounding\figure_3.jpg
+  Figure 3 caption: An intuitive example of the encode operation via randomized rounding.
+    When the downsampling stride s>1 , the ground truth activation point ( x g i s,
+    y g i s) usually does not correspond to a single pixel in the heatmap. Therefore,
+    we introduce the randomized rounding operation to assign the ground truth activation
+    point to a set of alternative activation points and the activation probability
+    depends on the fractional part of the ground truth numerical coordinates.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Heatmap_Regression_via_Randomized_Rounding\figure_4.jpg
+  Figure 4 caption: An example of different possible sets of alternative activation
+    points.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Heatmap_Regression_via_Randomized_Rounding\figure_5.jpg
+  Figure 5 caption: An example of unbiased human annotation for semantic landmark
+    localization.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Heatmap_Regression_via_Randomized_Rounding\figure_6.jpg
+  Figure 6 caption: The influence of different input resolutions.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Heatmap_Regression_via_Randomized_Rounding\figure_7.jpg
+  Figure 7 caption: "A comparison between different \u201Dbounding box\u201D annotation\
+    \ policies. P1: the yellow bounding boxes. P2: the blue bounding boxes."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Heatmap_Regression_via_Randomized_Rounding\figure_8.jpg
+  Figure 8 caption: "Qualitative results from the test split of the WFLW dataset (best\
+    \ view in color). Blue: the ground truth facial landmarks. Yellow: the predicted\
+    \ facial landmarks. The first row shows some \u201Cgood\u201D cases and the second\
+    \ row shows some \u201Cbad\u201D cases."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.53
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Baosheng Yu
+  Name of the last author: Dacheng Tao
+  Number of Figures: 8
+  Number of Tables: 10
+  Number of authors: 2
+  Paper title: Heatmap Regression via Randomized Rounding
+  Publication Date: 2021-08-11 00:00:00
+  Table 1 caption: TABLE 1 The Activation Probabilities of the Top k k Activation
+    Points
+  Table 10 caption: TABLE 10 Results on COCO Validation Set
+  Table 2 caption: TABLE 2 Comparison With State-of-the-Arts on WFLW Dataset
+  Table 3 caption: TABLE 3 Comparison With State-of-the-Arts on 300W Dataset
+  Table 4 caption: TABLE 4 Comparison With State-of-the-Arts on COFW Dataset
+  Table 5 caption: TABLE 5 Comparison With State-of-the-Arts on AFLW Dataset
+  Table 6 caption: TABLE 6 The Influence of Different Numbers of Alternative Activation
+    Points When Using Binary Heatmap
+  Table 7 caption: TABLE 7 The Influence of Different Numbers of Alternative Activation
+    Points When Using Gaussian Heatmap
+  Table 8 caption: "TABLE 8 The Influence of Different Face \u201DBounding Box\u201D\
+    \ Annotation Policies"
+  Table 9 caption: TABLE 9 Results on MPII Human Pose Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3103980
+- Affiliation of the first author: institute of science and technology for brain-inspired
+    intelligence, fudan university, shanghai, china
+  Affiliation of the last author: institute of science and technology for brain-inspired
+    intelligence, fudan university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\AGONet_AssociationGuided_D_Point_Cloud_Object_Detection_Network\figure_1.jpg
+  Figure 1 caption: Illustration of the standard 3D object detection framework and
+    the proposed associative-recognition-inspired AGO-Net. The encoder and the decoder
+    are denoted by E and D , respectively. Compared with previous approaches that
+    solely utilized the encoded features of real-world point clouds for 3D object
+    detection, our AGO-Net builds up the association between incomplete perceptual
+    features of real-world objects and more complete features of corresponding class-wise
+    conceptual models via domain adaptation. AGO-Net mimics the conceptual association
+    of the human brain when perceiving objects, and fundamentally exploits the network
+    capability of the feature enhancement.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\AGONet_AssociationGuided_D_Point_Cloud_Object_Detection_Network\figure_2.jpg
+  Figure 2 caption: 'Overview of the AGO-Net framework and its underlying biological
+    model. AGO-Net consists of four parts: (a) The perceptual feature encoder (PFE),
+    which encodes perceived information in a manner similar to that employed by the
+    visual cortex (VC) in the human brain for object perception, as shown in the right
+    figure. Various 3D detection methods can be utilized as alternatives to the 3D-BEV
+    encoder, which encodes a 3D point cloud scene to a compact BEV representation.
+    (b) the conceptual feature generator (CFG) generates the features based on the
+    constructed conceptual scene, which provides conceptual association guidance for
+    the PFE. This detachable auxiliary network is directly discarded during the inference
+    time. (c) the feature adaptation from the real-world perceptual domain to the
+    constructed conceptual domain mimics the knowledge association and retrieval process
+    in the human brain. The large yellow arrow shows the adaptation direction. (d)
+    the Spatial and Channel-wise attention-aware reweighting module (SC-reweight)
+    aids the siamese network in adapting more crucial features based on the difference
+    feature map of the conceptual and perceptual classification features. The loss
+    terms of AGO-Net include the localization (XYZ), scale (WHL), classification,
+    and rotation losses as well as our proposed association loss L ago . A detailed
+    explanation of the bio-model is provided in Section 3.1.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\AGONet_AssociationGuided_D_Point_Cloud_Object_Detection_Network\figure_3.jpg
+  Figure 3 caption: One instantiated network of the PFE (red) CFG (grey).
+  Figure 4 Link: articels_figures_by_rev_year\2021\AGONet_AssociationGuided_D_Point_Cloud_Object_Detection_Network\figure_4.jpg
+  Figure 4 caption: The generation process of the conceptual model and scene.
+  Figure 5 Link: articels_figures_by_rev_year\2021\AGONet_AssociationGuided_D_Point_Cloud_Object_Detection_Network\figure_5.jpg
+  Figure 5 caption: "Illustration of the attention-based reweighting module SC-reweight.\
+    \ We average the classification features along the channel of both perceptual\
+    \ scenes and conceptual scenes to obtain the response maps. The difference map\
+    \ of the response maps is calculated and multiplied by the foreground mask to\
+    \ obtain the spatial reweighting map. The regions with added point clouds, which\
+    \ contain more critical structural information and have a higher difference response,\
+    \ are given more attention during domain adaptation. To obtain the channel-wise\
+    \ reweighting vector, we utilize the difference feature map between perceptual\
+    \ features and conceptual features for classification as the input of a sub-network\
+    \ \u201CC-R\u201D in the SC-reweight. The channel-wise reweighting vector is calculated\
+    \ by the C-R and multiplied in a channel-wise manner with the tiled spatial reweighting\
+    \ map for adaptation."
+  Figure 6 Link: articels_figures_by_rev_year\2021\AGONet_AssociationGuided_D_Point_Cloud_Object_Detection_Network\figure_6.jpg
+  Figure 6 caption: Visualization of the results on the KITTI validation split set.
+    The ground-truth 3D boxes, predicted 3D boxes of the baseline method, and predicted
+    3D boxes of our method are shown in green, yellow, and red, respectively, in the
+    LiDAR phase. The first row and second row show the RGB images and the BEV images,
+    respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2021\AGONet_AssociationGuided_D_Point_Cloud_Object_Detection_Network\figure_7.jpg
+  Figure 7 caption: Visualization of the feature maps and results on the KITTI validation
+    set. The first row shows the BEV of the constructed conceptual scene and the perceptual
+    scene, respectively. The ground-truth 3D boxes and the predicted 3D boxes of the
+    baseline method and our method are drawn in green, yellow, and red, respectively,
+    in the LiDAR phase. The second and third rows show the response maps of F box
+    and F class , respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2021\AGONet_AssociationGuided_D_Point_Cloud_Object_Detection_Network\figure_8.jpg
+  Figure 8 caption: Visualization of the feature maps and spatial reweighting maps.
+    The first row shows the comparison of (a) conceptual scene and (b) perceptual
+    scene with their classification response maps, respectively. The second row depicts
+    (c) the spatial reweighting map, (d) the perceptual feature response map during
+    adaptation, and (e) the conceptual feature response map, respectively.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Liang Du
+  Name of the last author: Jianfeng Feng
+  Number of Figures: 8
+  Number of Tables: 15
+  Number of authors: 8
+  Paper title: 'AGO-Net: Association-Guided 3D Point Cloud Object Detection Network'
+  Publication Date: 2021-08-11 00:00:00
+  Table 1 caption: TABLE 1 Results on the KITTI 3D Object Detection Test Server
+  Table 10 caption: TABLE 10 AGO-Net With Different Settings on A P 3D AP 3D at IoU=0.7
+    (R40)
+  Table 2 caption: "TABLE 2 \u201CMod.\u201D Results on 3D Object Detection of the\
+    \ KITTI Validation Split Set at IoU = 0.7 for Cars"
+  Table 3 caption: "TABLE 3 3D Object Detection A P 3D AP 3D (R40) Performance for\
+    \ \u201CPedestrian\u201D and \u201CCyclist\u201D on KITTI Val Split Set at IoU\
+    \ = 0.5"
+  Table 4 caption: "TABLE 4 3D Object Detection A P 3D AP 3D (R40) Performance for\
+    \ \u201CPedestrian\u201D and \u201CCyclist\u201D on KITTI Test Set at IoU = 0.5"
+  Table 5 caption: TABLE 5 Per Class Performance on the nuScenes Validation Set
+  Table 6 caption: TABLE 6 Per Class Performance on the nuScenes Test Set
+  Table 7 caption: TABLE 7 Multi-Class 3D Detection Results on the Validation Sequence
+    of the Waymo Dataset
+  Table 8 caption: "TABLE 8 Near-Range (0 \u223C \u223C30m), Median-Range (30 \u223C\
+    \ \u223C50m), and Far-Range (50 \u223C \u223C80m) Comparisons on A P 3D AP 3D\
+    \ (R40)"
+  Table 9 caption: TABLE 9 The Upper Bound Performance of A P 3D AP 3D (R40) Training
+    Withthe Conceptual Data and Testing on the Conceptual
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3104172
+- Affiliation of the first author: state key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Affiliation of the last author: state key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Distilling_Knowledge_by_Mimicking_Features\figure_1.jpg
+  Figure 1 caption: The pipeline of our method. We use a linear embedding layer to
+    make sure the dimensionality of students feature is the same as that of the teachers.
+    But, this embedding layer will be absorbed post-training. (This figure is best
+    viewed in color.).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Distilling_Knowledge_by_Mimicking_Features\figure_2.jpg
+  Figure 2 caption: An illustration of the feature space misalignment issue. The points
+    denote the features, and different colors with different shapes represent different
+    classes. The students feature space needs to rotate to align to the teachers.
+    (This figure is best viewed in color.).
+  Figure 3 Link: articels_figures_by_rev_year\2021\Distilling_Knowledge_by_Mimicking_Features\figure_3.jpg
+  Figure 3 caption: "An illustration of the LSH loss. f s and f t denote a student\
+    \ and a teacher feature vector for the same input image, respectively. h represents\
+    \ the hash function constraints. These constraints form a small polyhedron (the\
+    \ shaded region) and \u03B8 is the maximum angle between any two vectors in this\
+    \ polyhedron. Magnitudes of these features, however, can alter with greater freedom."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Distilling_Knowledge_by_Mimicking_Features\figure_4.jpg
+  Figure 4 caption: Illustration of different initialization for the bias. Red lines
+    denote the hash function constraints, while blue points represent teacher features.
+    (a), (b), and (c) show the bias initialized by 0 , the median, or the mean of
+    the teacher hash values, respectively. This figure is best viewed in color and
+    zoomed in.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Distilling_Knowledge_by_Mimicking_Features\figure_5.jpg
+  Figure 5 caption: The cumulative probability of the angle with D=2048 , where D
+    and N denote the feature dimensionality and the number of hash functions, respectively.
+    With N becoming larger, the angle between the student feature and the teacher
+    feature will become smaller with high probability. This figure is best viewed
+    in color and zoomed in.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Distilling_Knowledge_by_Mimicking_Features\figure_6.jpg
+  Figure 6 caption: The pipeline of our method on the object detection task. (a) and
+    (b) show our feature mimicking framework with Faster-RCNN and RetinaNet, respectively.
+    This figure is best viewed in color and zoomed in.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Guo-Hua Wang
+  Name of the last author: Jianxin Wu
+  Number of Figures: 6
+  Number of Tables: 18
+  Number of authors: 3
+  Paper title: Distilling Knowledge by Mimicking Features
+  Publication Date: 2021-08-11 00:00:00
+  Table 1 caption: TABLE 1 The Difference Between Teacher Features and Student Features
+  Table 10 caption: TABLE 10 Test Accuracy (%) of the Student Network on CIFAR-100
+  Table 2 caption: TABLE 2 The Networks Used in Our Experiments
+  Table 3 caption: TABLE 3 Test Accuracy (%) of the Student Network on CIFAR-100
+  Table 4 caption: TABLE 4 Test Accuracy (%) of the Student Network on CIFAR-100
+  Table 5 caption: "TABLE 5 Test Accuracy (%) of the Student Network on CIFAR-100\
+    \ Using Different Hyperparameters ( \u03B2 \u03B2, st d hash stdhash, N N)"
+  Table 6 caption: "TABLE 6 Test Accuracy (%) of the Student Network on CIFAR-100\
+    \ Using Different Hyperparameters ( \u03B2 \u03B2, st d hash stdhash, N N)"
+  Table 7 caption: TABLE 7 Test Accuracy (%) of the Student Network on CIFAR-100 With
+    Different Initializations of Bias in the LSH Module
+  Table 8 caption: TABLE 8 Test Accuracy (%) of the Student Network on CIFAR-100 With
+    Different Initializations of Bias in the LSH Module
+  Table 9 caption: TABLE 9 Test Accuracy (%) of the Student Network on CIFAR-100
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3103973

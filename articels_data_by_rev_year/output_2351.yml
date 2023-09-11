@@ -1,0 +1,806 @@
+- Affiliation of the first author: school of software, shangdong university, jinan,
+    shandong, china
+  Affiliation of the last author: "eth zurich, z\xFCrich, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_1.jpg
+  Figure 1 caption: Our AGNN provides a powerful framework that formulates (a) Automatic
+    Video Segmentation (AVS), (b) Image Co-Segmentation (ICS), and (c) Few-shot Semantic
+    Segmentation (FSS) from a unified view of segmenting objects from relational visual
+    data.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_2.jpg
+  Figure 2 caption: Illustration of AGNN-based AVS solution. (a) Input video sequence,
+    typically with object occlusion and scale variation. (b) Our AGNN represents the
+    input video as a graph, where nodes (blue circles) are video frames, and edges
+    (black arrows) are relations between corresponding frame pairs, captured by a
+    neural attention mechanism. After several differentiable message passing iterations
+    over the video graph, higher-order relations can be incorporated and more optimal
+    foreground estimates are obtained. (c) Final segmentation results.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_3.jpg
+  Figure 3 caption: Our AGNN-based AVS solution during the training phase (Section
+    3.2). (a) We represent the input video I as a fully connected graph G . (b) Initial
+    frame features are extracted from the backbone network. (c) According to (a) and
+    (b), the node and edge states are initialized through Eqs. 3, 4, and 5, respectively.
+    (d,e) AGNN recursively performs gated message aggregation (Eq. 9) and nodeedge
+    state updating (Eq. 10) over G . (f) After several message passing iterations,
+    a readout function (Eq. 11) is used to obtain the node predictions. Zoom in for
+    details.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_4.jpg
+  Figure 4 caption: Detailed illustration of our (a) node embedding (Eq. 3), (b) intra-attention
+    based loop-edge embedding and corresponding loop-message generation (Eq. 4), (c)
+    inter-attention based straight-edge embedding and corresponding neighbor message
+    generation (Eq. 5).
+  Figure 5 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_5.jpg
+  Figure 5 caption: 'Qualitative object-level AVS results on DAVIS 16 [71] (from top
+    to bottom: parkour and bmx-tree). It can be observed that the proposed algorithm
+    is applicable to the primary target with shape deformation, similar target distraction,
+    and fast motion scenarios.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_6.jpg
+  Figure 6 caption: 'Qualitative object-level AVS results on Youtube-Objects [76]
+    (from top to bottom: car0001 and motorbike0002). It can be observed that the proposed
+    algorithm is applicable to handle various challenging factors, such as view changes,
+    background clutter, and large shape deformation.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_7.jpg
+  Figure 7 caption: 'Qualitative ICS results (Section 4.2) on PASCAL VOC [82] (top:
+    cat and person image collections) and Internet [89] (bottom: car and airplane
+    image collections). Noisy samples are labeled in red rectangles.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_8.jpg
+  Figure 8 caption: Qualitative FSS results on PASCAL- 5 i [2] (Section 4.3). The
+    first five columns are annotated support images and the last two columns are query
+    predictions wo. and w. AGNN.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Segmenting_Objects_From_Relational_Visual_Data\figure_9.jpg
+  Figure 9 caption: Consistency of feature embedding over time, reported on the test
+    set of DAVIS 16 [71] (Section 4.4).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Xiankai Lu
+  Name of the last author: Luc Van Gool
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Segmenting Objects From Relational Visual Data
+  Publication Date: 2021-09-28 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Object-Level AVS Results on the Val Set of
+    DAVIS 16 16 [71] (Section 4.1) with IoU J J, Boundary Accuracy F F, and Time Stability
+    T T
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Object-Level AVS Performance of Each Category
+    on Youtube-Objects [76] (Section 4.1) With IoU J J
+  Table 3 caption: TABLE 3 Attribute-Based Object-Level AVS Performance on the DAVIS
+    16 16 Dataset [71]
+  Table 4 caption: TABLE 4 Quantitative ICS Performance on PASCAL VOC [82] (Section
+    4.2) With Mean IoU J J
+  Table 5 caption: TABLE 5 Quantitative ICS Performance on Internet [89] (Section
+    4.2) With Mean IoU J J
+  Table 6 caption: TABLE 6 Quantitative FSS Performance on PASCAL- 5 i 5i [2] (Section
+    4.3) the With 1-Way 5-Shot Segmentation Setting in Terms of Mean IoU J J
+  Table 7 caption: TABLE 7 Ablation Study on the Test Set of DAVIS 16 16 [71] (Section
+    4.4) With Different Graph Structures, Message Passing Steps, and Input Images
+    Numbers
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3115815
+- Affiliation of the first author: department of computer science, durham university,
+    durham, u.k.
+  Affiliation of the last author: department of computer science, durham university,
+    durham, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_1.jpg
+  Figure 1 caption: Restricted Boltzmann machines [82] have restricted architectures
+    to allow faster sampling than Boltzmann machines [83].
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_2.jpg
+  Figure 2 caption: "Variational autoencoder [122], [185] with a normally distributed\
+    \ prior. \u03F5 is sampled from N(0,I) ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_3.jpg
+  Figure 3 caption: A hierarchical VAE with bidirectional inference [125].
+  Figure 4 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_4.jpg
+  Figure 4 caption: 'Generative adversarial networks [58] set two networks in a game:
+    D detects real from fake samples while G tricks D .'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_5.jpg
+  Figure 5 caption: A comparison of popular losses used to train GANs. (a) Respective
+    losses for discriminatorgenerator. (b) Plots of generator losses with respect
+    to discriminator output. Notably, NS-GANs gradient disappears as discriminator
+    gets better.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_6.jpg
+  Figure 6 caption: Autoregressive models decompose data points using the chain rule
+    and learn conditional probabilities.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_7.jpg
+  Figure 7 caption: Normalizing flows build complex distributions by mapping a simple
+    distribution through invertible functions.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_8.jpg
+  Figure 8 caption: Factoring out variables at different scales allows normalizing
+    flows to scale to high dimensional data.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Deep_Generative_Modelling_A_Comparative_Review_of_VAEs_GANs_Normalizing_Flows_En\figure_9.jpg
+  Figure 9 caption: Implicit networks model data continuously permitting arbitrarily
+    high resolutions. Dashed lines represent gradients, F is an implicit network,
+    and H is a hypernetwork.
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.92
+  Name of the first author: Sam Bond-Taylor
+  Name of the last author: Chris G. Willcocks
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: 'Deep Generative Modelling: A Comparative Review of VAEs, GANs, Normalizing
+    Flows, Energy-Based and Autoregressive Models'
+  Publication Date: 2021-09-30 00:00:00
+  Table 1 caption: "TABLE 1 Comparison Between Deep Generative Models in Terms of\
+    \ Training and Test Speed, Parameter Efficiency, Sample Quality, Sample Diversity,\
+    \ and Ability to Scale to High Resolution Data. Quantitative Evaluation is Reported\
+    \ on the CIFAR-10 Dataset [127] in Terms of Fr\xE9chet Inception Distance (FID)\
+    \ and Negative Log-Likelihood (NLL) in Bits-Per-Dimension (BPD)."
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Rules for the Star Ratings in Table 1
+  Table 3 caption: "TABLE 3 Normalizing Flow Layers: \u2299 \u2299 Represents Elementwise\
+    \ Multiplication, \u2217 l l Represents a Cross-Correlation Layer"
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3116668
+- Affiliation of the first author: department of electronic engineering, tsinghua
+    university, beijing, china
+  Affiliation of the last author: department of electronic engineering, tsinghua university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_1.jpg
+  Figure 1 caption: Point cloud comparison with the state-of-the-art multi-view stereo
+    approaches (a) R-MVSNet [4], (b) CasMVSNet [16], (c) UCS-Net [17], (d) COLMAP
+    [15], (e) SurRF(Ours), (f) Reference image in Tanks and Temples dataset [18].
+    Our proposed SurRF generates much more complete, delicate, and realistic surface
+    predictions.
+  Figure 10 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_10.jpg
+  Figure 10 caption: Relighting on scan 9 in DTU dataset. We generate the albedo,
+    materials, and shadings from our method and only relight the shading with unseen
+    illumination.
+  Figure 2 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_2.jpg
+  Figure 2 caption: An overview of our Surface Radiance Field (SurRF) and unsupervised
+    optimization procedure. We represent the scene on a set of surfaces where each
+    of them is a combination of 3D shapes, textures, and view directions. We optimize
+    it through a differentiable rendering framework by comparing the rendered images
+    with a set of target images.
+  Figure 3 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_3.jpg
+  Figure 3 caption: Illustration of our Surface Radiance Field (SurRF) representation.
+  Figure 4 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_4.jpg
+  Figure 4 caption: Illustration of different sampling strategies to compose global
+    scene geometry and images.
+  Figure 5 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_5.jpg
+  Figure 5 caption: The network architecture of our proposed SurRF. The surface geometry
+    is first predicted using the 2D texture coordinate, ray direction and an embedding
+    through a geometry multilayer perceptron network (MLP). Then, we model the illumination
+    and estimate the surface color through another two networks modeling texture and
+    lighting.
+  Figure 6 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_6.jpg
+  Figure 6 caption: Illustration of progressive training. Our method can progressively
+    refine underlying surface structures via coarse-to-fine points sampling from only
+    a set of posed RGB images.
+  Figure 7 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_7.jpg
+  Figure 7 caption: Qualitative results of scan 9, 11, and 15 in the DTU dataset[77]
+    compared with Point-MVSNet[7], UCS-Net[17], Robust Consistency[8] and ground truth
+    point cloud. Note that our proposed SurRF generates denser point clouds with better
+    continuity and colors. For fair comparison, we generate each result in higher
+    completeness.
+  Figure 8 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_8.jpg
+  Figure 8 caption: Point cloud and depth visualization of Family, M60, and Lighthouse
+    in the intermediate set of Tanks and Temples dataset[18] compared with COLMAP[15],
+    R-MVSNet[4], CasMVSNet[16] and UCS-Net[17]. Our proposed SurRF produces much more
+    complete, delicate, continuous, and realistic surface predictions.
+  Figure 9 Link: articels_figures_by_rev_year\2021\SurRF_Unsupervised_MultiView_Stereopsis_by_Learning_Surface_Radiance_Field\figure_9.jpg
+  Figure 9 caption: Qualitative results of ablation study on different components.
+    Geom. denotes Surface residual prediction, Light denotes Lighting approximation
+    and Cons. denotes Shape continuity loss.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Jinzhi Zhang
+  Name of the last author: Lu Fang
+  Number of Figures: 16
+  Number of Tables: 8
+  Number of authors: 6
+  Paper title: 'SurRF: Unsupervised Multi-View Stereopsis by Learning Surface Radiance
+    Field'
+  Publication Date: 2021-09-30 00:00:00
+  Table 1 caption: TABLE 1 Mathematical Notation Guide
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Results of Reconstruction Quality in Terms
+    of the Distance Metric (Lower is Better) on the DTU Evaluation Dataset[77]
+  Table 3 caption: TABLE 3 Quantitative Results of State-of-the-Art Learning-Based
+    Methods on the Tanks and Temples (T&T) Dataset [79] Leaderboard
+  Table 4 caption: TABLE 4 Ablation Study on Different Components, Which Demonstrates
+    the Effectiveness of Surface Residual Prediction (Geom.), Lighting Approximation
+    (Light) and Shape Continuity Loss (Cons.)
+  Table 5 caption: TABLE 5 Ablation Study on Progressive Refinement on the DTU Evaluation
+    Dataset, Which Demonstrates the Necessity of Progressive Training
+  Table 6 caption: TABLE 6 Ablation Study on Different Choices of Coordinates
+  Table 7 caption: TABLE 7 Comparison With Nerf [20] and IDR [13]
+  Table 8 caption: TABLE 8 The Comparison of Time Efficiency Using the DTU Dataset
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3116695
+- Affiliation of the first author: school of software, bnrist, tsinghua university,
+    beijing, china
+  Affiliation of the last author: school of software, bnrist, tsinghua university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_1.jpg
+  Figure 1 caption: 'Our observations of video domain generalization: (a) Local temporal
+    relations are more generalizable than the global ones by using A-distances as
+    a measurement of domain shift; (b) Solving video domain generalization depends
+    on aligning the distributions of local temporal relations correctly, which can
+    be guided by the global relations that are more discriminative in the long term.
+    In this case, the model should mitigate the domain shift via the sub-action of
+    dribbling rather than running. It is only possible by leveraging the global relation
+    of playing basketball as the generalization bridge.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_10.jpg
+  Figure 10 caption: A showcase of the Something-Something benchmark. The first row
+    shows training data from the source domain. The second row shows the test data
+    from the target domains.
+  Figure 2 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_2.jpg
+  Figure 2 caption: An overview of VideoDG, which first uses the APN model to extract
+    local-relation, global-relation, and multilayer cross-relation features progressively.
+    It then uses the cross-relation features to generate spatiotemporal adversarial
+    examples, compromising between generalizability and discriminability. VideoDG
+    tries to mitigate the temporal domain shift from both the perspectives of representation
+    learning and data augmentation.
+  Figure 3 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_3.jpg
+  Figure 3 caption: Snapshots of all 12 categories of the cross-dataset UCF-HMDB benchmark.
+    Spatial and temporal domain shifts co-exist in these scenarios.
+  Figure 4 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_4.jpg
+  Figure 4 caption: A-distances of different modelsfeatures that measure the domain
+    shift from UCF to HMDB. A lower A-distance indicates a model that can better generalize
+    across domains.
+  Figure 5 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_5.jpg
+  Figure 5 caption: "We use the correction rate (CR) and the miscorrection rate (MR)\
+    \ to evaluate the roles of features at different levels on UCF \u2192 HMDB."
+  Figure 6 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_6.jpg
+  Figure 6 caption: The visualization of adversarial examples at different pyramid
+    levels and corresponding classification results of VideoDG. There are subtle differences
+    between the perturbed frames at Level I and those at Levels IIIII.
+  Figure 7 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_7.jpg
+  Figure 7 caption: "The sensitivity analyses of the hyperparameters of VideoDG. To\
+    \ show that the one-class SVM source validation protocol can facilitate hyperparameter\
+    \ tuning, we report both the in-domain performance using the regular and new trainingvalidation\
+    \ splits. For (a) and (b), we fix \u03B3=0.01 and tune \u03BB . The blue bars\
+    \ show the performance on the test set under the one-class SVM source validation\
+    \ protocol. On the regular splits, we can see from the gray bars that when \u03BB\
+    \ increases, the source validation accuracy decreases while the generalization\
+    \ performance increases. On the one-class SVM splits, as shown by the orange bars,\
+    \ the best-performing model generalizes well to the test domain. For (c) and (d),\
+    \ we fix \u03BB=1 and tune \u03B3 . The hyperparameters are robust such that all\
+    \ models consistently outperform ADA sem (dashed blue line) on the test set."
+  Figure 8 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_8.jpg
+  Figure 8 caption: Two generalization examples on the multi-view NTU benchmark. The
+    first row shows training data from the source domain. The second row shows the
+    test data from the target domains. The green indicate making correct predictions
+    and the red incorrect ones.
+  Figure 9 Link: articels_figures_by_rev_year\2021\VideoDG_Generalizing_Temporal_Relations_in_Videos_to_Novel_Domains\figure_9.jpg
+  Figure 9 caption: We calculate the A-distance of the Level-III features of APN (wo
+    or w RADA, as shown by the green and purple bars, respectively) and compare it
+    with those of TRN and NL-I3D on the NTU benchmark.
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Zhiyu Yao
+  Name of the last author: Mingsheng Long
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: 'VideoDG: Generalizing Temporal Relations in Videos to Novel Domains'
+  Publication Date: 2021-10-01 00:00:00
+  Table 1 caption: 'TABLE 1 Test Accuracy ( % %) on the UCF-HMDB Benchmark: (1) APN
+    is Compared With Existing Video Classification Networks; (2) RADA is Compared
+    With Existing Domain Generalization Approaches'
+  Table 10 caption: TABLE 10 Selected Categories From the Something-Something Dataset
+    to Construct the Cross-Relation Video Domain Generalization Benchmark
+  Table 2 caption: TABLE 2 Results ( % %) of Applying Different Data Augmentation
+    Techniques to APN
+  Table 3 caption: TABLE 3 The Notation of Number of Samples That Were (in)correctly
+    Classified Before the Use of RADA, and are (in)correctly Classified After That
+  Table 4 caption: TABLE 4 Test Accuracy ( % %) on UCF-HMDB Using APN as the Network
+    Backbone
+  Table 5 caption: TABLE 5 Test Accuracy ( % %) of Using Different Numbers of Maximization
+    Phases ( T max T max )
+  Table 6 caption: TABLE 6 Test Accuracy ( % %) on the NTU Benchmark With Multiple
+    Target Domains
+  Table 7 caption: TABLE 7 Test Accuracy ( % %) on NTU With Multiple Source Domains
+  Table 8 caption: TABLE 8 Test Accuracy ( % %) of VideoDG (APN With RADA) on the
+    NTU Benchmark Using Different Numbers of Video Segments
+  Table 9 caption: TABLE 9 Test Accuracy ( % %) on the Something-Something Benchmark
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3116945
+- Affiliation of the first author: school of electronic and information engineering,
+    beihang university, beijing, china
+  Affiliation of the last author: school of cyber science and technology, beihang
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_1.jpg
+  Figure 1 caption: Brief framework of the proposed HiBayes-LSTM approach for head
+    trajectory prediction ODIs.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_10.jpg
+  Figure 10 caption: Graphical representation of our approach under HBI. Here, the
+    latent variables and weights which can not be observed are denoted by open circles,
+    and the corresponding parameters are denoted by smaller solid circles. The data
+    which can be observed is denoted by shaded circles, including the input v n t
+    and corresponding label d ~ n t , m ~ n t . Note that the box labelled N represents
+    N different samples of head trajectories and we only show n -th example explicitly.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_2.jpg
+  Figure 2 caption: 'First row: examples for original ODIs in the HTRO dataset. Second
+    row: the corresponding head trajectories(yellow lines) and fixations (blue dots),
+    in which the sizes of blue dots are proportional to fixation duration and the
+    numbers denote the viewing orders of head fixations. Third row: the corresponding
+    VOI sequences.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_3.jpg
+  Figure 3 caption: Convex hulls of the head trajectories on ODIs and ODVs. The upper
+    row compares the results between the HTRO and VQA-OV datasets, while the lower
+    row is for the AOI and VQA-OV datasets.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_4.jpg
+  Figure 4 caption: (a)-(b) Histogram and confusion matrix of the head trajectory
+    directions of the HTRO and AOI datasets, respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_5.jpg
+  Figure 5 caption: '(a): PDF of the MultiMatch scores of four datasets, HTRO, AOI,
+    Le Meur and KTH Koostra. (b): Clustering the VOIs of the subjects of an example
+    ODI using K-Means method. (c): The visualization of transition matrices of the
+    example ODI in the view of both group and individual.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_6.jpg
+  Figure 6 caption: Examples of detected objects by YOLO-V3 and the heat maps of head
+    fixations for HTRO and AOI databases, respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_7.jpg
+  Figure 7 caption: Head fixation proportion belonging to object regions at increased
+    numbers of detected candidate objects.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_8.jpg
+  Figure 8 caption: Architecture of our HiBayes-LSTM approach, which includes convolution
+    layers, Bayesian FC layers and Hierarchical LSTM cell. Note that the dimensions
+    of input and hidden layer for each gate in Hierarchical Bayesian LSTM cell are
+    1024 and 512, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Hierarchical_Bayesian_LSTM_for_Head_Trajectory_Prediction_on_Omnidirectional_Ima\figure_9.jpg
+  Figure 9 caption: Details about the FIE component in our approach. Note that the
+    value of the input vector v t+1 at time step t+1 are set all zeros. Here, the
+    dimensions of input and output units are 8 and 512 for FC layer 1; 512 and 256
+    for FC layer 2. The dimensions of input and hidden layer for each gate of LSTM
+    cell are 512 and 256, respectively.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Li Yang
+  Name of the last author: Zhenyu Guan
+  Number of Figures: 16
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Hierarchical Bayesian LSTM for Head Trajectory Prediction on Omnidirectional
+    Images
+  Publication Date: 2021-10-01 00:00:00
+  Table 1 caption: TABLE 1 KL Divergence of Different Numbers of Markov States
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Mean and Standard Deviation of DTW and ScanMatch for Head
+    Trajectory Prediction Over the HTRO Dataset and Salient360 Dataset
+  Table 3 caption: TABLE 3 Mean and Standard Deviation of MultiMatch (Including 4
+    Sub-Metrics of Shape, Direction, Length and Position) for Head Trajectory Prediction
+    Over the HTRO Dataset and Salient360 Dataset
+  Table 4 caption: TABLE 4 Ablation Experiments With Different Structures of Our HiBayes-LSTM
+    Approach
+  Table 5 caption: TABLE 5 Results of Head Trajectory Prediction for Ablating the
+    FIE Component
+  Table 6 caption: TABLE 6 Comparison on Saliency Prediction Performance Between Our
+    and Other Approaches, on the HTRO Dataset and Salient360 Dataset
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3117019
+- Affiliation of the first author: state key laboratory liesmars, wuhan university,
+    wuhan, hubei, china
+  Affiliation of the last author: state key laboratory liesmars, wuhan university,
+    wuhan, hubei, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_1.jpg
+  Figure 1 caption: An example image taken from DOTA. (a) A typical image in DOTA
+    consisting of many instances from multiple categories. (b), (c), (d), (e) are
+    cropped from the source image. We can see that instances such as small vehicles
+    have arbitrary orientations. There is also a massive scale variation across different
+    instances. Moreover, the instances are not distributed uniformly. The instances
+    are sparse in most areas but crowded in some local areas. Large vehicles and ships
+    have large ARs. (f) and (g) exhibit the size and orientation histograms, respectively,
+    for all instances.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_10.jpg
+  Figure 10 caption: The computation of the IoU between two OBBs.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_2.jpg
+  Figure 2 caption: "Number of instances per image among DOTA and general object detection\
+    \ datasets. For PASCAL, ImageNet and MS COCO, we count the statistics of 10,000\
+    \ random images. As the images in DOTA are very large ( 20,000\xD720,000 ), for\
+    \ a fair comparison, we count the statistics of 10,1000 image patches with the\
+    \ size of 1024\xD71024 , which is also the size used for the baselines in Section\
+    \ 5.2. DOTA-v2.0 has a wider range of the number of instances per image."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_3.jpg
+  Figure 3 caption: Comparisons between HBB and OBB representations for objects. (a)
+    OBB representation. (b) HBB representation. The HBB representation cannot distinguish
+    rotated dense objects.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_4.jpg
+  Figure 4 caption: Examples of annotated images in DOTA. We show three examples per
+    category.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_5.jpg
+  Figure 5 caption: Typical examples of images collected from Google Earth (a), GF&JL
+    satellite (b) and CycloMedia (c).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_6.jpg
+  Figure 6 caption: The statistics of the GSD in 30% of the images in DOTA-v2.0.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_7.jpg
+  Figure 7 caption: Size variations for each category in DOTA. The sizes of different
+    categories vary in different ranges.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_8.jpg
+  Figure 8 caption: AR distributions of the instances in DOTA. (a) The ARs of the
+    OBBs. (b) The ARs of the HBBs.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Object_Detection_in_Aerial_Images_A_LargeScale_Benchmark_and_Challenges\figure_9.jpg
+  Figure 9 caption: Densities of the different categories. The density is measured
+    by calculating the distance to the closest instance.
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Jian Ding
+  Name of the last author: Liangpei Zhang
+  Number of Figures: 12
+  Number of Tables: 14
+  Number of authors: 11
+  Paper title: 'Object Detection in Aerial Images: A Large-Scale Benchmark and Challenges'
+  Publication Date: 2021-10-06 00:00:00
+  Table 1 caption: TABLE 1 DOTA Versus General Object Detection Datasets
+  Table 10 caption: TABLE 10 Results After Excluding Extremely Small Instances by
+    Different Thresholds in DOTA-v2.0
+  Table 2 caption: TABLE 2 DOTA Versus Object Detection Datasets In Aerial Images
+  Table 3 caption: TABLE 3 The Statistics for the Annotated Objects Across Different
+    Data Sources in DOTA-v1.5 and DOTA-v2.0
+  Table 4 caption: TABLE 4 Comparison of the Instance Size Distributions of Aerial
+    and Natural Images in Some Datasets
+  Table 5 caption: TABLE 5 Comparisons of the Three Versions of DOTA
+  Table 6 caption: TABLE 6 Baseline Results on DOTA
+  Table 7 caption: TABLE 7 Baseline Results of Class-Wise AP on DOTA-v1.0
+  Table 8 caption: TABLE 8 Baseline Results of Class-Wise AP on DOTA-v1.5
+  Table 9 caption: TABLE 9 Baseline Results of Class-Wise AP on DOTA-v2.0
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3117983
+- Affiliation of the first author: school of information science and technology, shanghaitech
+    university, shanghai, china
+  Affiliation of the last author: school of information science and technology, shanghaitech
+    university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_1.jpg
+  Figure 1 caption: Setup of NLOS imaging system.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_10.jpg
+  Figure 10 caption: The difference of reconstruction result at 0.9 m, where both
+    results are normalized. (a) Magnitude difference of reconstruction result. (b)
+    Phase difference of reconstruction result. The error between two method is relatively
+    high, but this difference does not impair the final reconstruction quality.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_2.jpg
+  Figure 2 caption: "The concept of the RSD algorithm for NLOS imaging. In general,\
+    \ the RSD algorithm consists of two steps. The first step is to convolve 2D RSD\
+    \ kernel G( x c , y c , z v ,\u03A9) with 2D input signal P F ( x v , y v ,0,\u03A9\
+    ) ,and the second step is to compute the integral of wave front P F ( x v , y\
+    \ v , z v ,\u03A9) in the frequency domain."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_3.jpg
+  Figure 3 caption: Overview of the proposed RSD algorithm. (a) Fourier domain RSD
+    kernel reconstruction using unit ring impulses. Here we illustrate the basis of
+    radius sampling, that each RSD kernel can be represented by a linear combination
+    of a set of unit rings. Required RSD kernels are in the Fourier domain, and thus
+    can be formed by a linear combination of a set of unit rings in the Fourier domain.
+    (b) Unit ring impulse reconstruction using radius sampling. According to the radial
+    property of the unit ring impulse, the unit ring impulse can be formed by rotating
+    one of the radii. This is an overview of our proposed method. Following discussions
+    will follow the order of this figure from (a) to (b) and explain the details in
+    this figure.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_4.jpg
+  Figure 4 caption: (a) Magnitude (b) phase and (c) 3D plot of phase of a RSD kernel.
+    This shows the radial property exhibits in both magnitude and phase of RSD kernels.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_5.jpg
+  Figure 5 caption: Phase of an RSD kernel and its frequency analysis in the radius
+    direction. To analyze a frequency component of the RSD kernel, we take a one dimensional
+    slice as shown in the figure. From the spectrum, the diameter of an RSD kernel
+    is naturally a low-pass signal. The sample rate is determined according to the
+    spectrum.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_6.jpg
+  Figure 6 caption: (a) Frequency analysis of a radius of a unit ring. By analysing
+    the spectrum, the radius of a Fourier domain unit ring is a low-pass signal. Sampling
+    rate of the vector vecdelta hatrmathcal F[rho ; ] is derived from the spectrum.
+    (b) Illustration of radius sampling of Fourier domain unit ring impulse. One radius
+    is taken from the Fourier domain unit ring and sampled to form the vector vecdelta
+    hatrmathcal F[rho ; ] .
+  Figure 7 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_7.jpg
+  Figure 7 caption: A map for 1 times 4 vector to a 6 times 6 matrix mapping. The
+    number denotes the index of the vector. Here darker shading indicates larger values
+    of the elements in this matrix.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_8.jpg
+  Figure 8 caption: The spectrum of an input to an RSD kernel. The high-frequency
+    components of the input for RSD algorithm are mainly noises, which can be filtered
+    out by a low-pass filter for better reconstruction results.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Ring_and_Radius_Sampling_Based_Phasor_Field_Diffraction_Algorithm_for_NonLineofS\figure_9.jpg
+  Figure 9 caption: Work flow of the proposed algorithm. (a) Reconstruction of RSD
+    kernel. RSD kernels are generated using the pre-computed ring impulse vector and
+    coefficients. First we multiply the vector of unit ring vecdelta hatrF[rho ; ]
+    with coefficient A and sum them to compute one radius of the RSD kernel as shown
+    in Algorithm 3 step 2. Next we transform the vector in Cartesian coordinates into
+    2D RSD kernel GF left[x,y, hatz, Omega right] using mapping matrix M as shown
+    in Algorithm 3 step 3. Then, the final results come from a multiplication between
+    RSD kernels GF left[x,y, hatz, Omega right] and input in the Fourier domain HFleft[x,y,0,
+    Omega right] as shown in Algorithm 3 step 4. (b) We use generated RSD kernel to
+    reconstruct hidden scene. Final results can be computed by a summation of the
+    result from (a).
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.65
+  Name of the first author: Deyang Jiang
+  Name of the last author: Xin Lou
+  Number of Figures: 11
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: Ring and Radius Sampling Based Phasor Field Diffraction Algorithm for
+    Non-Line-of-Sight Reconstruction
+  Publication Date: 2021-10-06 00:00:00
+  Table 1 caption: TABLE 1 Computational Complexity (theoretical) and Memory Consumption
+    (storage) of Two RSD Algorithms (Letter 4 test case)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Computational Memory Consumption (MB) at Run-Time (MATLAB
+    profiler)
+  Table 3 caption: TABLE 3 Execution Time of the Original and Proposed RSD Algorithm
+  Table 4 caption: TABLE 4 Reconstruction Time and Memory Consumption (run-time) of
+    Two RSD Algorithms (rendered to 2020 and 13001800)
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3117962
+- Affiliation of the first author: department of automation, tsinghua university,
+    beijing, china
+  Affiliation of the last author: department of automation, tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_1.jpg
+  Figure 1 caption: Overview of the survey. We first review the dynamic networks that
+    perform adaptive computation at three different granularities (i.e., sample-wise,
+    spatial-wise and temporal-wise). Then we summarize the decision making strategy,
+    training technique and applications of dynamic models. Existing open problems
+    in this field together with some future research directions are finally discussed.
+    Best viewed in color.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_2.jpg
+  Figure 2 caption: Two early-exiting schemes. The dashed lines and shaded modules
+    are not executed, conditioned on the decisions made by the routers.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_3.jpg
+  Figure 3 caption: Multi-scale architectures with dynamic inference graphs. The first
+    three models (a, b, c) perform adaptive early exiting with specific architecture
+    designs and exiting policies. Dynamic routing is achieved inside a SuperNet (d)
+    to activate data-dependent inference paths.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_4.jpg
+  Figure 4 caption: Dynamic layer skipping. Feature x 4 in (a) are not calculated
+    conditioned on the halting score, and the gating module in (b) decides whether
+    to execute the block based on the intermediate feature. The policy network in
+    (c) generates the skipping decisions for all layers in the main network.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_5.jpg
+  Figure 5 caption: MoE with soft weighting (a) and hard gating (b) schemes both adopt
+    an auxiliary module to generate the weights or gates. In the tree structure (c),
+    features (nodes) and transformations (paths) are represented as circles and lines
+    with arrows respectively. Only the full lines are activated.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_6.jpg
+  Figure 6 caption: 'Three implementations of dynamic parameters: adjusting (a) or
+    generating (b) the backbone parameters based on the input, and (c) dynamically
+    rescaling the features with the attention mechanism.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_7.jpg
+  Figure 7 caption: Dynamic convolution on selected spatial locations. The 1 elements
+    (black) in the spatial mask determine the pixels (green) that require computation
+    in the output feature map.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_8.jpg
+  Figure 8 caption: Region-level dynamic inference. The region selection module generates
+    the transformationlocalization parameters, and the subsequent network performs
+    inference on the transformedcropped region.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Dynamic_Neural_Networks_A_Survey\figure_9.jpg
+  Figure 9 caption: Temporally adaptive inference. The first three approaches dynamically
+    allocate computation in each step by (a) skipping the update, (b) partially updating
+    the state, or (c) conditional computation in a hierarchical structure. The agent
+    in (d) decides where to read in the next step.
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Yizeng Han
+  Name of the last author: Yulin Wang
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: 'Dynamic Neural Networks: A Survey'
+  Publication Date: 2021-10-06 00:00:00
+  Table 1 caption: TABLE 1 Notations Used in This Paper
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Kernel Shape Adaptation by Dynamically Sampling Feature
+    Pixels [110], [111] or Convolutional Weights [112]
+  Table 3 caption: TABLE 3 Applications of Dynamic Networks
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3117837
+- Affiliation of the first author: school of artificial intelligence, optics and electronics
+    (iopen), northwestern polytechnical university, xian, shaanxi, china
+  Affiliation of the last author: school of artificial intelligence, optics and electronics
+    (iopen), northwestern polytechnical university, xian, shaanxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_1.jpg
+  Figure 1 caption: The pipeline of Hyper-BinaryNet using ResNet-18 as backbone. First,
+    the main binarized neural network is built, except that the kernel size of convolution
+    in skip connection branch is 3 rather than 1. Second, convolution layers in ResNet
+    are mostly replaced with HyperConv modules, except the first convolution layer;
+    Third, during each forward propagation, the 1-bit kernels are regenerated by the
+    auxiliary neural networks and used layer by layer. Finally, the real-valued gradients
+    are top-down computed based on 1-bit weightsactivations and accumulated in auxiliary
+    networks. After training, all embedded vectors and auxiliary neural networks are
+    removed, leaving a full binarized neural network which can be accelerated based
+    on bit-counting operations.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_10.jpg
+  Figure 10 caption: Training procedure of continuous binarizing with and without
+    warmup technique. Best viewed in color.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_2.jpg
+  Figure 2 caption: "A brief sketch of the weight-generation and hyper-accumulation\
+    \ mechanism based on auxiliary networks. \u201C W n \u201D indicates binarized\
+    \ weights. \u201C A n \u201D indicates input feature maps. Gradient information\
+    \ will be introduced into embedded vectors and proper binary weights will be generated."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_3.jpg
+  Figure 3 caption: Comparison of gradient-accumulation process between traditional
+    BNNs and our Hyper-BinaryNet.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_4.jpg
+  Figure 4 caption: Network architectures of XNOR-Net, CBCN and Hyper-BinaryNet on
+    ResNet18. Shortcut branch without gradient-mismatch problem are further enhanced
+    in Hyper-BinaryNet.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_5.jpg
+  Figure 5 caption: Example of the dual path convolution module.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_6.jpg
+  Figure 6 caption: The Top-1 accuracy evaluated on CIFAR-10 datasets with ResNet18,
+    ResNet34 and ConvNet as base architecture.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_7.jpg
+  Figure 7 caption: The Top-1 accuracy evaluated on CIFAR-100 datasets with ResNet18,
+    ResNet34 and ConvNet as base architecture.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_8.jpg
+  Figure 8 caption: Training procedure on ImageNet dataset with ResNet18 as backbone.
+    Best viewed in color.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Gradient_Matters_Designing_Binarized_Neural_Networks_via_Enhanced_InformationFlo\figure_9.jpg
+  Figure 9 caption: Training procedure on ImageNet dataset with ResNet18 as backbone.
+    Best viewed in color.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.96
+  Name of the first author: Qi Wang
+  Name of the last author: Zeping Yin
+  Number of Figures: 10
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: 'Gradient Matters: Designing Binarized Neural Networks via Enhanced
+    Information-Flow'
+  Publication Date: 2021-10-06 00:00:00
+  Table 1 caption: TABLE 1 A Brief Introduction of Variables Used in the Paper
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Top-1 Accuracy on CIFAR-10100 Datasets and Comparison With
+    SOTA BNNs
+  Table 3 caption: TABLE 3 Top-15 Accuracy of Hyper-BinaryNet Evaluated on ImageNet-12
+    Dataset and Comparison With Other BNNs Methods
+  Table 4 caption: TABLE 4 Top-1 Accuracy on CIFAR10 Dataset
+  Table 5 caption: "TABLE 5 Top-1 Accuracy Comparison With Different Exponential Decay\
+    \ Rate \u03B4 \u03B4 on CIFAR10 Dataset"
+  Table 6 caption: TABLE 6 Top-1 Accuracy Comparison on CIFAR-10 Dataset With Different
+    Depth and Width of Auxiliary Network
+  Table 7 caption: TABLE 7 Top-1 Accuracy Comparison on CIFAR10 Dataset
+  Table 8 caption: TABLE 8 The Number of Floating-Point and Binary Operations in All
+    Convolution Layers Among Different Binary Methods
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3117908
+- Affiliation of the first author: indraprastha institute of information technology
+    delhi, new delhi, delhi, india
+  Affiliation of the last author: indian institute of technology delhi, new delhi,
+    delhi, india
+  Figure 1 Link: articels_figures_by_rev_year\2021\Generating_Personalized_Summaries_of_Day_Long_Egocentric_Videos\figure_1.jpg
+  Figure 1 caption: Egocentric videos are characterized by their long, redundant,
+    and extremely shaky nature. The figure shows comparative statistics for benchmark
+    egocentric and third person video. We use Disney, HUJI, and UTE datasets for first-person
+    and TVSum and SumMe for third-person datasets to calculate the statistics. While
+    other statistics are obvious, optical flow indicates frequent sharp changes in
+    viewpoints due to the wearers head motion. The typical characteristics make traditional
+    summarization techniques unsuitable for egocentric videos.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Generating_Personalized_Summaries_of_Day_Long_Egocentric_Videos\figure_2.jpg
+  Figure 2 caption: Illustration of the proposed technique to summarize day long egocentric
+    videos based on reinforcement learning (RL). As per the current position of the
+    sliding window (W s ) we select a set of segments as a past summary (S p ) and
+    future summary (S f ) (a global representative of input video) from the previously
+    generated summary. The first column to the left C3D shows the representation of
+    past, current, and future segments of the video. The past and future segments
+    are represented by their sub-shots in the current summary. Further, each sub-shot
+    in the representation (whether coming from past, current, or future segments)
+    is essentially a set of 16 consecutive frames from which we evaluate the C3D features.
+    The second column to the left of C3D features indicates these sub-shotssets. The
+    RL agent takes actions on the input (S p +W s +S f ) to select the sub-shots for
+    summary by maximizing the reward in each iteration. Based on various informative
+    measures, the feedback reward R(S) assesses the goodness of the summary. The figure
+    shows the reward based on distinctiveness, indicativeness, social interaction,
+    and face identity.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Generating_Personalized_Summaries_of_Day_Long_Egocentric_Videos\figure_3.jpg
+  Figure 3 caption: The figure shows a comparison between DR-DSN [6] and proposed
+    approach for the 10 minutes summaries of Michael Day 2 sequence using basic RL
+    rewards. The 1st row shows the original frames, and the numbers on the top show
+    frame numbers (from 140Kth frame to 300Kth in the original video. The 2nd row
+    shows the predicted summary frames by the DR-DSN method. The 3rd, 4th, and 5th
+    rows show output from the proposed method using distinctiveness-indicativeness,
+    social interaction, and unique identity based rewards, respectively. The blank
+    rectangles indicate that no frames were picked from those frame ranges. We observe
+    that DR-DSN misses various important events and instead picks clusters of selected
+    frames over two particular locations.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Generating_Personalized_Summaries_of_Day_Long_Egocentric_Videos\figure_4.jpg
+  Figure 4 caption: We observed in Fig. 3 that DR-DSN [6] picks a cluster of frames
+    from a particular location in summary, whereas the proposed frameworks effectively
+    distribute the summary frame from all over the video, same as ground truth. This
+    figure gives a better visualization by showing the distribution of the summary
+    frames with respect to the ground truth summary for various frameworks, including
+    ours for the full video. The figure also indicates that most of the selected summary
+    frames are common despite using different RL frameworks as the reward is the same
+    for all the frameworks.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Generating_Personalized_Summaries_of_Day_Long_Egocentric_Videos\figure_5.jpg
+  Figure 5 caption: Commonly used F-score do not correlate well with goodness of a
+    summary for long videos. We use Relaxed F-score to evaluate the summaries. The
+    plot above shows Relaxed F-score for different units of temporal relaxation (
+    Delta t) for Alin Day 1 video sequence of Disney dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Generating_Personalized_Summaries_of_Day_Long_Egocentric_Videos\figure_6.jpg
+  Figure 6 caption: Comparing 1, 5, 10, and 15 minutes summaries (row 1-4) based on
+    the basic RL rewards using Policy Gradient framework on Michael Day 2 sequence
+    from Disney dataset with the ground truth summary (row 5). Note that the ground
+    truth summary length is approximately 5 minutes. The numbers on the top show frame
+    numbers (from 0 to 400K). The pictures show indicative frames in summary from
+    the corresponding frame range. The blank rectangles indicate no frames were picked
+    from those frame ranges. The black vertical bars indicate a frame was picked from
+    a corresponding temporal window of 70 frames in each row. The bar serves to indicate
+    the distribution of summary frames in the video.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Generating_Personalized_Summaries_of_Day_Long_Egocentric_Videos\figure_7.jpg
+  Figure 7 caption: The figure demonstrates the visualization of the interactive summarization
+    of the Alin Day 1 video sequence of the Disney dataset for 10 minutes summaries.
+    Each bar represents 10 seconds of a time interval. (a)-(f) shows different summaries
+    when the user asks to excludeinclude dinner event in summary, and (g) shows the
+    ground truth summary distribution. We observe that (b) shows big peaks in the
+    dinner event area, whereas (c) shows very few spikes because of the negative feedback.
+    As an ablation study, we initialized the summary by random frames but not included
+    any frame from the dinner event in the initialization, as shown in (d). When we
+    personalized the summary to include the dinner, with the initialization as done
+    in (d), we observe that the summary changes to select sub-shots from the dinner
+    event as shown in (e).
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Pravin Nagar
+  Name of the last author: Chetan Arora
+  Number of Figures: 7
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: Generating Personalized Summaries of Day Long Egocentric Videos
+  Publication Date: 2021-10-06 00:00:00
+  Table 1 caption: TABLE 1 Comparison of SOTA Techniques With the Proposed Method
+    on Various Criteria Important for Applicability to Egocentric Videos
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Comparison Between SOTA Approaches and the
+    Variations of the Proposed Method on the Three Samples of Disney Dataset
+  Table 3 caption: TABLE 3 Performance Comparison Between SOTA and the Variations
+    of the Proposed Method for the Number of Unique Events Covered
+  Table 4 caption: TABLE 4 Comparison on UTE Dataset Based on Basic RL Rewards Using
+    RFS-50 Metric
+  Table 5 caption: TABLE 5 The Table Shows the Likert Score When Specific Events are
+    Included or Excluded in Summary
+  Table 6 caption: TABLE 6 Though not the Focus of This Paper, we Evaluate Our Method
+    on Short Video Benchmarks as Well for a Thorough Comparison
+  Table 7 caption: TABLE 7 The Table Shows the F-Scores Measure of Different Techniques
+    for Various Combinations of Rewards for SumMe and TVSum Datasets
+  Table 8 caption: TABLE 8 The Table Shows the Average RFS-50 (Relaxed F Score With
+    Temporal Relaxation of 50) for Three Video Sequences of Disney and UTE Datasets
+    for Different Rewards
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3118077

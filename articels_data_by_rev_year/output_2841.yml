@@ -1,0 +1,684 @@
+- Affiliation of the first author: school of electrical engineering, korea advanced
+    institute of science and technology (kaist), daejeon, republic of korea
+  Affiliation of the last author: school of electrical engineering, korea advanced
+    institute of science and technology (kaist), daejeon, republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_1.jpg
+  Figure 1 caption: "Comparison between GRU [10] and the proposed Information Discrimination\
+    \ Unit (IDU) for online action detection. Our IDU extends GRU with two novel components,\
+    \ a mechanism utilizing current information (blue lines) and an early embedding\
+    \ module (red dash boxes). First, reset and update modules in our IDU additionally\
+    \ take the current information (i.e., x 0 ) to consider whether the past information\
+    \ (i.e, h t\u22121 and x t ) are relevant to an ongoing action such as x 0 . Second,\
+    \ the early embedding module is introduced to consider the relation between high-level\
+    \ features for both information."
+  Figure 10 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_10.jpg
+  Figure 10 caption: 'The integration module is divided into two stages: ht-1 combination
+    stage and weighted modulation stage.'
+  Figure 2 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_2.jpg
+  Figure 2 caption: "Illustration of our Information Discrimination Unit (IDU) and\
+    \ Information Discrimination Network (IDN). (a) Our IDU extends GRU with two new\
+    \ components, a mechanism using current information (i.e., x 0 ) (blue lines)\
+    \ and an early embedding module (red boxes). The first encourages reset and update\
+    \ modules to model the relation between past information (i.e., h t\u22121 and\
+    \ x t ) and an ongoing action. The second enables IDU to effectively model the\
+    \ relation between high-level features for the input information. (b) Given an\
+    \ input streaming video V= c t 0 t=\u2212T consisting of sequential chunks, IDN\
+    \ models a current action sequence and outputs the probability distribution p\
+    \ 0 of the current action over K action classes and background."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_3.jpg
+  Figure 3 caption: "Illustration of our Information Integration Unit (IIU) and Information\
+    \ Integration Network (IIN). (a) Our IIU integrates two different modality sequences\
+    \ x t and g t , considering a previous integrated state h t\u22121 . IIU consists\
+    \ of an integration module for combining two input sequences and an update module\
+    \ for updating the current integrated state h t . (b) Given an input video V=\
+    \ c t 0 t=\u2212T and corresponding pseudo action labels A= y t 0 t=\u2212T ,\
+    \ IIN captures historical and contextual information and predicts the probability\
+    \ distributions Q= q t T a t=1 of future actions."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_4.jpg
+  Figure 4 caption: Qualitative comparisons on predicted and GT probabilities for
+    action (top) and background (bottom).
+  Figure 5 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_5.jpg
+  Figure 5 caption: Example of relevance scores Rt of input chunks.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_6.jpg
+  Figure 6 caption: Comparison between the update gate zt values of our IDU and GRU
+    [10]. Update gate values are measured on the input sequences containing (a) from
+    one to five relevant chunks and (b) from 11 to 15 relevant chunks.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_7.jpg
+  Figure 7 caption: Performance comparison for each class on (a) TVSeries [14] and
+    (b) THUMOS-14 [15]. Action classes are sorted in descending order of IDU performance.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_8.jpg
+  Figure 8 caption: Qualitative evaluation of IDN on TVSeries [14] (upper) and THUMOS-14
+    [15] (lower). Each result shows frames, ground truth, and estimated probabilities.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Learning_to_Discriminate_Information_for_Online_Action_Detection_Analysis_and_Ap\figure_9.jpg
+  Figure 9 caption: Comparison between the update gate zt values of IDN with and without
+    the early embedding module. Baseline+CI is IDN without the early embedding module.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.7
+  Name of the first author: Sumin Lee
+  Name of the last author: Changick Kim
+  Number of Figures: 12
+  Number of Tables: 15
+  Number of authors: 7
+  Paper title: 'Learning to Discriminate Information for Online Action Detection:
+    Analysis and Application'
+  Publication Date: 2022-09-07 00:00:00
+  Table 1 caption: TABLE 1 Specifications of Our IDN
+  Table 10 caption: TABLE 10 Ablation Study of the Effectiveness of Our Proposed IIU
+    on THUMOS-14 [15]
+  Table 2 caption: TABLE 2 Specifications of Our IIN
+  Table 3 caption: TABLE 3 Ablation Study of the Effectiveness of Our Proposed Components
+    on TVSeries [14]
+  Table 4 caption: TABLE 4 Ablation Study of the Effectiveness of Our Proposed Components
+    on THUMOS-14 [15]
+  Table 5 caption: TABLE 5 Performance Comparison on TVSeries [14]
+  Table 6 caption: TABLE 6 Performance Comparison on THUMOS-14 [15]
+  Table 7 caption: TABLE 7 Performance Comparison for Different Portions of Actions
+    on TVSeries [14] in Terms of mcAP (%)
+  Table 8 caption: TABLE 8 Ablation Study of the Classification Loss L ee Lee and
+    the Contrastive Loss L ct Lct of the Proposed Early Embedding Module on THUMOS-14
+    [15] and TVSeries [14]
+  Table 9 caption: TABLE 9 Ablation Study of the Effectiveness of Our Proposed IIU
+    on TVSeries [14]
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3204808
+- Affiliation of the first author: centre for artificial intelligence research, university
+    of agder, grimstad, norway
+  Affiliation of the last author: centre for artificial intelligence research, university
+    of agder, grimstad, norway
+  Figure 1 Link: articels_figures_by_rev_year\2022\On_the_Convergence_of_Tsetlin_Machines_for_the_XOR_Operator\figure_1.jpg
+  Figure 1 caption: A two-action tsetlin automaton with 2N states.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\On_the_Convergence_of_Tsetlin_Machines_for_the_XOR_Operator\figure_2.jpg
+  Figure 2 caption: "A TA team G i j consisting of 2o TAs [29]. Here I( x 1 ) means\
+    \ \u201Cinclude x 1 \u201D and E( x 1 ) means \u201Cexclude x 1 \u201D."
+  Figure 3 Link: articels_figures_by_rev_year\2022\On_the_Convergence_of_Tsetlin_Machines_for_the_XOR_Operator\figure_3.jpg
+  Figure 3 caption: TM voting architecture.
+  Figure 4 Link: articels_figures_by_rev_year\2022\On_the_Convergence_of_Tsetlin_Machines_for_the_XOR_Operator\figure_4.jpg
+  Figure 4 caption: "A simple TA with two states. In this figure, \u201C P \u201D\
+    , \u201C R \u201D, \u201C I \u201D, and \u201C E \u201D means \u201Cpenalty\u201D\
+    , \u201Creward\u201D, \u201Cinclude\u201D and \u201Cexclude\u201D respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2022\On_the_Convergence_of_Tsetlin_Machines_for_the_XOR_Operator\figure_5.jpg
+  Figure 5 caption: The convergence of a TM with 5 clauses when T=2 .
+  Figure 6 Link: articels_figures_by_rev_year\2022\On_the_Convergence_of_Tsetlin_Machines_for_the_XOR_Operator\figure_6.jpg
+  Figure 6 caption: The convergence of a TM with 5 clauses when T=3 .
+  Figure 7 Link: articels_figures_by_rev_year\2022\On_the_Convergence_of_Tsetlin_Machines_for_the_XOR_Operator\figure_7.jpg
+  Figure 7 caption: The number of TA updates as a function of training epochs.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Lei Jiao
+  Name of the last author: Kuruge Darshana Abeyrathna
+  Number of Figures: 7
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: On the Convergence of Tsetlin Machines for the XOR Operator
+  Publication Date: 2022-09-07 00:00:00
+  Table 1 caption: "TABLE 1 Type I Feedback \u2014 Feedback upon Receiving a Sample\
+    \ with Label y=1 y=1, for a Single TA to Decide Whether to Include or Exclude\
+    \ a Given Literal x k \xAC x k xk\xACxk into C i j Cji"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Type II Feedback \u2014 Feedback upon Receiving a Sample\
+    \ with Label y=0 y=0, for a Single TA to Decide Whether to Include or Exclude\
+    \ a Given Literal x k \xAC x k xk\xACxk into C i j Cji"
+  Table 3 caption: "TABLE 3 The \u201CXOR\u201D Logic"
+  Table 4 caption: "TABLE 4 A Sub-Pattern in \u201CXOR\u201D Case"
+  Table 5 caption: "TABLE 5 A Sub-Pattern in \u201CXOR\u201D Case"
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3203150
+- Affiliation of the first author: department of industrial engineering and management,
+    peking university, beijing, china
+  Affiliation of the last author: department of industrial engineering and management,
+    peking university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_1.jpg
+  Figure 1 caption: "Graphical model of convolution process, where \u2217 denotes\
+    \ a convolution operation."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_2.jpg
+  Figure 2 caption: The structure of MGP [19] for modeling the target output f t .
+  Figure 3 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_3.jpg
+  Figure 3 caption: Illustration of the marginalization-based domain adaptation using
+    the normalized density data of ceramic product. (a). Marginalize source data to
+    the domain only with feature x (c) , and obtain marginal distribution through
+    kernel regression; (b). Induce data based on the marginal distribution and expand
+    them to the target domain.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_4.jpg
+  Figure 4 caption: Boxplots of the MAE in the simulation case I, where the line in
+    each box represents the median value.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_5.jpg
+  Figure 5 caption: Visualization of results in one repetition of 1D example.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_6.jpg
+  Figure 6 caption: Boxplot of MAE in the simulation case II. The line in each box
+    represents the median value.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_7.jpg
+  Figure 7 caption: Predictive results in one repetition of the simulation case II.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_8.jpg
+  Figure 8 caption: 'Data for the ceramic manufacturing. 1-1, 1-2 are from dry pressing
+    manufacturing and 2-1, 2-2 are from additive manufacturing, where the second index
+    represents the measurement method: 1 for mass-volume method and 2 for Archimedes
+    method.'
+  Figure 9 Link: articels_figures_by_rev_year\2022\Regularized_MultiOutput_Gaussian_Convolution_Process_With_Domain_Adaptation\figure_9.jpg
+  Figure 9 caption: Prediction results in one repetition of the ceramic manufacturing
+    case.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xinming Wang
+  Name of the last author: Jianguo Wu
+  Number of Figures: 9
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Regularized Multi-Output Gaussian Convolution Process With Domain Adaptation
+  Publication Date: 2022-09-08 00:00:00
+  Table 1 caption: TABLE 1 Part of the Estimated Parameters in One Repetition of the
+    1D Example
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Correlation Between Each Source and the Target in Simulation
+    Case I
+  Table 3 caption: TABLE 3 Average MAE of Each Method in Simulation Case III
+  Table 4 caption: TABLE 4 Average Optimization and Prediction Time (Value in the
+    Parentheses) of Each Method in Simulation Case III
+  Table 5 caption: TABLE 5 Controlled Parameters in Ceramic Product Manufacturing
+  Table 6 caption: TABLE 6 Prediction Error of Each Method in the Ceramic Manufacturing
+    Case
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3205036
+- Affiliation of the first author: college of computer science and technology, nanjing
+    university of aeronautics and astronautics, nanjing, china
+  Affiliation of the last author: school of cyber science and technology, shenzhen
+    campus of sun yat-sen university, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_1.jpg
+  Figure 1 caption: An illustration of the definition extension from the global (a)
+    to the local with scale space (b).
+  Figure 10 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_10.jpg
+  Figure 10 caption: Some samples of the content authentication by different perceptual
+    hashing methods.
+  Figure 2 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_2.jpg
+  Figure 2 caption: 'An illustration of the geometric transformations: translation
+    (a), rotation (b), flipping (c), and scaling (d).'
+  Figure 3 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_3.jpg
+  Figure 3 caption: A high-level intuition of the proposed dense invariant representation.
+  Figure 4 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_4.jpg
+  Figure 4 caption: Calculation error (a) and decomposition time (b) for different
+    implementation methods.
+  Figure 5 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_5.jpg
+  Figure 5 caption: Some samples of the pattern detection by different dense descriptors.
+  Figure 6 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_6.jpg
+  Figure 6 caption: Some samples of the pattern matching by different dense descriptors.
+  Figure 7 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_7.jpg
+  Figure 7 caption: Some samples of the copy-move detection by different forensic
+    methods on the copy-move forensic benchmarks.
+  Figure 8 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_8.jpg
+  Figure 8 caption: Some samples of the copy-scale-move detection by different forensic
+    methods.
+  Figure 9 Link: articels_figures_by_rev_year\2022\A_Principled_Design_of_Image_Representation_Towards_Forensic_Tasks\figure_9.jpg
+  Figure 9 caption: Precision, recall, and F1 box-plots by different copy-move forgery
+    detection methods in comprehensive robustness experiment.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.69
+  Name of the first author: Shuren Qi
+  Name of the last author: Xiaochun Cao
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: 'A Principled Design of Image Representation: Towards Forensic Tasks'
+  Publication Date: 2022-09-08 00:00:00
+  Table 1 caption: TABLE 1 Theoretical Comparison With Related Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Notations and Definitions
+  Table 3 caption: TABLE 3 F1 Scores (%) for Different Dense Descriptors in Pattern
+    Detection Experiment
+  Table 4 caption: TABLE 4 Repeatability Scores (%) for Different Dense Descriptors
+    in Pattern Matching Experiment
+  Table 5 caption: TABLE 5 Precision, Recall, and F1 Scores (%) for Different Methods
+    on Various Copy-Move Forensic Benchmarks
+  Table 6 caption: TABLE 6 Precision, Recall, and F1 Scores (%) for Different Methods
+    on the FAU Copy-Move Forensic Benchmark
+  Table 7 caption: TABLE 7 Precision, Recall, F1 Scores (%), and Matching Performance
+    (Number of Matches per Image) Gain Rate in Copy-Scale-Move Robustness Experiment
+  Table 8 caption: TABLE 8 Precision, Recall, and F1 Scores (%) for Different Methods
+    in Copy-Scale-Move Robustness Experiment
+  Table 9 caption: TABLE 9 Precision, Recall, and F1 Scores (%) for Different Perceptual
+    Hashing Algorithms in Hash Robustness Experiment
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3204971
+- Affiliation of the first author: 4paradigm inc., beijing, china
+  Affiliation of the last author: department of artificial intelligence and automation,
+    huazhong university of science and technology, wuhan, hubei, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Searching_a_High_Performance_Feature_Extractor_for_Text_Recognition_Network\figure_1.jpg
+  Figure 1 caption: The typical text recognition (TR) pipeline. In this paper, we
+    focus on the search of a good feature extractor.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Searching_a_High_Performance_Feature_Extractor_for_Text_Recognition_Network\figure_2.jpg
+  Figure 2 caption: "Feature extractor in ASTER [3]. For a convolutional layer, \u201C\
+    Out Size\u201D is the feature map size (height \xD7 width). For a sequential layer,\
+    \ \u201COut Size\u201D is the sequence length. The symbol \u201Cs\u201D is the\
+    \ stride of the first convolutional layer in a block."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Searching_a_High_Performance_Feature_Extractor_for_Text_Recognition_Network\figure_3.jpg
+  Figure 3 caption: Graph illustration of the proposed method TREFE. The search space
+    of TREFE contains both spatial model (see Section 3.1.1) and sequential model
+    (see Section 3.1.2) part, and the neck is used for supernet training (see Section
+    3.2.2).
+  Figure 4 Link: articels_figures_by_rev_year\2022\Searching_a_High_Performance_Feature_Extractor_for_Text_Recognition_Network\figure_4.jpg
+  Figure 4 caption: "Search space of a transformer layer. \u201CRel.\u201D is short\
+    \ for relative distance embedding. The purple boxes represent the original structures,\
+    \ and boxes with a white background indicate the alternative choices."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Searching_a_High_Performance_Feature_Extractor_for_Text_Recognition_Network\figure_5.jpg
+  Figure 5 caption: Comparison of the supernet training loss curves for SPOS [20],
+    TREFE (with random path) and its variations (best path and co-update).
+  Figure 6 Link: articels_figures_by_rev_year\2022\Searching_a_High_Performance_Feature_Extractor_for_Text_Recognition_Network\figure_6.jpg
+  Figure 6 caption: "Correlation plots between the validation CERs of the stand-alone\
+    \ model and one-shot model for SPOS [20], TREFE (\u201Crandom path\u201D) and\
+    \ its variants (\u201Cbest path\u201D and \u201Cco-update\u201D). The red lines\
+    \ is the linear regression fit."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Searching_a_High_Performance_Feature_Extractor_for_Text_Recognition_Network\figure_7.jpg
+  Figure 7 caption: Validation CER versus the number of search iterations for natural
+    gradient descent (NGD), evolutionary algorithm and random sampling on the IAM
+    dataset.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Hui Zhang
+  Name of the last author: Xiang Bai
+  Number of Figures: 7
+  Number of Tables: 15
+  Number of authors: 4
+  Paper title: Searching a High Performance Feature Extractor for Text Recognition
+    Network
+  Publication Date: 2022-09-12 00:00:00
+  Table 1 caption: TABLE 1 Some Well-Known Hand-Designed Text Recognition (TR) Algorithms
+    With NAS-Based Methods
+  Table 10 caption: TABLE 10 Comparison of TREFE, AutoSTR and Different Variants on
+    IAM and RIMES Dataset
+  Table 2 caption: TABLE 2 Comparison Between AutoSTR [16] and TREFE
+  Table 3 caption: TABLE 3 Comparison With the State-of-the-Arts on the Scene Text
+    Datasets
+  Table 4 caption: TABLE 4 Comparison with the State-of-the-Arts on the IAM Dataset
+  Table 5 caption: TABLE 5 Comparison With the State-of-the-Arts on the RIMES Dataset
+  Table 6 caption: TABLE 6 Architectures Obtained on the IAM Dataset (left) and Scene
+    Text Dataset (right)
+  Table 7 caption: TABLE 7 Comparison of TREFE and Random Search Under Different Latency
+    Constraints on the IAM Dataset
+  Table 8 caption: TABLE 8 Performance Comparison of Different Spatial Model Architectures
+  Table 9 caption: TABLE 9 Performance Comparison of Different Sequential Model Architectures
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3205748
+- Affiliation of the first author: google research, brain team, toronto, on, canada
+  Affiliation of the last author: google research, brain team, toronto, on, canada
+  Figure 1 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_1.jpg
+  Figure 1 caption: "Two representative SR3 outputs: (top) 8\xD7 face super-resolution\
+    \ at 16\xD716 \u2192 128\xD7128 pixels (bottom) 4\xD7 natural image super-resolution\
+    \ at 64\xD764 \u2192 256\xD7256 pixels."
+  Figure 10 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_10.jpg
+  Figure 10 caption: ImageNet super-resolution fool rates. Model outputs are compared
+    to ground truth with pair of images shown for 6 seconds.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_2.jpg
+  Figure 2 caption: The forward diffusion process q (left to right) gradually adds
+    Gaussian noise to the target image. The reverse process p (right to left) iteratively
+    denoises the target image, conditioned on a source image x . (Source x is not
+    shown.).
+  Figure 3 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_3.jpg
+  Figure 3 caption: "Depiction of U-Net architecture of SR3. The low resolution input\
+    \ image x is up-sampled to the target resolution using bicubic interpolation,\
+    \ and concatenated with the noisy high resolution output image y t . We show the\
+    \ activation dimensions for a 16\xD716 \u2192 128\xD7128 super resolution model.\
+    \ We perform self-attention on 16\xD716 feature maps."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_4.jpg
+  Figure 4 caption: "Super-resolution results (64\xD764 \u2192 256\xD7256) for SR3\
+    \ and Regression on ImageNet test images. Both models use the same architecture\
+    \ and training data. We display the full image and an enlarged patch to show fine-grained\
+    \ details."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_5.jpg
+  Figure 5 caption: "Three samples from SR3 applied to ImageNet test images (16\xD7\
+    16 \u2192 256\xD7256), demonstrating SR3 diversity."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_6.jpg
+  Figure 6 caption: "Results of a SR3 model (64\xD764 \u2192 512\xD7512), trained\
+    \ on FFHQ, and applied to images outside of the training set."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_7.jpg
+  Figure 7 caption: "SR3 and state-of-the-art methods on 4\xD7 super-resolution (64\xD7\
+    64 \u2192 256\xD7256) applied to ImageNet test images. The outputs of EnhanceNet\
+    \ and ESRGAN are sharp, but include artifacts especially when inspecting enlarged\
+    \ patches. We found that ESRGAN trained on ImageNet-1 M produced similar artifacts.\
+    \ SR3 outputs seem to resemble the original images the most, but one can still\
+    \ find patches in the original images that contain more interesting texture than\
+    \ in SR3 outputs."
+  Figure 8 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_8.jpg
+  Figure 8 caption: "Comparison on 4\xD7 face super-resolution (16\xD716 \u2192 128\xD7\
+    128). Reference images are removed for privacy concerns."
+  Figure 9 Link: articels_figures_by_rev_year\2022\Image_SuperResolution_via_Iterative_Refinement\figure_9.jpg
+  Figure 9 caption: Face super-resolution human fool rates (higher is better, for
+    photo-realistic samples one would expect a fool rate close to 50%). Outputs of
+    four models are compared to ground truth. (top) Task-1, subjects are shown low-resolution
+    inputs. (bottom) Task-2, inputs are not shown.
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chitwan Saharia
+  Name of the last author: Mohammad Norouzi
+  Number of Figures: 16
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Image Super-Resolution via Iterative Refinement
+  Publication Date: 2022-09-12 00:00:00
+  Table 1 caption: TABLE 1 Task Specific U-Net Architecture Parameters
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 PSNR & SSIM on 16\xD716 \u2192 \u2192 128\xD7128 Face\
+    \ Super-Resolution"
+  Table 3 caption: TABLE 3 Performance Comparison Between SR3 and Regression Baseline
+    on Natural Image Super-Resolution Using Standard Metrics Computed on the ImageNet
+    Validation Set
+  Table 4 caption: "TABLE 4 Comparison of ResNet-50 Classification Accuracy on 4\xD7\
+    \ Super-Resolution Outputs of the First 1 K Images From the ImageNet Validation\
+    \ Set"
+  Table 5 caption: "TABLE 5 FID Scores for Class-Conditional, 256\xD7256 ImageNet\
+    \ Generation"
+  Table 6 caption: "TABLE 6 Ablations on SR3 for Class-Conditional 256\xD7256 ImageNet"
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3204461
+- Affiliation of the first author: facebook ai research, paris, france
+  Affiliation of the last author: facebook ai research, paris, france
+  Figure 1 Link: articels_figures_by_rev_year\2022\ResMLP_Feedforward_Networks_for_Image_Classification_With_DataEfficient_Training\figure_1.jpg
+  Figure 1 caption: The ResMLP architecture. After linearly projecting the image patches
+    into high dimensional embeddings, ResMLP sequentially processes them with (1)
+    a cross-patch linear sublayer; (2) a cross-channel two-layer MLP. The MLP is the
+    same as the FCN sublayer of a Transformer. Each sublayer has a residual connection
+    and two Affine element-wise transformations.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\ResMLP_Feedforward_Networks_for_Image_Classification_With_DataEfficient_Training\figure_2.jpg
+  Figure 2 caption: "Visualisation of the linear layers in ResMLP-S24. For each layer\
+    \ we visualise the rows of the matrix A as a set of 14\xD714 pixel images, for\
+    \ sake of space we only show the rows corresponding to the 6\xD76 central patches.\
+    \ We observe patterns in the linear layers that share similarities with convolutions.\
+    \ In Appendix B, which can be found on the Computer Society Digital Library at\
+    \ http:doi.ieeecomputersociety.org10.1109TPAMI.2022.3206148, we provide comparable\
+    \ visualizations for all layers of a ResMLP-S12 model."
+  Figure 3 Link: articels_figures_by_rev_year\2022\ResMLP_Feedforward_Networks_for_Image_Classification_With_DataEfficient_Training\figure_3.jpg
+  Figure 3 caption: Sparsity of linear interaction layers. For each layer (linear
+    and MLP), we show the rate of components whose absolute value is lower than 5%
+    of the maximum. Linear interaction layers are sparser than the matrices involved
+    in the per-patch MLP.
+  Figure 4 Link: articels_figures_by_rev_year\2022\ResMLP_Feedforward_Networks_for_Image_Classification_With_DataEfficient_Training\figure_4.jpg
+  Figure 4 caption: Top-1 accuracy on ImageNet-V2 versus ImageNet-val. ResMLPs tend
+    to overfit slightly more under identical training method. This is partially alleviated
+    with by introducing more regularization (more data or distillation, see e.g.,
+    ResMLP-B248-distil).
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hugo Touvron
+  Name of the last author: "Herv\xE9 J\xE9gou"
+  Number of Figures: 4
+  Number of Tables: 6
+  Number of authors: 11
+  Paper title: 'ResMLP: Feedforward Networks for Image Classification With Data-Efficient
+    Training'
+  Publication Date: 2022-09-12 00:00:00
+  Table 1 caption: TABLE 1 Comparison Between Architectures on ImageNet Classification
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Self-Supervised Learning With DINO [8]
+  Table 3 caption: TABLE 3 Ablation. Our Default Configurations are Presented in the
+    Three First Rows
+  Table 4 caption: TABLE 4 Evaluation on Transfer Learning
+  Table 5 caption: TABLE 5 Machine Translation on WMT 2014 Translation Tasks
+  Table 6 caption: "TABLE 6 Semantic Segmentation Results on ADE20K Dataset With UperNet\
+    \ and \xD73 \xD73 Settings"
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3206148
+- Affiliation of the first author: department of electrical and electronics engineering,
+    eskisehir osmangazi university, eskisehir, turkey
+  Affiliation of the last author: aie department, huawei turkey r&d center, istanbul,
+    turkey
+  Figure 1 Link: articels_figures_by_rev_year\2022\Deep_Discriminative_Feature_Models_DDFMs_for_Set_Based_Face_Recognition_and_Dist\figure_1.jpg
+  Figure 1 caption: Illustration of the proposed method using deep discriminative
+    centers for closed set recognition setting. We first split the face images of
+    the sets into subclusters and then discriminatively learn the deep feature centers
+    representing these subclusters. Here, sets are split into 3 different subclusters.
+    The discriminatively learned centers modeling each subcluster are denoted by s
+    c,k (the center approximating k -th subcluster of the c -th class). During training,
+    the feature embeddings are learned together with the other network weights by
+    using back-propagation. The subcluster centers ( s c,k ) on the other hand are
+    learned with stochastic gradient descent (SGD) algorithm. During testing phase,
+    the query image features are extracted first by using the trained network and
+    then assigned to the subcluster centers based on the shortest euclidean distances.
+    The final query set label assignment is accomplished by using the majority voting.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Deep_Discriminative_Feature_Models_DDFMs_for_Set_Based_Face_Recognition_and_Dist\figure_2.jpg
+  Figure 2 caption: 'Learned feature representations of image set samples for different
+    methods: (a) the embeddings returned by the proposed method trained with the full
+    loss function, (b) the embeddings returned by the proposed method trained with
+    the loss function without the manifold compactness term, (c) the embeddings returned
+    by the Softmax loss function, (d) the embeddings returned by the Sub-center ArcFace
+    method.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\Deep_Discriminative_Feature_Models_DDFMs_for_Set_Based_Face_Recognition_and_Dist\figure_3.jpg
+  Figure 3 caption: The outputs of the k -means clustering algorithm for some image
+    sets when the subcluster size k is set to 3 or 4.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Deep_Discriminative_Feature_Models_DDFMs_for_Set_Based_Face_Recognition_and_Dist\figure_4.jpg
+  Figure 4 caption: ROC curves (higher is better) for (a) IJB-B dataset, (b) IJB-C
+    dataset.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Bedirhan Uzun
+  Name of the last author: Hasan Saribas
+  Number of Figures: 4
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Deep Discriminative Feature Models (DDFMs) for Set Based Face Recognition
+    and Distance Metric Learning
+  Publication Date: 2022-09-12 00:00:00
+  Table 1 caption: TABLE 1 Classification Rates (%) of DDC ( k=7 k=7) Method on the
+    COX Dataset
+  Table 10 caption: TABLE 10 Testing Times on IJB-C Dataset
+  Table 2 caption: TABLE 2 Classification Rates (%) of DDC Method for Different Clustering
+    Algorithms With Various Cluster Sizes on ESOGU Video Dataset
+  Table 3 caption: TABLE 3 Verification Rates (%) on PaSC Dataset
+  Table 4 caption: TABLE 4 1:1 Verification Accuracies (TAR (FAR=1e-4)) on IJB-B and
+    IJB-C Datasets
+  Table 5 caption: TABLE 5 Verification Rates (%) on Different Datasets
+  Table 6 caption: TABLE 6 Classification Rates (%) on the ESOGU-285 Video Dataset
+  Table 7 caption: TABLE 7 Classification Rates (%) on the COX Video Dataset
+  Table 8 caption: TABLE 8 Identification Accuracies (%) on the IJB-B and IJB-C Benchmarks
+  Table 9 caption: TABLE 9 Classification Rates (%) on Different Visual Object Classification
+    Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3205939
+- Affiliation of the first author: department of statistics and actuarial science,
+    the university of hong kong, hong kong
+  Affiliation of the last author: department of statistics and actuarial science,
+    the university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2022\MCIBI_Soft_Mining_Contextual_Information_Beyond_Image_for_Semantic_Segmentation\figure_1.jpg
+  Figure 1 caption: Illustration of soft mining contextual information beyond the
+    input image (MCIBI++). The memory module stores the distribution information of
+    the dataset-level representations of various categories. The dotted line shows
+    that the current input image will be added into the historical input images after
+    current iteration during learning.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\MCIBI_Soft_Mining_Contextual_Information_Beyond_Image_for_Semantic_Segmentation\figure_2.jpg
+  Figure 2 caption: Illustrating the pipeline of soft mining contextual information
+    beyond the input image. The Context Module Within Image denotes for applying existing
+    context scheme within the input image (e.g., PPM [4], ASPP [5] and UperNet [35]),
+    which is an optional operation. The Memory Module is used to obtain the dataset-level
+    distribution information of various categories and generate the dataset-level
+    category representations. The Dataset-Level Context Aggregation is designed to
+    incorporate the yielded dataset-level category representations into the original
+    pixel representations.
+  Figure 3 Link: articels_figures_by_rev_year\2022\MCIBI_Soft_Mining_Contextual_Information_Beyond_Image_for_Semantic_Segmentation\figure_3.jpg
+  Figure 3 caption: "Illustration of the proposed coarse-to-fine iterative inference\
+    \ strategy. \u2297 denotes the matrix multiplication. Dataset-level representations\
+    \ C dl are shared in Stage1 and Stage2."
+  Figure 4 Link: articels_figures_by_rev_year\2022\MCIBI_Soft_Mining_Contextual_Information_Beyond_Image_for_Semantic_Segmentation\figure_4.jpg
+  Figure 4 caption: Extending soft mining contextual information beyond the input
+    image (MCIBI++) into the video semantic segmentation task. The historical frames
+    are inputted to the proposed framework to obtain the temporal information for
+    the segmentor.
+  Figure 5 Link: articels_figures_by_rev_year\2022\MCIBI_Soft_Mining_Contextual_Information_Beyond_Image_for_Semantic_Segmentation\figure_5.jpg
+  Figure 5 caption: Visual comparisons between Ground Truth (GT), FCN, ASPP, ASPP+MCIBI
+    and ASPP+MCIBI++(ours) on the validation set of ADE20K.
+  Figure 6 Link: articels_figures_by_rev_year\2022\MCIBI_Soft_Mining_Contextual_Information_Beyond_Image_for_Semantic_Segmentation\figure_6.jpg
+  Figure 6 caption: The t-SNE visualization on Cityscapes validation set. We first
+    compute the composite vector of the pixel representations of the same category
+    within an image and then denote it as a point. The official recommended color
+    table is leveraged to color these points according to their category labels. Obviously,
+    soft mining contextual information beyond image (MCIBI++) can beget a more well-structured
+    semantic feature space.
+  Figure 7 Link: articels_figures_by_rev_year\2022\MCIBI_Soft_Mining_Contextual_Information_Beyond_Image_for_Semantic_Segmentation\figure_7.jpg
+  Figure 7 caption: Visualization of the proposed dataset-level context aggregation
+    scheme. The pixel value of the heatmap shows the aggregation weight of the corresponding
+    ground truth category.
+  Figure 8 Link: articels_figures_by_rev_year\2022\MCIBI_Soft_Mining_Contextual_Information_Beyond_Image_for_Semantic_Segmentation\figure_8.jpg
+  Figure 8 caption: Qualitative comparisons of the segmentation results on VSPW validation
+    set.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.53
+  Name of the first author: Zhenchao Jin
+  Name of the last author: Lequan Yu
+  Number of Figures: 8
+  Number of Tables: 17
+  Number of authors: 4
+  Paper title: 'MCIBI++: Soft Mining Contextual Information Beyond Image for Semantic
+    Segmentation'
+  Publication Date: 2022-09-12 00:00:00
+  Table 1 caption: TABLE 1 Illustration of the Motivation of Proposing the Coarse-to-Fine
+    Iterative Inference Strategy
+  Table 10 caption: TABLE 10 The Comparison With the State-of-the-Art Methods on ADE20
+    K (Val)
+  Table 2 caption: TABLE 2 Ablation Study of F T FT on ADE20 K Val Split
+  Table 3 caption: TABLE 3 Ablation Study of MCIBI++ on ADE20 K Val Split
+  Table 4 caption: TABLE 4 Ablation Study of Momentum m m of M M on ADE20 K Val Set
+  Table 5 caption: "TABLE 5 Ablation Study of Loss Weight \u03B1 \u03B1 on ADE20 K\
+    \ Val Set"
+  Table 6 caption: TABLE 6 Ablation Study of the Number of the Stages of IIS on ADE20
+    K Val Set
+  Table 7 caption: TABLE 7 Complexity Comparison
+  Table 8 caption: TABLE 8 The Generalization Ability of MCIBI++ on Other Test Set
+  Table 9 caption: TABLE 9 The Segmentation Performance Improvements on Various Benchmarks
+    When Integrating MCIBI++ Into Four Existing Segmentation Frameworks
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3206106
+- Affiliation of the first author: school of electronic and computer engineering,
+    peking university shenzhen graduate school, shenzhen, china
+  Affiliation of the last author: sea ai lab, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\VOLO_Vision_Outlooker_for_Visual_Recognition\figure_1.jpg
+  Figure 1 caption: ImageNet top-1 accuracy of state-of-the-art CNN-based and Transformer-based
+    models. All the results are obtained based on the best test resolutions, without
+    using any extra training data. Our VOLO-D5 achieves the best accuracy, outperforming
+    the latest NFNet-F6 w SAM [8], [9] and CaiT-M48 w KD [10], [11], while using much
+    less training parameters. To our best knowledge, VOLO-D5 is the first model exceeding
+    87% top-1 accuracy on ImageNet.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\VOLO_Vision_Outlooker_for_Visual_Recognition\figure_2.jpg
+  Figure 2 caption: "Feature visualization of ResNet50, ViT-L16 [3] and our proposed\
+    \ T2T-ViT-24 trained on ImageNet. Green boxes highlight learned low-level structure\
+    \ features such as edges and lines; red boxes highlight invalid feature maps with\
+    \ zero or too large values. Note the feature maps visualized here for ViT and\
+    \ T2T-ViT are not attention maps, but image features reshaped from tokens. For\
+    \ better visualization, we scale the input image to size 1024\xD71024 or 2048\xD7\
+    2048 ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\VOLO_Vision_Outlooker_for_Visual_Recognition\figure_3.jpg
+  Figure 3 caption: "Illustration of outlook attention. The outlook attention matrix\
+    \ for a local window of size K\xD7K can be simply generated from the center token\
+    \ with a linear layer followed by a reshape operation (highlighted by the green\
+    \ dash box). As the attention weights are generated from the center token within\
+    \ the window and act on the neighbor tokens and itself (as demonstrated in the\
+    \ black dash block), we name these operations as outlook attention."
+  Figure 4 Link: articels_figures_by_rev_year\2022\VOLO_Vision_Outlooker_for_Visual_Recognition\figure_4.jpg
+  Figure 4 caption: The overall network architecture of our VOLO architecture. An
+    image is first sent into a convolutional stem for patch embedding. The main body
+    of our VOLO contains two stages, which consist of the proposed Outlooker blocks
+    in Stage I, and the Transformer blocks in Stage II, respectively. Outlooker is
+    responsible for fine-level feature encoding. More detailed architecture information
+    can be found in Table 2.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Li Yuan
+  Name of the last author: Shuicheng Yan
+  Number of Figures: 4
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: 'VOLO: Vision Outlooker for Visual Recognition'
+  Publication Date: 2022-09-12 00:00:00
+  Table 1 caption: TABLE 1 Comparison With Previous State-of-the-Art Classification
+    Models, Most of Which Have Once Achieved Leading Positions on the Leaderboard
+    of PaperWithCode (https:paperswithcode.comsotaimage-classification-on-imagenet)
+    (wo Extra Data)
+  Table 10 caption: TABLE 10 Comparison With Previous State-of-the-Art Methods on
+    the ADE20K Validation Set
+  Table 2 caption: TABLE 2 Architecture Information of Different Variants of VOLO
+  Table 3 caption: TABLE 3 Training Settings
+  Table 4 caption: TABLE 4 Detailed Ablations on Architecture, Data Augmentation (DA),
+    Distillation and Token Labeling (TL)
+  Table 5 caption: TABLE 5 Top-1 Accuracy Comparison of Our Method With Previous State-of-the-Art
+    Methods on ImageNet [72], ImageNet Real [79], and ImageNet-V2 [80]
+  Table 6 caption: TABLE 6 Comparison on Throughput (Latency), Peak Memory and Top-1
+    Accuracy With the CNN- and Transformer-Based Models on ImageNet [72], ImageNet
+    Real [79], and ImageNet-V2 [80]
+  Table 7 caption: TABLE 7 Performance of Outlooker Against Local Self-Attention and
+    Convolutions
+  Table 8 caption: TABLE 8 More Ablation Experiments on Outlooker
+  Table 9 caption: TABLE 9 Comparisons With the State-of-the-Arts on the Cityscapes
+    Validation set [88]
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3206108

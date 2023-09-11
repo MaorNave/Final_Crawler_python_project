@@ -1,0 +1,775 @@
+- Affiliation of the first author: department of electrical and electronic engineering,
+    imperial college london, london, u.k.
+  Affiliation of the last author: department of electrical and electronic engineering,
+    imperial college london, london, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_1.jpg
+  Figure 1 caption: The proposed Key.Net architecture combines handcrafted and learned
+    filters to extract features at different scale levels. Feature maps are upsampled
+    and concatenated. The last learned filter combines the Scale Space Volume to obtain
+    the final response map.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_2.jpg
+  Figure 2 caption: Siamese training process. Image I a and I b go through Key.Net
+    to generate their response maps, R a and R b . M-SIP proposes interest point coordinates
+    for each one of the windows at multi-scale regions. The final loss function is
+    computed as a regression of coordinate indexes from I a and local maximum coordinates
+    from I b . Better visualize in color.
+  Figure 3 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_3.jpg
+  Figure 3 caption: Keypoints obtained after adding larger context windows to M-SIP
+    operator. The more stable points remain as the M-SIP operator increases its window
+    size. Feature maps in the middle row contain points around edges or non discriminative
+    areas, while bottom row shows detections that are more robust under geometric
+    transformations.
+  Figure 4 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_4.jpg
+  Figure 4 caption: We apply random geometric and photometric transformations to images
+    and extract pairs of corresponding regions as the training set. Red crop is discarded
+    by checking the response of the handcrafted filters.
+  Figure 5 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_5.jpg
+  Figure 5 caption: "Left: Comparison of repeatability results for the various number\
+    \ of levels in M-SIP operator. We show different combinations of context losses\
+    \ as the final loss, from smaller to larger regions. The best result is obtained\
+    \ when using five window sizes from 8\xD78 up to 40\xD740 . Right: Repeatability\
+    \ results for different combinations of handcrafted filters and a number of learnable\
+    \ layers ( M=8 filters each). A higher number of layers leads to better results.\
+    \ All repeatability scores are computed on synthetic validation set from ImageNet."
+  Figure 6 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_6.jpg
+  Figure 6 caption: 'Left: Mean Matching Accuracy (MMA) curves under multiple thresholds
+    on HPatches dataset. Right: Number of matches after the mutual nearest neighbor
+    filtering, and MMA results for a pixel threshold of 5 pixels. Key.Net and Tiny-Key.Net
+    are combined with HyNet descriptor and obtain the best results in the viewpoint
+    and overall splits. Meanwhile, DISK outperforms all the other methods on illumination
+    sequences.'
+  Figure 7 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_7.jpg
+  Figure 7 caption: Stereo results on the Image Matching Challenge [58]. The figure
+    plots the resulting inliers for different state-of-the-art methods. Matches are
+    displayed from green to yellow if they are correct, i.e., their reprojection error
+    is between 0 and 5 pixels, in red if they are incorrect (reprojection error above
+    5 pixels), and in blue if their ground truth depth is not available. SuperPoint
+    fails in strong viewpoint conditions, providing fewer correct matches than its
+    competitors. R2D2 and Key.Net candidate points are proposed sparsely in repeatable
+    structures, while DISK candidates are cluster in interest regions.
+  Figure 8 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_8.jpg
+  Figure 8 caption: Multiview results on the Image Matching Challenge [58]. After
+    3D reconstruction, registered keypoints by COLMAP are drawn in blue and unregistered
+    points are in red. SuperPoint and R2D2 fail to register many of their detections
+    due to detections on the sky or walls. Meanwhile, DISK and Key.Net can propose
+    repeatable and reliable keypoints that are likely registered in the 3D model.
+    Key.Net focuses on regions with strong gradients, i.e., corners, and robust DISK
+    descriptor allow for detections on seemingly textureless regions.
+  Figure 9 Link: articels_figures_by_rev_year\2022\KeyNet_Keypoint_Detection_by_Handcrafted_and_Learned_CNN_Filters_Revisited\figure_9.jpg
+  Figure 9 caption: Toy 3D reconstruction example for Fountain (top) and Tower of
+    London (bottom) with SIFT (left) and Key.Net (right). In addition, for better
+    comparison, Fountain reconstruction highlights the reconstructed sparse points.
+    The number of registered 3D points are 1039 and 1608 in Fountain, and 544 and
+    1088 in Tower of London, for SIFT and Key.Net, respectively.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Axel Barroso-Laguna
+  Name of the last author: Krystian Mikolajczyk
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 2
+  Paper title: 'Key.Net: Keypoint Detection by Handcrafted and Learned CNN Filters
+    Revisited'
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Repeatability Results for Different Design Choices on Synthetic
+    Validation Set From ImageNet
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Repeatability Results (%) for Translation (TI) and Scale
+    (SI) Invariant Detectors on HPatches
+  Table 3 caption: TABLE 3 Matching Score (%) of Best Detectors Together With HardNet
+  Table 4 caption: TABLE 4 Camera Pose Evaluation Results on the Workshop CVPR Challenge
+    Image Matching Competition 2020 [58]
+  Table 5 caption: TABLE 5 Visual Localization on Aachen-Day-Night v1.1 [70]
+  Table 6 caption: TABLE 6 3D Evaluation Results on ETH Dataset [9]
+  Table 7 caption: TABLE 7 Comparison of the Number of Learnable Parameters for State-of-the-Art
+    Architectures
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3145820
+- Affiliation of the first author: "litis ea 4108, saint-\xE9tienne-du-rouvray, france"
+  Affiliation of the last author: "litis ea 4108, saint-\xE9tienne-du-rouvray, france"
+  Figure 1 Link: articels_figures_by_rev_year\2022\EndtoEnd_Handwritten_Paragraph_Text_Recognition_Using_a_Vertical_Attention_Netwo\figure_1.jpg
+  Figure 1 caption: Architecture overview.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\EndtoEnd_Handwritten_Paragraph_Text_Recognition_Using_a_Vertical_Attention_Netwo\figure_2.jpg
+  Figure 2 caption: 'FCN Encoder overview. Specified dimensions are related to the
+    output of the corresponding layer. CB: Convolution Block, DSCB: Depthwise Separable
+    Convolution Block.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\EndtoEnd_Handwritten_Paragraph_Text_Recognition_Using_a_Vertical_Attention_Netwo\figure_3.jpg
+  Figure 3 caption: 'Left to right: images from the RIMES, IAM and READ 2016 datasets
+    at paragraph level.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\EndtoEnd_Handwritten_Paragraph_Text_Recognition_Using_a_Vertical_Attention_Netwo\figure_4.jpg
+  Figure 4 caption: CTC training loss curves comparison for the VAN, with and without
+    pretraining, on the IAM dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2022\EndtoEnd_Handwritten_Paragraph_Text_Recognition_Using_a_Vertical_Attention_Netwo\figure_5.jpg
+  Figure 5 caption: CTC training loss curves comparison for the VAN for each stopping
+    approach on the IAM dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2022\EndtoEnd_Handwritten_Paragraph_Text_Recognition_Using_a_Vertical_Attention_Netwo\figure_6.jpg
+  Figure 6 caption: Comparison of the evolution of dmathrmmean (the mean difference
+    between the true and estimated number of lines in the image) on the validation
+    set of IAM dataset for the early-stop and learned-stop approaches.
+  Figure 7 Link: articels_figures_by_rev_year\2022\EndtoEnd_Handwritten_Paragraph_Text_Recognition_Using_a_Vertical_Attention_Netwo\figure_7.jpg
+  Figure 7 caption: Attention weights visualization on a sample of the RIMES validation
+    set. Recognized text is given for each line and errors are shown in bold.
+  Figure 8 Link: articels_figures_by_rev_year\2022\EndtoEnd_Handwritten_Paragraph_Text_Recognition_Using_a_Vertical_Attention_Netwo\figure_8.jpg
+  Figure 8 caption: Text line recognition architecture overview.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Denis Coquenet
+  Name of the last author: Thierry Paquet
+  Number of Figures: 8
+  Number of Tables: 15
+  Number of authors: 3
+  Paper title: End-to-End Handwritten Paragraph Text Recognition Using a Vertical
+    Attention Network
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Datasets Split in Training, Validation and Test Sets and
+    Associated Number of Characters in Their Alphabet
+  Table 10 caption: TABLE 10 Comparison of the Two-Step Approach With the Vertical
+    Attention Network, Results are Given for the Test Set of the IAM Dataset
+  Table 2 caption: TABLE 2 Recognition Results of the VAN and Comparison With Paragraph-Level
+    State-of-the-Art Approaches on the RIMES Dataset
+  Table 3 caption: TABLE 3 Comparison of the VAN With the State-of-the-Art Approaches
+    at Paragraph Level on the IAM Dataset
+  Table 4 caption: TABLE 4 VAN Results for the READ 2016 Dataset at Paragraph Level
+  Table 5 caption: TABLE 5 Training Details of State-of-the-Art Approaches
+  Table 6 caption: TABLE 6 Impact of the Pretraining on Lines for the VAN
+  Table 7 caption: TABLE 7 Comparison Between Cross-Dataset Pretraining and Line-Level
+    Pretraining for the VAN
+  Table 8 caption: TABLE 8 Comparison Between Fixed-Stop, Early-Stop and Learned-Stop
+    Approaches With the VAN on the Test Set of the IAM Dataset
+  Table 9 caption: TABLE 9 Results of the Two-Step Approach on the Test Set of IAM
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3144899
+- Affiliation of the first author: korea advanced institute of science and technology
+    (kaist), daejeon, south korea
+  Affiliation of the last author: korea advanced institute of science and technology
+    (kaist), daejeon, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_1.jpg
+  Figure 1 caption: Flow dynamics on the concentric dataset. (a)-(c) Total flows learned
+    by respective models. Axes are scaled identically. (d) Distance between outputs
+    when we only change t for respective models. See text for details.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_2.jpg
+  Figure 2 caption: Predicted trajectories for various models on a time-series trajectory
+    prediction task. Trajectories simulated with ground truth dynamic systems are
+    colored in black.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_3.jpg
+  Figure 3 caption: "A graphical description of polymorphic neural ODEs. (Upper) Vanilla\
+    \ NODE. (Middle) Stacked NODE. Initial input z( T 0 ) is processed by a NODE block,\
+    \ using a single ODE function f 1 , to be transformed into z( T 1 ) . Then it\
+    \ is processed by another NODE block with a different ODE function f 2 . This\
+    \ continues until the final N th NODE block. (Lower) Our proposed algorithm, NODE-TEM.\
+    \ For each step, latent state is processed with all N ODE functions, but contribution\
+    \ of each f(z) is dependent on a separate weight vector w , which evolves with\
+    \ an independent context vector \u03B1 and NODE block with ODE function g . Note\
+    \ how such flow of weight by time results in different combinations of main ODE\
+    \ functions for each step, thus effectively introducing time-diversification."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_4.jpg
+  Figure 4 caption: Decision boundaries for various models on a concentric dataset.
+    Outer circle class is colored in red, inner circle class in blue.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_5.jpg
+  Figure 5 caption: Validation loss for various algorithms by differing number of
+    steps for NODE. Models in the right plot are augmented versions of the respective
+    algorithms on the left plot, d=1 . In the case of stacked NODE and TEM, N is increased
+    in proportion to total number of steps compared to N=1 .
+  Figure 6 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_6.jpg
+  Figure 6 caption: Time evolution of weight vectors for NODE-TEM models on a concentric
+    dataset. Each plot line indicates each component of the weight vector boldsymbol
+    w(t) .
+  Figure 7 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_7.jpg
+  Figure 7 caption: Test accuracy for various algorithms by number of steps for NODE
+    on image datasets, MNIST and CIFAR10. In the case of stacked NODE and TEM, N is
+    increased in proportion to total number of steps compared to N=1 .
+  Figure 8 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_8.jpg
+  Figure 8 caption: Test MSE across the models for the Duffing oscillator experiment.
+    5-Stack NODE and 5-NODE-TEM both have lower MSE (Wilcoxon signed-rank test, p<.0001
+    ) than vanilla NODE.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Learning_Polymorphic_Neural_ODEs_With_TimeEvolving_Mixture\figure_9.jpg
+  Figure 9 caption: Time evolution of weight vectors for NODE-TEM models on image
+    classification datasets. Results for MNIST on the upper row, and CIFAR10 on the
+    lower row. Each plot line indicates each component of the weight vector boldsymbol
+    w(t) .
+  First author gender probability: 0.56
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Tehrim Yoon
+  Name of the last author: Eunho Yang
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Learning Polymorphic Neural ODEs With Time-Evolving Mixture
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Final Test Accuracy for Various Neural ODE Models on Various
+    Image Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Final Test Accuracy for Various Neural ODE Models in Conjunction
+    With ANODE, on Image Datasets, MNIST and CIFAR10
+  Table 3 caption: TABLE 3 Final Test Accuracy for Various ODE Solver Functions, Euler
+    and RK4, on CIFAR10
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3145013
+- Affiliation of the first author: "google research, z\xFCrich, switzerland"
+  Affiliation of the last author: "google research, z\xFCrich, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2022\VidCAD_CAD_Model_Alignment_Using_MultiView_Constraints_From_Videos\figure_1.jpg
+  Figure 1 caption: 'Method overview: given an RGB video sequence, the goal of our
+    method is to find and align a CAD model from a database for each object in the
+    scene. The objective is to find the transformations t , R , and s that moves each
+    object from its canonical pose to the 3D world coordinate system of the 3D scene.
+    The main idea of our approach is to integrate per-frame neural network predictions
+    with a joint optimization formulation incorporating multi-view constraints. As
+    a result, we obtain a clean, globally-consistent 3D CAD representation of all
+    objects in the scene (right).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\VidCAD_CAD_Model_Alignment_Using_MultiView_Constraints_From_Videos\figure_2.jpg
+  Figure 2 caption: "The Mask2CAD method: On top of the traditional 2D instance segmentation\
+    \ outputs (box, class, mask), Mask2CAD predicts the 2D projection c i of the 3D\
+    \ object center on the image, the 3D rotation matrix R i , and the shape code\
+    \ vector f i . However, it requires the depth \u03B2 i of the center and the scaling\
+    \ transformation s i as input."
+  Figure 3 Link: articels_figures_by_rev_year\2022\VidCAD_CAD_Model_Alignment_Using_MultiView_Constraints_From_Videos\figure_3.jpg
+  Figure 3 caption: 'Scale-depth ambiguity: (Left) Placing a small object near the
+    camera or a larger copy of the same object far from it lead to the same projection
+    on the image. (Right) We address this by leveraging multi-view constraints.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\VidCAD_CAD_Model_Alignment_Using_MultiView_Constraints_From_Videos\figure_4.jpg
+  Figure 4 caption: "Temporal Integration: We formulate our task as a constrained\
+    \ optimization problem with objectives that arise from multi-view constraints,\
+    \ given by the input frames (left). The center objective (3) keeps the value of\
+    \ the auxiliary variable \u03BA i close to the predicted box center c i in frame\
+    \ i (center of figure). The translation objective (4) maintains the consistency\
+    \ between the desired 3D object center t and the center ( \u03BA i x , \u03BA\
+    \ i y , \u03B2 i ) formed by the auxiliary variables and the desired depth \u03B2\
+    \ i . The rotation objective (6) relates the desired rotation R to the rotations\
+    \ R i predicted in each frame (top-left image). Finally, the scale objectives\
+    \ (8), (10) constrain the desired scaling transformation s based on the predicted\
+    \ box ( b j in the right image) and the predicted scalings s i (bottom-left image),\
+    \ respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2022\VidCAD_CAD_Model_Alignment_Using_MultiView_Constraints_From_Videos\figure_5.jpg
+  Figure 5 caption: 'Qualitative results: We compare the alignment produced by our
+    temporal integration method to the ground-truth and to the best automatic single-frame
+    baseline (top); i.e., our extended Mask2CAD, cf. Table 2, b 5 . We also show our
+    alignments overlaid on the input frames, which highlight the difficulty of the
+    problem as only a small part of the scene is visible in each frame.'
+  Figure 6 Link: articels_figures_by_rev_year\2022\VidCAD_CAD_Model_Alignment_Using_MultiView_Constraints_From_Videos\figure_6.jpg
+  Figure 6 caption: Class mean accuracy and instance mean accuracy as a function of
+    the evaluation threshold, for our fully automatic method ( F ) as well as the
+    best-performing baseline ( b 5 ). We examine each transformation type separately.
+    The dotted line indicates the default error threshold.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0
+  Gender of the first author: Not Available
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kevis-Kokitsi Maninis
+  Name of the last author: Vittorio Ferrari
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: 'Vid2CAD: CAD Model Alignment Using Multi-View Constraints From Videos'
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Math Notation
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Evaluation on the Scan2CAD Dataset [1]
+  Table 3 caption: TABLE 3 Quantitative Results on ScanNet Using the ODAM Metric
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3146082
+- Affiliation of the first author: baidu research, beijing, china
+  Affiliation of the last author: college of computer science and technology, zhejiang
+    university, hangzhou, zhejiang, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Switchable_Novel_Object_Captioner\figure_1.jpg
+  Figure 1 caption: "An example of the novel object captioning. Suppose the novel\
+    \ object \u201Cbus\u201D is not present in the training data. Traditional image\
+    \ captioning model LRCN [4] fails to describe the image with the novel object\
+    \ \u201Cbus\u201D. Our algorithm can generate precise captions, and more importantly,\
+    \ we do not need any training data containing bus. Specifically, when seeing the\
+    \ unseen object, we recall the most similar object \u201Ctruck\u201D, which is\
+    \ a seen object in training. Then our designed Switchable LSTM is capable of incorporating\
+    \ the object name into sentence generating. It first generates an inaccurate sentence\
+    \ using known knowledge (\u201CA red truck is on a street\u201D), and then correct\
+    \ it by the exact word provided by the external detection model."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Switchable_Novel_Object_Captioner\figure_2.jpg
+  Figure 2 caption: Comparison of the traditional LSTM (the left one) and our Switchable
+    LSTM (the right one).
+  Figure 3 Link: articels_figures_by_rev_year\2022\Switchable_Novel_Object_Captioner\figure_3.jpg
+  Figure 3 caption: "The overview of the proposed method. In the example, the object\
+    \ \u201Ctennis racket\u201D is unseen during training. We first leverage the object\
+    \ detection model to build the key-value object memory. For the unseen object\
+    \ \u201Ctennis racket\u201D, we find its most similar candidate from seen objects\
+    \ by calculating the visual feature distance. The most similar object is \u201C\
+    baseball bat\u201D in this case, which is used in building the memory. The Switchable\
+    \ LSTM takes advantage of both the global image feature and the object memory\
+    \ as input. When predicting the second word (\u201Cperson\u201D), the indicator\
+    \ insides the cell turns on the Retrieving mode. Thus the model takes the hidden\
+    \ state as a query to locate the object memory. When the sentence generation is\
+    \ finished, we replace the proxy visual words by its accurate label name provided\
+    \ by the external detection model."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Switchable_Novel_Object_Captioner\figure_4.jpg
+  Figure 4 caption: "Training examples containing the novel object \u201Czebra\u201D\
+    . Red boxes indicate the location of zebras. Note although the novel objects are\
+    \ in the training set, the captioning sentences does not contain the object word."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Switchable_Novel_Object_Captioner\figure_5.jpg
+  Figure 5 caption: Examples of the proxy visual words. Left are detection results
+    of the novel objects during testing. Right are the retrieved corresponding proxy
+    visual words from seen objects in training. The numbers above arrows indicate
+    the cosine distance calculated via Eqn. (4).
+  Figure 6 Link: articels_figures_by_rev_year\2022\Switchable_Novel_Object_Captioner\figure_6.jpg
+  Figure 6 caption: Quilitative results on the nocaps [35] validation set.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Switchable_Novel_Object_Captioner\figure_7.jpg
+  Figure 7 caption: The performance curves over different memory size N M .
+  Figure 8 Link: articels_figures_by_rev_year\2022\Switchable_Novel_Object_Captioner\figure_8.jpg
+  Figure 8 caption: "Qualitative results of our SNOC model on the test set of the\
+    \ held-out MSCOCO dataset. The words in orange are not present during training,\
+    \ i.e., the novel objects. The words in purple are generated in the Retrieving\
+    \ mode, while other words in sentences are from the Generating mode. \u201CDetected\u201D\
+    \ shows the object detection results from the external detection model. \u201C\
+    Proxy visual word\u201D is the proxy visual word for the unseen word used in building\
+    \ the object memory (Eqn. (5)). \u201COurs\u201D contains two sentences. The first\
+    \ one is the generated sentence of our Switchable LSTM with proxy visual words.\
+    \ The second one is the revised sentence by replacing the proxy visual words with\
+    \ the detected labels. \u201CGT\u201D means the human-annotated ground truth sentences."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.53
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Yu Wu
+  Name of the last author: Yi Yang
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Switchable Novel Object Captioner
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 The comparison with the state-of-the-art methods on the
+    eight novel objects in the held-out MSCOCO dataset. All the results are reported
+    using VGG-16 [43] feature and without beam search except CBS [14]. Note that we
+    adopt the zero-shot novel object captioning setting where no additional language
+    data is used in training. All F1-score values are reported as percentage (%)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of some known objects in the held-out MSCOCO
+    dataset
+  Table 3 caption: TABLE 3 Results on the ILSVRC ImageNet dataset
+  Table 4 caption: "TABLE 4 CIDEr Scores on the out-of-domain validation set and test\
+    \ set of the nocaps dataset. \u22C6 \u2605 indicates our re-implementation results\
+    \ in the zero-shot novel object captioning setting"
+  Table 5 caption: "TABLE 5 Ablation studies on the held-out MSCOCO dataset. \u201C\
+    Ours wo Retrieving\u201D indicates our SNOC framework but without the activation\
+    \ of the Retrieving mode. \u201COurs wo addressing\u201D indicates that we remove\
+    \ the addressing operation (Eqn. (8))"
+  Table 6 caption: TABLE 6 Analysis of different language models in terms of Averaged
+    F1-score and METEOR score on the held-out MSCOCO dataset
+  Table 7 caption: TABLE 7 Impact of different detection models in terms of Averaged
+    F1-score and METEOR score on the held-out MSCOCO dataset
+  Table 8 caption: TABLE 8 Impact of Reinforcement Learning on the held-out MSCOCO
+    dataset
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3144984
+- Affiliation of the first author: department of systems design engineering, ottawa
+    hospital and region imaging associates, university of waterloo, waterloo, on,
+    canada
+  Affiliation of the last author: alberta machine intelligence institute, university
+    of alberta, edmonton, ab, canada
+  Figure 1 Link: articels_figures_by_rev_year\2022\Deep_ROC_Analysis_and_AUC_as_Balanced_Average_Accuracy_for_Improved_Classifier_S\figure_1.jpg
+  Figure 1 caption: AUC includes all thresholds, including unrealistic or undesirable
+    ones (X). Measures at a single threshold (circle), like sensitivity, are optimal
+    for some patients but not others. Deep ROC avoids both problems with measures
+    for a range of thresholds in each of several groups.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Deep_ROC_Analysis_and_AUC_as_Balanced_Average_Accuracy_for_Improved_Classifier_S\figure_2.jpg
+  Figure 2 caption: For part of an ROC curve, the area that represents the models
+    performance, is the average of the vertical and horizontal areas ( A y and A x
+    which both include the green area). This is known as the concordant partial AUC,
+    which we denote AU C i , and it is less than 1. It can be normalized to [0,1]
+    as AUCn i .
+  Figure 3 Link: articels_figures_by_rev_year\2022\Deep_ROC_Analysis_and_AUC_as_Balanced_Average_Accuracy_for_Improved_Classifier_S\figure_3.jpg
+  Figure 3 caption: Two measures used in our method represent average sensitivity
+    and average specificity, but are more commonly known by esoteric labels. Analysis
+    is made complete by balanced average accuracy, as a third measure.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Deep_ROC_Analysis_and_AUC_as_Balanced_Average_Accuracy_for_Improved_Classifier_S\figure_4.jpg
+  Figure 4 caption: This ROC plot from an Extreme Gradient Boosting (XGB) machine
+    on the Adult income data, shows that for even groups of FPR or specificity, AUCn
+    i tends to be larger at right, where the change in height of the curve in the
+    group becomes vanishingly small. The near-perfect performance in the 3rd groups
+    vertical dominates in contribution. AUCn i is as unaffected by the class ratio,
+    as AUC is.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Deep_ROC_Analysis_and_AUC_as_Balanced_Average_Accuracy_for_Improved_Classifier_S\figure_5.jpg
+  Figure 5 caption: 'The ROC plot for the four classifiers: SOFA, Lactate, Logistic
+    Regression (LR) and LSTM. LSTM is best (dominant) in most regions.'
+  Figure 6 Link: articels_figures_by_rev_year\2022\Deep_ROC_Analysis_and_AUC_as_Balanced_Average_Accuracy_for_Improved_Classifier_S\figure_6.jpg
+  Figure 6 caption: For the German Breast cancer Study Group the AUC (dashed lines)
+    are shown relative to the loess fitted values of AUCn i across 6 groups by FPR.
+    Points from each of 10 cross-validation folds are jittered for visual clarity.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Deep_ROC_Analysis_and_AUC_as_Balanced_Average_Accuracy_for_Improved_Classifier_S\figure_7.jpg
+  Figure 7 caption: 'Local normalization has undesirable effects: values less than
+    AUC and sagging at left and right.'
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Andr\xE9 M. Carrington"
+  Name of the last author: Andreas Holzinger
+  Number of Figures: 7
+  Number of Tables: 5
+  Number of authors: 12
+  Paper title: Deep ROC Analysis and AUC as Balanced Average Accuracy, for Improved
+    Classifier Selection, Audit and Explanation
+  Publication Date: 2022-01-25 00:00:00
+  Table 1 caption: TABLE 1 Consider a Binary Classifier or Diagnostic Test for Data
+    With 30% 30% Prevalence
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance of Adult Income Models With Confidence Intervals,
+    in 3 Even Groups by False Positive Rate (FPR) or Non-Events, for High, Medium
+    and low Predicted Income
+  Table 3 caption: TABLE 3 If Events (Actual Positives) are of Interest, Then Analyze
+    3 Even Groups of Sensitivity (TPR) or Events, for High, Medium and low Predicted
+    Income
+  Table 4 caption: TABLE 4 The Neural Network Using Long-Short Term Memory (LSTM)
+    Performs Consistently Well in AUC i i Across Groups of High, Medium and low Predicted
+    Risk, Defined by FPR
+  Table 5 caption: TABLE 5 Logistic Regression (LR) Performs Slightly Better Than
+    Lactate as a Predictor, but not Adequately and SOFA Performs Poorly in Groups
+    of Risk by FPR
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3145392
+- Affiliation of the first author: school of computer science, peking university,
+    beijing, china
+  Affiliation of the last author: school of computer science, peking university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_1.jpg
+  Figure 1 caption: The spike camera based on fovea-like sampling and visual image
+    reconstruction.
+  Figure 10 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_10.jpg
+  Figure 10 caption: The effect of dynamic spike refining in spatial and temporal
+    domain (40,000 FPS). In spatial domain, we zoom in the region marked by the yellow
+    box for qualitative evaluation. In temporal domain, we select a pixel shown in
+    the red box and plot the corresponding reconstructed values with the resolution
+    of 40,000 FPS. For intuitive comparison, we also show the local reconstruction
+    results corresponding to the time when the object appears. The upper part of the
+    subgraph is the result of our method with dynamic spike refining, and the lower
+    part is the result of our method without dynamic spike refining.
+  Figure 2 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_2.jpg
+  Figure 2 caption: 'The spike data distribution under different intensities. Left:
+    The spike train generated by different light intensities. Larger intensities lead
+    to higher spike firing rates and shorter inter-spike intervals. Right: the exact
+    ISI distribution histogram, approximate Gaussian distribution and their Root Mean
+    Squard Error (RMSE). The RMSE shows that the approximate Gaussian distribution
+    can well fit the real ISI distribution.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_3.jpg
+  Figure 3 caption: The overall architecture of the spiking neural model.
+  Figure 4 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_4.jpg
+  Figure 4 caption: 'The illustration of the dynamic neuron extraction. This operation
+    is performed in the motion local excitation layer. The dynamic neurons corresponding
+    to the digital and turntable center are extracted. Top: the visualized result
+    of the motion confidence matrix O . Bottom: the dynamic neuron extraction results.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_5.jpg
+  Figure 5 caption: "Simulated integrate-and-fire process of the spike camera pixel\
+    \ photoreceptor. In an integration interval, different light intensities may be\
+    \ collected by photoreceptor and generate a spike. In this case the corresponding\
+    \ spikes cannot record the instantaneously changing light intensities and cause\
+    \ \u201Cmotion blur\u201D in temporal domain. This phenomenon mainly occurs in\
+    \ ultra-high speed scenes. For ease of understanding, there are only two different\
+    \ light intensities in the figure. (a) A scene in which a white high-speed moving\
+    \ object passes through a gray background. Suppose the car has a high speed of\
+    \ hundreds of kilometers per hour. (b) The photon arrival rate \u03BB corresponding\
+    \ to light intensities in (b). (c) The corresponding real light intensity in the\
+    \ temporal domain for the pixel in the box. (d) The photons accumulating process\
+    \ in the spike camera. (e) The output spike data of the spike camera."
+  Figure 6 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_6.jpg
+  Figure 6 caption: 'The microscopic analysis of the spiking neural model. (a) The
+    input spike data is converted to the spike plane (black dashed box) and spike
+    train (red dashed box). The spike plane connects to the motion local excitation
+    layer, and the dynamic neurons at this moment are marked, while the spike train
+    with the mark information input to the next layer. (b) The noise spikes are eliminated
+    by the mechanism of the refractory period while the static and dynamic spikes
+    are preserved. The dynamic spikes are further adjusted by the dynamic spike refining
+    process.(c) Each input spikes yield a potential according to STDP, and if the
+    accumulated membrane potential reaches the threshold, the model is adaptively
+    adjusted to fit the input spikes. According to Eqs. (27) and (28), the pixel intensity
+    at each moment can be reconstructed (i.e., t 1 : dynamic spikes, t 2 : static
+    spikes), as shown in (d).'
+  Figure 7 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_7.jpg
+  Figure 7 caption: The reconstruction results of different STDP implementations on
+    Class A. From the first row to the last row show the results of our method without
+    STDP (the strength is set as 0), our method with STDP in [14], and our method
+    with STDP based on conductance dynamics, respectively. We also conduct an quantitative
+    experiment to test the effect of STDP. The figure shows the error bars of 2-D
+    entropy and OG-IQA on Class A.
+  Figure 8 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_8.jpg
+  Figure 8 caption: The comparison of different STDP implementations. The left part
+    of the figure ((a), (b), and (c)) is based on STDP in [14], while the right part
+    ((d), (e), and (f)) is based on the STDP implementation in this work. (a) The
+    Selection of STDP strength [14]. The blue line denotes the noise level estimated
+    by [48], while the red line represents the SNR. The experiment was performed on
+    Class A. Intuitively, when the STDP strength is 0.2, the result is the best. (b)
+    The histogram of weight change in 0-350 ms. (c) The change of membrane potential
+    and dynamic threshold in 0-350 ms. The blue line represents the membrane potential
+    of a background pixel while the yellow line indicates the corresponding dynamic
+    threshold of the neuron. (d) The change of conductance ge in 0-350ms. The synaptic
+    modification can automatically balance synaptic strengths. (e) The histogram of
+    weight change in 0-350 ms. (f) The change of membrane potential and dynamic threshold
+    in 0-350 ms.
+  Figure 9 Link: articels_figures_by_rev_year\2022\UltraHigh_Temporal_Resolution_Visual_Reconstruction_From_a_FoveaLike_Spike_Camer\figure_9.jpg
+  Figure 9 caption: The convergence time of different STDP implementations.
+  First author gender probability: 0.64
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.74
+  Name of the first author: Lin Zhu
+  Name of the last author: Yonghong Tian
+  Number of Figures: 17
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Ultra-High Temporal Resolution Visual Reconstruction From a Fovea-Like
+    Spike Camera via Spiking Neuron Model
+  Publication Date: 2022-01-27 00:00:00
+  Table 1 caption: TABLE 1 The Quantitative Metrics on Class A (Normal Speed)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Quantitative Metrics on Class B (High Speed)
+  Table 3 caption: TABLE 3 The STD and CPBD Metrics on Class B (High Speed)
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3146140
+- Affiliation of the first author: national research council, ottawa, on, canada
+  Affiliation of the last author: university of ottawa, ottawa, on, canada
+  Figure 1 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_1.jpg
+  Figure 1 caption: Macromolecular surfaces sampled from the SHREC19 dataset. Both
+    the surface and the underlying mesh (graph) are shown. C i p j refers to protein
+    j belonging to class i .
+  Figure 10 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_10.jpg
+  Figure 10 caption: Confusion matrix for the proposed approach for the SHREC16 dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_2.jpg
+  Figure 2 caption: "Outline of the architecture of Gau\xDF."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_3.jpg
+  Figure 3 caption: "Detailed architecture of Gau\xDF."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_4.jpg
+  Figure 4 caption: "Trained Gau\xDF network."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_5.jpg
+  Figure 5 caption: Confusion matrix for the proposed approach for the SHREC19 dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_6.jpg
+  Figure 6 caption: Illustration of two proteins belonging to the same class (133C13
+    and 324C13).
+  Figure 7 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_7.jpg
+  Figure 7 caption: "Precision\u2013recall curve for Fractio\u2013Gau\xDF as well\
+    \ as for the ones proposed in SHREC19."
+  Figure 8 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_8.jpg
+  Figure 8 caption: 'A sample of deformable partial shapes from the SHREC16 dataset:
+    the cat in two postures (deformable shape), and a pose of the centaur and the
+    dog.'
+  Figure 9 Link: articels_figures_by_rev_year\2022\Deformable_Protein_Shape_Classification_Based_on_Deep_Learning_and_the_Fractiona\figure_9.jpg
+  Figure 9 caption: "Precision-recall curve for Fractio\u2013Gau\xDF for the SHREC16\
+    \ dataset."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Eric Paquet
+  Name of the last author: Junzheng Wu
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: "Deformable Protein Shape Classification Based on Deep Learning, and\
+    \ the Fractional Fokker\u2013Planck and K\xE4hler\u2013Dirac Equations"
+  Publication Date: 2022-01-27 00:00:00
+  Table 1 caption: TABLE 1 Various Regimes Associated With the Fractional Operators
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Parameters for the Adam Algorithm
+  Table 3 caption: TABLE 3 E-Measure, Mean Average Precision, and First and Second
+    Tier for the SHREC19 Dataset
+  Table 4 caption: TABLE 4 E-Measure, Mean Average Precision, and First and Second
+    Tier of the Proposed Approach for the SHREC16 Dataset
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3146796
+- Affiliation of the first author: australian artificial intelligence institute, university
+    of technology sydney, ultimo, nsw, australia
+  Affiliation of the last author: australian artificial intelligence institute, university
+    of technology sydney, ultimo, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2022\SemiSupervised_Heterogeneous_Domain_Adaptation_Theory_and_Algorithms\figure_1.jpg
+  Figure 1 caption: The structure of our theorems and the relations between theorems
+    and algorithms.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\SemiSupervised_Heterogeneous_Domain_Adaptation_Theory_and_Algorithms\figure_2.jpg
+  Figure 2 caption: Network structure of the joint mean embedding alignment (JMEA).
+  Figure 3 Link: articels_figures_by_rev_year\2022\SemiSupervised_Heterogeneous_Domain_Adaptation_Theory_and_Algorithms\figure_3.jpg
+  Figure 3 caption: Parameter study of KHDA and JMEA.
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Zhen Fang
+  Name of the last author: Guangquan Zhang
+  Number of Figures: 3
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'Semi-Supervised Heterogeneous Domain Adaptation: Theory and Algorithms'
+  Publication Date: 2022-01-27 00:00:00
+  Table 1 caption: TABLE 1 Parameters for Different Tasks
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Accuracy (%) With Standard Error on Image \u2194 \u2194\
+    Image Tasks"
+  Table 3 caption: "TABLE 3 Accuracy (%) With Standard Error on Text \u2194 \u2194\
+    Image Tasks"
+  Table 4 caption: "TABLE 4 Accuracy (%) With Standard Error on Text \u2194 \u2194\
+    Text Tasks"
+  Table 5 caption: TABLE 5 Accuracy (%) of JMEA and Baselines on the Road-View Task
+    (End-to-End Learning Task)
+  Table 6 caption: TABLE 6 Accuracy (%) of Ablation Study of KHDA on CIFAR-859, Food-101
+    Datasets With 3 Labeled Target Data per Class
+  Table 7 caption: TABLE 7 Accuracy (%) of Ablation Study of JMEA on CIFAR-859, Food-101
+    Datasets With 3 Labeled Target Data per Class
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3146234
+- Affiliation of the first author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, jiangsu, china
+  Affiliation of the last author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, jiangsu, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_1.jpg
+  Figure 1 caption: Statistic illustration on the similarity of visual structures
+    across modalities or tasks. As feature patterns in different semantic spaces (aka
+    heterogeneous patterns) cannot be compared directly, instead we build the connections
+    by measuring the affinity of their structures. The ratio scores of similar pairs
+    of structure patterns are computed and then scattered in colors of legend w.r.t.
+    different threshold values. We observe that structure patterns are high-frequently
+    recurrent across heterogeneous images. (a) cross-modal structure statistics across
+    RGB and thermal infrared (RGB-T) images from the RGBT234 dataset [11]; (b) cross-task
+    structure statistics across segmentation and depth images from the NYUD-v2 dataset
+    [12]. More details are given in the supplementary file, which can be found on
+    the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2022.3147974.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_10.jpg
+  Figure 10 caption: Ablation comparisons of various settings in dual-modal object
+    tracking on the RGBT234 dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_2.jpg
+  Figure 2 caption: An illustration of spatial pattern diffusion for Case 5.1. Given
+    the i th spatial position, we construct the graph g i :( X (t) P i , A P i ) w.r.t.
+    its local region P i based on the convolutional feature map X (t) . The adjacency
+    relation A P i is used to diffuse context pattern X P i through pattern aggregation,
+    then the new produced pattern is added to the original pattern for feature enhancement.
+    This process is recursive to capture large-scope context information. Note that
+    the superscript (t) denotes the iteration times.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_3.jpg
+  Figure 3 caption: "An illustration of temporal pattern diffusion for Case 5.2. Given\
+    \ the current t th frame, we correlate visual pattern (here convolutional feature\
+    \ X (t\u2212 i k ) ) of each frame in historical pool with its pattern X (t) to\
+    \ derive the adjacency relation (here A (t,t\u2212 i k ) ), and then propagate\
+    \ visual patterns of historical frames into the current frame for capturing long-term\
+    \ context cues."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_4.jpg
+  Figure 4 caption: An illustration of cross-modal (RGB versus thermal) pattern-propagation
+    process for Case 5.3. Cross-modal pattern correlations are derived by comparing
+    RGB and thermal pattern structures, while intra-modal structures define the relations
+    of paired patterns in single modality. According to cross-modal correlations,
+    visual patterns in one modality can be transmitted to the other modality through
+    pattern aggregation, or oppositely.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_5.jpg
+  Figure 5 caption: An illustration of cross-task structure diffusion for segmentation
+    and depth prediction for Case 5.4. Given one task, the local structure (aka graphlet)
+    of the counterpart task is borrowed to replace its own topological structure for
+    pattern diffusion, in which its own structure may be used as the weight factor
+    (dashed line) as described in Eqn. (8). The original feature is added as one part
+    for the final diffusion output.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_6.jpg
+  Figure 6 caption: 'An illustration of pattern diffusion across three visual tasks:
+    depth estimation, semantic segmentation and surface normal prediction. The whole
+    network consists of a shared encoder and three branches of task-specific decoders.
+    In each branch, the intra-task pattern diffusion (PD) is first performed to diffuse
+    spatial context patterns inside each task, and then structure patterns are used
+    to bridge different tasks for pattern transmission, called inter-task PD. The
+    intra-task and inter-task PD are encapsulated in one network module to facilitate
+    a coarse-to-fine multi-task learning.'
+  Figure 7 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_7.jpg
+  Figure 7 caption: 'An illustration of RGB-T object tracking. There contain two main
+    modules: cross-modal pattern diffusion and long-term context diffusion. The former
+    leverages second-order pattern relations to mutually diffuse patterns between
+    two modalities, while the latter captures and inherits historical cues of pattern
+    sequences.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_8.jpg
+  Figure 8 caption: 'The comparisons with several state-of-the-art trackers on the
+    two dual-modal benchmarks: RGBT234 and GTOT.'
+  Figure 9 Link: articels_figures_by_rev_year\2022\Visual_MicroPattern_Propagation\figure_9.jpg
+  Figure 9 caption: 'Ablation comparisons of various settings in multi-task learning
+    on the NYUD-v2 dataset. Segmentation: a higher mIoU is better; Depth estimation:
+    a lower RMSE is better; Surface normal prediction: a lower nRMSE is better.'
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Zhen Cui
+  Name of the last author: Jian Yang
+  Number of Figures: 16
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Visual Micro-Pattern Propagation
+  Publication Date: 2022-02-01 00:00:00
+  Table 1 caption: TABLE 1 Comparisons With State-of-the-Art Segmentation Methods
+    on the NYUD-v2 Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparisons With State-of-the-Art Segmentation Methods
+    on the SUNRGB-D Dataset
+  Table 3 caption: TABLE 3 Comparisons With State-of-the-Art Depth Estimation Methods
+    on the NYUD-v2 Dataset
+  Table 4 caption: TABLE 4 Comparisons With State-of-the-Art Surface Normal Methods
+    on the NYUD-V2 Dataset
+  Table 5 caption: TABLE 5 The Comparisons of Attributes in PRSR(%) on RGBT234
+  Table 6 caption: "TABLE 6 Analysis on Hyperparameters: The Balance Factor \u03B3\
+    \ \u03B3 and the Length of Historical Frames l l"
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3147974

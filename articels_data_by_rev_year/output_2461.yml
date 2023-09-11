@@ -1,0 +1,839 @@
+- Affiliation of the first author: machine learning lab, university of oldenburg,
+    oldenburg, lower saxony, germany
+  Affiliation of the last author: machine learning lab, university of oldenburg, oldenburg,
+    lower saxony, germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Variational_EM_Acceleration_for_Efficient_Clustering_at_Very_Large_Scales\figure_1.jpg
+  Figure 1 caption: 'Top: Exact responsibilities rmhspace-1.0pt(c) and truncated distributions
+    qmhspace-1.0pt(c) for a data point ym with mathcal Km containing the closest Cprime
+    =3 clusters. Remainder: Illustration of the set of neighboring clusters mathcal
+    Gn to find clusters increasingly close to yn . The mathcal Gn consist of the clusters
+    in mathcal Kn and the nearest neighbors of these clusters ( gc with cin mathcal
+    Kn ). For the illustration we used |mathcal Kn |=Cprime =3 and |gc|=G=5 and clusters
+    which share no or few data points. Cluster centers mu c were assumed here to already
+    represent the clusters well.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Variational_EM_Acceleration_for_Efficient_Clustering_at_Very_Large_Scales\figure_2.jpg
+  Figure 2 caption: Visualization of the estimation of cluster-to-cluster distances
+    dctildec with already computed cluster-to-point distances dntildec as used by
+    Algorithm 1 in Eq. (15). Here, we assume |mathcal Kn |=|gc|= 3 and the blue circles
+    denote both mathcal Kn for data point yn , as well as gc for cluster c . The green
+    circles denote the clusters that are additionally added to mathcal Gn because
+    they are closest neighbors of clusters in gc . The mean of the read lines (distances
+    dntildec of data points closest to cluster c that have cluster tildec in their
+    own neighborhood search space) gives an estimate of the true distance between
+    clusters c and tildec .
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Variational_EM_Acceleration_for_Efficient_Clustering_at_Very_Large_Scales\figure_3.jpg
+  Figure 3 caption: 'Scaling of v-GMMiso compared to k -means on EMNIST. Shown are
+    means over 100 independent runs. SEMs are too small to be visible. Solid lines
+    are regression plots of f(C)=bcdot Ca , which in double log translates to log
+    2 f(C)=B + alog 2(C) . Consequently, slopes in the log-log plots give the scaling
+    exponent of C , i.e., a slope of 1 indicates linear scaling, while a slope of
+    1!3 indicates a scaling of mathcal O(root 3 of C) . Top left: Distance evaluations
+    per data point per E-step iteration. k -means scales exactly linear with C , while
+    v-GMMiso scales strongly sublinear with an exponent of around 0.14 (the slope
+    further decreases with increasing C , as the number of distance evaluations per
+    data point approaches the maximal search space size of max |mathcal Gn|= G;2 =25
+    ). Bottom left: Number of iterations until convergence. The partial E-steps of
+    v-GMMiso lead to a steeper increase in iteration numbers than k -means (which
+    shows only a very mild increase on this dataset). Right: Total number of E-step
+    distance evaluations per data point until convergence (product of the two left
+    plots; the slope exponents add). While for k -means the total number of distance
+    evaluations (slightly more than) doubles with each doubling of C (slope of 1.03),
+    we experimentally measured a slope of 0.33 for v-GMMiso, i.e., a scaling of around
+    mathcal O(!root 3 of C) . This means that we had to double C three times, from
+    50 to 400, to double the total number of distance evaluations until convergence
+    (from 173 to 345). In gray, we see the resulting speedups for v-GMMiso compared
+    to k -means, which increase dramatically with increasing C .'
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Variational_EM_Acceleration_for_Efficient_Clustering_at_Very_Large_Scales\figure_4.jpg
+  Figure 4 caption: Relative q-error and computational cost of vc-GMMiso and vc-GMMisoflex
+    compared to LWCS- k -means, AFK-MC2 seeding, and the k -means++ baseline. Each
+    of the six blocks refers to experiments on one benchmark dataset, and each plot
+    shows mean values measured over 50 independent runs each. The y-axes denote the
+    relative mean q-error with respect to k -means++, as given in Eq. (19). The computational
+    cost on the x-axes is shown in terms of the number of E-step distance evaluations
+    until convergence (top plot in each block) and on actual measured run times of
+    the complete algorithms (bottom plot in each block), the latter include times
+    for seeding, parameter initializations and coreset constructions. Different parameter
+    settings of the algorithms show the trade-off between effectiveness (in terms
+    of q-error) and speed. The legend in the first block applies to all sub-figures.
+    Measurements for vc-GMMiso, vc-GMMisoflex and LWCS- k -means are given for five
+    different coreset sizes Nprime on each dataset, denoted in the plots as powers
+    of 2. The coreset sizes for the vc-GMM algorithms are in each block the same as
+    those annotated for the LWCS- k -means plot. For vc-GMMiso and vc-GMMisoflex,
+    the parameter G is set G=5 for all datasets except for RNA for which G=3+1 (where
+    +1 denotes one random additional cluster per mathcal Gn ). For vc-GMMiso, vc-GMMisoflex
+    and LWCS- k -means, we also include the standard error of the mean (SEM) as shaded
+    area, which is however very small for most plots. Measurements for v-GMMiso (gray
+    triangles) refer to configurations with G in lbrace 3 + 1, 5, 7rbrace , where
+    settings with larger G lie to the right, as they required more distance evaluations
+    and longer run times. Measurements for AFK-MC2 seeding refers to Markov chains
+    of lengths m=2, 5, 10, 20 (from left to right).
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Variational_EM_Acceleration_for_Efficient_Clustering_at_Very_Large_Scales\figure_5.jpg
+  Figure 5 caption: 'Comparison of vc-GMM algorithms to LWCS- k -means, LWCS-GMMiso,
+    AFK-MC2 and k -means++ on CIFAR-10. Parameters C , G and other details as in Fig.
+    4. Left: Relative mean q-errors over 50 runs for different coreset sizes. Right:
+    Negative log-likelihoods for the same runs (lower is better). vc-GMMiso and vc-GMMisoflex
+    show the best trade-off between q-error minimization versus run time, and all
+    vc-GMM algorithms are significantly faster than LWCS- k -means and LWCS-GMMiso.
+    In terms of log-likelihood versus run time, vc-GMMisoflex shows the best trade-off
+    for small coresets, while vc-GMMdiag shows the best trade-off for large coresets
+    and the best log-likelihood values.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_Variational_EM_Acceleration_for_Efficient_Clustering_at_Very_Large_Scales\figure_6.jpg
+  Figure 6 caption: 'Comparison of vc-GMM algorithms and LWCS- k -means based on the
+    YFCC100M dataset. Left: Required distance evaluations (and run times) for vc-GMMiso,
+    vc-GMMisoflex and LWCS- k -means for different C . All values shown correspond
+    to the mean over three runs. Shaded areas denote the SEM (barely visible). In
+    gray, the (theoretically given) number of distance evaluations per k -means iteration
+    on the LWCS coreset is shown. The run times until convergence are given in minutes
+    as annotations. Middle and right: Q-errors and negative log-likelihood values
+    (again averages over 3 runs) for all vc-GMM algorithms and LWCS- k -means for
+    C=2000 . In this setting, on average vc-GMMiso and vc-GMMisoflex converged in
+    less than 24 minutes, vc-GMMdiag required 131 minutes and LWCS- k -means required
+    168 minutes.'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Florian Hirschberger
+  Name of the last author: "J\xF6rg L\xFCcke"
+  Number of Figures: 6
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: A Variational EM Acceleration for Efficient Clustering at Very Large
+    Scales
+  Publication Date: 2021-12-09 00:00:00
+  Table 1 caption: TABLE 1 Computational Complexities and Memory Demands
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3133763
+- Affiliation of the first author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Affiliation of the last author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\MobileSal_Extremely_Efficient_RGBD_Salient_Object_Detection\figure_1.jpg
+  Figure 1 caption: Comparison with state-of-the-art methods (see references in Table
+    1) on the challenging NJU2K [15] dataset. Our method (MobileSal shows very competitive
+    accuracy and much faster speed.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\MobileSal_Extremely_Efficient_RGBD_Salient_Object_Detection\figure_2.jpg
+  Figure 2 caption: The pipeline of MobileSal. We fuse RGB and depth information only
+    at the coarsest level and then efficiently do the multi-scale aggregation with
+    CPRs. The IDR branch strengthens the less powerful features learned by the mobile
+    networks in a computationally free manner.
+  Figure 3 Link: articels_figures_by_rev_year\2021\MobileSal_Extremely_Efficient_RGBD_Salient_Object_Detection\figure_3.jpg
+  Figure 3 caption: "Illustration of the proposed IDR and CPR. (a) The IDR branch\
+    \ strengthens the less powerful features of the mobile backbone network. (b) Multi-level\
+    \ deep features are efficiently aggregated by the CPR module. \u201CD-Conv\u201D\
+    \ indicates depthwise separable convolution."
+  Figure 4 Link: articels_figures_by_rev_year\2021\MobileSal_Extremely_Efficient_RGBD_Salient_Object_Detection\figure_4.jpg
+  Figure 4 caption: Qualitative comparison of six challenging datasets. The results
+    from top to bottom are from NJU2K, DUTLF-D, NLPR, STERE, SSD, and SIP datasets,
+    respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2021\MobileSal_Extremely_Efficient_RGBD_Salient_Object_Detection\figure_5.jpg
+  Figure 5 caption: Visual comparisons of restored depth maps by IDR with different
+    scales of input depth maps. Results of the last 3 columns have been upsampled
+    with bilinear interpolation to match the size of the input depth map.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Yu-Huan Wu
+  Name of the last author: Ming-Ming Cheng
+  Number of Figures: 5
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: 'MobileSal: Extremely Efficient RGB-D Salient Object Detection'
+  Publication Date: 2021-12-13 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Results on Six Challenging Datasets
+  Table 10 caption: TABLE 10 Ablation Study for the Dilation Rates of CPR
+  Table 2 caption: TABLE 2 CPU Inference Time of Different Methods
+  Table 3 caption: TABLE 3 Quantitative Comparisons of Restored Depth Maps by IDR
+    With Different Scales of Input Depth Maps
+  Table 4 caption: TABLE 4 Ablation Study for the RGB-D Fusion and IDR Branch
+  Table 5 caption: TABLE 5 Comparison of RGB-D Fusion Strategies
+  Table 6 caption: "TABLE 6 Ablation Study for \u03BB \u03BB Coefficient Selection"
+  Table 7 caption: TABLE 7 Efficacy of CMF
+  Table 8 caption: TABLE 8 Comparison of Different Operations for the Initial RGB-D
+    Fusion in Eq. (1)
+  Table 9 caption: TABLE 9 Analysis of the Fusion of CMF in Eq. (3)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3134684
+- Affiliation of the first author: school of computer science and technology, chongqing
+    university of posts and telecommunications, chongqing, china
+  Affiliation of the last author: school of mathematics and statistics, xian jiaotong
+    university, xian, shaanxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_1.jpg
+  Figure 1 caption: A DWDN and an HDI tensor from a TIPAS.
+  Figure 10 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_10.jpg
+  Figure 10 caption: Training curves of M1-9 in RMSE and MAE on D1-6.
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_2.jpg
+  Figure 2 caption: An illustrative example demonstrating how an LFT model represents
+    an HDI tensor defined on an HDI DWDN.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_3.jpg
+  Figure 3 caption: "Building Ys biased approximation \u0176."
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_4.jpg
+  Figure 4 caption: ANLTs learning scheme of each iteration.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_5.jpg
+  Figure 5 caption: ANLTs subtask sequence design.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_6.jpg
+  Figure 6 caption: Proof sketch of ANLTs convergence on an HDI tensor.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_7.jpg
+  Figure 7 caption: "Performance of ANLT as \u03BB and \u03B7 vary on D1-6."
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_8.jpg
+  Figure 8 caption: "Performance of ANLT as \u03B7 (or \u03BB) increases while \u03BB\
+    \ (or \u03B7) being fixed."
+  Figure 9 Link: articels_figures_by_rev_year\2021\A_Novel_Approach_to_LargeScale_Dynamically_Weighted_Directed_Network_Representat\figure_9.jpg
+  Figure 9 caption: Performance comparison of M1-10 on D1-6.
+  First author gender probability: 0.6
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.68
+  Name of the first author: Xin Luo
+  Name of the last author: Deyu Meng
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: A Novel Approach to Large-Scale Dynamically Weighted Directed Network
+    Representation
+  Publication Date: 2021-12-13 00:00:00
+  Table 1 caption: TABLE 1 Symbols
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Dataset Details
+  Table 3 caption: TABLE 3 Hyper-parameter Settings of M1-10
+  Table 4 caption: TABLE 4 RMSE, MAE, and Consumed Iterations of M1-10 on D1-6
+  Table 5 caption: TABLE 5 Time Costs of M1-10 on D1-6
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3132503
+- Affiliation of the first author: school of computing, national university of singapore,
+    singapore, singapore
+  Affiliation of the last author: school of computing, national university of singapore,
+    singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\Deep_Hierarchical_Representation_of_Point_Cloud_Videos_via_SpatioTemporal_Decomp\figure_1.jpg
+  Figure 1 caption: "Illustration of grid-based and point-based processing on videos.\
+    \ (a) For a grid-based video, each grid represents a feature of a pixel, where\
+    \ C , L , H and W denote the feature dimension, the number of frames, height and\
+    \ width, respectively. A 3D convolution encodes an input to an output of size\
+    \ C \u2032 \xD7 L \u2032 \xD7 H \u2032 \xD7 W \u2032 . (b) A point cloud video\
+    \ consists of a coordinate part ( 3\xD7L\xD7N ) and a feature part ( C\xD7L\xD7\
+    N ), where N indicates the number of points in a frame. Our point spatio-temporal\
+    \ operation (PSTOp) encodes an input to an output composed of a coordinate tensor\
+    \ ( 3\xD7 L \u2032 \xD7 N \u2032 ) and a feature tensor ( C \u2032 \xD7 L \u2032\
+    \ \xD7 N \u2032 ). Usually, L \u2032 \u2264L and N \u2032 \u2264N so that networks\
+    \ can model point cloud videos in a spatio-temporally hierarchical manner. Note\
+    \ that points in different frames are not consistent, and thus it is challenging\
+    \ to preserve the spatio-temporal structure."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Deep_Hierarchical_Representation_of_Point_Cloud_Videos_via_SpatioTemporal_Decomp\figure_2.jpg
+  Figure 2 caption: "Illustration of the proposed point spatio-temporal operation\
+    \ (PSTOp). The input contains L=5 frames, with N=8 points per frame. (a) Point\
+    \ tube construction. Based on the temporal radius r t =1 , temporal stride s t\
+    \ =2 , and temporal padding p=1 , the 1st, 3rd, 5th frames are selected as temporal\
+    \ anchor frames. According to a spatial subsampling rate s s =4 , two spatial\
+    \ anchor points are sampled by FPS in each anchor frame. The sampled anchor points\
+    \ are then transferred to the r t =1 nearest neighboring frames. A point tube\
+    \ is constructed with a spatial radius r s for the anchor points. (b) The spatial\
+    \ operation encodes the local structure around each anchor point. (c) The temporal\
+    \ operation first encodes the 2 r t +1 spatial features individually and then\
+    \ merge the features to a spatio-temporal feature. As a result, the original point\
+    \ cloud video of size L\xD7N=5\xD78 is encoded as a video of size L \u2032 \xD7\
+    \ N \u2032 =3\xD72 ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Deep_Hierarchical_Representation_of_Point_Cloud_Videos_via_SpatioTemporal_Decomp\figure_3.jpg
+  Figure 3 caption: Spatio-temporally hierarchical PSTNet++ for 3D action recognition.
+    The architecture uses six PSTOp layers to extract point cloud video features and
+    one fully-connected (FC) layer for classification. Following [5], [6], [30], we
+    only use point coordinates for 3D action recognition in this paper. Therefore,
+    the number of input channels is 3.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Deep_Hierarchical_Representation_of_Point_Cloud_Videos_via_SpatioTemporal_Decomp\figure_4.jpg
+  Figure 4 caption: Influence of temporal radius and initial spatial radius on MSR-Action3D
+    with 24 frames.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Deep_Hierarchical_Representation_of_Point_Cloud_Videos_via_SpatioTemporal_Decomp\figure_5.jpg
+  Figure 5 caption: 'Visualization of the output of each PSTOp layer in PSTNet++.
+    Top: input point cloud video, where color encodes depth. Bottom: output of PSTOp,
+    where brighter color indicates higher activation. For the input point cloud video,
+    color encodes depth. For the outputs, brighter color indicates higher activation.
+    Input videos consist of 24 frames. Due to the spatial subsampling s s and the
+    temporal stride s t , points and frames progressively decrease along the network
+    layers. Interestingly, PSTOp outputs high activation to salient motion, which
+    supports our intuition that PSTOp effectively captures dynamics of point cloud
+    videos. Note that, PSTOp1 does not capture temporal correlation because its temporal
+    radius r t =0 . In this case, PSTOp1 focuses on the appearance and therefore outputs
+    high activation to the performer contour. Best viewed in color.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Deep_Hierarchical_Representation_of_Point_Cloud_Videos_via_SpatioTemporal_Decomp\figure_6.jpg
+  Figure 6 caption: Visualization of semantic segmentation examples from Synthia 4D.
+    All of the methods achieve satisfactory results. However, our PSTNet++ performs
+    better than MeteorNet and PSTNet on some small areas.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.9
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hehe Fan
+  Name of the last author: Mohan Kankanhalli
+  Number of Figures: 6
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: Deep Hierarchical Representation of Point Cloud Videos via Spatio-Temporal
+    Decomposition
+  Publication Date: 2021-12-14 00:00:00
+  Table 1 caption: TABLE 1 Comparison Among MinkowskiNet [4], PointNet [17]PointNet++
+    [18], MeteorNet [5], PSTNet [6] and our PSTNet++
+  Table 10 caption: TABLE 10 Semantic Segmentation Result (mIoU %) Details on the
+    Synthia 4D Dataset [4]
+  Table 2 caption: TABLE 2 Architecture Specs of PSTNet++ for 3D Action Recognition
+    and 4D Semantic Segmentation. The r o ro denotes the initial spatial radius
+  Table 3 caption: TABLE 3 Action Recognition Accuracy (%) on the MSR-Action3D [40]
+    Dataset
+  Table 4 caption: TABLE 4 Comparison of Memory Usage and Computational Efficiency
+    on 3D Action Recognition
+  Table 5 caption: TABLE 5 Influence of Spatio-Temporal Hierarchy (Hier) and Spatio-Temporal
+    Decomposition (Decom) on Point Cloud Video Modeling
+  Table 6 caption: TABLE 6 Action Recognition Accuracy (%) on N-UCLA [7] and UWA3DII
+    [8]
+  Table 7 caption: TABLE 7 Influence of Temporal Modeling on PSTNet++ in 3D Action
+    Recognition
+  Table 8 caption: TABLE 8 Action Recognition Accuracy (%) on the NTU RGB+D 60 [44]
+    and NTU RGB+D 120 [45] Datasets
+  Table 9 caption: TABLE 9 Scene Flow Estimation Accuracy on the KITTI Scene Flow
+    Dataset [5]
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3135117
+- Affiliation of the first author: school of electronic and information engineering,
+    south china university of technology, guangzhou, guangdong, china
+  Affiliation of the last author: department of electrical engineering and computer
+    sciences, university of california, berkeley, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_1.jpg
+  Figure 1 caption: An illustration on the intrinsic connection between a polygon
+    mesh and the local linearities of its capturing deep implicit surface network.
+    The polygon mesh is formed by the intersection between the zero-level isosurface
+    of the implicit surface network and some of its partitioned linear regions in
+    the input euclidean space.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_2.jpg
+  Figure 2 caption: An 2D illustration for analytic cells and neural states. Red lines
+    are the analytic faces. The states of two neighboring cells that share a boundary
+    plane are switched at one neuron.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_3.jpg
+  Figure 3 caption: "An illustration of using the proposed analytic marching for extraction\
+    \ of a unit square \u25A1ABCD in the plane R 2 . The algorithm first identifies\
+    \ one initial state from an initial point obtained by a triggering procedure;\
+    \ it then solves systems of 2\xD72 equations to extract the line segment AD \xAF\
+    \ \xAF \xAF \xAF \xAF \xAF \xAF \xAF analytically according to the neural state;\
+    \ new states can be inferred by inverting one bit from state vectors; the algorithm\
+    \ repeats the above steps until it has obtained the four line segments (i.e.,\
+    \ AD \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF , AB \xAF \xAF \xAF \xAF \xAF \xAF\
+    \ \xAF \xAF , BC \xAF \xAF \xAF \xAF \xAF \xAF \xAF \xAF and CD \xAF \xAF \xAF\
+    \ \xAF \xAF \xAF \xAF \xAF ) of \u25A1ABCD . (a) An analytic cell (yellow region)\
+    \ identified by the initial point ( x 0 , y 0 ) . (b) An illustration of switching\
+    \ one neural state at point A . (c) A second analytic cell (red region) inferred\
+    \ from the previous neural state. (d) A second illustration of switching one neural\
+    \ state at point B . (e) After the algorithm terminates, all line segments guarantee\
+    \ to connect and form a closed square. More details about the example are given\
+    \ in Appendix C, available in the online supplemental material."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_4.jpg
+  Figure 4 caption: The user interface that facilitates use of the publicly released
+    AnalyticMesh package.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_5.jpg
+  Figure 5 caption: Illustration of the three network architectures discussed in Sections
+    5.1 and 5.2. (a) A residual block with a shortcut connection. (b) A residual block
+    with a shortcut connection of linear mapping. (c) A network with max pooling as
+    the final aggregation of the outputs from multiple subnetworks.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_6.jpg
+  Figure 6 caption: Example results of analytic marching after mesh simplification
+    at different ratios. Better viewing by zooming in the electronic version.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_7.jpg
+  Figure 7 caption: Quantitative comparisons of direct shape encoding under metrics
+    of recovery precision and inference time. For greedy meshing (GM), marching cubes
+    (MC), marching tetrahedra (MT), and dual contouring (DC), results under a resolution
+    range of discrete point sampling from 643 to a GPU memory limit of 5123 are presented.
+    Experiments are conducted on shape instances of five categories from ShapeNet,
+    using an MLP of depth 6 and width 60 for SDF modeling.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_8.jpg
+  Figure 8 caption: Quantitative comparisons of direct shape encoding under metrics
+    of recovery precision and inference time. For greedy meshing (GM), marching cubes
+    (MC), marching tetrahedra (MT), and dual contouring (DC), results under a resolution
+    range of discrete point sampling from 643 to a GPU memory limit of 5123 are presented.
+    Experiments are conducted on five geometrically and topologically complex shape
+    instances, using an MLP of depth 8 and width 60 for SDF modeling.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learning_and_Meshing_From_Deep_Implicit_Surface_Networks_Using_an_Efficient_Impl\figure_9.jpg
+  Figure 9 caption: Qualitative comparisons of direct shape encoding. The shown shape
+    instance is fitted to an MLP of depth 8 and width 60 for SDF modeling. For greedy
+    meshing (GM), marching cubes (MC), marching tetrahedra (MT), and dual contouring
+    (DC), results under a resolution range of discrete point sampling from 643 to
+    a GPU memory limit of 5123 are presented. Better viewing by zooming in the electronic
+    version.
+  First author gender probability: 0.82
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.97
+  Name of the first author: Jiabao Lei
+  Name of the last author: Yi Ma
+  Number of Figures: 9
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Learning and Meshing From Deep Implicit Surface Networks Using an Efficient
+    Implementation of Analytic Marching
+  Publication Date: 2021-12-14 00:00:00
+  Table 1 caption: TABLE 1 Meshing Accuracies of Analytic Marching by Using MLPs of
+    Different Capacities
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Meshing Accuracies of Analytic Marching by Using MLPs of
+    Different Capacities With Shortcut Connections
+  Table 3 caption: TABLE 3 Quantitative Results by Directly Encoding an MLP of Depth
+    8 and Width 512 With Shortcut Connections (cf. DeepSDF [4] for Architectural Details)
+    on Each of Five Shapes From the RD Dataset
+  Table 4 caption: TABLE 4 Comparisons Among Different Triggering Scheme of Analytic
+    Marching (cf. Section 4.3)
+  Table 5 caption: TABLE 5 Efficiency of Parallel Marching With CUDA Implementation
+  Table 6 caption: TABLE 6 Quantitative Results of Mesh Simplification in AnalyticMesh
+  Table 7 caption: TABLE 7 Quantitative Comparisons Between Analytic Marching (AM)
+    and Marching Cubes (MC) in the Context of Learning a Global Model for Decoding
+    of Novel Shape Instances, Where MISE [6] Denotes an Adaptive Sampling Strategy
+    for MC
+  Table 8 caption: TABLE 8 Quantitative Comparisons Between Analytic Marching (AM)
+    and Marching Cubes (MC) in the Context of Learning an Ensemble of Local Decoders
+    for Reconstructions of Novel Shape Instances, Where MISE [6] Denotes an Adaptive
+    Sampling Strategy for MC
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3135007
+- Affiliation of the first author: event-driven perception for robotics group, istituto
+    italiano di tecnologia, genova, italy
+  Affiliation of the last author: event-driven perception for robotics group, istituto
+    italiano di tecnologia, genova, italy
+  Figure 1 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_1.jpg
+  Figure 1 caption: 'Examples of false positive ARC corner detections: outlined events
+    (left) are wrongly selected as corners but given their position in the image are
+    clearly not corners. The brightness of the pixel in the SAE (right) corresponds
+    to the time value of the surface (black being older events) and the white lines
+    correspond to the final arc selection. Purple pixels indicate only values used
+    for an arc-based corner detector. (a) occurs as two edges are close together,
+    (b) occurs due to a single random event off the edge, and (c) occurs in clutter
+    in which an arc is found by chance. Using all points in the local time surface
+    (not only purple) gives more information to determine there is no corner.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_10.jpg
+  Figure 10 caption: An un-synchronised qualitative visualisation over a 100 ms compute
+    time of luvHarris, ARC, and FAST run on-line simultaneously and delay accumulated
+    by the algorithm is stated. All algorithms are selective to corners in simple
+    scenes, but in complex scenes ARC and FAST produce more false positives and less
+    consistent detections over time compared with luvHarris. eHarris was not run for
+    the on-line experiment as it was too computationally heavy. The result is best
+    seen in video format.
+  Figure 2 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_2.jpg
+  Figure 2 caption: The flow of data through the system. Algorithm 1 is completely
+    asynchronous and performed event-by-event, assigning corner labels to each event.
+    Algorithm 2 is decoupled from the processing schedule of Algorithm 1 and provides
+    an up-to-date 2D look-up table of corner scores for each pixel, as often as possible
+    based on the hardware. The algorithms are run simultaneously on two cores of the
+    CPU. If only a single core is available, luvHarris can be run switching between
+    algorithms sequentially; in this case Algorithm 1 must be computed for all already-produced
+    but unprocessed events.
+  Figure 3 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_3.jpg
+  Figure 3 caption: Examples of the threshold-ordinal surface (a) update patch, and
+    (b-c) the full surface visualised as an image. (a) is produced with k TOS =3 leading
+    to T TOS =241 , below which all values are set to 0. The brightness of each pixel
+    represents the value in the TOS. (b) and (c) show that strong edges and corners
+    are present in the visual signal, while blank regions are either zero (black),
+    or filled with random noise, neither of which produce a strong corner response.
+  Figure 4 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_4.jpg
+  Figure 4 caption: Computed algorithm delay when streaming the noise-filtered datasets
+    into the algorithm module. Any value above zero implies the algorithm is not running
+    real-time. eHarris is not practically possible to run on-line with the Gen3 ATIS
+    and is not present in (e). In (a)-(d) both luvHarris and ARC overlap and exist
+    on the same line (best viewed in colour).
+  Figure 5 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_5.jpg
+  Figure 5 caption: Examples and detection accuracy results for the (left to right)
+    boxes6dof, dynamic6dof, poster6dof, and shapes6dof datasets [16]. Legend boxes
+    indicate the percentage improvement over the eHarris baseline for 50% recall.
+    A perfect detection algorithm has a 1.0 precision and a 1.0 recall, and therefore
+    good algorithms should push towards the top right corner of the results plots.
+  Figure 6 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_6.jpg
+  Figure 6 caption: Recall rates compared to event-rate for the (a) shapes6dof and
+    (b) dynamic6dof datasets. A threshold that produced closest to 50% recall was
+    selected for each algorithm (but not possible to achieve exactly). The measured
+    update rate of luvHarris Algorithm 2 was approximately 1 kHz. while other algorithms
+    are event-by-event.
+  Figure 7 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_7.jpg
+  Figure 7 caption: A comparison of Harris method (eHarris, luvHarris) and surface
+    methods (SITS, TOS, Spatially-Adaptive) for corner accuracy on the shapes6dof
+    dataset. The Spatially-Adaptive surface is incompatible with luvHarris.
+  Figure 8 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_8.jpg
+  Figure 8 caption: Synchronised qualitative corner trails over a 100 ms window for
+    the shapes6dof dataset. (b, c) Harris based algorithms produce consistent, wider
+    trails, while (a, d) arc-based algorithms are more affected by missed corner events,
+    and falsely classifying edges as corners.
+  Figure 9 Link: articels_figures_by_rev_year\2021\luvHarris_A_Practical_Corner_Detector_for_EventCameras\figure_9.jpg
+  Figure 9 caption: "Synchronised qualitative corner trails over a 100 ms window for\
+    \ the boxes6dof dataset. In cluttered conditions exactly what is a \u201Ccorner\u201D\
+    \ is more ambiguous, however it is clear that (c) luvHarris detects somewhat consistent\
+    \ trails, while (a) ARC and (d) FAST do not."
+  First author gender probability: 0.82
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Arren Glover
+  Name of the last author: Chiara Bartolozzi
+  Number of Figures: 10
+  Number of Tables: 1
+  Number of authors: 5
+  Paper title: 'luvHarris: A Practical Corner Detector for Event-Cameras'
+  Publication Date: 2021-12-15 00:00:00
+  Table 1 caption: TABLE 1 Maximum Event Throughput Measured Compared to That Reported
+    in the Literature [6]
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3135635
+- Affiliation of the first author: knowledge and data engineering laboratory of chinese
+    medicine, school of information and software engineering, university of electronic
+    science and technology of china, chengdu, china
+  Affiliation of the last author: mininglamp academy of sciences, mininglamp technology,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_1.jpg
+  Figure 1 caption: "The overall flowchart of MADRL model for multi-attribute ADDI\
+    \ prediction. Given the m th attribute representations X m i\u22C5 and X m j\u22C5\
+    \ of adverse drug pair ( d i , d j ) , we first conduct joint representative drug\
+    \ and discriminative feature selection and exploit the selected drugs and features\
+    \ to reconstruct the m th attribute representations X m i\u22C5 and X m j\u22C5\
+    \ for deriving the reconstructed attribute representation H m ij of ( d i , d\
+    \ j ) , m=1,\u2026,M . Shared and specific attribute representation learning is\
+    \ then implemented to capture the shared attribute representation H shared ij\
+    \ and specific attribute representation H specific ij of adverse drug pair ( d\
+    \ i , d j ) , which are finally incorporated into a deep neural network for multi-attribute\
+    \ ADDI prediction."
+  Figure 10 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_10.jpg
+  Figure 10 caption: Experimental results of MADRL in terms of AUPR with the incorporation
+    of two attribute combinations into ADDI prediction.
+  Figure 2 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_2.jpg
+  Figure 2 caption: "The architecture of joint representative drug and discriminative\
+    \ feature selection, in which CUR matrix decomposition incorporated with graph\
+    \ manifold regularization is first developed to factorize the original feature\
+    \ space X m and capture matrix W m with row and column sparsity constraints. Then,\
+    \ sum-pooling operations are utilized to embed the rows and columns of W m for\
+    \ obtaining N \xAF representative drugs and C \xAF m discriminative features.\
+    \ The selected drugs and features are used to construct the reduced feature space\
+    \ X ~ m . Finally, we introduce coefficient matrix \u03A6 m with column sparsity\
+    \ constraint to rebuild matrix X m so as to derive the reconstructed attribute\
+    \ representations X m i\u22C5 and H m ij for drug d i and adverse drug pair (\
+    \ d i , d j ) , respectively."
+  Figure 3 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_3.jpg
+  Figure 3 caption: Schematic of representative drug and discriminative feature selection
+    for molecular structure space of drugs. The non-zero rows and columns indicate
+    the selected representative drugs and discriminative molecular substructures,
+    respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_4.jpg
+  Figure 4 caption: "The architecture of shared and specific attribute representation\
+    \ learning for ADDI prediction. In particular, the m th attribute representation\
+    \ H m ij of adverse drug pair ( d i , d j ) is fed into generators G m a and G\
+    \ m b to derive its shared attribute representation G m a ( H m ij ) and specific\
+    \ attribute representations G m b ( H m ij ) , respectively, m=1,\u2026,M . Discriminators\
+    \ D mn a and D mn b are employed for the m th and the n th attributes for capturing\
+    \ their consensus and complementary effects in ADDI modeling, respectively, m,n=1,\u2026\
+    ,M . For multi-attribute ADDI prediction, we average the shared parts and align\
+    \ the specific parts and develop a deep neural network to predict the detailed\
+    \ adverse interactions among drugs."
+  Figure 5 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_5.jpg
+  Figure 5 caption: Experimental results of comparison baselines with the variation
+    of training sets in terms of Accuracy, AUC, and AUPR.
+  Figure 6 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_6.jpg
+  Figure 6 caption: Experimental results of MADRL and its variants in terms of Accuracy,
+    AUC, and AUPR.
+  Figure 7 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_7.jpg
+  Figure 7 caption: Experimental results of MADRL in terms of Accuracy, AUC, and AUPR
+    with the incorporation of single attribute into ADDI prediction.
+  Figure 8 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_8.jpg
+  Figure 8 caption: Experimental results of MADRL in terms of Accuracy with the incorporation
+    of two attribute combinations into ADDI prediction.
+  Figure 9 Link: articels_figures_by_rev_year\2021\MultiAttribute_Discriminative_Representation_Learning_for_Prediction_of_Adverse_\figure_9.jpg
+  Figure 9 caption: Experimental results of MADRL in terms of AUC with the incorporation
+    of two attribute combinations into ADDI prediction.
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.92
+  Name of the first author: Jiajing Zhu
+  Name of the last author: Xindong Wu
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Multi-Attribute Discriminative Representation Learning for Prediction
+    of Adverse Drug-Drug Interaction
+  Publication Date: 2021-12-16 00:00:00
+  Table 1 caption: 'TABLE 1 Mmultiple Attribute Information (i.e., Molecular Structure,
+    Target, Enzyme, Pathway, Side Effect, Phenotype, Gene, and Disease) of Voriconazole
+    (Molecular Formula: C 16 H 14 F 3 N 5 O C16H14F3N5O) and Dexamethasone (Molecular
+    Formula: C 22 H 29 F O 5 C22H29 FO 5)'
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Source Databases and Feature Dimensionalities C m Cm
+    of Eight Attributes
+  Table 3 caption: "TABLE 3 The Values of C \xAF m C\xAFm and Parameters \u03B1 m\
+    \ \u03B1m, \u03B2 m \u03B2m, \u03BB m \u03BBm, and \u03B3 m \u03B3m in MADRL"
+  Table 4 caption: "TABLE 4 Experimental Results (Mean \xB1 \xB1STD) of Comparison\
+    \ Baselines in Terms of Seven Metrics for ADDI Prediction"
+  Table 5 caption: TABLE 5 Representative Drugs and Discriminative Features Explored
+    by MADRL
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3135841
+- Affiliation of the first author: department of computing, imperial college london,
+    london, u.k.
+  Affiliation of the last author: department of computing, imperial college london,
+    london, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_1.jpg
+  Figure 1 caption: "Our orientation keypoints approach uses a set of virtual point\
+    \ markers, similar to that used in motion capture systems, to accurately infer\
+    \ joint positions and orientations. a) Motion capture systems place sufficiently\
+    \ many (physical) markers to fully observe rigid joint rotations, including roll\
+    \ \u03A6 , yaw \u03A8 and pitch \u03B8 of each bone. b) Existing joint keypoint-based\
+    \ human pose estimation methods place keypoints at joints, which only allows \u03A8\
+    \ and \u03B8 to be estimated, leaving roll unobserved. c) Our approach estimates\
+    \ virtual markers or \u201Dorientation keypoints\u201D capturing the full joint\
+    \ rotation."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_2.jpg
+  Figure 2 caption: "Illustration of the arrangement of the joint keypoints (blue)\
+    \ and orientation keypoints (green) with respect to their parent bones. Without\
+    \ the orientaiton keypoints, the roll \u03A6 is not observable."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_3.jpg
+  Figure 3 caption: Overview of the crosshairs detector head. We visualize only a
+    2D detector with single strands for X and Y attached to the C5 Resnet layer. Each
+    strand flattens the backbone layer along one dimension, filters through a bottleneck
+    with a full width kernel, and then expands the single dimension back to the original
+    resolution with convolution transpose layers. Batch normalization and ReLU activation
+    layers follow convolutions. A 1x1 convolution layer and soft argmax make predictions.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_4.jpg
+  Figure 4 caption: Summary of the pipeline configurations used in this paper. Configuration
+    names correspond to those used in the experiments.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_5.jpg
+  Figure 5 caption: 'In the wild example of our 6D human pose prediction (Second photo
+    source: [12]).'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_6.jpg
+  Figure 6 caption: Model predictions versus ground truth. Kinematic rotations are
+    visualized with protruding bone handles - small red lines are joint forward vector,
+    yellow are left. Samples ranked by Protocol 1 MPJPE on 17 joint skeleton, quoted
+    rotation error is MPJAS-15. We visualize feet and hand predictions but do not
+    include in averages.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_7.jpg
+  Figure 7 caption: Model predictions for 6 random scenes on the 3DHP dataset (right
+    skeleton) versus ground truth (left skeleton). We show a range of results including
+    the 25th, 50th, 75th, 95th, 99th percentile and as well the example exhibiting
+    the worst error based on MPJPE accuracy. Our approach works well across this entire
+    range. The failure case in the worst example is due to the fact that the detector
+    has confused the left and right limbs.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_8.jpg
+  Figure 8 caption: Model predictions on the 3DPW dataset (right skeleton) versus
+    ground truth (left skeleton). Again we show a range of results including the 25th,
+    50th, 75th, 95th, 99th percentile and as well the example exhibiting the worst
+    error based on MPJPE accuracy. Overall our approach works well across all the
+    examples, with the failure case again attributed to a swapped limb detection.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Orientation_Keypoints_for_D_Human_Pose_Estimation\figure_9.jpg
+  Figure 9 caption: 'Orientation keypoints sensitivity to detector accuracy. We plot
+    both detectors we used and the fine-tuned stacked hourglass detections from [40].
+    The lines are generated from refining detections with errors scaled. Note: detection
+    errors are overstated as 3 actions for S9 are misannotated in source data as highlighted
+    in [22].'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Martin Fisch
+  Name of the last author: Ronald Clark
+  Number of Figures: 9
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: Orientation Keypoints for 6D Human Pose Estimation
+  Publication Date: 2021-12-16 00:00:00
+  Table 1 caption: TABLE 1 Rotation Results on Human3.6M
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Mean Per Joint Position Error (MPJPE) in mm Between the
+    Ground-Truth 3D Joints on Human 3.6M for Single Frame RGB Images Without Depth
+    Information
+  Table 3 caption: TABLE 3 Results on the 3DHP Test Set
+  Table 4 caption: TABLE 4 Results on the 3DPW Test Set
+  Table 5 caption: TABLE 5 Ablation Study of the Lifter Showing the Effect of Different
+    Keypoint Detectors, and Keypoint Types
+  Table 6 caption: TABLE 6 Detector Ablation Study
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3136136
+- Affiliation of the first author: university of adelaide, adelaide, sa, australia
+  Affiliation of the last author: university of adelaide, adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\AutoRectify_Network_for_Unsupervised_Indoor_Depth_Estimation\figure_1.jpg
+  Figure 1 caption: Overview of SC-Depth [32]. First, in the forward pass, training
+    images ( I a , I b ) are passed into the network to predict depth maps ( D a ,
+    D b ) and relative camera pose P ab . With D a and P ab , we obtain the warping
+    flow between two views according to Eqn. (2). Second, given the warping flow,
+    the photometric loss L P and the geometry consistency loss L GC are computed.
+    Also, the weighting mask M is derived from L GC and applied over L P to handle
+    dynamics and occlusions. Moreover, an edge-aware smoothness loss L S is used to
+    regularize the predicted depth map. Here we use this system as our baseline for
+    problem analysis and illustrate our proposed components in Fig. 3.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\AutoRectify_Network_for_Unsupervised_Indoor_Depth_Estimation\figure_2.jpg
+  Figure 2 caption: "Distribution of inter-frame camera motions and warping flows.\
+    \ \u201CRectified\u201D stands for the proposed pre-processing method described\
+    \ in Section 4. In each figure, the first row shows the averaged magnitude of\
+    \ camera poses, i.e., R for rotation and T for translation, and the plot shows\
+    \ the distribution of decomposed warping flow magnitudes (px) of randomly sampled\
+    \ points."
+  Figure 3 Link: articels_figures_by_rev_year\2021\AutoRectify_Network_for_Unsupervised_Indoor_Depth_Estimation\figure_3.jpg
+  Figure 3 caption: "Proposed auto-rectify network (ARN) with loss functions. We use\
+    \ ARN to predict the relative rotation between two input images ( I a , I b ),\
+    \ and warp I b to obtain the I \u2032 b , which is supposed to be well-aligned\
+    \ with I a in terms of rotation. Then we use the image pair ( I a , I \u2032 b\
+    \ ) for subsequent depth learning, as described in Fig. 1. The proposed loss functions\
+    \ are used to regularize the training of ARN."
+  Figure 4 Link: articels_figures_by_rev_year\2021\AutoRectify_Network_for_Unsupervised_Indoor_Depth_Estimation\figure_4.jpg
+  Figure 4 caption: "Samples of ARN warped results. I a , I b are input images, and\
+    \ I \u2032 b is the warped image by ARN. Note the grey board of I \u2032 b , which\
+    \ stands for the zero-padding in image warping."
+  Figure 5 Link: articels_figures_by_rev_year\2021\AutoRectify_Network_for_Unsupervised_Indoor_Depth_Estimation\figure_5.jpg
+  Figure 5 caption: 'Qualitative results. Left to right: RGB, TrainFlow [37], Monodepth2
+    [29], and Ours. The models are trained on NYUv2 [36].'
+  Figure 6 Link: articels_figures_by_rev_year\2021\AutoRectify_Network_for_Unsupervised_Indoor_Depth_Estimation\figure_6.jpg
+  Figure 6 caption: Validation loss during training on NYUv2 [36].
+  Figure 7 Link: articels_figures_by_rev_year\2021\AutoRectify_Network_for_Unsupervised_Indoor_Depth_Estimation\figure_7.jpg
+  Figure 7 caption: Effects of proposed rectification methods. We test the data pre-processing
+    (DP) and ARN on the validation sequence. The ARN model is trained on NYUv2 [36].
+  Figure 8 Link: articels_figures_by_rev_year\2021\AutoRectify_Network_for_Unsupervised_Indoor_Depth_Estimation\figure_8.jpg
+  Figure 8 caption: 'Visualisation of 3D point clouds on NYUv2 [36]. Left to right:
+    RGB, TrainFlow [37], Monodepth2 [29], and Ours.'
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jia-Wang Bian
+  Name of the last author: Ian Reid
+  Number of Figures: 8
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Auto-Rectify Network for Unsupervised Indoor Depth Estimation
+  Publication Date: 2021-12-17 00:00:00
+  Table 1 caption: TABLE 1 Single-View Depth Estimation Results on NYUv2 [36]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Unsupervised Single-View Depth Estimation Results on KITTI
+    [33]
+  Table 3 caption: TABLE 3 Zero-Shot Generalization Results on ScanNet [42]
+  Table 4 caption: TABLE 4 Camera Pose Estimation Results on ScanNet [42]
+  Table 5 caption: TABLE 5 Zero-Shot Generalization Results on Make3D [57]
+  Table 6 caption: TABLE 6 Fine-Tuned Results on 7-Scenes [43]
+  Table 7 caption: TABLE 7 Effects of Our Proposed Data Processing (DP) on NYUv2 [36]
+  Table 8 caption: TABLE 8 Effects of the Proposed Loss Functions on NYUv2 [36]
+  Table 9 caption: TABLE 9 Effects of Auto-Mask (AM) and ImageNet Pretrain (IP) on
+    NYUv2 [36]
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3136220
+- Affiliation of the first author: school of computer science and engineering, southeast
+    university, nanjing, china
+  Affiliation of the last author: school of computer science and engineering, southeast
+    university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Collaborative_Learning_of_Label_Semantics_and_Deep_LabelSpecific_Features_for_Mu\figure_1.jpg
+  Figure 1 caption: Illustration of the proposed Clif approach. Clif learns label
+    semantics and label-specific features collaboratively. On one hand, the semantic-guided
+    feature-disentangling module extracts label-specific features with the guidance
+    of semantic label embeddings generated by the label semantic encoding module.
+    On the other hand, as shown by the dotted arrows, discrimination process based
+    on label-specific features in turn enriches the label semantics with label-specific
+    discriminative properties via backpropagation of discrimination errors.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Collaborative_Learning_of_Label_Semantics_and_Deep_LabelSpecific_Features_for_Mu\figure_2.jpg
+  Figure 2 caption: "Comparison of Clif (control algorithm) against other comparing\
+    \ algorithms with the Bonferroni-Dunn test. Algorithms not connected with Clif\
+    \ in the CD diagram are considered to have significantly different performance\
+    \ from the control algorithm (significance level \u03B1=0.05 )."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Collaborative_Learning_of_Label_Semantics_and_Deep_LabelSpecific_Features_for_Mu\figure_3.jpg
+  Figure 3 caption: "Performance of Clif changes as the trade-off parameter \u03BB\
+    \ varies. The first and the second rows show results on the tmc2007 and iaprtc12\
+    \ data sets respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Collaborative_Learning_of_Label_Semantics_and_Deep_LabelSpecific_Features_for_Mu\figure_4.jpg
+  Figure 4 caption: Visualization of Clif on tmc2007. The left subfigure shows the
+    constructed adjacency matrix A with self-loop, i.e., filling the diagonal elements
+    with 1. The middle and the right subfigures show the cosine similarity matrices
+    of label embeddings and importance vectors respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Collaborative_Learning_of_Label_Semantics_and_Deep_LabelSpecific_Features_for_Mu\figure_5.jpg
+  Figure 5 caption: Complexity analyses of Clif. (a) Empirical scalability of Clif
+    on the delicious data set. (b)(c) Running time (trainingtest) of each comparing
+    approach on six benchmark data sets. For histogram illustration, the y -axis corresponds
+    to the logarithm of running time.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Collaborative_Learning_of_Label_Semantics_and_Deep_LabelSpecific_Features_for_Mu\figure_6.jpg
+  Figure 6 caption: Further analyses of Clif with varying loss functions. (a) Performance
+    comparision in terms of a ranking-based metric (Average precision). (b) Performance
+    comparision in terms of a classification-based metric (Adjusted hamming loss).
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Jun-Yi Hang
+  Name of the last author: Min-Ling Zhang
+  Number of Figures: 6
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: Collaborative Learning of Label Semantics and Deep Label-Specific Features
+    for Multi-Label Classification
+  Publication Date: 2021-12-20 00:00:00
+  Table 1 caption: TABLE 1 Characteristics of the Experimental Data Sets
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Predictive Performance of Each Comparing Approach (mean\
+    \ \xB1 \xB1std. deviation) in Terms of Average Precision, Macro-Averaging AUC\
+    \ and Adjusted Hamming Loss"
+  Table 3 caption: "TABLE 3 Predictive Performance of Each Comparing Approach (mean\
+    \ \xB1 \xB1std. deviation) in Terms of One-Error, Coverage and Ranking Loss"
+  Table 4 caption: TABLE 4 Summary of the Friedman Statistics F F FF in Terms of Each
+    Evaluation Metric and the Critical Value at 0.05 Significance Level ( comparing
+    algorithms K=7 K=7, data sets N=14 N=14)
+  Table 5 caption: TABLE 5 Summary of the Wilcoxon Signed-Ranks Test for Clif Against
+    Its Variants in Terms of Each Evaluation Metricat 0.05 Significance Level
+  Table 6 caption: "TABLE 6 Predictive Performance of Clif and its Variant Models\
+    \ (mean \xB1 \xB1std. deviation) in Terms of Average Precision"
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3136592

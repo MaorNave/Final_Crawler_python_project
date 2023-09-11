@@ -1,0 +1,857 @@
+- Affiliation of the first author: department of computer science and engineering,
+    university of south carolina, columbia, sc, usa
+  Affiliation of the last author: department of computer science and engineering,
+    university of south carolina, columbia, sc, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_1.jpg
+  Figure 1 caption: The architecture of the proposed DANIA. Three input images I s
+    , I td , and I tn are drawn from the source domain S (Cityscapes) and two target
+    domains T d and T n (Dark Zurich-D and Dark Zurich-N), respectively. They go through
+    a weight-sharing image relighting network which can make their distributions be
+    close to each other via the light loss L light . All the outputs are fed into
+    a weight-sharing segmentation network to obtain the predictions of the three domains,
+    P s , P td and P tn , respectively. For the prediction from I s , a semantic segmentation
+    loss L seg is computed using the ground-truth segmentation from the source dataset.
+    Besides, the prediction from I td for the categories of static objects provide
+    weak supervision for the corresponding categories from I tn , reflected by a static
+    loss L static . Note that the composition of the relighting network and the semantic
+    segmentation network forms the generator G . Two discriminators D d and D n are
+    designed to distinguish outputs from the source domain S or the target domain
+    T d and from the source domain S or the target domain T n , respectively. Note
+    that the gradients from the static loss flow via only P S tn , the predictions
+    of static object categories, and the daytime prediction is detached as the label
+    when calculating the static loss.
+  Figure 10 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_10.jpg
+  Figure 10 caption: The visualization results of three failure cases from Dark-Zurich
+    Val by DANIA (PSPNet).
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_2.jpg
+  Figure 2 caption: The structure of the image relighting network. It consists of
+    four convolutional layers, three residual blocks and two transposed convolutional
+    layers, and each convolutional layer is followed by a batch normalization layer
+    except for the last convolutional layer. The output from the last layer is then
+    added to the input image to obtain the relighted image.
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_3.jpg
+  Figure 3 caption: The process of building the correspondence between the day-night
+    image pairs and prediction warping. The estimated flow in this sample indicates
+    a zoom in and out effect between the image pairs.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_4.jpg
+  Figure 4 caption: The visualization of the pseudo label F S td without and with
+    applying fusion scheme.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_5.jpg
+  Figure 5 caption: Visualization comparison of our DANIA with some existing state-of-the-art
+    methods on five samples from Dark Zurich-val.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_6.jpg
+  Figure 6 caption: Visualization comparison of our DANIA with some existing state-of-the-art
+    methods on five samples from Night Driving-test.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_7.jpg
+  Figure 7 caption: Visualization of relighted images from the three domains. From
+    top to bottom, we show the three samples from the Cityscapes, Dark Zurich-D and
+    Dark Zurich-N, respectively. The original intensity distribution is calculated
+    using 500 input images from each domain (the fourth column) and the relighted
+    intensity distribution is calculated from 500 corresponding relighted images (the
+    last column).
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_8.jpg
+  Figure 8 caption: Visualization results of w and wo the re-weighting (rw) strategy
+    on a sample from Dark Zurich-val by the DANNet (PSPNet) and DANIA (PSPNet).
+  Figure 9 Link: articels_figures_by_rev_year\2021\A_OneStage_Domain_Adaptation_Network_With_Image_Alignment_for_Unsupervised_Night\figure_9.jpg
+  Figure 9 caption: Ablation study on the value of std in the re-weighting strategy
+    on Dark Zurich-val by our DANIA (PSPNet) and DANNet (PSPNet).
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Xinyi Wu
+  Name of the last author: Song Wang
+  Number of Figures: 12
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: A One-Stage Domain Adaptation Network With Image Alignment for Unsupervised
+    Nighttime Semantic Segmentation
+  Publication Date: 2021-12-28 00:00:00
+  Table 1 caption: TABLE 1 The mIoU (%) Performance of the Pre-Trained Semantic Segmentation
+    Models on the Validation Set of Cityscapes and Dark Zurich
+  Table 10 caption: TABLE 10 Comparison Results of the Usage of Deblur and Image Enhancement
+    Approaches on Dark Zurich-val
+  Table 2 caption: TABLE 2 The Per-Category mIoU (%) on Dark Zurich-Test by Current
+    State-of-the-Art Methods and Our DANIA
+  Table 3 caption: TABLE 3 Comparison of Our DANIA With Some Existing State-of-the-Art
+    Methods on Nighttime Driving-Test [18]
+  Table 4 caption: TABLE 4 Ablation Study on Several Model Variants of Our DANIA (PSPNet)
+    on Dark Zurich-val
+  Table 5 caption: TABLE 5 Ablation Study for Static Loss L static Lstatic in Our
+    DANIA (PSPNet) on Dark Zurich-val
+  Table 6 caption: TABLE 6 Ablation Study for Loss Weights in Eqs. (7) and (15) Based
+    on DANIA (PSPNet) on Dark Zurich-val
+  Table 7 caption: TABLE 7 Ablation Study for Parameters in Eq. (11) Based on DANIA
+    (PSPNet) on Dark Zurich-val
+  Table 8 caption: TABLE 8 Ablation Study for Image Alignment Our DANIA (PSPNet) on
+    Dark Zurich-val
+  Table 9 caption: TABLE 9 Comparison With the Usage of Day-Night Pairs on Dark Zurich-Test
+    According to mIoU(%)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3138829
+- Affiliation of the first author: university of minnesota, minneapolis, mn, usa
+  Affiliation of the last author: university of minnesota, minneapolis, mn, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_1.jpg
+  Figure 1 caption: 'We present HUMBI that pushes towards two extremes: views and
+    subjects. Comparing to existing datasets such as CMU Panoptic Studio [38], [40],
+    MPII [69], [70], and INRIA [44], HUMBI presents the unprecedented scale visual
+    data measured by 107 HD cameras that can be used to learn the detailed appearance
+    and geometry of five elementary human body expressions for 772 distinctive subjects.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_10.jpg
+  Figure 10 caption: The view-specific face appearance rendered from multiview images
+    with its median and variance. The mesh parameterization of the fitted 3D face
+    model [35] is used to project the images to UV coordinates.
+  Figure 2 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_2.jpg
+  Figure 2 caption: 'We present a new large multiview dataset dataset of human body
+    expressions called HUMBI. We focus on five elementary expressions: face (blue),
+    gaze (yellow), hand (pink and purple), body (light orange), and garment including
+    top (light blue) and bottom (light green).'
+  Figure 3 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_3.jpg
+  Figure 3 caption: The existing datasets (Deepfashion [53] and Market-1501 [117])
+    are designed for the task of person re-identification and fashion retrieval, which
+    includes the images captured from limited viewpoints. On the other hand, HUMBI
+    provides images captured from dense camera array, which is ideal to develop and
+    evaluate a human rendering model. The body surface visibility for each dataset
+    is visualized [5]. The colormap describes the number of cameras visible at each
+    pixel.
+  Figure 4 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_4.jpg
+  Figure 4 caption: Re-configurable dodecagon design and its dimension of the multi-camera
+    system.
+  Figure 5 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_5.jpg
+  Figure 5 caption: (Top and bottom) HUMBI includes 772 distinctive subjects across
+    gender, ethnicity, age, clothing style, and physical condition, which generates
+    diverse appearance of human expressions. (Middle) For each subject, 107 HD cameras
+    capture herhis expressions including gaze, face, hand, body, and garment.
+  Figure 6 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_6.jpg
+  Figure 6 caption: HUMBI 3D semantic point clouds dataset. We use multiview 3D reconstruction
+    [79] and segmentation [107] methods to obtain 3D point clouds for each semantic
+    body parts.
+  Figure 7 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_7.jpg
+  Figure 7 caption: (Left) 3D geometry of gaze. The black arrow is the gaze direction.
+    The red, green and blue segment are the x , y , and z -axes of the moving head
+    coordinate system. (Right) The gaze geometry is projected onto the image.
+  Figure 8 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_8.jpg
+  Figure 8 caption: The view-specific gaze appearance rendered from multiview images
+    with its median and variance. The eye patches from multiview images are normalized
+    to ensure consistent orientation and distance across the views.
+  Figure 9 Link: articels_figures_by_rev_year\2021\HUMBI_A_Large_Multiview_Dataset_of_Human_Body_Expressions_and_Benchmark_Challeng\figure_9.jpg
+  Figure 9 caption: (Top) The recovered 3D faces with various expressions where the
+    first and second rows describe the rendered face from the front and side views
+    respectively. (Bottom left) Alignment between projected mesh and subjects face.
+    (Bottom right) The estimated illumination using a linear combination of the spherical
+    harmonics.
+  First author gender probability: 0.87
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.94
+  Name of the first author: Jae Shin Yoon
+  Name of the last author: Hyun Soo Park
+  Number of Figures: 27
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: 'HUMBI: A Large Multiview Dataset of Human Body Expressions and Benchmark
+    Challenge'
+  Publication Date: 2021-12-28 00:00:00
+  Table 1 caption: TABLE 1 Human Body Expression Datasets
+  Table 10 caption: TABLE 10 The Summary of the Garment Reconstruction Accuracy
+  Table 2 caption: 'TABLE 2 Bias and Variance Analysis of the Distribution of Head
+    Pose, Gaze and Eye Pose (Unit: Degree, Smallest Bias and Largest Variance in Bold,
+    Second With Underline)'
+  Table 3 caption: 'TABLE 3 The Mean Error of 3D Gaze Prediction for the Cross-Data
+    Evaluation (Unit: Degree)'
+  Table 4 caption: 'TABLE 4 The Mean Error of 3D Face Mesh Prediction for Cross-Data
+    Evaluation (Unit: Pixel)'
+  Table 5 caption: 'TABLE 5 The Reconstruction Accuracy for HUMBI Face, Hand, and
+    Body Measured by Intersection Over Union (IoU) and Chamfer Distance (Unit: Pixel)
+    Between the Ground Truth and the Projections of the 3D Model'
+  Table 6 caption: TABLE 6 The Cross-Data Evaluation of 3D Hand Keypoint Prediction
+  Table 7 caption: 'TABLE 7 The Mean Error of 3D Hand Mesh Prediction for Cross-Data
+    Evaluation (Unit: Pixel)'
+  Table 8 caption: TABLE 8 The Cross-Data Evaluation of 3D Body Keypoint Prediction
+  Table 9 caption: 'TABLE 9 The Mean Error of 3D Body Mesh Prediction for Cross-Data
+    Evaluation (Unit: Pixel) Where Learning With the Combined Dataset Shows the Best
+    Performance'
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3138762
+- Affiliation of the first author: center for research in computer vision, university
+    of central florida, orlando, fl, usa
+  Affiliation of the last author: center for research in computer vision, university
+    of central florida, orlando, fl, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_1.jpg
+  Figure 1 caption: Class activation maps (CAM) of different model configurations
+    (the network is ResNet-50 and is trained on ImageNet). Larger model configuration
+    focuses more on details (e.g., face) while the smaller one focuses more on the
+    contour (e.g., body).
+  Figure 10 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_10.jpg
+  Figure 10 caption: MutualNet and US-Net + multi-scale data augmentation.
+  Figure 2 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_2.jpg
+  Figure 2 caption: "An example to illustrate the training process of MutualNet. The\
+    \ network width range is [0.25\xD7, 1.0\xD7], input resolution is chosen from\
+    \ 224, 192, 160, 128. This can achieve a computation range of [13, 569] MFLOPs\
+    \ on MobileNet v1 backbone. We follow [11] to sample 4 networks, i.e., upper-bound\
+    \ full width network ( 1.0\xD7 ), lower-bound width network ( 0.25\xD7 ), and\
+    \ two random width ratios \u03B3 w 1 , \u03B3 w 2 \u2208(0.25,1) . For the full-network,\
+    \ we constantly choose 224\xD7224 resolution. For the other three sub-networks,\
+    \ we randomly select its input resolution. The full-network is optimized with\
+    \ the ground-truth label using Cross Entropy loss (CE). Sub-networks are supervised\
+    \ by the prediction of the full-network using Kullback\u2013Leibler Divergence\
+    \ loss (KL). Weights are shared among different networks to facilitate mutual\
+    \ learning."
+  Figure 3 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_3.jpg
+  Figure 3 caption: An illustration of the mutual learning scheme. It allows the sub-network
+    to learn multi-scale representations, in terms of both network width and input
+    image resolution.
+  Figure 4 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_4.jpg
+  Figure 4 caption: "Class activation map along spatial and temporal dimensions of\
+    \ two network configurations. X -axis is the frame index number and y -axis is\
+    \ the normalized activation value. The action is \u201Cheadbutting\u201D from\
+    \ the Kinetics-400 dataset."
+  Figure 5 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_5.jpg
+  Figure 5 caption: An overview of 3D MutualNet training. Left is for single-pathway
+    structures, which is similar to 2D MutualNet training. Right is for multiple-pathway
+    structures, where only the Slow branch is downsampled. The two branches are fused
+    by the proposed Adaptive Fusion block.
+  Figure 6 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_6.jpg
+  Figure 6 caption: An illustration of adaptive fusion on network channels.
+  Figure 7 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_7.jpg
+  Figure 7 caption: Comparisons of Accuracy-FLOPs curves of MutualNet, S-Net and US-Net.
+    In the tables, we compare some points on the curves by their configurations, the
+    corresponding FLOPs and accuracy.
+  Figure 8 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_8.jpg
+  Figure 8 caption: Comparisons of Accuracy-FLOPs curves of MutualNet, US-Net and
+    I-Net.
+  Figure 9 Link: articels_figures_by_rev_year\2021\MutualNet_Adaptive_ConvNet_via_Mutual_Learning_From_Different_Model_Configuratio\figure_9.jpg
+  Figure 9 caption: The width-resolution trade-offs at different resource constraints.
+    The Accuracy-FLOPs curves are based on MobileNet v1 backbone. We highlight the
+    selected resolution under different FLOPs with different colors. For example,
+    the solid green line indicates that when the constraint range is [41, 215] MFLOPs,
+    our method constantly selects input resolution 160 but reduces the width to meet
+    the resource constraint. Best viewed in color.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Taojiannan Yang
+  Name of the last author: Chen Chen
+  Number of Figures: 19
+  Number of Tables: 9
+  Number of authors: 9
+  Paper title: 'MutualNet: Adaptive ConvNet via Mutual Learning From Different Model
+    Configurations'
+  Publication Date: 2021-12-28 00:00:00
+  Table 1 caption: TABLE 1 Reducing MobileNet Complexity by Width or Resolution at
+    Runtime
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Weakly-Supervised Localization Accuracy of Different Model
+    Configurations on ImageNet Validation Set Using CAM [59]
+  Table 3 caption: TABLE 3 Training Cost of MutualNet and Independent Models of Different
+    Scales
+  Table 4 caption: TABLE 4 Training Cost of MutualNet and Independent Models of Different
+    Scales
+  Table 5 caption: "TABLE 5 Comparison With EfficienNet to Scale up MobileNetv1 by\
+    \ \xD74 on ImageNet"
+  Table 6 caption: TABLE 6 Comparison Between MutualNet and Multi-Scale Data Augmentation
+  Table 7 caption: TABLE 7 Comparisons of the Top-1 Accuracy (%) of MutualNet and
+    State-of-the-Art Techniques for Boosting a Single Network
+  Table 8 caption: TABLE 8 Comparison of Different Models on Charades
+  Table 9 caption: TABLE 9 Comparison of Different Models on AVA v2.1
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3138389
+- Affiliation of the first author: samsung advanced institute of technology, samsung
+    electronics, gyeonggi-do, republic of korea
+  Affiliation of the last author: department of bio and brain engineering, korea advanced
+    institute of science and technology (kaist), daejeon, republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\DeepPhaseCut_Deep_Relaxation_in_Phase_for_Unsupervised_Fourier_Phase_Retrieval\figure_1.jpg
+  Figure 1 caption: "Overview of the DeepPhaseCut training scheme. P N is a zero-padding\
+    \ matrix converting x\u2208 C N to a zero-padded M -dimensional matrix P N x\u2208\
+    \ C M . F M denotes M\xD7M -DFT matrix. There are two generators G \u0398 , H\
+    \ \u03A8 and two discriminators \u03C6 , \u03C8 . G \u0398 and H \u03A8 refer\
+    \ to the phase network and image refinement network, respectively. The network\
+    \ employed three losses \u2013 adversarial loss, PhaseCut loss, and cycle consistency\
+    \ loss. Here, |\u22C5| refers to the element-wise magnitude."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\DeepPhaseCut_Deep_Relaxation_in_Phase_for_Unsupervised_Fourier_Phase_Retrieval\figure_2.jpg
+  Figure 2 caption: "(a) Modified U-net architecture for the generators G \u0398 and\
+    \ H \u03A8 . SA module denotes spatial attention module. (b) Spatial attention\
+    \ module [48]. (c) Network architecture of the discriminators \u03C6 and \u03C8\
+    \ ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\DeepPhaseCut_Deep_Relaxation_in_Phase_for_Unsupervised_Fourier_Phase_Retrieval\figure_3.jpg
+  Figure 3 caption: CelebA data reconstruction results using HIO [18], PhaseCut [23],
+    prDeep [25], On-RED [50], PRCGAN [29], and proposed DeepPhaseCut. The values in
+    the corners are PSNR SSIM index for each image with respect to the target image.
+  Figure 4 Link: articels_figures_by_rev_year\2021\DeepPhaseCut_Deep_Relaxation_in_Phase_for_Unsupervised_Fourier_Phase_Retrieval\figure_4.jpg
+  Figure 4 caption: Natural image reconstruction results using HIO [18], PhaseCut
+    [23], prDeep [25], PRCGAN [29], and proposed DeepPhaseCut. The values in the corners
+    are PSNR SSIM index for each image with respect to the target image.
+  Figure 5 Link: articels_figures_by_rev_year\2021\DeepPhaseCut_Deep_Relaxation_in_Phase_for_Unsupervised_Fourier_Phase_Retrieval\figure_5.jpg
+  Figure 5 caption: FastMRI reconstruction results using HIO [53], PhaseCut [23],
+    and proposed DeepPhaseCut. The values in the corners are PSNR SSIM index for individual
+    image with respect to the ground-truth image.
+  Figure 6 Link: articels_figures_by_rev_year\2021\DeepPhaseCut_Deep_Relaxation_in_Phase_for_Unsupervised_Fourier_Phase_Retrieval\figure_6.jpg
+  Figure 6 caption: Reconstructed results using HIO [18], PhaseCut [23], prDeep [25],
+    PRCGAN [29] and proposed DeepPhaseCut. The numbers written in the images are the
+    corresponding PSNR SSIM index with respect to the target image.
+  Figure 7 Link: articels_figures_by_rev_year\2021\DeepPhaseCut_Deep_Relaxation_in_Phase_for_Unsupervised_Fourier_Phase_Retrieval\figure_7.jpg
+  Figure 7 caption: "Reconstruction results using an ablated network only consisting\
+    \ of (a) G \u0398 and (b) H \u03A8 , respectively. (c) indicates reconstruction\
+    \ results using the proposed DeepPhaseCut. (d) is the target images. The values\
+    \ in the corners are PSNR SSIM index for individual image with respect to the\
+    \ target image."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.73
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Eunju Cha
+  Name of the last author: Jong Chul Ye
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: 'DeepPhaseCut: Deep Relaxation in Phase for Unsupervised Fourier Phase
+    Retrieval'
+  Publication Date: 2021-12-28 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Comparison of Various Algorithms Using the
+    CelebA Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Comparison of Various Reconstruction Algorithms
+    Using the fastMRI Datset
+  Table 3 caption: TABLE 3 Quantitative Comparison and Runtime of Algorithms Using
+    Dataset of Microscopy Images
+  Table 4 caption: TABLE 4 Quantitative Comparison of Ablation Study on Loss Function
+    Using the Microscopy Dataset
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3138897
+- Affiliation of the first author: school of information science and technology, vidyasirimedhi
+    institute of science and technology, rayong, thailand
+  Affiliation of the last author: school of information science and technology, vidyasirimedhi
+    institute of science and technology, rayong, thailand
+  Figure 1 Link: articels_figures_by_rev_year\2021\Towards_Pointsets_Representation_Learning_via_SelfSupervised_Learning_and_Set_Au\figure_1.jpg
+  Figure 1 caption: The overall architecture of our proposed method using document
+    input for illustrative purposes. We first process each unlabeled document into
+    a set of word vectors, then embed this set into our embedding space with a permutation
+    invariant neural network. This embedding network is optimized using our triplet
+    loss in a self-supervised fashion through our automatic triplet selection.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Towards_Pointsets_Representation_Learning_via_SelfSupervised_Learning_and_Set_Au\figure_2.jpg
+  Figure 2 caption: An illustration of triplet selection. Given an anchor point (yellow
+    circle), the closest point to this anchor in EMD space is chosen as the positive
+    (green rectangle). Then, the negative is the closest point to the anchor that
+    is at least as far way as the distance between the anchor and the positive (dotted
+    ring) in the embedding space.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Towards_Pointsets_Representation_Learning_via_SelfSupervised_Learning_and_Set_Au\figure_3.jpg
+  Figure 3 caption: Illustrations of two training strategies. The left figure shows
+    internal-data pre-training pipeline which constructs a pre-trained model from
+    the target dataset without using labels, before fine-tuning the model with labels.
+    The right figure shows external-data pre-training which first constructs a pre-trained
+    model from an additional dataset without using labels, then followed by self-supervised
+    pre-training with the target dataset again, which is similar to the steps of internal-data
+    pre-training.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Towards_Pointsets_Representation_Learning_via_SelfSupervised_Learning_and_Set_Au\figure_4.jpg
+  Figure 4 caption: This figure reports k NN accuracies on semi-supervised settings
+    explained in Section 7.3, which simulately reduce the label propagation of available
+    training labels used in the fine-tuning step. Solid lines represent approaches
+    that do not use any external data, while dashed lines represent approaches that
+    do.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Towards_Pointsets_Representation_Learning_via_SelfSupervised_Learning_and_Set_Au\figure_5.jpg
+  Figure 5 caption: These graphs show the average time consumption for each step in
+    similarity search on Amazon dataset from a given query. Note that we use a log
+    scale on the overall retrieval time and distance calculation time. Ours is the
+    fastest approach in the overall retrieval time and even faster than the state-of-the-art
+    neural network BERT while achieving with comparable accuracy.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Towards_Pointsets_Representation_Learning_via_SelfSupervised_Learning_and_Set_Au\figure_6.jpg
+  Figure 6 caption: These graphs show the average time consumption for each step in
+    similarity search on NCI1 dataset from a given query. Ours is faster than the
+    state-of-the-art graph neural network GraphCL.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Towards_Pointsets_Representation_Learning_via_SelfSupervised_Learning_and_Set_Au\figure_7.jpg
+  Figure 7 caption: Figure shows the effectiveness of our re-weighting negative terms
+    on recall K by tuning the hyperparameter c in Eq. (5).
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0
+  Gender of the first author: Not Available
+  Gender of the last author: female
+  Last author gender probability: 0.79
+  Name of the first author: Pattaramanee Arsomngern
+  Name of the last author: Sarana Nutanong
+  Number of Figures: 7
+  Number of Tables: 12
+  Number of authors: 4
+  Paper title: Towards Pointsets Representation Learning via Self-Supervised Learning
+    and Set Augmentation
+  Publication Date: 2021-12-29 00:00:00
+  Table 1 caption: TABLE 1 Graph Datasets Statistics
+  Table 10 caption: "TABLE 10 Effect of Varying Augmentation Methods Probability Threshold\
+    \ \u03C9 \u03C9 and \u03BB \u03BB on Document and Graph Datasets"
+  Table 2 caption: TABLE 2 Variation of Our Proposed Models
+  Table 3 caption: TABLE 3 Comparison of Our Representation With Unsupervised and
+    Self-Supervised Approaches
+  Table 4 caption: TABLE 4 Comparison of Our Fine-Tuned Models Results With Other
+    Supervised Approaches
+  Table 5 caption: TABLE 5 Comparison of Mean Classification Accuracy and Standard
+    Deviation Conducted on a 10-Fold Cross-Validation Split Graph Datasets With Other
+    Set-Based and Graph-Based Approaches
+  Table 6 caption: TABLE 6 Comparison of Mean Classification Accuracy and Standard
+    Deviation Conducted on a 10-Fold Cross-Validation Split With Other General-Based
+    and Graph-Based Approaches on Graph Datasets With 10% Label Propagation
+  Table 7 caption: TABLE 7 Effect of Varying Augmentation and Distance Used for Mining
+    Triplet in Our Proposed Loss
+  Table 8 caption: TABLE 8 Comparison of Mean Squared Error Between Our Approximated
+    Distance and the Ground Truth EMD Values and Density Estimation Discrepancy With
+    Neural-Network Based EMD Approximation Approaches
+  Table 9 caption: TABLE 9 Comparison of Recall K K With Other Unsupervised and Self-Supervised
+    Approaches
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3139113
+- Affiliation of the first author: shanghai key laboratory of navigation and location-based
+    services, school of electronic information and electrical engineering, shanghai
+    jiao tong university, shanghai, china
+  Affiliation of the last author: college of intelligent science and technology, national
+    university of defense technology, changsha, hunan, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\A_PoseOnly_Solution_to_Visual_Reconstruction_and_Navigation\figure_1.jpg
+  Figure 1 caption: Pose-only imaging geometry. The classical multiple-view geometry
+    uses poses, image points and 3D feature coordinates to describe the imaging geometry.
+    It is shown the imaging relationship can be equivalently represented by a pose-only
+    geometry that involves just poses and image points, in which 3D feature coordinates
+    are expressed as a function of poses and image points. Pose-only imaging geometry
+    is actually a linear constraint of global translation. Given global rotations,
+    the linear constraint enables a linear solution to global translations that is
+    theoretically immune to camera collinear movement and local pure rotation. 3D
+    feature coordinates are removed from nonlinear optimization in the pose-only imaging
+    geometry and analytically reconstructed from recovered poses.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\A_PoseOnly_Solution_to_Visual_Reconstruction_and_Navigation\figure_2.jpg
+  Figure 2 caption: "Flow chart of pose-only solution. LiGT takes image observations\
+    \ and the given global rotations as inputs to estimate global translations. Global\
+    \ rotations and translations can be optionally optimized by pose adjustment. 3D\
+    \ feature coordinates are analytically reconstructed and do not participate the\
+    \ optimization process. The small image icons near the algorithm names indicate\
+    \ that those algorithms take image observations as additional inputs. Red arrows,\
+    \ together with grey quadrangular cones, denote the camera poses. The small window\
+    \ with \u201Coptimal R\u201D implies that better global rotations will lead to\
+    \ better global translations."
+  Figure 3 Link: articels_figures_by_rev_year\2021\A_PoseOnly_Solution_to_Visual_Reconstruction_and_Navigation\figure_3.jpg
+  Figure 3 caption: Camera motion and 3D structure in simulation. Three types of camera
+    motions (linear, circular, and square) were designed to compare the algorithms.
+    The 3D feature points were generated uniformly in front of the camera.
+  Figure 4 Link: articels_figures_by_rev_year\2021\A_PoseOnly_Solution_to_Visual_Reconstruction_and_Navigation\figure_4.jpg
+  Figure 4 caption: Algorithm accuracy in the simulation. The charts show the attitude,
+    translation, and reconstruction errors, respectively, across 50 Monte Carlo runs
+    for three camera motions. (a1-a6) Linear motion. (b1-b6) Circular motion. (c1-c6)
+    Square motion. This shows that the accuracy of LiGT is superior to those of LUD
+    and 1DSfM in all three types of camera motions, and PA is less affected by image
+    noise than BA.
+  Figure 5 Link: articels_figures_by_rev_year\2021\A_PoseOnly_Solution_to_Visual_Reconstruction_and_Navigation\figure_5.jpg
+  Figure 5 caption: The local pure rotation test. (a) The circular closed-loop test
+    with local pure rotation motion, indicated by the green square. (b) Global translation
+    accuracy for each view.
+  Figure 6 Link: articels_figures_by_rev_year\2021\A_PoseOnly_Solution_to_Visual_Reconstruction_and_Navigation\figure_6.jpg
+  Figure 6 caption: Running time, memory consumption, and final reprojection errors
+    for LiGT, LUD-BA, and LiGT-PA. Arranged clockwise in ascending order of the number
+    of image points for Lund and OpenSLAM data results. (a) Time cost in seconds.
+    (b) Memory cost in megabytes. (c) Reprojection error.
+  Figure 7 Link: articels_figures_by_rev_year\2021\A_PoseOnly_Solution_to_Visual_Reconstruction_and_Navigation\figure_7.jpg
+  Figure 7 caption: Recovered camera poses and 3D scenes, and reprojection errors
+    of representative data. Kings-College, Statue-of-Liberty, UWO and Ystad-Monastery
+    are from the Lund dataset. (a) Recovered camera poses and 3D scenes by LiGT, LiGT-PA,
+    LUD, and LUD-BA. Red arrows denote cameras. (b) reprojection errors for LiGT-PA
+    and LUD-BA as a function of the number of iterations (maximum set at 100) performed
+    during the optimization process. The 3D scenes were recovered analytically in
+    LiGT and LiGT-PA, and by traditional triangulation in LUD. The squares on each
+    vertical axis denote the reprojection errors of LUD and LiGT when global rotations
+    refined by LiGT-PA are used as the input instead.
+  Figure 8 Link: articels_figures_by_rev_year\2021\A_PoseOnly_Solution_to_Visual_Reconstruction_and_Navigation\figure_8.jpg
+  Figure 8 caption: Point-scattering degree for Lund dataset. The degree is characterized
+    by the average distance of each recovered 3D feature point from its nearest neighbour
+    and arranged clockwise in ascending order of the number of image points. (a) Point-scattering
+    degrees for the LUD, LUD-BA, and LUD-PA algorithms. (b) Point-scattering degrees
+    for the LiGT, LiGT-BA, and LiGT-PA algorithms. The right-most figures are the
+    detailed results of the recovered scene and camera poses for 38 Pumpkin (indicated
+    by the black arrow) in (a). The numbers in the global view are the maximum absolute
+    coordinate along each axis. Green squares in the right figures denote the scattering
+    points, identified and marked according to the BA final result. Both LUD-BA and
+    LiGT-BA have a point-scattering phenomenon, with the former being much worse than
+    the latter. In fact, the scattering points in LUD or BA are actually useful points
+    in scenes recovered by LiGT or LiGT-PA.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Qi Cai
+  Name of the last author: Dewen Hu
+  Number of Figures: 8
+  Number of Tables: 1
+  Number of authors: 5
+  Paper title: A Pose-Only Solution to Visual Reconstruction and Navigation
+  Publication Date: 2021-12-31 00:00:00
+  Table 1 caption: TABLE 1 Translation Accuracy (mm) of Strecha Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3139681
+- Affiliation of the first author: zhejiang gongshang unviersity and zhejiang university,
+    hangzhou, china
+  Affiliation of the last author: school of electrical and computer engineering, university
+    of alberta, edmonton, ab, canada
+  Figure 1 Link: articels_figures_by_rev_year\2022\Investigating_Pose_Representations_and_Motion_Contexts_Modeling_for_D_Motion_Pre\figure_1.jpg
+  Figure 1 caption: 'Short-term and long-term motion forecasting for eating activity
+    on the H3.6m dataset [1]. Given an observed motion sequence (first 4 frames) the
+    goal is to predict future motion (from the 5th frame). 1st line: the ground truth;
+    2nd line: our method; Existing methods are shown on the 3rd to 8th line: ERD [2],
+    SRNN [3], ResGRU [4], QuaterNet [5], CEM [6] & DMGNN [7].'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Investigating_Pose_Representations_and_Motion_Contexts_Modeling_for_D_Motion_Pre\figure_2.jpg
+  Figure 2 caption: "The left figure shows two example poses of a mouse, where A,\
+    \ B, C, D and E are joints of the mouse spine. The global coordinate system is\
+    \ a pre-defined fixed coordinate system for reference purpose. The right figure\
+    \ demonstrates how to represent mouse pose 1, where the rigid transformation between\
+    \ two successive bones are described by rotation and translation. For example,\
+    \ the rigid transformation between bones AB \u2212 \u2192 \u2212 and BC \u2212\
+    \ \u2192 \u2212 is described by g 2 \u2208SE(3) ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Investigating_Pose_Representations_and_Motion_Contexts_Modeling_for_D_Motion_Pre\figure_3.jpg
+  Figure 3 caption: "The proposed neural network unfolded over recurrent steps. At\
+    \ a given recurrent step n , local hidden state h n j is updated based on h n\u2212\
+    1 j\u22121 , h n\u22121 j , h n\u22121 j+1 , g n\u22121 , and p j . Global state\
+    \ g n is updated based on g n\u22121 and h n\u22121 j t i=1 ."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Investigating_Pose_Representations_and_Motion_Contexts_Modeling_for_D_Motion_Pre\figure_4.jpg
+  Figure 4 caption: The kinematic chain structures of human, fish, and mouse, respectively.
+    The arrows correspond to bones, while the numbers near the bones demonstrate their
+    DoFs. The first bones of all the three skeletons are of 6 DoFs, while all other
+    bones in the fish and mouse skeleton have 1 DoF and 2 DoFs, respectively. The
+    first bone amounts to the bone located in the main spine and starts from the root
+    joint.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Investigating_Pose_Representations_and_Motion_Contexts_Modeling_for_D_Motion_Pre\figure_5.jpg
+  Figure 5 caption: A display of the neural gates. The left figure visualizes the
+    gates for updating local state h n j and its corresponding cell state c n j ,
+    while the right figure visualizes the gates for updating global state g n and
+    its corresponding cell state c n g .
+  Figure 6 Link: articels_figures_by_rev_year\2022\Investigating_Pose_Representations_and_Motion_Contexts_Modeling_for_D_Motion_Pre\figure_6.jpg
+  Figure 6 caption: 'Motion forecasting of walking activity by the comparison methods
+    on the H3.6m dataset. 1st line: the ground truth; 2nd line: our method; Existing
+    methods are shown on the 3rd to 8th line: ERD [2], SRNN [3], ResGRU [4], QuaterNet
+    [5], CEM [6] & DMGNN [7]. The last line shows a baseline where 3D coordinates
+    representation is employed. The complete visual results can be found in the supplementary
+    video file, available online.'
+  Figure 7 Link: articels_figures_by_rev_year\2022\Investigating_Pose_Representations_and_Motion_Contexts_Modeling_for_D_Motion_Pre\figure_7.jpg
+  Figure 7 caption: Motion forecasting on Fish dataset. The head of the fish is rendered
+    wider for resemblance with the actual zebrafish.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Investigating_Pose_Representations_and_Motion_Contexts_Modeling_for_D_Motion_Pre\figure_8.jpg
+  Figure 8 caption: Motion forecasting on Mouse dataset. The mouse shape is rendered
+    in gray color with joints marked out along the spine.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Zhenguang Liu
+  Name of the last author: Li Cheng
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 7
+  Paper title: Investigating Pose Representations and Motion Contexts Modeling for
+    3D Motion Prediction
+  Publication Date: 2022-01-04 00:00:00
+  Table 1 caption: TABLE 1 Performance Evaluation (in MAE) of Comparison Methods Over
+    All Action Types on the H3.6m Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Evaluation (in MAE) of Comparison Methods Over
+    8 Action Types on the CMU MoCap Dataset
+  Table 3 caption: TABLE 3 Performance Evaluation (in MPE) of Comparison Methods Over
+    All Action Types on the H3.6m Dataset
+  Table 4 caption: TABLE 4 Comparison Between Different Pose Representations and Loss
+    Functions
+  Table 5 caption: TABLE 5 MAE Averaged Over All Activities on H3.6m, Obtained by
+    Varying the Internal Parameters, Including Dimension of Hidden States, Number
+    of Recurrent Steps n n, and Context Neighboring Window Size
+  Table 6 caption: TABLE 6 Performance Evaluation (in MAE) of Variants of Our AHMR
+    Network Averaged Over All Activities on the H3.6m Dataset
+  Table 7 caption: TABLE 7 Number of Training Parameters and Efficiency
+  Table 8 caption: TABLE 8 Performance Evaluation (in MAE) of the Comparison Methods
+    for the Fish and Mouse Datasets of [49]
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3139918
+- Affiliation of the first author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, jiangsu, china
+  Affiliation of the last author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, jiangsu, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_1.jpg
+  Figure 1 caption: An illustration of the extraction process of our depth and segmentation
+    based visual attention. An agent captures depth and RGB images via its monocular
+    depth-sensing camera, and corresponding segmentation maps of the current environment
+    are obtained through a segmentation network. Then the depth (HHA features [10])
+    and RGB images of the current scene are split into several regions by the guidance
+    of the segmentation masks. Finally, we take these regions as bottom-up attention
+    for subsequent operations.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_10.jpg
+  Figure 10 caption: Qualitative comparison of using predicted segmentation masks
+    and ground truth segmentation masks.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_2.jpg
+  Figure 2 caption: The framework of our high-speed video semantic segmentation method.
+    First, the input frames are divided into several separate regions. Second, all
+    of the region pairs are fed into a shallow network to distill the difference of
+    region pairs between Ik and Ii . A decision network (DN) analyzes these distilled
+    differences and evaluates the path-selection scores for every region separately.
+    Finally, current frame regions are forwarded to different paths to generate their
+    regional segmentation masks based on the path-selection score produced by DN.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_3.jpg
+  Figure 3 caption: 'An overall illustration of our DSVQA module. This module takes
+    the question and the environment state (RGB images, segmentation maps, depth maps)
+    as inputs and predicts an answer to the question according to the state of the
+    current environment. The module contains two main sub-modules: the bottom-up attention
+    block and the top-down attention block. Details of these two modules are described
+    in Figs. 4 and 5, respectively.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_4.jpg
+  Figure 4 caption: Details of the bottom-up attention block. This sub-module takes
+    RGB images, HHA features of depth maps, and extracted segmentation masks as input
+    to produce bottom-up attention.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_5.jpg
+  Figure 5 caption: Details of the top-down attention block. This sub-module takes
+    features of question and bottom-up attention as input, and produces attended image
+    features for subsequent operations.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_6.jpg
+  Figure 6 caption: An overview of our DSNavigation module. It takes the question
+    and the current environment state (RGB images, segmentation masks, and depth maps)
+    perceived by the agent as input, and trains a navigator which generates the next
+    action based on the present environment.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_7.jpg
+  Figure 7 caption: Visualization results of our high-speed video segmentation framework
+    for test scenes of the House3D environment.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_8.jpg
+  Figure 8 caption: Visualized comparison of regular depth maps and their corresponding
+    HHA features.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Depth_and_Video_Segmentation_Based_Visual_Attention_for_Embodied_Question_Answer\figure_9.jpg
+  Figure 9 caption: Qualitative comparison of the DSVQA and our baseline.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.93
+  Name of the first author: Haonan Luo
+  Name of the last author: Zhenmin Tang
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 6
+  Paper title: Depth and Video Segmentation Based Visual Attention for Embodied Question
+    Answering
+  Publication Date: 2022-01-04 00:00:00
+  Table 1 caption: TABLE 1 MIoU Comparison of Different Candidate Pre-Training Datasets
+  Table 10 caption: TABLE 10 Overall Performance Comparison of NMC Based Attention
+    Mechanism on the House3D Dataset
+  Table 2 caption: TABLE 2 Quantitative Evaluations of EmbodiedQA Agents on Question
+    Answering Metrics for the EQA v1 and MP3D-EQA v1 Test Sets
+  Table 3 caption: TABLE 3 Comparison of Different Variants of Using Depth Information
+    in the VQA Module
+  Table 4 caption: TABLE 4 Quantitative Evaluations of Navigation Processing on the
+    EQA v1 and MP3D-EQA v1 Test Sets
+  Table 5 caption: TABLE 5 Analysis Experiments for Using Depth Information in the
+    Navigation Module
+  Table 6 caption: TABLE 6 Ablation Comparisons of Different Algorithm Combinations
+  Table 7 caption: TABLE 7 Comparison With Using Bounding Boxes Attention and Ground
+    Truth Segmentation Masks
+  Table 8 caption: TABLE 8 VQA Comparison of Methods With Predicted Depth Information
+    on the House3D Dataset
+  Table 9 caption: TABLE 9 VQA Comparison With the Auxiliary Loss Method on the House3D
+    Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3139957
+- Affiliation of the first author: faculty of engineering and physical science, university
+    of southampton, southampton, u.k.
+  Affiliation of the last author: faculty of engineering and physical science, university
+    of southampton, southampton, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2022\Guiding_Labelling_Effort_for_Efficient_Learning_With_Georeferenced_Images\figure_1.jpg
+  Figure 1 caption: A flow diagram of the proposed pipeline for LGA driven Semi-Supervised
+    (LGA-SS) training of CNNs. Once a dataset is gathered, the latent representations
+    of the images in the dataset are generated using the LGA [9] (section 3.1), after
+    which hierarchical k means clustering (section 3.2) is used to identify a prioritised
+    subset of images for human annotation. These annotations are used together with
+    a set of algorithmically generated pseudo-labels for the remaining unannotated
+    data to train a CNN that can be used for downstream classification tasks. The
+    proposed LGA-SS method allows a CNN to be trained and applied to classification
+    tasks on a per-dataset basis, making it effective in domains where there is limited
+    transferability of learning between datasets.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Guiding_Labelling_Effort_for_Efficient_Learning_With_Georeferenced_Images\figure_2.jpg
+  Figure 2 caption: Spatial patterns (top) and class distributions (bottom) of ground
+    truth classes in four environmental monitoring datasets. Each natural or artificial
+    object class shows a unique spatial pattern in each dataset. The class distributions
+    are highly skewed since all the images in the corresponding areas are included
+    in the datasets without any manual selection process. The Seafloor dataset (2a)
+    consists of colour seafloor imagery collected by an AUV. The three aerial datasets
+    (Mountain, Island and Urban) consist of aerial images cropped from ESRI World
+    Imagery. Details of these datasets can be found in Appendices A and B, available
+    in the online supplemental material, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Guiding_Labelling_Effort_for_Efficient_Learning_With_Georeferenced_Images\figure_3.jpg
+  Figure 3 caption: Comparison of classification performance investigated in section
+    4. Mean of F 1 (macro-average) values against each M are shown. Representative
+    configurations are chosen from Tables 1 and 3 for Fig. 3a and Table 2 for Fig.3b.
+    The proposed georeference embedded sample selection method improves performance
+    for all the datasets analysed in our experiments. Larger gains in learning efficiency
+    are achieved in datasets that have a more heavily skewed class distribution.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Guiding_Labelling_Effort_for_Efficient_Learning_With_Georeferenced_Images\figure_4.jpg
+  Figure 4 caption: Confusion matrices and habitat maps predicted by ResNet18 trained
+    using the random data selection (configuration B6 in Table 3). This corresponds
+    to conventional good practise, using a CNN pre-trained on the ImageNet annotation
+    dataset and fine-tuning all the layers using randomly sampled annotated images
+    with data augmentation. The results show that for a values of M=20 the Artificial
+    Object and Bacterial Mat class that contain the fewest samples are not efficiently
+    learned, and even for M=40 , Artificial Object is not recognised. The confusion
+    matrix shows that even with M=1000 , there is still significant confusion when
+    classifying Carbonate and Shell Fragment.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Guiding_Labelling_Effort_for_Efficient_Learning_With_Georeferenced_Images\figure_5.jpg
+  Figure 5 caption: Confusion matrices and habitat maps predicted by ResNet18 trained
+    using the proposed LGA-SS method with hierarchical k means based data selection
+    and pseudo-labelling (configuration D7 in Table 3). Compared to Fig. 4, the results
+    show improved learning efficiency, especially for small values of M , where both
+    the Artificial Object and Bacterial Mat classes are efficiently learned using
+    just 20 human annotations, despite these being rare classes with a small number
+    of data samples. The performance with M=100 shows similar performance to when
+    the same CNN architecture is trained using an order of magnitude more annotations
+    from randomly selected data (i.e Fig. 4).
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.79
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Takaki Yamada
+  Name of the last author: Blair Thornton
+  Number of Figures: 5
+  Number of Tables: 0
+  Number of authors: 6
+  Paper title: Guiding Labelling Effort for Efficient Learning With Georeferenced
+    Images
+  Publication Date: 2022-01-04 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3140060
+- Affiliation of the first author: college of computer science, nankai university,
+    nankai, china
+  Affiliation of the last author: college of computer science, nankai university,
+    nankai, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_1.jpg
+  Figure 1 caption: Feature maps captured at different pyramid levels of FPNs. (a)
+    Source image and its annotation; (b-f) Feature maps captured from high to low
+    levels of FPNs; (g) Prediction results. The location information captured by deep
+    layers is gradually diluted when building the pyramid in the original FPNs (top
+    row). However, when adding global guidance to each level of the pyramid (bottom
+    row), the locations of salient objects can be better rendered. This phenomenon
+    is especially clear when the salient object is less salient (e.g., the right iceberg
+    in the example).
+  Figure 10 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_10.jpg
+  Figure 10 caption: Failure cases selected from multiple datasets. These failure
+    cases can be categorized into four typical circumstances.
+  Figure 2 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_2.jpg
+  Figure 2 caption: Pipeline of our salient object detection model, where high-level
+    semantic features containing the location information of salient objects can be
+    delivered to each pyramid level in the top-down pathway. We use a pyramid pooling
+    module (PPM) to locate salient objects better and introduce global guiding flows
+    to deliver the captured location information to fuse with the features at each
+    pyramid level. After each fusion, a feature aggregation module (FAM) is connected
+    to help reduce the aliasing effect and enrich the details.
+  Figure 3 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_3.jpg
+  Figure 3 caption: Visual comparisons for salient object detection among different
+    configurations of our approach. (a) Source image; (b) Ground truth; (c) FPN baseline
+    [14]; (d) FPN + FAMs; (e) FPN + PPM (pyramid pooling module); (f) FPN + GGM; (g)
+    FPN + GGM + FAMs. Adding GGM improves the ability to discover the accurate positions
+    of salient objects substantially. More interestingly, the utilization of FAMs
+    can further improve the quality of the resulting saliency maps in that the boundary
+    details are well refined.
+  Figure 4 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_4.jpg
+  Figure 4 caption: Detailed illustrations of our feature aggregation module (FAM)
+    and its advanced version (FAM+). (a) Original FAM, which comprises four parallel
+    sub-branches and each of which works in an individual scale-space. After up-sampling,
+    all these sub-branches are combined via summation and then fed into a convolutional
+    layer. (b) Proposed FAM+, which introduces a series of short connections between
+    different sub-branches to build internal communications explicitly.
+  Figure 5 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_5.jpg
+  Figure 5 caption: Visualization of feature maps around FAMs. Feature maps shown
+    on the left are from models with FAMs, while feature maps displayed on the right
+    are from the models replacing FAMs with two convolution layers. The last row is
+    source images and the corresponding ground-truth annotations. (a-d) are visualizations
+    of feature maps at different places. As can be seen, when our FAMs are used, feature
+    maps after FAMs can more precisely capture the location and detailed information
+    of the salient objects (Column a), in comparison with those after two convolutional
+    layers (Column c). Better and clearer effect can be observed when viewed in color.
+  Figure 6 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_6.jpg
+  Figure 6 caption: Feature maps outputted by the last layer of the bottom-up pathway.
+    As can be seen, when the PPM is incorporated, our network can more accurately
+    locate the salient objects, even their boundaries. On the contrary, when removing
+    the PPM, the location information of salient objects loses a lot. It demonstrates
+    that leveraging PPM is indeed helpful for segmenting the complete salient objects
+    due to its effective way of increasing the receptive field of our network.
+  Figure 7 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_7.jpg
+  Figure 7 caption: Ablation analysis on how different combinations of FAM+s influence
+    the performances. The vertical axes represent the F-measure values, and the horizontal
+    axes show the combination of FAM+s on different positions. In the horizontal axes,
+    x means a FAM+, and - means two 3 times 3 convolution layers. There are four different
+    positions in total, ranging from high- to low-levels.
+  Figure 8 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_8.jpg
+  Figure 8 caption: Ablation analysis on how different combinations of GGFs influence
+    the performances. The vertical axes represent the F-measure values, and the horizontal
+    axes show the combination of GGFs leading to different stages. In the horizontal
+    axes, x means a GGF, and - means no connection. There are three stages in total,
+    ranging from high- to low-levels.
+  Figure 9 Link: articels_figures_by_rev_year\2022\PoolNet_Exploring_the_Potential_of_Pooling_for_Salient_Object_Detection\figure_9.jpg
+  Figure 9 caption: Qualitative comparisons to previous state-of-the-art methods.
+    Compared to other methods, our approach is capable of not only locating the integral
+    salient objects but also well refining the details of the detected salient objects.
+    It makes our resulting saliency maps very close to the ground-truth annotations.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Jiang-Jiang Liu
+  Name of the last author: Ming-Ming Cheng
+  Number of Figures: 11
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: 'PoolNet+: Exploring the Potential of Pooling for Salient Object Detection'
+  Publication Date: 2022-01-04 00:00:00
+  Table 1 caption: TABLE 1 Ablation Analysis for the Proposed GGM, FAM, and FAM+
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Ablation Analysis on the Importance of Each Sub-Branch
+    in FAM
+  Table 3 caption: TABLE 3 Ablation Analysis on the Impact of Different Types of Pooling
+    Operations Used in GGM and FAM+
+  Table 4 caption: TABLE 4 Ablation Analysis on the Impact of Cooperating Existing
+    Smarter Pooling Operations
+  Table 5 caption: TABLE 5 Quantitative Salient Object Detection Results on Five Widely
+    Used Datasets
+  Table 6 caption: TABLE 6 Average Speed (FPS) Comparisons Among PoolNet-M+, PoolNet-R+,
+    the Previous State-of-the-Art, and Recent Real-Time Methods
+  Table 7 caption: TABLE 7 Comparisons of Networks Composition of Parameters and MAdds
+  Table 8 caption: TABLE 8 Decomposition of Each Components Influence on the Networks
+    Efficiency
+  Table 9 caption: TABLE 9 Quantitative Comparison of Our Approach With Existing Edge
+    Detection Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3140168

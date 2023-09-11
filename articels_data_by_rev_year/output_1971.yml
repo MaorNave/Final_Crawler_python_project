@@ -1,0 +1,1003 @@
+- Affiliation of the first author: school of electronic, electrical and communication
+    engineering, beijing, china
+  Affiliation of the last author: school of electronic, electrical and communication
+    engineering, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_1.jpg
+  Figure 1 caption: "Comparison of the hand-crafted anchor assignment (upper) with\
+    \ our learning-to-match method (lower). The former leverages Intersection over\
+    \ Union (IoU) between objects and anchors as the criterion for anchor assignment.\
+    \ Each assigned anchor independently supervises detector learning. In contrast,\
+    \ our approach allows each object flexibly matching positivenegative anchors from\
+    \ a \u201Cbag\u201D of anchors by jointly evaluating object classification and\
+    \ object localization confidence. The anchor matching is performed in a \u201C\
+    soft\u201D manner. In the early training epochs, all anchors have similar matching\
+    \ confidence. In the final epoch, the confidence of positive anchors evolve to\
+    \ be large while those of negative anchors become small. Each box on the prediction\
+    \ result map indicates an anchor center point."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_2.jpg
+  Figure 2 caption: "Illustration of two-dimensional Mean - max functions for positive\
+    \ anchor matching (a) and negative anchor matching (b). \u201CTwo-dimensional\u201D\
+    \ means there are two anchors in an anchor bag. Each anchor corresponds a dimension.\
+    \ When the values of both dimensions are close to zero, the Mean - max function\
+    \ approximates the Mean function and the function value is determined by the two\
+    \ dimensions (anchors). When either value of the two dimensions is large, the\
+    \ Mean - max function approximates the max function and the function value is\
+    \ determined by the dimension of larger value."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_3.jpg
+  Figure 3 caption: "Network architecture of the proposed LTM detector. The head of\
+    \ the detector consists of two subnets, one for object classification and other\
+    \ for object localization. During detector training, minimizing the anchor matching\
+    \ loss L M (\u03B8) drives matching positivenegative anchors within the positive\
+    \ anchor bag in a \u201Csoft\u201D manner. Meanwhile, the Focal Loss L F (\u03B8\
+    ) is applied on background (the negative bag) to prevent the vast number of easy\
+    \ negatives from overwhelming the detector. This architecture is also applicable\
+    \ to an anchor-free detector (LTM-AF) by simply replacing the anchors with pixels\
+    \ on the feature pyramid."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_4.jpg
+  Figure 4 caption: Point bag construction for the proposed LTM-AF detector based
+    on normalized distances. Each ground-truth object is normalized and scaled to
+    feature layers using its bounding box center as the origin. The normalized distance
+    is a block distance from the feature points to the normalized boxes. Top- K points
+    of smallest normalized distance (within the dashed box) are selected to construct
+    the feature point bag.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_5.jpg
+  Figure 5 caption: Performance comparison on object crowdedness (number of objects
+    per image) on COCO val set. With higher crowdedness, LTM demonstrates larger advantage
+    over the baseline method (RetinaNet).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_6.jpg
+  Figure 6 caption: 'Anchor confidence evolution when training the LTM detector (a).
+    First row: dots denote anchor centers. Darker (redder) dots indicate higher confidence.
+    Second row: Darker boxes indicate anchors of higher confidence. Third row: the
+    heatmaps are calculated by accumulating anchor confidence. (b) Anchor confidence
+    evolution when training the RetinaNet detector.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_7.jpg
+  Figure 7 caption: Performance improvement with respect to object aspect ratios of
+    LTM (a) and LTM-AF (b). Each point in the figure denotes an object category. The
+    fitted lines clearly show that LTM has larger performance improvements over object
+    categories of larger aspect ratios.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_8.jpg
+  Figure 8 caption: "Category-wised performance and improvement of LTM (a) and LTM-AF\
+    \ (b) on the COCO test - dev set using ResNet-50. For the categories about slender\
+    \ objects, e.g., \u201Csnowboard\u201D, \u201Ctoaster\u201D, \u201Ctie\u201D,\
+    \ and \u201Ckeyboard\u201D, LTM and LTM-AF significantly improved the baseline\
+    \ method (RetinaNet)."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learning_to_Match_Anchors_for_Visual_Object_Detection\figure_9.jpg
+  Figure 9 caption: Examples of object detection results on COCO val set. (a) Comparison
+    of detection results by RetinaNet (blue boxes) and LTM (red and blue boxes). (b)
+    Comparison of detection results by RetinaNet (blue boxes) and LTM-AF (red and
+    blue boxes). A score threshold of 0.7 is used to display the detection results
+    on images. It can be seen that LTM and LTM-AF detected more slender objects and
+    objects of partial occlusion, particularly when multiple object come together.
+    It also can be seen that LTM and LTM-AF achieved similar detection results, which
+    show that the performance gap between anchor-based and anchor-free detectors are
+    largely closed. (Best viewed in color and with zoom).
+  First author gender probability: 0.69
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.88
+  Name of the first author: Xiaosong Zhang
+  Name of the last author: Qixiang Ye
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Learning to Match Anchors for Visual Object Detection
+  Publication Date: 2021-01-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Effect of Anchor Matching on COCO test test- dev dev Set
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance Improvement Under Different Object Crowdedness
+  Table 3 caption:
+    table_text: TABLE 3 The Effect of IoU for Anchor Bag Construction on COCO val
+      val Set
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of NMS Recall (%) on COCO val val Set
+  Table 5 caption:
+    table_text: TABLE 5 Ablation Study of Hyper-Parameters on COCO val val Set
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Training Time, Detection Speed and AP on COCO
+      test test- dev dev Set
+  Table 7 caption:
+    table_text: TABLE 7 Performance Comparison With State-of-the-Art Detectors on
+      MS COCO test test- dev dev Dataset
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3050494
+- Affiliation of the first author: beijing key laboratory of big data management and
+    analysis methods, gaoling school of artificial intelligence, renmin university
+    of china, beijing, china
+  Affiliation of the last author: department of electrical and computer engineering,
+    northwestern university, evanston, il, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_1.jpg
+  Figure 1 caption: "The two action sequences \u201Cjump\u201D and \u201Crun\u201D\
+    \ differ in the boxed parts and local orders at the beginning stage. Top: the\
+    \ DTW [3] alignment. The alignment matrix is shown on the right. The white grid\
+    \ in row i and column j indicates that the i -th and j -th observations in the\
+    \ two sequences are aligned. Bottom: the OPW [1] alignment. For each pose, only\
+    \ the alignment with the largest transport probability is shown. Such aligned\
+    \ pairs reflect the essential difference between \u201Cjump\u201D and \u201Crun\u201D\
+    \ because the take-off-landing cycle is dispersedly aligned to a running cycle.\
+    \ The transport matrix is shown on the right. The grey value of a grid indicates\
+    \ the probability of aligning the corresponding observations. The probabilities\
+    \ among the boxed part are scattered and more pairwise local differences among\
+    \ poses are employed."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_10.jpg
+  Figure 10 caption: The frame-level accuracy of IndRNN on the validation set as a
+    function of the number of iterations by taking the original skeleton features
+    and the transformed features with DeepOWDA as input on the NTU dataset for the
+    (a) CS and (b) CV setting.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_2.jpg
+  Figure 2 caption: Performances as functions of L by (a) the SVM classifier and (b)
+    the NN classifier on the MSR Action3D dataset.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_3.jpg
+  Figure 3 caption: Comparison of different types of frame-wide features. (a) Accuracies
+    with the SVM classifier, (b) MAPs with the SVM classifier, (c) accuracies with
+    the NN classifier, and (d) MAPs with the NN classifier as functions of the dimensionality
+    of the subspace on the MSR Action3D dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_4.jpg
+  Figure 4 caption: Comparisons with OWDA-uni, DeepOWDA-uni, OWDA-ite, DeepOWDA-ite.
+    (a) Accuracies with the SVM classifier, (b) MAPs with the SVM classifier, (c)
+    accuracies with the NN classifier, and (d) MAPs with the NN classifier as functions
+    of the dimensionality of the subspace on the MSR Action3D dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_5.jpg
+  Figure 5 caption: Comparisons with using different sequence distances in the NN
+    classifier. (a) Accuracies on the MSR Action3D dataset, (b) MAPs on the MSR Action3D
+    dataset, (c) accuracies on the MSR Activity3D dataset, and (d) MAPs on the MSR
+    Activity3D dataset as functions of the dimensionality of the subspace.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_6.jpg
+  Figure 6 caption: (a) Accuracies with the SVM classifier, (b) MAPs with the SVM
+    classifier, (c) accuracies with the NN classifier, and (d) MAPs with the NN classifier
+    as functions of the dimensionality of the subspace on the MSR Action3D dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_7.jpg
+  Figure 7 caption: (a) Accuracies with the SVM classifier, (b) MAPs with the SVM
+    classifier, (c) accuracies with the NN classifier, and (d) MAPs with the NN classifier
+    as functions of the dimensionality of the subspace on the MSR Daily Activity3D
+    dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_8.jpg
+  Figure 8 caption: (a) Accuracies with the SVM classifier, (b) MAPs with the SVM
+    classifier (c) accuracies with the NN classifier, and (d) MAPs with the NN classifier
+    as functions of the dimensionality of the subspace on the Chalearn Gesture dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Linear_and_Deep_OrderPreserving_Wasserstein_Discriminant_Analysis\figure_9.jpg
+  Figure 9 caption: Accuracies with the IndRNN classifier as functions of the dimensionality
+    of the subspace in (a) the CS setting and (b) the CV setting on the NTU RGB+D
+    dataset.
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.86
+  Name of the first author: Bing Su
+  Name of the last author: Ying Wu
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Linear and Deep Order-Preserving Wasserstein Discriminant Analysis
+  Publication Date: 2021-01-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison With Other Methods on the ChaLearn Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison With State-of-the-Art Methods on the MSR Activity3D
+      Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparison With State-of-the-Art Methods on the MSR Action3D
+      Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison With State-of-the-Art Methods on the NTU RGB+D
+      Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3050750
+- Affiliation of the first author: department of computer science, heinz nixdorf institute,
+    paderborn university, paderborn, germany
+  Affiliation of the last author: department of computer science, heinz nixdorf institute,
+    paderborn university, paderborn, germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_1.jpg
+  Figure 1 caption: Hierarchical representation of a multi-label classifiers structure
+    being recursively configured with base learners and finally a kernel for the support
+    vector machine (SMO, short for Sequential Minimal Optimization).
+  Figure 10 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_10.jpg
+  Figure 10 caption: 'Average ranks over time (in ms) for the three performance measures:
+    instance-wise F-Measure ( FI ), label-wise F-Measure ( FL ), and micro-averaged
+    F-Measure ( Fmu ).'
+  Figure 2 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_2.jpg
+  Figure 2 caption: Overview of the search space showing classification algorithms
+    from MEKA for multi-label and WEKA for single-label classification. An arc pointing
+    to a box frame means an arc to every classifier contained in this frame. Purple
+    diamonds indicate whether the respective classifier exposes hyper-parameters to
+    be tuned.
+  Figure 3 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_3.jpg
+  Figure 3 caption: Comparison of statistics regarding characteristics of the multi-label
+    classification search space and the subsumed search space for single-label classification.
+    Note that the there is a substantial increase in the number of unparameterized
+    solution candidates, i.e., the number of distinct classifier configurations ignoring
+    hyper-parameter configuration. Moreover, the maximum number of hyper-parameters
+    that are optimized simultaneously for a single configuration is almost double
+    the amount.
+  Figure 4 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_4.jpg
+  Figure 4 caption: Ontology showing the considered optimization techniques proposed
+    for automating machine learning.
+  Figure 5 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_5.jpg
+  Figure 5 caption: Comparison of the classical approach (top) and successive halving
+    (SH) (bottom) to identify the best performing configuration out of 4 candidates.
+    Numbers within colored rectangles indicate the rank of a configuration. Within
+    each bracket, the current set of configurations is evaluated on a portion of the
+    totally assignable budget and after each bracket the worse half drops out. After
+    bracket 2, SH already identified the winner configuration (red). The right column
+    summarizes the total budget spent per configuration.
+  Figure 6 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_6.jpg
+  Figure 6 caption: Sketch of a search tree induced via HTN planning for automated
+    multi-label classification. Primitive tasks are additionally distinguished by
+    color according to their role within a multi-label classifier. Note that the indicated
+    refinements are of exemplary character. Further options as well as sub-trees are
+    only hinted at.
+  Figure 7 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_7.jpg
+  Figure 7 caption: Architecture of the benchmark for comparing different optimizers
+    for the same run constraints, search space, and evaluation procedure. Blue parts
+    are commonly used for all approaches, while green parts are specific to the respective
+    optimizer, marshaling the description of candidate solutions for both the search
+    space description and the description of candidates to be evaluated.
+  Figure 8 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_8.jpg
+  Figure 8 caption: Pair-wise comparison of one method (shown on the x -axis) against
+    all other methods with respect to instance-wise F-Measure (left), label-wise F-Measure
+    (center), and micro-averaged F-Measure (right).
+  Figure 9 Link: articels_figures_by_rev_year\2021\AutoML_for_MultiLabel_Classification_Overview_and_Empirical_Evaluation\figure_9.jpg
+  Figure 9 caption: Evaluation times of successful classifier evaluations.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.58
+  Name of the first author: Marcel Wever
+  Name of the last author: "Eyke H\xFCllermeier"
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: 'AutoML for Multi-Label Classification: Overview and Empirical Evaluation'
+  Publication Date: 2021-01-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Overview of Optimization Techniques Considered in This Paper
+      for Automating Multi-Label Classification and an Overview of Whether and Where
+      These Techniques Have Been Employed for Automating Single-Label Respectively
+      Multi-Label Classification
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Benchmark Datasets Used in This Study
+  Table 3 caption:
+    table_text: "TABLE 3 Test Performances (mean \xB1 \xB1 std) of the Considered\
+      \ Approaches"
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3051276
+- Affiliation of the first author: department of biostatistics and medical informatics,
+    department of computer sciences, university of wisconsin-madison, madison, wi,
+    usa
+  Affiliation of the last author: school of interactive computing, college of computing,
+    georgia institute of technology, atlanta, ga, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\In_the_Eye_of_the_Beholder_Gaze_and_Actions_in_First_Person_Video\figure_1.jpg
+  Figure 1 caption: Can you tell what the person is doing? (examples taken from our
+    EGTEA Gaze+ dataset) With only 20 percent of the pixels visible, centered around
+    the point of gaze, we can easily recognize the camera wearers actions. The gaze
+    indexes key regions containing interactions with objects. We leverage this intuition
+    and develop a model to jointly infer gaze and actions in First Person Vision.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\In_the_Eye_of_the_Beholder_Gaze_and_Actions_in_First_Person_Video\figure_2.jpg
+  Figure 2 caption: 'Left: SMI eye tracking glasses used for video recording. Right:
+    Sample frames from the videos. Our dataset contains videos with different lighting
+    condition, object instances and actions'
+  Figure 3 Link: articels_figures_by_rev_year\2021\In_the_Eye_of_the_Beholder_Gaze_and_Actions_in_First_Person_Video\figure_3.jpg
+  Figure 3 caption: Gaze tracking data from our dataset. The tracked gaze points are
+    shown as green dots on the video frames.
+  Figure 4 Link: articels_figures_by_rev_year\2021\In_the_Eye_of_the_Beholder_Gaze_and_Actions_in_First_Person_Video\figure_4.jpg
+  Figure 4 caption: Ground truth hand masks from our Hand14K dataset. The annotated
+    masks are shown as green regions.
+  Figure 5 Link: articels_figures_by_rev_year\2021\In_the_Eye_of_the_Beholder_Gaze_and_Actions_in_First_Person_Video\figure_5.jpg
+  Figure 5 caption: "Action annotation pipeline. We follow a three stage pipeline\
+    \ for annotation, with each stage focuses on a single task. From left to right:\
+    \ interfaces for action candidate labeling, action naming and action trimming.\
+    \ We use ELAN [99] for generating action candidates\u2014clips that contain full\
+    \ extent of an action. Moreover, we developed an interactive web User Interface\
+    \ (UI) for further label the clips (action naming) and refine the temporal boundary\
+    \ of the action (action trimming)."
+  Figure 6 Link: articels_figures_by_rev_year\2021\In_the_Eye_of_the_Beholder_Gaze_and_Actions_in_First_Person_Video\figure_6.jpg
+  Figure 6 caption: Long tailed distribution of verbs (left), nouns (middle) and actions
+    (right) in our dataset. We consider 19 verbs, 53 nouns and 106 fine-grained actions.
+    Top-10 objects and top-20 actions are further displayed. The distribution poses
+    additional challenge of learning from imbalanced data.
+  Figure 7 Link: articels_figures_by_rev_year\2021\In_the_Eye_of_the_Beholder_Gaze_and_Actions_in_First_Person_Video\figure_7.jpg
+  Figure 7 caption: Overview of our joint model of FPV gaze and actions. Our model
+    takes multiple RGB and flow frames as inputs, and outputs a set of parameters
+    defining a distribution of gaze in the middle layers. We then sample a gaze map
+    from this distribution. This map is used to selectively pool visual features at
+    higher layers of the network for action recognition. During training, our model
+    receives action labels and noisy gaze measurement. Once trained, the model is
+    able to infer gaze and recognize actions in FPV. We show that this network builds
+    a probabilistic model that naturally accounts for the uncertainty of gaze and
+    captures the relationship between gaze and actions in FPV.
+  Figure 8 Link: articels_figures_by_rev_year\2021\In_the_Eye_of_the_Beholder_Gaze_and_Actions_in_First_Person_Video\figure_8.jpg
+  Figure 8 caption: Visualization of gaze estimation and action recognition results.
+    For each 24-frame video snippet, we plot the output gaze heat map (higher values
+    in red) with a temporal stride of 8 frames. We also display the ground-truth gaze
+    points as green dots. Thus, the result for each snippet is shown as three key
+    frames with their gaze maps. We print the predicted action labels and ground-truth
+    labels above the images. Both successful (first and second rows) and failure cases
+    (third row) are presented.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yin Li
+  Name of the last author: James M. Rehg
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: 'In the Eye of the Beholder: Gaze and Actions in First Person Video'
+  Publication Date: 2021-01-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of FPV Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Study of Backbone Networks on EGTEA Gaze+ Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Study of Probabilistic Modeling on EGTEA
+  Table 4 caption:
+    table_text: TABLE 4 Gaze Estimation Results on EGTEA
+  Table 5 caption:
+    table_text: TABLE 5 Action Recognition Results on EGTEA
+  Table 6 caption:
+    table_text: TABLE 6 Action Recognition Results on Epic-Kitchens Test Sets
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Results on Epic-Kitchens
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3051319
+- Affiliation of the first author: center for research on intelligent perception and
+    computing (cripac), national laboratory of pattern recognition (nlpr), center
+    for excellence in brain science and intelligence technology (cebsit), institute
+    of automation, chinese academy of sciences (casia), beijing, china
+  Affiliation of the last author: center for research on intelligent perception and
+    computing (cripac), national laboratory of pattern recognition (nlpr), center
+    for excellence in brain science and intelligence technology (cebsit), institute
+    of automation, chinese academy of sciences (casia), beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_1.jpg
+  Figure 1 caption: 'Performance of k -shot image and sentence matching when varying
+    k . The few-shot and comment content in the given image and sentence are marked
+    by red and blue colors, respectively. We select four state-of-the-arts: VSE++
+    [7], SCO [18], SCAN [29] and VSRN [31]), and show their corresponding performance.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_10.jpg
+  Figure 10 caption: "Few-shot image retrieval by three ablation models: \u201Clb,\u201D\
+    \ \u201Cbd,\u201D and \u201Cbd + mem.\u201D Matched images and few-shot words\
+    \ are marked as red colors."
+  Figure 2 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_2.jpg
+  Figure 2 caption: The proposed Aligned Cross-Modal Memory (ACMM) for few-shot image
+    and sentence matching. We use pretrained models on large-scale external resources
+    to extract generic representations for regions and words. Based on the generic
+    representations, we obtain aligned pairs of them by performing region-word alignment
+    with the cross-modal graph convolutional network. We feed the aligned pairs into
+    the cross-modal shared memory to store and update prototypical representations
+    of few-shot classes, which can be selectively addressed out to enhance representations
+    of similar few-shot content. The learning-based module can directly learn discriminative
+    representations for common content from input image and sentence in a data-driven
+    manner. We use the gated similarity fusion to automatically fuse three cross-modal
+    similarities (i.e., c L , c G and c E ) predicted by the cross-modal graph convolutional
+    network, cross-modal shared memory and learning-based module for association analysis
+    during model learning.
+  Figure 3 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_3.jpg
+  Figure 3 caption: "The details of cross-modal Graph Convolutional Network (cm-GCN)\
+    \ for region-word alignment. Blue rectangles are regions or aligned word representations.\
+    \ Orange circles are words or aligned region representations. Graph and line structures\
+    \ indicate two kinds of unimodal relation modeling for regions and words, respectively.\
+    \ (a) Two directional graph transformations, each of which is implemented by a\
+    \ cross-modal graph convolution (denoted as blue or orange triangle) and guided\
+    \ by the cycle-consistent principle. (b) Each convolved representation by the\
+    \ cross-modal graph convolution such as s \u2032 j is an aggregated representation\
+    \ weighted by cross-modal similarities between the j th word and all the regions.\
+    \ It can be viewed as a visual representation of the j th word, sharing the same\
+    \ semantic meaning with the word representation s j ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_4.jpg
+  Figure 4 caption: "The illustration of cross-modal shared memory. The shared memory\
+    \ includes many memory items to store desired prototypical representations of\
+    \ few-shot classes, which are represented as a time-varying matrix M t \u2208\
+    \ R N\xD7W along the timestep t . Given a pair of aligned region-word representations\
+    \ (denoted as hollow rectangle and cycle), each memory item M t n \u2208 R W could\
+    \ be adaptively updated or addressed out by modality-specific interface vectors.\
+    \ As last, the representations of region and word can be enhanced by the memory\
+    \ (denoted as solid rectangle and cycle)."
+  Figure 5 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_5.jpg
+  Figure 5 caption: The details of gated similarity fusion. Given image queries and
+    a gallery set of sentences, their predicted similarities are three matrices. For
+    each image query, we use its representation through a Multi-Layer Perceptron (MLP)
+    to predict three importance weights. The weights are used to fuse its related
+    similarities in terms of cL , cG , and cE (marked as red rectangles) to obtain
+    the fused similarity c .
+  Figure 6 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_6.jpg
+  Figure 6 caption: Histograms of cosine similarities between cross-modal write weight
+    vectors. We measure the cosine similarities and count the number of pairs according
+    to different values. Higher similarities mean the model can write region and word
+    information into shared memory items at nearby locations.
+  Figure 7 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_7.jpg
+  Figure 7 caption: Examples of aligned regions and words. We compare few-shot words
+    in sentences (marked as red colors) with all regions in images based on their
+    cosine similarities, and illustrate the similarities as brightness in the images
+    (the brighter, the larger).
+  Figure 8 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_8.jpg
+  Figure 8 caption: Two-dimensional visualization of memorized prototypical representations.
+    We select several representative nodes and show their closely related regions
+    and words in the white boxes with black arrows, where few-shot regions and words
+    are marked as red colors. From left to right, the appearing frequencies of node-related
+    regions and words show an increasing trend.
+  Figure 9 Link: articels_figures_by_rev_year\2021\FewShot_Image_and_Sentence_Matching_via_Aligned_CrossModal_Memory\figure_9.jpg
+  Figure 9 caption: Comparison of gated weights of three similarities. (a) Curves
+    of three averaged gated weights at different appearing frequencies k . When k<
+    10, cL and cG are much larger than cE , which means cL and cG play more important
+    roles in the modeling of few-shot content. (b) Example gated weights of different
+    samples, where few-shot word are marked as red colors.
+  First author gender probability: 0.76
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yan Huang
+  Name of the last author: Liang Wang
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Few-Shot Image and Sentence Matching via Aligned Cross-Modal Memory
+  Publication Date: 2021-01-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Conventional Image and Sentence Matching by Ablation Models
+      on the Flickr30k and MSCOCO (5000 test) Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Few-Shot Image and Sentence Matching on the Flickr30k and
+      MSCOCO (5000 test) Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Conventional Image and Sentence Matching on the Flickr30k
+      and MSCOCO (1000 Test) Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Inference Speed on the Flickr30k Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Conventional Image and Sentence Matching on the MSCOCO (5000
+      Test) Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Conventional image and Sentence Matching by Different cm-GCN
+      Extensions on the Flickr30k Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3052490
+- Affiliation of the first author: national laboratory of pattern recognition, center
+    for research on intelligent perception and computing, casia, beijing, china
+  Affiliation of the last author: national laboratory of pattern recognition, center
+    for research on intelligent perception and computing, casia, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\DVGFace_Dual_Variational_Generation_for_Heterogeneous_Face_Recognition\figure_1.jpg
+  Figure 1 caption: Comparisons between conditional image-to-image generation [9]
+    (on the left, the top is the input NIR and the bottom is the generated VIS) and
+    our proposed unconditional dual variational generation (on the right, all paired
+    NIR-VIS images are generated from noises). For the conditional generation, given
+    one NIR image, the generator can only synthesize one VIS image with the same attributes
+    (e.g., the pose and the expression) except for the spectrum. By contrast, DVG-Face
+    has the ability to generate large-scale new paired heterogeneous images with abundant
+    intra-class diversity from noises.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\DVGFace_Dual_Variational_Generation_for_Heterogeneous_Face_Recognition\figure_2.jpg
+  Figure 2 caption: 'Illustration of our DVG-Face. (a) and (b): The training of the
+    dual variational generator involves both paired heterogeneous data and unpaired
+    VIS data (MS-Celeb-1M [36]). The former is used to disentangle identity and attribute
+    representations. The latter is introduced to enrich the identity diversity of
+    the generated images. The identity representations of the latter can be obtained
+    from either the identity sampler F s or the pre-trained face recognition network
+    F , as discussed in Section 4.3.4. In addition, a pairwise identity preserving
+    loss is imposed on the generated paired images to guarantee their identity consistency.
+    (c): After training the generator, we leverage it to synthesize a great deal of
+    new paired heterogeneous images. Benefiting from the identity consistency property,
+    the generated paired images are regarded as positive pairs. Due to the identity
+    diversity property, the images obtained from different samplings are considered
+    as negative pairs. A contrastive learning mechanism is imposed on the HFR network,
+    yielding both domain-invariant and discriminative embedding features.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\DVGFace_Dual_Variational_Generation_for_Heterogeneous_Face_Recognition\figure_3.jpg
+  Figure 3 caption: Disentanglement experiments on CASIA NIR-VIS 2.0. The face images
+    in the first row and the first column are real images, while the remaining face
+    images are generated. After the disentanglement, our method can transfer the image
+    attributes or the sampled attributes (the last two columns) to any identity, including
+    the identities of the real face images and the identities sampled through the
+    identity sampler (the last two rows).
+  Figure 4 Link: articels_figures_by_rev_year\2021\DVGFace_Dual_Variational_Generation_for_Heterogeneous_Face_Recognition\figure_4.jpg
+  Figure 4 caption: Visualization comparisons of dual generation on Tufts Face. (a)
+    CoGAN [42]. (b) DVG [21]. (c) DVG-Face.
+  Figure 5 Link: articels_figures_by_rev_year\2021\DVGFace_Dual_Variational_Generation_for_Heterogeneous_Face_Recognition\figure_5.jpg
+  Figure 5 caption: Studies of the real data (left) and the generated data (right)
+    on Tufts Face.
+  Figure 6 Link: articels_figures_by_rev_year\2021\DVGFace_Dual_Variational_Generation_for_Heterogeneous_Face_Recognition\figure_6.jpg
+  Figure 6 caption: Qualitative ablation studies of the angular orthogonal loss L
+    ort and the pairwise identity preserving loss L ip on Tufts Face. Given the attribute
+    images, these methods generate two pairs of images with two different identity
+    representations.
+  Figure 7 Link: articels_figures_by_rev_year\2021\DVGFace_Dual_Variational_Generation_for_Heterogeneous_Face_Recognition\figure_7.jpg
+  Figure 7 caption: Dual generation results on (a) CASIA NIR-VIS 2.0 [58], (b) BUAA-VisNir
+    [59], (c) CUFSF [60], and (d) Tufts Face [6]. More generation results, including
+    those on Oulu-CASIA NIR-VIS [57] and Multi-PIE [5], are shown in Fig. 2 of the
+    supplementary material, available online.
+  Figure 8 Link: articels_figures_by_rev_year\2021\DVGFace_Dual_Variational_Generation_for_Heterogeneous_Face_Recognition\figure_8.jpg
+  Figure 8 caption: ROC curves of different methods on (a) CASIA NIR-VIS 2.0 and (b)
+    BUAA-VisNir.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.58
+  Name of the first author: Chaoyou Fu
+  Name of the last author: Ran He
+  Number of Figures: 8
+  Number of Tables: 13
+  Number of authors: 5
+  Paper title: 'DVG-Face: Dual Variational Generation for Heterogeneous Face Recognition'
+  Publication Date: 2021-01-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Meaning of the Symbols Used in Our Method
+  Table 10 caption:
+    table_text: TABLE 10 Experimental Results on CASIA NIR-VIS 2.0
+  Table 2 caption:
+    table_text: TABLE 2 Network Architectures of the Encoder E N E V ENEV and the
+      Decoder G G
+  Table 3 caption:
+    table_text: TABLE 3 Experimental Analyses on Tufts Face
+  Table 4 caption:
+    table_text: TABLE 4 Recognition Performances Under Different Identity Sampling
+      Approaches on Tufts Face
+  Table 5 caption:
+    table_text: TABLE 5 Results Under Different Usages of Large-Scale VIS Data on
+      Tufts Face
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Ablation Studies of the Angular Orthogonal Loss
+      L ort Lort and the Pairwise Identity Preserving Loss L ip Lip on Tufts Face
+  Table 7 caption:
+    table_text: TABLE 7 Results Under Different Usages of the Generated Data on Tufts
+      Face
+  Table 8 caption:
+    table_text: TABLE 8 Verification Rates on Tufts Face Under Different Parameter
+      Values
+  Table 9 caption:
+    table_text: TABLE 9 Studies of the Margin m m in Eq. (19) on Tufts Face
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3052549
+- Affiliation of the first author: southern university of science and technology,
+    shenzhen, guangdong, china
+  Affiliation of the last author: michigan state university, east lansing, mi, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_1.jpg
+  Figure 1 caption: 'Overview: Given a dataset and objectives to optimize, NAT designs
+    custom architectures spanning the objective trade-off front. NAT comprises of
+    two main components, supernet adaptation and evolutionary search, that are iteratively
+    executed. NAT also uses an online accuracy predictor model to improve its computational
+    efficiency.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_10.jpg
+  Figure 10 caption: Efficient architectures (350M MAdds) obtained by NAT on ten diverse
+    image classification datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_2.jpg
+  Figure 2 caption: "The architectures in our search space are variants of MobileNetV2\
+    \ family of models [22], [27], [28], [56]. (a) Each networks consists of five\
+    \ stages. Each stage has two to four layers. Each layer is an inverted residual\
+    \ bottleneck block. The search space includes, input image resolution (R), width\
+    \ multiplier (W), the number of layers in each stage, the of output channels (expansion\
+    \ ratio E) of the first 1\xD71 convolution and the kernel size (K) of the depth-wise\
+    \ separable convolution in each layer. (b) Networks are represented as 22-integer\
+    \ strings, where the first two correspond to resolution and width multiplier,\
+    \ and the rest correspond to the layers. Each value indicates a choice, e.g.,\
+    \ the third integer ( L 1 ) takes a value of \u201C1\u201D corresponds to using\
+    \ expansion ratio of 3 and kernel size of 3 in layer 1 of stage 1."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_3.jpg
+  Figure 3 caption: 'Top Path: A typical process of evaluating an architecture in
+    NAS algorithms. Bottom Path: Accuracy predictor aims to bypass the time-consuming
+    components for evaluating a networks performance by directly regressing its accuracy
+    f from a (architecture in the encoded space).'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_4.jpg
+  Figure 4 caption: Accuracy predictor performance as a function of training samples.
+    For each model, we show the mean and standard deviation of the Spearman rank correlation
+    on 11 datasets (Table 3). The size of RBF ensemble is 500.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_5.jpg
+  Figure 5 caption: "(a) Crossover Operator: new offspring architectures are created\
+    \ by recombining integers from two parent architectures. The probability of choosing\
+    \ from either one of the parents is equal. (b) Mutation Operator: histograms showing\
+    \ the probabilities of mutated values with current value at 5 under different\
+    \ hyperparameter \u03B7 m settings."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_6.jpg
+  Figure 6 caption: "(a) An example (assuming minimization of all objectives) of the\
+    \ selection process in Algo 4: We first create reference directions Z by joining\
+    \ reference points with the ideal solution (origin). Then through nondominatedsort,\
+    \ three non-dominated solutions are identified, associated with reference directions\
+    \ Z(1) , Z(3) and Z(5) . We then select the remaining solutions by the orthogonal\
+    \ distances to the reference directions with no associated solutions\u2014i.e.\
+    \ Z(2) and Z(4) . This selection is scalable to larger of objectives. A tri-objective\
+    \ example is shown in (b)."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_7.jpg
+  Figure 7 caption: ImageNet Architectures from Trade-Off Front.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_8.jpg
+  Figure 8 caption: MAdds versus ImageNet Accuracy. NATNets outperform other models
+    in both objectives. In particular, NAT-M4 achieves a new state-of-the-art top-1
+    accuracy of 80.5 percent under mobile setting ( leq 600M MAdds). NAT-M1 improves
+    MobileNetV3 top-1 accuracy by 2.3 percent with similar MAdds.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Neural_Architecture_Transfer\figure_9.jpg
+  Figure 9 caption: MAdds versus Accuracy trade-off curves comparing NAT and existing
+    architectures on a diverse set of datasets. The datasets are arranged in ascending
+    order of training set size. Methods shown in the legend pre-train on ImageNet
+    and fine-tune the weights on the target dataset. Methods with names annotated
+    in sub-figures train from scratch or use external training data.
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zhichao Lu
+  Name of the last author: Vishnu Naresh Boddeti
+  Number of Figures: 17
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Neural Architecture Transfer
+  Publication Date: 2021-01-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of NAT and Existing NAS Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Hyperparameter Settings
+  Table 3 caption:
+    table_text: TABLE 3 Benchmark Datasets for Evaluation
+  Table 4 caption:
+    table_text: 'TABLE 4 ImageNet-1K Classification [1]: NATNets Comparison With Manual
+      and Automated Design of Efficient Convolutional Neural Networks'
+  Table 5 caption:
+    table_text: 'TABLE 5 Cityscapes Semantic Segmentation [20]: All Results are Based
+      on Single-Scale Inputs From Validation Set'
+  Table 6 caption:
+    table_text: TABLE 6 Comparing the Relative Search Efficiency of NAT to Other Methods
+  Table 7 caption:
+    table_text: TABLE 7 Details of Training Hyperparameter Settings
+  Table 8 caption:
+    table_text: TABLE 8 Comparison Between NAT Searched Model and Representative Models
+      on ImageNet Classification Under Standard Training Setup, and as Feature Extractors
+      on MS COCO [86] Object Detection Task, PASCAL VOC [87] Instance Segmentation
+      Task and Semantic Segmentation Tasks
+  Table 9 caption:
+    table_text: TABLE 9 Effect of Different Training Setups
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3052758
+- Affiliation of the first author: mobile perception lab of school of information
+    science and technology, shanghaitech university, shanghai, china
+  Affiliation of the last author: mobile perception lab of school of information science
+    and technology, shanghaitech university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_1.jpg
+  Figure 1 caption: "Globally-Optimal Contrast Maximisation Framework (GOCMF): Given\
+    \ a spatiotemporal event stream E and a parameter search space \u0398 , our method\
+    \ applies the branch-and-bound optimisation paradigm with a recursive evaluation\
+    \ on upper and lower bounds values. The search space is split until upper and\
+    \ lower bounds values converge, upon which the algorithm returns the globally\
+    \ optimal motion parameters of the considered contrast maximisation problem."
+  Figure 10 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_10.jpg
+  Figure 10 caption: Estimated trajectories by our method ( SoS ), gradient ascent
+    with various initializations, and ground truth ( gt ). Obviously, good initializations
+    are important for local optimisation, while GOCMF has no such requirements.
+  Figure 2 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_2.jpg
+  Figure 2 caption: Visualization of the sum-of-squares contrast function. The camera
+    is moving in front of a plane, and the motion parameters are given by translational
+    and rotational velocity (cf. Section 5). The sub-figures from (a) to (d) are functions
+    with increasing Noise-to-Events (NE) ratios. Note that contrast functions are
+    non-convex.
+  Figure 3 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_3.jpg
+  Figure 3 caption: "An example of the incremental update of the upper bound IWE I\
+    \ \xAF \xAF \xAF N . For this example, the event number N=4 , and different events\
+    \ are indicated by different colors. The left matrix shows the constructed IWE\
+    \ with ground truth motion parameters. The incremental update of the upper bound\
+    \ IWE I \xAF \xAF \xAF N is shown in the right matrices. For each new event e\
+    \ , we choose and increment the currently maximal accumulator in the bounding\
+    \ box P \u0398 (the rectangle bounding the dashed line formed by all possible\
+    \ locations W(x,t;\u03B8\u2208\u0398) ). We simply increment the center of the\
+    \ bounding box if no other accumulator exists. It is easy to see that the upper\
+    \ bound is bigger than the optimal result."
+  Figure 4 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_4.jpg
+  Figure 4 caption: "Bounding boxes of two events generated by a same point. Given\
+    \ two events e 1 (orange) and e 2 (blue) with timestamps t 1 and t 2 generated\
+    \ by a same 3D point, as illustrated in the figure. Uncertainty typically increases\
+    \ with the timestamp, hence the bounding box P \u0398 1 \u2286 P \u0398 2 ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_5.jpg
+  Figure 5 caption: Estimated pixel velocities compared against ground truth on sequences
+    Circle (top) and Line (bottom).
+  Figure 6 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_6.jpg
+  Figure 6 caption: (a) Frame captured at the reference time and two patches (green
+    and red) for optical flow estimation. (b) Images of warped events with optical
+    flow estimated by GOCMF (top) and CMGD (bottom). Our method finds global optima
+    and leads to significantly sharper IWEs than CMGD.
+  Figure 7 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_7.jpg
+  Figure 7 caption: (a) AGV equipped with a downward facing event camera for vehicle
+    motion estimation . (b) collected image with detectable corners, (c) image of
+    warped events with boldsymboltheta = mathbf 0 , and (d) image of warped events
+    with optimal parameters.
+  Figure 8 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_8.jpg
+  Figure 8 caption: Connections between vehicle displacement, extrinsic transformation,
+    and relative camera pose.
+  Figure 9 Link: articels_figures_by_rev_year\2021\GloballyOptimal_Contrast_Maximisation_for_Event_Cameras\figure_9.jpg
+  Figure 9 caption: Results for all methods over different datasets. The first two
+    columns are errors over time for omega and v , and the third column illustrates
+    a birds eye view onto the integrated trajectories. Both IFMI and GOVO occasionally
+    lose tracking (especially for linear motion), which leaves our proposed globally-optimal
+    event-based method using LmathrmSoSAaS as the clearly outperforming method.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Xin Peng
+  Name of the last author: Laurent Kneip
+  Number of Figures: 16
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Globally-Optimal Contrast Maximisation for Event Cameras
+  Publication Date: 2021-01-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Recursive Upper and Lower Bounds for Six Focus Loss Functions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Runtimes and Average Endpoint Errors (AEE) for GOCMF and CMGD
+  Table 3 caption:
+    table_text: TABLE 3 RMS errors for Event-Based and Frame-Based Methods
+  Table 4 caption:
+    table_text: TABLE 4 RMS Errors for Gradient Ascent and SoS
+  Table 5 caption:
+    table_text: TABLE 5 RMS Errors for the Different Textures
+  Table 6 caption:
+    table_text: TABLE 6 Rotational Motion Estimation Errors
+  Table 7 caption:
+    table_text: TABLE 7 RMS Errors for Different Datasets and Methods
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3053243
+- Affiliation of the first author: department of automation, bnrist, tsinghua university,
+    beijing, china
+  Affiliation of the last author: department of automation, bnrist, tsinghua university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_1.jpg
+  Figure 1 caption: The comparison of traditional and semantic data augmentation.
+    Conventionally, data augmentation usually corresponds to naive image transformations
+    (like flipping, rotating, translating, etc.) in the pixel space. Performing class
+    identity preserving semantic transformations (like changing the color of a car,
+    changing the background of an object, etc.) is another effective approach to augment
+    the training data, which is complementary to traditional techniques.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_10.jpg
+  Figure 10 caption: Comparisons of explicit semantic data augmentation (explicit
+    SDA) and ISDA. For the former, we vary the value of the sample times M , and train
+    the networks by minimizing Eq. (5). As a baseline, we also consider directly updating
+    the covariance matrices (Cov) Sigma 1 , Sigma 2 , ldots , Sigma C with gradient
+    decent. The results are presents in red lines. We report the test errors of Wide-ResNet-28-10
+    on CIFAR-100 with the Cutout and AutoAugment augmentation. M=0 refers to the baseline
+    results, while M=infty refers to ISDA.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_2.jpg
+  Figure 2 caption: An overview of ISDA. Inspired by the observation that certain
+    directions in the feature space correspond to meaningful semantic transformations,
+    we augment the training data semantically by translating their features along
+    these semantic directions, without involving auxiliary deep networks. The directions
+    are obtained by sampling random vectors from a zero-mean normal distribution with
+    dynamically estimated class-conditional covariance matrices. In addition, instead
+    of performing augmentation explicitly, ISDA boils down to minimizing a closed-form
+    upper-bound of the expected cross-entropy loss on the augmented training set,
+    which makes our method highly efficient.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_3.jpg
+  Figure 3 caption: An illustration of the insight from deep feature interpolation
+    [9] and other existing works [10], [44], which inspires our method. Transformations
+    like changing the color of the car or changing the background of the image can
+    be realized by linearly translating the deep features towards the semantic directions
+    corresponding to these transformations.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_4.jpg
+  Figure 4 caption: Three different ways to obtain semantic directions for augmentation
+    in the deep feature space. Human annotation is the most precise way. But it requires
+    collecting annotated images for each transformation of each class in advance,
+    which is expensive and time-consuming. In addition, it will inevitably omit potential
+    augmentation transformations. In contrast, finding semantic directions by random
+    sampling is highly efficient, but yields a large number of meaningless transformations.
+    To achieve a nice trade-off between effectiveness and efficiency, we propose to
+    estimate a covariance matrix for the deep features of each class, and sample semantic
+    directions from a zero-mean normal distribution with the estimated class-conditional
+    covariance matrix. The covariance matrix captures the intra-class feature distribution
+    of the training data, and therefore contains rich information of potential semantic
+    transformations.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_5.jpg
+  Figure 5 caption: Curves of test errors on CIFAR-100 with Wide-ResNet (WRN). AA
+    refers to AutoAugment [57].
+  Figure 6 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_6.jpg
+  Figure 6 caption: Visualization of the semantically augmented images on CIFAR.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_7.jpg
+  Figure 7 caption: Visualization of the semantically augmented images on ImageNet.
+    ISDA is able to alter the semantics of images that are unrelated to the class
+    identity, like backgrounds, actions of animals, visual angles, etc. We also present
+    the randomly generated images of the same class.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_8.jpg
+  Figure 8 caption: Visualization of deep features on CIFAR-10 using the t-SNE algorithm
+    [68]. Each color denotes a class. (a), (b) present the results of supervised learning
+    with ResNet-110, while (c), (d) present the results of semi-supervised learning
+    with the VAT algorithm and 4000 labeled samples. The standard non-semantic data
+    augmentation techniques are implemented.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Regularizing_Deep_Networks_With_Semantic_Data_Augmentation\figure_9.jpg
+  Figure 9 caption: Values of mathcal Linfty and overlinemathcal Linfty over the training
+    process. The value of mathcal Linfty is estimated using Monte-Carlo sampling with
+    a sample size of 1,000.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Yulin Wang
+  Name of the last author: Cheng Wu
+  Number of Figures: 11
+  Number of Tables: 8
+  Number of authors: 6
+  Paper title: Regularizing Deep Networks With Semantic Data Augmentation
+  Publication Date: 2021-01-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Single Crop Error Rates (%) of Different Deep Networks on
+      the Validation Set of ImageNet
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Evaluation of ISDA on CIFAR With Different Models
+  Table 3 caption:
+    table_text: TABLE 3 The Theoretical Computational Overhead and the Empirical Additional
+      Time Consumption of ISDA on CIFAR
+  Table 4 caption:
+    table_text: TABLE 4 Evaluation of ISDA With State-of-the-Art Non-Semantic Augmentation
+      Techniques
+  Table 5 caption:
+    table_text: TABLE 5 Comparisons With the State-of-the-Art Methods
+  Table 6 caption:
+    table_text: TABLE 6 Performance of State-of-the-Art Semi-Supervised Learning Algorithms
+      With and Without ISDA
+  Table 7 caption:
+    table_text: TABLE 7 Performance of State-of-the-Art Semantic Segmentation Algorithms
+      on Cityscapes With and Without ISDA
+  Table 8 caption:
+    table_text: TABLE 8 The Ablation Study for ISDA
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3052951
+- Affiliation of the first author: cooperative medianet innovation center and the
+    shanghai key laboratory of multimedia processing and transmissions, shanghai jiao
+    tong university, shanghai, china
+  Affiliation of the last author: huawei cloud & ai, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_1.jpg
+  Figure 1 caption: 'Symbiotic graph neural networks (Sybio-GNN) contains a prime
+    joint-based network and a dual bone-based network to learn both joint-based and
+    bone-based action features. Each network has three main modules: a backbone, an
+    action-recognition head, and a motion-prediction head. The backbone is multi-branch
+    multiscale graph convolution networks. The action-recognition head and the motion-prediction
+    head predict the action category and future poses. The predicted category further
+    assists in motion prediction.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_10.jpg
+  Figure 10 caption: Given the same input, predicting more future poses leads to a
+    better performance of action recognition. We see that across all the observation
+    ratios, predicting all future poses is better than predicting 10 future poses;
+    and both are better than no prediction.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_2.jpg
+  Figure 2 caption: "Joint-scale graphs for walking. We consider an actional graph\
+    \ (b) and a structural graph (c), which is an extension of a skeleton graph (a).\
+    \ In each graph, the edges from \u201DLeft Hand\u201D to its neighbors are shown\
+    \ in solid lines and other links in the skeleton are shown in dashed lines."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_3.jpg
+  Figure 3 caption: "Actional graphs inference module (AGIM) propagates features between\
+    \ joints and edges for K iterations and uses correlations between joint features\
+    \ to obtain actional graphs. In the box Joint-edge feature propagation \xD7K ,\
+    \ any two joint features p \u27E8k\u22121\u27E9 i and p \u27E8k\u22121\u27E9 j\
+    \ are concatenated and fed in to an MLP, f \u27E8k\u27E9 e (\u22C5) , corresponding\
+    \ to equation (1a). The edge features associated with the i th joint, q \u27E8\
+    k\u27E9 i,j are summed and fed into an MLP, f \u27E8k\u27E9 v (\u22C5) , corresponding\
+    \ to Eq. (1b). The aggregated features mapped by two MLPs, f emb (\u22C5) and\
+    \ g emb (\u22C5) are used to calculate the adjacency matrix of the actional graph,\
+    \ corresponding to equation (2)."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_4.jpg
+  Figure 4 caption: J-GTC block consists of JGC [equation (5)] and temporal convolution
+    (TC). The triples below the blocks denote the tensor shapes. The quaternions are
+    the shapes of parameters in JGC and TC operators. The first two pink boxes represent
+    the joint-scale graph convolution, which is corresponding to equation (6a). The
+    second two pink boxes denotes the temporal convolution, which is corresponding
+    to equation (6b).
+  Figure 5 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_5.jpg
+  Figure 5 caption: A joint-scale graph consists of body-joints represented as blue
+    nodes and a part-scale graph consists of body-parts represented as orange nodes.
+    The bidirectional fusion converts features across two scales through the operations
+    of joint2part pooling and part2joint matching. We only plot the one-hop structural
+    graph for the joint-scale graph.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_6.jpg
+  Figure 6 caption: Backbone is essentially multi-branch multiscale graph convolution
+    networks. It uses three individual multiscale GCNs to extract spatial and temporal
+    features. A difference operator (Diff) calculate three orders of differences,
+    which represent joint positions (pos.), velocities (vel.) and accelerations (acc.).
+    Each multiscale GCN takes one order as input and uses multiple J-GTC, P-GTC blocks
+    and bidirectional fusion to learn spatial and temporal features from two scales.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_7.jpg
+  Figure 7 caption: The motion-prediction head of Sybio-GNN uses JGC [equation (5)],
+    the difference operator [equation (9)] and GRU to predict the future poses sequentially.
+    The box named JGC performing on the hidden states corresponds to equation (10a).
+    The box named GRU performing on the input dynamics and action category corresponds
+    to equation (10b). The output MLP and the residual connection summing up the input
+    poses and outputs correspond to equation (10c).
+  Figure 8 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_8.jpg
+  Figure 8 caption: Comparison of PCK0.05 (%) between Sybio-GNN and state-of-the-art
+    methods for short-term motion prediction on NTU-RGB+D. The variant of Sybio-GNN
+    (No recg) denotes our model without using the recognition task to enhance motion
+    prediction.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Symbiotic_Graph_Neural_Networks_for_D_SkeletonBased_Human_Action_Recognition_and\figure_9.jpg
+  Figure 9 caption: Sybio-GNN is both faster and more precise compared to others.
+    Various red circles denote different iteration numbers K in AGIM, where K = 0,
+    1, 2, 3, 4 . The bottom right corner (highlighted by a trophy cup) indicates higher
+    speed and lower error, showing an ideal target.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Maosen Li
+  Name of the last author: Qi Tian
+  Number of Figures: 15
+  Number of Tables: 10
+  Number of authors: 6
+  Paper title: Symbiotic Graph Neural Networks for 3D Skeleton-Based Human Action
+    Recognition and Motion Prediction
+  Publication Date: 2021-01-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Action Recognition on NTU-RGB+D
+  Table 10 caption:
+    table_text: TABLE 10 The Recognition Accuracies of Model With Different Parallel
+      Networks on NTU-RGB+D
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Action Recognition on Kinetics
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Action Recognition on Human 3.6M and CMU Mocap
+      Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparisons of MAEs Between Sybio-GNN and State-of-the-Art
+      Methods for Short-Term Motion Prediction on the Four Representative Actions
+      of H3.6M
+  Table 5 caption:
+    table_text: TABLE 5 Comparisons of MAEs Between Sybio-GNN and Previous Methods
+      for Short-Term Motion Prediction on Other 11 Actions of H3.6M Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Comparisons of MAEs Between Our Model and the State-of-the-Art
+      Methods on the Eight Actions of CMU Mocap Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Comparisons of MAEs Between Our Model and Other Methods for
+      Long-Term Motion Prediction on Four Actions of H3.6M
+  Table 8 caption:
+    table_text: TABLE 8 Action Recognition Accuracies With Noisy Motion Prediction
+      Targets in Varying Degrees on NTU-RGB+D Dataset
+  Table 9 caption:
+    table_text: 'TABLE 9 Recognition Accuracies on NTU-RGB+D, CS With Various Graphs:
+      Only Joint-Scale Structural Graphs (Only J-S), Only Joint-Scale Actional Graph
+      (Only J-A), Only Part-Scale Graph (Only P) and all Graphs (Full)'
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3053765

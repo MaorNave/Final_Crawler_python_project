@@ -1,0 +1,821 @@
+- Affiliation of the first author: school of electrical and electronic engineering,
+    yonsei university, seoul, south korea
+  Affiliation of the last author: school of electrical and electronic engineering,
+    yonsei university, seoul, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_1.jpg
+  Figure 1 caption: 'Visualization of our PSCNet-SE pyramid model based on the semantic
+    elements of an object: (a) source and target images, (b) warped images with the
+    final correspondences of (f). The semantic elements of the source image are warped
+    with the estimated affine field at (c) level 1, (d) level 2, and (e) level 3.
+    Thanks to our coarse-to-fine scheme, we achieve both the robustness to semantic
+    variations and fine-grained localization precision at the same time.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_10.jpg
+  Figure 10 caption: 'Visualization of the generated supervisions at each level: (a)
+    source and target images, (b) keypoint annotations, (c) cell-level 1, (d) cell-level
+    2, (e) cell-level 3, and (f) pixel level. The tentative positive samples are color-coded
+    where the samples of same color are supposed to match each other. (Best viewed
+    in color.)'
+  Figure 2 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_2.jpg
+  Figure 2 caption: Network configurations of the PSCNet-UR and PSCNet-SE, which are
+    defined on the pyramidal model and consist of several cell-level modules and a
+    single pixel-level module. Each module is designed to mimic the standard matching
+    process within a deep architecture, including feature extraction, cost volume
+    construction, and transformation field regression. Note that the PSCNet-UR and
+    PSCNet-SE models share the same network architectures except element detection
+    networks. For the PSCNet-UR model, the element detection networks are replaced
+    with the grid generator of STNs [24].
+  Figure 3 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_3.jpg
+  Figure 3 caption: Visualization of multi-scale feature extraction. To resolve local
+    ambiguities, we leverage the inherent hierarchy of CNNs by pooling multi-level
+    intermediate convolutional activations with upsampling.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_4.jpg
+  Figure 4 caption: 'Visualization of the constrained search window Q k i : (a) source
+    image and a reference pixel (blue colored). The matching costs are visualized
+    as the heat maps for the reference pixel at (b) level 1, (c) level 2, (d) level
+    3, and (e) pixel-level.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_5.jpg
+  Figure 5 caption: 'Visualization of spatial pyramid model of PSCNet-UR based on
+    the uniformly divided rectangles: estimated affine field at (a) level 1, (b) level
+    2, (c) level 3, and (d) pixel-level.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_6.jpg
+  Figure 6 caption: 'Visualization of the semantic elements discovered by PSCNet-SE
+    at each level: (a) source image, (e) target image, the color-coded semantic elements
+    at (b), (f) level 1, (c), (g) level 2, and (d), (h) level 3. The elements with
+    the same color are supposed to match each other.'
+  Figure 7 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_7.jpg
+  Figure 7 caption: "Qualitative results of the PSCNet-UR at each level: (a) source\
+    \ image, (b) target image, warping result with estimated affine transformation\
+    \ fields (c) T 1 , (d) T 2 , (e) T 2 , (f) T 3 , (g) T 3 , and (h) T \u2217 (PSCNet-UR)."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_8.jpg
+  Figure 8 caption: "Qualitative results of the PSCNet-SE at each level: (a) source\
+    \ image, (e) target image, warping result with estimated affine transformation\
+    \ fields (c) T 1 , (d) T 2 , (e) T 2 , (f) T 3 , (g) T 3 , and (h) T \u2217 (PSCNet-SE).\
+    \ The discovered semantic elements at each level are visualized in Fig. 6."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Pyramidal_Semantic_Correspondence_Networks\figure_9.jpg
+  Figure 9 caption: Visualization of training our networks based on PSCNet-SE model.
+    By applying the correspondence consistency check to the constructed cost volume,
+    tentative positive samples S are collected and utilized for learning the network
+    parameters W k G and W k R .
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Sangryul Jeon
+  Name of the last author: Kwanghoon Sohn
+  Number of Figures: 18
+  Number of Tables: 13
+  Number of authors: 4
+  Paper title: Pyramidal Semantic Correspondence Networks
+  Publication Date: 2021-10-29 00:00:00
+  Table 1 caption: TABLE 1 Descriptions of the Used Notations in Our Framework
+  Table 10 caption: TABLE 10 Object-Level IoU Compared to State-of-the-Art Co-Segmentation
+    Technique on the TSS Benchmark [27]
+  Table 2 caption: TABLE 2 Our Network Architecture of Element Detection Networks
+    and Affine Transformation Regression Networks
+  Table 3 caption: TABLE 3 Matching Accuracy Compared to State-of-the-Art Correspondence
+    Techniques on the TSS Benchmark [27] When T=5 T=5
+  Table 4 caption: TABLE 4 Matching Accuracy Compared to State-of-the-Art Correspondence
+    Techniques on the Proposal Flow-WILLOW Benchmark [12]
+  Table 5 caption: TABLE 5 Matching Accuracy Compared to State-of-the-Art Correspondence
+    Techniques on the Proposal Flow-PASCAL Benchmark [28]
+  Table 6 caption: TABLE 6 Matching Accuracy Compared to State-of-the-Art Correspondence
+    Techniques on the Caltech-101 Dataset [29]
+  Table 7 caption: TABLE 7 Per-Class Matching Accuracy on SPair-71k Dataset [30] Compared
+    to State-of-the-Art Correspondence Techniques
+  Table 8 caption: TABLE 8 Matching Accuracy Compared to State-of-the-Art Correspondence
+    Techniques on SPair-71k Dataset [30] That are Released After the Time of Submission
+    (Sep. 2019)
+  Table 9 caption: TABLE 9 Part-Level IoU Compared to State-of-the-Art Co-Segmentation
+    Technique on the TSS Benchmark [27]1
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3123679
+- Affiliation of the first author: "computer vision laboratory, \xE9cole polytechnique\
+    \ f\xE9d\xE9rale de lausanne, lausanne, switzerland"
+  Affiliation of the last author: "computer vision laboratory, \xE9cole polytechnique\
+    \ f\xE9d\xE9rale de lausanne, lausanne, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_1.jpg
+  Figure 1 caption: Domain specific detection and segmentation. Our self-supervised
+    method detects the skier well, while YOLO trained on a general dataset does not
+    generalize to this challenging domain. Similarly, MaskRCNN trained on a general
+    dataset sometimes misses body parts such as the upper body of the skier in (c).
+  Figure 10 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_10.jpg
+  Figure 10 caption: Impact of the segmentation mask regularizer of Eq. (6). Early
+    in the training, a high percentage of masks have a mean value lower than lambda
+    . When the model converges, all masks have a mean value above this threshold.
+  Figure 2 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_2.jpg
+  Figure 2 caption: "Architecture. Our model F passes the input image I to a detector\
+    \ D that proposes potential bounding boxes. One of them is passed to a spatial\
+    \ transformer T that crops I and the result is fed to a segmentation network S\
+    \ that outputs a segmentation mask S and the corresponding foreground image I\
+    \ . In a separate branch, an inpainting network I fills the content of the bounding\
+    \ box to generate a background image I \xAF . Finally, the inverse transformer\
+    \ T \u22121 is used to combine I , masked by S , and I \xAF into an image that\
+    \ should be similar to the original one."
+  Figure 3 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_3.jpg
+  Figure 3 caption: Optical flow image generation on Ski-PTZ and Handheld190k. We
+    use a homography based on SIFT keypoints to compute rectified images that are
+    provided as input to FlowNet 2.0. (a) Source image warped to the target scene;
+    (b) Target image; (c) Optical flow image highlighting the moving foreground region
+    between the source image and the target image after the background motion is eliminated.
+    In Ski-PTZ, the optical flow images provide strong cues about the foreground object
+    as the scene was captured by rotating cameras, making homography estimation effective.
+    In Handheld190k, because the camera undergoes translations, the homography and
+    optical flow estimates are less accurate, but can nonetheless improve our segmentation
+    performance.
+  Figure 4 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_4.jpg
+  Figure 4 caption: Off-the-shelf inpainting results on Ski-PTZ. (a) Input image with
+    the middle part hidden. We show the inpainting results of (b) [57], (c) [58] trained
+    on ImageNet and (d) [58] on Places2.
+  Figure 5 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_5.jpg
+  Figure 5 caption: 'Soft segmentation masks generated by our method and PerturbedGAN
+    (P-GAN) [4] on training examples. Top row: P-GAN mask generated on the Ski-PTZ
+    dataset, the poles and snow patches are segmented as foreground. Bottom row: P-GAN
+    mask generated on the Handheld190k dataset contains the foreground subject together
+    with the ground they are standing on.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_6.jpg
+  Figure 6 caption: Qualitative results on the Ski-PTZ. Example results on the test
+    images. (a) The detection results show the predicted bounding box with red dashed
+    lines, the relative confidence of the grid cells with blue dots and the bounding
+    box center offset with green lines (better viewed on screen). (b) Segmentation
+    mask prediction of [8]. (c)Segmentation mask prediction of [10]. (d) Segmentation
+    mask prediction of [3]. (e) Our segmentation mask prediction. (f) Ground truth
+    segmentation mask. Note that in the third row even though the skier is mostly
+    occluded by snow, our method can detect and segment the visible part of the body.
+    Our method is more accurate than [8] in terms of background removal and outperforms
+    [10] in terms of correctness of the object boundary. Note that in contrast to
+    our method, [3] uses explicit temporal cues at inference time.
+  Figure 7 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_7.jpg
+  Figure 7 caption: Qualitative results on the Handheld190k. (a) Our detection result.
+    The blue dots coincide with the grid cell centers and their size indicates the
+    confidence of the bounding box proposals. The selected bounding box is illustrated
+    with a red dashed line and the center of the grid cell yielding this proposal
+    is connected to the center of the red box through the green line. (b) Segmentation
+    mask prediction of [8]. (c)Segmentation mask prediction of [10]. (d)Segmentation
+    mask prediction of [3]. (e) Our segmentation mask prediction. (f) Ground truth
+    segmentation mask. Our method can segment the full body of the actor more accurately
+    than [3], [8], [10] despite the other moving objects in the scene such as the
+    clouds and occasionally appearing cars and pedestrians. In some frames, the shadow
+    is also segmented since it moves with the primary object.
+  Figure 8 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_8.jpg
+  Figure 8 caption: Qualitative results on the FS-Singles. (a) Our detection result.
+    (b) Segmentation mask prediction of [3]. (c) Segmentation mask prediction of [5].
+    (d) Segmentation mask prediction of [10]. (e) Our segmentation result. (f) Ground
+    truth segmentation mask. Our method is more accurate than [3] and [10] in terms
+    of removing the background regions.
+  Figure 9 Link: articels_figures_by_rev_year\2021\SelfSupervised_Human_Detection_and_Segmentation_via_Background_Inpainting\figure_9.jpg
+  Figure 9 caption: Qualitative results of MaskRCNN on a moving robot sequence captured
+    with a handheld camera. MaskRCNN generally fails to detect the moving robot as
+    a single object and does not yield a segmentation mask with high confidence.
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Isinsu Katircioglu
+  Name of the last author: Pascal Fua
+  Number of Figures: 14
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: Self-Supervised Human Detection and Segmentation via Background Inpainting
+  Publication Date: 2021-10-29 00:00:00
+  Table 1 caption: TABLE 1 Segmentation Results on the Ski-PTZ, Handheld190k and FS-Singles
+    Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 MaskRCNN Segmentation Results on the Ski-PTZ, Handheld190k
+    and FS-Singles Datasets
+  Table 3 caption: TABLE 3 Analysis of the Mask Prior Effect and ImageNet Pre-Training
+    on the Ski-PTZ Validation Sequences
+  Table 4 caption: TABLE 4 Hyper-Parameter Study on the Ski-PTZ Validation Sequences
+  Table 5 caption: TABLE 5 Detection Results on the H36M and Ski-PTZ Datasets
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3123902
+- Affiliation of the first author: institute of computer graphics, university of linz,
+    linz, austria
+  Affiliation of the last author: institute of computer graphics and vision, graz
+    university of technology, graz, austria
+  Figure 1 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_1.jpg
+  Figure 1 caption: Two prototypic trajectories of the optimal control problem associated
+    with different control parameters.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_10.jpg
+  Figure 10 caption: 'From left to right: High resolution ground truth image, low
+    resolution image, and resulting output of TDV 33 for (S,T)in lbrace (5,frac12Tast),(10,Tast),(15,frac32Tast),(20,2Tast)rbrace
+    for noise-free SISR ( gamma =4 , sigma =0 , top) and noisy SISR ( gamma =3 , sigma
+    =7.65 , bottom). The optimal stopping time is Tast =0.043 in the noise-free case
+    and Tast =0.264 in the noisy case. Note that the best image is framed in red.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_2.jpg
+  Figure 2 caption: The network structure of the total deep variation with 3 blocks
+    each operating on 3 scales.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_3.jpg
+  Figure 3 caption: "Illustration of stability analysis for different initial states\
+    \ x 0 and x \u02DC 0 associated with the observations z and z \u02DC ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_4.jpg
+  Figure 4 caption: "Visualization of stability analysis w.r.t. parameters. The trajectory\
+    \ x \u02DC is associated with the perturbed parameters \u03B8 \u02DC , while x\
+    \ is computed using the learned \u03B8 ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_5.jpg
+  Figure 5 caption: "Expected PSNR value and optimal stopping time depending on S\
+    \ for various TDV regularizers (gray-scale Gaussian denoising, \u03C3=25 ) on\
+    \ the BSDS68 test dataset along with number of parameters of TDV b a ."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_6.jpg
+  Figure 6 caption: First order optimality condition of the stopping time for gray-scale
+    Gaussian denoising ( sigma =25 ) using TDV 33 on the BSDS68 test dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_7.jpg
+  Figure 7 caption: 'From left to right: Ground truth, noisy input with noise level
+    sigma =25 and resulting output of TDV 33 for (S,T)in lbrace (5,frac12Tast),(10,Tast),(15,frac32Tast),(20,2Tast)rbrace
+    for Gaussian denoising of gray-scale images (top) and color images (bottom). Note
+    that the best images are framed in red and are obtained at the optimal stopping
+    time, which is Tast =0.0706 for gray-scale denoising and Tast =0.0247 for color
+    denoising.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_8.jpg
+  Figure 8 caption: Conjugate gradient reconstruction for 48-fold angular undersampled
+    CT task (firstfifth image), results obtained by using the TDV 33 regularizer for
+    4-fold (second image) and 8-fold undersampling (fourth image), and fully sampled
+    reference reconstruction (third image).
+  Figure 9 Link: articels_figures_by_rev_year\2021\Total_Deep_Variation_A_Stable_Regularization_Method_for_Inverse_Problems\figure_9.jpg
+  Figure 9 caption: GRAPPA initialization for acceleration factors Rin lbrace 3,4rbrace
+    (firstfifth image), output using the TDV 33 regularizer for R=3 (second image)
+    and R=4 (fourth image), and fully sampled reference (third image).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Erich Kobler
+  Name of the last author: Thomas Pock
+  Number of Figures: 18
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: 'Total Deep Variation: A Stable Regularization Method for Inverse Problems'
+  Publication Date: 2021-11-02 00:00:00
+  Table 1 caption: "TABLE 1 Different Possible Choices for Potential Functions \u03C8\
+    \ \u03C8 Evaluated on Gray-Scale Gaussian Denoising ( \u03C3=25 \u03C3=25)"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Comparison of Expected PSNR PSNR Values for Additive Gray-Scale\
+    \ Gaussian Denoising for \u03C3\u220815,25,50 \u03C3\u220815,25,50 on Various\
+    \ Image Datasets"
+  Table 3 caption: "TABLE 3 Comparison of Expected PSNR PSNR Values for Additive Color\
+    \ Gaussian Denoising for \u03C3\u220815,25,50 \u03C3\u220815,25,50 on Various\
+    \ Image Datasets"
+  Table 4 caption: "TABLE 4 PSNR PSNR Values of Various State-of-the Art Networks\
+    \ for Single Image Super-Resolution ( \u03C3=0 \u03C3=0) With a Comparable Number\
+    \ of Parameters"
+  Table 5 caption: "TABLE 5 Expected PSNR PSNR Values for Noisy Single Image Super-Resolution\
+    \ Using Different Isotropic Gaussian Kernels \u03C3 G \u22081.2,1.6,2.0 \u03C3\
+    G\u22081.2,1.6,2.0, Noise Levels \u03C3\u22082.55,7.65 \u03C3\u22082.55,7.65,\
+    \ and Scale Factor \u03B3=3 \u03B3=3 on the BSDS68 Dataset"
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3124086
+- Affiliation of the first author: school of electrical engineering, korea advanced
+    institute of science and technology, daejeon, korea
+  Affiliation of the last author: school of electrical engineering, korea advanced
+    institute of science and technology, daejeon, korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_1.jpg
+  Figure 1 caption: Our DBoosterNet-t and DBoosterNet-e, built on our previous works
+    [1] and [2], yield more consistent depth estimates and better preserve structural
+    details compared to the previous self- and fully supervised methods. Our DBoosterNet-e
+    produces the most accurate depth estimate.
+  Figure 10 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_10.jpg
+  Figure 10 caption: 'Effects of our proposed ambiguity boosting on DBoosterNet-m.
+    From left to right: input image, disparity estimate by training following [28],
+    and disparity estimate by fine tuning with our ambiguity boosting.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_2.jpg
+  Figure 2 caption: "Performance of self- and fully supervised single-image DE methods\
+    \ in terms of the root mean squared error (RMSE) on the KITTI Eigen test split\
+    \ with improved ground-truths [3]. \u2218 : self-supervised from stereo. \u22C4\
+    \ : Self-supervised from videos. \u25A1 : Fully-supervised. PackNet vel [4] is\
+    \ supervised with velocity ground-truth data for scale-aware SFM. Our self-supervised\
+    \ DBoosterNet-e with boosting post-processing (BPP) achieves state-of-the-art\
+    \ result. Our method without any BPP still outperforms previous works in terms\
+    \ of RMSE while keeping a lower network complexity in terms of number of parameters."
+  Figure 3 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_3.jpg
+  Figure 3 caption: 'Overview of the proposed two-stage training strategy with boosting
+    for two different network designs: (a) the DBoosterNet-t and (b) the DBoosterNet-e.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_4.jpg
+  Figure 4 caption: Definition of different kernels for stereoscopic view synthesis
+    (and indirect depth estimation) in DBoosterNets.
+  Figure 5 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_5.jpg
+  Figure 5 caption: "Ambiguity boosting process. DBoosterNet is run with multiple\
+    \ versions of the input image to generate multiple depth estimates. These estimates\
+    \ are combined into the boosted depth map D \u2217 , weighted by the predicted\
+    \ ambiguity masks. Running DBoosterNet with horizontally flipped inputs helps\
+    \ to alleviate depth artifacts due to parallax. Running with downscaled inputs\
+    \ generates more consistent depth estimates for the nearby objects as shown by\
+    \ the red boxes. Running with upscaled inputs generates considerably more detailed\
+    \ predictions for the distant objects, as depicted by the green boxes."
+  Figure 6 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_6.jpg
+  Figure 6 caption: Qualitative comparison between depth estimates from DBoosterNets
+    at different training stages.
+  Figure 7 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_7.jpg
+  Figure 7 caption: Qualitative results on the KITTI Eigen test split [58] and comparison
+    between the supervised SOTA DORN[24], the self-supervised SOTAs DepthHints [34]
+    and PackNet [4] and our self-supervised DBoosterNet. Our DBoosterNet even without
+    boosting post-processing (BPP) generates very detailed depths. Our method generates
+    superior depth for very close objects, such as the pedestrians in the second and
+    first samples, and for the distant objects, such as the traffic signs and trees
+    in the first and last samples.
+  Figure 8 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_8.jpg
+  Figure 8 caption: Qualitative comparison between our DBoosterNet-e trained without
+    and with aggressive data augmentations and with our ambiguity boosting training
+    strategy. Note that the depth images in the red boxes are adjusted in brightness
+    for better visualization. Results are without any post-processing.
+  Figure 9 Link: articels_figures_by_rev_year\2021\SelfSupervised_Deep_Monocular_Depth_Estimation_With_Ambiguity_Boosting\figure_9.jpg
+  Figure 9 caption: Effects of deep stereo supervision. DBoosterNet-es and DBoosterNet-e
+    are trained on a single stage. DBoosterNet-e (ours) is trained with our ambiguity
+    boosting technique and deep stereo information.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.7
+  Name of the first author: Juan Luis Gonzalez Bello
+  Name of the last author: Munchurl Kim
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 2
+  Paper title: Self-Supervised Deep Monocular Depth Estimation With Ambiguity Boosting
+  Publication Date: 2021-11-02 00:00:00
+  Table 1 caption: TABLE 1 Detailed Convolutional Backbone Used in DBoosterNets
+  Table 10 caption: TABLE 10 C1 Metrics [62] for Methods Evaluated on Make3D [59]
+    Test134
+  Table 2 caption: TABLE 2 Detailed DBoosterNet-e Network Architecture
+  Table 3 caption: TABLE 3 Detailed t-net2 Network Architecture
+  Table 4 caption: TABLE 4 Detailed Monopad-Net Architecture
+  Table 5 caption: TABLE 5 Ablation Study on the KITTI Eigen Split [58]
+  Table 6 caption: TABLE 6 Effects of Aggressive Data Augmentations on Different Depth
+    Ranges
+  Table 7 caption: TABLE 7 Comparison to Existing Self-, Semi- and Fully-Supervised
+    Monocular DE Methods on the KITTI Eigen Split [58]
+  Table 8 caption: TABLE 8 Effects of Infusing Deep Stereo Disparity Into Single View
+    DE
+  Table 9 caption: TABLE 9 Performance Improvements of DBoosterNet-m
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3124079
+- Affiliation of the first author: department of computer science and engineering,
+    indian institute of technology hyderabad, kandi, telangana, india
+  Affiliation of the last author: department of computer science and engineering,
+    indian institute of technology hyderabad, kandi, telangana, india
+  Figure 1 Link: articels_figures_by_rev_year\2021\Incremental_Object_Detection_via_MetaLearning\figure_1.jpg
+  Figure 1 caption: (a) In Task 1 ( T 1 ), a standard object detector (Faster R-CNN
+    [2]) is trained to detect the bird class and it can accurately detect bird instances
+    on a test image. (b) In Task 2 ( T 2 ), the same model is trained to detect person
+    class and it accurately detects a person instance. However, the detector forgets
+    the bird class ( T 1 ) which was not present during T 2 training. (c) Our meta-learning
+    based incremental Faster R-CNN detector accurately detects most instances of both
+    the classes.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Incremental_Object_Detection_via_MetaLearning\figure_2.jpg
+  Figure 2 caption: "The figure outlines the overall architectural components and\
+    \ an illustration of how gradient preconditioning controls learning (top right).\
+    \ While learning the current task T t , the gradient preconditioning induced by\
+    \ the warp layers (green rectangles in the RoI Head of the detector) effectively\
+    \ modulates the dotted-red task-wise gradients to the dotted-green gradients,\
+    \ which inherently guides the average gradients (solid green arrows) to a better\
+    \ optima that respects all three task manifolds W t , W t\u22121 and W t\u2212\
+    2 . Additionally, backbone features and RoI Head outputs are distilled (purple\
+    \ arrows) from the previous model. (best viewed in color)."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Incremental_Object_Detection_via_MetaLearning\figure_3.jpg
+  Figure 3 caption: Qualitative results of our incremental object detector trained
+    in a 10+10 setting where T 1 = aeroplane, bicycle, bird, boat, bottle, bus, car,
+    cat, chair, cow and T 2 = diningtable, dog, horse, motorbike, person, pottedplant,
+    sheep, sofa, train, tvmonitor .
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: K. J. Joseph
+  Name of the last author: Vineeth N. Balasubramanian
+  Number of Figures: 3
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Incremental Object Detection via Meta-Learning
+  Publication Date: 2021-11-02 00:00:00
+  Table 1 caption: TABLE 1 Per-Class AP and Overall mAP Values When Five Classes From
+    PASCAL VOC Dataset are Added One-by-One to a Model Initially Trained on 15 Categories
+    on the Left
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Per-Class AP and Overall mAP on PASCAL VOC When 10 New
+    Classes are Added to a Detector Trained on the First 10 Classes
+  Table 3 caption: TABLE 3 Per-Class AP and Overall mAP When Last 5 Classes From PASCAL
+    VOC are Added to a Detector Trained on the Initial 15 Classes
+  Table 4 caption: TABLE 4 Per-Class AP and Overall mAP When Tvmonitor Class From
+    PASCAL VOC is Added to the Detector, Trained on All Other Classes
+  Table 5 caption: TABLE 5 AP and AR Values When 40 New Classes are Added to a Model
+    Trained With the First 40 Classes on MS COCO Dataset
+  Table 6 caption: TABLE 6 An Ablation Study to Understand the Contribution of Distillation
+    (D), Gradient Preconditioning (G) and Fine-Tuning (F)
+  Table 7 caption: "TABLE 7 Sensitivity Analysis on the Hyper-Parameter \u03B1 \u03B1\
+    , in Eq. (4). \u03B1 \u03B1 Controls the Importance of Distillation and Detection\
+    \ Losses"
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3124133
+- Affiliation of the first author: department of computer engineering, rochester institute
+    of technology, rochester, ny, usa
+  Affiliation of the last author: department of computer engineering, rochester institute
+    of technology, rochester, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_1.jpg
+  Figure 1 caption: 2D and 3D Pose estimation examples with our UniPose+ method.
+  Figure 10 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_10.jpg
+  Figure 10 caption: 'Examples of fail cases for images in the LSP datasetp: (a) wrist
+    location is misplaced due to multiple individuals; and (b) ankle location is misplaced
+    due to occlusion.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_2.jpg
+  Figure 2 caption: UniPose+ architecture for single frame 2D pose detection. The
+    input color image of dimensions (HxW) is fed through the backbone and WASP module
+    to obtain 256 feature channels. The decoder module generates K heatmaps, one per
+    joint.
+  Figure 3 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_3.jpg
+  Figure 3 caption: Waterfall architecture in the WASP module [41]. The inputs to
+    the WASP module are 1280 channels of ResNet features maps.
+  Figure 4 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_4.jpg
+  Figure 4 caption: "Decoder module used in the UniPose+ pipeline. Assuming original\
+    \ image dimensions of (1280\xD7720), the inputs to the decoder are the channels\
+    \ from low level features layer of the backbone and channels of the WASP feature\
+    \ maps. The bilinear interpolation is used to bring the high level feature dimensions\
+    \ to match the lower level features dimensions depending on the backbone selected.\
+    \ The output of the decoder is K heatmaps corresponding to K joints, shown in\
+    \ the image example. Additionally, the decoder outputs heatmaps for the bounding\
+    \ box (not shown in the image)."
+  Figure 5 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_5.jpg
+  Figure 5 caption: Illustration of the Gaussian heatmap modulation process for feature
+    maps following the interpolation in the decoder.
+  Figure 6 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_6.jpg
+  Figure 6 caption: UniPose+LSTM architecture for pose estimation in videos. The joint
+    heatmaps from the UniPose+ decoder are fed into the LSTM along with the final
+    heatmaps from the previous LSTM state. The convolutional layers following the
+    LSTM reorganize the outputs into the final heatmaps used for joint localization.
+  Figure 7 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_7.jpg
+  Figure 7 caption: "UniPose3D architecture for 3D pose estimation. The input color\
+    \ image of size (H\xD7W) is fed through the backbone and WASP module to obtain\
+    \ feature channels at reduced resolution by a factor of 8. The bilinear interpolation\
+    \ is used to bring the high level feature dimensions to match the lower level\
+    \ features dimensions depending on the backbone selected. The concatenation of\
+    \ the WASP output and low level features from the backbone are fed in the short\
+    \ decoder and 3D regression module. The decoder generates K heatmaps, one per\
+    \ joint for the 2D pose estimation at the original resolution. For the specific\
+    \ case of the Human3.6M dataset, there are K=17 joints. The 3D regression branch\
+    \ outputs the 3D pose estimation."
+  Figure 8 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_8.jpg
+  Figure 8 caption: Pose estimation examples from the LSP dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2021\UniPose_A_Unified_Framework_for_D_and_D_Human_Pose_Estimation_in_Images_and_Vide\figure_9.jpg
+  Figure 9 caption: Pose estimation examples from the MPII dataset.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Bruno Artacho
+  Name of the last author: Andreas Savakis
+  Number of Figures: 12
+  Number of Tables: 7
+  Number of authors: 2
+  Paper title: 'UniPose+: A Unified Framework for 2D and 3D Human Pose Estimation
+    in Images and Videos'
+  Publication Date: 2021-11-02 00:00:00
+  Table 1 caption: TABLE 1 Results for the LSP Dataset Using Different Configurations
+    of UniPose With ResNet-101 Backbone
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Results for 2D Pose Estimation and Comparison With Other
+    Methods for the LSP Dataset
+  Table 3 caption: TABLE 3 Results for 2D Pose Estimation and Comparison With Other
+    Methods for the MPII Dataset
+  Table 4 caption: TABLE 4 Results for 2D Pose Estimation in a Sequence of Frames
+    and Comparisons With Other Methods for the Penn Action Dataset
+  Table 5 caption: TABLE 5 Results for the Human3.6M Dataset Using Different Configurations
+    of UniPose With ResNet Backbone
+  Table 6 caption: TABLE 6 Comparison of Parameters (in Millions) and Floating Point
+    Operations (GFLOPs) for Backbones Used for 3D Pose Estimation
+  Table 7 caption: "TABLE 7 Results for 3D Pose Estimation and Comparisons With Other\
+    \ Methods for the Human3.6M Dataset With Resolution of 256\xD7256"
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3124736
+- Affiliation of the first author: tu kaiserslautern, kaiserslautern, germany
+  Affiliation of the last author: tu kaiserslautern, kaiserslautern, germany
+  Figure 1 Link: articels_figures_by_rev_year\2021\HandVoxNet_D_Hand_Shape_and_Pose_Estimation_Using_VoxelBased_Neural_Networks\figure_1.jpg
+  Figure 1 caption: Overview of our approach for 3D hand shape and pose recovery.
+    The framework consists of three stages. In Stage 1, V2V-PoseNet accurately estimates
+    3D joints heatmaps H j (i.e., pose) from the TSDF-based 3D voxelized depth map
+    V D . The final hand shape V out is estimated by the following stages. In Stage
+    2, V2V-ShapeNet and V2S-Net estimate the voxelized shape V S and shape surface
+    V T using 3D-convolution-based neural networks, respectively. Finally, in Stage
+    3, graph-convolution-based mesh registration (i.e., GCN-MeshReg) accurately fits
+    V T to V S . In the registration phase, a voxel feature extractor (VFE) first
+    extracts a feature vector which is connected to each node ( X i , Y i , Z i )
+    of the input graph. The output graph provides the deformed 3D mesh vertices. In
+    the refinement cycle, this estimate is further improved in an iterative manner.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\HandVoxNet_D_Hand_Shape_and_Pose_Estimation_Using_VoxelBased_Neural_Networks\figure_2.jpg
+  Figure 2 caption: Selection of Segments in NRGA++. (a:) Pre-defined MANO hand shape
+    segments in different colors. (b:) MANO hand model provides a prior mapping between
+    21 joints (except end-effectors as fingertips) and overlapping hand segments.
+  Figure 3 Link: articels_figures_by_rev_year\2021\HandVoxNet_D_Hand_Shape_and_Pose_Estimation_Using_VoxelBased_Neural_Networks\figure_3.jpg
+  Figure 3 caption: 'Qualitative comparison of different registration methods on SynHand5M
+    [16] dataset. For a fair comparison, we use the HandVoxNet [17] framework and
+    replace only the registration component by: (a) no registration; see the estimated
+    hand surface (blue) and the ground truth (grey). (b) DispVoxNet; see artifacts
+    and roughness in the estimated shapes. (c) GCN-MeshReg produces much smoother
+    and more accurate final shapes. (d) NRGA produces smoother hand shapes, but the
+    registered shapes are visually less accurate and slightly blown up.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\HandVoxNet_D_Hand_Shape_and_Pose_Estimation_Using_VoxelBased_Neural_Networks\figure_4.jpg
+  Figure 4 caption: "Qualitative Comparison of 3D hand shape estimation on HANDS19\
+    \ [55] dataset: We present a one-to-one comparison of the intermediate and final\
+    \ predictions of the two compared configurations. The first column shows the 3D\
+    \ voxelized depth maps. The second column shows the estimated 3D voxelized hand\
+    \ shapes. The third column shows the overlay of the estimated and the ground-truth\
+    \ hand surfaces. The fourth column shows the overlay of the registered (using\
+    \ the convolutional networks) and the ground-truth hand surfaces. The fifth column\
+    \ shows the final shapes. The right-most column (\u201COur Method\u201D) shows\
+    \ the registered hand shapes using the NRGA++. The red circles highlight the regions\
+    \ where significant differences in the estimations can be observed. Our approach\
+    \ with graph-convolution-based registration (i.e., GCN-MeshReg) shows visually\
+    \ smoother and accurate final shapes."
+  Figure 5 Link: articels_figures_by_rev_year\2021\HandVoxNet_D_Hand_Shape_and_Pose_Estimation_Using_VoxelBased_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Qualitative results on HO-3D [20] dataset. From left to right,
+    we show overlays of the estimated 3D pose, 3D voxelized hand shape, hand surface
+    and the final (registered) shape on the sample 3D voxelized depth inputs, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2021\HandVoxNet_D_Hand_Shape_and_Pose_Estimation_Using_VoxelBased_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Qualitative results of depth-based 3D pose estimation on HANDS19
+    [55] dataset. The top row shows the overlay of the estimated 3D pose on 3D voxelized
+    depth input, and the bottom row shows the corresponding 2D overlay on to the depth
+    image. The 3D view helps to better visualize the error in the estimated third
+    dimension. Our 3D pose estimation results are more accurate compared to the occupancy-grid-based
+    method [17], see the red circles for their differences.
+  Figure 7 Link: articels_figures_by_rev_year\2021\HandVoxNet_D_Hand_Shape_and_Pose_Estimation_Using_VoxelBased_Neural_Networks\figure_7.jpg
+  Figure 7 caption: Failure case. Our method is unable to produce plausible shapes
+    in cases of severe occlusion of hand parts. We show our pose and shape estimations
+    on a challenging input where most hand parts are occluded by an object.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Jameel Malik
+  Name of the last author: Didier Stricker
+  Number of Figures: 7
+  Number of Tables: 6
+  Number of authors: 7
+  Paper title: 'HandVoxNet++: 3D Hand Shape and Pose Estimation Using Voxel-Based
+    Neural Networks'
+  Publication Date: 2021-11-02 00:00:00
+  Table 1 caption: TABLE 1 The Architecture Details of the Voxel Feature Extractor
+    (VFE) in GCN-MeshReg
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Ablation Study on Inputs (i.e., H j Hj and V \u2032 D\
+    \ VD) to V2S-Net and V2V-ShapeNet on SynHand5M [16]"
+  Table 3 caption: TABLE 3 Comparison of Different Registrations and the State of
+    the Arts on SynHand5M [16]
+  Table 4 caption: TABLE 4 3D Hand Shape Estimation Results on HANDS19 (Task 1) [55]
+    Dataset
+  Table 5 caption: TABLE 5 Comparison With the State-of-the-Art Methods in the Task
+    of Depth-Based 3D Pose Estimation in HANDS 2019 Challenge
+  Table 6 caption: 'TABLE 6 Runtimes: Forward-Pass of Deep Networks on GPU'
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3122874
+- Affiliation of the first author: wormpex ai research, bellevue, wa, usa
+  Affiliation of the last author: department of cognitive science, university of california,
+    san diego, ca, usa
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Gang Hua
+  Name of the last author: Zhuowen Tu
+  Number of Figures: 0
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: 'Editorial: Introduction to the Special Section on CVPR2019 Best Papers'
+  Publication Date: 2021-11-03 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3080715
+- Affiliation of the first author: amazon robotics, north reading, ma, usa
+  Affiliation of the last author: department of computer science, stony brook university,
+    stony brook, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_1.jpg
+  Figure 1 caption: "Shadow Removal via Shadow Image Decomposition. A shadow-free\
+    \ image I shadow-free can be expressed in terms of a shadow image I shadow , a\
+    \ relit image I relit and a shadow matte \u03B1 . The relit image is a linear\
+    \ transformation of the shadow image. The two unknown factors of this system are\
+    \ the shadow parameters (w,b) and the shadow matte layer \u03B1 . We use two deep\
+    \ networks to estimate these two unknown factors."
+  Figure 10 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_10.jpg
+  Figure 10 caption: "Comparison of fully-supervised shadow removal methods on the\
+    \ ISTD dataset. Qualitative comparison between our method and previous state-of-the-art\
+    \ methods: ST-CGAN [32], Cun et al.[58], and DSC [41]. \u201CSP+M+I-Net\u201D\
+    \ are the shadow removal results using the parameters computed from SP-Net, the\
+    \ shadow matte computed from M-Net, and the residual layer computed from I-Net."
+  Figure 2 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_2.jpg
+  Figure 2 caption: "Shadow Removal Framework. The shadow parameter estimator network\
+    \ SP-Net takes as input the shadow image and the shadow mask to predict the shadow\
+    \ parameters (w,b) . The relit image I relit is then computed via Eq. (6) using\
+    \ the estimated parameters from SP-Net. The relit image, together with the input\
+    \ shadow image and the shadow mask are then input into the shadow matte prediction\
+    \ network M-Net to get the shadow matte layer \u03B1 . The system outputs the\
+    \ shadow-free image via Eq. (5), using the shadow image, the relit image, and\
+    \ the shadow matte. SP-Net learns to predict the shadow parameters (w,b) , denoted\
+    \ as the regression loss. M-Net learns to minimize the L 1 distance between the\
+    \ output of the system and the shadow-free image (reconstruction loss). I-Net\
+    \ takes as input the shadow image, shadow mask, and the shadow-free image computed\
+    \ from SP-Net and M-Net to output a residual image that is used to obtain the\
+    \ final shadow-free image."
+  Figure 3 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_3.jpg
+  Figure 3 caption: 'A comparison of the ground truth shadow mask and our shadow matte.
+    From left to right: The input image, the relit image computed from the parameters
+    estimated via SP-Net, the ground truth shadow mask, the final results when we
+    use the shadow mask, the shadow matte computed using our M-Net, and the final
+    shadow-free image when we use the shadow matte to combine the input and relit
+    image. The matting layer handles the soft shadow and does not generate visible
+    boundaries in the final result. (Please view in magnification on a digital device
+    to see the difference more clearly.)'
+  Figure 4 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_4.jpg
+  Figure 4 caption: The penumbra area of the shadow. We define two areas alongside
+    the shadow boundary, denoted as M in (shown in green) and M out (shown in red).
+    These two areas roughly define a small region surrounding the shadow boundary,
+    which can be considered as the penumbra area of the shadow.
+  Figure 5 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_5.jpg
+  Figure 5 caption: 'The effect of the inpainting network, I-Net. From left to right:
+    The input images, the shadow-free images computed from our SP-Net and M-Net (SP+M-Net),
+    the error heat maps of the SP+M-Nets results, the shadow-free images computed
+    with the addition of the inpainting network I-Net (SP+M+I-Net), and the error
+    heat maps of SP+M+I-Nets results. The inpainting network I-Net partially corrects
+    the colors of the pixels in the umbra areas.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_6.jpg
+  Figure 6 caption: Weakly-supervised shadow decomposition. We train our SP-Net and
+    M-Net together with an adversarial network, D-Net, using only two sets of unpaired
+    shadow and shadow free patches. These patches are cropped directly from the shadow
+    images (left panel). SP-Net and M-Net predict the shadow parameters (w,b) and
+    the matte layer alpha respectively to jointly remove the shadow. D-Net is the
+    critic function distinguishing between the generated image patches and the real
+    shadow-free patches. The only supervision signal is the set of shadow-free patches,
+    which can be easily obtained using the shadow masks. The four losses guiding this
+    training are the matting loss, smoothness loss, boundary loss, and adversarial
+    loss.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_7.jpg
+  Figure 7 caption: Weakly-supervised shadow image decomposition. With only shadow
+    mask supervision, our method automatically learns to decompose the shadow effect
+    in the input image patch Isd into a matte layer alpha and a relit image Irelit
+    . The matte layer alpha combines Isd and Irelit to obtain a shadow-free image
+    patch Ioutput via Eq. (5).
+  Figure 8 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_8.jpg
+  Figure 8 caption: 'An example of our color correction method. From left to right:
+    input shadow image, provided shadow-free ground truth image (GT) from ISTD dataset,
+    and the GT image corrected by our method. Comparing to the input shadow image
+    on the non-shadow area only, the mean-absolute distance of the original GT is
+    12.9. This value on our corrected GT becomes 2.9.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\PhysicsBased_Shadow_Image_Decomposition_for_Shadow_Removal\figure_9.jpg
+  Figure 9 caption: 'Shadow removal results of our model at different stages. From
+    left to right: input shadow images, shadow-free images obtained using SP-Net with
+    shadow masks from [55], shadow-free images generated by SP-Net and M-Net, and
+    shadow-free image generated by our full system with SP-Net, M-Net, and I-Net.
+    The bottom row visualizes the differences between each image and the ground truth
+    shadow-free image.'
+  First author gender probability: 0.79
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hieu Le
+  Name of the last author: Dimitris Samaras
+  Number of Figures: 16
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Physics-Based Shadow Image Decomposition for Shadow Removal
+  Publication Date: 2021-11-04 00:00:00
+  Table 1 caption: TABLE 1 Shadow Removal Results of Our Fully-Supervised Method Compared
+    to State-of-the-Art Shadow Removal Methods on the Adjusted Ground Truth
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Shadow Removal Results of Our Weakly-Supervised Method
+    Compared to Weakly-Supervised and Priors-Based Shadow Removal Methods on the Adjusted
+    ISTD Testing Set [32]
+  Table 3 caption: TABLE 3 Ablation Studies
+  Table 4 caption: TABLE 4 Shadow Removal Results on Our Proposed SBU-Timelapse Dataset
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3124934
+- Affiliation of the first author: school of information science and technology, shanghaitech
+    university, shanghai, china
+  Affiliation of the last author: shanghai engineering research center of intelligent
+    vision and imaging, shanghai engineering research center of energy efficient and
+    custom ai ic, school of information science and technology, shanghaitech university,
+    shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_1.jpg
+  Figure 1 caption: (a) shows the width range of bounding boxes in ShanghaiTech PartB
+    training data, where we generate these bounding boxes with nearest neighbors [1].
+    (b) is the generated ground-truth density map with depth-adaptive kernel. (c)
+    shows the estimated bounding boxes in our RGB-D dataset with depth information.
+    (d) shows GAMEs of different methods on ShanghaiTech PartB dataset, which roughly
+    hints that our method can obtain a better localization of heads.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_2.jpg
+  Figure 2 caption: The ShanghaiTechRGBD-Syn and ShanghaiTechRGBD datasets. Each column
+    from left to right shows RGB, depth, point annotation and bounding box annotation,
+    respectively. Examples with different population densities are depicted in rows.
+    Best viewed with zoom-in.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_3.jpg
+  Figure 3 caption: The relationship between the radii of a human head in practice
+    and head in an image.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_4.jpg
+  Figure 4 caption: The data distribution on the ShanghaiTechRGBD-Syn and ShanghaiTechRGBD
+    datasets.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_5.jpg
+  Figure 5 caption: 'The proposed Dual-Path guided detection network (DPDNet), whose
+    inputs consists of RGB image, depth map and predicted depth-adaptive density map.
+    DPDNet mainly contains two paths: density map guided detection module and depth-guided
+    detection module.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_6.jpg
+  Figure 6 caption: The detection results of DPDNet on ShanghaiTechRGBD, ShanghaiTechRGBD-Syn,
+    and MICC are listed in different rows. We denote ShanghaiTechRGBD and ShanghaiTechRGBD-Syn
+    as STH RGBD and STH RGBD-Syn, respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_7.jpg
+  Figure 7 caption: (a), (b), (c) (d) are APloc comparisons on the ShanghaiTechRGBD-Syn,
+    ShanghaiTechRGBD, MICC and ShanghaiTech PartB datasets, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_8.jpg
+  Figure 8 caption: The RGB image and depth completion results of SAIC, VNL (w.o.
+    finetune on ShanghaiTechRGBD, VNL (finetune on ShanghaiTechRGBD) and our method
+    on the ShanghaiTechRGBD dataset are listed from top to bottom, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Locating_and_Counting_Heads_in_Crowds_With_a_Depth_Prior\figure_9.jpg
+  Figure 9 caption: The detection results of DPDNet on ShanghaiTech PartA, WorldExpo10
+    and NWPU-Crowd datasets are listed from top to bottom, respectively. The left
+    column shows ground-truth and the right one is predictions from DPDNet.
+  First author gender probability: 0.64
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Dongze Lian
+  Name of the last author: Shenghua Gao
+  Number of Figures: 9
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Locating and Counting Heads in Crowds With a Depth Prior
+  Publication Date: 2021-11-04 00:00:00
+  Table 1 caption: 'TABLE 1 Comparisons of ShanghaiTechRGBD-Syn and ShanghaiTechRGBD
+    With the Existing Synthetic Dataset and Real-World RGB-D Datasets: Num is the
+    Number of Images; Max is the Maximal Crowd Count Within One Image; Min is the
+    Minimal Crowd Count; Ave is the Average Crowd Count; Total is Total Number of
+    Labeled Heads'
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Evaluations of Different Methods on the ShanghaiTechRGBD-Syn,
+    ShanghaiTechRGBD and MICC Datasets
+  Table 3 caption: TABLE 3 The GAME Performance of Different Methods on the ShanghaiTechRGBD
+    Dataset
+  Table 4 caption: TABLE 4 The Performance of Head Detection in Three Parts on the
+    ShanghaiTechRGBD Dataset
+  Table 5 caption: TABLE 5 Performance Comparisons on the ShanghaiTech Dataset
+  Table 6 caption: TABLE 6 Performance Comparisons (MAE) on the WorldExpo10 Dataset
+  Table 7 caption: TABLE 7 Performance Comparisons on the UCF-QNRF Dataset
+  Table 8 caption: TABLE 8 Performance Comparisons on the NWPU-Crowd Dataset
+  Table 9 caption: TABLE 9 The First Row the Results Trained From Scratch on ShanghaiTechRGBD,
+    and Others Show the Fine-Tuning Results of Our Method on ShanghaiTechRGBD With
+    Pretrained Model From ImageNet and ShanghaiTechRGBD-Syn, Respectively
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3124956

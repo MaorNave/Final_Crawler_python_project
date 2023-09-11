@@ -1,0 +1,787 @@
+- Affiliation of the first author: school of information and communication engineering,
+    university of electronic science and technology of china, chengdu, sichuan, china
+  Affiliation of the last author: megvii technology, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_1.jpg
+  Figure 1 caption: Our deep homography estimation on challenging cases, compared
+    with one traditional feature-based, i.e., SIFT [14] + RANSAC and one unsupervised
+    DNN-based method [15]. (a) An example with dynamic foreground. (b) A low texture
+    example. (c) A low light example. We mix the blue and green channels of the warped
+    image and the red channel of the target image to obtain the visualization results
+    as above, where the misaligned pixels appear as red or green ghosts. The same
+    visualization method is applied for the rest of this paper.
+  Figure 10 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_10.jpg
+  Figure 10 caption: Results of HDR imaging from Exposure Fusion. Different exposures
+    should be well aligned before the HDR fusion. The second row shows the fusion
+    results of SIFT+RANSAC while the third row shows the results aligned by our Deep
+    Homography.
+  Figure 2 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_2.jpg
+  Figure 2 caption: "The overall structure of our deep homography estimation network\
+    \ (a) and the triplet loss we design to train the network (b). In (a), two input\
+    \ patches I a and I b are fed into two branches consisting of feature extractor\
+    \ f(\u22C5) and mask predictor m(\u22C5) respectively, generating features F a\
+    \ , F b and masks M a , M b . Then the features and masks are fed into a homography\
+    \ estimator to produce 8 values of the homography matrix H ab . In h(\u22C5) ,\
+    \ convolution blocks in various colors differ in the number of channels (detailed\
+    \ in Table 1). To train the network in (a), we design a triplet loss composed\
+    \ of L n ,L as defined in Eqs. (4), (5) and (6)."
+  Figure 3 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_3.jpg
+  Figure 3 caption: "Ablation study on the effectiveness of our feature extractor,\
+    \ demonstrated by examples with illuminance change, displayed separately in the\
+    \ left and right two columns. For each example, the input and target GT images\
+    \ are in Row 1, followed by the results by disabling the feature extractor f(\u22C5\
+    ) (Row 2) and by ours (Row 3), including the learned masks and the aligned results\
+    \ in odd and even columns. As seen, our results are obviously stable for such\
+    \ a case."
+  Figure 4 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_4.jpg
+  Figure 4 caption: 'Row 1 and 2: Our predicted masks for various of scenes. (a) and
+    (b) contains large dynamic foreground. (c) contains few textures and (d) is an
+    night example. Row 3 and 4: Ablation study on the content-aware mask. We disable
+    both or either role of the mask to compare with ours. Errors are shown at the
+    bottom for all cases.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_5.jpg
+  Figure 5 caption: Examples where the foreground object is the dominant plane in
+    an image. The network treats the foreground dominant plane as the inlier while
+    backgrounds as the outliers. We show the overlapped input images in Row 1, the
+    aligned images in Row 2, and the inlier masks in Row 3.
+  Figure 6 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_6.jpg
+  Figure 6 caption: The network structure being generalized to MeshFlow, namely Deep
+    MeshFlow. The hidden part of the network is the same as the one in Fig. 2.
+  Figure 7 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_7.jpg
+  Figure 7 caption: 'A glance of our dataset. For left 6 columns, from top to bottom:
+    regular (RE), low texture (LT), low light (LL) examples, examples of small foreground
+    (SF) and large foreground (LF). The rightmost column shows two examples of human
+    labeled point correspondences for quantitative evaluation.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_8.jpg
+  Figure 8 caption: Comparison with existing DNN-based approaches. Column 1 shows
+    the input and GT target images, columns 2 to 4 are results by the supervised [17],
+    the unsupervised [15] and our method. The errors by all the DNN-based methods
+    are displayed by a bar chart at the bottom.
+  Figure 9 Link: articels_figures_by_rev_year\2022\ContentAware_Unsupervised_Deep_Homography_Estimation_and_its_Extensions\figure_9.jpg
+  Figure 9 caption: Comparison with 8 feature-based solutions on 3 examples, shown
+    in (a)(d), (b)(e) and (c)(f). For the first 2 examples, our method produces more
+    accurate results, while for the last one but not the least, most of the feature-based
+    solutions fail extremely, which is a frequent phenomenon for the low texture or
+    low light scenes. We also display the errors by all the methods in the bar chart
+    at the bottom right corner.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Shuaicheng Liu
+  Name of the last author: Jian Sun
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 8
+  Paper title: Content-Aware Unsupervised Deep Homography Estimation and its Extensions
+  Publication Date: 2022-05-10 00:00:00
+  Table 1 caption: TABLE 1 Layer Configurations of Feature Extractor (a), Mask Predictor
+    (b) and Homography Estimator (c)
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Quantitative Comparison Between Ours and all Other Methods\
+    \ Including DNN-Based (Row 3, 4) and Feature-Based (Row 5\u223C12 5\u223C12) ones"
+  Table 3 caption: TABLE 3 Quantitative Comparison Between Our Method and Other Methods
+    on the Illumination Change Scenes in HPatches Benchmark [48]
+  Table 4 caption: TABLE 4 Quantitative Comparison Between Our Method and Semantic
+    Alignment Methods Including RTNs [40] (Row 2) and WeakAlign [39] (Row 3)
+  Table 5 caption: "TABLE 5 Ablation Studies on Mask (Rows 2 \u223C \u223C 5), Triplet\
+    \ Loss (Row 6), Feature Extractor (Row 7), Backbones (Rows 8\u223C10 8\u223C10)\
+    \ and Training Strategy (Row 11)"
+  Table 6 caption: "TABLE 6 Quantitative Comparison Between Our Deep Meshflow Method\
+    \ and all Other Methods Including Traditional Mesh-Based (Row 3, 4) and Homography-Based\
+    \ (Row 5\u223C7 5\u223C7)"
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174130
+- Affiliation of the first author: "ligm, ecole des ponts, cnrs, universit\xE9 gustave\
+    \ eiffel, marne-la-vall\xE9e, france"
+  Affiliation of the last author: "ligm, ecole des ponts, cnrs, universit\xE9 gustave\
+    \ eiffel, marne-la-vall\xE9e, france"
+  Figure 1 Link: articels_figures_by_rev_year\2022\FewShot_Object_Detection_and_Viewpoint_Estimation_for_Objects_in_the_Wild\figure_1.jpg
+  Figure 1 caption: Few-shot object detection and viewpoint estimation. Starting with
+    images labeled with bounding boxes and viewpoints of objects from base classes,
+    and given only a few similarly labeled images for new categories (top), we predict
+    in a query image the 2D location of objects of new categories, as well as their
+    3D poses, optionally leveraging just a few arbitrary 3D class models (bottom).
+    To the best of our knowledge, we are the first to conduct this joint task of object
+    detection and viewpoint estimation in the few-shot regime.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\FewShot_Object_Detection_and_Viewpoint_Estimation_for_Objects_in_the_Wild\figure_2.jpg
+  Figure 2 caption: Examples of class data for object detection (left) & viewpoint
+    estimation (right). While the images with box masks capture the characteristic
+    appearances and the common context for different classes, the point clouds in
+    a canonical object space capture the geometric information such as the principal
+    axis of symmetry and the position of the main object parts.
+  Figure 3 Link: articels_figures_by_rev_year\2022\FewShot_Object_Detection_and_Viewpoint_Estimation_for_Objects_in_the_Wild\figure_3.jpg
+  Figure 3 caption: Method overview. (a) For object detection, we sample for each
+    class c one image x in the training set containing an object j of class c , to
+    which we add an extra channel for the binary mask mask j of the ground-truth bounding
+    box box j of object j . Each corresponding vector of class features f cls c (red)
+    is then combined with each vector of query features f qry i (blue) associated
+    to one of the region of interest i in the query image, via an aggregation module.
+    Finally, the aggregated features f agg i,c pass through a predictor that estimates
+    a class probability cls i,c and regresses a bounding box box i,c . (b) For few-shot
+    viewpoint estimation, we represent the 3D pose using three Euler angles. We estimate
+    them either directly from the query features extracted from the image or, optionally,
+    indirectly from aggregated features made of both query features and class information
+    extracted from a few point clouds with coordinates in a normalized, canonical
+    object space.
+  Figure 4 Link: articels_figures_by_rev_year\2022\FewShot_Object_Detection_and_Viewpoint_Estimation_for_Objects_in_the_Wild\figure_4.jpg
+  Figure 4 caption: Illustration of our category-agnostic viewpoint estimation approach
+    without using 3D models. The network is first trained on abundant labeled images
+    of base classes (left), then fine-tuned on a balanced set of images containing
+    both base and novel classes (right).
+  Figure 5 Link: articels_figures_by_rev_year\2022\FewShot_Object_Detection_and_Viewpoint_Estimation_for_Objects_in_the_Wild\figure_5.jpg
+  Figure 5 caption: Qualitative results of few-shot viewpoint estimation using ground-truth
+    2D bounding boxes (and classes). We visualize results on ObjectNet3D and Pascal3D+.
+    For each category, we show three success cases (first six columns) and one failure
+    case (last two columns). CAD models are shown here only for the purpose of illustrating
+    the estimated viewpoint. Failure cases usually result from appearance ambiguities
+    of a same object in different poses, or from heavily cluttered scenes.
+  Figure 6 Link: articels_figures_by_rev_year\2022\FewShot_Object_Detection_and_Viewpoint_Estimation_for_Objects_in_the_Wild\figure_6.jpg
+  Figure 6 caption: Few-shot viewpoint estimation evaluation using different number
+    of shots. For each metric, we report the average and standard deviation computed
+    over 10 random experiments.
+  Figure 7 Link: articels_figures_by_rev_year\2022\FewShot_Object_Detection_and_Viewpoint_Estimation_for_Objects_in_the_Wild\figure_7.jpg
+  Figure 7 caption: 'Qualitative results of joint few-shot object detection and viewpoint
+    estimation using the predicted 2D bounding boxes given by our object detection
+    model. We visualize results on ObjectNet3D and Pascal3D+. For each category, we
+    show three success cases (the first six columns) and one failure case (the last
+    two columns). For each testing image, we project the CAD model of the corresponding
+    class into the predicted 2D bounding box and rotate it according to the estimated
+    viewpoint. Error cases include: missing target objects (iron, knife, boat); failed
+    classification (motorbike, car); cluttered objects being detected as one (pen);
+    successful detection but failed viewpoint estimation (shoe and airplane).'
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Yang Xiao
+  Name of the last author: Renaud Marlet
+  Number of Figures: 7
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Few-Shot Object Detection and Viewpoint Estimation for Objects in the
+    Wild
+  Publication Date: 2022-05-10 00:00:00
+  Table 1 caption: TABLE 1 Few-Shot Object Detection Evaluation on PASCAL VOC
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Few-Shot Object Detection Evaluation on MS-COCO
+  Table 3 caption: TABLE 3 Ablation Study on the Feature Aggregation Scheme
+  Table 4 caption: TABLE 4 intra-Dataset 10-Shot Viewpoint Estimation Evaluation
+  Table 5 caption: TABLE 5 inter-Dataset 10-Shot Viewpoint Estimation Evaluation
+  Table 6 caption: TABLE 6 Efficacy of Different 3D Representations, If Any
+  Table 7 caption: TABLE 7 evaluation of Joint Few-Shot Detection and Viewpoint Estimation
+  Table 8 caption: TABLE 8 Inter-Dataset Few-Shot Detection and Viewpoint Estimation
+    Evaluation on Pix3D
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174072
+- Affiliation of the first author: laboratory of advanced perception on robotics and
+    intelligent learning, college of control science and engineering, zhejiang university,
+    hangzhou, zhejiang, china
+  Affiliation of the last author: laboratory of advanced perception on robotics and
+    intelligent learning, college of control science and engineering, zhejiang university,
+    hangzhou, zhejiang, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Learning_SpatioTemporal_and_Motion_Features_in_a_Unified_D_Network_for_Action_Re\figure_1.jpg
+  Figure 1 caption: Representations of STM. (a) is the first frame of all inputs (8
+    frames). (b) and (c) are the input features maps F t and F t+1 (here we show examples
+    of t=0) from Conv1 block, which is just before the first STM block. (d) and (e)
+    are the temporal low-frequency and high-frequency components of adjacent input
+    features maps F t and F t+1 (please refer to Sec. 3.3 for details), which show
+    the appearance information and the motion edges, respectively. (f) represents
+    the optical flows extracted by TV-L1. (g) and (h) are the output spatiotemporal
+    feature maps of CSTM and the output motion feature maps of CMM, extracted from
+    the first CSTM and CMM block. It could be found that the CSTM features share some
+    common characteristics with the temporal low-frequency components (d), i.e., the
+    spatiotemporal features learned by CSTM could capture the significant spatial
+    features enhanced by multiple temporal inputs. Moreover, the CMM features could
+    present the motion features of the action subject, similar to the optical flows
+    (f) and the high-frequency components (e).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Learning_SpatioTemporal_and_Motion_Features_in_a_Unified_D_Network_for_Action_Re\figure_2.jpg
+  Figure 2 caption: "The architecture of the Channel-wise SpatioTemporal Module and\
+    \ Channel-wise Motion Module. The feature maps are shown as the shape of their\
+    \ tensors. \u201D \u2296 \u201D denotes element-wise subtraction."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Learning_SpatioTemporal_and_Motion_Features_in_a_Unified_D_Network_for_Action_Re\figure_3.jpg
+  Figure 3 caption: The overall architecture of the STM network. The input video is
+    first split into N segments equally and then one frame from each segment is sampled.
+    We adopt 2D ResNet-50 as the backbone and replace all residual blocks with STM
+    blocks. The last score fusion stage applies a temporal average pooling operation
+    to reduce the temporal dimension.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Learning_SpatioTemporal_and_Motion_Features_in_a_Unified_D_Network_for_Action_Re\figure_4.jpg
+  Figure 4 caption: Twins Training Framework. The input frames are first augmented
+    into two distortions and then go through a shared siamese network to obtain their
+    representations. Next, the two outputs are used to calculate the normal classification
+    loss and also normalized to compute a correlation loss. The framework is only
+    used in training to strengthen the network and will not influence the normal inference
+    process.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Learning_SpatioTemporal_and_Motion_Features_in_a_Unified_D_Network_for_Action_Re\figure_5.jpg
+  Figure 5 caption: 'Examples of temporal-related datasets and scene-related datasets.
+    Top: action for which temporal feature matters. Reversing the order of frames
+    gives the opposite label (opening something versus closing something). Bottom:
+    action for which scene feature matters. Even with only one frame, we can easily
+    predict its label (horse riding).'
+  Figure 6 Link: articels_figures_by_rev_year\2022\Learning_SpatioTemporal_and_Motion_Features_in_a_Unified_D_Network_for_Action_Re\figure_6.jpg
+  Figure 6 caption: "Feature Visualization of the Frequency Degeneration and our STM.\
+    \ The first column represents the original images of the two moments t=0 and t=1\
+    \ of an action \u201Cholding something\u201D. The second column shows the output\
+    \ features of Frequency Degeneration, i.e., fixed CSTM and CMM blocks, which are\
+    \ the temporal low-frequency and high-frequency components of the neighboring\
+    \ input features. The third column presents the output features of our STM, i.e.,\
+    \ the learnable CMM and CSTM blocks. Brighter colors indicate larger values in\
+    \ the feature maps."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Learning_SpatioTemporal_and_Motion_Features_in_a_Unified_D_Network_for_Action_Re\figure_7.jpg
+  Figure 7 caption: Feature visualization with t-SNE [63] on Kinetics-400. Each video
+    is visualized as a point. Videos belonging to the same action category have the
+    same color. Without Twins Training (first row), our STM learns semantically more
+    separable features than TSN [14] and TSM [10]. When equipping with the Twins Training
+    framework (second row), all the three methods inter-class and intra-class distances
+    are dramatically optimized.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.88
+  Name of the first author: Mengmeng Wang
+  Name of the last author: Yong Liu
+  Number of Figures: 7
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: Learning SpatioTemporal and Motion Features in a Unified 2D Network
+    for Action Recognition
+  Publication Date: 2022-05-10 00:00:00
+  Table 1 caption: "TABLE 1 Performance of the STM on the Something-Something v1 and\
+    \ v2 Datasets Compared With the State-of-The-Art Methods. We Report the Inference\
+    \ Cost with a Single \u201CView\u201D (a Temporal Clip with a Spatial Crop) \xD7\
+    \ the Number of Such Views Used (FLOPs \xD7 Views). - Indicates That the Values\
+    \ are not Available to us."
+  Table 10 caption: 'TABLE 10 Type of Convolution: For CSTM, Channel-Wise Temporal
+    Convolution Yields Better Performance. For CMM, Channel-Wise Spatial Convolution
+    Obtains Better Performance.'
+  Table 2 caption: "TABLE 2 Performance of the STM on the Kinetics-400 Dataset Compared\
+    \ With the State-of-The-Art Methods. We Report the Inference Cost with a Single\
+    \ \u201CView\u201D (a Temporal Clip with a Spatial Crop) \xD7 the Number of Such\
+    \ Views Used (FLOPs \xD7 Views). - Indicates that the Values are not Available\
+    \ to us."
+  Table 3 caption: TABLE 3 Performance of the STM on UCF-101 and HMDB-51 Compared
+    With the State-of-The-Art Methods
+  Table 4 caption: TABLE 4 Accuracy and Model Complexity of STM and Other State-of-The-Art
+    Methods on the Something-Something V1 Dataset With a Single Crop. Measured on
+    a Single Geforce RTX 3090 GPU.
+  Table 5 caption: TABLE 5 Online Performance on the Kinetics-400 and Something-Something
+    V1 Datasets
+  Table 6 caption: 'TABLE 6 Impact of Two Modules: Comparison Between CSTM, CMM and
+    STM'
+  Table 7 caption: 'TABLE 7 Fusion of Two Modules: Summation Fusion is Better'
+  Table 8 caption: 'TABLE 8 Frequency Degeneration: Frequency Degeneration Could Achieve
+    a Satisfactory Performance, but Not as Good as Our STM'
+  Table 9 caption: 'TABLE 9 Location and Number of STM Block: Deeper Location and
+    More Blocks Yeild Better Performance'
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3173658
+- Affiliation of the first author: department of computer science, tulane university,
+    new orleans, la, usa
+  Affiliation of the last author: department of computer science, tulane university,
+    new orleans, la, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Maximum_Structural_Generation_Discrepancy_for_Unsupervised_Domain_Adaptation\figure_1.jpg
+  Figure 1 caption: Comparison of MMD and MSGD, where the top row shows that MMD calculates
+    the domain-specific center of all observable instances and narrows down their
+    distance, while the bottom row represents that MSGD explores the cross-domain
+    structural knowledge over target samples to explicitly synthesize an intermediate
+    domain with the specific source samples and utilizes it to bridge source and target.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Maximum_Structural_Generation_Discrepancy_for_Unsupervised_Domain_Adaptation\figure_2.jpg
+  Figure 2 caption: Overview of the proposed architecture. The feature extractor aims
+    to learn domain-invariant representations as the input of classifier. The output
+    of classifier needs to achieve three tasks. First, we exploit the source output
+    to calculate the classification loss. Second, the target prediction is used as
+    pseudo label to select samples for Class-Driven Collaborative Translation (CDCT)
+    module. Moreover, we explore all outputs from various domains to construct structural
+    knowledge and combine it with target features to build the intermediate domain
+    (Green). Finally, we separately adopt class-level and domain-level alignments
+    to conduct domain fusion between intermediate domain and source or target domain.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Maximum_Structural_Generation_Discrepancy_for_Unsupervised_Domain_Adaptation\figure_3.jpg
+  Figure 3 caption: "Problem of traditional sampling manner on collaborative representation.\
+    \ Concretely, the category \u201CBottle\u201D is randomly selected in source mini-batch\
+    \ but does not exist in target mini-batch. Generative instances via collaborative\
+    \ translation from target mini-batch are corresponding to \u201CBottle\u201D but\
+    \ tend to be far from this category."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Maximum_Structural_Generation_Discrepancy_for_Unsupervised_Domain_Adaptation\figure_4.jpg
+  Figure 4 caption: "Feature visualization of the training process on Office-Home\
+    \ dataset. (a): T-SNE of Source and Target domains (Ar \u2192 Cl). (b): T-SNE\
+    \ of Source and Intermediate domains (Ar \u2192 Cl). (c): T-SNE of Target and\
+    \ Intermediate domains (Ar \u2192 Cl). (d): T-SNE of Source and Target domains\
+    \ (Pr \u2192 Cl). (e): T-SNE of Source and Intermediate domains (Pr \u2192 Cl).\
+    \ (f): T-SNE of Target and Intermediate domains (Pr \u2192 Cl). T-SNE is calculated\
+    \ with the output of feature extractor. Red, Blue and Green indicate source, intermediate\
+    \ and target domains, respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Maximum_Structural_Generation_Discrepancy_for_Unsupervised_Domain_Adaptation\figure_5.jpg
+  Figure 5 caption: "Confusion Matrix reporting the accuracy (%) of the prediction\
+    \ and ground truth. Experiments are performed on Image-CLEF dataset about task\
+    \ C \u2192 I. (a): Replace our MSGD with MMD directly constraining source and\
+    \ target domains. (b): Remove CDCT from MSGD. (c): Our MSGD."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Maximum_Structural_Generation_Discrepancy_for_Unsupervised_Domain_Adaptation\figure_6.jpg
+  Figure 6 caption: 'Performance Analysis. (a): ablation study on two tasks. (b):
+    Training stability. (c): Parameter analysis alpha .'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Haifeng Xia
+  Name of the last author: Zhengming Ding
+  Number of Figures: 6
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Maximum Structural Generation Discrepancy for Unsupervised Domain Adaptation
+  Publication Date: 2022-05-11 00:00:00
+  Table 1 caption: 'TABLE 1 Classification Accuracy (%) on Office-31 for Unsupervised
+    Domain Adaptation Tasks (Network Backbone: Resnet-50)'
+  Table 10 caption: Not Available
+  Table 2 caption: 'TABLE 2 Classification Accuracy (%) on Office-Home for Unsupervised
+    Domain Adaptation Tasks (Network Backbone: Resnet-50)'
+  Table 3 caption: 'TABLE 3 Classification Accuracy (%) on Image-CLEF for Unsupervised
+    Domain Adaptation Tasks (Network Backbone: Resnet-50)'
+  Table 4 caption: 'TABLE 4 Classification Accuracy (%) on VisDA-2017 for Unsupervised
+    Domain Adaptation Tasks (Network Backbone: Resnet-101)'
+  Table 5 caption: 'TABLE 5 Classification Accuracy (%) on DomainNet for Unsupervised
+    Domain Adaptation Tasks (Network Backbone: Resnet-101)'
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174526
+- Affiliation of the first author: state key laboratory of virtual reality technology
+    and systems, school of computer science and engineering, beihang university, beijing,
+    china
+  Affiliation of the last author: school of computer science, peking university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_1.jpg
+  Figure 1 caption: 'Evolution of the proposed weakly-supervised part priors. a):
+    pose annotation of training data. b): generated skeleton prior from pose. c):
+    the initial prediction of PADNet. d): boundary-optimized prior of c). e): the
+    iterative prediction supervised by d). f): ground truth mask.'
+  Figure 10 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_10.jpg
+  Figure 10 caption: Two typical failure modes. Input image, our results and ground-truth
+    masks. Our proposed model can be confused in some complex scenarios.
+  Figure 2 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_2.jpg
+  Figure 2 caption: The proposed weakly-supervised learning framework is mainly composed
+    of the task adaptation module and a prior evolution module. The task adaptation
+    module is to generate deep prediction with a joint multi-task adaptation framework,
+    which regularizes the part features by additional pose and object-level supervision.
+    The Prior evolution module is to refine the pseudo part priors, which relies on
+    the deep predicted potential of PADNet. These two modules work iteratively to
+    get refined part masks. The red dotted line indicates the update process of part
+    priors.
+  Figure 3 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_3.jpg
+  Figure 3 caption: 'Architecture of the proposed PADNet. We construct a multi-task
+    learning framework with three related tasks: pose estimation, part segmentation,
+    and object segmentation. The pose estimation task provides the channel-wise adaptation
+    to enhance the existence of related part, and the object segmentation task regularizes
+    the predicted parts to form a holistic object.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_4.jpg
+  Figure 4 caption: Illustration of the boundary-aware optimization. Given an input
+    image in a), we first exploit the class-agnostic boundaries in d), where the red
+    dots in d) represent the negative pixels that cross the global boundaries, while
+    the blue pixels are the positive ones. Our optimization process is based on predicted
+    prior in b) and initial activations in c). The refined prior in e) after optimization
+    generates sharp boundaries and the activation outputs of the networks are refined
+    as in f).
+  Figure 5 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_5.jpg
+  Figure 5 caption: 'Qualitative results on PASCAL-Person-Part Dataset. Ours: trained
+    with 1.7 k images with pose annotations on PASCAL-Part. Ours+: trained with 1.7
+    k images on PASCAL-Part and 10 k images on COCO. Strongly: Deeplabv3 with pixel-wise
+    annotation on PASCAL-Person-Part.'
+  Figure 6 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_6.jpg
+  Figure 6 caption: Comparison experiments on Leeds Sports Pose Dataset. JPPNet [3]
+    and Deeplabv3 [28] adopt the pixel-wise part annotations as supervision, while
+    PADNet adopts the pose annotations as supervision.
+  Figure 7 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_7.jpg
+  Figure 7 caption: Part prior evolution results on PASCAL-Person-Part Dataset. We
+    first generate skeleton masks (second column) as pseudo training data, then we
+    optimized the prediction with boundary knowledge as boundary optimization (third
+    column). The final results of PADNet are in the fourth column.
+  Figure 8 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_8.jpg
+  Figure 8 caption: 'Ablation study with different settings of our proposed PADNet.
+    CA: our proposed channel adaptor. M pose and M obj denote the pose estimation
+    module and the object segmentation module. M bound denotes the boundary optimization
+    module with iterative training.'
+  Figure 9 Link: articels_figures_by_rev_year\2022\From_Pose_to_Part_WeaklySupervised_Pose_Evolution_for_Human_Part_Segmentation\figure_9.jpg
+  Figure 9 caption: Comparison of different semi-supervised settings on Densepose
+    part dataset. PartMasks denotes the number of pixel-level part masks. Part and
+    Part+Pose column denote the training setting with only part masks and with both
+    part masks and pose annotations respectively.
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.74
+  Name of the first author: Yifan Zhao
+  Name of the last author: Yonghong Tian
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'From Pose to Part: Weakly-Supervised Pose Evolution for Human Part
+    Segmentation'
+  Publication Date: 2022-05-11 00:00:00
+  Table 1 caption: TABLE 1 Comparison Experiments With State-of-the-Art Strongly-
+    and Weakly-Supervised Methods on Pascal-Person-Part Benchmark (mIoU)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Trimap mIoU Evaluation on Pascal-Person-Part Dataset
+  Table 3 caption: TABLE 3 Segmentation Performance of mIoU on Leeds Sports Pose Dataset
+  Table 4 caption: TABLE 4 Performance of Part Evolution on Training Set
+  Table 5 caption: TABLE 5 Performance With Different Settings on PASCAL-Person-Part
+    Test Set
+  Table 6 caption: TABLE 6 Performance of Semi-Supervised Training on PASCAL-Person-Part
+    Test Set
+  Table 7 caption: 'TABLE 7 mIoU of Object Segmentation Mask on PASCAL-Part Training
+    Dataset. M bound Mbound: Boundary Optimization Module'
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174529
+- Affiliation of the first author: department of electrical and computer engineering,
+    the university of texas at austin, austin, tx, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    the university of texas at austin, austin, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Bag_of_Tricks_for_Training_Deeper_Graph_Neural_Networks_A_Comprehensive_Benchmar\figure_1.jpg
+  Figure 1 caption: Training loss under different skip connections on PubMed with
+    16 layers SGC. Dense connection is omitted due to different scales of loss magnitude.
+    More are included in Section C.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Bag_of_Tricks_for_Training_Deeper_Graph_Neural_Networks_A_Comprehensive_Benchmar\figure_2.jpg
+  Figure 2 caption: "Average test accuracy (%) from 100 independent repetitions on\
+    \ Cora, PubMed, and OGBN-ArXiv graphs respectively. Ours indicates our best combo\
+    \ of tricks on the corresponding dataset. \u2212+ means addremove certain tricks\
+    \ from the trick combos. The top-performing setups are highlighted with red points."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Bag_of_Tricks_for_Training_Deeper_Graph_Neural_Networks_A_Comprehensive_Benchmar\figure_3.jpg
+  Figure 3 caption: "The hyperparameter investigation of GCNII on Cora, Citeseer,\
+    \ Pubmed, and OGBN-ArXiv. Node classification accuracies are presented in a manner\
+    \ of heatmap. From top to bottom, learning rate (LR), weight decay for the hidden\
+    \ layers (WD 1), weight decay for the prediction layer (WD 2), dropout (DP), and\
+    \ hidden dimension (HD) traverse from left to right in 0.01,0.001,0.0001 , 0,0.01,0.001,0.0001\
+    \ , 0,1\xD7 10 \u22124 ,2\xD7 10 \u22124 ,5\xD7 10 \u22124 , 0.1,0.2,0.5,0.7 ,\
+    \ and 128,256,512 , respectively."
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tianlong Chen
+  Name of the last author: Zhangyang Wang
+  Number of Figures: 3
+  Number of Tables: 11
+  Number of authors: 7
+  Paper title: 'Bag of Tricks for Training Deeper Graph Neural Networks: A Comprehensive
+    Benchmark Study'
+  Publication Date: 2022-05-11 00:00:00
+  Table 1 caption: TABLE 1 Configurations of Basic Hyperparameters Adopted to Implement
+    Different Approaches for Training Deep GNNs on Cora [44]
+  Table 10 caption: TABLE 10 Training Time per Epoch (Ms) and the Max Allocated Memory
+    (MB) for Normalization Tricks
+  Table 2 caption: "TABLE 2 The \u201CSweet Point\u201D Hyperparameter Configuration\
+    \ We Used on Representative Datasets"
+  Table 3 caption: TABLE 3 Test accuracy (%) Under Different Skip Connection Mechanisms
+  Table 4 caption: TABLE 4 Test Accuracy (%) Under Different Graph Normalizations
+  Table 5 caption: TABLE 5 Test Accuracy (%) Under Different Random Dropping
+  Table 6 caption: TABLE 6 Average Test Accuracy (%) and Its Standard Deviations from
+    100 Independent Repetitions W. or W.O. the Identity Mapping
+  Table 7 caption: TABLE 7 Test Accuracy (%) Comparison With Other Previous State-of-the-Art
+    Frameworks
+  Table 8 caption: TABLE 8 Transfer Studies of Our Trick Combos Based on SGC (Ours)
+  Table 9 caption: TABLE 9 Training Time per Epoch (Ms) and the Max Allocated Memory
+    (MB) for Skip Connection Tricks
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174515
+- Affiliation of the first author: x-lab, guangdong virtual reality technology co.,
+    ltd., shenzhen, guangdong, china
+  Affiliation of the last author: x-lab, guangdong virtual reality technology co.,
+    ltd., shenzhen, guangdong, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_1.jpg
+  Figure 1 caption: Existing fiducial markers. (a)-(c) Common checkerboard markers.
+    (d) Checkerboard marker with fixed regions. (e) Marker with dense dots arranged
+    on circles.
+  Figure 10 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_10.jpg
+  Figure 10 caption: Data synthesis. (a) Random marker locations. (b) Adding the markers.
+    (c) Final synthetic image.
+  Figure 2 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_2.jpg
+  Figure 2 caption: A general marker design supported by DeepTag. It supports using
+    C categories of local patterns that represent C possible digital symbols.
+  Figure 3 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_3.jpg
+  Figure 3 caption: Examples of new marker design supported by DeepTag. (a) AprilTag
+    with new patterns. (b) Markers with four different patterns. (c) RuneTag with
+    four more keypoints.
+  Figure 4 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_4.jpg
+  Figure 4 caption: System overview. A two-stage scheme is adopted to detect marker
+    ROIs and estimate keypoints for each ROI. Marker 6-DoF poses and ID information
+    can then be determined.
+  Figure 5 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_5.jpg
+  Figure 5 caption: "Keypoint definition for existing markers. Compared with the original\
+    \ definition, DeepTag utilizes keypoints that are dense and regularly arranged.\
+    \ Green, red, and blue dots are three types of keypoints with \u201C0,\u201D \u201C\
+    1\u201D and non-encoding bit. (a-c) Keypoint definitions of the original methods.\
+    \ (d-f) Keypoint definitions in DeepTag."
+  Figure 6 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_6.jpg
+  Figure 6 caption: "Network structure for ROI and keypoint detection. \u201CConv\u201D\
+    \ and \u201CDW Conv\u201D denote convolutional layer and depthwise convolutional\
+    \ layer respectively, \u201Ck1\u201D and \u201Ck3\u201D for spatial kernels of\
+    \ size 1 and 3, \u201Cs2\u201D for convolution with a stride of 2, and \u201C\
+    EW Add\u201D for element-wise addition."
+  Figure 7 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_7.jpg
+  Figure 7 caption: ROI prediction and refinement. (a) Initial ROI (red) and refined
+    ROI (cyan). (b) Patch warped from (a) with initial ROI. (c) Patch warped from
+    (a) with refined ROI.
+  Figure 8 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_8.jpg
+  Figure 8 caption: ROI refinement.
+  Figure 9 Link: articels_figures_by_rev_year\2022\DeepTag_A_General_Framework_for_Fiducial_Marker_Design_and_Detection\figure_9.jpg
+  Figure 9 caption: ROI definition. (a) ROI definition for RuneTag with vertices of
+    the minor and major axis of the ellipse. (b) ROI definition for one of our newly-designed
+    marker with four keypoints of two classes where P3 is with a different class label
+    against lbrace P1, P2, P4rbrace .
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.83
+  Name of the first author: Zhuming Zhang
+  Name of the last author: Jingwen Dai
+  Number of Figures: 21
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: 'DeepTag: A General Framework for Fiducial Marker Design and Detection'
+  Publication Date: 2022-05-12 00:00:00
+  Table 1 caption: TABLE 1 Pose Results on Yus Dataset [6]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Pose Results on Our New Dataset
+  Table 3 caption: TABLE 3 Timing Statistics of DeepTag (In Sec.)
+  Table 4 caption: TABLE 4 Comparison of Timing Statistics (In Sec.) Under Different
+    Noise Levels
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174603
+- Affiliation of the first author: department of electrical and computer engineering,
+    mcgill university, montreal, qc, canada
+  Affiliation of the last author: "international laboratory on learning systems (ills),\
+    \ mcgill - ets - mila - cnrs - universit\xE9 paris saclay - centralesupelec, montreal,\
+    \ qc, canada"
+  Figure 1 Link: articels_figures_by_rev_year\2022\Adversarial_Robustness_Via_FisherRao_Regularization\figure_1.jpg
+  Figure 1 caption: "Illustration of FRD between two distributions q \u03B8 = q \u03B8\
+    \ (\u22C5|x) and q \u2032 \u03B8 = q \u03B8 (\u22C5| x \u2032 ) over the statistical\
+    \ manifold C ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Adversarial_Robustness_Via_FisherRao_Regularization\figure_2.jpg
+  Figure 2 caption: "Visualization of statistical manifold C defined by the model\
+    \ q \u03B8 (y|x)=1[1+exp(\u2212y \u03B8 \u22BA x)] with different values of \u03B8\
+    \ : (a) Parameters minimizing the natural misclassification error probability\
+    \ P e , (b) Parameters minimizing the adversarial misclassification error probability\
+    \ P \u2032 e ."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Adversarial_Robustness_Via_FisherRao_Regularization\figure_3.jpg
+  Figure 3 caption: "FRD between the distributions q \u03B8 (\u22C5|x) and q \u03B8\
+    \ (\u22C5| x \u2032 ) as a function of \u03B4 using the logistic model with different\
+    \ values of \u03B8 : (a) Parameters minimizing the natural misclassification error\
+    \ probability P e , (b) Parameters minimizing the adversarial misclassification\
+    \ error probability P \u2032 e ."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Adversarial_Robustness_Via_FisherRao_Regularization\figure_4.jpg
+  Figure 4 caption: "Visualization of statistical manifold C defined by the model\
+    \ q \u03B8 (y|x)=1[1+exp(\u2212y \u03B8 \u22BA x)] when minimizing the Fire risk\
+    \ function for different values of \u03BB : (a) No adversarial FRD regularization,\
+    \ (b) Medium adversarial FRD regularization, (c) High adversarial FRD regularization."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Adversarial_Robustness_Via_FisherRao_Regularization\figure_5.jpg
+  Figure 5 caption: Comparison between FRD and euclidean distance.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Adversarial_Robustness_Via_FisherRao_Regularization\figure_6.jpg
+  Figure 6 caption: Plot of all the possible points (1-Pe(mathbftheta), 1-Peprime
+    (mathbftheta)) for the Gaussian model with varepsilon = 0.1 , mathbfmu = [-0.0218;
+    0.0425] and mathbfSigma = [ 0.0212, 0.0036; 0.0036, 0.0042] shown in blue. In
+    red, we show the Pareto-optimal points (Fig. 6a). In black, we show the solutions
+    obtained by minimizing the risk Ltext TRADES(mathbftheta) in (5) (Fig. 6b), and
+    the risk Ltext FIRE(mathbftheta) in (7) (Fig. 6c).
+  Figure 7 Link: articels_figures_by_rev_year\2022\Adversarial_Robustness_Via_FisherRao_Regularization\figure_7.jpg
+  Figure 7 caption: Influence of the hyperparameter lambda on the natural and adversarial
+    accuracies for Fire regularizer on CIFAR-10.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Marine Picot
+  Name of the last author: Pablo Piantanida
+  Number of Figures: 7
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: Adversarial Robustness Via Fisher-Rao Regularization
+  Publication Date: 2022-05-12 00:00:00
+  Table 1 caption: "TABLE 1 Comparison Between KL and Fisher-Rao Based Regularizer\
+    \ Under White-Box l \u221E l\u221E Threat Model"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Test Robustness on Different Datasets Under White-Box\
+    \ l \u221E l\u221E Attack"
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174724
+- Affiliation of the first author: school of artificial intelligence, optics and electronics
+    (iopen), northwestern polytechnical university, xian, china
+  Affiliation of the last author: school of artificial intelligence, optics and electronics
+    (iopen), northwestern polytechnical university, xian, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Manifold_Neural_Network_With_NonGradient_Optimization\figure_1.jpg
+  Figure 1 caption: A framework of the proposed model. The blue, orange and green
+    nodes represent three different data. As is shown, the reconstruction regression
+    network extracts the deep features whose distribution satisfies a latent regression.
+    Then, on the one hand, a flexible Stiefel manifold is embedded into the label
+    space. On the other hand, these features are assigned with different weights via
+    adaptive learning. Finally, unifying the two kinds of information, the model predicts
+    the labels via SVM.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Manifold_Neural_Network_With_NonGradient_Optimization\figure_2.jpg
+  Figure 2 caption: Relationship between loss, accuracy, and iterations for DNN-Adam
+    and proposed network on datasets including UMIST, MNIST-Mini. The four figures
+    show the performance and convergence of methods.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Manifold_Neural_Network_With_NonGradient_Optimization\figure_3.jpg
+  Figure 3 caption: "Accuracy and F1-score of the proposed network w.r.t the varying\
+    \ parameter \u03BB\u2208 2 \u22123 , 2 \u22122 , 2 \u22121 , 2 0 , 2 1 , 2 2 ,\
+    \ 2 3 ."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Manifold_Neural_Network_With_NonGradient_Optimization\figure_4.jpg
+  Figure 4 caption: Running time on the benchmark. 4(a) is the running time of the
+    MKVM and ours on the benchmark. 4(b) is the running time of the DNN and ours on
+    the benckmark.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Rui Zhang
+  Name of the last author: Hongyuan Zhang
+  Number of Figures: 4
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Manifold Neural Network With Non-Gradient Optimization
+  Publication Date: 2022-05-12 00:00:00
+  Table 1 caption: TABLE 1 Datasets Description
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Accuracy(%) and F1-Score(%) on Benchmark Datasets
+  Table 3 caption: TABLE 3 Ablation Study on Three Datasets
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174574
+- Affiliation of the first author: department of computer science & engineering, the
+    chinese university of hong kong, hong kong
+  Affiliation of the last author: department of computer science & engineering, the
+    chinese university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_1.jpg
+  Figure 1 caption: Comparison between our method and previous ones. Previous re-sampling
+    and re-weighting balance input space and loss space respectively, with effect
+    on the model parameters. Our method is built regarding the most fundamental parameter
+    space, individually preserves specialized parameters for the head, medium, and
+    tail classes with three sub-branches. These sub-branches are combined finally
+    to enhance classification results of the tail and medium classes by the proposed
+    residual fusion mechanism. In (b), (X,Y) is a batch of images and their corresponding
+    labels. weight represents a vector of class-wise weights which usually is in reverse
+    proportion to the number of samples of classes. The classifier is a fully connected
+    (FC) layer that is shared among the three branches in (II) and (III) of (c).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_2.jpg
+  Figure 2 caption: "Ablation study for the residual fusion and parameter specialization\
+    \ mechanisms. (a), (b), (c), (d), and (e) are variants of ResLT. (a) is a weak\
+    \ version of ResLT. For (b) and (c), the three branches have no residual relationship\
+    \ \u2013 nested class assignments, unlike ResLT. For (d), there is no additive\
+    \ shortcut, different from ResLT. (e) is without parameter specialization mechanism."
+  Figure 3 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_3.jpg
+  Figure 3 caption: Ablation studies for the importance of parameter specialization
+    mechanism with (a), (b) and the effectiveness of residual fusion mechanism with
+    (c), (d).
+  Figure 4 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_4.jpg
+  Figure 4 caption: Effects of model size on long-tailed recognition. ResNet-32(1x),
+    ResNet-32(2x), ResNet-32(3x) are used for CIFAR-LT while ResNet-10, ResNeXt-50,
+    ResNeXt-101 are applied for ImageNet-LT.
+  Figure 5 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_5.jpg
+  Figure 5 caption: "We conduct ablation studies for choices of \u03B1 on CIFAR-LT\
+    \ and ImageNet-LT. For CIFAR-LT, ResNet-32 is used, while we apply ResNet-10 on\
+    \ ImageNet-LT."
+  Figure 6 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_6.jpg
+  Figure 6 caption: "Individual branch performance analysis. \u201DAll\u201D denotes\
+    \ results are obtained with the aggregated final outputs. Main branch is the N\
+    \ h+m+t . \u201DResidual branch I\u201D represents the residual branch N m+t while\
+    \ \u201DResidual branch II\u201D denotes the residual branch N t ."
+  Figure 7 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_7.jpg
+  Figure 7 caption: Ablation study for 1-Grouped convolution and 3-Separate convolutions.
+  Figure 8 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_8.jpg
+  Figure 8 caption: Many-shot, Medium-shot, and Few-shot performance analysis on ImageNet-LT
+    with various ResNet backbones.
+  Figure 9 Link: articels_figures_by_rev_year\2022\ResLT_Residual_Learning_for_LongTailed_Recognition\figure_9.jpg
+  Figure 9 caption: Visualization comparison between ResLT trained model and cross-entropy
+    trained model. Numbers in all the figures are class indexes.
+  First author gender probability: 0.5
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.91
+  Name of the first author: Jiequan Cui
+  Name of the last author: Jiaya Jia
+  Number of Figures: 9
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: 'ResLT: Residual Learning for Long-Tailed Recognition'
+  Publication Date: 2022-05-13 00:00:00
+  Table 1 caption: TABLE 1 Top-1 Accuracy (%) of Baselines on CIFAR-10-LT With the
+    Imbalance Factor 0.02
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Top-1 Accuracy (%) on iNaturalist 2018
+  Table 3 caption: TABLE 3 Top-1 Accuracy (%) on ImageNet-LT for ResNeXt-50
+  Table 4 caption: TABLE 4 Top-1 Accuracy (%) on Places-LT for ResNet-152
+  Table 5 caption: TABLE 5 Top-1 Accuracy (%) of ResNet-32 on Long-Tailed CIFAR-10
+    and CIFAR-100 (Best Results are Marked in Bold Font)
+  Table 6 caption: TABLE 6 Top-1 Accuracy (%) of Many-Shot, Medium-Shot and Few-Shot
+    on ImageNet-LT With Various ResNet Backbones
+  Table 7 caption: TABLE 7 Top-1 Accuracy With 180200 Training Epochs and Inference
+    Speed on ImageNet-LT and iNaturalist 2018
+  Table 8 caption: TABLE 8 Top-1 Accuracy (%) of Many-Shot, Medium-Shot and Few-Shot
+    on Inaturalist 2018 With ResNet-50 Backbone
+  Table 9 caption: TABLE 9 Ablation Study for Different Number of Groups
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3174892

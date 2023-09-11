@@ -1,0 +1,895 @@
+- Affiliation of the first author: school of artificial intelligence, beijing university
+    of posts and telecommunications, beijing, china
+  Affiliation of the last author: national engineering research center of visual technology,
+    school of computer science and institute for artificial intelligence, peking university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_1.jpg
+  Figure 1 caption: "The overall view of our framework. Our network takes a cascaded\
+    \ architecture with four modules: semi-reflector orientation estimation, polarization-guided\
+    \ separation, separated layers refinement, and cross-line suppression. Given a\
+    \ pair of unpolarized and polarized images as input, an initial separation guided\
+    \ by the polarization image formation model suffers from regional artifacts like\
+    \ \u201Ccross lines\u201D; these artifacts can be partially suppressed by a refinement\
+    \ network [13]; by introducing a physics-guided CL probability map and a cross-line\
+    \ suppression module, we can obtain further refined results with less artifacts."
+  Figure 10 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_10.jpg
+  Figure 10 caption: Qualitative comparisons with ReflectNet [12], Wen et al. [24],
+    Lei et al. [15], Zhang et al. [6], CoRRN [5], and ERRNet [7], evaluated on real-world
+    images (16-bit format) taken by a Lucid Vision Phoenix polarization camera. For
+    better visualization, the minimum and maximum intensity values of different algorithms
+    are stretched in a consistent range.
+  Figure 2 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_2.jpg
+  Figure 2 caption: Illustration of physical image formation model.
+  Figure 3 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_3.jpg
+  Figure 3 caption: "(a) Initially separated layers I \u2032 r and I \u2032 t are\
+    \ calculated by Equations (9) and (10). Due to the numerical problem, regional\
+    \ artifacts in the form of \u201Ccross lines\u201D can be obviously observed in\
+    \ separated layers. (b) An example of the value distribution of physical parameters:\
+    \ angle of incidence \u03B8 and \u03D5\u2212 \u03D5 \u22A5 . \u03D5\u2212 \u03D5\
+    \ \u22A5 is radially distributed and its value changes around the point \u03B8\
+    =0 . So the artifacts in pixels \u03D5\u2212 \u03D5 \u22A5 =\xB1 45 \u2218 ,\xB1\
+    \ 135 \u2218 are distributed as \u201Ccross lines\u201D, and the intersection\
+    \ of cross lines lies in the point \u03B8=0 . (c) The CL probability map (stretched\
+    \ and scaled for better visualization) stemmed from physical parameters. For pixels\
+    \ in the initially separated images, larger values of the map represent higher\
+    \ probabilities of being affected by cross-line artifacts."
+  Figure 4 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_4.jpg
+  Figure 4 caption: "The magnitude curves of the functions (a) \u0398 rt and (b) \u03A6\
+    \ regarding \u03B8 and \u03D5\u2212 \u03D5 \u22A5 . At some trivial point, the\
+    \ values of these two functions increase dramatically, which magnify subtle noise\
+    \ and produce unreliable separated layers."
+  Figure 5 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_5.jpg
+  Figure 5 caption: The separation results in intermediate steps and the final stage.
+    Note that the polarization-guided module coarsely separates reflections and transmissions,
+    but suffers from the cross-line artifacts. Refinement part further improves the
+    results, but there still remain small artifacts in the cross-line regions. In
+    the final stage, most of the artifacts are suppressed and cleaner separation results
+    are generated.
+  Figure 6 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_6.jpg
+  Figure 6 caption: Visual comparison between 8-bit and 16-bit (un)polarized images.
+    The results generated from 8-bit images are affected by more artifacts than those
+    taking 16-bit images as input owing to the calculation error in the polarization-guided
+    step.
+  Figure 7 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_7.jpg
+  Figure 7 caption: Quantitative and qualitative evaluation on synthetic data, compared
+    with single-image methods including CoRRN [5], ERRNet [7], and Zhang et al. [6].
+  Figure 8 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_8.jpg
+  Figure 8 caption: Quantitative and qualitative evaluation on synthetic data, compared
+    with methods taking multiple polarized images as input, e.g., ReflectNet [12]
+    fine-tuned on our dataset and the preliminary version of this work [13].
+  Figure 9 Link: articels_figures_by_rev_year\2022\PhysicsGuided_Reflection_Separation_From_a_Pair_of_Unpolarized_and_Polarized_Ima\figure_9.jpg
+  Figure 9 caption: Qualitative comparisons with ReflectNet [12], Wen et al. [24],
+    Zhang et al. [6], CoRRN [5], and ERRNet [7], evaluated on real-world images (8-bit
+    format) taken by a Lucid Vision Triton polarization camera. We only show transmission
+    results of CoRRN [5] and ERRNet [7], since they are designed for extracting transmission
+    scenes only.
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Youwei Lyu
+  Name of the last author: Boxin Shi
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Physics-Guided Reflection Separation From a Pair of Unpolarized and
+    Polarized Images
+  Publication Date: 2022-03-28 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Evaluation Results in Ablation Study
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Evaluation Results on Synthetic Data
+  Table 3 caption: TABLE 3 Quantitative Comparison Between the Proposed Pipeline With
+    the Alignment Module and the Pipeline Without Alignment Module, Which is Evaluated
+    on the the Misaligned Inputs
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3162716
+- Affiliation of the first author: department electrical engineering, center for processing
+    speech and images, ku leuven, leuven, belgium
+  Affiliation of the last author: department electrical engineering, center for processing
+    speech and images, ku leuven, leuven, belgium
+  Figure 1 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_1.jpg
+  Figure 1 caption: SegBlocks adjusts the processing resolution of image regions based
+    on their complexity. A lightweight policy network decides which blocks should
+    be processed in high resolution mode. The number of operations is reduced without
+    significant loss of accuracy.
+  Figure 10 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_10.jpg
+  Figure 10 caption: Comparison of block execution policies. The reinforcement learning
+    policy is proposed in this work. The random policy randomly selects a percentage
+    of blocks per frame for high-resolution processing. The heuristic policy is given
+    in [28].
+  Figure 2 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_2.jpg
+  Figure 2 caption: 'Illustration of the zero-padding problem when processing blocks:
+    convolutions pad individual blocks with zeros (grey), stopping the propagation
+    of features between blocks and therefore resulting in a loss of global context.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_3.jpg
+  Figure 3 caption: Comparison of feature maps when processing an image in blocks
+    with either standard zero-padding or our custom BlockPad module. Features are
+    visualized by summing activation magnitudes over the channel dimension and tiling
+    the outputs of individual blocks into a single image. Standard zero-padding introduces
+    noticeable artifacts at block borders. In addition, the output shows inconsistencies,
+    e.g., in the car, due to the lack of global context for individual blocks. In
+    contrast, our BlockPad module enables feature propagation as if the network was
+    never evaluated in blocks.
+  Figure 4 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_4.jpg
+  Figure 4 caption: 'Training the policy network with reinforcement learning: The
+    lightweight policy net predicts soft decisions s , which are sampled to actions
+    a . The policy nets gradients are estimated using REINFORCE [61] with a separate
+    reward per block, based on the task loss in a blocks region and the number of
+    blocks processed at high resolution.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_5.jpg
+  Figure 5 caption: Illustration of the BlockSample, BlockPad and BlockCombine modules.
+    BlockSample splits the image and downsamples low-complexity blocks. BlockPad replaces
+    zero-padding and enables feature propagation between blocks. The module copies
+    features from neighboring blocks into the padding. When padding low-resolution
+    blocks adjacent to high-resolution blocks, multiple pixel values of the high-resolution
+    blocks are averaged to better preserve the spatial coherence of features.
+  Figure 6 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_6.jpg
+  Figure 6 caption: BlockPad aims to respect the spatial relationship between high-
+    and low-resolution blocks by sampling using the illustrated patterns. Low-resolution
+    blocks ( 2times 2 pixels size) are colored dark grey, while the 4times 4 high-resolution
+    blocks are colored light grey. The dotted blue and red grid shows the sampling
+    pattern when padding high-resolution and low-resolution blocks respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_7.jpg
+  Figure 7 caption: Cityscapes validation results and comparison with static baselines
+    of similar complexity. For a given computational complexity (GMACs), our adaptive
+    resolution method SegBlocks consistently outperforms static baseline networks
+    (SwiftNet) of similar complexity. Each backbone (RN50, RN18, Eff-L1) is trained
+    and evaluated with tau in 0.2,0.4,0.6 for dynamic models and resolutions 2048times
+    1024 , 1536times 768 , 1344times 672 for static baselines.
+  Figure 8 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_8.jpg
+  Figure 8 caption: Percentage of high-resolution blocks per image, as a histogram
+    over 500 Cityscapes validation images, for SegBlocks-RN18 ( tau =0.4 ). Simple
+    images use fewer high-res blocks, down to 20%, and complex images have up to 55%
+    high-res blocks (colored yellow).
+  Figure 9 Link: articels_figures_by_rev_year\2022\SegBlocks_BlockBased_Dynamic_Resolution_Networks_for_RealTime_Segmentation\figure_9.jpg
+  Figure 9 caption: Examples of resolution decisions made by the policy network and
+    corresponding segmentation outputs, for SegBlocks-RN18 with tau = 0.4 and tau
+    = 0.2 . High-resolution blocks are colored in yellow.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.96
+  Name of the first author: Thomas Verelst
+  Name of the last author: Tinne Tuytelaars
+  Number of Figures: 13
+  Number of Tables: 9
+  Number of authors: 2
+  Paper title: 'SegBlocks: Block-Based Dynamic Resolution Networks for Real-Time Segmentation'
+  Publication Date: 2022-03-29 00:00:00
+  Table 1 caption: TABLE 1 Results on Cityscapes Semantic Segmentation
+  Table 10 caption: Not Available
+  Table 2 caption: 'TABLE 2 IoU Per Class on the Cityscapes Validation Set: Our Method
+    Improves the IoU Score for Most Classes Compared to Lower-Resolution Baselines
+    With Similar Complexity'
+  Table 3 caption: TABLE 3 Memory Analysis for SegBlocks-RN18 Running in 16-Bit Floating
+    Point, as Reported by PyTorch
+  Table 4 caption: TABLE 4 Results on CamVids Test Set for Semantic Segmentation [62]
+  Table 5 caption: TABLE 5 Mapillary Vistas Validation Results
+  Table 6 caption: TABLE 6 Time Profiling of Block Modules, as Total Time Taken During
+    the Inference of 250 Validation Images on an Nvidia GTX 1080 Ti GPU
+  Table 7 caption: 'TABLE 7 Policy Network Ablation: Adjusting the Input Resolution,
+    Number of Layers and Number of Features for the Policy Network'
+  Table 8 caption: "TABLE 8 Block Size Comparison for SegBlocks-RN18 With \u03C4=0.4\
+    \ \u03C4=0.4 on the Cityscapes Validation Set"
+  Table 9 caption: "TABLE 9 Comparison of BlockPad Sampling Patterns and Zero-Padding\
+    \ for SegBlocks-RN18 ( \u03C4=0.4 \u03C4=0.4)"
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3162528
+- Affiliation of the first author: department of computer science, city university
+    of hong kong, hong kong sar, china
+  Affiliation of the last author: department of computer science, city university
+    of hong kong, hong kong sar, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_1.jpg
+  Figure 1 caption: Old photo restoration results produced by our method. Our method
+    can handle the complex degradation mixed with both unstructured and structured
+    defects in real old photos. In particular, we recover high-frequency details for
+    face regions, further improving the perceptual quality for portraits. For each
+    image pair, left is the input while the retouched output is shown on the right.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_10.jpg
+  Figure 10 caption: Defect region detection results on real photos.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_2.jpg
+  Figure 2 caption: Illustration of our translation method with three domains. The
+    domain gap between Z X and Z R will be reduced in the shared latent space.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_3.jpg
+  Figure 3 caption: "Architecture of our restoration network. (I.) We first train\
+    \ two VAEs: VAE 1 for images in real photos r\u2208R and synthetic images x\u2208\
+    X , with their domain gap closed by jointly training an adversarial discriminator;\
+    \ VAE 2 is trained for clean images y\u2208Y . With VAEs, images are transformed\
+    \ to compact latent space. (II.) We learn the latent mapping that restores the\
+    \ corrupted images to clean ones."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_4.jpg
+  Figure 4 caption: Partial nonlocal block. Left shows the principle. The pixels within
+    the hole areas are inpainted by the context pixels outside the corrupted region.
+    Right shows the detailed implementation.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_5.jpg
+  Figure 5 caption: Multi-scale patch-based fusion. The new proposed latent space
+    mapping network vastly reduces the memory cost of partial nonlocal block and enable
+    the processing of high-resolution photos.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_6.jpg
+  Figure 6 caption: The progressive generator network of face enhancement. Starting
+    from a latent vector z , the network up-samples the feature map by deconvolution
+    progressively. The degraded face will be injected into different resolutions in
+    a spatial condition manner.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_7.jpg
+  Figure 7 caption: Some examples of synthetic photos with scratches.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_8.jpg
+  Figure 8 caption: ROC curve for scratch detection of different data settings. Combining
+    both synthetic structured degradations and a small amount of labeled data, the
+    scratch detection network could achieve great results.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Old_Photo_Restoration_via_Deep_Latent_Space_Translation\figure_9.jpg
+  Figure 9 caption: Qualitative comparison against state-of-the-art methods. It shows
+    that our method can restore both unstructured and structured degradation and our
+    recovered results are significantly better than other methods.
+  First author gender probability: 0.54
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.76
+  Name of the first author: Ziyu Wan
+  Name of the last author: Jing Liao
+  Number of Figures: 19
+  Number of Tables: 8
+  Number of authors: 7
+  Paper title: Old Photo Restoration via Deep Latent Space Translation
+  Publication Date: 2022-03-29 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Comparisons on Old Photo Datasets Using Non-Reference
+    Based Image Quality Assessment BRISQUE
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Results on the DIV2K Dataset
+  Table 3 caption: TABLE 3 User Study Results
+  Table 4 caption: TABLE 4 Ablation Study of Latent Translation With VAEs
+  Table 5 caption: TABLE 5 Quantitative Comparisons on the DIV2K Dataset (256x256)
+  Table 6 caption: TABLE 6 Quantitative Comparisons on the DIV2K Datasets of 1024x1024
+    and 2048x2048 Resolution
+  Table 7 caption: TABLE 7 Quantitative Comparisons for Different Injection Positions
+  Table 8 caption: TABLE 8 Quantitative Comparisons on the Synthetic Face Dataset
+    (256x256)
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3163183
+- Affiliation of the first author: school of data science, fudan university, shanghai,
+    china
+  Affiliation of the last author: school of data science, fudan university, shanghai,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_1.jpg
+  Figure 1 caption: Diagram of super-resolving a low-resolution image. We first infer
+    the pixel-wise distributions of a smoothness component x , a sparsity residual
+    z , and a noise n from an observation y , where we only visualize the distribution
+    of one pixel for each component. Then, we reconstruct a high-resolution image
+    u by randomly sampling x and z from their distributions. One can refer to the
+    text in introduction section for details.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_10.jpg
+  Figure 10 caption: 'Visualization on the task of real-world SISR times 4 : three
+    typical examples from DPED-iPhone. The red boundary denotes the model transferred
+    from ideal SISR, while the green boundary represents the model trained without
+    ground truth. Please refer to Supplementary Material, available online, for high-resolution
+    images.'
+  Figure 2 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_2.jpg
+  Figure 2 caption: Probabilistic graphical model and Bayesian image super-resolution.
+    (a) shows the graphical model of image degradation. (b) shows the pipeline of
+    Bayesian image super-resolution (BayeSR). Here, light gray circles denote observed
+    variables, white circles denote unobserved variables, dashed circles denote deterministic
+    functions, and rectangles denote hyperparameters. One can refer to the text in
+    Section 3 for details.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_3.jpg
+  Figure 3 caption: "Architecture of BayeSR. Given an observation y (not vectorized),\
+    \ we first build three modules to successively infer the variational parameters\
+    \ w.r.t. the noise mean m , the sparsity residual z , and the smoothness component\
+    \ x . Then, we explicitly compute the variational parameters w.r.t. the spatial\
+    \ correlation \u03C5 , the sparsity precision \u03C9 , and the noise strength\
+    \ \u03C1 by the formulas in (24), (25), and (26), respectively. Finally, A stochastic\
+    \ sample u=x+z is considered as a reconstruction of y . Here, ResNet and UNet\
+    \ are two examples of achieving the CNN modules. The underlined font denotes this\
+    \ module is optional in our experiments."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_4.jpg
+  Figure 4 caption: "Visualization of degradation kernels ( 25\xD725 ) for SISR \xD7\
+    4 . k Bicubic presents the true bicubic kernel. k IdSR , k ReSR , and k RWSR show\
+    \ the estimated kernels by KernelGAN for the tasks of ideal SISR, realistic SISR,\
+    \ and real-world SISR, respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_5.jpg
+  Figure 5 caption: "Visualization of variational posteriors inferred by three typical\
+    \ models in Table 3, i.e., 15 (GL), 16 (DL), and 7 (GL+DL). The five columns split\
+    \ by dotted lines represent LR observations, posteriors w.r.t. the noise n , the\
+    \ sparsity residual z , and the smoothness component x , and outputs. Here, e=y\u2212\
+    A(x+z) denotes the residual error in LR space, GL represents generative learning,\
+    \ and DL is discriminative learning. Please zoom in the online electronic version\
+    \ for more details."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_6.jpg
+  Figure 6 caption: "Visualization on the task of supervised ideal SISR \xD74 : three\
+    \ typical examples from Set14, B100, Urban100, respectively. The first, second,\
+    \ and third rows denote the super-resolved results of LR images with the noise\
+    \ levels of \u03C3=0 , \u03C3=10 , and \u03C3=20 , respectively. Please refer\
+    \ to Supplementary Material, which can be found on the Computer Society Digital\
+    \ Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2022.3163307, for high-resolution\
+    \ images."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_7.jpg
+  Figure 7 caption: The performance of Baseline and BayeSR on the BSD68 with different
+    noise levels.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_8.jpg
+  Figure 8 caption: 'Visualization on the task of ideal SISR times 4 : three typical
+    examples from Set14, B100, Urban100, respectively. The red boundary denotes the
+    supervised method, while the green boundary represents the model trained without
+    ground truth. Please refer to Supplementary Material, available online, for high-resolution
+    images.'
+  Figure 9 Link: articels_figures_by_rev_year\2022\Bayesian_Image_SuperResolution_With_Deep_Modeling_of_Image_Statistics\figure_9.jpg
+  Figure 9 caption: 'Visualization on the task of realistic SISR times 4 : three typical
+    examples from DIV2K. The red boundary denotes the model transferred from ideal
+    SISR, while the green boundary represents the model trained without ground truth.
+    Please refer to Supplementary Material, available online, for high-resolution
+    images.'
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Shangqi Gao
+  Name of the last author: Xiahai Zhuang
+  Number of Figures: 11
+  Number of Tables: 9
+  Number of authors: 2
+  Paper title: Bayesian Image Super-Resolution With Deep Modeling of Image Statistics
+  Publication Date: 2022-03-29 00:00:00
+  Table 1 caption: TABLE 1 Summarization of Notions and Notations
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Computational Details and Interpretation of the Variational
+    Terms in (27)
+  Table 3 caption: "TABLE 3 Ablation Study: The Effect of Basic Settings of BayeSR\
+    \ for Realistic SISR ( \xD74 \xD74), Including Whether to Use Batch Normalization\
+    \ (BN), Using Different Network Architectures, Using Different Basic Modules,\
+    \ Increasing the Depth of BayeSR, Using Different Training Strategies, and Whether\
+    \ to Train by Generative Learning (GL), Discriminative Learning (DL), and Generative\
+    \ Adversarial Learning (GAL)"
+  Table 4 caption: TABLE 4 Evaluation of Generalization Ability of SRCNN [4], VDSR
+    [57], LapSRN [8], EDSR [6], RCAN [25], OISR [68], and S-BayeSR (ours)
+  Table 5 caption: "TABLE 5 Evaluation on the Task of Ideal SISR \xD74 \xD74"
+  Table 6 caption: "TABLE 6 Evaluation on the Task of Realistic SISR \xD74 \xD74"
+  Table 7 caption: "TABLE 7 Evaluation on the Task of Real-World SISR \xD74 \xD74"
+  Table 8 caption: "TABLE 8 Evaluation When Images are Corrupted by Noise for SISR\
+    \ \xD74 \xD74"
+  Table 9 caption: "TABLE 9 Evaluation When Images are Blurred by Diverse Kernels\
+    \ for SISR \xD74 \xD74"
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3163307
+- Affiliation of the first author: school of information systems and management, university
+    of south florida, tampa, fl, usa
+  Affiliation of the last author: aritificial intelligence lab, university of arizona,
+    tucson, az, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Heterogeneous_Domain_Adaptation_With_Adversarial_Neural_Representation_Learning_\figure_1.jpg
+  Figure 1 caption: Illustrating HDA with distribution divergence and feature discrepancy.
+    Three product categories are represented by different features and distributions
+    in the source and target domains.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Heterogeneous_Domain_Adaptation_With_Adversarial_Neural_Representation_Learning_\figure_2.jpg
+  Figure 2 caption: HANDA Architecture. The shared dictionary learning (left) and
+    nonparametric adversarial kernel matching (middle) components operate on the heterogeneous
+    representations of source and target domain to reduce feature discrepancy via
+    minimizing L SDL and to reduce distribution divergence via minimizing L Adv ,
+    simultaneously. The Shared Classifier (right) component operates on the resultant
+    representations via minimizing the shared classification loss L C .
+  Figure 3 Link: articels_figures_by_rev_year\2022\Heterogeneous_Domain_Adaptation_With_Adversarial_Neural_Representation_Learning_\figure_3.jpg
+  Figure 3 caption: Abstract view of adversarial kernel matching. Network N aligns
+    the distributions to fool Network M via minimizing MMD between the source and
+    target representations while network M aims to yield the kernel with maximal test
+    power between two distributions via maximizing MMD.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Heterogeneous_Domain_Adaptation_With_Adversarial_Neural_Representation_Learning_\figure_4.jpg
+  Figure 4 caption: Qualitative Comparison of HANDA Before and After Domain Adaptationin
+    in Multilingual Text Classification. Target samples have been visualized in 2-D
+    before and after domain adaptation from Italian (b), French (c), and English (d)
+    to Spanish.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Heterogeneous_Domain_Adaptation_With_Adversarial_Neural_Representation_Learning_\figure_5.jpg
+  Figure 5 caption: Qualitative Comparison of HANDA Before and After Domain Adaptation
+    in Cross-Domain Product Image Recognition. Target samples are visualized in 2-D
+    before (a) and after (b) domain adaptationfrom Caltech to DSLR domain.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Heterogeneous_Domain_Adaptation_With_Adversarial_Neural_Representation_Learning_\figure_6.jpg
+  Figure 6 caption: Convergence Analysis of HANDA on Amazon (a), Caltech (b), and
+    Webcam (c) Domains for Image Recognition Task on Office31-Caltech256 Dataset.
+    Loss variations stabilize after a certain number of iterations in all domains.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Heterogeneous_Domain_Adaptation_With_Adversarial_Neural_Representation_Learning_\figure_7.jpg
+  Figure 7 caption: 'HANDAs AUC on Russian and French Dark Web Online Markets. Note:
+    Softmax function was applied to all network outputs to obtain the probabilities
+    for AUC calculation.'
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mohammadreza Ebrahimi
+  Name of the last author: Hsinchun Chen
+  Number of Figures: 7
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: 'Heterogeneous Domain Adaptation With Adversarial Neural Representation
+    Learning: Experiments on E-Commerce and Cybersecurity'
+  Publication Date: 2022-03-29 00:00:00
+  Table 1 caption: TABLE 1 A Taxonomy of Major HDA Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Positioning Our Proposed Method in DA Research
+  Table 3 caption: TABLE 3 Testbed for Cybersecurity Case Study
+  Table 4 caption: 'TABLE 4 Comparison of State-of-the-Art HDA Methods with HANDA
+    on Multilingual Text Classification (Accuracy and Standard Deviation); P-Values
+    Significant at 0.05:'
+  Table 5 caption: 'TABLE 5 Cross-Features and Cross-Domain Comparison of State-of-the-Art
+    HDA Methods With HANDA on Product Image Recognition; P-Values Significant at 0.05:'
+  Table 6 caption: "TABLE 6 Results of Empirical Parameter Tuning for \u03B2 \u03B2\
+    \ and \u03B3 \u03B3 in (15) on Multilingual Text Dataset and Image Product Recognition\
+    \ Dataset"
+  Table 7 caption: TABLE 7 Ablation Analysis of the Depth of Feature Extractor in
+    Multilingual Text Classification Dataset and Product Image Recognition Dataset
+  Table 8 caption: TABLE 8 Russian and French Product Descriptions Correctly Identified
+    as Cyber Threats by HANDA While Missed by the Baseline Method
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3163338
+- Affiliation of the first author: school of electrical and electronic engineering,
+    yonsei university, seoul, south korea
+  Affiliation of the last author: school of electrical and electronic engineering,
+    yonsei university, seoul, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_1.jpg
+  Figure 1 caption: Illustration of the kernelized memory read used in KMN and KMN
+    M . In STM [6], two cars in the query frame are matched with a car in the memory
+    frame due to the non-localness of the memory network. The car in the middle is
+    a correct match, whereas the car on the left is an incorrect match. In our networks,
+    however, the degree of non-localness is controlled by kernel(s). Therefore, only
+    the car in the middle of the query frame is matched with the car in the memory.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_10.jpg
+  Figure 10 caption: Visualization of Q2M matching. In the first column (=memory),
+    a blue plus indicates a point of a target person colored in red in the memory
+    frame. In the second and third columns, the parts that are matched to the blue
+    plus in the memory are indicated using pseudo color on the 2D image and on the
+    3D space, respectively. Several false matchings occur in STM, but they are all
+    removed in KMN M .
+  Figure 2 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_2.jpg
+  Figure 2 caption: "Overall architecture of the proposed kernelized memory network\
+    \ (KMN). The encoder-decoder frameworks of[6] is used, and a new operation of\
+    \ kernelized memory read is proposed. The past T frames with masks are used as\
+    \ memory, and the current frame is used as the query. The memory and query networks\
+    \ use two different encoders, and they extract keys and values via KV Embedding\
+    \ layers. Keys and values from the memory network are mathbfkM and mathbfvM ,\
+    \ respectively, and keys and values from the query network are mathbfkQ and mathbfvQ\
+    \ , respectively. The kernelized memory read takes keys and values from memory\
+    \ and query as input and returns the retrieved value mathbfrK as output. [mathbfvQquad\
+    \ mathbfrK] is fed to the decoder. Note that the numbers next to the block indicate\
+    \ the spatial size and channel dimension, respectively. The detailed architecture\
+    \ of the magenta block named \u201Ckernelized memory read\u201D at the bottom\
+    \ of this figure is given in Fig. 4."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_3.jpg
+  Figure 3 caption: '(a) Q2M matching: A position mathbfq1 in the query is matched
+    by Q2M with all the positions mathbfm in the memory with the matching scores wQ2M(mathbfm,mathbfq1)
+    . Only the positions with the four highest matching scores wQ2M(mathbfm,mathbfq1)
+    are depicted in the memory. The top four Q2M matchings are indicated using green
+    arrows. The instances at mathbfm1 and mathbfm3 are the same as the instance at
+    mathbfq1 , but the instances at mathbfm2 and mathbfm4 are different from the instance
+    at mathbfq1 . Thus, the matching of mathbfq1 with mathbfm1 or mathbfm3 is correct,
+    whereas the matching of mathbfq1 with mathbfm2 or mathbfm4 is incorrect. The highest
+    matching score wQ2M(mathbfm,mathbfq1) occurs at mathbfm3 , but the summation of
+    matching scores at mathbfm1 and mathbfm3 (=0.1 + 0.35 = 0.45) is less than that
+    at mathbfm2 and mathbfm4 (=0.3 + 0.25 = 0.55), thereby resulting in incorrect
+    matching and segmentation at mathbfq1 in Q2M. (b) M2Q matching: Each position
+    mathbfm in the memory selects the best-matched position widehatmathbfq(mathbfm)
+    using the correlation map c(mathbfm,mathbfq) by Eq. (3). In the example, mathbfm1
+    and mathbfm3 are matched with mathbfq1 ( widehatmathbfq( mathbfm1) = widehatmathbfq(
+    mathbfm3) = mathbfq1 ), whereas mathbfm2 and mathbfm4 are not matched with mathbfq1
+    ( widehatmathbfq( mathbfm2) = widehatmathbfq( mathbfm4) = mathbfq2 ne mathbfq1
+    ) in M2Q matching. Thus, mathbf q1 and mathbf q2 are far from each other, and
+    the matchings of mathbf q1 with mathbfm2 and mathbfm4 are not reliable. The goodness
+    of the matchings is realized using a kernel function Keta (mathbf m,mathbf q)
+    . As shown in the rightmost column of the figure, Keta ( mathbf m1,mathbf q1)
+    and Keta ( mathbf m3,mathbf q1) have high values (indicated in light), whereas
+    Keta ( mathbf m2,mathbf q1) and Keta ( mathbf m4,mathbf q1) have low values (indicated
+    in dark). (c) Kernelized Memory Read: After multiplying a kernel function Keta
+    (mathbf m,mathbf q) from M2Q matching to in Eq. (1), the matching scores are changed
+    from wQ2M to wM2Q . Since the matchings of mathbf q1 with mathbfm2 and mathbfm4
+    are not reliable, wM2Q( mathbf m2,mathbf q1) and wM2Q( mathbf m4,mathbf q1) are
+    significantly reduced to nearly zero by multiplying a kernel Keta (mathbf m,mathbf
+    q) . Based on wM2Q , the summation of the matching scores at mathbfm1 and mathbfm3
+    (=0.22 + 0.76 = 0.98) is less than that at mathbfm2 and mathbfm4 (=0.01. + 0.01
+    = 0.02), thereby resulting in correct matching and segmentation at mathbf q1 .'
+  Figure 4 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_4.jpg
+  Figure 4 caption: Detailed implementation of the kernelized memory read operation.
+    mathbf kM and mathbf vM come from the memory, whereas mathbf kQ and mathbf vQ
+    come from the query, as illustrated in Fig. 2. The retrieved memory value mathbf
+    rK is concatenated with query value mathbf vQ , and mathbf y = [ mathbf vQquad
+    mathbf rK ] is the output of kernelized memory read operation
+  Figure 5 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_5.jpg
+  Figure 5 caption: 'An illustration of M2Q: The position mathbf q in the query is
+    matched with three positions mathbf m1 , mathbf m2 and mathbf m3 in the memory
+    through Q2M. The instances at mathbf m1 is the same as the instance at mathbf
+    q , but the instances at mathbf m2 and mathbf m3 are different from the instance
+    at mathbf q . The three positions mathbf m1 , mathbf m2 and mathbf m3 in the memory
+    are associated with widehatmathbf q( mathbf m1) , widehatmathbf q( mathbf m2)
+    and widehatmathbf q( mathbf m3) in the query, respectively, in M2Q matching. The
+    M2Q matchings are denoted by blue arrows. The kernel Keta evaluates the goodness
+    of the matching based on the distance between mathbf q and widehatmathbf q(mathbf
+    m) (= Vert mathbf q - widehatmathbf q(mathbf m) Vert ). As seen in the figure,
+    (a) mathbf q and widehatmathbf q( mathbf m1) are close enough to each other and
+    the matching between mathbf q and mathbf m1 seems to be correct. (b) mathbf q
+    and widehatmathbf q( mathbf m2) are far from each other and the matching between
+    mathbf q and mathbf m2 seems to be incorrect. (c) It is hard to decide whether
+    the two positions mathbf q and widehatmathbf q( mathbf m3) are close together
+    or far away. This decision will completely depend on the type and the parameter
+    of the kernel Keta .'
+  Figure 6 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_6.jpg
+  Figure 6 caption: 'Visualization of 2D kernels considered in this paper: (a) Gaussian
+    kernel; (b) Uniform kernel; (c) Triangular kernel; (d) Epanechnikov kernel; and
+    (e) trained multiple kernels using KMN M .'
+  Figure 7 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_7.jpg
+  Figure 7 caption: 'Synthetic video generation: Three images are augmented from each
+    static image, and the three images are put together to make a synthetic video.
+    The synthetic video is used for pre-training. Two augmented images are used in
+    memory (=left two columns), and the remaining image is used in query (=rightmost
+    column). (a) Classical method: Three images are obtained by applying random affine
+    transforms. (b) Our method: Three images are obtained by applying not only random
+    affine transforms but also Hide-and-Seek. The pixels indicated in red are the
+    GT of the target object.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_8.jpg
+  Figure 8 caption: 'Qualitative results: comparisons on DAVIS 2017 validation set.
+    All the competing networks are trained on DAVIS 2017, and YouTube-VOS dataset
+    is not used as an additional training set. Qualitative results: comparisons on
+    DAVIS 2017 validation set. All the competing networks are trained on DAVIS 2017,
+    and YouTube-VOS dataset is not used as an additional training set. PReMVOS[68]
+    falsely tracks an occluded person colored in red (India); RaNet[11] has a false
+    negative car colored in red (car-roundabout); KMN and KMN M demonstrate robustness
+    against fast deformation (dance-twirl, soapbox), similar targets (car-roundabout),
+    and heavy occlusion (India, bike-packing).'
+  Figure 9 Link: articels_figures_by_rev_year\2022\Video_Object_Segmentation_Using_Kernelized_Memory_Network_With_Multiple_Kernels\figure_9.jpg
+  Figure 9 caption: Effectiveness of kernels in STM, KMN, and KMN M . The improvements
+    from STM to KMN are indicated using yellow boxes, whereas the improvements from
+    KMN to KMN M are indicated using blue boxes. The GTs of YouTube-VOS validation
+    set are not available.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.7
+  Name of the first author: Hongje Seong
+  Name of the last author: Euntai Kim
+  Number of Figures: 14
+  Number of Tables: 12
+  Number of authors: 3
+  Paper title: Video Object Segmentation Using Kernelized Memory Network With Multiple
+    Kernels
+  Publication Date: 2022-03-30 00:00:00
+  Table 1 caption: TABLE 1 Nomenclature
+  Table 10 caption: TABLE 10 Comparison of the Number of Memory Frames During Training
+  Table 2 caption: TABLE 2 Comparisons on DAVIS 2016 Validation Set in Which the GTs
+    are Available
+  Table 3 caption: TABLE 3 Comparisons on DAVIS 2017 Validation Set in Which the GTs
+    are Available
+  Table 4 caption: TABLE 4 Comparisons on DAVIS 2017 Test-Dev Set in Which the GTs
+    are Unavailable
+  Table 5 caption: TABLE 5 Comparisons on YouTube-VOS 2018 Validation Set Where GTs
+    are Unavailable
+  Table 6 caption: TABLE 6 Accuracies for Various Values of Kernel Parameters in KMN,
+    Obtained on YouTube-VOS Validation Set
+  Table 7 caption: TABLE 7 Comparison of Different Kernels on YouTube-VOS Validation
+    Set
+  Table 8 caption: TABLE 8 Comparison of Single Kernels With Various Kinds of Kernels
+  Table 9 caption: TABLE 9 Comparison of Multiple Kernels With Various Kinds of Kernels
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3163375
+- Affiliation of the first author: "dynamic vision and learning group, technical university\
+    \ of munich, m\xFCnchen, germany"
+  Affiliation of the last author: "dynamic vision and learning group, technical university\
+    \ of munich, m\xFCnchen, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2022\The_Group_Loss_A_Deeper_Look_Into_Group_Loss_for_Deep_Metric_Learning\figure_1.jpg
+  Figure 1 caption: "A comparison between a neural model trained with the Group Loss\
+    \ (left) and the triplet loss (right). Given a mini-batch of images belonging\
+    \ to different classes, their embeddings are computed through a convolutional\
+    \ neural network. Such embeddings are then used to generate a similarity matrix\
+    \ that is fed to the Group Loss along with prior distributions of the images on\
+    \ the possible classes. The green contours around some mini-batch images refer\
+    \ to anchors. It is worth noting that, differently from the triplet loss, the\
+    \ Group Loss considers multiple classes and the pairwise relations between all\
+    \ the samples. Numbers from \u2460 to \u2462 refer to the Group Loss steps, see\
+    \ Section 3.2 for the details."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\The_Group_Loss_A_Deeper_Look_Into_Group_Loss_for_Deep_Metric_Learning\figure_2.jpg
+  Figure 2 caption: A toy example of the refinement procedure, where the goal is to
+    classify sample C based on the similarity with samples A and B. (1) The Affinity
+    matrix used to update the soft assignments. (2) The initial labeling of the matrix.
+    (3-4) The process iteratively refines the soft assignment of the unlabeled sample
+    C. (5) At the end, sample C gets the same label of A, (A, C) being more similar
+    than (B, C).
+  Figure 3 Link: articels_figures_by_rev_year\2022\The_Group_Loss_A_Deeper_Look_Into_Group_Loss_for_Deep_Metric_Learning\figure_3.jpg
+  Figure 3 caption: The effect of the number of refinement steps. 0 represents the
+    case where only cross-entropy is used, so there are no refinement steps.
+  Figure 4 Link: articels_figures_by_rev_year\2022\The_Group_Loss_A_Deeper_Look_Into_Group_Loss_for_Deep_Metric_Learning\figure_4.jpg
+  Figure 4 caption: 'Group Loss: Training versus testing Recall1 curves on Cars 196
+    dataset.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\The_Group_Loss_A_Deeper_Look_Into_Group_Loss_for_Deep_Metric_Learning\figure_5.jpg
+  Figure 5 caption: 'Group Loss: Training versus testing Recall1 curves on Stanford
+    Online Products dataset.'
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Ismail Elezi
+  Name of the last author: "Laura Leal-Taix\xE9"
+  Number of Figures: 5
+  Number of Tables: 6
+  Number of authors: 7
+  Paper title: 'The Group Loss++: A Deeper Look Into Group Loss for Deep Metric Learning'
+  Publication Date: 2022-03-31 00:00:00
+  Table 1 caption: TABLE 1 Retrieval and Clustering Performance on CUB-200-2011, CARS196
+    and Stanford Online Products Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Retrieval Performance on In Shop Clothes
+  Table 3 caption: TABLE 3 The Influence of Different Inference Configurations on
+    Isolation
+  Table 4 caption: TABLE 4 The Influence of Different Inference Configurations, Cumulatively
+  Table 5 caption: TABLE 5 Comparison to State-of-the-Art Results on the New Test
+    Protocol and the Detected Bounding Boxes of CUHK03 Dataset [63]
+  Table 6 caption: TABLE 6 Comparison to State-of-the-Art Results on Market-1501 [77]
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3163846
+- Affiliation of the first author: school of instrument science and engineering, harbin
+    institute of technology (hit), harbin, china
+  Affiliation of the last author: department of information engineering and computer
+    science, university of trento, trento, tn, italy
+  Figure 1 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_1.jpg
+  Figure 1 caption: High-level view of our Uncertainty-aware Contrastive Distillation.
+    (Left) Given a minibatch of data sampled from the new task we use the old model
+    to generate pseudo-labels for the old classes. We then merge the pseudo-labels
+    with the ground truth for the current task in order to obtain the extended semantic
+    maps for all samples in the batch. (Right) Our contrastive distillation approach
+    operates by contrasting the features of the new and old model based on the extended
+    semantic map. Green arrows represent attraction, red arrows represent repulsion.
+    The contrast between features of the new model with itself is depicted as a dashed
+    arrow, while the contrast between new and old model features is depicted as a
+    solid arrow.
+  Figure 10 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_10.jpg
+  Figure 10 caption: Mean IoU over time evolution with different temperature of contrastive
+    loss on VOC 2012 15-1 disjoint setup.
+  Figure 2 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_2.jpg
+  Figure 2 caption: Overview of the proposed architecture at the incremental step
+    k . The grey blocks denote the network trained on old tasks, while the light blue
+    one indicates the network trained on old task. The proposed network is made of
+    a feature extractor and a classifier and it is trained on three losses. Our uncertainty-aware
+    contrastive distillation framework corresponds to the green box. Downsample and
+    Upsample denote the resolution decrease from [H,W] to [ H 16 , W 16 ] and the
+    resolution increase [ H 16 , W 16 ] to [H,W] , respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_3.jpg
+  Figure 3 caption: "A detailed view of the kth incremental learning step. The grey\
+    \ modules correspond to the network learned at the previous incremental learning\
+    \ step, which is frozen at step k while the blue modules correspond to the network\
+    \ trained at step k . \u24CA is an uncertainty estimation operation. \u24C2 is\
+    \ a merger operation."
+  Figure 4 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_4.jpg
+  Figure 4 caption: Visualization of the pairwise similarity matrix employed for efficient
+    computation of the contrastive distillation loss. On the left side of the matrix
+    we have the anchor features that are being compared with the contrast features
+    on top. Blue and purple features and elements of the matrix belong to the new
+    and old tasks respectively. Grey and orange colors represent the old and new feature
+    extractors.
+  Figure 5 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_5.jpg
+  Figure 5 caption: An intuitive visualization of Eqs. (3), (4), (5) and (6)
+  Figure 6 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_6.jpg
+  Figure 6 caption: Qualitative results on the VOC 2012 dataset (15-5 disjoint setting).
+  Figure 7 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_7.jpg
+  Figure 7 caption: Qualitative results on the VOC 2012 dataset (15-1 overlapped setting).
+  Figure 8 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_8.jpg
+  Figure 8 caption: Qualitative results on the ADE 20K dataset (100-50 disjoint setting).
+  Figure 9 Link: articels_figures_by_rev_year\2022\UncertaintyAware_Contrastive_Distillation_for_Incremental_Semantic_Segmentation\figure_9.jpg
+  Figure 9 caption: Qualitative results on the Cityscapes dataset (13-6 overlapped
+    setting).
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Guanglei Yang
+  Name of the last author: Elisa Ricci
+  Number of Figures: 11
+  Number of Tables: 9
+  Number of authors: 8
+  Paper title: Uncertainty-Aware Contrastive Distillation for Incremental Semantic
+    Segmentation
+  Publication Date: 2022-03-31 00:00:00
+  Table 1 caption: TABLE 1 Mean IoU on the Pascal-VOC 2012 Dataset for Different Incremental
+    Class Learning Scenarios
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Mean IoU on the Pascal-VOC 2012 Dataset for More Incremental
+    Class Learning Scenarios
+  Table 3 caption: TABLE 3 Mean IoU on the ADE20K Dataset for Different Incremental
+    Class Learning Disjoint Setting
+  Table 4 caption: TABLE 4 Mean IoU on the ADE20K Dataset for Different Incremental
+    Class Learning Overlapped Setting
+  Table 5 caption: TABLE 5 Mean IoU on the Cityscapes Dataset for Different Incremental
+    Class Learning Scenarios
+  Table 6 caption: TABLE 6 Ablation Study of the Proposed Method on the Pascal-VOC
+    2012 15-5 Disjoint Setup and ADE 20K 100-50 Disjoint Setup
+  Table 7 caption: TABLE 7 Ablation Study of Uncertainty-Aware Contrastive Distillation
+    Loss
+  Table 8 caption: TABLE 8 Different Temperature Study of the Proposed Method on the
+    Pascal-VOC 2012 15-5 Disjoint Setup and ADE 20K 100-50 Disjoint Setup
+  Table 9 caption: "TABLE 9 Ablation Study of \u03BB ucd \u03BBucd on the Pascal-VOC\
+    \ 2012 15-5 and 19-1 Disjoint Setup"
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3163806
+- Affiliation of the first author: information technology discipline, murdoch university,
+    murdoch, australia
+  Affiliation of the last author: florida state university, tallahassee, fl, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_1.jpg
+  Figure 1 caption: "Overview of the proposed spatial registration framework. Surfaces\
+    \ are first mapped onto the space of Square-Root Normal Fields (SRNF) and spatially\
+    \ registered using the L 2 metric, which is equivalent to the partial elastic\
+    \ metric in the original space of surfaces. 4D surfaces can then be treated as\
+    \ curves embedded in the L 2 space of SRNFs. The operator \u22C6 refers to the\
+    \ composition of functions in the SRNF space."
+  Figure 10 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_10.jpg
+  Figure 10 caption: "First (a) and second (b) principal directions of variation (the\
+    \ mean 4D surface is highlighted in the middle). Each row corresponds to one 4D\
+    \ surface sampled between \u22121.5 to 1.5 times the standard deviation along\
+    \ the principal direction of variation. We refer the reader to the Supplementary\
+    \ Material, available online, and Video, which show the input 4D faces (before\
+    \ their spatiotemporal registration) and the animated sequences of the modes of\
+    \ variation as well as the randomly synthesized faces. The Supplementary Material,\
+    \ available online, and Video also include more modes of variation and randomly\
+    \ synthesized samples."
+  Figure 2 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_2.jpg
+  Figure 2 caption: "In the proposed temporal registration framework, 4D surfaces,\
+    \ represented as curves in the SRNF space, are first mapped to the space of Transported\
+    \ Square-Root Vector Fields (TSRVFs) for their temporal registration. Points in\
+    \ the TSRVF space are mapped back to the space of SRNFs and then to the original\
+    \ space of surfaces for visualization. The operator \u2299 refers to the composition\
+    \ of functions in the TSRVF space."
+  Figure 3 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_3.jpg
+  Figure 3 caption: Example of a geodesic between the source 4D surface (top row)
+    and the target 4D surface (bottom row) after spatiotemporal registration. The
+    highlighted row corresponds to the mean 4D surface. A video of the figure is included
+    in the Supplementary Material, available online.
+  Figure 4 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_4.jpg
+  Figure 4 caption: Examples of the spatiotemporal registration of two facial expressions
+    (4D faces). In each example, we show (a) the source 4D face, (b) the target 4D
+    face, and (c) the target 4D face after spatiotemporal registration using the proposed
+    framework. Note how the spatiotemporally registered target 4D surface became fully
+    synchronised with the source 4D surface. The full video sequence is provided in
+    the Supplementary Material., available online
+  Figure 5 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_5.jpg
+  Figure 5 caption: Example of the spatiotemporal registration, using the proposed
+    algorithm, of two 4D human body shapes (from the DFAUST dataset) performing a
+    jumping action at different speeds. Note how the spatiotemporally registered target
+    4D surface in (c) became synchronised with the source 4D surface in (a). The full
+    video sequence is provided in the Supplementary Material, available online.
+  Figure 6 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_6.jpg
+  Figure 6 caption: Example of the spatiotemporal registration, using the proposed
+    algorithm, of two 4D body shapes with different clothing (from the CAPE dataset).
+    Note how the spatiotemporally registered target 4D surface in (c) became fully
+    synchronised with the source 4D surface in (a). The full video sequence is provided
+    in the Supplementary Material, available online.
+  Figure 7 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_7.jpg
+  Figure 7 caption: 'Example of a geodesic between 4D surfaces corresponding to punching
+    actions: (a) the 4D surfaces before registration and (b) after registration. In
+    each example, we show the source 4D surface in the first row, the target 4D surface
+    in the last row, and three intermediate 4D surfaces along the geodesic between
+    the source and the target. Observe how misaligned are the highlighted frames before
+    registration, and how synchronised they became after registration. A video illustrating
+    these sequences is included in the Supplementary Material, available online.'
+  Figure 8 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_8.jpg
+  Figure 8 caption: Boxplots of errors between 20 pairs of 4D surfaces. In all of
+    the plots, the red lines represent the median error and the boxes represent its
+    spread. The green curve is the ground-truth distance, i.e., the distance between
+    the perfectly registered 4D surfaces. (a) Unregistered 4D surfaces generated using
+    100 random diffeomorphic transformations, (b) temporally registered surfaces,
+    using dynamic programming-based time warping, without SRNF and without TSRVF,
+    (c) temporally registered surfaces using TSRVF but without SRNF, (d) temporally
+    registered surfaces using SRNF but without TSRVF, and (e) temporally registered
+    surfaces using the full framework, i.e., using TSRVF in the space of SRNFs.
+  Figure 9 Link: articels_figures_by_rev_year\2022\D_Atlas_Statistical_Analysis_of_the_Spatiotemporal_Variability_in_Longitudinal_D\figure_9.jpg
+  Figure 9 caption: Co-registration of multiple 4D surfaces. In this example, we consider
+    four human body shapes performing a jumping action (first four rows) and two others
+    performing a punching action (rows 5 and 6). Here, we show the spatiotemporally
+    co-registered 4D surfaces and the 4D mean (last row) computed using the proposed
+    algorithm. The Supplementary Material, available online, includes the input 4D
+    surfaces before their spatiotemporal registration. It also includes the full video
+    sequences. The surfaces are from the DFAUST dataset.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hamid Laga
+  Name of the last author: Anuj Srivastava
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: '4D Atlas: Statistical Analysis of the Spatiotemporal Variability in
+    Longitudinal 3D Shape Data'
+  Publication Date: 2022-03-31 00:00:00
+  Table 1 caption: TABLE 1 Comparison of the Accuracy of the Proposed Spatial Registration
+    With State-of-the-Art Techniques Such as MAP Tree [45] and Fast Sinkhorn Filters
+    [46], Which are Based on Functional Maps [28]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of the Expressive Power of PCA on the Original
+    Space of Surfaces and on the Space of SRNFs
+  Table 3 caption: TABLE 3 Comparison of the Expressive Power of PCA on the Original
+    Space of Curves and on the Space of TSRVFs
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3163720
+- Affiliation of the first author: jd explore academy, beijing, china
+  Affiliation of the last author: jd explore academy, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Contextual_Transformer_Networks_for_Visual_Recognition\figure_1.jpg
+  Figure 1 caption: "Comparison between conventional self-attention and our Contextual\
+    \ Transformer (CoT) block. (a) Conventional self-attention solely exploits the\
+    \ isolated query-key pairs to measure attention matrix, but leaves rich contexts\
+    \ among keys under-exploited. Instead, (b) CoT block first mines the static context\
+    \ among keys via a 3\xD73 convolution. Next, based on the query and contextualized\
+    \ key, two consecutive 1\xD71 convolutions are utilized to perform self-attention,\
+    \ yielding the dynamic context. The static and dynamic contexts are finally fused\
+    \ as outputs."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Contextual_Transformer_Networks_for_Visual_Recognition\figure_2.jpg
+  Figure 2 caption: "The detailed structures of (a) conventional self-attention block\
+    \ and (b) our Contextual Transformer (CoT) block. \u25EF+ and \u229B denotes the\
+    \ element-wise sum and local matrix multiplication, respectively."
+  Figure 3 Link: articels_figures_by_rev_year\2022\Contextual_Transformer_Networks_for_Visual_Recognition\figure_3.jpg
+  Figure 3 caption: Inference Time versus Accuracy Curve on ImageNet dataset (default
+    training setup).
+  Figure 4 Link: articels_figures_by_rev_year\2022\Contextual_Transformer_Networks_for_Visual_Recognition\figure_4.jpg
+  Figure 4 caption: Inference Time versus Accuracy Curve on ImageNet dataset (advanced
+    training setup).
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Yehao Li
+  Name of the last author: Tao Mei
+  Number of Figures: 4
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: Contextual Transformer Networks for Visual Recognition
+  Publication Date: 2022-04-01 00:00:00
+  Table 1 caption: TABLE 1 The Detailed Structures of ResNet-50 (Left) and CoTNet-50
+    (Right)
+  Table 10 caption: TABLE 10 Performance Comparisons with the State-of-the-Art Methods
+    under Different Vision Backbones for the Downstream Task of Semantic Segmentation
+    on the ADE20K Validation Set
+  Table 2 caption: "TABLE 2 The Detailed Structures of ResNeXt-50 with a 32\xD74D\
+    \ Template (Left) and CoTNeXt-50 with a 2\xD748D Template (Right)"
+  Table 3 caption: TABLE 3 Performance Comparisons with the State-of-the-Art Vision
+    Backbones for Image Recognition on ImageNet Dataset (Default Training Setup)
+  Table 4 caption: TABLE 4 Performance Comparisons with the State-of-the-Art Vision
+    Backbones for Image Recognition on ImageNet Dataset (Advanced Training Setup)
+  Table 5 caption: TABLE 5 Performance Comparisons across Different Ways on the Exploration
+    of Contextual Information, I.E., Using Only Static Context (Static Context), Using
+    Only Dynamic Context (Dynamic Context), Linearly Fusing Static and Dynamic Contexts
+    (Linear Fusion), Directly Concatenating the Static and Dynamic Contexts (Concatenate)
+    and the Full Version of CoT Block
+  Table 6 caption: TABLE 6 Performance Comparisons across Different Kernel Sizes of
+    the Keys Convolution and Different Variants of CoT Block
+  Table 7 caption: "TABLE 7 Effect of Utilizing Different Replacement Settings on\
+    \ the Four Stages (res2 \u2192 \u2192res3 \u2192 \u2192res4 \u2192 \u2192res5)\
+    \ in the Basic Backbone of ResNet-50 and Two Widely Adopted Architecture Changes,\
+    \ ResNet-D [52] and Squeeze-and-Excitation [23] (D-SE)"
+  Table 8 caption: 'TABLE 8 Performance Comparisons with the State-of-the-Art Vision
+    Backbones on the Downstream Task of Object Detection (Base Detectors: Faster-RCNN
+    and Cascade-RCNN)'
+  Table 9 caption: 'TABLE 9 Performance Comparisons with the State-of-the-Art Vision
+    Backbones on the Downstream Task of Instance Segmentation (Base Models: Mask-RCNN
+    and Cascade-Mask-RCNN)'
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3164083

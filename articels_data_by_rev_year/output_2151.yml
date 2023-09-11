@@ -1,0 +1,808 @@
+- Affiliation of the first author: national key lab for novel software technology,
+    nanjing university, nanjing, jiangsu, china
+  Affiliation of the last author: national key lab for novel software technology,
+    nanjing university, nanjing, jiangsu, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_1.jpg
+  Figure 1 caption: Comparisons of different scene text representations. (a) The quadrilateral
+    representation [3], [7], [9] fail to locate curved text lines. (b) The pixel-wise
+    representation [10] is not able to separate adjacent text lines. (c) Although
+    the bounding-box-pixel (bbox-pixel) representation [7], [8], [11] can accommodate
+    curved and adjacent text lines, it needs two-stage prediction, which can be computationally
+    expensive. (d) Our kernel representation is one-stage and is robust to curved
+    and adjacent text lines.
+  Figure 10 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_10.jpg
+  Figure 10 caption: Illustration of label generation. (a) contains the annotations
+    of the shrinking margin m , the original bounding box b o and the shrunk bounding
+    box b s . (b) shows the original bounding box of a text line. (c) shows the text
+    kernel label.
+  Figure 2 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_2.jpg
+  Figure 2 caption: "End-to-end text spotting F-measure and inference speed on Total-Text.\
+    \ Our PAN++ has extreme advantages compared with counterparts. \u201CPAN++ 736\u201D\
+    \ (the short size of the input image being 736 pixels) is 5.0 points better than\
+    \ ABCNet [22] and the inference speed is faster. \u201CPAN++ 512\u201D executes\
+    \ faster than counterparts by over 11 FPS while keeping a competitive end-to-end\
+    \ text spotting F-measure."
+  Figure 3 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_3.jpg
+  Figure 3 caption: "Overall pipelines of some representative text spotters relevant\
+    \ to ours. In the \u201CGT\u201D (ground-truth) box, \u201Cword\u201D and \u201C\
+    char\u201D represent word-level and character-level annotations, respectively.\
+    \ In the \u201CDet\u201D (Detection) box, \u201CQuad\u201D, \u201CBBox-Pixel\u201D\
+    , \u201CKernel\u201D are the quadrilateral, bbox-pixel, and kernel representation\
+    \ mentioned in Fig. 1. \u201CQuad&Pixel\u201D means performing bounding boxes\
+    \ regression and text region segmentation simultaneously. \u201CBezier\u201D represent\
+    \ the Bezier curve representation proposed in [22]. In \u201CReg\u201D (recognition)\
+    \ box, \u201CCTC\u201D, \u201CCharacter\u201D and \u201CAttention\u201D represent\
+    \ CTC-based, character-based and attention-based text recognizers, respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_4.jpg
+  Figure 4 caption: Overall architecture of PAN++. The features from the lightweight
+    backbone network are enhanced by stacked Feature Pyramid Enhancement Modules (FPEMs).
+    In the detection part, the network predicts the text regions, text kernels, and
+    instance vectors, and assembles them into text lines via Pixel Aggregation (PA).
+    In the recognition part, Masked RoI extracts the features of text lines, and then
+    these features are fed to the attention-based recognizer to predict text contents.
+  Figure 5 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_5.jpg
+  Figure 5 caption: "Details of the Feature Pyramid Enhancement Module (FPEM). \u201C\
+    \ + \u201D means element-wise addition. \u201C2\xD7\u201D indicates 2\xD7 bilinear\
+    \ upsampling.\u201CDWConv\u201D, \u201CConv\u201D and \u201CBN\u201D represent,\
+    \ depthwise convolution [48], regular convolution [49] and Batch Normalization\
+    \ [50], respectively."
+  Figure 6 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_6.jpg
+  Figure 6 caption: "Details of the detection head. \u201CConv\u201D and \u201CBN\u201D\
+    \ represent regular convolution [49] and Batch Normalization [50], respectively."
+  Figure 7 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_7.jpg
+  Figure 7 caption: Illustration of Pixel Aggregation (PA). Green arrows represent
+    aggregation loss L agg . Red arrows represent discrimination loss L dis .
+  Figure 8 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_8.jpg
+  Figure 8 caption: Procedure of the post-processing. When merging neighbor pixels,
+    the euclidean distance of the instance vector must be less than a threshold d
+    . This condition alleviates the problem of assigning conflict pixels to incorrect
+    text kernels.
+  Figure 9 Link: articels_figures_by_rev_year\2021\PAN_Towards_Efficient_and_Accurate_EndtoEnd_Spotting_of_ArbitrarilyShaped_Text\figure_9.jpg
+  Figure 9 caption: "Details of the recognition head. \u201CSOS\u201D and \u201CEOS\u201D\
+    \ means the start and the end of a string, respectively. A represents the multi-head\
+    \ attention layer. E represents the embedding layer. C means the concatenation\
+    \ operation in the channel dimension."
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Wenhai Wang
+  Name of the last author: Tong Lu
+  Number of Figures: 17
+  Number of Tables: 13
+  Number of authors: 7
+  Paper title: 'PAN++: Towards Efficient and Accurate End-to-End Spotting of Arbitrarily-Shaped
+    Text'
+  Publication Date: 2021-05-04 00:00:00
+  Table 1 caption: TABLE 1 Text Detection Results on Total-Text and CTW1500
+  Table 10 caption: TABLE 10 Comparison Between the End-to-End Text Spotting Framework
+    and the Separate Framework
+  Table 2 caption: TABLE 2 End-to-End Text Spotting Results on the Total-Text Dataset
+  Table 3 caption: TABLE 3 Text Detection Results on IC15 and MSRA-TD500
+  Table 4 caption: TABLE 4 End-to-End Text Spotting Results on the IC15 Dataset
+  Table 5 caption: TABLE 5 Results on the RCTW-17 Dataset
+  Table 6 caption: TABLE 6 Detection Performance Comparison of PAN++ and Its Conference
+    Versions
+  Table 7 caption: TABLE 7 End-to-End Text Spotting F-Measures of Models With Different
+    Number of Stacked FPEMs
+  Table 8 caption: TABLE 8 Comparison of Different Feature Enhancement Networks
+  Table 9 caption: TABLE 9 Comparison of the Models With and Without PA, and With
+    Different Backbone Networks
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3077555
+- Affiliation of the first author: "department of mathematics and applications \u201C\
+    renato caccioppoli\u201D, universit\xE1 degli studi di napoli federico ii, naples,\
+    \ italy"
+  Affiliation of the last author: department of computer science, university of york,
+    york, uk
+  Figure 1 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_1.jpg
+  Figure 1 caption: "Multichannel polarisation image estimation. Left to right: an\
+    \ image from the input sequence; phase angle ( \u03D5 ) and degree of polarisation\
+    \ ( \u03C1 ) estimated from a single channel; phase angle ( \u03D5 ) and degree\
+    \ of polarisation ( \u03C1 ) estimated from three colour channels and two light\
+    \ source directions."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_2.jpg
+  Figure 2 caption: 'Multichannel polarisation image estimation with two light sources.
+    Row 1: Input images with two different light sources. Row 23: Polarisation image
+    estimation from firstsecond light. Row 4: Polarisation image estimation from both
+    lights. Row 5: Ground truth polarisation image.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_3.jpg
+  Figure 3 caption: 'An illustration of the RANSAC two source light estimation. From
+    left to right: the input images under light source direction 1 and 2, the estimated
+    diffuse mask, albedo map and normal map, and normal direction error map. Light
+    estimation results are shown in Table 2.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_4.jpg
+  Figure 4 caption: 'Shape estimation evaluation on synthetic data from the 3DRFE
+    dataset [48]. Left to right: one of the input lighting conditions, estimated normal
+    map, normal map errors and shaded surface.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_5.jpg
+  Figure 5 caption: Surface reconstruction and surface normal error obtained by our
+    proposed method, Mecca et al.[9], SIRFS [49] and Smith et al.[8]. The corresponding
+    light source estimations are reported in Table 2.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_6.jpg
+  Figure 6 caption: Qualitative shape estimation and reillumination results on real
+    objects with varying albedo.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_7.jpg
+  Figure 7 caption: 'Albedo estimation versus ground truth. Left to right: input,
+    ground truth, our result and the results of SIRFS [49] and Smith et al.[8]. Quantitative
+    results in Table 3.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_8.jpg
+  Figure 8 caption: 'Qualitative albedo estimation on real data. Left to right: input,
+    our result, SIRFS [49] and Smith et al. [8].'
+  Figure 9 Link: articels_figures_by_rev_year\2021\Uncalibrated_Two_Source_PhotoPolarimetric_Stereo\figure_9.jpg
+  Figure 9 caption: "Actual versus estimated refractive index for synthetic data with\
+    \ Gaussian noise of standard deviation \u03C3 ."
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Silvia Tozza
+  Name of the last author: Edwin R. Hancock
+  Number of Figures: 9
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Uncalibrated, Two Source Photo-Polarimetric Stereo
+  Publication Date: 2021-05-06 00:00:00
+  Table 1 caption: TABLE 1 Summary of the Combinations of Constraints Used by the
+    Different Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Light Estimation on the Real Snooker Ball and One of the
+    3DRFE Datasets (Row 2 in Fig. 4)
+  Table 3 caption: TABLE 3 Quantitative Shape and Albedo Estimation Results
+  Table 4 caption: TABLE 4 Refractive Index Estimates for Various Real Objects and
+    Synthetic Renderings of 3DRFE Face Data
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3078101
+- Affiliation of the first author: department of computer science and engineering,
+    moe key lab of artificial intelligence, ai institute, shanghai jiao tong university,
+    shanghai, china
+  Affiliation of the last author: department of computer science and engineering,
+    moe key lab of artificial intelligence, ai institute, shanghai jiao tong university,
+    shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_1.jpg
+  Figure 1 caption: Overview of the proposed neural graph matching pipeline. The method
+    directly handles Lawlers QAP based on the embedding on the association graph.
+    We further extend it to hypergraph matching by replacing the association graph
+    with an association hypergraph (see Section 3.3), as well as to multiple graph
+    matching by differentiable spectral multi-matching (see Section 3.4).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_10.jpg
+  Figure 10 caption: Generalization study shown as confusion matrix of our proposed
+    NGM and NGM-v2 in line with [17], [25] on Pascal VOC Keypoint. Models are trained
+    on categories on the y -axis and tested on categories on the x -axis. Darker color
+    denotes relatively better performance in the same column, and the averaged accuracy
+    on both diagonal part (learned during training) and all elements (trained+generalized)
+    of confusion matrices are reported in the brackets over confusion matrices. The
+    traintest split follows the main experiment and eight categories are selected
+    randomly.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_2.jpg
+  Figure 2 caption: 'Graphs with affinity matrix K and affinity tensor H in (b), w.r.t
+    (a) association graph and (c) association hypergraph. We distinguish the nodes
+    on association (hyper)graph and individual graphs for matching by terms vertex
+    and node through this paper. The node-to-node matching problem in (b) can therefore
+    be formulated as the vertex classification task on the association graph whose
+    edge weights can be induced by the affinity matrix. Such a perspective is also
+    widely taken in literature for graph matching e.g., [2] and hypergraph matching
+    [24]. (d) shows a toy working example from individual graphs to final matching
+    result: affinity matrix K is built from individual graphs, and the matching problem
+    is equivalent to vertex classification on the association graph. Matching-aware
+    embedding and vertex classification are applied on association graph to generate
+    vertex scores, followed with reshaping and Sinkhorn normalization to obtain a
+    double-stochastic matrix i.e. a convex hull of permutation matrix.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_3.jpg
+  Figure 3 caption: "A toy example of connectivity matrices (c) G \xAF , (d) H \xAF\
+    \ , and their connection to (a) the original graph, (b) adjacency matrix and (e)\
+    \ incidence matrix. All edges are directed, and G \xAF i,k = H \xAF j,k =1 means\
+    \ edge k starts from node i and ends at node j . In incident matrix, -1 denotes\
+    \ the starting node and 1 denotes the ending node of all edges."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_4.jpg
+  Figure 4 caption: "The proposed NGM & NGM-v2 architecture for two-graph matching.\
+    \ The components with blue FC layers i.e. vertex convolution, matching-aware embedding\
+    \ module and vertex classifier are jointly learned with optional CNN, SplineConv\
+    \ (in NGM-v2) and similarity metric \u039B (in NGM)."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_5.jpg
+  Figure 5 caption: Third-order affinity adopted in our hypergraph matching. It in
+    general follows the previous hypergraph matching works [22], [24], by considering
+    the similarity between two triangles three inner angles.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_6.jpg
+  Figure 6 caption: "Synthetic test by varying deformation level \u03C3 n , \u03B4\
+    \ s , number of outliersgraphs. Note it learns a QAP solver based on the given\
+    \ affinity matrixtensor, without learning any affinity model. This feature is\
+    \ not supported in GMN [25] and PCA-GM [17] thus they cannot be compared."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_7.jpg
+  Figure 7 caption: Normalized objective score on real-world QAPLIB instances. Only
+    half of the instance labels are shown on x -axis due to limited space.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_8.jpg
+  Figure 8 caption: Run time (log-scale) against problem size i.e. number of nodes
+    for each graph. All methods except Sinkhorn-JA are implemented and executed on
+    GPUs, as Sinkhorn-JA is challenging to be parallelized.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Neural_Graph_Matching_Network_Learning_Lawlers_Quadratic_Assignment_Problem_With\figure_9.jpg
+  Figure 9 caption: Generalization test by confusion matrix cross QAP problem instances,
+    where models are learned with instances on y -axis and tested with instances on
+    x -axis. Darker color and lower score correspond to better performance. The tasks
+    are randomly selected from the QAPLIB benchmark. Problem sizes are shown by the
+    numbers in instance names, and our method is insensitive to problem sizes.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.89
+  Name of the first author: Runzhong Wang
+  Name of the last author: Xiaokang Yang
+  Number of Figures: 11
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: 'Neural Graph Matching Network: Learning Lawlers Quadratic Assignment
+    Problem With Extension to Hypergraph and Multiple-Graph Matching'
+  Publication Date: 2021-05-07 00:00:00
+  Table 1 caption: TABLE 1 Summary of Existing Learning-Free and Learning-Based Methods
+    on Two Popular Formulations of QAP
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Summary of Existing Literature in Learning Graph Matching
+    Based on Different Types of Assignment Problems Solved by Learning, Learning Modules
+    Including CNN, GNN and Affinity Metric, Where GNN Embedding is Performed and Loss
+    Functions
+  Table 3 caption: TABLE 3 Notation of All Our Proposed Methods and Their Variants
+  Table 4 caption: TABLE 4 Best-Performing Occurrence Count on QAPLIB Among All Instances
+    and All Tested Solvers
+  Table 5 caption: "TABLE 5 Pearson Correlation Coefficient r r (only for |r|\u2265\
+    0.2 |r|\u22650.2 are Shown) Between the Listed Statistics for Each Problem Instance\
+    \ in QAPLIB and the Corresponding gap gap of two Methods (see Eq. (35)), as a\
+    \ Signal of Problem Difficulty (Bigger Gap More Difficult)"
+  Table 6 caption: TABLE 6 Matching Accuracy (%) on Pascal VOC Keypoint
+  Table 7 caption: TABLE 7 Controlled Experiment by Replacing NGM With Unlearned Imagenet
+    CNN and RRWM Solver
+  Table 8 caption: TABLE 8 Matching Accuracy (%) on Willow ObjectClass Dataset
+  Table 9 caption: TABLE 9 Ablation Study of NHGM-v2 on Pascal VOC Keypoint Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3078053
+- Affiliation of the first author: school of information science and technology, shanghaitech
+    university, shanghai, china
+  Affiliation of the last author: engineering research center of intelligent vision
+    and imaging, shanghaitech university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_1.jpg
+  Figure 1 caption: Illustration of human motion imitation, novel view synthesis and
+    appearance transfer. The 1st row is the source image and the 2nd row is reference
+    condition, such as image or novel viewpoint of camera. The 3rd row is the synthesized
+    results.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_10.jpg
+  Figure 10 caption: "Examples of motion imitation from our proposed methods (zoom-in\
+    \ for the best of view). All results are in 512\xD7512 resolution. Our method\
+    \ could produce high-fidelity images that preserve the face identity, shape consistency\
+    \ and clothes details of source. We recommend accessing the supplementary material,\
+    \ which can be found on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2021.3078270,\
+    \ for more results in videos."
+  Figure 2 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_2.jpg
+  Figure 2 caption: Three existing approaches to propagate the source information
+    into the target condition. (a) early concatenation, concatenates the source image,
+    the source condition, and the target condition into the color channel. (b) and
+    (c) are texture and feature warping, respectively. The source image or its features
+    are propagated into the target condition under a fitted transformation flow.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_3.jpg
+  Figure 3 caption: The training pipeline of our method. We randomly sample several
+    images from a video, denoting the source and the reference image as I s i and
+    I r . (a) A body mesh recovery module will estimate the 3D mesh of each image
+    and render their correspondence map, C s and C t ; (b) The flow composition module
+    will first calculate the transformation flow T based on two correspondence maps
+    and their projected vertices in the image space. Then it will separate the source
+    image I s i into a foreground image I ft s i and a masked background I bg . Finally
+    it warps the source image based on the transformation flow T and produces a warped
+    image I syn ; (c) In the last GAN module, the generator consists of three streams,
+    which separately generates the background image I bg by G BG , reconstructs the
+    source image I s by G SID and synthesizes the target image I t under the reference
+    condition by G TSF . To preserve the details of the source image, we propose a
+    novel LWB and AttLWB (shown in Fig. 4) which propagates the source features of
+    G SID into G TSF at several layers and preserve the source information, in terms
+    of texture, style and color.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_4.jpg
+  Figure 4 caption: "Illustration of our LWB and AttLWB. They have the same structure\
+    \ illustrated in (b) but with separate AddWB (illustrated in (a)) or AttWB (illustrated\
+    \ in (b)). (a) is the structure of AddWB. Through AddWB, X \u02C6 l t is obtained\
+    \ by aggregation of warped source features and features from G TSF . (b) is the\
+    \ shared structure of (Attentional) Liquid Warping Block. X l s 1 , X l s 2 ,\u2026\
+    , X l s n are the feature maps of different sources extracted by G SID at the\
+    \ l th layer. T s 1 \u2192t , T s 2 \u2192t ,\u2026, T s n \u2192t are the transformation\
+    \ flows from different sources to the target. X l t is the feature map of G TSF\
+    \ at the l th layer. (c) is the architecture of AttWB. Through AttWB, final output\
+    \ features X \u02C6 l t is obtained with SPADE by denormalizing feature map from\
+    \ G TSF with weighted combination of warped source features by a bilinear sampler\
+    \ (BS) with respect to corresponding flow T s i \u2192t ."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_5.jpg
+  Figure 5 caption: The details of network architectures of our Attentional Liquid
+    Warping GAN, including the generator and the discriminator. Here s represents
+    the stride size in convolution and transposed convolution.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_6.jpg
+  Figure 6 caption: Illustration of calculating the transformation flows of different
+    tasks during the testing phase. The left is the disentangled body parameters by
+    the Body Recovery module of both source and reference images. The right is the
+    different implementations to calculate the transformation flow in different tasks.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_7.jpg
+  Figure 7 caption: The statistic information of the iPER dataset, including the action,
+    clothes, height and weight distribution of the actors.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_8.jpg
+  Figure 8 caption: The samples of four datasets. The first two rows are the samples
+    from the iPER dataset. The third row is the samples from the MotionSynthetic dataset
+    and the fourth row is that from the FashionVideo dataset. The last row is the
+    samples from the Youtube-Dancer-18 dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Liquid_Warping_GAN_With_Attention_A_Unified_Framework_for_Human_Image_Synthesis\figure_9.jpg
+  Figure 9 caption: "Comparison of our method with others of motion imitation on the\
+    \ iPER and FashionVideo dataset (zoom-in for the best of view). All results are\
+    \ in 512\xD7512 resolution. 2D pose-guided methods pG2 [2], DSC [3] SHUP [1] and\
+    \ DIAF [30] cannot preserve the clothes details, face identity and shape consistency\
+    \ of source images. We highlight the details by red and blue rectangles."
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Wen Liu
+  Name of the last author: Shenghua Gao
+  Number of Figures: 19
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: 'Liquid Warping GAN With Attention: A Unified Framework for Human Image
+    Synthesis'
+  Publication Date: 2021-05-07 00:00:00
+  Table 1 caption: TABLE 1 One-shot Average Results for Human Motion Imitation of
+    Different Methods on the iPER, MotionSynthetic and FashionVidieo Dataset
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Few-shot Results for Human Motion Imitation of Different
+    Methods on the Youtube-Dancer-18 Dataset
+  Table 3 caption: TABLE 3 Results for Human Appearance Transfer of Our LWB and AttLWB,
+    on the iPER Dataset
+  Table 4 caption: TABLE 4 Results for Human Novel View Synthesis of Different Methods,
+    Including AppFlow [38], MV2NV [72], Ours LWB and AttLWB, on the iPER and MotionSynthetic
+    Dataset
+  Table 5 caption: TABLE 5 Comparison of Our Proposed AttLWB With and Without Personalization
+    on the Youtube-Dancer-18 Dataset
+  Table 6 caption: TABLE 6 Comparison Between Results With Different Loss Functions
+    on the Youtube-Dancer-18 Dataset
+  Table 7 caption: TABLE 7 Results of Different Warping Strategies on the Youtube-Dancer-18
+    dataset
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3078270
+- Affiliation of the first author: department of electrical and computer engineering
+    and the visual narrative initiative, north carolina state university, raleigh,
+    nc, usa
+  Affiliation of the last author: department of electrical and computer engineering
+    and the visual narrative initiative, north carolina state university, raleigh,
+    nc, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_1.jpg
+  Figure 1 caption: "Illustration of controllable image synthesis from reconfigurable\
+    \ spatial layouts and style codes in the COCO-Stuff dataset [22] at the resolution\
+    \ of 256\xD7256 . On the Left Panel : The proposed method is compared with the\
+    \ prior art, the Grid2Im method [19]. Each row shows effects of style control,\
+    \ in which three synthesized images are shown using the same input layout on the\
+    \ left by randomly sampling three style latent codes. Each column shows effects\
+    \ of layout control in terms of consecutively adding new objects (the first three)\
+    \ or perturbing an object bounding box (the last one), while retaining the style\
+    \ codes of existing objects unchanged. Advantages of the proposed method: Compared\
+    \ to the Grid2Im method, (i) the proposed method can generate more diverse images\
+    \ with respect to style control (e.g., the appearance of snow, and the pose and\
+    \ appearance of person). (ii) The proposed method also shows stronger controllability\
+    \ in retaining the style between consecutive spatial layouts. For example, in\
+    \ the second row, the snow region is not significantly affected by the newly added\
+    \ mountain and tree regions. Our method can retain the style of snow very similar,\
+    \ while the Grid2Im seems to fail to control. Similarly, between the last two\
+    \ rows, our method can produce more structural variations for the person while\
+    \ retaining similar appearance. Models are trained in the COCO-Stuff dataset [22]\
+    \ and synthesized images are generated at a resolution of 256\xD7256 for both\
+    \ methods. Note that the Grid2Im method [19] utilizes ground-truth masks in training,\
+    \ while the proposed method is trained without using ground-truth masks, and thus\
+    \ more flexible and applicable in other datasets that do not have mask annotations\
+    \ such as the Visual Genome dataset [23]. On the Right Panel: Illustration of\
+    \ the fine-grained control at the object instance level. For an input layout and\
+    \ its real image in the first row, four synthesized masks and images are shown.\
+    \ Compared with the 2nd row, the remaining three rows show synthesized masks and\
+    \ images by only changing the latent code for the Person bounding box. This shows\
+    \ that the proposed method is capable of disentangling object instance generation\
+    \ in an synthesized image at both the layout-to-mask level and the mask-to-image\
+    \ level, while maintaining a consistent layout in the reconfiguration. Please\
+    \ see text for details."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_10.jpg
+  Figure 10 caption: 'Style Control w.r.t. (zimg, Zobj) in our LostGAN-V2 256times
+    256 : multiple images synthesized using the same layout with different styles,
+    (zimg, Zobj) s. We also show the nearest neighbors of the synthesized images by
+    our LostGAN-V2 in the CoCo-Stuff training dataset using the AlexNet-pool5 feature
+    [62] and the GSC metric [50] (Section 3.1.3). (a) Layout and GT real image, (b)
+    the GSC-Nearest based on the input layout, and (c) Synthesized images by our LostGAN-V2
+    256times 256 and their AlexNet-Nearest neighbors.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_2.jpg
+  Figure 2 caption: "Illustration of the workflow of our proposed LostGANs. Both the\
+    \ generator and discriminator use ResNets [26] as backbones. In the generator,\
+    \ \u201CToRGB\u201D is a simple module converting the final feature map to RGB\
+    \ images. Our proposed ISLA-Norm and detailed specifications of the generator\
+    \ are explained in Fig. 3. Best viewed in color."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_3.jpg
+  Figure 3 caption: "Illustration of our proposed ISLA-Norm for the generator (left)\
+    \ and its deployment in a Residual building block (right-top). The right-bottom\
+    \ illustrates the \u201CToRGB\u201D module. The ISLA-Norm realizes the learning\
+    \ of layout-to-mask-to-image synthesis. The masks inferred on-the-fly enrich image\
+    \ synthesis outputs, leading to joint image and label map synthesis. See text\
+    \ for details."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_4.jpg
+  Figure 4 caption: "Illustration of the discriminator network (left). The shared\
+    \ feature backbone, the image-level feature backbone and the object-level feature\
+    \ pyramid use ResBlocks (right). Each of them consists of a number of ResBlocks\
+    \ depending on the target resolution of layout-to-image synthesis (e.g., 256\xD7\
+    256 ). In the ResBlock, \u201C[op]\u201D means an operation is optional subject\
+    \ to the settings. The object-level feature pyramid is used for placing object\
+    \ instances of different sizes at different feature layers (e.g., smaller bounding\
+    \ boxes placed at lower feature layers as done in the FPN [34]), such that the\
+    \ RoIAlign operation is meaningful. \u201CFC\u201D represents a fully-connected\
+    \ layer (with either a scalar output shown by a grey triangle or a vector output\
+    \ shown by a grey trapezoid). \u201CAvgPool\u201D represents a global channel-wise\
+    \ average pooling over the spatial dimensions."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_5.jpg
+  Figure 5 caption: 'Synthesized images from given layouts in COCO-Stuff by different
+    models. From the top to the bottom: Input layout, Ground-truth image, Layout2Im
+    [20] 64times 64 , our LostGAN-V1 [25] 128times 128 , Grid2Im [19] 256times 256
+    , our LostGAN-V2 256times 256 , and LostGAN+SPADE [15] (end-to-end integration,
+    the third method in Section 3.4) 256times 256 .'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_6.jpg
+  Figure 6 caption: "Synthesized images in VG by different models: Layout2Im [20]\
+    \ 64\xD764 , our LostGAN-V1 128\xD7128 , our LostGAN-V2 256\xD7256 . The last\
+    \ two rows show the nearest neighbors of the synthesized images by our LostGAN-V2\
+    \ in the VG training dataset using the AlexNet-pool5 feature [62] and the GSC\
+    \ metric [50] (Section 3.1.3)."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_7.jpg
+  Figure 7 caption: "Some selected examples of synthesized images at the resolution\
+    \ of 512\xD7512 in COCO-Stuff by our LostGAN-V2. The last two rows show the nearest\
+    \ neighbors of the synthesized images by our LostGAN-V2 in the CoCo-Stuff training\
+    \ dataset using the AlexNet-pool5 feature [62] and the GSC metric [50] (Section\
+    \ 3.1.3)."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_8.jpg
+  Figure 8 caption: "Examples of learned masks and their nearest neighbors in the\
+    \ ground-truth masks in the COCO-Stuff training dataset: truck, airplane, hydrant\
+    \ and person (from top to bottom). (a) Masks learned by our LostGAN-V2 256\xD7\
+    256 and (b-k) top-10 nearest neighbors. All masks are cropped and resized to the\
+    \ resolution of 32\xD732 . See text for details."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Learning_Layout_and_Style_Reconfigurable_GANs_for_Controllable_Image_Synthesis\figure_9.jpg
+  Figure 9 caption: 'Layout Control in our LostGAN-V2: image synthesis results by
+    adding new objects, changing the spatial position, the size, the aspect ratio
+    or the category label of a bounding box in a layout. Best viewed in magnification
+    and color.'
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Wei Sun
+  Name of the last author: Tianfu Wu
+  Number of Figures: 15
+  Number of Tables: 8
+  Number of authors: 2
+  Paper title: Learning Layout and Style Reconfigurable GANs for Controllable Image
+    Synthesis
+  Publication Date: 2021-05-10 00:00:00
+  Table 1 caption: "TABLE 1 Quantitative Comparisons Using the Inception Score (IS,\
+    \ Higher is Better, Illustrated by \u2191 \u2191), FID (Lower is Better, Illustrated\
+    \ by \u2193 \u2193) and Diversity Score (DS, Higher is Better, Illustrated by\
+    \ \u2191 \u2191) Evaluation Metrics in the COCO-Stuff [22] and VG [23] Datasets"
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparisons of the CAS
+  Table 3 caption: "TABLE 3 Comparisons of the Detection AP (DAP \u2191 \u2191)"
+  Table 4 caption: TABLE 4 MIoU Between Masks and Their Nearest Neighbor in Ground
+    Truth Masks
+  Table 5 caption: "TABLE 5 Comparisons of Semi-Supervised LostGAN-V2 128 \xD7 128"
+  Table 6 caption: "TABLE 6 Quantitative Comparisons Using the Inception Score (IS,\
+    \ Higher is Better), the FID (Lower is Better) and Diversity Score (DS, Higher\
+    \ is Better) Evaluation on COCO-Stuff Dataset at the Resolution of 256\xD7256\
+    \ 256\xD7256"
+  Table 7 caption: "TABLE 7 Effects of Four Components in LostGAN-V2 128 \xD7 128"
+  Table 8 caption: "TABLE 8 Effects of the Mask Refinement in Our LostGAN-V2 256\xD7\
+    256 256\xD7256 in COCO-Stuff"
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3078577
+- Affiliation of the first author: agency for science technology and research (astar),
+    singapore, singapore
+  Affiliation of the last author: agency for science technology and research (astar),
+    singapore, singapore
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.79
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.67
+  Name of the first author: Le Zhang
+  Name of the last author: Zeng Zeng
+  Number of Figures: 0
+  Number of Tables: 0
+  Number of authors: 8
+  Paper title: "Correction to \u201CNonlinear Regression via Deep Negative Correlation\
+    \ Learning\u201D"
+  Publication Date: 2021-05-11 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3071929
+- Affiliation of the first author: samsung ai centre, cambridge, u.k.
+  Affiliation of the last author: university of edinburgh, edinburgh, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\MetaLearning_in_Neural_Networks_A_Survey\figure_1.jpg
+  Figure 1 caption: Overview of the meta-learning landscape including algorithm design
+    (meta-optimizer, meta-representation, meta-objective), and applications.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Timothy Hospedales
+  Name of the last author: Amos Storkey
+  Number of Figures: 1
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: 'Meta-Learning in Neural Networks: A Survey'
+  Publication Date: 2021-05-11 00:00:00
+  Table 1 caption: TABLE 1 Research Papers According to Our Taxonomy
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3079209
+- Affiliation of the first author: department of electrical and electronic engineering,
+    imperial college london, london, u.k.
+  Affiliation of the last author: department of electrical and electronic engineering,
+    imperial college london, london, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_1.jpg
+  Figure 1 caption: The benefit of multi-focus image fusion. In image 1 (the first
+    row) and image 2 (the second row), only a part of the images are clear. The fused
+    images (the third row) are all-in-focus. The fused images are produced using DRPL
+    [19] by the author of this study.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_10.jpg
+  Figure 10 caption: Overall ranking of 35 MFIF algorithms on three datasets. MFIF
+    algorithms (horizontal axis) are sorted according to the ranking on the MFFW dataset
+    for easier reading. Note that the ranking of FusionDN, PMGI, GCF and U2Fusion
+    on the Lytro dataset are not reported.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_2.jpg
+  Figure 2 caption: The number of papers about deep learning-based MFIF algorithms
+    since 2017 (according to Google Scholar). 2 2.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_3.jpg
+  Figure 3 caption: The schematic diagram of the CNN-based MFIF method [39]. The CNN
+    produces the focus map, which is then processed by post-processing steps.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_4.jpg
+  Figure 4 caption: Examples of fully convolutional MFIF methods.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_5.jpg
+  Figure 5 caption: Examples of two-stream end-to-end MFIF algorithms.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_6.jpg
+  Figure 6 caption: Examples of one-stream end-to-end MFIF algorithms.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_7.jpg
+  Figure 7 caption: Examples of GAN-based MFIF algorithms.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_8.jpg
+  Figure 8 caption: Examples of CNN-based unsupervised MFIF algorithms.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Deep_LearningBased_MultiFocus_Image_Fusion_A_Survey_and_a_Comparative_Study\figure_9.jpg
+  Figure 9 caption: The network architecture of SESF [26].
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Xingchen Zhang
+  Name of the last author: Xingchen Zhang
+  Number of Figures: 12
+  Number of Tables: 7
+  Number of authors: 1
+  Paper title: 'Deep Learning-Based Multi-Focus Image Fusion: A Survey and a Comparative
+    Study'
+  Publication Date: 2021-05-11 00:00:00
+  Table 1 caption: TABLE 1 An Overview of Main Deep Learning-Based MFIF Methods
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Details of Existing Multi-Focus Image Fusion Datasets
+  Table 3 caption: TABLE 3 MFIF Algorithms That Use Different Methods to Generate
+    Training Data
+  Table 4 caption: TABLE 4 Multi-Focus Image Fusion Algorithms That are Utilized in
+    Experiments
+  Table 5 caption: TABLE 5 The Ranking and More Details of Deep Learning-Based MFIF
+    Algorithms Utilized in This Study
+  Table 6 caption: TABLE 6 Average Evaluation Metric Values of All Methods on the
+    MFFW Dataset
+  Table 7 caption: TABLE 7 Average Running Time of MFIF Algorithms (Seconds per Image
+    Pair)
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3078906
+- Affiliation of the first author: institute of artificial intelligence and robotics,
+    xian jiaotong university, xian, shaanxi, china
+  Affiliation of the last author: wormpex ai research, bellevue, wa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation\figure_1.jpg
+  Figure 1 caption: 'The proposed CleanNet consists of four components, i.e., a feature
+    embedding module, an action classification module, an action localization module,
+    and a WS-TAP generation module as denoted by brown, blue, red and green rectangles,
+    respectively. Training inputs: untrimmed videos with video-level categorical labels.
+    Prediction outputs: action instance category labels with temporal starts, ends
+    and confidence scores.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation\figure_2.jpg
+  Figure 2 caption: The structure of the TAP regressor. Input snippet-level features
+    are fed into three stacked temporal convolutional layers before a TSN sampling
+    layer, which matches its receptive field size with the anchor size.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation\figure_3.jpg
+  Figure 3 caption: "The workflow of the TAP evaluator in CleanNet. To locate action\
+    \ instances of the i th category in a video, the inputs to the evaluator are all\
+    \ temporal SCPs corresponding to the i th action category \u03C8 i \u2208 R 1\xD7\
+    T (illustrated as the green histogram) and an arbitrary TAP P (denoted as the\
+    \ black bounding boxes imposed on the green histogram). The output is the contrast\
+    \ score s(P) of P , according to Eq. (17)."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation\figure_4.jpg
+  Figure 4 caption: "Workflow of the SBVs evaluator. The input is the SCPs of the\
+    \ n th action illustrated as a histogram in the upper left corner, denoted as\
+    \ \u03C8 c \u2208 R 1\xD7T . The output SBVs ( b\u2208 R 1\xD7T ) is illustrated\
+    \ as the histogram in the upper right corner. At each temporal position t , b(t)\
+    \ is calculated based on data within the local window (illustrated as the red\
+    \ bounding box superimposed on the histograms). As the local window slides through\
+    \ all T temporal positions, SBVs of shape 1\xD7T ( T being the number of snippets)\
+    \ are computed."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation\figure_5.jpg
+  Figure 5 caption: The workflow of the boundary-based TAP generator. Taking SBVs
+    ( mathbf v in mathbb R1 times T ) as the input, the first step is formulating
+    boundary proposals according to Eq. (20) (red dashed box). Subsequently, locating
+    staring and ending boundaries can be reformulated as selecting boundary proposals.
+    As shown in the blue dashed box, boundary proposals are selected via NMS and boundary-based
+    TAPs are finally obtained by connecting the center locations of starting and ending
+    proposals. All boundary-based TAPs of a specific ending proposal are illustrated
+    on the bottom.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation\figure_6.jpg
+  Figure 6 caption: AR-versus-AN and recallAN=100-versus-IoU comparison on THUMOS14
+    with UNet backbone.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation\figure_7.jpg
+  Figure 7 caption: Qualitative TAL examples of CleanNet-Simple, UntrimmedNet [53],
+    AutoLoc [43] and CleanNet-SW on the THUMOS14 testing set. The ground truth temporal
+    locations and predicted ones are illustrated with blue and green bars, respectively.
+    Both the corresponding temporal contrast and snippet-level classification predictions
+    (SCPs) of the target action are included. Specifically, for the temporal contrast,
+    a two-tone color scheme is used, with blue and red colors representing positive
+    and negative values, respectively. CleanNet-Simple and UntrimmedNet share the
+    same SCPs. (a) An example video with false negative errors. (b) An example video
+    with false positive errors. (c) An example of over-segmentation (i.e., breaking
+    one instance into multiple segments). (d) An example of under-segmentation (i.e.,
+    merging multiple instances into one segment). Compared with the thresholding-based
+    method UntrimmedNet, methods not relying on thresholding for localization can
+    better handle these challenging cases.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation\figure_8.jpg
+  Figure 8 caption: Action instances with ambiguous boundaries, such as the run-up
+    as the preparatory phase. With the immediately preceding preparatory phase and
+    the subsequent follow-up phase, it is challenging for algorithms to precisely
+    locate the real action phase, especially with weakly supervised methods. The above
+    five samples demonstrate such cases, where our proposed method misclassifies these
+    transitional phases as part of the real action instance. The dashed red lines
+    indicate the real temporal action boundaries provided by the groundtruth.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Ziyi Liu
+  Name of the last author: Gang Hua
+  Number of Figures: 8
+  Number of Tables: 12
+  Number of authors: 6
+  Paper title: Weakly Supervised Temporal Action Localization Through Contrast Based
+    Evaluation Networks
+  Publication Date: 2021-05-11 00:00:00
+  Table 1 caption: TABLE 1 Five Main Components of CleanNet Divided for Detailed Ablation
+    Studies
+  Table 10 caption: TABLE 10 ARAN Performance Comparison on THUMOS14 Test Set
+  Table 2 caption: TABLE 2 TAL Performance Comparison of Our Method and its Variants
+    With Different Combination of Components on the THUMOS14 Testing Set, at the IoU
+    Threshold 0.5
+  Table 3 caption: TABLE 3 TAL mAP on the THUMOS14 Testing Set, at the IoU Threshold
+    0.5 With Different Pooling Kernel Sizes
+  Table 4 caption: TABLE 4 TAL Performance Comparison Between UntrimmedNet [53] and
+    CleanNet-Simple on THUMOS14 Test Set, With the Same Feature Embedding and SCPs
+  Table 5 caption: TABLE 5 TAL Performance Comparison Between Training With and Without
+    the Pre-Trained Classification Modules
+  Table 6 caption: TABLE 6 ARAN =50,100,200 =50,100,200 Performance Comparison on
+    THUMOS14 Test Set
+  Table 7 caption: 'TABLE 7 TAL: mAPIoU Comparison on THUMOS14 Test Set'
+  Table 8 caption: TABLE 8 Differences Among the Variants of Our Method
+  Table 9 caption: TABLE 9 TAL Performance Comparison on the THUMOS14 Testing Set
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3078798
+- Affiliation of the first author: department of information and communication engineering,
+    dgist, daegu, republic of korea
+  Affiliation of the last author: school of computing, kaist, daejeon, republic of
+    korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_1.jpg
+  Figure 1 caption: 'Results of the simple retraining and synaptic join method (NIN
+    for CIFAR-10, target: class3).'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_10.jpg
+  Figure 10 caption: Distribution of active neurons.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_2.jpg
+  Figure 2 caption: 'Overall and per-class test accuracy (three-layer CNN for SVHN,
+    target: class9).'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_3.jpg
+  Figure 3 caption: An example of synaptic join ( |D|=4 ).
+  Figure 4 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_4.jpg
+  Figure 4 caption: Distributions for E w and E c for four synapses picked from ResNet56
+    for CIFAR-100.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Distribution of the count of all the synapses in a hidden layer
+    of the ResNet56 for CIFAR-100.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Target and overall accuracies while varying n (3-layer CNN for
+    SVHN).
+  Figure 7 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_7.jpg
+  Figure 7 caption: Target and overall accuracies while varying the scale (3-layer
+    CNN for SVHN).
+  Figure 8 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_8.jpg
+  Figure 8 caption: Per-class and overall test accuracies of compared methods (3-layer
+    CNN for SVHN).
+  Figure 9 Link: articels_figures_by_rev_year\2021\Tweaking_Deep_Neural_Networks\figure_9.jpg
+  Figure 9 caption: 'Correlation between the number of parameters and the number of
+    active neurons (SV3CN: 3-layer CNN for SVHN, SVRN: ResNet-20 for SVHN, SVDN: DenseNet-40
+    for SVHN, C100RN18: ResNet18 for CIFAR-100, C100RN56: ResNet18 for CIFAR-100,
+    SUNDN: DenseNet-121 for SUN-397, IMGGN: GoogLeNet for ImageNet).'
+  First author gender probability: 0.7
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.7
+  Name of the first author: Jinwook Kim
+  Name of the last author: Min-Soo Kim
+  Number of Figures: 12
+  Number of Tables: 11
+  Number of authors: 3
+  Paper title: Tweaking Deep Neural Networks
+  Publication Date: 2021-05-12 00:00:00
+  Table 1 caption: TABLE 1 Validation Accuracy Between 126 k and 135 k Iterations
+  Table 10 caption: TABLE 10 Accuracy Gains While Varying the Number of Tail Classes
+    (DenseNet-121 for SUN-397)
+  Table 2 caption: TABLE 2 Proportions of the High Rank Synapses
+  Table 3 caption: TABLE 3 Results of the Retraining Methods (3-Layer CNN for SVHN)
+  Table 4 caption: TABLE 4 Quantitative Analysis of the Methods
+  Table 5 caption: TABLE 5 Comparison of Major Retraining Methods and Synaptic Join
+    Method (ResNet-20 and DenseNet-40 for SVHN)
+  Table 6 caption: TABLE 6 Results of Synaptic Join Using the Two Different Criteria,
+    count count and threshold threshold (ResNet18 for CIFAR-100)
+  Table 7 caption: TABLE 7 Results of Synaptic Join for Three Target Classes of the
+    Lowest, Median, and Highest Accuracies (3-Layer CNN for SVHN)
+  Table 8 caption: TABLE 8 Results of Synaptic Join for Multiple Target Classes (3-Layer
+    CNN for SVHN, n=40 n=40)
+  Table 9 caption: TABLE 9 Results of Repeating Synaptic Join and Retraining
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3079511

@@ -1,0 +1,814 @@
+- Affiliation of the first author: college of computer science and technology, zhejiang
+    university, hangzhou, china
+  Affiliation of the last author: college of computer science and technology, zhejiang
+    university, hangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_1.jpg
+  Figure 1 caption: Illustration of dynamic routing. A dynamic routing network is
+    a mapping from a sample space to a routing space. Each routing path consists of
+    a sequence of to-be-run and to-be-skipped blocks. The dynamic routing model walks
+    through the to-be-run blocks. Best viewed in color.
+  Figure 10 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_10.jpg
+  Figure 10 caption: The visualization of the routing paths of multi-augmentations
+    for samples. We randomly visualize 150 groups of augmentations from the CIFAR-10
+    test set. Dots in the same color stand for a group of augmentations from the same
+    sample. Best viewed in color.
+  Figure 2 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_2.jpg
+  Figure 2 caption: "Illustration of our motivation. Left: Schematic diagram of a\
+    \ dynamic routing network, in which each layer can be either executed or skipped.\
+    \ Middle: A demonstration of the routing space. All potential routing paths compose\
+    \ a binary routing space. Right: Routing paths for similar images should be the\
+    \ same or similar, e.g., a and a \u2032 , b and b \u2032 , while routing paths\
+    \ for dissimilar images should be different, e.g., c and c \u2032 , d and d \u2032\
+    \ . Best viewed in color."
+  Figure 3 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_3.jpg
+  Figure 3 caption: Illustration of dynamic routing and our router. (a) Comparison
+    between static inference and dynamic routing. In the dynamic routing network,
+    whether the current convolution block would be executed depends on the output
+    of the previous block. (b) Illustration of the structure of our router. The cost
+    of our router is negligible compared with a convolution block.
+  Figure 4 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_4.jpg
+  Figure 4 caption: 'An overview of CoDiNet. Similar Image Generation: Each sample
+    is augmented randomly and get several similar augmentations. Dynamic Routing Network:
+    Through a dynamic routing network, we get routing paths and prediction for each
+    sample. Path Distribution Optimization: We optimize the path distribution with
+    the consistency loss L con and the diversity loss L div . Note that the augmentation
+    methods are commonly used in classification, which are cropping and horizontally
+    flipping. Best viewed in color.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_5.jpg
+  Figure 5 caption: Illustration of the optimization of path distribution. A solid
+    point means a routing path of an image. A hollow circle means a routing path center
+    of similar images. (a) Suppose we have four different input images whose paths
+    distribute in the routing space. (b) With augmentations, we can get four similar
+    instances of each image. (c) The consistency regularization makes routing paths
+    of similar instances cluster around their center. (d) The diversity regularization
+    disperses the center of dissimilar instances. Best viewed in color.
+  Figure 6 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_6.jpg
+  Figure 6 caption: Visualization of the routing path distribution under different
+    constraints through t-SNE on the CIFAR-10 test set. Figures in the first row show
+    the path distribution of the vanilla dynamic routing method without mathcal Lcon
+    and mathcal Ldiv . Figures in the second row show the path distribution of the
+    experiments with mathcal Lcon only. Figures in the third row show the path distribution
+    of our method. All figures are in the same coordinate scales.
+  Figure 7 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_7.jpg
+  Figure 7 caption: Visualization of the routing paths distribution under different
+    md through t-SNE. md is the margin of diversity, which is defined in Eq. (9).
+    Figures in row 1, 2 and 3 show routing path distributions for md=0.25, 0.5 , and
+    0.75 respectively. Images are of 5 classes (airplane, automobile, bird, cat, and
+    deer) from the CIFAR-10 test set.
+  Figure 8 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_8.jpg
+  Figure 8 caption: The accuracy against computational cost (GMACCs) of CoDiNet comparing
+    to related methods on CIFAR-10 and ImageNet.
+  Figure 9 Link: articels_figures_by_rev_year\2021\CoDiNet_Path_Distribution_Modeling_With_Consistency_and_Diversity_for_Dynamic_Ro\figure_9.jpg
+  Figure 9 caption: KL divergence of the predictions between original and its augmentation
+    on the CIFAR-10 test set. Green bars stands for the vanilla dynamic routing ResNet-110.
+    Blue bars stands for the dynamic ResNet-110 with mathcal Lcon . Best viewed in
+    color.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.97
+  Name of the first author: Huanyu Wang
+  Name of the last author: Xi Li
+  Number of Figures: 12
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: 'CoDiNet: Path Distribution Modeling With Consistency and Diversity
+    for Dynamic Routing'
+  Publication Date: 2021-05-28 00:00:00
+  Table 1 caption: TABLE 1 Notations
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Efficiency and Accuracy Trade-Off Based on ResNet-110
+    on CIFAR-10
+  Table 3 caption: TABLE 3 Ablation Study of Routers, L con Lcon and L div Ldiv on
+    CIFAR-10
+  Table 4 caption: TABLE 4 Results on SVHN
+  Table 5 caption: TABLE 5 Results on CIFAR-10100
+  Table 6 caption: TABLE 6 Comparison With State-of-the-Arts on CIFAR-10
+  Table 7 caption: TABLE 7 Comparison With State-of-the-Arts on ImageNet
+  Table 8 caption: TABLE 8 Analysis of the Margin of Diversity
+  Table 9 caption: TABLE 9 Illustration of the RCC (Pearon Correlation Coefficient)
+    Between Sample Similarity and the Routing Path Similarity
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3084680
+- Affiliation of the first author: department of computer science, artificial intelligence
+    graduate school, unist, ulsan, south korea
+  Affiliation of the last author: school of electrical engineering, kaist, daejeon,
+    south korea
+  Figure 1 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_1.jpg
+  Figure 1 caption: (a) We examine a special type of camera motion that appears when
+    using a selfie stick. (b) We refer to this motion as spherical joint motion. (c)
+    Given two input images captured under spherical joint motion, we can robustly
+    estimate their relative pose, which can be used for existing 3D reconstruction
+    pipelines and applications. (d) Anaglyph of image rectification. (e) Depth map
+    obtained from our pose estimation. (f) Computational photography (e.g., image
+    refocusing).
+  Figure 10 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_10.jpg
+  Figure 10 caption: 'Depth-aware vision applications: refocusing and stylization.
+    From left to right, each column corresponds to input samples, refocused images,
+    stylized images, and style reference images used for stylization. We recommend
+    the electronic version of this paper for the best view.'
+  Figure 2 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_2.jpg
+  Figure 2 caption: (a) Spherical motion [17] and (b) spherical joint motion, where
+    the principal axes of the cameras do not point to the pivot location, O p , unlike
+    the spherical motion case, but the camera centers are on a spherical surface.
+    (d) Convenient calibration concept.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_3.jpg
+  Figure 3 caption: 'Two motion parametrizations: (a) 3-DoF spherical motion, and
+    (b) 2-DoF selfie motion.'
+  Figure 4 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_4.jpg
+  Figure 4 caption: "Analysis of the proposed calibration scheme. The euclidean distance\
+    \ between the true and estimated t wp values w.r.t. (a) varying \u03C3 I on image\
+    \ points (fixed \u03C3 T =10 ) and (b) varying \u03C3 T on initial t wp (fixed\
+    \ \u03C3 I =1 ). (c) Example images captured for calibration. (d) Visualization\
+    \ of the calibration results for two different views. The original principal axes\
+    \ (blue dashed lines) are rotated via calibration. The new principal axes (orange)\
+    \ point to the pivot."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_5.jpg
+  Figure 5 caption: Robustness to perturbation of the pivot point. (a) Available directions
+    for perturbation of the pivot. (b) Success rate w.r.t. discrepancy along the parallel
+    direction (stick length). (c) Success rate w.r.t. discrepancy along the orthogonal
+    direction (wrist pivot).
+  Figure 6 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_6.jpg
+  Figure 6 caption: Results on UnrealCV data. (a) Sample image. The results of (b)
+    spherical motion and (c) selfie motion, where we have overlaid the estimated cameras
+    (blue) and ground-truth cameras (orange). The black circles indicate ground-truth
+    3D points and the dots indicate the estimated 3D points from the estimated camera
+    pair. For visualization purposes, we only plot 3D points from the human.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_7.jpg
+  Figure 7 caption: Simulations using synthetic data. (a,c) Convergence of bounds
+    for spherical motion and selfie motion. (b,d) Remaining search space volume and
+    number of cubes for spherical motion and selfie motion. The dashed lines in (c,d)
+    represent the results for selfie motion. (e) Success rate w.r.t. the outlier ratio.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_8.jpg
+  Figure 8 caption: Results on real-world data. (a) Reference images, (b) rectified
+    image pairs, (c) estimated depths, where we applied the weighted median filter
+    [35] to the estimated depths, and (d) estimated 3D structures and cameras, where
+    orange cameras represent the cameras selected for computing the 3D structures.
+    The bottom row presents the results for selfie motion.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Robust_and_Efficient_Estimation_of_Relative_Pose_for_Cameras_on_Selfie_Sticks\figure_9.jpg
+  Figure 9 caption: Qualitative comparison with SphSAC [17].
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Kyungdon Joo
+  Name of the last author: In So Kweon
+  Number of Figures: 10
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Robust and Efficient Estimation of Relative Pose for Cameras on Selfie
+    Sticks
+  Publication Date: 2021-05-31 00:00:00
+  Table 1 caption: TABLE 1 Comparison With Yang et al. [19]
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Comparison With SphSAC[17]
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085134
+- Affiliation of the first author: college of computer science, nankai university,
+    tianjin, china
+  Affiliation of the last author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Figure 1 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_1.jpg
+  Figure 1 caption: Examples of background matching camouflage (BMC). There are seven
+    and six birds for the left and right image, respectively. Answers in color are
+    shown in Fig. 27.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_10.jpg
+  Figure 10 caption: High-quality annotation. The annotation quality is close to the
+    existing matting-level [23] annotation.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_2.jpg
+  Figure 2 caption: Task relationship. Given an input image (a), we present the ground-truth
+    for (b) panoptic segmentation [5] (which detects generic objects [18], [19] including
+    stuff and things), (c) instance level salient object detection [11], [20], and
+    (d) the proposed concealed object detection task, where the goal is to detect
+    objects that have a similar pattern to the natural environment. In this example,
+    the boundaries of the two butterflies are blended with the bananas, making them
+    difficult to identify.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_3.jpg
+  Figure 3 caption: Annotation diversity in the proposed COD10K dataset. Instead of
+    only providing coarse-grained object-level annotations like in previous works,
+    we offer six different annotations for each image, which include attributes and
+    categories (first row), bounding boxes (second row), object annotation (third
+    row), instance annotation (fourth row), and edge annotation (fifth row).
+  Figure 4 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_4.jpg
+  Figure 4 caption: Examples of sub-classes. Please refer to supplementary materials,
+    which can be found on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2021.3085766,
+    for other sub-classes.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_5.jpg
+  Figure 5 caption: Object and instance distributions of each concealed category in
+    the COD10K. COD10K consists of 5,066 concealed images from 69 categories. Zoom
+    in for best view.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_6.jpg
+  Figure 6 caption: Taxonomic system. We illustrate the histogram distribution for
+    the 69 concealed categories in our COD10K.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_7.jpg
+  Figure 7 caption: 'Attribute distribution. Top-left: Co-attributes distribution
+    over COD10K. The number in each grid indicates the total number of images. Top-right:
+    Multi-dependencies among these attributes. A larger arc length indicates a higher
+    probability of one attribute correlating to another. Bottom: attribute descriptions.
+    Examples could be found in the first row of Fig. 3.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_8.jpg
+  Figure 8 caption: 'Image resolution (unit for the axis: pixel) distribution of COD
+    datasets. From left to right: CHAMELEON [24], CAMO-COCO [25] and COD10K datasets.'
+  Figure 9 Link: articels_figures_by_rev_year\2021\Concealed_Object_Detection\figure_9.jpg
+  Figure 9 caption: Comparison between the proposed COD10K and existing datasets.
+    COD10K has smaller objects (top-left), contains more difficult conceale (top-right),
+    and suffers from less center bias (bottom-leftright).
+  First author gender probability: 0.9
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Deng-Ping Fan
+  Name of the last author: Ling Shao
+  Number of Figures: 27
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Concealed Object Detection
+  Publication Date: 2021-06-01 00:00:00
+  Table 1 caption: TABLE 1 Summary of COD Datasets, Showing That COD10K Offers Much
+    Richer Annotations and Benefits Many Tasks
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Results on Three Different Datasets
+  Table 3 caption: TABLE 3 Quantitative Results on Four Super-Classes of the COD10K
+    Dataset in Terms of Four Widely Used Evaluation Metrics.
+  Table 4 caption: "TABLE 4 Results of S \u03B1 S\u03B1 for Each Sub-Class in Our\
+    \ COD10K Dataset"
+  Table 5 caption: "TABLE 5 Structure-Measure ( S \u03B1 \u2191 S\u03B1\u2191 [84])\
+    \ Scores for Cross-Dataset Generalization"
+  Table 6 caption: TABLE 6 Ablation Studies for Each Component on Three Test Datasets
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085766
+- Affiliation of the first author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Affiliation of the last author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2021\PointINS_PointBased_Instance_Segmentation\figure_1.jpg
+  Figure 1 caption: The core module instance-aware convolution of the proposed PointINS
+    framework in instance segmentation, along with the comparison with the vanilla
+    convolution. By introducing the multiple instance-aware weights from the same
+    point-of-interest (PoI) feature, we obtain different instance masks by instance-aware
+    convolution.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\PointINS_PointBased_Instance_Segmentation\figure_2.jpg
+  Figure 2 caption: Illustration of differences between RetinaNet [37] and FCOS [60].
+    Blue points and boxes represent the center and bound of an object, respectively,
+    while red points and boxes represent the center and bound of anchor, respectively.
+    (a) The single point in RetinaNet responds to several predefined anchors with
+    various sizes and aspect ratios. Thus, RetinaNet regresses from the anchor box
+    with four offsets. (b) FCOS has no anchors, and regresses from a center point
+    with four distances. For simplicity, we refer to this center point as an anchor
+    point.
+  Figure 3 Link: articels_figures_by_rev_year\2021\PointINS_PointBased_Instance_Segmentation\figure_3.jpg
+  Figure 3 caption: Overall architecture of proposed PointINS framework. C 3 , C 4
+    and C 5 are the feature maps of the backbone network (e.g., ResNet50). P 3 to
+    P 7 are the feature pyramid network (FPN) feature maps, as in [36], [37], [60].
+    For better illustration, each feature map is represented by three dimensions,
+    including height H, width W and channel without considering the image batch. A
+    is the number of anchors covered by a single point, with 9 and 1 in RetinaNet
+    and FCOS respectively. C is the number of classes, such as 80 in COCO [38] dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2021\PointINS_PointBased_Instance_Segmentation\figure_4.jpg
+  Figure 4 caption: "Detailed structure of proposed instance-aware mask prediction\
+    \ module. For simplicity, we only sample a single-point feature generated from\
+    \ the 3\xD73 points feature in regression branch for illustration. The red point\
+    \ from regression branch is our sampled positive point. The key process in proposed\
+    \ module is instance-aware convolution, including the instance-agnostic feature\
+    \ and instance-aware weight. First, we generate the instance-agnostic feature\
+    \ F n by a channel up-scaling convolution layer and a reshape operation. Meanwhile,\
+    \ the instance-aware weight F w is obtained by transforming the explicit instance\
+    \ information I z . Then the two features serve as the input and weight of the\
+    \ instance-aware convolution, in order to produce instance-aware feature F m for\
+    \ final mask prediction. The right-most part is a geometric illustration of our\
+    \ transformation module."
+  Figure 5 Link: articels_figures_by_rev_year\2021\PointINS_PointBased_Instance_Segmentation\figure_5.jpg
+  Figure 5 caption: Visualization of instance-aware features under the same point
+    feature. With various instance information, instance-aware convolution generates
+    distinct instance-aware features for subsequent mask prediction.
+  Figure 6 Link: articels_figures_by_rev_year\2021\PointINS_PointBased_Instance_Segmentation\figure_6.jpg
+  Figure 6 caption: The speed-accuracy trade-off curve of the state-of-the-art methods.
+  Figure 7 Link: articels_figures_by_rev_year\2021\PointINS_PointBased_Instance_Segmentation\figure_7.jpg
+  Figure 7 caption: Visualization of RetinaNet-based PointINS with ResNet101 on COCO
+    dataset under 1times (12 epochs) training. For all images, we set the mask confidence
+    threshold to 0.5.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.91
+  Name of the first author: Lu Qi
+  Name of the last author: Jiaya Jia
+  Number of Figures: 7
+  Number of Tables: 15
+  Number of authors: 7
+  Paper title: 'PointINS: Point-Based Instance Segmentation'
+  Publication Date: 2021-06-01 00:00:00
+  Table 1 caption: TABLE 1 The Illustration of Key Hyper-Parameters (HP) Using RetinaNet
+    as Backbone
+  Table 10 caption: TABLE 10 Ablation Study on Sample Ratio for Each Target Box Type
+  Table 2 caption: TABLE 2 Ablation Study for Instance-Agnostic Feature Representation
+    With a Fixed Kernel Size of 3 of Channel Up-Scaling Convolution
+  Table 3 caption: TABLE 3 Ablation Study for Instance-Agnostic Feature Representation
+    With Various Kernel Size of Channel Up-Scaling Convolution
+  Table 4 caption: TABLE 4 Ablation Study for the Input to Generate Instance-Aware
+    Weights
+  Table 5 caption: TABLE 5 Performance Comparison With Other Heuristic Designs for
+    I z Iz
+  Table 6 caption: TABLE 6 Ablation Study for Instance-Aware Weight Prediction Structure
+  Table 7 caption: TABLE 7 Ablation Study for Information Fusion Between the Instance-Agnostic
+    Template and Instance-Aware Weight
+  Table 8 caption: TABLE 8 The Ablation Study on Number of Sampled Positive Points
+  Table 9 caption: TABLE 9 The Ablation Study on the Sample Criterion for Positive
+    Points
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085295
+- Affiliation of the first author: key laboratory of knowledge engineering with big
+    data - the ministry of education, hefei university of technology (hfut), hefei,
+    china
+  Affiliation of the last author: key laboratory of knowledge engineering with big
+    data - the ministry of education, hefei university of technology (hfut), hefei,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_1.jpg
+  Figure 1 caption: 'Two challenges of visual dialog: (1) rich visual clues involve
+    fine-grained relational inference and (2) when and how to explore historical clues?
+    The resolution of the visual-textual contextual correlation - the proposed context-aware
+    graph - CAG - are depicted in Figs. 2c and 3.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_10.jpg
+  Figure 10 caption: Visualization result of a progressive multi-round dialog inference.
+    Each column shows a graph attention map and the last step of message passing process
+    of a salient object. In these graph attention maps, bounding boxes correspond
+    to the top-3 attended object nodes in the final graph, and the numbers along with
+    the bounding boxes represent the node attention weights.
+  Figure 2 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_2.jpg
+  Figure 2 caption: Different graph structures of existing graph works and ours. [23]
+    (a) focused on edge learning (textual inference) with nodes of caption and question-answer
+    pair at each round. [24] devoted to the semantic interaction of the six multi-modal
+    entities (image I , caption C , the current question Q , option answer A , questions
+    in history H Q and answers in history H A ). Our solution (c) focuses on a more
+    fine-grained context-aware graph, devoting to learning object-level dialog-historical
+    contextual awareness under the guidance of question.
+  Figure 3 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_3.jpg
+  Figure 3 caption: "Negative influences of historical clues in visual dialog. The\
+    \ format of answer in each rank list is fixed as \u201Cpredicted rank order -\
+    \ answer - (annotated relevance score) - predicted probability\u201D. In answer\
+    \ list A, the joint model prefers candidate answers related to high-frequency\
+    \ words in QA pairs. To improve this linguistic bias, we apply the generalized\
+    \ visual knowledge in the image-only model (answer list B) to distill the joint\
+    \ model and output the final answer list C. The distilled knowledge is helpful\
+    \ to inhibit the historical noise, and makes the model much more self-confident,\
+    \ e.g., the rank 1 answer in list C with high predicted probability score."
+  Figure 4 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_4.jpg
+  Figure 4 caption: The overall framework of Context-Aware Graph. Our context-aware
+    graph is constructed with visual contexts v obj and textual context u . The dynamic
+    relation between the nodes is iteratively inferred via Top- K neighbors Message
+    Passing under the guidance of word-level question command q (t) w . For example,
+    the red and blue nodes in the graph respectively have different top-2 related
+    neighbor nodes, and different directions of the message passing flow on the connection
+    edges.
+  Figure 5 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_5.jpg
+  Figure 5 caption: Adaptive Top- K message passing unit.
+  Figure 6 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_6.jpg
+  Figure 6 caption: Performance comparison of the neighborhood number K on VisDial
+    val v0.9.
+  Figure 7 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_7.jpg
+  Figure 7 caption: Performance comparison of CAG randomly involving different amounts
+    of history on the VisDial v1.0 validation dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_8.jpg
+  Figure 8 caption: Probability distribution of the top-10 predicted answers on the
+    VisDial v1.0 validation dataset, where each star marks the average rank order
+    and score of the ground-truth answer. The sharper probability curve has a much
+    more powerful discrimination capability. CAG-Distill performs significant improvement.
+  Figure 9 Link: articels_figures_by_rev_year\2021\ContextAware_Graph_Inference_With_Knowledge_Distillation_for_Visual_Dialog\figure_9.jpg
+  Figure 9 caption: 'Visualization results of iterative context-aware graph inference.
+    It shows the word-level attention on question Q , and dynamic graph inference
+    of the top-2 attended objects (red and blue bounding boxes) in image I . The number
+    on each edge denotes the connection weight, displaying the message influence propagated
+    from neighbors. There are some abbreviations as follows: question ( Q ), generated
+    answer ( A ), caption ( C ) and the ground-truth ( GT ).'
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Dan Guo
+  Name of the last author: Meng Wang
+  Number of Figures: 15
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Context-Aware Graph Inference With Knowledge Distillation for Visual
+    Dialog
+  Publication Date: 2021-06-01 00:00:00
+  Table 1 caption: TABLE 1 Ablation Studies of Different Iteration Steps T T and the
+    Main Components on VisDial val v0.9
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Answer Accuracy Comparison on VisDial v1.0 (val-yn)
+  Table 3 caption: TABLE 3 Performance of the Ensemble Models Between Image-Only Model
+    and Joint Model on VisDial val v1.0
+  Table 4 caption: TABLE 4 Main Evaluation of Discriminative Models on Both VisDial
+    v0.9 and v1.0 Datasets
+  Table 5 caption: TABLE 5 Performance of the Knowledge Distillation Model on VisDial
+    val v1.0
+  Table 6 caption: TABLE 6 Performance Comparison on VisDial val v0.9 With VGG Features
+  Table 7 caption: TABLE 7 Ensemble Results of the Graph-Based and Attention-Based
+    Model on VisDial v1.0 val
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085755
+- Affiliation of the first author: college of information science and electronic engineering,
+    zhejiang university, hangzhou, zhejiang, china
+  Affiliation of the last author: computer science department, binghamton university,
+    binghamton, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Efficient_Relational_Sentence_Ordering_Network\figure_1.jpg
+  Figure 1 caption: An example of the sentence ordering task. Our goal is to reconstruct
+    a coherent paragraph from an unordered set of sentences.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Efficient_Relational_Sentence_Ordering_Network\figure_2.jpg
+  Figure 2 caption: The overview of ERSON. For a given unordered set of sentences,
+    a novel DF-BERT based Efficient Relational Sentence Encoder is proposed to build
+    an effective representation for each input sentence, then a self-attention based
+    paragraph is adopted for paragraph encoding, and finally an ordered output sequence
+    is generated with a new Relational Pointer Decoder.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Efficient_Relational_Sentence_Ordering_Network\figure_3.jpg
+  Figure 3 caption: The illustration of the difference between the original BERT model
+    and the proposed DF-BERT. Instead of learning all the sentence pairs throughout
+    all the layers of BERT, DF-BERT encodes each sentence in the set independently
+    at the lower layers, then shares the learned sentence matrices for different pairs
+    of sentences, and finally jointly encodes sentence pairs in the upper layers.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Efficient_Relational_Sentence_Ordering_Network\figure_4.jpg
+  Figure 4 caption: The comparisons of different sentence encoding strategies.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Efficient_Relational_Sentence_Ordering_Network\figure_5.jpg
+  Figure 5 caption: The auxiliary supervision from the original full model ERSON-T
+    helps the decomposed model ERSON to compensate for the information loss in the
+    lower layers of DF-BERT.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Efficient_Relational_Sentence_Ordering_Network\figure_6.jpg
+  Figure 6 caption: The change of accuracy score performance and inference speedup
+    for ERSON and DFBertRPD when separating at different layers of DF-BERT. Grey dash
+    line denotes the accuracy score of ERSON-T. Compared to ERSON-T, the performance
+    differences of ERSON and DFBertRPD are also shown. For example, when separating
+    at the eighth layer on AAN, ERSON and DFBertRPD reach 2.7X faster speed in inference
+    while being 0.5 and 2.9 accuracy score behind ERSON-T, respectively.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Yingming Li
+  Name of the last author: Zhongfei Zhang
+  Number of Figures: 6
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Efficient Relational Sentence Ordering Network
+  Publication Date: 2021-06-01 00:00:00
+  Table 1 caption: TABLE 1 Details of Six Datasets Used in the Sentence Ordering Experiments
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Hyper-Parameter Settings of ERSON
+  Table 3 caption: TABLE 3 Experimental Results for Different Approaches in the Sentence
+    Ordering Task
+  Table 4 caption: TABLE 4 The Comparison Results of ERSON, ERSON-T, the Previous
+    Model BERSON [30], and Three BERT Compression Baselines
+  Table 5 caption: TABLE 5 Ablation Study of Different Auxiliary Supervision Losses
+  Table 6 caption: TABLE 6 Statistics of the Datasets Used in the Order Discrimination
+    Task
+  Table 7 caption: TABLE 7 Comparison Results of Pairwise Accuracy for Different Methods
+    in the Order Discrimination Task
+  Table 8 caption: TABLE 8 Summary Coherence Evaluation Performance for Different
+    Models
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085738
+- Affiliation of the first author: 4paradigm inc, beijing, china
+  Affiliation of the last author: department of computer science and engineering,
+    hong kong university of science and technology, kowloon, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_1.jpg
+  Figure 1 caption: "More robust loss function \u03D5 in Table 2 and the \u2113 1\
+    \ loss."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_10.jpg
+  Figure 10 caption: Convergence of testing RMSE versus CPU time (sec) in the SNMF
+    experiment.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_2.jpg
+  Figure 2 caption: Plots of subgradient and frechet subdifferential, where p denotes
+    the normal direction.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_3.jpg
+  Figure 3 caption: Convergence of the testing RMSE versus CPU time (sec) of various
+    algorithms on synthetic data. SDPLR and SDPNAL+ are too slow on m=1500 and 2000,
+    thus are not shown.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_4.jpg
+  Figure 4 caption: Convergence of relative objective versus number of iterations
+    in Algorithms 2 and 4 at different tolerance on inexactness.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_5.jpg
+  Figure 5 caption: Convergence of relative objective versus CPU time (sec) at different
+    tolerance on inexactness.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_6.jpg
+  Figure 6 caption: Convergence of testing RMSE versus different initializations for
+    the proposed algorithms.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_7.jpg
+  Figure 7 caption: Convergence of testing RMSE versus CPU time (sec) in the robust
+    NPKL experiment.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_8.jpg
+  Figure 8 caption: Convergence of testing RMSE versus CPU time (sec) in the robust
+    CMVU experiment.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Efficient_LowRank_Semidefinite_Programming_With_Robust_Loss_Functions\figure_9.jpg
+  Figure 9 caption: Percentage of explained variance versus CPU time (sec) for the
+    various algorithms on the sparse PCA problem.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Quanming Yao
+  Name of the last author: James T. Kwok
+  Number of Figures: 10
+  Number of Tables: 13
+  Number of authors: 4
+  Paper title: Efficient Low-Rank Semidefinite Programming With Robust Loss Functions
+  Publication Date: 2021-06-01 00:00:00
+  Table 1 caption: TABLE 1 Comparison of the Proposed SDP-RL Algorithm With Existing
+    Algorithms on Matrix Completion Problems (Details are in Section 5.1)
+  Table 10 caption: TABLE 10 Testing RMSEs and CPU Time (sec) in the Robust CMVU Experiment
+  Table 2 caption: "TABLE 2 Example Nonconvex \u03D5 \u03D5 Functions"
+  Table 3 caption: TABLE 3 Testing RMSEs and CPU Time (sec) on Synthetic Data With
+    Different Matrix Sizes( m m)
+  Table 4 caption: TABLE 4 Testing RMSEs and CPU Time (sec) on Synthetic Data With
+    Different Observation Sampling Ratios ( s s)
+  Table 5 caption: TABLE 5 Testing RMSEs and CPU Time (sec) on Synthetic Data With
+    Different Fractions of Outlying Entries ( o o)
+  Table 6 caption: "TABLE 6 Testing RMSEs and CPU Time (sec) on Synthetic Data With\
+    \ Different Maximum Outlier Amplitudes ( \u03C3 \u03C3)"
+  Table 7 caption: TABLE 7 Testing RMSEs and CPU Time (sec) in the Robust NPKL Experiment
+  Table 8 caption: TABLE 8 Average Per-Iteration CPU Time (sec) of SDP-RL
+  Table 9 caption: TABLE 9 Numbers of Must-Link and Cannot-Link Pairs in the Robust
+    NPKL Experiment
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085858
+- Affiliation of the first author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Affiliation of the last author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_1.jpg
+  Figure 1 caption: Our framework allows users to manipulate appearance of image I
+    with textual input S , where strength is controllable. Moreover, spatial information
+    is editable by adjusting pose input P .
+  Figure 10 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_10.jpg
+  Figure 10 caption: Visual illustration on CUHK-PEDES dataset. Our method not only
+    manipulates the image with text input, but also controls manipulation strength.
+  Figure 2 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_2.jpg
+  Figure 2 caption: "Our framework is composed of manipulation module G M , image-based\
+    \ generation module G I and text-based generation module G T . a) Image-based\
+    \ generation module G I (I,P) adopts the pose encoder E S to obtain spatial feature\
+    \ F S from P and image feature F I with the image encoder E I . It uses AdaIN-based\
+    \ decoder D to complete generation. b) Manipulation module G M ( S N ,I,P) is\
+    \ built upon G I (I,P) . Text input S N is embedded into the same feature space\
+    \ with image feature through text encoder E T . The attribute vector V is computed\
+    \ from the comparison between text and image feature in shared space through A\
+    \ . V updates F I to F ~ I , which generates output through D with F S . The manipulation\
+    \ strength is controllable by adjusting weight \u03B1 of V . c) Text-based generation\
+    \ module G T (S,P) gives output based on S and P to help the training of A , where\
+    \ S describes I . O I , O M and O T are output from these three modules, respectively."
+  Figure 3 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_3.jpg
+  Figure 3 caption: "Illustration of manipulation in image-text latent space. Both\
+    \ text and image are mapped to the same space, while they are not aligned in \u201C\
+    direction for irrelevant attributes\u201D since text may only cover part of concerned\
+    \ attributes. Our attribute vector is constructed by projecting the difference\
+    \ onto the direction computed by A . It thus modifies attributes in the image\
+    \ without involving irrelevant attributes. Editing strength can be controlled\
+    \ for a sequence of output."
+  Figure 4 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_4.jpg
+  Figure 4 caption: The pseudo-label loss is designed to train manipulation module
+    G M (S,I,P) , and improve performance when text input is incomplete and negative.
+    For the text whose description is not consistent with content of I (like S N ),
+    we use our trained text-to-image generation module G T (S,P) to form pseudo labels
+    to guide training.
+  Figure 5 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_5.jpg
+  Figure 5 caption: Detailed structure of the image encoder E I , spatial encoder
+    E P , AdaIN-based decoder D , network to compute AdaIN parameters M , and attribute
+    vector generator A .
+  Figure 6 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_6.jpg
+  Figure 6 caption: Visual comparison with baselines on CUHK-PEDES dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_7.jpg
+  Figure 7 caption: Visual comparison with baselines on CelebA dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_8.jpg
+  Figure 8 caption: "Interpolation results on CUHK-PEDES dataset, which indicate that\
+    \ image and text features are mapped in the same space. When \u03B1=1 , only image\
+    \ feature is used; when \u03B1=0 , only text feature is used."
+  Figure 9 Link: articels_figures_by_rev_year\2021\TextGuided_Human_Image_Manipulation_via_ImageText_Shared_Space\figure_9.jpg
+  Figure 9 caption: Interpolation results on CelebA dataset, which indicate that image
+    and text features are mapped in the same space.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.91
+  Name of the first author: Xiaogang Xu
+  Name of the last author: Jiaya Jia
+  Number of Figures: 16
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Text-Guided Human Image Manipulation via Image-Text Shared Space
+  Publication Date: 2021-06-01 00:00:00
+  Table 1 caption: TABLE 1 Loss Weights for Our Framework on Different Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 VQA-Score (VQAs), Reconstruction L1 L1 Error and FID of
+    Different Settings in the Ablation Study
+  Table 3 caption: TABLE 3 Comparison With Existing Methods (With Pose Input) on the
+    Same Testing Set
+  Table 4 caption: TABLE 4 Comparison With Existing Methods (With Their Original Configurations)
+    on the Same Testing Set
+  Table 5 caption: "TABLE 5 Human Evaluation for \u201CQuality and Accuracy\u201D\
+    \ and \u201CUsability\u201D, Between Our Framework and All Baselines"
+  Table 6 caption: TABLE 6 Comparison With All Baselines for the Task That Edits Both
+    Appearance and Spatial Structure on CUHK-PEDES Dataset
+  Table 7 caption: TABLE 7 Experiments to Evaluate the Ability of Identity Preservation
+    on CelebA Dataset
+  Table 8 caption: TABLE 8 Performance on the CUHK-PEDES Dataset, With Different Forms
+    of Structural Input
+  Table 9 caption: TABLE 9 The Comparison With Existing Methods (With Pose Input)
+    on the Same Testing Set, Under the Evaluation Setting With the Perturbations in
+    the Pose Inputs
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085339
+- Affiliation of the first author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Affiliation of the last author: huya ai, guangzhou, guangdong, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Learning_by_Distillation_A_SelfSupervised_Learning_Framework_for_Optical_Flow_Es\figure_1.jpg
+  Figure 1 caption: Framework illustration. We distill confident optical flow estimations
+    from teacher models (stage 1) to guide the flow learning of the student model
+    (stage 2) under different challenging transformations.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Learning_by_Distillation_A_SelfSupervised_Learning_Framework_for_Optical_Flow_Es\figure_2.jpg
+  Figure 2 caption: "Occlusion hallucination scheme. The scheme creates hand-crafted\
+    \ occlusions, e.g., pixel p 1 is non-occluded from I 1 to I 2 but becomes occluded\
+    \ from I \u02DC 1 to I \u02DC 2 ( p \u2032 1 moves out of the image boundary for\
+    \ case (a) and is covered by noise for case (b)). The scheme also creates less\
+    \ confident predictions, e.g., though pixel p 2 is non-occluded, its patch similarity\
+    \ between I \u02DC 1 and I \u02DC 2 is smaller than patch similarity between I\
+    \ 1 and I 2 due to the partially missing regions."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Learning_by_Distillation_A_SelfSupervised_Learning_Framework_for_Optical_Flow_Es\figure_3.jpg
+  Figure 3 caption: "Knowledge distillation examples. The redder the color in the\
+    \ error map, the greater the error. In the (d) of the first row, flow w f has\
+    \ many erroneous pixels; however the confident flow predictions after forward-backward\
+    \ consistency check in (c) are mostly reliable (as shown in (e)). After creating\
+    \ challenging transformations to the input (e.g., row 2-4), the flow predictions\
+    \ by the student model are usually less confident than the transformed predictions\
+    \ w T f from confident flow, e.g., rectangle regions in the error maps. We only\
+    \ use confident predictions in (c) of row 1 to guide the learning of the student\
+    \ model. In general, w T f shall be sparse as in (c) of row 1. For better visual\
+    \ comparison with w \u02DC f , we show transformed results from (b) of row 1."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Learning_by_Distillation_A_SelfSupervised_Learning_Framework_for_Optical_Flow_Es\figure_4.jpg
+  Figure 4 caption: Sample unsupervised results of DistillFlow on KITTI (top 2) and
+    Sintel (bottom 2) training datasets. DistillFlow estimates both accurate optical
+    flow and occlusion maps. Note that on KITTI datasets, the occlusion maps are sparse,
+    which only contain pixels moving out of the image boundary.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Learning_by_Distillation_A_SelfSupervised_Learning_Framework_for_Optical_Flow_Es\figure_5.jpg
+  Figure 5 caption: Qualitative comparison with state-of-the-art unsupervised learning
+    methods on the KITTI 2015 benchmark. For each case, the top row is optical flow
+    and the bottom row is error map. The redder the color in the error map, the greater
+    the error. More examples are available on KITTI 2015 benchmark.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Learning_by_Distillation_A_SelfSupervised_Learning_Framework_for_Optical_Flow_Es\figure_6.jpg
+  Figure 6 caption: Qualitative comparison with state-of-the-art unsupervised learning
+    methods on Sintel Final benchmark. For each case, the top row is optical flow
+    and the bottom row is error map. The whiter the color in the error map, the greater
+    the error. More examples are available on the Sintel benchmark.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Learning_by_Distillation_A_SelfSupervised_Learning_Framework_for_Optical_Flow_Es\figure_7.jpg
+  Figure 7 caption: Ablation study on KITTI 2015 (top 3) and Sintel Final training
+    datasets (bottom 3). (b) and (c) are the results of without and with occlusion
+    handling. (d) shows that results with knowledge distillation and (f) is the supervised
+    fine-tuned results. With knowledge distillation, the flow looks more smooth. After
+    fine-tuning, more details are preserved. Zoom in for details.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Pengpeng Liu
+  Name of the last author: Jia Xu
+  Number of Figures: 7
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: 'Learning by Distillation: A Self-Supervised Learning Framework for
+    Optical Flow Estimation'
+  Publication Date: 2021-06-01 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Evaluation of Optical Flow Estimation on KITTI
+    2012 and KITTI 2015 Datasets
+  Table 10 caption: TABLE 10 Ablation Study of Photometric Losses
+  Table 2 caption: TABLE 2 Quantitative Evaluation of Optical Flow Estimation on Sintel
+    Dataset
+  Table 3 caption: TABLE 3 Comparison of Occlusion Estimation with F-Measure
+  Table 4 caption: TABLE 4 Ablation Study for the Generalization Capability of Our
+    Proposed Distillation Framework to FlowNetS and FlowNetC on KITTI and Sintel Datasets
+  Table 5 caption: TABLE 5 Ablation Study for the Generalization Capability of Our
+    Proposed Distillation Framework to Semi-Supervised Learning on KITTI and Sintel
+    Datasets
+  Table 6 caption: TABLE 6 Quantitative Evaluation of Stereo Disparity on KITTI 2012
+    and KITTI 2015 Training Datasets (Apart From the Last Columns)
+  Table 7 caption: TABLE 7 Main Ablation Study on KITTI Training Datasets
+  Table 8 caption: TABLE 8 Main Ablation Study on Sintel Training Datasets
+  Table 9 caption: TABLE 9 Ablation Study of Different Knowledge Distillation Strategies
+    on KITTI and Sintel Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085525
+- Affiliation of the first author: beijing key laboratory of mobile computing and
+    pervasive device, institute of computing technology, chinese academy of sciences,
+    beijing, china
+  Affiliation of the last author: beijing key laboratory of mobile computing and pervasive
+    device, institute of computing technology, chinese academy of sciences, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_1.jpg
+  Figure 1 caption: Synthesizing a new mesh model by combining deformation components
+    derived from the Swing dataset [11] using our method with equal weights.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_10.jpg
+  Figure 10 caption: Visual comparison of reconstruction results of the SCAPE dataset
+    [48]. [5], [8] and [6] are not designed to handle large-scale nonlinear deformation
+    analysis, so it is understandable that these methods do not work well.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_2.jpg
+  Figure 2 caption: "The proposed network architecture (a) and the spectral graph\
+    \ convolution (b). The network is built based on the spectral convolutional operation\
+    \ and with a variational autoencoder structure, and we set d \u2032 =9 . The input\
+    \ and output are mesh features X\u2208 R V\xD79 . K is the dimension of the latent\
+    \ space and we set K=50 . C std and C are the weights of fully connected layers\
+    \ to map the features to the latent space. The spectral graph convolution uses\
+    \ graph Fourier transform to filter the features in the spectral domain, and more\
+    \ details are described in Section 4.1."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_3.jpg
+  Figure 3 caption: Components of the horse dataset [45] extracted by [5] and our
+    method. The method [5] cannot cope with large deformations and suffers from artifacts
+    since it is designed to deal with linear deformations. Moreover, our method also
+    produces more plausible results for small components such as hooves, thanks to
+    the dynamic sparsity constraints.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_4.jpg
+  Figure 4 caption: 'Errors of applying our model to generate unseen data, using a
+    fat person (ID: 50002) from the MPI DYNA [47] dataset. We randomly select one
+    model from every ten models for training and remaining for testing. We evaluate
+    metrics E rms and STED error with different component numbers. Our method outperforms
+    other methods even for limited numbers of components. The methods shown with dashed
+    lines are methods for linear deformations, and others are methods for non-linear
+    deformations.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_5.jpg
+  Figure 5 caption: Components extracted by our method on the Fat dataset when K is
+    beyond 50. Bigger K will give better reconstruction ability but also leads to
+    extracting components of weak semantics and small deformation.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_6.jpg
+  Figure 6 caption: We use limited control points to reconstruct unseen data in the
+    humanoid dataset, and report the generalization errors. The result shows that
+    our method performs well, consistently with smallest errors in both metrics. The
+    methods shown with dashed lines are methods for linear deformations, and others
+    are methods for non-linear deformations.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_7.jpg
+  Figure 7 caption: 'Comparison of deformation components extracted from a fat person
+    (ID: 50002) in the MPI DYNA [47] dataset, using different methods including (a)
+    Neumann et al. [5], (b) Huang et al. [6], (c) Tan et al. [10] and (d) Ours. Our
+    method extracts more plausible components than other methods. [5] cannot extract
+    plausible components because it focuses on linear deformation. [6] and [10] cannot
+    cope with small components while our method produces better results because of
+    the dynamic sparsity constraints.'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_8.jpg
+  Figure 8 caption: Comparison of extracted components on the Female Human dataset,
+    where the component extracted by our method is similar to Bernard et al.s method.
+    Our methods mainly focuses on nonlinear deformation shape collections. The results
+    illustrate that our method also copes well with linear deformation shapes collections
+    and is able to obtain similar results as state-of-the-art method [8] on linear
+    shape collections.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Variational_Autoencoders_for_Localized_Mesh_Deformation_Component_Analysis\figure_9.jpg
+  Figure 9 caption: 'Top row: key frames of a flag dataset we created through physical
+    simulation. Bottom row: synthesized models corresponding to the first four deformation
+    components extracted by Wang et al. [7] and our method. We also present the synthesis
+    results by combining the four components with equal weights, which show that our
+    extracted components are more plausible.'
+  First author gender probability: 0.68
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.64
+  Name of the first author: Qingyang Tan
+  Name of the last author: Lin Gao
+  Number of Figures: 18
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Variational Autoencoders for Localized Mesh Deformation Component Analysis
+  Publication Date: 2021-06-01 00:00:00
+  Table 1 caption: 'TABLE 1 Errors of Applying Our Method to Generate Unseen Data
+    From Swing [11], Horse [45], Face [46], Jumping [11], Humanoid, a Fat Person (ID:
+    50002) From the MPI DYNA [47] Datasets, SCAPE [48], and Female Human [49]'
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 Evaluation on max Versus L2-norm in \u03A0(Z) \u03A0(Z)"
+  Table 3 caption: TABLE 3 Errors of Applying Spatial [10] and Spectral Graph CNNs
+    With Different Adjacency Matrix Formulations to Generate Unseen Data From the
+    SCAPE [48] and Swing [11] Datasets
+  Table 4 caption: TABLE 4 Errors of Different Number of Spatial Layers From 1 to
+    3 on SCAPE and Swing Dataset
+  Table 5 caption: TABLE 5 Comparison Between Fixed and Dynamic Sparsity Constraints
+    With Spectral Graph CNN and H=3 H=3, to Generate Unseen Data From SCAPE [48] and
+    Swing [11] Datasets
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3085887

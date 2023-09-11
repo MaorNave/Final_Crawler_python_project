@@ -1,0 +1,786 @@
+- Affiliation of the first author: college of intelligence and computing, tianjin
+    key lab of machine learning, tianjin university, tianjin, china
+  Affiliation of the last author: reler lab, aaai, school of computer science, university
+    of technology sydney, sydney, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_1.jpg
+  Figure 1 caption: The process of our disentangled method for domain adaptive object
+    detection. We decompose source and target image representations into domain-invariant
+    representations (DIR) and domain-specific representations (DSR). Then, based on
+    DIR, we extract the instance-invariant representations that lie in an instance-invariant
+    space, in which the instance-invariant features are used to describe the characteristics
+    of objects. In the instance-invariant space, we conduct instance classification
+    (i.e., via C 1 ) for the adaptive object detection. And different domains could
+    be easily distinguished (i.e., via C 2 ) in the domain-specific space.
+  Figure 10 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_10.jpg
+  Figure 10 caption: "Detection results on the \u201CPascal VOC \u2192 Watercolor\u201D\
+    \ scene. We can see that our method, i.e., using the base and progressive disentangled\
+    \ layers, could locate and recognize objects existing in the two watercolor images\
+    \ accurately, e.g., the person, bird, and cat."
+  Figure 2 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_2.jpg
+  Figure 2 caption: "Illustration of the proposed network of progressive disentanglement.\
+    \ Recon indicates the reconstruction loss. GRL is the gradient reversal layer.\
+    \ RA indicates the operation of RoI-Alignment. RC loss and MI loss separately\
+    \ denote the proposed relation-consistency loss and the mutual information loss.\
+    \ \u2295 is the operation of element-wise sum. And the dot lines indicate the\
+    \ relations between the extracted proposals. FC indicates the fully-connected\
+    \ layers. Our network mainly includes a base disentangled layer and progressive\
+    \ disentangled layer. The purpose of the base disentangled layer is to enhance\
+    \ the domain-invariant information in a middle-layer feature map. And the goal\
+    \ of the progressive disentangled layer is to obtain the instance-invariant features.\
+    \ During training, we devise a detached optimization that breaks the disentangled\
+    \ process into three sequential sub-processes. For each subprocess, we use different\
+    \ loss functions to optimize different components of the network."
+  Figure 3 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_3.jpg
+  Figure 3 caption: Illustration of the detached optimization. Here, the red arrow
+    denotes the operation of reconstruction. Subprocess- fd is the first subprocess
+    aiming at learning feature decomposition. Subprocess- fs is the second subprocess
+    aiming at keeping the disentangled DIR and DSR independent. And Subprocess- fr
+    is the third subprocess aiming at keeping the DIR and DSR could contain all the
+    content of the input.
+  Figure 4 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_4.jpg
+  Figure 4 caption: Illustration of relation-consistency Loss. P indicates the Person
+    class. The goal of the loss is to promote the relations (the red solid lines)
+    between object proposals in F 2 b and the relations between object proposals in
+    F 2 di are consistent. The purple dot lines denote the consistency between the
+    two red lines.
+  Figure 5 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_5.jpg
+  Figure 5 caption: Illustration of the optimization process of the feature separation
+    and feature reconstruction. The parameters in the blue blocks are fixed. For these
+    two stages, we only optimize the parameters in the yellow blocks.
+  Figure 6 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_6.jpg
+  Figure 6 caption: Comparison of different disentangled methods. (a) shows disentanglement
+    on High-level Feature Vectors [50]. CIV, DIV, and DSV denote class-irrelevant
+    feature vectors, domain-invariant feature vectors, and domain-specific feature
+    vectors, respectively. (b) shows disentanglement on Spatial Feature Maps. Different
+    from the method shown in Fig. 6a, our method (see Fig. 6b) simultaneously performs
+    spatial disentanglement based on different layers of feature maps. Particularly,
+    the disentangled domain-invariant feature maps should preserve the information
+    of objects completely and reduce the impact of domain-relevant information, which
+    is beneficial for extracting instance-invariant features and then improves detection
+    performance.
+  Figure 7 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_7.jpg
+  Figure 7 caption: Domain adaptation from daytime to nighttime. (a) and (b) indicate
+    the daytime data from the source domain which includes annotations. (c) and (d)
+    denote the nighttime data from the target domain which does not contain annotations.
+    We can see that the domain gap between the daytime data and nighttime data is
+    very large. Thus, domain adaptation for this scene is very challenging.
+  Figure 8 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_8.jpg
+  Figure 8 caption: "Detection results on the \u201CCityscapes \u2192 FoggyCityscapes\u201D\
+    \ scene. GT indicates the groundtruth result. SD Disentangled layer denotes we\
+    \ only use the progressive disentangled layer. We can see our method, i.e., using\
+    \ the base and progressive disentangled layers (BP Disentangled layer), locates\
+    \ and recognizes objects existing in the two foggy images accurately, e.g., the\
+    \ truck, car, and bicycle."
+  Figure 9 Link: articels_figures_by_rev_year\2021\InstanceInvariant_Domain_Adaptive_Object_Detection_Via_Progressive_Disentangleme\figure_9.jpg
+  Figure 9 caption: "Detection results on the \u201CCityscapes \u2192 FoggyCityscapes\u201D\
+    \ scene. We can see that our method could accurately detect the objects existing\
+    \ in the images, e.g., the car, bicycle, rider, and person."
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Aming Wu
+  Name of the last author: Yi Yang
+  Number of Figures: 17
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: Instance-Invariant Domain Adaptive Object Detection Via Progressive
+    Disentanglement
+  Publication Date: 2021-02-24 00:00:00
+  Table 1 caption: TABLE 1 Loss Definitions Within Detached Optimization
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Details of Our Progressive Disentangled Network
+  Table 3 caption: TABLE 3 Results (%) on Adaptation From Cityscapes to FoggyCityscapes
+  Table 4 caption: TABLE 4 Results (%) on Adaptation From Pascal to Watercolor
+  Table 5 caption: TABLE 5 Results (%) on Adaptation From Pascal VOC to Clipart
+  Table 6 caption: TABLE 6 Results (%) on Adaptation From Daytime to Nighttime
+  Table 7 caption: TABLE 7 Ablation Analysis of the Proposed Progressive Disentanglement
+  Table 8 caption: TABLE 8 Ablation Analysis of GRL
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3060446
+- Affiliation of the first author: "department of artificial intelligence, universidad\
+    \ nacional de educaci\xF3n a distancia (uned), madrid, spain"
+  Affiliation of the last author: "department of artificial intelligence, universidad\
+    \ nacional de educaci\xF3n a distancia (uned), madrid, spain"
+  Figure 1 Link: articels_figures_by_rev_year\2021\SumProduct_Networks_A_Survey\figure_1.jpg
+  Figure 1 caption: A Bayesian network (left) and an equivalent SPN (right). The 6
+    terminal nodes in the SPN are indicators for the 3 variables in the model, A ,
+    B , and C ; they are the input of the SPN for every configuration of these variables,
+    including partial configurations. The root node, n 1 , computes the joint and
+    marginal probabilities.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\SumProduct_Networks_A_Survey\figure_2.jpg
+  Figure 2 caption: "If P(c|\xACa,+b)=P(c|\xACa,\xACb) for every value of C (context-specific\
+    \ independence of B and C given \xACa ), then nodes n 16 and n 17 in Fig. 1 can\
+    \ be coalesced into node n 16 in this figure. The numbers in red are the values\
+    \ S i (v) for v=(+a,+b,\xACc) ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\SumProduct_Networks_A_Survey\figure_3.jpg
+  Figure 3 caption: "Augmentation of an SPN, assuming that n i is not selective in\
+    \ S . This process adds an indicator I z(j) for every child n j of n i . Node\
+    \ n i \u2032 is added to restore the completeness of n l in S \u2032 ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\SumProduct_Networks_A_Survey\figure_4.jpg
+  Figure 4 caption: MPE computation for the SPN in Fig. 2. Sum nodes turn into max
+    nodes. The numbers in red are the values Simax(mathbf e) when the evidence is
+    mathbf e=+c . The most probable explanation, MPE;(mathbf e)=(+a,lnot b) , is found
+    by backtracking from the root to the leaves (thick lines).
+  Figure 5 Link: articels_figures_by_rev_year\2021\SumProduct_Networks_A_Survey\figure_5.jpg
+  Figure 5 caption: The LearnSPN algorithm recursively creates a product node when
+    there are subsets of (approximately) independent variables and a sum node otherwise,
+    grouping similar instances. (Reproduced from [6] with the authors permission.)
+  Figure 6 Link: articels_figures_by_rev_year\2021\SumProduct_Networks_A_Survey\figure_6.jpg
+  Figure 6 caption: Learning SPNs with bagging.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Raquel S\xE1nchez-Cauce"
+  Name of the last author: "Francisco Javier D\xEDez"
+  Number of Figures: 6
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: 'Sum-Product Networks: A Survey'
+  Publication Date: 2021-02-25 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3061898
+- Affiliation of the first author: department of computer science, iowa state university,
+    ames, ia, usa
+  Affiliation of the last author: department of computer science & engineering, texas
+    a&m university, college station, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\TopologyAware_Graph_Pooling_Networks\figure_1.jpg
+  Figure 1 caption: An illustration of the proposed local voting. This graph contains
+    four nodes, each of which has 2 features. Given the input graph, we first compute
+    similarity scores between every pair of connected nodes. In graph (b), we label
+    each edge by the similarity score of its two end nodes. Then we compute the local
+    voting score of each node by averaging the similarity scores with its neighboring
+    nodes. In graph (c), we label each node by its local voting score and a bigger
+    node indicates a higher score.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\TopologyAware_Graph_Pooling_Networks\figure_2.jpg
+  Figure 2 caption: "An illustration of the topology-aware pooling network. \u2295\
+    \ denotes the concatenation operation of feature vectors. Each node in the input\
+    \ graph contains three features. We use a GCN layer to transform the feature vectors\
+    \ into low-dimensional representations. We stack two blocks, each of which consists\
+    \ of a GCN layer and a TAP layer. A global reduction operation such as max-pooling\
+    \ is applied to the outputs of the first GCN layer and TAP layers. The resulting\
+    \ feature vectors are concatenated and fed into the final multi-layer perceptron\
+    \ for prediction."
+  Figure 3 Link: articels_figures_by_rev_year\2021\TopologyAware_Graph_Pooling_Networks\figure_3.jpg
+  Figure 3 caption: Visualization of coarsened graphs by TAP and TAP wo GCT. Here,
+    GCT denotes the graph connection term. Based on the input graph (a), the pooling
+    layers select 6 nodes to form new graphs. The nodes that are not selected are
+    colored black. The new graph in (b) generated by TAP wo GCT is sparsely connected.
+    The one generated by TAP in (c) is shown to be better connected.
+  Figure 4 Link: articels_figures_by_rev_year\2021\TopologyAware_Graph_Pooling_Networks\figure_4.jpg
+  Figure 4 caption: "Comparison results of TAPNets using different \u03BB values in\
+    \ TAP layers. We report graph classification accuracies on PTC, IMDB-BINARY, and\
+    \ REDDIT-BINARY datasets."
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.78
+  Name of the first author: Hongyang Gao
+  Name of the last author: Shuiwang Ji
+  Number of Figures: 4
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Topology-Aware Graph Pooling Networks
+  Publication Date: 2021-03-01 00:00:00
+  Table 1 caption: TABLE 1 Comparisons Between TAPNets and Other Models in Terms of
+    Graph Classification Accuracy (%) on Social Network Datasets Including COLLAB,
+    IMDB-BINARY, IMDB-MULTI, REDDIT-BINARY, REDDIT-MULTI5K and REDDIT-MULTI12K Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparisons Between TAPNets and Other Models in Terms of
+    Graph Classification Accuracy (%) on Bioinformatics Datasets Including DD, PTC,
+    MUTAG, and PROTEINS Datasets
+  Table 3 caption: TABLE 3 Comparisons Between Different Pooling Operations Based
+    on the Same TAPNet Architecture in Terms of the Graph Classification Accuracy
+    (%) on PTC, IMDB-MULTI, and REDDIT-BINARY datasets
+  Table 4 caption: TABLE 4 Comparisons Among TAPNets With and Without TAP Layers,
+    TAPNet Without Local Voting Term (LV), TAPNet Without Global Voting Term (GV),
+    TAPNet Without Graph Connection Term (GCT), and TAPNet With Auxiliary Link Prediction
+    Objective (AUX) in Terms of the Graph Classification Accuracy (%) on PTC, IMDB-MULTI,
+    and REDDIT-BINARY Datasets
+  Table 5 caption: TABLE 5 Comparisons Among TAPNets With and Without TAP Layers,
+    and TAPNet Without Local Voting and Global Voting (LV&GV) in Terms of the Graph
+    Classification Accuracy (%), and the Number of Parameters on REDDIT-BINARY Dataset
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3062794
+- Affiliation of the first author: school of computer science and technology, beijing
+    institute of technology, beijing, china
+  Affiliation of the last author: school of computer science and technology, beijing
+    institute of technology, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_1.jpg
+  Figure 1 caption: "(Best viewed in color.) Attention visualization of the last convolutional\
+    \ layer of different models on the task Ar \u2192 Rw of Office-Home. The first\
+    \ column (a) shows the original target images from randomly selected classes (i.e.,\
+    \ toothbrush, mop, webcam, and keyboard); other columns show the attention maps\
+    \ from (b) source-only model, (c) DCAN wo domain conditioned attention module,\
+    \ (d) DCAN, and (f) model with target ground-truth labels, respectively."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_2.jpg
+  Figure 2 caption: Overview of our proposed method. We introduce two effective modules
+    into the network to transfer domain-specialized and domain-invariant features
+    simultaneously. For the domain conditioned channel attention module, we add it
+    into each residual block. It is a multi-path structure segregating source and
+    target into different processing flows, which models fine-grained details of each
+    domain. If applied with the adaptive routing strategy, this structure can be extended
+    to the adaptive channel attention module, which determines the routing of target
+    channel attention calculation based on the cross-domain statistic distance (shown
+    in the right green part). As for the high-level feature adaptation module, it
+    is plugged into multiple task-specific layers and only target data are allowed
+    to pass through it during the alignment. By aligning transformed target data and
+    unchanged source data, we can make feature adaptation module explicitly measure
+    domain discrepancy to derive more domain-invariant features.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_3.jpg
+  Figure 3 caption: Example images from (a) DomainNet, (b) Office-Home, (c) Office-31,
+    and (d) ImageCLEF-DA datasets.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_4.jpg
+  Figure 4 caption: "p-value of the significance test (t-test) for results of GDCAN\
+    \ versus DCAN on all transfer tasks. To clearly illustrate the statistical significance,\
+    \ the base significance level of 0.05 [ \u2212log(0.05) ] is shown in red line.\
+    \ The larger value of \u2212log(p) means the more significance of GDCAN."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_5.jpg
+  Figure 5 caption: Attention visualizations of the last convolutional layer learned
+    by (b) DCAN, (c) GDCAN, and (d) target ground-truth model. The (a) column shows
+    the original target images. (Best viewed in color.)
+  Figure 6 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_6.jpg
+  Figure 6 caption: "(a) The heat-map of attention value difference between source\
+    \ and target in our method on task Ar \u2192 Cl (Office-Home). The color of each\
+    \ vertical line represents the degree of attention difference across domains;\
+    \ (b) Attention difference comparison between task A \u2192 W (Office-31) and\
+    \ task Ar \u2192 Cl (Office-Home) at stage4."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_7.jpg
+  Figure 7 caption: "(a) Average number of route separation made by AAM, where the\
+    \ y -axis shows the number of AAMs that decide multi-path processing; (b) Parameter\
+    \ sensitivity analysis of \u03BB on tasks A \u2192 D (Office-31), Rw \u2192 Cl\
+    \ (Office-Home) and pnt \u2192 qdr (DomainNet)."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_8.jpg
+  Figure 8 caption: "The t-SNE visualizations of (a) ResNet, (b) DAN and (c) GDCAN\
+    \ on task A \u2192 W of Office-31, where blue points are source data and red points\
+    \ are target data; (d) The statistics of response G 1 ( x t ) , \u0394 G 1 ( x\
+    \ t ) , G 1 \u02C6 ( x t ) , G 2 ( x t ) , \u0394 G 2 ( x t ) and G 2 \u02C6 (\
+    \ x t ) on task A \u2192 W of Office-31."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Generalized_Domain_Conditioned_Adaptation_Network\figure_9.jpg
+  Figure 9 caption: Parameter sensitivity analysis of alpha and beta on task Ar rightarrow
+    Pr (Office-Home) and task A rightarrow D (Office-31).
+  First author gender probability: 0.7
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Shuang Li
+  Name of the last author: Guoren Wang
+  Number of Figures: 9
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Generalized Domain Conditioned Adaptation Network
+  Publication Date: 2021-03-01 00:00:00
+  Table 1 caption: TABLE 1 Statistics of the Benchmark Datasets
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Accuracy(%) on DomainNet for Unsupervised DA
+  Table 3 caption: TABLE 3 Accuracy (%) on Office-Home for Unsupervised DA (ResNet-50)
+  Table 4 caption: TABLE 4 Accuracy (%) on Office-31 for Unsupervised DA (ResNet-50)
+  Table 5 caption: TABLE 5 Accuracy (%) on ImageCLEF-DA for Unsupervised DA (ResNet-50)
+  Table 6 caption: TABLE 6 Accuracy (%) on Office-Home for Unsupezrvised DA (DCANGDCAN
+    as the Incremental Module Applied on Different DA Methods and CNNs)
+  Table 7 caption: TABLE 7 Accuracy (%) on Office-31 for Unsupervised DA (DCANGDCAN
+    as the Incremental Module Applied on Different DA Methods and CNNs)
+  Table 8 caption: TABLE 8 Ablation Study of GDCAN on Office-Home for Unsupervised
+    DA
+  Table 9 caption: TABLE 9 Analysis of Adaptive Routing Strategy on Office-Home for
+    Unsupervised DA
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3062644
+- Affiliation of the first author: school of electronic information and communications,
+    huazhong university of science and technology, wuhan, hubei, china
+  Affiliation of the last author: computer science, university of oregon, eugene,
+    or, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\AlignSeg_FeatureAligned_Segmentation_Networks\figure_1.jpg
+  Figure 1 caption: Visualizations of the learned 2D transformation offsets for feature
+    alignment. Features of the regions with redblue color inside the redblue rectangles
+    are aligned with features of their abovebelow regions.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\AlignSeg_FeatureAligned_Segmentation_Networks\figure_2.jpg
+  Figure 2 caption: The architecture of our bottom-up aggregation with the Aligned
+    Feature Aggregation module (b) and Aligned Context Modeling module (c). RCB indicates
+    the common Residual Convolution Block (a). There are two bottom-up pathways in
+    the architecture, and the feature alignment aggregation is used to aggregate features
+    from the two pathways. For simplification, we omit the convolutional blocks in
+    the top pathway.
+  Figure 3 Link: articels_figures_by_rev_year\2021\AlignSeg_FeatureAligned_Segmentation_Networks\figure_3.jpg
+  Figure 3 caption: Some visualization comparisons among different approaches on the
+    Cityscapes val set. The first to the fifth columns are original images, results
+    from the baseline, results from baseline with AlignCM, results from the baseline
+    with AlignCM and AlignFA, and ground truth results, respectively. The regions
+    inside the yellow dashed circles are some boundary regions. Best to zoom in.
+  Figure 4 Link: articels_figures_by_rev_year\2021\AlignSeg_FeatureAligned_Segmentation_Networks\figure_4.jpg
+  Figure 4 caption: Some visualization comparisons between our approach wo and w Aligned
+    Feature Aggregation (AlignFA) of some cropped patches on the Cityscapes val.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zilong Huang
+  Name of the last author: Humphrey Shi
+  Number of Figures: 4
+  Number of Tables: 10
+  Number of authors: 6
+  Paper title: 'AlignSeg: Feature-Aligned Segmentation Networks'
+  Publication Date: 2021-03-01 00:00:00
+  Table 1 caption: TABLE 1 Ablation Study for the Proposed Modules on the Cityscapes
+    val
+  Table 10 caption: TABLE 10 Comparisons on COCO val
+  Table 2 caption: TABLE 2 Results for Different Feature Aggregation Methods on the
+    Cityscapes val
+  Table 3 caption: TABLE 3 Results for Different Align Directions of AlignFA on the
+    Cityscapes val
+  Table 4 caption: TABLE 4 Ablation Study of w and wo Alignment for the Context Alignment
+    Module on the Cityscapes val Set
+  Table 5 caption: TABLE 5 Comparison of Context Modeling Methods on the Cityscape
+    val Set
+  Table 6 caption: TABLE 6 The Influence of the DS, OHEM, and MS on the Cityscapes
+    val
+  Table 7 caption: TABLE 7 Result Comparison With State of the Arts on the Cityscapes
+    val
+  Table 8 caption: "TABLE 8 Result Comparison With State\u2013of\u2013the\u2013Arts\
+    \ on the Cityscapes Test"
+  Table 9 caption: "TABLE 9 Result Comparison With State\u2013of\u2013the\u2013Arts\
+    \ on the ADE20K val"
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3062772
+- Affiliation of the first author: eindhoven university of technology, eindhoven,
+    az, the netherlands
+  Affiliation of the last author: eindhoven university of technology, eindhoven, az,
+    the netherlands
+  Figure 1 Link: articels_figures_by_rev_year\2021\Adaptation_Strategies_for_Automated_Machine_Learning_on_Evolving_Data\figure_1.jpg
+  Figure 1 caption: Adaptation strategies.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Adaptation_Strategies_for_Automated_Machine_Learning_on_Evolving_Data\figure_2.jpg
+  Figure 2 caption: 'Accuracy across batches for artificial data streams: (a) SEA
+    - High abrupt drift; (b) HYPERPLANE - High gradual drift; (c) SEA - High mixed
+    drift, and (d) All three artificial data streams with drift marks and pipeline
+    change points (red).'
+  Figure 3 Link: articels_figures_by_rev_year\2021\Adaptation_Strategies_for_Automated_Machine_Learning_on_Evolving_Data\figure_3.jpg
+  Figure 3 caption: Effect of increasing abrupt drift magnitudes (1 is lowest magnitude)
+    on different strategies, for GAMA.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Adaptation_Strategies_for_Automated_Machine_Learning_on_Evolving_Data\figure_4.jpg
+  Figure 4 caption: 'Accuracy across batches for the real data streams: (a) Airlines;
+    (b) Electricity; (c) IMDB; and, (d) Vehicle.'
+  Figure 5 Link: articels_figures_by_rev_year\2021\Adaptation_Strategies_for_Automated_Machine_Learning_on_Evolving_Data\figure_5.jpg
+  Figure 5 caption: 'Accuracy across batches on SEA - High mixed data stream for:
+    (a) GAMA with detected drift points (vertical lines); and (b) H2O with detected
+    and pre-set drifts.'
+  Figure 6 Link: articels_figures_by_rev_year\2021\Adaptation_Strategies_for_Automated_Machine_Learning_on_Evolving_Data\figure_6.jpg
+  Figure 6 caption: Accuracy across batches with drift detection points for SEA -
+    High abrupt data stream on D&RS strategy.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Adaptation_Strategies_for_Automated_Machine_Learning_on_Evolving_Data\figure_7.jpg
+  Figure 7 caption: Mean accuracy for all data streams and libraries with D&RS on
+    time budgets between 60 and 3600 seconds.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.87
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Bilge Celik
+  Name of the last author: Joaquin Vanschoren
+  Number of Figures: 7
+  Number of Tables: 1
+  Number of authors: 2
+  Paper title: Adaptation Strategies for Automated Machine Learning on Evolving Data
+  Publication Date: 2021-03-02 00:00:00
+  Table 1 caption: TABLE 1 Implementation Details for the AutoML Method Adaptations
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3062900
+- Affiliation of the first author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, jiangsu, china
+  Affiliation of the last author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, jiangsu, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_1.jpg
+  Figure 1 caption: "iFlowGAN Architecture. X and Y denote the RGB image domain. X\
+    \ and Y are corresponding high-dimensional feature space. T F and T B in the blue\
+    \ box consist of iFlowGANs AutoTrans. The red box indicates the bijective Translator\
+    \ of iFlowGAN, where both forward translator F \u03C4 = f L; W L , b L \u2218\u22EF\
+    \u2218 f 1; W 1 , b 1 and backward translator B \u03C4 = g L; W L , b L \u2218\
+    \u22EF\u2218 g 1; W 1 , b 1 share the same parameter \u03C4= W L , b L ,\u2026\
+    , W 1 , b 1 . Putting \u03BE present the parameters of AutoEncoder and \u03C4\
+    \ , we formulate the forward mapping function F \u03BE of iFlowGAN as F \u03BE\
+    \ = T B \u2218 F \u03C4 \u2218 T F . The backward mapping thus is F \u03BE = T\
+    \ B \u2218 B \u03C4 \u2218 T F ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_2.jpg
+  Figure 2 caption: 'Visual demonstration for the image translation results on the
+    Cityscapes [21] with respect to the dimension of the feature space, where the
+    architecture of iFlowGAN is kept unchanged except for the dimension of the feature
+    space. From left to right: input, results produced by the feature space with dimension
+    16,32,64,128,256 . We can verify that the image details increase with the dimension
+    of the feature space.'
+  Figure 3 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_3.jpg
+  Figure 3 caption: "Different variants of our method for mapping label \u2194 photo\
+    \ trained on the Cityscapes [21]. From left to right: inputs, the full objective\
+    \ L (14) without Lipschitz regularization term L l Lip , L without reconstruction\
+    \ loss L rec , L without invertible loss L inv and adversarial loss L GAN . It\
+    \ is easy to verify that all variants fail to produce images similar to the target\
+    \ domain. The translator of iFlowGAN comprises of ResNet."
+  Figure 4 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_4.jpg
+  Figure 4 caption: "Frech\xE9t inception distance (FID) [52] scores for different\
+    \ discriminator positions and epochs. The lower scores indicates the better translation\
+    \ result. The blue line denotes the learning curve of the discriminator on the\
+    \ image domain and the orange line implies the learning curve of the discriminator\
+    \ on the feature space. We can verify that the discriminator on the feature space\
+    \ provides better result with fewer iteration. The images in the second and third\
+    \ rows show the translation results for the discriminator on the image domain\
+    \ and the feature space."
+  Figure 5 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_5.jpg
+  Figure 5 caption: Multi-domain image-to-image translation results for StarGAN and
+    mStarGAN on the CelebA dataset [53]. From left to right, we record the input as
+    well as the black hair, blond hair, brown hair, eyeglasses, mustache and bald
+    images generated by StarGAN and mStarGAN, where the firstthird rows show the results
+    of StarGAN and the secondfourth rows illustrate the results of mStarGAN. Visual
+    comparison proofs that mStarGAN does not degrade the visual quality while decreasing
+    network parameters.
+  Figure 6 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_6.jpg
+  Figure 6 caption: Comparison for CoCycleGAN (the coupling blocks based CycleGAN)
+    and iFlowGAN on the CMP Facades [55]. Although both CoCycleGAN and iFlowGAN adhere
+    to weight-sharing strategy, the result of iFlowGAN is much better than CoCycleGAN.
+  Figure 7 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_7.jpg
+  Figure 7 caption: "Visual comparison for CycleGAN, RevGAN, iFlowGAN. The first four\
+    \ columns record map \u2194 aerial translation and the last four columns plot\
+    \ horse \u2194 zebra translation results."
+  Figure 8 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_8.jpg
+  Figure 8 caption: "Demonstration for Image-to-Image translation of AGGAN and mAGGAN\
+    \ on the apples \u2194 oranges photo. From top to down: Input denotes an input\
+    \ image from the source domain, AGGAN implies the translation result of the original\
+    \ attention-guided image-to-image translation model and mAGGAN indicates the result\
+    \ of mAGGAN. The visual quality of AGGAN and mAGGAN is similar."
+  Figure 9 Link: articels_figures_by_rev_year\2021\iFlowGAN_An_Invertible_FlowBased_Generative_Adversarial_Network_for_Unsupervised\figure_9.jpg
+  Figure 9 caption: 'Domain adaption illustration for CyCADA and mCyCADA on the SVHN
+    dataset [57]. From top to down: Input denotes an input image from the source domain,
+    CyCADA implies the result of the original discriminatively-trained cycle-consistent
+    adversarial domain adaptation model and mCyCADA indicates the result of merged
+    CyCADA. The visual quality of CyCADA and mCyCADA is similar.'
+  First author gender probability: 0.76
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.93
+  Name of the first author: Longquan Dai
+  Name of the last author: Jinhui Tang
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: 'iFlowGAN: An Invertible Flow-Based Generative Adversarial Network
+    for Unsupervised Image-to-Image Translation'
+  Publication Date: 2021-03-02 00:00:00
+  Table 1 caption: "TABLE 1 Classification Performance of Photo \u2192 \u2192 Labels\
+    \ and FCN-Scores for Different Methods on Cityscapes, Where Bold Numbers Indicate\
+    \ the Best Model"
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Image Quality Comparison on Maps Dataset, Where the Score
+    is the Average of Mean Absolute Error (MAE), Peak Signal-to-nOise Ratio (PSNR)
+    and Structural Similarity Index (SSIM)
+  Table 3 caption: 'TABLE 3 Statistical Data of CycleGAN, RevGAN and iFlowGAN: The
+    Running Time of Training the Maps Dataset and the Parameter Number With Regarding
+    Different Depths'
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3062849
+- Affiliation of the first author: department of electrical and computer engineering,
+    northeastern university, boston, ma, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    northeastern university, boston, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_1.jpg
+  Figure 1 caption: 'The last decade of research in visual kinship recognition. A
+    timeline showing correlations between the data released (below timeline) and different
+    citation metrics and events to indicate the impact throughout the research community
+    (above timeline). To collect the statistics on citation-metrics, we built a pipeline
+    to scrape the data needed from the web for the plots above: (1) Publish or Perish
+    [3] was installed on a Mac Book Pro to scrape from various sources (i.e., Google
+    Scholar, Cross Ref, and Scorpus) and saved as CSV files; (2) CSV files were converted
+    using Python; (3) the Mendeley application was then used to automatically merge
+    duplicates, while keeping as much information as possible amongst the set; (4)
+    queried Google Scholar for all Related Works and Cited By using PyPis scholarly
+    (https:pypi.orgprojectscholarly). PyPis scholarly both extended the paper-pile
+    and increased the amount of metadata available (scholarly provides richer metadata
+    per query, allowing us to fill in missing abstracts that are critical for the
+    next step). Finally, we clustered the documents by abstract via TF-IDF [4]. The
+    cluster made-up of a majority of papers on kinship recognition in multimedia:
+    this reduced the burden of manual inspection of hundreds of thousands to thousands.
+    It is important to note that only citation metrics were considered here, leaving
+    out other factors of impact like the number of times tweeted, Github stars, and
+    other indicators that may indicate research impact.'
+  Figure 10 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_10.jpg
+  Figure 10 caption: T3 sample results [19]. Each query (row) for a given probe (left
+    column) had all samples in the gallery returned in a ranked list - here we show
+    top 10. FP are labeled by x, while true matches list the relationship type as
+    P for parent, C for child, and S for sibling.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_2.jpg
+  Figure 2 caption: Workflow to scrape publication metadata for Fig. 1. From Publish
+    or Perish [3], we queried Scholar for Related works and Cited by, increasing the
+    size of our list nearly 20-fold. Mendleley merged duplicates, while keeping as
+    much information as possible. Applied Natural Language Processing (NLP) to cluster
+    relevant documents.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_3.jpg
+  Figure 3 caption: "Visual kin-based discriminate tasks. Depicted are problems of\
+    \ verification (i.e., one-to-one) and family classification (i.e., one-to-many),\
+    \ along with the more recently supported tri-subject verification (i.e., one-to-two)\
+    \ and search & retrieval for \u201Cmissing\u201D children (i.e., many-to-many).\
+    \ The FIW database is one of the major benchmarks that support each of these tasks\
+    \ as part of the annual data challenge RFIW\u2013 the most recent challenge supported\
+    \ three of these tasks, as family classification was found to carry less potential\
+    \ for practical use-cases. The data splits (i.e., train, val, and test with no\
+    \ family overlap), protocols, and benchmarks are described in [19]. Also, other\
+    \ data resources in Fig. 1 and Table 1 also support one or more of these tasks.\
+    \ Best viewed electronically."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_4.jpg
+  Figure 4 caption: Sample family of FIW [18]. Faces and relationships of the American
+    Football family, the Gronkowskis (Top). The montage shows less than half of all
+    photos for respective family. Photo types are various, spanning profile faces
+    (top) to images of different subgroups of family members. Furthermore, samples
+    capture different times of life. Note, crops were made to fit montage (Bottom).
+  Figure 5 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_5.jpg
+  Figure 5 caption: T1 Sample pairs [19]. Sample pairs with similarity scores near
+    the threshold (i.e., hard (H) samples), along with highly confident predictions
+    (i.e., easy (E) samples) in verification task.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_6.jpg
+  Figure 6 caption: Qualitative analysis of T1 [19]. Samples of each relationship
+    type that all of the teams either got correct (100 percent) or mostly not (20
+    percent) for the elevin pair types of FIW and NON-KIN.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_7.jpg
+  Figure 7 caption: Triplets with extreme scores (i.e., true and false) [19]. Each
+    show FMS (top rows) and FMD (bottom) for tri-subject (T2).
+  Figure 8 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_8.jpg
+  Figure 8 caption: Sample of T2 [19]. Samples that all teams got correct (left) and
+    mostly incorrect (right) for FMS (top rows) and FMD (bottom).
+  Figure 9 Link: articels_figures_by_rev_year\2021\Survey_on_the_Analysis_and_Modeling_of_Visual_Kinship_A_Decade_in_the_Making\figure_9.jpg
+  Figure 9 caption: Face counts per family in test set of T3 [19]. The probes have
+    about eight faces on average, while the number of family members in the gallery
+    nears 20 on average, with a total average of 170 faces.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Joseph P. Robinson
+  Name of the last author: Yun Fu
+  Number of Figures: 18
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: 'Survey on the Analysis and Modeling of Visual Kinship: A Decade in
+    the Making'
+  Publication Date: 2021-03-02 00:00:00
+  Table 1 caption: TABLE 1 Publicly Available Datasets for Kinship Recognition
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 T1 Counts
+  Table 3 caption: TABLE 3 KinWild Benchmarks
+  Table 4 caption: TABLE 4 T1 Results
+  Table 5 caption: TABLE 5 T2 Counts
+  Table 6 caption: TABLE 6 Verification Scores
+  Table 7 caption: TABLE 7 T3 Counts
+  Table 8 caption: TABLE 8 T3 Results
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3063078
+- Affiliation of the first author: school of computer science, beijing institute of
+    technology, beijing, china
+  Affiliation of the last author: "eth zurich, z\xFCrich, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_1.jpg
+  Figure 1 caption: Comparison between the full supervision used in prior arts (a)
+    and our inaccurate, inexact (b) and incomplete (c) supervision. Previous fully
+    supervised methods are trained from massive, exhaustively-labeled scenes (3,712
+    precisely annotated scenes with 15,654 vehicle instances), while our model uses
+    only 500 weakly annotated scenes with center-annotated BEV maps as well as 534
+    precisely labeled vehicle instances.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_10.jpg
+  Figure 10 caption: Failure cases of 3D car detection on KITTI val set (Section 6.6).
+    The inaccurate predictions are highlighted by red circles.
+  Figure 2 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_2.jpg
+  Figure 2 caption: Performance versus annotation cost, tested on KITTI [19] val set
+    (Car), under the moderate regime. Compared with current fully supervised 3D detectors,
+    our model yields promising results with a far lower annotation demand (see Section
+    6.2). More importantly, when providing more annotations, our model shows gradually
+    improved performance.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_3.jpg
+  Figure 3 caption: (a-c) Precise annotations require extensive labeling efforts (Section
+    3). (d-f) Our weak supervision is simply obtained by center-clicks (denoted by)
+    on BEV maps (Section 3). (g-h) Our pseudo ground-truths for fore-background segmentation
+    (yellower indicates higher foreground score; Section 4.1).
+  Figure 4 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_4.jpg
+  Figure 4 caption: Error distributions of our weak BEV annotations.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_5.jpg
+  Figure 5 caption: Our 3D object detection pipeline (Section 4). (a-b) Cylindrical
+    3D proposal generation results from Stage-1 (Section 4.1). Yellower colors correspond
+    to higher foreground probabilities. (c-d) Cascaded cuboid prediction in Stage-2
+    (Section 4.2). (e) Our final 3D object results.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_6.jpg
+  Figure 6 caption: Illustration of our pseudo ground-truth generation strategy (Eq.
+    (1)).
+  Figure 7 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_7.jpg
+  Figure 7 caption: Qualitative results of 3D object detection (Car) on KITTI val
+    set (Section 6.2). (Detected 3D bounding boxes are shown in yellow; images are
+    used only for visualization. Zoom-in for details. These notes are the same for
+    the other figures.).
+  Figure 8 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_8.jpg
+  Figure 8 caption: Qualitative results of 3D object detection (Pedestrian) on KITTI
+    val set (Section 6.3).
+  Figure 9 Link: articels_figures_by_rev_year\2021\Towards_a_Weakly_Supervised_Framework_for_D_Point_Cloud_Object_Detection_and_Ann\figure_9.jpg
+  Figure 9 caption: Annotation results for 3D object detection (Car) on KITTI val
+    set (Section 6.5). The improved annotations are highlighted by red circles.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Qinghao Meng
+  Name of the last author: Luc Van Gool
+  Number of Figures: 11
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: Towards a Weakly Supervised Framework for 3D Point Cloud Object Detection
+    and Annotation
+  Publication Date: 2021-03-03 00:00:00
+  Table 1 caption: TABLE 1 Evaluation Results (Section 6.2) on val Set of KITTI 3D
+    and BEV Object Detection Benchmark (Car)
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Evaluation Results (Section 6.2) on test Set of KITTI 3D
+    and BEV Object Detection Benchmark (Car)
+  Table 3 caption: TABLE 3 Evaluation Results (Section 6.3) on val Set of KITTI 3D
+    and BEV Object Detection Benchmark (Pedestrian)
+  Table 4 caption: TABLE 5 Ablation Studies (Section 6.4) on the Efficacy of Core
+    Model Components and Impacts of Annotation Qualities and Quantities
+  Table 5 caption: TABLE 4 Ablation Study (Section 6.4) on the Impacts of Different
+    Training Data Sampling Strategies
+  Table 6 caption: TABLE 6 Annotation Quality (Section 6.5) on val Set of KITTI 3D
+    and BEV Object Detection Benchmark (Car)
+  Table 7 caption: TABLE 7 Performance Comparison (Section 6.5) of 3D Object Detectors
+    PointRCNN [16] and PointPillars [7] Trained on the True KITTI Labels versus Labels
+    Generated by Our Annotators in Different Working Modes (i.e., Automatic and Active)
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3063611
+- Affiliation of the first author: school of mathematics and statistics, southwest
+    university, chongqing, china
+  Affiliation of the last author: faculty of information technology, macau university
+    of science and technology, taipa, macau, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_1.jpg
+  Figure 1 caption: "Regularization parameters minimizing the direction recovery error\
+    \ for different k\u22081,2,4,8,12,16 . We see a downward trend of \u03BD as k\
+    \ increases."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_10.jpg
+  Figure 10 caption: "Recovery performance on 6 example images when \u03BB=120 . (a)\
+    \ Original images; (b) recovered images by HSVT; (c) recovered images by HSTT;\
+    \ (d) recovered images by 1-bit-MADMM; (e) recovered images by 1-bit-ADMM; (f)\
+    \ recovered images by Adaptive HSVT; (g) recovered images by Adaptive HSTT; (h)\
+    \ recovered images by Adaptive 1-bit-MADMM; (i) recovered images by Adaptive 1-bit-ADMM;\
+    \ (j) and (k) show the comparison of the PSNR values and SSIM values on the above\
+    \ 6 examples."
+  Figure 2 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_2.jpg
+  Figure 2 caption: "Relative recovery errors of the reconstructed results for different\
+    \ values of the thresholding parameter \u03B3 relative to \u2225X \u2225 F . We\
+    \ set \u03BB=20 . The poor performance at these two extremes yields the U-shaped\
+    \ error graphs."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_3.jpg
+  Figure 3 caption: "Approximation accuracy of 1-bit-ADMM at different iterations.\
+    \ Oversampling factors \u03BB=20,30,40 are considered, respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_4.jpg
+  Figure 4 caption: Comparison of the execution time and recovery accuracy (over 100
+    trials) obtained by SDP and 1-bit-MADMM. We let r=2 and the dimension n=30:10:70
+    . We see an obvious advantage of 1-bit-MADMM on efficiency.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_5.jpg
+  Figure 5 caption: Direction errors obtained by different algorithms. We see that
+    1-bit LRTR methods have a significant advantage over 1-bit LRMR methods in recovery
+    accuracy.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_6.jpg
+  Figure 6 caption: "Influence of different noise levels on the reconstruction performance\
+    \ of our algorithms. Let \u2225e \u2225 1 =0,0.5,2,4 and \u03BB=10:10:80 . We\
+    \ observe that 1-bit-ADMM is more robust to additive noises than HSTT."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_7.jpg
+  Figure 7 caption: 'Relative recovery errors obtained by different algorithms: (a).
+    HSTT and 1-bit-ADMM; (b). Adaptive HSTT with q=10( n 1 + n 2 ) n 3 r,15( n 1 +
+    n 2 ) n 3 r and 20( n 1 + n 2 ) n 3 r ; (c). Adaptive 1-bit-ADMM with q=5( n 1
+    + n 2 ) n 3 r,10( n 1 + n 2 ) n 3 r and 15( n 1 + n 2 ) n 3 r .'
+  Figure 8 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_8.jpg
+  Figure 8 caption: Comparison of the execution time and relative recovery errors
+    obtained by the proposed algorithms. We see that the adaptive measurement significantly
+    improves the reconstruction performance of the proposed algorithms without changing
+    too much execution time.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Robust_LowTubalRank_Tensor_Recovery_From_Binary_Measurements\figure_9.jpg
+  Figure 9 caption: Averaged PSNR values and SSIM values obtained by different methods
+    on 100 tested images from CIFAR100. Here n 1 = n 2 =32 , n 3 =3 , and r=8 . We
+    see a significant advantage of Adaptive 1-bit-ADMM on quantitative indices.
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.68
+  Name of the first author: Jingyao Hou
+  Name of the last author: Deyu Meng
+  Number of Figures: 13
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: Robust Low-Tubal-Rank Tensor Recovery From Binary Measurements
+  Publication Date: 2021-03-03 00:00:00
+  Table 1 caption: TABLE 1 Reconstruction Performance of 1-bit-ADMM With Different
+    Regularization Parameters on Tensors of Different Scales
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison of Recovery Errors Obtained by the Proposed
+    Algorithms on Tensors With Different Sizes and Tubal Ranks
+  Table 3 caption: TABLE 3 Comparison of the PSNR Values and SSIM Values Obtained
+    by Different Methods on yaleB06, yaleB19, and yaleB33
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3063527

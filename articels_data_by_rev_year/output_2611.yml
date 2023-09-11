@@ -1,0 +1,787 @@
+- Affiliation of the first author: department of applied mathematics and computer
+    science, technical university of denmark, kongens lyngby, denmark
+  Affiliation of the last author: department of applied mathematics and computer science,
+    technical university of denmark, kongens lyngby, denmark
+  Figure 1 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_1.jpg
+  Figure 1 caption: Graph basics and serial algorithms. (a) An example of the graph
+    and a feasible (non-maximal) flow. The flow and capacity for each arc is written
+    as f ij c ij , and (to reduce clutter) zero-values of the flow are omitted. The
+    flow is 8, which is not maximal, so no s - t cut is evident. (b) The min-cutmax-flow
+    with a value of 18, which all min-cutmax-flow algorithms will eventually arrive
+    at. (c) Residual graph for the flow from (a). (d) An intermediate flow while running
+    the AP algorithm. In the first iteration, 10 units are pushed along the path highlighted
+    in orange and red, saturating two terminal arcs (red). In the next iteration,
+    flow is pushed along the residual path highlighted in blue. (e) A preflow at an
+    intermediate stage of a PPR algorithm. Nodes with excess are shown in red, and
+    a label in green is attached to every node. (f) A pseudoflow at an intermediate
+    stage of the HPF algorithm. Nodes with surplusdeficit are shown in redblue, a
+    label is attached to every node, and arcs of the tree structure are highlighted
+    in green.
+  Figure 10 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_10.jpg
+  Figure 10 caption: Speed-up of the the parallel algorithms compared to their single-threaded
+    performance. For each number of threads, the distribution of the speed-ups over
+    all datasets is shown. The values were re-sampled as described in Fig. 7.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_2.jpg
+  Figure 2 caption: Some possibilities for associating graph nodes with entities used
+    for segmentation. Graph nodes (gray dots) associated with (a) image pixels, (b)
+    superpixels, (c) positions in the image, (d) mesh faces, and (e) mesh vertices.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_3.jpg
+  Figure 3 caption: Some typical segmentation models. Terminal arcs are shown only
+    for the first example. Arcs drawn in purple have infinite capacity. (a) A classical
+    MRF segmentation with 4-connected grid graph. (b) A multi-column graph used for
+    segmenting layered structures. (c) Two-object segmentation with inclusion constraint.
+    (d) Three-object segmentation with mutual exclusion using QPBO.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_4.jpg
+  Figure 4 caption: 'Illustration of the adaptive bottom-up merging approach for parallel
+    min-cutmax-flow. Terminal nodes and arcs are not shown. Note that the underlying
+    graph does not have to be a grid graph. Phase one: (a) The graph is split into
+    blocks and the min-cutmax-flow is computed for each block in parallel. Phase two:
+    (b) The topmost blocks are locked, merged, and the min-cutmax-flow recomputed.
+    (c) As the topmost block is locked, the next thread works on the bottom-most blocks
+    (in parallel). (d) Last two blocks are merged and min-cutmax-flow recomputed to
+    achieve the globally optimal solution.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_5.jpg
+  Figure 5 caption: Illustration of the dual decomposition approach. Terminal nodes
+    and arcs are not shown. Note that the underlying graph does not have to be a grid
+    graph. (a) Graph nodes are divided into a set of overlapping blocks. (b) The graph
+    is split into disjoint sub-graphs and nodes in overlapping regions are duplicated
+    into each blocks. (c) The min-cutmax-flow for each block is computed in parallel
+    which gives an assignment to source set (black) or sink set (white). The sourcesink
+    capacities are then adjusted for disagreeing duplicated nodes. (d) The min-cutmax-flow
+    is recomputed and capacities are adjusted until all duplicated nodes agree.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_6.jpg
+  Figure 6 caption: Illustration of the region discharge approach. Terminal nodes
+    and arcs are not shown. Note that the underlying graph does not have to be a grid
+    graph. (a) Graph nodes are divided into a set of blocks and the region discharge
+    operation is run on each block, which pushes flow to the sink or boundary. (b)
+    Flow is synchronized between boundaries. (c) Region discharge is run again. The
+    process repeats until no flow crosses the block boundaries.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_7.jpg
+  Figure 7 caption: Relative performance for the serial algorithms. For each dataset,
+    the solve and total times for each algorithm were compared to those of the fastest
+    algorithm for that dataset and a relative time was computed. This shows how often
+    an algorithm was fastest and, if it was not fastest, how much slower than the
+    fastest it was. We oversample speed-ups from each problem family (c.f. Table 2)
+    so all groups have the same number of entries. This is to avoid bias due to some
+    problem groups having more entries than others. Finally, we overlay a random sample
+    of the (oversampled) speed-ups as jittered points.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_8.jpg
+  Figure 8 caption: "Performance comparison of serial algorithm variants. The solve\
+    \ time and total time is compared against the times for the chosen reference algorithm\
+    \ for each dataset. The violin plots show a Gaussian kernel density estimate of\
+    \ the data and the horizontal bars indicate \u2014 from top to bottom \u2014 the\
+    \ maximum, median, and minimum. The values were re-sampled as described in Fig.\
+    \ 7."
+  Figure 9 Link: articels_figures_by_rev_year\2022\Review_of_Serial_and_Parallel_MinCutMaxFlow_Algorithms_for_Computer_Vision\figure_9.jpg
+  Figure 9 caption: Speed-up of the parallel algorithms relative to the best serial
+    solve time for each dataset. The values were re-sampled as described in Fig. 7.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.98
+  Name of the first author: Patrick M. Jensen
+  Name of the last author: Vedrana A. Dahl
+  Number of Figures: 13
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Review of Serial and Parallel Min-CutMax-Flow Algorithms for Computer
+    Vision
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Summary of the Tested Implementations Including Their Memory
+    Footprint
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Performance Comparison of Serial Algorithms Based on Both
+    Their Solve and Total (build + solve) Times
+  Table 3 caption: TABLE 3 Performance of Parallel Algorithms based on Build and Solve
+    Times
+  Table 4 caption: TABLE 4 Summary of Relative Performance (RP) Scores for Each of
+    the min-cutmax-flow Algorithm Variants
+  Table 5 caption: TABLE 5 Relative Performance (RP) Scores for the Best Serial Algorithm
+    Variant for Each Problem Family
+  Table 6 caption: TABLE 6 Relative Performance (RP) Scores for the Best Parallel
+    Algorithm for Each Problem Family
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3170096
+- Affiliation of the first author: "department of computer aided medical procedures\
+    \ and augmented reality, technical university of munich, m\xFCnchen, germany"
+  Affiliation of the last author: department of computer science, university of oxford,
+    oxford, u.k.
+  Figure 1 Link: articels_figures_by_rev_year\2022\Differentiable_Graph_Module_DGM_for_Graph_Convolutional_Networks\figure_1.jpg
+  Figure 1 caption: 'Left: Two-layered architecture including Differentiable Graph
+    Module (DGM) that learns the graph, and Diffusion Module that uses the graph convolutional
+    filters. Right: Details of DGM in its two variants, cDGM and dDGM.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Differentiable_Graph_Module_DGM_for_Graph_Convolutional_Networks\figure_2.jpg
+  Figure 2 caption: Differentiable Graph Module (DGM) described in detail. After learning
+    the lower dimensional embedding space the diagram shows proposed sampling techniques.
+    Upper and lower part shows the continuous (cDGM) and discrete (dDGM) sampling
+    variants.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Differentiable_Graph_Module_DGM_for_Graph_Convolutional_Networks\figure_3.jpg
+  Figure 3 caption: 'Time per iteration and memory requirement for training three
+    different implementations of DGM: continuous graph sampling (cDGM), 5-nn discrete
+    graph sampling implemented with classical Pytorch tensor operations (dDGM) and
+    using the Keops library (dDGM Keops).'
+  Figure 4 Link: articels_figures_by_rev_year\2022\Differentiable_Graph_Module_DGM_for_Graph_Convolutional_Networks\figure_4.jpg
+  Figure 4 caption: Comparison between our dDGM and DGCNN sampling on the feature
+    space in the last two convolutional layers of the network. In dDGM the colormap
+    encodes the probability of each point to be connected to the red point. For DGCNN
+    we plot the exponential of the negative euclidean distance on feature space.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Differentiable_Graph_Module_DGM_for_Graph_Convolutional_Networks\figure_5.jpg
+  Figure 5 caption: "Example of the 2-ring neighborhood of the \u201Dsheep\u201D category\
+    \ on the knowledge graph (left) and on our predicted graph (center) sampled considering\
+    \ the 5 most probable edges. On the right the average predicted probability of\
+    \ edges belonging to the k-ring neighborhood (AwA2 test categories). Higher probabilities\
+    \ corresponding to nearest neighbors suggest that the predicted graph structure\
+    \ is loosely related to the knowledge graph."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Anees Kazi
+  Name of the last author: Michael M. Bronstein
+  Number of Figures: 5
+  Number of Tables: 12
+  Number of authors: 5
+  Paper title: Differentiable Graph Module (DGM) for Graph Convolutional Networks
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Dataset Description of Cora, Citeceer and Pubmed
+  Table 10 caption: TABLE 10 Classification Accuracy in % for Disease and Age Prediction
+    Tasks in the Transductive and Inductive Settings on the Tadpole (left) and UK
+    Biobank Datasets (Right)
+  Table 2 caption: TABLE 2 Performance of Our Method With Different Numbers of k k
+    Nearest Neighbors When Sampling the Graph
+  Table 3 caption: TABLE 3 Performance of Our Method With euclidean and Hyperbolic
+    Space Geometries
+  Table 4 caption: TABLE 4 Performance of Our Method With Different Graph Embedding
+    Space Dimensions d d
+  Table 5 caption: TABLE 5 Performance of Our Method With a Different Number of DGM
+    Layers
+  Table 6 caption: TABLE 6 Performance of Our Method With Different Graph Embedding
+    Functions f f
+  Table 7 caption: TABLE 7 (a) Performance of Our Method With Different Diffusion
+    Functions g g on the Graph Predicted by DGM. (b) Same Diffusion Functions Applied
+    Directly on the Input Graph (Without DGM)
+  Table 8 caption: TABLE 8 Accuracy on Tadpole Transductive Task With Different Architectural
+    Choices for Our cDGM and dDGM Models
+  Table 9 caption: TABLE 9 Classification Accuracy in % on Tadpole in the Transductive
+    Setting
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3170249
+- Affiliation of the first author: faculty of engineering, bar ilan university, ramat
+    gan, israel
+  Affiliation of the last author: computer science, the open university of israel,
+    raanana, israel
+  Figure 1 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_1.jpg
+  Figure 1 caption: 'Face swapping and reenactment. Left: Source face swapped onto
+    target. Right: Target video used to control the expressions of the face appearing
+    in the source image. In both cases, our results appear in the middle.'
+  Figure 10 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_10.jpg
+  Figure 10 caption: Qualitative face swapping results on [66]. The 3rd and 4th columns
+    shows the results of the 3DMM-based methods FaceSwap [74] and Nirkin et al. [10],
+    the 5th column shows DeepFakes [18] results, a direct mapping method, which was
+    trained specifically on each of those videos. The 6th column shows FSGAN [1] results
+    and the last column shows the results of our method, both on images of faces they
+    have not seen before.
+  Figure 2 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_2.jpg
+  Figure 2 caption: Overview of the proposed FSGAN approach. (a) The recurrent reenactment
+    generator, G r , and the segmentation generator, G s . G r estimates the reenacted
+    face, F r , while G s estimates the face and hair segmentation mask, S t , of
+    the target image, I t . (b) The inpainting generator, G c , inpaints the missing
+    parts of F ~ r based on S t to estimate the completed reenacted face, F c . (c)
+    The blending generator, G b , blends F c and F t , using the segmentation mask,
+    S t .
+  Figure 3 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_3.jpg
+  Figure 3 caption: Generator architectures. (a) The global generator is based on
+    a residual variant of the U-Net [43] CNN, using a number of bottleneck layers
+    per resolution. We replace the simple convolutions with bottleneck blocks (in
+    purple), the concatenation with summation (plus sign), and the deconvolutions
+    with bilinear upsamplnig following by a convolution. (b) The enhancer utilizes
+    a submodule and a number of bottleneck layers. The last output block (in blue)
+    is only used in the enhancer of the finest resolution.
+  Figure 4 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_4.jpg
+  Figure 4 caption: Face reenactment. A single iteration of our proposed face reenactment
+    method. The source image is concatenated with the heatmap corresponding to the
+    first face landmarks, p 1 , and fed to the reenactment generator, G r , producing
+    the first reenactment iteration result. The next iteration uses the result of
+    the previous iteration instead of the source image with the next face landmarks.
+  Figure 5 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_5.jpg
+  Figure 5 caption: Face view interpolation. (a) Shows an example of an appearance
+    map of the source subject (Donald Trump). The green dots represent different views
+    of the source subject, the blue lines represent the Delaunay Triangulation of
+    those views, and the red X marks the location of the current targets pose. (b)
+    The interpolated views associated with the vertices of the selected triangle (represented
+    by the yellow dots). (c) The reenactment result and the current target image.
+  Figure 6 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_6.jpg
+  Figure 6 caption: 'Qualitative face reenactment results. Row 1: The source face
+    for reenactment. Row 2: Our reenactment results (without background removal).
+    Row 3: The target face from which to transfer the pose and expression.'
+  Figure 7 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_7.jpg
+  Figure 7 caption: Pose reenactment. (a) Example appearance map of an input subject
+    (Natalie Portman). The red dashes represent the interpolation path and the orange
+    Xs mark the pose of the views presented on the right. (b) The first three rows
+    are input queries from the appearance map. The reenactment result is displayed
+    in the last row.
+  Figure 8 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_8.jpg
+  Figure 8 caption: Qualitative expression-only reenactment comparison. The expression
+    of the face in the left column is transferred to the face in the second column
+    using Face2Face [8] (third column), FSGAN [74] (4th column), and our method (last
+    column).
+  Figure 9 Link: articels_figures_by_rev_year\2022\FSGANv_Improved_Subject_Agnostic_Face_Swapping_and_Reenactment\figure_9.jpg
+  Figure 9 caption: 'Face inpainting qualitative results. Top row: Input real images
+    with random ellipses removed from the faces. Seconds row: Inpainting results without
+    facial landmarks. Third row: Inpainting results with facial landmarks. Bottom
+    row: The full input image.'
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.74
+  Name of the first author: Yuval Nirkin
+  Name of the last author: Tal Hassner
+  Number of Figures: 14
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: 'FSGANv2: Improved Subject Agnostic Face Swapping and Reenactment'
+  Publication Date: 2022-04-26 00:00:00
+  Table 1 caption: TABLE 1 Inpainting Ablation
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Quantitative Face Swapping Comparison
+  Table 3 caption: TABLE 3 Quantitative Face Swapping Results on FaceForensics++ [66]
+    for Our Ablation Study on the Components of FSGAN
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3155571
+- Affiliation of the first author: department of computer science and engineering,
+    texas a&m university, college station, tx, usa
+  Affiliation of the last author: department of computer science and engineering,
+    texas a&m university, college station, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\SelfSupervised_Learning_of_Graph_Neural_Networks_A_Unified_Review\figure_1.jpg
+  Figure 1 caption: A comparison between the contrastive model and the predictive
+    model in general.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\SelfSupervised_Learning_of_Graph_Neural_Networks_A_Unified_Review\figure_2.jpg
+  Figure 2 caption: 'An overview of self-supervised learning methods. We categorize
+    self-supervised learning methods into two branches: contrastive methods and predictive
+    methods. For contrastive methods, we further divide them regarding either views
+    generation or objective. From the aspect of views generation, Infograph [41],
+    DGI [38] and GMI [42] contrast views between nodes and graph; Hu et al. [43] and
+    Jiao et al. [44] contrast views between nodes and subgraph; MVGRL [10] and GCA
+    [45] contrast views between nodes and subgraph or structurally transformed graph;
+    GRACE [46] and BGRL [47] contrast views between nodes and structurally transformed
+    graph or featurally transformed graph. Above methods include node-level representation
+    to generate localglobal contrastive pairs. Dissimilarly, following methods use
+    global representation only to generate globalglobal contrastive pairs. GCC [48]
+    contrasts views between subgraphs; GraphCL [49] contrasts views of subgraphs and
+    randomly transformed graphs. From aspect of objective, Infograph [41], DGI [38],
+    Hu et al. [43], MVGRL [10] and GMI [42] employ Jensen-Shannon estimator; GCC [48],
+    GraphCL [49], GRACE [46] and GCA [45] employ InfoNCE (NT-Xent); Jiao et al. [44]
+    use other MI estimators. For the predictive methods, we further divide them into
+    graph reconstruction, property prediction, self-training, and invariance regularization
+    methods. Under graph reconstruction, GAE [39], MGAE [50], and GALA [51] utilize
+    the non-probabilistic graph autoencoder; VGAE [39], ARGAARVGA [52], and SIG-VAE
+    [53] utilize variational graph autoencoder; GPT-GNN [54] applies autoregressive
+    reconstruction. Under property prediction, S 2 GRL [55] performs the prediction
+    of k-hop connectivity as a statistical property; GROVER [56] performs predictions
+    of a statistical contextual property and a domain-knowledge involved property;
+    Hwang et al. [57] predict a topological property, meta-path. M3S [58] and ICF-GCN
+    [59] employs self-training and node clustering to provide self-supervision. BGRL
+    [47], CCA-SSG [60], and LaGraph [61] derive self-supervised objectives involving
+    invariance regularization without requiring negative pairs. SSL methods for heterogeneous
+    graphs are marked with underlines. We discuss and summarize SSL methods for heterogeneous
+    graphs and dynamic graphs in Appendix A, which can be found on the Computer Society
+    Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2022.3170559.
+    We further discuss and compare contrastive and predictive methods in Appendix
+    B, available in the online supplemental material.'
+  Figure 3 Link: articels_figures_by_rev_year\2022\SelfSupervised_Learning_of_Graph_Neural_Networks_A_Unified_Review\figure_3.jpg
+  Figure 3 caption: 'Paradigms for self-supervised learning. Top: in unsupervised
+    representation learning, graphs only are used to train the encoder through the
+    self-supervised task. The learned representations are fixed and used in downstream
+    tasks such as linear classification and clustering. Middle: unsupervised pre-training
+    trains the encoder with unlabeled graphs by the self-supervised task. The pre-trained
+    encoders parameters are then used as the initialization of the encoder used in
+    supervised fine-tuning for downstream tasks. Bottom: in auxiliary learning, an
+    auxiliary task with self-supervision is included to help learn the supervised
+    main task. The encoder is trained through both the main task and the auxiliary
+    task simultaneously.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\SelfSupervised_Learning_of_Graph_Neural_Networks_A_Unified_Review\figure_4.jpg
+  Figure 4 caption: The general framework of contrastive methods. A contrastive method
+    can be determined by defining its views generation, encoders, and objective. Different
+    views can be generated by a single or a combination of instantiations of three
+    types of transformations. Commonly employed transformations include node attribute
+    masking as feature transformation, edge perturbation and diffusion as structure
+    transformations, and uniform sampling, ego-nets sampling, and random walk sampling
+    as sample-based transformations. Note that we consider a node representation in
+    node-graph contrast [13], [38], [41] as a graph view with ego-nets sampling followed
+    by a node-level encoder. For graph encoders, most methods employ graph-level encoders
+    and node-level encoders are usually used in node-graph contrast. Common contrastive
+    objectives include Donsker-Varadhan representation, Jensen-Shannon estimator,
+    InfoNCE, and other non-bound objectives. An estimator is parametric if projection
+    heads are employed, and is non-parametric otherwise. Examples of three specific
+    contrastive learning methods are illustrated in the figure. Red lines connect
+    options used in MVGRL [10]; green lines connect options adopted in GraphCL [49];
+    yellow lines connect options taken in GCC [48].
+  Figure 5 Link: articels_figures_by_rev_year\2022\SelfSupervised_Learning_of_Graph_Neural_Networks_A_Unified_Review\figure_5.jpg
+  Figure 5 caption: 'Different ways of using encoders during inference. Top: encoders
+    for multiple views are used and output representations are merged by combinations
+    such as summation [10] or concatenation. Middle: only the main encoder [47] and
+    the corresponding view are used during inference. Bottom: the given graph is directly
+    input to the only encoder [48], [49] shared by all views to compute its representation.'
+  Figure 6 Link: articels_figures_by_rev_year\2022\SelfSupervised_Learning_of_Graph_Neural_Networks_A_Unified_Review\figure_6.jpg
+  Figure 6 caption: 'Illustrations of four predictive learning frameworks. For predictive
+    learning methods, self-generated labels provide self-supervision to train the
+    encoder together with prediction heads (or the decoder). We conclude predictive
+    learning methods into four categories by how the prediction targets are obtained.
+    Top left: the prediction targets in graph reconstruction are certain parts of
+    given graphs. For example, GAE [39] performs reconstruction on the adjacency matrix,
+    and MGAE [50] performs reconstruction on randomly corrupted node attributes. Top
+    right: the supervision comes from the invariance regularization and additional
+    constraints that are derived based on different theoretical frameworks and promote
+    the learning of informative representations. Bottom left: the prediction targets
+    in property prediction models are implicit and informative properties of given
+    graphs. For example, S 2 GRL [55] predicts k-hop connectivity between two given
+    nodes. Moreover, GROVER [56] utilizes motifs (functional groups) of molecules
+    based on domain-knowledge as prediction targets. Bottom right: the prediction
+    targets in self-training are pseudo-labels. In M3S [58], the graph neural network
+    is trained iteratively on a pseudo-label set initialized as the set of given ground-truth
+    labels. Clustering and prediction are conducted to update the pseudo-label set
+    based on which a fresh graph neural network is then trained. Such operations are
+    performed multiple times as multi-stage.'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.78
+  Name of the first author: Yaochen Xie
+  Name of the last author: Shuiwang Ji
+  Number of Figures: 6
+  Number of Tables: 1
+  Number of authors: 5
+  Paper title: 'Self-Supervised Learning of Graph Neural Networks: A Unified Review'
+  Publication Date: 2022-04-27 00:00:00
+  Table 1 caption: TABLE 1 Summary and Statistics of Common Graph Datasets for Self-Supervised
+    Learning
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3170559
+- Affiliation of the first author: institute of big data science and industry, shanxi
+    university, taiyuan, shanxi, china
+  Affiliation of the last author: department of computer science, city university
+    of hong kong, hong kong, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Generalization_Performance_of_Pure_Accuracy_and_its_Application_in_Selective_Ens\figure_1.jpg
+  Figure 1 caption: Comparison on class distribution insensitivity.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Generalization_Performance_of_Pure_Accuracy_and_its_Application_in_Selective_Ens\figure_2.jpg
+  Figure 2 caption: Comparison on distinction ability.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Generalization_Performance_of_Pure_Accuracy_and_its_Application_in_Selective_Ens\figure_3.jpg
+  Figure 3 caption: Comparison of the Elementary Functions.
+  Figure 4 Link: articels_figures_by_rev_year\2022\Generalization_Performance_of_Pure_Accuracy_and_its_Application_in_Selective_Ens\figure_4.jpg
+  Figure 4 caption: "Comparison of B \xAF 1 (N) and B \xAF 2 (N)"
+  Figure 5 Link: articels_figures_by_rev_year\2022\Generalization_Performance_of_Pure_Accuracy_and_its_Application_in_Selective_Ens\figure_5.jpg
+  Figure 5 caption: The average train and test pure accuracy curves of ordered ensemble
+    with the increasing of the ensemble number.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Generalization_Performance_of_Pure_Accuracy_and_its_Application_in_Selective_Ens\figure_6.jpg
+  Figure 6 caption: Statistical Comparison Results.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Generalization_Performance_of_Pure_Accuracy_and_its_Application_in_Selective_Ens\figure_7.jpg
+  Figure 7 caption: The average train and test pure accuracy curves with the increasing
+    of the maximal number of decision splits.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Jieting Wang
+  Name of the last author: Qingfu Zhang
+  Number of Figures: 7
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Generalization Performance of Pure Accuracy and its Application in
+    Selective Ensemble Learning
+  Publication Date: 2022-04-29 00:00:00
+  Table 1 caption: TABLE 1 Confusion Matrix
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 An Example on Distinction Ability of a and PA
+  Table 3 caption: TABLE 3 Data Sets Description
+  Table 4 caption: TABLE 4 PA Value of Selective Ensemble
+  Table 5 caption: TABLE 5 TP Value of Selective Ensemble
+  Table 6 caption: TABLE 6 A Value of Selective Ensemble
+  Table 7 caption: TABLE 7 PA Value of Weight Ensemble
+  Table 8 caption: TABLE 8 TP Value of Weight Ensemble
+  Table 9 caption: TABLE 9 A Value of Weight Ensemble
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3171436
+- Affiliation of the first author: department of biomedical engineering, cornell university,
+    ithaca, ny, usa
+  Affiliation of the last author: school of electrical and computer engineering, cornell
+    university, ithaca, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_1.jpg
+  Figure 1 caption: "FLEX-2 examples of the different types of soot. First column:\
+    \ original images, second column: windowed images to show fine intensity difference\
+    \ details, third column: synthetic images for measurement precision evaluation.\
+    \ Fuel types: first row \u2013 Decane75 Propylbenzene25, second row \u2013 Decane25\
+    \ Propylbenzene75, third and fourth rows \u2013 Decane100."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_2.jpg
+  Figure 2 caption: Flowchart diagram of the diameter measurement algorithm.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_3.jpg
+  Figure 3 caption: 'Representative original images, gradient images and ray profiles
+    of droplet through key stages of soot: (a-c) before ignition, no soot. (d-f) powder
+    soot after ignition. (g-i) occluding soot. (j-l) granular soot.'
+  Figure 4 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_4.jpg
+  Figure 4 caption: 'Granular noise image with identified boundary points shown in
+    color: (a) before skewness correction and (b) after skewness correction.'
+  Figure 5 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_5.jpg
+  Figure 5 caption: Automated measurement system organization. The colors in the measurement
+    optimization, local search, and no measurement cells are used to indicate which
+    method was used to obtain the final diameter measurement in the diameter plots
+    of Figs. 7 and 8.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_6.jpg
+  Figure 6 caption: "Results of the precision measurements from synthetic image evaluation\
+    \ (blue) and precision model (grey) for (a) sub-pixel soot, (b) granular soot,\
+    \ and (c) contiguous occlusion. Blue line and light blue band are experimental\
+    \ \u025Bp and its 95% CI for the synthetic images; black line and grey band are\
+    \ over-estimated \u025Bp and its 95% CI predicted by the model."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_7.jpg
+  Figure 7 caption: Example of successful image sequence measurements with different
+    types of noise showing diameter measurement (blue, orange, red) and measurement
+    precision (black). Blue points indicate no grid search, orange points indicate
+    grid search, and red points indicate no measurement.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_8.jpg
+  Figure 8 caption: Example of successful image sequence measurements of wire cases
+    showing diameter measurement (blue, orange, red) and measurement precision (black).
+    Blue points indicate no grid search, orange points indicate grid search, and red
+    points indicate no measurement.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Dynamic_Differential_Image_Circle_Diameter_Measurement_Precision_Assessment_Appl\figure_9.jpg
+  Figure 9 caption: Absolute difference in diameter between forward and reverse measurements
+    for two example cases (a,c) along with their respective varepsilon p (b,d).
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Raisa B. Rasul
+  Name of the last author: Anthony P. Reeves
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: 'Dynamic Differential Image Circle Diameter Measurement Precision Assessment:
+    Application to Burning Droplets'
+  Publication Date: 2022-05-03 00:00:00
+  Table 1 caption: TABLE 1 FLEX-2 Dataset Description
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Parameters Used for Automated Circle Measurement Algorithm
+  Table 3 caption: TABLE 3 Measurement Algorithm Failures for Unsupported and Supported
+    FLEX-2 Cases
+  Table 4 caption: TABLE 4 Precision Estimation Model Parameters for the Three Different
+    Soot Types and Their Goodness of Fit Metrics
+  Table 5 caption: "TABLE 5 Repeatability of Frame-to-Frame Change in Diameter Measurement\
+    \ (pixels) for 4 Example Cases, As Analyzed in [21] (\u03C3D) and This Present\
+    \ Study (\u03C3R)"
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3170926
+- Affiliation of the first author: department of electrical and computer engineering,
+    university of dayton, dayton, oh, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of dayton, dayton, oh, usa
+  Figure 1 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_1.jpg
+  Figure 1 caption: TORE volumes generated from shapes6dof in the Event Camera Dataset
+    [6]. TORE volumes are a dense event representation that encodes a history of recent
+    events.
+  Figure 10 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_10.jpg
+  Figure 10 caption: "Overview of proposed pose estimation approach. An event representation\
+    \ for each camera is used as input to a small CNN (blue) to estimate a 2D pose\
+    \ for 13 joint positions. Joint positions from 1\u20134 cameras (two shown) are\
+    \ then passed to a second CNN (yellow) to estimate the overall 3D pose. The 2D\
+    \ pose estimation does not require a fixed frame rate and can output 2D pose at\
+    \ any temporal resolution once trained."
+  Figure 2 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_2.jpg
+  Figure 2 caption: "The continuous log-intensity J for a single pixel within an event\
+    \ camera is shown as the solid black line. DVS events are generated for this pixel\
+    \ when the log-intensity exceeds a predefined threshold \u03B5 . In certain event\
+    \ cameras, APS frames are also generated using the same photodiode. APS frames\
+    \ are exposed for \u03C4 seconds, occurring once every \u03B7 seconds."
+  Figure 3 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_3.jpg
+  Figure 3 caption: "Current denoising is performed after data has been read out and\
+    \ transmitted from the sensor. This makes the sensor vulnerable to noise saturating\
+    \ the data link and requires downstream application to process additional data.\
+    \ This work develops a method using only local data, similar to the retina, to\
+    \ denoise event data. This method could even be moved \u201Con-chip\u201D and\
+    \ incorporated into a full virtual retina."
+  Figure 4 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_4.jpg
+  Figure 4 caption: "2D representation of TORE volume generation. (Top) A simple neuron\
+    \ model takes multiple sparse inputs and generates one or more sparse output signals.\
+    \ The membrane potential (i.e., \u201Cstate\u201D) of the neuron is impacted most\
+    \ by recent spikes in most LIF models. (Bottom) TORE volumes use a FIFO buffer\
+    \ to retain the most recent events at each location. Events beyond the buffer\
+    \ k (shown here as K=3 ) are forgotten. A convolution on the TORE volume has the\
+    \ ability to approximate the output of a single neuron."
+  Figure 5 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_5.jpg
+  Figure 5 caption: "TORE volume is generated from K most recent events in m\xD7m\
+    \ neighborhood of event-of-interest. All surfaces are concatenated and passed\
+    \ to a classification network. The CNN performs a binary classification to yield\
+    \ a denoising label."
+  Figure 6 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_6.jpg
+  Figure 6 caption: Event denoising results from DVSNOISE20 dataset overlaid on corresponding
+    APS image. (First Row) All events generated by the event camera. (Second Row)
+    Denoised events using BAF method. (Third Row) Denoised events using proposed method.
+    The proposed denoising algorithm does not use APS image information, but most
+    events not corresponding to edges visible in the APS image have been removed as
+    likely noise.
+  Figure 7 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_7.jpg
+  Figure 7 caption: Example of image reconstruction using event representations. The
+    left and right images in each row were reconstructed using only event representations
+    and the center image was captured from the APS output (i.e., truth). The first
+    two rows represent the test scenes from the DVSNOISE20 dataset. The bottom four
+    rows show reconstructions from the ECD dataset. Animations are available via the
+    project website.
+  Figure 8 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_8.jpg
+  Figure 8 caption: A sequence of nine APS frames from the UZH-FPV Drone Racing dataset
+    (top). This dataset is extremely dissimilar to the training data, but reconstruction
+    from DVS-only data removes blurring caused by the extreme camera motion (bottom).
+  Figure 9 Link: articels_figures_by_rev_year\2022\TimeOrdered_Recent_Event_TORE_Volumes_for_Event_Cameras\figure_9.jpg
+  Figure 9 caption: "A sequence of DVS-only reconstructed frames from the UZH-FPV\
+    \ Drone Racing dataset. An additional seven frames are generated from TORE representations\
+    \ between the APS frames to create a video with a frame rate 8\xD7 the APS sensor."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: R. Wes Baldwin
+  Name of the last author: Keigo Hirakawa
+  Number of Figures: 13
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Time-Ordered Recent Event (TORE) Volumes for Event Cameras
+  Publication Date: 2022-05-03 00:00:00
+  Table 1 caption: TABLE 1 Comparison of Tensor-Based Event Representation Methods
+    Used in Machine Learning for Event-Based Camera Data
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 RPMD Scores for Event Denoising on DVSNOISE20 (Sampled)
+    Dataset
+  Table 3 caption: TABLE 3 Image Reconstruction Scores for E2VID and TORE on the Event
+    Camera Dataset
+  Table 4 caption: TABLE 4 Classification Accuracy Compared to State-of-the-Art Methods
+    on Public Datasets
+  Table 5 caption: TABLE 5 Test Set 2D MPJPE (Pixel) for the CNN, Trained on the Two
+    Frontal Camera Views (Camera 2 and 3)
+  Table 6 caption: TABLE 6 3D Pose Reconstruction Error for the DHP19 Dataset
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3172212
+- Affiliation of the first author: department of electrical and electronics engineering,
+    hacettepe university, ankara, turkey
+  Affiliation of the last author: department of electrical and electronics engineering,
+    hacettepe university, ankara, turkey
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Berkan Dulek
+  Name of the last author: Berkan Dulek
+  Number of Figures: 0
+  Number of Tables: 0
+  Number of authors: 1
+  Paper title: On the Optimality of Sufficient Statistics-Based Quantizers
+  Publication Date: 2022-05-03 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3172282
+- Affiliation of the first author: department of electronic engineering, shanghai
+    jiao tong university, shanghai, china
+  Affiliation of the last author: department of electronic engineering, shanghai jiao
+    tong university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_1.jpg
+  Figure 1 caption: Illustration of hybrid ISTA models. Seven models are proposed
+    from the perspective of classical ISTA and learned ISTA.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_2.jpg
+  Figure 2 caption: Comparison between residual connectivity and proposed ISTA-based
+    connectivity. H n 1 and H n 2 correspond to the counterparts in Eqs. (5), (20),
+    (31) or and (41), respectively. Eq (52) for HELISTA can be regarded as a similar
+    but more complicated connectivity.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_3.jpg
+  Figure 3 caption: "NMSEs with respect to iterations obtained by hybrid ISTA models\
+    \ and the corresponding baselines on the test set of 1000 samples randomly generated\
+    \ from Ber(0.1)\u2218N(0,1) ."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_4.jpg
+  Figure 4 caption: "The values of \u03B7 n , n=1,\u2026,16 defined in Assumption\
+    \ 1 for HCISTA with trained and untrained DNNs under \u03BB=0.05 , 0.1, and 0.2."
+  Figure 5 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_5.jpg
+  Figure 5 caption: "Average \u2113 1 norms of the test signal x \u2217 and u n ,\
+    \ n=1,\u2026,16 obtained by HLISTA-CPCPSS, HALISTA, HGLISTA and HELISTA."
+  Figure 6 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_6.jpg
+  Figure 6 caption: "Proportions of false positives and true positives in x n obtained\
+    \ by LISTA-CP-UCPSS-U [30], ALISTA [31], Gated LISTA [32], ELISTA [33], and the\
+    \ proposed HLISTA models. The \u201Ctrue positives\u201D curve draws the values\
+    \ of E[\u2225 x n S \u2225 2 2 \u2225 x n \u2225 2 2 ] with regard to n , whereas\
+    \ the \u201Cfalse positives\u201D curve for E[\u2225 x n S c \u2225 2 2 \u2225\
+    \ x n \u2225 2 2 ] ."
+  Figure 7 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_7.jpg
+  Figure 7 caption: The learned thresholds (i.e., lambda n tn for HCISTA and theta
+    1n and theta 2n for HLISTA) and alpha n for hybrid ISTA models.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_8.jpg
+  Figure 8 caption: NMSEs obtained by hybrid ISTA models and corresponding baselines
+    for noisy cases under SNRs of 20, 30, 40 dB.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Hybrid_ISTA_Unfolding_ISTA_With_Convergence_Guarantees_Using_FreeForm_Deep_Neura\figure_9.jpg
+  Figure 9 caption: NMSEs obtained by hybrid ISTA models and corresponding baselines
+    for ill-conditioned mathbf A with the condition number mathcal K of 5, 30, and
+    50.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ziyang Zheng
+  Name of the last author: Hongkai Xiong
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: 'Hybrid ISTA: Unfolding ISTA With Convergence Guarantees Using Free-Form
+    Deep Neural Networks'
+  Publication Date: 2022-05-03 00:00:00
+  Table 1 caption: TABLE 1 Comparison Between Popular ISTA-Based Unfolded DNNs
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Summary of Learnable Parameters of Different Models
+  Table 3 caption: TABLE 3 Comparison of Number of Learnable Parameters in Sparse
+    Recovery Experiments
+  Table 4 caption: TABLE 4 Comparison of Average PSNR (dB)|SSIM on Set11 and BSD500
+    Obtained At the Measurement Rates (MRs) of 0.04, 0.10, 0.25 and 0.50
+  Table 5 caption: TABLE 5 Comparison With ISTA-Net + + of Average PSNR (dB)|SSIM
+    on BSD500 (50 Images for Test) Obtained at Four MRs
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3172214
+- Affiliation of the first author: college of intelligence and computing, tianjin
+    university, tianjin, china
+  Affiliation of the last author: astar centre for frontier ai research (cfar), agency
+    for science, technology and research (astar), singapore
+  Figure 1 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_1.jpg
+  Figure 1 caption: "Illustration of our algorithm. For clarity, we only use two views\
+    \ in the Fig. 1(a), where view-1 produces a confident observation and view-2 produces\
+    \ an uncertain observation. In this situation, the final obtained subjective opinions\
+    \ will be mainly determined by the confident view-1. The overall process of the\
+    \ model is composed of the following steps. Firstly, the Dirichlet distribution\
+    \ of each view is obtained using variational approximation (\u2460). Then, the\
+    \ obtained Dirichlet distribution induces the subjective opinions including the\
+    \ belief and uncertainty masses (\u2461). Unlike frequency probability, subjective\
+    \ opinion can express the unknown explicitly through uncertainty. The subjective\
+    \ opinions M can be considered as a point in a higher-dimensional standard simplex\
+    \ space. To integrate the subjective opinions from different views, DST-based\
+    \ combination rule is adopted (\u2462). In training, the parameters of the model\
+    \ are updated along the dotted lines. The DST combination rule and an example\
+    \ are shown in Definition 3.2 and Fig. 1(b), respectively. Specifically, given\
+    \ two sets of beliefs (blue and green blocks), we recombine the compatible parts\
+    \ of the two sets (brown blocks) and ignore the mutually exclusive parts (white\
+    \ blocks) to obtain the combined beliefs."
+  Figure 10 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_10.jpg
+  Figure 10 caption: Examples with the highest (bottom row) and lowest (top row) prediction
+    uncertainty using the ETMC algorithm on the SUN RGB-D test set. The ground-truth
+    labels are in brackets. The confident samples are correctly classified, while
+    for the uncertain samples only the rightmost sample is correctly recognized.
+  Figure 2 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_2.jpg
+  Figure 2 caption: Typical examples of Dirichlet distribution [69], [82] and subjective
+    opinion. Refer to the text for details.
+  Figure 3 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_3.jpg
+  Figure 3 caption: "Overview of enhanced trusted multi-view classification, where\
+    \ the subjective opinions of each view can be obtained using steps \u2460 and\
+    \ \u2461 in Fig. 2."
+  Figure 4 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_4.jpg
+  Figure 4 caption: Performance comparison on multi-view data with different levels
+    of noise.
+  Figure 5 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_5.jpg
+  Figure 5 caption: Density of uncertainty obtained using TMC algorithm.
+  Figure 6 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_6.jpg
+  Figure 6 caption: Density of uncertainty obtained using the ETMC algorithm.
+  Figure 7 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_7.jpg
+  Figure 7 caption: Accuracy with uncertainty thresholding.
+  Figure 8 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_8.jpg
+  Figure 8 caption: Confusion matrices of NYUD Depth V2 and SUN RGB-D datasets.
+  Figure 9 Link: articels_figures_by_rev_year\2022\Trusted_MultiView_Classification_With_Dynamic_Evidential_Fusion\figure_9.jpg
+  Figure 9 caption: Subjective confusion matrices of NYUD Depth V2 and SUN RGB-D datasets.
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.87
+  Name of the first author: Zongbo Han
+  Name of the last author: Joey Tianyi Zhou
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Trusted Multi-View Classification With Dynamic Evidential Fusion
+  Publication Date: 2022-05-03 00:00:00
+  Table 1 caption: TABLE 1 Evaluation of the Classification Performance
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparison With CCA-Based Algorithms
+  Table 3 caption: TABLE 3 Comparison With State-of-The-Art Methods on SUN RGB-D Dataset
+    (in Terms of Classification Accuracy)
+  Table 4 caption: TABLE 4 Comparison With State-of-The-Art Methods on the NYUD Depth
+    V2 Dataset (in Terms of Classification Accuracy)
+  Table 5 caption: TABLE 5 Computational Cost Comparison With Different Methods (In
+    Terms of GFLOPs and Number of Parameters)
+  Table 6 caption: TABLE 6 Evaluation of the Classification Performance on UMPC-FOOD101
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2022.3171983

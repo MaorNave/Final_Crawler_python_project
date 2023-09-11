@@ -1,0 +1,848 @@
+- Affiliation of the first author: carnegie mellon university, pittsburgh, pa, usa
+  Affiliation of the last author: department of electrical engineering and computer
+    science, massachusetts institute of technology, cambridge, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_1.jpg
+  Figure 1 caption: "We introduce GAN Compression, a general-purpose method for compressing\
+    \ conditional GANs. Our method reduces the computation of widely-used conditional\
+    \ GAN models including Pix2pix, CycleGAN, and GauGAN by 9-21\xD7 while preserving\
+    \ the visual fidelity. Our method is effective for a wide range of generator architectures,\
+    \ learning objectives, and both paired and unpaired settings."
+  Figure 10 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_10.jpg
+  Figure 10 caption: "The comparison between training with unpaired data (naive) and\
+    \ training with pseudo paired data (proposed). The latter consistently outperforms\
+    \ the former, especially for small models. The generators computation can be compressed\
+    \ by 14.9\xD7 without hurting the fidelity using the proposed pseudo pair method.\
+    \ In this comparison, both methods do not use automated channel reduction and\
+    \ convolution decomposition."
+  Figure 2 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_2.jpg
+  Figure 2 caption: "Conditional GANs require two orders of magnitude (562\xD7) more\
+    \ computation than image classification CNNs, making it prohibitive to be deployed\
+    \ on edge devices."
+  Figure 3 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_3.jpg
+  Figure 3 caption: "GAN Compression framework: \u2780 Given a pre-trained teacher\
+    \ generator G \u2032 , we distill a smaller once-for-all student generator G that\
+    \ contains all possible channel numbers through weight sharing. We choose different\
+    \ channel numbers c k K k=1 for the student generator G at each training step.\
+    \ \u2781 We then extract many sub-generators from the once-for-all generator and\
+    \ evaluate their performance. No retraining is needed, which is the advantage\
+    \ of the once-for-all generator. \u2782 Finally, we choose the best sub-generator\
+    \ given the compression ratio target or performance target (FID or mIoU) using\
+    \ either brute-force or evolutionary search method. Optionally, we perform additional\
+    \ fine-tuning to obtain the final model."
+  Figure 4 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_4.jpg
+  Figure 4 caption: Pipelines of our GAN Compression and Fast GAN Compression. Fast
+    GAN Compression does not require Mobile Teacher Training and Pre-distillation,
+    and uses Evolutionary Search instead of Brute-force Search. The steps with dashed
+    borders are optional. If the original model is available, we can also skip the
+    Pre-training. The Fine-tuning step is also optional, as reported in Section 3.2.3.
+  Figure 5 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_5.jpg
+  Figure 5 caption: "Qualitative compression results on Cityscapes, edges \u2192 shoes,\
+    \ and horse \u2192 zebra. Our methods (GAN Compression and Fast GAN Compression)\
+    \ preserve the fidelity while significantly reducing the computation. In contrast,\
+    \ directly training a smaller model (e.g., 0.25 CycleGAN, which linearly scales\
+    \ each layer to 25% channels) yields poor performance."
+  Figure 6 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_6.jpg
+  Figure 6 caption: "Qualitative compression results on edges \u2192 shoes of MUNIT.\
+    \ Both GAN Compression and Fast GAN Compression could preserve the style of the\
+    \ reference image and the visual fidelity while reducing the computation significantly,\
+    \ but Fast GAN Compression only needs 30% training time. On the contrary, directly\
+    \ training a smaller model (0.25 MUNIT, which means linearly scales each layer\
+    \ to 25% channels) yields poor performance."
+  Figure 7 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_7.jpg
+  Figure 7 caption: "Trade-off curve of Pix2pix on Cityscapes and edges \u2192 shoes\
+    \ dataset. The Prune+Distill method outperforms training from scratch for larger\
+    \ models but works poorly when the model is aggressively shrunk. Our GAN Compression\
+    \ method can consistently improve the performance versus computation trade-off\
+    \ at various scales."
+  Figure 8 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_8.jpg
+  Figure 8 caption: "Training and search time of GAN Compression (Original in (a))\
+    \ and Fast GAN Compression (Fast in (a)). Our Fast GAN Compression could save\
+    \ 1.7-3.7\xD7 training time and 3.5-12\xD7 search time. CycleGAN, Pix2pix, and\
+    \ GauGAN models are measured on horse \u2192 zebra, edges \u2192 shoes, and Cityscapes\
+    \ datasets, respectively. The training time of GauGAN is measured on 8 2080Ti\
+    \ GPUs, while others are all on a single 2080Ti GPU."
+  Figure 9 Link: articels_figures_by_rev_year\2021\GAN_Compression_Efficient_Architectures_for_Interactive_Conditional_GANs\figure_9.jpg
+  Figure 9 caption: Per-class IoU results of GauGAN compression on Cityscapes. The
+    numbers in the brackets are the pixel frequency of this class in the training
+    set. We sort the classes by the performance drop of the 0.31 GauGAN. Directly
+    training a smaller model, 0.31GauGAN (i.e., linearly scales each layer to 31%
+    channels), hurts the IoU dramatically, especially for the rare categories (e.g.,
+    bus and traffic sign) compared to the dominant object categories (e.g., sky and
+    road). Our methods can preserve the image quality effectively.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Muyang Li
+  Name of the last author: Song Han
+  Number of Figures: 12
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: 'GAN Compression: Efficient Architectures for Interactive Conditional
+    GANs'
+  Publication Date: 2021-11-09 00:00:00
+  Table 1 caption: TABLE 1 Quantitative Evaluation
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 The Detailed Search Space Sizes of GAN Compression (GAN
+    Comp.) and Fast GAN Compression (Fast GAN Comp.)
+  Table 3 caption: 'TABLE 3 Perceptual Study: The LPIPS [81] is a Perceptual Metric
+    for Evaluating the Similarity Between a Generated Image and its Corresponding
+    Ground-Truth Real Image'
+  Table 4 caption: TABLE 4 Measured Memory Reduction and Latency Speedup on NVIDIA
+    Jetson AGX Xavier, NVIDIA Jetson Nano, 1080Ti GPU, and Xeon CPU
+  Table 5 caption: TABLE 5 Ablation Study
+  Table 6 caption: "TABLE 6 We Report the Performance After Applying Convolution Decomposition\
+    \ in Each of the Three Parts (Downsample, ResBlocks, and Upsample) of the ResNet\
+    \ Generator Respectively on the horse \u2192 \u2192zebra Dataset"
+  Table 7 caption: TABLE 7 Comparison of GAN Compression and Different Distillation
+    Methods (Without NAS) for Pix2pix Model on Cityscapes Dataset
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3126742
+- Affiliation of the first author: pca lab, key lab of intelligent perception and
+    systems for high-dimensional information of ministry of education, nanjing, jiangsu,
+    china
+  Affiliation of the last author: university of copenhagen, copenhagen, denmark
+  Figure 1 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_1.jpg
+  Figure 1 caption: Fine-grained image analysis versus generic image analysis (using
+    visual classification as an example).
+  Figure 10 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_10.jpg
+  Figure 10 caption: An example knowledge graph for modeling category-attribute correlations
+    in CUB200-2011 [13].
+  Figure 2 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_2.jpg
+  Figure 2 caption: Overview of the landscape of deep learning based fine-grained
+    image analysis (FGIA), as well as future directions.
+  Figure 3 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_3.jpg
+  Figure 3 caption: An illustration of fine-grained image analysis which lies in the
+    continuum between the basic-level category analysis (i.e., generic image analysis)
+    and the instance-level analysis (e.g., car identification).
+  Figure 4 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_4.jpg
+  Figure 4 caption: Key challenges of fine-grained image analysis, i.e., small inter-class
+    variations and large intra-class variations. Here we present four different Tern
+    species from [13], one species per row, with different instances in the columns.
+  Figure 5 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_5.jpg
+  Figure 5 caption: Examples of fine-grained images belonging to different species
+    of flowersvegetables [46], different models of cars [43] and aircraft [44] and
+    different kinds of retail products [5]. Accurate identification of these fine-grained
+    objects requires the extraction of discriminative, but subtle, object parts or
+    image regions. (Best viewed in color and zoomed in.)
+  Figure 6 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_6.jpg
+  Figure 6 caption: "An example image from CUB200-2011 [13] with multiple different\
+    \ types of annotations e.g., category label, part annotations (aka key point locations),\
+    \ object bounding box shown in green, attribute labels (i.e., \u201CATR\u201D\
+    ), and a text description."
+  Figure 7 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_7.jpg
+  Figure 7 caption: Chronological overview of representative deep learning based fine-grained
+    recognition methods which are categorized by different learning approaches. (Best
+    viewed in color.)
+  Figure 8 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_8.jpg
+  Figure 8 caption: Illustration of the high-level pipeline of the fine-grained recognition
+    by localization-classification subnetworks paradigm.
+  Figure 9 Link: articels_figures_by_rev_year\2021\FineGrained_Image_Analysis_With_Deep_Learning_A_Survey\figure_9.jpg
+  Figure 9 caption: Illustration of feature maps and deep descriptors in CNNs.
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xiu-Shen Wei
+  Name of the last author: Serge Belongie
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 8
+  Paper title: 'Fine-Grained Image Analysis With Deep Learning: A Survey'
+  Publication Date: 2021-11-09 00:00:00
+  Table 1 caption: TABLE 1 Summary of Popular Fine-Grained Image Datasets Organized
+    by Their Major Applicable Topics and Sorted by Their Release Time
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparative Fine-Grained Recognition Results of Two Learning
+    Paradigms (cf. Sections 5.1 and 5.2) on the Fine-Grained Benchmark Datasets, i.e.,
+    Birds (CUB200-2011 [13]), Dogs (Stanford Dogs [42]), Cars (Stanford Cars [43]),
+    and Aircrafts (FGVC Aircraft [44])
+  Table 3 caption: "TABLE 3 Comparison of Fine-Grained \u201CRecognition With External\
+    \ Information\u201D (cf. Section 5.3) on Multiple Fine-Grained Benchmark Datasets,\
+    \ Including Birds (CUB200-2011 [13]), Dogs (Stanford Dogs [42]), Cars (Stanford\
+    \ Cars [43]), and Aircrafts (FGVC Aircraft [44])"
+  Table 4 caption: TABLE 4 Comparative Fine-Grained Recognition Results on CUB200-2011
+    Using Different Input Image Resolutions
+  Table 5 caption: TABLE 5 Comparison of Recent Fine-Grained Content-Based Image Retrieval
+    Methods on CUB200-2011 [13] and Stanford Cars [43]
+  Table 6 caption: TABLE 6 Comparison of Fine-Grained Sketch-Based Image Retrieval
+    Methods on QMUL-Shoe [52], QMUL-Chair [52], QMUL-Handbag [54], Sketchy [53], and
+    QMUL-Shoe-V2 [56]
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3126648
+- Affiliation of the first author: department of computer science and technology,
+    beijing national research center for information science and technology, tsinghua-bosch
+    joint center for machine learning, institute for artificial intelligence, tsinghua
+    university, beijing, china
+  Affiliation of the last author: department of computer science and technology, beijing
+    national research center for information science and technology, tsinghua-bosch
+    joint center for machine learning, institute for artificial intelligence, tsinghua
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\QueryEfficient_BlackBox_Adversarial_Attacks_Guided_by_a_TransferBased_Prior\figure_1.jpg
+  Figure 1 caption: "The loss curves of the different gradient estimators w.r.t. \u03B1\
+    \ . The loss of the RGF estimator is D\u22121 D+q\u22121 \u2225\u2207f(x) \u2225\
+    \ 2 2 . The loss of the transfer gradient is (1\u2212 \u03B1 2 )\u2225\u2207f(x)\
+    \ \u2225 2 2 . The loss of the PRGF-BS and PRGF-GA estimators can be derived by\
+    \ plugging \u03BB \u2217 and \u03BC \u2217 into Eqs. (9) and (14), respectively."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\QueryEfficient_BlackBox_Adversarial_Attacks_Guided_by_a_TransferBased_Prior\figure_2.jpg
+  Figure 2 caption: "(a) The average cosine similarity between the estimated gradient\
+    \ and the true gradient. The estimate is given by PRGF-BS with fixed \u03BB and\
+    \ optimal \u03BB , respectively. (b) The average \u03BB \u2217 in PRGF-BS across\
+    \ attack iterations. (c) The average cosine similarity between the transfer and\
+    \ the true gradients, and that between the estimated and the true gradients, across\
+    \ attack iterations in PRGF-BS. (d) The average cosine similarity between the\
+    \ estimated gradient and the true gradient. The estimate is given by PRGF-GA with\
+    \ fixed \u03BC and optimal \u03BC , respectively. (e) The average \u03BC \u2217\
+    \ in PRGF-GA across attack iterations. (f) The average cosine similarity between\
+    \ the transfer and the true gradients, and that between the estimated and the\
+    \ true gradients, across attack iterations in PRGF-GA."
+  Figure 3 Link: articels_figures_by_rev_year\2021\QueryEfficient_BlackBox_Adversarial_Attacks_Guided_by_a_TransferBased_Prior\figure_3.jpg
+  Figure 3 caption: The estimation error of gradient norm w.r.t. different queries
+    S .
+  Figure 4 Link: articels_figures_by_rev_year\2021\QueryEfficient_BlackBox_Adversarial_Attacks_Guided_by_a_TransferBased_Prior\figure_4.jpg
+  Figure 4 caption: The average number of queries for generating the adversarial examples
+    that are successfully misclassified by the black-box model at any desired success
+    rate on CIFAR-10.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Yinpeng Dong
+  Name of the last author: Jun Zhu
+  Number of Figures: 4
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Query-Efficient Black-Box Adversarial Attacks Guided by a Transfer-Based
+    Prior
+  Publication Date: 2021-11-09 00:00:00
+  Table 1 caption: "TABLE 1 The Experimental Results of Black-Box Attacks Against\
+    \ Inception-v3, VGG-16, and ResNet-50 Under the \u2113 2 \u21132 Norm on ImageNet"
+  Table 10 caption: Not Available
+  Table 2 caption: "TABLE 2 The Experimental Results of PRGF-BS and PRGF-GA Attacks\
+    \ Against Inception-v3, VGG-16, and ResNet-50 Under the \u2113 2 \u21132 Norm\
+    \ on ImageNet Using Different Surrogate Models"
+  Table 3 caption: "TABLE 3 The Experimental Results of Black-Box Attacks Against\
+    \ ResNet-50, DenseNet-121, and SENet-18 Under the \u2113 2 \u21132 Norm on CIFAR-10"
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3126733
+- Affiliation of the first author: pattern recognition and intelligent system laboratory,
+    school of artificial intelligence, beijing university of posts and telecommunications,
+    beijing, china
+  Affiliation of the last author: pattern recognition and intelligent system laboratory,
+    school of artificial intelligence, beijing university of posts and telecommunications,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_1.jpg
+  Figure 1 caption: An example on CUB-200-2011 dataset [17] of multi-granularity information
+    in FGVC. For birds (in the right) to belong to a certain species, large intra-class
+    variations can be observed (e.g., different postures, backgrounds, and shooting
+    angles). As the granularities of semantic parts decrease from right to left, the
+    patterns of their structures become more stable and the intra-class variations
+    of the patterns significantly decrease.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_2.jpg
+  Figure 2 caption: "Illustration of the proposed category-consistent block convolution\
+    \ (CCBC) operation. Here, we split a feature map into 4\xD74 blocks as an example.\
+    \ For the proposed block convolution, the feature map is first split into blocks\
+    \ with the same size. We only conduct the convolution process inside each block,\
+    \ which means all the elements of the output can only receive information from\
+    \ the block that it belongs to. Then, given an image pair belonging to the same\
+    \ category, we select the most salient blocks from each of their channels and\
+    \ correspondingly constrain them to be consistent, which encourage the network\
+    \ to focus on category-relevant regions. Note that the whole process happens at\
+    \ every channel, and we only show the case with two channels for brief illustration."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_3.jpg
+  Figure 3 caption: Illustration of our training pipeline. With the training process
+    going on, the trained stage comes deeper and the sizes of feature blocks become
+    larger in different steps. Here, we apply a progressive training strategy on the
+    last three stages as an example, which means the number of training steps P=3
+    . The hyper-parameter n for each step is set as 8, 4, or 2, respectively. Feature
+    maps with the same colors indicate sharing the weights of the corresponding convolution
+    kernels in the stages, and the purple arrow shows the knowledge transfer from
+    a smaller-granularity level to a larger-granularity level between two steps. Additional
+    convolution layers and fully connected layers including classifiers are omitted
+    in the figure.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_4.jpg
+  Figure 4 caption: "Activation maps of the images from the CUB-200-2011, NA-Birds,\
+    \ Stanford Dogs, Stanford Cars, and FGVC-Aircraft datasets. The visualization\
+    \ results are obtained via the Grad-CAM algorithm [53] with ResNet50 [35] as the\
+    \ backbone network. \u201CLow-Granularity\u201D, \u201CMiddle-Granularity\u201D\
+    , and \u201CHigh-Granularity\u201D means activation maps of model attentions at\
+    \ Conv(3) , Conv(4) , and Conv(5) , respectively. The figure is best viewed digitally."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_5.jpg
+  Figure 5 caption: "Activation maps for images from three bird species in CUB-200-2011\
+    \ for further comparisons. The visualization results are obtained via the Grad-CAM\
+    \ algorithm and ResNet50 is used as the backbone network. It is clear that our\
+    \ model shows consistency on different samples within the same category at each\
+    \ granularity level. For the two similar species we selected, the Grebes, the\
+    \ model mainly focuses on their necks which is the most significant characteristic\
+    \ to distinguish them. As for \u201CElegant Tern\u201D, which is not similar to\
+    \ the other two species, the model tends to concentrate on their feathers. \u201C\
+    Low-Granularity\u201D, \u201CMiddle-Granularity\u201D, and \u201CHigh-Granularity\u201D\
+    \ means activation maps of model attentions at Conv(3) , Conv(4) , and Conv(5)\
+    \ , respectively. The figure is best viewed digitally."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_6.jpg
+  Figure 6 caption: "Illustration of the time cost brought by block convolution increasing\
+    \ with the hyper-parameter n . \u201CImp. 1\u201D and \u201CImp.2\u201D represent\
+    \ two implementations."
+  Figure 7 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_7.jpg
+  Figure 7 caption: "Ablation study via visualization of model attention map. The\
+    \ visualization results are obtained by the Grad-CAM algorithm and ResNet50 is\
+    \ used as the backbone network. Here we show the activation maps of a pair of\
+    \ images from the same bird species \u201CPileated Woodpecker\u201D withwithout\
+    \ the block convolution and the category-consistency component. When the category-consistency\
+    \ constraint is removed, the model fails to focus on a consistent part. When the\
+    \ block convolution operation is removed, the model fails to focus on multi-granularity\
+    \ local parts. \u201CLow-Granularity\u201D, \u201CMiddle-Granularity\u201D, and\
+    \ \u201CHigh-Granularity\u201D means activation maps of model attentions at Conv(3)\
+    \ , Conv(4) , and Conv(5) , respectively. The figure is best viewed digitally."
+  Figure 8 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_8.jpg
+  Figure 8 caption: "Selected attention maps from the CUB-200-2011 dataset with different\
+    \ part-granularity control techniques. In order to show the superiority of the\
+    \ proposed block convolution, images that are shuffled into multi-granularity\
+    \ jigsaw patches are used for inputs during visualization. For each sub-figure,\
+    \ the first column lists input images, the second column shows the attention maps\
+    \ of a model trained with jigsaw patches, and the third column shows the attention\
+    \ maps of a model trained with block convolution. The attention maps of different\
+    \ granularities are obtained from their corresponding network stages. \u201CLow-Granularity\u201D\
+    , \u201CMiddle-Granularity\u201D, and \u201CHigh-Granularity\u201D means activation\
+    \ maps of model attentions at Conv(3) , Conv(4) , and Conv(5) , respectively.\
+    \ The figure is best viewed digitally."
+  Figure 9 Link: articels_figures_by_rev_year\2021\Progressive_Learning_of_CategoryConsistent_MultiGranularity_Features_for_FineGra\figure_9.jpg
+  Figure 9 caption: Illustration of category accuracy difference between our model
+    and a naive FT-ResNet50 on CUB-200-2011. The 200 categories of birds in CUB-200-2011
+    are organized in ascending-order according to their average relative scale and
+    then are evenly divided into 20 groups.
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Ruoyi Du
+  Name of the last author: Jun Guo
+  Number of Figures: 9
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Progressive Learning of Category-Consistent Multi-Granularity Features
+    for Fine-Grained Visual Classification
+  Publication Date: 2021-11-09 00:00:00
+  Table 1 caption: TABLE 1 Details of the FGVC Datasets Used in Our Experiments
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Comparisons With Other State-of-the-Art Methods on CUB-200-2011
+    (CUB), NA-Birds (NAB), Stanford Dogs (DOG), Stanford Cars (CAR), and FGVC-Aircraft
+    (AIR) Dataset
+  Table 3 caption: TABLE 3 Ablation Studies
+  Table 4 caption: TABLE 4 Comparison of the Model Performance Trained With the Jigsaw
+    Patches (JP) and the Block Convolution (BC)
+  Table 5 caption: TABLE 5 Performance With Different Hyper-Parameter P P
+  Table 6 caption: TABLE 6 Performance With Different Output Combinations With ResNet50
+    as the Backbone Network
+  Table 7 caption: TABLE 7 Performance With Different n n for Each Step
+  Table 8 caption: TABLE 8 Demonstrations of the Theoretical Receptive Fields (RFs)
+    With the General Convolution for Each Stage and the Corresponding RFs With the
+    Proposed Block Convolution (BC)
+  Table 9 caption: TABLE 9 Ablation Studies of Block Convolution, Stochastic Splitting,
+    and Image Random Cropping
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3126668
+- Affiliation of the first author: s-lab, nanyang technological university (ntu),
+    singapore, singapore
+  Affiliation of the last author: s-lab, nanyang technological university (ntu), singapore,
+    singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_1.jpg
+  Figure 1 caption: Examples of images taken under sub-optimal lighting conditions.
+    These images suffer from the buried scene content, reduced contrast, boosted noise,
+    and inaccurate color.
+  Figure 10 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_10.jpg
+  Figure 10 caption: The P-R curves of face detection in the dark.
+  Figure 2 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_2.jpg
+  Figure 2 caption: 'A concise milestone of deep learning-based low-light image and
+    video enhancement methods. Supervised learning-based methods: LLNet [1], Chen
+    et al. [2], MBLLEN [3], Retinex-Net [4], LightenNet [5], SCIE [6], DeepUPE [7],
+    Chen et al. [8], Jiang and Zheng [9], Wang et al. [10], KinD [11], Ren et al.
+    [12], Xu et al. [13], Fan et al. [14], Lv et al. [15], EEMEFN [16], SIDGAN. [17],
+    LPNet [18], DLN [19], TBEFN [20], DSLR [21], Zhang et al. [22], PRIEN [23], and
+    Retinex-Net [24]. Reinforcement learning-based method: DeepExposure [25]. Unsupervised
+    learning-based method: EnlightenGAN [26]. Zero-shot learning-based methods: ExCNet
+    [27], Zero-DCE [28], RRDNet [29], Zero-DCE++ [30], RetinexDIP [31], and RUAS [32].
+    Semi-supervised learning-based method: DRBN [33] and DRBN [34].'
+  Figure 3 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_3.jpg
+  Figure 3 caption: A statictic analysis of deep learning-based LLIE methods, including
+    learning strategy, network characteristic, Retinex model, data format, loss function,
+    training dataset, testing dataset, and evaluation metric. Best viewed by zooming
+    in.
+  Figure 4 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_4.jpg
+  Figure 4 caption: Several images sampled from the proposed LLIV-Phone dataset. The
+    images and videos are taken by different devices under diverse lighting conditions
+    and scenes.
+  Figure 5 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_5.jpg
+  Figure 5 caption: Visual results of different methods on a low-light image sampled
+    from LOL-test dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_6.jpg
+  Figure 6 caption: Visual results of different methods on a low-light image sampled
+    from MIT-Adobe FiveK-test dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_7.jpg
+  Figure 7 caption: Visual results of different methods on a low-light image sampled
+    from LLIV-Phone-imgT dataset. (a) input. (b) LLNet [1]. (c) LightenNet [5]. (d)
+    Retinex-Net [4]. (e) MBLLEN [3]. (f) KinD [11]. (g) KinD++ [61]. (h) TBEFN [20].
+    (i) DSLR [21]. (j) EnlightenGAN [26]. (k) DRBN [33]. (l) ExCNet [27]. (m) Zero-DCE
+    [28]. (n) RRDNet [29].
+  Figure 8 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_8.jpg
+  Figure 8 caption: Visual results of different methods on a low-light image sampled
+    from LLIV-Phone-imgT dataset. (a) input. (b) LLNet [1]. (c) LightenNet [5]. (d)
+    Retinex-Net [4]. (e) MBLLEN [3]. (f) KinD [11]. (g) KinD++ [61]. (h) TBEFN [20].
+    (i) DSLR [21]. (j) EnlightenGAN [26]. (k) DRBN [33]. (l) ExCNet [27]. (m) Zero-DCE
+    [28]. (n) RRDNet [29].
+  Figure 9 Link: articels_figures_by_rev_year\2021\LowLight_Image_and_Video_Enhancement_Using_Deep_Learning_A_Survey\figure_9.jpg
+  Figure 9 caption: Visual results of different methods on two raw low-light images
+    sampled from SID-test-Bayer and SID-test-X-Trans test datasets. The inputs are
+    amplified for visualization.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Chongyi Li
+  Name of the last author: Chen Change Loy
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 7
+  Paper title: 'Low-Light Image and Video Enhancement Using Deep Learning: A Survey'
+  Publication Date: 2021-11-09 00:00:00
+  Table 1 caption: TABLE 1 Summary of Essential Characteristics of Representative
+    Deep Learning-Based Methods
+  Table 10 caption: TABLE 10 Quantitative Comparisons of AP Under Different IoU Thresholds
+    of Face Detection in the Dark
+  Table 2 caption: TABLE 2 Summary of Paired Training Datasets
+  Table 3 caption: TABLE 3 Summary of Testing Datasets
+  Table 4 caption: TABLE 4 Summary of LLIV-Phone Dataset
+  Table 5 caption: "TABLE 5 Quantitative Comparisons on LOL-Test and MIT-Adobe FiveK-Test\
+    \ Test Datasets in Terms of MSE ( \xD7 10 3 \xD7103), PSNR (in dB), SSIM [86],\
+    \ and LPIPS [87]"
+  Table 6 caption: "TABLE 6 Quantitative Comparisons on SID-Test Test Dataset in Terms\
+    \ of MSE ( \xD7 10 3 \xD7103), PSNR (in dB), SSIM [86], and LPIPS [87]"
+  Table 7 caption: TABLE 7 Quantitative Comparisons on LLIV-Phone-imgT Dataset in
+    Terms of NIQE [88], LOE [37], PI [88], [89], [90], and SPAQ [91]
+  Table 8 caption: TABLE 8 Quantitative Comparisons on LLIV-Phone-vidT Dataset in
+    Terms of Average Luminance Variance (ALV) Score
+  Table 9 caption: TABLE 9 Quantitative Comparisons of Computational Complexity in
+    Terms of Runtime (in Second), Number of Trainable Parameters (Parameters) (in
+    M), and FLOPs (in G)
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3126387
+- Affiliation of the first author: school of computer science and engineering, sun
+    yat-sen university, guangzhou, china
+  Affiliation of the last author: key laboratory of machine intelligence and advanced
+    computing, ministry of education, school of computer science and engineering,
+    sun yat-sen university, guangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_1.jpg
+  Figure 1 caption: Every human action has specific judging criteria, although the
+    goal is to ensure the action is completed successfully and fluently. According
+    to the judge handbooks for diving [1], gymnastic vaulting [2] and snowboarding
+    [3] released by the international federations, the high-score requirements of
+    each type of action focus on different aspects. Adaptively modelling an assessment
+    architecture for each type of action is necessary for automatic action assessment.
+  Figure 10 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_10.jpg
+  Figure 10 caption: 'Visualization of the learned assessment function architecture
+    of the six types of actions in the AQA-7 dataset. An assessment function architecture
+    is learned for each type of action with seven candidate operations: the spatial
+    max pooling operation (black), the temporal max pooling operation (grey), the
+    3D weighted sum operation (green), the 3D convolution operation (yellow), the
+    3D attention operation (purple), the identity operation (orange) and the zero
+    operation (white).'
+  Figure 2 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_2.jpg
+  Figure 2 caption: The overall structure of our model. Our model takes the whole-scene
+    and local-patch videos (with the local patches cropped around joints) as input
+    and extracts video features by I3D Network. Then our model performs interactive
+    joint motion pattern modelling with the local-patch features by learning body
+    part kinetics and joint coordination on trainable joint relation graphs. The interactive
+    joint motion patterns and the whole-scene features are concatenated to form a
+    motion tensor. After that, our model learns a specific assessment function architecture
+    for each type of action which consumes the motion tensor to learn the assessment
+    results.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_3.jpg
+  Figure 3 caption: The spatial and the temporal joint relations of joint a , together
+    with the human skeleton structure. Joints b , c , and d are the neighbours of
+    joint a on the human skeleton structure and are therefore directly connected to
+    it.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_4.jpg
+  Figure 4 caption: Multi-hop joint relations. A k-hop relation concerns a pair of
+    joints that can reach each other with k hops on the skeleton structure. Here,
+    examples are shown of 1-hop, 2-hop and 3-hop joint relations (in red). The 1-hop
+    relations concern only locally connected joints based on the human skeleton structure,
+    whereas the 2-hop and the 3-hop relations concern relations of non-local joint
+    pairs.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_5.jpg
+  Figure 5 caption: "An illustration of the architecture searching block. The block\
+    \ is constructed with a directed acyclic graph consisting of an ordered sequence\
+    \ of nodes ( X 0 ,\u2026, X 3 ), with each edge in the graph representing an operation\
+    \ selector. The operation selectors learn adaptive weights that independently\
+    \ control the choice of seven candidate operations: the spatial max pooling operation\
+    \ (black), the temporal max pooling operation (grey), the 3D weighted sum operation\
+    \ (green), the 3D convolution operation (yellow), the 3D attention operation (purple),\
+    \ the identity operation (orange) and the zero operation (white). After the optimization,\
+    \ the operations with the largest weights (with red borders) are selected to form\
+    \ the assessment function architecture for each type of action."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_6.jpg
+  Figure 6 caption: Examples of pose estimation results.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_7.jpg
+  Figure 7 caption: The graph-based joint connectivity on the JIGSAWS dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_8.jpg
+  Figure 8 caption: Noise sensitivity test of our models. We add Gaussian noise to
+    the training scores to see whether the model is tolerant to noisy scores. The
+    average correlation on the AQA-7 dataset is reported.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Adaptive_Action_Assessment\figure_9.jpg
+  Figure 9 caption: Visualization of the learned joint relation graphs. We present
+    the learned k-hop spatial and temporal joint relations (defined in Section 3.1.3)
+    for the action of gymnastics vaulting and suturing. The elements in the relation
+    graphs are shown in blue, with a darker colour indicating a stronger weight. It
+    is shown that the assessment process of both gymnastic vaulting and suturing values
+    the relations to some important joints (e.g., hip, shoulder, nose and master manipulators)
+    and the self-relations of joints across time (i.e., elements along the principal
+    diagonal). Besides, some left-right relations of the moving agents are also useful.
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jia-Hui Pan
+  Name of the last author: Wei-Shi Zheng
+  Number of Figures: 11
+  Number of Tables: 12
+  Number of authors: 3
+  Paper title: Adaptive Action Assessment
+  Publication Date: 2021-11-09 00:00:00
+  Table 1 caption: TABLE 1 List of Existing Works on Action Assessment in Comparison
+    to This Work
+  Table 10 caption: TABLE 10 Evaluation of Other Motion Processing Methods
+  Table 2 caption: TABLE 2 The Performance of Our Model in Comparison With State-of-the-Art
+    Methods on the AQA-7 Dataset
+  Table 3 caption: TABLE 3 The Results of Our Model in Comparison With State-of-the-Art
+    Regression-Based Methods With Four-Fold Cross-Validation on the JIGSAWS Dataset
+  Table 4 caption: TABLE 4 The Results of Our Model in Comparison With Available State-of-the-Art
+    Results on the EPIC-Skills Dataset and the BEST Dataset, Together With Detailed
+    Results for Every Type of Action
+  Table 5 caption: TABLE 5 The Ablation Study of Our Model on the AQA-7 Dataset
+  Table 6 caption: TABLE 6 Evaluation of Multi-Hop Joint Relations
+  Table 7 caption: TABLE 7 Evaluation of Different Assessment Structures on the AQA-7
+    Dataset
+  Table 8 caption: TABLE 8 Evaluation of Different Regression Losses on the AQA-7
+    Dataset
+  Table 9 caption: TABLE 9 Comparison of the Three Training Losses on the Same Structure
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3126534
+- Affiliation of the first author: "department of software engineering, federal university\
+    \ of technology - paran\xE1, curitiba, brazil"
+  Affiliation of the last author: department of computer science and engineering (disi),
+    university of bologna, bologna, italy
+  Figure 1 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Local_Equivariant_Descriptors_for_Point_Clouds\figure_1.jpg
+  Figure 1 caption: "Network Architecture and Training Workflow. The local patch around\
+    \ the given feature point is first converted into a discrete Spherical Signal.\
+    \ The triplet associated with the Spherical signal reports the number of bins\
+    \ along the azimuth ( \u03B1 ), inclination ( \u03B2 ) and radial ( d ) coordinates.\
+    \ The Spherical signal is processed through a Spherical Encoder to obtain a rotation-equivariant\
+    \ patch descriptor. The triplets associated with the encoder layers denote the\
+    \ input bandwidth, output bandwidth and number of channels, respectively. The\
+    \ Plane Folding Decoder is an MLP that reconstructs the input patch by deforming\
+    \ a 2D grid according to the computed descriptor. The pairs associated with the\
+    \ decoder layers denote the number of input and output units, respectively."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Local_Equivariant_Descriptors_for_Point_Clouds\figure_2.jpg
+  Figure 2 caption: Comparison between a PointNet and Spherical encoder when learning
+    without supervision from unoriented data.
+  Figure 3 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Local_Equivariant_Descriptors_for_Point_Clouds\figure_3.jpg
+  Figure 3 caption: Comparison between the reconstructions obtained when using the
+    Spherical CNN encoder to learn an equivariant versus an invariant bottleneck.
+    Results after 10K training iterations.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Local_Equivariant_Descriptors_for_Point_Clouds\figure_4.jpg
+  Figure 4 caption: Scatter plot of the model selection experiment. The light gray
+    area highlights the Pareto frontier.
+  Figure 5 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Local_Equivariant_Descriptors_for_Point_Clouds\figure_5.jpg
+  Figure 5 caption: Average Recall while varying the inlier ratio ratio threshold.
+    The measurements dealing with learned descriptors are either available in the
+    original papers or were kindly provided to us by the authors. The results for
+    handcrafted descriptors have been computed by the implementations available in
+    PCL [66].
+  Figure 6 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Local_Equivariant_Descriptors_for_Point_Clouds\figure_6.jpg
+  Figure 6 caption: Registration results on the 3DMatch Benchmark after RANSAC.
+  Figure 7 Link: articels_figures_by_rev_year\2021\Unsupervised_Learning_of_Local_Equivariant_Descriptors_for_Point_Clouds\figure_7.jpg
+  Figure 7 caption: Registration results on the ETH Benchmark after RANSAC.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Marlon Marcon
+  Name of the last author: Luigi Di Stefano
+  Number of Figures: 7
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: Unsupervised Learning of Local Equivariant Descriptors for Point Clouds
+  Publication Date: 2021-11-09 00:00:00
+  Table 1 caption: 'TABLE 1 Model Selection Experiment on the 3DMatch Benchmark (500
+    keypoints): Considered Architectures and Associated Performance Metrics'
+  Table 10 caption: TABLE 10 Point Cloud Density Experiment on 3DMatch
+  Table 2 caption: 'TABLE 2 Learning a Rotation Equivariant versus Rotation-Invariant
+    Descriptor: Average Recall on 3DMatch and 3DMatch Rotated'
+  Table 3 caption: TABLE 3 Results on the 3DMatch Benchmark
+  Table 4 caption: TABLE 4 Results on the Rotated 3DMatch Benchmark
+  Table 5 caption: TABLE 5 Registration Errors (RRE in Degrees, RTE in Meters) for
+    Methods Yielding at least 80% 80% Recall on 3DMatch
+  Table 6 caption: TABLE 6 Percentage of Correctly Matched Keypoints per Fragment
+    Pair on 3DMatch
+  Table 7 caption: TABLE 7 Recall on the ETH Dataset
+  Table 8 caption: TABLE 8 Percentage of Correctly Matched Keypoints per Fragment
+    Pair on the ETH Dataset
+  Table 9 caption: TABLE 9 Registration Errors (RRE,RTE) for Methods Yielding at least
+    70% 70% Recall on ETH
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3126713
+- Affiliation of the first author: cnrs, laboratoire de recherche en informatique,
+    gif-sur-yvette, france
+  Affiliation of the last author: "universit\xE9 paris-saclay, gif-sur-yvette, france"
+  Figure 1 Link: articels_figures_by_rev_year\2021\Regularization_of_Mixture_Models_for_Robust_Principal_Graph_Learning\figure_1.jpg
+  Figure 1 caption: "Illustrative comparison of three procedures to learn a principal\
+    \ graph on an artificial dataset made of N=2666 datapoints with three branches\
+    \ with linearly evolving standard deviations converging to a spherical Gaussian\
+    \ cluster shown in the top left panel. Top right is the principal graph learned\
+    \ by the proposed GRMM Algorithm 1 with K=100 initialized randomly over X , Y=5\
+    \ \u03C3 2 0 ,10,1 and \u03C3 2 0 =0.01 . Bottom left is the one from the SimplePPT\
+    \ algorithm [13], [22] with \u03C3= \u03C3 0 and identical initialization nodes.\
+    \ In both cases, the shaded areas correspond to the 1- \u03C3 k circles centered\
+    \ on \u03BC k . The bottom right panel is the result from the ElPiGraph procedure\
+    \ [15] with 100 nodes initialized with 70 taken randomly over X and for different\
+    \ values of the trimming radius R 0 with the same elasticity parameters ( \u03BB\
+    =0.01 , the length constraint and \u03BC=0.01 , the bending constraint)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\Regularization_of_Mixture_Models_for_Robust_Principal_Graph_Learning\figure_2.jpg
+  Figure 2 caption: "(top) Black points and gray crosses are two sampling realizations\
+    \ of artificial 2D datasets obtained from a Voronoi pattern with N=9249 points.\
+    \ Red edges are those from the MST over the final regularized structure with K=3000\
+    \ nodes and bold dark blue ones are those added by the high probability mode with\
+    \ B=500 , K b K=0.75 , and thresholded at m=0.35 . The turquoise blue and orange\
+    \ lines are the set of edges from the regularized graph respectively computed\
+    \ from the two noisy realizations with the 1D HoPeS prior [23]. (bottom) Probability\
+    \ distributions of edge probabilities ( A \xAF ) ij for several ratios K b K ."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Regularization_of_Mixture_Models_for_Robust_Principal_Graph_Learning\figure_3.jpg
+  Figure 3 caption: "Illustration of the impact of hyper-parameters Y= \u03BB \u03BC\
+    \ , \u03BB \u03C3 , \u03BB \u03C0 in Algorithm 1 for an artificial dataset made\
+    \ of three branches with linearly evolving standard deviations converging to a\
+    \ spherical Gaussian cluster. In all cases, K=350 nodes are used with the same\
+    \ random initialization. Black dots are datapoints, colored lines are the set\
+    \ of edges learned by Algorithm 1 and gray shaded areas correspond to the 1- \u03C3\
+    \ k circles centered on \u03BC k . (top row) From left to right, quadrants corresponds\
+    \ to several values of \u03BB \u03BC , \u03BB \u03C3 and \u03BB \u03C0 . (bottom\
+    \ row) Probability distributions of the impacted parameters. From left to right:\
+    \ edge weights w ij =\u2225 \u03BC i \u2212 \u03BC j \u2225 2 , variances of components\
+    \ \u03C3 2 k , and mixing coefficients \u03C0 k ."
+  Figure 4 Link: articels_figures_by_rev_year\2021\Regularization_of_Mixture_Models_for_Robust_Principal_Graph_Learning\figure_4.jpg
+  Figure 4 caption: A 2D distribution of N=31500 galaxies obtained from the IllustrisTNG
+    simulation over a thin slice of 0.5 Mpc h .
+  Figure 5 Link: articels_figures_by_rev_year\2021\Regularization_of_Mixture_Models_for_Robust_Principal_Graph_Learning\figure_5.jpg
+  Figure 5 caption: "(left) Black (resp. gray) points are those with \u2211 K k=1\
+    \ p ik > p bkg i (resp. < ). The red skeleton corresponds to the regularized graph\
+    \ obtained from Algorithm 1 with the average graph prior and settings K=13390,\
+    \ \u03C3 2 0 =1,Y=10,5,1 . Gray shaded areas are showing the learned 1- \u03C3\
+    \ k circles around graph nodes. (top right) Zoom over a 60 Mpc h region. Color\
+    \ code is the same as for the left panel. (bottom right) Probability distribution\
+    \ function of ( A \xAF ) ij for minimum spanning trees obtained from B=500 random\
+    \ sub-samplings of Gaussian centers with K b K=0.75 ."
+  Figure 6 Link: articels_figures_by_rev_year\2021\Regularization_of_Mixture_Models_for_Robust_Principal_Graph_Learning\figure_6.jpg
+  Figure 6 caption: "(top) Black lines are edges of the regularized graph of Algorithm\
+    \ 1 overplotted on the raw datapoints. The graph was obtained using the average\
+    \ graph topology with K=7300 and \u03C3 0 =0.003 , Y=(10 \u03C3 2 0 ,5,1) . Red\
+    \ circles highlight features that could not be caught by a non-cycling topology.\
+    \ (bottom) Probability distributions of variances for nodes in the corresponding\
+    \ rectangular colored regions of the top panel."
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Tony Bonnaire
+  Name of the last author: Nabila Aghanim
+  Number of Figures: 6
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Regularization of Mixture Models for Robust Principal Graph Learning
+  Publication Date: 2021-11-10 00:00:00
+  Table 1 caption: Not Available
+  Table 10 caption: Not Available
+  Table 2 caption: Not Available
+  Table 3 caption: Not Available
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3124973
+- Affiliation of the first author: department of computer science and technology,
+    xian jiaotong university, xian, china
+  Affiliation of the last author: department of computer science and technology, xian
+    jiaotong university, xian, china
+  Figure 1 Link: articels_figures_by_rev_year\2021\ZeroNAS_Differentiable_Generative_Adversarial_Networks_Search_for_ZeroShot_Learn\figure_1.jpg
+  Figure 1 caption: Comparison of the architecture design and training method of (a)
+    Existing GANs for ZSL, (b) AutoGAN, (c) ZeroNAS.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2021\ZeroNAS_Differentiable_Generative_Adversarial_Networks_Search_for_ZeroShot_Learn\figure_2.jpg
+  Figure 2 caption: "The search space of the proposed ZeroNAS: (a) Directed acyclic\
+    \ graph with input nodes C 0 \u22EF C k , intermediate nodes V 0 \u22EF V m\u2212\
+    1 and output node V m . (b) Mixed operation composed of predefined candidate operations\
+    \ used for connecting the nodes in directed acyclic graph."
+  Figure 3 Link: articels_figures_by_rev_year\2021\ZeroNAS_Differentiable_Generative_Adversarial_Networks_Search_for_ZeroShot_Learn\figure_3.jpg
+  Figure 3 caption: "The generator and discriminator architecture pairs learned for\
+    \ (a) (b) CUB, (c) (d) FLO, (e) (f) AWA, and (g) (h) SUN; here, \u201Ca\u201D\
+    , \u201Cz\u201D and \u201Cf\u201D represent the attribute, noise and feature vector\
+    \ respectively, while \u201Co\u201D denotes the output node."
+  Figure 4 Link: articels_figures_by_rev_year\2021\ZeroNAS_Differentiable_Generative_Adversarial_Networks_Search_for_ZeroShot_Learn\figure_4.jpg
+  Figure 4 caption: "Visualization with t-SNE of the features synthesized by different\
+    \ methods on AWA, where \u2218 and \xD7 denote real and fake samples respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2021\ZeroNAS_Differentiable_Generative_Adversarial_Networks_Search_for_ZeroShot_Learn\figure_5.jpg
+  Figure 5 caption: Examination of architecture transferability in terms of ZSL accuracy,
+    where the red line indicates the baseline performance achieved by f-CLSWGAN.
+  Figure 6 Link: articels_figures_by_rev_year\2021\ZeroNAS_Differentiable_Generative_Adversarial_Networks_Search_for_ZeroShot_Learn\figure_6.jpg
+  Figure 6 caption: Top-1 accuracy on ZSL over benchmark datasets during the training
+    of f-CLSWGAN, the searching of ZeroNAS and the training of ZeroNAS.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.76
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Caixia Yan
+  Name of the last author: Qinghua Zheng
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 7
+  Paper title: 'ZeroNAS: Differentiable Generative Adversarial Networks Search for
+    Zero-Shot Learning'
+  Publication Date: 2021-11-11 00:00:00
+  Table 1 caption: "TABLE 1 ZSL Performance (Top-1 Accuracy %) Over Benchmark Datasets,\
+    \ Where \u201CFIX\u201D and \u201CNAS\u201D Refer to the Model Equipped With Hand-Crafted\
+    \ and Searched GAN Architectures Respectively"
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 GZSL Performance (Top-1 Accuracy %) Over Benchmark Datasets
+    Achieved by Different Methods
+  Table 3 caption: TABLE 3 ZSLGZSL Performance (Top-1 Accuracy %) With One of G G
+    and D D Fixed
+  Table 4 caption: Not Available
+  Table 5 caption: Not Available
+  Table 6 caption: Not Available
+  Table 7 caption: Not Available
+  Table 8 caption: Not Available
+  Table 9 caption: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3127346
+- Affiliation of the first author: department of computer and information science,
+    state key laboratory of internet of things for smart city, university of macau,
+    macau, china
+  Affiliation of the last author: school of information systems, singapore management
+    university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_1.jpg
+  Figure 1 caption: "Comparison in terms of speed (FPS) and accuracy (AUC) of state-of-the-art\
+    \ (SOTA) trackers on OTB-100 [77], including SiamRPN [43], SiamFC [3], TADT [46],\
+    \ GCT [25], MLT [9], FRCNN [33], ROAM [80], and Ocean [85]. Compared with the\
+    \ small models trained from scratch (SiamRPNs and SiamFCs), our models (DSTrpn\
+    \ and DSTfc) trained with the knowledge distillation method show significant improvements.\
+    \ Further, DSTrpn achieves a 3\xD7 speed, 18\xD7 memory compression rate and comparable\
+    \ accuracy over its teacher variant (SiamRPN [43]). Besides, both DSTrpn (SiamRPN\
+    \ [43] as teacher) and DSTfc (SiamFC [3] as teacher) obtain competitive accuracy\
+    \ while achieving the highest speed."
+  Figure 10 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_10.jpg
+  Figure 10 caption: The AUC scores of different learning mechanisms on 11 challenging
+    attributes of OTB-100 [77].
+  Figure 2 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_2.jpg
+  Figure 2 caption: "Illustration of the proposed Distilled Siamese Tracker (DST)\
+    \ framework. (a) \u201CDim\u201D student selection via DRL: at each step t , a\
+    \ policy network guides the generation of candidate students via action a t and\
+    \ then updates them according to reward R t . (b) Simplified schematization of\
+    \ our teacher-students knowledge distillation (TSsKD) model, where the teacher\
+    \ transfers knowledge to students, while students share knowledge with each other.\
+    \ (c) Detailed flow chart of teacher-student knowledge transfer with STR, TS and\
+    \ AH loss."
+  Figure 3 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_3.jpg
+  Figure 3 caption: Illustration of our Siamese Target Response (STR) learning. Take
+    one layer as an example. For the target branch, feature maps are directly transformed
+    into 2D activation maps. For the search branch, weights ( W j T and W j S ) are
+    calculated by conducting a cross-correlation operation on the two branches feature
+    maps and then multiplying the result by the search feature map.
+  Figure 4 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_4.jpg
+  Figure 4 caption: "\u201CDim\u201D student selection on (a) SiamRPN and (b) SiamFC.\
+    \ Reward, accuracy, compression (relative compression rate C in Eq. 6) versus\
+    \ iteration."
+  Figure 5 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_5.jpg
+  Figure 5 caption: Losses comparison, including training loss of the (a) SiamRPN
+    and (b) SiamFC students, and validation loss of the (c) SiamRPN and (d) SiamFC
+    students.
+  Figure 6 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_6.jpg
+  Figure 6 caption: Precision and success plots with AUC for OPE on the OTB-100 benchmark
+    [77].
+  Figure 7 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_7.jpg
+  Figure 7 caption: Evaluation results of trackers on the LaSOT [21].
+  Figure 8 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_8.jpg
+  Figure 8 caption: Sample results of SiamRPN and our DSTrpn on OTB-100 [77] sequences
+    (Biker, Jogging-2 and Subway). On these sequences, our DSTrpn outperforms SiamRPN
+    while running at a much faster speed.
+  Figure 9 Link: articels_figures_by_rev_year\2021\Distilled_Siamese_Networks_for_Visual_Tracking\figure_9.jpg
+  Figure 9 caption: 'Overlap success plots of OPE with AUC for 11 tracking challenges
+    on OTB-100 [77] including: Illumination Variation (IV), Scale Variation (SV),
+    Occlusion (OCC), Deformation (DEF), Motion Blur (MB), Fast Motion (FM), In-Plane
+    Rotation (IPR), Out-of-Plane Rotation (OPR), Out-of-View (OV), Background Clutter
+    (BC) and Low Resolution (LR). Our method achieves the best performance.'
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jianbing Shen
+  Name of the last author: Steven Hoi
+  Number of Figures: 11
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Distilled Siamese Networks for Visual Tracking
+  Publication Date: 2021-11-11 00:00:00
+  Table 1 caption: TABLE 1 Losses Used in the Knowledge Transfer Stage
+  Table 10 caption: Not Available
+  Table 2 caption: TABLE 2 Detailed Convolutional Structures of DSTfc and DSTrpn
+  Table 3 caption: TABLE 3 Results Comparison on VOT2019 [39] in Terms of EAO, A (Accuracy)
+    and R (Robustness), LaSOT [21] and TrackingNet [51] in Terms of AUC, P P (Precision)
+  Table 4 caption: TABLE 4 Comparison on FaceTracking [56] in Terms of AUC and P P
+    (Precision)
+  Table 5 caption: TABLE 5 Results for Different Combinations of GT, TS, AH and STR
+    in Terms of Precision and AUC on OTB-100 [77]
+  Table 6 caption: TABLE 6 Ablation Experiments of Different Learning Mechanisms (NOKD,
+    KD, TSsKD) in Terms of AUC on OTB-100 [77]
+  Table 7 caption: TABLE 7 AUC Score of Searched Students in Different DRL Iterations,
+    Tested on the OTB [77]
+  Table 8 caption: TABLE 8 AUC Score of Students Trained With Different Scales of
+    Gray Images, Tested on the OTB [77]
+  Table 9 caption: TABLE 9 Results of Different Trackers Trained With(w)Without(wo)
+    TSsKD
+  paper DOI: https://doi.org/10.1109/TPAMI.2021.3127492
