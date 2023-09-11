@@ -1,0 +1,884 @@
+- Affiliation of the first author: institut de robotica i informatica industrial,
+    universitat politecnica de catalunya, barcelona, spain
+  Affiliation of the last author: turaga lab, howard hughes medical institute, ashburn,
+    va
+  Figure 1 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_1.jpg
+  Figure 1 caption: 'Overview of our method (top row). Using a 3D U-Net (a), trained
+    with the proposed constrained Malis loss, we directly predict inter-voxel affinities
+    from volumes of raw data. Affinities provide advantages especially in the case
+    of low-resolution data (b). In the example shown here, the voxels cannot be labeled
+    correctly as foregroundbackground: If A were labeled as foreground, it would necessarily
+    merge with the regions in the previous and next section. If it were labeled as
+    background, it would introduce a split. The labeling of affinities on edges allows
+    B and C to separate A from adjacent sections, while maintaining connectivity inside
+    the region. From the predicted affinities, we obtain an over-segmentation that
+    is then merged into the final segmentation using a percentile-based agglomeration
+    algorithm (c).'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_10.jpg
+  Figure 10 caption: Reconstructions of 23 randomly selected neurons of the 500 largest
+    found in the Fib-25 test volume.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_2.jpg
+  Figure 2 caption: 'Illustration of the constrained Malis loss. Given predicted affinities
+    (blue low, red high) and a ground-truth segmentation (a), losses on maximin edges
+    are computed in two passes: In the positive pass, (b), affinities of edges between
+    ground-truth regions are set to zero (blue), in the negative pass (c), affinities
+    within ground-truth regions are set to one (red). In either case, a maximal spanning
+    tree (shown as shadow) is constructed to identify maximin edges. Note that, in
+    this example, edge A is not a maximin edge in the positive pass since the incident
+    voxels are already connected by a high affinity path. In contrast, edge B is the
+    maximin edge of the bottom left voxel to any other voxel in the same region and
+    thus contributes to the loss. Similarly, C is the maximin edge connecting voxels
+    of different ground-truth regions and contributes during the negative pass to
+    the loss. The resulting gradients of the loss with respect to each edge affinity
+    is shown in (d) (positive values in red, negative in blue).'
+  Figure 3 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_3.jpg
+  Figure 3 caption: Illustration of the seeded watershed heuristic.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_4.jpg
+  Figure 4 caption: 'Illustration of the three different edge update cases during
+    a merge. Case 1: The edge is not involved in the merge at all ( a ). Case 2: One
+    of the edge''s nodes is involved in the merge, but the boundary represented by
+    the edge does not change ( b and e ). Case 3: The boundaries represented by two
+    edges get merged ( c and d ). Only in this case the score needs to be updated.'
+  Figure 5 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_5.jpg
+  Figure 5 caption: 'Overview of the U-net architecture used for the Cremi dataset.
+    The architectures for Fib-25 and SegEm are similar, with changes in the input
+    and output sizes (in: (132,132,132) , out: (44,44,44) for Fib-25 and in: (188,188,144)
+    , out: (100,100,96) for SegEm) and number of feature maps for Fib-25 (24 in the
+    first layer, increased by a factor of 3 for lower layers).'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_6.jpg
+  Figure 6 caption: "Details of the convolution (blue), max-pooling (yellow), upsampling\
+    \ (brown), and copy-crop operations (red). \u201C \u201D denotes a convolution,\
+    \ \u201C\u201D a rectified linear unit, and \u201C otimes \u201D the Kronecker\
+    \ matrix product."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_7.jpg
+  Figure 7 caption: (a-c) Split merge curves of our method (lines) for different thresholds
+    on the Cremi, Fib-25, and SegEm datasets, compared against the best-ranking competing
+    methods (dots). (d) Performance comparison of a naive agglomeration scheme (priority
+    queue, O(nlog (n)) ) versus our linear-time agglomeration (bucket queue, O(n)
+    ).
+  Figure 8 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_8.jpg
+  Figure 8 caption: Comparison of the proposed method against competing methods on
+    the Cremi testing datasets A+, B+, and C+. Shown are (from left to right) variation
+    of information (VOI, split and merge contribution), Rand index (RAND, split and
+    merge contribution), and the total VOI (split and merge combined). Baseline U-Net
+    is our method, but without Malis training (i.e., only minimizing the euclidean
+    distance to the ground-truth affinities during training) For U-Net Mala, the red
+    dot indicates the best threshold found on the training data.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Large_Scale_Image_Segmentation_with_Structured_Loss_Based_Deep_Learning_for_Conn\figure_9.jpg
+  Figure 9 caption: Reconstructions of 11 randomly selected neurons of the 100 largest
+    found in the Cremi test volume C+.
+  First author gender probability: 0.91
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jan Funke
+  Name of the last author: Srinivas C. Turaga
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 7
+  Paper title: Large Scale Image Segmentation with Structured Loss Based Deep Learning
+    for Connectome Reconstruction
+  Publication Date: 2018-05-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Qualitative Results of our Method (U-Net Mala) Compared to
+      the Respective State of the Art on the Testing Volumes of Each Dataset and a
+      Baseline (U-Net)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Overview of Used Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Results for Different Merge Functions of Our Method Compared
+      with the Agglomeration Strategy Proposed in [18]
+  Table 4 caption:
+    table_text: TABLE 4 Throughput of our Method for Each of the Investigated Datasets
+      in Seconds Per Megavoxel
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2835450
+- Affiliation of the first author: department of computer science and engineering,
+    the hong kong university of science and technology, kowloon, hong kong
+  Affiliation of the last author: department of computer science and engineering,
+    the hong kong university of science and technology, kowloon, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2018\Distributed_Very_Large_Scale_Bundle_Adjustment_by_Global_Camera_Consensus\figure_1.jpg
+  Figure 1 caption: The camera extrinsic and intrinsic parameters with the same color
+    are the component of the same parameter in different blocks. The links between
+    cameras and points with the light color are the lost links due to the splitting.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Distributed_Very_Large_Scale_Bundle_Adjustment_by_Global_Camera_Consensus\figure_2.jpg
+  Figure 2 caption: Selected images and screenshots of the Structure-from-Motion results
+    of Buildings, Street, Town and City. The first row is the selected images and
+    the second row is the screenshots of SfM results, where the blue points are cameras.
+    For Street, the top view and side view of SfM results are provided to show the
+    data-set contains both aerial view and street view photos.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Distributed_Very_Large_Scale_Bundle_Adjustment_by_Global_Camera_Consensus\figure_3.jpg
+  Figure 3 caption: The up is the total time of each iteration with different numbers
+    of blocks. The down is the ratio of communication time and total time. The experiments
+    are performed on Town.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Distributed_Very_Large_Scale_Bundle_Adjustment_by_Global_Camera_Consensus\figure_4.jpg
+  Figure 4 caption: The visualization of splitting results and convergence curves
+    of each method for each data-set. In the visualization of splitting results, different
+    colors mean differen blocks. The vertical axis of average reprojection errors
+    uses the logarithmic scale to stand out the changes in the last iterations.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Distributed_Very_Large_Scale_Bundle_Adjustment_by_Global_Camera_Consensus\figure_5.jpg
+  Figure 5 caption: Convergence curves of L2-normal and Huber loss on data-set Town.
+    The vertical axis of average loss per reprojection uses the logarithmic scale
+    to stand out the changes in the last iterations.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Runze Zhang
+  Name of the last author: Long Quan
+  Number of Figures: 5
+  Number of Tables: 2
+  Number of authors: 7
+  Paper title: Distributed Very Large Scale Bundle Adjustment by Global Camera Consensus
+  Publication Date: 2018-05-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 This Table Shows the Data-Scale of Each Data-Set, Containing
+      the Number of Cameras ( N N), the Number of Points ( M M) and the Number of
+      Observation ( |Q|) |Q|)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 This Table Shows the Number of Iterations When Each Method
+      Satisfies the Stop Criterion for Each Data-Set and Average Reprojection Errors
+      of Each Observation When They Converge
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2840719
+- Affiliation of the first author: beijing laboratory of intelligent information technology,
+    beijing institute of technology, beijing, china
+  Affiliation of the last author: department of computer and information sciences,
+    temple university, philadelphia, pa
+  Figure 1 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_1.jpg
+  Figure 1 caption: (a) An input photo to be cropped. (b) The predicted attention
+    box (red) and cropping candidates generated from it (yellow). (c) The final cropping
+    with the maximum estimated aesthetic value. (d) Conventional image cropping methods
+    with sliding-judging cropping strategy, which is time-consuming and violates natural
+    cropping procedure. (e) Our algorithm as a cascade of attention-aware candidate
+    generation and aesthetics-based cropping selection, which handles photo cropping
+    more naturally via a unified neural network.
+  Figure 10 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_10.jpg
+  Figure 10 caption: Qualitative results on MSR-ICD [5] and FLMS [6] datasets. The
+    red rectangles indicate the initial cropping generated by the ABP network, and
+    the yellow windows correspond to the final cropping selected by the AA network.
+  Figure 2 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_2.jpg
+  Figure 2 caption: 'Architecture of our deep cropping model. It consists of two sub-networks:
+    Attention Box Prediction (ABP) network and Aesthetics Assessment (AA) network,
+    which share several convolutional layers at the bottom.'
+  Figure 3 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_3.jpg
+  Figure 3 caption: (a) Input image I . (b) Ground truth attention map G . (c) Ground
+    truth attention box generated via [3]. (d) Positive (red) and negative (blue)
+    defaults boxes are generated for training ABP network according to ground truth
+    attention box.
+  Figure 4 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_4.jpg
+  Figure 4 caption: Architecture of the attention box prediction (ABP) network, where
+    the blue cuboid in (b) indicates the predicted attention map.
+  Figure 5 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_5.jpg
+  Figure 5 caption: (a) Initial cropping (red rectangle) predicted by the ABP network.
+    (b) Cropping candidates (blue rectangles) generated around the initial cropping.
+    (c) The final cropping selected as the candidate with the highest aesthetic score
+    by the AA network.
+  Figure 6 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_6.jpg
+  Figure 6 caption: Architecture of the aesthetics assessment (AA) network.
+  Figure 7 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_7.jpg
+  Figure 7 caption: Schematic diagram of our model in training.
+  Figure 8 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_8.jpg
+  Figure 8 caption: Schematic diagram of our model in testing.
+  Figure 9 Link: articels_figures_by_rev_year\2018\A_Deep_Network_Solution_for_Attention_and_Aesthetics_Aware_Photo_Cropping\figure_9.jpg
+  Figure 9 caption: Aesthetics assessment results via our AA network. The images with
+    the highest predicted aesthetics values and those with the lowest predicted aesthetics
+    values are presented in (a) and (b), respectively. (c) and (d) show the images
+    that are miscategorized.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Wenguan Wang
+  Name of the last author: Haibin Ling
+  Number of Figures: 11
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: A Deep Network Solution for Attention and Aesthetics Aware Photo Cropping
+  Publication Date: 2018-05-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Datasets Used for Training and Testing Our Cropping Model
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Attention Box Prediction with IoU for PASCAL-S Dataset [40]
+  Table 3 caption:
+    table_text: TABLE 3 Aesthetics Assessment Accuracy on the AVA Dataset [63]
+  Table 4 caption:
+    table_text: TABLE 4 Performance of Automatic Image Cropping on MSR-ICD Dataset
+      [5]
+  Table 5 caption:
+    table_text: TABLE 5 Performance of Automatic Image Cropping on the FLMS Dataset
+      [6]
+  Table 6 caption:
+    table_text: TABLE 6 Performance of Automatic Image Cropping on the Test Set of
+      FCD [11]
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Study on FLMS Dataset [6]
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2840724
+- Affiliation of the first author: university of california, berkeley, berkeley, ca,
+    usa
+  Affiliation of the last author: university of texas at austin, austin, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_1.jpg
+  Figure 1 caption: Examples of Web images from ImageNet [46] (left) and randomly
+    chosen frames from a human head-worn camera [35] (right). Cameras mounted on autonomous
+    agents often acquire ill-framed images that can be very hard to recognize one
+    frame at a time, compared to Web images which are human-captured and usually capture
+    important content prominently in the foreground. However, autonomous moving visual
+    agents can direct their cameras to acquire multiple views. Our active recognition
+    approach employs reinforcement learning to learn policies to intelligently acquire
+    views to facilitate scene and object category recognition.
+  Figure 10 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_10.jpg
+  Figure 10 caption: Evolution of accuracy over time for various ablated variants
+    of our method, on SUN360 (left) and GERMS (right). Our methods show steady improvement
+    with additional views, and easily outperform the best baselines. Also see Table
+    1.
+  Figure 2 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_2.jpg
+  Figure 2 caption: A schematic illustrating the active categorization of two objects.
+    A moving vision system may not recognize objects after just one view, but may
+    intelligently choose to acquire new views to disambiguate amongst its competing
+    hypotheses.
+  Figure 3 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_3.jpg
+  Figure 3 caption: "A generic active recognition pipeline illustrating the three\
+    \ functions of an active vision system\u2014control, per-view perception, and\
+    \ evidence fusion. We aim to learn all three functions jointly and end-to-end."
+  Figure 4 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_4.jpg
+  Figure 4 caption: A schematic of our system architecture depicting the interaction
+    between actor, sensor and aggregator and classifier modules, unrolled over timesteps.
+    This schematic depicts an unrolled version of our network architecture, where
+    each module is repeated once for each timestep. At training time, lookahead acts
+    across two timesteps, learning to predict the evolution of the output of aggregator
+    conditional on the selected motion. See Section 3.2 for details.
+  Figure 5 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_5.jpg
+  Figure 5 caption: "(Top) A high-level schematic of our system architecture depicting\
+    \ the interaction between actor, sensor, aggregator, and classifier modules, unrolled\
+    \ over timesteps. Information flows from left to right. At training time, the\
+    \ additional lookahead acts across two timesteps, learning to predict the evolution\
+    \ of the aggregate feature boldsymbol at into boldsymbol at+1 conditional on the\
+    \ selected motion boldsymbol mt . (Bottom) A detailed schematic diagram showing\
+    \ the architectures of and connections amongst our active vision system modules.\
+    \ The small schematic at the top presents a succinct bird's-eye view of information\
+    \ flow within as well as between time steps, and the large schematic below zooms\
+    \ into the operations at some given time step t in more detail. Processing proceeds\
+    \ from left to right, with arrows to disambiguate where necessary. In the bottom\
+    \ schematic, \u201CLinear(a,b)\u201D denotes fully connected layers which transform\
+    \ a-length vector inputs to b-length vector outputs. The \u201CClamp\u201D operator\
+    \ in actor is a squashing function that sets both upper and lower limits on its\
+    \ inputs. The red \u201CSample\u201D layer in actor takes the weights of a multinomial\
+    \ pdf as input and samples stochastically from the distribution to produce its\
+    \ output (gradients cannot be backpropagated through this layer; it is trained\
+    \ through REINFORCE [58] instead of SGD from the classification loss). \u201C\
+    Delay\u201D layers store inputs internally for one time-step and output them at\
+    \ the next time-step. Other layer names in the schematic are self-explanatory.\
+    \ Input and output sizes of some layers are marked in red to denote that these\
+    \ are parameters derived from dataset-related choices \u2014 these are set for\
+    \ our SUN360 experiments in this schematic, and explanations are shown below each\
+    \ module. Note that aggregator is a recurrent neural network, and lookahead may\
+    \ be considered a \u201Cpredictive\u201D autoencoder, that reduces its input features\
+    \ (appended together with the current agent motion boldsymbol mt ) to a more compact\
+    \ representation in its bottleneck layer before producing its prediction of its\
+    \ next time-step input."
+  Figure 6 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_6.jpg
+  Figure 6 caption: Pseudocode for forward propagation through our active recognition
+    network at traininginference time.
+  Figure 7 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_7.jpg
+  Figure 7 caption: "(Best seen in color) An \u201Cairplane interior\u201D class example\
+    \ showing how SUN360 spherical panoramas (equirectangular projection on the left)\
+    \ are converted into 12times 12 45 circ FOV view grid. As an illustration, the\
+    \ view at grid coordinates x = 4 , y = 6 outlined in green in the view grid on\
+    \ the right corresponds approximately to the overlap region (also outlined in\
+    \ green) on the left (approximate because of panorama distortions\u2014rectangles\
+    \ in the panorama are not rectangles in the rectified views present in the grid).\
+    \ The 5times 7 red shaded region in the view grid (right) shows the motions available\
+    \ to actor when starting from the highlighted view."
+  Figure 8 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_8.jpg
+  Figure 8 caption: The GERMS active object instance recognition dataset [38] contains
+    videos of a single-axis robotic hand rotating 136 toys against a moving background.
+  Figure 9 Link: articels_figures_by_rev_year\2018\EndtoEnd_Policy_Learning_for_Active_Visual_Categorization\figure_9.jpg
+  Figure 9 caption: Examples of synthetic 3D models from ModelNet10, used in our active
+    object recognition experiments.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Dinesh Jayaraman
+  Name of the last author: Kristen Grauman
+  Number of Figures: 15
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: End-to-End Policy Learning for Active Visual Categorization
+  Publication Date: 2018-05-28 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Recognition Accuracy on SUN360 and GERMS (Neural Net-Based\
+      \ Methods' Scores Are Reported as Mean \xB1 \xB1 standard Error over 5 Runs\
+      \ with Different Initializations)"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Recognition Accuracy on ModelNet, Including Recently Published
+      Benchmarks
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2840991
+- Affiliation of the first author: ai research lab of youedata inc., beijing, p.r.
+    china
+  Affiliation of the last author: school of computational science and engineering,
+    georgia institute of technology, atlanta, ga
+  Figure 1 Link: articels_figures_by_rev_year\2018\Joint_Active_Learning_with_Feature_Selection_via_CUR_Matrix_Decomposition\figure_1.jpg
+  Figure 1 caption: CUR matrix factorization. Image X comes from the ORL dataset [36].
+    Image C , U , and R are obtained by [33].
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Joint_Active_Learning_with_Feature_Selection_via_CUR_Matrix_Decomposition\figure_2.jpg
+  Figure 2 caption: The visualization of the learned W on the FG-NET dataset. (a)
+    Each row is the l 2 norm value of each row of W . (b) Each column is the l 2 norm
+    value of each column of W . Dark blue denotes that the values are close to zero.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Joint_Active_Learning_with_Feature_Selection_via_CUR_Matrix_Decomposition\figure_3.jpg
+  Figure 3 caption: Data and feature selection by our method on a synthetic dataset.
+    Blue circles denote original 2-D data points, and red circles denote the 1-D data
+    points selected by our method.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Joint_Active_Learning_with_Feature_Selection_via_CUR_Matrix_Decomposition\figure_4.jpg
+  Figure 4 caption: Comparisons of different active learning methods combined with
+    the SVM classifier on eight benchmark datasets. The curve shows the learning accuracy
+    over queries.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Joint_Active_Learning_with_Feature_Selection_via_CUR_Matrix_Decomposition\figure_5.jpg
+  Figure 5 caption: Comparisons of different active learning methods combined with
+    the decision tree classifier on eight benchmark datasets. The curve shows the
+    learning accuracy over queries.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Joint_Active_Learning_with_Feature_Selection_via_CUR_Matrix_Decomposition\figure_6.jpg
+  Figure 6 caption: "CPU time versus convergence tolerance \u03F5 ."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Joint_Active_Learning_with_Feature_Selection_via_CUR_Matrix_Decomposition\figure_7.jpg
+  Figure 7 caption: Sensitivity study of the parameters on the Madelon and FG-NET
+    datasets, respectively. (a), (b), (c) for the Madelon dataset, (d), (e), (f) for
+    the FG-NET dataset.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.62
+  Name of the first author: Changsheng Li
+  Name of the last author: Hongyuan Zha
+  Number of Figures: 7
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: Joint Active Learning with Feature Selection via CUR Matrix Decomposition
+  Publication Date: 2018-05-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Experimental Datasets
+  Table 10 caption:
+    table_text: TABLE 10 Results (%) Showing Feature Selection Being Good for Learning
+      Representative Samples on the TOX-171 Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Accuracy (%) of Feature Selection + Active Learning Algorithms
+      on the Madelon Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Accuracy (%) of Feature Selection + Active Learning Algorithms
+      on the TOX-171 Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Accuracy (%) of Feature Selection + Active Learning Algorithms
+      on the UCF11 Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Accuracy (%) of Feature Selection + Active Learning Algorithms
+      on the CLLSUB111 Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Accuracy (%) of Feature Selection + Active Learning Algorithms
+      on the Musk Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Accuracy (%) of Feature Selection + Active Learning Algorithms
+      on the ORL Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Accuracy (%) of Feature Selection + Active Learning Algorithms
+      on the FG-NET Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Accuracy (%) of Feature Selection + Active Learning Algorithms
+      on the HAR Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2840980
+- Affiliation of the first author: epfl, lausanne, switzerland
+  Affiliation of the last author: epfl, lausanne, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_1.jpg
+  Figure 1 caption: Head model and pose estimation. (a) the 3DMM head representation
+    only covers part of the head. (b) online head reconstruction progressively incorporating
+    observations. (c) head pose estimation using only a 3DMM (top) and incorporating
+    a reconstruction component (bottom).
+  Figure 10 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_10.jpg
+  Figure 10 caption: Robustness curves for BIWI (a, b, c) and UbiPose data (d, e,
+    f, g, h). (a, e) Pose error CDF. (b, f) Mean error per pose. (c, g) Impact of
+    regularization coefficients. (d) Tracking lost ratio per pose (UbiPose). (h) Mean
+    error on speaking frames, per pose (UbiPose).
+  Figure 2 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_2.jpg
+  Figure 2 caption: Proposed framework. The head pose estimation module registers
+    the current head model h to the observations. The 3DMM fitting module personalizes
+    a 3DMM face model m to sample frames online. The reconstruction module aggregates
+    pose rectified depth images into a full head representation r . Vertex samples
+    from the 3DMM face models m and from the reconstructed one r are used to define
+    the head model h .
+  Figure 3 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_3.jpg
+  Figure 3 caption: Use of symmetry regularizer.(a) Fitting samples; (b) Fitting without
+    symmetry regularizer; (c) Fitting with symmetry regularizer.
+  Figure 4 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_4.jpg
+  Figure 4 caption: Set of predefined poses (yaw,pitch,roll) used to collect data
+    samples for online 3DMM fitting.
+  Figure 5 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_5.jpg
+  Figure 5 caption: 3D head reconstruction from the BIWI dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_6.jpg
+  Figure 6 caption: Dataset samples. a) BIWI. b) UbiPose.
+  Figure 7 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_7.jpg
+  Figure 7 caption: Proportion of frames with a given pose GT (or IGT for UbiPose)
+    for (a) the BIWI dataset (b) UbiPose dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_8.jpg
+  Figure 8 caption: IGT quality evaluation based on BIWI data. a) distribution of
+    the yaw, pitch and roll errors between IGT and GT. b) distribution of IGT absolute
+    pose errors.
+  Figure 9 Link: articels_figures_by_rev_year\2018\HeadFusion_Head_Pose_Tracking_Combining_D_Morphable_Model_and_D_Reconstruction\figure_9.jpg
+  Figure 9 caption: 3D head reconstruction and tracking samples. a) BIWI dataset.
+    b) Typical frames of UbiPose dataset. c) Extreme head pose cases and occlusion
+    cases. Note that for better visualization, displayed image were cropped from original
+    images.
+  First author gender probability: 0.53
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yu Yu
+  Name of the last author: Jean-Marc Odobez
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: "HeadFusion: 360\n\u2218\nHead Pose Tracking Combining 3D Morphable\
+    \ Model and 3D Reconstruction"
+  Publication Date: 2018-05-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Error of IGT
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 BIWI: Average Head Pose Error and Accuracy1'
+  Table 3 caption:
+    table_text: 'TABLE 3 UbiPose: Average Head Pose Error and Accuracy'
+  Table 4 caption:
+    table_text: 'TABLE 4 UbiPose: Landmark Position Errors'
+  Table 5 caption:
+    table_text: TABLE 5 BIWI Contrastive Experiments
+  Table 6 caption:
+    table_text: TABLE 6 UbiPose Contrastive Experiments
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2841403
+- Affiliation of the first author: national laboratory of pattern recognition, center
+    for research on intelligent perception and computing, center for excellence in
+    brain science and intelligence technology, casia, cas, university of chinese academy
+    of sciences, beijing, china
+  Affiliation of the last author: national laboratory of pattern recognition, center
+    for research on intelligent perception and computing, center for excellence in
+    brain science and intelligence technology, casia, cas, university of chinese academy
+    of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Wasserstein_CNN_Learning_Invariant_Features_for_NIRVIS_Face_Recognition\figure_1.jpg
+  Figure 1 caption: An illustration of our proposed Wasserstein CNN architecture.
+    The Wasserstein distance is used to measure the difference between NIR and VIS
+    distributions in the modality invariant subspace (spanned by matrix W ). At the
+    testing time, both NIR and VIS features are exacted from the shared layer of one
+    single neural network and compared in cosine distance.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Wasserstein_CNN_Learning_Invariant_Features_for_NIRVIS_Face_Recognition\figure_2.jpg
+  Figure 2 caption: Cropped VIS and NIR facial images from the three databases. The
+    first row contains the NIR images from the probe set and the second row contains
+    the VIS images from the gallery set.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Wasserstein_CNN_Learning_Invariant_Features_for_NIRVIS_Face_Recognition\figure_3.jpg
+  Figure 3 caption: ROC curves of different methods on the three NIR-VIS datasets.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Wasserstein_CNN_Learning_Invariant_Features_for_NIRVIS_Face_Recognition\figure_4.jpg
+  Figure 4 caption: Visual results of correctly matched faces and failed cases on
+    the CASIA NIR-VIS 2.0 database. The numerical score under each gallery image is
+    its similarity score with the probe image in the same row.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Wasserstein_CNN_Learning_Invariant_Features_for_NIRVIS_Face_Recognition\figure_5.jpg
+  Figure 5 caption: A correlation illustration of the matrix M T M in the fully connected
+    layer of WCNN. A lighter color indicates a higher correlation. When the low-rank
+    correlation constraint is introduced, there is obvious variations on top-right
+    and bottom-left areas of M T M .
+  Figure 6 Link: articels_figures_by_rev_year\2018\Wasserstein_CNN_Learning_Invariant_Features_for_NIRVIS_Face_Recognition\figure_6.jpg
+  Figure 6 caption: Three alternative architectures of WCNN.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.58
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ran He
+  Name of the last author: Tieniu Tan
+  Number of Figures: 6
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: 'Wasserstein CNN: Learning Invariant Features for NIR-VIS Face Recognition'
+  Publication Date: 2018-06-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Experimental Results on the 10-Fold CASIA NIR-VIS 2.0 Benchmark
+      in Terms of Rank-1 Accuracy, Verification Rate and Standard Deviation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Rank-1 Accuracy and Verification Rate on the Oulu-CASIA NIR-VIS
+      Database
+  Table 3 caption:
+    table_text: TABLE 3 Rank-1 Accuracy and Verification Rate on the BUAA NIR-VIS
+      Database
+  Table 4 caption:
+    table_text: TABLE 4 Performance Comparison of Different WCNN Variants
+  Table 5 caption:
+    table_text: TABLE 5 Performance Comparison of Different Parameter Settings of
+      WCNN
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2842770
+- Affiliation of the first author: translational imaging group, wellcome epsrc centre
+    for interventional and surgical sciences (weiss), university college london, london,
+    united kingdom
+  Affiliation of the last author: translational imaging group, wellcome epsrc centre
+    for interventional and surgical sciences (weiss), university college london, london,
+    united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_1.jpg
+  Figure 1 caption: 'Overview of the proposed interactive segmentation framework with
+    two stages. Stage 1: P-Net automatically proposes an initial segmentation. Stage
+    2: R-Net refines the segmentation with user interactions indicating mis-segmentations.
+    CRF-Net(f) is our proposed back-propagatable CRF that uses freeform pairwise potentials.
+    It is extended to be CRF-Net(fu) that employs user interactions as hard constraints.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_10.jpg
+  Figure 10 caption: Quantitative comparison of 2D placenta segmentation by different
+    interactive methods in terms of Dice, ASSD, total interactions (scribble length)
+    and user time.
+  Figure 2 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_2.jpg
+  Figure 2 caption: Input of R-Net in Stage 2. (a) The user provides clicksscribbles
+    to correct foreground (red) and background (cyan) on the initial automatic segmentation.
+    (d) and (e) are geodesic distance maps based on foreground and background interactions,
+    respectively. The original image (b) is combined with the initial automatic segmentation
+    (c) and the geodesic distance maps (d), (e) by channel-concatenation and used
+    as the input of R-Net.
+  Figure 3 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_3.jpg
+  Figure 3 caption: The CNN structure of 2D3D P-Net with CRF-Net(f). The parameters
+    of convolution layers are (kernel size, output channels, dilation) in dark blue
+    rectangles. Block 1 to block 6 are resolution-preserving. 2D3D R-Net uses the
+    same structure as 2D3D P-Net except its input has three additional channels shown
+    in Fig. 2 and the CRF-Net(f) is replaced by the CRF-Net(fu) (Section 3.3).
+  Figure 4 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_4.jpg
+  Figure 4 caption: The Pairwise-Net for pairwise potential function f( f ~ ij , d
+    ij ) . f ~ ij is the difference of features between a pixel pair i and j . d ij
+    is the euclidean distance between them.
+  Figure 5 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_5.jpg
+  Figure 5 caption: 'Simulated user interactions on training images for placenta (a)
+    and brain tumor (b, c). Green: automatic segmentation given by P-Net with CRF-Net(f).
+    Yellow: ground truth. Red (cyan): simulated clicks on under-segmentation (over-segmentation).'
+  Figure 6 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_6.jpg
+  Figure 6 caption: Visual comparison of different networks in Stage 1 of 2D placenta
+    segmentation. The last row shows interactively refined results by DeepIGeoS.
+  Figure 7 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_7.jpg
+  Figure 7 caption: Visual comparison of different CRFs in Stage 1 of 2D placenta
+    segmentation. The last row shows interactively refined results by DeepIGeoS.
+  Figure 8 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_8.jpg
+  Figure 8 caption: Visual comparison of different refinement methods in Stage 2 of
+    2D placenta segmentation. The first column shows the initial automatic segmentation
+    obtained by 2D P-Net + CRF-Net(f), on which user interactions are added for refinement.
+    The remaining columns show refined results. 2D R-Net(Euc) is a counterpart of
+    the proposed 2D R-Net and it uses euclidean distance. White arrows show the difference
+    in local details.
+  Figure 9 Link: articels_figures_by_rev_year\2018\DeepIGeoS_A_Deep_Interactive_Geodesic_Framework_for_Medical_Image_Segmentation\figure_9.jpg
+  Figure 9 caption: Visual comparison of DeepIGeoS and other interactive methods for
+    2D placenta segmentation. The first row shows initial scribbles (except for DeepIGeoS)
+    and the resulting segmentation. The second row shows final refined results with
+    the entire set of scribbles. The user decided on the level of interaction required
+    to achieve a visually acceptable result.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Guotai Wang
+  Name of the last author: Tom Vercauteren
+  Number of Figures: 15
+  Number of Tables: 4
+  Number of authors: 11
+  Paper title: 'DeepIGeoS: A Deep Interactive Geodesic Framework for Medical Image
+    Segmentation'
+  Publication Date: 2018-06-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Comparison of Different Networks and CRFs in
+      Stage 1 of 2D Placenta Segmentation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Evaluation of Different Refinement Methods in
+      Stage 2 of 2D Placenta Segmentation
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparison of Different Networks and CRFs in
+      Stage 1 of 3D Brain Tumor Segmentation
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Comparison of Different Refinement Methods in
+      Stage 2 of 3D Brain Tumor Segmentation
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2840695
+- Affiliation of the first author: university of science and technology of china,
+    hefei shi, china
+  Affiliation of the last author: university of chinese academy of sciences, huairou,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_1.jpg
+  Figure 1 caption: Feedback CNN. Given an input image, we perform a normal feedforward
+    to predict the class label and set it as the target. Then use the pruning operation
+    to select related neurons, and perform the recovering operation on these selected
+    neurons to obtain target-relevant visualization and energy maps. Each selected
+    neuron is highly related to object parts, which is shown by visualizing the selected
+    neurons respectively.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_10.jpg
+  Figure 10 caption: Visualization and energy maps. (a)(e)(i)(m) Input images. (b)(f)(j)(n)
+    FSP-FR energy maps. (c)(g)(k)(o) Summation Energy Maps. (d)(h)(l)(p) Visualization
+    maps. Note that (i-p) demonstrate some results when input images contain multi-class
+    objects. Best viewed in color.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_2.jpg
+  Figure 2 caption: A simple pipeline for object localization and segmentation via
+    the proposed Feedback CNN model. (a)(b)(c) When given an input image, the proposed
+    Feedback CNN is designed to utilize both bottom-up image inputs and top-down semantic
+    labels to infer the hidden neuron activations. (d)(e)(f)(g) Salient areas captured
+    in the visualization and energy maps by feedback often correspond to related target
+    objects. And based on these maps, objects can be easily localized and segmented
+    from the input image. Best viewed in color.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_3.jpg
+  Figure 3 caption: Illustration of our feedback model and its inference process.
+    At the first iteration, the model performs as a feedforward neural network. Then,
+    the neurons in the feedback hidden layers update their activation status to maximize
+    the confidence output of the target top neuron. This process continues until convergence.
+    Note that the black nodes represent neurons that are not activated or turned off
+    in the feedback loop. (We show only one layer here, but feedback layers can be
+    tacked in the deep CNNs.)
+  Figure 4 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_4.jpg
+  Figure 4 caption: Visualizations by running the FR and FSP. (a)(d) The same input
+    image for FR and FSP. (b)(c) Visualization of gradient maps via running FR for
+    elephant and zebra respectively. (e)(f) Visualization of gradient maps via running
+    FSP for elephant and zebra respectively. Best viewed in color.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_5.jpg
+  Figure 5 caption: Results generated by combining both FR and FSP. (a) Input images.
+    (b)(c) Merged energy maps and visualization maps by running FR separately on neurons
+    selected by FSP. (d)(e) Energy and visualization maps by running FR simultaneously
+    on neurons selected by FSP. Best viewed in color.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_6.jpg
+  Figure 6 caption: The iteration curves of FSP for different objects. (a)(d) Input
+    images. (b)(c) The iteration curves for dog and cat respectively. (e)(f) The iteration
+    curves for bus and car respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_7.jpg
+  Figure 7 caption: The mean iteration curve of 50000 images from the ImageNet 2012
+    classification validation set.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_8.jpg
+  Figure 8 caption: Visualization of 5 neurons that have the maximum scores in each
+    of the top 5 channels selected by the FSP algorithm. Best viewed in color.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Feedback_Convolutional_Neural_Network_for_Visual_Localization_and_Segmentation\figure_9.jpg
+  Figure 9 caption: "Filter selection. The FSP algorithm is run for different objects\
+    \ in the input images (a) and (e). After FSP achieves convergence, we select top\
+    \ 5 channels (corresponding to 5 filters) for each target object according to\
+    \ the maximum scores of 512 channels in the \u201Cconv52\u201D layer. We calculate\
+    \ the maximum and mean responses of these 5 filters to the images of 20 different\
+    \ classes from the Pascal VOC2012 segmentation validation set. The first row reports\
+    \ the maximum scores and the second row reports the mean scores. The filters selected\
+    \ by FSP well respond to the corresponding class images. For example, the selected\
+    \ filters for \u201Cperson\u201D have much higher responses to the images from\
+    \ the category \u201Cperson\u201D. Best viewed in color."
+  First author gender probability: 0.69
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chunshui Cao
+  Name of the last author: Tieniu Tan
+  Number of Figures: 16
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: Feedback Convolutional Neural Network for Visual Localization and Segmentation
+  Publication Date: 2018-06-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Localization Results on ILSVRC2012
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Mean Accuracy (%) of Object Localization on the Test Set of
+      VOC2007 and Classification Validation Set of VOC2012
+  Table 3 caption:
+    table_text: TABLE 3 Results of Weakly Supervised Semantic Segmentation on the
+      Pascal VOC2012 Validation Dataset
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2843329
+- Affiliation of the first author: "department of biostatistics and medical informatics,\
+    \ university of wisconsin\u2013madison, madison, wi, usa"
+  Affiliation of the last author: "department of biostatistics and medical informatics,\
+    \ university of wisconsin\u2013madison, madison, wi, usa"
+  Figure 1 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_1.jpg
+  Figure 1 caption: An example of NLOS scenario is depicted here. It comprises a laser,
+    a camera, a relay wall and a target which is not in the direct path of either
+    the laser or the camera.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_10.jpg
+  Figure 10 caption: "Simulated scenario in Section 5.3. The laser and camera origin\
+    \ are indicated with a red and black '\xD7', respectively. The wall is parallel\
+    \ the (x,y) -plane and the laser and camera positions are shown using red and\
+    \ black ' cdot ', respectively. The \u201CV\u201D-shaped target is represented\
+    \ by ' cdot ' in magenta and the considered voxel space is depicted using blue\
+    \ lines. An occluder (not shown) is blocking the line-of-sight view of the laser\
+    \ and camera pair, so the target is not visible."
+  Figure 2 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_2.jpg
+  Figure 2 caption: "Section 5.1 simulated scenario. The laser and camera origins\
+    \ are indicated with a red and black '\xD7', respectively. The wall is parallel\
+    \ to the (x,y) -plane; the laser and camera positions are indicated by red and\
+    \ black ' \u22C5 ', respectively. The targets, two isotropic spheres, are represented\
+    \ by ' \u2218 ' in magenta, whereas the voxel space is shown using a continuous\
+    \ blue line."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_3.jpg
+  Figure 3 caption: Considering the scenario shown in Section 5.1, we depict the (a)
+    unfiltered and (b) filtered backprojection results for the NIB algorithm.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_4.jpg
+  Figure 4 caption: Considering the scenario shown in Section 5.1, we depict the AEB
+    unfiltered and filtered results in (a)-(b), respectively, whereas the MEB results
+    are in (c)-(d).
+  Figure 5 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_5.jpg
+  Figure 5 caption: "Simulated scenario in Section 5.2. The laser and camera origin\
+    \ are indicated with a red and black '\xD7', respectively. The wall is parallel\
+    \ the (x,y) -plane and the laser and camera positions are shown using red and\
+    \ black ' \u22C5 ', respectively. The \u201CT\u201D-shaped target is represented\
+    \ by ' \u22C5 ' in magenta and the considered voxel space is depicted using blue\
+    \ lines."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_6.jpg
+  Figure 6 caption: Considering the scenario shown in Section 5.2, we depict the (a)
+    unfiltered and (b) filtered backprojection results for the NIB algorithm.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_7.jpg
+  Figure 7 caption: Considering the scenario shown in Section 5.2, we depict the AEB
+    unfiltered and filtered results in (a)-(b), respectively, whereas the MEB results
+    are in (c)-(d).
+  Figure 8 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_8.jpg
+  Figure 8 caption: Considering the scenario shown in Section 5.1, we depict the (a)
+    unfiltered and (b) filtered backprojection results for the NIB algorithm. In this
+    case, the dataset is embedded in uniform noise plus ambient noise.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Error_Backprojection_Algorithms_for_NonLineofSight_Imaging\figure_9.jpg
+  Figure 9 caption: Considering the scenario shown in Section 5.2 and the dataset
+    embedded in ambient noise, we depict the AEB unfiltered and filtered results in
+    (a)-(b), respectively, whereas the MEB results are in (c)-(d).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Marco La Manna
+  Name of the last author: Andreas Velten
+  Number of Figures: 17
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Error Backprojection Algorithms for Non-Line-of-Sight Imaging
+  Publication Date: 2018-06-04 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Number of Iterations Reached, Calculated MSE ( \u0393 U \u0393\
+      U, \u0393 F \u0393F) and Run Times for the NIB, AEB and MEB Algorithms, Considering\
+      \ the Scenario Discussed in Section 5.1"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Number of Iterations Reached, Calculated MSE ( \u0393 U \u0393\
+      U, \u0393 F \u0393F) and Run Times for the NIB, AEB and MEB Algorithms, Considering\
+      \ the Scenario Discussed in Section 5.2"
+  Table 3 caption:
+    table_text: "TABLE 3 Number of Iterations Reached, Calculated MSE ( \u0393 U \u0393\
+      U, \u0393 F \u0393F) and Run Times for the NIB, AEB and MEB Algorithms, Considering\
+      \ the Scenario Discussed in Section 5.2 with the Dataset Embedded in Ambient\
+      \ Noise"
+  Table 4 caption:
+    table_text: "TABLE 4 Number of Iterations Reached, Calculated MSE ( \u0393 U \u0393\
+      U, \u0393 F \u0393F) and Run Times for the NIB, AEB and MEB Algorithms, Considering\
+      \ the Scenario Discussed in Section 5.3"
+  Table 5 caption:
+    table_text: TABLE 5 Number of Iterations Reached and Run Time for the NIB, AEB
+      and MEB Algorithms, Considering the Scenario Discussed in Section 6
+  Table 6 caption:
+    table_text: TABLE 6 MSE of AEB and ART Implementation Considered in in Section
+      7
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2843363

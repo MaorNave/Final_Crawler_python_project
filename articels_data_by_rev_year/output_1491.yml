@@ -1,0 +1,783 @@
+- Affiliation of the first author: department of computer science, stony brook university,
+    stony brook, ny, usa
+  Affiliation of the last author: department of computer science, stony brook university,
+    stony brook, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\SequencetoSegments_Networks_for_Detecting_Segments_in_Videos\figure_1.jpg
+  Figure 1 caption: "Detecting segments of interest in videos: Given an input sequence,\
+    \ the task is to detect segments of \u201Cinterest\u201D from the video. The \u201C\
+    interest\u201D here is an abstract concept that denotes the segment of the data\
+    \ that have the highest (application dependent) semantic values. Typical applications\
+    \ are video summarization, video highlighting and video temporal action proposal."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\SequencetoSegments_Networks_for_Detecting_Segments_in_Videos\figure_2.jpg
+  Figure 2 caption: "An Encoder (green) processes the input sequence to create a set\
+    \ of encoding vectors ( e 1 , e 2 ,\u2026 e M ). At each decoding step, a Segment\
+    \ Detection Unit (SDU) updates the decoding state with a GRU, and based on the\
+    \ updated state, the SDU points to the beginning ( b ) and ending positions (\
+    \ d ) with two separate pointing modules and estimates the confidence score (\
+    \ c ) of the segment."
+  Figure 3 Link: articels_figures_by_rev_year\2019\SequencetoSegments_Networks_for_Detecting_Segments_in_Videos\figure_3.jpg
+  Figure 3 caption: 'Illustration of the HMLC assignment strategy. Given an input
+    frame sequence (black line), the segments in red (A, B) represent the target segments
+    and the segments in blue (1, 2, ...) are the sequentially generated segments.
+    The solid blue lines indicate segments that have been matched with ground truth
+    whereas the dashed ones indicate false positives. (a)-(e): Five examples of HMLC
+    matching of generated segments to ground truth. HMLC encourages S2N to generate
+    segments that are well aligned with the ground truth and output true positive
+    segments earlier than false positive ones. (a, b), initial matches, (c, d) final
+    non-optimal matches (to be eliminated by non-maximum suppression), (e) optimal
+    match, segments are well aligned with ground truth and true positives appear earlier
+    than false positives.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\SequencetoSegments_Networks_for_Detecting_Segments_in_Videos\figure_4.jpg
+  Figure 4 caption: Illustration of alternative assignment strategies. The notations
+    are the same as Fig. 3. Different assignment strategies will assign the predicted
+    segments to the ground truth segments differently; solid blue lines indicate matched
+    predictions, dashed blue lines indicate unmatched predictions. (a) HMLC matching
+    (1-A, 3-B, 4-C); (b) Fixed order matching (1-A, 2-B, 3-C); (3) Greedy matching
+    (2-A, 3-B, 4-C); (4) TopK matching for K=3 (2-A, 3-B, 1-C).
+  Figure 5 Link: articels_figures_by_rev_year\2019\SequencetoSegments_Networks_for_Detecting_Segments_in_Videos\figure_5.jpg
+  Figure 5 caption: Visualization of the summarization results. S2N localizes the
+    interesting events in the video, as previously annotated.
+  Figure 6 Link: articels_figures_by_rev_year\2019\SequencetoSegments_Networks_for_Detecting_Segments_in_Videos\figure_6.jpg
+  Figure 6 caption: S2N with C3D features outperforms previous temporal action proposal
+    generation approaches on THUMOS-14 under various performance metrics.
+  Figure 7 Link: articels_figures_by_rev_year\2019\SequencetoSegments_Networks_for_Detecting_Segments_in_Videos\figure_7.jpg
+  Figure 7 caption: Comparing different action proposal methods. The red vertical
+    lines indicate the number of true positives (100 percent for 1G, 50 percent for
+    2G ...). Best viewed on a screen.
+  Figure 8 Link: articels_figures_by_rev_year\2019\SequencetoSegments_Networks_for_Detecting_Segments_in_Videos\figure_8.jpg
+  Figure 8 caption: Comparison between variants of S2N on THUMOS14. S2N-Beam improve
+    performance especially when proposal frequency is high. S2N-Beam with two stream
+    features achieves best performance under various performance metrics.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zijun Wei
+  Name of the last author: Dimitris Samaras
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 8
+  Paper title: Sequence-to-Segments Networks for Detecting Segments in Videos
+  Publication Date: 2019-09-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Lexicographic Cost Between Generated Segments and Ground Truth
+      in Fig. 3a
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 F1 Scores (%) of Various Video Highlight Detection Methods
+      on the VTW Dataset
+  Table 3 caption:
+    table_text: TABLE 3 F1 Scores (%) of S2N When Different Loss Functions Are Used
+  Table 4 caption:
+    table_text: TABLE 4 F1 F1 Scores (%) of Various Video Summary Methods on the SumMe
+      Dataset [58]
+  Table 5 caption:
+    table_text: TABLE 5 F1 Scores of S2N for Different Numbers of Output Segments
+      on SumMe [58] Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Comparison Between S2N and the Other State-of-the-Art Proposal
+      Generation Methods on THUMOS14 in Terms of Average Recall at N (AR-N)
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of S2N Trained with Different Assignment Strategies
+      Under Metric AR-N
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2940225
+- Affiliation of the first author: department of computer science and engineering,
+    university of bologna, bologna, italy
+  Affiliation of the last author: department of computer science and engineering,
+    university of bologna, bologna, italy
+  Figure 1 Link: articels_figures_by_rev_year\2019\Unsupervised_Domain_Adaptation_for_Depth_Prediction_from_Images\figure_1.jpg
+  Figure 1 caption: "Visualization of our confidence guided loss: (a) left frame I\
+    \ l ; (b) Disparity map, D ~ , predicted by the model; (c) Disparity map, D ,\
+    \ estimated by a stereo algorithm; (d) Confidence map, C , on D ; (e) L1 regression\
+    \ errors between (b) and (c), (f-h) same L1 errors weighted by C with \u03C4=0.00\
+    \ (f), \u03C4=0.50 (g), and \u03C4=0.99 (h). (e-h) Hotter colors encode larger\
+    \ differences."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Unsupervised_Domain_Adaptation_for_Depth_Prediction_from_Images\figure_2.jpg
+  Figure 2 caption: 'Ablation experiments: fine-tuning DispNetC to new domains using
+    AD [33]. (a) input image from KITTI, (b) disparities estimated by AD, (c) results
+    without fine-tuning, (d) fine-tuning by AD only (Regression), (e) fine-tuning
+    by weighting the loss through the confidence estimator (Weighted), and (f) our
+    complete Adaptation method.'
+  Figure 3 Link: articels_figures_by_rev_year\2019\Unsupervised_Domain_Adaptation_for_Depth_Prediction_from_Images\figure_3.jpg
+  Figure 3 caption: "Hyper-parameters study for unsupervised adaptation for monodepth\
+    \ [56], VGG model. Top: AD algorithm, bottom: SGM. From left to right, RMSE achieved\
+    \ after five epochs of adaptation by varying respectively \u03C4 , \u03BB 1 and\
+    \ \u03BB 2 . Points are interpolated for visualization purposes."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Unsupervised_Domain_Adaptation_for_Depth_Prediction_from_Images\figure_4.jpg
+  Figure 4 caption: 'Ablation experiments: adaptation of monodepth (VGG encoder) using
+    AD algorithm. (a) input image from KITTI, (b) result from AD algorithm, (c) result
+    before adaptation, (d) adapting with stereo algorithm only, (e) using confidence
+    to weight the loss function, and (f) running full adaptation.'
+  Figure 5 Link: articels_figures_by_rev_year\2019\Unsupervised_Domain_Adaptation_for_Depth_Prediction_from_Images\figure_5.jpg
+  Figure 5 caption: 'Adaptation results for depth-from-mono on Middlebury v3 [7] (top)
+    ETH3D dataset [75] (bottom). From left to right: input (left) image, depth maps
+    from network before adaptation and after fine tuning with our adaptation technique.
+    The absolute error rate is overimposed on each depth map.'
+  Figure 6 Link: articels_figures_by_rev_year\2019\Unsupervised_Domain_Adaptation_for_Depth_Prediction_from_Images\figure_6.jpg
+  Figure 6 caption: "Learned values of \u03C4 across three different training using\
+    \ different stereo algorithms and CCNN as confidence measure."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Unsupervised_Domain_Adaptation_for_Depth_Prediction_from_Images\figure_7.jpg
+  Figure 7 caption: Adaptation results for DispNetC on Middlebury v3 [7] (top) ETH3D
+    dataset [75] (bottom). From left to right input (left) image, disparity maps predicted
+    from network before any adaptation and after fine tuning with our adaptation technique.
+    The bad1 error is overimposed on each map.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Alessio Tonioni
+  Name of the last author: Luigi Di Stefano
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Unsupervised Domain Adaptation for Depth Prediction from Images
+  Publication Date: 2019-09-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Study on the Effectiveness of the Different Components
+      of Our Adaptation Loss Using AD as Noisy Labels Estimator
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results Obtained Performing Fine Tuning of a Pre-Trained DispNetC
+      Network Using Different Unsupervised Strategy
+  Table 3 caption:
+    table_text: TABLE 3 Experimental Results on the KITTI Dataset [66] on the Data
+      Split Proposed by Eigen et al. [44]
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Experiments on the KITTI Dataset [66] on the Data
+      Split Proposed by Eigen et al. [44]
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2940948
+- Affiliation of the first author: "school of computer and communication sciences,\
+    \ ecole polytechnique f\xE9d\xE9rale de lausanne (epfl), lausanne, switzerland"
+  Affiliation of the last author: "school of computer and communication sciences,\
+    \ ecole polytechnique f\xE9d\xE9rale de lausanne (epfl), lausanne, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2019\Bound_and_Conquer_Improving_Triangulation_by_Enforcing_Consistency\figure_1.jpg
+  Figure 1 caption: An example of central projection in a pinhole camera.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Bound_and_Conquer_Improving_Triangulation_by_Enforcing_Consistency\figure_2.jpg
+  Figure 2 caption: Pixelization in a digital camera.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Bound_and_Conquer_Improving_Triangulation_by_Enforcing_Consistency\figure_3.jpg
+  Figure 3 caption: Verification of Conjecture 1. Expected squared error ( E ) as
+    a function of the number of cameras ( M ).
+  Figure 4 Link: articels_figures_by_rev_year\2019\Bound_and_Conquer_Improving_Triangulation_by_Enforcing_Consistency\figure_4.jpg
+  Figure 4 caption: Verification of Theorem 2. Expected squared error ( E ) as a function
+    of the number of cameras ( M ).
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Adam Scholefield
+  Name of the last author: Martin Vetterli
+  Number of Figures: 4
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: 'Bound and Conquer: Improving Triangulation by Enforcing Consistency'
+  Publication Date: 2019-09-13 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2939530
+- Affiliation of the first author: pca lab, the key laboratory of intelligent perception
+    and systems for high-dimensional information of ministry of education, nanjing
+    university of science and technology, nanjing, p.r. china
+  Affiliation of the last author: ubtech sydney artificial intelligence centre, school
+    of computer science, faculty of engineering, university of sydney, darlington,
+    nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2019\Loss_Decomposition_and_Centroid_Estimation_for_Positive_and_Unlabeled_Learning\figure_1.jpg
+  Figure 1 caption: The comparison of traditional supervised learning and PU learning.
+    Traditional supervised learning trains a classifier from both positive and negative
+    examples, while PU learning trains a classifier simply based on the positive and
+    unlabeled data.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Loss_Decomposition_and_Centroid_Estimation_for_Positive_and_Unlabeled_Learning\figure_2.jpg
+  Figure 2 caption: "The performances of various methods on synthetic dataset, where\
+    \ red, blue and black dots denote positive, negative and unlabeled data points,\
+    \ respectively. (a) Shows the real positive and negative examples, (b) shows the\
+    \ positive and unlabeled data for model training, (c) \u2212 (f) display the decision\
+    \ boundaries and classification accuracies generated by WSVM [7], uPU [9], RP\
+    \ [47], and LDCE, respectively. The incorrectly classified examples are highlighted\
+    \ by red circles."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Loss_Decomposition_and_Centroid_Estimation_for_Positive_and_Unlabeled_Learning\figure_3.jpg
+  Figure 3 caption: Examples of fighting and non-fighting video frames in HockeyFight
+    dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Loss_Decomposition_and_Centroid_Estimation_for_Positive_and_Unlabeled_Learning\figure_4.jpg
+  Figure 4 caption: "The parametric sensitivity of \u03B2 and \u03BB of our KLDCE\
+    \ method when the false negative rate \u03B7 changes from 0.2 to 0.4. (a)-(c),\
+    \ (d)-(f) and (g)-(i) present the results on USPS, HockeyFight and NBA datasets,\
+    \ respectively. The highest accuracy and lowest accuracy in each subfigure are\
+    \ indicated by red number and green number accordingly."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Loss_Decomposition_and_Centroid_Estimation_for_Positive_and_Unlabeled_Learning\figure_5.jpg
+  Figure 5 caption: "The performances of uPU, nnPU, RP, LDCE and KLDCE under \u03B7\
+    \ =0.6\u03B7,0.8\u03B7,\u03B7,1.2\u03B7,1.4\u03B7 where the actual value of \u03B7\
+    \ is 0.3. The subfigures (a), (b) and (c) present the results on USPS, HockeyFight\
+    \ and NBA datasets, respectively."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chen Gong
+  Name of the last author: Dacheng Tao
+  Number of Figures: 5
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: Loss Decomposition and Centroid Estimation for Positive and Unlabeled
+    Learning
+  Publication Date: 2019-09-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Characteristics of Nine UCI Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Mean Test Accuracies of Various Approaches
+      on UCI Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Test Accuracies of Various Approaches on Three
+      Real-World Datasets Including USPS, HockeyFight and NBA
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Test Accuracies Generated by LDCE and KLDCE
+      When the Constraint (14) Is Present and Absent
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2941684
+- Affiliation of the first author: key laboratory of applied statistics of moeschool
+    of mathematics and statistics, northeast normal university, changchun, jilin,
+    china
+  Affiliation of the last author: department of mathematics, the chinese university
+    of hong kong, shatin, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_1.jpg
+  Figure 1 caption: Deblurred result by our surface-aware method. (a) Blurred image;
+    (b) the blur kernel estimated by proposed method (the bottom left corner) and
+    the corresponding deblurred image.
+  Figure 10 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_10.jpg
+  Figure 10 caption: Quantitative evaluations on Sun et al.s dataset [19]. Our method
+    performs competitively against state-of-the-art methods.
+  Figure 2 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_2.jpg
+  Figure 2 caption: Comparisons on a text image and a face image. Pan et al.s method
+    [15] favors the intensity sparsity of the latent image while Pan et al.s method
+    [18] and Yan et al.s method [22] prefer the extreme channels prior. It is clear
+    that our method is better than these methods overall. (For better display, we
+    show the estimated kernels in the lower right corner of the final latent images
+    of the text image; The estimated kernels for the face image are displayed in the
+    lower left corner of the final latent images.)
+  Figure 3 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_3.jpg
+  Figure 3 caption: "(a) Blurred image; (b) The intermediate latent image by using\
+    \ only the L 0 norm of the gradient; (c) the surface plot of a small portion in\
+    \ (b); (d) Estimated kernel (upper right corner) by using only L 0 norm of the\
+    \ gradient and the corresponding final deblurred image; (e) The intermediate latent\
+    \ image by considering the surface-aware regularization together with the L 0\
+    \ norm of the gradient; (f) the surface plot of a small portion in (e); (g) Estimated\
+    \ kernel (upper right corner) by using proposed method and the corresponding final\
+    \ deblurred image. The recovered image by the proposed algorithm with the surface-aware\
+    \ regularization is visually more pleasing. The surface area of the intermediate\
+    \ latent image (b) is 3.4537\xD7 10 5 . The surface area of the intermediate latent\
+    \ image (e) is 3.4434\xD7 10 5 ."
+  Figure 4 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_4.jpg
+  Figure 4 caption: (a) The gradient distribution of blurred images and the intermediate
+    latent images obtained by using different types of regularizers, respectively.
+    We take the gradient in the x direction only. The non-symmetric plot for the blurred
+    image is mainly because of the blur kernel; (b) Intermediate latent images by
+    only using the L 0 norm of the gradient; (c) Intermediate latent images by only
+    using the surface-aware prior; (d) Intermediate latent images by the combination
+    of the L 0 norm of the gradient and surface-aware regularization. The recovered
+    blur kernels are shown on the top right corner.
+  Figure 5 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_5.jpg
+  Figure 5 caption: Comparisons on intermediate latent images obtained by using different
+    methods.
+  Figure 6 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_6.jpg
+  Figure 6 caption: A challenging example from dataset [34]. The blurred image is
+    shown in Fig. 5e; Our method generates visually comparable or even better deblurring
+    results compared to those obtained by some other state-of-the-art methods. (Please
+    zoom in the picture to check the differences of the estimated clean images among
+    different methods.)
+  Figure 7 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_7.jpg
+  Figure 7 caption: The SSD error ratio evaluations on Levin et al.s dataset [20].
+    Our method performs competitively against state-of-the-art methods.
+  Figure 8 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_8.jpg
+  Figure 8 caption: "Quantitative evaluations on K\xF6hler et al.s benchmark dataset\
+    \ [34]. Our method performs competitively against state-of-the-art methods."
+  Figure 9 Link: articels_figures_by_rev_year\2019\SurfaceAware_Blind_Image_Deblurring\figure_9.jpg
+  Figure 9 caption: Visual comparisons on one challenging image from [34]. The deblurred
+    image generated by our method is visually more satisfying.
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.67
+  Name of the first author: Jun Liu
+  Name of the last author: Tieyong Zeng
+  Number of Figures: 18
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Surface-Aware Blind Image Deblurring
+  Publication Date: 2019-09-16 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2941472
+- Affiliation of the first author: department of systems and control engineering,
+    school of engineering, tokyo institute of technology, tokyo, japan
+  Affiliation of the last author: chalmers university of technology, gothenburg, sweden
+  Figure 1 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_1.jpg
+  Figure 1 caption: The state-of-the-art for large-scale visual localization. 2D image-based
+    methods (bottom) use image retrieval and return the pose of the most relevant
+    database image. 3D structure-based methods (top) use 2D-3D matches against a 3D
+    model for camera pose estimation. Both approaches have been developed largely
+    independently of each other and never compared properly before.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_10.jpg
+  Figure 10 caption: Examples of query images localized within 30 m of the reference
+    position by a 3D structure-based method (Hyperpoints) (middle) but not by a 2D
+    image-based method (Disloc (SR-SfM)) (left). See the caption of Fig. 9 for details.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_2.jpg
+  Figure 2 caption: The San Francisco dataset with the reference poses of query images.
+    We provide the reference poses of query images (blue) which can be used as the
+    ground truth for large-scale localization benchmarks on the SanFrancisco dataset.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_3.jpg
+  Figure 3 caption: Evaluation of the positional localization accuracy for BoW-based
+    methods (a), VLAD-based approaches (b), and when comparing 2D- and 3D-based methods
+    (c). Each plot shows the fraction of correctly localized queries ( y -axis) within
+    a certain distance to the reference pose ( x -axis). As can be seen, using local
+    SfM reconstructions (SfM) to estimate the camera poses allows 2D-based methods
+    (Disloc, DenseVLAD) to achieve a positional accuracy similar or superior to 3D-based
+    methods (Hyperpoints (HP), Camera Pose Voting (CPV)).
+  Figure 4 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_4.jpg
+  Figure 4 caption: Evaluation of the orientational localization accuracy for BoW-based
+    methods (a), VLAD-based approaches (b), and when comparing 2D- and 3D-based methods
+    (c). Each plot shows the fraction of correctly localized queries ( y -axis) within
+    a certain angular distance to the reference orientation ( x -axis). Using local
+    SfM reconstructions (SfM) to estimate the camera poses also allows 2D-based methods
+    (Disloc, DenseVLAD) to achieve a orientational accuracy similar or superior to
+    3D-based methods (Hyperpoints (HP), Camera Pose Voting (CPV)).
+  Figure 5 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_5.jpg
+  Figure 5 caption: 'Localization accuracy for subsets of the reference poses, selected
+    to include more accurate camera poses: (a) Reference poses from either COLMAP
+    or VisualSFM passing both consistency checks (334 reference poses) and (b) reference
+    poses where both reconstructions pass both checks (142 poses). For each subset,
+    we evaluate both positional (left) and orientational (right) accuracy for 2D-
+    and 3D-based localization methods.'
+  Figure 6 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_6.jpg
+  Figure 6 caption: "2D image-based localization with and without positional priors.\
+    \ (a) Each plot shows the percentage of query images ( y -axis) localized within\
+    \ a certain distance to the reference pose ( x -axis). \u201C+GPS\u201D indicates\
+    \ restricting the search to a 100 meter radius around the given GPS prior. (b)\
+    \ The percentage of queries localized within 10, 20, 30 meters of the reference\
+    \ position ( y \u2013axis) obtained by DenseVLAD when varying the search radius\
+    \ ( x \u2013axis) around the GPS prior."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_7.jpg
+  Figure 7 caption: Examples of query images localized within 5m of the reference
+    poses by a 2D image-based method (Disloc (SR-SfM)) (left) but not by a 3D structure-based
+    method (Hyperpoints) (middle). Colored dots are the reference 2D points used for
+    computing the reference pose (blue) and the 3D points, associated to the reference
+    2D points, reprojected at the pose estimated by each method (red). The numbers
+    below the images show the positional and orientational errors. The right column
+    shows manually selected database PCI images that are most relevant to the queries.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_8.jpg
+  Figure 8 caption: Examples of query images localized within 5 m of the reference
+    position by a 3D structure-based method (Hyperpoints) (middle) but not by a 2D
+    image-based method (Disloc (SR-SfM)) (left). See caption of Fig. 7 for details.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Are_LargeScale_D_Models_Really_Necessary_for_Accurate_Visual_Localization\figure_9.jpg
+  Figure 9 caption: "Examples of query images localized within 30 m of the reference\
+    \ position by a 2D image-based method (Disloc (SR-SfM)) (left) but not by a 3D\
+    \ structure-based method (Hyperpoints) (middle). The right column shows manually\
+    \ selected database PCI images that are most relevant to queries. \u201C()\u201D\
+    \ besides the results for Disloc (SR-SfM) indicate that local SfM fails so the\
+    \ results are the same as Disloc (SR). See also the caption of Fig. 7."
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Akihiko Torii
+  Name of the last author: Torsten Sattler
+  Number of Figures: 10
+  Number of Tables: 6
+  Number of authors: 7
+  Paper title: Are Large-Scale 3D Models Really Necessary for Accurate Visual Localization?
+  Publication Date: 2019-09-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 System-Level Summary of Visual Localization Approaches
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Statistics on the Consistency of the Reconstructed SfM Poses
+      with Our Manual Annotations
+  Table 3 caption:
+    table_text: TABLE 3 Localization Performance Depending on the Positional and Orientational
+      Errors
+  Table 4 caption:
+    table_text: TABLE 4 Quantiles for Mean Reprojection Errors
+  Table 5 caption:
+    table_text: TABLE 5 Impact of Different Variations of SfM-on-the-Fly on Timings
+      and Performance
+  Table 6 caption:
+    table_text: TABLE 6 Additional Comparison on the Dubrovnik Dataset [52]
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2941876
+- Affiliation of the first author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, china
+  Affiliation of the last author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Hierarchical_Long_ShortTerm_Concurrent_Memory_for_Human_Interaction_Recognition\figure_1.jpg
+  Figure 1 caption: The framework of the proposed Hierarchical Long Short-Term Concurrent
+    Memory (H-LSTCM) for modeling human interactions in a human interaction scene.
+    The details of Co-LSTM unit is displayed in Fig. 2.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Hierarchical_Long_ShortTerm_Concurrent_Memory_for_Human_Interaction_Recognition\figure_2.jpg
+  Figure 2 caption: Illustration of a concurrent LSTM (Co-LSTM) unit in H-LSTCM.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Hierarchical_Long_ShortTerm_Concurrent_Memory_for_Human_Interaction_Recognition\figure_3.jpg
+  Figure 3 caption: Some recognition results of the proposed method on datasets.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Hierarchical_Long_ShortTerm_Concurrent_Memory_for_Human_Interaction_Recognition\figure_4.jpg
+  Figure 4 caption: Comparisons of human interaction prediction on BIT and UT.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Hierarchical_Long_ShortTerm_Concurrent_Memory_for_Human_Interaction_Recognition\figure_5.jpg
+  Figure 5 caption: Framework of E-H-LSTCM (a extensive version of H-LSTCM) on the
+    Volleyball activity with two sub-groups of persons.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Xiangbo Shu
+  Name of the last author: Jian Yang
+  Number of Figures: 5
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Hierarchical Long Short-Term Concurrent Memory for Human Interaction
+    Recognition
+  Publication Date: 2019-09-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Recognition Accuracy (%) on the BIT Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Recognition Accuracy (%) of Different Methods on UT Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Recognition Accuracy (%) of Different Methods on CAD
+  Table 4 caption:
+    table_text: TABLE 4 Recognition Accuracy (%) on Volleyball Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2942030
+- Affiliation of the first author: school of computer science and technology, university
+    of chinese academy of sciences, beijing, china
+  Affiliation of the last author: huawei noahs ark lab, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_1.jpg
+  Figure 1 caption: Overview of latent variable modeling for multimodal data (left)
+    and an example of cross-modal retrieval (right). In the common space, the solid
+    square indicates the image modality and the hollow square indicates the text modality.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_10.jpg
+  Figure 10 caption: Visualization of the absolute element-wise difference between
+    modality-specific GP kernels and the similarity matrix in the latent space on
+    PASCAL (Better viewed in color PDF).
+  Figure 2 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_2.jpg
+  Figure 2 caption: "(a) Multimodal GPLVM (mGPLVM): Independent priors are imposed\
+    \ over the latent model parameters ( X, \u03B8 1 , \u03B8 2 ). (b) Harmonized\
+    \ multimodal GPLVM (hmGPLVM): A joint prior in factored form is imposed over the\
+    \ parameters, which is used to harmonize the learning of X and kernel hyperparameters\
+    \ \u03B8 1 and \u03B8 2 ."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_3.jpg
+  Figure 3 caption: The proposed multimodal GPLVMs with harmonization.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_4.jpg
+  Figure 4 caption: The performance comparison of different methods for cross-modal
+    retrieval based on precision-recall curve.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_5.jpg
+  Figure 5 caption: Examples of cross-modal retrieval on Wiki dataset for the proposed
+    models with the trace harmonization. The top three retrieved results are presented.
+    We highlight the relevant keywords in the retrieved texts for comparison. Red
+    rectangle indicates a false positive example, and blue rectangle indicates the
+    ground truth instance.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_6.jpg
+  Figure 6 caption: "Variants of hmGPLVM and hm-SimGP: average mAP score of two cross-modal\
+    \ retrieval tasks as a function of the harmonization parameters ( \u03BC= \u03BC\
+    \ 1 = \u03BC 2 ) for PASCAL, Wiki, TVGraz, and MSCOCO datasets respectively."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_7.jpg
+  Figure 7 caption: "Variants of hm-RSimGP: average mAP score of two cross-modal retrieval\
+    \ tasks as a function of parameters \u03BC and \u03BB for the PASCAL dataset,\
+    \ where \u03BC= \u03BC 1 = \u03BC 2 , \u03BB= \u03BB 1 = \u03BB 2 ."
+  Figure 8 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_8.jpg
+  Figure 8 caption: Visualization of the discovered latent representations for the
+    proposed models with the trace harmonization prior on the TVGraz dataset (Better
+    viewed in color PDF).
+  Figure 9 Link: articels_figures_by_rev_year\2019\Harmonized_Multimodal_Learning_with_Gaussian_Process_Latent_Variable_Models\figure_9.jpg
+  Figure 9 caption: The mAP retrieval performance of hmGPLVM (tr) as a function of
+    the dimensionality of the shared latent space.
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Guoli Song
+  Name of the last author: Qi Tian
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Harmonized Multimodal Learning with Gaussian Process Latent Variable
+    Models
+  Publication Date: 2019-09-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Cross-Modal Retrieval Comparison in Terms of mAP on PASCAL
+      Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Cross-Modal Retrieval Comparison in Terms of mAP on Wiki and
+      TVGraz Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Cross-Modal Retrieval Comparison in Terms of mAP on MSCOCO
+      Dataset
+  Table 4 caption:
+    table_text: TABLE 4 The Riemannian Distance between Modality-Specific GP Kernels
+      and the Similarity Matrix of the Latent Representations on PASCAL
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2942028
+- Affiliation of the first author: department of electrical engineering, shanghai
+    jiao tong university, shanghai, china
+  Affiliation of the last author: department of electrical engineering and computer
+    science, university of california, merced, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_1.jpg
+  Figure 1 caption: Visual comparisons with existing frame interpolation approaches.
+    The proposed method MEMC-Net synthesizes the intermediate frame with clear edges
+    and shape. With the context information and residual blocks used, the improved
+    model MEMC-Net obtains better outcome with fine details around motion boundaries.
+  Figure 10 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_10.jpg
+  Figure 10 caption: Network architecture for frame enhancement.
+  Figure 2 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_2.jpg
+  Figure 2 caption: Frameworks of (a) the conventional MEMC-based approaches, (b)
+    the flow-based, and (c) the kernel-based models. The black, red, and blue text
+    boxes correspond to the conventional modules, network modules, and network layers,
+    respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_3.jpg
+  Figure 3 caption: Frameworks of (a) the sequential MEMC-Net model and (b) our proposed
+    MEMC-Net model.
+  Figure 4 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_4.jpg
+  Figure 4 caption: Network architecture of the proposed MEMC-Net and MEMC-Net. The
+    context extraction module and its generated contextual features and warped contextual
+    features are for MEMC-Net.
+  Figure 5 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_5.jpg
+  Figure 5 caption: Learned interpolation kernel k l r and bilinear kernel k d r .
+    The k l r is re-organized from the output feature blob generated by kernel estimation
+    network.
+  Figure 6 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_6.jpg
+  Figure 6 caption: Outside-in strategy for filling the flow holes. The green regions
+    indicate a hole, where the flow vectors are approximated by the average of 4-directional
+    available flow vectors from the non-hole regions.
+  Figure 7 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_7.jpg
+  Figure 7 caption: Effectiveness of the used outside-in strategy for hole filling.
+    (a) and (b) are the flow maps by zero filling and outside-in strategy. (c) and
+    (d) are the generated frames by them. Less artifact is generated by the outside-in
+    hole filling strategy. IE is short for interpolation error. The lower, the better.
+  Figure 8 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_8.jpg
+  Figure 8 caption: Proposed post-processing network.
+  Figure 9 Link: articels_figures_by_rev_year\2019\MEMCNet_Motion_Estimation_and_Motion_Compensation_Driven_Neural_Network_for_Vide\figure_9.jpg
+  Figure 9 caption: Effectiveness of the proposed post-processing network.
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Wenbo Bao
+  Name of the last author: Ming-Hsuan Yang
+  Number of Figures: 19
+  Number of Tables: 15
+  Number of authors: 5
+  Paper title: 'MEMC-Net: Motion Estimation and Motion Compensation Driven Neural
+    Network for Video Interpolation and Enhancement'
+  Publication Date: 2019-09-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 CNN-Based Frame Interpolation Methods
+  Table 10 caption:
+    table_text: TABLE 10 Average IE and NIE Values with Standard Variances on Middlebury
+      Benchmark
+  Table 2 caption:
+    table_text: TABLE 2 Analysis on Flow-Based Methods
+  Table 3 caption:
+    table_text: TABLE 3 Analysis on Kernel-Based Methods
+  Table 4 caption:
+    table_text: TABLE 4 Evaluation on Models with Fewer Model Parameters
+  Table 5 caption:
+    table_text: TABLE 5 Runtime of Frame Interpolation Methods (Seconds)
+  Table 6 caption:
+    table_text: TABLE 6 Runtime of the Proposed Models (Seconds)
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Evaluation on UCF101, Vimeo90K, and Middlebury
+      Datasets.
+  Table 8 caption:
+    table_text: TABLE 8 Quantitative Comparisons with the Sequential Model
+  Table 9 caption:
+    table_text: TABLE 9 Quantitative Results on the Middlebury Evaluation Set
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2941941
+- Affiliation of the first author: university of melbourne, parkville, vic, australia
+  Affiliation of the last author: university of melbourne, parkville, vic, australia
+  Figure 1 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_1.jpg
+  Figure 1 caption: When we recommend tags, extra texts about images are available
+    at training (a) but not available at inference (b).
+  Figure 10 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_10.jpg
+  Figure 10 caption: Variance of the gradients w.r.t. the student on Yfcc.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_2.jpg
+  Figure 2 caption: "Difference between ADIB and ADIM. The student S does not use\
+    \ privileged provisions, whereas the teacher T and the discriminator D do ( +\u03F1\
+    \ ). Adversarial and distillation losses are denoted by lines with single and\
+    \ double arrows, respectively. The equilibrium remains the same if the optional\
+    \ line is removed. Sampling with the GS trick is denoted by ."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_3.jpg
+  Figure 3 caption: Effects of the hyper-parameters in ADIM using 100, 1,000, and
+    10,000 training images on the Mnist dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_4.jpg
+  Figure 4 caption: Training curves of the student on Mnist.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_5.jpg
+  Figure 5 caption: Variance of the gradients w.r.t. the student on Mnist.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_6.jpg
+  Figure 6 caption: "Accuracy of the teacher on Mnist with varying \u03BC ."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_7.jpg
+  Figure 7 caption: Cosine similarity between the gradients of adversarial and distillation
+    losses w.r.t. the student (a) or the teacher (b).
+  Figure 8 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_8.jpg
+  Figure 8 caption: Effects of the hyper-parameters in ADIM using the most popular
+    tags on the Yfcc dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Adversarial_Distillation_for_Learning_with_Privileged_Provisions\figure_9.jpg
+  Figure 9 caption: Training curves of the student on Yfcc.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Xiaojie Wang
+  Name of the last author: Jianzhong Qi
+  Number of Figures: 11
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Adversarial Distillation for Learning with Privileged Provisions
+  Publication Date: 2019-09-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Accuracy (in terms of percent) in Deep Model Compression (
+      n n Is the Number of Training Images)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Storage and Runtime Complexity of the Student ( S S) and the
+      Teacher ( T T) in the Task of Deep Model Compression
+  Table 3 caption:
+    table_text: TABLE 3 Storage and Training Complexity in Deep Model Compression
+  Table 4 caption:
+    table_text: TABLE 4 Accuracy in Image Tag Recommendation on Yfcc
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2942592

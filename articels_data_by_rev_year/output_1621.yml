@@ -1,0 +1,930 @@
+- Affiliation of the first author: department of computer science and engineering,
+    texas a&m university, college station, tx, usa
+  Affiliation of the last author: department of computer science and engineering,
+    texas a&m university, college station, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\ChannelNets_Compact_and_Efficient_Convolutional_Neural_Networks_via_ChannelWise_\figure_1.jpg
+  Figure 1 caption: "Illustrations of different compact convolutions. Part (a) shows\
+    \ the depth-wise separable convolution, which is composed of a depth-wise convolution\
+    \ and a 1\xD71 convolution. Part (b) shows the case where the 1\xD71 convolution\
+    \ is replaced by a 1\xD71 group convolution. Part (c) illustrates the use of the\
+    \ proposed group channel-wise convolution for information fusion. Part (d) shows\
+    \ the proposed depth-wise separable channel-wise convolution, which consists of\
+    \ a depth-wise convolution and a channel-wise convolution. For channel-wise convolutions\
+    \ in (c) and (d), the same color represents shared weights."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\ChannelNets_Compact_and_Efficient_Convolutional_Neural_Networks_via_ChannelWise_\figure_2.jpg
+  Figure 2 caption: "An illustration of the convolutional classification layer. The\
+    \ left part describes the original output layers, i.e., a global average pooling\
+    \ layer and a fully-connected classification layer. The global pooling layer reduces\
+    \ the spatial size d f \xD7 d f to 1\xD71 while keeping the number of channels.\
+    \ Then the fully-connected classification layer changes the number of channels\
+    \ from m to n , where n is the number of classes. The right part illustrates the\
+    \ proposed convolutional classification layer, which performs a single 3-D convolution\
+    \ with a kernel size of d f \xD7 d f \xD7(m\u2212n+1) and no padding. The convolutional\
+    \ classification layer saves a significant amount of parameters and computation."
+  Figure 3 Link: articels_figures_by_rev_year\2020\ChannelNets_Compact_and_Efficient_Convolutional_Neural_Networks_via_ChannelWise_\figure_3.jpg
+  Figure 3 caption: "Illustrations of the group module (GM) and the group channel-wise\
+    \ module (GCWM). Part (a) shows GM, which has two depth-wise separable convolutional\
+    \ layers. Note that 1\xD71 convolutions is replaced by 1\xD71 group convolutions\
+    \ to save computations. A skip connection is added to facilitate model training.\
+    \ GCWM is described in part (b). Compared to GM, it has a group channel-wise convolution\
+    \ to fuse information from different groups."
+  Figure 4 Link: articels_figures_by_rev_year\2020\ChannelNets_Compact_and_Efficient_Convolutional_Neural_Networks_via_ChannelWise_\figure_4.jpg
+  Figure 4 caption: Illustrations of two different convolutional classification layers
+    introduced in Sections 3.4 and 3.7, respectively. Here, the classification layer
+    takes m=5 features as inputs and predicts n=3 classes. The prediction of each
+    class is based on m-n+1=3 features. (a) An example of the convolutional classification
+    layer. The same color indicates the same weight, indicating the same importance.
+    We can see the restriction that adjacent features have the same importance to
+    adjacent classes. (b) An example of the convolutional classification layer without
+    weight-sharing. There is no restriction on the weights.
+  Figure 5 Link: articels_figures_by_rev_year\2020\ChannelNets_Compact_and_Efficient_Convolutional_Neural_Networks_via_ChannelWise_\figure_5.jpg
+  Figure 5 caption: An example of the weight patterns in the fully-connected classification
+    layer of ChannelNet-v1. Part (a) shows the weight matrix of the fully-connected
+    classification layer. We can see that the weights are sparsely distributed, as
+    most of the weights are in blue color, which indicates zero or near zero values.
+    Part (b) gives a close look of weights in a small region. The histogram in part
+    (c) statistically shows the sparsity of weights.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.78
+  Name of the first author: Hongyang Gao
+  Name of the last author: Shuiwang Ji
+  Number of Figures: 5
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: 'ChannelNets: Compact and Efficient Convolutional Neural Networks via
+    Channel-Wise Convolutions'
+  Publication Date: 2020-02-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 ChannelNets Architectures
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison Between ChannelNet-v1 and Other CNNs in Terms of
+      the Top-1 Accuracy on the ImageNet Validation Set, the Number of Total Parameters,
+      and the Number of FLOPs Needed for Classifying an Image
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Between MobileNetV2 and MobileNetV2 With Group
+      Channel-Wise Convolutions (MobileNetV2+GCWConv) in Terms of the Top-1 Accuracy
+      on the ImageNet Validation Set, the Number of Total Parameters, and the Number
+      of FLOPs
+  Table 4 caption:
+    table_text: TABLE 4 Comparison Between ChannelNets and Other Compact CNNs With
+      Width Multipliers in Terms of the Top-1 Accuracy on the ImageNet Validation
+      Set, the Number of Total Parameters, and the Number of FLOPs
+  Table 5 caption:
+    table_text: TABLE 5 Comparison Between ChannelNet-v1 and ChannelNet-v1 Without
+      Group Channel-Wise Convolutions, Denoted as ChannelNet-v1(-)
+  Table 6 caption:
+    table_text: TABLE 6 Comparison Between ChannelNet-v1 Using With Different Numbers
+      of Groups in Terms of the Top-1 Accuracy on the ImageNet Validation Set, and
+      the Number of Total Parameters
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of ChannelNet-v1 Using the Convolutional Classification
+      Layer With Different Class Orders in Terms of the Top-1 Accuracy and Number
+      of Parameters
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of ChannelNet-v1 Using the Convolutional Classification
+      Layer Without Weight-Sharing With Different Class Orders in Terms of the Top-1
+      Accuracy and Number of Parameters
+  Table 9 caption:
+    table_text: TABLE 9 Comparison Between ChannelNet-v3 With Different Classification
+      Layers in Terms of the Top-1 Accuracy on the ImageNet Validation Set, and the
+      Number of Total Parameters
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2975796
+- Affiliation of the first author: hangzhou dianzi university, hangzhou, zhejiang,
+    china
+  Affiliation of the last author: bnrist, kliss, school of software, tsinghua university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Deep_MultiView_Enhancement_Hashing_for_Image_Retrieval\figure_1.jpg
+  Figure 1 caption: Illustration of the key idea of D-MVE-Hash. The core part of D-MVE-Hash
+    called stability evaluation is used to obtain view-relation matrix in step1. Dotted
+    arrows indicate the path of back propagation. The memory network is used to memorize
+    the view-relation matrix which is calculated by the stability evaluation method
+    during training. In hash codes generation step (e.g., step2), we directly use
+    the memory network to produce the view-relation matrix. After feeding the generated
+    multi-view and basic binary codes with the view-relation matrix to following fusion
+    and concat layers, D-MVE-Hash outputs fusion binary representation of images for
+    retrieval.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Deep_MultiView_Enhancement_Hashing_for_Image_Retrieval\figure_2.jpg
+  Figure 2 caption: "The proposed deep multi-view enhancement hashing (D-MVE-Hash)\
+    \ framework. (1) In the preprocessing stage, the model picks up similar images\
+    \ from the dataset by labels, and attaches random noise to these images as part\
+    \ of input which is used to get view-relation matrix. The output of the model\
+    \ is q bits binary code. ( b i \u2208[\u22121,1 ] q while training) (2) \u201C\
+    Basic \u223C \u201D means basic binary code which is generated by basic CNN based\
+    \ hash learning model. (3) View stability evaluation E m (Q) calculates view-relation\
+    \ matrix. This part is replaced by memory network during the testing process (step2)."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Deep_MultiView_Enhancement_Hashing_for_Image_Retrieval\figure_3.jpg
+  Figure 3 caption: Illustration of the data enhancement process. The left half of
+    the figure shows the double-sample hash mapping constraint rules (e.g., Eq. (5))
+    which are used to embed features into the identical Hamming space.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Deep_MultiView_Enhancement_Hashing_for_Image_Retrieval\figure_4.jpg
+  Figure 4 caption: (a) Retrieval results of single-view hashing method and the proposed
+    multi-view hashing method with the same Hamming radius. (b) The mean average precision
+    (mAP) for different code lengths and Hamming radius on CIFAR-10 dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Deep_MultiView_Enhancement_Hashing_for_Image_Retrieval\figure_5.jpg
+  Figure 5 caption: (a) The D-MVE-Hash (+R) training loss with 16 bits, 128 bits and
+    256 bits hash codes. (b) The D-MVE-Hash (+C) training loss with 16 bits, 128 bits
+    and 256 bits hash codes.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Deep_MultiView_Enhancement_Hashing_for_Image_Retrieval\figure_6.jpg
+  Figure 6 caption: The mean average precision (mAP) for the single-view hashing method
+    (the outputs is the basic binary codes), MV-Hash (the outputs is the multi-view
+    binary codes) and D-MVE-Hash (the outputs is the fusion binary codes) using 96
+    bits hash code.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Deep_MultiView_Enhancement_Hashing_for_Image_Retrieval\figure_7.jpg
+  Figure 7 caption: The receiver operating characteristic curves (ROC) for the fusion
+    binary codes using 48 bits, 64 bits and 96 bits hash codes.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Deep_MultiView_Enhancement_Hashing_for_Image_Retrieval\figure_8.jpg
+  Figure 8 caption: The top 10 retrieved images before and after enhancement.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Chenggang Yan
+  Name of the last author: Yue Gao
+  Number of Figures: 8
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Deep Multi-View Enhancement Hashing for Image Retrieval
+  Publication Date: 2020-02-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Experiments (64 bits, +R, CIAFR-10)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Mean Average Precision (mAP) of Re-Ranking for Different
+      Bits on the CIFAR-10 (Left), NUS-WIDE (Middle) and MS-COCO (Right) Dataset
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2975798
+- Affiliation of the first author: samsung research institute, campinas, sp, brazil
+  Affiliation of the last author: "ibisc, univ evry, universit\xE9 paris-saclay, evry,\
+    \ france"
+  Figure 1 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_1.jpg
+  Figure 1 caption: The proposed multi-task approach for human pose estimation and
+    action recognition. Our method provides 2D3D pose estimation from single images
+    or frame sequences. Pose and visual information are used to predict actions in
+    a unified framework and both predictions are refined by K prediction blocks.
+  Figure 10 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_10.jpg
+  Figure 10 caption: Predicted 3D poses from RGB images for both 2D and 3D datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_2.jpg
+  Figure 2 caption: Overview of the proposed multi-task network architecture. The
+    entry-flow extracts feature maps from the input images, which are fed through
+    a sequence of CNNs composed of prediction blocks (PB), downscaling and upscaling
+    units (DU and UU), and simple (skip) connections. Each PB outputs supervised pose
+    and action predictions that are refined by further blocks and units. The information
+    flow related to pose estimation and action recognition are independently propagated
+    from one prediction block to another, respectively depicted by blue and red arrows.
+    See Fig. 3 and Fig. 4 for details about DU, UU, and PB.
+  Figure 3 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_3.jpg
+  Figure 3 caption: "Network elementary units: in (a) residual unit (RU), in (b) downscaling\
+    \ unit (DU), and in (c) upscaling unit (UU). N fin and N fout represent the input\
+    \ and output number of features, H f \xD7 W f is the feature map size, and k is\
+    \ the filter size."
+  Figure 4 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_4.jpg
+  Figure 4 caption: Network architecture of prediction blocks (PB) for a downscaling
+    pyramid. With the exception of the PB in the first pyramid, all PB get as input
+    features from the previous pyramid in the same level ( mathcal Xtp-1,l , mathcal
+    Yp-1,l ), and features from lower or higher levels ( mathcal Xtp,lmp 1 , mathcal
+    Yp,lmp 1 ), depending if it composes a downscaling or an upscaling pyramid, respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_5.jpg
+  Figure 5 caption: Extraction of (a) pose and (b) appearance features.
+  Figure 6 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_6.jpg
+  Figure 6 caption: Decoupled poses for action prediction. The weight matrix mathbf
+    Wprime h is initialized with a copy of mathbf Wh after the main training process.
+    The same is done to depth maps ( mathbf Wd and mathbf d ).
+  Figure 7 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_7.jpg
+  Figure 7 caption: Two sequences of RGB images (top), predicted supervised poses
+    (middle), and decoupled action poses (bottom).
+  Figure 8 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_8.jpg
+  Figure 8 caption: Drift of decoupled probability maps from their original positions
+    (head, hands and feet) used as an attention mechanism for appearance features
+    extraction. Bounding boxes are drawn here only to highlight the regions with high
+    responses. Each color corresponds to a specific body part (see Fig. 7).
+  Figure 9 Link: articels_figures_by_rev_year\2020\MultiTask_Deep_Learning_for_RealTime_D_Human_Pose_Estimation_and_Action_Recognit\figure_9.jpg
+  Figure 9 caption: Inference speed of the proposed method considering 2D (a) and
+    3D (b,c) scenarios. A single multi-task model was trained for each scenario. The
+    trained models were cut a posteriori for inference analysis. Markers with gradient
+    colors from purple to red represent respectively network inferences from faster
+    to slower.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.62
+  Name of the first author: Diogo C. Luvizon
+  Name of the last author: Hedi Tabia
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Multi-Task Deep Learning for Real-Time 3D Human Pose Estimation and
+    Action Recognition
+  Publication Date: 2020-02-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison With Previous Work on Human3.6M Evaluated Using
+      the Mean Per Joint Position Error (MPJPE, in Millimeters) Metric on Reconstructed
+      Pzoses
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results for Action Recognition on Penn Action
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Results on NTU Cross-Subject for 3D Action Recognition
+  Table 4 caption:
+    table_text: TABLE 4 The Influence of the Network Architecture on Pose Estimation
+      and on Action Recognition, Evaluated Respectively on MPII Validation Set (PCKh0.5,
+      Single-Crop) and on Penn Action (Classification Accuracy, Single-Clip)
+  Table 5 caption:
+    table_text: TABLE 5 Results With Pose and Appearance Features Alone, Combined
+      Pose and Appearance Features, and Decoupled Poses
+  Table 6 caption:
+    table_text: TABLE 6 Results Comparing the Effect of Single and Multi-Task Training
+      for Action Recognition
+  Table 7 caption:
+    table_text: TABLE 7 Results on All Tasks With the Proposed Multi-Task Model Compared
+      to Recent Approaches Using RGB Images andor Estimated Poses on MPII PCKh Validation
+      Set (Higher is Better), Human3.6M MPJPE (Lower is Better), Penn Action and NTU
+      RGB+D Action Classification Accuracy (Higher is Better)
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2976014
+- Affiliation of the first author: tum camp, garching, germany
+  Affiliation of the last author: tum camp, siemens ct, munich, germany
+  Figure 1 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_1.jpg
+  Figure 1 caption: Reconstruction of a person playing with a balloon. Our system
+    takes a single RGB-D stream as input (a) and warps each frame towards the canonical
+    model in order to grow it. Then the model is warped back towards the live depth
+    for display to the user (b). The final output is a complete 3D model (c), whose
+    colours would diffuse into each other if evolved with the same warp field (d),
+    but become consistent if Laplacian eigenfunction signatures are matched for voxel
+    correspondence (e). This example has been reconstructed with Sobolev gradient
+    flow.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_10.jpg
+  Figure 10 caption: Warped live frames of the Umbrella sequence from VolumeDeform
+    [19]. Damped AKVF, accelerated optimization and VolumeDeform occasionally over-smooth
+    thin elements such as the tip and strap, while Sobolev gradient flow yields similar
+    or higher level of detail as VolumeDeform without artifacts at the edge.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_2.jpg
+  Figure 2 caption: "Non-rigid fusion pipeline. First we generate the projective TSDF\
+    \ \u03D5 i proj of an input RGB-D pair from the current camera pose estimate.\
+    \ Then we warp it towards the current canonical model TSDF \u03D5 i\u22121 model\
+    \ using our variational minimization scheme, obtaining \u03D5 i warped . Next,\
+    \ we optionally estimate voxel correspondences between \u03D5 i proj and \u03D5\
+    \ i warped in order to transfer colour to the warped TSDF. Afterwards we fuse\
+    \ \u03D5 i warped into the canonical model, obtaining its updated state \u03D5\
+    \ i model . Finally, we run a backward warp from \u03D5 i model to \u03D5 i proj\
+    \ to visualize the live frame to the user."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_3.jpg
+  Figure 3 caption: "Parameter analysis for E defSobolev : (a) a small neigbourhood\
+    \ s is not able to fully overcome the effects of noise; (b) no motion regularization\
+    \ results in inconsistent geometry; (c) the default setting s=7 , w smooth =0.2\
+    \ , \u03BB=0.1 yields a detailed reconstruction."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_4.jpg
+  Figure 4 caption: "Parameter analysis for E defKilling : (a) no level set property\
+    \ preservation; (b) no motion regularization; (c) conventional motion smoothness\
+    \ without a Killing component; (d) pure AKVF condition; (e) default setting w\
+    \ ls =0.2 , w k =0.5 , \u03B3=0.1 ."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_5.jpg
+  Figure 5 caption: 'Texture transfer from frame 30 to 31 of the Swing sequence of
+    the MIT dataset [90]: (a) reference texture; (b) colour propagated with Edef from
+    Section 4, showing diffusion around moving parts; (c) colour propagated with Edef
+    combined with the eigencolouring term Eeig .'
+  Figure 6 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_6.jpg
+  Figure 6 caption: Lowest-frequency Theta 1 -eigencolourings of several poses of
+    the same subject. The contours form similar patterns in all cases and saturate
+    around the skirt folds, which is the most motile region.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_7.jpg
+  Figure 7 caption: Texture transfer via implicit correspondence energy on the MIT
+    dataset [90] Squat (top) and Swing (bottom) sequences. When there is no abrupt
+    motion, Eeig is sufficient to preserve a stable texture. However, under larger
+    motion texture diffusion occurs as blue replaces purple on the skirt, and the
+    geometric quality suffers as we cannot recover the arm.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_8.jpg
+  Figure 8 caption: Comparison of iterations required by our three variational approaches
+    to converge on a slow (left) and fast (right) motion sequence. The average number
+    of iterations per frame for each method is displayed as a dotted line. The number
+    of iterations taken by EdefKilling is reduced by 13 percent with EdefSobolev and
+    by more than 50 percent by Eaccelerated .
+  Figure 9 Link: articels_figures_by_rev_year\2020\Variational_Level_Set_Evolution_for_NonRigid_D_Reconstruction_From_a_Single_Dept\figure_9.jpg
+  Figure 9 caption: Non-rigid reconstruction from a single depth stream with damped
+    AKVF regularizer ( EdefKilling ). We obtain a geometrically consistent model after
+    a 360 circ loop under topological changes and large motion.
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Miroslava Slavcheva
+  Name of the last author: Slobodan Ilic
+  Number of Figures: 13
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Variational Level Set Evolution for Non-Rigid 3D Reconstruction From
+    a Single Depth Camera
+  Publication Date: 2020-02-24 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2976065
+- Affiliation of the first author: department of information engineering, the chinese
+    university of hong kong, sha tin, hong kong
+  Affiliation of the last author: school of computer science and engineering, nanyang
+    technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_1.jpg
+  Figure 1 caption: Examples demonstrate the effectiveness of the proposed components
+    in LiteFlowNet for i) feature warping, ii) cascaded flow inference, and iii) flow
+    regularization. Enabled components are indicated with bold black fonts.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_2.jpg
+  Figure 2 caption: "The network structure of LiteFlowNet. For the ease of representation,\
+    \ only a design of 3-level pyramid is shown. Given an image pair ( I 1 and I 2\
+    \ ), NetC generates two pyramids of high-level features ( F k ( I 1 ) in pink\
+    \ and F k ( I 2 ) in red, k\u2208[1,3] ). NetE yields multi-scale flow fields\
+    \ such that each of them is generated by a cascaded flow inference module M :\
+    \ S (in blue color, including a descriptor matching unit M and a sub-pixel refinement\
+    \ unit S ) and a regularization module R (in green color). Flow inference and\
+    \ regularization modules correspond to data fidelity and regularization terms\
+    \ in conventional energy minimization methods, respectively."
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_3.jpg
+  Figure 3 caption: "A cascaded flow inference module M : S in NetE. It consists of\
+    \ a descriptor matching unit M and a sub-pixel refinement unit S . In M , f-warp\
+    \ transforms the high-level feature F 2 to F \u02DC 2 using the upscaled (by a\
+    \ factor of 2) flow estimate 2 u \u21912 from the previous pyramid level. In S\
+    \ , F 2 is warped by the flow estimate u m resulting from M . Residual flow \u0394\
+    \ u m is inferred from the cost volume V . \u0394 u s is used to correct u m due\
+    \ to the pixel-level cost aggregation. In comparison to the residual flow \u0394\
+    \ u m , more flow adjustment can be found on flow boundaries in \u0394 u s ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_4.jpg
+  Figure 4 caption: "Folding and packing of f-lconv filters g . The (x,y) -entry of\
+    \ a 3D tensor G \xAF c (cube on the right) with size H\xD7W\xD7 \u03C9 2 is a\
+    \ 3D column vector with length w 2 . It corresponds to the unfolded f-lconv filter\
+    \ g x,y,c (plane on the right) with size \u03C9\xD7\u03C9 to be applied at position\
+    \ (x,y) and channel c in the vector-valued feature F ."
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_5.jpg
+  Figure 5 caption: "A visualization of the learned filters with sizes 3\xD73 and\
+    \ 5\xD75 for the horizontal flow component at level 6 (top 2 rows) and level 3\
+    \ (bottom 2 rows) in the sub-pixel refinement unit of LiteFlowNet2, respectively."
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_6.jpg
+  Figure 6 caption: "An example of coarse-to-fine flow fields generated from LiteFlowNet\
+    \ [13] trained on Chairs \u2192 Things3D. Each of the flow fields is upsampled\
+    \ to the same resolution as the ground truth by bilinear interpolation prior to\
+    \ computing AEE."
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_7.jpg
+  Figure 7 caption: "Examples of flow fields from different methods on Sintel training\
+    \ sets (clean pass: First to second rows, final pass: Third to fourth rows) and\
+    \ testing sets (clean pass: Fifth row, final pass: last row). Fine details are\
+    \ well preserved and less artifacts can be observed in the flow fields of LiteFlowNet2\
+    \ and LiteFlowNet2-ft. For the best visual comparison, it is recommended to enlarge\
+    \ the figure electronically. Note: 1 At the time of submission, the authors [22]\
+    \ only release the trained model of PWC-Net that uses a larger feature encoder\
+    \ (overall footprint: 9.37M versus 8.75M) and has a slower runtime (41.12 ms versus\
+    \ 39.63 ms) trained on Chairs \u2192 Things3D."
+  Figure 8 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_8.jpg
+  Figure 8 caption: "Examples of flow fields from different methods on the KITTI 2012\
+    \ and 2015 training sets (2012: First to second rows, 2015: Third to fourth row)\
+    \ and testing sets (2012: Fifth row, 2015: Last row). For the best visual comparison,\
+    \ it is recommended to enlarge the figure electronically. Note: 1 At the time\
+    \ of submission, the authors [22] only release the trained model of PWC-Net that\
+    \ uses a larger feature encoder (overall footprint: 9.37M versus 8.75M) and has\
+    \ a slower runtime (41.12 ms versus 39.63 ms) trained on Chairs \u2192 Things3D."
+  Figure 9 Link: articels_figures_by_rev_year\2020\A_Lightweight_Optical_Flow_CNN_Revisiting_Data_Fidelity_and_Regularization\figure_9.jpg
+  Figure 9 caption: "Examples of flow fields from different variants of LiteFlowNet\
+    \ trained on Chairs with some of the components disabled. LiteFlowNet is denoted\
+    \ as \u201CAll\u201D. W = Feature Warping, M = Descriptor Matching, S = Sub-Pixel\
+    \ Refinement, R = Regularization."
+  First author gender probability: 0.93
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Xiaoou Tang
+  Name of the last author: Chen Change Loy
+  Number of Figures: 9
+  Number of Tables: 9
+  Number of authors: 2
+  Paper title: "A Lightweight Optical Flow CNN \u2014Revisiting Data Fidelity and\
+    \ Regularization"
+  Publication Date: 2020-02-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 A Comparison of the Major Components Used in the State-of-the-Art
+      Optical Flow CNNs
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 AEE and Runtime (for Sintel) Measured at Different Components
+      and Pyramid Levels of LiteFlowNet [13] Trained on Things3D
+  Table 3 caption:
+    table_text: TABLE 3 AEE of LiteFlowNet2 Trained on Chairs Using Different Training
+      Protocols Against LiteFlowNet [13]
+  Table 4 caption:
+    table_text: TABLE 4 AEE on the Chairs Testing Set
+  Table 5 caption:
+    table_text: TABLE 5 A comparison on the Performance of the State-of-the-Art Optical
+      Flow Methods in Terms of AEE
+  Table 6 caption:
+    table_text: TABLE 6 AEE of LiteFlowNet2 Fine-Tuned on KITTI Under Different Configurations
+  Table 7 caption:
+    table_text: TABLE 7 Number of Training Parameters and Runtime
+  Table 8 caption:
+    table_text: TABLE 8 AEE of Different Variants of LiteFlowNet Trained on Chairs
+      Dataset With Some of the Components Disabled
+  Table 9 caption:
+    table_text: TABLE 9 AEE and Runtime of LiteFlowNet2 Trained on Chairs Under Different
+      Cost-Volume Settings
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2976928
+- Affiliation of the first author: department of electrical engineering, the chinese
+    university of hong kong, hong kong sar, china
+  Affiliation of the last author: department of electrical engineering, the chinese
+    university of hong kong, hong kong sar, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_1.jpg
+  Figure 1 caption: Our proposed part-aware and aggregation network can accurately
+    predict intra-object part locations even when objects are partially occluded.
+    Such part locations can assist accurate 3D object detection. The predicted intra-object
+    part locations by our proposed method are visualized by interpolated colors of
+    eight corners. Best viewed in colors.
+  Figure 10 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_10.jpg
+  Figure 10 caption: Statistics of predicted intra-object part location errors for
+    the car class on the val split of KITTI dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_2.jpg
+  Figure 2 caption: 'The overall framework of our part-aware and aggregation neural
+    network for 3D object detection. It consists of two stages: (a) the part-aware
+    stage-I for the first time predicts intra-object part locations and generates
+    3D proposals by feeding the point cloud to our encoder-decoder network. (b) The
+    part-aggregation stage-II conducts the proposed RoI-aware point cloud pooling
+    operation to aggregate the part information from each 3D proposal, then the part-aggregation
+    network is utilized to score boxes and refine locations based on the part features
+    and information from stage-I.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_3.jpg
+  Figure 3 caption: Comparison of voxelized point cloud and raw point cloud in autonomous
+    driving scenarios. The center of each non-empty voxel is considered as a point
+    to form the voxelized point cloud. The voxelized point cloud is approximately
+    equivalent to the raw point cloud and 3D shapes of 3D objects are well kept for
+    3D object detection.
+  Figure 4 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_4.jpg
+  Figure 4 caption: Illustration of intra-object part locations for foreground points.
+    Here we use interpolated colors to indicate the intra-object part location of
+    each point. Best viewed in colors.
+  Figure 5 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_5.jpg
+  Figure 5 caption: Illustration of bin-based center localization. The surrounding
+    area along X and Y axes of each foreground point is split into a series of bins
+    to locate the object center.
+  Figure 6 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_6.jpg
+  Figure 6 caption: Illustration of the proposed RoI-aware point cloud feature pooling.
+    The previous point cloud pooling approach could not effectively encode the proposals
+    geometric information (blue dashed boxes). Our proposed RoI-aware point cloud
+    pooling method could encode the boxs geometric information (the green box) by
+    keeping the empty voxels, which could be efficiently processed by following sparse
+    convolution.
+  Figure 7 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_7.jpg
+  Figure 7 caption: The sparse convolution based encoder-decoder backbone network
+    of part-aware stage-I of the Part- A 2 -anchor model.
+  Figure 8 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_8.jpg
+  Figure 8 caption: Recall versus training iterations for different center regression
+    losses of Part- A 2 -free net and Part- A 2 -anchor net. The results are generated
+    according to the generated proposals of Part- A 2 -free net and Part- A 2 -anchor
+    net on the car class of the val split with IoU threshold 0.5.
+  Figure 9 Link: articels_figures_by_rev_year\2020\From_Points_to_Parts_D_Object_Detection_From_Point_Cloud_With_PartAware_and_Part\figure_9.jpg
+  Figure 9 caption: Ratios of high-scored false positives for the car class on the
+    val split of KITTI dataset that are due to poor localization, confusion with other
+    objects, or confusion with background or unlabeled objects.
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Shaoshuai Shi
+  Name of the last author: Hongsheng Li
+  Number of Figures: 11
+  Number of Tables: 15
+  Number of authors: 5
+  Paper title: 'From Points to Parts: 3D Object Detection From Point Cloud With Part-Aware
+    and Part-Aggregation Network'
+  Publication Date: 2020-02-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Recall (With 100 Proposals) of the Proposal Generation Stage
+      by Different Backbone Network and Different Proposal Generation Strategy
+  Table 10 caption:
+    table_text: TABLE 10 Performance Evaluation on KITTI Official Test Server (Test
+      Split)
+  Table 2 caption:
+    table_text: "TABLE 2 Effects of RoI-Aware Point Cloud Pooling by Replacing the\
+      \ RoI-Aware Pooling or the Sparse Convolution, and the Pooling Sizes of all\
+      \ the Settings are 14\xD714\xD714 14\xD714\xD714"
+  Table 3 caption:
+    table_text: TABLE 3 Effects of Using Different RoI-Aware Pooling Sizes in Our
+      Part-Aggregation Stage
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Several Different Part-Aggregation Network Structures
+  Table 5 caption:
+    table_text: TABLE 5 Recall of Generated Proposals by Compared Methods With Different
+      Numbers of RoIs and 3D IoU Thresholds for the Car Class at Moderate Difficulty
+      of the Val Split
+  Table 6 caption:
+    table_text: TABLE 6 3D Object Detection Results of Part- A 2 A2-Free Net and Part-
+      A 2 A2-Anchor Net on the KITTI val Split Set
+  Table 7 caption:
+    table_text: TABLE 7 Effects of Intra-Object Part Location Supervisions and Stage-II
+      Refinement Module, and the Evaluation Metrics are the Recall and Average Precision
+      with 3D Rotated IoU Threshold 0.7
+  Table 8 caption:
+    table_text: TABLE 8 Effects of 3D IoU Guided Box Scoring for Ranking the Quality
+      of the Predicted 3D Boxes
+  Table 9 caption:
+    table_text: TABLE 9 The Number of Parameters on Proposal Generation Head, and
+      the Number of Generated Boxes With Different Number of Classes for Part- A 2
+      A2-Free Model and Part- A 2 A2-Anchor Model
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2977026
+- Affiliation of the first author: institute for infocomm research, agency for science,
+    technology and research (astar), singapore
+  Affiliation of the last author: school of computer science, the university of adelaide,
+    adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Ordered_or_Orderless_A_Revisit_for_Video_Based_Person_ReIdentification\figure_1.jpg
+  Figure 1 caption: 'Motivation. First two rows: existing methods adopts RNNs to model
+    temporal dependencies for VPRe-id. Last two rows: human beings can easily performs
+    this on image sequences with a random order.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Ordered_or_Orderless_A_Revisit_for_Video_Based_Person_ReIdentification\figure_2.jpg
+  Figure 2 caption: "Diagnostic analysis of a typical \u201CCNN-RNN\u201D framework\
+    \ in [20]. we consider a single RNN without temporal average pooling. \u201CS-CNN-RNN-Ordinal\u201D\
+    \ and \u201CS-CNN-RNN-Shuffled\u201D stands for a single RNN with ordinal, shuffled\
+    \ videos, respectively. \u201CS-CNN-RNN-Stack\u201D means RNN with a stack of\
+    \ the same frames."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Ordered_or_Orderless_A_Revisit_for_Video_Based_Person_ReIdentification\figure_3.jpg
+  Figure 3 caption: "Detailed results of different \u201CCNN-RNN\u201D recipes under\
+    \ different training and testing settings. For the results of [20], we follow\
+    \ the original protocol and use the pre-computed optical flow using the original\
+    \ ordinal video sequences. For the remaining methods, the optical flow input is\
+    \ disabled."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Ordered_or_Orderless_A_Revisit_for_Video_Based_Person_ReIdentification\figure_4.jpg
+  Figure 4 caption: CMC Rank 1 accuracy of Ensemble-RW and Ensemble-CRF for different
+    sample rate K . We show how the sample rate impacts the accuracy of our solution.
+    We report the results of K=1,10,30 , and Infinite , in which K=Infinite stands
+    for the case where only the first image in the video is sampled. The experimental
+    results show that the accuracy increases with the decrements of K .
+  Figure 5 Link: articels_figures_by_rev_year\2020\Ordered_or_Orderless_A_Revisit_for_Video_Based_Person_ReIdentification\figure_5.jpg
+  Figure 5 caption: "Comparison of different base rankers. We report the results of\
+    \ three different rankers. The baseline method in [41], which disable the functionality\
+    \ to refine the affinities between probe and gallery images, is integrated in\
+    \ our system as \u201CEnsemble-Basline\u201D. Our results on two datasets show\
+    \ that an ensemble of stronger base ranker perform better."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Ordered_or_Orderless_A_Revisit_for_Video_Based_Person_ReIdentification\figure_6.jpg
+  Figure 6 caption: Comparison with other state-of-the-art methods on MARS.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Ordered_or_Orderless_A_Revisit_for_Video_Based_Person_ReIdentification\figure_7.jpg
+  Figure 7 caption: Comparison with other state-of-the-art methods on PRID-2011 and
+    iLIDS-VID dataset.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.79
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Le Zhang
+  Name of the last author: Chunhua Shen
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 8
+  Paper title: 'Ordered or Orderless: A Revisit for Video Based Person Re-Identification'
+  Publication Date: 2020-02-28 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2976969
+- Affiliation of the first author: department of computer science and statistics,
+    university of california, los angeles, los angeles, ca, usa
+  Affiliation of the last author: department of computer science and statistics, university
+    of california, los angeles, los angeles, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_1.jpg
+  Figure 1 caption: The generalized Earley parser segments and labels the sequence
+    data into a label sentence in the language of a given grammar. The input of the
+    parser is a matrix of probabilities of each label for each frame, given by an
+    arbitrary classifier. Based on the classifier output, we compute prefix probabilities
+    for different label prefices. The parsing process is achieved by expanding a grammar
+    prefix tree and searching heuristically in this tree according to the prefix probabilities.
+    Future predictions can also be made based on the grammar prefix tree. In the figure,
+    thicker edges indicate higher probabilities and e denotes the end of a sentence.
+  Figure 10 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_10.jpg
+  Figure 10 caption: Frame-wise prediction accuracy versus prediction duration on
+    the CAD-120 dataset. GEP stands for the generalized Earley parser.
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_2.jpg
+  Figure 2 caption: "An example of a temporal grammar representing the activity \u201C\
+    making cereal\u201D. The green and yellow nodes are And-nodes (i.e., production\
+    \ rules that represents combinations) and Or-nodes (i.e., productions rules that\
+    \ represents alternatives), respectively. The numbers on branching edges of Or-nodes\
+    \ represent the branching probability. The circled numbers on edges indicate the\
+    \ temporal order of expansion."
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_3.jpg
+  Figure 3 caption: An example illustrating the symbolic parsing and prediction process
+    based on the Earley parser and detected actions. In the first two figures, the
+    red edges and blue edges indicates two different parse graphs for the past observations.
+    The purple edges indicate the overlap of the two possible explanations. The red
+    parse graph is eliminated from the third figure. For the terminal nodes, yellow
+    indicates the current observation and green indicates the next possible state(s).
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_4.jpg
+  Figure 4 caption: An illustrative example of the original Earley parser.
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_5.jpg
+  Figure 5 caption: Grammar prefix probabilities computed according to the grammar
+    in Fig. 4. The numbers next to the tree nodes are prefix probabilities according
+    to the grammar. The transition probabilities can be easily computed from this
+    tree, e.g., p( 1|1+ , G) = p(1+1cdots | G) p(1+cdots | G) = 0.2940.42 = 0.7 .
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_6.jpg
+  Figure 6 caption: An example of the generalized Earley parser. A classifier is applied
+    to a 5-frame signal and outputs a probability matrix (a) as the input to our algorithm.
+    The proposed algorithm expands a grammar prefix tree (c), where e represents termination.
+    It finally outputs the best label 0 + 1 with probability 0.054. The probabilities
+    of children nodes do not sum to 1 since grammatically incorrect nodes are eliminated
+    from the search. The search process is illustrated in Fig. 7.
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_7.jpg
+  Figure 7 caption: An illustration of the parsing process of the example in Fig.
+    6. It performs a heuristic search in the prefix tree according to the prefixparsing
+    probability. It iteratively expands the tree and computes the probabilities as
+    it expands the tree. The search ends when it hits a parsing terminal e . The paths
+    in bold indicate the best candidates at each search step.
+  Figure 8 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_8.jpg
+  Figure 8 caption: Confusion matrices for predictions on CAD-120.
+  Figure 9 Link: articels_figures_by_rev_year\2020\A_Generalized_Earley_Parser_for_Human_Activity_Parsing_and_Prediction\figure_9.jpg
+  Figure 9 caption: Qualitative results on the Breakfast dataset. The top row pictures
+    show the typical frames and labels of the groud-truth segments. The bottom rows
+    show the ground-truth segmentation, Bi-LSTM, and Bi-LSTM + GEP results. Best viewed
+    in color.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Siyuan Qi
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: 12
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: A Generalized Earley Parser for Human Activity Parsing and Prediction
+  Publication Date: 2020-02-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Notations Used for Parsing & Prefix Probability
+      Formulation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Detection Results on CAD-120
+  Table 3 caption:
+    table_text: TABLE 3 Future 3s Prediction Results on CAD-120
+  Table 4 caption:
+    table_text: TABLE 4 Segment Prediction Results on CAD-120
+  Table 5 caption:
+    table_text: TABLE 5 Detection Results on Watch-n-Patch
+  Table 6 caption:
+    table_text: TABLE 6 Future 3s Prediction Results on Watch-n-Patch
+  Table 7 caption:
+    table_text: TABLE 7 Segment Prediction Results on Watch-n-Patch
+  Table 8 caption:
+    table_text: TABLE 8 Detection Results on Breakfast
+  Table 9 caption:
+    table_text: TABLE 9 Parsing Precision of the Ablation Study of the Grammar Prior
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2976971
+- Affiliation of the first author: department of artificial intelligence, xiamen university,
+    xiamen, fujian, china
+  Affiliation of the last author: centre for artificial intelligence, university of
+    technology sydney, ultimo, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_1.jpg
+  Figure 1 caption: "Examples of three underlying properties of invariance. Colors\
+    \ indicate identities. (a) Exemplar-invariance: An input exemplar (denoted by\
+    \ \u22C6 ) is enforced to be away from others. (b) Camera-invariance: an input\
+    \ exemplar (denoted by \u22C6 ) and its CamStyle transferred images (with dashed\
+    \ outline) are encouraged to be close to each other. (c) Neighborhood-invariance:\
+    \ an input exemplar (denoted by \u22C6 ) and its reliable neighbors (highlighted\
+    \ in dashed circle) are forced to be close to each other. Best viewed in color."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_2.jpg
+  Figure 2 caption: The framework of the proposed method. During training, the inputs
+    are drawn from the labeled source domain and the unlabeled target domain. We feed-forward
+    the inputs into the feature extractor to obtain the up-to-date representations.
+    Subsequently, two branches are designed to optimize the framework with the source
+    data and the target data, respectively. In each branch, we introduce a memory
+    to store the features of corresponding domain data. The source branch aims to
+    learn basic representation for the model with identity classification loss L scr
+    , as well as, to learn a Graph-based Positive Prediction (GPP) network with binary
+    classification loss L gpp . For training of the GPP network, we first select top-ranked
+    features of the input from the source memory. Then, the selected features are
+    regarded as candidate neighbors and are used to train the GPP network. The GPP
+    network is trained to predict the positive and negative neighbors of the input.
+    The target branch attempts to enforce the invariance learning on the target data.
+    The invariance learning loss L tgt is calculated by estimating the similarities
+    between the target sample and whole features in the target memory. In addition,
+    we employ the GPP network to infer reliable positive neighbors for the target
+    sample, thereby facilitating the invariance learning. In testing, the L2-normalized
+    output of the global average pooling (GAP) is used as the feature of an image.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_3.jpg
+  Figure 3 caption: Example of camera style-transferred images on DukeMTMC-reID. A
+    real image collected from a certain camera is transferred to images in the styles
+    of other cameras. In this process, the identity information is preserved to some
+    extent. The real image and its corresponding fake images are assumed to belong
+    to the same class during camera-invariance learning.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_4.jpg
+  Figure 4 caption: The pipeline of graph-based positive prediction (GPP). Given the
+    embedding of an input sample, 1) we first compute the similarities between the
+    input and features in the memory. 2) The top-k ranked samples are selected as
+    candidate neighbors and utilized to construct a graph for positive prediction.
+    3) The features of nodes are refined by graph convolutional networks (GCNs) on
+    the graph. 4) The positive classifier is employed to predict positive probabilities
+    of every node. For the source domain, the positive classification loss is computed
+    for training the network of GPP. For the target domain, we select reliable neighbors
+    for the input target sample, depending on the predicted positive probabilities
+    of nodes.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_5.jpg
+  Figure 5 caption: Toy example of invariance learning. Dot colors denote classes.
+    In each step, an input and its reliable neighbors (highlighted in circle) are
+    enforced to be close by neighborhood-invariance learning, while an input and other
+    samples (out of circle) are enforced to be far away by exemplar-invariance learning.
+    With the interaction of exemplar-invariance and neighborhood-invariance, samples
+    with the same class are gradually grouped closer, while dissimilar groups are
+    separated.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_6.jpg
+  Figure 6 caption: Evaluation with different number of candidate samples for graph-based
+    positive prediction.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_7.jpg
+  Figure 7 caption: Evaluation with different values of mu in Eq. (14).
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_8.jpg
+  Figure 8 caption: The curve of selected reliable neighbors in (a) recall and (b)
+    precision throughout the training. Results are compared between vanilla neighbor
+    selection (VNS) and graph-based positive prediction (GPP).
+  Figure 9 Link: articels_figures_by_rev_year\2020\Learning_to_Adapt_Invariance_in_Memory_for_Person_ReIdentification\figure_9.jpg
+  Figure 9 caption: Computational cost in different sizes of target dataset. We use
+    the 256-dim FC feature as the memory feature.
+  First author gender probability: 0.81
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Zhun Zhong
+  Name of the last author: Yi Yang
+  Number of Figures: 9
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: Learning to Adapt Invariance in Memory for Person Re-Identification
+  Publication Date: 2020-02-28 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Evaluation With Different Values of \u03B2 \u03B2 in Eq.\
+      \ (3)"
+  Table 10 caption:
+    table_text: TABLE 10 Evaluation of Different Dimensions of Memory Feature
+  Table 2 caption:
+    table_text: TABLE 2 Methods Comparison When Transferred to Market-1501 and DukeMTMC-reID
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation With Different Number of Camera Style Samples for
+      Each Target Image
+  Table 4 caption:
+    table_text: TABLE 4 Performance Analysis of the Exemplar Memory and Graph-Based
+      Positive Prediction (GPP)
+  Table 5 caption:
+    table_text: TABLE 5 Computational Cost Analysis of the Exemplar Memory and Graph-Based
+      Positive Prediction (GPP)
+  Table 6 caption:
+    table_text: TABLE 6 Results of Using Different Neighbor Selection Methods
+  Table 7 caption:
+    table_text: TABLE 7 Unsupervised Person re-ID Performance Comparison With State-of-the-Art
+      Methods on Market-1501 and DukeMTMC-reID
+  Table 8 caption:
+    table_text: TABLE 8 UnsupervisedSemi-Supervised Person re-ID Performance Comparison
+      With State-of-the-Art Methods on MSMT17
+  Table 9 caption:
+    table_text: TABLE 9 Performance Evaluation on CUHK03
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2976933
+- Affiliation of the first author: school of electronic information and communications,
+    huazhong university of science and technology, wuhan, hubei, china
+  Affiliation of the last author: hiscene information technology, co., ltd, shanghai,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_1.jpg
+  Figure 1 caption: Exemplar input and output images of our network. The left column
+    shows an input two-view image pair. The middle column shows the optical flow ground
+    truth (top) and our output optical flow (bottom). The right column displays the
+    depth ground truth (top) and our output depth map (bottom).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_2.jpg
+  Figure 2 caption: Overview of the network architecture. DENAO takes an image pair
+    with known camera motions T and intrinsics K as inputs and predicts the depth
+    map of the reference image and the optical flow of the reference image with respect
+    to the neighbor image. The network consists of a parallel of a depth net and an
+    optical flow net for two different views. A set of exchange blocks are utilized
+    to warp the estimated depth (optical flow) to the optical flow (depth) via 3D-2D
+    projection(triangulation) at different scales and communicate between the depth
+    net and the optical flow net.
+  Figure 3 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_3.jpg
+  Figure 3 caption: Illustration of an exchange block between the depth net and the
+    optical flow net.
+  Figure 4 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_4.jpg
+  Figure 4 caption: An example of gradually refined depth map (top) and optical flow
+    map (bottom).
+  Figure 5 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_5.jpg
+  Figure 5 caption: An exemplar epipolar feature map. u ref,i is a point on the reference
+    image, u nei,i is the point on the neighbor image which has the same coordinate
+    as u ref,i , u nei,m is the matching point of u ref,i and the blue line is the
+    corresponding epipolar line.
+  Figure 6 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_6.jpg
+  Figure 6 caption: Illustration of multi-view depth and optical flow estimation with
+    three neighbor images as input.
+  Figure 7 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_7.jpg
+  Figure 7 caption: Visualization results of the depth maps from COLMAP, DORN, DeepMVS,
+    DeMoN, MVDepthNet, ours and the ground truth, and the optical flow maps from FlowNet2.0,
+    PWC-Net, ours and the ground truth.
+  Figure 8 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_8.jpg
+  Figure 8 caption: Depth estimation error and accuracy when varying the number of
+    views on the two datasets.
+  Figure 9 Link: articels_figures_by_rev_year\2020\DENAO_Monocular_Depth_Estimation_Network_With_Auxiliary_Optical_Flow\figure_9.jpg
+  Figure 9 caption: Visualization results of multi-view depth estimation when varying
+    the number of neighboring views.
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.55
+  Name of the first author: Jingyu Chen
+  Name of the last author: Chunyuan Liao
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'DENAO: Monocular Depth Estimation Network With Auxiliary Optical Flow'
+  Publication Date: 2020-02-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Hyperparameters of the Depth and Optical Flow Net
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison Results of Depth Estimation on 5 Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Optical Flow Comparison of Different Methods
+  Table 4 caption:
+    table_text: TABLE 4 Runtime Comparison of Different Methods for Depth and Optical
+      Flow Estimation.
+  Table 5 caption:
+    table_text: TABLE 5 Ablation Study on the Depth Estimation Task
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Study on the Optical Flow Estimation Task
+  Table 7 caption:
+    table_text: TABLE 7 Performance Comparison for Five-View Depth Estimation
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2977021

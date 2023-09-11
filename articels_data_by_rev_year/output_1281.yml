@@ -1,0 +1,925 @@
+- Affiliation of the first author: "university grenoble alpes, inria, cnrs, grenoble\
+    \ inp, ljk, saint-martin-dh\xE8res, france"
+  Affiliation of the last author: "university grenoble alpes, inria, cnrs, grenoble\
+    \ inp, ljk, saint-martin-dh\xE8res, france"
+  Figure 1 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_1.jpg
+  Figure 1 caption: Examples of multi-person 2D-3D pose detections in natural images.
+    For each image, we show the 2D and 3D poses that are estimated jointly, even in
+    cases of occlusions or truncations, by reasoning in terms of full-body 2D-3D pose.
+  Figure 10 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_10.jpg
+  Figure 10 caption: Average Percentage of Correct Keypoints PCK (%) on Human3.6M
+    protocol P1. Detection rate with respect to the distance to ground truth 3D joints
+    is given for PPI, NMS and the Upper bound (UB), i.e., taking the pose proposal
+    closest to ground-truth pose. Performances are given before (a) and after (b)
+    rigid alignment to the ground-truth poses.
+  Figure 2 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_2.jpg
+  Figure 2 caption: Overview of our LCR-Net architecture (poses only shown in 2D for
+    better readability). We first extract candidate regions using a Region Proposal
+    Network (RPN) and obtain pose proposals by placing a fixed set of anchor-poses
+    into these boxes (top). These pose proposals are then scored by a classification
+    branch and refined using class-specific regressors, learned independently for
+    each anchor-pose.
+  Figure 3 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_3.jpg
+  Figure 3 caption: The regression aims at refining the anchor-pose to match the ground-truth
+    2D-3D pose (only shown in 2D for better readability).
+  Figure 4 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_4.jpg
+  Figure 4 caption: "Illustration of the iterative estimation procedure. The classification\
+    \ branch outputs K+1 scores, one per class plus background. The regression branch\
+    \ outputs 5\xD7J\xD7(K+1) values, the regression being class-specific and outputting\
+    \ 2D and 3D values for each of the J joints."
+  Figure 5 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_5.jpg
+  Figure 5 caption: Illustration of the pose proposal integration (PPI). The pose
+    proposals (a) are grouped based on 2D overlap and 3D pose to identify the persons
+    and the modes (b). Final pose estimates (c) are obtained by averaging the 2D poses
+    in the selected modes and thresholding.
+  Figure 6 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_6.jpg
+  Figure 6 caption: "Pseudo ground-truth full-body 2D-3D pose annotation. From left\
+    \ to right: given an image with a manual 2D annotations, the pose is first normalized,\
+    \ then it is compared against a dataset of full-body 2D poses. These 2D poses\
+    \ are obtained by projecting a large corpus of MoCap 3D poses on multiple random\
+    \ views and normalizing them with respect to the annotated joints only. The closest\
+    \ pose is recovered and used (a) to define a \u201Cpseudo\u201D ground-truth full-body\
+    \ 3D pose and (b) to complete missing annotations of the 2D pose."
+  Figure 7 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_7.jpg
+  Figure 7 caption: Average 3D pose error in mm on Human3.6M protocol P1 with respect
+    to the number K of anchor-poses (a) and the 2 PPI thresholds (b). Note that results
+    on in (a) are reported for NMS withwithout rigid alignment for a model with a
+    VGG backbone regressing 13 joints and trained during 100k iterations. Results
+    in (b) are obtained after rigid alignment with our best architecture trained to
+    regress 17 joints.
+  Figure 8 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_8.jpg
+  Figure 8 caption: "Human3.6M real and synthetic training data. We show a training\
+    \ image from protocol 2 with the overplayed 2D pose in (a). In (b), we show a\
+    \ synthetic \u201Csurreal\u201D [54] image, i.e. an image obtained after rendering\
+    \ the SMPL model [62] using the Human3.6M 3D pose from (a) and a randomly picked\
+    \ body shape and texture map from [54]. Note that for more realism, the surreal\
+    \ image is rendered at the exact same 3D location in the MoCap room, using the\
+    \ camera parameters and background from the real image in (a). In (c), we show\
+    \ an example of image synthesized using a 3D pose from the CMU motion capture\
+    \ dataset [6]. In (d), we show a multi-person image generated using 5 poses from\
+    \ the CMU MoCap dataset."
+  Figure 9 Link: articels_figures_by_rev_year\2019\LCRNet_MultiPerson_D_and_D_Pose_Detection_in_Natural_Images\figure_9.jpg
+  Figure 9 caption: 'Average 3D pose error on Human3.6M test images (protocol P1).
+    We order the examples by increasing error of PPI results (blue) and also report
+    the performance with a simple NMS (green) and after rigid alignment of the PPI
+    estimation (red). We show qualitative results for 4 particular cases, from left
+    to right: (a) An image where NMS estimation is already accurate, thus PPI and
+    alignment do not further improve, (b) a case in which the PPI achieves an accurate
+    pose estimate, (c) a case where PPI does not improve over NMS but the alignment
+    helps to correct the pose estimate and (d) a failure case where the pose is not
+    satisfactory, even after rigid alignment. For each case, we show the image with
+    the estimated 2D pose (with PPI). We also show the 3D poses estimated by NMS,
+    PPI and after alignment overlaid with the ground-truth 3D pose.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: "Gr\xE9gory Rogez"
+  Name of the last author: Cordelia Schmid
+  Number of Figures: 15
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: 'LCR-Net++: Multi-Person 2D and 3D Pose Detection in Natural Images'
+  Publication Date: 2019-01-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablative Analysis on Human3.6M Protocol P2 (Evaluating on
+      13 Joints)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison with State-of-the-Art Results on Human3.6M for
+      3 Different Protocols
+  Table 3 caption:
+    table_text: TABLE 3 Per-Class Results on Human3.6M Protocol P2 (without Pose Alignment)
+  Table 4 caption:
+    table_text: TABLE 4 Ablative Analysis on MPII Validation Set
+  Table 5 caption:
+    table_text: TABLE 5 Additional Analysis on MPII Validation Set
+  Table 6 caption:
+    table_text: TABLE 6 2D Pose Estimation Results on Single-Person MPII Test Set
+      Compared to State-of-the-Art 2D Methods
+  Table 7 caption:
+    table_text: TABLE 7 2D Pose Estimation Results on Multi-Person MPII Test Set Compared
+      to State-of-the-Art 2D Methods
+  Table 8 caption:
+    table_text: TABLE 8 Sequence-Wise Evaluation of Our Method and [60] on Their Multi-Person
+      3D Pose Test Set MuPoTS-3D
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2892985
+- Affiliation of the first author: computing science, faculty of applied sciences,
+    simon fraser university, burnaby, canada
+  Affiliation of the last author: school of computing science, simon fraser university,
+    burnaby, canada
+  Figure 1 Link: articels_figures_by_rev_year\2019\Structured_Label_Inference_for_Visual_Understanding\figure_1.jpg
+  Figure 1 caption: This image example has visual concepts at various levels, from
+    sports field at a high level to baseball and person at lower levels. Our model
+    leverages label relations and jointly predicts layered visual labels from an image
+    using a structured inference neural network. In the graph, colored nodes correspond
+    to the labels associated with the image, and red edges encode label relations.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Structured_Label_Inference_for_Visual_Understanding\figure_2.jpg
+  Figure 2 caption: The label prediction pipeline. Given an input image, we extract
+    CNN features at the last fully connected layer as activation (in blue box) at
+    different visual concept layers. We then propagate the activation information
+    in a label (concept) relation graph through our structured inference neural network
+    (in red box). The final label prediction (in green box) is made from the output
+    activations (in yellow box) obtained after the inference process.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Structured_Label_Inference_for_Visual_Understanding\figure_3.jpg
+  Figure 3 caption: An example showing the model parameters Vp and Vn between the
+    animal layer and the attribute layer. Green edges in the graph represent positive
+    correlation, and red edges represent negative correlation.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Structured_Label_Inference_for_Visual_Understanding\figure_4.jpg
+  Figure 4 caption: The label prediction pipeline with partial observation. The pipeline
+    is similar to Fig. 2 except that we now have a partial observation that this image
+    is outdoor man-made. The SINN is able to take the observed label into consideration
+    and improve the label predictions in the other concept layers.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Structured_Label_Inference_for_Visual_Understanding\figure_5.jpg
+  Figure 5 caption: Overview of the frameworks presented using the notation in Section
+    3. (Left) The inference model is applied directly on a feature vector extracted
+    by a CNN for performing multi-label image classification. (Center) The video-level
+    representation barmathbf x is obtained by pooling per-frame feature vectors mathbf
+    xt (using a CNN) and fed to the inference model for performing multi-label video
+    classification. (Right) Snapshot at time step t for the action detection model,
+    where per-frame representations mathbf xt were extracted using a CNN, fed to the
+    inference model and to m concept-layer specific LSTM units at each time step t
+    . The concept layer outputs lbrace mathbf atell rbrace ell =1m are combined (aggregation
+    step denoted by sigma and formulated in Eq. (19)) with the corresponding LSTM
+    hidden states lbrace mathbf htell rbrace ell =1m for obtaining the final predictions
+    lbrace mathbf ytell rbrace ell =1m . The output activations ( mathbf yell t )
+    for the concept layer ell are interpreted as confidence scores for a given concept
+    being assigned to the frame at time step t .
+  Figure 6 Link: articels_figures_by_rev_year\2019\Structured_Label_Inference_for_Visual_Understanding\figure_6.jpg
+  Figure 6 caption: Timeline comparison for single-frame models (CNN and SINN) and
+    sequential models (LSTM and siLSTM) in multi-label action detecion for four different
+    videos. The verical axis represents the ground-truth labels appearing at least
+    once in the target video and the horizontal axis corresponds to the duration of
+    the target video in minutes. (Best view in color)
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Nelson Nauata
+  Name of the last author: Greg Mori
+  Number of Figures: 6
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: Structured Label Inference for Visual Understanding
+  Publication Date: 2019-01-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Layered Label Prediction Results on the AwA dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Layered Label Prediction Results on the SUN397 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Recognition Results on the 397 Fine-Grained Scene Categories
+  Table 4 caption:
+    table_text: TABLE 4 Results on NUS-WIDE for from [14]
+  Table 5 caption:
+    table_text: TABLE 5 YouTube-8M (YT-8M) Results for mAPV, Precision at Equal Recall
+      Rate (PERR), Hit at 1 and gAP on the Validation Set
+  Table 6 caption:
+    table_text: TABLE 6 YouTube-8M V2 (YT-8M V2) Results for mAPV, Precision at Equal
+      Recall Rate (PERR), Hit at 1 and gAP on the Validation Set
+  Table 7 caption:
+    table_text: TABLE 7 THUMOS and MultiTHUMOS Results for mAPL
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2893215
+- Affiliation of the first author: school of computer science and engineering, nanyang
+    technological university, singapore
+  Affiliation of the last author: arc centre of excellence for robotic vision, school
+    of computer science, the university of adelaide, australia
+  Figure 1 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_1.jpg
+  Figure 1 caption: Example results of our method on the task of object parsing (left)
+    and semantic segmentation (right).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_2.jpg
+  Figure 2 caption: Comparison of fully convolutional approaches for dense classification.
+    Standard multi-layer CNNs, such as ResNet (a) suffer from downscaling of the feature
+    maps, thereby losing fine structures along the way. Dilated convolutions (b) remedy
+    this shortcoming by introducing atrous filters, but are computationally expensive
+    to train and quickly reach memory limits even on modern GPUs. Our proposed architecture
+    that we call RefineNet (c) exploits various levels of detail at different stages
+    of convolutions and fuses them to obtain a high-resolution prediction without
+    the need to maintain large intermediate feature maps. The details of the RefineNet
+    block are outlined in Section 3 and illustrated in Fig 3.
+  Figure 3 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_3.jpg
+  Figure 3 caption: The individual components of our multi-path refinement network
+    architecture RefineNet. Components in RefineNet employ residual connections with
+    identity mappings. In this way, gradients can be directly propagated within RefineNet
+    via local residual connections, and also directly propagate to the input paths
+    via long-range residual connections, and thus we achieve effective end-to-end
+    training of the whole system.
+  Figure 4 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_4.jpg
+  Figure 4 caption: An alternative architecture for chained residual pooling (CRP).
+    Compared to the architecture of CRP in Fig. 3 (d), the position of the pooling
+    layer (marked in gray) and that of the convolution layer is exchanged.
+  Figure 5 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_5.jpg
+  Figure 5 caption: 'Illustration of 3 variants of our network architecture: (a) Single
+    RefineNet, (b) 2-cascaded RefineNet and (c) 4-cascaded RefineNet with 2-scale
+    ResNet. Note that our proposed RefineNet block can seamlessly handle different
+    numbers of inputs of arbitrary resolutions and dimensions without any modification.'
+  Figure 6 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_6.jpg
+  Figure 6 caption: Our prediction examples on Person-Parts dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_7.jpg
+  Figure 7 caption: Our prediction examples on VOC 2012 dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_8.jpg
+  Figure 8 caption: Our prediction examples on Cityscapes dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2019\RefineNet_MultiPath_Refinement_Networks_for_Dense_Prediction\figure_9.jpg
+  Figure 9 caption: Our prediction examples on the NYUv2 dataset.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Guosheng Lin
+  Name of the last author: Ian Reid
+  Number of Figures: 9
+  Number of Tables: 12
+  Number of authors: 5
+  Paper title: 'RefineNet: Multi-Path Refinement Networks for Dense Prediction'
+  Publication Date: 2019-01-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Experiments of Our RefineNet on NYUDv2
+  Table 10 caption:
+    table_text: TABLE 10 Segmentation Results on the ADE20K Dataset (150 Classes)
+      val Set
+  Table 2 caption:
+    table_text: 'TABLE 2 Evaluations of 4 Variants of Cascaded RefineNet: Single RefineNet,
+      2-Cascaded RefineNet, 4-Cascaded RefineNet, 4-Cascaded RefineNet with 2-Scale
+      ResNet on the NYUDv2 Dataset'
+  Table 3 caption:
+    table_text: TABLE 3 Memory and Computation Analysis
+  Table 4 caption:
+    table_text: TABLE 4 Memory and Computation Breakdown Details of RefineNet
+  Table 5 caption:
+    table_text: TABLE 5 Object Parsing Results on the Person-Part Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Segmentation Results on NYUDv2 (40 Classes)
+  Table 7 caption:
+    table_text: TABLE 7 Results on the PASCAL VOC 2012 Test Set (IoU Scores)
+  Table 8 caption:
+    table_text: TABLE 8 Segmentation Results on PASCAL-Context Dataset (60 Classes)
+  Table 9 caption:
+    table_text: TABLE 9 Segmentation Results on SUN-RGBD Dataset (37 Classes)
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2893630
+- Affiliation of the first author: immersive and creative technologies lab, department
+    of computer science and software engineering, concordia university, montreal,
+    canada
+  Affiliation of the last author: immersive and creative technologies lab, department
+    of computer science and software engineering, concordia university, montreal,
+    canada
+  Figure 1 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_1.jpg
+  Figure 1 caption: An overview of the proposed clustering technique.
+  Figure 10 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_10.jpg
+  Figure 10 caption: An example of the boundary extraction process being applied to
+    a cluster containing points representing part of a roof. The points are shown
+    in red and the dense boundary points extracted are shown in bright red in (a).
+    (b) shows a close up of the simplified boundary points in blue.
+  Figure 2 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_2.jpg
+  Figure 2 caption: An overview of the proposed boundary refinement technique.
+  Figure 3 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_3.jpg
+  Figure 3 caption: "Relation between the eigenvalue differences \u03BB 1 \u2212 \u03BB\
+    \ 2 and \u03BB 2 \u2212 \u03BB 3 with respect to the magnitude M c which is used\
+    \ to calculate the eigenvalues."
+  Figure 4 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_4.jpg
+  Figure 4 caption: Visual interpretation of the encoded tensors for the synthetic
+    depth map shown. Tensors corresponding to points on a curve appear as ellipsoids
+    with a plate-like shape where the normal to the plate is the tangent of the curve;
+    one such case is shown with a straight red line. Tensors corresponding to points
+    on a surface appear as ellipsoids having a stick-like shape where the direction
+    of the stick is the normal to the surface; one such case is shown with a red plane.
+  Figure 5 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_5.jpg
+  Figure 5 caption: 'Application of the Spectral theorem: each tensor is decomposed
+    into three basis tensors. Figures (a), (b) and (c) depict the points classified
+    as surfaces, curves or junctions respectively, according to their eigenvalue differences
+    as explained in Eq. (5). Figure (d) shows the orientation corresponding to each
+    type i.e., for surfaces it represents the normal to the surface, for curves it
+    represents the tangent to the curve, and for junctions it appears black.'
+  Figure 6 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_6.jpg
+  Figure 6 caption: (b) Similarity variation measured as the maximum minus the minimum
+    similarity between the tensors in the 8-neighbourhood of each point in the depth
+    map shown in (a). Note that the color curve for (b) has been adjusted for easier
+    readability.
+  Figure 7 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_7.jpg
+  Figure 7 caption: Comparison between two extreme value distributions (Gumbel, Weibull)
+    and the Gaussian distribution for the set of tensors corresponding to the surface
+    points of the marked area shown in Fig. 8a. As it can also be visually confirmed,
+    the Weibull distribution can provide a more accurate representation.
+  Figure 8 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_8.jpg
+  Figure 8 caption: (a) The normalized XYZ depth map of a building. The three distributions
+    were tested on the tensors corresponding to the surface points in the marked area.
+    (b) The mesh corresponding to the depth map in (a). (c) Color-coded clusters.
+    (d) The complete sparse boundary map corresponding to the clustered regions in
+    (c). (e) The boundary positions after snapping and adjustment are shown in red.
+    The optimized boundary positions are shown in green. A closeup is shown in (f).
+  Figure 9 Link: articels_figures_by_rev_year\2019\LargeScale_Urban_Reconstruction_with_Tensor_Clustering_and_Global_Boundary_Refin\figure_9.jpg
+  Figure 9 caption: The shape and scale parameters of the distribution [and therefore
+    the mean and variance] converge to the same values as the number of iterations
+    [and therefore samples] increases. The results shown correspond to the surface
+    shown in Figs. 8a and 8b.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Charalambos Poullis
+  Name of the last author: Charalambos Poullis
+  Number of Figures: 15
+  Number of Tables: 1
+  Number of authors: 1
+  Paper title: Large-Scale Urban Reconstruction with Tensor Clustering and Global
+    Boundary Refinement
+  Publication Date: 2019-01-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison Table between Our Approach and State-of-the-Art
+      in [21] and [1]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2893671
+- Affiliation of the first author: department of computer science and engineering,
+    texas a&m university, college station, usa
+  Affiliation of the last author: department of computer science and engineering,
+    texas a&m university, college station, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_1.jpg
+  Figure 1 caption: Comparison of semantic segmentation results. The first and second
+    rows are images and ground true labels, respectively. The third and fourth rows
+    are the results of using regular transposed convolution and our proposed pixel
+    transposed convolution, respectively.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_2.jpg
+  Figure 2 caption: "Illustration of 1D transposed convolutional operation. In this\
+    \ transposed convolution layer, a 4\xD71 feature map is up-sampled to an 8\xD7\
+    1 feature map. The left figure shows that each input unit passes through an 1\xD7\
+    4 kernel. The output feature map is obtained as the sum of values in each column.\
+    \ It can be seen from this figure that the purple outputs are only related to\
+    \ (1, 3) entries in the kernel, while the orange outputs are only related to (2,\
+    \ 4) entries in the kernel. Therefore, 1D transposed convolution can be decomposed\
+    \ as two convolutional operations shown in the right figure. The two intermediate\
+    \ feature maps generated by convolutional operations are dilated and combined\
+    \ to obtain the final output. This indicates that the standard transposed convolution\
+    \ operation can be decomposed into multiple convolutional operations."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_3.jpg
+  Figure 3 caption: "Illustration of 2D transposed convolutional operation. In this\
+    \ transposed convolutional layer, a 4\xD74 feature map is up-sampled to an 8\xD7\
+    8 feature map. Four intermediate feature maps (purple, orange, blue, and red)\
+    \ are generated using four different convolutional kernels. Then these four intermediate\
+    \ feature maps are shuffled and combined to produce the final 8\xD78 feature map.\
+    \ Note that the four intermediate feature maps rely on the input feature map but\
+    \ with no direct relationship among them."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_4.jpg
+  Figure 4 caption: Illustration of the checkerboard problem in semantic segmentation
+    using transposed convolutional layers. The first and second rows are the original
+    images and semantic segmentation results, respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_5.jpg
+  Figure 5 caption: Illustration of iPixelTCL and PixelTCL described in Section 2.2.
+    In iPixelTCL, there are additional dependencies among intermediate feature maps.
+    Specifically, the four intermediate feature maps are generated sequentially. The
+    purple feature map is generated from the input feature map (blue). The orange
+    feature map is conditioned on both the input feature map and the purple feature
+    map that has been generated previously. In this way, the green feature map relies
+    on the input feature map, purple and orange intermediate feature maps. The red
+    feature map is generated based on the input feature map, purple, orange, and green
+    intermediate feature maps. We also propose to move one step further and allow
+    only the first intermediate feature map to depend on the input feature map. This
+    gives rise to PixelTCL. That is, the connections indicated by dashed lines are
+    removed to avoid repeated influence of the input feature map. In this way, only
+    the first feature map is generated from the input and other feature maps do not
+    directly rely on the input. In PixelTCL, the orange feature map only depends on
+    the purple feature map. The green feature map relies on the purple and orange
+    feature maps. The red feature map is conditioned on the purple, orange, and green
+    feature maps. The information of the input feature map is delivered to other intermediate
+    feature maps through the first intermediate feature map (purple).
+  Figure 6 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_6.jpg
+  Figure 6 caption: "An efficient implementation of the pixel transposed convolutional\
+    \ layer. In this layer, a 4\xD74 feature map is up-sampled to a 8\xD78 feature\
+    \ map. The purple feature map is generated through a 3\xD73 convolutional operation\
+    \ from the input feature map (step 1). After that, another 3\xD73 convolutional\
+    \ operation is applied on the purple feature map to produce the orange feature\
+    \ map (step 2). The purple and orange feature maps are dilated and added together\
+    \ to form a larger feature map (step 3). Since there is no relationship between\
+    \ the last two intermediate feature maps, we can apply a masked 3\xD73 convolutional\
+    \ operation, instead of two separate 3\xD73 convolutional operations (step 4).\
+    \ Finally, the two large feature maps are combined to generate the final output\
+    \ feature map (step 5)."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_7.jpg
+  Figure 7 caption: Sample segmentation results on the PASCAL 2012 segmentation dataset
+    using training from scratch models. The first and second rows are the original
+    images and the corresponding ground truth, respectively. The third, fourth, and
+    fifth rows are the segmentation results of models using transposed convolutional
+    layers, iPixelTCL, and PixelTCL, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_8.jpg
+  Figure 8 caption: Sample segmentation results on the MSCOCO 2015 detection dataset
+    using training from scratch models. The first and second rows are the original
+    images and the corresponding ground truth, respectively. The third, fourth, and
+    fifth rows are the segmentation results of models using transposed convolutional
+    layers, iPixelTCL, and PixelTCL, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Pixel_Transposed_Convolutional_Networks\figure_9.jpg
+  Figure 9 caption: Sample face images generated by VAEs when trained on the CelebA
+    dataset. The first two rows are images generated by a standard VAE with transposed
+    convolutional layers for up-sampling. The last two rows generated by the same
+    VAE model, but using PixelTCL for up-sampling.
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.78
+  Name of the first author: Hongyang Gao
+  Name of the last author: Shuiwang Ji
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Pixel Transposed Convolutional Networks
+  Publication Date: 2019-01-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Semantic Segmentation Results on the PASCAL 2012 Segmentation
+      Dataset and MSCOCO 2015 Detection Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of SSIM by VAE Using TCL and PixelTCL
+  Table 3 caption:
+    table_text: TABLE 3 Semantic Segmentation Results on the PASCAL 2012 Segmentation
+      Dataset for Three Up-Sampling Methods
+  Table 4 caption:
+    table_text: TABLE 4 Semantic Segmentation Results on the PASCAL 2012 Segmentation
+      Dataset for Three PixelTCL Variations with Different Connectivity in Terms of
+      Pixel Accuracy and Mean IOU
+  Table 5 caption:
+    table_text: TABLE 5 Training and Prediction Time on Semantic Segmentation Using
+      the PASCAL 2012 Segmentation Dataset on a Tesla K40 GPU
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2893965
+- Affiliation of the first author: school of computer science and technology, guangdong
+    university of technology, guangzhou, pr china
+  Affiliation of the last author: school of computer science and engineering, south
+    china university of technology, guangzhou, pr china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_1.jpg
+  Figure 1 caption: Overview of the MED framework. The blue components depict dictionary
+    learning, and the red region depicts the proposed SMDR (refer to Sections 4.1
+    and 4.2). Details on obtaining aligned data refer to Section 4.5. Event labels
+    are marked in red.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_2.jpg
+  Figure 2 caption: Examples of MED dataset. Each row are some samples from the same
+    events, i.e., Tianjin Explosions, Mission Bay fire, Umbrella Movement, United
+    Kingdom General Election (2015), etc. The news articles are contributed by different
+    data sources of news media, while the Flickr images are shared by different Flickr
+    users.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_3.jpg
+  Figure 3 caption: Examples of SED dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_4.jpg
+  Figure 4 caption: "Reconstruction errors corresponding to the optimizations of the\
+    \ variables (subfigures (a)-(c): X\u2192Y ; subfigures (d)-(f): Y\u2192X )."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_5.jpg
+  Figure 5 caption: 'Time cost of optimizing the variables (CPU: i7 6850K, 3.6 GHz).'
+  Figure 6 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_6.jpg
+  Figure 6 caption: Performance of SMDR-CWP on MED by using single data views.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_7.jpg
+  Figure 7 caption: Performance of SMDR-CWPCWS on MED (Y rightarrow X) by using multiple
+    data views.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_8.jpg
+  Figure 8 caption: Impact of the selected dictionary bases.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Shared_MultiView_Data_Representation_for_MultiDomain_Event_Detection\figure_9.jpg
+  Figure 9 caption: Performance of SMDR using single or multiple data views on the
+    SED task.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Zhenguo Yang
+  Name of the last author: Jianming Lv
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Shared Multi-View Data Representation for Multi-Domain Event Detection
+  Publication Date: 2019-01-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Names and Explanations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Best Performance of the Approaches on MED
+  Table 3 caption:
+    table_text: TABLE 3 Best NMI Performances of SMDR-CWPCWS on the Cross-Domain Scenarios
+  Table 4 caption:
+    table_text: TABLE 4 The Best Performance of the Approaches on SED
+  Table 5 caption:
+    table_text: TABLE 5 Performance Comparison on the SED MediaEval Challenge
+  Table 6 caption:
+    table_text: TABLE 6 Objective Functions of the Models with Different Regularization
+      Terms
+  Table 7 caption:
+    table_text: TABLE 7 Performance of the Combinations of the Regularization Terms
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2893953
+- Affiliation of the first author: future media center and school of computer science
+    and engineering, the university of electronic science and technology of china,
+    chengdu, china
+  Affiliation of the last author: future media center and school of computer science
+    and engineering, the university of electronic science and technology of china,
+    chengdu, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_1.jpg
+  Figure 1 caption: The framework of our proposed hLSTMat for visual captioning. Given
+    an input image or video, an encoder is first applied to extract the features.
+    Then hierarchical LSTM with adaptive attention component plays the role of an
+    decoder, by using the hierarchical LSTM to extract different level of information,
+    and an adaptive attention to decide whether to depend on the visual information
+    or the language context information. The losses are defined on the generated captions
+    and the groundtruth to guide the learning of network parameters. Note that when
+    this framework is applied to different visual captioning tasks, i.e., image and
+    video captioning, there are differences in terms of feature extractor, network
+    structure and losses.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_10.jpg
+  Figure 10 caption: The role of RF. Examples of image captions generated by hLSTMat-RF
+    and hLSTMat.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_2.jpg
+  Figure 2 caption: An instantiation of hLSTMat for video captioning. Similarly, it
+    has three major components, i.e., 1) a CNN Encoder, 2) an attention based hierarchical
+    LSTM decoder and 3) the losses. First, we extract appearance and motion features
+    for videos. Then, the hierarchical LSTM with adaptive attention component extracts
+    both low and high-level video information, and decides whether to depend on the
+    visual features or language context information. A MLE loss is utilized to guide
+    the learning of network parameters.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_3.jpg
+  Figure 3 caption: "An illustration of the proposed method generating the tth target\
+    \ word z t given a video. The details of \u201CAttention module\u201D and \u201C\
+    Adaptive Attention module\u201D are plotted in the left."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_4.jpg
+  Figure 4 caption: We construct variants of architectures of multiple features based
+    hLSTMat. The left indicates the hLSTMat with concatenation fusion (ConF). The
+    middle one represents the Two-stream hLSTMat Networks (Two-stream). The right
+    one illustrates the architectures of parallel hLSTMat (ParA).
+  Figure 5 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_5.jpg
+  Figure 5 caption: 'Examples of sentences produced by MP-LSTM, SA and the proposed
+    methods: hLSTMat(T) and ParA(S+T).'
+  Figure 6 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_6.jpg
+  Figure 6 caption: Examples of attention weights changes along with the generation
+    of captions.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_7.jpg
+  Figure 7 caption: An instantiation of hLSTMat for image captioning. Similarly, it
+    has three major components, i.e., 1) a CNN Encoder, 2) an attention based hierarchical
+    LSTM decoder and 3) the losses. First, we extract region-level features for each
+    image. Then, in the hierarchical LSTM with adaptive attention component, we connect
+    the two LSTMs sequentially and apply the adaptive attention to the second LSTM.
+    A MLE loss and reinforcement learning based loss are combined to guide the learning
+    of network parameters.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_8.jpg
+  Figure 8 caption: "Examples of image captions generated by our hLSTMat. For each\
+    \ image, the first and second sentences are generated by the first-pass (hLSTMat-hLSTM)\
+    \ and the second-pass respectively (hLSTMat). This demonstrates that our hierarchical\
+    \ LSTMs can generate more precise concepts (e.g., \u201Cfood truck\u201D versus\
+    \ \u201Cbus\u201D) and more reasonable descriptions (e.g., \u201Ca women taking\
+    \ a picture of a dog in a car mirror\u201D versus \u201Ca dog looking out of a\
+    \ car mirror\u201D)."
+  Figure 9 Link: articels_figures_by_rev_year\2019\Hierarchical_LSTMs_with_Adaptive_Attention_for_Visual_Captioning\figure_9.jpg
+  Figure 9 caption: Visualization of first residual attention map of the hLSTMat model.
+    The sentence is generated by the hLSTMat. The region with the maximum attention
+    weight is in orange. We also show each word with the corresponding visual weight
+    in the second residual attention block.
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Lianli Gao
+  Name of the last author: Heng Tao Shen
+  Number of Figures: 11
+  Number of Tables: 14
+  Number of authors: 4
+  Paper title: Hierarchical LSTMs with Adaptive Attention for Visual Captioning
+  Publication Date: 2019-01-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Operation Modules and Their Number Used in Our Three Proposed
+      Models
+  Table 10 caption:
+    table_text: TABLE 10 The Human Evaluation Performance Comparison with the State-of-the-Art
+      Methods on MSVD
+  Table 2 caption:
+    table_text: TABLE 2 Experiment Results on the MSVD Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Experimental Results on MSR-VTT Dataset
+  Table 4 caption:
+    table_text: TABLE 4 The Effect of Different Components and the Comparison with
+      the State-of-the-Art Methods on the MSVD Dataset
+  Table 5 caption:
+    table_text: TABLE 5 The Performance of Three Variants Architectures of Temporal
+      Based hLSTMat and Spatial Based hLSTMat on the MSVD Dataset
+  Table 6 caption:
+    table_text: TABLE 6 The Performance of Three Variants Architectures of Temporal
+      Based hLSTMat and Spatial Based hLSTMat on the MSR-VTT Dataset
+  Table 7 caption:
+    table_text: TABLE 7 The Performance Comparison with the State-of-the-Art Methods
+      on MSVD Dataset
+  Table 8 caption:
+    table_text: TABLE 8 The Performance Comparison with the State-of-the-Art Methods
+      on MSR-VTT Dataset
+  Table 9 caption:
+    table_text: TABLE 9 The Performance Comparison with the State-of-the-Art Methods
+      on LSMDC Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2894139
+- Affiliation of the first author: department of communications and computer engineering,
+    university of malta, msida, malta
+  Affiliation of the last author: institut national de recherche en informatique et
+    en automatique, rennes, france
+  Figure 1 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_1.jpg
+  Figure 1 caption: Block diagram of the proposed light field super-resolution method.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_2.jpg
+  Figure 2 caption: Cropped regions of the mean angular views when using different
+    disparity compensation methods. Underneath each image we provide the average variance
+    across the n angular views which was used in [5] to characterize the performance
+    of the alignment algorithm, where smaller values indicate better alignment.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_3.jpg
+  Figure 3 caption: These figures show how the error between the low-rank and full
+    rank representation vary at different ranks. It can be seen that using optical
+    flow to align the light field followed by low-rank approximation attains the best
+    performance. The images in the second row show the principal basis derived using
+    different methods. The sharper the principal basis is the more information is
+    being captured in the principal basis.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_4.jpg
+  Figure 4 caption: The proposed network structure which receives a low-resolution
+    light field and restores it using the proposed DCNN.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_5.jpg
+  Figure 5 caption: Analysing the ability of the proposed method to restore the aligned
+    light field when considering different rank values k .
+  Figure 6 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_6.jpg
+  Figure 6 caption: Filling the missing information caused by occlusion.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_7.jpg
+  Figure 7 caption: Restored center view using different light field super-resolution
+    algorithms. These are best viewed in color and by zooming on the views. Underneath
+    each image we show the PSNR values.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_8.jpg
+  Figure 8 caption: Analysing the EPI geometry of light fields restored using our
+    proposed method on non-Lambertian surfaces.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Light_Field_SuperResolution_Using_a_LowRank_Prior_and_Deep_Convolutional_Neural_\figure_9.jpg
+  Figure 9 caption: Light fields refocused using different slopes. The light fields
+    were restored using LF-SRCNN method [11] and the method proposed in this paper.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Reuben A. Farrugia
+  Name of the last author: Christine Guillemot
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 2
+  Paper title: Light Field Super-Resolution Using a Low-Rank Prior and Deep Convolutional
+    Neural Networks
+  Publication Date: 2019-01-20 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 PSNR Using Different Light Field Super-Resolution Algorithms\
+      \ When Considering a Magnification Factor of \xD72 \xD72"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 PSNR Using Different Light Field Super-Resolution Algorithms\
+      \ When Considering a Magnification Factor of \xD73 \xD73"
+  Table 3 caption:
+    table_text: "TABLE 3 PSNR (SSIM in Parentheses) Quality Measures Obtained with\
+      \ the Best Two Performing Methods at a Magnification of \xD72 \xD72 with and\
+      \ without Iterative Back Projection as a Post Process"
+  Table 4 caption:
+    table_text: "TABLE 4 PSNR (SSIM in Parentheses) Quality Measures Obtained with\
+      \ the Best Two Performing Methods at a Magnification of \xD73 \xD73 with and\
+      \ without Iterative Back Projection as a Post Process"
+  Table 5 caption:
+    table_text: TABLE 5 Processing Time of Different Light Field Super-Resolution
+      Algorithms at Different Magnification Factors
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2893666
+- Affiliation of the first author: department of electrical and computer engineering,
+    northeastern university, boston, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    college of engineering, khoury college of computer and information sciences, northeastern
+    university, boston, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Heterogeneous_Recommendation_via_Deep_LowRank_Sparse_Collective_Factorization\figure_1.jpg
+  Figure 1 caption: Illustration of one-layer Low-rank Sparse Collective Factorization
+    (LSCF) framework. R denotes a numerical rating (i.e., 5-star rating) matrix in
+    the target domain. R ~ denotes a binary rating (i.e., like or dislike) matrix
+    in the auxiliary domain. U and V denote shared user and item latent factors, respectively.
+    B and B ~ denote rating patterns in the target and the auxiliary domain, respectively.
+    B and B ~ are further decomposed into a shared common pattern D and domain-specific
+    patterns E and E ~ respectively with low-rank sparse decomposition.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Heterogeneous_Recommendation_via_Deep_LowRank_Sparse_Collective_Factorization\figure_2.jpg
+  Figure 2 caption: "Illustration of hierarchical structures with the real-world movie\
+    \ recommender in figure (a), 1-layer and p -layer matrices of DLSCF in figures\
+    \ (b) and (c), and the deep tri-factorizing process in figure (d). In figures\
+    \ (b), (c) and (d), we apply target domain matrix tri-factorizing as an example\
+    \ and the auxiliary domain tri-factorizing is similar. Figure (a) shows three\
+    \ movie genres \u201CHorror\u201D, \u201CSport\u201D and \u201CRomance\u201D.\
+    \ Three sub-genres are under \u201CSport\u201D and three detailed categories are\
+    \ under \u201CMotorsport\u201D. In figure (b), B 1 , U 1 , and V 1 are the rating\
+    \ matrix, user and item latent factors using one layer tri-factorizing towards\
+    \ rating matrix R . p layer matrices U 1 \u2026 U p , V 1 \u2026 V p and B p are\
+    \ shown in figure (c). Figure (d) shows the tri-factorizing process. From 1 to\
+    \ p\u22121 layer, we further tri-factorize B i into U i+1 , B i+1 and V i+1 .\
+    \ d 1 \u2265 d 2 \u2026\u2265\u22EF\u2265\u22EF d p ."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Heterogeneous_Recommendation_via_Deep_LowRank_Sparse_Collective_Factorization\figure_3.jpg
+  Figure 3 caption: "Parameters \u03BB , \u03B2 1 , \u03B2 2 analysis of DLSCF-B.\
+    \ In figure (a), we show RMSE and MAE when \u03BB is in the range from 0.05 to\
+    \ 1 by fixing \u03B2 1 =0.005 and \u03B2 2 =0.00005 . In figure (b), we show RMSE\
+    \ and MAE when \u03B2 1 is from 1\xD7 10 \u22126 to 0.001 by fixing \u03BB=0.3\
+    \ and \u03B2 2 =0.00005 . In figure (c), we show RMSE and MAE when \u03B2 2 is\
+    \ from 5\xD7 10 \u22124 to 0.05 by fixing \u03BB=0.3 and \u03B2 3 =0.005 ."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Heterogeneous_Recommendation_via_Deep_LowRank_Sparse_Collective_Factorization\figure_4.jpg
+  Figure 4 caption: "Parameters \u03BB , \u03B2 1 , \u03B2 2 analysis of DLSCF-S.\
+    \ In figure (a), we present RMSE and MAE when \u03BB is in the range from 0.1\
+    \ to 5 with fixing \u03B2 1 =0.05 and \u03B2 2 =1 . In figure (b), we show RMSE\
+    \ and MAE when \u03B2 1 is from 0.005 to 0.2 by fixing \u03BB=0.8 and \u03B2 2\
+    \ =0.05 . In figure (c), we show RMSE and MAE when \u03B2 2 is from 0.1 to 2 by\
+    \ fixing \u03BB=0.8 and \u03B2 3 =1 ."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Heterogeneous_Recommendation_via_Deep_LowRank_Sparse_Collective_Factorization\figure_5.jpg
+  Figure 5 caption: Prediction error of DLSCF-B on MoviePilot dataset when auxiliary
+    domain data is at different sparsity levels.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Heterogeneous_Recommendation_via_Deep_LowRank_Sparse_Collective_Factorization\figure_6.jpg
+  Figure 6 caption: Prediction error of DLSCF-B on MoviePilot dataset at different
+    dimensions of the first layer.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Heterogeneous_Recommendation_via_Deep_LowRank_Sparse_Collective_Factorization\figure_7.jpg
+  Figure 7 caption: Prediction error of DLSCF-S on MoviePilot dataset at different
+    dimensions of the one-layer model in (a) and two-layer model in (b).
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.76
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Shuhui Jiang
+  Name of the last author: Yun Fu
+  Number of Figures: 7
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Heterogeneous Recommendation via Deep Low-Rank Sparse Collective Factorization
+  Publication Date: 2019-01-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Previous Usage (i.e., for Evaluating Batch orand SGD Based
+      Methods) and Statistic of Datasets Netflix, MoviePilot, Flixter, MovieLens10M
+      and MovieLens20M
+  Table 10 caption:
+    table_text: TABLE 10 Discussion of Performance of Compared Methods under Different
+      Sparsity Levels of Target Domain on MovieLens10M
+  Table 2 caption:
+    table_text: TABLE 2 Compared Performance of Both Batch and SGD Algorithms on MoviePilot
+      Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Compared Performance of Both Batch and SGD Algorithms on Netflix
+      Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Compared Performance of Both Batch and SGD Algorithms on Flixter
+      Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Compared Performance of Both Batch and SGD Algorithms on MovieLens10M
+      Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Compared Performance of Both Batch and SGD Algorithms on MovieLens20M
+      Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Compared Performance of Transferring Numerical to Numerical
+      of Both Batch and SGD Algorithms on Netflix Dataset
+  Table 8 caption:
+    table_text: TABLE 8 p p Values of t-Test of Comparison Methods under RMSE Metric
+  Table 9 caption:
+    table_text: TABLE 9 Discussion of Performance of Compared Methods under Different
+      Sparsity Levels of Target Domain on Netflix
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2894137
+- Affiliation of the first author: czech institute of informatics, robotics and cybernetics
+    of the czech technical university in prague, prague, czechia
+  Affiliation of the last author: czech institute of informatics, robotics and cybernetics
+    of the czech technical university in prague, prague, czechia
+  Figure 1 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_1.jpg
+  Figure 1 caption: Result of a standard P3P [10], P3P with local optimization using
+    RS model and our R6P-1lin algorithm applied on image with high rolling shutter
+    distortion. Inliers found among tentative 2D-3D correspondences for different
+    algorithms are shown. Inliers found by P3P are blue, inliers found by P3P with
+    local optimization are red and inliers found by R6P are green. Notice that R6P
+    found many more matches than P3P and also than the locally optimized solution
+    initialized by P3P.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_10.jpg
+  Figure 10 caption: Reprojection errors on the detected aruco markers using the camera
+    poses obtained by P3P, R6P-lin2, R6P-lin1 and P3P with subsequent local optimization
+    (Bundle adjustment).
+  Figure 2 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_2.jpg
+  Figure 2 caption: Experiment 1 - results of the estimated camera pose and velocity
+    for varying RS motion, increasing the camera rotation as well as camera translation
+    velocity. The camera orientation for R6P-2lin is kept at R=I to avoid the effect
+    of the linearized camera orientation.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_3.jpg
+  Figure 3 caption: Experiment 2 - varying camera orientation, showing the effect
+    of the double linearization of R6P-2lin. The camera angular and translational
+    velocities are randomly chosen to not exceed 20 degframe and 0.2 respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_4.jpg
+  Figure 4 caption: Experiment 3 - increasing camera motion and comparing the single
+    linearized model (R6P-1lin) to the double linearized model (R6P-lin2) initialized
+    by P3P. A significant improvement is made using R6P-2lin after being initialized
+    with P3P. R6P-2lin initialized by P3P provides comparable performance to R6P-1lin
+    but is outperformed by R6P-1lin on large RS effects because the initial orientation
+    provided by P3P is not good enough.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_5.jpg
+  Figure 5 caption: Examples of experiments on real data. Number of inliers after
+    running 1000 rounds of RANSAC, averaged over 100 RANSAC runs. Number of 2D-3D
+    matches from global shutter images to rolling shutter images are in black, number
+    of inliers obtained by P3P are in red and number of inliers obtained by R6P-2lin
+    are in green. The results are averaged over 100 runs to reduce randomness.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_6.jpg
+  Figure 6 caption: Results on dataset seq20, matched correspondences are in blue,
+    inliers after RANSAC using P3P and R6P-2lin are in red and green respectively.
+    The actual numbers of inliers are displayed on the side of each image pair.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_7.jpg
+  Figure 7 caption: 3D reconstruction of a building from large number of GS images
+    (blue camera poses) and several images containing high level of RS distortion
+    (red camera poses). Several RS cameras were clearly reconstructed wrong, having
+    the pose under ground. The poses estimated using R6P-2lin (green) are much more
+    realistic.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_8.jpg
+  Figure 8 caption: Comparison of the minimal and average ratio of inliers provided
+    by R6P-2lin versus P3P with local optimization using the RS model. Notice that
+    R6P alone without local optimization is better on most datasets. In 28 datasets
+    R6P-2lin provided higher minimal inlier ratio and in 25 datasets better average
+    inilier ratio. In the remaining datasets, the R6P-2lin and locally optimized P3P
+    provided almost identical results. The results correspond to columns 3 and 4 in
+    Table 1.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Rolling_Shutter_Camera_Absolute_Pose\figure_9.jpg
+  Figure 9 caption: Average number of inliers found by P3P and R6P RANSAC using different
+    thresholds.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Cenek Albl
+  Name of the last author: Tomas Pajdla
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Rolling Shutter Camera Absolute Pose
+  Publication Date: 2019-01-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Different Uses of P3P and R6P Solvers
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Timings (in microseconds) for Different Camera Pose
+      Estimation Tasks
+  Table 3 caption:
+    table_text: TABLE 3 Average Timings for Different Methods Assuming 1,000 Rounds
+      of RANSAC and 1,000 Correspondences Per Image
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2894395

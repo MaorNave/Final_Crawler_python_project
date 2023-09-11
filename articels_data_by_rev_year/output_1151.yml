@@ -1,0 +1,867 @@
+- Affiliation of the first author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Affiliation of the last author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_1.jpg
+  Figure 1 caption: "Prototype of RaspiReader: Two fingerprint images (b, (i)) and\
+    \ (b, (ii)) of the input finger (a) are captured. The raw direct image (b, (i))\
+    \ and the raw, high contrast FTIR image (b, (ii)) both contain useful information\
+    \ for spoof detection. Following the use of (b, (ii)) for spoof detection, image\
+    \ calibration and processing are performed on the raw FTIR image to output a high\
+    \ quality, 500 ppi fingerprint for matching (b, (iii)). The dimensions of the\
+    \ RaspiReader shown in (a) are 100 mm \xD7 100 mm \xD7 105 mm (about the size\
+    \ of a 4 inch cube)."
+  Figure 10 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_10.jpg
+  Figure 10 caption: Failure to capture. Several spoofs are unable to be imaged by
+    the RaspiReader due to their dissimilarity in color. In particular, because spoofs
+    in (a) and (b) are black, all light rays will be absorbed preventing light rays
+    from reflecting back to the FTIR imaging sensor. In (c), the dark blue color again
+    prevents enough light from reflecting back to the camera. (a) and (b) are both
+    ecoflex spoofs coated with two different conductive coatings. (c) Is a blue crayola
+    model magic spoof attack.
+  Figure 2 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_2.jpg
+  Figure 2 caption: Fingerprint images acquired using the RaspiReader. Images in (a)
+    were collected from a live finger. Images in (b) were collected from a spoof finger.
+    Using features extracted from both raw image outputs ((i), direct) and ((ii),
+    FTIR) of the RaspiReader, our spoof detectors are better able to discriminate
+    between live fingers and spoof fingers. The raw FTIR image output of the RaspiReader
+    (ii) can be post processed (after spoof detection) to output images suitable for
+    fingerprint matching. Images in (c) were acquired from the same live finger (a)
+    and spoof finger (b) on a commercial off-the-shelf (COTS) 500 ppi optical reader.
+    The close similarity between the two images in (c) qualitatively illustrates why
+    current spoof detectors are limited by the low information content, processed
+    fingerprint images (c, (iii)) output by COTS readers.
+  Figure 3 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_3.jpg
+  Figure 3 caption: Example spoof fingers and live fingers in our database. (a) Spoof
+    fingers and (b) live fingers used to acquire both spoof fingerprint impressions
+    and live fingerprint impressions for conducting the experiments reported in this
+    paper. The spoofs in (a) and the live fingers in (b) are not in 1-to-1 correspondence.
+  Figure 4 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_4.jpg
+  Figure 4 caption: Schematic illustrating RaspiReader functionality. Incoming white
+    light from three LEDs enters the prism. Camera 2 receives light rays reflected
+    from the fingerprint ridges only (light rays are not reflected back from the fingerprint
+    valleys due to total internal reflection (TIR)). This image from Camera 2, with
+    high contrast between ridges and valleys can be used for both spoof detection
+    and fingerprint matching. Camera 1 receives light rays reflected from both the
+    ridges and valleys. This image from Camera 1 provides complementary information
+    for spoof detection.
+  Figure 5 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_5.jpg
+  Figure 5 caption: Electronic CAD model of the RaspiReader case. The dimensions here
+    were provided to a 3D printer for fabricating the prototype.
+  Figure 6 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_6.jpg
+  Figure 6 caption: Inside view of the RaspiReader case. The camera and LED mounts
+    are positioned at the necessary angles and distance to the glass prism, making
+    the reproduction of RaspiReader as simple as 3D printing the open-sourced STL
+    files.
+  Figure 7 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_7.jpg
+  Figure 7 caption: Acquiring image transformation parameters. A 2D printed checkerboard
+    pattern (a) is imaged by the RaspiReader (b). Corresponding points between the
+    frontalized checkerboard pattern (a) and the distorted checkerboard pattern (b)
+    are defined so that perspective transformation parameters can be estimated to
+    map (b) into (c). These transformation parameters are subsequently used to frontalize
+    fingerprint images acquired by RaspiReader for the purpose of fingerprint matching.
+    The checkerboard imaged in (b) is also used to acquire the native resolution of
+    RaspiReader in order to scale matching images to 500 ppi in both the x and y axis
+    as shown in (c).
+  Figure 8 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_8.jpg
+  Figure 8 caption: Native resolution (ppi) in (a) x -axis and (b) y -axis over the
+    raw FTIR RaspiReader image. As is normal, native resolution changes across the
+    image because the right side of the image is closer to the camera than the left
+    side.
+  Figure 9 Link: articels_figures_by_rev_year\2018\RaspiReader_Open_Source_Fingerprint_Reader\figure_9.jpg
+  Figure 9 caption: Processing a RaspiReader raw FTIR fingerprint image into a 500
+    ppi fingerprint image compatible for matching with existing COTS fingerprint readers.
+    (a) The RGB raw FTIR image is first converted to grayscale. (b) Histogram equalization
+    is performed on the grayscale FTIR image to enhance the contrast between the fingerprint
+    ridges and valleys. (c) The fingerprint is negated so that the ridges appear dark,
+    and the valleys appear white. (d), (f) Calibration (estimated using the checkerboard
+    calibration pattern in (e)) is applied to frontalize the fingerprint image to
+    the image plane and down sample (by averaging neighborhood pixels) to 500 ppi
+    in both the x and y directions.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Joshua J. Engelsma
+  Name of the last author: Anil K. Jain
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: 'RaspiReader: Open Source Fingerprint Reader'
+  Publication Date: 2018-07-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Primary Components Used to Construct RaspiReader
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Summary of Spoof 1 1 Fingerprints Collected
+  Table 3 caption:
+    table_text: TABLE 3 Summary of Live Finger Data Collected
+  Table 4 caption:
+    table_text: TABLE 4 Textural Features and Known Testing Materials
+  Table 5 caption:
+    table_text: TABLE 5 MobileNet and Known Testing Materials
+  Table 6 caption:
+    table_text: TABLE 6 Textural Features and Cross-Material Testing 1 1
+  Table 7 caption:
+    table_text: TABLE 7 MobileNet and Cross-Material Testing 1 1
+  Table 8 caption:
+    table_text: TABLE 8 Lumidigm Spoof Detection Accuracy 1 1
+  Table 9 caption:
+    table_text: TABLE 9 Fingerprint Matching Results 1 1
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2858764
+- Affiliation of the first author: graduate school of informatics, kyoto university,
+    kyoto, japan
+  Affiliation of the last author: graduate school of informatics, kyoto university,
+    kyoto, japan
+  Figure 1 Link: articels_figures_by_rev_year\2018\Virtual_Adversarial_Training_A_Regularization_Method_for_Supervised_and_SemiSupe\figure_1.jpg
+  Figure 1 caption: "Demonstration of how our VAT works on semi-supervised learning.\
+    \ We generated 8 labeled data points ( y=1 and y=0 are green and purple, respectively),\
+    \ and 1,000 unlabeled data points in 2-D space. The panels in the first row (I)\
+    \ show the prediction p(y=1|x,\u03B8) on the unlabeled input points at different\
+    \ stages of the algorithm. We used a continuous colormap to designate the predicted\
+    \ values of p(y=1|x,\u03B8) , with green, gray, and purple respectively corresponding\
+    \ to the values 1.0, 0.5, and 0.0. The panels in the second row (II) are heat\
+    \ maps of the regularization term LDS(x, \u03B8 ) on the input points. The values\
+    \ of LDS on blue-colored points are relatively high in comparison to the gray-colored\
+    \ points. We used KL divergence for the choice of D in Eq. (5). Note that, at\
+    \ the onset of training, all the data points have similar influence on the classifier.\
+    \ After 10 updates, the model boundary was still appearing over the inputs. As\
+    \ the training progressed, VAT pushed the boundary away from the labeled input\
+    \ data points."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Virtual_Adversarial_Training_A_Regularization_Method_for_Supervised_and_SemiSupe\figure_2.jpg
+  Figure 2 caption: "Transition of the (a) classification error and (b) R vadv for\
+    \ supervised learning on MNIST. We set \u03F5=2.0 for the evaluation of R vadv\
+    \ for both the baseline and VAT. This is the value of \u03F5 with which the VAT-trained\
+    \ model achieved the best performance on the validation dataset."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Virtual_Adversarial_Training_A_Regularization_Method_for_Supervised_and_SemiSupe\figure_3.jpg
+  Figure 3 caption: "Effect of \u03F5 and \u03B1 on the validation performance for\
+    \ supervised task on MNIST."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Virtual_Adversarial_Training_A_Regularization_Method_for_Supervised_and_SemiSupe\figure_4.jpg
+  Figure 4 caption: Effect of the number of the power iterations on mathcal Rmathrmvadv
+    for (a) supervised task on MNIST and (b) semi-supervised task on CIFAR-10.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Virtual_Adversarial_Training_A_Regularization_Method_for_Supervised_and_SemiSupe\figure_5.jpg
+  Figure 5 caption: Performance of VAT with different values of epsilon . The effect
+    of epsilon on the performance of semi-supervised learning (I), together with the
+    set of typical virtual adversarial examples generated by the model trained with
+    VAT with the corresponding value of epsilon (II).
+  Figure 6 Link: articels_figures_by_rev_year\2018\Virtual_Adversarial_Training_A_Regularization_Method_for_Supervised_and_SemiSupe\figure_6.jpg
+  Figure 6 caption: "Robustness of the VAT-trained model against perturbed images.\
+    \ The upper panel shows the procedure for the evaluation of robustness. In step\
+    \ 1, we prepared two classifiers\u2014one trained with VAT ( textMv ) and another\
+    \ trained without VAT ( textM0 )\u2014and generated a virtual adversarial example\
+    \ from each classifier ( textExv and textEx0 ). In step 2, we classified textExv\
+    \ and textEx0 by these two models, thereby yielding the total of four classification\
+    \ results. The middle panel (graph A and B) plots the rate of misidentification\
+    \ in these four classification tasks against the size of the perturbation ( epsilon\
+    \ ) used to generate the virtual adversarial examples (VAEs) in step 1. The left\
+    \ half of the bottom panel aligned with the graph (A) shows a set of textExv generated\
+    \ with different values of epsilon , together with the classification results\
+    \ of textMv and textM0 on the images. All textExv listed here are images generated\
+    \ from a set of clean examples that were correctly identified by textMv and textM0\
+    \ . The right half of the bottom panel aligned with graph (B) shows the set of\
+    \ textEx0 generated from the same clean images as textExv with different values\
+    \ of epsilon . The label Yes indicates that the model changed the label assignment\
+    \ when the perturbation was applied to the image (e.g., the model was deceived\
+    \ by the perturbation) The label No indicates that the model maintained the label\
+    \ assignment on the perturbed image. Note that the model textMv dominates the\
+    \ model textM0 in terms of classification performance on the images that appear\
+    \ almost indistinguishable from the clean image."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Virtual_Adversarial_Training_A_Regularization_Method_for_Supervised_and_SemiSupe\figure_7.jpg
+  Figure 7 caption: Transition of the normalized SD norm of mathcal R(0) and mathcal
+    R(1) during VAT training of NNs for supervised learning on MNIST and semi-supervised
+    learning on CIFAR-10.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Virtual_Adversarial_Training_A_Regularization_Method_for_Supervised_and_SemiSupe\figure_8.jpg
+  Figure 8 caption: Learning curves of VAT implemented with alpha = 1 and S=1 and
+    RPT implemented with optimal alpha (=7) and S = 9 . The hyperparameter epsilon
+    was set to 2.0 for both VAT and RPT.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Takeru Miyato
+  Name of the last author: Shin Ishii
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'Virtual Adversarial Training: A Regularization Method for Supervised
+    and Semi-Supervised Learning'
+  Publication Date: 2018-07-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Test Performance of Supervised Learning Methods on MNIST with
+      60,000 Labeled Examples in the Permutation Invariant Setting
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Test Performance of Supervised Learning Methods Implemented
+      with CNN on CIFAR-10 with 50,000 Labeled Examples
+  Table 3 caption:
+    table_text: TABLE 3 Test Performance of Semi-Supervised Learning Methods on MNIST
+      with the Permutation Invariant Setting
+  Table 4 caption:
+    table_text: TABLE 4 Test Performance of Semi-Supervised Learning Methods on SVHN
+      and CIFAR-10 without Image Data Augmentation
+  Table 5 caption:
+    table_text: TABLE 5 Test Performance of Semi-Supervised Learning Methods on SVHN
+      and CIFAR-10 with Image Data Augmentation
+  Table 6 caption:
+    table_text: TABLE 6 The Test Accuracies of VAT for the Semi-Supervised Learning
+      Task on CIFAR10 with Different Values of K K (the Number of the Power Iterations)
+  Table 7 caption:
+    table_text: TABLE 7 CNN Models Used in Our Experiments on CIFAR-10 and SVHN, Based
+      on [24], [36], [38]
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2858821
+- Affiliation of the first author: facebook ai research
+  Affiliation of the last author: facebook ai research
+  Figure 1 Link: articels_figures_by_rev_year\2018\Focal_Loss_for_Dense_Object_Detection\figure_1.jpg
+  Figure 1 caption: "We propose a novel loss we term the Focal Loss that adds a factor\
+    \ (1\u2212 p t ) \u03B3 to the standard cross entropy criterion. Setting \u03B3\
+    >0 reduces the relative loss for well-classified examples ( p t >.5 ), putting\
+    \ more focus on hard, misclassified examples. As our experiments will demonstrate,\
+    \ the proposed focal loss enables training highly accurate dense object detectors\
+    \ in the presence of vast numbers of easy background examples."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Focal_Loss_for_Dense_Object_Detection\figure_2.jpg
+  Figure 2 caption: Speed (ms) versus accuracy (AP) on COCO test-dev. Enabled by the
+    focal loss, our simple one-stage RetinaNet detector outperforms all previous one-stage
+    and two-stage detectors, including the best reported Faster R-CNN [3] system from
+    [4]. We show variants of RetinaNet with ResNet-50-FPN (blue circles) and ResNet-101-FPN
+    (orange diamonds) at five scales (400-800 pixels). Ignoring the low-accuracy regime
+    (AP < 25), RetinaNet forms an upper envelope of all current detectors, and an
+    improved variant (not shown) achieves 40.8 AP. Details are given in Section 5.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Focal_Loss_for_Dense_Object_Detection\figure_3.jpg
+  Figure 3 caption: "Focal loss variants compared to the cross entropy as a function\
+    \ of x t =yx . Both the original FL and alternate variant FL \u2217 reduce the\
+    \ relative loss for well-classified examples ( x t >0 )."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Focal_Loss_for_Dense_Object_Detection\figure_4.jpg
+  Figure 4 caption: Derivates of the loss functions from Fig. 3 w.r.t. x .
+  Figure 5 Link: articels_figures_by_rev_year\2018\Focal_Loss_for_Dense_Object_Detection\figure_5.jpg
+  Figure 5 caption: The one-stage RetinaNet network architecture uses a Feature Pyramid
+    Network (FPN) [4] backbone on top of a feedforward ResNet architecture [31] (a)
+    to generate a rich, multi-scale convolutional feature pyramid (b). To this backbone
+    RetinaNet attaches two subnetworks, one for classifying anchor boxes (c) and one
+    for regressing from anchor boxes to ground-truth object boxes (d). The network
+    design is intentionally simple, which enables this work to focus on a novel focal
+    loss function that eliminates the accuracy gap between our one-stage detector
+    and state-of-the-art two-stage detectors like Faster R-CNN with FPN [4] while
+    running at faster speeds.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Focal_Loss_for_Dense_Object_Detection\figure_6.jpg
+  Figure 6 caption: Cumulative distribution functions of the normalized loss for positive
+    and negative samples for different values of gamma for a converged model. The
+    effect of changing gamma on the distribution of the loss for positive examples
+    is minor. For negatives, however, increasing gamma heavily concentrates the loss
+    on hard examples, focusing nearly all attention away from easy negatives.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Focal_Loss_for_Dense_Object_Detection\figure_7.jpg
+  Figure 7 caption: Effectiveness of mathrm FL with various settings gamma and beta
+    . The plots are color coded such that effective settings are shown in blue.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tsung-Yi Lin
+  Name of the last author: "Piotr Doll\xE1r"
+  Number of Figures: 7
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Focal Loss for Dense Object Detection
+  Publication Date: 2018-07-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Experiments for RetinaNet and Focal Loss (FL)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Results of FL and FL \u2217 FL versus CE for Select Settings"
+  Table 3 caption:
+    table_text: TABLE 3 Object Detection Single-Model Results (Bounding Box AP), versus
+      State-of-the-Art on COCO test-dev
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2858826
+- Affiliation of the first author: department of automation, tsinghua university,
+    beijing, china
+  Affiliation of the last author: department of automation, tsinghua university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_1.jpg
+  Figure 1 caption: An illustration of binarizing three real-valued feature dimensions
+    under varying distributions with the sign function, DBD-MQ, and DCBD-MQ, fixing
+    the total number of bits as three. In the figure, red dashes represent the threshold
+    and we show the binarization results with binary codes. For all the three distributions,
+    it is not very reasonable to simply employ the sign function by setting the threshold
+    as zero. Compared with the sign function, DBD-MQ learns a data-dependent binarization
+    to reduce the quantization loss. While the sign function and DBD-MQ evenly allocate
+    bits to the feature dimensions (1 bit per dimension), DCBD-MQ exploits the elementwise
+    diversity of informativeness by adaptively learning the allocation of bits with
+    the fixed total binary length.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_2.jpg
+  Figure 2 caption: "The flowchart of the proposed DBD-MQ. For each image patch from\
+    \ the training set, we first learn a real-valued feature vector with a pre-trained\
+    \ CNN by replacing the softmax layer with a fully connection layer. Then, we binarize\
+    \ the vectors with the K-Autoencoders (KAEs) based multi-quantization instead\
+    \ of the rigid sign function, which minimizes the reconstruction loss by controlling\
+    \ the residual features \u0394 X k . K is equal to 4 in this figure for 2-bit\
+    \ binary encoding, where each feature dimension is quantized to two bits with\
+    \ the same color. Lastly, we optimize the parameters iteratively with back-propagation\
+    \ in an unsupervised manner to obtain compact binary codes. (Best viewed in color.)"
+  Figure 3 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_3.jpg
+  Figure 3 caption: A detailed explanation of training KAEs. For each image from the
+    input set, we first encode and decode its CNN feature with all KAEs. Then, we
+    associate each feature with the Autoencoder obtaining the minimum reconstruction
+    loss, which is highlighted with a red box. Lastly, we utilize the corresponding
+    features to train the associate Autoencoder. These steps are executed iteratively
+    until convergence.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_4.jpg
+  Figure 4 caption: Examples of data-dependent binarization in (a) DBD-MQ, and (b)
+    DCBD-MQ. For DBD-MQ, we set K=2 for easy illustration, where each dimension is
+    binarized into one bit. We quantize each real-valued element to the Autoencoder
+    with the minimum reconstruction loss according to (2), and obtain the binary code
+    through the quantization result. For DCBD-MQ, there are four KAEs in the original
+    set, where the real-valued dimensions compete for more Autoencoders from the set
+    with the fixed total binary length. Based on the informativeness of each feature
+    dimension, the first dimension only obtains AE 2 with 0 bit for representation,
+    the second dimension receives AE 1 and AE 3 with 1 bit, and the third dimension
+    gains AE 0, AE 1 and AE 3 with 2 bits.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_5.jpg
+  Figure 5 caption: An example of pointwise distances between Autoencoders. In the
+    figure, the points in the same color are reconstructed from the same original
+    samples, and pn1,n2 and omega n(k) show the weights and the total supplycapacity,
+    respectively. We exploit all the pointwise distances through the reconstruction
+    results to completely describe the distance between Autoencoders. (Best viewed
+    in color.)
+  Figure 6 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_6.jpg
+  Figure 6 caption: The mean average precision (mAP) performance (%) of (a) DBD-MQ
+    and DCBD-MQ under varying number of Autoencoders, and (b) 16-bit DCBD-MQ under
+    different lambda 1 and lambda 2 .
+  Figure 7 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_7.jpg
+  Figure 7 caption: PrecisionRecall curves of the CIFAR-10 dataset compared with the
+    state-of-the-art unsupervised hashing methods under varying binary lengths (a)
+    16 bits, (b) 32 bits and (c) 64 bits.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_8.jpg
+  Figure 8 caption: Samples of the clustered images under K = 4 , where each group
+    of images is clustered with the same Autoencoder.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Learning_Deep_Binary_Descriptor_with_MultiQuantization\figure_9.jpg
+  Figure 9 caption: ROC curves of the proposed method compared with several methods
+    on the Brown dataset, under all the combinations of training and test of liberty,
+    Notre Dame and Yosemite.
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.59
+  Name of the first author: Yueqi Duan
+  Name of the last author: Jie Zhou
+  Number of Figures: 9
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: Learning Deep Binary Descriptor with Multi-Quantization
+  Publication Date: 2018-07-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the Proposed Approaches to the Widely-Used Binary
+      Representations
+  Table 10 caption:
+    table_text: TABLE 10 Comparison of Mean Average Precision (mAP) (%) with Baseline
+      Methods under Various Tasks on HPatches
+  Table 2 caption:
+    table_text: TABLE 2 Summarization of the Benchmark Datasets Used in the Experiments
+  Table 3 caption:
+    table_text: TABLE 3 The Mean Average Precision (mAP) Performance (%) of Top 1,000
+      Returned Images for DCBD-MQ without Specific Terms on CIFAR-10
+  Table 4 caption:
+    table_text: TABLE 4 The Mean Average Precision (mAP) Performance (%) of Top 1,000
+      Returned Images Compared with Different State-of-the-Art Unsupervised Hashing
+      Methods under Different Binary Code Length
+  Table 5 caption:
+    table_text: TABLE 5 The Mean Average Precision (mAP) Performance (%) of Different
+      Binarization Strategies on the CIFAR-10 Dataset under Different Binary Code
+      Length
+  Table 6 caption:
+    table_text: TABLE 6 The Mean Average Precision (mAP) Performance (%) of Different
+      Encoding Strategies on the CIFAR-10 Dataset under Different Binary Code Length
+  Table 7 caption:
+    table_text: TABLE 7 The Mean Average Precision (mAP) Performance (%) and Total
+      Parameters of DCBD-MQ with Varying CNN Models on the CIFAR-10 Dataset under
+      Different Binary Code Length
+  Table 8 caption:
+    table_text: TABLE 8 95 Percent Error Rates (ERR) Compared with the State-of-the-Art
+      Binary Descriptors on Brown Dataset (%), Where Boosted SSC, BRISK, BRIEF and
+      DeepBit Are Unsupervised Binary Features and LDAHash, D-BRIEF, BinBoost, RFD,
+      Binary L2-Net and Binary DOAP Are Supervised
+  Table 9 caption:
+    table_text: TABLE 9 95 Percent Error Rates (ERR) of Different Binarization Strategies
+      on the Brown Dataset (%)
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2858760
+- Affiliation of the first author: school of electronic and information engineering,
+    beihang university, beijing, china
+  Affiliation of the last author: school of electronic and information engineering,
+    beihang university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_1.jpg
+  Figure 1 caption: (a) Illustration for head movement (HM) when viewing panoramic
+    video. (b) Demonstration for FoVs and HM positions across different subjects.
+    The heat map of HM positions from all subjects is also shown, which is defined
+    as the HM map.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_10.jpg
+  Figure 10 caption: The fitting surface of CC results between the predicted and ground-truth
+    HM maps at various sigma f and w1 . The dark dots in this figure represent the
+    CC results at each specific value of sigma f and w1 , which are used to fit the
+    surface. Note that the CC results are obtained over all training data of the PVS-HM
+    database.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_2.jpg
+  Figure 2 caption: Overall framework of the offline-DHP approach.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_3.jpg
+  Figure 3 caption: Framework of training the DRL model to obtain each DRL workflow
+    of the offline-DHP approach (Fig. 2).
+  Figure 4 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_4.jpg
+  Figure 4 caption: Framework of the online-DHP approach.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_5.jpg
+  Figure 5 caption: Performance of offline-DHP at different numbers of workflows.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_6.jpg
+  Figure 6 caption: MO results between the online-DHP approaches with and without
+    the trained offline-DHP network.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_7.jpg
+  Figure 7 caption: MO results for Deep 360 Pilot, online-DHP approach, and online-DHP
+    wo ground- truth HM positions of previous frames.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_8.jpg
+  Figure 8 caption: HM maps of several frames selected from two test sequences in
+    our PVS-HM database. They are all visualized in the 2D coordination. The second
+    row shows the ground-truth HM maps, which are generated upon the HM positions
+    of all 58 subjects. The third to sixth rows show the HM maps of our, BMS [13],
+    OBDL [25], and SALICON [14] approaches.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Predicting_Head_Movement_in_Panoramic_Video_A_Deep_Reinforcement_Learning_Approa\figure_9.jpg
+  Figure 9 caption: Visualization in HM scanpaths generated by one subject and the
+    online-DHP approach, for sequences Dancing and KingKong. Note that the HM scanpaths
+    of one subject (among 58 subjects) are randomly selected and plotted, and then
+    the corresponding HM scanpaths predicted by online-DHP are plotted.
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Mai Xu
+  Name of the last author: Zulin Wang
+  Number of Figures: 10
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: 'Predicting Head Movement in Panoramic Video: A Deep Reinforcement
+    Learning Approach'
+  Publication Date: 2018-07-24 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 \u0394 \u0394CC, \u0394 \u0394NSS, \u0394 \u0394S-AUC and\
+      \ \u0394 \u0394MO between Offline-DHPOnline-DHP and the Corresponding Supervised\
+      \ Baseline over 15 Test Sequences"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 CC Results of Offline HM Map Prediction by Our and Other Approaches
+      over 15 Test Sequences
+  Table 3 caption:
+    table_text: TABLE 3 NSS Results of Offline HM Map Prediction by Our and Other
+      Approaches over 15 Test Sequences
+  Table 4 caption:
+    table_text: TABLE 4 Shuffled-AUC Results of HM Map Prediction by Our and Other
+      Approaches (without FCB) over 15 Test Sequences
+  Table 5 caption:
+    table_text: TABLE 5 MO Results of Online HM Position Prediction by Our and Other
+      Approaches
+  Table 6 caption:
+    table_text: TABLE 6 MO Results for Online Prediction of HM Positions over the
+      Sports-360 Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2858783
+- Affiliation of the first author: department of information engineering and computer
+    science (disi), university of trento, trento, italy
+  Affiliation of the last author: national key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Efficient_Training_for_Positive_Unlabeled_Learning\figure_1.jpg
+  Figure 1 caption: (a) Plot of training time over iterations, (b) learning curve
+    expressed in terms of objective function.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Efficient_Training_for_Positive_Unlabeled_Learning\figure_2.jpg
+  Figure 2 caption: "Subdivision of the feasible region in the plane defined by the\
+    \ variables \u03C3 i and \u03C3 j . The red solid line represents the feasible\
+    \ region including the equality constraint in (8)."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Efficient_Training_for_Positive_Unlabeled_Learning\figure_3.jpg
+  Figure 3 caption: "Example of transitions performed by a minimization step of Algorithm\
+    \ 1 for different locations of \u03C3 \xAF \u03BC,\u03BD (highlighted by blue\
+    \ points) and for sufficiently large number of iterations."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Efficient_Training_for_Positive_Unlabeled_Learning\figure_4.jpg
+  Figure 4 caption: "Comparative results on (a)-(g) Statlog (shuttle) and (h)-(q)\
+    \ MNIST datasets using the linear kernel ( \u03BB=0.01 ). Each plot shows the\
+    \ training time against different number of unlabeled samples (100 positive samples)\
+    \ as well as the generalization performance on the test set."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Efficient_Training_for_Positive_Unlabeled_Learning\figure_5.jpg
+  Figure 5 caption: Comparative results on (a) Bank-marketing, (b) Adult and (c)-(l)
+    Poker-hand datasets using the linear kernel ( lambda = 0.01 ). Each plot shows
+    the training time against different number of unlabeled samples (100 positive
+    samples) as well as the generalization performance on the test set.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Efficient_Training_for_Positive_Unlabeled_Learning\figure_6.jpg
+  Figure 6 caption: Comparative results on (a)-(g) Statlog (shuttle) and (h)-(q) MNIST
+    datasets using the Gaussian kernel ( lambda = 0.01 and scale parameter equal to
+    1). Each plot shows the training time against different number of unlabeled samples
+    (100 positive samples) as well as the generalization performance on the test set.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Efficient_Training_for_Positive_Unlabeled_Learning\figure_7.jpg
+  Figure 7 caption: Comparative results on (a) Bank-marketing, (b) Adult and (c)-(l)
+    Poker-hand datasets using the Gaussian kernel ( lambda = 0.01 and scale parameter
+    equal to 1). Each plot shows the training time against different number of unlabeled
+    samples (100 positive samples) as well as the generalization performance on the
+    test set.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Emanuele Sansone
+  Name of the last author: Zhi-Hua Zhou
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Efficient Training for Positive Unlabeled Learning
+  Publication Date: 2018-07-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Equations and Conditions Used to Solve the Four QP Subproblems
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Characteristics of Data Sets
+  Table 3 caption:
+    table_text: TABLE 3 Comparative Results (F-Measure) on Different Small-Scale Datasets
+      and on Different Values of Hyperparameters Using the Linear Kernel
+  Table 4 caption:
+    table_text: TABLE 4 Comparative Results (F-Measure) on Different Small-Scale Datasets
+      and on Different Values of Hyperparameters Using the Gaussian Kernel (Scale
+      Parameter Equal to 1)
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2860995
+- Affiliation of the first author: school of computer science and technology, xidian
+    university, xian, china
+  Affiliation of the last author: video and image processing system (vips) lab, xidian
+    university, xian, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_1.jpg
+  Figure 1 caption: Framework of label consistent matrix factorization hashing.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_10.jpg
+  Figure 10 caption: topN-Precision curves on MSCOCO by varying code length.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_2.jpg
+  Figure 2 caption: topN-Precision curves on Wiki by varying code length.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_3.jpg
+  Figure 3 caption: Precision-Recall curves on Wiki by varying code length.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_4.jpg
+  Figure 4 caption: topN-Precision curves on MIRFlickr by varying code length.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_5.jpg
+  Figure 5 caption: Precision-Recall curves on MIRFlickr by varying code length.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_6.jpg
+  Figure 6 caption: Example of text-query-image retrieval on the MIRFlickr data set.
+    Images with red border are manually marked as irrelevant.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_7.jpg
+  Figure 7 caption: Example of image-query-text retrieval on the MIRFlickr data set.
+    Tags in blue is manually marked as relevant.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_8.jpg
+  Figure 8 caption: topN-Precision curves on NUS-WIDE by varying code length.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Label_Consistent_Matrix_Factorization_Hashing_for_LargeScale_CrossModal_Similari\figure_9.jpg
+  Figure 9 caption: Precision-Recall curves on NUS-WIDE by varying code length.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Di Wang
+  Name of the last author: Lihuo He
+  Number of Figures: 16
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Label Consistent Matrix Factorization Hashing for Large-Scale Cross-Modal
+    Similarity Search
+  Publication Date: 2018-07-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics of Benchmark Data Sets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 mAP Results on Different Data Sets
+  Table 3 caption:
+    table_text: TABLE 3 Training Time (in Seconds) on the NUS-WIDE Data Set by Varying
+      the Size of Training Set
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2861000
+- Affiliation of the first author: video analytics lab, indian institute of science,
+    bangalore, india
+  Affiliation of the last author: video analytics lab, indian institute of science,
+    bangalore, india
+  Figure 1 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_1.jpg
+  Figure 1 caption: "Overview of the proposed generalized objective to craft \u201C\
+    Image agnostic\u201D (Universal) Adversarial Perturbations for a given target\
+    \ CNN. Input to our method is a task specific target CNN. The proposed objective,\
+    \ which is independent of the underlying task, then crafts UAPs without utilizing\
+    \ any data samples. The crafted UAPs are transferable to other models trained\
+    \ to perform the same underlying task as the target CNN."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_10.jpg
+  Figure 10 caption: "Correlation between ||f(x+\u03B4)\u2212f(x)| | 2 and ||f(\u03B4\
+    )| | 2 computed for VGG-16 model. Plot shows the fit between ||f(x+\u03B4)\u2212\
+    f(x)| | 2 and ||f(\u03B4)| | 2 computed during the training at iterations just\
+    \ before the \u03B4 gets saturated."
+  Figure 2 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_2.jpg
+  Figure 2 caption: "Universal adversarial perturbations crafted by GD-UAP objective\
+    \ for multiple models trained on ILSVRC [28] dataset. Perturbations were crafted\
+    \ with \u03BE=10 using the range prior (Section 3.3.1)."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_3.jpg
+  Figure 3 caption: Sample original and adversarial image pairs from ILSVRC validation
+    set generated for VGG-19. First row shows original images and corresponding predicted
+    labels, second row shows the corresponding perturbed images along with their predictions.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_4.jpg
+  Figure 4 caption: "Universal adversarial perturbations for semantic segmentation,\
+    \ crafted by the proposed GD-UAP objective for multiple models. Perturbations\
+    \ were crafted with \u201Cdata w less BG\u201D prior."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_5.jpg
+  Figure 5 caption: Sample original and adversarial images from PASCAL-2011 dataset
+    generated for FCN-Alex. First row shows clean and adversarial images with various
+    priors. Second row shows the corresponding predicted segmentation maps.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_6.jpg
+  Figure 6 caption: "Segmentation predictions of multiple models over a sample perturbed\
+    \ image. Perturbations were crafted using the \u201Cdata w less BG\u201D prior.\
+    \ The first row shows the perturbed input image, the second shows the segmentation\
+    \ output of clean sample image, and the third shows the segmentation output of\
+    \ the perturbed sample image."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_7.jpg
+  Figure 7 caption: Sample original and adversarial image pairs from KITTI dataset
+    generated for Monodepth-VGG. First row shows clean and perturbed images with various
+    priors. Second row shows the corresponding predicted depth maps.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_8.jpg
+  Figure 8 caption: Reliance of the data dependent objective UAP [8] on the size of
+    available training data samples. Note that our approach utilizes no data samples
+    and achieves competitive fooling performance.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Generalizable_DataFree_Objective_for_Crafting_Universal_Adversarial_Perturbation\figure_9.jpg
+  Figure 9 caption: Percentage relative change in the extracted representations caused
+    by our crafted perturbations at multiple layers of VGG-16.
+  First author gender probability: 0.98
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Konda Reddy Mopuri
+  Name of the last author: R. Venkatesh Babu
+  Number of Figures: 10
+  Number of Tables: 13
+  Number of authors: 3
+  Paper title: Generalizable Data-Free Objective for Crafting Universal Adversarial
+    Perturbations
+  Publication Date: 2018-07-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Fooling Rates for GD-UAP Perturbations Learned for Object
+      Recognition on ILSVRC Dataset [28]
+  Table 10 caption:
+    table_text: TABLE 10 The Fooling Rates Computed for Various UAP Algorithms for
+      under Different Defenses on GoogLeNet
+  Table 2 caption:
+    table_text: TABLE 2 Fooling Rates for the Proposed Objective with and without
+      Utilizing Prior Information about the Training Data
+  Table 3 caption:
+    table_text: TABLE 3 Generalized Fooling Rates Achieved by the Perturbations Crafted
+      by the Proposed Approach under Various Settings
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Mean IOU Obtained by Various Models Against
+      GD-UAP Perturbations
+  Table 5 caption:
+    table_text: TABLE 5 Performance of the Crafted Perturbations for Monodepth-Resnet50
+      and Monodepth-VGG Using Various Metrics for Evaluating Depth Estimation on the
+      Eigen Test-Split of KITTI Datset
+  Table 6 caption:
+    table_text: "TABLE 6 GFR with Respect to \u03B4<1.25 \u03B4<1.25 Metric for the\
+      \ Task of Depth Estimation"
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Data-Free Objectives
+  Table 8 caption:
+    table_text: TABLE 8 Effect of Data Dependency on Crafting the Perturbations
+  Table 9 caption:
+    table_text: TABLE 9 We Present the Fooling Rate Comparison of the Existing Data
+      Dependent UAP [8] Approach and the Proposed Approach
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2861800
+- Affiliation of the first author: national key laboratory of novel software technology,
+    nanjing university, nanjing, china
+  Affiliation of the last author: national key laboratory of novel software technology,
+    nanjing university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_1.jpg
+  Figure 1 caption: 'A MIML example: The image is represented with multiple instances
+    and associated with multiple labels.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_10.jpg
+  Figure 10 caption: Example images of different sub-concepts identified for label
+    sea, where one column corresponds to one sub-concept.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_2.jpg
+  Figure 2 caption: Four different learning frameworks [55].
+  Figure 3 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_3.jpg
+  Figure 3 caption: 'The two-level model: W 0 maps the original feature vectors to
+    a shared subspace, and w l is the weight vector for label l .'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_4.jpg
+  Figure 4 caption: An example of sub-concepts. An image with label mountain can be
+    a mountain of sand, a snow mountain or a mountain covered with trees.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_5.jpg
+  Figure 5 caption: Comparison results on Corel5K with varying data size; uparrow
+    ( downarrow ) indicates that the larger (smaller) the value, the better the performance.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_6.jpg
+  Figure 6 caption: Comparison results on MSRA with varying data size; uparrow ( downarrow
+    ) indicates that the larger (smaller) the value, the better the performance; only
+    MIMLfast can work when data size reaches 25,000.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_7.jpg
+  Figure 7 caption: Comparison of time cost on six moderate-sized data sets; NA indicates
+    that no result was obtained in 24 hours; the y-axis in (a) (b) and (c) are log-scaled.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_8.jpg
+  Figure 8 caption: Comparison of time cost on Corel5K and MSRA with varying data
+    size.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Fast_MultiInstance_MultiLabel_Learning\figure_9.jpg
+  Figure 9 caption: Key instances identified by MIMLfast for each label. Image regions
+    corresponding to key instances are highlighted with red contours.
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Sheng-Jun Huang
+  Name of the last author: Zhi-Hua Zhou
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Fast Multi-Instance Multi-Label Learning
+  Publication Date: 2018-07-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics of Experimental Data Sets (6 with Moderate Size
+      and 2 with Large Size)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Comparison Results (mean \xB1 \xB1std.) on Moderate-Sized\
+      \ Data Sets"
+  Table 3 caption:
+    table_text: "TABLE 3 Key Instance Detection Accuracy (mean \xB1 \xB1std.)"
+  Table 4 caption:
+    table_text: "TABLE 4 Results (mean \xB1 \xB1std.) Obtained by Identifying Different\
+      \ Numbers of Sub-Concepts"
+  Table 5 caption:
+    table_text: "TABLE 5 Comparison Results (mean \xB1 \xB1std.) of MIMLfast with\
+      \ Two Variants (V1 and V2)"
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2861732
+- Affiliation of the first author: department of computer science and technology,
+    tsinghua university, beijing, china
+  Affiliation of the last author: department of computer science and technology, tsinghua
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\MaxMargin_Majority_Voting_for_Learning_from_Crowds\figure_1.jpg
+  Figure 1 caption: "A geometric interpretation of the crowdsourcing margin. In this\
+    \ case the category number D=3 and the worker number N=2 . Worker 1 provides label\
+    \ 3 to item i while worker 2 provides label 1. \u03B7 is the given workers weights."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\MaxMargin_Majority_Voting_for_Learning_from_Crowds\figure_2.jpg
+  Figure 2 caption: A geometric interpretation of the ordinal crowdsourcing margin.
+    The setting is the same as in Fig. 1. According to the definition of crowdsourcing
+    margin, the crowdsourcing margin is the distance between P 2 and P 1 ; According
+    to the definition of ordinal crowdsourcing margin, the potential true label is
+    1; and the margin is the larger of d 1 and d 2 , which in this case is d 1 . So
+    the margin in ordinal setting has the same value as in multi-class setting but
+    has different meanings.
+  Figure 3 Link: articels_figures_by_rev_year\2018\MaxMargin_Majority_Voting_for_Learning_from_Crowds\figure_3.jpg
+  Figure 3 caption: An illustration for the online learning-from-crowds setting.
+  Figure 4 Link: articels_figures_by_rev_year\2018\MaxMargin_Majority_Voting_for_Learning_from_Crowds\figure_4.jpg
+  Figure 4 caption: Error rates per iteration of various estimators on the Web-Search
+    dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2018\MaxMargin_Majority_Voting_for_Learning_from_Crowds\figure_5.jpg
+  Figure 5 caption: NLLs and ERs when separately testing the generative and discriminative
+    components of CrowdSVM.
+  Figure 6 Link: articels_figures_by_rev_year\2018\MaxMargin_Majority_Voting_for_Learning_from_Crowds\figure_6.jpg
+  Figure 6 caption: Online performance of different learning methods with various
+    mini-batch sizes. We also train a batch CrowdSVM on all the passed data after
+    processing each mini-batch, whose performance is denoted by the fully observed
+    curve.
+  Figure 7 Link: articels_figures_by_rev_year\2018\MaxMargin_Majority_Voting_for_Learning_from_Crowds\figure_7.jpg
+  Figure 7 caption: Overall error rates of online CrowdSVM estimator with different
+    mini-batch sizes.
+  Figure 8 Link: articels_figures_by_rev_year\2018\MaxMargin_Majority_Voting_for_Learning_from_Crowds\figure_8.jpg
+  Figure 8 caption: (a) Performance of online Gibbs-CrowdSVM with various mini-batch
+    sizes. (b) Overall error rates of online Gibbs-CrowdSVM with different mini-batch
+    sizes.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.74
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.77
+  Name of the first author: Tian Tian
+  Name of the last author: You Qiaoben
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Max-Margin Majority Voting for Learning from Crowds
+  Publication Date: 2018-07-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Overview of the Real-World Crowd Labeling Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Error-Rates (%) of Different Estimators on Real World Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Error-rates (%) of the Estimators on Datasets with an Ordinal
+      Structure
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2860987

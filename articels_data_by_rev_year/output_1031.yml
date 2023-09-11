@@ -1,0 +1,849 @@
+- Affiliation of the first author: school of electrical and electronic engineering,
+    yonsei university, seoul, korea
+  Affiliation of the last author: school of electrical and electronic engineering,
+    yonsei university, seoul, korea
+  Figure 1 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_1.jpg
+  Figure 1 caption: 'Visualization of our FCSS results: (a) source image, (b) target
+    image, (c) warped source image using dense correspondences, (d), (e) enlarged
+    windows for source and target images, (f), (g) local self-similarities computed
+    by our FCSS descriptor between source and target images. Even though there are
+    significant differences in appearance among different instances within the same
+    object category in (a) and (b), their local self-similarities computed by our
+    FCSS descriptor are preserved as shown in (f) and (g), providing robustness to
+    intra-class appearance and shape variations.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_10.jpg
+  Figure 10 caption: 'Qualitative results for various feature descriptors with fixed
+    SF optimization on the Taniai benchmark [12]: (a) Source image, (b) target image,
+    (c) SIFT [10], (d) DASC [23], (e) DeepD. [16], (f) MatchN. [14], (g) FCSS, and
+    (h) CAT-FCSS w mathcalLcl .'
+  Figure 2 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_2.jpg
+  Figure 2 caption: Visuallization of LSS descriptor. This descriptor represents local
+    self-similarity between certain patch pairs within a local support window.
+  Figure 3 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_3.jpg
+  Figure 3 caption: "Convolutional self-similarity (CSS) layers, which measure convolutional\
+    \ self-similarity S(i; W s , W t ) between two patches P i\u2212 W s and P i\u2212\
+    \ W t . (a) Straightforward version. (b) Efficient version, which equivalently\
+    \ solves for convolutional self-similarity while avoiding repeated computations\
+    \ for convolutions."
+  Figure 4 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_4.jpg
+  Figure 4 caption: Network configuration of the FCSS descriptor, consisting of convolutional
+    self-similarity layers at multiple scales.
+  Figure 5 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_5.jpg
+  Figure 5 caption: 'Visualization of our CAT-FCSS results: (a) source image, (b)
+    target image, (c) warped source image using dense correspondences, (d), (e) enlarged
+    windows for source and target images, (f), (g) local self-similarities computed
+    by our CAT-FCSS descriptor between source and target images. Our CAT-FCSS descriptor
+    provides robustness to geometric variations such as affine transformations.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_6.jpg
+  Figure 6 caption: For affine invariance in FCSS descriptor, a convolutional affine
+    transformer (CAT) layer estimates an affine transformation field mathbfT(theta
+    i) to transform the sampling patterns and corresponding receptive fields.
+  Figure 7 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_7.jpg
+  Figure 7 caption: Visualization of applying an affine-varying receptive field with
+    parameterized sampling grids jtheta according to affine transformation mathbfT(theta
+    i) .
+  Figure 8 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_8.jpg
+  Figure 8 caption: Network configuration of the CAT-FCSS descriptor, consisting of
+    convolutional affine transformation layers and convolutional self-similarity layers
+    at multiple scales.
+  Figure 9 Link: articels_figures_by_rev_year\2018\FCSS_Fully_Convolutional_SelfSimilarity_for_Dense_Semantic_Correspondence\figure_9.jpg
+  Figure 9 caption: 'Average matching accuracy with respect to endpoint error threshold
+    on the Taniai benchmark [12]: (a) various feature descriptors with SF optimization,
+    (b) state-of-the-art correspondence techniques on image pairs within (from top
+    to bottom) FG3DCar, JODS, and PASCAL on the Taniai benchmark [12].'
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Seungryong Kim
+  Name of the last author: Kwanghoon Sohn
+  Number of Figures: 18
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: 'FCSS: Fully Convolutional Self-Similarity for Dense Semantic Correspondence'
+  Publication Date: 2018-02-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Matching Accuracy for Various Feature Descriptors with Fixed
+      SF Optimization on the Taniai Benchmark [12]
+  Table 10 caption:
+    table_text: TABLE 10 Quantitative Results for Non-Parametric Object Detection
+      on the Proposal Flow-PASCAL Benchmark [25]
+  Table 2 caption:
+    table_text: TABLE 2 Matching Accuracy Compared to State-of-the-art Correspondence
+      Techniques on the Taniai Benchmark [12]
+  Table 3 caption:
+    table_text: TABLE 3 Matching Accuracy for Various Feature Descriptors with SF
+      Optimization on the Proposal Flow-WILLOW Benchmark [13]
+  Table 4 caption:
+    table_text: TABLE 4 Matching Accuracy Compared to State-of-the-Art Correspondence
+      Techniques on the Proposal Flow-WILLOW Benchmark [13]
+  Table 5 caption:
+    table_text: TABLE 5 Matching Accuracy for Various Feature Descriptors with SF
+      Optimization on the Proposal Flow-PASCAL Benchmark [25]
+  Table 6 caption:
+    table_text: TABLE 6 Matching Accuracy Compared to State-of-the-Art Correspondence
+      Techniques on the Proposal Flow-PASCAL Benchmark [25]
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Results for Non-Parametric Part Segmentation
+      on the PASCAL-VOC Part Dataset [27]
+  Table 8 caption:
+    table_text: TABLE 8 Quantitative Results for Foreground Mask Detection on the
+      Caltech-101 Dataset [28]
+  Table 9 caption:
+    table_text: TABLE 9 Quantitative Results for Non-Parametric Semantic Segmentation
+      on the PASCAL-VOC 2012 Benchmark [29]
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2803169
+- Affiliation of the first author: department of information engineering and computer
+    science (disi), university of trento, trento, italy
+  Affiliation of the last author: department of information engineering and computer
+    science (disi), university of trento, trento, italy
+  Figure 1 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_1.jpg
+  Figure 1 caption: The recurrent face aging (RFA) framework exploits a RNN to model
+    the aging pattern. The aged face is synthesized by referring to the autoregressive
+    memory of the previous faces. The intermediate transitional faces can also be
+    synthesized.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_10.jpg
+  Figure 10 caption: Comparison between CDL and RFA. We do not include the ground
+    truth images as some of them are unavailable. We can observe that the aged face
+    generated by our method matches the characteristics of the target age group well
+    (e.g., the aged face in row 2, column 3) gets some wrinkles, and his eyes become
+    smaller during the aging process). But for some cases our aged faces are not so
+    clear as the ones generated by CDL, such as the examples in the green boxes.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_2.jpg
+  Figure 2 caption: Step 1 of face normalization. (a) Examples of input images. (b)
+    Masked images. (c) Estimated flow for face normalization. (d) Normalized faces
+    with the estimated optical flow.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_3.jpg
+  Figure 3 caption: Face normalization process consists of two steps. Step 1, shown
+    in (a), is to learn a robust eigenface space incrementally which is insensitive
+    to the errors brought by the optical flow. Step 2, shown in (b), is to neutralize
+    the facial expressions progressively by decreasing the dimensionality of the eigenface
+    space.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_4.jpg
+  Figure 4 caption: (a) The first 4 eigen faces encode the lighting of the faces.
+    (b) The other eigen faces encode face textures.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_5.jpg
+  Figure 5 caption: 'Two-step face normalization: (step 1) coarse face normalization;
+    (step 2) progressive face normalization.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_6.jpg
+  Figure 6 caption: Recurrent face aging (RFA) framework with triple-layer GRU. (b)
+    Shows the vertical section of the RFA. (c) Shows the overall architecture of RFA,
+    where the weighted loss is employed to make the system focus more on the latter
+    recurrences.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_7.jpg
+  Figure 7 caption: Face alignment. (left) Align the face with our two-step face normalization
+    method. (right) Align the face to the mean position of the face landmarks via
+    interpolation.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_8.jpg
+  Figure 8 caption: Texture transfer from the nearest neighbour.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Recurrent_Face_Aging_with_Hierarchical_AutoRegressive_Memory\figure_9.jpg
+  Figure 9 caption: Face aging results comparison between FT Demo, Coupled Dictionary
+    Learning (CDL) [8], RFA, and the ground truth (GT). The images in the green boxes
+    are aged faces which are most similar to the GT. Usually, our RFA method can beat
+    the other methods.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Wei Wang
+  Name of the last author: Nicu Sebe
+  Number of Figures: 15
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: Recurrent Face Aging with Hierarchical AutoRegressive Memory
+  Publication Date: 2018-02-07 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Equal Error Rate versus \u03B1"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison Between RFA and Other Baselines
+  Table 3 caption:
+    table_text: TABLE 3 Equal Error Rate (EER) (%)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2803166
+- Affiliation of the first author: fujian key laboratory of sensing and computing
+    for smart city, xiamen university, xiamen, fujian, china
+  Affiliation of the last author: school of computer science, university of adelaide,
+    adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_1.jpg
+  Figure 1 caption: An example of hypergraph construction for line fitting. (a) The
+    input data including four data points and four model hypotheses (i.e., lines).
+    (b) A hypergraph with four vertices v i 4 i=1 and four hyperedges e i 4 i=1 .
+    In the hypergraph, each vertex v i and each hyperedge e i denote a model hypothesis
+    l i and a data point d i in (a), respectively.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_10.jpg
+  Figure 10 caption: Some fitting results obtained by MSHF2 for homography based segmentation
+    on the AdelaideRMF dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_2.jpg
+  Figure 2 caption: Some results obtained by NCut based on different hypergraphs for
+    line fitting. (a) The input data. The data points with blue color are outliers,
+    and the other data points with the same color belong to the inliers of the same
+    model instance. (b) to (e) The results obtained by NCut based on the uniform hypergraphs
+    with three, six, nine and twelve degrees, respectively. (f) The results obtained
+    by NCut based on the proposed non-uniform hypergraph.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_3.jpg
+  Figure 3 caption: "An example shows that MSHF fits the five lines on the \u201C\
+    star5\u201D data. (a) The input data. The data points with blue color are outliers,\
+    \ and the other data points with the same given color belong to the inliers of\
+    \ the same model instance. (b) The obtained decision graph. The vertices are ranked\
+    \ according to their weighting scores in non-decreasing order. The five vertices\
+    \ with the first five highest values of the minimum T-distance (shown in different\
+    \ colors in the zoomed portion of the figure except for blue) are the sought modes.\
+    \ (c) The five lines corresponding to the five sought modes."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_4.jpg
+  Figure 4 caption: "Homography based segmentation on \u201CNeem\u201D [32]. (a) and\
+    \ (b) The decision graphs obtained by the proposed mode-seeking algorithm based\
+    \ on G and G \u2217 , respectively. (c) and (d) The segmentation results obtained\
+    \ by the proposed MSHF method based on G and G \u2217 , respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_5.jpg
+  Figure 5 caption: Examples for line fitting in the 3D space. 1st to 4th rows respectively
+    fit three, four, five and six lines. The corresponding outlier percentages are
+    respectively 86, 88, 89 and 90 percent. The inlier noise scale is set to 1.0 and
+    each line includes 100 inliers. Each data includes 400 outliers. We do not show
+    the results of MSHMSHF1, which are similar to those of MSHF2, due to the space
+    limit.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_6.jpg
+  Figure 6 caption: 'The fitting errors obtained by the seven competing methods for
+    data with different cardinality ratios of inliers: (a) and (b) show the performance
+    comparison of the standard variances and the average fitting errors for data with
+    different inlier cardinality ratios, respectively.'
+  Figure 7 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_7.jpg
+  Figure 7 caption: Examples for circle fitting in the 2D space. 1st to 4th rows respectively
+    fit three, four, five and sixteen circles. The inlier noise scale is set to 0.5
+    and each circle has 100 inliers. Each data includes 400 outliers. We do not show
+    the results of MSHMSHF1, which are similar to those of MSHF2, due to the space
+    limit.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_8.jpg
+  Figure 8 caption: "Examples for line fitting. First (\u201CTracks\u201D) and second\
+    \ (\u201CPyramid\u201D) rows respectively fit seven and four lines. We do not\
+    \ show the results of MSHMSHF1, which are similar to those of MSHF2, due to the\
+    \ space limit."
+  Figure 9 Link: articels_figures_by_rev_year\2018\Searching_for_Representative_Modes_on_Hypergraphs_for_Robust_Geometric_Model_Fit\figure_9.jpg
+  Figure 9 caption: "Examples for circle fitting. First (\u201CCoins\u201D) and second\
+    \ (\u201CBowls\u201D) rows respectively fit five and four circles. We do not show\
+    \ the results of MSHMSHF1, which are similar to those of MSHF2, due to the space\
+    \ limit."
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hanzi Wang
+  Name of the last author: David Suter
+  Number of Figures: 13
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Searching for Representative Modes on Hypergraphs for Robust Geometric
+    Model Fitting
+  Publication Date: 2018-02-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Comparison Results of Line Fitting on Four Synthetic
+      Data
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Comparison Results of Circle Fitting on Four
+      Synthetic Data
+  Table 3 caption:
+    table_text: TABLE 3 The CPU Time Used by the Seven Fitting Methods (in Seconds)
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Comparison Results of Homography Based Segmentation
+      on 19 Image Pairs
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Comparison Results of Two-View Based Motion Segmentation
+      on 19 Image Pairs
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2803173
+- Affiliation of the first author: faculty of computer science and information technology,
+    west pomeranian university of technology, szczecin, poland
+  Affiliation of the last author: faculty of computer science and information technology,
+    west pomeranian university of technology, szczecin, poland
+  Figure 1 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_1.jpg
+  Figure 1 caption: Two scenarios of detection procedure based on complex-valued integral
+    images, allowing for constant-time extraction of features invariant to rotation
+    based on Zernike moments (ZMs).
+  Figure 10 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_10.jpg
+  Figure 10 caption: "\u201CLetter A\u201D: examples of detections (postprocessed).\
+    \ The right bottom image contains one false alarm."
+  Figure 2 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_2.jpg
+  Figure 2 caption: Examples of image reconstructions using Zernike polynomials.
+  Figure 3 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_3.jpg
+  Figure 3 caption: 'The trick from [23] to calculate OFMMs: square image window inscribed
+    in the unit circle, zero values laid in the complement of square.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_4.jpg
+  Figure 4 caption: Illustration of detection procedure using sliding window.
+  Figure 5 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_5.jpg
+  Figure 5 caption: 'The concept of rings: (a) window partitioning for R=5 , (b) example
+    of integration area for r=1 and h=1 (variant with a ''hole''), (c) example of
+    integration area for r=1 and h=0 (variant without a ''hole'').'
+  Figure 6 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_6.jpg
+  Figure 6 caption: "Objects and backgrounds used to generate the \u201Csynthetic\
+    \ airplanes\u201D data. Positives: airplanes (a), negatives: clouds, helicopters\
+    \ (b) + elements of backgrounds (c)."
+  Figure 7 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_7.jpg
+  Figure 7 caption: "\u201CSynthetic airplanes\u201D: examples of detections. Top\
+    \ row demonstrates a direct outcome (left) and a postprocessed one (right). Bottom-right\
+    \ image contains an indication treated as a false alarm due to an insufficient\
+    \ Jaccard index (window too small with respect to target)."
+  Figure 8 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_8.jpg
+  Figure 8 caption: "\u201CSynthetic airplanes\u201D: ROC curves for test data."
+  Figure 9 Link: articels_figures_by_rev_year\2018\ConstantTime_Calculation_of_Zernike_Moments_for_Detection_with_Rotational_Invari\figure_9.jpg
+  Figure 9 caption: 'Sample images and all backgrounds used to generate the data.
+    Positives: letters A (a), negatives: other letters (b), backgrounds (c).'
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Aneta Bera
+  Name of the last author: Dariusz Sychel
+  Number of Figures: 14
+  Number of Tables: 11
+  Number of authors: 3
+  Paper title: Constant-Time Calculation of Zernike Moments for Detection with Rotational
+    Invariance
+  Publication Date: 2018-02-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Number of Integral Images According to Formula (32)
+  Table 10 caption:
+    table_text: "TABLE 10 \u201CFaces\u201D: Detection Results for RB+DT Algorithm\
+      \ ( B=8,16 , T=512 , 16 Terminals) Working as Prescreener Based on ZMs Together\
+      \ with 16 Angle-Dependent Classifiers RB+B ( B=8 , T=512 ) Based on HFs"
+  Table 2 caption:
+    table_text: "TABLE 2 Number of Growth Operations \u0394 Involved in Computation\
+      \ of Formula (27)"
+  Table 3 caption:
+    table_text: "TABLE 3 \u201CSynthetic Airplanes\u201D: Experimental Setup"
+  Table 4 caption:
+    table_text: "TABLE 4 \u201CSynthetic Airplanes\u201D: Detection Results for RB+DT\
+      \ Algorithm; B=8 , T=256 , Depth of Trees 5 (16 Terminals)"
+  Table 5 caption:
+    table_text: "TABLE 5 \u201CSynthetic Airplanes\u201D: Time Performance for a 640\xD7\
+      480 Image (Parallel Computations on: Intel Xeon E5-2699 v4 CPU, 2244 ct, 55\
+      \ MB Cache)"
+  Table 6 caption:
+    table_text: "TABLE 6 \u201CLetter A\u201D: Experimental Setup"
+  Table 7 caption:
+    table_text: "TABLE 7 \u201CLetter A\u201D: Detection Results for RB+DT Algorithm;\
+      \ B=8 , T=512 , Depth of Trees 6 (32 Terminals)"
+  Table 8 caption:
+    table_text: "TABLE 8 \u201CLetter A\u201D: Time Performance for a 640\xD7480 Image\
+      \ (Parallel Computations on: Intel Xeon E5-2699 v4 CPU, 2244 ct, 55 MB Cache)"
+  Table 9 caption:
+    table_text: "TABLE 9 \u201CFaces\u201D: Experimental Setup"
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2803828
+- Affiliation of the first author: department of information engineering and computer
+    science (disi), university of trento, trento, tn, italy
+  Affiliation of the last author: department of information engineering and computer
+    science (disi), university of trento, trento, tn, italy
+  Figure 1 Link: articels_figures_by_rev_year\2018\Self_Paced_Deep_Learning_for_Weakly_Supervised_Object_Detection\figure_1.jpg
+  Figure 1 caption: A schematic illustration of how the training dataset T t (represented
+    by the green rectangle) of our deep network evolves depending on t and on the
+    progressively increasing recognition skills of the trained network.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Self_Paced_Deep_Learning_for_Weakly_Supervised_Object_Detection\figure_2.jpg
+  Figure 2 caption: "Inter-classifier competition. The two above figures show the\
+    \ behaviour of our self-paced learning algorithm on the same image I in two different\
+    \ iterations ( t=1 and t=2 ). In both cases, the green box shows the highest-score\
+    \ box in I corresponding to z I y in Eq. (2). Conversely, the red box in the left\
+    \ figure shows the highest-score box in I corresponding to the car class ( z car\
+    \ ). Since in t=1 (left figure) s TV = s I y > s car , and since TV \u2209Y ,\
+    \ then I is not included in T 1 (see also Fig. 1). However, in t=2 (right figure)\
+    \ s TV < s I y = s car (where car\u2208Y ), thus (I, s car , z car ,car) is included\
+    \ in P (line Line 5 in Algorithm 1): The \u201Ccar\u201D classifier in this iteration\
+    \ is strong enough and \u201Cwins\u201D in I ."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Self_Paced_Deep_Learning_for_Weakly_Supervised_Object_Detection\figure_3.jpg
+  Figure 3 caption: 'Qualitative results: Visualizations of the class-specific top-score
+    box z y in the four self-paced iterations (chronologically ordered from left to
+    right) with respect to different training images and labels y (leftmost column).'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Self_Paced_Deep_Learning_for_Weakly_Supervised_Object_Detection\figure_4.jpg
+  Figure 4 caption: Other qualitative results in which the evolution over time of
+    the class-specific top-score box ( z y ) of the network did not succeed in localizing
+    the true objects into the images.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Enver Sangineto
+  Name of the last author: Nicu Sebe
+  Number of Figures: 4
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: Self Paced Deep Learning for Weakly Supervised Object Detection
+  Publication Date: 2018-02-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Comparison (mAP % ) on the ILSVRC 2013 Detection
+      Dataset
+  Table 10 caption:
+    table_text: TABLE 10 Results (mAP % ) on the Pascal VOC 2007 Test Set Using Relaxed
+      Versions of the Inter-Classifier Competition
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Comparison (AP % ) on the Pascal VOC 2007 Test
+      Set
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparison (CorLoc % ) on the Pascal VOC 2007
+      Trainval Set (with a Single AlexNet-Like Capacity Network)
+  Table 4 caption:
+    table_text: TABLE 4 mAP ( % ) on Pascal VOC 2007 Test Computed Using Only Init
+      (First Row) or Init+SP (Second Row) for Fine-Tuning the Detector
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Comparison (AP % ) on the Pascal VOC 2007 Test
+      Set Using a Single VGG-16 Network
+  Table 6 caption:
+    table_text: TABLE 6 Pascal VOC 2010 Test Set, Single AlexNet Network
+  Table 7 caption:
+    table_text: TABLE 7 Pascal VOC 2010 Test Set, VGG-16 Network
+  Table 8 caption:
+    table_text: TABLE 8 mAP ( % ) on Pascal VOC 2007 Test Computed with Different
+      Networks f W t and with Respect to Different Versions of Our Training Protocol
+      and M+1 Iterations
+  Table 9 caption:
+    table_text: TABLE 9 mAP ( % ) on ILSVRC 2013 val2 Computed with Different Networks
+      f W t and with Respect to Different Versions of Our Training Protocol and M+1
+      Iterations
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2804907
+- Affiliation of the first author: centre for vision speech and signal processing,
+    university of surrey, guildford, united kingdom
+  Affiliation of the last author: centre for vision speech and signal processing,
+    university of surrey, guildford, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2018\HARDPnP_PnP_Optimization_Using_a_Hybrid_Approximate_Representation\figure_1.jpg
+  Figure 1 caption: Visualization of the PnP cost surface in the presence of noise
+    and outliers, when optimized using different parameterizations. Color indicates
+    the reprojection error from low (blue) to high (yellow). Fig. 1a plots this against
+    initial camera orientation (defined by 2 Euler angles). Remaining subplots show
+    the resulting error from a single refinement in various parameterization spaces.
+    Diamonds indicate local minima and the white circle is the ground truth pose.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\HARDPnP_PnP_Optimization_Using_a_Hybrid_Approximate_Representation\figure_2.jpg
+  Figure 2 caption: Comparison of different variants of the HARD-PnP algorithm. RV
+    = Rotation Vector, EA = Euler Axis+angle and Q = non-unit-quaternion. Top shows
+    performance against observation noise (for 20 points). Bottom shows performance
+    against the number of points (for 3px of noise).
+  Figure 3 Link: articels_figures_by_rev_year\2018\HARDPnP_PnP_Optimization_Using_a_Hybrid_Approximate_Representation\figure_3.jpg
+  Figure 3 caption: Comparison of HARD-PnP against previous SOTA.
+  Figure 4 Link: articels_figures_by_rev_year\2018\HARDPnP_PnP_Optimization_Using_a_Hybrid_Approximate_Representation\figure_4.jpg
+  Figure 4 caption: Additional evaluation of the proposed HARD-PnP technique, including
+    runtime comparisons, examining performance with very few and very many points,
+    and combining the proposed technique with existing state-of-the-art.
+  Figure 5 Link: articels_figures_by_rev_year\2018\HARDPnP_PnP_Optimization_Using_a_Hybrid_Approximate_Representation\figure_5.jpg
+  Figure 5 caption: Comparison of the proposed HARD-PnP algorithm against the previous
+    state-of-the-art, with varying numbers of outliers (100 inliers and noise sigma
+    5). The first 3 columns show performance in the general, planar and quasi-singular
+    configurations respectively. Right compares runtimes.
+  Figure 6 Link: articels_figures_by_rev_year\2018\HARDPnP_PnP_Optimization_Using_a_Hybrid_Approximate_Representation\figure_6.jpg
+  Figure 6 caption: The reconstructed Herz-Jesu-P8 dataset (left) and two views (overall
+    and zoomed in) of the the accuracy of different PnP techniques using different
+    sized subsets of the data.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Simon Hadfield
+  Name of the last author: Richard Bowden
+  Number of Figures: 6
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: 'HARD-PnP: PnP Optimization Using a Hybrid Approximate Representation'
+  Publication Date: 2018-02-15 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2806446
+- Affiliation of the first author: department of computer science, university of verona,
+    verona, italy
+  Affiliation of the last author: department of computer science, university of verona,
+    verona, italy
+  Figure 1 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_1.jpg
+  Figure 1 caption: 'Influence of group cardinality. Precision and recall measures
+    computed with Pairwise loss, GMITRE loss and GRODE metrics. NOTE: precision of
+    Pairwise and GMITRE are both 1 for all the cardinalities. (Best viewed in colors).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_2.jpg
+  Figure 2 caption: Influence of singletons. Precision, recall and F 1 measures computed
+    with Pairwise loss, GMITRE loss and GRODE metrics by increasing the number of
+    correctly estimated singletons. (Best viewed in colors).
+  Figure 3 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_3.jpg
+  Figure 3 caption: Under- versus over-partitioning. Precision, recall and F 1 measures
+    computed with Pairwise loss, GMITRE loss and GRODE metrics for three simulated
+    detectors with three different behaviors; GRODE-UL is the only score that clearly
+    show the difference. (Best viewed in colors).
+  Figure 4 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_4.jpg
+  Figure 4 caption: Under- versus over-partitioning. HIC matrices of three detectors
+    with different behaviors. (Best viewed in colors).
+  Figure 5 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_5.jpg
+  Figure 5 caption: Example of overlapping groups. The original partitions for both
+    annotations and detections (a), the cost matrix generated by means of the Braun-Banquet
+    similarity measure (b), and the HIC matrix (c).
+  Figure 6 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_6.jpg
+  Figure 6 caption: Soft assignment scenario. HIC matrices of the two partitions and
+    the total one. (Best viewed in colors).
+  Figure 7 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_7.jpg
+  Figure 7 caption: Qualitative analysis of the different group detection metrics
+    on a frame of the Synthetic dataset [16]; in green solid lines the two ground
+    truth groups G1 and G2. In red dashed lines the detection given by the GTCG approach
+    [23] (see text for the discussion).
+  Figure 8 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_8.jpg
+  Figure 8 caption: Average GF1 score versus tolerance threshold T , over all the
+    datasets considered. Between brackets, in legend, the Global Tolerant Matching
+    (GTM) score. Dominant Sets (DS) is averaged over 3 datasets only, because of results
+    availability. (Best viewed in colors).
+  Figure 9 Link: articels_figures_by_rev_year\2018\Evaluating_the_Group_Detection_Performance_The_GRODE_Metrics\figure_9.jpg
+  Figure 9 caption: HIC matrices for seven state of the art methods on GDet (DS approach
+    not available). (Best viewed in colors).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Francesco Setti
+  Name of the last author: Marco Cristani
+  Number of Figures: 9
+  Number of Tables: 8
+  Number of authors: 2
+  Paper title: 'Evaluating the Group Detection Performance: The GRODE Metrics'
+  Publication Date: 2018-02-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Detector Output for the Soft Assignment Scenario
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Summary of the Features of the Datasets Used for Experiments
+  Table 3 caption:
+    table_text: TABLE 3 Average Precision, Recall and F 1 Scores for All the Methods
+      and All the Datasets (Pairwise Loss)
+  Table 4 caption:
+    table_text: TABLE 4 Average Precision, Recall and F 1 Scores for All the Methods
+      and All the Datasets (GMITRE Loss)
+  Table 5 caption:
+    table_text: TABLE 5 Average Precision, Recall and F 1 Scores for All the Methods
+      and All the Datasets ( T=23 )
+  Table 6 caption:
+    table_text: TABLE 6 Average Precision, Recall and F 1 Scores for All the Methods
+      and All the Datasets ( T=1 )
+  Table 7 caption:
+    table_text: TABLE 7 G F 1 Scores for Each Cardinality on GDet ( T=1 )
+  Table 8 caption:
+    table_text: TABLE 8 Upper-Lower Difference (UL) for All the Methods on All the
+      Datasets
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2806970
+- Affiliation of the first author: siemens corporate technology, princeton, nj
+  Affiliation of the last author: department of electrical, computer, and systems
+    engineering, rensselaer polytechnic institute, troy, ny
+  Figure 1 Link: articels_figures_by_rev_year\2018\A_Systematic_Evaluation_and_Benchmark_for_Person_ReIdentification_Features_Metri\figure_1.jpg
+  Figure 1 caption: A typical end-to-end re-id system pipeline.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\A_Systematic_Evaluation_and_Benchmark_for_Person_ReIdentification_Features_Metri\figure_2.jpg
+  Figure 2 caption: Samples of images from the proposed Airport dataset. See supplementary
+    material for more snapshots, available online .
+  Figure 3 Link: articels_figures_by_rev_year\2018\A_Systematic_Evaluation_and_Benchmark_for_Person_ReIdentification_Features_Metri\figure_3.jpg
+  Figure 3 caption: CMC curves for the single-shot dataset VIPeR and the multi-shot
+    dataset CAVIAR. The algorithmic combinations with the ten best rank-1 performances
+    (indicated in the legend) are shown in color and all the others are shown in gray.
+    CMC curves for all other datasets can be found in the supplementary material,
+    available online.
+  Figure 4 Link: articels_figures_by_rev_year\2018\A_Systematic_Evaluation_and_Benchmark_for_Person_ReIdentification_Features_Metri\figure_4.jpg
+  Figure 4 caption: Rank-1 results for single shot datasets illustrating the impact
+    of IDE-ResNet and NFST exp .
+  Figure 5 Link: articels_figures_by_rev_year\2018\A_Systematic_Evaluation_and_Benchmark_for_Person_ReIdentification_Features_Metri\figure_5.jpg
+  Figure 5 caption: '(a): Rank-1 performance on multi-shot datasets, illustrating
+    the impact of the best performing multi-shot ranking algorithm, SRID over AVER,
+    naive feature averaging. (b)-(d) Rank-1 performance on multi-shot datasets comparing
+    various feature extraction and metric learning algorithms with SRID as the ranking
+    algorithm.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\A_Systematic_Evaluation_and_Benchmark_for_Person_ReIdentification_Features_Metri\figure_6.jpg
+  Figure 6 caption: Rank-1 performance on (a) single-shot datasets illustrating the
+    impact of PCA and number of strips. (b) Rank-1 and training time (in seconds)
+    for VIPeR and Market1501 for various values of the PCA dimension.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Srikrishna karanam
+  Name of the last author: Richard J. Radke
+  Number of Figures: 6
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: 'A Systematic Evaluation and Benchmark for Person Re-Identification:
+    Features, Metrics, and Datasets'
+  Publication Date: 2018-02-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluated Feature Extraction and Metric Learning Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Characteristics of the 17 Datasets of the Re-Id Benchmark
+  Table 3 caption:
+    table_text: TABLE 3 Top Performing Algorithmic Combinations on Each Dataset, Where
+      We Show the Re-Id Performance (%) at Ranks 1, 5, and 10
+  Table 4 caption:
+    table_text: TABLE 4 Mean Rank-1 Performance Across All Single- and Multi-Shot
+      Datasets with Respect to Various Attributes and Features
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2807450
+- Affiliation of the first author: department of electrical engineering, national
+    tsing hua university, hsinchu, taiwan
+  Affiliation of the last author: department of electrical engineering, national tsing
+    hua university, hsinchu, taiwan
+  Figure 1 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_1.jpg
+  Figure 1 caption: "Depth estimation results from different algorithms and view configurations.\
+    \ Disparity values are displayed in grey-scale intensity. To highlight positive\
+    \ and negative disparity errors, we add corresponding values to red and green\
+    \ channels respectively. (a) A challenging light field StillLife (9\xD79 views)\
+    \ in HCI dataset [10]. (b)-(g) The depth maps produced with the 9\xD79 views by\
+    \ (b) phase-shift cost volume (PSCV) [5], (c) occlusion-aware depth estimation\
+    \ (OADE) [6], (d) spinning parallelogram operator (SPO) [7], (e) constrained angular\
+    \ entropy (CAE) [8], (f) MRF using conventional soft-EM energy, and (g) the proposed\
+    \ Robust Pseudo Random Field (RPRF) using robust hard-EM energy. (h)-(j) The depth\
+    \ maps produced by RPRF with more difficult configurations: (h) a more sparse\
+    \ 3\xD73 light field, (i) a distorted 3\xD73 light field which is first corrupted\
+    \ by Gaussian noise ( \u03C3=10 ) and then denoised by BM3D [11], and (j) a five-view\
+    \ crosshair light field with only one grey-scale channel."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_10.jpg
+  Figure 10 caption: "Robust update for parameters and depth. Four initial disparity\
+    \ maps mathcalDmathrmini for the 3\xD73 case of StillLife are used for comparison.\
+    \ One uses ground-truth depth (ideal). The others are initialized by different\
+    \ parameter sets: one is noisy by weighting data energy more ( lambda=0.5 ), one\
+    \ is over-smooth by weighting smoothness term more ( lambda=600 ), and the last\
+    \ one is moderate using the default setting ( lambda=300 ). The updated parameters\
+    \ for MRF energy are all similar in one iteration, and the accordingly estimated\
+    \ disparity maps show little difference."
+  Figure 2 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_2.jpg
+  Figure 2 caption: Pseudo-likelihood modeling for RPRFs. For the view-wise neighborhood,
+    color difference x d is modeled by a scale mixture with a soft-occlusion hidden
+    variable w vp . For the spatial neighborhood, color difference x s and disparity
+    difference h are formulated by two separate scale mixtures with an identical hidden
+    soft-edge u pq .
+  Figure 3 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_3.jpg
+  Figure 3 caption: "Distributions of the soft-occlusion variable w and color difference\
+    \ x d . G(w) is of Reciprocal type and \u03C3 d =1 ."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_4.jpg
+  Figure 4 caption: "Modeling fitting and robust energy. The top row is for the light\
+    \ field StillLife and the bottom for Medieval. Ground-truth disparity maps are\
+    \ used to generate empirical distributions. (a)-(b) Distribution fitting results\
+    \ using the Reciprocal and Gaussian types for (a) view-wise color difference \u2225\
+    \ x d \u2225 2 and (b) spatial difference \u2225 x s \u2225 2 with their Kullback-Leibler\
+    \ divergence (KLD) values shown at the corners. (c)-(d) Corresponding energy functions\
+    \ of the Reciprocal type for (c) data energy and (d) smoothness energy. Note that\
+    \ the energy values are adjusted with constant offsets such that they are all\
+    \ aligned at the origin for comparison."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_5.jpg
+  Figure 5 caption: "Depth estimation quality versus \u03BB . Depth error is represented\
+    \ by mean squared error (MSE) in disparity. Cross entropy measures the distance\
+    \ between the distributions of the empirical disparity difference h ~ and the\
+    \ modeled h . Their values are both normalized with respect to the case of \u03BB\
+    =0 for comparison."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_6.jpg
+  Figure 6 caption: Model fitting in grey-scale cases ( k=1 ) over eta . Fitting results
+    of spatial difference tmathrms=Vert mathbfxmathrmsVert 2 are shown for two light
+    fields, Buddha2 and Mona, along with their KLD values and the corresponding bandwidth
+    (BW) parameters alpha s sigma s2 . textKLDtriangleq H(tildetmathrms,tmathrms)
+    - H(tildetmathrms) .
+  Figure 7 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_7.jpg
+  Figure 7 caption: "Hard-EM versus Soft-EM data energy. (a) Two selected pixels A\
+    \ and B from the tablecloth of StillLife, and their spatial and depth patches.\
+    \ They are both occluded by the wooden ball in left views, and pixel B is further\
+    \ occluded by the berry in right views. (b) Angular patches (9\xD79) and view-wise\
+    \ data energy for pixel A. The energy is normalized and displayed using MATLAB\
+    \ jet map, i.e., warmer colors represent higher energy. For the hard-EM case,\
+    \ the soft-occlusion variable hatw is exactly the square of negative energy according\
+    \ to (17) and Table 1, i.e., warmer colors represent smaller hatw (more likely\
+    \ occlusion). The incorrect depth is where soft-EM data energy has its minimum\
+    \ value. (c) Normalized data energy versus disparity for pixel A. The correct\
+    \ depth is indicated by the vertical red line. (d) and (e), similarly to (b) and\
+    \ (c), for pixel B."
+  Figure 8 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_8.jpg
+  Figure 8 caption: Hard-EM versus Soft-EM smoothness energy. The edge-wise energy
+    from right and bottom pixels in the final-round BP is shown for the spatial patches
+    of (a) pixel A and (b) pixel B in Fig. 7.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Empirical_Bayesian_LightField_Stereo_Matching_by_Robust_Pseudo_Random_Field_Mode\figure_9.jpg
+  Figure 9 caption: "Depth estimation using hard-EM and soft-EM energy. Top: Clean\
+    \ Papillon 3\xD73. Bottom: Denoised Buddha2 3\xD73 ( sigma =20 ). The reader is\
+    \ encouraged to zoom in the paper for comparing details."
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Chao-Tsung Huang
+  Name of the last author: Chao-Tsung Huang
+  Number of Figures: 23
+  Number of Tables: 9
+  Number of authors: 1
+  Paper title: Empirical Bayesian Light-Field Stereo Matching by Robust Pseudo Random
+    Field Modeling
+  Publication Date: 2018-02-26 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Core Functions for Robust Hard-EM Energy
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Adaptive Selection of \u03BB (True-Color, k=3 )"
+  Table 3 caption:
+    table_text: TABLE 3 Fitting Accuracy and Depth Error of Different Energy Types
+  Table 4 caption:
+    table_text: TABLE 4 Depth Errors in DMSE for Hard-EM and Soft-EM Energy
+  Table 5 caption:
+    table_text: "TABLE 5 Depth Errors in DMSE for Dense 9\xD79 Light Fields"
+  Table 6 caption:
+    table_text: TABLE 6 Depth Errors in DMSE for Noisy and Denoised Light Fields
+  Table 7 caption:
+    table_text: TABLE 7 Average Run Time in Seconds per Light Field
+  Table 8 caption:
+    table_text: TABLE 8 Depth Errors in DMSE for Special Settings
+  Table 9 caption:
+    table_text: "TABLE 9 Depth Errors 3 in DMSE for HCI-UK Test and Stratified Datasets\
+      \ (9\xD79)"
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2809502
+- Affiliation of the first author: institute of automation chinese academy of sciences,
+    beijing, beijing, cn
+  Affiliation of the last author: university of dundee, dundee, dundee, gb
+  Figure 1 Link: articels_figures_by_rev_year\2018\Mixed_Supervised_Object_Detection_with_Robust_Objectness_Transfer\figure_1.jpg
+  Figure 1 caption: "Failure examples of weakly supervised detection.\u2020 The weakly\
+    \ supervised detection tends to confuse the objects (cat, boat) with the co-occurring\
+    \ distractors (cat face, water)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Mixed_Supervised_Object_Detection_with_Robust_Objectness_Transfer\figure_2.jpg
+  Figure 2 caption: "The proposed robust objectness transfer approach for MSD. During\
+    \ the learning of objectness, the annotated boxes from fully labeled categories\
+    \ (\u201Cstrong\u201D categories, e.g., cat) are used to train the objectness\
+    \ predictor; meanwhile, the unlabeled regions from weakly labeled categories (\u201C\
+    weak\u201D categories, e.g., dog) are also applied to learn a domain classifier.\
+    \ During training, the gradients from the domain classifier are reversed to make\
+    \ the feature f invariant to the change of categories. The learned objectness\
+    \ is first utilized to roughly distinguish the objects and distractors and then\
+    \ a MIL-based approach is used to further model the difference between the objects\
+    \ and distractors."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Mixed_Supervised_Object_Detection_with_Robust_Objectness_Transfer\figure_3.jpg
+  Figure 3 caption: Sample detection results on ILSVRC2013 val2 set of the last 100
+    categories. The first row shows the results of the baseline WSD model (B-WSD-AlexNet)
+    and the second row lists the results of the same images predicted by the objectness-aware
+    model (Ours-MSD-AlexNet).
+  Figure 4 Link: articels_figures_by_rev_year\2018\Mixed_Supervised_Object_Detection_with_Robust_Objectness_Transfer\figure_4.jpg
+  Figure 4 caption: "Object Detection performance (mAP) on PASCAL VOC 2007. \u201C\
+    Ours-MSD-k%\u201D indicates the objectness-aware method that utilizes the top\
+    \ k% regions as the object regions and considers the last 1-k% regions as non-object\
+    \ regions."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Mixed_Supervised_Object_Detection_with_Robust_Objectness_Transfer\figure_5.jpg
+  Figure 5 caption: The recall rates on PASCAL VOC 2007 trainval set. We compute the
+    recall using the code provided by [36]. The four curves join at 100 percent region
+    proposals because we re-rank the existing selective search windows.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Mixed_Supervised_Object_Detection_with_Robust_Objectness_Transfer\figure_6.jpg
+  Figure 6 caption: The distribution of object parts for three methods evaluated on
+    PASCAL VOC 2007 trainval set. The object parts are the regions whose IoUs with
+    ground truths are in the interval (0.0,0.5) . The object parts are difficult to
+    reject in weakly supervised setting.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Mixed_Supervised_Object_Detection_with_Robust_Objectness_Transfer\figure_7.jpg
+  Figure 7 caption: Sample failure detection results on PASCAL VOC 2007 test set for
+    class chair, table and person. Green rectangles are ground truth boxes, and red
+    rectangles indicate failure detections (IoU < 0.5).
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.76
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yan Li
+  Name of the last author: Jianguo Zhang
+  Number of Figures: 7
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Mixed Supervised Object Detection with Robust Objectness Transfer
+  Publication Date: 2018-02-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Summaries of Ours-MSD and Three Baselines
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Object Detection Performance (mAP %) on ILSVRC2013 val2 Set
+  Table 3 caption:
+    table_text: TABLE 3 Object Detection Performance (mAP %) on PASCAL VOC 2007 test
+      Set
+  Table 4 caption:
+    table_text: TABLE 4 Object Detection Performance (mAP %) on PASCAL VOC 2007 Test
+      Set
+  Table 5 caption:
+    table_text: TABLE 5 Object Detection Performance (CorLoc %) on PASCAL VOC 2007
+      Trainval Set
+  Table 6 caption:
+    table_text: TABLE 6 Object Detection Performance (mAP %) on PASCAL VOC 2010 Test
+      Set and VOC 2012 test Set
+  Table 7 caption:
+    table_text: TABLE 7 Object Detection Performance (mAP) on PASCAL VOC 2007
+  Table 8 caption:
+    table_text: TABLE 8 Object Detection Performance (mAP) on PASCAL VOC 2007 test
+      Set
+  Table 9 caption:
+    table_text: TABLE 9 Object Detection Performance (mAP) on PASCAL VOC 2007
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2810288

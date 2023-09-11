@@ -1,0 +1,920 @@
+- Affiliation of the first author: "department of physics, school of engineering,\
+    \ universidad de la rep\xFAblica, montevideo, uruguay"
+  Affiliation of the last author: department of electrical engineering, duke university,
+    durham, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_1.jpg
+  Figure 1 caption: Real 3D face recognition is possible by capturing one single RGB
+    image if a high frequency pattern is projected. The low frequency components of
+    the captured image can be fed into a state-of-the-art 2D face recognition method,
+    while the high frequency components encode local depth information that can be
+    used to extract 3D facial features. It is important to highlight that, in contrast
+    with most existing 3D alternatives, the proposed approach provides real 3D information,
+    not 3D hallucination from the RGB input. As a result, state-of-the-art 2D face
+    recognition methods can be enhanced with real 3D information.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_10.jpg
+  Figure 10 caption: 'Facial features low dimensional embedding (for visualization
+    purposes only). We illustrate texture-based and depth-based features in a low
+    dimensional embedding space. A random set of subject of the test set is shown.
+    From left to right: the embedding of depth-features, texture-based features, and
+    finally, the combination of texture and depth features. t-SNE [58] algorithm is
+    used for the low-dimensional embedding.'
+  Figure 2 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_2.jpg
+  Figure 2 caption: Illustration of three different 3D surfaces that look equivalent
+    from a monocular view (single RGB image). On top, three surfaces (a), (b) and
+    (c) are simulated, being (a) and (c) flat and (b) the 3D shape of a test subject.
+    We use classic projective geometry [32] and simulate the image we obtain when
+    photographing (a), (b) and (c) respectively. The resulting images are shown at
+    the bottom. As we illustrate with this simple example, the relation between images
+    and 3D scenes is not bijective and the problem of 3D hallucination is ill-posed.
+    To overcome this, 3D hallucination solutions enforce important priors about the
+    geometry of the scene. This is why we argue, that these methods do not really
+    add to the face recognition task, actual 3D information. (A complementary example
+    is presented in Fig. 15 in the supplementary material), which can be found on
+    the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2020.2986951.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_3.jpg
+  Figure 3 caption: Architecture overview. First a network (illustrated in blue) is
+    used to decompose the input image that contains overlapped high frequency fringes
+    into a lower resolution (standard) texture facial image and depth gradient information.
+    The former is used as the input of a state-of-the-art 2D face recognition DNN
+    (yellow blocks). The depth information is fed to another network (green blocks)
+    trained to extract discriminative (depth-based) facial features. Different network
+    architectures are tested, we provide implementation details in Section D in the
+    supplementary material, available online.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_4.jpg
+  Figure 4 caption: 2D plus real 3D in a single rgb image. The first column illustrates
+    the RGB image acquired by a (standard) camera when horizontal stripes are projected
+    over the face. The second column isolates the low frequency components of the
+    input image, and the third column corresponds to the residual high frequency components.
+    (In all the cases the absolute value of the Fourier Transform is represented in
+    logarithmic scale). As can be seen, high frequency patterns can be used to extract
+    3D information of the face (third column) while preserving a lower resolution
+    version of the facial texture (middle column).
+  Figure 5 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_5.jpg
+  Figure 5 caption: "Faces average spectral content. The first column illustrates\
+    \ the mean luminance and depth map for the faces in the dataset ND-2006. The second\
+    \ column shows the mean Fourier Transform of the faces luminance and depth respectively.\
+    \ The third column shows the profile across different sections of the 2D Fourier\
+    \ domain. Columns two and three represent the absolute value of the Fourier transform\
+    \ in logarithmic scale. Faces are registered using the eyes landmarks and the\
+    \ size normalized to 480\xD7480 pixels."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_6.jpg
+  Figure 6 caption: 'Active light projection. From left to right: ground truth RGB
+    facial image, 3D facial scanner, and finally the image we would acquire if the
+    designed high frequency pattern is projected over the face. Two random samples
+    from ND-2006 are illustrated.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_7.jpg
+  Figure 7 caption: Examples of the facial texture recovered from the image with the
+    projected pattern. The first column, shows the input image (denoted as I in Algorithm
+    1). The second column shows the ground truth, and the third column the texture
+    recovered by the network I rgb . This examples are from the test set and the images
+    associated to these subjects were never seen during the training phase.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_8.jpg
+  Figure 8 caption: Differential depth information extracted from the image with the
+    projected pattern. The first row illustrates the input image (depth information
+    can be extracted from a gray version of the input as the designed patter is achromatic).
+    The second and third row show the ground truth and the retrieved x and y partial
+    derivatives of the depth respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Differential_D_Facial_Recognition_Adding_D_to_Your_StateoftheArt_D_Method\figure_9.jpg
+  Figure 9 caption: Is the network really extracting depth information? In this figure
+    we show the output of the network for two inputs generated using identical facial
+    texture but different depth ground truth data. (a) Image obtained when the projected
+    pattern is projected over the face with the real texture and the real 3D profile.
+    (b) Output of the network when we input (a) (only the x-partial derivative is
+    displayed for compactness). (c) Image obtained when the projected pattern is projected
+    over a flat surface with the texture of the real face. (d) Output of the network
+    when the input is (c). None of these images were seen during training.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "J. Mat\xEDas Di Martino"
+  Name of the last author: Guillermo Sapiro
+  Number of Figures: 14
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: 'Differential 3D Facial Recognition: Adding 3D to Your State-of-the-Art
+    2D Method'
+  Publication Date: 2020-04-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Rank-n Accuracy for 2D, 3D, and 2D+3D Face Recognition
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Spoofing detection results
+  Table 3 caption:
+    table_text: TABLE 3 Recognition Accuracy Under Different Ambient Illumination
+      Conditions
+  Table 4 caption:
+    table_text: TABLE 4 Spoofing Detection Results for ArcFace and ArcFace Enhanced
+      With 3D Features
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2986951
+- Affiliation of the first author: school of information science and technology, shanghaitech
+    university, shanghai, china
+  Affiliation of the last author: school of information science and technology, shanghaitech
+    university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_1.jpg
+  Figure 1 caption: Our Neural Opacity Point Cloud (NOPC) renderer produces photorealistic,
+    free viewpoint rendering of fuzzy objects from a sparsely sampled images (Fig.
+    3). By rendering high quality RGB and alpha at an arbitrary viewpoint, NOPC can
+    insert fuzzy virtual objects into real environment.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_10.jpg
+  Figure 10 caption: Free viewpoint rendering using NOPC of three fuzzy models. Specifically,
+    we smoothly move the virtual camera around the model and our rendered RGB and
+    alpha mattes maintain high coherence across the viewpoints. The complete results
+    can be found in the supplementary video, available online.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_2.jpg
+  Figure 2 caption: 'Our NOPC framework: From a 3D point cloud P , we first learn
+    its corresponding cloud F . To render virtual new view V , we project P and F
+    onto V to form a view-dependent feature map M . Our multiple-branch Encoder-Decoder
+    network maps M to an RGB image and an alpha matte at V . The network can be trained
+    using the ground truth RGB images and alpha mattes in an end-to-end manner in
+    Section 3.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_3.jpg
+  Figure 3 caption: (a) Our capture system uses a 1D array of calibrated cameras.
+    We position the fuzzy object a rotating turntable with a calibration target. (b)
+    shows the sample captured images.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_4.jpg
+  Figure 4 caption: To produce training data (i.e., the ground truth), we adopt deep
+    context-aware matting [35] where the trimap is generated from an object mask.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_5.jpg
+  Figure 5 caption: Our NOPC employs multiple-branch Encoder-Decoder network for mapping
+    a view-dependent feature map M to an RGB image and its alpha matte. We replace
+    the convolution layers in double convolution blocks of the U-net with gated convolution
+    layer for denoising and hole filling, critical for alpha generation.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_6.jpg
+  Figure 6 caption: The use of green screen facilitates automatic matting but introduces
+    color leakage (a). We fix color leakage as in Section 3.1 (b).
+  Figure 7 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_7.jpg
+  Figure 7 caption: Comparisons of NOPC versus the state-of-the-art image-based rendering
+    and neural rendering techniques on Cat, HumanHair and Hairstyle 1. Point cloud
+    alone (PCR) does not produce any alpha blend effect. Image-based visual hull (IBOH)
+    [4] exhibits strong polygonal artifacts. Existing RGB neural renderer and its
+    modified RGBA renderer [42] both exhibit excessive blurs. Our NOPC manages to
+    produce high quality opacity rendering while maintaining coherence across viewpoints
+    (see the supplementary video, available online).
+  Figure 8 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_8.jpg
+  Figure 8 caption: Visual comparisons on the synthetic Hair and Wolf datasets. Right
+    shows the rendering results on three new viewpoints with closeup views. NOPC produces
+    high quality alpha mattes comparable to the ground truth.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Neural_Opacity_Point_Cloud\figure_9.jpg
+  Figure 9 caption: 'Visual comparisons on four real datasets: Cat, HumanHair, Hairstyle
+    2 and Hairstyle 3. In each example, we show both the ground truth and our NOPC
+    alpha mattes. We also substitute the green screen with new backgrounds using our
+    NOPC alpha mattes.'
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Cen Wang
+  Name of the last author: Jingyi Yu
+  Number of Figures: 13
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: Neural Opacity Point Cloud
+  Publication Date: 2020-04-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 NOPC Versus NPBG [42] and its Extension, NPBG-RGBA
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparisons of NOPC Versus Traditional IBR and Neural Renderer
+      on Different Datasets
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2986777
+- Affiliation of the first author: department of electronic and communication engineering,
+    umm al-qura university, al-lith, saudi arabia
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of dayton, dayton, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_1.jpg
+  Figure 1 caption: Spatialtemporal derivatives of the proposed distance surface on
+    hand sequence. Yellow pixels denote denoised events.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_10.jpg
+  Figure 10 caption: Optical flow results on DVSMOTION20 sequences (shown with denoising).
+    Arrow orientation and magnitude indicate the estimated pixel motion orientation
+    and speed of the observed events. Ground truth is obtained from IMU. See Section
+    5.1. Motion is overlaid on APS for visualization.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_2.jpg
+  Figure 2 caption: Example outputs from DAViS sensor, which has APS and DVS readout
+    circuits sharing the same photodiode. (a) APSs synchronous outputs record pixel
+    intensities. (b) DVSs asynchronous events report positive (green) and negative
+    (red) changes in a pixel intensity. (c) Superposition of DVS and APS outputs of
+    one particular pixel. (d) An example of a dark disk moving quickly across the
+    scene. APS synchronously records the disk every 25 ms (at 40 Hz). DVS operates
+    at 1 MHz, tracking the disks movement in between APS frames.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_3.jpg
+  Figure 3 caption: System diagram for DistSurf-OF.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_4.jpg
+  Figure 4 caption: An example of a distance transform. Solid colored pixels indicate
+    eventedge pixels. Numbers indicate the minimum distance between a pixel and an
+    edge. The color of the numbers indicate the closest edge pixel.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_5.jpg
+  Figure 5 caption: "An illustration of distance transform (shown using L1 distance\
+    \ measure function rather than L2 used in our algorithm because it is easier to\
+    \ follow). Black pixels denote detected events. Distance transform is robust to\
+    \ \u201Cmissing\u201D events and \u201Cjagged edges\u201D\u2014as evidenced by\
+    \ orange- and green-shaded pixels, the affected pixels are negligibly different\
+    \ from the desired distance transform values. By contrast, false positive events\
+    \ deteriorate a large number of the pixels (shaded in blue) by a large margin."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_6.jpg
+  Figure 6 caption: Event widehatboldsymbol Y(boldsymbol X)in Phi is the point on
+    the edge manifold Phi closest to pixel location boldsymbol X . At widehatboldsymbol
+    Y(boldsymbol X) , the gradient vectors (red and green arrows) are orthogonal to
+    boldsymbol X-widehatboldsymbol Y(boldsymbol X) (blue arrow). Thus, boldsymbol
+    X-widehatboldsymbol Y(boldsymbol X) lives in the nullspace of the Jacobian matrix
+    in (9) (whose column vectors are the gradient vectors of widehatboldsymbol Y(boldsymbol
+    X) ).
+  Figure 7 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_7.jpg
+  Figure 7 caption: Example of denoising. Red points indicate BA (or randomly activated
+    events) that we filter out. Our optical flow method is being applied to IE and
+    TE events that comprise remainder of points.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_8.jpg
+  Figure 8 caption: Camera setup for DVSMOTION20 collection. Gimbal limits camera
+    motion while centering the focal point at the origin.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Distance_Surface_for_EventBased_Optical_Flow\figure_9.jpg
+  Figure 9 caption: (Top row) Example APS frames extracted from DVSMOTION20 dataset.
+    (Bottom row) IMU measurements recording the trajectory of the camera motion.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mohammed Almatrafi
+  Name of the last author: Keigo Hirakawa
+  Number of Figures: 11
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Distance Surface for Event-Based Optical Flow
+  Publication Date: 2020-04-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Angular Error (AAE) and Relative Average end-Point
+      Error (RAEE) With Standard Deviations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2986748
+- Affiliation of the first author: national laboratory of pattern recognition, institute
+    of automation, chinese academy of sciences, beijing, china
+  Affiliation of the last author: national laboratory of pattern recognition, institute
+    of automation, chinese academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_to_Model_Relationships_for_ZeroShot_Video_Classification\figure_1.jpg
+  Figure 1 caption: The motivation of our PS-GNN. We use object semantics as attributes
+    to bridge both video categories and samples. To model the relationships between
+    category-attribute, category-category, and attribute-attribute, we build a concept
+    graph to perform message propagation. Moreover, video representations are learned
+    to be close to their belonging categories. In the right of this figure, the thinker
+    green lines signify stronger relationships.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_to_Model_Relationships_for_ZeroShot_Video_Classification\figure_2.jpg
+  Figure 2 caption: The pipeline of PS-GNN. Specifically, PS-GNN consists of two branches,
+    i.e., prototype branch (P-branch) and sample branch (S-branch). The P-branch takes
+    as input a set of word vectors of all the concepts and learns the prototypes of
+    video categories. The S-branch generates attribute features of a video sample
+    by leveraging its object scores and the corresponding word vectors. In the training
+    phase, the framework is optimized by a supervised loss and a prototype center
+    loss. With the message propagation in this graphic model, prototypes of unseen
+    categories can be generalized. At the test phase, the nearest prototype can be
+    found for a test video.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_to_Model_Relationships_for_ZeroShot_Video_Classification\figure_3.jpg
+  Figure 3 caption: Top-5 returned video examples for unseen classes on UCF101 (top),
+    Olympic Sports (bottom left) and HMDB51 (bottom right). The videos within the
+    red rectangle represent false-positives.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_to_Model_Relationships_for_ZeroShot_Video_Classification\figure_4.jpg
+  Figure 4 caption: Comparison results among (a) different number of selected objects.
+    (b) different types of word embeddings.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_to_Model_Relationships_for_ZeroShot_Video_Classification\figure_5.jpg
+  Figure 5 caption: Comparison performance among (a) different number of GNN layers.
+    (b) different baselines of edge representation strategies.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_to_Model_Relationships_for_ZeroShot_Video_Classification\figure_6.jpg
+  Figure 6 caption: Comparison results among (a) different hops of considered neighbors.
+    (b) different balance factors between the cross entropy loss and the prototype
+    center loss.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_to_Model_Relationships_for_ZeroShot_Video_Classification\figure_7.jpg
+  Figure 7 caption: Distance matrices created using Word2Vec label embeddings and
+    learned prototypes on UCF101. Brighter colors depict larger values.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_to_Model_Relationships_for_ZeroShot_Video_Classification\figure_8.jpg
+  Figure 8 caption: The t-SNE visualization of video features over a random split
+    from UCF101, HMDB51, and Olympic datasets. Specifically, (a), (c) and (e) indicate
+    the average representation of the initial object features (Eq. (4)); (b), (d),
+    (f) corresponds to the averaged representation of the learned object-feature.
+    For UCF101 and HMDB51 datasets, we randomly select 600 test videos from 20 unseen
+    categories. For the Olympic Sports dataset, we use all the test videos for visualization.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Junyu Gao
+  Name of the last author: Changsheng Xu
+  Number of Figures: 8
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Learning to Model Relationships for Zero-Shot Video Classification
+  Publication Date: 2020-04-14 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Zero-Shot Video Classification Performance on Four Benchmarks
+      Compared With State-of-the-Art Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results on the Generalized Zero-Shot Setting
+  Table 3 caption:
+    table_text: TABLE 3 Results on the Few-Shot Action Recognition
+  Table 4 caption:
+    table_text: TABLE 4 Zero-Shot Learning Accuracy (%) on FCVID
+  Table 5 caption:
+    table_text: TABLE 5 Ablation Study of Temporal Modeling
+  Table 6 caption:
+    table_text: TABLE 6 Comparison Results of Different Model Design
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2985708
+- Affiliation of the first author: "leibniz universit\xE4t hannover, hannover, germany"
+  Affiliation of the last author: it university of copenhagen, kobenhavn, denmark
+  Figure 1 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_1.jpg
+  Figure 1 caption: 'Expression space illustrated by the first three singular vectors
+    of the expression dimension in the data tensor, i.e., the first three columns
+    of U (3) . The levels of each of the six emotions form approximately linear trajectories
+    meeting in a common vertex, the point of apathy (red), of which there was no explicit
+    example in the training database. The space is oriented in the way that the stronger
+    the emotion the further away from the apathy. (The same structure for the dense
+    faces is illustrated in [18].) The colours represent the 7 emotions: neutral (gray),
+    anger (dark blue), disgust (orange), fear (yellow), happiness (violet), sadness
+    (green), surprise (light blue). (Please compare to Fig. 5a.)'
+  Figure 10 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_10.jpg
+  Figure 10 caption: Boxplot of mean euclidean distances between true and estimated
+    shapes, as in Eq. (54). The colours refer to different training databases and
+    the labels on the x -axis refer to varying models.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_2.jpg
+  Figure 2 caption: The neutral expression (left, grey) synthesised apathetic expression
+    (right, red) are shown for one person of the database.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_3.jpg
+  Figure 3 caption: 'Transfer anger from one person to another: (a) person A in emotion
+    anger, (b) person B with estimated emotion anger, (c) person B, in emotion happy.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_4.jpg
+  Figure 4 caption: Diagram characterising the statistical model used in this paper.
+    The state Sn refers to the HOSVD model mathcal S4, mathbf U4(1), mathbf U4(2),
+    mathbf U4(3),mathbf U4(4) trained by the data Dn . The model also includes the
+    parameters widetildeN,widetildeP,widetildeS,widetildeE . The novel face mathbf
+    f , modelled by the parameters theta , depends on the current state. The state,
+    or the HOSVD model, may be updated by adding more training data Dn+1 .
+  Figure 5 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_5.jpg
+  Figure 5 caption: (a) Expression space for the ADFES, analogously to BU3DFE. (Colours
+    as in Fig 1.) (b) Apathetic facial expression synthesised for the average person.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_6.jpg
+  Figure 6 caption: Change of the euclidean distance between true and estimated shapes,
+    based on the apathy-centred (solid lines) and neutral-centred model (dashed lines)
+    as in Eq. (50), for varying cropping factors. Two of the the four are fixed to
+    3widetildeN=250 and widetildeS=1 , while the cropping dimensions for person widetildeP
+    and emotion widetildeE are varied.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_7.jpg
+  Figure 7 caption: Synthesised expression trajectories, both starting in anger and
+    ending in disgust. In the first line intersecting the neutral expression (grey
+    box), whereas in the second row the face in the red box represents the synthesised
+    apathetic facial expression.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_8.jpg
+  Figure 8 caption: Quantitative evaluations of the methods by Eq. (51) in (a), (b)
+    expression transfer; and (c) person transfer. (first row) Person and expression
+    parameter vectors person are estimated independently for each shape; (second row)
+    a shared person parameter vector for varying expressions performed by a single
+    person is estimated. It can be seen that, in expression transfer, the sparsity
+    constraint of the models sub+ and 4D and the shared estimation of the person parameter
+    vector yields the best, more robust performance than the reference methods. In
+    person transfer, there are no significant differences between the methods, except
+    pp seems less robust yielding more outliers; the sharing of the person parameter
+    vector seem to improve sub+ and 4D. Since sub+ and 4D yield similar result in
+    all the experiments, it is an empirical proof that the emotion strength subspace
+    can be safely truncated into rank-one subspace. The abbreviations are defined
+    in Table 1.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Multilinear_Modelling_of_Faces_and_Expressions\figure_9.jpg
+  Figure 9 caption: Influence of number of neighbours of emotion alpha E (y-axis)
+    and person alpha P (x-axis) on the different error measures, see Algorithm 3.
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Stella Grasshof
+  Name of the last author: "J\xF6rn Ostermann"
+  Number of Figures: 12
+  Number of Tables: 1
+  Number of authors: 4
+  Paper title: Multilinear Modelling of Faces and Expressions
+  Publication Date: 2020-04-14 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Abbreviations for Different Tensor Model Parameterisations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2986496
+- Affiliation of the first author: department of industrial & operations engineering
+    engineering, universty of michigan, ann arbor, mi, usa
+  Affiliation of the last author: universty of wisconsin madison, madison, wi, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_1.jpg
+  Figure 1 caption: Illustration of general MGP setting.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_10.jpg
+  Figure 10 caption: Intrapolation versus extrapolation.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_2.jpg
+  Figure 2 caption: CP model structure example.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_3.jpg
+  Figure 3 caption: Illustration of negative transfer in MGCP.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_4.jpg
+  Figure 4 caption: Paired submodels.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_5.jpg
+  Figure 5 caption: Bivariate submodel structure.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_6.jpg
+  Figure 6 caption: Setting I results.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_7.jpg
+  Figure 7 caption: PoE results.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_8.jpg
+  Figure 8 caption: Setting II results.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Minimizing_Negative_Transfer_of_Knowledge_in_Multivariate_Gaussian_Processes_A_S\figure_9.jpg
+  Figure 9 caption: PoE results with different N .
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.69
+  Name of the first author: Raed Kontar
+  Name of the last author: Shiyu Zhou
+  Number of Figures: 13
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: 'Minimizing Negative Transfer of Knowledge in Multivariate Gaussian
+    Processes: A Scalable and Regularized Approach'
+  Publication Date: 2020-04-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Setting IV Results
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2987482
+- Affiliation of the first author: school of computer science, carleton university,
+    ottawa, on, canada
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of toronto, toronto, on, canada
+  Figure 1 Link: articels_figures_by_rev_year\2020\Multiview_Feature_Selection_for_SingleView_Classification\figure_1.jpg
+  Figure 1 caption: "Feature weights for \u201CDNA\u201D data set in the student view.\
+    \ The height corresponding to each index indicates the average of the corresponding\
+    \ weights over the 10 experimental trials. In this figure, indexes 1 to 89 are\
+    \ corresponding to features 1 to 179. Indexes 91 to 190 are corresponding to the\
+    \ artificially added irrelevant features."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Multiview_Feature_Selection_for_SingleView_Classification\figure_2.jpg
+  Figure 2 caption: Illustration of the cross-view matching problem in human recognition
+    using ECG. Two rows correspond to heartbeats in different heart rates (views).
+    The goal is to determine whether the two unseen test samples on the left belong
+    to the same subject. While, direct comparison of samples from different views
+    is not appropriate, their similarities to subjects in the auxiliary data set can
+    be used to compare the two test samples.
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Majid Komeili
+  Name of the last author: Dimitrios Hatzinakos
+  Number of Figures: 2
+  Number of Tables: 15
+  Number of authors: 3
+  Paper title: Multiview Feature Selection for Single-View Classification
+  Publication Date: 2020-04-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Characteristics of the Real-World Data Sets Used in the Experiments
+  Table 10 caption:
+    table_text: TABLE 10 Micro Classification Error (in Percent) Using PCA Followed
+      by SVM for Different Values of P
+  Table 2 caption:
+    table_text: TABLE 2 Micro Classification Error (in Percent) of the Different Algorithms
+      Where 2% of Features are Considered for the Student View
+  Table 3 caption:
+    table_text: TABLE 3 Micro Classification Error (in Percent) of the Different Algorithms
+      Where 3% of Features are Considered for the Student View
+  Table 4 caption:
+    table_text: TABLE 4 Micro Classification Error (in Percent) of the Different Algorithms
+      Where 10% of Features are Considered for the Student View
+  Table 5 caption:
+    table_text: TABLE 5 Micro Classification Error (in Percent) of the Different Algorithms
+      Where 25% of Features are Considered for the Student View
+  Table 6 caption:
+    table_text: TABLE 6 Macro Classification Error (in Percent) of the Different Algorithms
+      Where 2% of Features are Considered for the Student View
+  Table 7 caption:
+    table_text: TABLE 7 Macro Classification Error (in Percent) of the Different Algorithms
+      Where 3% of Features are Considered for the Student View
+  Table 8 caption:
+    table_text: TABLE 8 Macro Classification Error (in Percent) of the Different Algorithms
+      Where 10% of Features are Considered for the Student View
+  Table 9 caption:
+    table_text: TABLE 9 Macro Classification Error (in Percent) of the Different Algorithms
+      Where 25% of Features are Considered for the Student View
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2987013
+- Affiliation of the first author: department of computer science and technology,
+    bnrist, moe-key laboratory of pervasive computing, tsinghua university, beijing,
+    china
+  Affiliation of the last author: school of computer science and informatics, cardiff
+    university, cardiff, uk
+  Figure 1 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_1.jpg
+  Figure 1 caption: (a) An artist draws a portrait drawing using a sparse set of lines
+    and very few shaded regions to capture the distinctive appearance of a person
+    or a given face photo. (b) Our APDrawingGAN++ learns this artistic drawing style
+    and automatically transforms a face photo into a high-quality artistic portrait
+    drawing. (c) Using the same input face photo, six state-of-the-art style transfer
+    methods cannot generate desired artistic drawings. The drawings output by Deep
+    Image Analogy [6], CNNMRF [7] and Gatys [1] seem not to obtain the right style
+    and have some facial features changed, which makes them difficult to recognize.
+    CycleGAN [3] and Pix2Pix [2] produce false details around hairs, eyes or corners
+    of the lip. APDrawingGAN [8] works relatively well, but produces less delicate
+    facial features (e.g., more messy lips) and hair than our result. More results
+    are presented in Section 7 and appendix, which can be found on the Computer Society
+    Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2020.2987931.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_10.jpg
+  Figure 10 caption: Comparison results with CNNMRF [7], Deep Image Analogy [6], Headshot
+    Portrait [9], APDrawingGAN [8], and APDrawingGAN++.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_2.jpg
+  Figure 2 caption: "The framework of the proposed APDrawingGAN++. The composite generator\
+    \ G takes a face photo p i \u2208P as input and consists of a global network (for\
+    \ global facial structure), six local networks (for four local facial regions,\
+    \ the hair, and the background region), five auto-encoders, two classifiers and\
+    \ a fusion network. Outputs of the auto-encoders and hairbackground generators\
+    \ are combined into I local and fused with the output I global of the global network\
+    \ to generate the final output G( p i ) . The loss function includes five terms,\
+    \ in which a novel DT loss is introduced to better learn delicate artistic line\
+    \ styles, and a novel line continuity loss is introduced to generate more continuous\
+    \ lines. The composite discriminator D distinguishes whether the input is a real\
+    \ APDrawing or not based on the classification results by combining both a global\
+    \ discriminator and six local discriminators."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_3.jpg
+  Figure 3 caption: 'Some examples of different types of hair (darkmiddlelight) and
+    lips (whiteblack). First row: face photos. Second row: artist drawings. The ground
+    truth class labels for each face photo are assigned according to the paired artist
+    drawing.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_4.jpg
+  Figure 4 caption: An example of the nose auto-encoders input and the reconstructed
+    nose drawing. (a) synthesized nose drawing by the local generator G lnose , (b)
+    reconstructed nose drawing by nose auto-encoder E nose , (c) the compact mask
+    for the nose, and (d) refined nose drawing by combining input and output of E
+    nose using the compact mask.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_5.jpg
+  Figure 5 caption: Distance transforms IDT(x) and widetildeIDT(x) of an APDrawing
+    x .
+  Figure 6 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_6.jpg
+  Figure 6 caption: An example of an artist patch (white-dominant), random inversions
+    of line pixels and non-line pixels and their given line continuity scores.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_7.jpg
+  Figure 7 caption: 'From left to right: original face photos, NPR results [23], NPR
+    results with clear jaw contours added (used for pre-training), and the results
+    of APDrawingGAN++. Face photos are from the datasets of CFD [35]. Note that these
+    two example images are not used in pre-traning.'
+  Figure 8 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_8.jpg
+  Figure 8 caption: An example of histogram matching. Histogram matching is performed
+    on a face photo x in SL and a face photo y in SD to obtain a histogram matched
+    image Ihm(x,y) .
+  Figure 9 Link: articels_figures_by_rev_year\2020\Line_Drawings_for_Face_Portraits_From_Photos_Using_Global_and_Local_Structure_Ba\figure_9.jpg
+  Figure 9 caption: Comparison results with Gatys method [1], CycleGAN [3], Pix2Pix
+    [2], APDrawingGAN [8] and APDrawingGAN++.
+  First author gender probability: 0.58
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ran Yi
+  Name of the last author: Paul L. Rosin
+  Number of Figures: 16
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Line Drawings for Face Portraits From Photos Using Global and Local
+    Structure Based GANs
+  Publication Date: 2020-04-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Human Preference Statistics
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Analysis of Variance (ANOVA) Results for Pairwise Comparisons
+  Table 3 caption:
+    table_text: TABLE 3 Average LPIPS Distance of CycleGAN, Pix2Pix, APDrawingGAN
+      and Our APDrawingGAN++ on the Full Test Set
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2987931
+- Affiliation of the first author: department of computer science and engineering,
+    texas a&m university, college station, usa
+  Affiliation of the last author: department of computer science and engineering,
+    texas a&m university, college station, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_1.jpg
+  Figure 1 caption: We propose to increase the frame rate of standard videos with
+    low frame rate from hybrid video inputs. In addition to the standard high-resolution
+    video with low frame rate, our system takes a high frame rate video with low resolution
+    as the input (left). We propose a deep learning approach to produce a high-resolution
+    high frame rate video from the two input video streams (shown in the middle).
+    As shown on the right, our approach produces high-quality results that are better
+    than the recent learning-based video interpolation method by Bao et al. (DAIN)
+    [1]. The complete comparison against other methods is shown in Fig. 11 and the
+    comparison videos are provided in the supplementary material, which can be found
+    on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2020.2987316.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_10.jpg
+  Figure 10 caption: Our system trained on synthetic data produces results with severe
+    artifacts on the real data (left). By perturbing the synthetic training data,
+    we simulate the imperfections of the real camera setup and are able to generate
+    high-quality results on real data (right).
+  Figure 2 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_2.jpg
+  Figure 2 caption: The top row shows three frames of a video demonstrating Newtons
+    cradle in motion. The state-of-the-art video interpolation techniques, such as
+    the method by Bao et al. (DAIN) [1], attempt to interpolate the intermediate frame
+    using the neighboring keyframes by assuming the motion between them to be linear.
+    However, this is not a valid assumption in this case. For example, the rightmost
+    ball stays still in the left and middle frames of the video and then moves to
+    the right and, thus, has a non-linear motion. Since Bao et al.s approach linearly
+    interpolates the motion of the left and right balls, it produces incorrect results,
+    as shown in the red and green insets. Our hybrid system utilizes the temporal
+    information of the additional high frame rate video with low spatial resolution
+    and is able to properly handle this challenging case.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_3.jpg
+  Figure 3 caption: Our system takes two video streams with different spatial resolutions
+    and frame rates as the input. On the top, we show the frames from our main video
+    with high-resolution and low frame rate. The auxiliary frames with low resolution
+    and high frame rate are shown at the bottom.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_4.jpg
+  Figure 4 caption: We compare the result of our two-stage approach against the simpler
+    single stage method where a single network directly reconstructs the high-resolution
+    target frame from the two keyframes and the corresponding auxiliary target frame.
+    The single CNN quickly learns to combine the keyframes with the auxiliary frame
+    without properly aligning them. Therefore, it can produce reasonable results in
+    the static regions, as shown in the green inset. However, in the regions with
+    motion, like the one shown in the red inset, it produces result with excessive
+    blurriness. Our method, on the other hand, properly aligns the keyframes and is
+    able to produce high-quality results in both regions.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_5.jpg
+  Figure 5 caption: 'System overview: We first estimate low resolution flows from
+    the target frame using auxiliary frames. These flows are then enhanced by using
+    the high resolution keyframes and warped keyframes in the flow enhancement network.
+    The final warped frames generated with the enhanced flows are masked with the
+    visibility maps and then combined by the context-aware appearance estimation network
+    to output the final frame.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_6.jpg
+  Figure 6 caption: We show the initial and enhanced flows as well as the warped keyframe
+    using these two flows. Since the initial flow is computed using low resolution
+    auxiliary frames, it does not accurately capture the motion boundaries and produces
+    artifacts around the moving ball. The enhanced flow is obtained by utilizing the
+    content of the main frames and, thus, produces warped frame without noticeable
+    artifacts.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_7.jpg
+  Figure 7 caption: Architecture of flow enhancement and appearance estimation networks.
+    The only difference is inputs and outputs to both networks.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_8.jpg
+  Figure 8 caption: On the top, we show two keyframes along with their warped version
+    and visibility maps. The jugglers arm is moving up in the video and it only appears
+    in the right keyframe (see the green arrow). Therefore, the warped left keyframe
+    lacks details on the hand since it does not appear in the corresponding keyframe.
+    On the other hand, the warped right keyframe does not have the details on top
+    of the ball, since it is occluded in the right keyframe (note the star on the
+    shirt as indicated by the green arrows). The visibility maps correctly identify
+    the occluded regions and assign lower values to them (see the green boxes). As
+    shown on the bottom, providing the visibility maps to the appearance estimation
+    network, helps utilizing the valid content of the keyframes and producing high-quality
+    results.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Deep_Slow_Motion_Video_Reconstruction_With_Hybrid_Imaging_System\figure_9.jpg
+  Figure 9 caption: Our appearance estimation without contextual information produces
+    results with sharp artifacts at the motion boundaries (left). Using contextual
+    information, we are able to reduce these artifacts (right).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.87
+  Name of the first author: Avinash Paliwal
+  Name of the last author: Nima Khademi Kalantari
+  Number of Figures: 19
+  Number of Tables: 9
+  Number of authors: 2
+  Paper title: Deep Slow Motion Video Reconstruction With Hybrid Imaging System
+  Publication Date: 2020-04-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notations Used in the Paper
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results on Slow Flow [44], Middlebury [21], and NfS [45] Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Inference Performance on GTX 1080 Ti GPU
+  Table 4 caption:
+    table_text: TABLE 4 Evaluating the Effect of Visibility and Contextual Information
+      in Appearance Estimation
+  Table 5 caption:
+    table_text: TABLE 5 Evaluating the Effect of Auxiliary Video Resolution
+  Table 6 caption:
+    table_text: TABLE 6 Evaluating the Effect of Main Video Frame Rate
+  Table 7 caption:
+    table_text: TABLE 7 Evaluating Output Quality by Changing Gamma and Hue of the
+      Auxiliary Video Frames
+  Table 8 caption:
+    table_text: TABLE 8 Evaluating the Effect of Noise in Auxiliary Video on the Results
+      Quality
+  Table 9 caption:
+    table_text: TABLE 9 Evaluating the Effect of Temporal Desynchronization Between
+      Main and Auxiliary Videos
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2987316
+- Affiliation of the first author: department of automation, state key lab of intelligent
+    technologies and systems, beijing national research center for information science
+    and technology (bnrist), tsinghua university, beijing, china
+  Affiliation of the last author: department of automation, state key lab of intelligent
+    technologies and systems, beijing national research center for information science
+    and technology (bnrist), tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_1.jpg
+  Figure 1 caption: Convolution operations in real-valued neural networks (top), Xnor-Net
+    (the yellow box) and our CI-BCNN (the green box). Because of the quantization
+    error resulted from xnor and bitcount operations, Xnor-Net usually outputs binary
+    feature maps which have inconsistent signs compared with their full-precision
+    counterparts (the red circle). Our CI-BCNN provides priors according to channel-wise
+    interactions to correct the inconsistent signs (the blue circle), which preserves
+    information for intermediate feature maps (best viewed in color).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_2.jpg
+  Figure 2 caption: "Differences between the proposed CI-BCNN and HCI-BCNN, where\
+    \ C 1 \u223C C 9 represent different channels in a convolutional layer. CI-BCNN\
+    \ mines the channel-wise interactions in large space where each channel may be\
+    \ correlated with others, and the search deficiency obstacles the agent to learn\
+    \ the optimal policy. On the contrary, HCI-BCNN obtains the channel-wise priors\
+    \ hierarchically in a shrunk policy space and improves search efficiency, where\
+    \ the manager partitions channels into different correlated groups (marked by\
+    \ various colors) and the worker searches for fine-grained channel-wise interactions\
+    \ for each group (best viewed in color)."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_3.jpg
+  Figure 3 caption: Calculation of the interacted bitcount. The value range of teacher
+    feature maps are partitioned into | K l ts | intervals with equal length (blue)
+    when considering its interaction (red) to student feature maps. The teacher and
+    student feature maps are positively correlated if K l ts is positive and vice
+    versa. When | K l ts | is larger, the teacher feature map influences the student
+    one more significantly. In this example, N 0 =288 and U 0 is set as 0.001 so that
+    the unit pixel modification is [ U 0 N 0 ]=1 . (best viewed in color).
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_4.jpg
+  Figure 4 caption: An example for graph mining. We create edges, reassign K l ts
+    and delete edges between different channels until finalizing the graph structure
+    (best viewed in color).
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Overall framework for training the CI-BCNN. The left part is the
+    policy network which consists of encoders and decoders. The encoders take the
+    state of each layer as input and decoders output the corresponding action probability
+    matrix Weal and Wfal for edge existence and influence according to the hidden
+    variables. The right part stands for the graphs representing channel-wise interactions
+    in binary convolutional neural networks, where the convolutional layer modifies
+    its graph structure based on the action probability matrix (best viewed in color).
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_6.jpg
+  Figure 6 caption: The hierarchical policy network based on the Encoder-decoder RNN
+    framework. Each recurrent module consists of a top-level agent named Manager and
+    a low-level agent called Worker. The manager outputs the action probability for
+    each channel group according to the former partitions. After sampling the action
+    to modify partitions, the new group assignment is set as the sub-goal for the
+    worker. The partition and former fine-grained channel-wise interactions in each
+    group are input to the worker, and the action probability for rectifying the fine-grained
+    interaction graph is output.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_7.jpg
+  Figure 7 caption: Comparison between the presented IB and the DIB. IB yields the
+    channel-wise priors of the tth channel to the sth channel pixel by pixel, the
+    modification to the sth channel may rot the original information due to the noise
+    in tth channel. DIB employs the denoising operation based on the local pixels
+    of teacher feature maps to eliminate the noise in the central pixel, and produces
+    channel-wise priors with robust instructions. For example, the central pixel in
+    the sth channel is modified from -18 to -38 (=-18-20) in DIB and to 2 (=-18+20)
+    in IB.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_8.jpg
+  Figure 8 caption: The square of correlation coefficients among 10 channels in the
+    binary convolutional layer. Darker colors represent higher correlations and the
+    blue box demonstrates the connections mined by our policy gradient networks.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Learning_ChannelWise_Interactions_for_Binary_Convolutional_Neural_Networks\figure_9.jpg
+  Figure 9 caption: Top-1 and top-5 classification accuracies on the ImageNet dataset
+    of the CI-BCNN in the architecture of ResNet18 with (a) varying rho max and (b)
+    varying U0 . Variables are represented by their logarithm.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.59
+  Name of the first author: Ziwei Wang
+  Name of the last author: Jie Zhou
+  Number of Figures: 9
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Learning Channel-Wise Interactions for Binary Convolutional Neural
+    Networks
+  Publication Date: 2020-04-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison on the Ratio of Pixels With Consistent Signs in
+      Different Layers and Corresponding Accuracies of CI-BCNN
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Top-1 and Top-5 Accuracies (%) on ImageNet of the CI-BCNN
+      in the Architecture of ResNet18 With Different Search Strategies
+  Table 3 caption:
+    table_text: TABLE 3 Top-1 and top-5 Accuracies (%) w.r.t. Different Combinations
+      of the Number of Partitions, Denoising Operations, and Sizes of Local Regions
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Classification Accuracy (%) on CIFAR-10 With
+      State-of-the-Art Methods in VGG-Small and ResNet20
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Classification Accuracy (%) on ImageNet With
+      State-of-the-Art Methods in ResNet18 and ResNet34
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Storage Cost and FLOPs of Different Methods
+      With the ResNet18 and ResNet34 Architectures
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2988262

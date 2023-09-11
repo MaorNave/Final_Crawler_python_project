@@ -1,0 +1,871 @@
+- Affiliation of the first author: school of biomedical engineering and imaging sciences,
+    kings college london, london, united kingdom
+  Affiliation of the last author: school of biomedical engineering and imaging sciences,
+    kings college london, london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_1.jpg
+  Figure 1 caption: Examples of 2D arrays (left) and barcode diagrams describing the
+    persistent homology of their super-level sets (right).
+  Figure 10 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_10.jpg
+  Figure 10 caption: Segmentations and barcodes with and without the topological prior.
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_2.jpg
+  Figure 2 caption: 'Corrupted versions of MNIST digits. Left column, the original
+    images. Second column, their Fourier transforms, showing the image in the frequency
+    domain. Third column, the Fourier transforms with m horizontal and vertical lines
+    randomly selected and zero-filled. Right column, the inverse Fourier transform
+    of the third column, showing the original images with artefacts. Top row: m=4
+    , middle row: m=6 , bottom row: m=8 . As m increases the image-domain artefacts
+    are more severe. Note that since the removal of lines in the frequency domain
+    is random and so not necessarily symmetric in the Fourier domain the images resulting
+    from the inverse Fourier transform are complex-valued. We take the magnitude only,
+    and then normalise the images to have intensities between 0 and 1.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_3.jpg
+  Figure 3 caption: Diagram of the simple U-net architecture used in experiment 1.
+    Dotted arrows correspond to feature concatenation.
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_4.jpg
+  Figure 4 caption: 'This digit a 0, shown in (a) should consist of one connected
+    component with one loop, corresponding to one long red bar and one long green
+    bar in the barcode diagram. The network is given as an input the highly corrupted
+    version of this digit, shown in (b). The digit reconstructed by the original network,
+    (c), is misclassified as an 8. Its barcode diagram, (d) has three green bars:
+    an incorrect topology for a 0. After applying the topological prior to the reconstruction,
+    the network output (e) is correctly classified as a 0. Its barcode diagram, (f)
+    shows the correct topological features of a 0 digit.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_5.jpg
+  Figure 5 caption: 'This digit a 6, shown in (a) should consist of one connected
+    component with one loop, corresponding to one long red bar and one long green
+    bar in the barcode diagram. The network is given as an input the highly corrupted
+    version of this digit, shown in (b). The digit reconstructed by the original network,
+    (c), is misclassified as an 5. Its barcode diagram, (d) has no long green bars:
+    an incorrect topology for a 6. After applying the topological prior to the reconstruction,
+    the network output (e) is correctly classified as a 6. Its barcode diagram, (f)
+    shows the correct topological features of a 6 digit.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_6.jpg
+  Figure 6 caption: The same degraded image is reconstructed in three different ways
+    depending on the topological prior used. On the left, the corrupted image of a
+    3 digit, mathbf X is reconstructed by the original network f(mathbf X; omega)
+    . On the right, three different topological priors are applied for post-processing,
+    each resulting in a modified set of weights omega prime and modified reconstructed
+    digits f(mathbf X; omega prime ) . The resulting reconstructions have the desired
+    topology in each case. However they do not necessarily look like a real digit,
+    since topology alone, being invariant to rotations and reflections, is not enough
+    to correctly describe the shape of a digit.
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_7.jpg
+  Figure 7 caption: Two example short-axis CMR images from the UK Biobank dataset
+    (left) and with manually annotated segmentations of the myocardium (right).
+  Figure 8 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_8.jpg
+  Figure 8 caption: Two CMR images artificially degraded by removing lines in the
+    Fourier transform. From left to right, the original CMR image, the Fourier transform,
+    the degraded Fourier transform, and the inverse Fourier transform of the degraded
+    frequencies. On the top row, 20 of the 80 frequency lines are set to zero, causing
+    mild image degradation. On the bottom row, 60 of the 80 frequency lines are set
+    to zero, causing serious image degradation. In all cases, the middle 8 lines are
+    reserved from deletion. This process allows us to assess the efficacy of the segmentation
+    CNN on tasks of varying difficulty since segmenting the more strongly corrupted
+    images is a more challenging task.
+  Figure 9 Link: articels_figures_by_rev_year\2020\A_Topological_Loss_Function_for_DeepLearning_Based_Image_Segmentation_Using_Pers\figure_9.jpg
+  Figure 9 caption: Segmentations and barcodes with and without the topological prior.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: James R. Clough
+  Name of the last author: Andrew P. King
+  Number of Figures: 12
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: A Topological Loss Function for Deep-Learning Based Image Segmentation
+    Using Persistent Homology
+  Publication Date: 2020-09-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Table of Results for MNIST Experiments
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Table of Results for LV Segmentation Experiments
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3013679
+- Affiliation of the first author: university of bonn, bonn, germany
+  Affiliation of the last author: university of bonn, bonn, germany
+  Figure 1 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_1.jpg
+  Figure 1 caption: Overview of the multi-stage temporal convolutional network. Each
+    stage generates an initial prediction that is refined by the next stage. At each
+    stage, several dilated 1D convolutions are applied on the activations of the previous
+    layer. A loss layer is added after each stage.
+  Figure 10 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_10.jpg
+  Figure 10 caption: Qualitative results for the temporal action segmentation task
+    on (a)(b) 50Salads, (c)(d) GTEA, and (e)(f) Breakfast dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_2.jpg
+  Figure 2 caption: Overview of the dilated residual layer. At each layer l , the
+    dilated residual layer uses a convolution with dilated factor 2 l .
+  Figure 3 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_3.jpg
+  Figure 3 caption: "Overview of the dual dilated layer (DDL). At each layer l , DDL\
+    \ uses two convolutions with dilated factor 2 l and 2 L\u2212l , respectively,\
+    \ where L is the number of layers in the network."
+  Figure 4 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_4.jpg
+  Figure 4 caption: Overview of MS-TCN++. The first stage adapts an SS-TCN model with
+    dual dilated layers. This stage generates an initial prediction that is refined
+    incrementally by a set of N r refinement stages. For the refinement stages, an
+    SS-TCN with dilated residual layers is used. A loss layer is added after each
+    stage.
+  Figure 5 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_5.jpg
+  Figure 5 caption: Qualitative result from the 50Salads dataset for comparing different
+    number of stages.
+  Figure 6 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_6.jpg
+  Figure 6 caption: Qualitative result from the 50Salads dataset for comparing different
+    loss functions.
+  Figure 7 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_7.jpg
+  Figure 7 caption: "Loss surface for the Kullback-Leibler (KL) divergence loss (\
+    \ L KL ) and the proposed truncated mean squared loss ( L T\u2212MSE ) for the\
+    \ case of two classes. y t,c is the predicted probability for class c and y t\u2212\
+    1,c is the target probability corresponding to that class."
+  Figure 8 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_8.jpg
+  Figure 8 caption: Qualitative results for two videos from the 50Salads dataset showing
+    the effect of passing features to higher stages.
+  Figure 9 Link: articels_figures_by_rev_year\2020\MSTCN_MultiStage_Temporal_Convolutional_Network_for_Action_Segmentation\figure_9.jpg
+  Figure 9 caption: Qualitative results for two videos from the 50Salads dataset showing
+    the impact of the dual dilated layer (DDL).
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Shijie Li
+  Name of the last author: Juergen Gall
+  Number of Figures: 10
+  Number of Tables: 16
+  Number of authors: 5
+  Paper title: 'MS-TCN++: Multi-Stage Temporal Convolutional Network for Action Segmentation'
+  Publication Date: 2020-09-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of the Used Datasets in the Experiments
+  Table 10 caption:
+    table_text: TABLE 10 Effect of the Number of Layers ( L g Lg) in the Prediction
+      Generation Stage for MS-TCN++ on the 50Salads Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Effect of the Number of Stages on the 50Salads Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparing a Multi-Stage TCN With a Deep Single-Stage TCN on
+      the 50Salads Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparing Different Loss Functions on the 50Salads Dataset
+  Table 5 caption:
+    table_text: "TABLE 5 Impact of \u03BB \u03BB and \u03C4 \u03C4 on the 50Salads\
+      \ Dataset"
+  Table 6 caption:
+    table_text: TABLE 6 Effect of Passing Features to Higher Stages on the 50Salads
+      Dataset
+  Table 7 caption:
+    table_text: TABLE 7 MS-TCN++ versus MS-TCN versus MS-TCN With DDL on the 50Salads
+      Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Effect of the Number of Layers ( L L) in Each Stage of MS-TCN
+      on the 50Salads Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Effect of the Number of Layers ( L r Lr) in Each Refinement
+      Stage on the 50Salads Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3021756
+- Affiliation of the first author: department of mathematics and program in applied
+    and computational mathematics, princeton university, princeton, nj, usa
+  Affiliation of the last author: beijing institute of big data research, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Mathematical_Model_for_Universal_Semantics\figure_1.jpg
+  Figure 1 caption: "Counting long-range transitions between word patterns. A transition\
+    \ from W i to W j counts towards long-range statistics, if the underlined text\
+    \ fragment in between contains no occurrences of W i , and lasts strictly longer\
+    \ than the longest word in W i \u222A W j . For each long-range transition, the\
+    \ effective fragment length L ij discounts the length of the longest word in W\
+    \ i \u222A W j ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Mathematical_Model_for_Universal_Semantics\figure_2.jpg
+  Figure 2 caption: "Statistical analysis of recurrence times and topicality. (a)\
+    \ Barcode representations (adapted from [5, Fig. 2]) for the coverage of W i =Jane(\u2205\
+    \ | \u2032 s) (291 occurrences) and W j =than (282 occurrences) in the whole text\
+    \ of Pride and Prejudice. Horizontal axis scales linearly with respect to the\
+    \ text length measured in the number of constituting letters, spaces and punctuation\
+    \ marks. (b) Counts of the word than within a consecutive block of 1217 words\
+    \ (spanning about 1 percent of the entire text), drawn from 1,000 randomly chosen\
+    \ blocks, fitted to a Poisson distribution with mean 2.776 (blue curve). (c) Histogram\
+    \ of effective fragment length L ii (see Fig. 1 for its definition) for the topical\
+    \ pattern W i =Jane(\u2205 | \u2032 s) , fitted to an exponential distribution\
+    \ (blue line in the semi-log plot) and a weighted mixture of two exponential distributions\
+    \ c 1 k 1 e \u2212 k 1 t + c 2 k 2 e \u2212 k 2 t (red curve, with c 1 : c 2 \u2248\
+    1:3 , k 1 : k 2 \u22481:7 ). (d) Histogram of L jj for the function word W j =than\
+    \ , fitted to an exponential distribution (blue line in the semi-log plot). All\
+    \ the parameter estimators in panels b\u2013d are based on maximum likelihood.\
+    \ (c \u2032 )\u2013(d \u2032 ) Reinterpretations of panels c\u2013d, with logarithmic\
+    \ binning on the horizontal axes, to give fuller coverage of the dynamic ranges\
+    \ for the statistics. (e) Recurrence statistics for word patterns in Jane Austens\
+    \ Pride and Prejudice, where \u27E8\u22EF\u27E9 denotes averages over n ii samples\
+    \ of long-range transitions. Data points in gray, green and red have radii 1 4\
+    \ n ii \u221A . Labels for proper names and some literary motifs are attached\
+    \ next to the corresponding colored dots. Jensens bound (green dashed line) has\
+    \ unit slope and zero intercept. Exponentially distributed recurrence statistics\
+    \ reside on the line of Poissonian banality (blue line), with unit slope and negative\
+    \ intercept. Red (resp. green) dots mark significant downward (resp. upward) departure\
+    \ from the blue line."
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Mathematical_Model_for_Universal_Semantics\figure_3.jpg
+  Figure 3 caption: "Automated topic extraction and raw alignment across bilingual\
+    \ corpora. (a) Schematic diagram illustrating our graphical representation of\
+    \ morphologically related words (identified by supervised algorithms in Supplementary\
+    \ Materials, which can be found on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2020.3022533)\
+    \ in a word pattern. To avoid unprintably small characters, rarely occurring forms\
+    \ (less than 5 percent of the total sum of all the words ranked above) are ignored\
+    \ in graphical display. To enhance the visibility of word stems, we print shared\
+    \ letters only once, and compress other letters vertically, with heights proportional\
+    \ to their corresponding word counts. (b) Word patterns W i in Jane Austens Pride\
+    \ and Prejudice, sorted by descending n ii , with font size proportional to the\
+    \ square root of e \u2212\u27E8log L ii \u27E9 (a better indicator of readers\
+    \ impression than the number of recurrences n ii \u221D e \u2212log\u27E8 L ii\
+    \ \u27E9 ). Topical (that is, significantly non-Poissonian) patterns painted in\
+    \ red (resp. green) reside below (resp. above) the critical line of Poissonian\
+    \ banality (blue line in Fig. 2e), where the deviations exceed the error margin\
+    \ prescribed in (1) of Section 2.1. (b \u2032 ) A similar service on a French\
+    \ version of Pride and Prejudice (tr. Valentine Leconte & Charlotte Pressoir).\
+    \ (c) A low-cost and low-yield word translation, based on chapter-wise word counts\
+    \ b en i and b fr j . Ru\u017Ei\u010Dka similarities s R ( b en i , b fr j ) between\
+    \ selected topics (sorted by descending n ii \u226520 ) in English and French\
+    \ versions of Pride and Prejudice. Rows and columns with maximal s R ( b en i\
+    \ , b fr j ) less than 0.7 are not shown. Correct matchings are indicated by green\
+    \ cross-hairs."
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Mathematical_Model_for_Universal_Semantics\figure_4.jpg
+  Figure 4 caption: "Quantitative properties of Markov text model. (a) Dominant eigenvector\
+    \ \u03C0 of a 100\xD7100 Markov matrix P , computed from one of the four versions\
+    \ of Pride and Prejudice, in comparison with \u03C0 \u2217 , the list of normalized\
+    \ frequencies for top 100 word patterns. (b) Precipitous decays of r n := 1 2\
+    \ \u2211 1\u2264i,j\u2264100 \u2223 \u2223 \u03C0 i p (n) ij \u2212 \u03C0 j p\
+    \ (n) ji \u2223 \u2223 from the initial value r 1 \u22480.07 , for matrix powers\
+    \ P n =( p (n) ij ) 1\u2264i,j\u2264100 constructed from four versions of Pride\
+    \ and Prejudice. (In contrast, one has r 1 \u22480.33 for a random 100\xD7100\
+    \ Markov matrix.) Such quick relaxations support our working hypothesis about\
+    \ detailed balance \u03C0 \u2217 i p \u2217 ij = \u03C0 \u2217 j p \u2217 ji .\
+    \ (c) Distributions of eigenvalues \u03BB of empirical Markov matrices P , with\
+    \ nearly language-independent modulus |\u03BB(P)| and phase-angle arg\u03BB(P)\
+    \ ."
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Mathematical_Model_for_Universal_Semantics\figure_5.jpg
+  Figure 5 caption: "Semantic cliques and their applications to word translation.\
+    \ (a) Empirical distributions of \u27E8log L ij \u27E9 in Pride and Prejudice,\
+    \ as gray and colored dots with radii 1 4 n ij \u221A , compared to Gaussian model\
+    \ \u03B1 ij (\u2113) (colored curves parametrized by (7) and (8)). The numerical\
+    \ samplings of W j s exhaust all the textual patterns available in the novel,\
+    \ including topical word patterns, non-topical word patterns and function words.\
+    \ Only those textual patterns with over 40 occurrences are displayed as data points.\
+    \ Inset of each frame shows the semantic clique S i surrounding topic W i (painted\
+    \ in black), color-coded by the \u03B1 ij (\u27E8log L ij \u27E9) score. The areas\
+    \ of the bounding boxes for individual word patterns are proportional to the components\
+    \ of \u03C0 [i] (the equilibrium state of P [i] ). (b) Distributions for the magnitudes\
+    \ of eigenvalues (LISF) in the recurrence matrices R [i] , for three concepts\
+    \ from four versions of Pride and Prejudice. The color encoding for languages\
+    \ follows Fig. 4. The largest \u230A e \u03B7 i \u230B magnitudes of eigenvalues\
+    \ are displayed as solid lines, while the remaining terms are shown in dashed\
+    \ lines. Inset of each frame shows the semantic clique S i , counterclockwise\
+    \ from top-left, in French, Russian and Finnish. (c) Yields from bipartite matching\
+    \ of LISF (see Fig. 6 for English-French) for topical words between the English\
+    \ original of Pride and Prejudice and its translations into 13 languages out of\
+    \ 5 language families."
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_Mathematical_Model_for_Universal_Semantics\figure_6.jpg
+  Figure 6 caption: Automated alignments of vectorized topics via bipartite matching
+    of semantic similarities. The semantic similarities s(mathsf Wimathrmen,mathsf
+    Wjmathrmfr) are computed for selected topics (sorted by descending niigeq 20 )
+    in two versions of Pride and Prejudice. Rows and columns filled with zeros are
+    not shown. Cross-hairs meet at optimal nodes that solve the bipartite matching
+    problem. The thickness of each horizontal (resp. vertical) cross-hair is inversely
+    proportional to the row-wise (resp. column-wise) ranking of the similarity score
+    for the optimal node. Green (resp. amber) cross-hair indicates an exact (resp.
+    a close but non-exact) match. At the same confidence level (0.7) for similarities,
+    this experiment has better recall than Fig. 3c, without much cost of precision.
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_Mathematical_Model_for_Universal_Semantics\figure_7.jpg
+  Figure 7 caption: "Applications of semantic cliques to question-answering. (a) A\
+    \ construction of semantic clique mathscr Qcup mathscr Qprime (based on mathscr\
+    \ Q=lbrace Anne, Frank, die rbrace ) weighted by the PageRank equilibrium state\
+    \ boldsymbolwidetildepi and subsequent question-answering. Top 5 candidate answers,\
+    \ with punctuation and spacing as given by WikiQA, are shown with font sizes proportional\
+    \ to the entropy production score in (11). Here, the top-scoring sentence with\
+    \ highlighted background is the same as the official answer chosen by the WikiQA\
+    \ team. Like a human reader, our algorithm automatically detects the place \u201C\
+    Bergen-Belsen concentration camp\u201D, cause \u201Ctyphus\u201D, and year \u201C\
+    1945\u201D of Anne Franks death. (b) Evaluations of our model (LISF and LISF ast\
+    \ ) on the WikiQA data set, in comparison with established algorithms."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.69
+  Name of the first author: Weinan E
+  Name of the last author: Yajun Zhou
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: A Mathematical Model for Universal Semantics
+  Publication Date: 2020-09-07 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3022533
+- Affiliation of the first author: department of computer science, university of california
+    los angeles (ucla), los angeles, ca, usa
+  Affiliation of the last author: department of computer science, university of california
+    los angeles (ucla), los angeles, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Generative_Imputation_and_Stochastic_Prediction\figure_1.jpg
+  Figure 1 caption: Block diagram of the proposed adversarial imputation method. h
+    represents the blending function of (1), and L is the adversarial loss function
+    of (2).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Generative_Imputation_and_Stochastic_Prediction\figure_2.jpg
+  Figure 2 caption: "Block diagram of the proposed stochastic prediction method. G\
+    \ represents a trained generative imputer (Section 3.2), L is the prediction loss\
+    \ function, and \u03A8 is the estimated classification certainty defined in (7)."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Generative_Imputation_and_Stochastic_Prediction\figure_3.jpg
+  Figure 3 caption: Comparison of FID scores on CIFAR-10 dataset for (a) uniform and
+    (b) rectangular missingness. Lower FID score is better. In many cases, variance
+    values are very small and only observable by magnifying the figures.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Generative_Imputation_and_Stochastic_Prediction\figure_4.jpg
+  Figure 4 caption: Accuracy versus certainty plots for (a) GI, (b) MisGAN, and (c)
+    GAIN on Landsat dataset at the missing rate of 30, 40, and 50 percent.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Generative_Imputation_and_Stochastic_Prediction\figure_5.jpg
+  Figure 5 caption: 'Evaluation using synthesized data: (a) Samples from the underlying
+    distribution, (b) samples from the conditional underlying distribution, (c-f)
+    samples from the conditional distribution generate by GI, MisGAN, GAIN, and DAE.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\Generative_Imputation_and_Stochastic_Prediction\figure_6.jpg
+  Figure 6 caption: Comparison of FID scores achieved with (GI W Atten.) and without
+    (GI WO Atten.) self-attention layers on CIFAR-10 dataset and rectangular missingness.
+    Lower FID score is better.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Generative_Imputation_and_Stochastic_Prediction\figure_7.jpg
+  Figure 7 caption: Comparison of classification accuracies achieved with different
+    ensemble size ( N ).
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mohammad Kachuee
+  Name of the last author: Majid Sarrafzadeh
+  Number of Figures: 7
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Generative Imputation and Stochastic Prediction
+  Publication Date: 2020-09-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Top-1 CIFAR-10 Classification Accuracy for Different Missing
+      Rates and Structures
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Classification Accuracies at Different Missing
+      Rates
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of CIFAR-10 Accuracies for the Stochastic (N=128)
+      and the Deterministic (N=1) Predictor Under Rectangular Missingness
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3022383
+- Affiliation of the first author: "computer science department, computer vision center,\
+    \ universitat aut\xF2noma de barcelona, bellaterra, spain"
+  Affiliation of the last author: digital research center of sfax, sfax, tunisia
+  Figure 1 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_1.jpg
+  Figure 1 caption: 'Examples of the documents used in this study: (a): Degraded documents,
+    (b): A document with dense watermark.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_10.jpg
+  Figure 10 caption: Binarization of three historical degraded documents by DE-GAN,
+    the binarized version is presented under each original image. Some parts are not
+    well recovered as shown in the red boxes.
+  Figure 2 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_2.jpg
+  Figure 2 caption: The generator follows the U-net architecture [48]. Each box corresponds
+    to a feature map. The number of channels is denoted on bottom of the box. The
+    arrows denote the different operations.
+  Figure 3 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_3.jpg
+  Figure 3 caption: The discriminator architecture.
+  Figure 4 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_4.jpg
+  Figure 4 caption: The proposed DE-GAN.
+  Figure 5 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_5.jpg
+  Figure 5 caption: Cleaning degraded documents by DE-GAN.
+  Figure 6 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_6.jpg
+  Figure 6 caption: Binarization of degraded documents by DE-GAN, the result is satisfactory,
+    except in some parts that were highly dense (the red boxes in the predicted images
+    row).
+  Figure 7 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_7.jpg
+  Figure 7 caption: Qualitative binarization results produced by different methods
+    of a part from the sample (PR5), which is included in DIBCO 2013 dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_8.jpg
+  Figure 8 caption: Qualitative binarization results produced by different methods
+    of of a part from the sample (HW5), which is included in DIBCO 2013 dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2020\DEGAN_A_Conditional_Generative_Adversarial_Network_for_Document_Enhancement\figure_9.jpg
+  Figure 9 caption: Qualitative binarization results produced by different of the
+    sample 16 in DIBCO 2017 dataset, here we compare DE-GAN with the winners approach.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Mohamed Ali Souibgui
+  Name of the last author: Yousri Kessentini
+  Number of Figures: 16
+  Number of Tables: 7
+  Number of authors: 2
+  Paper title: 'DE-GAN: A Conditional Generative Adversarial Network for Document
+    Enhancement'
+  Publication Date: 2020-09-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Obtained Results of Document Cleaning Using Noisy Office
+      Database [3]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results of Image Binarization on DIBCO 2013 Database
+  Table 3 caption:
+    table_text: TABLE 3 Results of Image Binarization on DIBCO 2017 Database, a Comparison
+      With DIBCO 2017 Competitors Approaches
+  Table 4 caption:
+    table_text: TABLE 4 Results of Image Binarization on DIBCO 2017 and DIBCO 2018
+      Databases, a Comparison With DIBCO 2018 Competitors Approaches
+  Table 5 caption:
+    table_text: TABLE 5 Results of Watermark Removal
+  Table 6 caption:
+    table_text: TABLE 6 Results of Image Binarization for DIBCO 2018 Database
+  Table 7 caption:
+    table_text: TABLE 7 The Obtained Results of Document Deblurring
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3022406
+- Affiliation of the first author: department of computer science, city university
+    of hong kong, hong kong
+  Affiliation of the last author: department of computer science, city university
+    of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_1.jpg
+  Figure 1 caption: 'Counting by crowd density maps: the ground-truth density map
+    is generated from a dot annotation map. Then, algorithms are designed to predict
+    the density map, which is summed to obtain the predicted global count. Current
+    approaches treat the density map as a fixed intermediate representation, which
+    is based on hand-crafted. The proposed algorithm jointly learns the density map
+    generator and density map estimator.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_10.jpg
+  Figure 10 caption: The quadratic coefficient magnitudes of kernels versus their
+    x-coordinate (SKU-110K dataset) and y-coordinate (other datasets). The best-fit
+    line is in red, and the title shows the p-values for testing for significant correlations.
+  Figure 2 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_2.jpg
+  Figure 2 caption: Density map refinement framework. The Counter is a network that
+    estimates the density map of an input image. The Refiner is another network that
+    takes a density map as input and produces a better density map as the ground truth
+    to train the Counter. Both the Counter and Refiner are trained jointly.
+  Figure 3 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_3.jpg
+  Figure 3 caption: Adaptive density map generation framework. The input dot map is
+    convolved with different Gaussian kernels, yielding a set of blurred density maps.
+    The blurred density maps are adaptively masked using a self-attention module,
+    and then passed through a fusion module to produce the final density map. The
+    generated density map serves as the ground truth for training the density map
+    estimator (counter).
+  Figure 4 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_4.jpg
+  Figure 4 caption: "Kernel-based density map generation framework. Given an image\
+    \ as the input, we first learn density kernels for all spatial locations (a w\xD7\
+    h\xD7 k 2 tensor). Then, object kernels are retrieved, normalized and reshaped\
+    \ based on their coordinates. The density map is generated by sticking all the\
+    \ kernels together based on their locations. The generated density map then serves\
+    \ as the ground-truth to train a counting network."
+  Figure 5 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_5.jpg
+  Figure 5 caption: Example images from the datasets.
+  Figure 6 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_6.jpg
+  Figure 6 caption: MAE versus (a) kernel size and (b) weight for cosine regularizer.
+  Figure 7 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_7.jpg
+  Figure 7 caption: 'Comparison of different density maps. From left to right: learned
+    density maps from KDMG and ADMG, density maps generated by fixed kernel ( sigma
+    =16 ), density maps generated by fixed kernel ( sigma =4 ), and density maps generated
+    by adaptive-bandwidth Gaussian kernels.'
+  Figure 8 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_8.jpg
+  Figure 8 caption: Comparison of learned kernels from KDMG (red) and fixed kernel
+    with bandwidth 16 (blue). Best viewed in color.
+  Figure 9 Link: articels_figures_by_rev_year\2020\KernelBased_Density_Map_Generation_for_Dense_Object_Counting\figure_9.jpg
+  Figure 9 caption: Error maps (prediction - truth) for different types of density
+    maps.
+  First author gender probability: 0.65
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Jia Wan
+  Name of the last author: Antoni B. Chan
+  Number of Figures: 10
+  Number of Tables: 12
+  Number of authors: 3
+  Paper title: Kernel-Based Density Map Generation for Dense Object Counting
+  Publication Date: 2020-09-09 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Datasets Used for Evaluation
+  Table 10 caption:
+    table_text: TABLE 10 The Experiment Results on the Generalization Ability of Generated
+      Density Maps
+  Table 2 caption:
+    table_text: TABLE 2 The Architectures of the Density Map Refiner, Adaptive Density
+      Map Generation, and Kernel-Based Density Map Generation
+  Table 3 caption:
+    table_text: TABLE 3 Experiment Results on ShanghaiTech
+  Table 4 caption:
+    table_text: TABLE 4 Experiment Results on UCF-QNRF
+  Table 5 caption:
+    table_text: TABLE 5 Experiment Results on Large-Scale Datasets NWPU-Crowd and
+      JHU-CROWD++
+  Table 6 caption:
+    table_text: TABLE 6 Experiment Results of Vehicle Counting on TRANCOS Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Experiment Results on PUCPR+, CARPK, and SKU110k
+  Table 8 caption:
+    table_text: TABLE 8 Experiment Results on DOTA
+  Table 9 caption:
+    table_text: TABLE 9 Comparison of Traditional and Generated Density Maps, Evaluated
+      With MAE
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3022878
+- Affiliation of the first author: department of mechanical and automation engineering,
+    t stone robotics institute, the chinese university of hong kong, hong kong
+  Affiliation of the last author: department of mechanical and automation engineering,
+    t stone robotics institute, the chinese university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_1.jpg
+  Figure 1 caption: We cluster a set of image lines into three groups shown in different
+    colors by three unknown-but-sought orthogonal vanishing points. We reformulate
+    the vanishing point estimation as computing the rotation between the Manhattan
+    frame and camera frame.
+  Figure 10 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_10.jpg
+  Figure 10 caption: Accuracy comparison with respect to the outlier ratio. (a) Precision.
+    (b) Recall. We present the plots of mean. The plots of median are available in
+    the supplementary material, available online.
+  Figure 2 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_2.jpg
+  Figure 2 caption: Illustration of different methods to obtain the optimal line that
+    fits the most inliers, given the input points x i corrupted by noise and outliers.
+    The RANSAC line must pass through two points (here x 1 and x 2 ). It mistakenly
+    treats x 3 as an outlier since their distance is higher than the threshold. In
+    contrast, the BnB line and our line both treat x 3 as an inlier.
+  Figure 3 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_3.jpg
+  Figure 3 caption: "We use two image lines l 1 , l 2 associated with different VPs\
+    \ to parametrize the MF rotation M \u22A5 by the unknown-but-sought angle \u03BB\
+    \ ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_4.jpg
+  Figure 4 caption: "We use two image lines l 1 , l 2 associated with the same VP\
+    \ to parametrize the MF rotation M \u2225 by the unknown-but-sought angle \u03BB\
+    \ ."
+  Figure 5 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_5.jpg
+  Figure 5 caption: "We use one image line l 1 associated with any VP to parametrize\
+    \ the MF rotation M \u02D9 by the unknown-but-sought angles \u03BB and \u03B8\
+    \ ."
+  Figure 6 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_6.jpg
+  Figure 6 caption: Image lines and their corresponding histogram of slope angles.
+    (a) The outlier-free case. (b) The case with outliers. The nearly parallel red
+    lines correspond to the red bin with the highest cardinality. The nearly parallel
+    blue lines correspond to the blue bin with the second-highest cardinality. Red
+    and blue lines are roughly associated with two different VPs. Outliers are shown
+    in yellow.
+  Figure 7 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_7.jpg
+  Figure 7 caption: (a) Dividing or discarding a parameter interval mathcal Ix associated
+    with the number of inliers N(mathcal Ix) . lbrace textI, !textII, !textIII...rbrace
+    denote the rounds of divisions. (b) Discarding a hypothesized MF rotation. (c)
+    Stopping the division and retrieving the optimal MF rotation. The red point in
+    (a) or (c) denotes the number of inliers computed by the midpoint of an interval.
+  Figure 8 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_8.jpg
+  Figure 8 caption: Evolutions of the trigonometric polynomials expressed by the sine
+    functions. (a) Linear trigonometric polynomial mathsf Llambda in Eq. (14). (b)
+    Quadratic trigonometric polynomial mathsf Qlambda in Eq. (15).
+  Figure 9 Link: articels_figures_by_rev_year\2020\QuasiGlobally_Optimal_and_NearTrue_RealTime_Vanishing_Point_Estimation_in_Manhat\figure_9.jpg
+  Figure 9 caption: Accuracy comparison with respect to the noise level. (a) Precision.
+    (b) Recall. We present the plots of mean. The plots of median are available in
+    the supplementary material, available online.
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Haoang Li
+  Name of the last author: Yun-Hui Liu
+  Number of Figures: 21
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Quasi-Globally Optimal and Near/True Real-Time Vanishing Point Estimation
+    in Manhattan World
+  Publication Date: 2020-09-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison in Terms of the Probability of Valid Sampling p
+      p and the Number of Samplings S S Under Different Assumptions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Interval Operations for Residual Bound Computation
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3023183
+- Affiliation of the first author: college of computer science and technology, jilin
+    university, changchun, jilin, china
+  Affiliation of the last author: department of computer science, university of illinois
+    at urbana-champaign, champaign, il, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_1.jpg
+  Figure 1 caption: Unimportant = row sparse. (a) Sentinel network S ; (b) the graph
+    of S ; (c) the equations of a linear dynamical system, where x i t denotes the
+    state of component i at time t and link S ij, encodes the effect of component
+    i on component j by its weight. The component 2 dominates the system. Unimportant
+    component 3 is associated with a sparse row.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_10.jpg
+  Figure 10 caption: The spatial distribution of 10 sentinels on UltraSPARC T1 microprocessor
+    for thermal surveillance. The red bubble markers denote sentinel locations, and
+    the radius of red circle depicts its importance.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_2.jpg
+  Figure 2 caption: The log-distributions of the ture prior logp(s) . Note that it
+    is a heavy-tailed distribution and the most of probability mass is concentrated
+    along two spines ( || s 1 | | 2 =0 and || s 2 | | 2 =0 ). The index of the two
+    horizontal axises is the 2-norm of each group, which indicate whether a group
+    is sparse or not.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_3.jpg
+  Figure 3 caption: "Graphical models of two kinds of dynamical systems. \u03B3 i\
+    \ is the \u03B3 value of component i . s i denotes the i th group in s ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_4.jpg
+  Figure 4 caption: "A geometrical perspective of evidences maximization, showing\
+    \ in 2D projection of the T -dimension original observation space. Each red point\
+    \ denotes an observation Y \u22C5,j , and green confidence ellipses illustrate\
+    \ the covariance c . Although the observations are same, their Mahalanobis distances\
+    \ to the origin in panel (a) are much less than the distances in panel (b) because\
+    \ their c are different. Each arrow shows the weighted direction of a base X \u22C5\
+    ,i . Blue arrows denote an important base, and yellow arrows denote a trivial\
+    \ base. A dashed circle denotes the noise variance \u03BB I T ."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_5.jpg
+  Figure 5 caption: Illustration of the relationship between a diagonal-block matrix
+    and block projective matrix.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_6.jpg
+  Figure 6 caption: An illustration of sentinel prediction error. x -axis denotes
+    the number of sentinels k . Prediction error is measured by MSE. GP-MI achieves
+    lower prediction error when k < 4 , but SNMA outperforms GP-MI when k geq 4.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_7.jpg
+  Figure 7 caption: Comparison on running time of one iteration. y -axis is the running
+    time (seconds) on a log scale. x -axis denotes the size of a system.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_8.jpg
+  Figure 8 caption: The spatial distribution of sentinels in Hong Kong and Tengchong.
+    The red bubble markers denote sentinel locations, and the radius of red circle
+    depicts its importance for dynamics prediction (its boldsymbolgamma value). The
+    black points are unmonitored locations. (a) 8 sentinel districts in Hong Kong
+    for H1N1 flu surveillance; (b) 7 sentinel towns in Tengchong city for malaria
+    surveillance.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Active_Surveillance_via_Group_Sparse_Bayesian_Learning\figure_9.jpg
+  Figure 9 caption: The spatial distribution of 10 sentinels in Intel Berkeley Lab
+    for temperature monitoring. The red bubble markers denote sentinel locations,
+    and the radius of red circle depicts its importance (its boldsymbolgamma value).
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hongbin Pei
+  Name of the last author: Kevin Chen-Chuan Chang
+  Number of Figures: 10
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Active Surveillance via Group Sparse Bayesian Learning
+  Publication Date: 2020-09-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Sentinel Identification Results (Average Failure Rate % %)
+      on Synthetic Data
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Sentinel Prediction Results (Average CMSE) on Synthetic Data
+  Table 3 caption:
+    table_text: TABLE 3 Sentinel Prediction Results (CMSE) on Real Data
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3023092
+- Affiliation of the first author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Affiliation of the last author: tklndst, college of computer science, nankai university,
+    tianjin, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Leveraging_Instance_Image_and_DatasetLevel_Information_for_Weakly_Supervised_Ins\figure_1.jpg
+  Figure 1 caption: An overview of the proposed method. The training images with image-level
+    labels are used to train our MIL-based multi-label image classification network,
+    as in Section 4. All training images, together with corresponding proposals, are
+    fed into the MIL network to calculate the probability distributions and semantic
+    features. A large knowledge graph is then constructed using all training images.
+    The pseudo instance segmentation can be obtained using an improved multi-way cut
+    algorithm.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Leveraging_Instance_Image_and_DatasetLevel_Information_for_Weakly_Supervised_Ins\figure_2.jpg
+  Figure 2 caption: Our proposed network architecture for MIL-based multi-label image
+    classification. This network is designed to simultaneously compute probability
+    distributions and extract semantic features for each input proposal.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Leveraging_Instance_Image_and_DatasetLevel_Information_for_Weakly_Supervised_Ins\figure_3.jpg
+  Figure 3 caption: Qualitative results of instance segmentation on the PASCAL VOC2012
+    segmentation val set [36].
+  Figure 4 Link: articels_figures_by_rev_year\2020\Leveraging_Instance_Image_and_DatasetLevel_Information_for_Weakly_Supervised_Ins\figure_4.jpg
+  Figure 4 caption: 'Qualitative results of semantic segmentation on the PASCAL VOC2012
+    segmentation val set [36]. From top to bottom: Original images, ground truth,
+    and the predicted results by LIID, repeated by the bottom three rows.'
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Yun Liu
+  Name of the last author: Ming-Ming Cheng
+  Number of Figures: 4
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: Leveraging Instance-, Image- and Dataset-Level Information for Weakly
+    Supervised Instance Segmentation
+  Publication Date: 2020-09-10 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Evaluation Results of Different \u03B8 \u03B8 (in Eq. (8))\
+      \ and \u03B3 \u03B3 (in Eq. (9)) Values on the VOC2012 Segmentation Train Set\
+      \ [36]"
+  Table 10 caption:
+    table_text: TABLE 10 Instance Segmentation Mask AP on COCO Test-Dev [37]
+  Table 2 caption:
+    table_text: "TABLE 2 Evaluation Results of Different \u03B1 \u03B1 and \u03B2\
+      \ \u03B2 Values (in Eq. (9)) on the VOC2012 Segmentation Train Set [36]"
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation of the Existence of mean mean and max max in (
+      R j i ) k (Rij)k (Eq. (3)) on the VOC2012 Segmentation Train Set [36]
+  Table 4 caption:
+    table_text: "TABLE 4 Evaluation for the Calculation of ( R j i ) k \u2032 (Rij)k\
+      \ in Eq. (3) When Using Box- or Mask-Level Pooling on the VOC2012 Segmentation\
+      \ Train Set [36]"
+  Table 5 caption:
+    table_text: "TABLE 5 Evaluation of Different \u03B7 \u03B7 Values in Eq. (3))\
+      \ on the VOC2012 Segmentation Train Set [36]"
+  Table 6 caption:
+    table_text: "TABLE 6 Evaluation Results of Different \u03B4 \u03B4 Values (in\
+      \ Eq. (10)) on the VOC2012 Segmentation Train Set [36]"
+  Table 7 caption:
+    table_text: TABLE 7 Evaluation for the Upper Bound of LIID on the VOC2012 Segmentation
+      Train Set [36]
+  Table 8 caption:
+    table_text: TABLE 8 Evaluation for Each Component of LIID After Mask R-CNN Training
+      on the VOC2012 Segmentation Val Set [36]
+  Table 9 caption:
+    table_text: TABLE 9 Comparison of Our Method and Other Weakly Supervised Instance
+      Segmentation Models on the VOC2012 Segmentation Val Dataset [36]
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3023152
+- Affiliation of the first author: queens university belfast, belfast, united kingdom
+  Affiliation of the last author: griffith university, brisbane, queensland, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_1.jpg
+  Figure 1 caption: 'Incremental clustering: (1) The inserted object a merges two
+    clusters C 1 and C 2 into a single cluster and (2) the deleted object b breaks
+    cluster C 3 into two small clusters.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_10.jpg
+  Figure 10 caption: Clustering performance of IncAnyDBC on real datasets (we only
+    run DBSCAN with some parameters epsilon for saving times. AnyDBC ran out of memory
+    when epsilon =1,000 for the datasets Farm and GasSensor).
+  Figure 2 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_2.jpg
+  Figure 2 caption: The general idea of IncAnyDBC.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_3.jpg
+  Figure 3 caption: Pseudocode for IncAnyDBC.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_4.jpg
+  Figure 4 caption: The state transitions of objects.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_5.jpg
+  Figure 5 caption: The state transitions of edges.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_6.jpg
+  Figure 6 caption: Illustration of Lemma 7.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_7.jpg
+  Figure 7 caption: Different Steps of IncAnyDBC for the insertion (top) and deletion
+    (bottom) cases.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_8.jpg
+  Figure 8 caption: IncAnyDBCs parallel processing model on multicore CPUs.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Incremental_DensityBased_Clustering_on_Multicore_Processors\figure_9.jpg
+  Figure 9 caption: The numbers of object nodes and queries for GasSensor dataset.
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Son T. Mai
+  Name of the last author: Quoc Viet Hung Nguyen
+  Number of Figures: 28
+  Number of Tables: 1
+  Number of authors: 7
+  Paper title: Incremental Density-Based Clustering on Multicore Processors
+  Publication Date: 2020-09-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 List of Abbreviations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3023125

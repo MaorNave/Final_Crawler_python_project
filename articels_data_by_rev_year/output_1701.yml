@@ -1,0 +1,873 @@
+- Affiliation of the first author: borealis ai, montreal, canada
+  Affiliation of the last author: borealis ai, montreal, canada
+  Figure 1 Link: articels_figures_by_rev_year\2020\Normalizing_Flows_An_Introduction_and_Review_of_Current_Methods\figure_1.jpg
+  Figure 1 caption: 'Change of variables (Equation (1)). Top-left: the density of
+    the source pmathbf Z . Top-right: the density function of the target distribution
+    pmathbf Y(mathbf y) . There exists a bijective function mathbf g , such that pmathbf
+    Y= mathbf g pmathbf Z , with inverse mathbf f . Bottom-left: the inverse function
+    mathbf f . Bottom-right: the absolute Jacobian (derivative) of mathbf f .'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Normalizing_Flows_An_Introduction_and_Review_of_Current_Methods\figure_2.jpg
+  Figure 2 caption: Overview of flows discussed in this review. We start with elementwise
+    bijections, linear flows, and planar and radial flows. All of these have drawbacks
+    and are limited in utility. We then discuss two architectures (coupling flows
+    and autoregressive flows) which support invertible non-linear transformations.
+    These both use a coupling function, and we summarize the different coupling functions
+    available. Finally, we discuss residual flows and their continuous extension infinitesimal
+    flows.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Normalizing_Flows_An_Introduction_and_Review_of_Current_Methods\figure_3.jpg
+  Figure 3 caption: Coupling architecture. a) A single coupling flow described in
+    Equation (15). A coupling function h is applied to one part of the space, while
+    its parameters depend on the other part. b) Two subsequent multi-scale flows in
+    the generative direction. A flow is applied to a relatively low dimensional vector
+    z ; its parameters no longer depend on the rest part z aux . Then new dimensions
+    are gradually introduced to the distribution.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Normalizing_Flows_An_Introduction_and_Review_of_Current_Methods\figure_4.jpg
+  Figure 4 caption: Autoregressive flows. On the left, is the direct autoregressive
+    flow given in Equation (18). Each output depends on the current and previous inputs
+    and so this operation can be easily parallelized. On the right, is the inverse
+    autoregressive flow from Equation (20). Each output depends on the current input
+    and the previous outputs and so computation is inherently sequential and cannot
+    be parallelized.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Normalizing_Flows_An_Introduction_and_Review_of_Current_Methods\figure_5.jpg
+  Figure 5 caption: Piecewise bijective coupling. The target domain (right) is divided
+    into disjoint sections (colors) and each mapped by a monotone function (center)
+    to the base distribution (left). For inverting the function, one samples a component
+    of the base distribution using a gating network.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ivan Kobyzev
+  Name of the last author: Marcus A. Brubaker
+  Number of Figures: 5
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: 'Normalizing Flows: An Introduction and Review of Current Methods'
+  Publication Date: 2020-05-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 List of Normalizing Flows for Which We Show Performance Results
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Tabular Datasets: Data Dimensionality and Number of Training
+      Examples'
+  Table 3 caption:
+    table_text: TABLE 3 Average Test Log-Likelihood (in Nats) for Density Estimation
+      on Tabular Datasets (Higher the Better)
+  Table 4 caption:
+    table_text: 'TABLE 4 Image Datasets: Data Dimensionality and Number of Training
+      Examples for MNIST, CIFAR-10, ImageNet32 and ImageNet64 Datasets'
+  Table 5 caption:
+    table_text: TABLE 5 Average Test Negative Log-Likelihood (in Bits per Dimension)
+      for Density Estimation on Image Datasets (Lower is Better)
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2992934
+- Affiliation of the first author: john hopcroft center and moe key lab of artificial
+    intelligence ai institute, shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: university of california, los angeles, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_1.jpg
+  Figure 1 caption: Mining part-based AOG representations from CNN representations.
+    (left) Each filter in a conv-layer usually encodes a mixture of patterns, which
+    makes conv-layer representations a black box. The same filter may be activated
+    by different parts of different objects. (middle) We disentangle CNN feature maps
+    and mine latent patterns of object parts. White lines indicate the spatial relationship
+    between a latent patterns neural activation and the ground-truth position of an
+    object part (head). (right) We grow an AOG on the CNN to associate CNN units with
+    certain semantic parts (the horse head, here). Red lines in the AOG indicate a
+    parse graph that associates certain CNN units with a semantic part.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_2.jpg
+  Figure 2 caption: Learning an AOG to explain a pre-trained CNN via active question-answering
+    (QA). (left) We mine latent patterns of object parts from the CNN, and organize
+    such patterns into a hierarchical AOG. During the learning process, our method
+    automatically identifies objects whose parts cannot well fit current part templates
+    in the AOG, asks about the objects, and uses the answers to mine latent patterns
+    and grow the AOG. (right) The learning algorithm sorts and selects objects for
+    QA.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_3.jpg
+  Figure 3 caption: Activation states of latent patterns under the selected part template.
+    (left) The ratio of the inferred activation energy to all activation energy in
+    feature maps. (middle) The relative magnitude of the inferred activations, which
+    is normalized by the average activation value of all neural units on the feature
+    map. (right) The ratio of latent patterns that are assigned with an activated
+    neural unit. Different curves show scores computed based on latent patterns or
+    neural activations in different conv-layers.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_4.jpg
+  Figure 4 caption: Part localization results based on AOGs.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_5.jpg
+  Figure 5 caption: "Visualization of latent patterns in AOGs for the head part. The\
+    \ up-convolutional net [13] synthesizes images corresponding neural activations,\
+    \ which are selected by the AOG during part parsing. We only visualize neural\
+    \ activations selected from conv-layers 5\u20137. Some latent patterns select\
+    \ neural units corresponding to constituent regions w.r.t. the target part, while\
+    \ other latent patterns describe contexts."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_6.jpg
+  Figure 6 caption: Image patches corresponding to different latent patterns.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_7.jpg
+  Figure 7 caption: "Comparison of channel maps of the last 14\xD714 feature maps\
+    \ (after an ReLU operation). Feature maps of the VGG-16 are more likely to represent\
+    \ object parts than the ResNet-101."
+  Figure 8 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_8.jpg
+  Figure 8 caption: Part localization performance on the CUB200-2011 dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Mining_Interpretable_AOG_Representations_From_Convolutional_Networks_via_Active_\figure_9.jpg
+  Figure 9 caption: "\u0394KL(I) , the number of part templates, and the normalized\
+    \ distance of the AOG learned after different numbers of questions."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Quanshi Zhang
+  Name of the last author: Song-Chun Zhu
+  Number of Figures: 9
+  Number of Tables: 9
+  Number of authors: 6
+  Paper title: Mining Interpretable AOG Representations From Convolutional Networks
+    via Active Question Answering
+  Publication Date: 2020-05-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparisons With Studies of the Network Dissection
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Number of Children of AOG Nodes
+  Table 3 caption:
+    table_text: TABLE 3 Normalized Distance of Part Localization on the ILSVRC 2013
+      DET Animal-Part Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Part localization Performance on the CUB200 Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Part Localization on the Pascal VOC Part Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Part Localization Evaluated Using the PCP Metric
+  Table 7 caption:
+    table_text: TABLE 7 Effects of Removing Different Numbers of Part Templates From
+      a Pre-Trained AOG
+  Table 8 caption:
+    table_text: TABLE 8 Effects of the Order of Questions
+  Table 9 caption:
+    table_text: TABLE 9 Effects of the Errors Involved in Human Responses
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2993147
+- Affiliation of the first author: "citic research centre, universidade da coru\xF1\
+    a, coru\xF1a, spain"
+  Affiliation of the last author: "citic research centre, universidade da coru\xF1\
+    a, coru\xF1a, spain"
+  Figure 1 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_1.jpg
+  Figure 1 caption: 2D wavefront sections. Starting at a pixel p , and using an 8-connectivity
+    architecture, eight different sections can be computed. On the left, corner wavefront
+    sections. On the right, lateral sections. All wavefront centers and borders are
+    neighbours to the propagation center p .
+  Figure 10 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_10.jpg
+  Figure 10 caption: "Error estimation on a seismic image, using a different number\
+    \ of intermediate points. A 385 2 mesh is used as the true solution, computed\
+    \ in the square [\u22120.5,0.5]\xD7[\u22120.5,0.5] . Using a number n\u22483 we\
+    \ obtained similar results as when using higher values."
+  Figure 2 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_2.jpg
+  Figure 2 caption: '3D wavefront sections for different center points (in red). In
+    green, wavefront planes with their respective boundary nodes. From left to right:
+    face, corner and lateral center nodes.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_3.jpg
+  Figure 3 caption: Modified Hopf-Lax technique. p and p T are the endpoints of a
+    wavefront section, whereas p N is the point to be updated. Note that for values
+    t<0 or t>1 , t must be bounded to fit within the wavefront section.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_4.jpg
+  Figure 4 caption: Gradient technique. p and p T are the endpoints of a wavefront
+    section, whereas p N is the point to be updated. p t is obtained by computing
+    the intersection between the gradient direction and the segment.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_5.jpg
+  Figure 5 caption: Interpolation techniques during an upwinding procedure. 4 different
+    interpolation segments are created.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_6.jpg
+  Figure 6 caption: 2D SR-WMM 3 sections. 3 intermediate points are created within
+    each mini section. U value is computed over these points, but they are not used
+    to feed the main algorithm, just to obtain a more accurate interpolation.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_7.jpg
+  Figure 7 caption: 2D Analytical function surfaces.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_8.jpg
+  Figure 8 caption: 3D Analytical function surfaces.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Wavefront_Marching_Methods_A_Unified_Algorithm_to_Solve_Eikonal_and_Static_Hamil\figure_9.jpg
+  Figure 9 caption: Ellipse expansion over different angles. (a) OUM. (b) WMM.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Brais Cancela
+  Name of the last author: Amparo Alonso-Betanzos
+  Number of Figures: 14
+  Number of Tables: 9
+  Number of authors: 2
+  Paper title: 'Wavefront Marching Methods: A Unified Algorithm to Solve Eikonal and
+    Static Hamilton-Jacobi Equations'
+  Publication Date: 2020-05-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 2D Isotropic Analytical Functions (Closed form Solution and
+      Gradient)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 2D Isotropic Analytical Functions (Closed Form Solution and
+      Gradient)
+  Table 3 caption:
+    table_text: TABLE 3 3D Isotropic Analytical Functions (Closed Form Solution and
+      Gradient)
+  Table 4 caption:
+    table_text: TABLE 4 2D Isotropic Analytical Functions Results
+  Table 5 caption:
+    table_text: TABLE 5 3D Isotropic Analytical Functions Results
+  Table 6 caption:
+    table_text: TABLE 6 T2 Error When Rotating the Grid Axis
+  Table 7 caption:
+    table_text: TABLE 7 T7 Error When Rotating the Grid Axis
+  Table 8 caption:
+    table_text: TABLE 8 T1 and T6 Error When Using an Anisotropic Grid
+  Table 9 caption:
+    table_text: "TABLE 9 Error Estimation on the Surface U=0.9sin(2\u03C0x)sin(2\u03C0\
+      y) U=0.9sin(2\u03C0x)sin(2\u03C0y), Produced on Refined Meshes Taking the Corresponding\
+      \ Method on a 385 2 3852 Mesh to be the True Solution"
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2993500
+- Affiliation of the first author: institute for media innovation, nanyang technological
+    university, singapore
+  Affiliation of the last author: institute of media innovation, nanyang technological
+    university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_1.jpg
+  Figure 1 caption: Illustration of the concept of weakly supervised 3D hand pose
+    estimation. Different from conventional fully-supervised methods (a) that use
+    3D labels to guide joint predictions, our proposed weakly-supervised method (b)
+    leverages the reference depth map, which can be easily obtained by consumer-grade
+    depth camera, to provide weak supervision. To better constrain the physical structure
+    of 3D hand pose, we present a CVAE-based framework to learn the pose-specific
+    latent distribution, from which we can sample the latent feature and further infer
+    the 3D hand pose and render the corresponding depth map. Note that we only need
+    the reference depth map during training as a regularizer. During testing, the
+    trained model can predict 3D hand pose from RGB-only input.
+  Figure 10 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_10.jpg
+  Figure 10 caption: Visual results of our proposed weakly-supervised approach trained
+    with only depth regularization (column 1, 4) and with both 2D labels and depth
+    regularization (column 5), as well as other baselines (non-finetuned approach
+    in column 2, and weakly-supervised method with only 2D supervision in column 3),
+    compared with the ground truth 3D hand pose (column 6). Note that columns 2-6
+    are shown at a novel viewpoint for easy comparison.
+  Figure 2 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_2.jpg
+  Figure 2 caption: Overview of our proposed weakly-supervised 3D hand pose estimation
+    network, which is trained in an end-to-end manner. During training, cropped images
+    from both synthetic dataset and real image dataset are mixed in each single batch
+    as the input to the network. For well-labeled synthetic data, a pose specific
+    low-dimensional latent feature is jointly learned from the 3D pose domain and
+    the image feature domain, and can be further utilized to predict the 3D hand joint
+    locations. To compensate the absence of ground truth annotations for unlabeled
+    real data, we innovatively extend the network with a depth regularizer by leveraging
+    the corresponding depth maps available in both synthetic and real datasets, so
+    as to provide a weak supervision on the pose-specific latent embedding. During
+    testing, real images only go through the part of the network in the dash-dotted
+    line box. Note that modules with the same name share weights with each other.
+  Figure 3 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_3.jpg
+  Figure 3 caption: A pictorial representation of the implemented CVAE-based statistical
+    network, which jointly learns the pose-specific distribution across the paired
+    3D pose and image feature, from which we sample the latent representation and
+    then decode the predicted 3D hand pose. Note that during training, both 3D labels
+    and image features are utilized as the input of the network, while during testing,
+    we only go through the orange flow to predict the 3D hand pose.
+  Figure 4 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_4.jpg
+  Figure 4 caption: Two architectures for using the depth regularizer, either (a)
+    cascaded or (b) paralleled with the 3D hand pose decoder. Such a depth regularizer
+    takes the easily-captured reference depth map to provide weak supervision for
+    unlabeled data. Note that the depth regularizer is only leveraged during training.
+    During testing, image features go through the orange flow to predict the 3D hand
+    pose, as shown in both (a) and (b).
+  Figure 5 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_5.jpg
+  Figure 5 caption: Network architecture of our proposed depth regularizer. Given
+    pose-specific latent feature as the input, the depth regularizer is able to render
+    the corresponding depth map by gradually enlarging the intermediate feature maps
+    and finally combining them into a single depth image.
+  Figure 6 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_6.jpg
+  Figure 6 caption: 'Left: Comparisons of 3D PCK results of different baselines with
+    our weakly-supervised method on STB [41]. MiddleRight: Comparison of the weakly-supervised
+    method with our conference paper[40] on STB [41] dataset, in scenarios with both
+    depth regularization and 2D supervision (middle) or with only depth regularization
+    (right).'
+  Figure 7 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_7.jpg
+  Figure 7 caption: 'LeftMiddle: Comparisons of the 3D PCK results of different architectures
+    of the depth regularizer for weakly-supervised method. Left: Weakly-supervised
+    flow with only depth regularization. Middle:Weakly-supervised flow with both depth
+    regularization and 2D supervision. Right: Median EPE comparisons with the state-of-the-art
+    methods on STB [41] dataset in supervised and semi-supervised manner as a function
+    of the percentage of labeled data.'
+  Figure 8 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_8.jpg
+  Figure 8 caption: 'Comparisons with the state-of-the-art fully-supervised methods
+    on RHD [27] and STB [41]. Left: 3D PCK on RHD dataset. Right: 3D PCK on STB dataset.'
+  Figure 9 Link: articels_figures_by_rev_year\2020\D_Hand_Pose_Estimation_Using_Synthetic_Data_and_Weakly_Labeled_RGB_Images\figure_9.jpg
+  Figure 9 caption: 'Comparisons with the state-of-the-art methods on Dexter Object
+    [42] and Egodexter [43]. Left: 2D PCK on Dexter Object dataset. Middle: 3D PCK
+    on Dexter Object dataset. Right: 2D PCK on Egodexter dataset.'
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.83
+  Name of the first author: Yujun Cai
+  Name of the last author: Junsong Yuan
+  Number of Figures: 13
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: 3D Hand Pose Estimation Using Synthetic Data and Weakly Labeled RGB
+    Images
+  Publication Date: 2020-05-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Impact of Our Proposed Depth Regularizer on 3D Hand Pose Estimation
+      With Different Percentages of Labeled Data
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Effectiveness of Our Proposed CVAE-Based Framework Compared
+      With the Original Regression Network in [40] on 3D Hand Pose Estimation With
+      Different Percentages of Labeled Data
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2993627
+- Affiliation of the first author: h. milton stewart school of industrial and systems
+    engineering, georgia tech manufacturing institute, georgia institute of technology,
+    atlanta, ga, usa
+  Affiliation of the last author: hippocrates research lab, tencent america, palo
+    alto, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Active_Image_Synthesis_for_Efficient_Labeling\figure_1.jpg
+  Figure 1 caption: "Illustration of the proposed GIN: generator G(\u22C5) and discriminator\
+    \ D(\u22C5) are obtained by optimizing the Wasserstein distance W(\u22C5,\u22C5\
+    ) ; encoder E(\u22C5) is a sample-to-sample inverse of G(\u22C5) , explicitly\
+    \ trained by minimizing MSE. Compared to GAN, GIN contains the additional encoder\
+    \ E(\u22C5) ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Active_Image_Synthesis_for_Efficient_Labeling\figure_2.jpg
+  Figure 2 caption: The proposed three-step framework AISEL to efficiently sample
+    AISEL dataset and improve classification.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Active_Image_Synthesis_for_Efficient_Labeling\figure_3.jpg
+  Figure 3 caption: Qualitative results for our GIN on Fashion data, including the
+    training data X of all ten classes, our reconstructions G(E(X)) and reconstructions
+    via BiGAN [22].
+  Figure 4 Link: articels_figures_by_rev_year\2020\Active_Image_Synthesis_for_Efficient_Labeling\figure_4.jpg
+  Figure 4 caption: A comparison of the selected features by our AISEL method, the
+    random sampling method and the active learning method, with uncertainty measure
+    (7) as background.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Active_Image_Synthesis_for_Efficient_Labeling\figure_5.jpg
+  Figure 5 caption: Qualitative results of generated images of all ten classes via
+    ACGAN baseline.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Active_Image_Synthesis_for_Efficient_Labeling\figure_6.jpg
+  Figure 6 caption: Qualitative GIN results for the aortic stenosis application, including
+    actual data X , generated samples G(f) , and corresponding reconstructions G(E(X))
+    .
+  Figure 7 Link: articels_figures_by_rev_year\2020\Active_Image_Synthesis_for_Efficient_Labeling\figure_7.jpg
+  Figure 7 caption: Qualitative visualization of 2D cross-section of feature space
+    with the generated virtual images on the (partial) grid of feature space. The
+    full and enlarged version of the figure is shown in Fig. 10 in Appendix G, available
+    in the online supplemental material.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Jialei Chen
+  Name of the last author: Zhen Qian
+  Number of Figures: 7
+  Number of Tables: 2
+  Number of authors: 7
+  Paper title: Active Image Synthesis for Efficient Labeling
+  Publication Date: 2020-05-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Classification Accuracy Applying Our AISEL Method and
+      Baselines, on the Fashion Dataset and MNIST
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 A Comparison of Classification Accuracy (accu., %), Sensitivity
+      (sens., %), Specificity (spec., %), and F1 Score (%) of the Native Model and
+      Different Improved Models in a 4-Fold Cross-Validation, With Data Size Included
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2993221
+- Affiliation of the first author: department of mechanical and aerospace engineering,
+    advanced corporation for materials equipments (acme), muyun industrial zone, changsha,
+    hunan, china
+  Affiliation of the last author: department of economics, texas a&m, college station,
+    tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_1.jpg
+  Figure 1 caption: 'Homography estimation in RCMSA [34]. Top left: first image with
+    input points. Top right: second image classified with model complexity value 10.
+    Bottom left: model complexity 50. Bottom right: model complexity 100.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_10.jpg
+  Figure 10 caption: Homography estimation in 2D. (a) Street. (b) Table. (c) Merton
+    College 2. 713 point pairs. (d) 1940 point pairs.
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_2.jpg
+  Figure 2 caption: "Two synthetic ellipses and outliers. (a) Input data. (b) Mahalanobis\
+    \ distances of the first 400 points of the first d ~ [i](w) . (c) The n \u03F5\
+    \ points in red in the structure. (d) Stylized example of a d ~ [i](w) sequence.\
+    \ (e) Expansion with \u0394 d 5 . (f) Expansion with \u0394 d 10 ."
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_3.jpg
+  Figure 3 caption: "Finding the scale estimate. (a) Independent expansions in the\
+    \ region of interest. (b) For \u03B7%=23% , \u0394 d \u03B7 no longer can expand."
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_4.jpg
+  Figure 4 caption: Recovered structures after mean shift. (a) First structure. (b)
+    The three recovered structures.
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_5.jpg
+  Figure 5 caption: "The \u03F5 and rtos with \xB1\u03C3 , using Fig. 2a as the example.\
+    \ The red and green graphs correspond to ellipses with different levels of noise,\
+    \ described in Section 3.5. (a) rtos = 2, M=2000 and \u03F5 from 3 percent to\
+    \ 32 percent. (b) The output function of \u03F5 . (c) \u03F5=5% , M=2000 and rtos\
+    \ from 1.5 to 4. (d) The output function of rtos."
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_6.jpg
+  Figure 6 caption: Estimation of lines in 2D. (a) n out =350 . Five synthetic inlier
+    lines. (b) First five structures are inliers followed by outliers. (c) The inlier
+    structures. (d) Roof. (e) Canny edges. (f) First six structures are inliers. (g)
+    Pole. (h) Canny edges. (i) First three structures are inliers followed by outliers.
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_7.jpg
+  Figure 7 caption: Estimation in 2D of three synthetic ellipses. (a) n out =350 .
+    (b) First three structures are inliers followed by outliers. (c) The inlier structures.
+  Figure 8 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_8.jpg
+  Figure 8 caption: Ellipses in 2D real images. (a) Strawberries. (b) Canny edges.
+    (c) First three are inlier structures. (d) Stadium. (e) Canny edges. (f) First
+    four structures. See the text also.
+  Figure 9 Link: articels_figures_by_rev_year\2020\A_New_Approach_to_Robust_Estimation_of_Parametric_Structures\figure_9.jpg
+  Figure 9 caption: Fundamental matrices estimation. (a) Truck on a street. (b) Books
+    on a table. (c) Dinabooks from [34].
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xiang Yang
+  Name of the last author: Jonathan Meer
+  Number of Figures: 21
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: A New Approach to Robust Estimation of Parametric Structures
+  Publication Date: 2020-05-13 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2994190
+- Affiliation of the first author: department of applied mathematics and computer
+    science, technical university of denmark, lyngby, denmark
+  Affiliation of the last author: department of applied mathematics and computer science,
+    technical university of denmark, lyngby, denmark
+  Figure 1 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_1.jpg
+  Figure 1 caption: "Decomposition of integrand of \u222B \u221E 0 e \u2212x B 0 x\
+    \ \u03BC 0 +K\u22121 ( \u03BC 0 ) K \u220F C c=1 \u0393( \u03BC c , B c x)dx \uE152\
+    \ \uE153 \uE151\uE150 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154\
+    \ \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154\
+    \ \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 \uE154\
+    \ \uE154 \uE154 \uE154 \uE154 \uE154 \uE154 partA (corresponding to Part A in\
+    \ Lemma 6.1 in Appendix, available online) into elements and shift of original\
+    \ gamma pdf (dotted red) using (K-recurrence of \u0393 s). The inadequately shifted\
+    \ gamma pdf (gray curve K=19.5) results into significantly non-zero integral value\
+    \ as opposed to the adequately shifted one (red curve K=73.5) which, in the product\
+    \ with all the considered incomplete gamma functions (blue, green, and black curves)),\
+    \ brings Part A close to zero. As a result, the size of the shift, K, controls\
+    \ the closeness to zero of Part A."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_2.jpg
+  Figure 2 caption: Maximum and median absolute approximation error and corresponding
+    number of added observations T for karate network based on 100 chains with 100
+    samples each.
+  Figure 3 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_3.jpg
+  Figure 3 caption: "Error of logarithm of integral (8) evaluated by \u201Cshifted\u201D\
+    \ method of Theorem 2.1 with bounded error of 10 \u22125 and logarithm of same\
+    \ integral evaluated by asymptotic method of Section 3.1. For experiments we fixed\
+    \ B 0 =60 and B 1 = B 2 =70 while ranging \u03BC out \u2208(51, 10 3 ) and \u03BC\
+    \ 1 = \u03BC 2 = \u03BC in \u2208(0, 10 3 ) ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_4.jpg
+  Figure 4 caption: "Experiment on synthetic networks confirms that the constrained\
+    \ BC model strongly penalizes partitions that violate the graph connectivity constraint,\
+    \ eta in geq eta out , compared to the unconstrained \u201Cdc-SBM\u201D model\
+    \ that assigns very high probability to partitions where there is very distinct\
+    \ difference between intra- and inter-community densities, even if inter-community\
+    \ density is higher."
+  Figure 5 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_5.jpg
+  Figure 5 caption: Comparison of the dc-SBM (left column) and BC (right column) solution
+    landscapes based on p(boldsymbolz|G) as well as the resulting cuts performed on
+    the three networks. The outer right column shows the trace plots obtained running
+    each model with 15 chains and 1000 samples. The dc-SBM model exhibits for all
+    three networks modes and thus resulting cuts that violate the constraint eta in
+    geq eta out . In the corresponding adjacency matrices it can be seen that whenever
+    the constraint is violated (lower adjacency matrixnetwork for each example), the
+    off-diagonal blocks have a higher density than at least one of the diagonal blocks.
+    In contrast, the proposed BC model gives those regions of the solution landscape
+    that violate the constraint lower likelihoods, which leads only to modes and thus
+    resulting cuts that do not violate the constraint.
+  Figure 6 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_6.jpg
+  Figure 6 caption: Gamma inference and resulting node degree correction (theta) of
+    the dc-SBM and BC for all three networks. The dc-SBM and BC models show substantial
+    differences, since the parameter inference resulting from the BC model is more
+    reliable, because it contrary to the dc-SBM does not get stuck in local optima
+    that violate the constraint.
+  Figure 7 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_7.jpg
+  Figure 7 caption: Solution landscape comparison of BC, dc-SBM, Modularity, NormCut,
+    RatioCut on the three networks. To explore the space, 100 samples from 15 chains
+    were taken for the Bayesian methods, while for the spectral cuts 200 different
+    solutions were generated for each method by randomly alternating 1 percent of
+    the links within the networks. The costs of Normcut and Ratiocut are inverted
+    to allow for direct landscape comparisons.
+  Figure 8 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_8.jpg
+  Figure 8 caption: "Top panel, Cameraman: The resulting cut of the BC model for C\
+    \ = 2 (e) segments compared with the unconstrained dc-SBM with shared eta out\
+    \ as well as spectral NC. Fig (b) shows, as a reference, RAG super pixel graph\
+    \ that is used to compute the similarity matrix. The results demonstrate on par\
+    \ or better segments found by the BC against referenced methods. (e) versus (d)\
+    \ shows that the effect of the constraint included in the model improves the results\
+    \ (we emphasized the effect of the constraint by setting b = 10\u22121 corresponding\
+    \ to 10 times higher within segment links density compared to links density among\
+    \ segments). The resulting cuts were obtained from 50 MCMC chains with 1,000 samples\
+    \ each. Bottom panel, Bears: The resulting cut of the BC model for C = 4 segments\
+    \ (j) compared with the unconstrained dc-SBM with shared eta out (i) as well as\
+    \ NC (h) applied on mean color RAG similarity matrix. Similar to the previous\
+    \ cameraman example the BC demonstrates on par or better results against referenced\
+    \ methods. The resulting cuts were obtained from 50 MCMC chains with 1,000 samples\
+    \ each and hyperparameters set on b = 10-3 without degree correction."
+  Figure 9 Link: articels_figures_by_rev_year\2020\The_Bayesian_Cut\figure_9.jpg
+  Figure 9 caption: Bayesian cut (BC) applied to similarity matrix obtained by FMM
+    implemented by Jianbo Shi from https:www.cis.upenn.edujshisoftware. The resulting
+    cut is the sampled MAP obtained from 20 MCMC chains with 1,000 samples each. (a)
+    original, (b) C=2, b=10-1 , with degree correction hyperparameter gamma being
+    inferred. Maximum of its posterior obtained at gamma MAP = 4.07 . (c) C=2, b=10-1,
+    gamma = 0.0001 .
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Petr Taborsky
+  Name of the last author: "Morten M\xF8rup"
+  Number of Figures: 9
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: The Bayesian Cut
+  Publication Date: 2020-05-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of the Notation Used
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Cuts Running 100 Chains With 1000 Samples Without
+      and With (in Parenthesis) Deterministic Optimization in Terms of Their Modularity
+      Value (Mod.) and Correspondence to Ground Truth Partition Structure (Avaible
+      for Karate and Polblogs) as Quantified Using Normalized Mutual Information (NMI)
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2994396
+- Affiliation of the first author: department of computer science, university of copenhagen,
+    copenhagen, denmark
+  Affiliation of the last author: department of computer science, technion - israel
+    institute of technology, haifa, israel
+  Figure 1 Link: articels_figures_by_rev_year\2020\Horizontal_Flows_and_Manifold_Stochastics_in_Geometric_Deep_Learning\figure_1.jpg
+  Figure 1 caption: "Relations between the manifold, frame bundle, the horizontal\
+    \ distribution HFM , and the vertical bundle VFM . The connection C on FM provides\
+    \ the splitting TFM=HFM\u2295VFM . The restrictions \u03C0 \u2217 | H u M of the\
+    \ push-forward of the projection map \u03C0:FM\u2192M are invertible maps H u\
+    \ M\u2192 T \u03C0(u) M with inverse h u , the horizontal lift. The vertical bundle\
+    \ VFM is isomorphic to the trivial bundle FM\xD7gl(n) ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Horizontal_Flows_and_Manifold_Stochastics_in_Geometric_Deep_Learning\figure_2.jpg
+  Figure 2 caption: "Directional information captured in the frame u\u2208OM which\
+    \ is an element of the fiber \u03C0 \u22121 OM (x) (illustrated by vertical arrow\
+    \ in rightmost sketch) over a point x\u2208M (red dot). In the convolution (2),\
+    \ u is parallel transported along geodesics with initial direction u v 2 for vector\
+    \ v 2 \u2208 R d (center). When composing convolutions, the frame P \u03B3(x,u\
+    \ v 2 ) u at \u03B3(x,u v 2 ) is transported along a second geodesic with direction\
+    \ P \u03B3(x,u v 2 ) u v 1 (left, subscript on P \u03B3(x,u v 2 ) omitted). The\
+    \ directional information in u is thus transported backwards through the layers\
+    \ of a multiplayer network. The curvature implies that this transport is path\
+    \ dependent: A different choice of path would yield a different transport."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Horizontal_Flows_and_Manifold_Stochastics_in_Geometric_Deep_Learning\figure_3.jpg
+  Figure 3 caption: "The relation between the euclidean R d -valued Brownian motion\
+    \ W t , the OM process U t that carries the frame by parallel transporting along\
+    \ the stochastic paths X t =\u03C0( U t ) on M . W t is mapped to U t and X t\
+    \ by development. The reverse mapping is denoted anti-development. Two sample\
+    \ paths X t ( \u03C9 1 ) , X t ( \u03C9 2 ) (bluered) ending at the same point\
+    \ in M ( X T ( \u03C9 1 )= X T ( \u03C9 2 ) ) need not end at the same point when\
+    \ anti-developed to R d . The curvature implies that U T ( \u03C9 1 ) , U T (\
+    \ \u03C9 2 ) may hit different points in the fiber over the endpoint. The difference\
+    \ is a rotation (or gauge transformation)."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Horizontal_Flows_and_Manifold_Stochastics_in_Geometric_Deep_Learning\figure_4.jpg
+  Figure 4 caption: The convolution (8) uses the OM distribution UTu , T>0 that in
+    each fiber has a distribution of frames, i.e., a distribution of orientations
+    (red fiber density illustration). With zero curvature, parallel transport is path
+    independent, and the distribution will be singular supported at a single element
+    of each fiber. With curvature, the fiber distributions widen, possibly filling
+    the fibers. For analytic manifolds, UTu has smooth, positive density for any T>0
+    on a submanifold of OM .
+  Figure 5 Link: articels_figures_by_rev_year\2020\Horizontal_Flows_and_Manifold_Stochastics_in_Geometric_Deep_Learning\figure_5.jpg
+  Figure 5 caption: The convolution (10) applies kernels, here k1,k2 , on the antidevelopment
+    Wt whereas f is applied on the OM process UTu . Compare with Fig. 2.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Horizontal_Flows_and_Manifold_Stochastics_in_Geometric_Deep_Learning\figure_6.jpg
+  Figure 6 caption: (left) On M , the guided proposal scheme (11) forces the process
+    to hit the target v at time T a.s. by adding the drift tildeb that is typically
+    the difference v-x(t) (in coordinates, dotted arrow in figure) scaled by the inverse
+    remaining time (T-t)-1 . The difference between the law of the conditioned and
+    the guided process is proportional to the factor varphi (xt) . (right) On the
+    product M2 (or Mn ), we can apply the guidance scheme to force independent Brownian
+    motions to hit each other at time T . This is done by adding a drift tildeb that
+    forces the processes towards the diagonal by adding the differences to the weighted
+    arithmetic mean (in coordinates) of the processes. The result is the operatornamemathrmdiag(M2)
+    valued random variable v .
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Stefan Sommer
+  Name of the last author: Alex Bronstein
+  Number of Figures: 6
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: Horizontal Flows and Manifold Stochastics in Geometric Deep Learning
+  Publication Date: 2020-05-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 List of Symbols
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 List of Convolution Operators Used in the Article
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2994507
+- Affiliation of the first author: national key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Affiliation of the last author: national key laboratory for novel software technology,
+    nanjing university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Heterogeneous_FewShot_Model_Rectification_With_Semantic_Mapping\figure_1.jpg
+  Figure 1 caption: An example of the heterogeneous model reuse between tasks. To
+    enable learning with few-shot examples (the l.h.s. of the figure), our strategy
+    is to reuse heterogeneous well-trained models from related tasks (r.h.s.). The
+    heterogeneity may result from either feature or label space.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Heterogeneous_FewShot_Model_Rectification_With_Semantic_Mapping\figure_2.jpg
+  Figure 2 caption: Illustration of the Emit and ReForm flows. Based on the meta-representations
+    of features, we use the optimal transported semantic map to capture the relationship
+    between tasks and transform the classifier of the related task. The left plot
+    demonstrates the Emit to reconstuct meta-representations. In the feature meta
+    space (right plots), meta representations build the transportation cost, and the
+    corresponding relationship between features could be discovered by OT in this
+    space (with uniform marginals). The reconstruction coefficients of new features
+    by the old ones also apply to the relationship between two domain-specific classifiers.
+    It is expected that the transformed model can be easily adapted to the current
+    task.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Heterogeneous_FewShot_Model_Rectification_With_Semantic_Mapping\figure_3.jpg
+  Figure 3 caption: "Example of modeling with heterogeneous feature spaces as environment\
+    \ changing. The numbertypes of extracted features for each instance (each row)\
+    \ will increasedecrease. Dimensions of the task specific and shared feature are\
+    \ d \u2032 , d , and d \xAF , respectively. To increase the robustness of models,\
+    \ our goal is to smartly utilize limited current task data X and the previous\
+    \ well-trained model (over d \u2032 + d \xAF features) to improve the performance\
+    \ of the current task (with d \xAF +d dimensions)."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Heterogeneous_FewShot_Model_Rectification_With_Semantic_Mapping\figure_4.jpg
+  Figure 4 caption: Changes of accuracy over mfeatfou, reut8, and spambase. Plots
+    in the left column show the performance with different feature overlapping ratios
+    (from 0.1 to 0.6); while the right column lists the plots when the amount of training
+    examples per class increases, i.e., from 2 to 20.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Heterogeneous_FewShot_Model_Rectification_With_Semantic_Mapping\figure_5.jpg
+  Figure 5 caption: Average prediction accuracy and std. on academic paper classification
+    tasks across different year ranges. The blank column at the top of our ReForm
+    implementations show the performance increments after an ensemble step with LSSVM.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Heterogeneous_FewShot_Model_Rectification_With_Semantic_Mapping\figure_6.jpg
+  Figure 6 caption: Extension of the ReForm idea on neural networks. Layer-wise weights
+    of the current network are biased regularized. Prior of the first-layer weights
+    can be obtained by ReForm.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.54
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Han-Jia Ye
+  Name of the last author: Zhi-Hua Zhou
+  Number of Figures: 6
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Heterogeneous Few-Shot Model Rectification With Semantic Mapping
+  Publication Date: 2020-05-14 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Detailed Configurations in Eq. (7) to Construct the Semantic
+      Map When Reusing Heterogeneous Models
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Comparisons of Classification Performance (test accuracy,\
+      \ mean \xB1 \xB1 std.)"
+  Table 3 caption:
+    table_text: "TABLE 3 Comparisons of Classification Performance (test accuracy,\
+      \ mean \xB1 \xB1 std.) on the User Quality Evaluation Task"
+  Table 4 caption:
+    table_text: TABLE 4 Average 5-Way 1-Shot Classification Accuracy (%) Over 10,000
+      Tasks on MiniImageNet
+  Table 5 caption:
+    table_text: TABLE 5 Average 5-Way 1-Shot Classification Accuracy (%) Over 10,000
+      Tasks on TieredImageNet Using the ResNet Backbone
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2994749
+- Affiliation of the first author: college of information science and technology,
+    college of landscape architecture, nanjing forestry university, nanjing, jiangsu,
+    china
+  Affiliation of the last author: college of landscape architecture, nanjing forestry
+    university, nanjing, jiangsu, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_1.jpg
+  Figure 1 caption: The process of the proposed plane segmentation. (a) Input scene.
+    (b) The divided connectivity and non-connectivity regions. (c) The plane segmentation
+    result. Distinct colors mean different planes.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_10.jpg
+  Figure 10 caption: Performance of different segmentation methods. A.Ground-truth.
+    B.KMiPC. C.KNNiPC. D.3DNCut. E.MinCut. F.PEAC. G.OHC. H.The proposed algorithm.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_2.jpg
+  Figure 2 caption: Visualization of normal vectors. (a) Oblique view. (b) Top view.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_3.jpg
+  Figure 3 caption: Consistency of normal vectors based on the angle information.
+    (a) Initial normal vectors and points. (b) The adjustment of the normal vector
+    at c 2 .
+  Figure 4 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_4.jpg
+  Figure 4 caption: Illustration of connectivity scores of point clouds. (a) Point
+    clouds of a cube. (b) Point clouds of a cone. (c) Point clouds of a half-sphere.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_5.jpg
+  Figure 5 caption: The algorithm figure to describe the optimal-vector-field optimization
+    procedure.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_6.jpg
+  Figure 6 caption: Illustration of the optimal-vector-field of point clouds. (a)
+    Input datasets. (b) Optimal-vector-field of (a).
+  Figure 7 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_7.jpg
+  Figure 7 caption: The algorithm figure to describe the graph-cut optimization procedure.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_8.jpg
+  Figure 8 caption: The effect of the data term and smoothness term in the proposed
+    optimization procedure. (a)-(f) are optimized with the data term only (O-D). (g)-(i)
+    are optimized with both data term and smoothness term (O-DS).
+  Figure 9 Link: articels_figures_by_rev_year\2020\Plane_Segmentation_Based_on_the_OptimalVectorField_in_LiDAR_Point_Clouds\figure_9.jpg
+  Figure 9 caption: Approximate evaluation method.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sheng Xu
+  Name of the last author: Ruigang Yang
+  Number of Figures: 25
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Plane Segmentation Based on the Optimal-Vector-Field in LiDAR Point
+    Clouds
+  Publication Date: 2020-05-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Setting of Penalties in the Data Term Calculation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Details of the Evaluation Accuracy
+  Table 3 caption:
+    table_text: TABLE 3 Execution Time of Each Algorithm
+  Table 4 caption:
+    table_text: TABLE 4 Comparison With the Object Segmentation Algorithms
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2994935

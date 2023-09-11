@@ -1,0 +1,877 @@
+- Affiliation of the first author: nvidia, westford, usa
+  Affiliation of the last author: nvidia, westford, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_1.jpg
+  Figure 1 caption: 'Left: PWC-Net outperforms all published two-frame methods on
+    the MPI Sintel final pass benchmark in both accuracy and running time. Right:
+    Compared with previous end-to-end CNN models for flow, PWC-Net reaches the best
+    balance between accuracy and size. The comparisons among PWC-Net, FlowNetS+, and
+    FlowNetC+ show the improvements brought by the network architectures; all have
+    been trained using the same training protocols. The comparisons, FlowNetS versus
+    FlowNetS+, FlowNetC versus FlowNetC+, and PWC-Net versus PWC-Net+, show the improvements
+    for the same model brought by training protocols. Both models and training matter.'
+  Figure 10 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_10.jpg
+  Figure 10 caption: Training procedure matters. FlowNetC and FlowNetC+ use the same
+    network architecture but have been trained differently. FlowNetC+ has been trained
+    using our procedure and generates results with finer details and fewer artifacts
+    than the previously trained FlowNetC.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_2.jpg
+  Figure 2 caption: Network architecture of PWC-Net. We only show the flow estimation
+    modules at the top two levels. For the rest of the pyramidal levels, the flow
+    estimation modules have the same structure as the second to top level.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_3.jpg
+  Figure 3 caption: 'Traditional coarse-to-fine approach versus PWC-Net. Left: Image
+    pyramid and refinement at one pyramid level by the energy minimization approach
+    [20], [21], [23], [24]. Right: Feature pyramid and refinement at one pyramid level
+    by PWC-Net. PWC-Net warps features of the second image using the upsampled flow,
+    computes a cost volume, and process the cost volume using CNNs. Both post-processing
+    and context network are optional in each system. The arrows indicate the direction
+    of flow estimation and pyramids are constructed in the opposite direction. Please
+    refer to the text for details about the network.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_4.jpg
+  Figure 4 caption: 'Top: Learning rate schedule for fine-tuning (the step values
+    for the first 10 5 iterations were from [10]). Bottom: Average end-point error
+    (EPE) on the final pass of the Sintel training set. We disrupt the learning rate
+    for a better minimum, which has better accuracy in both the training and the test
+    sets.'
+  Figure 5 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_5.jpg
+  Figure 5 caption: "Results on Sintel training and test sets. Context network, DenseNet\
+    \ connections, and fine-tuning all improve the results. Small and rapidly moving\
+    \ objects, e.g., the left arm in \u201CMarket5\u201D, are still challenging to\
+    \ the pyramid-based PWC-Net."
+  Figure 6 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_6.jpg
+  Figure 6 caption: Improperly read images and flow fields due to an IO bug.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_7.jpg
+  Figure 7 caption: Results on KITTI 2015 training and test sets. Fine-tuning fixes
+    large regions of errors and recovers sharp motion boundaries.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_8.jpg
+  Figure 8 caption: Learning rate schedule for fine-tuning using data from Sintel,
+    KITTI, and HD1K. For this mixed dataset, we use more iterations and learning rate
+    disruptions than the learning rate schedule in Fig. 4.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Models_Matter_So_Does_Training_An_Empirical_Study_of_CNNs_for_Optical_Flow_Estim\figure_9.jpg
+  Figure 9 caption: Results on Middlebury and HD1K test sets. PWC-NetROB has not been
+    trained using the training data of Middlebury but performs reasonably well on
+    the test set. It cannot recover the fine motion details of the twigs in Grove
+    though. PWC-NetROB has reasonable results in the regions occluded by the windshield
+    wipers in sequence 02 of the HD1K test set.
+  First author gender probability: 0.51
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.91
+  Name of the first author: Deqing Sun
+  Name of the last author: Jan Kautz
+  Number of Figures: 13
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'Models Matter, So Does Training: An Empirical Study of CNNs for Optical
+    Flow Estimation'
+  Publication Date: 2019-01-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average EPE Results on MPI Sintel Set
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Detailed Results on the Sintel Test Set for Different Regions,
+      Velocities ( s s), and Distances from Motion Boundaries ( d d)
+  Table 3 caption:
+    table_text: TABLE 3 Results on the KITTI Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Experiments
+  Table 5 caption:
+    table_text: TABLE 5 Training Dataset Schedule
+  Table 6 caption:
+    table_text: TABLE 6 Model Size and Running Time
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Network Architectures
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2894353
+- Affiliation of the first author: school of electrical and electronic engineering,
+    nanyang technological university, singapore
+  Affiliation of the last author: school of electrical and electronic engineering,
+    nanyang technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2019\Feature_Boosting_Network_For_D_Pose_Estimation\figure_1.jpg
+  Figure 1 caption: Illustration of the feature boosting network for 3D pose estimation.
+    The whole network is stacked with multiple similar sub-networks (two sub-networks
+    are used in our implementation). The input of the first sub-network is an RGB
+    image of a human hand (or a full human body). The inputs of the latter sub-network
+    are the concatenated feature maps from its previous sub-network. In each sub-network,
+    the Hourglass CNN layers [24] are used to learn the convolutional features, then
+    the feature maps for different joints are fed to the LSTD module with CCG for
+    feature boosting. The boosted feature maps of each joint ( j ) are fed to the
+    subsequent CNN layers to generate the 2D heatmap ( H j ). Depth information (
+    d j ) of each joint is regressed based on the summation of the boosted feature
+    maps and the 2D heatmap representations (the feature maps obtained by this summation
+    are also concatenated and fed to the subsequent sub-network as input for further
+    feature boosting).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Feature_Boosting_Network_For_D_Pose_Estimation\figure_2.jpg
+  Figure 2 caption: "Graphical long short-term dependency relationship between different\
+    \ parts (joints) of (a) full human body, and (b) human hand. Solid lines denote\
+    \ the physical connections. Dashed lines indicate the \u201Csymmetrical\u201D\
+    \ relations."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Feature_Boosting_Network_For_D_Pose_Estimation\figure_3.jpg
+  Figure 3 caption: Visualization of feature maps before and after boosting for different
+    joints (labeled as red circles). The four columns are respectively (a) input image,
+    (b) feature map for representing a joint before boosting, (c) CCG, and (d) feature
+    map after boosting.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Feature_Boosting_Network_For_D_Pose_Estimation\figure_4.jpg
+  Figure 4 caption: 3D hand pose estimation results on the 3DHandPose dataset. The
+    curves indicate the percentage of correct keypoint (PCK) over the respective threshold
+    in mm.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Feature_Boosting_Network_For_D_Pose_Estimation\figure_5.jpg
+  Figure 5 caption: Qualitative results on MPII. The wrongly estimated joints are
+    depicted as red lines.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Feature_Boosting_Network_For_D_Pose_Estimation\figure_6.jpg
+  Figure 6 caption: Results on 3DHandPose (top row), Human3.6M (2nd row), MPI-INF-3DHP
+    (3rd row), and MPII (4th row).
+  Figure 7 Link: articels_figures_by_rev_year\2019\Feature_Boosting_Network_For_D_Pose_Estimation\figure_7.jpg
+  Figure 7 caption: Illustration of involving more connections. Extra links (denoted
+    as blue arrows) are added.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Jun Liu
+  Name of the last author: Alex C. Kot
+  Number of Figures: 7
+  Number of Tables: 9
+  Number of authors: 7
+  Paper title: Feature Boosting Network For 3D Pose Estimation
+  Publication Date: 2019-01-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Experimental Results on the 3DHandPose Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Evaluation of Using Different Connections for ConvLSTM on
+      the 3DHandPose Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation of the Feature Boosting Network with Different
+      Numbers of Sub-Networks
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with the State-of-the-Art Work on 3D Body Pose
+      Estimation on the Human3.6M Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Experimental Results on the Human3.6M Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Experimental Results on MPI-INF-3DHP
+  Table 7 caption:
+    table_text: TABLE 7 Evaluation of Involving More Connections
+  Table 8 caption:
+    table_text: TABLE 8 Evaluation of Using Different Recurrent Models
+  Table 9 caption:
+    table_text: TABLE 9 2D Pose Accuracy on the 3DHandPose Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2894422
+- Affiliation of the first author: school of computer science and engineering, beihang
+    university, beijing, china
+  Affiliation of the last author: school of computer science and engineering, beihang
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_1.jpg
+  Figure 1 caption: It is difficult to get good nonlocal structures by using previous
+    methods [1], [2]. In the first row, the matting results are obtained with recommended
+    parameter K by these two methods. In the second row, a large K is required to
+    capture the more information by [1]. The last column shows the result by our method.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_10.jpg
+  Figure 10 caption: 'Temporal consistency evaluation: quantitative comparison with
+    Closed-From matting (CF) [12], Comprehensive Sampling matting (CS) [60], KNN matting
+    [2], Learning Based matting (LB) [18] and RE matting [33]. Our method achieves
+    both smaller error between consecutive and more consistent temporal coherence
+    over these two examples, Snow and Vitaliy.'
+  Figure 2 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_2.jpg
+  Figure 2 caption: Comparison between using and without using discrimination constraint
+    for dictionary learning. (a) is the target scene, (b) is the matting result with
+    representation matrix of the learned dictionary without using discrimination constraint,
+    (c) is the result obtained by using our discriminative dictionary.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_3.jpg
+  Figure 3 caption: "Multiframe local matting Laplacian. The 2m \xD7 2m matting Laplacian\
+    \ encodes the relationships across successive two frames to enhance local smoothness."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_4.jpg
+  Figure 4 caption: Comparisons with Snapcut [57] KNN matting [2], and Close-form
+    matting [12] on the video city . This example demonstrates that our matting method
+    can handle illumination changes and feature ambiguity.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_5.jpg
+  Figure 5 caption: Comparisons with Snapcut matting [57] KNN matting [2] and Close-form
+    mattint [12] on the video snow . This example demonstrates that our method can
+    handle transparency variation.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_6.jpg
+  Figure 6 caption: Comparisons with Snapcut [57] on the video slava . This example
+    demonstrates that our method can handle dis-occlusion and topology changes.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_7.jpg
+  Figure 7 caption: Comparisons with KNN Matting [2] and Snapcut [57] on the video
+    concert . This example demonstrates that our method can handle shape changes.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_8.jpg
+  Figure 8 caption: Comparisons with KNN matting [2] on the video rain . This example
+    demonstrates that our method can handle fast motion and motion blur.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Unsupervised_Video_Matting_via_Sparse_and_LowRank_Representation\figure_9.jpg
+  Figure 9 caption: Comparisons with Snapcut matting [57] when using sparse inputs.
+    Only strokes on the first frame are input and our method gets a better matting
+    result.
+  First author gender probability: 0.64
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Dongqing Zou
+  Name of the last author: Xiaogang Wang
+  Number of Figures: 17
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Unsupervised Video Matting via Sparse and Low-Rank Representation
+  Publication Date: 2019-01-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparisons of Error Rates of Different Methods on Five Videos
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Ranks of Different Matting Methods with Respect to the Four
+      Measurements on Benchmark Dataset as Evaluated by [4]
+  Table 3 caption:
+    table_text: TABLE 3 The Comparison between Using and Without Using First Term
+      in Equation (5)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2895331
+- Affiliation of the first author: college of computer, national university of defense
+    technology, changsha, china
+  Affiliation of the last author: dongguan university of technology, guangdong, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Absent_Multiple_Kernel_Learning_Algorithms\figure_1.jpg
+  Figure 1 caption: Classification accuracy comparison of the above algorithms on
+    nine UCI data sets.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Absent_Multiple_Kernel_Learning_Algorithms\figure_2.jpg
+  Figure 2 caption: Classification accuracy comparison of the above algorithms on
+    the MKL benchmark data sets. (a) Protein Fold Predication. (b) PsortPos. (c) Plant.
+    (d) PsortNeg. (e) Flower17. (f) Caltech101.
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.96
+  Name of the first author: Xinwang Liu
+  Name of the last author: Jianping Yin
+  Number of Figures: 2
+  Number of Tables: 6
+  Number of authors: 9
+  Paper title: Absent Multiple Kernel Learning Algorithms
+  Publication Date: 2019-01-27 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Classification Accuracy Comparison (mean \xB1 \xB1std) with\
+      \ the Pair-Wise t t-Test on Nine UCI Data Sets"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 UCI and MKL Benchmark Datasets Used in Our Experiments
+  Table 3 caption:
+    table_text: "TABLE 3 Classification Accuracy Comparison (mean \xB1 \xB1std) with\
+      \ the Pair-Wise t t-Test on the Protein Fold Prediction"
+  Table 4 caption:
+    table_text: "TABLE 4 Classification Accuracy Comparison (mean \xB1 \xB1std) with\
+      \ the Pair-Wise t t-Test on the Protein Subcellular Localization"
+  Table 5 caption:
+    table_text: "TABLE 5 Classification Accuracy Comparison (mean \xB1 \xB1std) with\
+      \ the Pair-Wise t t-Test on Flower17"
+  Table 6 caption:
+    table_text: TABLE 6 Classification Accuracy Comparison on Caltech101
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2895608
+- Affiliation of the first author: institute of computer science and technology, peking
+    university, beijing, china
+  Affiliation of the last author: institute of computer science and technology, peking
+    university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_1.jpg
+  Figure 1 caption: Visual comparison of different methods to remove heavy rain streaks
+    and enhance the visibility. Regions in blue boxes show our superiority in rain
+    streak removal. Regions in red boxes show our superiority in rain accumulation
+    removal. Regions in gray boxes show our superiority in detail preservations. Our
+    method significantly outperforms DetailNet [1] and our previous work [2].
+  Figure 10 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_10.jpg
+  Figure 10 caption: The results of JORDER-R-DEVEIL in different orders.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_2.jpg
+  Figure 2 caption: The architecture of our rain removal method, including the proposed
+    recurrent joint rain detection and removal, and the detail preserving rain-accumulation
+    removal method placed between the two recurrences. Each recurrence is a multi-task
+    network to perform a joint rain detection and removal (in the blue dash box).
+    In such a network, a contextualized dilated network (in the gray region) extracts
+    rain features F t from the input rain image O t . Then, R t , S t and B t are
+    predicted to perform joint rain detection, estimation and removal. Between the
+    two recurrences, the detail preserving rain-accumulation removal is utilized to
+    enhance the visibility. The features and estimated variables in the last recurrence
+    are forward to the current one, and the sub-network in this recurrence stage only
+    learns the residuals.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_3.jpg
+  Figure 3 caption: The architecture of contextualized dilated networks. (a) The contextualized
+    detailed network structure and illustration for the receptive fields (RF). (b)
+    The corresponding conceptual explanation for the functionality of contextualized
+    dilated networks.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_4.jpg
+  Figure 4 caption: Comparison of rain removal results with and without the contextualized
+    dilation. (a) Rain images. (b) The results generated by the network without the
+    contextualized dilation. (c) The results generated by the network with the contextualized
+    dilation.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_5.jpg
+  Figure 5 caption: The training and testing paradigm of JORDER-R-DEVEIL.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_6.jpg
+  Figure 6 caption: 'Results of different methods on synthesized and real images.
+    Zooming in the images will show that our method is superior to others. The 1st-2st
+    panels: synthesized rain images. The 2rd-4th panels: real rain images.'
+  Figure 7 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_7.jpg
+  Figure 7 caption: Examples of our method on heavy rain and mist images.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_8.jpg
+  Figure 8 caption: "Visualization of features in the first and last convolution layers\
+    \ for a 150\xD7150 sub-image. (a) The input region. (b) The 24 feature maps with\
+    \ the highest responses in the first layer. (c) The 24 feature maps with the highest\
+    \ responses in the last layer."
+  Figure 9 Link: articels_figures_by_rev_year\2019\Joint_Rain_Detection_and_Removal_from_a_Single_Image_with_Contextualized_Deep_Ne\figure_9.jpg
+  Figure 9 caption: Texture preservation comparison. The left half part of each image
+    is the absolute difference between the background prediction and the ground truth
+    image. In the right half part, the value is enlarged by a factor of 5 for better
+    observation.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Wenhan Yang
+  Name of the last author: Jiaying Liu
+  Number of Figures: 22
+  Number of Tables: 14
+  Number of authors: 6
+  Paper title: Joint Rain Detection and Removal from a Single Image with Contextualized
+    Deep Networks
+  Publication Date: 2019-01-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 PSNR Results Among Different Methods
+  Table 10 caption:
+    table_text: TABLE 10 The Objective Evaluation When the Detected Rain Masks Are
+      Inaccurate
+  Table 2 caption:
+    table_text: TABLE 2 SSIM Results Among Different Methods
+  Table 3 caption:
+    table_text: TABLE 3 The Time Complexity (in Seconds) of JORDER Compared with State-of-the-Art
+      Methods. JR and JRD Denote JORDER-R and JORDER-R-DEVEIL, Respectively
+  Table 4 caption:
+    table_text: TABLE 4 The Error Rate of VGG-19 with without Rain Removal as a Preprocessing
+      on ImageNet-1k Validation Dataset
+  Table 5 caption:
+    table_text: TABLE 5 The Semantic Segmentation and Object Detection Performance
+      of Pretrained Models with without Rain Removal as a Preprocessing on MIT ADE20K
+      and VOC 2007 Validation Dataset
+  Table 6 caption:
+    table_text: TABLE 6 PSNR and SSIM Results of the Four Versions
+  Table 7 caption:
+    table_text: TABLE 7 Objective Evaluation for the Effect of Contextualized Dilated
+      Convolution
+  Table 8 caption:
+    table_text: TABLE 8 The Performance of JORDER Network with and wo Contextualized
+      Dilated Convolutions (CDC)
+  Table 9 caption:
+    table_text: TABLE 9 The Performance of JORDER Networks Where Dilated Convolutions
+      Are Replaced by Pooling and Up-Sampling Layers (JPS), and Stride Convolution
+      and Transposed Convolution Layers (JST)
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2895793
+- Affiliation of the first author: department of computer science, center for research
+    in computer vision (crcv), university of central florida, orlando, usa
+  Affiliation of the last author: department of computer science, center for research
+    in computer vision (crcv), university of central florida, orlando, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_1.jpg
+  Figure 1 caption: "Visualizing mixture normalization: Given a random mini-batch\
+    \ in the midway of training on CIFAR-100, we illustrate the underlying distribution\
+    \ of activations (output of convolution) associated with a random subset of 128\
+    \ channels in the layer \u201Cconv2\u201D of CIFAR CNN architecture (detailed\
+    \ in Table 1). Solid teal curve indicates the probability density function. Dashed\
+    \ curves represent different mixture components shown in various colors. Note\
+    \ that similar colors across multiple subfigures, simply index mixture components\
+    \ and do not indicate any association. We observe that mixture normalization,\
+    \ shown by MN:2 and MN:3 (2 and 3 respectively represent the number of components\
+    \ in the mixture of Gaussians), provides better approximation, p(x) , illustrated\
+    \ by solid teal curve, to the underlying distribution. Also, mixture-normalized\
+    \ activations, in comparison to the batch-normalized ones, are considerably closer\
+    \ to the normal distribution and illustrate less skewed probability densities."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_2.jpg
+  Figure 2 caption: Test error curves when CIFAR CNN architecture (ref. Table 1) is
+    trained under different learning rate and weight decay settings. We observe that
+    on CIFAR-10 and CIFAR-100, MN performs consistently in both small and large learning
+    rate regimes.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_3.jpg
+  Figure 3 caption: 'Left: Effect of the number of EM iterations on test error. Right:
+    Effect of utilizing MN at different layers, on test error. We show that more EM
+    iterations and utilizing MN at multiple layers, increase the convergence rate
+    of mixture-normalized models.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_4.jpg
+  Figure 4 caption: "Test error curves when Inception-V3 architecture is trained under\
+    \ different settings. Figs. 4a and 4b show the small learning rate regime, respectively,\
+    \ on CIFAR-10 and CIFAR-100. Fig. 4c shows the large learning rate regime on CIFAR-100.\
+    \ Fig. 4d illustrates test error curves of CIFAR-100 when Inception-V3 architecture\
+    \ is trained using Nesterovs accelerated gradient [34] (all other experiments\
+    \ use RMSprop [31]), with two different learning rate drop policies. Mixture normalization\
+    \ modules have been employed in \u201Cinc21\u201D and \u201Cinc30\u201D layers.\
+    \ We observe that across a variety of choices such as the number of mixture components,\
+    \ number of EM iterations, learning rate regime and drop policy, optimization\
+    \ technique, and the layer where MN is applied, mixture-normalized models consistently\
+    \ accelerate their batch-normalized counterparts and achieve better final test\
+    \ accuracy."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_5.jpg
+  Figure 5 caption: DenseNet [5] experiments on CIFAR-100. Figs. 5a and 5b respectively
+    illustrate the training error and cross entropy loss. Figs. 5c and 5d respectively
+    illustrate the test error and cross entropy loss. We observe from Figs. 5a and
+    5b that mixture normalization facilitates the training process by accelerating
+    the optimization. Meanwhile it provides better generalization (ref. Figs. 5c,
+    and 5d) by continuously maintaining a large gap with respect to its batch-normalized
+    counterpart. We show 1 standard deviation (shaded area) computed within a window
+    of 3 epochs for all the curves.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_6.jpg
+  Figure 6 caption: "Mixture normalization in deep convolutional GAN (DCGAN)[35].\
+    \ We observe that employing our proposed mixture normalization in the generator\
+    \ of DCGAN (DCGAN-MN) facilitates the training process. In comparison with the\
+    \ standard DCGAN which uses batch normalization (DCGAN-BN), DCGAN-MN not only\
+    \ converges faster (a reduction of \u223C 58%) but also achieves better (lower)\
+    \ FID (33.35 versus 37.56). For better visualization, we show one standard deviation\
+    \ (shaded area) computed within a window of 30 K iterations (3 adjacent FID evaluation\
+    \ points)."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_7.jpg
+  Figure 7 caption: Samples of generated images by batch and mixture-normalized DCGAN
+    models, at their best (lowest) evaluated FID, are respectively illustrated in
+    Figs. 7a and 7b. DCGAN-BN and DCGAN-MN, respectively achieve FID of 37.56 and
+    33.35.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_8.jpg
+  Figure 8 caption: "Evolution of mixture normalization associated to \u201Cinc2024\u201D\
+    \ layer as training MN-4 on CIFAR-100 progresses. As argued before, we observe\
+    \ that the underlying distribution is comprised of multiple modes of variation.\
+    \ While these sub-populations are of relatively uniform importance at the beginning,\
+    \ as training procedure goes on, mixture components evolve where some get closer,\
+    \ while others are pushed away from each other creating more distinct components.\
+    \ Here, different colors index mixture components, when sorted according to \u03BB\
+    \ k values."
+  Figure 9 Link: articels_figures_by_rev_year\2019\Training_Faster_by_Separating_Modes_of_Variation_in_BatchNormalized_Models\figure_9.jpg
+  Figure 9 caption: Effect of the number of mixture components in MN-4 using Inception-V3
+    when trained on CIFAR-10 and CIFAR-100. For the sake of better visualization,
+    curves are smoothed using running average and one standard deviation is shown
+    as the shaded area. We can see that the majority of MN modules fully utilize all
+    ( K =5) their mixture components, indicating that the need for better approximation
+    using mixture model does not disappear, rather slightly diminishes, as the training
+    procedure continues.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mahdi M. Kalayeh
+  Name of the last author: Mubarak Shah
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 2
+  Paper title: Training Faster by Separating Modes of Variation in Batch-Normalized
+    Models
+  Publication Date: 2019-01-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 CIFAR CNN Architecture
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Experiments on CIFAR-10 and CIFAR-100 Using CIFAR CNN Architecture
+      (ref. Table 1)
+  Table 3 caption:
+    table_text: TABLE 3 For Batch Normalization and the Mixture-Normalized Variants
+      Using CIFAR CNN Architecture (ref. Table 1), the Number of Training Steps Required
+      to Reach the Maximum Accuracy of Batch-Normalized Model Alongside with the Maximum
+      Accuracy Achieved by Each Variant
+  Table 4 caption:
+    table_text: TABLE 4 Experiments on CIFAR-10 and CIFAR-100 Using Inception-V3 Architecture
+  Table 5 caption:
+    table_text: TABLE 5 For Batch Normalization and the Mixture-Normalized Variants
+      Using Inception-V3, the Number of Training Steps Required to Reach the Maximum
+      Accuracy of Batch-Normalized Model, and the Maximum Accuracy Achieved by Each
+      Variant
+  Table 6 caption:
+    table_text: TABLE 6 Training Inception-V3 Using Nesterovs Accelerated Gradient
+      [34] on CIFAR-100, the Number of Training Steps Required to Reach the Maximum
+      Accuracy of Batch-Normalized Model Along with the Maximum Accuracy Achieved
+      by Each Model
+  Table 7 caption:
+    table_text: TABLE 7 Computation Cost Comparison of Mixture Normalization Against
+      Natively Implemented (No CUDA-Kernel) Batch Normalization [1]
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2895781
+- Affiliation of the first author: school of finance, zhejiang gongshang university,
+    hangzhou, zhejiang, p.r. china
+  Affiliation of the last author: department of systems engineering and engineering
+    management, city university of hong kong, kowloon tong, kowloon, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2019\Calibrating_Classification_Probabilities_with_ShapeRestricted_Polynomial_Regress\figure_1.jpg
+  Figure 1 caption: 'Toy experiment 1: The data set (in scatter plot) and the scoring
+    function (in contour plot).'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Calibrating_Classification_Probabilities_with_ShapeRestricted_Polynomial_Regress\figure_2.jpg
+  Figure 2 caption: 'Experiment 1: An illustrative comparison between various calibration
+    models on a simulated data. In each subfigure, left panel: The estimated calibrating
+    function; right panel: Reliability gram.'
+  Figure 3 Link: articels_figures_by_rev_year\2019\Calibrating_Classification_Probabilities_with_ShapeRestricted_Polynomial_Regress\figure_3.jpg
+  Figure 3 caption: "Experiment 2: Experimental results of RPR with various k and\
+    \ \u03BB on the Adult data. In each subfigure, Left panel: The estimated calibrating\
+    \ function; right panel: Reliability gram."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Calibrating_Classification_Probabilities_with_ShapeRestricted_Polynomial_Regress\figure_4.jpg
+  Figure 4 caption: 'Experiment 4: Boxplot of computational time of RPR (in seconds).'
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.72
+  Name of the first author: Yongqiao Wang
+  Name of the last author: Chuangyin Dang
+  Number of Figures: 4
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Calibrating Classification Probabilities with Shape-Restricted Polynomial
+    Regression
+  Publication Date: 2019-01-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Qualitative Comparison between Calibration Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Calibration Results Based on Logistic Regression Scores
+  Table 3 caption:
+    table_text: TABLE 3 Calibration Results Based on SVM Scores
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2895794
+- Affiliation of the first author: department of electrical engineering and computer
+    sciences, university of california, berkleley
+  Affiliation of the last author: facebook
+  Figure 1 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_1.jpg
+  Figure 1 caption: Examples result form our hierarchical surface prediction framework
+    for the task of predicting geometry and surface color from a single RGB image.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_10.jpg
+  Figure 10 caption: Selected examples on the task of occupancy prediction form RGB
+    and Depth input on the ShapeNet13 dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_2.jpg
+  Figure 2 caption: "Overview of our system. The input gets encoded to a shape code\
+    \ C . The decoder predicts the output by hierarchically predicting all the output\
+    \ blocks B \u22C5,\u22C5 . The arrows indicate the direction in which the information\
+    \ flows through the decoder. From each feature block F \u22C5,\u22C5 the octants\
+    \ which contain the boundary label in the corresponding output block are upsampled.\
+    \ Octants which need higher resolution prediction but are not part of the depicted\
+    \ path of the tree are visualized faded. For the inner levels of the tree three\
+    \ labels are predicted, free space (black), occupied space (white) and boundary\
+    \ (gray). On the finest level the occupancy probability is predicted. A single\
+    \ slice through the center of each output block is depicted. The right hand side\
+    \ shows how the individual voxel blocks get assembled to the final prediction\
+    \ for each level of the tree. The visualization shows the center slice of the\
+    \ volume and the red squares indicate the positions of the blocks corresponding\
+    \ to the depicted path. The checkered parts of the volume do not lie on the boundary\
+    \ and are hence not predicted."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_3.jpg
+  Figure 3 caption: Visualization of a voxel block octree with three levels. The rows
+    correspond to the three levels of the tree and are color coded into red, green
+    and blue. The (left) part depicts the space subdivision which is induced by the
+    octree in the (middle). The gray nodes visualize nodes that do not belong to the
+    tree. Each of the nodes of the octree contains a voxel block which is visualized
+    in 2D on the (right) with a voxel block size of b=4 .
+  Figure 4 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_4.jpg
+  Figure 4 caption: 2D visualization of the cropping and upsampling module. The cropping
+    module (left) crops out the part of the feature block centered around the child
+    nodes octant. The upsampling module (right) then upsamples the feature map using
+    up-convolutional layers to a new feature block with higher spatial resolution.
+    The dashed lines indicate the size of the output blocks and the octants.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_5.jpg
+  Figure 5 caption: Predictions at the highest resolution for six different categories,
+    the checkered areas indicate not predicted. For all the examples only the area
+    around the boundary is predicted.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_6.jpg
+  Figure 6 caption: Number of predicted voxels at different resolutions for a dense
+    baseline and our hierarchical prediction. As additional reference we also plot
+    the number of voxels the ground truth voxel block octrees contain. The numbers
+    were computed on the dataset ShapeNet13 with RGB images as input data.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_7.jpg
+  Figure 7 caption: Runtime of a forward pass for different resultions using an NVIDIA
+    Quadro M6000 GPU. The numbers were computed on the ShapeNet13 dataset with RGB
+    images as input data.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_8.jpg
+  Figure 8 caption: Dependence of the performance on the extraction threshold. The
+    numbers are computed on ShapeNet13 using a subset of the validation set. The task
+    is predicting occupancy volumes from an RGB input image.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Hierarchical_Surface_Prediction\figure_9.jpg
+  Figure 9 caption: Performance achieved on ShapeNetCar for the task of occupancy
+    prediction from RGB input with different amounts of subsampling rho .
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: "Christian H\xE4ne"
+  Name of the last author: Jitendra Malik
+  Number of Figures: 13
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Hierarchical Surface Prediction
+  Publication Date: 2019-01-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 ColorDepth Encoder
+  Table 10 caption:
+    table_text: TABLE 10 Results for Depth input on the ShapeNet13 Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Baseline Decoder
+  Table 3 caption:
+    table_text: TABLE 3 Decoder Module, Bottleneck to Feature Block F 1,1 F1,1
+  Table 4 caption:
+    table_text: TABLE 4 Upsampling Module
+  Table 5 caption:
+    table_text: TABLE 5 Intermediate Output Module
+  Table 6 caption:
+    table_text: TABLE 6 Full output Module
+  Table 7 caption:
+    table_text: TABLE 7 Results of the 3D Reconstruction Challenge [49]
+  Table 8 caption:
+    table_text: TABLE 8 Results for RGB input on the ShapeNet3 Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Results for RGB input on the ShapeNet13 Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2896296
+- Affiliation of the first author: xian jiaotong university, xian, shannxi, p. r.
+    china
+  Affiliation of the last author: xian jiaotong university, xian, shannxi, p. r. china
+  Figure 1 Link: articels_figures_by_rev_year\2019\View_Adaptive_Neural_Networks_for_High_Performance_SkeletonBased_Human_Action_Re\figure_1.jpg
+  Figure 1 caption: Skeleton representations of the same posture captured from different
+    viewpoints (different camera position and angle) are very different.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\View_Adaptive_Neural_Networks_for_High_Performance_SkeletonBased_Human_Action_Re\figure_2.jpg
+  Figure 2 caption: Flowchat of the end-to-end view adaptive neural network. It consists
+    of a main classification network and a view adaptation subnetwork. The view adaptation
+    subnetwork automatically determines the virtual observation viewpoints and transforms
+    the skeleton input to representations under the new viewpoints for classification
+    by the main classification network. The entire network is end-to-end trained to
+    optimize the classification performance.
+  Figure 3 Link: articels_figures_by_rev_year\2019\View_Adaptive_Neural_Networks_for_High_Performance_SkeletonBased_Human_Action_Re\figure_3.jpg
+  Figure 3 caption: 'Architecture of the proposed view adaptive neural networks: a
+    view adaptive RNN with LSTM (VA-RNN), and a view adaptive CNN (VA-CNN). The VA-RNN
+    consists of a view adaptation subnetwork, and a main LSTM network. The view adaptation
+    subnetwork determines the suitable observation viewpoint at each time slot. With
+    the skeleton representations under new observation viewpoints, the main LSTM network
+    determines the action class. The VA-CNN consists of a view adaptation subnetwork,
+    and a main convolutional network (ConvNet). The view adaptation subnetwork determines
+    the suitable observation viewpoints for the sequence. With the skeleton representations
+    under the new observation viewpoint, the main ConvNet determines the action class.
+    The classification scores from the two networks can be fused to provide the fused
+    prediction, denoted as the VA-fusion scheme.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\View_Adaptive_Neural_Networks_for_High_Performance_SkeletonBased_Human_Action_Re\figure_4.jpg
+  Figure 4 caption: "Illustration of the change of the observation viewpoint, by assuming\
+    \ there is a movable virtual camera. A skeleton sequence is a record of the skeletons\
+    \ from the first frame f=1 to the last frame f=T under the global coordinate system\
+    \ O . The action can be re-observed by a movable virtual camera under the observation\
+    \ coordinate systems. For the t th frame, the observation coordinate system is\
+    \ at a new position which is obtained from a translation of d t and a rotation\
+    \ of \u03B1 t , \u03B2 t , \u03B3 t radians anticlockwise around the X -axis,\
+    \ Y -axis, and Z -axis, respectively, corresponding to the global coordinate system.\
+    \ The skeleton can then be represented under this observation coordinate system\
+    \ O \u2032 t ."
+  Figure 5 Link: articels_figures_by_rev_year\2019\View_Adaptive_Neural_Networks_for_High_Performance_SkeletonBased_Human_Action_Re\figure_5.jpg
+  Figure 5 caption: Performance curve for both baselines and the proposed view adaptation
+    schemes based on RNN on the NTU dataset. The horizontal axis denotes the model
+    size, i.e., number of parameters, while the vertical axis indicates the recognition
+    accuracy (%).
+  Figure 6 Link: articels_figures_by_rev_year\2019\View_Adaptive_Neural_Networks_for_High_Performance_SkeletonBased_Human_Action_Re\figure_6.jpg
+  Figure 6 caption: "Frames of (a) the similar posture captured from different viewpoints\
+    \ for the same subject, and (b) the same action \u201Cdrinking\u201D captured\
+    \ from different viewpoints for different subjects. 2nd row: original skeletons.\
+    \ 3rd row: Skeleton representations from the observation viewpoints of our VA-RNN\
+    \ model. 4th row: Skeleton representations from the observation viewpoints of\
+    \ our VA-CNN model."
+  Figure 7 Link: articels_figures_by_rev_year\2019\View_Adaptive_Neural_Networks_for_High_Performance_SkeletonBased_Human_Action_Re\figure_7.jpg
+  Figure 7 caption: "Performance gain in terms of accuracy (%) of VA-RNN model with\
+    \ respect to the S-trans+RNN on the NTU dataset for the CV setting. The index\
+    \ of the horizontal axis denotes the Id of action as provided in [38]. For example,\
+    \ \u201C23\u201D denotes the action hand waving."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Pengfei Zhang
+  Name of the last author: Nanning Zheng
+  Number of Figures: 7
+  Number of Tables: 12
+  Number of authors: 6
+  Paper title: View Adaptive Neural Networks for High Performance Skeleton-Based Human
+    Action Recognition
+  Publication Date: 2019-01-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparisons of Pre-Processing Methods and Our View Adaptation
+      Model on the NTU Dataset
+  Table 10 caption:
+    table_text: TABLE 10 Effectiveness (in Accuracy(%)) of the View Adaptation Design
+      on Different Backbone CNN Networks
+  Table 2 caption:
+    table_text: TABLE 2 Effectiveness (in Accuracy(%)) of Data Augmentation on S-Trans
+      and VA Schemes
+  Table 3 caption:
+    table_text: TABLE 3 Accuracy (%) Comparisons of Two Our Types of Powerful Baseline
+      Schemes, i.e., the Schemes with Sequence Translation Pre-Processing Strategy
+      (S-trans+RNN(aug.) and S-trans+CNN(aug.)), the Schemes with Sequence Translation
+      and Rotation Pre-Processing Strategy (S-trans&S-rota+RNN and S-trans&S-rota+CNN),
+      and our Schemes with View Adaptation
+  Table 4 caption:
+    table_text: TABLE 4 Accuracy (%) Comparisons on Different Numbers of LSTM Layers
+      for the Main LSTM Network (S-trans+RNN(aug.)), and Different Numbers of Convolutional
+      Layers for the Main ConvNet (S-trans+CNN(aug.)) on the NTU Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Accuracy (%) on the NTU Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Accuracy (%) on the SYSU Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Accuracy (%) on the UWA3D Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Accuracy (%) on the N-UCLA Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Accuracy (%) on the SBU Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2896631
+- Affiliation of the first author: intelligent vehicles group, tu delft, delft, cd,
+    netherlands
+  Affiliation of the last author: intelligent vehicles group, tu delft, delft, cd,
+    netherlands
+  Figure 1 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_1.jpg
+  Figure 1 caption: "The EuroCity Persons dataset was recorded in 31 cities of 12\
+    \ European countries: Croatia (Zagreb), Czech Republic (Brno, Prague), France\
+    \ (Lyon, Marseille, Montpellier, Toulouse), Germany (Berlin, Dresden, Hamburg,\
+    \ K\xF6ln, Leipzig, N\xFCrnberg, Potsdam, Stuttgart, Ulm and W\xFCrzburg), Hungary\
+    \ (Budapest), Italy (Bologna, Firenze, Milano, Pisa, Roma and Torino), The Netherlands\
+    \ (Amsterdam), Poland (Szczecin), Slovak Republic (Bratislava), Slovania (Ljubljana),\
+    \ Spain (Barcelona) and Switzerland (Basel, Z\xFCrich). The map itself was compiled\
+    \ from 500 randomly sampled pedestrian bounding boxes from our dataset."
+  Figure 10 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_10.jpg
+  Figure 10 caption: Mean pixel error between median of three additional annotators
+    and the ECP dataset annotations, in dependence of object height p (averaged over
+    the interval [p-20, p+20]).
+  Figure 2 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_2.jpg
+  Figure 2 caption: Statistics of EuroCity Persons and CityPersons for pedestrians
+    of the training and validation datasets (height, aspect ratio and density).
+  Figure 3 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_3.jpg
+  Figure 3 caption: The applied test, val, and train split visualized for one city.
+    Assuming a recording length of one hour for this city, the whole session is divided
+    into three equidistant 20 minute subsets. Each subset is then split into train,
+    validation, and test by a 60, 10, 30 percent distribution.
+  Figure 4 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_4.jpg
+  Figure 4 caption: "Recall versus IoU for small pedestrians (top) and pedestrians\
+    \ of the \u201Dreasonable\u201D test case (down) for the optimized anchor-boxes\
+    \ of Faster R-CNN and YOLOv3 and the SSD default boxes."
+  Figure 5 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_5.jpg
+  Figure 5 caption: "Miss-rate curves on the EuroCity Persons test set for our selected\
+    \ methods for the \u201Dreasonable\u201D (left), \u201Dsmall\u201D (middle) and\
+    \ \u201Doccluded\u201D (right) test case. The required IoU for a detection to\
+    \ be matched with a ground-truth sample is 0.5. For every method, the curves are\
+    \ shown for enforcing or ignoring precise class label with respect to neighboring\
+    \ classes."
+  Figure 6 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_6.jpg
+  Figure 6 caption: The contribution of various sources to the number of false positives
+    of Faster R-CNN all , depending on fppi .
+  Figure 7 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_7.jpg
+  Figure 7 caption: Detection performance ( LAMR ) of Faster R-CNN and SSD as a function
+    of training set size.
+  Figure 8 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_8.jpg
+  Figure 8 caption: Qualitative results for orientation estimation. Left and middle
+    image show correct estimations. Right image contains a rare failure case (left
+    person has orientation offset of about 180 degrees).
+  Figure 9 Link: articels_figures_by_rev_year\2019\EuroCity_Persons_A_Novel_Benchmark_for_Person_Detection_in_Traffic_Scenes\figure_9.jpg
+  Figure 9 caption: Person orientation estimation quality versus object size (distance).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Markus Braun
+  Name of the last author: Dariu M. Gavrila
+  Number of Figures: 11
+  Number of Tables: 14
+  Number of authors: 4
+  Paper title: 'EuroCity Persons: A Novel Benchmark for Person Detection in Traffic
+    Scenes'
+  Publication Date: 2019-02-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Person Detection Benchmarks in Vehicle Context
+  Table 10 caption:
+    table_text: "TABLE 10 Effect of Geographical Bias on Detection Performance ( LAMR\
+      \ LAMR) for the \u201Creasonable\u201D Test Case: Central West Europe (WE) versus\
+      \ Central East Europe (EE)"
+  Table 2 caption:
+    table_text: TABLE 2 Overview of Recent Deep Learning Detection Methods
+  Table 3 caption:
+    table_text: TABLE 3 Training Settings of the Faster R-CNN Method, Differing in
+      the Heights and Degree of Occlusion of the Samples Used for Training and in
+      the Upscaling Factor used by Bilinear Interpolation (between Brackets)
+  Table 4 caption:
+    table_text: TABLE 4 Log Average Miss-Rate ( LAMR LAMR) on the Test Set of the
+      EuroCity Persons Benchmark for Different Settings of the Optimized Methods
+  Table 5 caption:
+    table_text: 'TABLE 5 Qualitative Detection Results of Faster R-CNN all all at
+      fppi fppi of 0.3 (Green: Pedestrians, Blue: Riders)'
+  Table 6 caption:
+    table_text: 'TABLE 6 Qualitative Detection Results for Faster R-CNN all all at
+      0.3 fppi fppi (Green: True Positives, Red: False Positives, Purple: False Negatives,
+      White: Ground Truth)'
+  Table 7 caption:
+    table_text: TABLE 7 Average Precision on the KITTI Validation Set for Different
+      Training Settings of Faster R-CNN
+  Table 8 caption:
+    table_text: TABLE 8 Log Average Miss-Rate ( LAMR LAMR) on the CityPersons (CP)
+      Validation Set for Different Training Settings of Faster R-CNN
+  Table 9 caption:
+    table_text: TABLE 9 Log Average Miss-Rate ( LAMR LAMR) on the EuroCity Persons
+      (ECP) Test Set for Different Training Settings of Faster R-CNN
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2897684

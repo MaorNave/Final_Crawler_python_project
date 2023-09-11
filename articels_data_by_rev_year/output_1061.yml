@@ -1,0 +1,956 @@
+- Affiliation of the first author: "institut de rob\xF2tica i inform\xE0tica industrial,\
+    \ csic-upc, barcelona, spain"
+  Affiliation of the last author: "institut de rob\xF2tica i inform\xE0tica industrial,\
+    \ csic-upc, barcelona, spain"
+  Figure 1 Link: articels_figures_by_rev_year\2018\Robust_SpatioTemporal_Clustering_and_Reconstruction_of_Multiple_Deformable_Bodie\figure_1.jpg
+  Figure 1 caption: 'Simultaneous 3D non-rigid reconstruction, camera motion, spatial
+    segmentation and temporal clustering from incomplete 2D point tracks. Top-left:
+    Example of real images from the CMU MoCap dataset. We assume 2D point tracks are
+    provided, although the number of object and point membership is unknown. Point
+    tracks also affected by partial occlusions and strong object overlapping. Right:
+    Retrieved spatial and temporal similarity matrices. Each entry in these matrices
+    expresses the spatialtemporal pairwise affinity between points or frames, respectively.
+    Clusters are directly discovered by applying spectral clustering on these matrices.
+    Bottom-left: 3D shape reconstruction together with the temporal and spatial clustering
+    results. In this example, spatial segmentation yields two objects, represented
+    by red and green points. Temporal clusters identify three motion primitives which
+    have a clear semantic meaning. In this case, they correspond to ''two subjects
+    sitting down'' (magenta), ''one subject standing up an threatening the second
+    one'' (green), and ''one subject attacks the other that falls down'' (orange).
+    Camera motion is not represented in this figure, but it is also an outcome of
+    our algorithm.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Robust_SpatioTemporal_Clustering_and_Reconstruction_of_Multiple_Deformable_Bodie\figure_2.jpg
+  Figure 2 caption: "Dual union of spatio-temporal subspaces. Schematic representation\
+    \ of a scenario with four subjects that are non-rigidly moving and interacting.\
+    \ Recall that the spatial segmentation and number of subjects is initially unknown.\
+    \ The 4D information can be encoded using two different interpretations given\
+    \ by matrices X and X (see Section 4). Post-multiplying these matrices by affinities\
+    \ T and S , respectively, allows introducing temporal and spatial constraints,\
+    \ and obtaining the corresponding spatio-temporal clustering by means of spectral\
+    \ analysis. Additionally, these matrices are enforced to be low rank, being the\
+    \ rank of every subspace also unknown. This means that each temporal and spatial\
+    \ cluster (depicted by color ellipsoids and vectors), is in turn represented by\
+    \ a union of subspaces (indicated by black vectors \u03B8 i and \u03C6 i ). The\
+    \ proposed Dual Union of Spatio-Temporal Subspaces (DUST) model, combines the\
+    \ two types of subspaces, and it can encode a wider solution space in both temporal\
+    \ and spatial domains, as shown by the yellow line."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Robust_SpatioTemporal_Clustering_and_Reconstruction_of_Multiple_Deformable_Bodie\figure_3.jpg
+  Figure 3 caption: "Convergence analysis and number of iterations versus computation\
+    \ time. Left: Evolution of the error for the seven constraints (denoted as C c\
+    \ , with c=1,\u2026,7 ) in Eq. (10) and the 3D reconstruction error e X as a function\
+    \ of the number of iterations until convergence (corresponding to the Violence\
+    \ sequence described in the results section). Note that two different scales (left\
+    \ and right vertical axes) are used to represent the errors of the constraints\
+    \ and the error e X Center: Zoom of the area within the red dashed rectangle in\
+    \ the left plot. Right: Computation time versus number of iterations until convergence\
+    \ on the Mocap sequences described in the Results section, for two (red dots)\
+    \ and four (blue dots) subjects. Next to each dot are indicated the number of\
+    \ frames of the sequence. In all cases, the number of iterations until convergence\
+    \ always remains within reasonable bounds. The corresponding computation time\
+    \ depends on the number of frames and points."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Robust_SpatioTemporal_Clustering_and_Reconstruction_of_Multiple_Deformable_Bodie\figure_4.jpg
+  Figure 4 caption: 'Spatial and temporal clustering on CMU sequences. We compare
+    the spatial S and temporal T clustering matrices obtained with our approach with
+    the ground truth ones. Below each matrix we plot a bar with the results of the
+    spectral clustering. Top: Jump and Zombie sequences with two subjects and three
+    temporal primitives. Bottom: Blind4 and Chicken4 sequences with four subjects
+    and three temporal primitives.'
+  Figure 5 Link: articels_figures_by_rev_year\2018\Robust_SpatioTemporal_Clustering_and_Reconstruction_of_Multiple_Deformable_Bodie\figure_5.jpg
+  Figure 5 caption: '3D reconstruction and spatio-temporal segmentation on multi-subject
+    sequences. Results for the Violence (first row), Pull (second row), Greet4 (third
+    row) and Blind4 (fourth row) sequences. For each scene we display several image
+    frames, seen from two perpendicular viewpoints (z-x and y-x). Colored dots represent
+    the 3D position and spatial cluster index estimated by our approach (DUST-TS).
+    Note that the two subjects (first and second row) and the four subjects (third
+    and fourth row) are clearly identified. No single point is assigned to a wrong
+    subject. Empty circles indicate the ground truth 3D position. The color of the
+    contour of these circles encodes to which temporal prior does the frame belong.
+    Observe that in every video we identify several temporal groups. For instance,
+    for the Violence sequence, the priors have a clear physical meaning: ''two subjects
+    sitting down'', ''one subject standing up an threatening the second one'', ''one
+    subject attacks the other that falls down''. The physical interpretation of the
+    temporal priors for the four-subject cases is not that straight-forward, although
+    it seems to encode the types of subject interactions.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Robust_SpatioTemporal_Clustering_and_Reconstruction_of_Multiple_Deformable_Bodie\figure_6.jpg
+  Figure 6 caption: 'Meet sequence. Top: Sample frames of two interacting humans.
+    Bottom: 3D reconstruction and spatio-temporal segmentation. See caption in Fig.
+    5 for an interpretation of the color coding.'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Antonio Agudo
+  Name of the last author: Francesc Moreno-Noguer
+  Number of Figures: 6
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Robust Spatio-Temporal Clustering and Reconstruction of Multiple Deformable
+    Bodies
+  Publication Date: 2018-04-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Qualitative Comparison of Our Approach Against Competing NRSfM
+      Techniques
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Evaluation on CMU Sequences with Two and Four Subjects, Assuming
+      Known the Camera Rotation
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation on CMU Sequences with Two and Four Subjects When
+      Jointly Estimating 3D Shape and Camera Motion
+  Table 4 caption:
+    table_text: TABLE 4 Evaluation Under Measurement Artifacts
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2823717
+- Affiliation of the first author: school of computer science and engineering, nanyang
+    technological university, singapore
+  Affiliation of the last author: faculty of engineering and information technologies,
+    the university of sydney, darlington, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\Transferring_Knowledge_Fragments_for_Learning_Distance_Metric_from_a_Heterogeneo\figure_1.jpg
+  Figure 1 caption: "Main procedure of the proposed general heterogeneous transfer\
+    \ distance metric learning framework. Samples of the source and target domain\
+    \ lie in different feature spaces. Knowledge fragments f Sc (\u22C5) are extracted\
+    \ from the distance metric learned beforehand in the source domain, and the target\
+    \ metric is formulated as learning a set of mappings \u03D5 Mc (\u22C5) . By minimizing\
+    \ the divergence between the unlabeled cross-domain data mapped using f Sc (\u22C5\
+    ) and \u03D5 Mc (\u22C5) , and also preserving the topology in the target domain,\
+    \ we learn improved target distance metric, where the source domain knowledge\
+    \ and unlabeled information is leveraged."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Transferring_Knowledge_Fragments_for_Learning_Distance_Metric_from_a_Heterogeneo\figure_2.jpg
+  Figure 2 caption: Classification accuracies and macroF1 scores versus dimensionality
+    of the mapped subspace on the Scene-15 dataset.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Transferring_Knowledge_Fragments_for_Learning_Distance_Metric_from_a_Heterogeneo\figure_3.jpg
+  Figure 3 caption: Classification accuracies and macroF1 scores of the nonlinear
+    methods versus dimensionality of the mapped subspace on the Scene-15 dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Transferring_Knowledge_Fragments_for_Learning_Distance_Metric_from_a_Heterogeneo\figure_4.jpg
+  Figure 4 caption: A self-comparison of the proposed method on the Scene-15 dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Transferring_Knowledge_Fragments_for_Learning_Distance_Metric_from_a_Heterogeneo\figure_5.jpg
+  Figure 5 caption: Classification accuracies and macroF1 scores versus number of
+    unlabeled correspondences on the Scene-15 dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Transferring_Knowledge_Fragments_for_Learning_Distance_Metric_from_a_Heterogeneo\figure_6.jpg
+  Figure 6 caption: Mean average precision (MAP) scores versus dimensionality of the
+    mapped subspace on the Caltech-101 dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Transferring_Knowledge_Fragments_for_Learning_Distance_Metric_from_a_Heterogeneo\figure_7.jpg
+  Figure 7 caption: Accuracies versus dimensionality of the mapped subspace on the
+    LFW dataset.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yong Luo
+  Name of the last author: Dacheng Tao
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Transferring Knowledge Fragments for Learning Distance Metric from
+    a Heterogeneous Domain
+  Publication Date: 2018-04-09 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Main Notations and Corresponding Definitions (Subscript \u201C\
+      \ S \u201D Denotes \u201CSource\u201D and \u201C M \u201D Signifies \u201CTarget\u201D\
+      )"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Accuracies and macroF1 Scores of the Compared
+      Methods at Their Best Dimensionalities of Mapped Subspace on the Scene-15 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Classification Accuracies and macroF1 Scores of the Compared
+      Nonlinear Methods at Their Best Dimensionalities of Mapped Subspace on the Scene-15
+      Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Recognition Accuracies and macroF1 Scores of the Compared
+      Methods on the NUS Animal Subset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2824309
+- Affiliation of the first author: lunit incorporation, seoul, korea
+  Affiliation of the last author: department of computer science and engineering &
+    center of superintelligence, seoul national university, seoul, korea
+  Figure 1 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_1.jpg
+  Figure 1 caption: Problem statement of personalized image captioning with an Instagram
+    example. (a) Personalized image captioning is motivated by that different users
+    are likely to generate different sentences for the same image, according to their
+    own experiences, thoughts, or writing styles. (b) As main applications, we address
+    hashtag prediction and post generation tasks. Given a query image, the former
+    predicts a list of hashtags, while the latter generates a descriptive text to
+    complete a post. We propose a versatile context sequence memory network (CSMN)
+    model.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_2.jpg
+  Figure 2 caption: Cumulative distribution functions (CDFs) of the words for captions
+    and hashtags in the InstaPIC-1.1M dataset. For captionshashtags, the top 40 K60
+    K most frequent words take 97.6384.31 percent of all the word occurrences of the
+    dataset, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_3.jpg
+  Figure 3 caption: Illustration of the context sequence memory network (CSMN) model.
+    (a) The context memory is constructed using image descriptions and D frequent
+    words from the query user's previous posts (Section 4.1). (b) The model generates
+    an output word at every step t based on the memory state, and the newly generated
+    word is inserted into the word output memory (Section 4.2).
+  Figure 4 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_4.jpg
+  Figure 4 caption: An intuitive example of user context memory for showing why the
+    memory CNN can be helpful for better captioning. Suppose that two users have street
+    as their active words in the memory. User 1 has art-related words at the top of
+    the memory, the street is joined with art, and the meaning of street can be interpreted
+    similarly as street art. User 2 has fashion-related words in the memory, the same
+    word street is interpreted as street fashion. In summary, the CNN encourages an
+    effect of n -gram.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_5.jpg
+  Figure 5 caption: Examples of post generation from InstaPIC-1.1M (top) and YFCC100M
+    (bottom). In each set, we present a query image, groundtruth (GT), and generated
+    posts by our method (Ours) and baselines. The username shows an anonymized user.
+    Most of the predicted texts are relevant and meaningful for the query images.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_6.jpg
+  Figure 6 caption: Examples of hashtag prediction from InstaPIC-1.1M (top) and YFCC100M
+    (bottom). In each set, we present with a query image, groundtruth (GT), and generated
+    posts by our method (Ours) and baselines. Most of the predicted texts are relevant
+    and meaningful for the query images. Bold hashtags indicate correctly predicted
+    ones (i.e., the hashtags that appear in both groundtruth and prediction).
+  Figure 7 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_7.jpg
+  Figure 7 caption: Three examples of hashtag prediction and two examples of post
+    prediction with query images and multiple predictions by different users (shown
+    in different colors). Predicted results vary according to query users, but still
+    are relevant and meaningful for the query images.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_8.jpg
+  Figure 8 caption: Six examples of hashtag prediction for a single user, whose most
+    posts are about design. (a) For design-related query images, our CSMN predicts
+    relevant hashtags to the design topic. (b) For the query images of substantially
+    different topics, our CSMN is also resilient to predict meaningful hashtags for
+    the images.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Towards_Personalized_Image_Captioning_via_Multimodal_Memory_Networks\figure_9.jpg
+  Figure 9 caption: Three examples of user context memory attention for hashtag prediction.
+    We show the query image along with the groundtruth and predicted hashtags by our
+    method. On the right, we present the evolution of attention diagrams for three
+    time steps from t1 to t3 , where the words along the x -axis are the top-5 most
+    attended words in the memory cells at each time step, with darker colors indicating
+    more strongly attended memory cells. Note that output hashtags do not necessarily
+    coincide with the most attended words in the user context memory, although they
+    are likely to be correlated.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Cesc Chunseong Park
+  Name of the last author: GUNHEE KIM
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Towards Personalized Image Captioning via Multimodal Memory Networks
+  Publication Date: 2018-04-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics of InstaPIC-1.1M and YFCC100M Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Evaluation of Post Generation for the InstaPIC-1.1M and YFCC100M
+      Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation of the Hashtag Prediction
+  Table 4 caption:
+    table_text: TABLE 4 AMT Preference Results for the Two Tasks Between Our Methods
+      and Three Baselines for the InstaPIC-1.1M Dataset
+  Table 5 caption:
+    table_text: TABLE 5 AMT Test Results for Plausibility, Grammaticality, and Relevance
+      of Generated Posts by Our Method (CSMN-P5) and Three Baselines for the InstaPIC-1.1M
+      Dataset
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2824816
+- Affiliation of the first author: department of electrical and computer engineering,
+    northeastern university, boston, ma, usa
+  Affiliation of the last author: department of electrical and computer engineering
+  Figure 1 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_1.jpg
+  Figure 1 caption: Photos of families sampled randomly from FIW (i.e., 8 of 1,000).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_2.jpg
+  Figure 2 caption: Samples of 11 pair types of FIW. Each type is of a unique pair
+    randomly selected from a set of diverse families to show variation in ethnicity,
+    while four faces of each individual depict age variations.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_3.jpg
+  Figure 3 caption: 'Database statistics: Horizontal and vertical axes represent counts
+    for photos and faces per family, respectively. Bubble size and color represent
+    counts for members and average faces per member, respectively.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_4.jpg
+  Figure 4 caption: Visual of the 2 label types of FIW, Family-level (FID) and Photo-
+    level (PID). FID has individual family member (MID) and relationship information.
+    PIDs contain information of MIDs + their locations in photos.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_5.jpg
+  Figure 5 caption: "Semi-automatic labeling pipeline. Data Collection. Photos and\
+    \ text metadata were collected for underrepresented families in FIW and assigned\
+    \ unique IDs (i.e., PIDs). Each new member requires at least 1 profile picture\
+    \ (e.g., Brandon in PI D 1 ) to add to known labels. Data Preparation. With the\
+    \ existing FIW labels, we next aim to increase the amount, both in labeled faces\
+    \ and member labels, using multiple modalities\u2013 names in metadata and scores\
+    \ of SVMs were used to automatically label some unlabeled data\u2013 face-name\
+    \ pairs were assumed labeled for cases of high confidence. Starting from profile\
+    \ pictures (i.e., 1 face, 1 name) and working towards less trivial scenarios (e.g.,\
+    \ 3 faces and 2 names, with 2 faces from 1 member at different ages, like in PI\
+    \ D 3 ). This step adds to the amount of side information used for clustering.\
+    \ Label Generation. Label proposals for remaining unlabeled faces were generated\
+    \ using the proposed semi-supervised clustering model that leverages labeled data\
+    \ as side information to better guide the process. Label Validation. A GUI designed\
+    \ to validate clusters and ensure clusters matched the proper labels."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_6.jpg
+  Figure 6 caption: Relationship type specific ROC curves. The plots show that the
+    SphereFace CNN trained on FIW as the best benchmark.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_7.jpg
+  Figure 7 caption: Results for clustering families using different amounts of side
+    information. As clearly depicted, our method obtains the top performance. Moreover,
+    a distinct increase in NMI for our method is shown with an increase in the amounts
+    of side information.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_8.jpg
+  Figure 8 caption: 'Box plot for humans on kinship verification. Case 1: Relationship
+    type dependent evalations. Case 2: Evaluations with type unspecified.'
+  Figure 9 Link: articels_figures_by_rev_year\2018\Visual_Kinship_Recognition_of_Families_in_the_Wild\figure_9.jpg
+  Figure 9 caption: Samples used for human evaluation. Each column displays pairs
+    most commonly marked correctly and incorrectly, and in cases for where the correct
+    answer were true and false. Each of these pairs were properly classified by the
+    fine-tuned CNN.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Joseph P. Robinson
+  Name of the last author: Yun Fu
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: Visual Kinship Recognition of Families in the Wild
+  Publication Date: 2018-04-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Pairwise counts. Table 2 Further Characterizes and Fig. 2
+      Shows Samples from FIW
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Family-based Characteristics and Counts
+  Table 3 caption:
+    table_text: TABLE 3 Ethnicity distribution of FIW. Mix families have >1 Ethnicities
+      at reference node (e.g., Bruce (Asian) and Linda (Caucasian) Lee)
+  Table 4 caption:
+    table_text: TABLE 4 Previous and New (bold) Labeling Processes Summarized by Required
+      Inputs (Keyboard + Mouse Clicks) and Time
+  Table 5 caption:
+    table_text: TABLE 5 Averaged Verification Accuracies (%) for 5-Fold Experiment
+      on FIW with No Family Overlap Between Folds
+  Table 6 caption:
+    table_text: TABLE 6 Classification Accuracy Scores (%) for 564 Families
+  Table 7 caption:
+    table_text: TABLE 7 Verification Accuracy (%) for KinWild I & II. Notice that
+      Centerface (i.e., ResNet + CF) Trained using FIW and then Fine-Tuned on Kin-Wild
+      Significantly Outperformed other Methods
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2826549
+- Affiliation of the first author: institute for media innovation, nanyang technological
+    university, singapore
+  Affiliation of the last author: "\xE9cole polytechnique f\xE9d\xE9rale de lausanne\
+    \ (epfl), lausanne, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_1.jpg
+  Figure 1 caption: Different schemes for 3D hand pose estimation. (a) 2D CNN taking
+    depth image as input and outputting heat-maps. (b) Multi-view 2D CNNs taking multi-view
+    projections as inputs and outputting multi-view heat-maps. (c) 2D CNN taking depth
+    image as input and regressing 3D joint locations directly. (d) We use 3D CNN which
+    takes volumetric representations as input and regresses a lower dimensional representation
+    of 3D joint locations.
+  Figure 10 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_10.jpg
+  Figure 10 caption: 'Comparison with state-of-the-art methods [19], [23], [26], [45],
+    [69], [70], [71], [72] on MSRA dataset [26]. Left: the proportion of good frames
+    over different error thresholds. Middle & right: the mean error distance over
+    different yaw and pitch viewpoint angles with respect to the camera frame.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_2.jpg
+  Figure 2 caption: "Visualization of different volumetric representations. For the\
+    \ last five rows, we only visualize voxels of which values are less than 1 and\
+    \ larger than \u22121 by using the color map shown in this figure. The volume\
+    \ resolution is 32 \xD7 32 \xD7 32."
+  Figure 3 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_3.jpg
+  Figure 3 caption: "Plain and dense network architectures. Both networks take three\
+    \ 32\xD732\xD732 projective D-TSDF volumes as input and output F elements. In\
+    \ (a), all the 3D convolutional layers have stride 1 and no padding. In (b), the\
+    \ growth rate of the 3D deep dense network is 32; L in each 3D dense block denotes\
+    \ the number of dense unit; each dense unit consists of a sequence of layers:\
+    \ BN-ReLU-3D Conv ( 1\xD71\xD71 )-BN-ReLU-3D Conv ( 3\xD73\xD73 ); each transition\
+    \ layer reduces the number of feature maps by half using 1\xD71\xD71 3D convolution\
+    \ and downsamples the feature map using average pooling. 'BN' denotes the batch\
+    \ normalization layer, 'FC' denotes the fully-connected layer, and 'DP' denotes\
+    \ the dropout layer."
+  Figure 4 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_4.jpg
+  Figure 4 caption: The framework for hand surface completion and 3D hand pose estimation.
+    3D U-Net is applied to estimate the TDF volume of complete hand surface points
+    from the projective D-TSDF volumes corresponding to the captured partial hand
+    surface points. The projective D-TSDF volumes concatenated with the estimated
+    TDF volume are fed into the 3D CNN for 3D hand pose estimation. 'C' denotes the
+    concatenation operation.
+  Figure 5 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_5.jpg
+  Figure 5 caption: 'An example of 3D data augmentation. Top-left: original point
+    cloud, ground truth and TSDF volume. Bottom-left: point cloud, ground truth and
+    TSDF volume after 3D stretching. Top-right: point cloud, ground truth and TSDF
+    volume after 3D rotation. Bottom-right: point cloud, ground truth and TSDF volume
+    after 3D stretching and rotation. For illustration purpose, we only draw the projective
+    D-TSDF volume on z direction.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_6.jpg
+  Figure 6 caption: Visualization of patterns learned in a fully trained 3D CNN model.
+    For each layer, we show reconstructed patterns in the 1st row, and corresponding
+    receptive fields indicated by black boxes in the 2nd row. These patterns are reconstructed
+    by using the guided backpropagation method proposed in [60]. For patterns of L3,
+    we only draw voxels of which absolute values are larger than a threshold. Voxels
+    with large values are shown in bright color, and voxels with small values are
+    shown in dark color. Neurons in the 1st convolutional layer (L1) can capture local
+    structures, such as corners and edges; neurons in the 2nd convolutional layer
+    (L2) can capture structures of hand part, such as fingers; neurons in the 3rd
+    convolutional layer (L3) can capture global structures of hand.
+  Figure 7 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_7.jpg
+  Figure 7 caption: 'Self-comparison of different volume resolutions and different
+    volume types withwithout data augmentation on MSRA dataset [26]. Left: the impact
+    of different volume resolutions on the proportion of good frames. Middle: the
+    impact of different volume types and data augmentation on the proportion of good
+    frames. Right: the impact of different volume types and data augmentation on the
+    per-joint mean error distance (R:root, T:tip).'
+  Figure 8 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_8.jpg
+  Figure 8 caption: Self-comparison of 2D3D CNNs with different network architectures
+    for 3D hand pose estimation on MSRA [26], NYU [7] and ICVL [8] hand pose datasets.
+    The mean error distances over all joints of different methods are shown in the
+    legends.
+  Figure 9 Link: articels_figures_by_rev_year\2018\RealTime_D_Hand_Pose_Estimation_with_D_Convolutional_Neural_Networks\figure_9.jpg
+  Figure 9 caption: Examples of hand surface completion with our method on NYU hand
+    pose dataset [7]. The hand surfaces are extracted from the 323 volumes of distance
+    function.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Liuhao Ge
+  Name of the last author: Daniel Thalmann
+  Number of Figures: 14
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Real-Time 3D Hand Pose Estimation with 3D Convolutional Neural Networks
+  Publication Date: 2018-04-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Impact of Hand Surface Completion on 3D Hand Pose Estimation
+      Using 3D ResNet and 3D DenseNet
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Estimation Errors (in mm) of 6 Subjects for 7 Methods
+      Tested on the Dataset Released in [34]
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2827052
+- Affiliation of the first author: isr - ist, universidade de lisboa, lisboa, portugal
+  Affiliation of the last author: isr - ist, universidade de lisboa, lisboa, portugal
+  Figure 1 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_1.jpg
+  Figure 1 caption: "2D point alignment using ICP and DO. (a) Data. (b) Level sets\
+    \ of the cost function for ICP. We used the optimal matching at each parameter\
+    \ value to compute the \u2113 2 cost. (c) Inferred level sets for the proposed\
+    \ DO, approximately reconstructed with the surface reconstruction algorithm [2]\
+    \ from DO's update directions. (d) The update directions of DO. (e) Regions of\
+    \ convergence for ICP and DO. See text for detailed description."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_2.jpg
+  Figure 2 caption: Learning to solve unknown cost functions. (a-c) Three convex functions,
+    their gradients, and the learned D T for each function. (d-f) Similar figures
+    for pseudoconvex functions. (g) Training error in each step t . (h) Squared norm
+    of the maps D t . (i) The first map of each function.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_3.jpg
+  Figure 3 caption: Results of 3D registration with synthetic data under different
+    perturbations. (Top) Examples of scene points with different perturbations. (Middle)
+    Success rate. (Bottom) Computation time.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_4.jpg
+  Figure 4 caption: Results of 3D registration with range scan data. (a) Example 3D
+    model ('chef'). (b) Example of a 3D scene. We include surface rendering for visualization
+    purpose. (c) Results of the experiment. (d) An example of registration steps of
+    DO. The model was initialized 60 degrees from the ground truth orientation with
+    parts of the model intersecting other objects. In addition, the target object
+    is under 70 percent occlusion, making this a very challenging case. However, as
+    iteration progresses, DO is able to successfully register the model.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_5.jpg
+  Figure 5 caption: Result for object tracking in 3D point cloud. (a) The 3D models
+    of the kettle and the hat. (b) Tracking results of DO and ICP in (top) 3D point
+    clouds with the scene points in blue, and (bottom) as reprojection on RGB image.
+    Each column shows the same frame.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_6.jpg
+  Figure 6 caption: Results for PnP with synthetic data. Varying parameters are (a)
+    outlier ratio, (b) noise SD, and (c) number of points.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_7.jpg
+  Figure 7 caption: Results for camera pose estimation on real image. (a) Feature
+    matches. Left and right images contain 2D points and projection of 3D points,
+    resp. (b-d) Projected shape with average time over 100 trials.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_8.jpg
+  Figure 8 caption: Results for image denoising for (a) salt-pepper impulse noise,
+    and (b) random-value impulse noise.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Discriminative_Optimization_Theory_and_Applications_to_Computer_Vision\figure_9.jpg
+  Figure 9 caption: Examples of images denoising results for (top) salt-pepper impulse
+    noise, and (bottom) random-value impulse noise. The PSNR for each image is shown
+    on the top-right. We omitted the results of ell 1 TV for visibility purpose. (Best
+    viewed electronically).
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jayakorn Vongkulbhisal
+  Name of the last author: "Jo\xE3o Paulo Costeira"
+  Number of Figures: 9
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: 'Discriminative Optimization: Theory and Applications to Computer Vision'
+  Publication Date: 2018-04-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 MAE of Solving Unknown Cost Functions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2826536
+- Affiliation of the first author: institute of computing technology, chinese academy
+    of sciences, beijing, china
+  Affiliation of the last author: department of computer and information sciences,
+    university of delaware, newark, de
+  Figure 1 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_1.jpg
+  Figure 1 caption: "System overview. Our hyperspectral light field (H-LF) imager\
+    \ (HLFI, top left) consists of a 5\xD76 array of cameras, each with a narrow bandpass\
+    \ filter centered at a specific wavelength. The HLFI samples the visible spectrum\
+    \ from 410nm to 700nm with an 10nm interval. We propose a new spectral-dependent\
+    \ H-LF stereo matching technique (middle), which involves novel correspondence\
+    \ cost (top) and spectral-aware defocus cost (bottom). The correspondence cost\
+    \ is based on a new spectral-invariant feature descriptor called BWNCC with local\
+    \ view selection. The generated disparity map (top right) can be used for complete\
+    \ plenoptic reconstruction (bottom right)."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_10.jpg
+  Figure 10 caption: 'H-LF reconstruction results for a real scene. (a) Raw data acquired
+    by our HLFI, (b) completed plenoptic cube, (c) reconstructed hyperspectral datacubes
+    at viewpoints (2, 2), (3, 4), and (5, 6), (d) close-ups of representative boundary
+    and textured areas, (e) spectral profiles of three scene points: a point on the
+    guitar, a cyan point surrounded by white letters, and a depth boundary.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_2.jpg
+  Figure 2 caption: "The spectral profile of narrow band-pass filters. In our setup,\
+    \ we mount 30 filters on camera array (Fig. 1). These filters sample the visible\
+    \ spectrum, centered from 410nm to 700nm with an 10nm interval as this figure\
+    \ shows. Each bandwidth is 10nm (i.e., \xB15nm about the central wavelength) with\
+    \ \xB12nm uncertainty. The overlaps occur near 35 percent quantum efficiency with\
+    \ rapid drop-off."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_3.jpg
+  Figure 3 caption: "Cross-channel stereo imaging on the Tsukuba image pair. (a) and\
+    \ (b): Red channel of L and blue channel of R , respectively. (c) and (d): respective\
+    \ gradient magnitudes. (e) and (f): respective gradient directions. Section 4.1\
+    \ describes how we match boundary (e.g., p 1 - q 1 ) and non-boundary (e.g., p\
+    \ 2 - q 2 ) pixels. The pixels denoted with primes ( p \u2032 1 , etc.) are neighboring\
+    \ pixels."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_4.jpg
+  Figure 4 caption: Our spectral-invariant feature descriptor H is based on weighted
+    histograms for 3-level pyramids of the gradient magnitude and direction maps.
+    h 1 and h 2 are the histograms for gradient magnitude and direction, while h 3
+    represents O-HOG.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_5.jpg
+  Figure 5 caption: "Spectral-aware defocus cue. Given a disparity hypothesis, we\
+    \ combine corresponding pixels from H-LF to form its spectral profile P p (\u03BB\
+    ) . Next, we use the camera (PTGrey FL3-U3-20E4C-C) spectral response curves P\
+    \ c (\u03BB) to map this profile to RGB color. We then convert the RGB color to\
+    \ its hypothesized wavelength \u03BB r using the CIE 1931 Color Space. Finally,\
+    \ we match the observed profile with a Gaussian profile P g (\u03BB) centered\
+    \ at \u03BB r via K-L divergence."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_6.jpg
+  Figure 6 caption: 'Cross-channel stereo matching results for three Middlebury datasets.
+    From left to right: red channel of the left image, blue channel of right image,
+    ground truth disparity map, estimated disparity map by SSD, NCC, RSNCC methods
+    with graph cuts, and our proposed feature descriptor with BWNCC metric. Our method
+    can estimate much better disparity maps compared with these state-of-the-art methods.'
+  Figure 7 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_7.jpg
+  Figure 7 caption: Cross-spectral stereo matching results on real scenes captured
+    using our HLFI. The first and second columns are left and right images captured
+    by two adjacent cameras at different spectra. The other columns show extracted
+    disparity maps using SSD, NCC, RSNCC and our technique. Qualitatively, our results
+    outperform the other competing techniques.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_8.jpg
+  Figure 8 caption: H-LF results for two synthetic scenes from Wanner et al. [15],
+    with each view having a different spectral response. We show our result as well
+    as those of previous LF stereo matching methods (Tao et al. [8], Lin et al. [7],
+    and Wang et al. [17]). The two close-ups show the relative quality of our result.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Hyperspectral_Light_Field_Stereo_Matching\figure_9.jpg
+  Figure 9 caption: H-LF stereo matching results for three real scenes captured by
+    our HLFI. We show our results as well as those of previous LF stereo matching
+    methods (Tao et al. [8], Lin et al. [7], and Wang et al. [17]). The two close-ups
+    show how well our technique can recover scene detail.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Kang Zhu
+  Name of the last author: Jingyi Yu
+  Number of Figures: 14
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: Hyperspectral Light Field Stereo Matching
+  Publication Date: 2018-04-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of bad5.0 Error Metric (Smaller Values Are Better)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of RMSE (Smaller Values Are Better) for H-LF Stereo
+      Matching on Synthetic Data Shown in Fig. 8
+  Table 3 caption:
+    table_text: TABLE 3 RASE Values (Smaller Is Better) for Representative Areas and
+      Views for H-LF Reconstruction Shown in Fig. 11
+  Table 4 caption:
+    table_text: "TABLE 4 RASE Values (Smaller Is Better) at All ( 5\xD76 5\xD76) Views\
+      \ in Valid Areas Relative to Ground Truth, for the Scene Shown in Fig. 12a"
+  Table 5 caption:
+    table_text: "TABLE 5 Percentage of Pixels with BD(p)\u22640.05 BD(p)\u22640.05\
+      \ in Valid Areas in the Scene Shown in Fig. 12a"
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2827049
+- Affiliation of the first author: department of computer science, hong kong baptist
+    university, hong kong sar, china
+  Affiliation of the last author: department of computer science and engineering,
+    michigan state university, mi
+  Figure 1 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_1.jpg
+  Figure 1 caption: Face recognition system vulnerability to template reconstruction
+    attacks. Face image of a target subject is reconstructed from the corresponding
+    template to gain system access by (a) creating a fake face (for example, a 2D
+    printed image or 3D mask) (blue box) or (b) injecting a reconstructed face image
+    directly into the feature extractor (red box).
+  Figure 10 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_10.jpg
+  Figure 10 caption: ROC curves of (a) type-I and (b) type-II attacks using different
+    reconstruction models on FRGC v2.0. For readability, we only show the curves for
+    D-CNN, NbNet-B trained with perceptual loss, and the RBF based method. Refer to
+    Table 5 for the numerical comparison of all models.
+  Figure 2 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_2.jpg
+  Figure 2 caption: Example face images reconstructed from their templates using the
+    proposed method (VGG-NbB-P). The top row shows the original images (from LFW)
+    and the bottom row shows the corresponding reconstructions. The numerical value
+    shown between the two images is the cosine similarity between the original and
+    its reconstructed face image. The similarity threshold is 0.51 (0.38) at FAR =
+    0.1 percent (1.0 percent).
+  Figure 3 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_3.jpg
+  Figure 3 caption: An overview of the proposed system for reconstructing face images
+    from the corresponding deep templates.
+  Figure 4 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_4.jpg
+  Figure 4 caption: The proposed NbNet for reconstructing face images from the corresponding
+    face templates. (a) Overview of our face reconstruction network, (b) typical de-convolution
+    block for building de-convolutional neural network (D-CNN), (c) and (d) are the
+    neighborly de-convolution blocks (NbBlock) AB for building NbNet-A and NbNet-B,
+    respectively. Note that ConvOP (DconvOP) denotes a cascade of a convolution (de-convolution),
+    a batch-normalization [53], and a ReLU activation (tanh in ConvOP of (a)) layers,
+    where the width of ConvOp (DconvOP) denotes the number of channels in its convolution
+    (de-convolution) layer. The black circles in (c) and (d) denote the channel concatenation
+    of the output channels of DconvOP and ConvOPs.
+  Figure 5 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_5.jpg
+  Figure 5 caption: Visualization of 32 output channels of the 5th de-convolution
+    blocks in (a) D-CNN, (b) NbNet-A, and (c) NbNet-B networks, where the input template
+    was extracted from the bottom image of Fig. 4a. Note that the four rows of channels
+    in (a) and the first two rows of channels in (b) and (c) are learned from channels
+    from the corresponding 4th block. The third row of channels in both (b) and (c)
+    are learned from their first two rows of channels. The fourth row of channels
+    in (b) is learned from the third row of channels only, where the fourth row of
+    channels in (c) is learned from the first three rows of channels.
+  Figure 6 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_6.jpg
+  Figure 6 caption: 'Example face images from the training and testing datasets: (a)
+    VGG-Face (1.94M images) [23], (b) Multi-PIE (151K images, only three camera views
+    were used, including prime 140prime , prime 050prime and prime 051prime , respectively)
+    [57], (c) LFW (13,233 images) [25], [62], (d) FRGC v2.0 (16,028 images in the
+    target set of Experiment 1)[63], and (e) Color FERET (2,950 images) [39].'
+  Figure 7 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_7.jpg
+  Figure 7 caption: Sample face images generated from face generators trained on (a)
+    VGG-Face, and (b) Multi-PIE.
+  Figure 8 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_8.jpg
+  Figure 8 caption: "Reconstructed face images of the first 10 subjects from (a) LFW\
+    \ and (b) FRGC v2.0. The original face images are shown in the first column. Each\
+    \ column denotes the reconstructed face images from different models used for\
+    \ reconstruction. The number below each reconstructed image shows the similarity\
+    \ score between the reconstructed image and the original image. The scores (ranging\
+    \ from \u22121 to 1) were calculated using the cosine similarity. The mean verification\
+    \ thresholds on LFW and FRGC v2.0 were 0.51 and 0.80, respectively, at FAR = 0.1\
+    \ percent, and 0.38 and 0.64, respectively, at FAR = 1.0 percent."
+  Figure 9 Link: articels_figures_by_rev_year\2018\On_the_Reconstruction_of_Face_Images_from_Deep_Face_Templates\figure_9.jpg
+  Figure 9 caption: ROC curves of (a) type-I and (b) type-II attacks using different
+    reconstruction models on LFW. For the ease of reading, we only show the curves
+    for D-CNN, NbNet-B trained with perceptual loss, and the RBF based method. Refer
+    to Table 4 for the numerical comparison of all models. Note that the curves for
+    VGG-Dn-P and MPIE-Dn-P are overlapping in (a).
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Guangcan Mai
+  Name of the last author: Anil K. Jain
+  Number of Figures: 10
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: On the Reconstruction of Face Images from Deep Face Templates
+  Publication Date: 2018-04-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Major Algorithms for Face Image Reconstruction
+      from Their Corresponding Templates
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Network Details for D-CNN and NbNets
+  Table 3 caption:
+    table_text: TABLE 3 Deep template face template reconstruction models for comparison
+  Table 4 caption:
+    table_text: "TABLE 4 TARs (%) of Type-I and Type-II Attacks on LFW for Different\
+      \ Template Reconstruction Methods, Where \u201COriginal\u201D Denotes Results\
+      \ Based on the Original Images and Other Methods Are Described in Table 3"
+  Table 5 caption:
+    table_text: "TABLE 5 TARs (%) of Type-I and Type-II Attacks on FRGC v2.0 for Different\
+      \ Template Reconstruction Methods, Where \u201COriginal\u201D Denotes Results\
+      \ Based on the Original Images and Other Methods Are Described in Table 3"
+  Table 6 caption:
+    table_text: TABLE 6 Rank-One Recognition Rate (%) on Color FERET [39] with Partition
+      fa as Gallery and Reconstructed Images from Different Partition as Probe
+  Table 7 caption:
+    table_text: TABLE 7 Average Reconstruction Time (ms) for a Single Template
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2827389
+- Affiliation of the first author: school of electrical engineering and computer science,
+    oregon state university, corvallis, or
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of minnesota, minneapolis, mn
+  Figure 1 Link: articels_figures_by_rev_year\2018\AnchorFree_Correlated_Topic_Modeling\figure_1.jpg
+  Figure 1 caption: "A graphical view of rows of C (blue dots) and various cones in\
+    \ R 3 , sliced at the plane 1 \u22A4 x=1 . The triangle indicates the non-negative\
+    \ orthant, the enclosing circle is K , and the smaller circle is K \u2217 . The\
+    \ shaded region is cone( C \u22A4 ) , and the polygon with dashed sides is cone(\
+    \ C \u22A4 ) \u2217 . The matrix C can be identified up to column permutation\
+    \ in the left two cases, and clearly separability is a special case of sufficiently\
+    \ scattered."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\AnchorFree_Correlated_Topic_Modeling\figure_2.jpg
+  Figure 2 caption: Runtime performance on synthetic data.
+  Figure 3 Link: articels_figures_by_rev_year\2018\AnchorFree_Correlated_Topic_Modeling\figure_3.jpg
+  Figure 3 caption: Reconstruction error on synthetic data.
+  Figure 4 Link: articels_figures_by_rev_year\2018\AnchorFree_Correlated_Topic_Modeling\figure_4.jpg
+  Figure 4 caption: Runtime performance of the algorithms.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Xiao Fu
+  Name of the last author: Mingyi Hong
+  Number of Figures: 4
+  Number of Tables: 17
+  Number of authors: 5
+  Paper title: Anchor-Free Correlated Topic Modeling
+  Publication Date: 2018-04-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Topics Discovered by FastAnchor (Left) and by the Proposed
+      Algorithm (AnchorFree-Right)
+  Table 10 caption:
+    table_text: TABLE 10 Coh Given by the Algorithms on RCV1
+  Table 2 caption:
+    table_text: "TABLE 2 Synthetic Test 1: Percentage That Both \u2225 C \u22C6 \u2212\
+      \ C \u266E \u2225 2 F \u2225C\u2605-C\u266E\u2225F2 and \u2225 E \u22C6 \u2212\
+      \ E \u266E \u2225 2 F \u2225E\u2605-E\u266E\u2225F2 Are Less Than 10 \u2212\
+      8 10-8, without Guarantees on the Existence of Anchor Words"
+  Table 3 caption:
+    table_text: "TABLE 3 Synthetic Test 2: Percentage That Both \u2225 C \u22C6 \u2212\
+      \ C \u266E \u2225 2 F \u2225C\u2605-C\u266E\u2225F2 and \u2225 E \u22C6 \u2212\
+      \ E \u266E \u2225 2 F \u2225E\u2605-E\u266E\u2225F2 Are Less Than 10 \u2212\
+      8 10-8, with at Most 15 Topics Guaranteed to Have Anchor Words"
+  Table 4 caption:
+    table_text: TABLE 4 Coh Given by the Algorithms on TDT2
+  Table 5 caption:
+    table_text: TABLE 5 SimCount Given by the Algorithms on TDT2
+  Table 6 caption:
+    table_text: TABLE 6 ClustAcc Given by the Algorithms on TDT2
+  Table 7 caption:
+    table_text: TABLE 7 Coh Given by the Algorithms on Reuters-21578
+  Table 8 caption:
+    table_text: TABLE 8 SimCount Given by the Algorithms on Reuters-21578
+  Table 9 caption:
+    table_text: TABLE 9 ClustAcc Given by the Algorithms on Reuters-21578
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2827377
+- Affiliation of the first author: laris laboratory, ea4094, university of angers,
+    angers, france
+  Affiliation of the last author: laris laboratory, ea4094, university of angers,
+    angers, france
+  Figure 1 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_1.jpg
+  Figure 1 caption: 'Example of qualitative inclusion and photometric relationships.
+    Left: CT Scanner image of the abdominal area. The liver area depicts hypodense
+    tumors, included within the liver area, and darker than liver tissues, being,
+    in turns darker than liver vessels. Right: natural color image. The sign depicts
+    clear inclusion relationships (e.g., stars included within a square, itself belonging
+    to a white background). Photometric relationships can be deduced from the perception
+    of tones (grayscale-converted image). Yellow stars and strip depict a similar
+    tone (relatively bright, compared to dark elements and medium tones), being less
+    bright than white elements.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_10.jpg
+  Figure 10 caption: Influence of the choice of the initial common subgraph isomorphism
+    in some cases reported in Table 1.
+  Figure 2 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_2.jpg
+  Figure 2 caption: Principle of the approach applied to an input segmented image
+    (labelled regions 0 to 5), using an a priori model (relationships regarding expected
+    regions A, B, C and D). Labelled regions 2 and 4 represent artefacts that can
+    be encountered in real images. Based on automatically built relationships, one
+    first searches for subgraph isomorphisms (between model and built graphs) that
+    are common to both inclusion and photometric relationships. According to a selection
+    criterion (section 2.4), only one is considered (represented by red arrows). Remaining
+    unmatched nodes are finally matched (green arrows) for recovering and identifying
+    regions (see section 2.5). Both red and green arrows represent the inexact graph
+    matching.
+  Figure 3 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_3.jpg
+  Figure 3 caption: 'Management of photometric uncertainty: principle. Region C is
+    declared to be either brighter or darker than D . Based on common subgraph isomorphisms
+    searched on unwrapped photometric graphs, regions 1 and 2 are correctly identified
+    although photometric relations vary from input image 1 to input image 2.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_4.jpg
+  Figure 4 caption: 'Isomorphism selection. Top: case without photometric similarities.
+    Bottom: case involving a photometric similarity. From left to right: a priori
+    model, input image and built graphs (intensity differences are indicated along
+    edges of the photometric graphs), results for different isomorphisms. Results
+    surrounded by solid line boxes are obtained using the proposed selection criterion.'
+  Figure 5 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_5.jpg
+  Figure 5 caption: Pseudo code of the merging procedure.
+  Figure 6 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_6.jpg
+  Figure 6 caption: Experimental database. For image 3, one considers the model regarding
+    each part of the road sign (regions 1A and 2A), as well as the model of the entire
+    sign (region A).
+  Figure 7 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_7.jpg
+  Figure 7 caption: Mean intensities related to poses of image 3 (region A is considered).
+    Statistics are computed from manually segmented regions. The 3 groups (blue, green,
+    red) correspond to the 3 sets of photometrically similar regions (a priori 3 distincts
+    tones). Groups' ordering is constant, while within group ordering varies.
+  Figure 8 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_8.jpg
+  Figure 8 caption: Details of some experimental results considered in Table 1. Concerning
+    inexact graph matching, red arrows represent the initial subgraph isomorphisms
+    and green ones regard nodes (regions) merging. In most cases, only inclusion relationships
+    are reported for clarity.
+  Figure 9 Link: articels_figures_by_rev_year\2018\A_Graph_Based_Image_Interpretation_Method_Using_A_Priori_Qualitative_Inclusion_a\figure_9.jpg
+  Figure 9 caption: 'Some results regarding poses of image 3: initial segmentation,
+    result and difference with truth.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Nicolas Delanoue
+  Name of the last author: Nicolas Delanoue
+  Number of Figures: 11
+  Number of Tables: 2
+  Number of authors: 1
+  Paper title: A Graph Based Image Interpretation Method Using A Priori Qualitative
+    Inclusion and Photometric Relationships
+  Publication Date: 2018-04-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results for Different ROIs and Segmentation Algorithms (k-Means
+      (KM), Meanshift (MS) or Quickshift (QS)), Where Labels Labels Is the Number
+      of Labelled Regions. |N| |N| Is the Number of Nodes in Built Graphs ( G r,.
+      Gr,.). | H t | |Ht| Is the Number of Subgraph Isomorphisms Related to Inclusion
+      Relationships. |H| |H| Regards Common Subgraph Isomorphisms. GCR Is the Good
+      Classification Rate. For Clarity, Only Smallest and Highest Similarity Indices
+      Are Reported. 'Best H H' Indicated If the Selected H H Leads to the Best Result
+      (YesNo), As Well As the Best and Worst GCR (Among All Possible Isomorphims).
+      If 'Y', '%' Indicates the Proportion (in Percentage) of Isomorphims Leading
+      to the Best GCR. In Some Cases, Smallest Regions Have Been Filtered ('f')
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Measured Runtimes (in seconds) for Some Cases Reported in
+      Table 1, Regarding the Segmentation (Seg), Initial Graph Building (Build), the
+      Computation of Common Subgraph Isomorphisms (Iso.) and Merging (Merge). Some
+      of Them Are Negligible versus the Measurement Accuracy
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2827939

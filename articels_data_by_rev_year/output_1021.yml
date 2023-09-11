@@ -1,0 +1,928 @@
+- Affiliation of the first author: institute of automation chinese academy of sciences,
+    beijing, beijing, cn
+  Affiliation of the last author: university of california merced, merced, ca, us
+  Figure 1 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_1.jpg
+  Figure 1 caption: "Sparse representation based tracking methods [8], [9], [10],\
+    \ [11], [12], [13], [14], [15], [16], [17]. Given an image with n sampled particles\
+    \ X=[ x 1 ,\u2026, x i ,\u2026, x n ] and the dictionary templates T . (a) Global\
+    \ sparse appearance model [8], [10], [11], [12], [13]. These tracking methods\
+    \ model holistic appearance of a target object with sparse representations. As\
+    \ a result, the target candidate region x i is represented by a sparse number\
+    \ of elements in T . (b) Local sparse appearance model [9], [15]. These tracking\
+    \ methods represent each local patch inside one target candidate region x i by\
+    \ a sparse linear combination of templates in T . Note that, the local patches\
+    \ inside a target candidate region x i may be sparsely represented by the corresponding\
+    \ patches inside different dictionary templates. (c) Joint sparse appearance model\
+    \ [14], [16], [17]. These tracking methods exploit the intrinsic relationships\
+    \ among particles X to learn the sparse representations jointly. The joint sparsity\
+    \ constraints encourage all particle representations to be jointly sparse and\
+    \ share the same dictionary templates that reliably represent them. (d) Proposed\
+    \ structural sparse appearance model incorporates the above three models together.\
+    \ The proposed model exploits the intrinsic relationships among particles X and\
+    \ their local patches to learn their sparse representations jointly. In addition,\
+    \ our method also preserves the spatial layout structure among the local patches\
+    \ inside each target candidate region, which is ignored by the above three models\
+    \ [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18]."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_10.jpg
+  Figure 10 caption: Precision and success plots of overall performance comparison
+    for the 100 videos on the OTB100 Dataset. The legend contains the area-under-the-curve
+    score and the average distance precision score at 20 pixels for each tracker.
+    Our trackers perform favorably against the state-of-the-art trackers. (a) Precision
+    plots of OPE. (b) Success plots of OPE.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_2.jpg
+  Figure 2 caption: Spatial layout for sampling local patches to describe a target.
+    Note that other sampling methods can also be used to extract local patches for
+    representation.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_3.jpg
+  Figure 3 caption: Illustration for the structure of the learned coefficient matrix
+    Z , where entries of different color represent different values, and the white
+    entries indicate zero values in rows and columns.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_4.jpg
+  Figure 4 caption: "An illustrative example of the proposed tracking algorithm. (a)\
+    \ Objective value vs the number of iteration. The proposed algorithm can converge\
+    \ in several iterations. (b) The learned matrix X\u2208 R 20\xD75600 where m=20\
+    \ , K=14 , and n=400 . Notice that the columns of Z are jointly sparse, i.e.,\
+    \ a few (but the same) dictionary templates are used to represent all image patches\
+    \ together. (c) The particle x i is selected as the tracking result since it has\
+    \ the smallest reconstruction error."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_5.jpg
+  Figure 5 caption: Illustration of the coefficient matrix Z=P+Q , where squares with
+    white background denote zero entries. There are 6 local patches, where the fourth
+    local patch is an outlier patch and has different representations from other patches.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_6.jpg
+  Figure 6 caption: An example of the learned coefficients by the proposed RSST algorithm.
+    In the top figure, we show the learned coefficient matrices P and Q for all particles
+    as shown in the image. Each matrix consists of 14 column components corresponding
+    to 14 different parts, where brighter color entries represent larger values in
+    the corresponding entry. Three elements (3, 4, 5) in the dictionary D are the
+    most representative with larger values in the third, fourth, fifth rows of P across
+    all parts. On the other hand, some columns in Q have large values which indicate
+    the presence of outliers. The bottom figures illustrate the coefficients of two
+    particles x i and x j .
+  Figure 7 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_7.jpg
+  Figure 7 caption: Precision and success plots on the OTB40 Dataset. The legend contains
+    the area-under-the-curve score and the average distance precision score at 20
+    pixels for each tracker. Our trackers perform favorably against the state-of-the-art
+    trackers. (a) Precision plots of OPE. (b) Success plots of OPE.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_8.jpg
+  Figure 8 caption: Tracking results of 16 trackers (denoted in different colors and
+    lines) on 18 image sequences. Frame indexes are shown in the top left of each
+    figure in yellow color. Results are best viewed on high-resolution displays.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Robust_Structural_Sparse_Tracking\figure_9.jpg
+  Figure 9 caption: Precision and success plots of overall performance comparison
+    for the 50 videos on the OTB50 Dataset. The legend contains the area-under-the-curve
+    score and the average distance precision score at 20 pixels for each tracker.
+    Our trackers perform favorably against the state-of-the-art trackers. (a) Precision
+    plots of OPE. (b) Success plots of OPE.
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tianzhu Zhang
+  Name of the last author: Ming-Hsuan Yang
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Robust Structural Sparse Tracking
+  Publication Date: 2018-01-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Image Feature Evaluation Using Area Under Curve of Success
+      Plot and Precision Score (20 Pixels Threshold) Reported on the OTB50 and OTB100
+      Datasets (AUCPS) Corresponding to the One-Pass Evaluation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Center Location Error of 18 Different Trackers on
+      40 Different Videos
+  Table 3 caption:
+    table_text: TABLE 3 Average Overlap Score of 18 Different Trackers on 40 Different
+      Videos
+  Table 4 caption:
+    table_text: TABLE 4 Model Analysis by Comparing MTT, SST, and RSST
+  Table 5 caption:
+    table_text: TABLE 5 Comparison with the State-of-the-Art Methods on the VOT2014
+      Dataset
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2797082
+- Affiliation of the first author: center for research in computer vision (crcv),
+    university of central florida, orlando, fl
+  Affiliation of the last author: center for research in computer vision (crcv), university
+    of central florida, orlando, fl
+  Figure 1 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_1.jpg
+  Figure 1 caption: This figure illustrates the problem of Online Action Localization
+    that we address in this paper. The top row shows kick ball action being performed
+    by a soccer player with frame number shown in top-left of each frame. The goal
+    is to localize the actor (shown with yellow rectangles in top row) and predict
+    the class label of the action (shown in red boxes in second row) as the video
+    is streamed. As can be seen in the bottom row, the confidence of kick ball action
+    increases and comes to the top as more of the action gets observed over time.
+    This problem contrasts with offline action localization where action classification
+    and detection is performed after the action or video clip has been observed in
+    its entirety.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_10.jpg
+  Figure 10 caption: 'This figure shows action localization results on MSR-II dataset.
+    The precisionrecall curves are drawn for three actions: (a) Boxing, (b) Hand-clapping
+    and (c) Hand-waving. We perform competitive to many existing offline methods.
+    Red curve shows the proposed S-SVM approach, while blue curve shows the results
+    of the baseline DP-SVM method.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_2.jpg
+  Figure 2 caption: This figure shows the framework of the approach proposed in this
+    paper. (a) Given an input video, (b) we over-segment each frame into superpixels
+    and detect poses using an off-the-shelf method [60]. (c) An appearance model is
+    learned using all the superpixels inside a pose bounding box as positive, and
+    those outside as negative samples. (d) In a new frame, the appearance model is
+    applied on each superpixel of the frame to obtain a foreground likelihood. (e)
+    To handle the issue of visual drift, poses are refined using spatio-temporal smoothness
+    constraints on motion and appearance. (f) Finally, a CRF is used to obtain local
+    action proposals at each frame, on which actionsinteractions are predicted through
+    Structural SVM.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_3.jpg
+  Figure 3 caption: This figure shows a visualization of the joint smoothness costs
+    used in pose-based foreground likelihood for (a) appearance smoothness of joints
+    ( J app ), (b) location smoothness of joints ( J loc ) and (c) scale smoothness
+    of joints ( J sc ).
+  Figure 4 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_4.jpg
+  Figure 4 caption: This figure shows action prediction accuracy as a function of
+    observed percentage of action or interaction for (a) UCF Sports, (b) JHMDB, (c)
+    sub-JHMDB, (d) MSR-II, (e) TV Human Interaction and (f) UT Interaction datasets.
+    Prediction performance by the baseline Binary SVM with Dynamic Programming approach
+    is shown in blue, and that of Structural SVM with the red curve. We compare the
+    performance of our action prediction with MMED [21] (yellow curve) for UCF Sports
+    and Sub-JHMDB datasets. For all three methods, features are computed in the localized
+    tube, however, only label prediction accuracy is evaluated.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_5.jpg
+  Figure 5 caption: This figure shows online actioninteraction localization performance
+    as a function of observed action percentage on (a) MSR-II and (b) UT-Interaction
+    datasets. In contrast to Fig. 4d,f, there are two important differences. First,
+    mean average precision (mAP) is reported instead of multi-label prediction (classification).
+    Furthermore, the evaluation is over untrimmed videos, and includes background
+    clips.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_6.jpg
+  Figure 6 caption: This figure shows per-action prediction accuracy as a function
+    of observed actioninteraction percentage for (a) sub-JHMDB and (b) TV Human Interaction
+    datasets. The mean accuracy for all actionsinteractions is shown with bold red
+    curve.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_7.jpg
+  Figure 7 caption: This figure shows per-action prediction accuracy as a function
+    of observed action percentage for UCF Sports dataset for (a) Structural SVM approach
+    (Section 4.2) and (b) and its difference with SVM and Dynamic Programming (Section
+    4.1). On average, S-SVM outperforms DP-SVM.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_8.jpg
+  Figure 8 caption: 'This figure shows online actioninteraction localization performance
+    as a function of observed action percentage on (a) JHMDB, (b) sub-JHMDB, (c) UCF-Sports,
+    (d) MSR-II, and as a function of observed interaction percentage for (e) TV Human
+    Interaction and (f) UT Interaction datasets. Different curves show evaluations
+    at different overlap thresholds: 10 percent (red), 30 percent (green) and 60 percent
+    (pink).'
+  Figure 9 Link: articels_figures_by_rev_year\2018\Online_Localization_and_Prediction_of_Actions_and_Interactions\figure_9.jpg
+  Figure 9 caption: This figure shows action localization results of the baseline
+    Binary SVM with Dynamic Programming (DP-SVM) and Structural SVM (S-SVM) approaches,
+    along with existing offline methods on four action datasets (JHMDB, UCF Sports,
+    sub-JHMDB and MSR-II) - at 100 percent observation percentage. (a) shows AUC curves
+    for JHMDB, while (b) and (c) show AUC and ROC 20 percent, respectively, for UCF
+    Sports dataset. AUC and ROC 20 percent overlap are shown in (d) and (e) for sub-JHMDB
+    dataset, finally AUC for MSR-II dataset is shown in (f). The curve for S-SVM method
+    is shown in red and DP-SVM is shown in blue, while other offline localization
+    methods including Lan et al. [1], Tian et al. [6], Wang et al. [2], van Gemert
+    et al. [68], Jain et al. [7], [30], Gkioxari and Malik [41], Chen and Corso [69],
+    Weinzaepfel et al. [70] and Soomro et al. [8] are shown with different colors.
+    Despite being online, the proposed approach performs competitively overall compared
+    to existing offline methods.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Khurram Soomro
+  Name of the last author: Mubarak Shah
+  Number of Figures: 13
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Online Localization and Prediction of Actions and Interactions
+  Publication Date: 2018-01-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 This Table Shows the Percentage of Video Observation Required
+      to Achieve a Prediction Accuracy of 30 Percent
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 This Table Shows the Average Precision for MSR-II Dataset
+      on Three Different Actions: (a) Boxing, (b) Hand-Clapping and (c) Hand-Waving'
+  Table 3 caption:
+    table_text: TABLE 3 This Table Shows the Video Mean Average Precision (mAP) for
+      UCF Sports, JHMDB, Sub-JHMDB, TV Human Interaction and UT Interaction Datasets
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2797266
+- Affiliation of the first author: university of illinois at urbana-champaign, urbana,
+    il, us
+  Affiliation of the last author: university of illinois at urbana-champaign, urbana,
+    il, us
+  Figure 1 Link: articels_figures_by_rev_year\2018\Learning_TwoBranch_Neural_Networks_for_ImageText_Matching_Tasks\figure_1.jpg
+  Figure 1 caption: "Taking the phrase localization task as an example, we show the\
+    \ architectures of the two-branch networks used in this paper. Left column: given\
+    \ the phrase \u201Ca fire pit\u201D from the image caption, sets of positive regions\
+    \ (purple) and negative regions (blue) are extracted from the training image.\
+    \ The positive regions are defined as ones that have a sufficiently high overlap\
+    \ with the ground truth (dashed white rectangle). X and Y denote the feature vectors\
+    \ describing image regions and phrases, respectively. In this paper, X are features\
+    \ extracted from pre-trained VGG networks, and Y are orderless Fisher Vector text\
+    \ features [2]. Middle: the embedding network. Each branch consists of fully connected\
+    \ (FC) layers with ReLU nonlinearities between them, followed by L2 normalization\
+    \ at the end. We train this network with a maximum-margin triplet ranking loss\
+    \ that pushes positive pairs closer to each other and negative pairs farther (Section\
+    \ 3.2). Right: the similarity network. As in the embedding network, the branches\
+    \ consist of two fully connected layers followed by L2 normalization. Element-wise\
+    \ product is used to aggregate features from two branches, followed by several\
+    \ additional fully connected layers. The similarity network is trained with the\
+    \ logistic regression loss function, with positive and negative image-text pairs\
+    \ receiving labels of \u201C+1\u201D and \u201C-1\u201D respectively (Section\
+    \ 3.3)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Learning_TwoBranch_Neural_Networks_for_ImageText_Matching_Tasks\figure_2.jpg
+  Figure 2 caption: Example phrase localization results. For each image and reference
+    sentence, phrases and best-scoring corresponding regions are shown in the same
+    color. The first row shows the output of the CCA method [12] and the second row
+    shows the output of our best model (similarity network trained with augmented
+    positive regions). In the first example, our method finds a partially correct
+    bounding box for the horse while CCA completely misses it; in the second (middle)
+    example, our method gives a more accurate bounding box for the frisbee. In the
+    third (right) example, our method gives marginally better boxes for the chainsaw
+    and wooden sculpture.
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Liwei Wang
+  Name of the last author: Svetlana Lazebnik
+  Number of Figures: 2
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Learning Two-Branch Neural Networks for Image-Text Matching Tasks
+  Publication Date: 2018-01-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Phrase Localization Results on Flickr30K Entities
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Bi-Directional Retrieval Results
+  Table 3 caption:
+    table_text: TABLE 3 Bi-Directional Retrieval Results on the MSCOCO 1000-Image
+      Test Set
+  Table 4 caption:
+    table_text: TABLE 4 Sentence-to-Sentence Retrieval on Flickr30K and MSCOCO Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Results on Flickr30K Image-Sentence Retrieval with Incorporating
+      Region-Phrase Correspondences (See Text)
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2797921
+- Affiliation of the first author: microsoft corporation, cambridge, united kingdom
+  Affiliation of the last author: language technologies institute, carnegie mellon
+    university, pittsburgh, pa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Multimodal_Machine_Learning_A_Survey_and_Taxonomy\figure_1.jpg
+  Figure 1 caption: Structure of joint and coordinated representations. Joint representations
+    are projected to the same space using all of the modalities as input. Coordinated
+    representations, on the other hand, exist in their own space, but are coordinated
+    through a similarity (e.g., Euclidean distance) or structure constraint (e.g.,
+    partial order).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Multimodal_Machine_Learning_A_Survey_and_Taxonomy\figure_2.jpg
+  Figure 2 caption: Overview of example-based and generative multimodal translation.
+    The former retrieves the best translation from a dictionary, while the latter
+    first trains a translation model on the dictionary and then uses that model for
+    translation.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Multimodal_Machine_Learning_A_Survey_and_Taxonomy\figure_3.jpg
+  Figure 3 caption: "Types of data parallelism used in co-learning: parallel\u2014\
+    modalities are from the same dataset and there is a direct correspondence between\
+    \ instances; non-parallel\u2014modalities are from different datasets and do not\
+    \ have overlapping instances, but overlap in general categories or concepts; hybrid\u2014\
+    the instances or concepts are bridged by a third modality or a dataset."
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: "Tadas Baltru\u0161aitis"
+  Name of the last author: Louis-Philippe Morency
+  Number of Figures: 3
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: 'Multimodal Machine Learning: A Survey and Taxonomy'
+  Publication Date: 2018-01-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 A Summary of Applications Enabled by Multimodal Machine Learning
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 A Summary of Multimodal Representation Techniques
+  Table 3 caption:
+    table_text: TABLE 3 Taxonomy of Multimodal Translation Research
+  Table 4 caption:
+    table_text: TABLE 4 Summary of Our Taxonomy for the Multimodal Alignment Challenge
+  Table 5 caption:
+    table_text: TABLE 5 A Summary of Our Taxonomy of Multimodal Fusion Approaches
+  Table 6 caption:
+    table_text: TABLE 6 A Summary of Co-Learning Taxonomy, Based on Data Parallelism
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2798607
+- Affiliation of the first author: school of data and computer science, sun yat-sen
+    university, guangzhou, p. r. china
+  Affiliation of the last author: school of computer science, harbin institute of
+    technology, harbin, p. r. china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_1.jpg
+  Figure 1 caption: An example of structured scene parsing generated by our framework.
+    An input scene image is automatically parsed into a structured configuration that
+    comprises hierarchical semantic objects (black labels) and the interaction relations
+    (red labels) of objects.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_10.jpg
+  Figure 10 caption: Results of the inter-task correlation experiments on PASCAL 2012.
+    The figure shows how segmentation and structure prediction task affect each other.
+    Improving performance of one task results in improvement of the other. The left
+    shows the effect of segmentation performance on relation and structure prediction
+    based on the first group of experiments. The right shows the effect of relation
+    prediction performance on semantic segmentation based on the second group of experiments.
+    In practice, the segmentation performance is improved by adding more strongly
+    annotated training data, while the performance of structure and relation prediction
+    is improved by considering more types of relations.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_2.jpg
+  Figure 2 caption: The proposed CNN-RsNN architecture for structured scene parsing.
+    The input image is directly fed into the CNN to produce score feature representation
+    of each pixel and map of each semantic category. Then the model applies score
+    maps to classify the pixels, and groups pixels with same labels to obtain feature
+    representation v of objects. After that v is fed into the RsNN, it is first mapped
+    onto a transition space and then is used to predict the tree structure and relations
+    between objects. x denotes the mapped feature.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_3.jpg
+  Figure 3 caption: An illustration of first layer of proposed recursive neural network
+    which is replicated for each pair of input feature representations. v k and v
+    l indicate the input feature vectors of two objects. x k and x l denote the transition
+    features mapped by one-layer fully-connected neural network. The feature representation
+    after the merging operation is denoted by x kl . W tran , W com , W int , W cat
+    and W score are parameters of proposed RsNN model. This network is different to
+    the RsNN model proposed in [10] which only predicts a score for being a correct
+    merging decision. Our model can also be used to predict the interaction relation
+    between the merged objects.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_4.jpg
+  Figure 4 caption: "Incorporating the contextual representation into RsNN forward\
+    \ process. The upper row shows the input image and the labeling results of two\
+    \ entities, i.e., motorcycle and person. The center of each entity is also given,\
+    \ i.e., \u03B1 1 and \u03B1 2 . Based on the centers and labeling results, the\
+    \ bottom row illustrates three spatial relations, i.e., distance \u03B3 , relative\
+    \ angle \u03B8 , and area ratio \u03B2 1 \u03B2 2 , to characterize the contextual\
+    \ information between the two entities."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_5.jpg
+  Figure 5 caption: An illustration of the training process to our deep model architecture.
+    The blue and green parts are corresponding to semantic labeling and scene structure
+    prediction, respectively. In practice, the input image is first fed into CNN to
+    generate the predicted label map. Then we extract the noun words from the semantic
+    tree to refine the label map, and output intermediate label map. The semantic
+    label loss (i.e., the blue dashed block) is calculated by the difference between
+    these two label maps. On the other hand, the feature representation of each object
+    is also passed into RsNN to predict the scene structure. We use scene hierarchy
+    and inter-object relation, and the sematic tree to calculate the structure and
+    relation loss (i.e., the green dashed block). The red dotted lines represent the
+    path of back propagation.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_6.jpg
+  Figure 6 caption: An illustration of the tree conversion process. The top is the
+    constituency tree generated by language parser, the middle is the constituency
+    tree after POS tag filtering, and the bottom is the converted semantic tree.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_7.jpg
+  Figure 7 caption: Visualized semantic labeling results on SYSU-Scenes. (a) The input
+    images; (b) The groundtruth labeling results; (c) Our proposed method (weakly-supervised);
+    (d) DeepLab (weakly-supervised) [36]; (e) MIL-ILP (weakly-supervised) [43]; (f)
+    Our proposed method (semi-supervised with 500 strong training samples); (g) Our
+    proposed method (semi-supervised with 1,241 strong training samples); (h) DeepLab
+    (semi-supervised with 500 strong training samples) [36]; (i) MIL-ILP (semi-supervised
+    with 500 strong training samples) [43].
+  Figure 8 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_8.jpg
+  Figure 8 caption: Visualized scene parsing results on PASCAL VOC 2012 under the
+    weakly-supervised setting. The left one is a successful case, and the right is
+    a failure one. In each case, the tree on the left is produced from descriptive
+    sentence, and the tree on the right is predicted by our method.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Hierarchical_Scene_Parsing_by_Weakly_Supervised_Learning_with_Image_Descriptions\figure_9.jpg
+  Figure 9 caption: Visualized scene parsing results on SYSU-Scenes under the semi-supervised
+    setting (i.e., with 500 strongly-annotated images). The left one is a successful
+    case, and the right is a failure one. In each case, the tree on the left is produced
+    from descriptive sentence, and the tree on the right is predicted by our method.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.69
+  Name of the first author: Ruimao Zhang
+  Name of the last author: Wangmeng Zuo
+  Number of Figures: 11
+  Number of Tables: 14
+  Number of authors: 5
+  Paper title: Hierarchical Scene Parsing by Weakly Supervised Learning with Image
+    Descriptions
+  Publication Date: 2018-01-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results on VOC 2012 val Set Under the Weakly Supervised Learning
+  Table 10 caption:
+    table_text: TABLE 10 The Defined Relations in PASCAL VOC 2012 and SYSU-Scenes
+  Table 2 caption:
+    table_text: TABLE 2 Results on SYSU-Scenes Under the Weakly Supervised Learning
+  Table 3 caption:
+    table_text: TABLE 3 Results on VOC 2012 val Set by Ours and Other Semi-Supervised
+      Semantic Segmentation Methods
+  Table 4 caption:
+    table_text: TABLE 4 Results on SYSU-Scenes by ours and Other Semi-Supervised Semantic
+      Segmentation Methods
+  Table 5 caption:
+    table_text: TABLE 5 Experimental Results (IoU) on VOC 2012 val Set Under the Weakly
+      Supervised Learning
+  Table 6 caption:
+    table_text: TABLE 6 Experimental Results (IoU) on SYSU-Scenes Under the Weakly
+      Supervised Learning Learning
+  Table 7 caption:
+    table_text: TABLE 7 Experimental Results (IoU) on VOC 2012 val Set Under the Semi-Supervised
+      Learning
+  Table 8 caption:
+    table_text: TABLE 8 Experimental Results (IoU) on SYSU-Scenes Under the Semi-Supervised
+      Learning Learning
+  Table 9 caption:
+    table_text: TABLE 9 Performance on PASCAL VOC 2012 Test Set
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2799846
+- Affiliation of the first author: school of electrical and electronic engineering,
+    the university of manchester, manchester, united kingdom
+  Affiliation of the last author: school of electrical and electronic engineering,
+    the university of manchester, manchester, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_1.jpg
+  Figure 1 caption: 'Spatial raw (top) and spatial processed (bottom) footstep representations
+    of 2 clients of the SFootBD. (a) and (b) footstep samples of user 1. (c) and (d)
+    footstep samples of user 2. Top representation dimension is 13x14 pixels, bottom
+    representation is 88x88 pixels. Solid red: maximum pressure, solid blue: minimum
+    pressure.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_10.jpg
+  Figure 10 caption: t-SNE representation of resnet models of benchmark 3 (Temporal
+    raw) dataset. In all figures red colour is the impostor class, other colours are
+    client classes.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_2.jpg
+  Figure 2 caption: Two-stream spatio-temporal resnet architecture for raw footstep
+    representation.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_3.jpg
+  Figure 3 caption: Raw and processed spatio-temporal footstep representations.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_4.jpg
+  Figure 4 caption: Three spatio-temporal stride footstep representations. Right footstep
+    first (frames 1 to 267) then left footstep (frames 267 to 534).
+  Figure 5 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_5.jpg
+  Figure 5 caption: Set of frames for the footstep processed representation. (a) frame
+    32, (b) frame 40, (c) frame 69, (d) frame 78, (e) frame 181, (f) frame 189.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_6.jpg
+  Figure 6 caption: 'Resnet model building blocks. Right: resnet configuration 1.
+    Left: resnet configuration 2.'
+  Figure 7 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_7.jpg
+  Figure 7 caption: Average pooling hyperparameter optimization. The average pooling
+    parameter is on the left Y axis and the loss in percentage value is on the right
+    Y axis.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_8.jpg
+  Figure 8 caption: Spatio-temporal raw resnet fusion score rule performance for benchmark
+    B1.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Analysis_of_SpatioTemporal_Representations_for_Robust_Footstep_Recognition_with_\figure_9.jpg
+  Figure 9 caption: Validation and evaluation dataset performance for spatio-temporal
+    fusions and fusion of models and representations for B1, B2 and B3 benchmarks.
+    Step-wise evaluation curves are due to small dataset size.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Omar Costilla-Reyes
+  Name of the last author: Krikor B. Ozanyan
+  Number of Figures: 11
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Analysis of Spatio-Temporal Representations for Robust Footstep Recognition
+    with Deep Residual Neural Networks
+  Publication Date: 2018-01-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Verification Footstep Recognition Systems
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 SfootBD Database Description
+  Table 3 caption:
+    table_text: TABLE 3 Resnet Model Hyperparameters
+  Table 4 caption:
+    table_text: TABLE 4 Biometric Verification Results in Terms of EER (in %) for
+      Benchmarks B1, B2 and B3
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2799847
+- Affiliation of the first author: school of electrical and computer engineering,
+    kaist, daejeon, republic of korea
+  Affiliation of the last author: school of electrical and computer engineering, kaist,
+    daejeon, republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_1.jpg
+  Figure 1 caption: 'Overview of the proposed MF estimation approach. First column:
+    An example of input data and distribution of surface normals of a scene from the
+    NYUv2 dataset [10]. Not limited to this, VP hypothesis from line pairs can also
+    be fed as input. Second column: Its surface normal histogram, i.e., EGI, the 2D-EGI,
+    and its integral image to efficiently calculate bounds. Third column: Illustration
+    of the efficient bound based BnB framework using rotation search space. Fourth
+    column: The estimated globally optimal MF. Last column: Three different applications:
+    Multiple MFs, 3D rotation based video stabilization, and line clustering (vanishing
+    point estimation).'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_10.jpg
+  Figure 10 caption: 'Angular error comparison for the sequential ground truth. [Top,
+    Middle] Respective vMF-RTMF and approx.-RTMF withwithout EKF fusion with the IMU
+    [4]. [Bottom] The proposed method. RMSE: vMF-RTMF ( 6.39circ ), vMF-RTMF+IMU (
+    3.05circ ), approx.-RTMF ( 4.92circ ), approx.-RTMF+IMU ( 3.28circ ), and ours
+    ( 1.53circ ).'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_2.jpg
+  Figure 2 caption: "Illustration of the geometric properties of the proposed efficient\
+    \ inlier regions: (a) Boundary sets X L (blue) and X U (red) of inlier region\
+    \ for lower and upper bounds of the original problem (i.e., regions defined by\
+    \ Eqs. (3) and (4)) on a spherical domain. We visualize only three direction vectors\
+    \ out of six for illustration purpose. (b) An example of the transferred boundaries\
+    \ X L j and X U j on the 2D-EGI. (c) Relationship between the transferred boundaries\
+    \ and the rectangular boundaries. (d) An example of the boundaries of the rectangular\
+    \ bounds defined by Eqs. (6) and (7) on the 2D-EGI. (e) An example of the polar\
+    \ case (when a boundary includes a pole of the spherical domain), where \u03C4\
+    \ \u2032 indicates an arbitrary threshold. In this case, the transferred boundary\
+    \ is distributed across all ranges of azimuth, and so it is for the rectangle\
+    \ boundary enclosing the transferred one's area."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_3.jpg
+  Figure 3 caption: 'Illustration of alternative ways to define a lower bound: (a)
+    Examples of possible rectangular bounds inscribing the curve X L j , which are
+    not uniquely determined. (b) Illustration of the gaps between upper (pink) and
+    lower (blue) bound according to different lower bounds. The curved boundaries
+    on the left and right represent the respective upper and lower curved boundaries,
+    X U j and X L j , at a level of sub-division. A gap between the two red arrows
+    indicates a gap between the upper and the proposed lower bounds. The other one
+    between the two blue arrows indicates a gap between the upper and lower bound
+    inscribing the curve X L j , which cannot be converged.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_4.jpg
+  Figure 4 caption: "Illustration of the properties of rectangular inlier region in\
+    \ the 2D-EGI domain for LUT: (a) The set of direction vectors and their inlier\
+    \ regions for the same threshold on sphere domain. The red-colored vectors have\
+    \ the same azimuth but different elevation, while the blue-colored vectors have\
+    \ the same elevation but different azimuth. (b) The rectangular inlier regions\
+    \ on the 2D-EGI. A width of the rectangular inlier region only depends on an elevation\
+    \ angle, while the height is fixed regardless of a location. (c) The visualization\
+    \ of matrix-form LUT for \u03C4 U az (\u22C5) . We regard LUTs for each level\
+    \ of subdivision k as column vectors, and concatenate them along the x -axis to\
+    \ form a matrix as shown in the figure. In the matrix-form LUT, the vertical axis\
+    \ indicates the elevation angle, the horizontal axis indicates the level of subdivision\
+    \ k , and a value of each entry encodes the half width size of its corresponding\
+    \ rectangular inlier region, which is color-coded."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_5.jpg
+  Figure 5 caption: Empirical convergence rates of the proposed bound function on
+    (a) a synthetic example and (b) a real example of the NYUv2 dataset [10]. Although
+    both the linear functions fit roughly well, depending on the levels of subdivision,
+    both linear fit look under-fitted. It indicates the varying convergence rate depending
+    on data.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_6.jpg
+  Figure 6 caption: 'Distributions of surface normals: (a) and (b) are synthetic data
+    distribution according to kappa -1 of vMF, 0.0012 and 0.08, respectively. (c)
+    A sample distribution of real data from the NYUv2 dataset [10].'
+  Figure 7 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_7.jpg
+  Figure 7 caption: Simulation results for observing the behaviors of the proposed
+    method.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_8.jpg
+  Figure 8 caption: Time profiles of the exhaustive BnB [22] and the proposed BnB
+    approaches.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Robust_and_Globally_Optimal_Manhattan_Frame_Estimation_in_Near_Real_Time\figure_9.jpg
+  Figure 9 caption: 'Multiple Manhattan frames (MMFs) results for small- and large-scale
+    datasets: (a) Examples of single MF (each RGB color indicates respective MF axes).
+    (b) Examples of two MFs (orange and blue colors indicate respective MF). (c) Large
+    scale example, where we estimated 4 MFs, and colored and numbered respective MFs
+    to be clear. The NYUv2 indoor scenes dataset [10] is used for (a,b), and for (c),
+    images of the city center of Bremen, Germany, are used by courtesy of the Google
+    map and Google earth.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Kyungdon Joo
+  Name of the last author: In So Kweon
+  Number of Figures: 13
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Robust and Globally Optimal Manhattan Frame Estimation in Near Real
+    Time
+  Publication Date: 2018-01-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Notations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparisons of Average Angular Error and Runtime on the NYUv2
+      Dataset [10] with the Evaluation Protocol of Ghanem et al. [3]
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Evaluation of Multiple MFs on the NYUv2 Dataset
+      [10]
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2799944
+- Affiliation of the first author: pattern recognition and intelligent system laboratory,
+    beijing university of posts and telecommunications, beijing, china
+  Affiliation of the last author: pattern recognition and intelligent system laboratory,
+    beijing university of posts and telecommunications, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_1.jpg
+  Figure 1 caption: "The eigenvectors (displayed in image form) computed from 3\xD7\
+    3, 5\xD75, 7\xD77, and 9\xD79 random fields with a neighboring correlation coefficient\
+    \ of 0.95. The eigenvectors are arranged according to decreasing eigenvalues.\
+    \ Regardless of the size of the random field, the first few eigenfilters display\
+    \ identical primitive structures that are useful for robust and compact feature\
+    \ description."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_10.jpg
+  Figure 10 caption: Comparative FERET performance of face descriptors as a function
+    of the standard deviation of additive Gaussian white noise. The average accuracy
+    across the four probe sets is reported.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_2.jpg
+  Figure 2 caption: "Eigenvalue spectrum computed from 3\xD73, 5\xD75, 7\xD77, and\
+    \ 9\xD79 random fields with a neighboring correlation coefficient of 0.95."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_3.jpg
+  Figure 3 caption: "Visualization of the random-field eigenfilters computed from\
+    \ various correlation coefficient \u03C1 . They consist of nearly identical structures,\
+    \ including two edge filters, two wedge filters, and two bar filters."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_4.jpg
+  Figure 4 caption: The designed pipeline of CBP and SCBP descriptors with six primitive
+    filters, where the CBP is a basic module of SCBP.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_5.jpg
+  Figure 5 caption: Binarization of the filtered images of (a) first layer and (b)
+    second layer of SCBP.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_6.jpg
+  Figure 6 caption: The bin distributions of (a) uniform LBP and (b) SCBP counted
+    in the 1196 FERET gallery images. The 59 bins of uniform LBP are unevenly distributed,
+    but the 64 bins of SCBP are evenly distributed.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_7.jpg
+  Figure 7 caption: Example images of different subsets of the FERET database.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_8.jpg
+  Figure 8 caption: Examples of the error cases of our method, where 'FP' indicates
+    the false positive pair and 'FN' indicates the false negative pair.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Compressive_Binary_Patterns_Designing_a_Robust_Binary_Face_Descriptor_with_Rando\figure_9.jpg
+  Figure 9 caption: Examples of original and degraded images used in our extended
+    FERET evaluation. The last four columns correspond to the most severe degrees
+    of Gaussian noise, Gaussian blur, JPEG compression, and reduced resolution applied
+    on the probe images.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Weihong Deng
+  Name of the last author: Jun Guo
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: 'Compressive Binary Patterns: Designing a Robust Binary Face Descriptor
+    with Random-Field Eigenfilters'
+  Publication Date: 2018-01-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of FERET Recognition Rates (%) of Different CBP
+      Descriptors Using Different Eigenfilters
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of FERET Recognition Rate (%) with State-of-the-Art
+      Handcrafted Feature Descriptors Using Weighted Histogram Intersection
+  Table 3 caption:
+    table_text: TABLE 3 Comparative LFW Performance of Different Face Descriptors
+      Under the Image Restricted Setting Using Three Widely Used Learned Metrics
+  Table 4 caption:
+    table_text: TABLE 4 Comparisons of the Mean Verification Rate and Standard Error
+      (%) with the State-of-the-Art Results on LFW Under the Image Restricted Setting
+  Table 5 caption:
+    table_text: TABLE 5 Comparative Recognition Rates (%) of Extended FERET Evaluation
+      on the Robustness to the Three Types of Common Degradations
+  Table 6 caption:
+    table_text: TABLE 6 Verification Rates at FAR of 0.01 on the PaSC Still-to-Still
+      Matching Database
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2800008
+- Affiliation of the first author: institute of digital media, school of electronics
+    engineering and computer science, peking university (pku), beijing, china
+  Affiliation of the last author: simon fraser university (sfu), burnaby, bc, canada
+  Figure 1 Link: articels_figures_by_rev_year\2018\A_Benchmark_Dataset_and_Evaluation_for_NonLambertian_and_Uncalibrated_Photometri\figure_1.jpg
+  Figure 1 caption: Samples of photometric stereo images (tone-mapped HDR images)
+    and 'ground truth' normals for ten objects in the 'DiLiGenT' main (top two rows)
+    and sample images in the 'DiLiGenT' test (bottom row) datasets. The texts in brackets
+    indicate the dominant reflectance properties of the objects. Please zoom in the
+    electronic version for better details.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\A_Benchmark_Dataset_and_Evaluation_for_NonLambertian_and_Uncalibrated_Photometri\figure_2.jpg
+  Figure 2 caption: 'Benchmark results for calibrated non-Lambertian (from BASELINE
+    to (40, 60 percent)) and uncalibrated (from AM07 to Opt. G) photometric stereo:
+    Each subplot shows the results by one evaluated method for each data; the X -axis
+    is the ID of data w.r.t. the main dataset in Fig. 1, and the Y -axis is the angular
+    error in degrees; the statistics of angular errors for all pixels per normal map
+    are displayed using the box-and-whisker plot: The red dot indicates the mean value,
+    the black dot is the median, the top and bottom bounds of the blue box indicate
+    the first and third quartile values, and the top and bottom ends of the vertical
+    blue line indicate the minimum and maximum errors.'
+  Figure 3 Link: articels_figures_by_rev_year\2018\A_Benchmark_Dataset_and_Evaluation_for_NonLambertian_and_Uncalibrated_Photometri\figure_3.jpg
+  Figure 3 caption: 'Evaluation results for varying lighting distribution: Each subplot
+    (right) shows the statistics of mean angular errors for all ten objects per lighting
+    distribution; the X -axis is the ID of lighting distribution visualized on the
+    left (the camera is at the center of the grid and numbers in parenthesis are the
+    numbers of lights), and the Y -axis is the angular error in degrees.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\A_Benchmark_Dataset_and_Evaluation_for_NonLambertian_and_Uncalibrated_Photometri\figure_4.jpg
+  Figure 4 caption: Visualization of five types of error inducing rates for Reading.
+  Figure 5 Link: articels_figures_by_rev_year\2018\A_Benchmark_Dataset_and_Evaluation_for_NonLambertian_and_Uncalibrated_Photometri\figure_5.jpg
+  Figure 5 caption: Angular error in degrees ( Y -axis, median values of all objects)
+    varying with five types of error inducing rates ( X -axis); the black horizontal
+    line is the average value of all pixels.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.68
+  Name of the first author: Boxin Shi
+  Name of the last author: Ping Tan
+  Number of Figures: 5
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: A Benchmark Dataset and Evaluation for Non-Lambertian and Uncalibrated
+    Photometric Stereo
+  Publication Date: 2018-02-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Non-Lambertian Photometric Stereo Assumptions and
+      Formulations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Summary of Uncalibrated Photometric Stereo Constraints and
+      Solutions
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2799222
+- Affiliation of the first author: department of mathematics and computer science,
+    ecole centrale de lyon, university of lyon, ecully, france
+  Affiliation of the last author: department of mathematics and computer science,
+    ecole centrale de lyon, university of lyon, ecully, france
+  Figure 1 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_1.jpg
+  Figure 1 caption: An example of varying lighting conditions for the same face. (a)
+    Front lighting; (b) specular highlight due to glaring light coming from right
+    side; (c) soft shadows and (d) hard-edged cast shadow.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_10.jpg
+  Figure 10 caption: 'Faces in the wild before (top) and after (bottom) shadow removal.
+    From left to right we choose images with a gradual decrease (left: strong, middle
+    two: moderate, right: weak) in shadow intensity.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_2.jpg
+  Figure 2 caption: Overview of the chromaticity space-based lighting normalization
+    process and shadow-free color face recovery process.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_3.jpg
+  Figure 3 caption: 'Specular highlight detection results on images under various
+    lighting conditions. Top: raw images; bottom: detected highlight masks.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_4.jpg
+  Figure 4 caption: Linearity of chromaticity image pixels in log space. (a) Original
+    image. (b) Chromaticity pixel values in 3D log space. (c) Pixels of the forehead
+    area in the projected plane. (d) Pixels of the nose bridge area in the projected
+    plane.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_5.jpg
+  Figure 5 caption: 'Overview of chromaticity invariant image generation. Left column:
+    original face image and its chromaticity points in 2D log space; middle column:
+    entropy diagram as a function of projection angle, the arrows in red indicate
+    projection directions at that point; right column: generated chromaticity images
+    with different angle values.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_6.jpg
+  Figure 6 caption: Overview of edge mask detection and full color face recovery.
+    (a) and (f) are raw and recovered face images; (b), (c) and (d) depict 1D2D chromaticity
+    images and edge maps, respectively. Note that, in each figure, the upper row refers
+    to the shadow-free version, while the lower row is shadow-retained; (e) is the
+    final detected edge mask.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_7.jpg
+  Figure 7 caption: 'Cropped face examples of the first subject in the (a): CMU-PIE
+    database; (b): FRGC database.'
+  Figure 8 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_8.jpg
+  Figure 8 caption: Holistic and local shadow removal results on hard-edged shadows
+    (left) and soft shadows (right).
+  Figure 9 Link: articels_figures_by_rev_year\2018\Improving_Shadow_Suppression_for_Illumination_Robust_Face_Recognition\figure_9.jpg
+  Figure 9 caption: Illustration of illumination normalization performance of two
+    samples in (a) CMU-PIE and (b) FRGC database. For each sample, three lighting
+    conditions are considered, i.e., from top to bottom, the image with frontal lighting,
+    the image with soft shadows, and the image with hard-edged shadows. The columns
+    represent different lighting normalization techniques to be fused with the original
+    image or the CII recovered image.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Wuming Zhang
+  Name of the last author: Liming Chen
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: Improving Shadow Suppression for Illumination Robust Face Recognition
+  Publication Date: 2018-02-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Overview of Database Division in Our Experiments
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Rank-1 Recognition Rates (Percent) of Different Methods on
+      CMU-PIE Database
+  Table 3 caption:
+    table_text: TABLE 3 Verification Rate (Percent) at FAR = 0.1 Percent Using Different
+      Methods on FRGC V2.0 Exp.4
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2803179

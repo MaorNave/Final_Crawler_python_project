@@ -1,0 +1,870 @@
+- Affiliation of the first author: school of software engineering, south china university
+    of technology, guangzhou, china
+  Affiliation of the last author: school of software engineering, south china university
+    of technology, guangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_1.jpg
+  Figure 1 caption: A typical visual grounding example. Given the image and the query,
+    we are asked to locate the target object in the image that is specified by the
+    query, as the surfboard outlined by the yellow box.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_10.jpg
+  Figure 10 caption: Evolution of attention accumulating. We visualize the attention
+    for A-ATT-1,2,3,4.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_2.jpg
+  Figure 2 caption: The overall architecture of the proposed methods. The input object
+    proposals are randomly jittered before sending into the object feature extractor
+    to extract their feature. We use three attention modules to handle the attention
+    problems for image, query, and object proposals. The A-ATT mechanism can be performed
+    for multiple rounds to ensure a sufficient communication among different information,
+    as shown in the dashed box. After the last round of A-ATT, we feed the attended
+    proposal into a bounding box regressor to refine its bounding box.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_3.jpg
+  Figure 3 caption: We construct the local feature for an object proposal directly
+    from the feature maps of the whole image with RoIAlign. We then use depth-wise
+    separable convolution to reduce the dimension of the local feature, and fuse the
+    spatial feature and the local feature by taking their outer product following
+    by a linear transformation.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_4.jpg
+  Figure 4 caption: The A-ATT mechanism for one-round VG. Bold lines denote the A-ATT
+    process, and dash lines denote the attention guidance.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_5.jpg
+  Figure 5 caption: "Different kinds of proposals for a VG example. (a) the original\
+    \ image; (b) the human-labeled object proposals; (c) and (d) two set of noised\
+    \ human-labeled proposals with different random noises; (e) detected object proposals,\
+    \ the target are successfully detected (the red box); (f) detected object proposals,\
+    \ a \u201Cdefinitely fail\u201D case for VG where the target objects are missed."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_6.jpg
+  Figure 6 caption: "Effect of different training stages on the performance of three\
+    \ A-ATT models, including A-ATT-1, A-ATT-2, and A-ATT-3. The training procedure\
+    \ consists of three stages, namely, \u201Cbbox augmentation\u201D (BA), \u201C\
+    bbox regression\u201D (BR), and \u201Ce2e finetuning\u201D (E2E). \u201CNone\u201D\
+    \ denotes models trained without noised training strategy."
+  Figure 7 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_7.jpg
+  Figure 7 caption: Effect of different connections between different modules on the
+    proposed A-ATT method. We compare the performance of the A-ATT-3 models with different
+    settings on ReferCOCO and ReferCOCO (detected) datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_8.jpg
+  Figure 8 caption: Effect of the query attention module and the image attention module
+    on the proposed A-ATT method. We compare the performance of the A-ATT-3 models
+    with different settings on ReferCOCO and ReferCOCO (detected) datasets.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Visual_Grounding_Via_Accumulated_Attention\figure_9.jpg
+  Figure 9 caption: Visualization of attention of our A-ATT-3 model on ReferCOCO,
+    ReferCOCO+, and ReferCOCOg. In the image, the brighter regions correspond to a
+    larger attention weights; in the query, we mark the words with attention weighs
+    larger than 0.3 or 0.1 with yellow blocks or blue blocks, respectively. The target
+    object for each image-query pair is outlined by a red box.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chaorui Deng
+  Name of the last author: Mingkui Tan
+  Number of Figures: 10
+  Number of Tables: 6
+  Number of authors: 6
+  Paper title: Visual Grounding Via Accumulated Attention
+  Publication Date: 2020-09-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparisons on ReferCOCO, ReferCOCO+ and ReferCOCOg on Human-Labeled
+      Object Proposals
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparisons on GuessWhat?! With Human-Labeled Object Proposals
+  Table 3 caption:
+    table_text: TABLE 3 Comparisons on ReferCOCO, ReferCOCO+, and ReferCOCOg With
+      Detected Object Proposals
+  Table 4 caption:
+    table_text: "TABLE 4 Evaluate \u201CNoised\u201D Training Strategy on Previous\
+      \ Methods"
+  Table 5 caption:
+    table_text: TABLE 5 The Empirical Results of Different Feature Extractors
+  Table 6 caption:
+    table_text: TABLE 6 The Impact of the Regularization Term in Eqn. (12) and the
+      Parameter Sharing Strategy Among Different Rounds of A-ATT
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3023438
+- Affiliation of the first author: department of statistics, seoul national university,
+    seoul, south korea
+  Affiliation of the last author: department of statistics, seoul national university,
+    seoul, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2020\Spherical_Principal_Curves\figure_1.jpg
+  Figure 1 caption: "Illustration of the projection procedure on S 2 . (a) The case\
+    \ that C is projected inside AB \u2322 , i.e., proj AB \u2322 (C)=proj(C) and\
+    \ I\u22650 . The projection of C is an intersection point of two great circles.\
+    \ (b) The case that C is projected onto B in a non-orthogonal way (red dotted\
+    \ line), i.e., proj(C)\u2260 proj AB \u2322 (C)=B and I<0 . (c) An image of the\
+    \ sphere viewed from above the Northern Hemisphere in the projection of C ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Spherical_Principal_Curves\figure_2.jpg
+  Figure 2 caption: Illustration of the projection procedure on S d .
+  Figure 3 Link: articels_figures_by_rev_year\2020\Spherical_Principal_Curves\figure_3.jpg
+  Figure 3 caption: The distribution of earthquake data (left). The proposed extrinsic
+    principal curves of T=500 with q=0.01 (middle) and q=0.2 (right). Blue points
+    represent the observations and red lines are the fitted curves.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Spherical_Principal_Curves\figure_4.jpg
+  Figure 4 caption: Projection results by the proposed extrinsic method (left) and
+    Haubergs method (right) with T=77 and q=0.1 .
+  Figure 5 Link: articels_figures_by_rev_year\2020\Spherical_Principal_Curves\figure_5.jpg
+  Figure 5 caption: Results by the proposed extrinsic method (red) and Haubergs method
+    (yellow) with T=100 . From top left to bottom right, results with q=0.03 and q=0.05
+    , projection results by the two methods (blue) with q=0.05 .
+  Figure 6 Link: articels_figures_by_rev_year\2020\Spherical_Principal_Curves\figure_6.jpg
+  Figure 6 caption: 'From left to right: True waveform and noisy data (blue dots),
+    the extrinsic principal curve, the intrinsic principal curve, and the curve by
+    Haubergs method with T=100 .'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Jongmin Lee
+  Name of the last author: Hee-Seok Oh
+  Number of Figures: 6
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Spherical Principal Curves
+  Publication Date: 2020-09-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Values of RE and Proj by the Proposed Methods and Haubergs
+      Method on the Earthquake Data
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Values of RE and Proj by the Proposed Methods and Haubergs
+      Method on the Motion Capture Data
+  Table 3 caption:
+    table_text: TABLE 3 Averages of Reconstruction Errors and Their Standard Deviations
+      in the Parentheses by Each Method
+  Table 4 caption:
+    table_text: TABLE 4 Averages of Distinct Projection Points and Their Standard
+      Deviations in the Parentheses
+  Table 5 caption:
+    table_text: TABLE 5 A Simulation Result of Waveform Data on S 4 S4
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3025327
+- Affiliation of the first author: department of electrical engineering, center for
+    processing speech and images, ku leuven, leuven, belgium
+  Affiliation of the last author: department of electrical engineering, center for
+    processing speech and images, ku leuven, leuven, belgium
+  Figure 1 Link: articels_figures_by_rev_year\2020\Additive_TreeStructured_Conditional_Parameter_Spaces_in_Bayesian_Optimization_A_\figure_1.jpg
+  Figure 1 caption: A simple tree-structured function. The dimension of X is d=8 ,
+    and the effective dimension at p 1 and p 2 are 4 and 5 respectively.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Additive_TreeStructured_Conditional_Parameter_Spaces_in_Bayesian_Optimization_A_\figure_2.jpg
+  Figure 2 caption: "Misspecified lengthscales and norm bound cause BO terminate too\
+    \ early. Scaling hyperparameters expands the function class and results in additional\
+    \ exploration. \u03B2 12 is a proxy to the RKHS bound B and the relationship between\
+    \ \u03B2 12 and B is shown in Equation (12). Crosses indicate the observations\
+    \ so far, \u03B8 shown on the left side indicates the lengthscale of an exponential\
+    \ squared kernel, the dashed line is the posterior mean \u03BC(x) of a GP model\
+    \ using this covariance function, the shaded area is the confidence interval \u03BC\
+    (x)\xB1 \u03B2 12 \u03C3(x) , where \u03C3(x) is the posterior standard deviation,\
+    \ the solid line indicates the true function, the red line is the upper bound\
+    \ of this confidence interval, which is the GP-UCB acquisition function."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Additive_TreeStructured_Conditional_Parameter_Spaces_in_Bayesian_Optimization_A_\figure_3.jpg
+  Figure 3 caption: A synthetic function from [8]. The dimension of this function
+    is d=9 and the effective dimension at any leaf is 2.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Additive_TreeStructured_Conditional_Parameter_Spaces_in_Bayesian_Optimization_A_\figure_4.jpg
+  Figure 4 caption: Comparison results on minimizing a synthetic function and compressing
+    FC3 using different algorithms. The solid line is the incumbent mean of 10 independent
+    runs, and the shaded region is twice the standard deviation (95 percent confidence
+    interval for mean) of these 10 runs. Figs. 4a and 4c shows six different algorithms
+    on optimizing the synthetic function and compressing a simple 3-layer neural network
+    respectively. Fig. 4b shows the performance comparison in a regression setting,
+    indicating our proposed Add-Tree covariance function indeed enables information
+    sharing between different paths.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Additive_TreeStructured_Conditional_Parameter_Spaces_in_Bayesian_Optimization_A_\figure_5.jpg
+  Figure 5 caption: Comparison results on pruning VGG16 and ResNet50 using different
+    algorithms. For VGG16, there are 49 hyper-parameters in total, 42 of which are
+    continuous parameters lying in [0,1]. For ReseNet50, there are 63 hyper-parameters,
+    56 of which are continuous parameters lying in [0,1]. In the first column (Figs.
+    5a and 5d), the solid line is the incumbent median of 10 independent runs, and
+    the shaded region is 95 percent confidence interval of median. The second column
+    (Figs. 5b and 5e) shows the best results among all iterations. The third column
+    shows the per-block compression ratio for VGG16 and ResNet50 of addtree using
+    the best parameters.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Additive_TreeStructured_Conditional_Parameter_Spaces_in_Bayesian_Optimization_A_\figure_6.jpg
+  Figure 6 caption: Comparison results of NAS on ResNet20 using different algorithms.
+    There are 35 hyper-parameters in total, 28 of which are continuous parameters
+    lying in [0,1]. In Fig. 6a, the solid line is the incumbent median of 10 independent
+    runs, and the shaded region is 95 percent confidence interval of median. Fig.
+    6b shows the best results among all iterations. In Fig. 6c, we show the running
+    time of different methods.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xingchen Ma
+  Name of the last author: Matthew B. Blaschko
+  Number of Figures: 6
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: 'Additive Tree-Structured Conditional Parameter Spaces in Bayesian
+    Optimization: A Novel Covariance Function and a Fast Implementation'
+  Publication Date: 2020-09-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Wilcoxon Signed-Rank Test
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Running Time (s) at the 300th Iteration
+  Table 3 caption:
+    table_text: TABLE 3 Optimized Pruning Methods at the End of Optimization
+  Table 4 caption:
+    table_text: TABLE 4 Optimized Hyper-Parameters Using Our Method
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026019
+- Affiliation of the first author: school of computer science, northwestern polytechnical
+    university, xian, china
+  Affiliation of the last author: shanghaitech university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_1.jpg
+  Figure 1 caption: RSP model and fundamental matrix among LFCs.
+  Figure 10 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_10.jpg
+  Figure 10 caption: Measurements between specific points by rulers.
+  Figure 2 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_2.jpg
+  Figure 2 caption: "Ray-space epipolar geometry. The ray bundles L and L \u2032 of\
+    \ point X in light field 1 and 2 are marked by red and orange respectively. They\
+    \ are also points on Klein quadric in P 5 . The epipolar hyperplane \u03A0=F L\
+    \ \u2032 refers to a hyperplane on Klein quadric in P 5 . It is mapped from L\
+    \ \u2032 by F . The corresponding ray L lies on \u03A0 , that is L \u22A4 F L\
+    \ \u2032 =0 ."
+  Figure 3 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_3.jpg
+  Figure 3 caption: Relative errors of ray-space fundamental matrix on simulated data
+    with different levels of noise.
+  Figure 4 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_4.jpg
+  Figure 4 caption: Comparisons of relative pose estimation using ray-space fundamental
+    matrix and state-of-the-art method by Johannsen et al. [3].
+  Figure 5 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_5.jpg
+  Figure 5 caption: The results of the proposed method combined with a RANSAC framework.
+    Each pair of light field contains 50 random inliers of ray-ray correspondences.
+  Figure 6 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_6.jpg
+  Figure 6 caption: The refocus results of projective rectified light field.
+  Figure 7 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_7.jpg
+  Figure 7 caption: Performance evaluation of intrinsic parameters on the simulated
+    data with different levels of noise.
+  Figure 8 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_8.jpg
+  Figure 8 caption: Relative errors of intrinsic parameters on simulated data with
+    different numbers of poses and views.
+  Figure 9 Link: articels_figures_by_rev_year\2020\RaySpace_Epipolar_Geometry_for_Light_Field_Cameras\figure_9.jpg
+  Figure 9 caption: Pose estimation results of the datasets captured by MPC.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Qi Zhang
+  Name of the last author: Jingyi Yu
+  Number of Figures: 10
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Ray-Space Epipolar Geometry for Light Field Cameras
+  Publication Date: 2020-09-22 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Mean and Maximum RMS Symmetric Epipolar Errors With 80 Random
+      Pairs of Light Fields (Unit: pixel pixel)'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Mean RMS Symmetric Epipolar Errors Between Sub-Aperture Images\
+      \ on Dataset \u201CToys\u201D With 80 Random Pairs of Light Fields (Unit: pixel\
+      \ pixel)"
+  Table 3 caption:
+    table_text: 'TABLE 3 RMS Ray Re-Projection Errors (Unit: mm mm)'
+  Table 4 caption:
+    table_text: 'TABLE 4 Mean Re-Projection Errors (Unit: pixel pixel)'
+  Table 5 caption:
+    table_text: 'TABLE 5 RMS Ray Re-Projection Errors of Optimizations Without and
+      With Distortion Rectification (Unit: mm mm)'
+  Table 6 caption:
+    table_text: 'TABLE 6 Quantitative Comparison of Different Calibration Methods
+      (Unit: mm mm)'
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3025949
+- Affiliation of the first author: cas key laboratory of technology in geo-spatial
+    information processing and application system, university of science and technology
+    of china, hefei, china
+  Affiliation of the last author: cas key laboratory of technology in geo-spatial
+    information processing and application system, university of science and technology
+    of china, hefei, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_1.jpg
+  Figure 1 caption: "Overview of the proposed iWave++. \u201CQ\u201D and \u201CI-Q\u201D\
+    \ stand for quantization and inverse-quantization, \u201CAE\u201D and \u201CAD\u201D\
+    \ stand for arithmetic encoding and arithmetic decoding, respectively. The forward\
+    \ transform and inverse transform modules are implemented with the lifting scheme\
+    \ and share the same set of parameters. The neural network-based context model\
+    \ produces entropy parameters for encodingdecoding the coefficients based on previously\
+    \ encodeddecoded coefficients. iWave++ supports lossless compression by discarding\
+    \ the quantization, inverse-quantization, and de-quantization modules."
+  Figure 10 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_10.jpg
+  Figure 10 caption: "Comparison of different lossy compression methods on the Kodak\
+    \ dataset. Shown are the average rate (bits-per-pixel) and the average PSNR (calculated\
+    \ in RGB) of the 24 images. \u201CJoint\u201D refers to [6], \u201CVariational\u201D\
+    \ refers to [2], and \u201CiWave\u201D refers to [16]."
+  Figure 2 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_2.jpg
+  Figure 2 caption: iWave forward transform and inverse transform implemented with
+    the lifting scheme. S stands for split, M stands for merge, P i and U i stand
+    for the i th prediction unit and the i th update unit, respectively, N is the
+    total number of lifting steps. All the prediction units and update units are built
+    on convolutional neural networks with trainable parameters. Note that for two-dimensional
+    image, transform is performed twice, first row-wise and then column-wise, see
+    Fig. 4 for details.
+  Figure 3 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_3.jpg
+  Figure 3 caption: "The network structure used in this paper for each P i or U i\
+    \ (c.f. Fig. 2). The numbers like 3\xD73\xD716 indicate the kernel size ( 3\xD7\
+    3 ) and the number of channels (16) of each layer. tanh indicates the adopted\
+    \ nonlinear activation function."
+  Figure 4 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_4.jpg
+  Figure 4 caption: Two-dimensional iWave forward transform implemented with the lifting
+    scheme. Note that L L 1 may be further transformed to L L 2 ,H L 2 ,L H 2 ,H H
+    2 , and L L 2 may be further transformed ..., which forms a pyramid. Stitching
+    the subbands together, we have Fig. 5.
+  Figure 5 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_5.jpg
+  Figure 5 caption: "The subbands obtained by D=3 times of forward transform are shown\
+    \ for example. The encodingdecoding order of the subbands is denoted by the green\
+    \ line as well as by the subscripts of s 1 , s 2 ,\u2026, s 3D+1 ."
+  Figure 6 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_6.jpg
+  Figure 6 caption: "Network structure of the context model. The long-term context\
+    \ extracting model is implemented with a recurrent network of three LSTM layers,\
+    \ which generates the long-term context L t based on all of the encodeddecoded\
+    \ subbands before (and including) s t\u22121 . The context fusion model is implemented\
+    \ with a CNN (e.g., Figs. 7 and 8), which fuses the information of the encodeddecoded\
+    \ coefficients (green area) of the current subband s t with L t to generate the\
+    \ final entropy parameters."
+  Figure 7 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_7.jpg
+  Figure 7 caption: "The \u201Cheavy\u201D version of the context fusion model used\
+    \ in the experiments by default. Note that mask convolution is used to process\
+    \ st since it has partial area unavailable (red area denotes unavailable)."
+  Figure 8 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_8.jpg
+  Figure 8 caption: "The \u201Clight\u201D version of the context fusion model. Please\
+    \ compare to Fig. 7."
+  Figure 9 Link: articels_figures_by_rev_year\2020\EndtoEnd_Optimized_Versatile_Image_Compression_With_WaveletLike_Transform\figure_9.jpg
+  Figure 9 caption: The network structure used in this paper for the de-quantization
+    module. The shown numbers like 3times 3times f indicate the kernel size ( 3times
+    3 ) and the number of channels ( f ) of each layer. relu indicates the used nonlinear
+    activation function. There are B residual blocks.
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Haichuan Ma
+  Name of the last author: Feng Wu
+  Number of Figures: 20
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: End-to-End Optimized Versatile Image Compression With Wavelet-Like
+    Transform
+  Publication Date: 2020-09-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Differences Between the iWave in [16] and the iWave in This
+      Paper
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average BD-Rate Reduction Ratios of Lossy Multi-Model iWave++
+      Compared to H.265HEVC and H.266VVC on the HEVC Common Test Sequences
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Different Lossless Compression Methods on ImageNet32
+      and ImageNet64 Test Sets (bits per pixel)
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Different Lossless Compression Methods on the
+      Kodak Dataset (bits per pixel)
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Different Lossless Compression Methods on the
+      Grayscale Kodak Dataset (bits per pixel)
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Different Lossless Compression Methods on the
+      Grayscale Kodak Dataset (bits per pixel)
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Different Lossless Compression Methods on the
+      Kodak Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Average Running Time Per Image on the Kodak Dataset (in Seconds),
+      and the Number of Training Parameters of Each Learning-Based Method
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026003
+- Affiliation of the first author: school of electronic engineering, xidian university,
+    xian, china
+  Affiliation of the last author: faculty of engineering, school of computer science,
+    the university of sydney,, darlington, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_1.jpg
+  Figure 1 caption: "Illustration of overall architecture. A feature extractor network\
+    \ is trained to obtain the features h s and h t of different samples from multiple\
+    \ domains. We train a graph network to propagate the semantic information of multiple\
+    \ domain features and apply an attention mechanism to boost the knowledge transfer\
+    \ by optimizing the relationships of the samples according to the coefficients\
+    \ e ij . The outputs of the graph attention network can produce ideal target pseudo\
+    \ labels y \u02C6 of multiple domains, which leverage simultaneously the knowledge\
+    \ across multiple related domains, and the label propagation turns out to be more\
+    \ effective with more discriminative domain-invariant features. Then, we adopt\
+    \ the pseudo labels to supervise the learning of feature extractor network with\
+    \ center alignment, and these two strategies tend to trigger and benefit each\
+    \ other during the model optimization. The domain classifier D is trained to tell\
+    \ whether the features from feature extractor or the graph attention network."
+  Figure 10 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_10.jpg
+  Figure 10 caption: The performance of SVHN rightarrow USPS with different target
+    domains.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_2.jpg
+  Figure 2 caption: "Heterogeneous graph learning. We execute the attention transformation\
+    \ with different weight vector e ij between the samples i and j , and average\
+    \ the results to output latent representations h \u2032 i ."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_3.jpg
+  Figure 3 caption: The semantic information of the source domain is transferred to
+    multiple target domains through the related relationship between the source domain
+    and multiple target domains to improve the discriminative ability of the multiple
+    target domains, and embed the multi-domain data to a unified subspace space.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_4.jpg
+  Figure 4 caption: Comparison of testing accuracy vs iteration on DomainNet.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_5.jpg
+  Figure 5 caption: The performance changes with a different number of target domains.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_6.jpg
+  Figure 6 caption: The testing accuracy with a different number of neighbors.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_7.jpg
+  Figure 7 caption: Visualization for the discriminative capability of embedding subspaces.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_8.jpg
+  Figure 8 caption: Comparison of testing accuracy of different models.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Heterogeneous_Graph_Attention_Network_for_Unsupervised_MultipleTarget_Domain_Ada\figure_9.jpg
+  Figure 9 caption: JSD results of multiple target domains.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xu Yang
+  Name of the last author: Dacheng Tao
+  Number of Figures: 11
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Heterogeneous Graph Attention Network for Unsupervised Multiple-Target
+    Domain Adaptation
+  Publication Date: 2020-09-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Classification Accuracy (%) on Office-31
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Accuracy (%) on DomainNet
+  Table 3 caption:
+    table_text: TABLE 3 Classification Accuracy (%) on PACS
+  Table 4 caption:
+    table_text: TABLE 4 Classification Accuracy (%) on Digit Recognition
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026079
+- Affiliation of the first author: bradley department of electrical and computer engineering,
+    virginia tech, arlington, va, usa
+  Affiliation of the last author: bradley department of electrical and computer engineering,
+    virginia tech, arlington, va, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Efficient_Global_MOT_Under_MinimumCost_Circulation_Framework\figure_1.jpg
+  Figure 1 caption: '(a) Objects detected in three consecutive frames. The first frame
+    contains two detections; one missed detection is colored in gray. Lines between
+    detections are the possible ways of linking them. Each line is associated with
+    a cost. If the similarity between two detections is too low to be the same object,
+    we do not link them. There are three trajectories in these three frames. For example,
+    detections 1, 3, and 6 should be linked together as a single trajectory. (b) The
+    proposed minimum-cost circulation formulation for the MOT problem. Detection x
+    i is represented by a pair of nodes: a pre-node o i and a post-node h i . The
+    dummy node s is linked to all pre-nodes. Then all post-nodes are linked back to
+    s . These edges are shown in dashed lines. Transition edges between detections
+    are shown in blue. Similar to (a), there is no transition edge if the similarity
+    between detections is too low. The input and output flows of every node in the
+    circulation network are balanced. Therefore, the excess for the dummy node is
+    always 0. (c) Typical minimum-cost flow formulation for MOT problem. Each detection
+    is also represented by a pre-node and post-node. The difference is that in this
+    flow network, there are two dummy nodes: the dummy source node s is linked to
+    all pre-nodes o i and the dummy sink node t is linked to the post-nodes h i .
+    The color-coding is the same as that in (b). The input and output flows of these
+    two dummy nodes are both imbalanced and the amount of imbalances decide how many
+    targets we want to track (the amount of flow that can happen in the network).
+    To apply existing minimum-cost flow solvers, we need to specify the excess and
+    deficit of s and t first, which is commonly unknown. (d) The results from the
+    proposed minimum-cost circulation framework. Three trajectories are created and
+    they are shown with the same color as in (a). The solution can be obtained by
+    any minimum-cost circulation solver. (e) The results from the minimum-cost flow
+    formulation. The same three trajectories are generated. In addition to a minimum-cost
+    flow solver, an accompanying searching scheme is needed to find the optimal trajectory
+    number, or equivalently, the optimal flow amount.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Efficient_Global_MOT_Under_MinimumCost_Circulation_Framework\figure_2.jpg
+  Figure 2 caption: Flow chart of CINDA. The two modules shown with shaded colors
+    take over the major time consumption of the whole framework. The pseudo-code of
+    these two modules can be found in the Algorithm 1 (line 13-29).
+  Figure 3 Link: articels_figures_by_rev_year\2020\Efficient_Global_MOT_Under_MinimumCost_Circulation_Framework\figure_3.jpg
+  Figure 3 caption: "Maximum intensity projections of the mouse embryo data at three\
+    \ different time points ( \u223C 20h, \u223C 30h, and \u223C 40h). The zoomed-in\
+    \ segments of the yellow rectangles are on the right side. Red dots in (a-c) indicate\
+    \ one of the tracked cells at these three time-points which are also circled on\
+    \ the zoomed-in segments."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Efficient_Global_MOT_Under_MinimumCost_Circulation_Framework\figure_4.jpg
+  Figure 4 caption: Qualitative results using local optimal (panel (b)) and global
+    optimal (panel (c)) inference models. As shown in panel (a), starting from frame
+    t+4 , car 1 and 3 (with green bounding boxes) were occluded by other cars and
+    thus missed in the following frames. Using local optimal model, ID changes can
+    not be avoided when they re-appear after occlusion. As is shown in panel (b),
+    car 1 and 3 are viewed as two new cars (with red bounding boxes). Global inference
+    strategy can retrieve the identity of the missed cars as we use information from
+    previous 5 frames as shown in (c).
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.53
+  Name of the first author: Congchao Wang
+  Name of the last author: Guoqiang Yu
+  Number of Figures: 4
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Efficient Global MOT Under Minimum-Cost Circulation Framework
+  Publication Date: 2020-09-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Computational Complexity Bounds Between Our
+      Method and Existing Works
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Efficiency Comparison on KITTI-Car Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Efficiency Comparison on CVPR19 and ETHZ Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Efficiency Comparison on PTC and Embryo Data
+  Table 5 caption:
+    table_text: TABLE 5 Efficiency Comparison of Solving Quadratic Programming Problem
+  Table 6 caption:
+    table_text: TABLE 6 Accuracy Comparison on KITTI-Car Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Accuracy Comparison on Mouse Embryo Data
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026257
+- Affiliation of the first author: department of computer science, city university
+    of hong kong, hong kong
+  Affiliation of the last author: school of information science and technology, shanghaitech
+    university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_1.jpg
+  Figure 1 caption: "The flowchart of the proposed method for reconstructing a densely-sampled\
+    \ LF with M\xD7N SAIs from a sparsely- and arbitrarily-sampled LF with K SAIs.\
+    \ Our proposed model consists of two phases, i.e., the coarse SAI synthesis and\
+    \ the efficient LF refinement."
+  Figure 10 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_10.jpg
+  Figure 10 caption: Visual comparisons on LF reconstruction with flexible output
+    angular resolution. We present the results of 9times 9 reconstruction from 4 corner
+    SAIs of a 3times 3 sampling grid (top), and the results of 15times 15 reconstruction
+    from 4 corner SAIs of a 7times 7 sampling grid (bottom). The center SAI of the
+    LF images reconstructed from different algorithms are presented. Horizontal and
+    vertical EPIs corresponding to the colored lines are shown below the center SAI,
+    and regions with obvious artifacts or blurring are highlighted with yellow boxes.
+    It is recommended to view this figure by zooming in.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_2.jpg
+  Figure 2 caption: Illustration of the relationship between the minimum distance
+    of the sampling patterns and the reconstruction quality tested on the HCI dataset.
+    The blue dots denote the patterns generated randomly. The green dots and their
+    annotations correspond to the patterns in Fig. 3. The results of the optimized
+    patterns by our method are highlighted as red stars.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_3.jpg
+  Figure 3 caption: "Illustration of different sampling patterns. From top to bottom\
+    \ are sampling patterns with 4, 3 and 2 input SAIs, respectively. (f), (l) and\
+    \ (r) depict the optimized sampling patterns by our algorithm for the tasks 4\u2192\
+    7\xD77 , 3\u21927\xD77 and 2\u21927\xD77 , respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_4.jpg
+  Figure 4 caption: "Visual comparisons of different methods on the synthesized center\
+    \ SAI for the task 2\xD72\u21927\xD77 (fixed models). Selected regions have been\
+    \ zoomed in for better comparison. It is recommended to view this figure by zooming\
+    \ in."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_5.jpg
+  Figure 5 caption: "Visual comparisons of different methods on the synthesized center\
+    \ SAI for the task 4(a)\u21927\xD77 (flexible models). Selected regions have been\
+    \ zoomed in for better comparison. It is recommended to view this figure by zooming\
+    \ in."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_6.jpg
+  Figure 6 caption: The images and sampling patterns used to investigate the effectiveness
+    of the optimized sampling patterns on LFs with different scene content. 12 different
+    scenes are manually selected. The optimized sampling pattern (l) obtained by our
+    method is compared with 6 neighboring patterns (1)-(6).
+  Figure 7 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_7.jpg
+  Figure 7 caption: Illustration of the effectiveness of the optimized sampling patterns
+    on LFs with different scene content. The selected LF scenes and sampling patterns
+    are illustrated in Fig. 6. The red pentagrams mark the highest PSNR achieved with
+    the optimized sampling pattern by our method, and red dots mark the highest PSNR
+    achieved with other patterns.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_8.jpg
+  Figure 8 caption: Visual comparisons of the intermediate by-product disparity maps
+    estimated by directly applying convolutional layers to the input SAIs, Kalantari
+    et al. [22] and our network. Kalantari et al. [22] (inter) denotes the modified
+    network of Kalantari et al. [22] with an intermediate supervision for the warped
+    images using ground-truth targets.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Deep_CoarsetoFine_Dense_Light_Field_Reconstruction_With_Flexible_Sampling_and_Ge\figure_9.jpg
+  Figure 9 caption: Demonstration of the effectiveness of our blending strategy. The
+    estimated disparity map, the zoom-in of the images warped from the input SAIs,
+    the learned confidence maps and the blended images are presented.
+  First author gender probability: 0.76
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Jing Jin
+  Name of the last author: Jingyi Yu
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 6
+  Paper title: Deep Coarse-to-Fine Dense Light Field Reconstruction With Flexible
+    Sampling and Geometry-Aware Fusion
+  Publication Date: 2020-09-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Attributes for Densely-Sampled LF Reconstruction
+      Algorithms, Where flexible input Means Whether the Method is Feasible for an
+      Arbitrary Sampling Pattern, and flexible output Means Whether the Method Can
+      Produce Densely-Sampled LFs With Flexible Angular Resolution
+  Table 10 caption:
+    table_text: TABLE 10 Quantitative Comparisons (Bad Pixel Ratios With Threshold
+      0.07) of the Depth Estimated From the Ground-Truth Densely-Sampled Light Fields,
+      the Sparsely-Sampled Light Fields, the Reconstructed Densly-Sampled Light Fields
+      by Different Methods
+  Table 2 caption:
+    table_text: "TABLE 2 Quantitative Comparisons (PSNRSSIM) of the Proposed Approach\
+      \ With the State-of-the-Art Ones Under Task 2\xD72\u21927\xD77 2\xD72\u2192\
+      7\xD77"
+  Table 3 caption:
+    table_text: "TABLE 3 Quantitative Comparisons of the Proposed Approach With Kalantari\
+      \ et al. [22] on the Reconstruction With Arbitrary Sampling Patterns Under Task\
+      \ 4\u21927\xD77 4\u21927\xD77"
+  Table 4 caption:
+    table_text: "TABLE 4 Quantitative Comparisons of the Proposed Approach With Kalantari\
+      \ et al. [22] on the Reconstruction With Arbitrary Sampling Patterns Under Task\
+      \ 3\u21927\xD77 3\u21927\xD77"
+  Table 5 caption:
+    table_text: "TABLE 5 Quantitative Comparisons of the Proposed Approach With Kalantari\
+      \ et al. [22] on the Reconstruction With Arbitrary Sampling Patterns Under Task\
+      \ 2\u21927\xD77 2\u21927\xD77"
+  Table 6 caption:
+    table_text: TABLE 6 Comparisons of the Running Time (in seconds) of Different
+      Methods for Reconstructing a Densely-Sampled LF
+  Table 7 caption:
+    table_text: TABLE 7 Effectiveness Verification of the Refinement Module in Our
+      Approach
+  Table 8 caption:
+    table_text: TABLE 8 Effectiveness Verification of the Confidence-Based Fusion
+      Compared With Blending Using Convolutional Layers in [22]
+  Table 9 caption:
+    table_text: "TABLE 9 Quantitative Comparisons (100\xD7 MSE) of the Depth Estimated\
+      \ From the Ground-Truth Densely-Sampled Light Fields, the Sparsely-Sampled Light\
+      \ Fields, the Reconstructed Densly-Sampled Light Fields by Different Methods"
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026039
+- Affiliation of the first author: department of computing, the hong kong polytechnic
+    university, hong kong
+  Affiliation of the last author: department of computing, the hong kong polytechnic
+    university, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_1.jpg
+  Figure 1 caption: Framework of the proposed image-adaptive photo enhancement method.
+    Our method learns multiple basis 3D LUTs and a small CNN weight predictor. The
+    CNN model works on a down-sampled version of the input image to predict content-dependent
+    weights. The predicted weights are used to fuse the basis 3D LUTs into an image-adaptive
+    LUT, which is then used to transform the source image. Our method can be trained
+    using either paired or unpaired data in an end-to-end manner.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_10.jpg
+  Figure 10 caption: Qualitative comparison of different paired learning methods for
+    imaging pipeline enhancement on the FiveK and HDR+ datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_2.jpg
+  Figure 2 caption: Illustration of (a) a 3D LUT containing 4 3 elements and (b) the
+    trilinear interpolation of one input.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_3.jpg
+  Figure 3 caption: "Effects of different choices of parameters \u03BB s and \u03BB\
+    \ m ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_4.jpg
+  Figure 4 caption: Visualization of each of the R, G, B channels of the three basis
+    3D LUTs learned (a) without regularization, (b) with only smooth regularization,
+    (c) with only monotonicity regularization and (d) with both smooth and monotonicity
+    regularization.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_5.jpg
+  Figure 5 caption: Enhancement results of a typical input image (a) without regularization,
+    (b) with only smooth or (c) only monotonicity regularization, and (d) with both
+    smooth and monotonicity regularization. Best viewed in color.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_6.jpg
+  Figure 6 caption: Visualization of the image-adaptive LUTs (after combination) generated
+    by our model for three different images and their corresponding enhancement results.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_7.jpg
+  Figure 7 caption: Qualitative comparison of different paired learning methods for
+    photo retouching on the FiveK dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_8.jpg
+  Figure 8 caption: Qualitative comparison between HDRNet and our method for photo
+    retouching on the FiveK dataset. Note that some sky areas enhanced by HDRNet are
+    biased to purple.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Learning_ImageAdaptive_D_Lookup_Tables_for_High_Performance_Photo_Enhancement_in\figure_9.jpg
+  Figure 9 caption: Qualitative comparison of different unpaired learning methods
+    for photo retouching on the FiveK dataset.
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.55
+  Name of the first author: Hui Zeng
+  Name of the last author: Lei Zhang
+  Number of Figures: 13
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Learning Image-Adaptive 3D Lookup Tables for High Performance Photo
+    Enhancement in Real-Time
+  Publication Date: 2020-09-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Details of the CNN Weight Predictor. C, D, F and N N Represent
+      Convolutional Block, Dropout, Fully-Connected Layer and Number of Weights, Respectively
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Studies on the Number ( N N) of LUTs and the Effect
+      of CNN Weight Predictor
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparison of Photo Retouching Results Under
+      the Pairwise Training Setting on FiveK Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Comparison of Photo Retouching Results Under
+      the Unpaired Training Setting on the FiveK Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Comparison of Different Pairwise Learning Methods
+      for Imaging Pipeline Enhancement on the FiveK and HDR+ Datasets
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Comparison of Different Unpaired Learning Methods
+      for Imaging Pipeline Enhancement on the FiveK and HDR+ Datasets
+  Table 7 caption:
+    table_text: TABLE 7 Running Time (in Milliseconds) Comparison Between Our Model
+      and State-of-the-Art Deep Enhancement Models at Different Resolutions
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026740
+- Affiliation of the first author: college of electronic science and technology, nation
+    university of defense technology (nudt), changsha, china
+  Affiliation of the last author: college of electronic science and technology, nation
+    university of defense technology (nudt), changsha, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_1.jpg
+  Figure 1 caption: An illustration of the ambiguity for disparity regression in existing
+    cost volume based methods. These three distributions have equal regression results
+    d 0 but are quite different. A unimodal distribution peaked at the true disparity
+    with high sharpness (i.e., low uncertainty) is more reasonable, as shown in (a).
+  Figure 10 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_10.jpg
+  Figure 10 caption: An example of initial disparity mathrm hatmathbf Dini , confidence
+    map 1!-!Mcon and refined disparity mathrm hatmathbf Drefined produced by our PASMnet.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_2.jpg
+  Figure 2 caption: Comparison between self-attention mechanism and parallax-attention
+    mechanism.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_3.jpg
+  Figure 3 caption: An illustration of our PAM.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_4.jpg
+  Figure 4 caption: An illustration of our PAM using a toy example. The parallax-attention
+    maps ( 30!times !30 ) correspond to the regions ( 1!times !30 ) marked by a yellow
+    stroke. The first row represents leftright stereo images and the second row stands
+    for parallax-attention maps mathbf Mrightrightarrow left and mathbf Mleftrightarrow
+    right .
+  Figure 5 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_5.jpg
+  Figure 5 caption: An illustration of geometry-aware matrix multiplication otimes
+    .
+  Figure 6 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_6.jpg
+  Figure 6 caption: Visualization of valid masks. A stereo image pair and the occluded
+    regions (i.e., yellow regions) are illustrated.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_7.jpg
+  Figure 7 caption: An overview of our PASMnet.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_8.jpg
+  Figure 8 caption: An illustration of matching cost aggregation in our cascaded parallax-attention
+    module.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Parallax_Attention_for_Unsupervised_Stereo_Correspondence_Learning\figure_9.jpg
+  Figure 9 caption: Matching cost distributions, parallax-attention distributions
+    and disparities produced by blocks 3 and 4 in stage 3 of our cascaded parallax-attention
+    module. The red lines in the first and second rows represent the groundtruth disparity.
+    As compared to block 3, block 4 produces more accurate and smoother disparities
+    by cascading more parallax-attention blocks, especially in regions denoted with
+    white boxes.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Longguang Wang
+  Name of the last author: Wei An
+  Number of Figures: 17
+  Number of Tables: 16
+  Number of authors: 7
+  Paper title: Parallax Attention for Unsupervised Stereo Correspondence Learning
+  Publication Date: 2020-09-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparative Results Achieved on SceneFlow by Our PASMnet Trained
+      With Different Settings
+  Table 10 caption:
+    table_text: "TABLE 10 Comparative Results Achieved on the KITTI 2015 Dataset by\
+      \ PASSRnet With Different Settings for 4\xD7 4\xD7 SR"
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Results for the Disparity Refinement Module in Our
+      PASMnet on SceneFlow
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Between Our Parallax-Attention Block and 3D Convolution
+  Table 4 caption:
+    table_text: TABLE 4 Comparison Between our PAM and Cost Volume Formation on SceneFlow
+  Table 5 caption:
+    table_text: TABLE 5 Comparative Results Achieved on SceneFlow by Our PASMnet Trained
+      With Different Losses
+  Table 6 caption:
+    table_text: TABLE 6 Comparison Between PAM and Cost Volume Formation on SceneFlow
+      With Different Resolutions
+  Table 7 caption:
+    table_text: TABLE 7 Comparison Between PAM and Cost Volume Formation on SceneFlow
+      With Different Depths
+  Table 8 caption:
+    table_text: TABLE 8 Comparison to Existing Supervised and Unsupervised Stereo
+      Matching Methods on KITTI 2015
+  Table 9 caption:
+    table_text: TABLE 9 Comparison Between the Middlebury, KITTI 2012, KITTI 2015,
+      and Flickr1024 Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026899

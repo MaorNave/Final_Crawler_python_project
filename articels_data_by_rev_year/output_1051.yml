@@ -1,0 +1,833 @@
+- Affiliation of the first author: college of computer science, zhejiang university,
+    hangzhou, china
+  Affiliation of the last author: school of computer science, university of adelaide,
+    sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_1.jpg
+  Figure 1 caption: Illustration of our tracking approach. Given a template picture
+    of target, we find the corresponding location across frames through feature matching.
+    Combined with multi-task and metric learning, a robust object model can be established
+    to make structured prediction.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_2.jpg
+  Figure 2 caption: Visualization of keypoint features using PCA. The 50 green circle
+    points represent the keypoints from 50 successive frames corresponding to the
+    same keypoint in the template (semantically similar keypoints). The blue asterisk
+    points represent any other keypoints, which are dissimilar to the above 50 keypoints.
+    In figure (a), all the keypoints mix together in the original feature space. In
+    figure (b), there is a large margin between dissimilar keypoints in current learned
+    feature space.
+  Figure 3 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_3.jpg
+  Figure 3 caption: Example tracking results. Figure (a) shows the quantitative results
+    of the trackers with and without multi-task learning in the accumulated number
+    of falsely detected frames (lower is better), the tracker with multi-task learning
+    produces a stable tracking result. Figure (b) and (c) show the qualitative tracking
+    results. The blue bounding box represents the location of the detected object,
+    and the yellow line represents a keypoint correspondence. In figure (b), the tracker
+    without multi-task learning fails to match keypoints correctly.
+  Figure 4 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_4.jpg
+  Figure 4 caption: The example frames in the single object tracking dataset. The
+    0 frame is the first frame for initializing the template. In the single object
+    tracking dataset, the red boxes in the subsequent frames show the groundtruth
+    in these frames. In the multi-object tracking dataset, the green boxes show the
+    groundtruth. Figure is best viewed in color.
+  Figure 5 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_5.jpg
+  Figure 5 caption: Comparison of three approaches in the accumulated number of falsely
+    detected frames (lower is better). The curve corresponding to our approach grows
+    slowly and is almost horizontal, which means that our tracking result is stable.
+  Figure 6 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_6.jpg
+  Figure 6 caption: "Example tracking results on our test video sequences. In each\
+    \ picture, the left part highlighted in red bounding box is the template image.\
+    \ The blue box shows the location of the detected object in the frame. And in\
+    \ each set of pictures, the first row is the result of approach \u201CSSVM\u201D\
+    , the second row is the result of approach \u201CSMM\u201D(exactly our approach).\
+    \ Our model has adapted to obtain correct detection results in the complicated\
+    \ scenarios with drastic object appearance changes. Figure is best viewed in color."
+  Figure 7 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_7.jpg
+  Figure 7 caption: Example multi-object tracking results, in each set of pictures,
+    first row is the result of SMM, second row is the result of MSMM. In each picture,
+    the tracked objects are in the bounding box (for two-object video sequence, the
+    object is bounded by green and red box; for three-object video sequence, the object
+    is bounded by blue, red and green box respectively), the number under the picture
+    is the frame number in the sequence. Figure is best viewed in color.
+  Figure 8 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_8.jpg
+  Figure 8 caption: Evaluation of our individual components in the accumulated number
+    of falsely detected frames (lower is better). We observe that both metric learning
+    and multi-task learning can improve the robustness of the tracker.
+  Figure 9 Link: articels_figures_by_rev_year\2018\MultiTask_StructureAware_Context_Modeling_for_Robust_KeypointBased_Object_Tracki\figure_9.jpg
+  Figure 9 caption: Evaluation of multi-object tracker and several single object trackers
+    in the accumulated number of falsely detected frames(lower is better). We observe
+    that the SMM tracker obtains a higher incorrect detection number with the increase
+    of frame number.
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xi Li
+  Name of the last author: Ian Reid
+  Number of Figures: 9
+  Number of Tables: 6
+  Number of authors: 8
+  Paper title: Multi-Task Structure-Aware Context Modeling for Robust Keypoint-Based
+    Object Tracking
+  Publication Date: 2018-03-22 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Comparisons with Nine State-of-the-Art Methods in the Average\
+      \ Tracking Accuracy ( \xB1 Standard Deviation) on the UCSB Dataset"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison with State-of-the-Art Methods in the Average Success
+      Rate (Higher Is Better)
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation of Our Individual Components in the Average Success
+      Rate
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the Proposed Method with and without Metric
+      Learning by Using BRIEF or SIFT Descriptor
+  Table 5 caption:
+    table_text: TABLE 5 Results of Multi-Object Tracking Between SMM and MSMM
+  Table 6 caption:
+    table_text: TABLE 6 Results of Using Different Sizes of Descriptor Pools
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2818132
+- Affiliation of the first author: department of computer science and engineering,
+    michigan state university, east lansing, mi
+  Affiliation of the last author: department of computer science and engineering,
+    michigan state university, east lansing, mi
+  Figure 1 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_1.jpg
+  Figure 1 caption: Automated latent recognition framework. A latent image is input
+    to a latent AFIS, and the top n candidates with their comparison scores are presented
+    to a latent expert. The number of candidates, n , examined is typically less than
+    20. The true mate in this example is outlined in red.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_10.jpg
+  Figure 10 caption: Comparison of minutiae correspondences. (a) 14 minutiae pairs
+    found in correspondence between the latent and a non-mate [31], (b) 7 minutiae
+    pairs found in correspondence for the same comparison as in (a) by the proposed
+    method and (c) 13 minutiae pairs found in correspondences between the latent and
+    its true mate by the proposed method. Note that we use manually marked minutiae
+    and MCC descriptor [41] for a fair comparison with [31].
+  Figure 2 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_2.jpg
+  Figure 2 caption: Illustration of latent to reference (rolled) comparison. (a) Input
+    latent with ROI outlined in red, (b) automatically extracted minutiae in (a) shown
+    on the latent skeleton, (c) alignment and minutiae correspondences between the
+    latent and its true mate (rank-1 retrieval) and (d) alignment and minutiae correspondences
+    between the latent and the rank-2 retrieved rolled print. Blue circles denote
+    latent minutiae and green circles denote rolled minutiae.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_3.jpg
+  Figure 3 caption: Example latents (first row) from NIST SD27 whose true rolled mates
+    (second row) could not be retrieved at rank-1 by a leading COTS latent AFIS. This
+    can be attributed to large background noise and poor quality ridge structure in
+    (a), and small friction ridge area in (b).
+  Figure 4 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_4.jpg
+  Figure 4 caption: Latent fingerprints at a crime scene often contain multiple latent
+    impressions, either of different individuals or multiple fingers of the same person.
+    For this reason, a region of interest (ROI), also called cropping, outlined in
+    red, is typically marked by examiners to highlight the friction ridge region of
+    interest.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_5.jpg
+  Figure 5 caption: Flowchart of the proposed latent recognition approach. The common
+    minutiae in two true minutiae sets are shown in red.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_6.jpg
+  Figure 6 caption: Minutiae template generation. The same procedure is used for both
+    minutiae template 1 and minutiae template 2.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_7.jpg
+  Figure 7 caption: "Minutiae descriptor extraction via ConvNet. The dotted arrows\
+    \ show the offline training process, while solid arrows show the online process\
+    \ for minutiae descriptor extraction. A total of 800K fingerprint patches from\
+    \ 50K minutiae, extracted from the MSP longitudinal fingerprint database [35],\
+    \ were used for training the ConvNet. The patch size shown here is 80\xD780 pixels."
+  Figure 8 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_8.jpg
+  Figure 8 caption: "Fourteen types of fingerprint patches, with different size and\
+    \ location, centered at a minutia (shown in red). Patches at (a) 6 different scales\
+    \ and (b) in 8 different locations around minutia: top left, top right, bottom\
+    \ right and bottom left, top, right, left and bottom. The fingerprint patches\
+    \ shown here are of size 160\xD7160 pixels. The window sizes (scale) in (a) are\
+    \ 80\xD780 , 96\xD796 , 112\xD7112 , 128\xD7128 , 144\xD7144 , and 160\xD7160\
+    \ pixels. The windows in (b) are all of size 96\xD796 pixels."
+  Figure 9 Link: articels_figures_by_rev_year\2018\Automated_Latent_Fingerprint_Recognition\figure_9.jpg
+  Figure 9 caption: Illustration of feature representation of (a) a minutiae pair
+    ( m i 1 , m j 1 ) and (b) a minutiae triplet ( m i 1 , m j 1 , m k 1 ) , where
+    the solid arrows denote minutiae orientations.
+  First author gender probability: 0.93
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kai Cao
+  Name of the last author: Anil K. Jain
+  Number of Figures: 17
+  Number of Tables: 1
+  Number of authors: 2
+  Paper title: Automated Latent Fingerprint Recognition
+  Publication Date: 2018-03-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Rank-1 (Rank-20) Identification Rates on Latents from NIST
+      SD27 of Different Quality Levels
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2818162
+- Affiliation of the first author: beijing laboratory of intelligent information technology,
+    beijing institute of technology, beijing, china
+  Affiliation of the last author: university of kentucky, lexington, ky
+  Figure 1 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_1.jpg
+  Figure 1 caption: Our video segmentation method takes the first frame annotation
+    as initialization (left). Leveraging on super-trajectories, the segmentation process
+    achieves superior results even for challenging scenarios including heavy occlusions,
+    complex appearance variations, and large shape deformations (middle, right).
+  Figure 10 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_10.jpg
+  Figure 10 caption: 'Average IoU score over the validation set of DAVIS dataset.
+    We compare our method (STV) with two trajectory based methods: LTM [16] and DAD
+    [72], and five variations of our algorithm: STV-s, STV-r, STV-b, STV-KM and STV-SC.
+    See Section 5.3.2 for more details.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_2.jpg
+  Figure 2 caption: "Illustration of the density peaks based clustering (DPC) algorithm.\
+    \ (a) A schematic diagram where the bigger circles indicate higher local densities\
+    \ \u03C1 . (b) Sample point distributions in two dimensions. (c) Clustering results\
+    \ with DPC, where different colors represent different clusters. (d) Local density\
+    \ \u03C1 and distance \u03B4 distributions for the data points of (b). See Section\
+    \ 3.2.1 for detailed explanations."
+  Figure 3 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_3.jpg
+  Figure 3 caption: Illustration of initial super-trajectory generation process, described
+    in Section 3.2.2. (a) The arrows indicate trajectories and the dots indicate the
+    initial location of the trajectories. (b) We cluster trajectories into K groups
+    on the spatial grid (in this case, K=4 ).
+  Figure 4 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_4.jpg
+  Figure 4 caption: Super-trajectory generation via iterative trajectory clustering.
+    (a) Frame I t . (b)-(f) Visualization of super-trajectory in the time slice I
+    t at different iterations. Each pixel is assigned to the average color of all
+    points within its super-trajectory. The blank areas are the discarded trajectories,
+    which are shorter than four frames. The areas with obvious changes are highlighted
+    in red circles. For clarity, we set the number of initial spatial grid to K =500.
+    See Section 3.2.2 for more details.
+  Figure 5 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_5.jpg
+  Figure 5 caption: (a) Input frames. (b) Estimated foregrounds via Eq. (12) and the
+    appearance model in Section 4.1. (c) Estimated foregrounds via our reverse tracking
+    strategy (Eq. (14)) and the updated appearance model in Section 4.2. (d) Estimated
+    foregrounds via backward re-occurrence based optimization (Eq. (16), Section 4.3).
+    (e) Final segmentation results.
+  Figure 6 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_6.jpg
+  Figure 6 caption: 'Qualitative segmentation results on representative video clips
+    from DAVIS [5] (from top to bottom: dog-agility and libby). The proposed algorithm
+    is applicable to a large set of scenarios and robust to motion blur, occlusions
+    and background appearance similarities.'
+  Figure 7 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_7.jpg
+  Figure 7 caption: 'Qualitative segmentation results on representative video sequences
+    from Youtube-Objects dataset [6] (from top to bottom: bird12 and dog10). The initial
+    masks are presented in the first row.'
+  Figure 8 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_8.jpg
+  Figure 8 caption: 'Qualitative segmentation results on representative video sequences
+    from SegTrack-V2 [7] (from top to bottom: drift1 and penguin3). The initial masks
+    are presented in the first row.'
+  Figure 9 Link: articels_figures_by_rev_year\2018\SemiSupervised_Video_Object_Segmentation_with_SuperTrajectories\figure_9.jpg
+  Figure 9 caption: The IoU scores for parameter selection for number of spatial grids
+    K (a) and number of the NNs N (b). See Section 5.3.1 for more details.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Wenguan Wang
+  Name of the last author: Ruigang Yang
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Semi-Supervised Video Object Segmentation with Super-Trajectories
+  Publication Date: 2018-03-26 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Characteristics of Three Video Segmentation Datasets in Evaluation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 IoU Score ( J ), Contour Accuracy ( F ) and Temporal Stability
+      ( T ) Averaged on the Validation Set of DAVIS [5]
+  Table 3 caption:
+    table_text: TABLE 3 IoU Score ( J ) on the Youtube-Objects Dataset [6]
+  Table 4 caption:
+    table_text: TABLE 4 IoU Score ( J ) on the SegTrack-V2 Dataset [7]
+  Table 5 caption:
+    table_text: TABLE 5 Attribute-Based Aggregate Performance on the DAVIS Dataset
+      with IoU Score ( J )
+  Table 6 caption:
+    table_text: TABLE 6 Runtime Comparison (SecondsFrame) on the DAVIS Dataset [5]
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2819173
+- Affiliation of the first author: graduate school of advanced imaging, multimedia,
+    and film, chung-ang university, seoul, korea(r.o.k)
+  Affiliation of the last author: graduate school of advanced imaging, multimedia,
+    and film, chung-ang university, seoul, korea(r.o.k)
+  Figure 1 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_1.jpg
+  Figure 1 caption: Overall flow chart of the proposed method.
+  Figure 10 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_10.jpg
+  Figure 10 caption: 'Analysis on effect of RGB weight and ASW, ill (1)- exp (0) for
+    a target image : (a) Ground truth; (b) Baseline(RGB); (c) Baseline(ASW); (d) Proposed
+    with RGB; (e) Proposed method( beta p =0); and (f) Proposed method.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_2.jpg
+  Figure 2 caption: "Example of census transform: (a) 3\xD73 block of an original\
+    \ image; (b) Neighboring points are converted to 0 or 1 according to whether they\
+    \ are higher than the center value or not; and (c) Binary bits."
+  Figure 3 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_3.jpg
+  Figure 3 caption: 'Convex surface as part of sphere surface: (a) Surface can be
+    expressed as part of smaller sphere where difference between normal vectors is
+    high; and (b) Surface can be expressed as part of bigger sphere as same as a plane
+    where normal vectors'' difference is low.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_4.jpg
+  Figure 4 caption: Simple surface estimation using a normal vector and a plane f
+    p . We calculate a slanted plane (the black dotted line) by f p and estimate a
+    convex plane (the blue dotted line) by inner product between n p and n q .
+  Figure 5 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_5.jpg
+  Figure 5 caption: 'Occlusion filling by CSH: (a) Before occlusion filling; (b) After
+    occlusion filling, new artifacts occur.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_6.jpg
+  Figure 6 caption: 'Kernels for categorizing. Kernel size is same as N(p), white
+    denotes 1 and black 0: (a) DC kernel; (b) Vertical kernel; and (c) Horizontal
+    kernel.'
+  Figure 7 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_7.jpg
+  Figure 7 caption: 'Filtered images: (a) L channel with DC kernel; (b) L channel
+    with vertical kernel; (c) L channel with horizontal kernel; (d) a channel with
+    DC kernel; and (e) b channel with DC kernel.'
+  Figure 8 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_8.jpg
+  Figure 8 caption: 'Reference images: (a) Aloe; (b) Art; (c) Books; (d) Bowling1;
+    (e) Cloth4; and (f) Moebius.'
+  Figure 9 Link: articels_figures_by_rev_year\2018\PatchmatchBased_Robust_Stereo_Matching_Under_Radiometric_Changes\figure_9.jpg
+  Figure 9 caption: 'Target images: (a) Aloe; (b) Art; (c) Books; (d) Bowling1; (e)
+    Cloth4; and (f) Moebius.'
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Jaeseung Lim
+  Name of the last author: Jaeseung Lim
+  Number of Figures: 17
+  Number of Tables: 7
+  Number of authors: 1
+  Paper title: Patchmatch-Based Robust Stereo Matching Under Radiometric Changes
+  Publication Date: 2018-03-26 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Implementation Parameters
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Bad Pixel Error of RGB and ASW
+  Table 3 caption:
+    table_text: TABLE 3 Average Bad Pixel Error for Smoothness Terms
+  Table 4 caption:
+    table_text: TABLE 4 Average Computational Time(s) for Smoothness Terms
+  Table 5 caption:
+    table_text: TABLE 5 Average Bad Pixel Error for Prior Terms
+  Table 6 caption:
+    table_text: TABLE 6 Average Computational Time (sec.)
+  Table 7 caption:
+    table_text: TABLE 7 Performance Comparison in Terms of Bad Pixel Error
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2819662
+- Affiliation of the first author: school of electrical engineering, kaist, daejeon,
+    korea
+  Affiliation of the last author: school of electrical engineering, kaist, daejeon,
+    korea
+  Figure 1 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_1.jpg
+  Figure 1 caption: Overview on the proposed method. (a) Input small motion clip.
+    (b) Reconstructed 3D points & estimated camera trajectory in Section 3. (c) Final
+    dense reconstruction using the depth map (f) in Section 4. (d) Initial depth map
+    using our propagation method Section 4.1. (e) Depth map from winner-take-all on
+    plane sweeping algorithm Section 4.2. (f) Final depth map using guided filtering.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_10.jpg
+  Figure 10 caption: Depth propagation result comparison withwithout the proposed
+    geometric guidance constraint; Real-world dataset. (a) Reference images. (b) Estimated
+    normal map. (c) Dense 3D point clouds without guidance term. (d) Dense 3D point
+    clouds with guidance term.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_2.jpg
+  Figure 2 caption: The data on the red rows for the i th frame are read during the
+    readout time. The (i+1) th frame starts to be captured after the idle time.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_3.jpg
+  Figure 3 caption: Example Jacobian matrices with 8 points (24 parameters) and 6
+    cameras (36 parameters). (a) Jacobian matrix for global shutter BA. (b) Jacobian
+    matrix for rolling shutter BA.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_4.jpg
+  Figure 4 caption: 'Illustration of geometric guidance term: the vectors on the surface
+    should be orthogonal to its normal vector.'
+  Figure 5 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_5.jpg
+  Figure 5 caption: Normal map estimation.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_6.jpg
+  Figure 6 caption: Illustration of the global and local plane sweeping. (a) Each
+    scanline of rolling shutter camera has a different camera pose. Blue, green and
+    red square is a pixel that has high, medium and low confidence respectively, so
+    the depth range is short, medium and long. (b) Conventional method sweeps the
+    full depth range [dglobalMin,dglobalMax] . (c) Proposed method sweeps a specified
+    depth range for each pixels [djMin,djMax] (j=1,ldots,NT) . NT is the total number
+    of pixels.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_7.jpg
+  Figure 7 caption: Rolling shutter plane sweeping. (a) Input reference image with
+    extracted features. (b) GCP-based confidence map mathbf C . (c) Initial depth
+    map mathbf D . (d) Depth map from winner-take-all on plane sweeping algorithm.
+    (e) Final depth map with guided filtering.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_8.jpg
+  Figure 8 caption: SfSM result withwithout RS handling - Grass, Building1, Wall.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Accurate_D_Reconstruction_from_Small_Motion_Clip_for_Rolling_Shutter_Cameras\figure_9.jpg
+  Figure 9 caption: RMSE map in accordance with the color weight lambda c and geometry
+    weight lambda g . Both weights are changed from 10-3 to 103 and data weigh lambda
+    d is fixed. The depth result is shown in Fig. 12.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Sunghoon Im
+  Name of the last author: In So Kweon
+  Number of Figures: 15
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: Accurate 3D Reconstruction from Small Motion Clip for Rolling Shutter
+    Cameras
+  Publication Date: 2018-03-26 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Mean Reprojection Error w.r.t. the Ratio of Readout Time
+      a (unit: Pixel)'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Percentages of Depth Error from Kinect2 w.r.t. the Ratio
+      of Readout Time a
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparison with State-of-the-Art
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2819679
+- Affiliation of the first author: anu and data61-csiro, canberra, act, australia
+  Affiliation of the last author: cvlab, epfl, lausanne, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_1.jpg
+  Figure 1 caption: "Example of an Ishikawa graph. The graph incorporate edges with\
+    \ infinite capacity from U i:\u03BB to U i:\u03BB+1 , not shown in the graph.\
+    \ Here the cut corresponds to the labeling x=1,2 where the label set L=0,1,2,3\
+    \ ."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_10.jpg
+  Figure 10 caption: Lengths of augmenting paths found by our algorithm for the Tsukuba
+    stereo instance (see Section 8.1). Each bar indicates the proportion of paths
+    of a certain length. For example, out of all augmenting paths 28 percent of them
+    were of length 2. The red arrow indicates the median length.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_2.jpg
+  Figure 2 caption: "An example of two equivalent flow representations with the same\
+    \ exit-flows. Note that each red arrow represents the value \u03C8 ij:\u03BB\u03BC\
+    \ and the opposite arrows \u03C8 ji:\u03BC\u03BB are not shown. Furthermore, the\
+    \ exit-flows \u03A3 are shown next to the nodes and the initial edges \u03D5 0\
+    \ are not shown. In (c), the flow \u03C8 \u2032 is obtained from \u03C8 by passing\
+    \ flow around a loop."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_3.jpg
+  Figure 3 caption: "Given \u03D5 0 and \u03A3 (shown in boxes) (left), flow reconstruction\
+    \ is formulated as a max-flow problem (right). Here the nodes with positive exit-flows\
+    \ are connected to the source (0) and those with negative exit-flows are connected\
+    \ to the terminal (1)."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_4.jpg
+  Figure 4 caption: To find an augmenting path in a memory efficient manner, we simplify
+    the Ishikawa graph using blocks corresponding to consecutive non-zero edges in
+    each column i .
+  Figure 5 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_5.jpg
+  Figure 5 caption: "An example flow-loop m ~ (1,0, \u03B1 ij ) in the block-graph\
+    \ (left) is equivalent to the summation of two flow-loops m(3,1, \u03B1 1 ) and\
+    \ m(4,4, \u03B1 2 ) in the Ishikawa graph (right), with \u03B1 ij = \u03B1 1 +\
+    \ \u03B1 2 ."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_6.jpg
+  Figure 6 caption: "An augmentation operation is broken down into a sequence of flow-loops\
+    \ m ~ (\u03B3,\u03B4,\u03B1) , and a subtraction along the column k . The augmenting\
+    \ path P s is highlighted in red."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_7.jpg
+  Figure 7 caption: Example of a multi-label grpah. Here the nodes represent the unary
+    potentials theta i:lambda and the edges represent the pairwise potentials theta
+    ij:lambda mu .
+  Figure 8 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_8.jpg
+  Figure 8 caption: A flow m(2,1,alpha) in the Ishikawa graph (left) and its equivalent
+    reparametrization in the multi-label graph (right). Note that, the exit-flow vectors
+    ( Sigma ij, Sigma ji ) and the corresponding message vectors ( mij, mji ) are
+    shown next to the nodes.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Memory_Efficient_Max_Flow_for_MultiLabel_Submodular_MRFs\figure_9.jpg
+  Figure 9 caption: Left and right images of the stereo instance from the KITTI dataset.
+    The images are of size 1241times 376 , and we set the number of labels to 40.
+    This image pair was chosen arbitrarily as a representative of the dataset.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Thalaiyasingam Ajanthan
+  Name of the last author: Mathieu Salzmann
+  Number of Figures: 13
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Memory Efficient Max Flow for Multi-Label Submodular MRFs
+  Publication Date: 2018-03-26 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Memory Consumption and Runtime Comparison with State-of-the-Art
+      Baselines for Quadratic Regularizer (See Para. 2 of Section 8, for Details on
+      the Algorithms)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Memory Consumption and Runtime Comparison of IRGC+Expansion
+      with Either the BK Method or our MEMF Algorithm as Subroutine (see Section 8.2)
+  Table 3 caption:
+    table_text: TABLE 3 Memory Consumption and Runtime Comparison with State-of-the-Art
+      Baselines for Huber Regularizer (see Section 8.3)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2819675
+- Affiliation of the first author: fujian key laboratory of sensing and computing
+    for smart city, xiamen university, xiamen shi, fujian sheng, china
+  Affiliation of the last author: school of computer science, university of adelaide,
+    sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_1.jpg
+  Figure 1 caption: 'The framework of the proposed OCH. OCH contains three parts:
+    1) Ordinal constraint projection, 2) tensor ordinal graph, and 3) hashing model
+    with optimization. Ordinal Constraint Projection (OCP) uses anchor graph with
+    the approximated projection that approximates the ordinal information among global
+    points with that among anchors. The tensor ordinal graph (TOG) is then used to
+    efficiently present such ordinal information among anchors. Finally, the objective
+    function with revised SGD optimization is to find the optimal binary codes as
+    shown in the far right of this figure. (Best view in color.)'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_10.jpg
+  Figure 10 caption: 'The data distribution of two datasets: VLAD500K and GIST1M.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_2.jpg
+  Figure 2 caption: An example of tensor product graph construction.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_3.jpg
+  Figure 3 caption: The ordinal relation for a training data.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_4.jpg
+  Figure 4 caption: "The projected gradient on the Stiefel manifold. O is the Stiefel\
+    \ Manifold space, T is the tangent space, \u2207F is the gradient of function\
+    \ F at the t step, P(\u2212\u2207F) is the transformation result on the tangent\
+    \ space (see Eq. (37)), and V t+1 is the new projection matrix on the Steifel\
+    \ manifold space (see Eq. (39))."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_5.jpg
+  Figure 5 caption: ANN search of performance of different hashing methods on LabelMe
+    and Tiny100K datasets. (Best view in color.)
+  Figure 6 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_6.jpg
+  Figure 6 caption: ANN search of performance of different hashing methods on VLAD500K
+    and GIST1M datasets. (Best view in color.)
+  Figure 7 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_7.jpg
+  Figure 7 caption: The performance of Recall-1 and Recall-10 for different hashing
+    methods on all four datasets, when hash bit is 64. (Best view in color.)
+  Figure 8 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_8.jpg
+  Figure 8 caption: Comparison of OCH-Kernel methods with SGH an KLSH on the LabelMe
+    dataset when hash bit is set to 64. Performance is evaluated by the Precision
+    curve and Recall curve.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Ordinal_Constraint_Binary_Coding_for_Approximate_Nearest_Neighbor_Search\figure_9.jpg
+  Figure 9 caption: Semantic search of performance of different hashing methods on
+    NUS-WIDE dataset. (Best view in color.)
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Hong Liu
+  Name of the last author: Chunhua Shen
+  Number of Figures: 12
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Ordinal Constraint Binary Coding for Approximate Nearest Neighbor Search
+  Publication Date: 2018-03-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The mAP and Precision Comparison Using Hamming Ranking on
+      Two Benchmark with Different Hash Bits
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The mAP and Precision Comparison Using Hamming Ranking on
+      Another Two Benchmark with Different Hash Bits
+  Table 3 caption:
+    table_text: TABLE 3 The Evaluation Result of the Multiple Hash Tables with Different
+      Hashing Algorithms
+  Table 4 caption:
+    table_text: TABLE 4 The Evaluation of the Anchors Generation Ways
+  Table 5 caption:
+    table_text: TABLE 5 The Evaluation of the Different Initialization Distribution
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2819978
+- Affiliation of the first author: school of data and computer science, sun yat-sen
+    university, guangzhou, china
+  Affiliation of the last author: school of data and computer science, sun yat-sen
+    university, guangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_1.jpg
+  Figure 1 caption: This example shows that human body structural information is helpful
+    for human parsing. (a) The original image. (b) The parsing results by attention-to-scale
+    [17], where the left arm is incorrectly labeled as the right arm. (c) Our parsing
+    results successfully incorporate the structure information to generate reasonable
+    outputs.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_10.jpg
+  Figure 10 caption: Illustration of our SS-JPPNet for human parsing. An input image
+    goes through parsing networks, including several convolutional layers, to generate
+    the parsing results. The generated joints and ground truths of joints represented
+    as heatmaps are obtained by computing the center points of corresponding regions
+    in parsing maps, including head (H), upper body (U), lower body (L), right arm
+    (RA), left arm (LA), right leg (RL), left leg (LL), right shoe (RS), and left
+    shoe (LS). The structure-sensitive loss is generated by weighting segmentation
+    loss with joint structure loss. For a clear observation, we combine nine heatmaps
+    into one map here.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_2.jpg
+  Figure 2 caption: "Annotation examples for our \u201CLook into Person (LIP)\u201D\
+    \ dataset and existing datasets. (a) The images in the MPII dataset [16] (left)\
+    \ and LSP dataset [18] (right) with only body joint annotations. (b) The images\
+    \ in the ATR dataset [7] (left) are fixed in size and only contain stand-up person\
+    \ instances in the outdoors. The images in the PASCAL-Person-Part dataset [15]\
+    \ (right) also have lower scalability and only contain 6 coarse labels. (c) The\
+    \ images in our LIP dataset have high appearance variability and complexity, and\
+    \ they are annotated with both human parsing and pose labels."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_3.jpg
+  Figure 3 caption: The data distribution on 19 semantic part labels in the LIP dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_4.jpg
+  Figure 4 caption: The numbers of images that show diverse visibilities in the LIP
+    dataset, including occlusion, full body, upper body, lower body, head missing
+    and back view.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_5.jpg
+  Figure 5 caption: Human parsing performance comparison evaluated on the LIP validation
+    set with different appearances, including occlusion, full body, upper body, head
+    missing and back view.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_6.jpg
+  Figure 6 caption: Visualized comparison of human parsing results on the LIP validation
+    set. (a) The upper-body images. (b) The back-view images. (c) The head-missing
+    images. (d) The images with occlusion. (e) The full-body images.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_7.jpg
+  Figure 7 caption: Pose estimation performance comparison evaluated on the LIP validation
+    set with different appearances.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_8.jpg
+  Figure 8 caption: Visualized comparison of pose estimation results with three state-of-the-art
+    methods, including ResNet-101, CPM and Hourglass on the LIP validation set.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Look_into_Person_Joint_Body_Parsing__Pose_Estimation_Network_and_a_New_Benchmark\figure_9.jpg
+  Figure 9 caption: The proposed JPPNet learns to incorporate the image-level context,
+    body joint context, body part context and refined context into a unified network,
+    which consists of shared feature extraction, pixel-wise label prediction, keypoint
+    heatmap prediction and iterative refinement. Given an input image, we use ResNet-101
+    to extract the shared feature maps. Then, a part module and a joint module are
+    appended to capture the part context and keypoint context while simultaneously
+    generating parsing score maps and pose heatmaps. Finally, a refinement network
+    is performed based on the predicted maps and generated context to produce better
+    results. To clearly observe the correlation between the parsing and pose maps,
+    we combine pose heatmaps and parsing score maps into one map separately. For better
+    viewing of all figures in this paper, please see the original zoomed-in color
+    pdf file.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Xiaodan Liang
+  Name of the last author: Liang Lin
+  Number of Figures: 11
+  Number of Tables: 12
+  Number of authors: 4
+  Paper title: 'Look into Person: Joint Body Parsing & Pose Estimation Network and
+    a New Benchmark'
+  Publication Date: 2018-03-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Overview of the Publicly Available Datasets for Human Parsing
+      and Pose Estimation
+  Table 10 caption:
+    table_text: TABLE 10 Comparison of Human Pose Estimation Performance of the Models
+      Trained on the LIP Training Set and Evaluated on the MPII Training Set (11431
+      Single Person Images)
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Human Parsing Performance with Five State-of-the-Art
+      Methods on the LIP Validation Set
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Human Parsing Performance with Five State-of-the-Art
+      Methods on the LIP Test Set
+  Table 4 caption:
+    table_text: TABLE 4 Performance Comparison in Terms of Per-Class IoU with Five
+      State-of-the-Art Methods on the LIP Validation Set
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Human Pose Estimation Performance with State-of-the-Art
+      Methods on the LIP Test Set
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Human Pose Estimation Performance with State-of-the-Art
+      Methods on the LIP Validation Set
+  Table 7 caption:
+    table_text: TABLE 7 The Detailed Configuration of Our JPPNet
+  Table 8 caption:
+    table_text: TABLE 8 Human Parsing Performance Comparison in Terms of Mean IoU
+  Table 9 caption:
+    table_text: TABLE 9 Comparison of Human Parsing Performance with Four State-of-the-Art
+      Methods on the PASCAL-Person-Part Dataset [15]
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2820063
+- Affiliation of the first author: department of eecs, university of california, berkeley,
+    ca
+  Affiliation of the last author: department of computer science, texas state university,
+    san marcos, tx
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Trevor Darrell
+  Name of the last author: Yan Yan
+  Number of Figures: Not Available
+  Number of Tables: 0
+  Number of authors: 5
+  Paper title: "Guest Editors\u2019 Introduction to the Special Section on Learning\
+    \ with Shared Information for Computer Vision and Multimedia Analysis"
+  Publication Date: 2018-04-02 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2804998
+- Affiliation of the first author: flatiron institute, flatiron institute, new york,
+    ny
+  Affiliation of the last author: department of computing, imperial college london,
+    london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2018\NonNegative_Matrix_Factorizations_for_Multiplex_Network_Analysis\figure_1.jpg
+  Figure 1 caption: An example of a multiplex network with 11 nodes present in three
+    complementary layers denoted in different colors. Two different communities across
+    all three layers can be identified.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\NonNegative_Matrix_Factorizations_for_Multiplex_Network_Analysis\figure_2.jpg
+  Figure 2 caption: The clustering performance of our proposed and other methods on
+    11 different SYNTH-C multiplex networks measured by NMI. On x -axis we present
+    within-community probability, representing the density of connections of communities
+    in the two complementary layers.
+  Figure 3 Link: articels_figures_by_rev_year\2018\NonNegative_Matrix_Factorizations_for_Multiplex_Network_Analysis\figure_3.jpg
+  Figure 3 caption: The clustering performance of our proposed and other methods on
+    10 different SYNTH-N multiplex networks measured by NMI. On x -axis we present
+    between-community probability, representing the noise level between communities
+    in the first layer.
+  Figure 4 Link: articels_figures_by_rev_year\2018\NonNegative_Matrix_Factorizations_for_Multiplex_Network_Analysis\figure_4.jpg
+  Figure 4 caption: "Average redundancy of each individual network layer (in blue),\
+    \ computed by SNMF, and of their fused representation (in red), computed by CSNMF,\
+    \ for networks: HBN (top), YBN (middle) and MBN (bottom). The ethod parameters\
+    \ are: k=300 and \u03B1=0.01 ."
+  Figure 5 Link: articels_figures_by_rev_year\2018\NonNegative_Matrix_Factorizations_for_Multiplex_Network_Analysis\figure_5.jpg
+  Figure 5 caption: Projection distance between the networks' low-dimensional consensus
+    representation and the representation of its individual layers. The distance is
+    computed by Eq. (5), and the low-dimensional representation by CSNMF method with
+    parameters k = 300 and alpha = 0.01 . The results are shown for HBN (top), YBN
+    (middle) and MBN (bottom) multiplex biological networks.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Vladimir Gligorijevi\u0107"
+  Name of the last author: Stefanos Zafeiriou
+  Number of Figures: 5
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Non-Negative Matrix Factorizations for Multiplex Network Analysis
+  Publication Date: 2018-04-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Multiplicative Update Rules (MUR) for Single-Layer and Multiplex
+      Network Analysis
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Real-World Multiplex Networks Used for Our Comparative Study
+  Table 3 caption:
+    table_text: 'TABLE 3 Clustering Accuracy Measures for Methods (from Left to Right):
+      MM, SNMF, PNMF, SNMTF, SsNMTF, PMM, SNF, SC-ML, LMF, GraphFuse, CGC-NMF, GL,
+      Infomap, CSNMF, CPNMF, CSNMTF, CSsNMTF Applied on Real-World Multi-Layer Networks
+      (from Top to Bottom): CiteSeer, CoRA, MPD, SND, WBN, WTN, HBN, YBN and MBN.
+      AVG Row Represents the Average Performance of the Methods Over All Datasets'
+  Table 4 caption:
+    table_text: 'TABLE 4 Clustering Accuracy Measures for Methods (from Top to Bottom):
+      MM, SNMF, PNMF, SNMTF, SsNMTF, PMM, SNF, SC-ML, LMF, GraphFuse, CGC-NMF, GL,
+      Infomap, CSNMF, CPNMF, CSNMTF, CSsNMTF Applied on Biological Multi-Layer Networks
+      (from Left to Right): HBN, YBN and MBN'
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2821146

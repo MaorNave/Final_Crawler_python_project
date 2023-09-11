@@ -1,0 +1,817 @@
+- Affiliation of the first author: department of electrical engineering and computer
+    science, york university, toronto, canada
+  Affiliation of the last author: department of electrical engineering and computer
+    science, york university, toronto, canada
+  Figure 1 Link: articels_figures_by_rev_year\2019\Learning_Raw_Image_ReconstructionAware_Deep_Image_Compressors\figure_1.jpg
+  Figure 1 caption: An overview of our proposed scheme. The full-resolution image
+    compression neural network of Toderici et al. [19], which is our architecture
+    of choice to demonstrate the utility of our raw reconstruction loss, computes
+    the sRGB fidelity loss between the input sRGB image and their compressed sRGB
+    output. We first reconstruct the raw image from the sRGB output of their network
+    via a lookup table, then compute our raw reconstruction loss between this estimated
+    raw image and the input raw image, and append this raw loss to the existing fidelity
+    loss. The path in green represents our contribution. (The illustration of the
+    network architecture of [19] is modelled after the depiction of their network
+    in [14].)
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Learning_Raw_Image_ReconstructionAware_Deep_Image_Compressors\figure_2.jpg
+  Figure 2 caption: "An overview of the various stages in the framework of Nguyen\
+    \ and Brown [1]. Their method is equal to a full 256\xD7256\xD7256 lookup operation,\
+    \ which we approximate by a locally differentiable 16\xD716\xD716 lookup table\
+    \ for the purpose of backpropagation."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Learning_Raw_Image_ReconstructionAware_Deep_Image_Compressors\figure_3.jpg
+  Figure 3 caption: Rate distortion curves on test images from Samsung NX2000 given
+    as PSNR raw on the left, and MS-SSIM sRGB on the right, versus bpp.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Learning_Raw_Image_ReconstructionAware_Deep_Image_Compressors\figure_4.jpg
+  Figure 4 caption: Qualitative results of our method, along with comparisons. The
+    ground truth (GT) raw image, and the raw reconstructions obtained by applying
+    the raw image reconstruction technique of Nguyen and Brown [1] (with the same
+    64 KB raw reconstruction metadata) on JPEG, the output of Toderici et al. [19],
+    and our output, respectively, are shown in the first row. The root squared error
+    maps (with GT raw as reference) of the raw reconstructions in row one are presented
+    in the second row. The third row shows the original sRGB, JPEG, output of [19],
+    and our output. Zoomed-in regions are also displayed for comparison. Note that
+    a gamma has been applied on the raw images for better visualization.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Learning_Raw_Image_ReconstructionAware_Deep_Image_Compressors\figure_5.jpg
+  Figure 5 caption: 'Left: Rate distortion curves on the Kodak dataset [33] given
+    as MS-SSIM, versus bpp. Right: AUC up to 2 bpp for the MS-SSIM plot.'
+  Figure 6 Link: articels_figures_by_rev_year\2019\Learning_Raw_Image_ReconstructionAware_Deep_Image_Compressors\figure_6.jpg
+  Figure 6 caption: Rate distortion curves on test images from Sony A57 given as PSNR
+    raw on the left, and MS-SSIM sRGB on the right, versus bpp.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Abhijith Punnappurath
+  Name of the last author: Michael S. Brown
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: Learning Raw Image Reconstruction-Aware Deep Image Compressors
+  Publication Date: 2019-03-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance on Various Cameras Measured as Area under the
+      Curve (AUC) for the Specified Metric, Up to 2 Bits per Pixel
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance Comparison of Our Fine-Tuned Models versus Our
+      Models Trained from Scratch
+  Table 3 caption:
+    table_text: TABLE 3 Peformance on Sony A57
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903062
+- Affiliation of the first author: school of electronic engineering and computer science,
+    queen mary university of london, london, united kingdom
+  Affiliation of the last author: school of electronic engineering and computer science,
+    queen mary university of london, london, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2019\Unsupervised_Tracklet_Person_ReIdentification\figure_1.jpg
+  Figure 1 caption: "An overview of the proposed Unsupervised Tracklet Association\
+    \ Learning (UTAL) person re-identification model. The UTAL takes as input (a)\
+    \ auto-detected tracklets from all the camera views without any person ID class\
+    \ labelling either within-camera or cross-camera. The objective is to derive (b)\
+    \ a person re-id discriminative feature representation model by unsupervised learning.\
+    \ To this end, we formulate the UTAL model for simultaneous (c) Per-Camera Tracklet\
+    \ Discrimination (PCTD) learning and (d) Cross-Camera Tracklet Association (CCTA)\
+    \ learning in an end-to-end neural network architecture. The PCTD aims to derive\
+    \ the \u201Clocal\u201D discrimination of per-camera tracklets in the respective\
+    \ tracklet label space (represented by soft labels (e)) by a multi-task inference\
+    \ process (one task for a specific camera view), whilst the CCTA to learn the\
+    \ \u201Cglobal\u201D cross-camera tracklet association across independently formed\
+    \ tracklet label spaces. In UTAL design, the PCTD and CCTA jointly learn to optimise\
+    \ a re-id model for maximising their complementary contributions and advantages\
+    \ in a synergistic interaction and integration. Best viewed in colour."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Unsupervised_Tracklet_Person_ReIdentification\figure_2.jpg
+  Figure 2 caption: Comparing (a) Fine-grained explicit instance-level cross-camera
+    ID labelled image pairs for supervised person re-id model learning and (b) Coarse-grained
+    latent group-level cross-camera tracklet (a multi-shot group) label correlation
+    for ID label-free (unsupervised) person re-id learning using the proposed UTAL
+    method.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Unsupervised_Tracklet_Person_ReIdentification\figure_3.jpg
+  Figure 3 caption: Example cross-camera matching imagetracklet pairs from (a) CUHK03,
+    (b) Market-1501, (c) DukeMTMC-ReID, (d) MSMT17, (e) PRID2011, (f) iLIDS-VID, (g)
+    MARS, (h) DukeMTMC-SI-Tracklet.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Unsupervised_Tracklet_Person_ReIdentification\figure_4.jpg
+  Figure 4 caption: The evolving process of tracklet soft label quality over the model
+    training epochs on MARS and DukeTracklet.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Unsupervised_Tracklet_Person_ReIdentification\figure_5.jpg
+  Figure 5 caption: Example long trajectories discovered by UTAL among unlabelled
+    short fragmented tracklets. Each row denotes a case. The tracklets in greenred
+    bounding box denote the truefalse matches, respectively. Failure tracklet merging
+    may be due to detection and tracking errors.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Unsupervised_Tracklet_Person_ReIdentification\figure_6.jpg
+  Figure 6 caption: The evolving process of self-discovered cross-camera tracklet
+    matching pairs in (a) number and (b) precision throughout the training.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Unsupervised_Tracklet_Person_ReIdentification\figure_7.jpg
+  Figure 7 caption: Analysis of the UTAL model parameters.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Minxian Li
+  Name of the last author: Shaogang Gong
+  Number of Figures: 7
+  Number of Tables: 13
+  Number of authors: 3
+  Paper title: Unsupervised Tracklet Person Re-Identification
+  Publication Date: 2019-03-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Dataset Statistics and Evaluation Setting
+  Table 10 caption:
+    table_text: TABLE 10 Tracklet Sampling versus Using All Tracklets
+  Table 2 caption:
+    table_text: TABLE 2 Unsupervised Person re-id on Image Based Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Unsupervised Person re-id on Video Based Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Effect of Per-Camera Tracklet Discrimination (PCTD) Learning
+  Table 5 caption:
+    table_text: TABLE 5 Soft-Labelling versus Hard-Labelling
+  Table 6 caption:
+    table_text: TABLE 6 Evaluating the Tracking Refinement Capability of Soft Labels
+  Table 7 caption:
+    table_text: TABLE 7 Evaluating the Cross-ID Knowledge Transfer Effect of Soft
+      Labels
+  Table 8 caption:
+    table_text: TABLE 8 Effect of Cross-Camera Tracklet Association (CCTA) Learning
+  Table 9 caption:
+    table_text: TABLE 9 Effect of Cross-Camera Nearest Neighbours
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903058
+- Affiliation of the first author: department of electrical and systems engineering,
+    washington university in st. louis, saint louis, usa
+  Affiliation of the last author: department of electrical and systems engineering,
+    washington university in st. louis, saint louis, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Optimal_Transport_in_Reproducing_Kernel_Hilbert_Spaces_Theory_and_Applications\figure_1.jpg
+  Figure 1 caption: Illustration of the optimal transport problem.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Optimal_Transport_in_Reproducing_Kernel_Hilbert_Spaces_Theory_and_Applications\figure_2.jpg
+  Figure 2 caption: We first represent each image I i by a collection of feature samples
+    A i . Next, compute the KGW (or the KB) distances between any pair of images.
+    Finally, we apply kernel SVM to conduct classification.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Optimal_Transport_in_Reproducing_Kernel_Hilbert_Spaces_Theory_and_Applications\figure_3.jpg
+  Figure 3 caption: "(a) The labeled dataset, X s , in the source domain and the unlabeled\
+    \ dataset, Y t , in the target domain. Dots and stars represent different classes;\
+    \ (b) Map X s and Y t to the RKHS H K , and centralize the mapped data. (The centered\
+    \ source dataset \u03A6 s X H N s lies in Im( R s ) ); (c) Project the target\
+    \ dataset \u03A6 t Y H N t onto Im( R s ) . The projection is P s ( \u03A6 t Y\
+    \ H N t ) ; (d) Apply the KGOT map to transport the source data to the target\
+    \ domain. The transported data is T H G ( \u03A6 s X H N s ) . Now T H G ( \u03A6\
+    \ s X H N s ) and P s ( \u03A6 t Y H N t ) are similarly distributed on Im( R\
+    \ s )\u2286 H K . Finally, train a classifier using T H G ( \u03A6 s X H N s )\
+    \ , and apply the resultant classifier to P s ( \u03A6 t Y H N t ) ."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Optimal_Transport_in_Reproducing_Kernel_Hilbert_Spaces_Theory_and_Applications\figure_4.jpg
+  Figure 4 caption: "The estimated KGW and KW distances between Gaussian distributions\
+    \ N(m 1 \u20D7 ,I) and N(\u2212m 1 \u20D7 ,I) ."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Optimal_Transport_in_Reproducing_Kernel_Hilbert_Spaces_Theory_and_Applications\figure_5.jpg
+  Figure 5 caption: "(a) The source dataset X s , and the target dataset Y t ; (b)\
+    \ The representations of the datasets T H G ( \u03A6 s X H N s ) and P s ( \u03A6\
+    \ t Y H N t ) under the coordinate sysmtem ( l i ) 3 i=1 ."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Zhen Zhang
+  Name of the last author: Arye Nehorai
+  Number of Figures: 5
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: 'Optimal Transport in Reproducing Kernel Hilbert Spaces: Theory and
+    Applications'
+  Publication Date: 2019-03-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Accuracy (in %) on the Kylberg Virus, Texture,
+      UIUC, and TinyGraz03 Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Recognition Accuracies (in %) on COIL20 Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Recognition Accuracies (in %) on Office-Caltech Dataset with
+      the SURF Features
+  Table 5 caption:
+    table_text: TABLE 5 Recognition Accuracies (in %) on Office-Caltech Dataset with
+      the Deep Features
+  Table 6 caption:
+    table_text: TABLE 6 Recognition Accuracies (in %) on the Reuters-21578 Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903050
+- Affiliation of the first author: viterbi faculty of electrical engineering, technion
+    - israel institute of technology, haifa, israel
+  Affiliation of the last author: department of computer science, university of toronto,
+    toronto, ontario, canada
+  Figure 1 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_1.jpg
+  Figure 1 caption: 'Top and middle: City-scale scene. From the AC bulb response function,
+    we can recognize which bulbs are used and the electric-grid phase of each (color-coded).
+    This enables statistical analysis of the grid. Inset is magnified in Fig. 3. Bottom:
+    Unmixing a scene to single-light-source component images.'
+  Figure 10 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_10.jpg
+  Figure 10 caption: "ACam operation. Top: The cameras pixels are repeatedly blocked\
+    \ and unblocked over C cycles so that they can integrate light only during the\
+    \ same brief interval in each cycle. Because each cycles duration varies slightly,\
+    \ the timing of these events is controlled precisely with an Arduino that tracks\
+    \ AC zero-crossings in real time. Here we show the Arduinos input voltage (blue)\
+    \ and the mask-switching signal it generates (red), measured simultaneously with\
+    \ a high-speed oscilloscope. Masks are switched at the signals rising edge and\
+    \ must persist for at least \u0394K microseconds. The ACam supports K\u226426\
+    \ for 50 Hz grids and K\u226422 for 60 Hz grids. Bottom: The corresponding DMD\
+    \ masks. Mask 0 is active most of the time and acts like a global shutter. Mask\
+    \ m 1 briefly exposes all pixels to light. Mask m 2 , on the other hand, blocks\
+    \ light from some of the pixels in the next cycle to prevent their saturation."
+  Figure 2 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_2.jpg
+  Figure 2 caption: "Top left: A pure sine wave, fitted to the raw voltage at the\
+    \ reference outlet in Haifa. We count time t starting from a negative-to-positive\
+    \ zero crossing at this outlet. Bottom left: Raw signals from a bare photodiode\
+    \ for a sample of the bulbs in DELIGHT, spanning multiple cycles. Each signal\
+    \ was normalized by its temporal average over one flicker cycle. For better visualization,\
+    \ LED2s waveform was attenuated by 13 . Bottom right: The corresponding monochrome\
+    \ BRFs. These were computed by acquiring signals like those on the bottom-left\
+    \ 200 times, averaging them, and cropping them at t\u2208[0,\u0394] . Here LED1s\
+    \ BRF was amplified \xD710 to illustrate that it is not actually constant. Top\
+    \ right: The three-band BRF of one of the bulbs, measured by placing color filters\
+    \ in front of the photodiode."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_3.jpg
+  Figure 3 caption: 'Top: Close-up of Haifa bay from Fig. 1. Kilometers away, lamps
+    are recognized from DELIGHT and ACam-captured images. In conjunction, the grid
+    phase at each bulb is recognized. Bottom left: Raw signals normalized by mean
+    brightness plotted along with their best-matching BRFs from DELIGHT. Colors correspond
+    to the bulbs indicated above. Bottom right: To illustrate how well the measured
+    signals on the bottom left compare to each other, we shifted them by minus their
+    recognized phase, effectively placing them all on grid phase zero. Observe that
+    the signals from bulbs of the same type are indeed very similar.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_4.jpg
+  Figure 4 caption: "Unmixing results. The second column shows the single-source images\
+    \ reconstructed by unmixing. We simulate bulb amplificationde-amplification by\
+    \ computing \u03C4 1 +3.5 \u03C4 3 , and bulb replacement by replacing b 1 with\
+    \ a sodium BRF. The left plot shows the monochrome BRFs sampled directly by ACam.\
+    \ On the right, we illustrate the successful reconstruction of saturated or noisy\
+    \ pixels."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_5.jpg
+  Figure 5 caption: 'Unmixing results for an outdoor scene. We unmix the top image
+    into four single-source images: One image corresponding to a fluorescent bulb
+    illuminating the interior of the parking lot on the right, and three images corresponding
+    to sodium street lamps powered on different AC phases, located along the left
+    side of the road. The fluorescent bulbs AC phase was determined from measurements
+    in a small image region within the parking lot (Eq. (7)).'
+  Figure 6 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_6.jpg
+  Figure 6 caption: Temporal variations due to AC flicker are attributed to the indoor
+    scene. ICA separates the indoor reflection from the transmitted scene. Both are
+    recovered up to an unknown scale.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_7.jpg
+  Figure 7 caption: "Ground truth experiment. Top-left: A scene illuminated by five\
+    \ bulbs, each connected to one of three grid phases \u03D5\u2208P . Top-middle:\
+    \ A standard exposure image is a mixture of contributions from all five bulbs.\
+    \ Top-right: The DELIGHT BRFs used for unmixing after shifting by the estimated\
+    \ grid phase of each bulb (Eq.(16)). Our ACam sampled the scene, creating a sequence\
+    \ of K=26 sub-cycle images. Middle-row: The scene was unmixed using bulb BRFs\
+    \ from DELIGHT. Bottom-row: Ground truth single-source images obtained by lighting\
+    \ the scene with each bulb individually."
+  Figure 8 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_8.jpg
+  Figure 8 caption: 'Effect of unmixing refinement step. Top row: Recovered single-source
+    images of sodium bulb in Fig. 7. Bottom row: An inset within the green rectangle
+    is magnified and contrast-stretched. The circled region on left contains minor
+    artifacts after unmixing with the original DELIGHT BRFs. After applying the refinement
+    step of Eq. (18), those artifacts were removed.'
+  Figure 9 Link: articels_figures_by_rev_year\2019\Computational_Imaging_on_the_Electric_Grid\figure_9.jpg
+  Figure 9 caption: "Semi-reflection separation for an AC-Illuminated scene experiment.\
+    \ An indoor scene is illuminated by CFL-F bulbs, each connected to an arbitrary\
+    \ AC phase \u03D5\u2208P . The ACam is placed inside the lobby, facing outside.\
+    \ The indoor scene in (a) is semi-reflected by a lobby glass door. The outdoor\
+    \ scene the camera is facing is (b). At night, the outdoor scene is illuminated\
+    \ by a sodium lamp. A standard exposure image shows a mixture of the semi-reflected\
+    \ and transmitted components. ACam captured a K=26 sequence using C=1200 and a\
+    \ camera gain of 25 (see the video in [49], [50]). The scene was unmixed using\
+    \ S=4 sources taken from DELIGHT."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Mark Sheinin
+  Name of the last author: Kiriakos N. Kutulakos
+  Number of Figures: 14
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Computational Imaging on the Electric Grid
+  Publication Date: 2019-03-03 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903035
+- Affiliation of the first author: department of control and simulation (micro air
+    vehicle laboratory), faculty of aerospace engineering, delft university of technology,
+    delft, the netherlands
+  Affiliation of the last author: department of control and simulation (micro air
+    vehicle laboratory), faculty of aerospace engineering, delft university of technology,
+    delft, the netherlands
+  Figure 1 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_1.jpg
+  Figure 1 caption: Comparison of the output of frame- and event-based vision sensors
+    under the stimulus of a black horizontal bar moving upward over a homogeneous
+    white background. While frames are basically two-dimensional snapshots of the
+    visual scene, events are spatiotemporal sparse points tracking the leading and
+    trailing edges of the bar.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_10.jpg
+  Figure 10 caption: MS-Conv kernels learned from real sequences in the (normalized)
+    optical flow space, as in Appendices D.5 and D.6, available in the online supplemental
+    material. Motion direction is encoded in color hue, and speed in color brightness.
+    Each kernel is depicted as a cross.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_2.jpg
+  Figure 2 caption: A model of a LIF neuron. The graphic (right) shows the temporal
+    course of the membrane potential v i (t) of the i th neuron (left), driven by
+    a sample presynaptic spike train s j (t) from three input synapses. Spikes are
+    depicted as vertical bars at the time at which they are received (if presynaptic)
+    or emitted (if postsynaptic). Here, the reset v reset and resting v rest potentials
+    are equal in magnitude.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_3.jpg
+  Figure 3 caption: Schematic of the feedforward connectivity between neurons from
+    two adjacent layers (left). These connections can be considered as being multisynaptic
+    (right), each one having its own efficacy, transmission delay, and trace.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_4.jpg
+  Figure 4 caption: "Illustration of the novel multiplicative STDP rule proposed in\
+    \ this work. The weight update (right) results from the linear combination of\
+    \ the non-exclusive LTP and LTD processes. These, in turn, are characterized by\
+    \ symmetrical dependencies on the synaptic weights (left) and normalized presynaptic\
+    \ traces (center). Note that, in the schematic of the weight update (right), the\
+    \ weight axis is limited to the [\u22121,1] range only for the purpose of a better\
+    \ visualization of the equilibrium weights for a=0 ."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_5.jpg
+  Figure 5 caption: Overview of the feedforward SNN architecture.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_6.jpg
+  Figure 6 caption: 'SS-Conv kernels learned from the checkerboard texture. Synaptic
+    strength is encoded in color brightness: Green for input neurons with positive
+    (event) polarity, and red for negative.'
+  Figure 7 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_7.jpg
+  Figure 7 caption: 'Appearance (top) and neural response (bottom) of the sixteen
+    spatiotemporal kernels learned from the checkerboard texture in the MS-Conv layer.
+    Response plots are normalized by the maximum kernel response on the stimuli evaluated:
+    8.2763 spikesms by k=11 for omega x = 4.0 s-1 . Synaptic strength is encoded with
+    brightness using the kernel formulation from Eq. (8), i.e., Wtextexc + beta Wtextinh
+    .'
+  Figure 8 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_8.jpg
+  Figure 8 caption: 'Neural response of the sixteen individual neurons from the Dense
+    layer trained in the checkerboard texture. Response plots are normalized by the
+    maximum neural response on the stimuli evaluated: 0.3 spikesms by i=4 for omega
+    x = -3.8 s-1 .'
+  Figure 9 Link: articels_figures_by_rev_year\2019\Unsupervised_Learning_of_a_Hierarchical_Spiking_Neural_Network_for_Optical_Flow_\figure_9.jpg
+  Figure 9 caption: SS-Conv kernels learned from real sequences. Synaptic strength
+    is encoded in color brightness.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Federico Paredes-Vall\xE9s"
+  Name of the last author: Guido C. H. E. de Croon
+  Number of Figures: 14
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: 'Unsupervised Learning of a Hierarchical Spiking Neural Network for
+    Optical Flow Estimation: From Events to Global Motion Perception'
+  Publication Date: 2019-03-05 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903179
+- Affiliation of the first author: state key laboratory of management and control
+    for complex systems, institute of automation, chinese academy of sciences, beijing,
+    china
+  Affiliation of the last author: state key laboratory of management and control for
+    complex systems, institute of automation, chinese academy of sciences, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_1.jpg
+  Figure 1 caption: Synthetic point correspondence results. The upper, middle, and
+    lower rows respectively correspond to the three cases.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_2.jpg
+  Figure 2 caption: Running time comparison. The running time is denoted by t, which
+    is measured in seconds.
+  Figure 3 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_3.jpg
+  Figure 3 caption: "Evaluation of regularization parameter \u03B6 ."
+  Figure 4 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_4.jpg
+  Figure 4 caption: Evaluation of sensitivity of L . The thick red lines denote the
+    optima of accuracy and recall.
+  Figure 5 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_5.jpg
+  Figure 5 caption: Car & Motorbike matching result.
+  Figure 6 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_6.jpg
+  Figure 6 caption: Car & Motorbike matching instances. The inliers are in yellow
+    and the outliers are in blue. The yellow lines denote graph structure. The green
+    lines and red lines respectively denote the correct and incorrect assignments.
+  Figure 7 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_7.jpg
+  Figure 7 caption: Handwritten Chinese character dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_8.jpg
+  Figure 8 caption: Handwritten Chinese Character matching result.
+  Figure 9 Link: articels_figures_by_rev_year\2019\A_Continuation_Method_for_Graph_Matching_Based_Feature_Correspondence\figure_9.jpg
+  Figure 9 caption: Handwritten Chinese character matching instances. The inliers
+    are in yellow and the outliers are in blue. The yellow lines denote graph structure.
+    The green lines and red lines respectively denote the correct and incorrect assignments.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Xu Yang
+  Name of the last author: Hong Qiao
+  Number of Figures: 9
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: A Continuation Method for Graph Matching Based Feature Correspondence
+  Publication Date: 2019-03-06 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903483
+- Affiliation of the first author: department of computer science, university of central
+    florida, orlando, usa
+  Affiliation of the last author: a.i. lab, tencent, bellevue, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\A_Curriculum_Domain_Adaptation_Approach_to_the_Semantic_Segmentation_of_Urban_Sc\figure_1.jpg
+  Figure 1 caption: The overall framework of our curriculum domain adaptation approach
+    to the semantic segmentation of urban scenes.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\A_Curriculum_Domain_Adaptation_Approach_to_the_Semantic_Segmentation_of_Urban_Sc\figure_2.jpg
+  Figure 2 caption: Predictions by the same FCN-8s model, without domain adaptation,
+    before and after we calibrate the images colors.
+  Figure 3 Link: articels_figures_by_rev_year\2019\A_Curriculum_Domain_Adaptation_Approach_to_the_Semantic_Segmentation_of_Urban_Sc\figure_3.jpg
+  Figure 3 caption: Qualitative semantic segmentation results on the Cityscapes dataset
+    [44] (target domain). For each target image in the first column, we retrieve its
+    nearest neighbor from the SYNTHIA [2] dataset (source domain). The third column
+    plots the label distributions due to the groundtruth pixel-wise semantic annotation,
+    the predictions by the baseline network with no adaptation, and the inferred distribution
+    by logistic regression. The last three columns are the segmentation results by
+    the baseline network, our domain adaptation approach, and human annotators, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2019\A_Curriculum_Domain_Adaptation_Approach_to_the_Semantic_Segmentation_of_Urban_Sc\figure_4.jpg
+  Figure 4 caption: Qualitative semantic segmentation results on the Cityscapes dataset
+    [44] (target domain). For each target image in the first column, we retrieve its
+    nearest neighbor from the GTA [6] dataset (source domain). The third column plots
+    the label distributions due to the groundtruth pixel-wise semantic annotation,
+    the predictions by the baseline network with no adaptation, and the inferred distribution
+    by logistic regression. The last three columns are the segmentation results by
+    the baseline network, our domain adaptation approach, and human annotators, respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2019\A_Curriculum_Domain_Adaptation_Approach_to_the_Semantic_Segmentation_of_Urban_Sc\figure_5.jpg
+  Figure 5 caption: Confusion matrices for the baseline of no adaptation (left) and
+    Ours (CC+I+SP) (right) for the experiments of SYNTHIA-to-Cityscapes (SYNTHIA2Cityscapes,
+    top) and GTA-to-Cityscapes (GTA2Cityscapes, bottom).
+  Figure 6 Link: articels_figures_by_rev_year\2019\A_Curriculum_Domain_Adaptation_Approach_to_the_Semantic_Segmentation_of_Urban_Sc\figure_6.jpg
+  Figure 6 caption: "Some \u201Ctrain\u201D and \u201Cbus\u201D images from the Cityscapes\
+    \ and GTA datasets. We can see that the Cityscapes \u201Ctrains\u201D are visually\
+    \ more similar to the GTA \u201Cbuses\u201D than to the GTA \u201Ctrains\u201D\
+    ."
+  Figure 7 Link: articels_figures_by_rev_year\2019\A_Curriculum_Domain_Adaptation_Approach_to_the_Semantic_Segmentation_of_Urban_Sc\figure_7.jpg
+  Figure 7 caption: We evaluate how many superpixels are accurate in the top x% confidently
+    predicted superpixels. The experiments are conducted on the validation set of
+    Cityscapes with color constancy.
+  Figure 8 Link: articels_figures_by_rev_year\2019\A_Curriculum_Domain_Adaptation_Approach_to_the_Semantic_Segmentation_of_Urban_Sc\figure_8.jpg
+  Figure 8 caption: Pairwise comparison between different domain adaptation methods
+    for the semantic segmentation task. The entry (i,j) of this table is the number
+    of classes by which the i th method outperforms the j th. The results are obtained
+    on GTA2Cityscapes. Our method is labeled Curriculum.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yang Zhang
+  Name of the last author: Boqing Gong
+  Number of Figures: 8
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: A Curriculum Domain Adaptation Approach to the Semantic Segmentation
+    of Urban Scenes
+  Publication Date: 2019-03-06 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 \u03C7 2 \u03C72 Distances between the Groundtruth Label\
+      \ Distributions and Those Predicted by Different Methods for the Adaptation\
+      \ from SYNTHIA to Cityscapes"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison Results for Adapting the FCN-8s Model from SYNTHIA
+      to Cityscapes
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Results for Adapting the FCN-8s Model from GTA
+      to Cityscapes
+  Table 4 caption:
+    table_text: TABLE 4 Results for the Adaptation of FCN-8s from GTA to Cityscapes
+      When We Use Handcrafted Features Instead of the CNN Features
+  Table 5 caption:
+    table_text: TABLE 5 Results for the Adaptation of FCN-8s from GTA to Cityscapes
+      When We Use Different Numbers of Superpixels Per Image
+  Table 6 caption:
+    table_text: TABLE 6 Results for the Adaptation of ADEMXAPP [52] from GTA to Cityscapes
+  Table 7 caption:
+    table_text: TABLE 7 IoUs After Mixing Different Percentages of Cityscapes Images
+      into the SYNTHIA Training Dataset (SYN+CS), and of Models Trained with Different
+      Percentages of Cityscapes Images without Any SYNTHIA Images (CS Only)
+  Table 8 caption:
+    table_text: TABLE 8 Comparison with the Recent Works Published After the Conference
+      Version of Our Approach [11]
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903401
+- Affiliation of the first author: department of industrial engineering and management
+    science, northwestern university, evanston, usa
+  Affiliation of the last author: department of industrial engineering and management
+    science, northwestern university, evanston, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\A_Simple_and_Fast_Algorithm_for_LNorm_Kernel_PCA\figure_1.jpg
+  Figure 1 caption: Geometric derivation of the algorithm.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\A_Simple_and_Fast_Algorithm_for_LNorm_Kernel_PCA\figure_2.jpg
+  Figure 2 caption: Robust extraction of PCs (Linear Kernel).
+  Figure 3 Link: articels_figures_by_rev_year\2019\A_Simple_and_Fast_Algorithm_for_LNorm_Kernel_PCA\figure_3.jpg
+  Figure 3 caption: "Robust extraction of PCs (Gaussian Kernel with \u03C3 ranging\
+    \ from 10 to 25)."
+  Figure 4 Link: articels_figures_by_rev_year\2019\A_Simple_and_Fast_Algorithm_for_LNorm_Kernel_PCA\figure_4.jpg
+  Figure 4 caption: "The first toy example\u2014original space."
+  Figure 5 Link: articels_figures_by_rev_year\2019\A_Simple_and_Fast_Algorithm_for_LNorm_Kernel_PCA\figure_5.jpg
+  Figure 5 caption: "The first toy example\u2014principal space."
+  Figure 6 Link: articels_figures_by_rev_year\2019\A_Simple_and_Fast_Algorithm_for_LNorm_Kernel_PCA\figure_6.jpg
+  Figure 6 caption: "The second toy example\u2014original space."
+  Figure 7 Link: articels_figures_by_rev_year\2019\A_Simple_and_Fast_Algorithm_for_LNorm_Kernel_PCA\figure_7.jpg
+  Figure 7 caption: "The second toy example\u2014principal space."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Cheolmin Kim
+  Name of the last author: Diego Klabjan
+  Number of Figures: 7
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: A Simple and Fast Algorithm for L1-Norm Kernel PCA
+  Publication Date: 2019-03-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Real-World Datasets for Outlier Detection
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 AUC of the Outlier Detection Models
+  Table 3 caption:
+    table_text: TABLE 3 Runtime Comparison
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903505
+- Affiliation of the first author: tokyo institute of technology, meguro, tokyo, japan
+  Affiliation of the last author: national institute of informatics, chiyoda, tokyo,
+    japan
+  Figure 1 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_1.jpg
+  Figure 1 caption: "Example spectral distributions of dry and wet surface points\
+    \ (red and blue curves, respectively). The wet spectral distribution shows characteristic\
+    \ darkening (decrease in magnitude) and spectral change (narrowing of distribution,\
+    \ i.e., contrast increase) by directing attention to the black box. We refer to\
+    \ this change of spectral distribution as \u201Cspectral sharpening.\u201D The\
+    \ spectral energy is normalized for better visualization; the actual magnitude\
+    \ is significantly higher than that of the wet surface across the spectrum. We\
+    \ derive a novel spectral appearance model that accurately encodes both of these\
+    \ characteristics of wet surfaces and use it to estimate wetness and color from\
+    \ a single multispectral image."
+  Figure 10 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_10.jpg
+  Figure 10 caption: 'Experimental results of surface wetness and color recovery for
+    various real-world textured surfaces: (i) Striped socks, (ii) dotted cloth, (iii)
+    patched gauze (snowman), (iv) patched felt (clover), (v) heart-pointed socks.
+    (i-iv) is wet with wine and (v) is wet with water. (a) Input image. (b) A 2D gamma
+    map showing the spatial distribution of the degree of wetness. (c) Reconstructed
+    dry image visualized in RGB. (d) Plot of the multispectral absorption distribution
+    of material 1 (blue), material 2 (red) and liquid (yellow), where the horizontal
+    axis represents the wavelength and the vertical axis is the magnitude.'
+  Figure 2 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_2.jpg
+  Figure 2 caption: (a) The relation between the scattering parameter g and the shape
+    of the scattering distribution. (b) Different light paths with varying degrees
+    of scattering inside the surface collectively radiate from the same surface point.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_3.jpg
+  Figure 3 caption: "Definition of \u03B7 . The proportion \u03B7 is defined as the\
+    \ ratio of the path length through material 1 to the entire path length. The entire\
+    \ path length of the observed light is expressed as a summation of several light\
+    \ path lengths."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_4.jpg
+  Figure 4 caption: "Relation between surface weight and estimated degree of wetness\
+    \ \u03B3 during drying of wet cotton, gauze, felt, sand, and leather with several\
+    \ colors, where the horizontal axis is \u03B3 , and the vertical axis is weight\
+    \ (g)."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_5.jpg
+  Figure 5 caption: "Example of recovered spatial distribution of wetness. Letters\
+    \ \u201C H2O \u201D were drawn on a blue-green cotton surface with water. Our\
+    \ method recovers the surface wetness which clearly captures the spatial distribution\
+    \ corresponding to those letters."
+  Figure 6 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_6.jpg
+  Figure 6 caption: Experimental result for a red felt scene wet with orange juice.
+    (a) Input image (b) Estimates of surface wetness gamma (blue) and inverse intensity
+    (pink) along the black line of (a).
+  Figure 7 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_7.jpg
+  Figure 7 caption: 'Experimental results of surface wetness and color recovery for
+    various real-world surfaces: Felt-green, felt-blue, cotton-red, cotton-green,
+    and gauze-blue. (a) Input image. (b) A 3D gamma map showing the spatial distribution
+    of the degree of wetness. (c) Graphs for intensity (red), gamma w (blue) along
+    the black line of (a), and the inverse intensity (magenta). (d) Visualization
+    of recovered dry spectral distribution matrix A (upper) and multiple scattering
+    liquid (water) absorption matrix B (bottom), where the plots on the left show
+    the spectral distributions for single scattering (i.e., first column of the matrices).
+    (e) Comparison of the input multispectral distribution and the recovered distribution
+    using estimated model parameters for dry and saturated surfaces, where the horizontal
+    axis is the wavelength and vertical axis is the magnitude.'
+  Figure 8 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_8.jpg
+  Figure 8 caption: 'Experimental results of surface wetness and color recovery for
+    various liquids: (i) Felt-green-coffee, (ii) felt-green-orange, (iii) felt-green-wine,
+    (iv) felt-blue-coffee, (v) felt-blue-orange, (vi) felt-blue-wine. The other explanations
+    of captions are the same as those in Fig. 7 in the paper.'
+  Figure 9 Link: articels_figures_by_rev_year\2019\Estimation_of_Wetness_and_Color_from_a_Single_Multispectral_Image\figure_9.jpg
+  Figure 9 caption: 'Experimental results of surface wetness and color recovery for
+    various liquids: (i) Felt-red-coffee, (ii) felt-red-orange, (iii) felt-red-wine,
+    (iv) felt-white-coffee, (v) felt-white-orange, (vi) felt-white-wine. The other
+    explanations of captions are the same as those in Fig. 7 in the paper.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.81
+  Name of the first author: Hiroki Okawa
+  Name of the last author: Imari Sato
+  Number of Figures: 10
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: Estimation of Wetness and Color from a Single Multispectral Image
+  Publication Date: 2019-03-06 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Table of Notation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Correlation Coefficients between Weight and Wetness for Each
+      Material
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2903496
+- Affiliation of the first author: department of electronics engineering, gebze technical
+    university, gebze, turkey
+  Affiliation of the last author: department of electronics engineering, gebze technical
+    university, gebze, turkey
+  Figure 1 Link: articels_figures_by_rev_year\2019\Approximate_Sparse_Multinomial_Logistic_Regression_for_Classification\figure_1.jpg
+  Figure 1 caption: Iteration number versus overall accuracy (OA) for Salinas data.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Koray Kayabol
+  Name of the last author: Koray Kayabol
+  Number of Figures: 1
+  Number of Tables: 4
+  Number of authors: 1
+  Paper title: Approximate Sparse Multinomial Logistic Regression for Classification
+  Publication Date: 2019-03-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average OAs Along with Standard Deviations and Computation
+      Time (in Seconds) for Indian Pine
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average OAs Along with Standard Deviations and Computation
+      Time (in Seconds) for Pavia University
+  Table 3 caption:
+    table_text: TABLE 3 Average OAs Along with Standard Deviations and Computation
+      Time (in Seconds) for Pavia Centre
+  Table 4 caption:
+    table_text: TABLE 4 Average OAs Along with Standard Deviations and Computation
+      Time (in Seconds) for Salinas
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2904062

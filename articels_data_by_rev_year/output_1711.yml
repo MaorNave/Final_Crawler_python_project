@@ -1,0 +1,973 @@
+- Affiliation of the first author: school of electrical engineering, korea advanced
+    institute of science and technology, daejeon, korea
+  Affiliation of the last author: school of electrical engineering, korea advanced
+    institute of science and technology, daejeon, korea
+  Figure 1 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_1.jpg
+  Figure 1 caption: Comparison of different types of convolution units. (a) Conventional
+    convolution unit has a fixed shape. (b) In comparison, ACU can learn its shape,
+    which is shared for all outputs. (c) Grouped ACU can have multiple shapes and
+    view different receptive fields according to its groups.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_10.jpg
+  Figure 10 caption: Learned positions of DACUs corresponding Inception blocks. Five
+    randomly sampled position sets of each ACU layer are drawn. Multiple receptive
+    fields are applied to each channel. Each color represents each position set. (Best
+    viewed in color).
+  Figure 2 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_2.jpg
+  Figure 2 caption: Comparison of two methods for calculating ACU. (a) Weights are
+    multiplied with interpolated inputs. (b) Extrapolated weights are multiplied with
+    original inputs, and summed up. These two methods obtain the same result.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_3.jpg
+  Figure 3 caption: Extrapolation of a filter with multiple synapses. The black dots
+    represent the position of synapses and the red dots represent the extrapolated
+    weights. The large red dots represent an accumulation of multiple weights, and
+    the weights without any dots in the right figure are zero.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_4.jpg
+  Figure 4 caption: "Example of learned positions of ACUs. Higher layers tend to grow\
+    \ its receptive field. Sizes of filters in all ACUs are bounded in the 7\xD77\
+    \ area."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_5.jpg
+  Figure 5 caption: (a) ACU connects all input and output channels and uses only one
+    position set, which is shared among all output channels. (b) Grouped ACU splits
+    the input and output channels according to the groups, and links channels only
+    within the same groups. Each group has its own position set, which is optimized
+    only for that group. The upper and lower circles represent channels. (c) DACU
+    calculates convolution by using only one input channel and applies different position
+    parameters for each channel.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_6.jpg
+  Figure 6 caption: "Generalization of Inception structures: (a) Simplified Inception\
+    \ with 3\xD73 convolutions proposed in [31]. This simplification only combines\
+    \ single-scale features. (b) In the generalization of Inception through ACUs,\
+    \ each ACU views different receptive fields. (c) Equivalent conversion of (b)\
+    \ through grouped ACU. (d) Extension of Inception to the extreme case through\
+    \ DACUs, which observes different receptive field for every input channel. Tensors\
+    \ of different colors represent output channels with the application of different\
+    \ receptive fields. (Best viewed in color)."
+  Figure 7 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_7.jpg
+  Figure 7 caption: Test accuracy of networks in Table 3. By increasing cardinality,
+    the accuracy of the network using naive convolution is degraded. However, the
+    network using an ACU retains the accuracy even though the number of parameters
+    decreases.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_8.jpg
+  Figure 8 caption: "Visualization of the filter of the 3\xD73 convolution in the\
+    \ last residual block of \xD71d network in Table 3 (a) Owing to the restriction\
+    \ of its shape, many duplications of filters are shown in naive convolution. (b)\
+    \ The filters are shown as diverse shapes and display many white areas indicating\
+    \ sparsity. To visualize the filter of ACU, we extrapolated filters and cropped\
+    \ a 9\xD79 area. Note that blue and red represent negative and positive values,\
+    \ respectively."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Integrating_Multiple_Receptive_Fields_Through_Grouped_Active_Convolution\figure_9.jpg
+  Figure 9 caption: "Example of learned position in one layer (ACU in the last residual\
+    \ block of \xD71d network in Table 3). This shows diversity of learned positions."
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yunho Jeon
+  Name of the last author: Junmo Kim
+  Number of Figures: 13
+  Number of Tables: 8
+  Number of authors: 2
+  Paper title: Integrating Multiple Receptive Fields Through Grouped Active Convolution
+  Publication Date: 2020-05-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Test Error (%) of Networks on CIFAR-10 With a Large Convolution
+      and ACU
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Test Error (%) on CIFAR-10 With ACU and its
+      Variants
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Test Error (%) on CIFAR-10 With the Increase
+      in Cardinality
+  Table 4 caption:
+    table_text: TABLE 4 Effect of Using Multiple Positions for DACUs Using CIFAR-10
+  Table 5 caption:
+    table_text: TABLE 5 The Effectiveness of Replacing Inception Blocks
+  Table 6 caption:
+    table_text: TABLE 6 Accuracy (%) of MobileNetV2 With Depthwise Convolution and
+      DACU on ImageNet Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Semantic Segmentation Results on PASCAL Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Experimental Results of Object Detection on MS COCO minival
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2995864
+- Affiliation of the first author: department of computer science, city university
+    of hong kong, hong kong
+  Affiliation of the last author: school of information management, jiangxi university
+    of finance and economics, jiangxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_1.jpg
+  Figure 1 caption: Different types of visibility degradation caused by rain. (a)Rain
+    streaks cause severe occlusion on the background scene. (b)Rain accumulation significantly
+    degrades the contrast of the scene and reduce the visibility.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_10.jpg
+  Figure 10 caption: 'The objective results of different methods. Top panel: PSNR.
+    Bottom panel: SSIM. All methods are sorted by year. A red curve connects the top
+    performance from 2015 to 2019. It is shown that, the objective performance gains
+    converge gradually.'
+  Figure 2 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_2.jpg
+  Figure 2 caption: 'Milestones of single image deraining methods: image decomposition,
+    sparse coding, Gaussian mixture models, deep convolutional network, generative
+    adversarial network, and semiunsupervised learning. Before 2017, the typical methods
+    are model-based approach (or non-deep learning approach). Since 2017, single-image
+    deraining methods enter into a period of data-driven approach (or deep learning
+    approach).'
+  Figure 3 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_3.jpg
+  Figure 3 caption: A raindrops appearance [14] is a complex mapping of the environmental
+    radiance, which is determined by reflection, refraction, and internal reflection.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_4.jpg
+  Figure 4 caption: The improvement of single-image rain removal, from model-based
+    to data-driven approaches. The model-based methods employ optimization frameworks
+    for deraining. They rely on the statistical analysis of rain streaks and background
+    scenes, and enforce handcrafted priors on both rain and background layers. Data-driven
+    approaches exploit deep networks to automatically extract hierarchical features,
+    enabling them to model more complicated mappings from rain images to clean ones.
+    Some rain-related constraints are injected into the networks to learn more effective
+    features.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_5.jpg
+  Figure 5 caption: Summary of GAN-based rain removal methods. To capture some visual
+    properties of rain that cannot be modeled and synthesized, the adversarial learning
+    is introduced to reduce the domain gaps between the generated results and real
+    clean images.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_6.jpg
+  Figure 6 caption: Summary of semiunsupervised learning-based rain removal methods.
+    Semiun-supervised learning methods make an attempt to improve the generality and
+    scalability by learning directly from real rain data.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_7.jpg
+  Figure 7 caption: Summary of the side information and priors for single-image rain
+    removal. They injected into the networks to learn more effective features for
+    deraining.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_8.jpg
+  Figure 8 caption: Summary of the network improvement for single-image deraining.
+    More effective network architectures are designed by relying on certain assumptionsconstraints
+    and general knowledge in image processing.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Single_Image_Deraining_From_ModelBased_to_DataDriven_and_Beyond\figure_9.jpg
+  Figure 9 caption: The basic block improvement for single-image rain removal. The
+    trend of newly proposed methods is to have more complex basic blocks with more
+    powerful modeling capacities, which are further stacked into a more complex deraining
+    network.
+  First author gender probability: 0.81
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.94
+  Name of the first author: Wenhan Yang
+  Name of the last author: Jiaying Liu
+  Number of Figures: 12
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: 'Single Image Deraining: From Model-Based to Data-Driven and Beyond'
+  Publication Date: 2020-05-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Rain Synthetic Models in the Literature
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 An Overview of Single-Image Rain Removal Methods (Part1)
+  Table 3 caption:
+    table_text: TABLE 3 An Overview of Single-Image Rain Removal Methods (Part2)
+  Table 4 caption:
+    table_text: TABLE 4 Summary of Side Information Used in Previous Works
+  Table 5 caption:
+    table_text: TABLE 5 Summary of Loss Functions Used in Existing Works
+  Table 6 caption:
+    table_text: TABLE 6 Summary of Datasets Used in Previous Works
+  Table 7 caption:
+    table_text: TABLE 7 The Non-Reference Metric Results of Different Methods
+  Table 8 caption:
+    table_text: TABLE 8 The Evaluation Results of All Quality Assessment Models
+  Table 9 caption:
+    table_text: TABLE 9 The Model Complexity and Running Time of Different Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2995190
+- Affiliation of the first author: department of electrical, electronic and computer
+    engineering, university of catania, catania, italy
+  Affiliation of the last author: department of psychology, university of central
+    florida, orlando, fl, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_1.jpg
+  Figure 1 caption: Siamese network for learning a joint brain-image representation.
+    The idea is to learn a space by maximizing a compatibility function between two
+    embeddings of each input representation. Given a positive match between an image
+    and the related EEG from one subject, and a negative match between the same EEG
+    and a different image, the network is trained to ensure a closer similarity (higher
+    compatibility) between related EEGimage pairs than unrelated ones.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_10.jpg
+  Figure 10 caption: Average activation maps. (Left image). Average activation map
+    across all image classes. (Right images). Average activation in different time
+    ranges.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_2.jpg
+  Figure 2 caption: Detailed EEG-ChannelNet Architecture. The EEG signal is first
+    processed by a bank of concatenated 1D convolutions over channels (temporal block),
+    followed by a bank of concatenated 1D convolutions across channels (spatial block).
+    The resulting features are then processed by a cascade of residual layers, followed
+    by a final convolution and a fully-connected layer projecting to the joint embedding
+    dimensionality.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_3.jpg
+  Figure 3 caption: 'Our multiscale suppression-based saliency detection. Given an
+    EEGimage pair, we estimate the saliency of an image patch by masking it and computing
+    the corresponding variation in compatibility. Performing the analysis at multiple
+    scales and for all image pixels results in a saliency map of the whole image.
+    Note that, although the example scale-specific saliency maps appear pixellated,
+    that is only a graphical artifact to give the effect of scale: in practice, scale-specific
+    maps are still computed pixel by pixel.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_4.jpg
+  Figure 4 caption: Power spectral density of a subjects EEG recording, after 5-95
+    Hz band-pass filtering and notch filtering at 50 Hz.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_5.jpg
+  Figure 5 caption: "Mapping between EEG channels and brain cortices. (Left) EEG channel\
+    \ placement and corresponding brain cortices (background image source: Brain Products\
+    \ GmbH, Gilching, Germany). We use a 128-channel EEG, where each channel in the\
+    \ figure is identified by a prefix letter referring to brain cortex (Fp: frontal,\
+    \ T: temporal, C: central, P: parietal, O: occipital) and a number indicating\
+    \ the electrode. (Right) Neural activation visualization\u2014top view of the\
+    \ scalp\u2014employed in this paper. A detailed mapping between EEG channels and\
+    \ brain cortices can be found in [60]."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_6.jpg
+  Figure 6 caption: "Qualitative comparison of generated saliency maps. From left\
+    \ to right: input image, human gaze data (ground truth), SALICON, SalNet, visual\
+    \ classifier\u2013driven detector, and our visualEEG\u2013driven detector. It\
+    \ can be noted a) that the maps generated by our method resemble the ground truth\
+    \ masks more than the state-of-the-art methods; b) adding brain activity information\
+    \ to visual features results in an improved reconstruction (more details and less\
+    \ noise) in the saliency calcualtion (compare the 5th and 6th columns)."
+  Figure 7 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_7.jpg
+  Figure 7 caption: "Qualitative evaluation of saliency detection at different times.\
+    \ From left to right: input image, saliency detection using EEG data in time range\
+    \ [20\u2013240] ms, saliency detection in time range [130\u2013350] ms, saliency\
+    \ detection in time range [240\u2013460] ms and saliency detection using the entire\
+    \ EEG time course, i.e, [20\u2013460] ms. It can be noted that, at the beginning,\
+    \ saliency is more focused on local and global visual features, and later focused\
+    \ on context and ultimately on objects of interest; with the last column integrating\
+    \ all contributions in one saliency map."
+  Figure 8 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_8.jpg
+  Figure 8 caption: "Examples of our brain-derived saliency detection. In all cases,\
+    \ the ImageNet class (from top to bottom: \u201Cmobile phone\u201D, \u201Cmug\u201D\
+    , \u201Cbanana\u201D and \u201Cpizza\u201D) is different from objects receiving\
+    \ more attention by the human observers. We report the saliency in the same time\
+    \ ranges of Fig. 6. Please note that all the four images were correctly classified\
+    \ by the employed visual encoder, i.e, Inception-v3."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Decoding_Brain_Representations_by_Multimodal_Learning_of_Neural_Activity_and_Vis\figure_9.jpg
+  Figure 9 caption: Activation maps per visual class. Average activation maps for
+    some of the 40 visual classes in the dataset.
+  First author gender probability: 0.77
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Simone Palazzo
+  Name of the last author: Mubarak Shah
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: Decoding Brain Representations by Multimodal Learning of Neural Activity
+    and Visual Features
+  Publication Date: 2020-05-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 EEG Classification Accuracy Using Different EEG Frequency
+      Bands
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 (Top) EEG Classification Accuracy Using Different EEG Time
+      Intervals With Data Filtered in the [55-95] Hz Band
+  Table 3 caption:
+    table_text: TABLE 3 EEG and Image Classification Accuracy Obtained Using the Joint-Learning
+      Approach, for Different Layouts of the Image Encoders
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Image and EEG Classification Performance When
+      Using Only one Modality (Either Image or EEG) Relative to When we use the Joint
+      Neural-Visual Features
+  Table 5 caption:
+    table_text: TABLE 5 Saliency Performance Comparison in Terms of Shuffled Area
+      Under Curve (s-AUC), Normalized Scanpath Saliency (NSS) and Correlation Coefficient
+      (CC) Between our Compatibility-Driven Saliency Detector and the Baseline Models
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2995909
+- Affiliation of the first author: university of notre dame, notre dame, in, usa
+  Affiliation of the last author: university of notre dame, notre dame, in, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_1.jpg
+  Figure 1 caption: (Top) In principle, enhancement techniques like the Super-Resolution
+    Convolutional Neural Network (SRCNN) [20] should improve visual recognition performance
+    by creating higher-quality inputs for recognition models. (Bottom) In practice,
+    this is not always the case, especially when new artifacts are unintentionally
+    introduced, such as in this application of Deep Video Deblurring [16].
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_2.jpg
+  Figure 2 caption: a) Sources of image degradation during acquisition. For a detailed
+    discussion of how these artifacts occur, see Supp. Section 1, which can be found
+    on the Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2020.2996538.
+    b) and c) The proposed framework for unifying image restoration and enhancement
+    and object recognition, supporting machine learning training and testing.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_3.jpg
+  Figure 3 caption: The visual enhancement task deployed on Amazon Mechanical Turk.
+    An observer is presented with the original image x and the enhanced image y .
+    The observer is then asked to select which label they perceive is most applicable.
+    The selected label is converted to an integer value [1,5]. The final rating for
+    the enhanced image is the mean score from approximately 20 observers. See Section
+    4.1 for further details.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_4.jpg
+  Figure 4 caption: Distribution of LPIPS similarity between original and enhanced
+    image pairs from four different approaches, and the human perceived improvementdeterioration
+    for each of the collections within the UG 2 dataset. Images human raters considered
+    as having a high-level of improvement tended to also have low LPIPS scores, while
+    images with higher LPIPS scores tended to be rated poorly by human observers.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_5.jpg
+  Figure 5 caption: LPIPS similarity versus human ratings for the baseline algorithms,
+    over all of the collections within the UG 2 dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_6.jpg
+  Figure 6 caption: Comparison of perceived visual improvement for all collections
+    after applying restoration and enhancement algorithms.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_7.jpg
+  Figure 7 caption: Classification rates at rank 5 for the original, un-processed,
+    frames for each collection in the training and testing datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_8.jpg
+  Figure 8 caption: Comparison of classification rates at rank 5 for each collection
+    after applying classification driven image enhancement algorithms by Sharma et
+    al. [91]. Markers in red indicate results on original images.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Bridging_the_Gap_Between_Computational_Photography_and_Visual_Recognition\figure_9.jpg
+  Figure 9 caption: Comparison of classification rates at rank 5 for each collection
+    after applying the four algorithms submitted by teams for this task.
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Rosaura G. VidalMata
+  Name of the last author: Walter J. Scheirer
+  Number of Figures: 9
+  Number of Tables: 3
+  Number of authors: 24
+  Paper title: Bridging the Gap Between Computational Photography and Visual Recognition
+  Publication Date: 2020-05-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the UG 2 2 Dataset to Related Aerial Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Summary of the UG 2 2 Training Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Summary of the UG 2 2 Testing Dataset
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2996538
+- Affiliation of the first author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Affiliation of the last author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_1.jpg
+  Figure 1 caption: "In this paper, we want to reconstruct 3D shapes solely from a\
+    \ sequence of annotated images\u2014shown on the top\u2014with no need of 3D ground\
+    \ truth. Our proposed hierarchical sparse coding model and corresponding deep\
+    \ solution outperform state-of-the-arts in the order of magnitude."
+  Figure 10 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_10.jpg
+  Figure 10 caption: Qualitative evaluation on real images with hand-annotated 2D
+    correspondences. Some images have missing points, due to occlusion. From top to
+    bottom are aeroplanes, bicycles, chairs, and dining tables. For each pair, the
+    left is an image with key points in red and the right is our reconstruction. In
+    each rendering of reconstruction, red cubes are reconstructed points, but the
+    planes and bars are manually added for descent visualization. Our method successfully
+    captures shape variations presented in the images, e.g., table width-length ratio,
+    the position of aeroplane wings, bicycle handlebar, and so forth.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_2.jpg
+  Figure 2 caption: "Architecture of our proposed deep NRSfM. The network can be divided\
+    \ into 1) Encoder: from 2D correspondences W to the hidden block sparse code \u03A8\
+    \ N , 2) Bottleneck: from hidden block sparse code \u03A8 N to hidden regular\
+    \ sparse code \u03C8 N and camera, 3) Decoder: from hidden regular sparse code\
+    \ \u03C8 N to 3D reconstructed shape S . The encoder and decoder are intentionally\
+    \ designed to share convolution kernels (i.e., dictionaries) and form a symmetric\
+    \ formulation. The symbol a\xD7b,c\u2192d refers to the convolution layer using\
+    \ kernel size a\xD7b with c input channels and d output channels."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_3.jpg
+  Figure 3 caption: Qualitative evaluation on IKEA dataset. From top to bottom are
+    tables, chairs, sofas and tables. From left to right are ground-truth and respectively
+    reconstructions by ours, RIKS [27], KSTA [24], NLO [25], SFC [6], CNS [26], BMM
+    [9]. In each rendering, red cubes are reconstructed points but the planes and
+    bars are manually added for descent visualization.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_4.jpg
+  Figure 4 caption: Qualitative evaluation on PASCAL3D dataset. From top to bottom
+    are configurations 1) orthogonal projection with no missing points, 2) orthogonal
+    projection with missing points, 3) weak perspective projection with no missing
+    points, 4) weak perspective projection with missing points. All these four configurations
+    are perturbed by Gaussian noise. From left to right are ground-truth, ours, KSTA
+    [24], RIKS [27], CNS [26], NLO [25], SFC [6], SPS [12]. In each rendering of reconstruction,
+    red cubes are reconstructed points but the planes and bars are manually added
+    for visualization.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_5.jpg
+  Figure 5 caption: Normalized mean 3D error on CMU Motion Capture dataset with Gaussian
+    noise perturbation. The blue solid line is ours while the red dashed line is CNS
+    [26], the lowest error of state-of-the-arts with no noise perturbation.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_6.jpg
+  Figure 6 caption: Percentage below a certain normalized mean 3D error. The blue
+    solid line is our 4-by-2 block sparse model, proposed to solve translation explicitly.
+    The red dashed line is our 3-by-2 block sparse model. The blue solid line is the
+    results applied to data with randomly generated translation while the red dashed
+    line is applied to clean data with no translation. These two plots are mostly
+    identical. This similarity is achieved because our proposed weak perspective solution
+    accurately estimates translations. This verifies our contribution.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_7.jpg
+  Figure 7 caption: Qualitative evaluation on CMU Motion Capture dataset. From top
+    to bottom are ground-truth, and respectively reconstructions by ours, CNS [26],
+    SPS [12], NLO [25]. From left to right are a randomly sampled frame from subjects
+    1, 5, 18, 23, 64, 70, 102, 106, 123, 127. In each rendering, spheres are reconstructed
+    landmarks but bars are for descent visualization. In each reconstruction, 3D shapes
+    are alighted to the ground-truth by a orthonormal matrix.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_8.jpg
+  Figure 8 caption: Normalized mean 3D error versus maximum possible number of missing
+    points. Maximum possible number of missing points equals to three denotes every
+    frame has to have one, two, or three missing points. The blue bar is our proposed
+    network. The red bar is the best baseline when all points are visible, i.e., CNS
+    in Table 3.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Deep_NonRigid_Structure_From_Motion_With_Missing_Data\figure_9.jpg
+  Figure 9 caption: A scatter plot of the normalized mean 3D error versus the coherence
+    of the final dictionary. The blue line is fitted based on the red points. Shading
+    presents the quality of linear regression. From left to right are, respectively,
+    for Subjects 5, 18, and 64. Note that each point is not individual experiments
+    but different iterations of the same experiment. The figure shows that during
+    training, coherence are getting smaller and errors are getting lower.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chen Kong
+  Name of the last author: Simon Lucey
+  Number of Figures: 10
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: Deep Non-Rigid Structure From Motion With Missing Data
+  Publication Date: 2020-05-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Comparison against State-Of-The-Art Algorithms
+      using IKEA Dataset in Normalized 3D Error
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Comparison Against State-Of-The-Art Algorithms
+      Using PASCAL3D Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparison Aginst State-Of-The-Arts Using CMU
+      Motion Capture Dataset in Normalized 3D Error
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2997026
+- Affiliation of the first author: tsinghua university, tsinghua-berkeley shenzhen
+    institite, shenzhen, china
+  Affiliation of the last author: tsinghua university, tsinghua-berkeley shenzhen
+    institite, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_1.jpg
+  Figure 1 caption: Our CrossNet++ architecture is able to deal with super-resolution
+    tasks on light-field data, real dual-camera data and video data. Meanwhile, it
+    can be easily extended to video denoising task.
+  Figure 10 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_10.jpg
+  Figure 10 caption: Super-resolution comparisons among different algorithms on our
+    real dual-camera dataset. We could see significant visual improvements produced
+    by our proposed CrossNet++ compared with LR image, RefSR methods PatchMatch [8]
+    and SRNTT [49]. Zoom in to see details.
+  Figure 2 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_2.jpg
+  Figure 2 caption: Illustration of different heterogeneous multi-camera systems.
+  Figure 3 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_3.jpg
+  Figure 3 caption: CrossNet [10] consists of a flow estimator (top) and the resting
+    synthesis module (both encoders and decoder). Please see Section 3.1 for more
+    explaination of CrossNet.
+  Figure 4 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_4.jpg
+  Figure 4 caption: "(a) The high resolution image. (b)(c)(d) visualize outputs of\
+    \ flow estimators with different inputs. (b) shows the estimated flow of CrossNet\
+    \ [10] whereas the inputs are the 8\xD7 downsampled LR image and the reference\
+    \ image. Instead, (c)(d) show estimated flow when the 8\xD7 downsampled LR image\
+    \ are replaced with a 4\xD7 downsampled LR image or a HR image. From (b) \u223C\
+    \ (d) a higher resolution input is accosciated to a more detailed flow map."
+  Figure 5 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_5.jpg
+  Figure 5 caption: The pipeline of CrossNet++. It contains two-stage cross-scale
+    warping modules, image encoder, and fusion decoder. The first warping module learns
+    to align the reference image to the LR image roughly. The encoder serves to extract
+    multi-scale features from both LR and the pre-aligned reference image. The second
+    warping module spatially aligns the reference feature map with the LR feature
+    map in a more fine-grained fashion. The decoder finally aggregates feature maps
+    from both domains to synthesize the HR output.
+  Figure 6 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_6.jpg
+  Figure 6 caption: Flow visualizations of CrossNet [10] and CrossNet++. (a) The ground-truth
+    HR images; (b) the flow maps of CrossNet at scale 0; (c) the accumulated flow
+    maps of stage I and stage II of CrossNet++, which contains more detailed structures
+    as expected.
+  Figure 7 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_7.jpg
+  Figure 7 caption: Interpretations of warping loss and landmark loss. The warping
+    loss minimizes the L 2 difference between HR image and the warped reference image.
+    The landmark loss minimizes the distance between warped landmarks (by indexing
+    through V 0 1 ) on HR image and landmarks on reference image. The Flow Estimator
+    Stage I can benefit from the accurate guidance provided by these loss functions,
+    so as to predict better flow-maps under large parallax.
+  Figure 8 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_8.jpg
+  Figure 8 caption: "The PSNR performances on light-field datasets under different\
+    \ parallax settings: the reference images are select at view (0,0), while the\
+    \ LR image are selected at view (i,i),0<i\u22647 . We can observe that the super-resolution\
+    \ performances drop significantly with parallax enlarging, which demonstrates\
+    \ that large parallax is a great challenge for RefSR schemes. Meanwhile, our proposed\
+    \ CrossNet++ outperforms the state-of-the-art approach CrossNet [10] especially\
+    \ on large-parallax cases."
+  Figure 9 Link: articels_figures_by_rev_year\2020\CrossNet_CrossScale_LargeParallax_Warping_for_ReferenceBased_SuperResolution\figure_9.jpg
+  Figure 9 caption: 'Visual comparisons for large-parallax cases, i.e. 8 times RefSR
+    on Flower dataset viewpoint (7,7) and LFVideo dataset viewpoint (7,7). Our approach
+    outperforms SISR methods: SRCNN [35], VDSR [37], MDSR [47], LapSR [43], DBPN [42],
+    RCAN [41] and RefSR methods: PatchMatch [8], SRNTT [49] and CrossNet [10]. Zoom
+    in to see details.'
+  First author gender probability: 0.68
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Yang Tan
+  Name of the last author: Lu Fang
+  Number of Figures: 14
+  Number of Tables: 5
+  Number of authors: 7
+  Paper title: 'CrossNet++: Cross-Scale Large-Parallax Warping for Reference-Based
+    Super-Resolution'
+  Publication Date: 2020-05-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Pre-Analysis of RefSR Performances on Flower Dataset [12]
+      With Different Input Pairs
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Quantitative Evaluations of the State-of-the-Art SISR and\
+      \ RefSR Algorithms on Light-Field Datasets, in Terms of PSNRSSIMIFC for Scale\
+      \ Factors 4\xD7 4\xD7 and 8\xD7 8\xD7 Respectively"
+  Table 3 caption:
+    table_text: "TABLE 3 Super-Resolution Performances (Scale 4\xD7 4\xD7) on Vimeo90K\
+      \ [14] Dataset"
+  Table 4 caption:
+    table_text: "TABLE 4 No-Reference Metrics PI [70], IS [71] and FID [72] are Applied\
+      \ for Quantitative Evaluations on Dual-Camera Dataset (Scale 4\xD7 4\xD7)"
+  Table 5 caption:
+    table_text: TABLE 5 Denoising Performances on Vimeo90K [14] Dataset
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2997007
+- Affiliation of the first author: department of mechanical engineering, visual intelligence
+    laboratory, korea advanced institute of science and technology, yuseong-gu, daejeon,
+    republic of korea
+  Affiliation of the last author: department of mechanical engineering, visual intelligence
+    laboratory, korea advanced institute of science and technology, yuseong-gu, daejeon,
+    republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_1.jpg
+  Figure 1 caption: Spatial distortion due to non-uniform spatial sampling rate in
+    an ERP image. The spherical surface (right) is projected onto the 2D euclidean
+    domain using equirectangular projection (ERP) method (left). The yellow square
+    areas on the spherical surface are transformed into the distorted yellow areas
+    on the ERP image after the projection.
+  Figure 10 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_10.jpg
+  Figure 10 caption: Tensor-wise implementation of our proposed convolution and pooling
+    methods. In both methods, the neighboring pixels (indicated as 1,2, ...,9 for
+    convolution, and 1,2,3 for pooling) are stacked on top of the pixels of interest
+    (indicated as 0) on which the kernels are to be positioned.
+  Figure 2 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_2.jpg
+  Figure 2 caption: Problems of using ERP images. (left) When an omni-directional
+    image is taken by a tilted camera, a sinusoidal fluctuation of the horizon occurs
+    in the ERP image. The yellow dotted line represents the fluctuating horizon [2].
+    (right) When the car is split, it is detected as two different objects. This image,
+    which is from the SUN360 dataset [34], demonstrates the effects of edge discontinuity.
+  Figure 3 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_3.jpg
+  Figure 3 caption: Cube padding [4]. Cube padding allows the receptive field of each
+    face to extend across the adjacent faces.
+  Figure 4 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_4.jpg
+  Figure 4 caption: 'Regular convex polyhedrons of 3rd subdivision (top) and their
+    corresponding spherical polyhedrons (bottom). From left to right: tetrahedron,
+    cube, octahedron, and icosahedron. The red dots represent the vertices of the
+    original regular convex polyhedrons.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_5.jpg
+  Figure 5 caption: Comparison of irregularity scores for different spherical polyhedrons
+    and ERP for each number of the subdivision. The increase of subdivision in ERP
+    representation refers to the increase of image resolution, starting from one pixel
+    at subdivision 0. Each subdivision increases the overall number of pixels by a
+    factor of 4. It can be seen that the irregularity scores converge to their upper
+    bounds at low subdivisions.
+  Figure 6 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_6.jpg
+  Figure 6 caption: 'The proposed kernel shapes for our pooling and convolution operations.
+    From left to right: the proposed pooling kernel shape (a, b), the proposed convolution
+    kernel shape (c, d), and the same kernel applied on one of the pixels around the
+    12 original vertices of icosahedron(d). The red dot where the five red lines meet
+    in the rightmost case corresponds to one of the 12 original vertices of icosahedron.
+    An example of this kernel can be seen as the yellow kernel in Fig. 7.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_7.jpg
+  Figure 7 caption: Visualization of how the kernel is applied onto the SpherePHD
+    representation. The left image shows the deployment of the right image. The yellow
+    kernel shows a case where the kernel is located at one of the pixels around the
+    12 original vertices of icosahedron. The purple kernel shows a case where the
+    kernel is located at the pixels around the pole. Note that a pole is also one
+    of the 12 original vertices of icosahderon. The blue kernel shows a case where
+    the kernel is applied on pixels around the boundaries of 20 original faces, but
+    not around the 12 original vertices of icosahedron. The green kernel shows all
+    the other cases where the kernel is applied on pixels that is not around the boundary
+    of 20 original faces of icosahedron.
+  Figure 8 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_8.jpg
+  Figure 8 caption: The inner-section indexing of SpherePHD (a, b, c) and the ordering
+    of sections (d) for 2nd subdivision ( n=2 ). Each section has 4n pixels. Dark
+    sections indicate an upward sections, and bright sections indicate a downward
+    sections. All inter-section spatial connections are visualized as red, green,
+    and blue lines.
+  Figure 9 Link: articels_figures_by_rev_year\2020\SpherePHD_Applying_CNNs_on__Images_With_NonEuclidean_Spherical_PolyHeDron_Repres\figure_9.jpg
+  Figure 9 caption: The proposed kernel weight assignments for upward and downward
+    pixels. The numbers in each kernel mean different weights used for both upward
+    and downward kernels, i.e., the same numbers indicate the weights are shared.
+    (a) The kernels share the weights and have 180 circ rotated relation. (b) The
+    kernels have independent weights. (c, d) The weights are assigned to spatially
+    consistent locations.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.56
+  Name of the first author: Yeonkun Lee
+  Name of the last author: Kuk-Jin Yoon
+  Number of Figures: 17
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: "SpherePHD: Applying CNNs on 360\n\u2218\n\u2218 Images With Non-Euclidean\
+    \ Spherical PolyHeDron Representation"
+  Publication Date: 2020-05-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 MNIST Classification Results of Kernel Weight Assignments
+      in Fig. 9 (%)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 MNIST Classification Results of the Three Methods
+  Table 3 caption:
+    table_text: TABLE 3 Detection Average Precision (AP) of Three Different Image
+      Representations (%)
+  Table 4 caption:
+    table_text: TABLE 4 The Average of Class Accuracies and the Overall Pixel Accuracy
+      of Three Different Image Representations (%)
+  Table 5 caption:
+    table_text: TABLE 5 Monocular Depth Estimation Results of Three Different Image
+      Representations
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2997045
+- Affiliation of the first author: tsinghua university, beijing, china
+  Affiliation of the last author: tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_1.jpg
+  Figure 1 caption: "Illustration of a very sparse MVS setting using only one seventh\
+    \ of the camera views, i.e., v i i=1,8,15,22,\u2026 , to recover the model 23\
+    \ in the DTU dataset [10]. Compared with the state-of-the-art methods, the proposed\
+    \ SurfaceNet+ provides much complete reconstruction, especially around the boarder\
+    \ region captured by very sparse views."
+  Figure 10 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_10.jpg
+  Figure 10 caption: "Ablation study. (a): Comparison among ICCV SurfaceNet [5] (\
+    \ circ curve), SurfaceNet with new backbone ( bullet curve), Multi-scale ( blacktriangle\
+    \ curve), heuristic occlusion-aware view selection during inference ( blacksquare\
+    \ curve) and the proposed trainable occlusion-aware view selection ( bigstar curve).\
+    \ (b): The benefit from an explicit \u201Crelative weight\u201D. square curve\
+    \ indicates the setting without relative weight that takes heuristic occlusion-aware\
+    \ view selection; blacktriangle curve is the experiment using trainable relative\
+    \ weight in SurfaceNet (wo occlusion-aware); bigstar curve depicts the proposed\
+    \ trainable relative weight in SurfaceNet+. (c): Evaluation of the multi-scale\
+    \ feature aggregation strategy that improves the completeness under different\
+    \ number of view pairs."
+  Figure 2 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_2.jpg
+  Figure 2 caption: "SurfaceNet+ recovers the whole scene S (K) by progressive refinement\
+    \ of the geometric predictions S (k) . So that for each sub-volume C (k) \u2208\
+    \ C C (k) (drawn as blue cube) the occlusion-aware view selection is performed\
+    \ on the geometric prior. The occluded projection rays are drawn in red and the\
+    \ blue views are the selected ones for reconstruction. In each scale, the volume-wise\
+    \ algorithm only loops through the region in cyan to boost the precision and efficiency."
+  Figure 3 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_3.jpg
+  Figure 3 caption: 'Illustration of two types of multi-view reconstruction methods.
+    The front view of the 3D model and the top view of the selected region (red) are
+    shown in pair. The circles (green) indicate the prediction. (a): Because the 2D
+    image unevenly samples the 3D surface, as the baseline angle increases, it is
+    rare for view pair (red and blue) to have intersected rays during depth fusion.
+    The 2D regularization gets less helpful. (b): Volumetric method optimizes the
+    3D geometry by directly regularizing in 3D space.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_4.jpg
+  Figure 4 caption: The network design of SurfaceNet+. The input of the network is
+    two unprojected sub-volumes with size of (3,s,s,s) from different views. The final
+    prediction is an one channel tensor predicting for each voxel the probability
+    of being on surface.
+  Figure 5 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_5.jpg
+  Figure 5 caption: The relationship between sparsity and the average baseline angle
+    over all the models in the DTU dataset [10], the Tanks and Temples dataset [23],
+    and the ETH3D low-res dataset [49].
+  Figure 6 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_6.jpg
+  Figure 6 caption: Comparison with the existing methods in the DTU Dataset [10] with
+    different sparsely sampling strategy. When Sparsity=3 and Batchsize=2 , the chosen
+    camera indexes are 1,2 4,5 7,8 10,11 .... SurfaceNet+ constantly outperforms the
+    state-of-the-art methods at all the settings, especially at the very sparse scenario.
+  Figure 7 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_7.jpg
+  Figure 7 caption: Quanlitative results of three scans 1, 23 and 114 of the DTU dataset
+    compared with R-MVSNet[7] and Gipuma[6]. SurfaceNet+ shows superior performance,
+    particularly with its stable recall quality in sparse cases. Note that the reconstruction
+    of SurfaceNet+ corresponds to the highest completeness and overall quality as
+    seen in Fig. 6 and Table. 1.
+  Figure 8 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_8.jpg
+  Figure 8 caption: Results of three models in Tanks and Temples intermediate set[23]
+    compared with R-MVSNet[7] and COLMAP[9], which demonstrate the power of SurfaceNet+
+    of high recall prediction in sparse-MVS.
+  Figure 9 Link: articels_figures_by_rev_year\2020\SurfaceNet_An_Endtoend_D_Neural_Network_for_Very_Sparse_MultiView_Stereopsis\figure_9.jpg
+  Figure 9 caption: Point cloud reconstructions of the ETH3D low-res dataset [49].
+  First author gender probability: 0.78
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Mengqi Ji
+  Name of the last author: Lu Fang
+  Number of Figures: 15
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: 'SurfaceNet+: An End-to-end 3D Neural Network for Very Sparse Multi-View
+    Stereopsis'
+  Publication Date: 2020-05-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Results of Reconstruction Quality on the DTU
+      Dataset in Terms of the Distance Metric(Lower is Better) and the Percentage
+      Metric [23](Higher is Better) With 1mm and 2mm as Thresholds
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Top and Non-Anonymous Methods on the Tanks and Temples
+      (T&T) Dataset [23] Leaderboard
+  Table 3 caption:
+    table_text: TABLE 3 Efficiency Comparison of Proposed Method With and Without
+      Volume Selection
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2996798
+- Affiliation of the first author: national laboratory of pattern recognition (nlpr),
+    institute of automation chinese academy of sciences (casia), school of artificial
+    intelligence (sai), center for biometric and security research (cbsr), university
+    of chinese academy of sciences (ucas), beijing, china
+  Affiliation of the last author: westlake university, hangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_1.jpg
+  Figure 1 caption: 'Illustration of false positives of our baseline face detector
+    on the WIDER FACE validation Hard subset. Left: Example of two error types of
+    false positives. Right: Distribution of two error types of false positives.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_10.jpg
+  Figure 10 caption: Precision-recall curves on the PASCAL Face dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_2.jpg
+  Figure 2 caption: "(a) As the IoU threshold increases, the AP of RetinaNet drops\
+    \ dramatically. Our method improves its location accuracy by boosting the regression\
+    \ ability. (b) RetinaNet produces \u223C50% false positives when the recall rate\
+    \ is 90 percent and it also misses \u223C5% faces. Our method improves its recall\
+    \ efficiency by enhancing the classification ability."
+  Figure 3 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_3.jpg
+  Figure 3 caption: Structure of RefineFace. It is based on RetinaNet with five proposed
+    modules. Among them, SML and FSM are only involved in training without any overhead
+    in inference, while STC, STR and RFE introduce a small amount of overhead.
+  Figure 4 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_4.jpg
+  Figure 4 caption: (a) STR provides better initialization for the subsequent regressor.
+    (b) STC increases the positivesnegatives ratio by about 38 times.
+  Figure 5 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_5.jpg
+  Figure 5 caption: Visualization of classification ability. Red and blue points are
+    positive and negative samples. The black curve enclosed area indicates the mixed
+    region where face and background are indistinguishable.
+  Figure 6 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_6.jpg
+  Figure 6 caption: Single-Shot Detectors (SSD) classify anchor using misaligned features
+    extracted from receptive field, while FSM classifies anchor using aligned features
+    extracted from anchor box. Black and red arrows mean forward and backward.
+  Figure 7 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_7.jpg
+  Figure 7 caption: Structure and illustration of receptive field enhancement (RFE).
+  Figure 8 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_8.jpg
+  Figure 8 caption: Precision-recall curves on WIDER FACE validation and testing subsets.
+  Figure 9 Link: articels_figures_by_rev_year\2020\RefineFace_Refinement_Neural_Network_for_High_Performance_Face_Detection\figure_9.jpg
+  Figure 9 caption: Precision-recall curves on the AFW dataset.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Shifeng Zhang
+  Name of the last author: Stan Z. Li
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: 'RefineFace: Refinement Neural Network for High Performance Face Detection'
+  Publication Date: 2020-05-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Effectiveness of Our Proposed Modules
+  Table 10 caption:
+    table_text: TABLE 10 AP ( % %) on the MAFA Testing Set
+  Table 2 caption:
+    table_text: TABLE 2 AP ( % %) of the Two-Step Regression Applied to Each Pyramid
+      Level
+  Table 3 caption:
+    table_text: TABLE 3 AP ( % %) at Different IoU Thresholds on the WIDER FACE Hard
+      Subset
+  Table 4 caption:
+    table_text: TABLE 4 AP ( % %) of the Two-Step Classification Applied to Each Pyramid
+      Level
+  Table 5 caption:
+    table_text: TABLE 5 Number of False Positives at Different Recall Rates
+  Table 6 caption:
+    table_text: "TABLE 6 AP ( % %) of Different \u03B1 \u03B1 in the Scale-Aware Margin\
+      \ Loss"
+  Table 7 caption:
+    table_text: TABLE 7 AP ( % %) of Different Output Sizes of RoIAlign in FSM
+  Table 8 caption:
+    table_text: TABLE 8 AP ( % %) of Different Design Types of FSM
+  Table 9 caption:
+    table_text: TABLE 9 Tradeoff Analysis Between Speed and Accuracy
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2997456
+- Affiliation of the first author: school of electrical and information engineering,
+    the university of sydney, camperdown, nsw, australia
+  Affiliation of the last author: school of electrical and information engineering,
+    the university of sydney, camperdown, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Progressive_CrossStream_Cooperation_in_Spatial_and_Temporal_Domain_for_Action_Lo\figure_1.jpg
+  Figure 1 caption: (a) Overview of our Cross-stream Cooperation framework (four stages
+    are used as an example for better illustration). The region proposals and features
+    from the flow stream help improve action detection results for the RGB stream
+    at Stage 1 and Stage 3, while the region proposals and features from the RGB stream
+    help improve action detection results for the flow stream at Stage 2 and Stage
+    4. Each stage comprises of two cooperation modules and the detection head. The
+    region-proposal level cooperation module refines the region proposals mathcal
+    Pit and the feature-level cooperation module improves the features mathbf Fit
+    , where the superscript iin lbrace RGB,Flowrbrace denotes the RGBFlow stream and
+    the subscript t denotes the stage number. The detection head is used for estimating
+    the action location and the class label. For region-proposal level cooperation,
+    we combine the most recent region proposals from the two streams. (b) (c) The
+    details of our feature-level cooperation modules through message passing from
+    one stream to another stream. The flow features are used to help the RGB features
+    in (b), while the RGB features are used to help the flow features in (c).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Progressive_CrossStream_Cooperation_in_Spatial_and_Temporal_Domain_for_Action_Lo\figure_2.jpg
+  Figure 2 caption: "Overview of two modules in our temporal boundary refinement framework:\
+    \ (a) the Initial Segment Generation Module and (b) the Temporal Progressive Cross-stream\
+    \ Cooperation (T-PCSC) Module. The Initial Segment Generation module combines\
+    \ the outputs from Actionness Detector and Action Segment Detector to generate\
+    \ the initial segments for both RGB and flow streams. Our T-PCSC framework takes\
+    \ these initial segments as the segment proposals and iteratively improves the\
+    \ temporal action detection results by leveraging complementary information of\
+    \ two streams at both feature and segment proposal levels (two stages are used\
+    \ as an example for better illustration). The segment proposals and features from\
+    \ the flow stream help improve action segment detection results for the RGB stream\
+    \ at Stage 1, while the segment proposals and features from the RGB stream help\
+    \ improve action detection results for the flow stream at Stage 2. Each stage\
+    \ comprises of the cooperation module and the detection head. The segment proposal\
+    \ level cooperation module refines the segment proposals P ~ i t by combining\
+    \ the most recent segment proposals from the two streams, while the segment feature\
+    \ level cooperation module improves the features F ~ i t , where the superscript\
+    \ i\u2208RGB,Flow denotes the RGBFlow stream and the subscript t denotes the stage\
+    \ number. The detection head is used to estimate the action segment location and\
+    \ the actionness probability."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Progressive_CrossStream_Cooperation_in_Spatial_and_Temporal_Domain_for_Action_Lo\figure_3.jpg
+  Figure 3 caption: Comparison of the single-stream frameworks of the action detection
+    method (see Section 3) and our action segment detector (see Section 4.2). The
+    modules within each blue dashed box share similar functions at the spatial domain
+    and the temporal domain, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Progressive_CrossStream_Cooperation_in_Spatial_and_Temporal_Domain_for_Action_Lo\figure_4.jpg
+  Figure 4 caption: An example of visualization results from different methods for
+    one frame. (a) single-stream Faster-RCNN (RGB stream), (b) single-stream Faster-RCNN
+    (flow stream), (c) a simple combination of two-stream results from Faster-RCNN
+    [14], and (d) our PCSC. (Best viewed on screen.)
+  Figure 5 Link: articels_figures_by_rev_year\2020\Progressive_CrossStream_Cooperation_in_Spatial_and_Temporal_Domain_for_Action_Lo\figure_5.jpg
+  Figure 5 caption: "Example results from our PCSC with temporal boundary refinement\
+    \ (TBR) and the two-stream Faster-RCNN method. There is one ground-truth instance\
+    \ in (a) and no ground-truth instance in (b-d). In (a), both of our PCSC with\
+    \ TBR method and the two-stream Faster-RCNN method [14] successfully capture the\
+    \ ground-truth action instance \u201CTennis Swing\u201D. In (b) and (c), both\
+    \ of our PCSC method and the two-stream Faster-RCNN method falsely detect the\
+    \ bounding boxes with the class label \u201CTennis Swing\u201D for (b) and \u201C\
+    Soccer Juggling\u201D for (c). However, our TBR method can remove the falsely\
+    \ detected bounding boxes from our PCSC in both (b) and (c). In (d), both of our\
+    \ PCSC method and the two-stream Faster-RCNN method falsely detect the action\
+    \ bounding boxes with the class label \u201CBasketball\u201D and our TBR method\
+    \ cannot remove the falsely detected bounding box from our PCSC in this failure\
+    \ case. (Best viewed on screen.)"
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.71
+  Name of the first author: Rui Su
+  Name of the last author: Wanli Ouyang
+  Number of Figures: 5
+  Number of Tables: 12
+  Number of authors: 4
+  Paper title: Progressive Cross-Stream Cooperation in Spatial and Temporal Domain
+    for Action Localization
+  Publication Date: 2020-05-26 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Comparison (mAPs % at the Frame Level) of Different Methods\
+      \ on the UCF-101-24 Dataset When Using the IoU Threshold \u03B4 \u03B4 at 0.5"
+  Table 10 caption:
+    table_text: TABLE 10 The Average Confident Scores (%) of the Bounding Boxes Generated
+      by Our PCSC Method at Different Stages Based on Different IoU Thresholds on
+      the UCF-101-24 Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Comparison (mAPs % at the Video Level) of Different Methods
+      on the UCF-101-24 Dataset When Using Different IoU Thresholds
+  Table 3 caption:
+    table_text: "TABLE 3 Comparison (mAPs % at the Frame Level) of Different Methods\
+      \ on the J-HMDB Dataset When Using the IoU Threshold \u03B4 \u03B4 at 0.5"
+  Table 4 caption:
+    table_text: TABLE 4 Comparison (mAPs % at the Video Level) of Different Methods
+      on the J-HMDB Dataset When Using Different IoU Thresholds
+  Table 5 caption:
+    table_text: TABLE 5 Ablation Study for Our PCSC Method at Different Training Stages
+      on the UCF-101-24 Dataset in Terms of mAP (%) at the Frame Level
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Study for Our Temporal Boundary Refinement Method
+      on the UCF-101-24 Dataset in Terms of mAP (%) at the Video Level
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Study for Our Temporal PCSC (T-PCSC) Method at Different
+      Training Stages on the UCF-101-24 Dataset in Terms of mAP (%) at the Video Level
+  Table 8 caption:
+    table_text: TABLE 8 The Large Overlap Ratio (LoR) of the Generated Region Proposals
+      From the Latest RGB Stream of Our PCSC Method With Respect to Those From the
+      Latest Flow Stream on the UCF-101-24 Dataset
+  Table 9 caption:
+    table_text: TABLE 9 The Mean Average Best Overlap (MABO) Scores Between the Bounding
+      Boxes Generated by Our PCSC Method at Different Stages and the Ground-Truth
+      Bounding Boxes on the UCF-101-24 Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2997860

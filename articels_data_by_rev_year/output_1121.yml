@@ -1,0 +1,841 @@
+- Affiliation of the first author: visual recognition group, czech technical university
+    in prague, prague 6, czech republic
+  Affiliation of the last author: visual recognition group, czech technical university
+    in prague, prague 6, czech republic
+  Figure 1 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_1.jpg
+  Figure 1 caption: "The architecture of our network with the contrastive loss used\
+    \ at training time. A single vector f \xAF is extracted to represent an image."
+  Figure 10 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_10.jpg
+  Figure 10 caption: "Performance evaluation of our \u03B1 -weighted query expansion\
+    \ ( \u03B1 QE) with the VGG with GeM layer, multi-scale representation, and Lw\
+    \ on Oxford105k and Paris106k datasets. We compare the standard average query\
+    \ expansion (AQE) to our \u03B1 QE for different values of \u03B1 and number of\
+    \ images used nQE."
+  Figure 2 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_2.jpg
+  Figure 2 caption: Visualization of image regions that correspond to MAC descriptor
+    dimensions that have the highest contribution, i.e., large product of descriptor
+    elements, to the pairwise image similarity. The example uses VGG before (top)
+    and after (bottom) fine-tuning. Same color corresponds to the same descriptor
+    component (feature map) per image pair. The patch size is equal to the receptive
+    field of the last local pooling layer.
+  Figure 3 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_3.jpg
+  Figure 3 caption: Visualization of X p k projected on the original image for a pair
+    of query-database image. The 9 feature maps shown are the ones that score highly,
+    i.e., large product of GeM descriptor components, for the database image (right)
+    but low for the top-ranked non-matching images. The example uses fine-tuned VGG
+    with GeM and single p for all feature maps, which converged to 2.92.
+  Figure 4 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_4.jpg
+  Figure 4 caption: Visualization of X p k projected on the original image for three
+    different values of p . Case p=1 corresponds to SPoC, and larger p corresponds
+    to GeM before the summation of (3). Examples shown use the off-the-shelf VGG.
+  Figure 5 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_5.jpg
+  Figure 5 caption: Examples of training query image q (one per row shown in green
+    border), and their corresponding negatives chosen by different strategies. We
+    show the hardest non-matching image n(q) , and the additional non-matching images
+    selected as negative examples by N 1 (q) and our method N 2 (q) . The former chooses
+    k-nearest neighbors among all non-matching images, while the latter chooses k-nearest
+    neighbors but with at most one image per 3D model.
+  Figure 6 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_6.jpg
+  Figure 6 caption: "Examples of training query images (green border) and matching\
+    \ images selected as positive examples by methods: m 1 (q) \u2013 the most similar\
+    \ image based on the current network; m 2 (q) \u2013 the most similar image based\
+    \ on the BoW representation; and our proposed m 3 (q) \u2013 a hard image depicting\
+    \ the same object."
+  Figure 7 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_7.jpg
+  Figure 7 caption: "Performance comparison of methods for positive and negative example\
+    \ selection. Evaluation is performed with AlexNet MAC on Oxford105k and Paris106k\
+    \ datasets. The plot shows the evolution of mAP with the number of training epochs.\
+    \ Epoch 0 corresponds to the off-the-shelf network. All approaches use the contrastive\
+    \ loss, except if otherwise stated. The network with the best performance on the\
+    \ validation set is marked with \u22C6."
+  Figure 8 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_8.jpg
+  Figure 8 caption: "Influence of the number of 3D models used for CNN fine-tuning.\
+    \ Performance is evaluated with AlexNet MAC on Oxford105k and Paris106k datasets\
+    \ using 10, 100 and 551 (all available) 3D models. The network with the best performance\
+    \ on the validation set is marked with \u22C6."
+  Figure 9 Link: articels_figures_by_rev_year\2018\FineTuning_CNN_Image_Retrieval_with_No_Human_Annotation\figure_9.jpg
+  Figure 9 caption: Performance comparison of the dimensionality reduction performed
+    by PCAw and our Lw with the fine-tuned VGG with MAC layer and the fine-tuned VGG
+    with GeM layer on Oxford105k and Paris106k datasets.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Filip Radenovi\u0107"
+  Name of the last author: "Ond\u0159ej Chum"
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Fine-Tuning CNN Image Retrieval with No Human Annotation
+  Publication Date: 2018-06-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance (mAP) Comparison After CNN Fine-Tuning for Different
+      Pooling Layers
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: 'TABLE 2 Performance (mAP) Comparison of CNN Vector Post-Processing:
+      No Post-Processing, PCA-Whitening [22] (PCAw) and Our Learned Whitening (Lw)'
+  Table 3 caption:
+    table_text: TABLE 3 Performance (mAP) Evaluation of the Multi-Scale Representation
+      Using the Fine-Tuned VGG with GeM Layer
+  Table 4 caption:
+    table_text: TABLE 4 Performance (mAP) Evaluation for Varying Descriptor Dimensionality
+      After Reduction with Lw
+  Table 5 caption:
+    table_text: TABLE 5 Performance (mAP) Comparison with the State-of-the-Art Image
+      Retrieval Using VGG and ResNet (Res) Deep Networks, and Using Local Features
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2846566
+- Affiliation of the first author: school of information and communication engineering,
+    dalian university of technology, dalian, ganjingzi, china
+  Affiliation of the last author: tiwaki co., ltd., kusatsu, shiga, japan
+  Figure 1 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_1.jpg
+  Figure 1 caption: 'Saliency detection results by different methods. From left to
+    right: Original image, groundtruth mask, our proposed RFCN, RC [20], MR [12].'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_10.jpg
+  Figure 10 caption: Saliency maps generated by the proposed method with and without
+    recurrent convolutioanl layers. (a) Original images. (b)Ground truth. (c)(d) Saliency
+    maps without and with recurrent layer.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_2.jpg
+  Figure 2 caption: Architecture overview of our RFCN model. The saliency map predicted
+    in the previous time step is utilized to evaluate the proposals and fusion with
+    them.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_3.jpg
+  Figure 3 caption: Saliency maps generated by our model. (a) Original images. (b)Ground
+    truth. (c)(d) Saliency maps without and with prior maps, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_4.jpg
+  Figure 4 caption: Comparison of different deep models. (a) Convolution network.
+    (b) Fully convolution network. (c) Fully convolution network with deconvolution
+    layers. (d)(e) Recurrent fully convolution networks with different recurrent architectures.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_5.jpg
+  Figure 5 caption: Unfolded architecture of the recurrent layer.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_6.jpg
+  Figure 6 caption: Saliency detection results on different stages. (a)Original images.
+    (b)Ground truth. (c)Results of pre-trained RFCN. (d) Results of fine-tuned RFCN.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_7.jpg
+  Figure 7 caption: Comparisons of saliency maps. Top, middle and bottom two rows
+    are images from the HKU-IS, ECSSD and PASCAL-S data sets, respectively. (a) Original
+    images, (b)ground truth, (c)Our RFCN method, (d)DCL, (e)ELD, (f)DS, (g)LEGS, (h)MDF,
+    (i)DRFI, (j)wCtr, (k)HDCT, (l)DSR, (m)MR, (n)HS.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_8.jpg
+  Figure 8 caption: Performance of the proposed algorithm compared with other state-of-the-art
+    methods on the HKU-IS, ECSSD, PASCAL-S and SED1 databases, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Salient_Object_Detection_with_Recurrent_Fully_Convolutional_Networks\figure_9.jpg
+  Figure 9 caption: Saliency maps generated in different time step.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Linzhao Wang
+  Name of the last author: Xiang Ruan
+  Number of Figures: 11
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Salient Object Detection with Recurrent Fully Convolutional Networks
+  Publication Date: 2018-06-12 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 F-Measure and MAE on the HKU-IS, ECSSD, PASCAL-S and SED1
+      Data Sets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance of Our Models in Terms of F-Measure
+  Table 3 caption:
+    table_text: TABLE 3 Performance of RFCN with Different Time Steps on the PASCAL
+      VOC 2011 val Data Set in Terms of mIU
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of F-Measure and MAE on the ECSSD, PASCAL-S, HKU-IS,
+      and SED1 Data Sets with T=1, 2, 3
+  Table 5 caption:
+    table_text: TABLE 5 Performance on the PASCAL VOC 2012 val Data Set in Terms of
+      mIU
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Different Recurrent Layer Placement on the PASCAL
+      VOC 2011 val Data Set in Terms of mIU
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2846598
+- Affiliation of the first author: perceptiveio, san francisco, ca, usa
+  Affiliation of the last author: microsoft, redmond, wa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_1.jpg
+  Figure 1 caption: Opening the black box. A typical black box optimization approach
+    (left) will regress candidate full poses and then iteratively update them based
+    on the evaluation of the energy function. Our approach (right) instead regresses
+    partial poses in a layered kinematic hierarchy, using a surrogate energy function
+    to keep only the best partial poses. Our approach can achieve higher accuracy
+    than black box optimization, even without iteration.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_10.jpg
+  Figure 10 caption: mathrmHSmathrmCmathrmOmathrmP and mathrmHSmathrmFmathrmOmathrmP
+    refines the estimation of HierForest and HierCNN by the silver energy respectively
+    on MSHD dataset(zoom out to get better visualization).
+  Figure 2 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_2.jpg
+  Figure 2 caption: 'Our approach regresses a full hand pose hypothesis in four layers.
+    At each layer, we predict particular subsets of pose parameters, conditioned on
+    results of all the previous layers. The layers are aligned with the kinematic
+    tree, shown top right: layers 1 and 2 respectively predict wrist position and
+    rotation; layer 3 contains one regressor per finger, each of which predicts its
+    respective MCP rotations (flexion and abduction); layer 4 also specializes per
+    finger, and jointly predicts the (highly correlated) flexions for the PIP and
+    DIP joints. In each layer, the children positions can be calculated by the rotation.
+    Finally, we concatenate the partial poses, resulting in a hypothesis of the full
+    hand pose.'
+  Figure 3 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_3.jpg
+  Figure 3 caption: "Hierarchical sampling optimization See Sections 2 and 4 for details.\
+    \ The triangles represent discriminative regressors to estimate the conditional\
+    \ distribution P( \u03B8 l | \u03B8 l\u22121 ,\u2026, \u03B8 l ,Z) and the spheres\
+    \ represent the distribution. Note that for simplicity, we only show the optimization\
+    \ for the index finger at layer 4, which has parameters \u03B8 4i ."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_4.jpg
+  Figure 4 caption: "The silver energy: \u03C4 1 and \u03C4 2 form a 'safe zone' within\
+    \ a certain range of the depth value of each point. Red dots indicate the proposals\
+    \ for the wrist; tick means the proposal is accepted by the current term and cross\
+    \ means otherwise."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_5.jpg
+  Figure 5 caption: "3 frames from NYU dataset [52]. Due to global rotation, the same\
+    \ gesture looks rather different across these frames. Although the 3D location\
+    \ x changes, joint angle \u03B8 stays the same (in 3D) and trackable."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_6.jpg
+  Figure 6 caption: Self-comparisons for HSO based on CNN sampling by the proportion
+    of joints under a certain error threshold.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_7.jpg
+  Figure 7 caption: Self-comparisons for HSO based on CNN sampling by the mean joint
+    errors of partial poses in layers.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_8.jpg
+  Figure 8 caption: Self-comparisons for HSO based on decision forest sampling by
+    the proportion of joints under a certain error threshold.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Opening_the_Black_Box_Hierarchical_Sampling_Optimization_for_Hand_Pose_Estimatio\figure_9.jpg
+  Figure 9 caption: Self-comparisons for HSO based on decision forest sampling by
+    the mean joint errors of partial poses in layers.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Danhang Tang
+  Name of the last author: Jamie Shotton
+  Number of Figures: 16
+  Number of Tables: 3
+  Number of authors: 8
+  Paper title: 'Opening the Black Box: Hierarchical Sampling Optimization for Hand
+    Pose Estimation'
+  Publication Date: 2018-06-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Baselines and HSO Variants
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 CNN Architectures for the Partial Pose and Full Pose Estimation
+  Table 3 caption:
+    table_text: TABLE 3 Description of Datasets
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2847688
+- Affiliation of the first author: centre for artificial intelligence, faculty of
+    engineering and information technology, university of technology sydney, nsw,
+    australia
+  Affiliation of the last author: centre for artificial intelligence, faculty of engineering
+    and information technology, university of technology sydney, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\Salient_Subsequence_Learning_for_Time_Series_Clustering\figure_1.jpg
+  Figure 1 caption: The top left blue curve is a rectangular signal with Gaussian
+    noise while the bottom left blue curve is a sinusoidal signal with Gaussian noise.
+    The short curves (red in bold) on the right, are learned shapelets. We can see
+    they are robust to noise and different with any original time series segment.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Salient_Subsequence_Learning_for_Time_Series_Clustering\figure_2.jpg
+  Figure 2 caption: "The framework of the proposed Unsupervised Salient Subsequence\
+    \ Learning (USSL) model. From the original time series (\u2460), we first learn\
+    \ shapelets using a shapelet similarity minimization principle (\u2461); then,\
+    \ the distances of the learned shapelets and time series are calculated (\u2462\
+    ); the original data are mapped into the shapelet-based space (\u2463). In shapelet-space,\
+    \ USSL learns the pseudo-class labels and a pseudo classifier using spectral analysis\
+    \ and regularized least-squares minimization (\u2464); then, we update the shapelet\
+    \ with the new learned pseudo-class labels and the pseudo classifier (\u2461);\
+    \ we then repeat this process until convergence. Finally, the USSL ensures the\
+    \ optimal shapelets and the pseudo-class labels."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Salient_Subsequence_Learning_for_Time_Series_Clustering\figure_3.jpg
+  Figure 3 caption: 'An illustration of USSL on the four datasets: Coffee, DiatomSizeReduction,
+    ECG200 and SonyAIBoRobotSurfaceII. The left part of each figure shows the two
+    lu -shapelets S1 and S2 learned from the original time series. The middle shows
+    the closest match of the lu -shapelets to the original time series examples, where
+    T 1 and T 2 are drawn from one of the classes and T 3 and T 4 are drawn from the
+    other class. We can see that lu -shapelets are informative features. The right
+    shows the shapelet-transformed plots of the original time series dataset. Different
+    colors show different class labels. The dots in red circles and blue squares are
+    the labels obtained by USSL, which closely matches the original class labels.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Salient_Subsequence_Learning_for_Time_Series_Clustering\figure_4.jpg
+  Figure 4 caption: An example of the generalizability of USSL on sinusoidal signals
+    and rectangular signals. The top left blue curves are rectangular signals with
+    Gaussian noise of length 100 while the bottom black curves are sinusoidal signals
+    with Gaussian noise of length 200. The top right short curves marked in bold red
+    are two learned shapelets of lengths 12 and 30 respectively. We see that USSL
+    can generally handle both the time series and shapelets of different length. The
+    RI and NMI obtained by USSL for this dataset are both 1, which means perfect clustering.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Salient_Subsequence_Learning_for_Time_Series_Clustering\figure_5.jpg
+  Figure 5 caption: The performance of USSL with respect to the number and the length
+    of the lu -shapelets (measured by the Rand index, the NMI and the running time).
+    In terms of RI and NMI, USSL reaches its best performance at the top-middle or
+    top-right corners. More running time is needed when the number and the length
+    of the lu -shapelets increase. This shows that the USSL does not need to learn
+    long lu -shapelets since short lu -shapelets achieve sufficient or better clustering
+    performance and also save time. In terms of the number of lu -shapelets, it is
+    not necessary to set a large value. In most of the datasets, too many lu -shapelets
+    would lead to repeating or overlapping. For the time series sets with complex
+    lines, like SonyAIBORobotSurfaceII, a reasonably large number of lu -shapelets
+    can be set to learn the numerous distinct curves in original time series. Thus,
+    both length and number of lu -shapelets do not need to be large values in practice.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Salient_Subsequence_Learning_for_Time_Series_Clustering\figure_6.jpg
+  Figure 6 caption: An illustration of the shapelets learned by USSL on the four real-world
+    datasets. The left shows some original time series examples. Time series from
+    the same class are shown together. The right shows the obtained lu -shapelets.
+    lu -shapelets in blue are learned by increasing the length from 10 to 60 with
+    a step 10. lu -shapelets in red are learned by increasing the number from 1 to
+    6 with a step of 1. We see when increasing the length of lu -shapelets, there
+    is a heavy overlap in lu -shapelets. When varying the lu -shapelets number, the
+    lu -shapelets change but they still overlap. These observations confirm that in
+    practice the length and the number of lu -shapelets do not need to be large values.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Salient_Subsequence_Learning_for_Time_Series_Clustering\figure_7.jpg
+  Figure 7 caption: Running time with respect to different number and length of time
+    series.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Salient_Subsequence_Learning_for_Time_Series_Clustering\figure_8.jpg
+  Figure 8 caption: Convergence curves of USSL over Coffee, DiatomSizeReduction, ECG200
+    and SonyAIBORobotSurfaceII datasets.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.67
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Qin Zhang
+  Name of the last author: Chengqi Zhang
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Salient Subsequence Learning for Time Series Clustering
+  Publication Date: 2018-06-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics of the Benchmark Time Series Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Rand Index (RI) Comparisons on 36 Time Series Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Normalized Mutual Information (NMI) Comparisons on 36 Time
+      Series Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Experiment on Synthetic Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2847699
+- Affiliation of the first author: dpia, university of udine, udine, italy
+  Affiliation of the last author: dpia, university of udine, udine, italy
+  Figure 1 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_1.jpg
+  Figure 1 caption: The bearing-based localization problem.
+  Figure 10 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_10.jpg
+  Figure 10 caption: Example of a rigid graph in 3-space which does not satisfy the
+    assumptions in Theorem 9. It admits a cycle basis composed of one 3-length circuit,
+    one 4-length circuit and one 5-length circuit, and cycle bases with shorter circuits
+    do not exist.
+  Figure 2 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_2.jpg
+  Figure 2 caption: Parallel point formations.
+  Figure 3 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_3.jpg
+  Figure 3 caption: Parallel rigid point formation.
+  Figure 4 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_4.jpg
+  Figure 4 caption: 'Left: Generically parallel rigid graph. Right: Generically flexible
+    graph.'
+  Figure 5 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_5.jpg
+  Figure 5 caption: Non biconnected graphs.
+  Figure 6 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_6.jpg
+  Figure 6 caption: Non bridgeless graphs.
+  Figure 7 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_7.jpg
+  Figure 7 caption: Rigidity of circuits in 3-space.
+  Figure 8 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_8.jpg
+  Figure 8 caption: Examples of graphs which satisfy the assumptions in Theorem 9,
+    and hence they are generically parallel rigid in d-space, with d geq 2 (a) and
+    d geq 3 (b, c).
+  Figure 9 Link: articels_figures_by_rev_year\2018\BearingBased_Network_Localizability_A_Unifying_View\figure_9.jpg
+  Figure 9 caption: 'Left: Cycle basis composed of 3-length circuits for the graph
+    in Fig. 8a. Right: Cycle graph mathcal GC associated with such cycle basis.'
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.82
+  Name of the first author: Federica Arrigoni
+  Name of the last author: Andrea Fusiello
+  Number of Figures: 15
+  Number of Tables: 1
+  Number of authors: 2
+  Paper title: 'Bearing-Based Network Localizability: A Unifying View'
+  Publication Date: 2018-06-18 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Several Statistics are Reported for the Arts Quad Dataset\
+      \ [33] and the 1DSfM Datasets [45]: Number of Images n n; Percentage of Edges;\
+      \ Number of Articulation Points; Number of Bridges; Number of Nodes n \xAF n\xAF\
+      \ and Number of Edges m \xAF m\xAF That Do Not Belong to the Largest Rigid Component;\
+      \ Parallel Rigidity Index of the Largest Rigid Component I 3 ( G \u2032 ) I3(G')"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2848225
+- Affiliation of the first author: department of information engineering, university
+    of padova, padova, italy
+  Affiliation of the last author: "department of computer science, electrical and\
+    \ space engineering, lule\xE5 university of technology, lule\xE5, sweden"
+  Figure 1 Link: articels_figures_by_rev_year\2018\Distributed_MultiAgent_Gaussian_Regression_via_FiniteDimensional_Approximations\figure_1.jpg
+  Figure 1 caption: "Bnd A and Bnd B (normalized by the a priori function variance)\
+    \ as a function of E , with \u03B1=0.05,M=10000 and for different eigenvalues\
+    \ decay rates."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Distributed_MultiAgent_Gaussian_Regression_via_FiniteDimensional_Approximations\figure_2.jpg
+  Figure 2 caption: Comparison of the MSE indexes obtained by the SURE- and oracle-based
+    strategies. Each circle corresponds to the result of a certain Monte Carlo run
+    (the x -axis being associated to oracle-based estimators, and the y -axis to SURE-based
+    ones). The fact that the circles groups are close to the bisector of the first
+    quadrant indicates that the performance of SURE is almost equivalent to that of
+    the oracle.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Distributed_MultiAgent_Gaussian_Regression_via_FiniteDimensional_Approximations\figure_3.jpg
+  Figure 3 caption: "Comparison of the Residual sum of squares (RSS) prediction error\
+    \ indexes obtained by the oracle- and SURE-based strategies. Each opaque circle\
+    \ corresponds to the result of one of the 1000 Monte Carlo runs. The closer the\
+    \ circles are to the bisector of the first quadrant performance means that the\
+    \ closer the performance of that SURE-based or Nystr\xF6m-SURE estimator is to\
+    \ the ones of the oracle-based estimator."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Distributed_MultiAgent_Gaussian_Regression_via_FiniteDimensional_Approximations\figure_4.jpg
+  Figure 4 caption: Comparison of the predictive performance of the estimators widehatfA
+    (left panel) and widehatfB (right panel) over the test set in Fig. 5 for gamma
+    in Gamma and Eprime in Omega against the SURE scores JA left(gamma right) and
+    JB left(gamma right) in the first Monte Carlo run.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Distributed_MultiAgent_Gaussian_Regression_via_FiniteDimensional_Approximations\figure_5.jpg
+  Figure 5 caption: "Visualization of the training and test sets (top panel, respectively\
+    \ 173 and 87 samples), and of the estimates returned by \u201C widehatfA+ SURE\u201D\
+    , \u201C widehatfA+ oracle\u201D, \u201C widehatfB+ SURE\u201D, and \u201C widehatfB+\
+    \ oracle\u201D in the first Monte Carlo run."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Gianluigi Pillonetto
+  Name of the last author: Damiano Varagnolo
+  Number of Figures: 5
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: Distributed Multi-Agent Gaussian Regression via Finite-Dimensional
+    Approximations
+  Publication Date: 2018-06-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 SURE's Performance Index S p Sp Summarizing Four Monte Carlo
+      Studies as a Function of the Number M M of Available Measurements
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Summary of the Performance of the Proposed Parameters Calibration
+      Strategies Against Oracles for Different Publicly Available Datasets
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2836422
+- Affiliation of the first author: school of information technology & electrical engineering,
+    the university of queensland, brisbane, qld, australia
+  Affiliation of the last author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Figure 1 Link: articels_figures_by_rev_year\2018\Binary_MultiView_Clustering\figure_1.jpg
+  Figure 1 caption: Error comparison of DPLM and ADPLM w.r.t. the number of inner
+    iteration for optimizing (11) on the Caltech101 dataset with 128 bits.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Binary_MultiView_Clustering\figure_2.jpg
+  Figure 2 caption: t -SNE visualization of (a) the original HOG feature and (b) 128-bit
+    BMVC codes of the HOG feature for the randomly selected 5 categories (more than
+    2k samples) in Caltech101.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Binary_MultiView_Clustering\figure_3.jpg
+  Figure 3 caption: t -SNE visualization of 128-bit BMVC codes of 10 categories in
+    the (a) Cifar-10 and (b) YouTube-Faces, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Binary_MultiView_Clustering\figure_4.jpg
+  Figure 4 caption: Clustering accuracy comparison with different number of bits for
+    binary representation learning methods.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Binary_MultiView_Clustering\figure_5.jpg
+  Figure 5 caption: Convergence curves of the proposed method on the (a) Cifar-10
+    and (b) YouTube-Faces, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Binary_MultiView_Clustering\figure_6.jpg
+  Figure 6 caption: "Clustering accuracy versus different parameters (a) \u03B2 and\
+    \ \u03B3n , (b) \u03BB , (c) r , and (d) m on the Cifar-10 dataset, respectively."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Binary_MultiView_Clustering\figure_7.jpg
+  Figure 7 caption: Clustering performance versus number of clusters by using different
+    methods on the Cifar-10 dataset.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Zheng Zhang
+  Name of the last author: Ling Shao
+  Number of Figures: 7
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Binary Multi-View Clustering
+  Publication Date: 2018-06-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Clustering Accuracies, NMI and Purity Comparisons of Different
+      Methods on the Caltech101 Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Time-Consuming (in Seconds) Comparison of Different Methods
+      on the Caltech101 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Clustering Accuracies, NMI and Purity Comparisons of Different
+      Methods on the Four Large-Scale Multi-View Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Time-Consuming (in Seconds) Comparison of Different Methods
+      on the Four Large-Scale Multi-View Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Memory Load Comparison of 'All-View' k k-Means and BMVC on
+      Four Large-Scale Multi-View Datasets
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2847335
+- Affiliation of the first author: australian national university, canberra, australia
+  Affiliation of the last author: australian national university, canberra, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_1.jpg
+  Figure 1 caption: "Estimating the 6-DoF absolute pose of a calibrated camera from\
+    \ a single image, relative to a 3D point-set, with no 2D\u20133D correspondences.\
+    \ The GOPAC algorithm solves this most general form of the absolute camera pose\
+    \ problem, jointly estimating the position and orientation of the camera and the\
+    \ 2D\u20133D correspondences, using a globally-optimal branch-and-bound approach\
+    \ with tight novel bounds on the cardinality of the inlier set."
+  Figure 10 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_10.jpg
+  Figure 10 caption: "Projection of the translation cuboid p\u2212t for t\u2208 C\
+    \ t onto the unit sphere. The resulting spherical hexagon reduces the angle calculation\
+    \ to finding in which spherical lune (wedge) the rotated bearing vector R \u2212\
+    1 r 0 f resides and then solving for the closest point v \u2217 on the geodesic\
+    \ of the hexagon edge in that lune. \u03B3 is the smallest angle between the rotated\
+    \ bearing vector and any point in the translation cuboid."
+  Figure 2 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_2.jpg
+  Figure 2 caption: Inlier set cardinality optima for a slice of the rotation domain
+    passing through the optimal rotation (marked in black) and the Z -axis, for two
+    alignment problems. The colour indicates the maximum number of inliers at each
+    rotation in the domain with lighter shades corresponding to greater cardinalities.
+    Many local optima are evident, and are even more pervasive when solving for rotation
+    and translation jointly, hence local optimisation in the neighbourhood of a pose
+    prior is a bad strategy.
+  Figure 3 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_3.jpg
+  Figure 3 caption: "The inlier set for camera pose estimation with cardinality \u03BD\
+    \ , defined as the set of those bearing vectors that are less than \u03B8 from\
+    \ at least one 3D point with respect to the angular distance metric."
+  Figure 4 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_4.jpg
+  Figure 4 caption: Maximising the cardinality of the set of bearing vector inliers
+    instead of 3D point inliers avoids degenerate poses where all 3D points become
+    inliers when the camera is sufficiently far from them.
+  Figure 5 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_5.jpg
+  Figure 5 caption: "Parametrisation of SE(3) . (a) The rotation space SO(3) is parametrised\
+    \ by angle-axis 3-vectors in a solid radius- \u03C0 ball. (b) The translation\
+    \ space R 3 is parametrised by 3-vectors bounded by a cuboid with half-widths\
+    \ [ \u03C4 x , \u03C4 y , \u03C4 z ] . The domain is branched into sub-cuboids\
+    \ as shown using nested octree data structures."
+  Figure 6 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_6.jpg
+  Figure 6 caption: "Uncertainty angles induced by rotation and translation sub-cuboids.\
+    \ (a) Rotation uncertainty angle \u03C8 r for C r . The optimal rotation of p\
+    \ may be anywhere within the umbrella-shaped region on the sphere, which is entirely\
+    \ contained by the cone defined by R r 0 p and \u03C8 r . (b) Translation uncertainty\
+    \ angle \u03C8 t for C t . The optimal translation of p may be anywhere within\
+    \ the cuboidal region, which is entirely contained by the cone defined by p\u2212\
+    \ t 0 and \u03C8 t ."
+  Figure 7 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_7.jpg
+  Figure 7 caption: "Geometric intuition for the upper bound. The inlier threshold\
+    \ is relaxed by the two uncertainty angle bounds \u03C8 r and \u03C8 t , creating\
+    \ a more permissive inlier set and hence an upper bound on the cardinality."
+  Figure 8 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_8.jpg
+  Figure 8 caption: "The triangle inequality in spherical geometry, given by \u03B3\
+    \u2A7D\u03B1+\u03B2 . The transformed points have been normalised to lie on the\
+    \ unit sphere."
+  Figure 9 Link: articels_figures_by_rev_year\2018\GloballyOptimal_Inlier_Set_Maximisation_for_Camera_Pose_and_Correspondence_Estim\figure_9.jpg
+  Figure 9 caption: "Comparison of translation uncertainty angle bounds when the centre\
+    \ p\u2212 t 0 of the translation cuboid p\u2212t lies along a ray from the origin\
+    \ towards (a) any face centre and (b) any vertex. (c)\u2013(d) The novel bound\
+    \ \u03C8 t is tighter across the entire domain in both cases."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Dylan Campbell
+  Name of the last author: Hongdong Li
+  Number of Figures: 19
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Globally-Optimal Inlier Set Maximisation for Camera Pose and Correspondence
+    Estimation
+  Publication Date: 2018-06-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Camera Pose Results for Serial and Parallel (CPU and GPU)
+      Implementations of GOPAC and RANSAC for Scene 1 of the Data612D3D Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Camera Pose Results for the Quad-GPU Implementation of GOPAC
+      for the Data612D3D Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Camera Pose Results for the Quad-GPU Implementation of GOPAC
+      (GP) and RANSAC (RS) for Area 3 of the Stanford 2D-3D-S Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Camera Pose Results for the Quad-GPU Implementation of GOPAC
+      (GP) and RANSAC (RS) for the Edge-Features A and B Datasets
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2848650
+- Affiliation of the first author: college of science, national university of defense
+    technology, changsha, china
+  Affiliation of the last author: college of mechatronics and automation, national
+    university of defense technology, changsha, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Safe_Classification_with_Augmented_Features\figure_1.jpg
+  Figure 1 caption: "The plots of different loss functions. The abscissa is the value\
+    \ of y i g j ( x (1) i , x (2) i )\u22121 ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Safe_Classification_with_Augmented_Features\figure_2.jpg
+  Figure 2 caption: Illustration of the intuition of the condition in Eq. (11) via
+    the inner product viewpoint. Intuitively, the green point Y is safe.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Safe_Classification_with_Augmented_Features\figure_3.jpg
+  Figure 3 caption: Classification accuracies of different multi-view classification
+    methods. Each group corresponds to the results on a data set. The standard deviations
+    are also plotted. The results are 30 percent training versus 70 percent testing.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Safe_Classification_with_Augmented_Features\figure_4.jpg
+  Figure 4 caption: The increase of classification accuracies on different data sets.
+    Each group corresponds to the results on a data set. In each group, the original
+    results are plotted by green face and the increasing values are plotted by yellow
+    face if it is positive or red face if it is negative. In each group, from left
+    to right, the methods are KNN, Naive Bayes, Boosting, Linear SVM and RBF kernel
+    SVM.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Safe_Classification_with_Augmented_Features\figure_5.jpg
+  Figure 5 caption: The sample images of fMRI and the illustrations of our processing
+    in extract the descriptions. The half top are illustrations of extraction from
+    3D-T1 MRI images and the bottom are extraction from BOLD fMRI.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chenping Hou
+  Name of the last author: Dewen Hu
+  Number of Figures: 5
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Safe Classification with Augmented Features
+  Publication Date: 2018-06-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Accuracy Comparison Between Single View and Double Views
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Details of the Data Sets with Different Types of Features
+      Used in Our Experiments (Feature Type (Dimensionality))
+  Table 3 caption:
+    table_text: "TABLE 3 Testing Accuracies (mean \xB1 \xB1std) of the Compared Methods\
+      \ on 16 Data Sets with Different Percent of Training and Testing Examples"
+  Table 4 caption:
+    table_text: "TABLE 4 F-Score Results (mean \xB1 \xB1std) of the Compared Methods\
+      \ on 16 Data Sets with Different Number of Training and Testing Examples"
+  Table 5 caption:
+    table_text: "TABLE 5 Computational Time (mean \xB1 \xB1std, in Second) of Different\
+      \ Methods"
+  Table 6 caption:
+    table_text: "TABLE 6 In the Column of Y \xAF (k) Y\xAF(k), We Denote the Number\
+      \ of Y (j) Y(j) Which Satisfies the Constraint in Eq. (11)"
+  Table 7 caption:
+    table_text: "TABLE 7 Testing Accuracies (mean \xB1 \xB1std) of the Compared Methods\
+      \ on fMRI Data Sets with Different Percent of Training and Testing Examples"
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2849378
+- Affiliation of the first author: computer science, university of central florida,
+    orlando, fl, usa
+  Affiliation of the last author: center for research in computer vision, university
+    of central florida, orlando, fl, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_1.jpg
+  Figure 1 caption: Correlation between detection and tracking. (a) shows the tracking
+    results of our proposed tracker (bottom row) and the method from [10] (top row).
+    A pre-trained object detector fails when objects go under heavy articulation.
+    This error is propagated to the data association step, which consequently cause
+    failure in tracking. Differently, our proposed tracker is based on online discriminative
+    learning and solves detection and global data association simultaneously, thus
+    handles articulated targets well. The same observation can be made from (b). Each
+    row represents one of the three identities in the scene. Each circle shows a corresponding
+    match in a frame and the color represents the ID that is assigned to that detection.
+    As can be seen, the top row has a lot of fragmented tracks while the bottom row
+    only contains three tracks corresponding to the three identities.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_2.jpg
+  Figure 2 caption: 'Two examples of the tracking and segmentation tasks benefiting
+    from each other (zoomed in views are shown). First row: By applying pure segmentation,
+    the upper body of target 9 is mislabelled as target 15 due to similar color. But
+    the tracking part is able to track target 9 correctly. After dual decomposition,
+    the whole body of target 9 is labelled correctly and more accurate box is obtained
+    for target 9. Second row: Without incorporating segmentation, the track for target
+    13 drifts to target 1. However, the segmentation results for target 13 are correct
+    using pure segmentation. After dual decomposition, target 13 is tracked successfully
+    and the segmentation results for target 1 are also improved. Combining the two
+    subproblems lead to both better tracking and better segmentation results.'
+  Figure 3 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_3.jpg
+  Figure 3 caption: Shows the network used in our inference for three identities.
+    Each identity is shown with a unique color. The flow entering each node can take
+    only one of the three observation edges depending on which source (identity) it
+    belong to. The constraint in Eq. (13) ensures that one candidate can belong to
+    only one track, so the tracks will not overlap.
+  Figure 4 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_4.jpg
+  Figure 4 caption: An illustration of targetbackground confidence maps and segmentation
+    results. (a) A new frame (part of the frame is shown for clarity). (b) Background
+    confidence map. Red represents higher confidence value while blue represents lower
+    value. (c) and (d) show confidence maps for the target on the left and the target
+    on the right respectively. (e) Superpixels in the part of the frame. (f) The final
+    segmentation results after applying CRF to the superpixel based spatio-temporal
+    graph. Red and blue masks represent foreground pixels for the two targets respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_5.jpg
+  Figure 5 caption: Number of Disagreements, MOTA and IOU as function of number of
+    iterations. The curves are generated based on a 10-frame segment in TUD-Crossing
+    with 5 persons in the scene. (a) The number of disagreements between tracking
+    and segmentation solutions drops over iterations. The algorithm converges when
+    the two solutions are consistent. (b) The MOTA increases over iterations and reaches
+    the best value at convergence. (c) The IOU (metric detailed in Section 5.2.2)
+    increases over iterations. Since the segmentation annotations are available in
+    every 10 frame, IOU is evaluated on the one frame in the 10-frame segment which
+    has segmentation annotations.
+  Figure 6 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_6.jpg
+  Figure 6 caption: The curves show the number of extracted objects as a function
+    of correctly labeled pixels per ground truth mask.
+  Figure 7 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_7.jpg
+  Figure 7 caption: Examples of segmentation and tracking results on PETS-S2L1, TUD-Crossing
+    and MOT16. Each target is shown by a unique color.
+  Figure 8 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_8.jpg
+  Figure 8 caption: TINF runtime comparison of the proposed Lagrangian relaxation
+    solution versus IP and LP.
+  Figure 9 Link: articels_figures_by_rev_year\2018\On_Detection_Data_Association_and_Segmentation_for_MultiTarget_Tracking\figure_9.jpg
+  Figure 9 caption: Convergence of TINF and TINF + Seg on PL2 sequence.
+  First author gender probability: 0.74
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yicong Tian
+  Name of the last author: Mubarak Shah
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: On Detection, Data Association and Segmentation for Multi-Target Tracking
+  Publication Date: 2018-06-21 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Quantitative Tracking Results Comparison of Our Methods (\u201C\
+      TINF\u201D and \u201CTINF + Seg\u201D) with Competitive Approaches of LPD [56],\
+      \ LDA [57], DLP [58], H2T [5], GMCP [16], PF [59], SegTrack [43], CET [10],\
+      \ DCT [60], STRUCK [27] and SPOT [29] Using Tracking Metrics"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance of TINF Tracker with Automatic and Manual Initialization
+      of the Targets
+  Table 3 caption:
+    table_text: TABLE 3 Performance of TINF Tracker with and without Spatial Constraint
+  Table 4 caption:
+    table_text: TABLE 4 Tracking Performance Comparison on MOT16 Benchmark
+  Table 5 caption:
+    table_text: TABLE 5 A Quantitative Comparison of Segmentation Results of Our Method
+      with Competitive Approaches in Milan et al. [43] and Horbert et al. [40]
+  Table 6 caption:
+    table_text: TABLE 6 This Table Shows the Detection Performance Comparison Between
+      Our Detector and DPM [22] in Terms of Average Precision
+  Table 7 caption:
+    table_text: TABLE 7 Detection Performance Comparison with DPM [22] and Faster
+      R-CNN [70] on MOT17DET Benchmark
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2849374

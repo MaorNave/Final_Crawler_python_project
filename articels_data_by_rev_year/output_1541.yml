@@ -1,0 +1,812 @@
+- Affiliation of the first author: booz allen hamilton inc., mclean, va, usa
+  Affiliation of the last author: army research laboratory (sedd), image processing
+    branch, sensors & electron devices directorate, adelphi, md, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_1.jpg
+  Figure 1 caption: "Dynamic belief fusion. Three detectors detect a person and a\
+    \ horse in a given image, as shown on the left. For each detection, a score is\
+    \ converted into a probability distribution over three hypotheses (target, non-target,\
+    \ and intermediate) via \u201Cprobability assignment\u201D. The confidence model\
+    \ is constructed based on detectors prior performance and formed as a function\
+    \ of a detection score. \u201CDempsters combination rule\u201D combines the probability\
+    \ distributions of all the detectors. This fusion process (the probability assignment\
+    \ and the combination rule) is called Dynamic Belief Fusion (DBF)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_2.jpg
+  Figure 2 caption: Flow diagram of the proposed fusion algorithm, DBF. This diagram
+    shows the fusion process of the car category.
+  Figure 3 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_3.jpg
+  Figure 3 caption: Precision-recall curve of detector models with various values
+    of n .
+  Figure 4 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_4.jpg
+  Figure 4 caption: 'Dynamic basic probability assignment: The left plot shows precision-recall
+    curves for both an individual detector and a theoretical detector. The rates of
+    values along the precision axis corresponding to recall r(s) are assigned as the
+    basic probabilities to target, non-target, and intermediate state, where s is
+    a detection score. The right plot presents the basic probabilities with respect
+    to a detection score, which is derived from the PR curves of the individual detector
+    and the theoretical detector.'
+  Figure 5 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_5.jpg
+  Figure 5 caption: ARL dataset [14].
+  Figure 6 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_6.jpg
+  Figure 6 caption: Example detections of R-CNNs and DBF. For each pair of images,
+    the left and right images show detections from six different R-CNNs and DBF, respectively.
+    For R-CNNs, bounding boxes colored by red, blue, green, navy, purple, and ivory
+    indicate detections of Faster R-CNN+ResNet-101, Fast R-CNN+ResNet-101, Faster
+    R-CNN+VGG 16, Fast R-CNN+VGG 16, Faster R-CNN+VGG M, and Fast R-CNN+VGG M, respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_7.jpg
+  Figure 7 caption: Comparison of fusion performance with respect to the various theoretical
+    detectors. n in x axis is the exponent in Equation (4). Three left plots shows
+    the comparisons in three evaluation settings. The right most plot shows performance
+    variation in mAP with respect to the parameter n when using two weak R-CNNs (Fast
+    R-CNN+VGG M and Faster R-CNN+VGG M) for fusion.
+  Figure 8 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_8.jpg
+  Figure 8 caption: "Analysis of top-ranked false positives. Each plot shows an evolving\
+    \ distribution of four FP types as detection scores are decreased. The four types\
+    \ of false positives (FP) are 1) poor localization (Loc, a detection with an IoU\
+    \ overlap with the correct class between 0.2 and 0.5, or a duplicate), 2) confusion\
+    \ with similar classes (Sim), 3) Confusion with dissimilar object categories (Oth),\
+    \ and 4) confusion with background (BG). The analysis is performed on PASCAL VOC\
+    \ 07 dataset. Among 20 object categories in PASCAL VOC 07 dataset, all vehicles\
+    \ belong to \u201CVehicles,\u201D all animals are in \u201CAnimals,\u201D and\
+    \ chair, diningtable, and sofa are assigned to \u201CFurniture.\u201D"
+  Figure 9 Link: articels_figures_by_rev_year\2019\DBF_Dynamic_Belief_Fusion_for_Combining_Multiple_Object_Detectors\figure_9.jpg
+  Figure 9 caption: Confidence models for several object categories on PASCAL VOC
+    07. For three categories (bottle, car, and person), confidence models containing
+    basic probability distribution varied according to a detection score are shown.
+    Red, blue, and green curves indicate probability of target, non-target, and intermediate
+    hypotheses, respectively.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.94
+  Name of the first author: Hyungtae Lee
+  Name of the last author: Heesung Kwon
+  Number of Figures: 9
+  Number of Tables: 9
+  Number of authors: 2
+  Paper title: 'DBF: Dynamic Belief Fusion for Combining Multiple Object Detectors'
+  Publication Date: 2019-11-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Precision on the ARL Dataset [14]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Precision on the PASCAL VOC 07 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Performance of Fusion Approaches With All the Detectors Except
+      R-CNN on the PASCAL VOC 07 Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Average Precision on the PASCAL VOC 07 Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Average Precision on the PASCAL VOC 12 Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Detection Accuracy of DBF and Dempster-Shafer Theory (DST)
+      in mAP
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Fusion Performance With Respect to the Combination
+      of Multiple Detectors
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of Detection Accuracy Reported in the Literature
+      and Achieved by Our Retraining Models
+  Table 9 caption:
+    table_text: TABLE 9 Different Dataset Partitions
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2952847
+- Affiliation of the first author: paris, france
+  Affiliation of the last author: "broadpeak, cesson-s\xE9vign\xE9, france"
+  Figure 1 Link: articels_figures_by_rev_year\2019\Quicker_ADC__Unlocking_the_Hidden_Potential_of_Product_Quantization_With_SIMD\figure_1.jpg
+  Figure 1 caption: "Shuffle-blend lookup for 8\xD78 (AVX-512 VBMI)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Quicker_ADC__Unlocking_the_Hidden_Potential_of_Product_Quantization_With_SIMD\figure_2.jpg
+  Figure 2 caption: Inverted list memory layouts. Each table cell represents a byte
+    or a word.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Quicker_ADC__Unlocking_the_Hidden_Potential_of_Product_Quantization_With_SIMD\figure_3.jpg
+  Figure 3 caption: "SIMD Lookup-add in AVX-512 for 12\xD76,5,4."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Quicker_ADC__Unlocking_the_Hidden_Potential_of_Product_Quantization_With_SIMD\figure_4.jpg
+  Figure 4 caption: Non-exhaustive search with different index types and different
+    PQ or Irregular PQ codes. SIFT1000M.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Quicker_ADC__Unlocking_the_Hidden_Potential_of_Product_Quantization_With_SIMD\figure_5.jpg
+  Figure 5 caption: Non-exhaustive search with different index types and different
+    PQ or Irregular PQ codes. Deep1B.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Fabien Andr\xE9"
+  Name of the last author: Nicolas Le Scouarnec
+  Number of Figures: 5
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: 'Quicker ADC : Unlocking the Hidden Potential of Product Quantization
+    With SIMD'
+  Publication Date: 2019-11-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Instruction Set Capabilities
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 SIMD Operations Required to Perform 8-Bit Lookups
+  Table 3 caption:
+    table_text: TABLE 3 Exhaustive Search (Without Index) on SIFT1M and Deep1M
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2952606
+- Affiliation of the first author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Affiliation of the last author: universitat pompeu fabra, barcelona, spain
+  Figure 1 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_1.jpg
+  Figure 1 caption: Gamuts on CIE xy chromaticity diagram.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_10.jpg
+  Figure 10 caption: Gamuts on chromaticity diagram.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_2.jpg
+  Figure 2 caption: 'Contrast enhancement produces gamut extension. Top row: (a) Input
+    image, (b) enhancing the contrast of all channels in RGB [38], (c) enhancing the
+    contrast of chroma in CIELAB [56], and (d) enhancing the contrast of saturation
+    in HSV [55]. Bottom row: corresponding gamuts in CIE diagram. Note that the source
+    gamut (black) and target gamut (red) are fixed as they correspond to the gamut
+    of the display devices.'
+  Figure 3 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_3.jpg
+  Figure 3 caption: 'Examples of kernel used in our framework: (a) For gamut extension.
+    (b) For gamut reduction.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_4.jpg
+  Figure 4 caption: Logistic function used to give weights to each pixel of the input
+    image.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_5.jpg
+  Figure 5 caption: 'Comparison of gamut extension results: (a) Input image, (b) extended-gamut
+    image ignoring the H-K effect, and (c) extended-gamut image considering the H-K
+    effect.'
+  Figure 6 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_6.jpg
+  Figure 6 caption: 'Comparison of gamut reduction results: (a) Input image, (b) reduced-gamut
+    image ignoring the H-K effect, and (c) reduced-gamut image considering the H-K
+    effect.'
+  Figure 7 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_7.jpg
+  Figure 7 caption: 'Effect of increasing kernel size on image gamut. Row 1: Example
+    of kernels with progressively larger spatial extent. Row 2: Reduced-gamut images
+    corresponding to each kernel. Last column: Evolution of image gamut that progressively
+    decreases with an increase in the spatial extent of the kernel.'
+  Figure 8 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_8.jpg
+  Figure 8 caption: Wide-gamut test images used in the evaluation of GEAs. First three
+    original images are from [76], images 4-7 are from [77], images 8-18 were captured
+    by the authors and the rest of the images are from mainstream movies.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Vision_Models_for_Wide_Color_Gamut_Imaging_in_Cinema\figure_9.jpg
+  Figure 9 caption: Wide-gamut test images used in the evaluation of GRAs. First five
+    original images are from [77], the last four were captured by the authors and
+    the rest of the images are from mainstream movies.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Syed Waqas Zamir
+  Name of the last author: "Marcelo Bertalm\xEDo"
+  Number of Figures: 14
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: Vision Models for Wide Color Gamut Imaging in Cinema
+  Publication Date: 2019-11-14 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Primaries of Gamuts
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2938499
+- Affiliation of the first author: state key laboratory of virtual reality technology
+    and systems, school of computer science and engineering, beihang university, beijing,
+    china
+  Affiliation of the last author: national engineering laboratory for video technology,
+    school of electronics engineering and computer science, peking university, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_1.jpg
+  Figure 1 caption: 'Parts from different objects vary remarkably in visual appearances
+    and shapes. Top row: bodies of different cars (marked with blue contour) have
+    huge variances in appearances and shapes. Bottom row: wheels of different cars
+    (marked with orange contour) show more stable appearances and shapes. Segmenting
+    one part of them may have positive effects on the other.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_2.jpg
+  Figure 2 caption: Pipeline of proposed OMPS framework. In the forward module, we
+    adopt a weight-sharing network PartNet to extract image-level features and a task-relevant
+    shallow network PriorNet to encode part-level mask priors. After combining image-level
+    features and prior knowledge, a multi-task decoder is constructed to parse each
+    part individually. The recurrent module generates and updates appropriate part
+    priors with an ordinal subtask inference algorithm. These two modules are conducted
+    iteratively to get the optimal results. The arrows between different subtasks
+    indicate the ordinal relationships among subtasks (i.e., the results of the former
+    subtasks serve as prior to the latter).
+  Figure 3 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_3.jpg
+  Figure 3 caption: Network architecture in studying the part influence. We use the
+    prior encoder (blue) to introduce the ground-truth of one part as the prior into
+    the original baseline model (orange) to predict another part.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_4.jpg
+  Figure 4 caption: Network architecture of the forward module. Our encoder is a two
+    stream network to extract image features and prior knowledge, while the decoder
+    consists of multi branches to decode individual part predictions.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_5.jpg
+  Figure 5 caption: Effects of CRF fusion. (a) Input images, (b) direct concatenated
+    predictions without CRF (conflicts are shown in white), (c) predictions fused
+    with CRF, and (d) ground truth.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_6.jpg
+  Figure 6 caption: Segmentation results on PASCAL-Car and PASCAL-Aeroplane dataset.
+    Our model shows superior performances, especially in parsing parts with small
+    size and conflicts between classes. DeepLabv3 is the most efficient model with
+    finer results while FCN and DeepLab-LFOV miss many details in this part parsing
+    task.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_7.jpg
+  Figure 7 caption: Revolution of results in different iterations on object segmentation.
+    Rec-0 denotes the initial segmentation results of our forward model.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_8.jpg
+  Figure 8 caption: Revolution of results in different recurrent iterations on PASCAL-Person-Part
+    dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Ordinal_MultiTask_Part_Segmentation_With_Recurrent_Prior_Generation\figure_9.jpg
+  Figure 9 caption: Failure cases. Input image and DeepLabv3, our results and ground
+    truth masks. Our model can be confused in complex images which are easily labeled
+    by human.
+  First author gender probability: 0.8
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.74
+  Name of the first author: Yifan Zhao
+  Name of the last author: Yonghong Tian
+  Number of Figures: 9
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: Ordinal Multi-Task Part Segmentation With Recurrent Prior Generation
+  Publication Date: 2019-11-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance of Pair-Wise Part Segmentation on PASCAL-Car With
+      Ground-Truth Prior
+  Table 10 caption:
+    table_text: TABLE 10 Different Learning Orders on PASCAL-Car Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Proportion of Part Size in PASCAL-Car Dataset (%)
+  Table 3 caption:
+    table_text: TABLE 3 Comparisons of Parsing Performances on PASCAL-Car Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Parsing Performances on PASCAL-Aeroplane Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Segmentation Performance of mIoU on Pascal-Person-Part Benchmark
+  Table 6 caption:
+    table_text: TABLE 6 Performances of Different Architectures With Multi-Task Learning
+      on PASCAL-Car Dataset
+  Table 7 caption:
+    table_text: TABLE 7 PriorNet Architecture Choice on PASCAL-Car Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Performances With Different Priors on PASCAL-Car Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Segmentation Performances on Pascal-Person-Part Benchmark
+      (View in mIoU)
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2953854
+- Affiliation of the first author: department of electronic engineering, chinese university
+    of hong kong, shatin, hong kong sar, china
+  Affiliation of the last author: department of electronic engineering, chinese university
+    of hong kong, shatin, hong kong sar, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_With_Deep_KroneckerProduct_Matching_and_GroupShuffling_R\figure_1.jpg
+  Figure 1 caption: Illustration of our proposed Kronecker Product Matching module
+    for person re-identification. The feature matching and warping are conducted between
+    feature maps, which is end-to-end trainable in deep neural networks.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_With_Deep_KroneckerProduct_Matching_and_GroupShuffling_R\figure_2.jpg
+  Figure 2 caption: (a) Most conventional approaches utilize only information between
+    pairs of probe and gallery images for P2G affinity estimation. (b) Proposed framework
+    with end-to-end group-shuffling random walk integrates G2G affinities for accurate
+    P2G affinity estimation.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_With_Deep_KroneckerProduct_Matching_and_GroupShuffling_R\figure_3.jpg
+  Figure 3 caption: Illustration of the overall framework with Kronecker Product Matching
+    (KPM) module and Group-shuffling Random Walk (GSRW) module. Given a probe and
+    a set of gallery images, their visual feature maps are learned by a base visual
+    CNN (e.g., ResNet-50). Initial probe-to-gallery (P2G) affinities and gallery-to-gallery
+    (G2G) affinities are estimated based on the outputs of the KPM module. The GSRW
+    module refines the P2G affinities to obtain the final results.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_With_Deep_KroneckerProduct_Matching_and_GroupShuffling_R\figure_4.jpg
+  Figure 4 caption: Illustration of Kronecker Product for computing dot-product similarities
+    between features on the two feature maps.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_With_Deep_KroneckerProduct_Matching_and_GroupShuffling_R\figure_5.jpg
+  Figure 5 caption: (a) Illustration of the affinity estimation module ( Z=1 ). (b)
+    Illustration of the affinity estimation module with multiple groups without shuffling
+    ( Z=2 ).
+  Figure 6 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_With_Deep_KroneckerProduct_Matching_and_GroupShuffling_R\figure_6.jpg
+  Figure 6 caption: Example matching confidence maps of feature vectors in red rectangles
+    to those of another image.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Yantao Shen
+  Name of the last author: Hongsheng Li
+  Number of Figures: 6
+  Number of Tables: 13
+  Number of authors: 6
+  Paper title: Person Re-Identification With Deep Kronecker-Product Matching and Group-Shuffling
+    Random Walk
+  Publication Date: 2019-11-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results by the Base ResNet-50 Network With Different Components
+      on the Market-1501 [86], CUHK03 [34], and DukeMTMC [50] Dataset
+  Table 10 caption:
+    table_text: TABLE 10 Cross Datasets Comparison of Various Methods
+  Table 2 caption:
+    table_text: TABLE 2 Results of Using Dropout [59], Proposed Feature Grouping and
+      Random Walk Operation With the Baseline Model on the Market-1501 [86], and CUHK03
+      [34] Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Studies on the Market-1501 [86], CUHK03 [34], and
+      DukeMTMC [50] Datasets With Different Numbers of Feature Groups, End-to-End
+      Random Walk (RW), and Group-Shuffle
+  Table 4 caption:
+    table_text: TABLE 4 Results of Estimating P2G Affinities as Feature Distances
+      by our Trained ResNet-50 on the Market-1501 [86] and DukeMTMC [50] Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Ablation Studies of Kronecker Product Matching (KPM) Module
+      on Market-1501 [86], CUHK03 [34],DukeMTMC [50], and MSMT17 [70] Datasets
+  Table 6 caption:
+    table_text: "TABLE 6 mAP and Top-1 Accuracy With Different \u03C4 KPM \u03C4KPM\
+      \ for Baseline+KPM Model in Table 5 on CUHK03 [34]"
+  Table 7 caption:
+    table_text: TABLE 7 Performances of Different Top-k Choices
+  Table 8 caption:
+    table_text: TABLE 8 mAP, Top-1, Top-5, and Top-10 Accuracies of Compared Methods
+      on the Market-1501 Dataset [86]
+  Table 9 caption:
+    table_text: TABLE 9 mAP, Top-1, Top-5, and Top-10 Accuracies by Compared Methods
+      on the CUHK03 Dataset [34]
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2954313
+- Affiliation of the first author: xiamen university, xiamen, china
+  Affiliation of the last author: tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Exploring_Discriminative_WordLevel_Domain_Contexts_for_MultiDomain_Neural_Machin\figure_1.jpg
+  Figure 1 caption: The architecture illustration of our model. Note that our two
+    source-side domain classifiers are used to produce domain-specific and domain-shared
+    annotations, respectively, and our target-side domain classifier is only used
+    during model training.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Exploring_Discriminative_WordLevel_Domain_Contexts_for_MultiDomain_Neural_Machin\figure_2.jpg
+  Figure 2 caption: "Experimental results of the multi-domain Zh \u2192 En translation\
+    \ task on the validation set using different \u03BB s."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Exploring_Discriminative_WordLevel_Domain_Contexts_for_MultiDomain_Neural_Machin\figure_3.jpg
+  Figure 3 caption: The correlation heat map of the gating vectors (bluegreen) to
+    domain-specificdomain-shared annotations in four example source sentences.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Exploring_Discriminative_WordLevel_Domain_Contexts_for_MultiDomain_Neural_Machin\figure_4.jpg
+  Figure 4 caption: The visualization of the average source annotations, where the
+    triangle-shaped (green), cross-shaped (purple), circle-shaped (red) and pentagram-shaped
+    (blue) points denote Laws, Spoken, Thesis and News average source annotations,
+    respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Exploring_Discriminative_WordLevel_Domain_Contexts_for_MultiDomain_Neural_Machin\figure_5.jpg
+  Figure 5 caption: The visualization of the sentence representations. Likewise, the
+    triangle-shaped (green), cross-shaped (purple), circle-shaped (red) and pentagram-shaped
+    (blue) points denote Laws, Spoken, Thesis and News sentence representations, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Exploring_Discriminative_WordLevel_Domain_Contexts_for_MultiDomain_Neural_Machin\figure_6.jpg
+  Figure 6 caption: The intensity map of the context gate weights (red) to the words
+    of target sentences, corresponding to the four example source sentences in Fig.
+    3.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.93
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Jinsong Su
+  Name of the last author: Yang Liu
+  Number of Figures: 6
+  Number of Tables: 12
+  Number of authors: 6
+  Paper title: Exploring Discriminative Word-Level Domain Contexts for Multi-Domain
+    Neural Machine Translation
+  Publication Date: 2019-11-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Sentence Numbers of Data Sets in Our Experiments
+  Table 10 caption:
+    table_text: "TABLE 10 Overall Evaluation (BLEUTER) of the Zh \u2192 \u2192En Translation\
+      \ Task"
+  Table 2 caption:
+    table_text: "TABLE 2 Model Parameters (Para) and Speeds (BatchHour) of Different\
+      \ NMT Models in the Zh \u2192 \u2192En Translation Tasks"
+  Table 3 caption:
+    table_text: "TABLE 3 Overall Evaluation (BLEUTER) of the Zh \u2192 \u2192En Translation\
+      \ Task"
+  Table 4 caption:
+    table_text: TABLE 4 Examples of Domain-Specific Target Words
+  Table 5 caption:
+    table_text: "TABLE 5 The First Zh \u2192 \u2192En Translation Example of Different\
+      \ Systems"
+  Table 6 caption:
+    table_text: "TABLE 6 The Second Zh \u2192 \u2192En Translation Example of Different\
+      \ Systems"
+  Table 7 caption:
+    table_text: "TABLE 7 Overall Evaluation (BLEUTER) on the En \u2192 \u2192Fr Translation\
+      \ Task"
+  Table 8 caption:
+    table_text: "TABLE 8 Overall Evaluation (BLEUTER) on the En \u2192 \u2192De Translation\
+      \ Task"
+  Table 9 caption:
+    table_text: TABLE 9 The A A-Distance Between Each Domain and Others
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2954406
+- Affiliation of the first author: "inria grenoble rh\xF4ne-alpes, montbonnot saint-martin,\
+    \ france"
+  Affiliation of the last author: "inria grenoble rh\xF4ne-alpes, montbonnot saint-martin,\
+    \ france"
+  Figure 1 Link: articels_figures_by_rev_year\2019\Variational_Bayesian_Inference_for_AudioVisual_Tracking_of_Multiple_Speakers\figure_1.jpg
+  Figure 1 caption: Multiple speaker tracking is cast into the framework of Bayesian
+    inference. Visual observations (person detections) and audio observations (inter-channel
+    spectral features) are assigned to continuous latent variables (i.e., speaker
+    positions) via discrete latent variables (one for each observation). As shown,
+    the algorithm is causal (it uses only past and present observations) and incorporates
+    a birth process to account for not yet seenheard persons.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Variational_Bayesian_Inference_for_AudioVisual_Tracking_of_Multiple_Speakers\figure_2.jpg
+  Figure 2 caption: This figure displays two DOAs, associated with one microphone
+    array (bottom left), projected onto the image plane, and illustrates the geometric
+    relationship between a DOA and the current location of a speaker.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Variational_Bayesian_Inference_for_AudioVisual_Tracking_of_Multiple_Speakers\figure_3.jpg
+  Figure 3 caption: 'Four frames sampled from Seq13-4P-S2M1 (living room). First row:
+    green digits denote speakers while red digits denote silent participants. Second,
+    third and fourth rows: the ellipses visualize the visual, audio, and dynamic covariances,
+    respectively, of each tracked person. The tracked persons are color-coded: green,
+    yellow, blue, and red.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\Variational_Bayesian_Inference_for_AudioVisual_Tracking_of_Multiple_Speakers\figure_4.jpg
+  Figure 4 caption: Four frames sampled from Seq19-2P-S1M1 (living room). The camera
+    field of view is limited to the central strip. Whenever the participants are outside
+    the central strip, the tracker entirely relies on audio observations and on the
+    models dynamics.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Variational_Bayesian_Inference_for_AudioVisual_Tracking_of_Multiple_Speakers\figure_5.jpg
+  Figure 5 caption: Four frames sampled from seq45-3p-1111 of AV16.3. In this dataset,
+    the participants speak simultaneously and continuously.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Variational_Bayesian_Inference_for_AudioVisual_Tracking_of_Multiple_Speakers\figure_6.jpg
+  Figure 6 caption: "Trajectories associated with a tracked person under the PFOV\
+    \ configuration (sequence Seq22-1P-S0M1 recorded in meeting room). The ground-truth\
+    \ trajectory (a) corresponds to the center of the bounding-box of the head. The\
+    \ trajectory (b) obtained with [4] is non-smooth. Both [4] and [10] fail to track\
+    \ outside the camera field of view. In the case of the OBVT trajectory (c), there\
+    \ is an identity switch, from \u201Cred\u201D (before the person leaves the visual\
+    \ field of view) to \u201Cblue\u201D (after the person re-enters in the visual\
+    \ field of view)."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Variational_Bayesian_Inference_for_AudioVisual_Tracking_of_Multiple_Speakers\figure_7.jpg
+  Figure 7 caption: Diarization results obtained with Seq13-4P-S2M1 (FFOV). The first
+    row shows the audio signal recorded with one of the microphones. The red boxes
+    show the result of the voice activity detector which is applied to all the microphone
+    signals prior to tracking. For each speaker, correct detections are shown in blue,
+    missed detections are shown in green, and false positives are shown in magenta.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Variational_Bayesian_Inference_for_AudioVisual_Tracking_of_Multiple_Speakers\figure_8.jpg
+  Figure 8 caption: Diarization results obtained with Seq19-2P-S1M1 (PFOV).
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Yutong Ban
+  Name of the last author: Radu Horaud
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Variational Bayesian Inference for Audio-Visual Tracking of Multiple
+    Speakers
+  Publication Date: 2019-11-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 OSPA-T and MOT Scores for the Living-Room Sequences (Full
+      Camera Field of View)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 OSPA-T and MOT Scores for the Meeting-Room Sequences (Full
+      Camera Field of View)
+  Table 3 caption:
+    table_text: TABLE 3 OSPA-T and MOT Scores for the Living-Room Sequences (Partial
+      Camera Field of View)
+  Table 4 caption:
+    table_text: TABLE 4 OSPA-T and MOT Scores for the Meeting-Room Sequences (Partial
+      Camera Field of View)
+  Table 5 caption:
+    table_text: TABLE 5 OSPA-T and MOT Scores Obtained with the AV16.3 Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Computation Times (in seconds)
+  Table 7 caption:
+    table_text: TABLE 7 DER (Diarization Error Rate) Scores Obtained with the AVDIAR
+      Dataset
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2953020
+- Affiliation of the first author: huawei ei innovation lab, beijing, china
+  Affiliation of the last author: key laboratory of intelligent information processing
+    of chinese academy of sciences (cas), institute of computing technology, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_1.jpg
+  Figure 1 caption: An illustration of the attribute-based classification criteria
+    system. (a) A simplified category hierarchy. (b) Example criteria on these hierarchically
+    organized categories (i.e., feline, domestic cat, tiger, and tabby cat), which
+    are defined by attributes like domestic, small, and stripe.
+  Figure 10 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_10.jpg
+  Figure 10 caption: "The heatmaps of activations on two attributes (filters). The\
+    \ top row shows the original images and their activation heatmaps on the attribute\
+    \ \u201Csharp,\u201D and the bottom row corresponds to the attribute \u201Cspotty.\u201D\
+    \ In the heatmaps, warm color indicates high activations and cold colors indicate\
+    \ low activations. The attributes here have high activations at the expected parts\
+    \ in the images and low activations elsewhere, even though the highly activated\
+    \ areas correspond to different object categories. This figure is best viewed\
+    \ in color."
+  Figure 2 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_2.jpg
+  Figure 2 caption: The motivation of the proposed method. Visual attributes learned
+    from images are used to represent the images, and such attributes are also used
+    to characterize the connections between category prototypes, where the prototype
+    of each category can be obtained by combining the prototype of its superordinate
+    category and a certain set of attributes. By this means, the hierarchical classification
+    criteria can be easily derived from the learned prototypes.
+  Figure 3 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_3.jpg
+  Figure 3 caption: The proposed HCN. To learn the hierarchical criteria between categories
+    in terms of attributes, we propose a two-stream CNN structure, where the upper
+    stream is designed to extract image attributes, while the lower stream learns
+    prototypes for each category in the hierarchy. The model is trained to predict
+    the corresponding hierarchical category labels using both the image samples and
+    the category prototypes. For ease of optimization, the category prototypes are
+    decomposed to the summation of rows in a hierarchical embedding matrix (each column
+    represents an attribute) selected by the binary hierarchical category representations.
+  Figure 4 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_4.jpg
+  Figure 4 caption: The structure of the lower stream of HCN.
+  Figure 5 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_5.jpg
+  Figure 5 caption: Top-1 accuracy (%) on the two datasets with different number of
+    attributes D .
+  Figure 6 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_6.jpg
+  Figure 6 caption: Some attributes learned by HCN on (a) CIFAR-100 and (b) ILSVRC,
+    respectively. For each attribute, we show the 9 image patches that maximally activate
+    the corresponding convolution filter, and give the meanings of these attributes
+    below the images. For CIFAR-100, we give our interpretations of these attributes,
+    and for the ILSVRC dataset, the concepts correspond to these attributes are generated
+    by [18].
+  Figure 7 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_7.jpg
+  Figure 7 caption: "The number of detectors and the number of unique detectors computed\
+    \ using the source codes and dataset proposed by network dissection [18]. The\
+    \ baseline model ( \u03B1=1 ) and HCN with D=6,144 attributes are evaluated."
+  Figure 8 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_8.jpg
+  Figure 8 caption: "Examples of some learned attributes that are considered as \u201C\
+    uninterpretable\u201D by the visualization tool of network dissection [18]."
+  Figure 9 Link: articels_figures_by_rev_year\2019\What_is_a_Tabby_Interpretable_Model_Decisions_by_Learning_AttributeBased_Classif\figure_9.jpg
+  Figure 9 caption: Visualization of the five leaf node categories in ILSVRC to which
+    the attributes shown in the leftmost block (sharp and spotty) contribute most.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Haomiao Liu
+  Name of the last author: Xilin Chen
+  Number of Figures: 13
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: What is a Tabby? Interpretable Model Decisions by Learning Attribute-Based
+    Classification Criteria
+  Publication Date: 2019-11-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Network Structure of the Upper Stream on the CIFAR-100
+      Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Network Structure of the Upper Stream on the ILSVRC Dataset,
+      Which is a Slightly Modified Network in Network (NIN) Model
+  Table 3 caption:
+    table_text: TABLE 3 Accuracies With Different Weighting Parameter Settings
+  Table 4 caption:
+    table_text: TABLE 4 Top-15 Accuracy of the Standard ResNet-18 Model, the Baseline
+      Model With ResNet-18 Backbone, and HCN Model With ResNet-18 Backbone on the
+      ILSVRC Validation Set
+  Table 5 caption:
+    table_text: TABLE 5 Top-1 Classification Accuracy on ImageNet-150K Dataset With
+      Different Attributes as Features
+  Table 6 caption:
+    table_text: TABLE 6 Average Cosine Distances Between the Selected Image Samples
+      and Their Distances to the Prototypes
+  Table 7 caption:
+    table_text: TABLE 7 The Classification Accuracy and Degree of Interpretability
+      of HCN and the Modified Model With Explicit Constraints on the Consistency Between
+      the Two Streams
+  Table 8 caption:
+    table_text: TABLE 8 Recall on the Selected Categories After Removing the Attributes
+      and After Finetuning
+  Table 9 caption:
+    table_text: TABLE 9 Comparison to Previous Methods on the Criteria Learning Task
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2954501
+- Affiliation of the first author: school of science, rmit university, melbourne,
+    victoria, australia
+  Affiliation of the last author: school of mathematical sciences, monash university,
+    clayton, victoria, australia
+  Figure 1 Link: articels_figures_by_rev_year\2019\Using_Statistical_Measures_and_Machine_Learning_for_Graph_Reduction_to_Solve_Max\figure_1.jpg
+  Figure 1 caption: An illustration of the MWC problem. The subscript of each vertex
+    denotes the vertex index and the superscript denotes the vertex weight. The MWC
+    of the given graph is v 3 4 , v 4 5 , v 3 7 with total weight of 10.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Using_Statistical_Measures_and_Machine_Learning_for_Graph_Reduction_to_Solve_Max\figure_2.jpg
+  Figure 2 caption: 'A comparison between different graph reduction techniques: ml
+    , f c , f r , f b , f d and f w . The horizontal axis represents the percentage
+    of vertices selected by each method; and the vertical axis represents the best
+    objective values generated by solving the subproblem formed by the selected vertices.'
+  Figure 3 Link: articels_figures_by_rev_year\2019\Using_Statistical_Measures_and_Machine_Learning_for_Graph_Reduction_to_Solve_Max\figure_3.jpg
+  Figure 3 caption: "A comparison between MLPR small (trained on small graphs), MLPR\
+    \ large (trained on large graphs) and MLPR none (without any problem reduction)\
+    \ when incorporated with the 4 algorithms to solve the 11 large hard problem instances\
+    \ ( L te ). The horizontal axis represents the graph index, and the vertical axis\
+    \ represents the mean of best objective values generated ( y \xAF ) within the\
+    \ cutoff time (1000 seconds). For each method we sort y \xAF from the 11 graphs\
+    \ in ascending order to generate the plots for easier visualization."
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Yuan Sun
+  Name of the last author: Andreas Ernst
+  Number of Figures: 3
+  Number of Tables: 10
+  Number of authors: 2
+  Paper title: Using Statistical Measures and Machine Learning for Graph Reduction
+    to Solve Maximum Weight Clique Problems
+  Publication Date: 2019-11-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 A Brief Description of the Datasets Used in Our Experiments
+  Table 10 caption:
+    table_text: "TABLE 10 The Results of WLMC, WLMC- f r fr-O, WLMC- f c fc-O, and\
+      \ WLMC- ml ml-O When Used to Solve the Hard Instances; y \xAF y\xAF and \u03C3\
+      \ y \u03C3y Denote the Mean and Standard Deviation of Best Objective Values\
+      \ Generated in 25 Independent Runs Within the Cutoff Time (1000 Seconds)"
+  Table 2 caption:
+    table_text: TABLE 2 The Average Percentage of Vertices Required by Each Method
+      in Order to Capture the Original Optimal Solution in the Reduced Problem
+  Table 3 caption:
+    table_text: TABLE 3 A Comparison of Kernel Functions in Terms of the Percentage
+      of Vertices Required to Generate the Optimal Solution
+  Table 4 caption:
+    table_text: TABLE 4 The Optimal Weights Associated With Each Feature in the Trained
+      SVM Models for Medium and Large Datasets
+  Table 5 caption:
+    table_text: "TABLE 5 The Results of TSM, TSM- f r fr, TSM- f c fc, and TSM- ml\
+      \ ml When Used to Solve the Hard Instances; y \xAF y\xAF and \u03C3 y \u03C3\
+      y Denote the Mean and Standard Deviation of Best Objective Values Generated\
+      \ in 25 Independent Runs Within the Cutoff Time (1000 seconds); and p \xAF p\xAF\
+      \ Denotes the Mean Ratio of Selected Vertices"
+  Table 6 caption:
+    table_text: "TABLE 6 The Results of LSCC, LSCC- f r fr, LSCC- f c fc, and LSCC-\
+      \ ml ml When Used to Solve the Hard Instances; y \xAF y\xAF and \u03C3 y \u03C3\
+      y Denote the Mean and Standard Deviation of Best Objective Values Generated\
+      \ in 25 Independent Runs Within the Cutoff Time (1000 Seconds); and p \xAF p\xAF\
+      \ Denotes the Mean Ratio of Number of Vertices Selected"
+  Table 7 caption:
+    table_text: "TABLE 7 The Results of WLMC, WLMC- f r fr, WLMC- f c fc, and WLMC-\
+      \ ml ml When Used to Solve the Hard Instances; y \xAF y\xAF and \u03C3 y \u03C3\
+      y Denote the Mean and Standard Deviation of Best Objective Values Generated\
+      \ in 25 Independent Runs Within the Cutoff Time (1000 seconds); and p \xAF p\xAF\
+      \ Denotes the Mean Ratio of Number of Vertices Selected"
+  Table 8 caption:
+    table_text: "TABLE 8 The Results of FastWClq, FastWClq- f r fr, FastWClq- f c\
+      \ fc, and FastWClq- ml ml When Used to Solve the Hard Instances; y \xAF y\xAF\
+      \ and \u03C3 y \u03C3y Denote the Mean and Standard Deviation of Best Objective\
+      \ Values Generated in 25 Independent Runs Within the Cutoff Time (1000 Seconds);\
+      \ and p \xAF p\xAF Denotes the Mean Ratio of Number of Vertices Selected"
+  Table 9 caption:
+    table_text: "TABLE 9 The Results of TSM, TSM- f r fr-O, TSM- f c fc-O, and TSM-\
+      \ ml ml-O When Used to Solve the Hard Instances; y \xAF y\xAF and \u03C3 y \u03C3\
+      y Denote the Mean and Standard Deviation of Best Objective Values Generated\
+      \ in 25 Independent Runs Within the Cutoff Time (1000 Seconds)"
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2954827
+- Affiliation of the first author: college of computer and information science, southwest
+    university, chongqing, china
+  Affiliation of the last author: university of western australia, perth, wa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2019\ImageBased_D_Object_Reconstruction_StateoftheArt_and_Trends_in_the_Deep_Learning\figure_1.jpg
+  Figure 1 caption: Space partitioning. OctNet [41] is a hybrid grid-octree, which
+    enables deep and high-resolution 3D CNNs. High-resolution octrees can also be
+    generated, progressively, in a depth-first [36] or breadth-first [33] manner.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\ImageBased_D_Object_Reconstruction_StateoftheArt_and_Trends_in_the_Deep_Learning\figure_2.jpg
+  Figure 2 caption: Template deformation (top) [56] versus domain deformation (bottom)
+    [60].
+  Figure 3 Link: articels_figures_by_rev_year\2019\ImageBased_D_Object_Reconstruction_StateoftheArt_and_Trends_in_the_Deep_Learning\figure_3.jpg
+  Figure 3 caption: The different network architectures used in point-based 3D reconstruction.
+  Figure 4 Link: articels_figures_by_rev_year\2019\ImageBased_D_Object_Reconstruction_StateoftheArt_and_Trends_in_the_Deep_Learning\figure_4.jpg
+  Figure 4 caption: Intermediating via 2.5D sketches (depth, normals, and silhouettes).
+  Figure 5 Link: articels_figures_by_rev_year\2019\ImageBased_D_Object_Reconstruction_StateoftheArt_and_Trends_in_the_Deep_Learning\figure_5.jpg
+  Figure 5 caption: At test time, the 3D encoder and the discriminator are removed
+    and only the highlighted modules are kept.
+  Figure 6 Link: articels_figures_by_rev_year\2019\ImageBased_D_Object_Reconstruction_StateoftheArt_and_Trends_in_the_Deep_Learning\figure_6.jpg
+  Figure 6 caption: 'Performance of some key methods on the ShapeNet dataset. References
+    highlighted in red are point-based. The IoU is computed on grids of size 323 .
+    The label next to each circle is encoded as follow: First author et al. (year,
+    n at training, n at test), where n is the number of input images. Table 6 provides
+    a detailed comparison.'
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xian-Feng Han
+  Name of the last author: Mohammed Bennamoun
+  Number of Figures: 6
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: 'Image-Based 3D Object Reconstruction: State-of-the-Art and Trends
+    in the Deep Learning Era'
+  Publication Date: 2019-11-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Taxonomy of the State-of-the-Art Image-Based 3D Object Reconstruction
+      Using Deep Learning
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Taxonomy of the Encoding Stage
+  Table 3 caption:
+    table_text: TABLE 3 Taxonomy of the Various Volumetric Decoders Used in the Literature
+  Table 4 caption:
+    table_text: TABLE 4 Taxonomy of Mesh Decoders
+  Table 5 caption:
+    table_text: TABLE 5 Some of the Datasets That are Used to Train and Evaluate the
+      Performance of Deep Learning-Based 3D Reconstruction Algorithms
+  Table 6 caption:
+    table_text: TABLE 6 Performance Summary of Some Representative Methods
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2954885

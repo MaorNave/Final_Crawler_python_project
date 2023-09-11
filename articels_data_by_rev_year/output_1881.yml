@@ -1,0 +1,807 @@
+- Affiliation of the first author: the university of adelaide, adelaide, sa, australia
+  Affiliation of the last author: the university of adelaide, adelaide, sa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\FCOS_A_Simple_and_Strong_AnchorFree_Object_Detector\figure_1.jpg
+  Figure 1 caption: Overall Concept of FCOS. As shown in the left image, FCOS works
+    by predicting a 4D vector (l,t,r,b) encoding the location of a bounding box at
+    each foreground pixel (supervised by ground-truth bounding box information during
+    training). The right plot shows that when a location residing in multiple bounding
+    boxes, it can be ambiguous in terms of which bounding box this location should
+    regress.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\FCOS_A_Simple_and_Strong_AnchorFree_Object_Detector\figure_2.jpg
+  Figure 2 caption: "The network architecture of FCOS, where C3, C4, and C5 denote\
+    \ the feature maps of the backbone network and P3 to P7 are the feature levels\
+    \ used for the final prediction. H\xD7W is the height and width of feature maps.\
+    \ s ( s=8,16,\u2026,128 ) is the down-sampling ratio of the feature maps at the\
+    \ level to the input image. As an example, all the numbers are computed with an\
+    \ 800\xD71024 input."
+  Figure 3 Link: articels_figures_by_rev_year\2020\FCOS_A_Simple_and_Strong_AnchorFree_Object_Detector\figure_3.jpg
+  Figure 3 caption: 'Speedaccuracy trade-off between FCOS and several recent methods:
+    CenterNet [34], YOLOv3 [6], and RetinaNet [7]. Speed is measured on a NVIDIA 1080Ti
+    GPU. For fair comparison, we only measure the network latency for all detectors.
+    RetinaNet results are from Detectron2 . FCOS achieves competitive performance
+    compared with recent methods including anchor-based ones.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\FCOS_A_Simple_and_Strong_AnchorFree_Object_Detector\figure_4.jpg
+  Figure 4 caption: Center-ness. Red, blue, and other colors denote 1, 0, and the
+    values between them, respectively. Center-ness is computed using Eq. (3) and decays
+    from 1 to 0 as the location deviates from the center of the object. During testing,
+    the center-ness predicted by the network is multiplied with the classification
+    score for NMS, thus being able to down-weight the low-quality bounding boxes predicted
+    by a location far from the center of an object.
+  Figure 5 Link: articels_figures_by_rev_year\2020\FCOS_A_Simple_and_Strong_AnchorFree_Object_Detector\figure_5.jpg
+  Figure 5 caption: Qualitative results of applying the center-ness scores to classification
+    scores. A point in the figure denotes a bounding box. The dashed line is the line
+    y=x . As shown in the right figure, after applying the center-ness scores, the
+    boxes with low IoU scores but high confidence scores (i.e., under the line y=x
+    ) are reduced substantially.
+  Figure 6 Link: articels_figures_by_rev_year\2020\FCOS_A_Simple_and_Strong_AnchorFree_Object_Detector\figure_6.jpg
+  Figure 6 caption: Qualitative results. FCOS works well with a wide range of objects
+    including crowded, occluded, extremely small and very large objects. Best viewed
+    on screen.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.74
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Zhi Tian
+  Name of the last author: Tong He
+  Number of Figures: 6
+  Number of Tables: 10
+  Number of authors: 4
+  Paper title: 'FCOS: A Simple and Strong Anchor-Free Object Detector'
+  Publication Date: 2020-10-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Best Possible Recall (BPR) of Anchor-Based RetinaNet Under
+      a Variety of Matching Rules and the BPR of FCOS on the COCO val2017 val2017
+      Split
+  Table 10 caption:
+    table_text: TABLE 10 FCOS for Crowded Object Detection on the CrowdHuman Dataset
+  Table 2 caption:
+    table_text: TABLE 2 The Ratios of the Ambiguous Samples to all the Positive Samples
+      in FCOS
+  Table 3 caption:
+    table_text: TABLE 3 FCOS versus RetinaNet on val2017 val2017 Split With ResNet-50-FPN
+      as the Backbone
+  Table 4 caption:
+    table_text: "TABLE 4 Ablation Study for the Proposed Center-Ness Branch on the\
+      \ val2017 val2017 split. ctr.-ness \u2020 \u2020: Using the Center-Ness Computed\
+      \ From the Predicted Regression Vector When Testing (i.e., Replacing the Ground-Truth\
+      \ Values With the Predicted Ones in Eq. (3))"
+  Table 5 caption:
+    table_text: 'TABLE 5 Ablation Study for Design Choices in FCOS. wo GN: Without
+      Using Group Normalization (GN) for the Convolutional Layers in Heads. w IoU:
+      Using IoU Loss in [19] Instead of GIoU. w C 5 C5: Using C 5 C5 Instead of P
+      5 P5'
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Study for the Radius r r of Positive Sample Regions
+      (Defined in Section 2.1)
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Study for Different Strategies of Assigning Objects
+      to FPN Levels
+  Table 8 caption:
+    table_text: TABLE 8 FCOS versus Other State-of-the-Art Two-Stage or One-Stage
+      Detectors (Single-Model Results)
+  Table 9 caption:
+    table_text: TABLE 9 Real-Time FCOS (FCOS-RT) Models
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3032166
+- Affiliation of the first author: shanghai key laboratory of multimedia processing
+    and transmissions, cooperative medianet innovation center, shanghai jiao tong
+    university, shanghai, china
+  Affiliation of the last author: university of technology sydney, sydney, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_1.jpg
+  Figure 1 caption: Given a graph with attributes, based on the completeness of the
+    node attributes, we may classify the graph into three types. (a) Attribute-complete
+    graph; (b) Attribute-incomplete graph; and (c) Attribute-missing graph.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_2.jpg
+  Figure 2 caption: The comparison between recent GNN and our SAT, together with the
+    illustration of our shared-latent space assumption. (a) means recent GNN usually
+    requires structures and attributes as a whole input. E is the encoder and D is
+    the decoder, (b) shows our shared-latent space assumption where E X and E A are
+    two encoders and D X and D A are two decoders, and (c) shows the general architecture
+    of our SAT.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_3.jpg
+  Figure 3 caption: Architecture of SAT. SAT first transforms attributes and structures
+    into the latent space, then aligns the paired latent representations via adversarial
+    distribution matching, and finally decodes to the original attributes and structures,
+    namely the paired structure-attribute matching.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_4.jpg
+  Figure 4 caption: "Node classification and profiling performance with less attribute-observed\
+    \ nodes. (a)-(c) illustrates the results of node classification with \u201CX\u201D\
+    \ setting. (d)-(f) shows the results of node classification with \u201CA+X\u201D\
+    \ setting. The dashed line is a criterion to criticize whether the restored attributes\
+    \ can enhance the GCN classifier. (g)-(i) shows the results of profiling task.\
+    \ Train ratio means the ratio of samples from the original train data."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_5.jpg
+  Figure 5 caption: "Link prediction with less observed links on three datasets. We\
+    \ use AUC here to evaluate the performance. Train ratio means the ratio of random\
+    \ samples from original train data. Term \u201Cwith X\u201D means attributes are\
+    \ taken into consideration and \u201Cno X\u201D means only structures are considered."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_6.jpg
+  Figure 6 caption: Learned node representation analysis. The t-SNE visualization
+    of test node embeddings on Cora. Each color represents one class. Note that all
+    methods learn node embeddings without class supervision.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_7.jpg
+  Figure 7 caption: Visualization of the training process for SAT(GCN) on Cora. (a)
+    The self-reconstruction loss. (b) The cross-reconstruction loss. (c) The GAN loss
+    in adversarial distribution matching. (d) Validation Recall10 along the training
+    steps. (d) The train and validation MMD distance between the aggregated distribution
+    q(z) and Gaussian prior p(z) . (e) The train and validation MMD distance between
+    distributions of zx and za .
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_8.jpg
+  Figure 8 caption: "SAT(GCN) performance with different lambda mathrmc on both the\
+    \ node classification with \u201CA+X\u201D setting and profiling task. (a-c) means\
+    \ the result for node classification with \u201CA+X\u201D setting on Cora, Citeseer\
+    \ and Pubmed, respectively. The dotted line with \u201Donly A\u201D represents\
+    \ that only the structural information is used, in which GCN as the classifier.\
+    \ (d-f) indicates the result for profiling on Cora, Citeseer and Steam, respectively.\
+    \ The dotted line with \u201DGCN\u201D means we use the GCN as the attribute completion\
+    \ method. (g-i) shows the link prediction performance of SAT(GCN) and SAT(GAT)\
+    \ with different lambda c ."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Learning_on_AttributeMissing_Graphs\figure_9.jpg
+  Figure 9 caption: The empirical running time in each epoch of different methods.
+    In this figure, SAT(GCN)-N indicates the non-parallel SAT(GCN), and SAT(GCN)-P
+    means the parallel one.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Xu Chen
+  Name of the last author: Ivor W. Tsang
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: Learning on Attribute-Missing Graphs
+  Publication Date: 2020-10-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Main Notations in This Article
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Statistics of Seven Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Node Classification of the Node-Level Evaluation for Node
+      Attribute Completion
+  Table 4 caption:
+    table_text: TABLE 4 Profiling of the Attribute-Level Evaluation for Node Attribute
+      Completion
+  Table 5 caption:
+    table_text: TABLE 5 Area Under Curve (AUC) and Average Precision (AP) of Link
+      Prediction Task
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3032189
+- Affiliation of the first author: state key laboratory of robotics, shenyang institute
+    of automation, chinese academy of sciences, shenyang, china
+  Affiliation of the last author: liu bie ju centre for mathematical sciences and
+    department of mathematics, school of data science, city university of hong kong,
+    hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_1.jpg
+  Figure 1 caption: Magic behind deep learning.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_10.jpg
+  Figure 10 caption: The generalization error result of deep nets.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_2.jpg
+  Figure 2 caption: Covering numbers of different sets.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_3.jpg
+  Figure 3 caption: The role of depth for approximating t 2 using SGD.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_4.jpg
+  Figure 4 caption: Bias-variance trade-off for ERM on deep nets.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_5.jpg
+  Figure 5 caption: Network architectures of various depths and widths.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_6.jpg
+  Figure 6 caption: MSE curves of networks with various structures.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_7.jpg
+  Figure 7 caption: Networks with various width distributions.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_8.jpg
+  Figure 8 caption: Adaptivity of the feature to structures.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Depth_Selection_for_Deep_ReLU_Nets_in_Feature_Extraction_and_Generalization\figure_9.jpg
+  Figure 9 caption: Best results from networks of different depths.
+  First author gender probability: 0.77
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.69
+  Name of the first author: Zhi Han
+  Name of the last author: Ding-Xuan Zhou
+  Number of Figures: 13
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Depth Selection for Deep ReLU Nets in Feature Extraction and Generalization
+  Publication Date: 2020-10-20 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Deep Nets in Feature Extraction (Within Accuracy \u03B5 \u025B\
+      , r r-Smooth Function and d m dm-Dimensional Manifold)"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Notations
+  Table 3 caption:
+    table_text: TABLE 3 Network Width Candidates
+  Table 4 caption:
+    table_text: TABLE 4 Noisy Data Training by Networks of Various Depths
+  Table 5 caption:
+    table_text: TABLE 5 Comparisons With Traditional Methods
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3032422
+- Affiliation of the first author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Affiliation of the last author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_1.jpg
+  Figure 1 caption: Illustration of traditional person re-id, group re-id and group-aware
+    (single) person re-id. (a) Person re-id only measures the similarity between individual
+    pairs, and its performance is easily influenced by occlusions or people wearing
+    similar clothes. (b) Group re-id aims to associate different groups of people,
+    which is more challenging compared with single person re-id. (c) In group-aware
+    (single) person re-id, we explore the visual context information in the group
+    as additional guidance to learn more robust representations. For instance, the
+    man in the black suit can be better re-identified with the context information
+    from his neighboring group members.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_10.jpg
+  Figure 10 caption: Model sensitivity analysis under different settings on the CSG
+    dataset. Zoom in for better visualization.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_2.jpg
+  Figure 2 caption: Illustration of the proposed Multi-Attention Context Graph for
+    group-based re-identification. First of all, the individual features are extracted
+    by a CNN model for group member representation. Second, we construct a context
+    graph for each group by connecting all the group members with graph nodes. We
+    then design an intra-graph and an inter-graph attention module to learn the within-group
+    and between-group dependencies, respectively. Afterwards, node-level features
+    are aggregated for global group-level and local person-level correspondence learning,
+    respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_3.jpg
+  Figure 3 caption: Illustration of individual feature extraction and context graph
+    construction. We employ a part-based representation for each person, and part-level
+    features are stacked as input node features in the graph. All the graph nodes
+    are connected through edges, which makes the graph insensible to the group layout
+    and spatial dependency within the group.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_4.jpg
+  Figure 4 caption: Illustration of intra- and inter-part attentions for a single
+    node. Intra-part attention only receives messages from node features corresponding
+    to the same body part, while inter-part attention receives messages from different
+    part features.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_5.jpg
+  Figure 5 caption: Illustration of inter-graph attention for a single node. We compute
+    the node-level similarity between inter-graph nodes, and part-level features share
+    the same set of attention weights.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_6.jpg
+  Figure 6 caption: Illustration of the inference stages for group re-id and group-aware
+    person re-id.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_7.jpg
+  Figure 7 caption: Visualization of some examples from the CUHK-SYSU-Group dataset.
+    This dataset contains various challenging situations, such as occlusions, group
+    layout and member changes, lighting condition changes, etc.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_8.jpg
+  Figure 8 caption: Visualization of group re-id results. The first image is the query,
+    whilst the rest are the Rank-1 to Rank-5 (from left to right) retrieved results.
+    The green and red bounding boxes denote correct and incorrect matches, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Learning_MultiAttention_Context_Graph_for_GroupBased_ReIdentification\figure_9.jpg
+  Figure 9 caption: Visualization of re-id results using single person re-id models
+    and the proposed MACG model. The first image is the query, whilst the rest are
+    the Rank-1 to Rank-10 (from left to right) retrieved results. The green and red
+    bounding boxes denote correct and incorrect matches, respectively.
+  First author gender probability: 0.92
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Yichao Yan
+  Name of the last author: Ling Shao
+  Number of Figures: 13
+  Number of Tables: 7
+  Number of authors: 9
+  Paper title: Learning Multi-Attention Context Graph for Group-Based Re-Identification
+  Publication Date: 2020-10-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Descriptions on key Notations Used in this Paper
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Statistical Comparisons Between CSG and Existing Group Re-ID
+      Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Comparison With the State-of-the-Art Group Re-ID Methods
+  Table 4 caption:
+    table_text: TABLE 4 Comparative Results for Single Person Re-ID With Group Context
+      Information
+  Table 5 caption:
+    table_text: TABLE 5 Dataset Transfer Results for Single Person Re-ID
+  Table 6 caption:
+    table_text: TABLE 6 Model Component Analysis on the CSG Dataset, Where R- k k
+      Denotes the Rank- k k Accuracy (%)
+  Table 7 caption:
+    table_text: TABLE 7 Impact of Detectors on the CSG Dataset, Where R- k k Denotes
+      the Rank- k k Accuracy (%)
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3032542
+- Affiliation of the first author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Affiliation of the last author: school of engineering, university of california,
+    merced, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_1.jpg
+  Figure 1 caption: Existing super-resolution method (e.g., RDN [8]) does not perform
+    well on real captured images as shown in (c). We can obtain sharper results (d)
+    by re-training the existing model [8] with more realistic training data generated
+    by our method. Furthermore, we recover more structures and details (e) by exploiting
+    the radiance information recorded in raw images. The two input images in (a) are
+    captured by Leica SL Typ-601 and iPhone 6s Plus respectively, and both cameras
+    are not seen by the models during training. Best enlarge and view on screen.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_10.jpg
+  Figure 10 caption: "Visual comparisons of different variants of the proposed network.\
+    \ \u201Cwo color\u201D indicates the model without the color correction module.\
+    \ \u201Cwo raw\u201D represents super-resolution without raw input by using the\
+    \ low-resolution color image as the input for both modules of our network."
+  Figure 2 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_2.jpg
+  Figure 2 caption: A typical ISP pipeline.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_3.jpg
+  Figure 3 caption: Overview of the proposed network. Our model consists of two modules,
+    where one exploits raw data X raw to restore high-resolution linear measurements
+    X ~ lin for all color channels with clear structures and fine details, and the
+    other one estimates the transformation matrix to recover the final color result
+    X ~ using the low-resolution color image X ref as reference.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_4.jpg
+  Figure 4 caption: Synthesizing linear color measurements from raw data. The sensels
+    surrounded by the black-dot curve is a Bayer pattern block and defined as a new
+    virtual sensel in Section 3.1.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_5.jpg
+  Figure 5 caption: The image restoration module uses the DCA blocks in an encoder-decoder
+    framework and reconstructs high-resolution linear color measurements X ~ lin from
+    the degraded low-resolution raw input X raw .
+  Figure 6 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_6.jpg
+  Figure 6 caption: Illustration of the proposed DCA block.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_7.jpg
+  Figure 7 caption: Network architecture of the color correction module. Our model
+    predicts the pixel-wise transformations mathcal A and mathcal B with a reference
+    color image.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_8.jpg
+  Figure 8 caption: "Results from the proposed synthetic dataset. References for the\
+    \ baseline methods can be found in Table 1. \u201CGT\u201D represents ground-truth."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Exploiting_Raw_Images_for_RealScene_SuperResolution\figure_9.jpg
+  Figure 9 caption: "Results of non-blind image super-resolution. References for the\
+    \ baseline methods can be found in Table 1. \u201CGT\u201D represents ground-truth."
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xiangyu Xu
+  Name of the last author: Ming-Hsuan Yang
+  Number of Figures: 23
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: Exploiting Raw Images for Real-Scene Super-Resolution
+  Publication Date: 2020-10-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Evaluations on the Synthetic Dataset
+  Table 10 caption:
+    table_text: "TABLE 10 Quantitative Evaluations for 4\xD7 Super-Resolution on the\
+      \ Synthetic Dataset"
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Study of the Proposed Model on the Synthetic Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Evaluations on the Proposed Real Image Dataset
+      With Blind Image Quality Evaluation Metrics [61], [62], [63]
+  Table 4 caption:
+    table_text: TABLE 4 Effectiveness of the Proposed Data Generation Pipeline
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Evaluation of the Image Restoration Module Network
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Evaluation of the Proposed Learning-Based Guided
+      Filter
+  Table 7 caption:
+    table_text: TABLE 7 Image Dehazing Results on the Test Sets of RESIDE [71]
+  Table 8 caption:
+    table_text: TABLE 8 Evaluations of Guided Depth Upsampling Algorithms in Terms
+      of RMSE on the NYUv2 Test Set [75]
+  Table 9 caption:
+    table_text: TABLE 9 Evaluations With Our Prior Model [22] on the Synthetic Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3032476
+- Affiliation of the first author: information technology discipline, murdoch university,
+    murdoch, australia
+  Affiliation of the last author: university of western australia, perth, wa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_1.jpg
+  Figure 1 caption: The building blocks of a stereo matching pipeline.
+  Figure 10 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_10.jpg
+  Figure 10 caption: "Overall Bad-n error, n\u2208[0.5,5.0] on a selection of 141\
+    \ (baseline) images from the stereo vision challenge of ApolloScape dataset [34].\
+    \ A similar behaviour is observed on the challenge subset, see the supplementary\
+    \ material, available online. The horizontal axis is the error n while the vertical\
+    \ axis is the percentage of pixels whose estimated disparity deviates with more\
+    \ than n pixels from the ground truth."
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_2.jpg
+  Figure 2 caption: Feature learning and matching architectures. The basic architecture
+    in (a) has been extended in many ways. First, by adding pooling and subsampling
+    layers in (b), the network can process larger patches and thus allowing for larger
+    variations in the viewpoints between the two patches. The architectures in (c),
+    (d) and (e) add Spatial Pyramid Pooling (SPP) modules to process patches of arbitrary
+    sizes while producing features of fixed size. The architectures in (c) and (e)
+    place the SPP modules right after the feature computation module, which is computationally
+    more efficient than placing them after the feature matchingdecision module as
+    in (d). The architecture in (f), which unifies feature learning and metric learning,
+    is easier to train but is computationally more expensive at runtime.
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_3.jpg
+  Figure 3 caption: Multiscale feature learning architectures.
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_4.jpg
+  Figure 4 caption: Taxonomy of the network architectures for stereo-based disparity
+    estimation using end-to-end deep learning.
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_5.jpg
+  Figure 5 caption: 'Cost volume regularization schemes [92]: (a) does not consider
+    context, (b) captures context along the spatial dimensions using 2D convolutions,
+    (c) captures context along the spatial and disparity dimensions by recurrent regularization
+    using 2D convolutions, and (d) captures context in all dimensions by using 3D
+    convolutions.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_6.jpg
+  Figure 6 caption: Taxonomy of multivew stereo methods. (a), (b), and (c) perform
+    early fusion, while (d) performs early fusion by aggregating features across depth
+    plans, and late fusion by aggregating cost volumes across views.
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_7.jpg
+  Figure 7 caption: Illustration of the domain gap between synthetic (left) and real
+    (right) images. The left image is from the FlyingThings synthetic dataset [22].
+  Figure 8 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_8.jpg
+  Figure 8 caption: Examples of stereo pairs and their ground-truth disparity maps
+    from the ApolloScape dataset [34].
+  Figure 9 Link: articels_figures_by_rev_year\2020\A_Survey_on_Deep_Learning_Techniques_for_StereoBased_Depth_Estimation\figure_9.jpg
+  Figure 9 caption: Four images, collected in-house and used to test 16 state-of-the-art
+    methods. The green masks on some of the left images highlight the pixels where
+    the ground-truth disparity is available. The disparity range is shown in pixels
+    while the depth range is in meters. d refers to disparity.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Hamid Laga
+  Name of the last author: Mohammed Bennamoun
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: A Survey on Deep Learning Techniques for Stereo-Based Depth Estimation
+  Publication Date: 2020-10-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Datasets for DepthDisparity Estimation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Taxonomy and Comparison of Deep Learning-Based Stereo Matching
+      Techniques
+  Table 3 caption:
+    table_text: TABLE 3 Taxonomy and Comparison, on the KITTI2015 Test Dataset, of
+      27 End-to-End Disparity Estimation Techniques
+  Table 4 caption:
+    table_text: TABLE 4 Taxonomy and Comparison of 13 Deep Learning-Based MVS Techniques
+  Table 5 caption:
+    table_text: "TABLE 5 Computation Time, Memory Consumption, at Runtime, and Reconstruction\
+      \ Accuracy, in Terms of RMSE (the lower the better) and Bad-2 (the lower the\
+      \ better), on Images of Size 640\xD7480 640\xD7480"
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3032602
+- Affiliation of the first author: engineering research center of metallurgical automation
+    and measurement technology, wuhan university of science and technology, wuhan,
+    china
+  Affiliation of the last author: school of software and electrical engineering, swinburne
+    university of technology, melbourne, vic, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Graph_Signal_Processing_Approach_to_QSARQSPR_Model_Learning_of_Compounds\figure_1.jpg
+  Figure 1 caption: The molecular graph and weight matrix of 2-methyl-2-butene.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Graph_Signal_Processing_Approach_to_QSARQSPR_Model_Learning_of_Compounds\figure_2.jpg
+  Figure 2 caption: Two cases that molecular descriptors degenerate.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Graph_Signal_Processing_Approach_to_QSARQSPR_Model_Learning_of_Compounds\figure_3.jpg
+  Figure 3 caption: Phenet dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Graph_Signal_Processing_Approach_to_QSARQSPR_Model_Learning_of_Compounds\figure_4.jpg
+  Figure 4 caption: Example compounds of PAH dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Graph_Signal_Processing_Approach_to_QSARQSPR_Model_Learning_of_Compounds\figure_5.jpg
+  Figure 5 caption: Correlation coefficients of the first eight input variables for
+    a compound in Phenet dataset before (left) and after (right) graph filtering.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Graph_Signal_Processing_Approach_to_QSARQSPR_Model_Learning_of_Compounds\figure_6.jpg
+  Figure 6 caption: Absolute errors of the model (30) of Phenet dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Graph_Signal_Processing_Approach_to_QSARQSPR_Model_Learning_of_Compounds\figure_7.jpg
+  Figure 7 caption: Absolute errors of the model (33) of PAH dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Graph_Signal_Processing_Approach_to_QSARQSPR_Model_Learning_of_Compounds\figure_8.jpg
+  Figure 8 caption: Relationship of variables and boiling point for model (32) of
+    PAH dataset.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Xiaoying Song
+  Name of the last author: Jingxin Zhang
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Graph Signal Processing Approach to QSAR/QSPR Model Learning of Compounds
+  Publication Date: 2020-10-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance Comparison of Models for Phenet Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Proposed Models With Other Works for Phenet
+      Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison of Models for PAH Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the Proposed Models With Other Works for Polyaromatic
+      Hydrocarbons
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3032718
+- Affiliation of the first author: moe key lab of artificial intelligence, ai institute,
+    shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: moe key lab of artificial intelligence, ai institute,
+    shanghai jiao tong university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_1.jpg
+  Figure 1 caption: "The multi-level skeleton context represented by hierarchical\
+    \ graphs. (a) Original spatial skeleton data without any graph configurations.\
+    \ (b) Global graphview-level context defines the \u201Cview\u201D that we describe\
+    \ the skeleton. Fixed graph restricts the information flow path of joints. Our\
+    \ MV-IGNet aims to generate different graphs (multi-view) without common edges\
+    \ to extract complementary features. (c) The group-level context in each view,\
+    \ including intra-group and inter-group context, which possesses high-level semantic\
+    \ information. (d) Local context (interactions between a joint and its neighbors)\
+    \ is the cornerstone of skeleton feature extraction. We enable multiple learnable\
+    \ graphs to enrich local interaction patterns. (e) Action-related context. We\
+    \ expect that different interactions contribute unequally to different actions."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_2.jpg
+  Figure 2 caption: "Separable parametric graph convolution and GCN for the local\
+    \ context modeling. The major difference between SPG-Conv and GCN is whether weight\
+    \ is shared when modeling different interactions. Taking 3-node local graph (\
+    \ V=3 ) as an example, GCN applies shared weight for all edges while PG-Conv assigns\
+    \ private weights for each edge (e.g., W 0,2 and W 1,3 ). Thus, there are total\
+    \ 3\xD73=9 private weights with size C\xD7 C \u2032 . SPG-Conv separates above\
+    \ weight W\u2208 R V\xD7V\xD7C\xD7 C \u2032 into depth-wise graph convolution\
+    \ weight K\u2208 R C\xD7V\xD7V and point-wise weight with size C\xD7 C \u2032\
+    \ , which greatly reduces the memory and computational cost."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_3.jpg
+  Figure 3 caption: Hierarchical modeling of interaction context. The skeleton is
+    manually divided into six parts, which can be represented by pooling matrix A
+    P . For the intra-group context, we first embed V joints into U groups by SPG-pooling.
+    After that, a complete graph A G is applied to let SPG-Conv learn inter-group
+    context during training.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_4.jpg
+  Figure 4 caption: "Proposed unified layers for multi-level skeleton context modeling.\
+    \ All layers receive the output of the previous layer as input. Local, intra-group\
+    \ and inter-group context can be captured by SPG-Conv with different weights and\
+    \ graph settings, i.e., A , A P and A G respectively. Graph setting of GCA layer\
+    \ is dynamically generated from input X by GCA module: given input skeleton sequence\
+    \ X , GCA generates input-dependent graph G by Eqs. (9) and (10). We replace the\
+    \ given adjacent matrix A \u02DC with the learned graph G in SPG-Conv, and perform\
+    \ the element-wise multiplication G\u2299K on [V\xD7V] domain. In this case, the\
+    \ depth-wise weight is updated according to input-dependent graph G in training\
+    \ process."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_5.jpg
+  Figure 5 caption: The two-stream architecture of IGNet. Motion and position streams
+    stack the same 6 spatiotemporal convolution (STC) blocks. STC block is similar
+    to that of ST-GCN but employs our SPGGCASPG-pooling layers rather than GCN to
+    extract spatial features. We dont add residual conv in pooling block due to dimension
+    mismatch.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_6.jpg
+  Figure 6 caption: MV-IGNet. It consists of two ensemble IGNet models with different
+    graphs ( A0 and A1 ). We only show some necessary layers in MV-IGNet. These two
+    models are trained independently and their prediction scores are averaged to get
+    final results for the test.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_7.jpg
+  Figure 7 caption: Param-accuracy curve on NTU-RGB+D (CV). For S-ST-GCN and SPG-Conv,
+    width multiplier alpha = 0.5, 1.0, 1.5, 2.0 . The basic output channels of ST-GCN
+    are lbrace 64, 64, 64, 128, 128, 128, 256, 256, 256rbrace ( alpha =1.0 ) and we
+    only plot alpha = 0.5, 1.0, 1.5 for ST-GCN. The performance of baselines has an
+    obvious positive correlation with the parameter number. SPGNet outperforms ST-GCN
+    on both efficiency and accuracy.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_8.jpg
+  Figure 8 caption: 'Visualizing the weights of SPG-Conv. The left shows the different
+    graphs of skeleton: complete, joint, edge and physical respectively. Values in
+    these graphs are the summation of graph kernels mathbf K in SPG-Conv. The right
+    colorful skeletons show the weights of SPGNet-physical in skeleton form. Joints
+    and edges show different importance learned by SPG-Conv. Zoom in for the best
+    visualization.'
+  Figure 9 Link: articels_figures_by_rev_year\2020\Learning_MultiView_Interactional_Skeleton_Graph_for_Action_Recognition\figure_9.jpg
+  Figure 9 caption: "Visualizing the input-dependent graphs G learned by GCA modules\
+    \ on NTU-RGB+D dataset. Joint number V=25 and its configuration is shown in [57].\
+    \ For better understanding, we simplify the skeleton graph in Fig. 8 by grouping\
+    \ joints in hand and foot as one joint. Four graphs corresponding to different\
+    \ actions are shown. We use \u201Cred\u201D lines to point out interactions with\
+    \ high importance. Zoom in for the best visualization."
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.89
+  Name of the first author: Minsi Wang
+  Name of the last author: Xiaokang Yang
+  Number of Figures: 9
+  Number of Tables: 11
+  Number of authors: 3
+  Paper title: Learning Multi-View Interactional Skeleton Graph for Action Recognition
+  Publication Date: 2020-10-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Comparison Between GCN and SPG-Conv
+  Table 10 caption:
+    table_text: TABLE 10 Action Recognition Accuracy ( % %) on NTU-RGB+D 120
+  Table 2 caption:
+    table_text: TABLE 2 Accuracy and Efficiency Comparisons on Cross-Subject (CS)
+      and Cross-View (CV) Protocols of NTU-RGB+D Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Accuracy ( % %) of SPGNet Models on NTU-RGB+D
+  Table 4 caption:
+    table_text: TABLE 4 Comparison Test on the NTU-RGB+D
+  Table 5 caption:
+    table_text: TABLE 5 Accuracy ( % %) on NTU-RGB+D
+  Table 6 caption:
+    table_text: TABLE 6 Results ( % %) of HPGNet Models With Different U U on NTU-RGB+D
+  Table 7 caption:
+    table_text: TABLE 7 Accuracy ( % %) on NTU-RGB+D
+  Table 8 caption:
+    table_text: TABLE 8 Accuracy ( % %) on NTU-RGB+D
+  Table 9 caption:
+    table_text: TABLE 9 Action Recognition Accuracy ( % %) on NTU-RGB+D
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3032738
+- Affiliation of the first author: state key laboratory of industrial control technology,
+    college of control science and engineering, zhejiang university, hangzhou, china
+  Affiliation of the last author: department of mechanical and energy engineering,
+    southern university of science and technology, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_1.jpg
+  Figure 1 caption: Quantization example (b=3) .
+  Figure 10 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_10.jpg
+  Figure 10 caption: Convergence of loss function (neural network).
+  Figure 2 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_2.jpg
+  Figure 2 caption: Federated learning via LAQ.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_3.jpg
+  Figure 3 caption: Federated learning via TWO-LAQ.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_4.jpg
+  Figure 4 caption: Convergence of LAQ under different quantization bits (logistic
+    regression).
+  Figure 5 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_5.jpg
+  Figure 5 caption: Convergence of the loss function (logistic regression).
+  Figure 6 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_6.jpg
+  Figure 6 caption: Convergence of gradient norm (neural network).
+  Figure 7 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_7.jpg
+  Figure 7 caption: Tests on different datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_8.jpg
+  Figure 8 caption: Convergence of loss function (CNN for CIFAR 10).
+  Figure 9 Link: articels_figures_by_rev_year\2020\Lazily_Aggregated_Quantized_Gradient_Innovation_for_CommunicationEfficient_Feder\figure_9.jpg
+  Figure 9 caption: Convergence of loss function (logistic regression).
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Jun Sun
+  Name of the last author: Zaiyue Yang
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: Lazily Aggregated Quantized Gradient Innovation for Communication-Efficient
+    Federated Learning
+  Publication Date: 2020-10-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Gradient-Based Algorithms
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Tests for CIFAR 10 With CNN
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison of Mini-Batch Stochastic Gradient-Based
+      Algorithms
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3033286
+- Affiliation of the first author: department of automation, and the institute of
+    medical robotics, shanghai jiao tong university, shanghai, china
+  Affiliation of the last author: department of automation, and the institute of medical
+    robotics, shanghai jiao tong university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Universal_Adversarial_Attack_on_Attention_and_the_Resulting_Dataset_DAmageNet\figure_1.jpg
+  Figure 1 caption: 'AoA adversarial sample and its attention heat map (calculated
+    by DenseNet121). The original sample (in ImageNet: image n0162981915314.JPEG,
+    class No.25) is shown on the left. All well-trained DNNs (listed in the first
+    row) correctly recognize this image as a salamander. The right image is the generated
+    adversarial sample by AoA. The difference between the two images is slight, however,
+    the heat map shown in lower left corner changes a lot, which fools all the listed
+    DNNs to incorrect predictions, as shown in the bottom row.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Universal_Adversarial_Attack_on_Attention_and_the_Resulting_Dataset_DAmageNet\figure_2.jpg
+  Figure 2 caption: Attention heat maps for VGG19 [18], InceptionV3 [60], DenseNet121
+    [56], which are similar even the architectures are different.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Universal_Adversarial_Attack_on_Attention_and_the_Resulting_Dataset_DAmageNet\figure_3.jpg
+  Figure 3 caption: The design of AoA. AoA calculates the attention heat map by SGLRP
+    after inference. The gradient from the heat map back-propagates to the input and
+    updates the sample iteratively. By suppressing the attention heat map value, one
+    can change the network decision by fooling its focus. Constantly doing this, the
+    produced adversarial sample could beat several black-box models.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Universal_Adversarial_Attack_on_Attention_and_the_Resulting_Dataset_DAmageNet\figure_4.jpg
+  Figure 4 caption: Minimizing L dstc distracts the attention from the correct ROI
+    to irrelevant regions and similar distraction could be observed for different
+    networks.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Universal_Adversarial_Attack_on_Attention_and_the_Resulting_Dataset_DAmageNet\figure_5.jpg
+  Figure 5 caption: Samples in ImageNet and DAmageNet. The images on the left are
+    original samples from ImageNet. The images on the right are adversarial samples
+    from DAmageNet. One could observe that these images look similar and human beings
+    have no problem to recognize them as the same class.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Sizhe Chen
+  Name of the last author: Xiaolin Huang
+  Number of Figures: 5
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Universal Adversarial Attack on Attention and the Resulting Dataset
+    DAmageNet
+  Publication Date: 2020-10-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Transfer Rate From ResNet50 to Other Neural Networks
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Error Rate (Top-1) of Different Attack Baselines
+  Table 3 caption:
+    table_text: TABLE 3 Error Rate (Top-1) of Transfer Attacks on ResNet50
+  Table 4 caption:
+    table_text: TABLE 4 Error Rate (Top-1) Under Defenses (ResNet50 as the Surrogate
+      Model)
+  Table 5 caption:
+    table_text: TABLE 5 Error Rate (Top-1) on ImageNet and DAmageNet
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3033291

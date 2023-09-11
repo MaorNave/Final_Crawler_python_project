@@ -1,0 +1,967 @@
+- Affiliation of the first author: university of technology sydney, ultimo, nsw, australia
+  Affiliation of the last author: university of technology sydney, ultimo, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Label_Independent_Memory_for_SemiSupervised_FewShot_Video_Classification\figure_1.jpg
+  Figure 1 caption: We leverage off-the-shelf feature extractors trained on ImageNet
+    to extract frame-level embeddings for unlabeled videos. The related videos will
+    be selected from a large video dataset to form an unlabeled set. This unlabeled
+    set will then be utilized for few-shot training.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Label_Independent_Memory_for_SemiSupervised_FewShot_Video_Classification\figure_2.jpg
+  Figure 2 caption: Our framework for semi-supervised few-shot video classification.
+    Given training examples and their labels, the network first finds similar instances
+    from a large-scale unlabeled set. The examples with high similarities will be
+    retrieved. These examples will then be cached in a label independent memory bank
+    (LIM). This LIM has a key-value structure, where the key is the feature and the
+    value is the confidence of this feature belonging to a specific label. After several
+    selecting iterations, the reading operation will generate class prototype from
+    the LIM. In this paper, three networks are used, i.e., Inception-V3, ResNet-50,
+    and ResNet-18, which store features of Inception-V3, RGB inputs, and flow inputs,
+    respectively. The generated class prototype will then be saved to the memory banks.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Label_Independent_Memory_for_SemiSupervised_FewShot_Video_Classification\figure_3.jpg
+  Figure 3 caption: Comparing different numbers of unlabeled videos for training.
+    For example, when we use 5,000:1,000, it means 5,000 unlabeled videos are used
+    for training, and 1,000 videos are used for inference.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Label_Independent_Memory_for_SemiSupervised_FewShot_Video_Classification\figure_4.jpg
+  Figure 4 caption: Confusion matrix for semi-supervised few-shot video classification
+    on Kinetics-100.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Label_Independent_Memory_for_SemiSupervised_FewShot_Video_Classification\figure_5.jpg
+  Figure 5 caption: Confusion matrix for semi-supervised few-shot video classification
+    on Something-Something-100.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Linchao Zhu
+  Name of the last author: Yi Yang
+  Number of Figures: 5
+  Number of Tables: 8
+  Number of authors: 2
+  Paper title: Label Independent Memory for Semi-Supervised Few-Shot Video Classification
+  Publication Date: 2020-07-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 5-Way Few-Shot Video Classification on the Meta-Testing Set
+      of Kinetics-100 and Something-Something-100
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparisons Between Different Memory Sizes on 5-Way Few-Shot
+      Video Classification
+  Table 3 caption:
+    table_text: TABLE 3 Comparisons Between Different Numbers of Multi-Saliency Descriptors
+      on 5-Way Few-Shot Video Classification
+  Table 4 caption:
+    table_text: TABLE 4 Comparisons Between Different Ways Few-Shot Video Classification
+  Table 5 caption:
+    table_text: TABLE 5 5-Way Semi-Supervised Few-Shot Video Classification on the
+      Meta-Testing Set of Kinetics-100 and Something-Something-100
+  Table 6 caption:
+    table_text: TABLE 6 Comparing Our Model With Different Modalities
+  Table 7 caption:
+    table_text: TABLE 7 Comparisons of Unlabeled Data From Kinetics and From YouTube-8M
+  Table 8 caption:
+    table_text: TABLE 8 Speed Comparisons in Few-Shot Video Classification
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3007511
+- Affiliation of the first author: school of electrical engineering, kaist (korea
+    advanced institute of science and technology), daejeon, republic of korea
+  Affiliation of the last author: school of electrical engineering, kaist (korea advanced
+    institute of science and technology), daejeon, republic of korea
+  Figure 1 Link: articels_figures_by_rev_year\2020\SimVODIS_Simultaneous_Visual_Odometry_Object_Detection_and_Instance_Segmentation\figure_1.jpg
+  Figure 1 caption: Overview of the proposed SimVODIS. SimVODIS receives a set of
+    three consecutive images and then estimates semantics (object classes, bounding
+    boxes and object masks), relative poses between input images, and the depth map
+    of the center image.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\SimVODIS_Simultaneous_Visual_Odometry_Object_Detection_and_Instance_Segmentation\figure_2.jpg
+  Figure 2 caption: SimVODIS compared to conventional methods. (a) Semantic MappingSLAM,
+    (b) data-driven VO, and (c) proposed SimVODIS
+  Figure 3 Link: articels_figures_by_rev_year\2020\SimVODIS_Simultaneous_Visual_Odometry_Object_Detection_and_Instance_Segmentation\figure_3.jpg
+  Figure 3 caption: The conceptualized architecture of the proposed SimVODIS network
+    which estimates motion and semantics simultaneously. The network is built on top
+    of the Mask-RCNN architecture by designing pose and depth branches. The pose branch
+    estimates the relative pose between three consecutive image sequences utilizing
+    the features extracted from the feature pyramid network. The depth branch evaluates
+    the depth map of the center image from the extracted features of the center image.
+  Figure 4 Link: articels_figures_by_rev_year\2020\SimVODIS_Simultaneous_Visual_Odometry_Object_Detection_and_Instance_Segmentation\figure_4.jpg
+  Figure 4 caption: The architecture of the depth branch. It alternates from convolution
+    and de-convolution layers. The final sigmoid layer normalizes the estimated values
+    and produces an inverse depth map.
+  Figure 5 Link: articels_figures_by_rev_year\2020\SimVODIS_Simultaneous_Visual_Odometry_Object_Detection_and_Instance_Segmentation\figure_5.jpg
+  Figure 5 caption: Sample images from the mixture of datasets used for training and
+    testing. The mixture of datasets consists of KITTI, ScanNet, EuRoC, Malaga, and
+    NYU depth.
+  Figure 6 Link: articels_figures_by_rev_year\2020\SimVODIS_Simultaneous_Visual_Odometry_Object_Detection_and_Instance_Segmentation\figure_6.jpg
+  Figure 6 caption: Qualitative comparison of single-view depth map prediction. SimVODIS
+    extracts fine-grained depth maps compared to baselines. The contours of objects
+    are clearly seen in the depth maps from SimVODIS. On the other hand, the contours
+    of objects get crumbled in depths maps from baselines.
+  Figure 7 Link: articels_figures_by_rev_year\2020\SimVODIS_Simultaneous_Visual_Odometry_Object_Detection_and_Instance_Segmentation\figure_7.jpg
+  Figure 7 caption: Single-view depth map prediction for scenes containing people
+    and moving objects. SimVODIS captures the outlines of people and moving objects
+    and they can be recognized even in depth maps. On the other hand, baselines cannot
+    recover the depth information of people and moving objects.
+  Figure 8 Link: articels_figures_by_rev_year\2020\SimVODIS_Simultaneous_Visual_Odometry_Object_Detection_and_Instance_Segmentation\figure_8.jpg
+  Figure 8 caption: Failure cases of single-view depth map prediction. SimVODIS do
+    not recover the depth of the sky from time to time.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.7
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.7
+  Name of the first author: Ue-Hwan Kim
+  Name of the last author: Jong-Hwan Kim
+  Number of Figures: 8
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: 'SimVODIS: Simultaneous Visual Odometry, Object Detection, and Instance
+    Segmentation'
+  Publication Date: 2020-07-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Configuration of the Pose Branch
+  Table 10 caption:
+    table_text: TABLE 10 Comparison of Numbers of Parameters and Inference Time
+  Table 2 caption:
+    table_text: TABLE 2 Summary of Datasets for Training
+  Table 3 caption:
+    table_text: TABLE 3 SimVODIS Variants and Corresponding Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Baselines and Their Functionalities
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Depth Evaluation Results According to Various
+      Training Conditions
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Pose Estimation Evaluation Result According to
+      Various Training Conditions
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Depth Evaluation Results Compared to Baselines
+  Table 8 caption:
+    table_text: TABLE 8 Quantitative Evaluation Result of Pose Estimation Compared
+      to Baselines
+  Table 9 caption:
+    table_text: TABLE 9 SimVODIS Variants and Corresponding Datasets for Evaluation
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3007546
+- Affiliation of the first author: school of computer science and center for optical
+    imagery analysis and learning (optimal), northwestern polytechnical university,
+    xian, shaanxi, p. r. china
+  Affiliation of the last author: school of computer science and center for optical
+    imagery analysis and learning (optimal), northwestern polytechnical university,
+    xian, shaanxi, p. r. china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Robust_MultiTask_Learning_With_Flexible_Manifold_Constraint\figure_1.jpg
+  Figure 1 caption: 'Relationship between nMSE and polluted ratio for different scale
+    datasets: m represents the size of training set and r denotes the polluted ratio.
+    (a) and (b) show the impact of uniform noises while (c) and (d) show the impact
+    of Gaussian noises.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Robust_MultiTask_Learning_With_Flexible_Manifold_Constraint\figure_2.jpg
+  Figure 2 caption: "Convergence of FMC-MTL and the impact of \u03C3 to convergence\
+    \ on SARCOS when m=5000 and r=0.1 . (a) shows the objective value (define in Eq.\
+    \ (26)) of each iteration when \u03C3= 2 6 and \u03B1= 2 \u22124 . (b) shows how\
+    \ \u03C3 impacts the convergence when \u03B1 is fixed as 2 \u22124 ."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Robust_MultiTask_Learning_With_Flexible_Manifold_Constraint\figure_3.jpg
+  Figure 3 caption: '(a): Ablation analysis on SARCOS: Definitions of Method-ABC are
+    elaborated in Table 4. (b): The effect of m to nMSE under different r .'
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Rui Zhang
+  Name of the last author: Xuelong Li
+  Number of Figures: 3
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Robust Multi-Task Learning With Flexible Manifold Constraint
+  Publication Date: 2020-07-07 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 nMSE of 6 Algorithms on School: Mean \xB1 \xB1 Standard Deviation,\
+      \ Where m m is the Amount of Training Samples"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 nMSE of 6 Algorithms on SARCOS: Mean \xB1 \xB1 Standard Deviation,\
+      \ Where m m is the Amount of Training Samples"
+  Table 3 caption:
+    table_text: TABLE 3 Consuming Time of Five Algorithms
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Experiments to Study the Impact of Adaptive Loss
+      and Flexible Stiefel Manifold
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3007637
+- Affiliation of the first author: massachusetts institute of technology, cambridge,
+    ma, usa
+  Affiliation of the last author: department of electrical communication engineering,
+    center for neuroscience, indian institute of science, bangalore, india
+  Figure 1 Link: articels_figures_by_rev_year\2020\Improving_Machine_Vision_Using_Human_Perceptual_Representations_The_Case_of_Plan\figure_1.jpg
+  Figure 1 caption: Stimuli and Experiment. (A) Example objects used in the study
+    for measuring perceived dissimilarities in humans; (B) Example 4x4 visual search
+    array with one oddball target (dog) amongst multiple instances of the distractor
+    (cougar); (C) 2D embedding of measured distances between a set of natural images,
+    as obtained using Multidimensional scaling (MDS). The r-value indicates the agreement
+    between search distances and the embedded distances ( is p < 0.00005).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Improving_Machine_Vision_Using_Human_Perceptual_Representations_The_Case_of_Plan\figure_2.jpg
+  Figure 2 caption: Model performance on perceptual data and residual patterns. (A)
+    Correlation between predicted and observed distances for the best model (comb2)
+    for all 26,675 pairs. Object pairs whose dissimilarity is underestimated by the
+    model (residual error more than 1 standard deviation above the mean) are shown
+    as filled black circles with example pairs highlighted in orange. Pairs whose
+    dissimilarity is overestimated by the model (residual error less than 1 standard
+    deviation below the mean) are shown as filled black diamonds with example pairs
+    highlighted in blue. Pairs whose dissimilarity is explained by the model (residual
+    error within 1 standard deviation of the mean) are shown as gray circles with
+    example pairs highlighted in green. is p < 0.00005. (B) Examples of under-estimated
+    pairs of objects; (C) Examples of over-estimated pairs of objects; (D) Correlation
+    between strength of symmetry and residual error across object pairs for each model.
+    Error bars indicate bootstrap estimates of standard deviation (n = 10). All correlations
+    are significant with p < 0.005 unless indicated by n.s (not significant); (E)
+    Correlation between area ratio and residual error across object pairs for each
+    model; (F) Average residual error across image pairs with zero, one or two shared
+    parts; (G) Average residual error for object pairs related by view, mirror-reflection,
+    shape and texture.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Improving_Machine_Vision_Using_Human_Perceptual_Representations_The_Case_of_Plan\figure_3.jpg
+  Figure 3 caption: Generalization of the best model to novel experiments. Each bar
+    represents the amount of variance explained by the best model (comb2) when it
+    was trained on all other experiments and tested on that particular experiment.
+    The text inside each bar summarizes the images and image pairs used, and the image
+    centered below each bar depicts two example images from each experiment.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Improving_Machine_Vision_Using_Human_Perceptual_Representations_The_Case_of_Plan\figure_4.jpg
+  Figure 4 caption: Augmenting CNNs with symmetry features. (A) Schematic of the pipeline
+    used to augment symmetry information to CNN feature representation. Baseline CNN
+    accuracy and symmetry classifier accuracy is shown for both ImageNet and PASCAL-VOC
+    datasets; (B) Plot of improvement in classification performance of VGG-16 on augmenting
+    with symmetry features computed on the validation set; (C) Similar plot as in
+    (B) for RCNN on PASCAL-VOC dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Improving_Machine_Vision_Using_Human_Perceptual_Representations_The_Case_of_Plan\figure_5.jpg
+  Figure 5 caption: Representation of symmetric and asymmetric objects in perception
+    and CNNs. (A) Set of 49 two-part objects used to explore representation of symmetric
+    objects in both perception and CNNs. Symmetric objects are highlighted in red.
+    (B) Visualization of perceptual space using Multidimensional Scaling (MDS). r
+    indicates the Pearsons correlation coefficient between perceived distances and
+    distances in the 2D plot, is p < 0.00005 (C) Similar plot as in (B) for the penultimate
+    fully connected layer of VGG-16. (D) Similar plot as in (C) for VGG-16 trained
+    without data augmentation.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Improving_Machine_Vision_Using_Human_Perceptual_Representations_The_Case_of_Plan\figure_6.jpg
+  Figure 6 caption: 'Symmetry advantage in perception and CNNs. (A) Perceptual dissimilarity
+    in humans for both horizontal and vertical symmetric and asymmetric object pairs.
+    Asterisks represent statistical significance of comparisons: is p < 0.05, is p
+    < 0.005 and is p < 0.0005. (B) Similar plot as in (A) for the penultimate fully
+    connected layer of VGG-16. n.s. is not significant and is p < 0.000005. (C) Similar
+    plot as in (A) for the penultimate fully connected layer of a VGG-16 network trained
+    without data augmentation.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Improving_Machine_Vision_Using_Human_Perceptual_Representations_The_Case_of_Plan\figure_7.jpg
+  Figure 7 caption: Symmetry advantage in units important for classification. (A)
+    Symmetry modulation index (Eq. (5)) for horizontal and vertical objects. (B) Example
+    gabor images used for the spatial frequency analysis (C) Average activity evoked
+    by Gabors of varying spatial frequency for top-100 and bottom-100 units in the
+    penultimate fully-connected layer of VGG-16. Error bars indicate s.e.m. across
+    units; (D) Spatial frequency modulation index (Eq. (6)) for top-100 and bottom-100
+    units. Error bars indicate s.e.m. is p < 0.000005.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: RT Pramod
+  Name of the last author: SP Arun
+  Number of Figures: 7
+  Number of Tables: 0
+  Number of authors: 2
+  Paper title: 'Improving Machine Vision Using Human Perceptual Representations: The
+    Case of Planar Reflection Symmetry for Object Classification'
+  Publication Date: 2020-07-09 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3008107
+- Affiliation of the first author: laboratory of cell biology, ccr, nci, nih, integrative
+    cancer dynamics unit, bethesda, md, usa
+  Affiliation of the last author: laboratory of cell biology, ccr, nci, nih, integrative
+    cancer dynamics unit, bethesda, md, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Tracking_the_Adaptation_and_Compensation_Processes_of_Patients_Brain_Arterial_Ne\figure_1.jpg
+  Figure 1 caption: "Analysis workflow. (a) An overview to track GBM progression from\
+    \ patient data concerning the brain, tumor, and arterial network (AN), from an\
+    \ image to a detailed network with all of its properties. The arterial network\
+    \ mainly includes its structure and the radius length of each branch. (b) A study\
+    \ of a specific GBM patient with time series MRI data, with a single MRA at an\
+    \ advanced stage of GBM. The aim is to assess how the AN adaptation over a period\
+    \ of time is related to GBM progression and brain function, using fluid dynamics\
+    \ simulation. (d) Since normally there is no MRA scan during the initial development\
+    \ of the disease, we propose a method to infer the configuration of the patients\
+    \ AN. Such a method includes creating a healthy AN atlas from a range of resolutions\
+    \ (150 \u03BC m-600 \u03BC m), and its network analysis results in order to infer\
+    \ the properties of a patients AN."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Tracking_the_Adaptation_and_Compensation_Processes_of_Patients_Brain_Arterial_Ne\figure_2.jpg
+  Figure 2 caption: Workflow of the analysis procedure. (A) MR images of different
+    time or coverage (if any) are registered to the same space. (B) Artery network
+    is segmented from the registered image. (C) Segmented artery network is skeletonized
+    to obtain the centerlines. (D) Five major compartments (LMCARMCAACALPCARPCA) are
+    identified and labeled. (E) Various structural properties (e.g., angles and curvatures)
+    are computed for each compartment. (F) The sub-network in each compartment is
+    converted into a graph for further analysis. Extracting properties of a patients
+    arterial network from MR images. (a) Time series of patient MRIs are used to demonstrate
+    tumor and surgical locations. MR images of different time or coverage (if any)
+    are registered to the same space. (b) The brain arterial network is segmented
+    from the registered image. (c) Segmented arterial network is skeletonized to obtain
+    the centerlines. (d) Five major compartments (LMCARMCAACALPCARPCA), the neck and
+    Circle of Willis (CoW) are identified and labeled. (e) Various structural properties
+    (e.g., angles and curvatures) are computed for each compartment. (f) The sub-network
+    in each compartment is converted into a graph for further analysis and for fluid
+    dynamics simulations.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Tracking_the_Adaptation_and_Compensation_Processes_of_Patients_Brain_Arterial_Ne\figure_3.jpg
+  Figure 3 caption: Network properties of the Speck and BraVa dataset. (a) Number
+    of terminatingbifurcating nodes versus graph level, number of nodes for left and
+    right hemisphere versus graph level, mean branch radius distribution between left
+    and right hemisphere. The latter two show that there are no hemispheric dominance
+    between left and right hemisphere. (b) The mean branch radius decreases with increasing
+    graph level in a similar way for both Speck and BraVa dataset. (c) LMCARMCALPCARPCA
+    in both the Speck and BraVa dataset exhibits roughly similar branch radius versus
+    graph level relationship. (d) The graph structure (LMCARMCA and LPCARPCA) are
+    similar for Speck and BraVa dataset. Network topological properties of healthy
+    individuals. Data presented here are from the Speck dataset, and from one subject
+    randomly chosen from the BraVa dataset. (a) Comparison between number of terminatingbifurcating
+    nodes as a function of graph level, and comparison of left and right hemispheres
+    of the high-resolution arterial network (Speck dataset). The latter two show that
+    there is no hemispheric dominance of either the left or right hemisphere. (b)
+    The mean branch radius decreases with increasing graph level in a similar way
+    for both Speck and BraVa subject datasets. (c) Compartments (LMCARMCALPCARPCA)
+    in both datasets exhibit similar branch radius versus graph level relationships.
+    (d) The main graph structures (LMCARMCA and LPCARPCA) of the Speck and BraVa subject
+    datasets are similar. The Speck graph includes many more nodes and is higher in
+    graph level. The color of each node represents cubic Murrays law ratio, whereas
+    the color of the edges represents mean branch radius.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Tracking_the_Adaptation_and_Compensation_Processes_of_Patients_Brain_Arterial_Ne\figure_4.jpg
+  Figure 4 caption: "GBM study case. (a) A sequence of T1 image from the GBM patient\
+    \ taken from 2012 to 2016 showing the progression of tumor growth. (b) The structure\
+    \ of the LMCARMCA and LPCARPCA compartment of the GBM subject. Note that although\
+    \ its resolution (400 \u03BC m) is better than the BraVa dataset (600 \u03BC m),\
+    \ we see significantly less arteries. (c) Comparison of the mean branch radius\
+    \ versus graph level for different compartments in GBM dataset shows that the\
+    \ tumor in the GBM patient causes the radius of the arteries in LMCARPCA to decrease\
+    \ and that in RMCALPCA to increase. (d) A diagram showing main arteries around\
+    \ the Circle of Willis (the GBM patient is missing the left posterior communicating\
+    \ artery). (Source: Wikipedia)GBM patients arterial network. (a) A sequence of\
+    \ T1 images from a GBM patient taken from 2012 to 2016 showing the progression\
+    \ of tumor growth and surgical area. The segmented tumor is colored in red, the\
+    \ segmented edema is colored in light blue and the arteries in gray, shown using\
+    \ the maximum intensity projection (MIP). The tumor originally started as LGG\
+    \ in the left anterior area, later penetrated as GBM to the right anterior lobes,\
+    \ and from 2015 spread to the left posterior area. We focus on GBM progression\
+    \ and arterial changes during those time periods. (b) The graph structures of\
+    \ the LMCA and RMCA compartments based on a GBM patients MRA taken in 2013. Note,\
+    \ although the MRA resolution (400 \u03BC m) is higher than the healthy subjects\
+    \ in the BraVa dataset (600 \u03BC m), we see significantly fewer arteries due\
+    \ to the treatments and disease progression. The color of each node represents\
+    \ cubic Murrays law ratio, whereas the color of the edges represents mean branch\
+    \ radius. We also include the complete graph that includes all branches from the\
+    \ neck to CoW to compartments to terminating branches. (c) Comparison of the mean\
+    \ branch radius versus graph level for different compartments in the GBM dataset\
+    \ shows that the tumor causes the radius of the arteries in LMCA & RPCA to decrease\
+    \ and the radius in RMCA & LPCA to increase. MCA branches mainly cover the physical\
+    \ space of the anterior lobes, while PCA can cover the posterior area of the brain.\
+    \ (d) A diagram showing the main arteries around the Circle of Willis, where the\
+    \ GBM patient is missing the left posterior communicating artery (Image illustration\
+    \ source:Wikipedia and [41])."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Tracking_the_Adaptation_and_Compensation_Processes_of_Patients_Brain_Arterial_Ne\figure_5.jpg
+  Figure 5 caption: '(a) Simulated pressure and velocity of one compartment between
+    time step T 0 and T 4 . Node valuescolors represent the pressure and edge valuescolors
+    represent flow rate. (b) Various flow properties among the five time steps. (c)
+    Terminating pressure distribution among the five time steps. Mean blood flow dynamics
+    in evolving GBM. (a) Graph plot of the GBM network of pressures and flow rates
+    at two different time points ( T 0 =2010 till T 4 =2013 ). The color and the value
+    of each node refer to the pressure at that node and the color and the value on
+    each edge refer to the flow rate in that branch. This plot shows that the changes
+    are not just near the tumor, but global due to brain function. (b) Bottom: Change
+    of terminating pressures with respect to the five time points (each color in the
+    subplot refers to a terminating node). Middle: Flow proportions and flow rates
+    with respect to the five time points. Top: Mean terminating pressures per compartment
+    or hemisphere. Their value changes are significant during GBM progression ( T
+    0 =2010 till T 4 =2013 ). (c) 3D histogram of the terminating pressures per compartment
+    and five time points ( T 0 =2010 till T 4 =2013 ).'
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Junxi Zhu
+  Name of the last author: Orit Lavi
+  Number of Figures: 5
+  Number of Tables: 0
+  Number of authors: 6
+  Paper title: "Tracking the Adaptation and Compensation Processes of Patients\u2019\
+    \ Brain Arterial Network to an Evolving Glioblastoma"
+  Publication Date: 2020-07-09 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3008379
+- Affiliation of the first author: "csic-upc, institut de rob\xF2tica i inform\xE0\
+    tica industrial, barcelona, spain"
+  Affiliation of the last author: "csic-upc, institut de rob\xF2tica i inform\xE0\
+    tica industrial, barcelona, spain"
+  Figure 1 Link: articels_figures_by_rev_year\2020\Unsupervised_D_Reconstruction_and_Grouping_of_Rigid_and_NonRigid_Categories\figure_1.jpg
+  Figure 1 caption: 'Joint 3D reconstruction, camera motion, and dual object and deformation-type
+    grouping from partial 2D annotations. Top-left: In this part, we represent our
+    input data. Example of real pictures from a dog collection, and some 2D partial
+    annotations in green circles are displayed. We assume these 2D annotations are
+    provided, but the number of object instances and type of deformations are unknown.
+    Bottom-left: In this part, we show the output our algorithms can estimate: 3D
+    shape reconstruction together with the object and deformation grouping results.
+    In this example, object segmentation is to split input data into dog instances
+    (three in our case), and deformation grouping to identify pose primitives which
+    have a clear semantic meaning. To make a fair understanding, we display three
+    deformation primitives that we represent by means of action names: jump (yellow),
+    stand (orange), and walk (magenta). Camera motion is not represented in this figure,
+    but it is also an outcome of our algorithm. Right: Estimated object and deformation
+    affinity matrices. Each entry in these matrices expresses the objectdeformation
+    pairwise affinity between images within the collection. Groups are directly discovered
+    by applying spectral clustering on these matrices.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Unsupervised_D_Reconstruction_and_Grouping_of_Rigid_and_NonRigid_Categories\figure_2.jpg
+  Figure 2 caption: '3D reconstruction and object grouping from incomplete 2D annotations
+    of rigid and non-rigid categories. In both cases, input data consists of a collection
+    of RGB images with partial 2D semantic point annotations. The number of objects
+    within the category is unknown. Our goal is to simultaneously retrieve the 3D
+    object reconstruction in every image, the camera pose, and the instance group
+    (a different color per each object instance is used). Left: A rigid chair category,
+    in which each instance has a single 3D configuration. Right: A non-rigid face
+    category, where every instance may potentially have as many 3D configurations
+    as its number of images. This graph only shows instance grouping, but as we shall
+    see in the results, our approach also permits segmenting every non-rigid instance
+    into several types of deformation (or expressions in the case of the faces).'
+  Figure 3 Link: articels_figures_by_rev_year\2020\Unsupervised_D_Reconstruction_and_Grouping_of_Rigid_and_NonRigid_Categories\figure_3.jpg
+  Figure 3 caption: 'Rigid and non-rigid transformations to model 3D shape deformations
+    of rigid and non-rigid categories from a RGB image collection. Our deformation
+    model can code several types of transformations. In all cases, between every pair
+    of images, we define a 6 d.o.f. rigid motion, consisting of a rotation matrix
+    R i and a translation vector t i . Left: The geometric relation between pairs
+    of objects in a rigid category (e.g., bus) can be defined in the context of a
+    NRSfM problem using a global deformation X i . For this particular case, whether
+    the objects within the same category are the same (see for instance images 1 and
+    2), the problem can be addressed in the context of rigid SFM. Middle: In some
+    categories (e.g., face), everyone of the objects deforms by themselves. In this
+    case, besides the global deformation between objects, we define a linear deformation
+    Y i to encode the non-rigid motion that each object may undergo. Right: Other
+    categories (e.g., dog) follow more complex patterns. In this case we consider
+    a non-linear deformation Z i . Our deformation model jointly considers all types
+    of deformations and automatically learns the contribution of each term to describe
+    the geometry of the objects in a specific category. Images in this figure are
+    taken from the PASCAL VOC [26], MUCT [45], and TigDog [24] datasets, respectively.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\Unsupervised_D_Reconstruction_and_Grouping_of_Rigid_and_NonRigid_Categories\figure_4.jpg
+  Figure 4 caption: 'Bicycle and Chair collections. The same information is shown
+    for the two experiments. Top: Images 2,31,53,70,83,148 and 21,37,49,63,93,139
+    for the bicycle and chair collections, respectively. The semantic 2D point measurements
+    fed to our model are represented by green circles. Bottom: Color-coded dots correspond
+    to our 3D estimation (MUS and MUS2 solutions are displayed in two views, respectively)
+    where every color represents a different object, and empty circles represent the
+    3D ground truth. To improve visualization, some links are also drawn.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\Unsupervised_D_Reconstruction_and_Grouping_of_Rigid_and_NonRigid_Categories\figure_5.jpg
+  Figure 5 caption: 'Bottle collection: a failure case. Top: Images lbrace 5,28,71,86rbrace
+    for the bottle collection together with the semantic 2D point annotations in green
+    circles. Bottom: Color-coded dots correspond to our 3D estimation where every
+    color represents a different object, and empty circles represent the 3D ground
+    truth. As it can be seen, our algorithm fails in this case due to the motion ambiguities.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\Unsupervised_D_Reconstruction_and_Grouping_of_Rigid_and_NonRigid_Categories\figure_6.jpg
+  Figure 6 caption: 'MUCT collection. Top: Images 3, 26, 32, 46, 65 and 70 of the
+    dataset. Input 2D detections and reprojected 3D shape are shown as green circles
+    and red squares, respectively. Bottom: Camera viewpoint and side views of the
+    estimated 3D shape. The colored dots indicate the object group index estimated
+    by our approach MUS, i.e., a different person in the manifold of faces. Best viewed
+    in color.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Unsupervised_D_Reconstruction_and_Grouping_of_Rigid_and_NonRigid_Categories\figure_7.jpg
+  Figure 7 caption: 'ASL collection. Top: Images 29, 47, 100, 142 and 228 of the dataset.
+    Input 2D detections and reprojected 3D shape are shown as green circles and red
+    crosses, respectively. Blue crosses correspond to reconstructed (hallucinated)
+    missing points. Bottom: Camera viewpoint and side views of the 3D reconstruction
+    estimated by our algorithm MUS, where colored dots (red and green) indicate every
+    human in the collection. The colored lines indicate a specific deformation group
+    that was recovered. These estimated groups have a clear physical meaning and correspond
+    to openclose mouth (shown in orangemagenta for the woman, and reddark green for
+    the man). 3D reconstructed missing points are represented by blue crosses. Best
+    viewed in color.'
+  Figure 8 Link: articels_figures_by_rev_year\2020\Unsupervised_D_Reconstruction_and_Grouping_of_Rigid_and_NonRigid_Categories\figure_8.jpg
+  Figure 8 caption: 'Dog and tiger collections. The same information is shown for
+    the two experiments. Top: Images 4, 14, 15, 24, 25 and 35 of the dog dataset,
+    and 6, 9, 13, 18, 23 and 31 of the tiger one. Input 2D detections and reprojected
+    3D shape are shown as green circles and red crosses, respectively. Bottom: 3D
+    reconstruction from a couple of novel point of views, where colored dots indicate
+    the object group index estimated by our approach. In both cases, missing points
+    are shown as blue crosses.'
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Antonio Agudo
+  Name of the last author: Antonio Agudo
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 1
+  Paper title: Unsupervised 3D Reconstruction and Grouping of Rigid and Non-Rigid
+    Categories
+  Publication Date: 2020-07-09 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Qualitative Comparison of Our Approach With Other Competing
+      Methods to Simultaneously Solve Reconstruction and Dual Segmentation of ObjectDeformation
+      Categories
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Evaluation on Synthetic Collections for Several Rigid Object
+      Categories Under Noise-Free and Noisy Annotations
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation on a Non-Rigid Face Synthetic Collection Under
+      Noise-Free and Noisy Annotations
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Study
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3008276
+- Affiliation of the first author: "technische universit\xE4t berlin, berlin, germany"
+  Affiliation of the last author: "university of zurich, z\xFCrich, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_1.jpg
+  Figure 1 caption: Summary of the DAVIS camera [4], comprising an event-based dynamic
+    vision sensor (DVS [2]) and a frame-based active pixel sensor (APS) in the same
+    pixel array, sharing the same photodiode in each pixel. (a) Simplified circuit
+    diagram of the DAVIS pixel (DVS pixel in red, APS pixel in blue). (b) Schematic
+    of the operation of a DVS pixel, converting light into events. (c)-(d) Pictures
+    of the DAVIS chip and USB camera. (e) A white square on a rotating black disk
+    viewed by the DAVIS produces grayscale frames and a spiral of events in space-time.
+    Events in space-time are color-coded, from green (past) to red (present). (f)
+    Frame and overlaid events of a natural scene; the frames lag behind the low-latency
+    events (colored according to polarity). Images adapted from [4], [35]. A more
+    in-depth comparison of the DVS, DAVIS, and ATIS pixel designs can be found in
+    [36].
+  Figure 10 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_10.jpg
+  Figure 10 caption: 'The iCub humanoid robot from IIT has two event cameras in the
+    eyes. Here, it segments and tracks a ball under event clutter produced by the
+    motion of the head. Right: space-time visualization of the events on the image
+    frame, colored according to polarity (positive in green, negative in red). Image
+    courtesy of [162].'
+  Figure 2 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_2.jpg
+  Figure 2 caption: "\u201CEvent transfer function\u201D from a single DVS pixel in\
+    \ response to sinusoidal LED stimulation. The background events cause additional\
+    \ ON events at very low frequencies. The 60 fps camera curve shows the transfer\
+    \ function including aliasing from frequencies above the Nyquist frequency. Figure\
+    \ adapted from [2]."
+  Figure 3 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_3.jpg
+  Figure 3 caption: "Several event representations (Section 3.1) of the sliderdepth\
+    \ sequence [81]. From let to right: events in space time, colored according to\
+    \ polarity (positive in blue, negative in red). Event frame (brightness increment\
+    \ image \u0394L(x) ). Time surface with last timestamp per pixel (darker pixels\
+    \ indicate recent time), only for negative events. Interpolated voxel-grid ( 240\xD7\
+    180\xD710 voxels), colored according to polarity, from dark (negative) to bright\
+    \ (positive). Motion-compensated event image [82] (sharp edges obtained by event\
+    \ accumulation are darker than pixels with no events, in white). Reconstructed\
+    \ intensity image by [8]. Grid-like representations are compatible with conventional\
+    \ computer vision methods [83]."
+  Figure 4 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_4.jpg
+  Figure 4 caption: Events in a space-time volume are converted into an interpolated
+    voxel grid (left) that is fed to a DNN to compute optical flow and ego-motion
+    in an unsupervised manner [103]. Thus, modern tensor-based DNN architectures are
+    re-utilized using novel loss functions (e.g., motion compensation) adapted to
+    event data.
+  Figure 5 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_5.jpg
+  Figure 5 caption: 'The challenge of data association. Panels (a) and (b) show events
+    from a scene (c) under two different motion directions: (a) diagonal and (b) up-down.
+    Intensity increment images (a) and (b) are obtained by accumulating event polarities
+    over a short time interval: pixels that do not change intensity are represented
+    in gray, whereas pixels that increased or decreased intensity are represented
+    in bright and dark, respectively. Clearly, it is not easy to establish event correspondences
+    between (a) and (b) due to the changing appearance of the edge patterns in (c)
+    with respect to the motion. Image adapted from [64].'
+  Figure 6 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_6.jpg
+  Figure 6 caption: "Two optical flow estimation examples. (a) and (b): indoor flying\
+    \ scene [175]. In (a), events (polarity shown in redblue) are overlaid on a grayscale\
+    \ frame from a DAVIS. (b) shows the sparse optical flow (colored according to\
+    \ magnitude and direction) computed using [166] on brightness increment images.\
+    \ (c) A different scene: dense optical flow of a fidget spinner spinning at 750\
+    \ \u2218 s in a dark environment [103]. Events enable the estimation of optical\
+    \ flow in challenging scenarios."
+  Figure 7 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_7.jpg
+  Figure 7 caption: Example of monocular depth estimation with a hand-held event camera.
+    (a) Scene, (b) semi-dense depth map, pseudo-colored from red (close) to blue (far).
+    Image courtesy of [19].
+  Figure 8 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_8.jpg
+  Figure 8 caption: Event-based SLAM. (a) Reconstructed scene from [81], with the
+    reprojected semi-dense map colored according to depth and overlaid on the events
+    (in gray), showing the good alignment between the map and the events. (b) Estimated
+    camera trajectory (several methods) and semi-dense 3D map (i.e., point cloud).
+    Image courtesy of [87].
+  Figure 9 Link: articels_figures_by_rev_year\2020\EventBased_Vision_A_Survey\figure_9.jpg
+  Figure 9 caption: Image reconstruction. In the scenario of a car driving out of
+    a tunnel the frames from a consumer camera (Huawei P20 Pro) (Left) suffer from
+    under- or over-exposure, while events capture a broader dynamic range of the scene,
+    which is recovered by image reconstruction methods (Middle). Events also enable
+    the reconstruction of high-speed scenes, such as a exploding mug (Right). Images
+    courtesy of [8], [202].
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Guillermo Gallego
+  Name of the last author: Davide Scaramuzza
+  Number of Figures: 13
+  Number of Tables: 4
+  Number of authors: 11
+  Paper title: 'Event-Based Vision: A Survey'
+  Publication Date: 2020-07-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Commercial or Prototype Event Cameras
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification of Several Optical Flow Methods According to
+      Their Output and Design
+  Table 3 caption:
+    table_text: TABLE 3 Event-Based Methods for Pose Tracking andor Mapping With an
+      Event Camera
+  Table 4 caption:
+    table_text: TABLE 4 Comparison Between Selected Neuromorphic Processors, Ordered
+      by Neuron Model Type
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3008413
+- Affiliation of the first author: media integration and communication center (micc),
+    university of florence, firenze, italy
+  Affiliation of the last author: media integration and communication center (micc),
+    university of florence, firenze, italy
+  Figure 1 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_1.jpg
+  Figure 1 caption: MANTRA addresses multimodal trajectory prediction. We obtain multiple
+    future predictions given an observed past and its context, relying on a Memory
+    Augmented Neural Network.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_10.jpg
+  Figure 10 caption: t-SNE representations of past (left) and future (right) encodings
+    stored in memory. Each point in the embedding space is shown along with the decoded
+    trajectory. Trajectories are color coded by orientation (green tones) and speed
+    (red tones).
+  Figure 2 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_2.jpg
+  Figure 2 caption: Architecture of MANTRA. The encodings of an observed past trajectory
+    and its contexts are used as key to read likely future encodings from memory.
+    A multimodal prediction is obtained by decoding each future encoding, conditioned
+    by the observed past and the context.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_3.jpg
+  Figure 3 caption: 'Representation learning: past, context and future are encoded
+    separately; a decoder reconstructs future trajectory and context.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_4.jpg
+  Figure 4 caption: The writing controller estimates a bounded trajectory error as
+    an adaptive miss-rate. For further timesteps an increasingly higher error is tolerated.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_5.jpg
+  Figure 5 caption: MANTRA compared to Linear regression (a) and Kalman filter (b).
+    Methods (a),(b) lack multi-modal capability. Past trajectories are depicted in
+    blue, ground truth in green and future predictions are cyan (a), purple (b) and
+    red (c). In (c) highly ranked are darker. The first two rows show samples from
+    the KITTI dataset, while the other two from Argoverse.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_6.jpg
+  Figure 6 caption: Incremental setting. The model observes batches of test samples
+    online, that are used as training data, and is evaluated on the remaining portion
+    of the test set. Mean and variance of memory size (left) and prediction error
+    (right), averaged over 100 runs, are shown. On the x -axis we report the percentage
+    of test samples incrementally observed.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_7.jpg
+  Figure 7 caption: Difference between reading controllers. Past is important to correctly
+    model trajectory dynamics; context is relevant for making predictions that are
+    feasible with the road layout. Past trajectories are blue, ground truth green
+    and future predictions red (highly ranked are darker).
+  Figure 8 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_8.jpg
+  Figure 8 caption: Reading controller scores varying past and context similarities.
+    Different blending functions are learned for different datasets, privileging the
+    past on KITTI and increasing the relevance of context on Argoverse.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Multiple_Trajectory_Prediction_of_Moving_Agents_With_Memory_Augmented_Networks\figure_9.jpg
+  Figure 9 caption: Decoded trajectories from memory.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Francesco Marchetti
+  Name of the last author: Alberto Del Bimbo
+  Number of Figures: 14
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Multiple Trajectory Prediction of Moving Agents With Memory Augmented
+    Networks
+  Publication Date: 2020-07-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results on the KITTI Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results on the KITTI Dataset (INFER Split)
+  Table 3 caption:
+    table_text: TABLE 3 Results on the Argoverse Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Zero-Shot Transfer Evaluation on the Oxford RobotCar Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Zero-Shot Transfer Evaluation on the Cityscapes Dataset at
+      1s in the Future
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Study of MANTRA on Argoverse
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3008558
+- Affiliation of the first author: yonsei university, seoul, korea
+  Affiliation of the last author: yonsei university, seoul, korea
+  Figure 1 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_1.jpg
+  Figure 1 caption: Previous DNN-based algorithms extract features in different frames
+    for semi-supervised video object segmentation (a-c). We propose an efficient algorithm
+    that exploits multiple frames in the given video for more accurate segmentation
+    (d).
+  Figure 10 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_10.jpg
+  Figure 10 caption: Visual comparisons of the results both with and without the use
+    of the intermediate frame memories.
+  Figure 2 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_2.jpg
+  Figure 2 caption: The proposed memory networks work with two video object segmentation
+    scenarios. In the semi-supervised scenario, the previous frames with the object
+    mask are used as memory (a). In the interactive scenario, frames given user interactions
+    are used as memory (b).
+  Figure 3 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_3.jpg
+  Figure 3 caption: Overview of our framework. Our network consists of two encoders
+    each for the memory and the query frame, a space-time memory read block, and a
+    decoder. The memory encoder ( En c M ) takes an RGB frame and the object mask.
+    The object mask is represented as a probability map (the softmax output is used
+    for the estimated object masks). The query encoder ( En c Q ) takes the query
+    image as input.
+  Figure 4 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_4.jpg
+  Figure 4 caption: "Detailed implementation of the space-time memory read operation\
+    \ using basic tensor operations as described in Section 3.2. \u2A02 denotes matrix\
+    \ inner-product."
+  Figure 5 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_5.jpg
+  Figure 5 caption: Accuracy versus speed comparison for semi-supervised video object
+    segmentation on the DAVIS-2017 validation. The FPS axis is in the log scale.
+  Figure 6 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_6.jpg
+  Figure 6 caption: The qualitative results of semi-supervised video object segmentation
+    on YouTube-VOS and DAVIS. Frames are sampled at important moments (e.g.before
+    and after occlusions).
+  Figure 7 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_7.jpg
+  Figure 7 caption: State-of-the-art comparison of interactive video object segmentation
+    on the DAVIS-2017 validation set. The J & F Mean with the growing number of interactions
+    is shown. We compare our model against IPNet [15] and Scribble-OSVOS [1]. The
+    AUC and J & F 60 s are shown in the legend.
+  Figure 8 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_8.jpg
+  Figure 8 caption: The qualitative results for interactive video object segmentation
+    on the DAVIS-2017 validation set. For every round, additional memory frames (initial
+    or feedback) with user interaction and the corresponding results are shown. Scribbles
+    are automatically generated by the robot agent provided by [1]. Feedback interactions
+    are given for the worst frame of the previous round (chosen by the robot agent
+    [1]) and results are shown for uniformly sampled frames.
+  Figure 9 Link: articels_figures_by_rev_year\2020\SpaceTime_Memory_Networks_for_Video_Object_Segmentation_With_User_Guidance\figure_9.jpg
+  Figure 9 caption: Visualization of our space-time read operation. We first compute
+    the similarity scores in Eq. (2) for the pixel(s) in the query image (marked in
+    red), then visualize the normalized soft weights to the memory frames. (top) We
+    visualize the averaged weights for the pixels inside the object area. (bottom)
+    We visualize the retrieved weights for the selected pixel. We enlarged some memory
+    frames because the area of interest is too small for visualization.
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.94
+  Name of the first author: Seoung Wug Oh
+  Name of the last author: Seon Joo Kim
+  Number of Figures: 12
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Space-Time Memory Networks for Video Object Segmentation With User
+    Guidance
+  Publication Date: 2020-07-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Quantitative Evaluation of Semi-Supervised Video Object
+      Segmentation on YouTube-VOS [25] Validation Set
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Quantitative Evaluation of Semi-Supervised Video Object
+      Segmentation on the DAVIS-2016 Validation Set
+  Table 3 caption:
+    table_text: TABLE 3 The Quantitative Evaluation of Semi-Supervised Video Object
+      Segmentation on the DAVIS-2017 Validation Set
+  Table 4 caption:
+    table_text: TABLE 4 Leaderboard for the DAVIS Interactive Challenge 2019
+  Table 5 caption:
+    table_text: TABLE 5 Training Data Analysis on YouTube-VOS and DAVIS-2017 Validation
+      Sets
+  Table 6 caption:
+    table_text: TABLE 6 Memory Management Analysis on the Validation Sets of YouTube-VOS
+      and DAVIS
+  Table 7 caption:
+    table_text: TABLE 7 Weight Sharing Configurations and Results
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3008917
+- Affiliation of the first author: department of chongqing key laboratory of computational
+    intelligence, chongqing university of posts and telecommunications, chongqing,
+    china
+  Affiliation of the last author: department of computer science and engineering,
+    university of california, riverside, riverside, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\BallkkMeans_Fast_Adaptive_Clustering_With_No_Bounds\figure_1.jpg
+  Figure 1 caption: Schema of neighbor relationships of the queried ball cluster C3
+    . The dashed red line represents the bisector of the segment connecting the centroids
+    of two ball clusters. The yellow triangle and green line represent the centroid
+    and radius of a cluster, respectively.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\BallkkMeans_Fast_Adaptive_Clustering_With_No_Bounds\figure_2.jpg
+  Figure 2 caption: Schema of the cluster partitions generated by neighbor balls.
+    The dashed red line denotes the bisector of the segment connecting the centroids
+    of two ball clusters.
+  Figure 3 Link: articels_figures_by_rev_year\2020\BallkkMeans_Fast_Adaptive_Clustering_With_No_Bounds\figure_3.jpg
+  Figure 3 caption: Schema for avoiding direct centroid-centroid distance calculations.
+    The dashed red line represents the midpoint of dist( c (t) i , c (t) j ) . C j
+    is not a neighbor cluster of C i in the (t) th iteration.
+  Figure 4 Link: articels_figures_by_rev_year\2020\BallkkMeans_Fast_Adaptive_Clustering_With_No_Bounds\figure_4.jpg
+  Figure 4 caption: The number of distance calculations for ball k -means and baselines
+    on the high-dimensional dataset RNA-Seq (20531 dimensions).
+  Figure 5 Link: articels_figures_by_rev_year\2020\BallkkMeans_Fast_Adaptive_Clustering_With_No_Bounds\figure_5.jpg
+  Figure 5 caption: Running time for ball k -means and baselines on the high-dimensional
+    dataset RNA-Seq (20531 dimensions).
+  Figure 6 Link: articels_figures_by_rev_year\2020\BallkkMeans_Fast_Adaptive_Clustering_With_No_Bounds\figure_6.jpg
+  Figure 6 caption: The influence of dimension on the neighbor ball ratio. The data
+    sets were generated from RNA-Seq by selecting the specified number of random dimensions.
+  Figure 7 Link: articels_figures_by_rev_year\2020\BallkkMeans_Fast_Adaptive_Clustering_With_No_Bounds\figure_7.jpg
+  Figure 7 caption: The influence of data distribution on the neighbor ball ratio.
+    (a) The data under uniform distribution (artifical dataset). (b) A cut of the
+    UCI MLR dataset Epileptic. (c) A cut of the UCI MLR dataset kegg.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.64
+  Name of the first author: Shuyin Xia
+  Name of the last author: Zizhong Chen
+  Number of Figures: 7
+  Number of Tables: 6
+  Number of authors: 8
+  Paper title: 'Ball
+
+    k
+
+    k-Means: Fast Adaptive Clustering With No Bounds'
+  Publication Date: 2020-07-13 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Per-Iteration Time Complexity and Space Cost( n n: Points;
+      k k: Clusters; -: NA)'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Dataset Information
+  Table 3 caption:
+    table_text: TABLE 3 Number of Distance Calculations and Speedup Over Lloyd
+  Table 4 caption:
+    table_text: TABLE 4 Speedup Over Lloyd and Running Time ((ms)Iteration)
+  Table 5 caption:
+    table_text: TABLE 5 Distance Calculations Under Large k k
+  Table 6 caption:
+    table_text: TABLE 6 Speedup Over Lloyd and Running Time ((ms)Iteration)Under Large
+      k k
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3008694

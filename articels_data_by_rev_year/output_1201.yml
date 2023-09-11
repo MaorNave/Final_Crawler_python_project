@@ -1,0 +1,811 @@
+- Affiliation of the first author: fujian key laboratory of sensing and computing
+    for smart city, school of information science and engineering, xiamen university,
+    xiamen, china
+  Affiliation of the last author: department of computer science, university of rochester,
+    rochester, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Holistic_CNN_Compression_via_LowRank_Decomposition_with_Knowledge_Transfer\figure_1.jpg
+  Figure 1 caption: "The framework of the proposed LRDKT. A low-rank decomposition\
+    \ (LRD) based compression scheme is first constructed to form a guided block in\
+    \ the student network. Next, the \u201Clocal\u201D and \u201Cglobal\u201D knowledge\
+    \ is transferred by KT in a unified way, which deals with the performance degradation\
+    \ caused by LRD compression. The based and guided blocks are defined in Section\
+    \ 3.3."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Holistic_CNN_Compression_via_LowRank_Decomposition_with_Knowledge_Transfer\figure_2.jpg
+  Figure 2 caption: "Low-rank decomposition for compressing a generalized convolutional\
+    \ operation. The R , H\xD7W\xD7C , d\xD7d\xD7C\xD7N , and H \u2032 \xD7 W \u2032\
+    \ \xD7N are the rank, input size, filter size, and output size, respectively.\
+    \ Left: Original convolution. Right: Low-rank constraint convolution with rank\
+    \ R ."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Holistic_CNN_Compression_via_LowRank_Decomposition_with_Knowledge_Transfer\figure_3.jpg
+  Figure 3 caption: The pipeline of training a student network using knowledge distillation
+    or knowledge transfer.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Holistic_CNN_Compression_via_LowRank_Decomposition_with_Knowledge_Transfer\figure_4.jpg
+  Figure 4 caption: "Sensitivity of \u03BB and \u03BB i on AlexNet. Number pairs in\
+    \ the top right refer to the group settings of ( \u03BB, \u03BB i )."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Holistic_CNN_Compression_via_LowRank_Decomposition_with_Knowledge_Transfer\figure_5.jpg
+  Figure 5 caption: Comparison of fine-tuning with the 50 and 100 percent number of
+    training data on AlexNet.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Holistic_CNN_Compression_via_LowRank_Decomposition_with_Knowledge_Transfer\figure_6.jpg
+  Figure 6 caption: Comparison on the compression rate and the increase of Top-5 error
+    for compressing all the fully-connected layers in AlexNet and VGG-16.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Holistic_CNN_Compression_via_LowRank_Decomposition_with_Knowledge_Transfer\figure_7.jpg
+  Figure 7 caption: Comparison of FitNets, LRDKT, and three alternative scheme for
+    compressing AlexNet. FitNet:hint- numnum-num-num means training FitNet by adding
+    one hint loss or three hint losses at the corresponding num -th or num-num-num
+    -th layer with initialization of LRD. R-FitNet is training FitNet from scratch.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Holistic_CNN_Compression_via_LowRank_Decomposition_with_Knowledge_Transfer\figure_8.jpg
+  Figure 8 caption: The magnitude of mean absolute gradient of the first convolutional
+    layer, and the trends of testing Top-1 error in the decomposed ResNet-50 at PCA
+    energy ratio of 0.5.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Shaohui Lin
+  Name of the last author: Jiebo Luo
+  Number of Figures: 8
+  Number of Tables: 15
+  Number of authors: 5
+  Paper title: Holistic CNN Compression via Low-Rank Decomposition with Knowledge
+    Transfer
+  Publication Date: 2018-09-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison on the SpeedupCompression Rates and Classification
+      Error on MNIST for LeNet
+  Table 10 caption:
+    table_text: TABLE 10 Comparison of Different Methods on Compressing the Whole
+      AlexNet
+  Table 2 caption:
+    table_text: TABLE 2 The Amounts of Parameters and FLOPs, Computation Time on CPU
+      (ms), GPU (ms) in Both Convolutional and Fully-Connected Layers, and Classification
+      Error Rates (Top-15 Err.) of AlexNet, VGG-16, and ResNet-50 with Batch Size
+      32, 32, and 16, Respectively
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of the LRE and the Proposed Low-Rank Decomposition
+      in the Convolutional Layers with High Computation Complexity of AlexNet
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Fine-Tuning Epoch Numbers Using LRE and LRD
+      with the Same Classification Error on AlexNet
+  Table 5 caption:
+    table_text: TABLE 5 Results of Integrating LRE, TD, and LRD into KT in the Convolutional
+      Layers with High Computation Complexity of AlexNet
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Different Training Methods on VGG-16 with the
+      Initialization of LRD
+  Table 7 caption:
+    table_text: TABLE 7 Speedup all Convolutional Layers on AlexNet
+  Table 8 caption:
+    table_text: TABLE 8 Speedup all Convolutional Layers on VGG-16
+  Table 9 caption:
+    table_text: TABLE 9 Comparison of FitNets and LRDKT for Compressing VGG-16
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2873305
+- Affiliation of the first author: chungnam national university (cnu), daejeon, korea
+  Affiliation of the last author: kaist, daejeon, korea
+  Figure 1 Link: articels_figures_by_rev_year\2018\SemiCalibrated_Photometric_Stereo\figure_1.jpg
+  Figure 1 caption: (a) Conventional photometric stereo setting where light intensities
+    and exposures are either calibrated or assumed to be constant. (b) and (c) Unknown
+    and varying, or inaccurately calibrated lighting intensityexposure conditions.
+    Estimated surface normal are biased by the inaccurate assumptions of light intensitiessensor
+    exposures. Our method does not require the assumption of known light intensitiesexposures
+    for recovering an accurate shape.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\SemiCalibrated_Photometric_Stereo\figure_2.jpg
+  Figure 2 caption: (Lambertian case) Photometric stereo experiment under unknown
+    and non-uniform light intensities. The scenes are rendered under 20 distinct light
+    directions with their intensity variance 0.05. Our methods (linear joint estimation,
+    factorization-based, AM, and Robust-AM) effectively handle the condition of unknown
+    and non-uniform light intensities. Error maps of surface normal estimates are
+    scaled by 4 times. The numbers indicate the mean angular errors in degree.
+  Figure 3 Link: articels_figures_by_rev_year\2018\SemiCalibrated_Photometric_Stereo\figure_3.jpg
+  Figure 3 caption: Variations of mean angular errors of surface normal estimates
+    over variance of light intensities (top row) and the number of images (bottom
+    row) for the three datasets. (a) and (d) Sphere, (b) and (e) Textured Sphere,
+    and (c) and (f) Caesar. Our methods consistently yield favorable results across
+    these variations.
+  Figure 4 Link: articels_figures_by_rev_year\2018\SemiCalibrated_Photometric_Stereo\figure_4.jpg
+  Figure 4 caption: "(Non-Lambertian case) Photometric stereo experiment under non-uniform\
+    \ light intensities. Based on Cook-Torrance model, the scenes are rendered under\
+    \ 20 distinct light directions with their intensity variance 0.05. The Robust-AM\
+    \ method (denoted as \u201CRobust\u201D) is not affected by both outliers and\
+    \ non-uniform intensities. Error maps are scaled by 4 times for visualization.\
+    \ The numbers indicate the mean angular errors in degree."
+  Figure 5 Link: articels_figures_by_rev_year\2018\SemiCalibrated_Photometric_Stereo\figure_5.jpg
+  Figure 5 caption: "Result of varying light source intensities case. From left to\
+    \ right, one of input images, results from Frobenius-norm, \u2113 1 -norm, CBR\
+    \ [57], linear joint estimation, factorization-based, alternating minimization\
+    \ (AM), and Robust-AM methods are shown."
+  Figure 6 Link: articels_figures_by_rev_year\2018\SemiCalibrated_Photometric_Stereo\figure_6.jpg
+  Figure 6 caption: "Result of auto-exposure case. From left to right, one of input\
+    \ images, results from Frobenius-norm, \u2113 1 -norm, CBR [57], linear joint\
+    \ estimation, factorization-based, alternating minimization (AM), and Robust-AM\
+    \ methods are shown."
+  Figure 7 Link: articels_figures_by_rev_year\2018\SemiCalibrated_Photometric_Stereo\figure_7.jpg
+  Figure 7 caption: 'Result using a mobile phone camera. Top: Estimated surface normal,
+    Bottom: 3D reconstruction. Our methods (linear joint estimation, factorization-based,
+    alternating minimization (AM), and Robust-AM methods) produce more faithful results
+    than the conventional methods, while the linear joint estimation method suffered
+    from numerical instability in this example.'
+  Figure 8 Link: articels_figures_by_rev_year\2018\SemiCalibrated_Photometric_Stereo\figure_8.jpg
+  Figure 8 caption: Comparison with uncalibrated photometric stereo (UPS) [62] under
+    the non-uniform light intensity setting. (a) Our method applied to a Lambertian
+    scene. (b) UPS method applied to a Lambertian scene. (c) Our robust estimation
+    method applied to non-Lambertian scene. (d) UPS method without preprocessing [33].
+    (e) USP method with preprocessing. Red dots in input images are extracted local
+    diffuse maxima points by [62]. Error maps are scaled by four times for visualization.
+    The values indicate the mean angular errors in degree.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.88
+  Name of the first author: Donghyeon Cho
+  Name of the last author: In So Kweon
+  Number of Figures: 8
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Semi-Calibrated Photometric Stereo
+  Publication Date: 2018-09-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Categorization of Photometric Stereo Settings
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Working Range of Semi-Calibrated Photometric Stereo with Respect
+      to Varying Numbers of Distinct Surface Normal p p and Light Directions f f
+  Table 3 caption:
+    table_text: TABLE 3 Computational Costs of the Linear Joint Estimation and Factorization-Based
+      Methods
+  Table 4 caption:
+    table_text: TABLE 4 Comparison Under Auto-Exposure (Auto) and Fixed-Exposure (Fixed)
+      Settings
+  Table 5 caption:
+    table_text: TABLE 5 Results of Estimated Light Source Intensities By Our Method
+      Applied to Lambertian and Non-Lambertian Scenes
+  Table 6 caption:
+    table_text: TABLE 6 Results on Benchmark Dataset from [60]
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2873295
+- Affiliation of the first author: university of barcelona and computer vision center,
+    barcelona, spain
+  Affiliation of the last author: carnegie mellon university, pittsburgh, pa, usa
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: SERGIO ESCALERA
+  Name of the last author: Takeo Kanade
+  Number of Figures: Not Available
+  Number of Tables: 1
+  Number of authors: 9
+  Paper title: 'Guest Editorial: The Computational Face'
+  Publication Date: 2018-10-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Overview of Articles in the Special Section on the Computational
+      Face
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2869610
+- Affiliation of the first author: department of computer science and software engineering
+    (m002), the university of western australia, crawley, australia
+  Affiliation of the last author: department of computer science and software engineering
+    (m002), the university of western australia, crawley, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_1.jpg
+  Figure 1 caption: 'Schematics of the proposed approach: Training - Spatio-spectral
+    patches from training Hyperspectral (HS) images are extracted and clustered. A
+    set of Gaussian Processes is inferred for each cluster under the proposed representation
+    model. These processes are transformed to match the spectral quantization of the
+    RGB image. Testing - RGB image patch is extracted and matched with the RGB transformations
+    of the HS clusters. The transformed Gaussian Process Means for the matched cluster
+    are used to represent the patch. The representation codes are combined with the
+    original Gaussian Processes to construct the desired HS image.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_10.jpg
+  Figure 10 caption: 'Spectral recovery of Macbeth color chart swatches using Gaussian
+    Processes learned from CAVE database [64]: Reconstructed spectra of representative
+    swatches are shown. The used RGB image is also displayed with swatch numbers indicating
+    the plots in the figure. The shown reconstruction and the ground truth are the
+    mean values of ten random points on a given swatch.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_2.jpg
+  Figure 2 caption: 'Top-left to bottom-right: The Prior Means (columns of D o ) arranged
+    in descending order of usage in data factorization. The corresponding Posterior
+    Mean computed for each spectra is also given. The Posterior Means are significantly
+    different from the Prior Means, and are relatively smoother function of wavelength.'
+  Figure 3 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_3.jpg
+  Figure 3 caption: RGB images from the CAVE database [64] used in Table 1. The variety
+    of colors makes the images more challenging for spectral recovery.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_4.jpg
+  Figure 4 caption: 'Recovery of the spectral images of Lemons scene from CAVE [64]
+    database: Along the ground truth at wavelengths 460, 550, and 620nm, recovered
+    spectral images by the proposed approach and Arad [7] are shown. The absolute
+    differences between the recovered images and the ground truth are also given in
+    the range of 8-bit images.'
+  Figure 5 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_5.jpg
+  Figure 5 caption: 'Illustration of spectral recovery for Lemons scene from the CAVE
+    [64] database: The spectra are sampled from a single pixel on each Lemon from
+    the area spotted red in the RGB image on the right.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_6.jpg
+  Figure 6 caption: RGB images of representative scenes from the six domains in iCVL
+    database [7] used in Table 2.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_7.jpg
+  Figure 7 caption: Example spectral channel recovery of 512 times 512 dimensional
+    spatial patch from a scene in the Park domain from iCVL dataset [7]. Along the
+    ground truth at wavelengths 460, 550, and 620 nm, recovered spectral images and
+    the absolute differences between the recovered images and the ground truth are
+    also given in the range of 8-bit images.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_8.jpg
+  Figure 8 caption: RGB images of the Harvard scenes [11] used for testing in Table
+    4. The domain labels are also mentioned.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Hyperspectral_Recovery_from_RGB_Images_using_Gaussian_Processes\figure_9.jpg
+  Figure 9 caption: Example spectral recovery of 512 times 512 spatial patch of an
+    Outdoor scene from the Harvard dataset [11]. The results are given in the range
+    of 8-bit images.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Naveed Akhtar
+  Name of the last author: Ajmal Mian
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Hyperspectral Recovery from RGB Images using Gaussian Processes
+  Publication Date: 2018-10-04 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Results on CAVE Images [64]: The RMSE Values Are Computed
+      in the Range of 8-bit Images and SAM is Measured in Degrees'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Domain-specific Results on iCVL Dataset [7]: Average Relative\
+      \ Root Mean Square Error (RMSE) ( \xD7 10 \u22122 \xD710-2) and Spectral Angle\
+      \ Mapper (SAM) Are Reported for Three Images from Each Domain"
+  Table 3 caption:
+    table_text: "TABLE 3 Cross-domain Results: Average Relative RMSE ( \xD7 10 \u2212\
+      2 \xD710-2) and SAM Value of the Approaches When Each Image from One Domain\
+      \ is Constructed Using the Training Data from the Other Domain"
+  Table 4 caption:
+    table_text: 'TABLE 4 Results on Harvard Images [11]: The RMSE Values Are Computed
+      in the Range of 8-bit Images and SAM is Measured in Degrees'
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2873729
+- Affiliation of the first author: australian centre for robotic vision, australian
+    national university, canberra, australia
+  Affiliation of the last author: australian centre for robotic vision, australian
+    national university, canberra, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\Visual_Permutation_Learning\figure_1.jpg
+  Figure 1 caption: Illustration of the proposed permutation learning task. The goal
+    of our method is to jointly learn visual features and the predictors to solve
+    the visual permutation problem. This can be applied to ordering image sequences
+    (left) or recovering spatial layout (right).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Visual_Permutation_Learning\figure_2.jpg
+  Figure 2 caption: "Far Left: Illustration of Birkhoff polytope for n\xD7n permutation\
+    \ matrices. From left to right: Boxplots of approximation error for the Sinkhron-Knopp\
+    \ algorithm applied on nonnegative random matrices of size 3 \xD7 3, 6 \xD7 6,\
+    \ and 9 \xD7 9, respectively."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Visual_Permutation_Learning\figure_3.jpg
+  Figure 3 caption: "Illustration of Permutation learning task as the prediction of\
+    \ the permutation matrix P from a given permuted image sequence X ~ such that\
+    \ P \u22121 = P T recovers the original ordered image sequence X ."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Visual_Permutation_Learning\figure_4.jpg
+  Figure 4 caption: DeepPermNet Architecture. It receives a permuted sequence of images
+    as input. Each image in the sequence goes trough a different branch that follows
+    the AlexNet [39] architecture from conv1 up to fc6. Then, the outputs of fc6 are
+    concatenated and passed as input to fc7. Finally, the model predictions are obtained
+    by applying the Sinkhorn Layer on the outputs of fc8 layer.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Visual_Permutation_Learning\figure_5.jpg
+  Figure 5 caption: 'Datasets used in our experiments: PubFig and OSR [57], CarDb
+    [44], Interestingness [44], Pacal VOC [17], [18], and ImageNet [39].'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Visual_Permutation_Learning\figure_6.jpg
+  Figure 6 caption: Evaluating and comparing naive approach, Sinkhorn normalization,
+    and bi-level optimization variants of the proposed model on the permutation prediction
+    task using the Public Figures Dataset [57]. The models are trained and tested
+    for each attribute separately. We report the mean and standard deviation of the
+    the performance metrics (Kendall Tau, Hamming similarity, and normalization error)
+    across the attributes.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Visual_Permutation_Learning\figure_7.jpg
+  Figure 7 caption: 'Qualitative results: Samples from the Public Figures and OSR
+    test images are ordered according to different attributes. Saliency maps: Smoothed
+    visualization of the derivative of the estimated permutation matrix w.r.t the
+    input images. Regions with warmer color are more relevant to the predicted permutation
+    for the specified attribute. Better viewed in color.'
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Rodrigo Santa Cruz
+  Name of the last author: Stephen Gould
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Visual Permutation Learning
+  Publication Date: 2018-10-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluating the Proposed Model on the Public Figures Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Evaluating the Proposed Model on the OSR Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Evaluating the Proposed Model on Ranking Scenes According
+      How Interesting They Look and Ranking Cars According to Their Manufacturing
+      Date
+  Table 4 caption:
+    table_text: TABLE 4 Classification and Detection Results on PASCAL VOC 2007 Test
+      Set under the Standard Mean Average Precision (mAP), and Segmentation Results
+      on the PASCAL VOC 2012 Validation Set under Mean Intersection over Union (mIU)
+      Metric
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2873701
+- Affiliation of the first author: state key laboratory on integrated services networks,
+    xidian university, xian, china
+  Affiliation of the last author: school of artificial intelligence, xidian university,
+    xian, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_1.jpg
+  Figure 1 caption: Architectures of the proposed deep network for image restoration.
+    (a) The overall architecture of the proposed deep neural network. (b) The architecture
+    of the plugged DCNN-based denoiser. (c) The architecture of the feature extraction
+    (left) and the reconstruction (right)
+  Figure 10 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_10.jpg
+  Figure 10 caption: 'Results for 6th image of Set14 for bicubic downsampling and
+    scaling factor 4. The PSNR results: (b)TNRD [43] (32.51 dB), (c)VDSR [32] (32.70
+    dB), (d)DnCNN [24] (32.36 dB), (e)MemNet [44] (32.79 dB), and (f) Ours (32.88
+    dB).'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_2.jpg
+  Figure 2 caption: The test images used for image denoising.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_3.jpg
+  Figure 3 caption: Denoising results for House image with noise level 50. (a) Original
+    image; images denoised by (b) WNNM [5] (30.33 dB), (c) TNRD [43] (29.48 dB), (d)
+    DnCNN-S[24] (30.02 dB), (e) MemNet [44] (30.70 dB), and (f) Ours (31.04 dB).
+  Figure 4 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_4.jpg
+  Figure 4 caption: Denoising results for Lena image with noise level 50. (a) Original
+    image images denoised by (b) WNNM[5] (29.25 dB), (c) TNRD [43] (28.93 dB), (d)
+    DnCNN-S [24] (29.37 dB), (e) MemNet [44] (29.63 dB), and (f) Ours (29.85 dB).
+  Figure 5 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_5.jpg
+  Figure 5 caption: The test images used for image deblurring.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_6.jpg
+  Figure 6 caption: Deblurring results for Cameraman image with 25times 25 Gaussian
+    blur kernel and sigma n=2 . (a) Original image; deblurred images by (b) EPLL denoiser
+    [16] (26.57 dB), (c) NCSR [8] (27.99 dB), (d) DD-CNN [45] (28.05 dB), (e) MemNet
+    [44] (28.23 dB), and (f) Ours (28.24 dB).
+  Figure 7 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_7.jpg
+  Figure 7 caption: Deblurring results for house image with 19times 19 motion blur
+    kernel 1 and sigma n=2.55 . (a) Original image; images deblurred by (b) EPLL [16]
+    (31.73 dB), (c) DD-CNN [45] (34.89 dB), (d) MemNet [44] (34.57 dB), and (e) Ours
+    (35.34 dB).
+  Figure 8 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_8.jpg
+  Figure 8 caption: Deblurring results for lena image with 19times 19 motion blur
+    kernel 1 and sigma n=2.55 . (a) Original image; images deblurred by (b) EPLL [16]
+    (31.37 dB), (c) DD-CNN [45] (33.54 dB), (d) MemNet [44] (33.40 dB), and (d) Ours
+    (33.80 dB).
+  Figure 9 Link: articels_figures_by_rev_year\2018\Denoising_Prior_Driven_Deep_Neural_Network_for_Image_Restoration\figure_9.jpg
+  Figure 9 caption: 'SR results for 13th image of Set14 for bicubic downsampling and
+    scaling factor 3. The PSNR results: (b) TNRD [43] (27.08 dB), (c) VDSR [32] (27.86
+    dB), (d) DnCNN [24] (28.21 dB), (e) MemNet [44] (28.92 dB), and (f) Ours (28.99
+    dB).'
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Weisheng Dong
+  Name of the last author: Xiaotong Lu
+  Number of Figures: 11
+  Number of Tables: 12
+  Number of authors: 6
+  Paper title: Denoising Prior Driven Deep Neural Network for Image Restoration
+  Publication Date: 2018-10-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Study on the Effects of the Initialization of the
+      Layers Related to Degradation Matrix
+  Table 10 caption:
+    table_text: TABLE 10 The PSNR and SSIM Results of Reconstructed HR Images by the
+      Test Methods for the Bicubic Downsampling
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Study on the Effects of the Initializations of the
+      Denoiser for Image Denoising
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Study on the Effects of the Initializations of the
+      Denoiser for Image Super-Resolution
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Study on the Effects of the Initializations of the
+      Denoiser for Image Deblurring
+  Table 5 caption:
+    table_text: TABLE 5 Average PSNR Results of Deblurred Images on Set10 Dataset
+      by the Denoising Network and the Proposed DPDNN
+  Table 6 caption:
+    table_text: TABLE 6 Average PSNR Results of Reconstructed HR Images by the Denoising
+      Network and the Proposed DPDNN
+  Table 7 caption:
+    table_text: TABLE 7 The PSNR (dB) Results of the Denoised Images by the Test Methods
+      on a Set of Test Images
+  Table 8 caption:
+    table_text: TABLE 8 The Average PSNR (dB) Results of the Competing Methods on
+      BSD68 Image Set
+  Table 9 caption:
+    table_text: TABLE 9 The PSNR Results of the Deblurred Images by the Test Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2873610
+- Affiliation of the first author: robotics institute, school of computer science,
+    carnegie mellon university, pittsburgh
+  Affiliation of the last author: robotics institute, school of computer science,
+    carnegie mellon university, pittsburgh
+  Figure 1 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_1.jpg
+  Figure 1 caption: Forecasting future behavior from first-person video. Overhead
+    map shows likely future goal states. s i is user state at time i . Histogram insets
+    display predictions of users long-term semantic goal (inner right) and acquired
+    objects (inner left).
+  Figure 10 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_10.jpg
+  Figure 10 caption: Noisy Empirical Regret. scriptstyle DARKO s online behavior model
+    exhibits sublinear convergence in average regret. Initial noise is overcome after
+    Darko adjusts to learning about the users early behaviors.
+  Figure 2 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_2.jpg
+  Figure 2 caption: (a) Sparse SLAM points and (b) offline dense reconstruction using
+    [8] for two of our dataset environments.
+  Figure 3 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_3.jpg
+  Figure 3 caption: 'Darko: Discovering agent rewards for k-futures online.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_4.jpg
+  Figure 4 caption: Online inverse reinforcement learning.
+  Figure 5 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_5.jpg
+  Figure 5 caption: 'Goal Posterior Change Visualization: Goal posteriors for two
+    frames are visualized in the Home 1 environment. The persons location is in green,
+    images from the camera are inset at top left, and goal posteriors are colored
+    according to the above colormaps. Before grabbing the mug (Fig. 5a), Darko forecasts
+    roughly equivalent probability to bedroom and kitchen. After the user grabs the
+    mug (Fig. 5b), Darko correctly predicts the user is likeliest to go to the kitchen.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_6.jpg
+  Figure 6 caption: 'Goal forecasting examples: A temporal sequence of goal forecasting
+    results is shown in each row from left to right, with the forecasted goal icons
+    and sorted goal probabilities inset (green: P(g|xi) , red: P(gine g|xi) ). Top:
+    the scientist acquires a sample to boil in the gel electrophoresis room. Middle:
+    the user gets a textbook and goes to the lounge. Bottom: the user leaves their
+    apartment.'
+  Figure 7 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_7.jpg
+  Figure 7 caption: "Goal posterior forecasting over time: P \u02C6 g \u2217 versus\
+    \ fraction of trajectory length, across all trajectories. Darko outperforms other\
+    \ methods and becomes more confident in the correct goal as the trajectories elapse.\
+    \ Best viewed in color."
+  Figure 8 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_8.jpg
+  Figure 8 caption: Relative improvement from incorporating goal uncertainty. Per-scene
+    violin plots, means, and standard deviations are shown. Per-scene one-sided paired
+    t-tests are performed, testing the hypotheses that incorporating goal uncertainty
+    improves goal prediction performance. A indicates p<0.05 , and indicates p<0.005
+    .
+  Figure 9 Link: articels_figures_by_rev_year\2018\FirstPerson_Activity_Forecasting_from_Video_with_Online_Inverse_Reinforcement_Le\figure_9.jpg
+  Figure 9 caption: Empirical regret. Darko exhibits sublinear convergence in average
+    regret. Initial noise is overcome after Darko adjusts to the users early behaviors.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Nicholas Rhinehart
+  Name of the last author: Kris M. Kitani
+  Number of Figures: 12
+  Number of Tables: 9
+  Number of authors: 2
+  Paper title: First-Person Activity Forecasting from Video with Online Inverse Reinforcement
+    Learning
+  Publication Date: 2018-10-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Scene Types Available in Each Environment
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Objects Available in Each Environment
+  Table 3 caption:
+    table_text: 'TABLE 3 Labels Example: A Small Snippet of Ground Truth Labels for
+      Home 1'
+  Table 4 caption:
+    table_text: TABLE 4 Goal Discovery and Action Recognition
+  Table 5 caption:
+    table_text: "TABLE 5 Goal Forecasting Results (Visual Detections): Proposed Goal\
+      \ Posterior (Section 4.4) Achieves Best P \xAF \xAF \xAF \xAF g \u2217 P\xAF\
+      g (Mean Probability of True Goal)"
+  Table 6 caption:
+    table_text: "TABLE 6 Goal Forecasting Results (Labelled Detections): Proposed\
+      \ Goal Posterior Achieves Best P \xAF \xAF \xAF \xAF g \u2217 P\xAFg (Mean Probability\
+      \ of True Goal)"
+  Table 7 caption:
+    table_text: "TABLE 7 Visual Goal Discovery: Better Goal Discovery (cf. Table 4)\
+      \ Yields Better P \xAF \xAF \xAF \xAF g \u2217 P\xAFg"
+  Table 8 caption:
+    table_text: 'TABLE 8 Feature Ablation Results: Full State and Action Features
+      (Section 3.1) Yield Best Goal Prediction Results'
+  Table 9 caption:
+    table_text: TABLE 9 Trajectory Length Forecasting Results
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2873794
+- Affiliation of the first author: department of automation and beijing key laboratory
+    of multi-dimension & multi-scale computational photography (mmcp), tsinghua university,
+    beijing, china
+  Affiliation of the last author: department of automation and beijing key laboratory
+    of multi-dimension & multi-scale computational photography (mmcp), tsinghua university,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_1.jpg
+  Figure 1 caption: 'Flowchart of our proposed algorithm (DeSCI) for SCI reconstruction.
+    Left: The sensing (compressively sampling) process of video SCI [5]. Middle: The
+    proposed rank minimization based reconstruction algorithm, where the projection
+    and WNNM for patch groups are iteratively performed. Right: Our reconstruction
+    result and that of the GAP-TV method [17] are shown for comparison in the upper
+    part.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_10.jpg
+  Figure 10 caption: Reconstructed frames of simulated bird hyperspectral data.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_2.jpg
+  Figure 2 caption: Schematic of the coded aperture compressive temporal imaging (CACTI)
+    system [5]. A snapshot on the CCD encodes tens of temporal frames of the scene
+    coded by the spatial-variant mask, e.g., the shifting mask or different patterns
+    on the digital micromirror device (DMD). The maskDMD and the monocolor detector,
+    i.e., CCD, are in the conjugate image plane of the scene.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_3.jpg
+  Figure 3 caption: Schematic of the coded aperture snapshot spectral imaging (CASSI)
+    system [10]. A snapshot on the CCD encodes tens of spectral bands of the scene
+    spatially coded by the mask and spectrally coded by the dispersive element. The
+    mask, the dispersive element and the CCD are in the conjugate image plane of the
+    scene.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_4.jpg
+  Figure 4 caption: "The PSNR of reconstructed video frames by setting different \u03C3\
+    \ n at different iterations of DeSCI. It can be seen that the \u03C3 n is starting\
+    \ from a large value (100) and then decreasing by half for every 60 iterations.\
+    \ Both PSNR and SSIM are gradually increasing with the iteration number."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_5.jpg
+  Figure 5 caption: Reconstruction frames of DeSCI and other algorithms (GMM-TP, MMLE-GMM,
+    MMLE-MFA, and GAP-TV).
+  Figure 6 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_6.jpg
+  Figure 6 caption: Frame-wise PSNR (a,c) and SSIM (b,d) of DeSCI and other algorithms
+    for the Kobe (a-b) and Traffic (c-d) datasets.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_7.jpg
+  Figure 7 caption: Comparison of ADMM and GAP for DeSCI with noisy measurements.
+    A single measurement of the Kobe dataset is used.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_8.jpg
+  Figure 8 caption: Reconstruction frames of DeSCI using VBM4D and WNNM for video
+    denoising. We can see that DeSCI-VBM4D still suffers from some undesired artifacts
+    while DeSCI-WNNM can provide fine details as well as large-scale sharp edges.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Rank_Minimization_for_Snapshot_Compressive_Imaging\figure_9.jpg
+  Figure 9 caption: Reconstructed spectra of simulated bird hyperspectral data. A
+    snapshot measurement encoding 24 spectral bands is shown on the top-right. The
+    original RGB image of the scene is shown on the top-left with a size of 1021times
+    703 pixels. The spectra of four birds are shown on the middle and bottom rows.
+    The correlation of the reconstructed spectra and the ground truth is shown in
+    the legends.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: Yang Liu
+  Name of the last author: Qionghai Dai
+  Number of Figures: 21
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: Rank Minimization for Snapshot Compressive Imaging
+  Publication Date: 2018-10-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Average Results of PSNR in dB (Left Entry in Each Cell)
+      and SSIM (Right Entry in Each Cell) by Different Algorithms on Four Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Average Results of PSNR (Left Entry in Each Cell) and
+      SSIM (Right Entry in Each Cell) by GAP-TV and DeSCI on Simulated bird and toy
+      Hyperspectral Datasets
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2873587
+- Affiliation of the first author: microsoft, redmond, usa
+  Affiliation of the last author: department of computer science, university of central
+    florida, orlando, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Learning_Compact_Features_for_Human_Activity_Recognition_Via_Probabilistic_First\figure_1.jpg
+  Figure 1 caption: Diagram of the probabilistic first-take-all algorithm. A set of
+    three projections are used to produce one dimension of the pFTA feature.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Learning_Compact_Features_for_Human_Activity_Recognition_Via_Probabilistic_First\figure_2.jpg
+  Figure 2 caption: An illustration example of a set of three linear projections on
+    a sequential data with a length of 45.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Learning_Compact_Features_for_Human_Activity_Recognition_Via_Probabilistic_First\figure_3.jpg
+  Figure 3 caption: Impact of K on the performance ( L varies) on UCI daily and sports
+    activities dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Learning_Compact_Features_for_Human_Activity_Recognition_Via_Probabilistic_First\figure_4.jpg
+  Figure 4 caption: Impact of L on the performance ( K varies) on UCI daily and sports
+    activities dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Learning_Compact_Features_for_Human_Activity_Recognition_Via_Probabilistic_First\figure_5.jpg
+  Figure 5 caption: Impact of alpha on the classification accuracy on UCI daily and
+    sports activities dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Learning_Compact_Features_for_Human_Activity_Recognition_Via_Probabilistic_First\figure_6.jpg
+  Figure 6 caption: Impact of K on the performance ( L varies) on smartphone-based
+    human activity dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Learning_Compact_Features_for_Human_Activity_Recognition_Via_Probabilistic_First\figure_7.jpg
+  Figure 7 caption: Impact of L on the performance ( K varies) on smartphone-based
+    human activity dataset.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Jun Ye
+  Name of the last author: Kien A. Hua
+  Number of Figures: 7
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Learning Compact Features for Human Activity Recognition Via Probabilistic
+    First-Take-All
+  Publication Date: 2018-10-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison with State-of-the-Art Results on UCI Daily and
+      Sports Activities Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Training Time and Testing Time of Different
+      Learning-Based Methods on UCI Daily and Sports Activities Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparison with State-of-the-Art Results on Smartphone-Based
+      Human Activity Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Training Time and Testing Time on Smartphone-Based
+      Human Activity Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Comparison with State-of-the-Art Results on MSRActionPairs
+      Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Training and Testing Time on MSRActionPairs
+      Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2874455
+- Affiliation of the first author: department of computer science and engineering,
+    university of minnesota system, minneapolis, usa
+  Affiliation of the last author: department of computer science and engineering,
+    university of minnesota system, minneapolis, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Shallowing_Deep_Networks_LayerWise_Pruning_Based_on_Feature_Representations\figure_1.jpg
+  Figure 1 caption: Linear classifier probes on VGG-16 (first row) and ResNet-56 (second
+    row). Blue bars are validation accuracy of the linear classifiers trained using
+    features from intermediate layers, black dashed lines are the validation accuracy
+    of the CNNs. The bars with transparent color represent the layers considered to
+    have less contributions based on the predefined threshold.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Shallowing_Deep_Networks_LayerWise_Pruning_Based_on_Feature_Representations\figure_2.jpg
+  Figure 2 caption: Procedure of proposed layer-wise pruning.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Shallowing_Deep_Networks_LayerWise_Pruning_Based_on_Feature_Representations\figure_3.jpg
+  Figure 3 caption: Feature diagnosis results in terms of different metrics for MSCOCO
+    multi-label classification. The x -axis denotes the layer (block) index while
+    the y -axis represents the score for respective metrics. Black dotted lines indicate
+    the performance of the original model. The layers to be pruned determined by each
+    corresponding metric are highlighted with transparent colors. Layers with cyan
+    color change the dimensionality (i.e., number of filters) of features.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Shallowing_Deep_Networks_LayerWise_Pruning_Based_on_Feature_Representations\figure_4.jpg
+  Figure 4 caption: Visualization of feature diagnosis on models after layer-wise
+    pruning. Cyan color indicates the unpruned layers with dimensionality changes.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Shallowing_Deep_Networks_LayerWise_Pruning_Based_on_Feature_Representations\figure_5.jpg
+  Figure 5 caption: Unit efficiency for various models on different datasets. Note
+    that for ResNet, ResNet-101 is used on the MSCOCO dataset while ResNet-56 is used
+    for experiments on other datasets.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Shi Chen
+  Name of the last author: Qi Zhao
+  Number of Figures: 5
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: 'Shallowing Deep Networks: Layer-Wise Pruning Based on Feature Representations'
+  Publication Date: 2018-10-08 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Experimental Results on the CIFAR10, CIFAR100, and SVHN Datasets
+      Using VGG16 and ResNet-56
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Experimental Results on MSCOCO Multi-Label Classification
+      Task with ResNet-101, Pruning is Determined by the Performance on mAP
+  Table 3 caption:
+    table_text: TABLE 3 Comparison between the Original ResNet (ResNet-56 for Single-Label
+      Classification and ResNet-101 for MSCOCO Multi-Label Classification) and Models
+      Pruned under Different Thresholds
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2874634

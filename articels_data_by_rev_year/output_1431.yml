@@ -1,0 +1,870 @@
+- Affiliation of the first author: department of computer science, university of manitoba,
+    winnipeg, mb, canada
+  Affiliation of the last author: department of computer science, ryerson university
+    and vector institute, toronto, on, canada
+  Figure 1 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_1.jpg
+  Figure 1 caption: 'We present a solution in the form of a deep neural network to
+    detect salient objects and consider their relative ranking based on salience of
+    these objects. Left to right: Input image, detected salient regions, and rank
+    order of salient objects. Assigned numbers and colors indicate the rank order
+    of different salient object instances.'
+  Figure 10 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_10.jpg
+  Figure 10 caption: Predicted salient object regions for the PASCAL-SR dataset. Each
+    row shows outputs corresponding to different algorithms designed for the salient
+    object detectionsegmentation task.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_2.jpg
+  Figure 2 caption: An illustration of the COCO-SalRank dataset. Our dataset provides
+    salient object instances and their relative rank order (relative salience). Due
+    to the large number of instances present in some images, an instance pruning process
+    assigns a rank only to instances that receive a sufficiently high degree of attention.
+    We provide two different versions of our proposed ranking dataset in the form
+    of a noisy and cleaned version. Assigned numbers and colors indicate the rank
+    order of salient object instances with chroma corresponding to a numeric scale.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_3.jpg
+  Figure 3 caption: "Illustration of our proposed network architecture. In the encoder\
+    \ network ( f enc ), the input image is processed with a feed-forward encoder\
+    \ to generate a coarse nested relative salience stack ( S t \u03D1 ). We append\
+    \ a Stacked Convolutional Module (SCM) on top of S t \u03D1 to obtain a coarse\
+    \ saliency map S t m . Then, a stage-wise refinement network, comprised of rank-aware\
+    \ refinement units ( R 1 \u03D1 , R 2 \u03D1 ,\u2026, R 4 \u03D1 ) (dotted box\
+    \ in the figure), successively refines each preceding NRSS ( S t \u03D1 ) and\
+    \ produces a refined NRSS ( S t+1 \u03D1 ). A fusion layer combines predictions\
+    \ from all stages to generate the final saliency map ( S T m ). We provide supervision\
+    \ ( \u0394 t S \u03D1 , \u0394 t S m ) at the outputs ( S t \u03D1 , S t m ) of\
+    \ each refinement stage. The architecture based on iterative refinement of a stacked\
+    \ representation is capable of effectively detecting multiple salient objects\
+    \ and their rank."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_4.jpg
+  Figure 4 caption: "Sets from left to right: Input image and GT rank, simulated mouse-based\
+    \ fixation maps blurred with different Gaussian filters, predicted rank that corresponds\
+    \ to fixation maps in the previous set ( \u03B1=0.3 ), predicted rank that corresponds\
+    \ to two different \u03B1 ( \u03C3=10.5,\u03BC=80 ). Relative rank is indicated\
+    \ by the assigned color and number on each salient instance."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_5.jpg
+  Figure 5 caption: Qualitative comparison for ground-truth annotation using our algorithm
+    for the PASCAL-S dataset. Relative rank is indicated by the assigned color and
+    number on each salient instance.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_6.jpg
+  Figure 6 caption: 'The distribution of instance size according to their associated
+    ranks on the COCO-SalRank dataset. Left : Version I, Right: Version II.'
+  Figure 7 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_7.jpg
+  Figure 7 caption: Qualitative illustration of obtained ground-truth samples on COCO-SalRank
+    dataset (noisy version). Relative rank is indicated by the assigned color and
+    number on each salient instance. The consistency among simulated mouse-based fixation
+    maps and ground-truth ranking shows good agreement and an intuitive ranking for
+    our proposed dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_8.jpg
+  Figure 8 caption: Shown are some illustrative examples of inconsistency among simulated
+    mouse-based fixation maps and the generated ground-truth ranking on COCO-SalRank
+    dataset. These cases are most common for overlapping instances, and for scenes
+    with fixations spread over multiple salient objects. Assigned colors and numbers
+    indicate the relative rank of each salient instance.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Relative_Saliency_and_Ranking_Models_Metrics_Data_and_Benchmarks\figure_9.jpg
+  Figure 9 caption: ROC (Left) and Precision-Recall (Right) curves corresponding to
+    different state-of-the-art methods on PASCAL-SR dataset.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mahmoud Kalash
+  Name of the last author: Neil D. B. Bruce
+  Number of Figures: 14
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: 'Relative Saliency and Ranking: Models, Metrics, Data and Benchmarks'
+  Publication Date: 2019-07-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Set of Parameters Used in Our Process
+  Table 10 caption:
+    table_text: TABLE 10 Saliency Ranking Performance Comparison for Different Methods
+      with Respect to Cross-Dataset Evaluation Under the Relative Ranking Setting
+  Table 2 caption:
+    table_text: "TABLE 2 The Impact of Applying Different Power \u03B1 \u03B1, Filter\
+      \ Size \u03BC \u03BC, Standard Deviation \u03C3 \u03C3 on Ranking Performance"
+  Table 3 caption:
+    table_text: TABLE 3 Distribution of Images Corresponding to Different Rank Order
+      of Salient Objects on the COCO-SalRank Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Average SOR for Five Trials on PASCAL-SR Dataset Where in
+      Each Trial We Randomly Remove Annotations Provided by Y Y Annotators
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Comparison of Methods Using Metrics Including
+      AUC, F-Measure (Max, Average), MAE, Average S-Measure, and SOR on PASCAL-SR
+      Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Saliency Ranking Score of Several Networks on
+      the PASCAL-SR Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Saliency Ranking Performance Comparison for Different Methods
+      Subject to Relative and Absolute Ranking Settings on Our COCO-SalRank Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Quantitative Comparison of Baselines Including Max F-Measure,
+      avg F-Measure, AUC, MAE, and avg S-Measure on PASCAL-SR Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Quantitative Comparison of Baseline Methods Including Max
+      and Average F-Measure, AUC, and MAE on COCO-SalRank Dataset (Version I & Version
+      II) Under Relative and Absolute Ranking Settings
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2927203
+- Affiliation of the first author: "department of mathematics and statistics, mcgill\
+    \ university, montr\xE9al, qc, canada"
+  Affiliation of the last author: "institut de math\xE9matiques de toulouse, universit\xE9\
+    \ paul sabatier, toulouse, france"
+  Figure 1 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_1.jpg
+  Figure 1 caption: 'A depiction of the symbolic constraints in UPC-A and QR codes
+    (Source (top image): Wikipedia [42] (image by Bobmath, CC BY-SA 3.0).'
+  Figure 10 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_10.jpg
+  Figure 10 caption: On the left, a QR code with an upscaling factor of 3, subject
+    to width 7 Gaussian blur with 0.05 variance Gaussian noise is presented. The right
+    hand side is the result we obtain upon applying our blind deblurring algorithm
+    with a symbolic prior. The right hand QR code can be read by any conventional
+    QR code reader.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_2.jpg
+  Figure 2 caption: "A graphical depiction of the types of kernel used with width\
+    \ 5. The left kernel generates Gaussian blur and the right one generates linear\
+    \ motion blur at an angle of \u03C0 4 . Note that they are normalized such that\
+    \ the intensity values sum to 1."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_3.jpg
+  Figure 3 caption: "The leftmost image is a general motion blur kernel. The center\
+    \ image is the corresponding blurred QR code. The rightmost image, which is readable,\
+    \ is the result obtained by applying our method. The kernel was normalized such\
+    \ that its intensity values summed to 1 prior to blurring and the QR code was\
+    \ upscaled by a factor of 3. The size of the barcode image is 111\xD7111 pixels\
+    \ and the size of the kernel is 19\xD719."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_4.jpg
+  Figure 4 caption: The image on the left presents a QR code which has not been upscaled
+    prior to being blurred by a 3x3 Gaussian blur kernel. Note that this magnitude
+    of blur is rather large, hence the need for upscaling the image prior to convolution.
+    The right hand side is the result we obtain upon applying our blind deblurring
+    algorithm with a symbolic prior. The right hand QR code can be read by any conventional
+    QR code reader.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_5.jpg
+  Figure 5 caption: "This figure demonstrates the utility of the thresholding step.\
+    \ The left hand side is the deblurred image prior to the downscaling and rounding.\
+    \ The original image was subjected to linear motion blur with large kernel size\
+    \ at an angle of \u2212 \u03C0 4 . Note that some degree of distortion along a\
+    \ diagonal axis remains prior to thresholding and downscaling. The right side\
+    \ displays the barcode post-thresholding; it is readable."
+  Figure 6 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_6.jpg
+  Figure 6 caption: A demonstration of types and magnitudes of noise tested. The leftmost
+    image represents the noiseless case, the centre-left image depicts 1 percent salt
+    and pepper noise, the centre-right image is 0.01 variance Gaussian noise and the
+    rightmost image is 0.05 variance Gaussian noise.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_7.jpg
+  Figure 7 caption: This figure demonstrates the strength of our method even in the
+    case where very large Gaussian blur is present. The right hand side is the result
+    we obtain upon applying our blind deblurring algorithm with a symbolic prior.
+    The right hand QR code can be read by any conventional QR code reader.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_8.jpg
+  Figure 8 caption: This figure presents a blurred image on the left hand side. The
+    blurring is a linear motion blur of kernel size 9 with angle -fracpi 4 which has
+    been performed on a 29times 29 pixel QR code upscaled to 87times 87 pixels. The
+    right hand side is the result we obtain upon applying our blind deblurring algorithm
+    with a symbolic prior. The right hand QR code can be read by any conventional
+    QR code reader.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Blind_Deblurring_of_Barcodes_via_KullbackLeibler_Divergence\figure_9.jpg
+  Figure 9 caption: On the left, a QR code with an upscaling factor of 3, subject
+    to width 11 motion blur at an angle of fracpi 4 with 1 percent salt and pepper
+    noise is presented. The right hand side is the result we obtain upon applying
+    our blind deblurring algorithm with a symbolic prior. The right hand QR code can
+    be read by any conventional QR code reader.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Gabriel Rioux
+  Name of the last author: "Pierre Mar\xE9chal"
+  Number of Figures: 12
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Blind Deblurring of Barcodes via Kullback-Leibler Divergence
+  Publication Date: 2019-07-09 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 This Table Compares the Performance of the Various Priors
+      in the Presence of Both Types of Noise
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 This Table Compares the Performance of the Various Error Tolerances
+      in QR Codes in the Presence of Different Types of Blur
+  Table 3 caption:
+    table_text: TABLE 3 This Table Compiles the Blur Widths at Which Our Method First
+      Fails to Recover the Information Contained in the UPCA Barcode When Using the
+      Blind Deblurring Method
+  Table 4 caption:
+    table_text: TABLE 4 This Table Compares the Performance of the Various Error Tolerances
+      in QR Codes in the Presence of Different Types of Blur
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2927311
+- Affiliation of the first author: massachusetts institute of technology, cambridge,
+    ma, usa
+  Affiliation of the last author: massachusetts institute of technology, cambridge,
+    ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_1.jpg
+  Figure 1 caption: Learning cross-modal embeddings from recipe-image pairs collected
+    from online resources. These embeddings enable us to achieve in-depth understanding
+    of food from its ingredients to its preparation.
+  Figure 10 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_10.jpg
+  Figure 10 caption: Analogy arithmetic results using recipe embeddings on the Recipe1M
+    test set. On the left hand side are arithmetic results using the model trained
+    on Recipe1M. On the right hand side are the arithmetic results for the model trained
+    on Recipe1M+. We represent the average vector of a query with the images from
+    its 4 nearest neighbors. In the case of the arithmetic result, we show the nearest
+    neighbor only.
+  Figure 2 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_2.jpg
+  Figure 2 caption: Google image search results. The query used is chicken wings.
+  Figure 3 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_3.jpg
+  Figure 3 caption: Embedding visualization using t-SNE. Legend depicts the recipes
+    that belong to the top 12 semantic categories used in our semantic regularization
+    (see Section 5 for more details).
+  Figure 4 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_4.jpg
+  Figure 4 caption: Healthiness within the embedding. Recipe health is represented
+    within the embedding visualization in terms of sugar, salt, saturates, and fat.
+    We follow FSA traffic light system to determine how healthy a recipe is.
+  Figure 5 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_5.jpg
+  Figure 5 caption: Dataset statistics. Prevalence of course categories and number
+    of instructions, ingredients and images per recipe in Recipe1M+.
+  Figure 6 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_6.jpg
+  Figure 6 caption: Joint neural embedding model with semantic regularization. Our
+    model learns a joint embedding space for food images and cooking recipes.
+  Figure 7 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_7.jpg
+  Figure 7 caption: Skip-instructions model. During training the encoder learns to
+    predict the next instruction.
+  Figure 8 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_8.jpg
+  Figure 8 caption: 'Im2recipe retrieval examples. From left to right: (1) The query
+    image, (2) its associated ingredient list, (3) the retrieved ingredients, and
+    (4) the image associated to the retrieved recipe.'
+  Figure 9 Link: articels_figures_by_rev_year\2019\RecipeM_A_Dataset_for_Learning_CrossModal_Embeddings_for_Cooking_Recipes_and_Foo\figure_9.jpg
+  Figure 9 caption: "Localized unit activations. We find that ingredient detectors\
+    \ emerge in different units in our embeddings, which are aligned across modalities\
+    \ (e.g., unit 352: \u201Ccream\u201D, unit 22: \u201Csponge cake\u201D or unit\
+    \ 571: \u201Csteak\u201D)."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Javier Mar\xEDn"
+  Name of the last author: Antonio Torralba
+  Number of Figures: 13
+  Number of Tables: 7
+  Number of authors: 8
+  Paper title: 'Recipe1M+: A Dataset for Learning Cross-Modal Embeddings for Cooking
+    Recipes and Food Images'
+  Publication Date: 2019-07-09 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Dataset Sizes
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Recipe1M+ Units
+  Table 3 caption:
+    table_text: TABLE 3 Im2recipe Retrieval Comparisons on Recipe1M
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Studies on Recipe1M
+  Table 5 caption:
+    table_text: TABLE 5 Comparison with Human Performance on im2recipe Task on Recipe1M
+  Table 6 caption:
+    table_text: TABLE 6 Comparison between Models Trained on Recipe1M versus Recipe1M+
+  Table 7 caption:
+    table_text: TABLE 7 Im2recipe Retrieval Comparisons on Food-101 Dataset
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2927476
+- Affiliation of the first author: national institute of informatics, tokyo, japan
+  Affiliation of the last author: national institute of informatics, tokyo, japan
+  Figure 1 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_1.jpg
+  Figure 1 caption: "Object appearances displaying general isotropic reflectance are\
+    \ pervasive in the real world. This paper presents an effective approach to estimating\
+    \ the object shape and surface reflectance using microfacet-based reflectance\
+    \ model, covering cases including highly specular reflectance (a) \u201Caluminium\u201D\
+    , specular reflectance (b) \u201Cgreen metallic paint\u201D and diffusion (c)\
+    \ \u201Cwhite fabric\u201D. \u03BB is the estimation for surface smoothness by\
+    \ our method. (d), (e) and (f) illustrate how \u03BB models materials using the\
+    \ re-arranged distribution of the orientations of microfacets."
+  Figure 10 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_10.jpg
+  Figure 10 caption: Angular error in degrees of shape estimation under various lightings.
+    The denser and more complete the light distribution is, the better the performance
+    is to be achieved. Besides, our proposed approach is resilient to illumination
+    distribution.
+  Figure 2 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_2.jpg
+  Figure 2 caption: "The coordinates in which BRDF is defined. By convention n \u20D7\
+    \ =[0,0,1 ] \u22BA , and v \u20D7 and l \u20D7 are unit vectors that allow to\
+    \ orient arbitrarily above the positive half-sphere. This is in contrast to the\
+    \ typical setup for photometric stereo, where v \u20D7 =[0,0,1 ] \u22BA ."
+  Figure 3 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_3.jpg
+  Figure 3 caption: "The ellipsoid NDF describes that the microfacets can be re-arranged\
+    \ through translation to cover the upper surface of an ellipsoid. A \u201Cflatter\u201D\
+    \ ellipsoid indicates that more microfacets are aligned with the surface normal\
+    \ n \u20D7 , representing a smoother material."
+  Figure 4 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_4.jpg
+  Figure 4 caption: "The shadowing function guarantees that the total area receiving\
+    \ illumination over a surface of unit area does not exceed l \u20D7 \u22BA n \u20D7\
+    \ . In the proposed model, the restriction that the region has to be in the upper\
+    \ shpere \u03A9 + is removed, so the entire intersected area is considered."
+  Figure 5 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_5.jpg
+  Figure 5 caption: "A visualization of the Fresnel terms obtained in [10]. It shows\
+    \ that except for the grazing incident angle \u03B8 i , each Fresnel term represents\
+    \ a material-specific constant."
+  Figure 6 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_6.jpg
+  Figure 6 caption: Distribution of lights with various densities and patterns. The
+    view vector v=(0,0,1) is pointing upward. Hence the lights located in the bottom
+    are expected to contribute less to appearance formation.
+  Figure 7 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_7.jpg
+  Figure 7 caption: "Estimation of surface smoothness for 100 MERL materials using\
+    \ the appearances of the corresponding sphere. The materials are ranked according\
+    \ to the respective estimated value for \u03BB . The ranking is consistent with\
+    \ the perception of the surface smoothness. Also, the denser the light, the more\
+    \ likely a material is deemed specular because specularities have higher chance\
+    \ of being observed."
+  Figure 8 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_8.jpg
+  Figure 8 caption: Normalized appearance fitting error of spheres synthesized using
+    100 MERL materials.
+  Figure 9 Link: articels_figures_by_rev_year\2019\A_MicrofacetBased_Model_for_Photometric_Stereo_with_General_Isotropic_Reflectanc\figure_9.jpg
+  Figure 9 caption: Angular error in degrees of shape estimation for spheres made
+    of 100 MERL materials. VE is trained using all 100 MERL materials. Our methods
+    deliver comparative results, especially over the specular surfaces.
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.81
+  Name of the first author: Lixiong Chen
+  Name of the last author: Imari Sato
+  Number of Figures: 14
+  Number of Tables: 3
+  Number of authors: 5
+  Paper title: A Microfacet-Based Model for Photometric Stereo with General Isotropic
+    Reflectance
+  Publication Date: 2019-07-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the Mean Estimation Error in Degrees of Surface
+      Normal of 100 Spheres Under All Six Illumination Conditions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Mean and Median of Estimation Error with the
+      Benchmark Results [58]
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Mean and Median of Estimation Error with Some
+      State-of-the-Art Benchmark Results [58] without Illumination Filtering
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2927909
+- Affiliation of the first author: pca lab, key laboratory of intelligent perception
+    and systems for high-dimensional information of ministry of education, and jiangsu
+    key lab of image and video understanding for social security, school of computer
+    science and engineering, nanjing university of science and technology, nanjing,
+    p.r. china
+  Affiliation of the last author: pca lab, key laboratory of intelligent perception
+    and systems for high-dimensional information of ministry of education, and jiangsu
+    key lab of image and video understanding for social security, school of computer
+    science and engineering, nanjing university of science and technology, nanjing,
+    p.r. china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_1.jpg
+  Figure 1 caption: Illustration of our main idea. Given four tasks T 1 , T 2 , T
+    3 , T 4 , we use S p T i to denote the state of the i th task at the p th step
+    (i.e., the time slice p ). In order to inherit from historical experiences, the
+    current step is dependent on those previous steps, where the dependencies are
+    marked with blur arrows.. Inside each time step, we serialize the tasks in a pre-defined
+    order, and the latter task depends on the previous tasks as shown by black arrows.
+    We do not use those dependencies on dashed arrows to avoid loops of interactions,
+    which is difficult in optimization. Hence, the dependencies among tasks become
+    a directed acyclic graph, and the directions are decided by black arrows. In this
+    way, the learning on tasks is modeled into a task-recursive learning framework
+    such that the tasks therein can be progressively refined with the increase of
+    time p .
+  Figure 10 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_10.jpg
+  Figure 10 caption: Qualitative depth estimation results of our method. (a) input
+    image; (b) ground truth; (c) results of [7]; (d) results of [14]; (e) our results.
+    Our results are satisfactory and have finer details.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_2.jpg
+  Figure 2 caption: 'The overview of our TRL architecture for RGB-D scene understanding
+    with three tasks. The image is first fed into a CNN encoder to extract hierarchical
+    features, then the features are fed into a series of task-interative blocks (blue
+    box) to progressively predict tasks. Each task-interactive block encapsulates
+    interaction cross three tasks, and is given a time stamp ( p 1 , p 2 ,..., p n
+    , p n+1 ,...). The historical experiences of one block are selectively propagated
+    into k posterior blocks (or time stages), as plotted in black curves (only part
+    exhibition for clarity). For the experience propagation, we introduce a feature-selecting
+    unit (the orange round) to adaptively integrate the information at previous time
+    stages. Each task-interactive block consists of two basic modules: task attentional
+    module and residual block. TAM is specifically designed to enhance cross-task
+    interaction by using visual attention mechanism. We also apply a coarse-to-fine
+    process to progressively increase the resolution and details of the predictions
+    (from scale-1 upsampling to scale-4). The features of the former scale are upsampled
+    to match the next scale space by using the upsamping blocks (representing by the
+    dashed fold lines). The lower level features from encoder are introduced into
+    the predicting process for fine-grained predictions (which are represented by
+    purple arrows. The details of task-interactive task (b) and feature-selecting
+    unit (c) can be found in Sections 3.3 and 3.4.'
+  Figure 3 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_3.jpg
+  Figure 3 caption: Task-attentional module. TAM-I in (a) is used in our conference
+    paper [19]. TAM-II in (b) is a refined version. It takes multi-scale receptive
+    fields by using different-size convolution kernels and strides. The details can
+    be found in Section 3.5.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_4.jpg
+  Figure 4 caption: The upsampling block. We use convolution layers with different
+    kernel sizes to capture various-size local details. Then the sub-pixel operation
+    is performed on the concatenated features to match the required scale.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_5.jpg
+  Figure 5 caption: Qualitative results our joint-task learning model and single-task
+    learning model. (a) input image; (b) ground truth; (c) results of single-task
+    learning models; (d) results of our joint task-recursive learning model. We can
+    observe the benefit of our method visually.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_6.jpg
+  Figure 6 caption: Visual results of our learned masks (summed and normalized along
+    the channel dimension) of TAM-I and TAM-II. (a) the input image; (b) the mask
+    learned by TAM-I; (c) the mask learned by TAM-II. We can observe that the masks
+    learned by TAM-II can pay more attention to the detailed edges and objects which
+    are commonly important in each task.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_7.jpg
+  Figure 7 caption: Performance of models with different time steps.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_8.jpg
+  Figure 8 caption: Performance of models using previous experience from different
+    amount of time steps.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Joint_TaskRecursive_Learning_for_RGBD_Scene_Understanding\figure_9.jpg
+  Figure 9 caption: Learned masks in TAMs at different time steps. We can observe
+    the masks capture more useful details with the time step increasing.
+  First author gender probability: 0.89
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Zhenyu Zhang
+  Name of the last author: Jian Yang
+  Number of Figures: 12
+  Number of Tables: 10
+  Number of authors: 6
+  Paper title: Joint Task-Recursive Learning for RGB-D Scene Understanding
+  Publication Date: 2019-07-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Joint Task Learning versus Single Task Learning on NYU Depth
+      V2 and SUN-RGBD Datasets
+  Table 10 caption:
+    table_text: TABLE 10 Comparison with the State-of-the-Art Semantic Segmentation
+      Methods on SUN-RGBD Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Comparisons of Different Task Orders on NYU Depth v2 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparisons of Different Multi-Task Network Architectures
+      on NYU Depth v2 Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparisons of Different Network Architectures and Baselines
+      on NYU Depth v2 Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Running Cost and Inference Time in Different Settings of Time
+      Steps
+  Table 6 caption:
+    table_text: TABLE 6 Comparisons of Different Weights of the Losses
+  Table 7 caption:
+    table_text: TABLE 7 Comparisons with the State-of-the-Art Depth Estimation Approaches
+      on NYU Depth V2 Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Comparisons with the State-of-the-Art Surface Normal Estimation
+      Approaches on NYU Depth V2 Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Comparisons the State-of-the-Art Semantic Segmentation Methods
+      on NYU Depth v2 Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2926728
+- Affiliation of the first author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, china
+  Affiliation of the last author: college of computer science and technology, nanjing
+    university of aeronautics and astronautics, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Coherence_Constrained_Graph_LSTM_for_Group_Activity_Recognition\figure_1.jpg
+  Figure 1 caption: "Illustration of the relevant motions constrained by Spatio-Temporal\
+    \ Context Coherence (STCC) and Global Context Coherence (GCC) in a \u201CLeft\
+    \ set\u201D activity of volleyball game. STCC aims to capture the relevant motions\
+    \ of persons, and GCC aims to measure the contribution of the relevant motions."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Coherence_Constrained_Graph_LSTM_for_Group_Activity_Recognition\figure_2.jpg
+  Figure 2 caption: The proposed Coherence Constrained Graph LSTM (CCG-LSTM) for recognizing
+    a group activity. The personal data transfer, previous state transfer, context
+    state transfer and motion state transfer denote the transferring of the input
+    feature of individual, previous motion state of individual, spatial context state
+    of neighbor, and current motion sate of individual, respectively. Spatial-Temporal
+    Context Coherence (STCC) consists of the spatial context coherence and spatial
+    context coherence. Aggregation LSTM aggregates the relevant motions of all persons
+    with different attention factors into the hidden representation of the whole activity
+    at each time step. Best view in color version.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Coherence_Constrained_Graph_LSTM_for_Group_Activity_Recognition\figure_3.jpg
+  Figure 3 caption: A node of the CCG-LSTM at time step t . The components marked
+    with blue color, orange color and red color denote the Temporal Context Coherence
+    (TCC), Spatial Context Coherence (SCC), and Global Context Coherence (GCC) constraints,
+    respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Coherence_Constrained_Graph_LSTM_for_Group_Activity_Recognition\figure_4.jpg
+  Figure 4 caption: Some examples of relevant motion quantified by Global Context
+    Coherence (GCC). The higher bar chart indicates the corresponding motion is more
+    relevant to the group activity.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Coherence_Constrained_Graph_LSTM_for_Group_Activity_Recognition\figure_5.jpg
+  Figure 5 caption: Examples of Aggregation LSTM on VD and CAD. (a) and (b) denote
+    the implementation of Aggregation LSTM in the volleyball match with two sub-groups,
+    and the collective activity with a group, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Coherence_Constrained_Graph_LSTM_for_Group_Activity_Recognition\figure_6.jpg
+  Figure 6 caption: Confusion matrix of CCG-LSTM on the Volleyball Dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Coherence_Constrained_Graph_LSTM_for_Group_Activity_Recognition\figure_7.jpg
+  Figure 7 caption: Confusion matrix of the proposed CCG-LSTM on CAD.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Coherence_Constrained_Graph_LSTM_for_Group_Activity_Recognition\figure_8.jpg
+  Figure 8 caption: "Visualized examples of SCC, TCC, STCC, and GCC in modeling group\
+    \ activities. In each time step, one motion with the larger STCC Value ( STCCValue=SCCValue\xD7\
+    TCCValue ), as well as the larger GCC Value, it is more relevant to the activity."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.93
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Jinhui Tang
+  Name of the last author: Liyan Zhang
+  Number of Figures: 8
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Coherence Constrained Graph LSTM for Group Activity Recognition
+  Publication Date: 2019-07-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Recognition Accuracies Obtained by Different Methods on Volleyball
+      Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Recognition Accuracies Obtained by Different Methods on CAD
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2928540
+- Affiliation of the first author: school of instrumentation and optoelectronic engineering,
+    beihang university, beijing, china
+  Affiliation of the last author: department of automation, broadband network & digital
+    media lab, tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_1.jpg
+  Figure 1 caption: Our system and the real-time reconstructed results.
+  Figure 10 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_10.jpg
+  Figure 10 caption: Evaluation of joint motion tracking. (a) Reference color image.
+    (b) Results using only correspondences on the body for skeleton tracking, without
+    non-rigid registration. (c) Searching correspondences on both the body and fused
+    surface for skeleton tracking, without non-rigid registration. (d) Using full
+    energy terms.
+  Figure 2 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_2.jpg
+  Figure 2 caption: (a) Initialization of the on-body node graph. (b,c,d) Evaluation
+    of the double node graph. The figure shows the geometry results and live node
+    graph of (b) traditional free-form sampled node graph (red), (c) on-body node
+    graph (green) only and (d) double node graph (with far-body nodes in blue). Note
+    that we render the inner surface of the geometry in gray in (c)(top).
+  Figure 3 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_3.jpg
+  Figure 3 caption: 'The pipeline of our system. We first initialize the system using
+    the first depth frame (Section 3.3). Then for each frame, we sequentially perform
+    the next 3 steps: Joint motion tracking (Section 4), outer-layer geometry fusion
+    (Section 5.1) and inner body optimization (Section 5.2).'
+  Figure 4 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_4.jpg
+  Figure 4 caption: Illustration of inner body optimization. (a) Skeleton embedding
+    results before and after optimization. (b) Overlay of the body shape and outer
+    surface before and after optimization.
+  Figure 5 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_5.jpg
+  Figure 5 caption: Illustration of partial geometry fusion and dynamic detail deformation.
+    (a,b) Color reference and depth input with different poses; the wrinkles on the
+    cloth are significantly different from each other. (c) Partial fused geometry,
+    which contains plausible dynamic geometric details and much less noise than the
+    depth input. (d) Live geometry after dynamic detail deformation; the dynamic cloth
+    wrinkles are faithfully reconstructed. (e) Live geometry without detailed deformation
+    [22]; although the relatively static geometry details on the face and trousers
+    are reconstructed, the dynamic cloth wrinkles cannot be reconstructed faithfully.
+    (f) Live geometry reconstruction results by implementing a larger current integration
+    weight (8) in the TSDF fusion step. Note that the left arm of the subject is not
+    faithfully reconstructed due to the deteriorated loop closure performance.
+  Figure 6 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_6.jpg
+  Figure 6 caption: Illustration of inner body optimization for the volume data term.
+    (a) Canonical body model and a slice of the TSDF volume, with color-coded normalized
+    TSDF value mapping from [-1, 1] to the HSV color space. Gray color represents
+    regions without observations. (b,c,d) Temporal inner body optimization results
+    around the waist. The inner body becomes increasingly accurate as more regions
+    in the canonical volume are observed.
+  Figure 7 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_7.jpg
+  Figure 7 caption: Evaluation of the live-depth-based energy in the body optimization
+    step. (a,b) Canonical model and inner body skeleton overlay (the skeleton embedding
+    of the canonical model) withoutwith live-depth-based energy. (c,d) Live body and
+    live depth silhouette (green) overlay withoutwith live-depth-based energy. (e,f)
+    Live model and depth silhouette (green) overlay withoutwith live-depth-based energy.
+  Figure 8 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_8.jpg
+  Figure 8 caption: Example results reconstructed by our system. Our system is capable
+    of reconstructing different types of cloth and various body shapes.
+  Figure 9 Link: articels_figures_by_rev_year\2019\DoubleFusion_RealTime_Capture_of_Human_Performances_with_Inner_Body_Shapes_from_\figure_9.jpg
+  Figure 9 caption: Sequential reconstruction results on two sequences. The first
+    row is the color reference (without background), and reconstruction results are
+    presented in the last two rows. Our system is able to capture fast and complicated
+    human motion as well as detailed surface geometries.
+  First author gender probability: 0.87
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Tao Yu
+  Name of the last author: Yebin Liu
+  Number of Figures: 21
+  Number of Tables: 3
+  Number of authors: 8
+  Paper title: 'DoubleFusion: Real-Time Capture of Human Performances with Inner Body
+    Shapes from a Single Depth Sensor'
+  Publication Date: 2019-07-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Comparison of the Tracking Accuracy with BodyFusion
+      [18] and the Preliminary Version of DoubleFusion [22] Using the Vicon Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Quantitative Results of Body Shape Reconstruction on the\
+      \ Sequence \u201CMoonwalk\u201D (Frames 260 - 500) Using Our Method and the\
+      \ Approach of [53]"
+  Table 3 caption:
+    table_text: TABLE 3 Body Measurement Results of 4 Subjects (YT, AL, ZMJ and WLZ)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2928296
+- Affiliation of the first author: shanghai key lab of intelligent information processing,
+    school of computer science, fudan university, shanghai, china
+  Affiliation of the last author: shanghai key lab of intelligent information processing,
+    school of computer science, fudan university, shanghai, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\LeaderBased_MultiScale_Attention_Deep_Architecture_for_Person_ReIdentification\figure_1.jpg
+  Figure 1 caption: Computing multi-scale features is crucial for re-id and motivates
+    our approach. In (a), to distinguish between two people wearing similar clothing,
+    global visual cues such as body shape and clothing color are insufficient. Visual
+    cues from local parts such as shoes and hairstyle are needed for telling them
+    apart. Motivated by this observation, our MuDeep, as shown in (b), learns discriminative
+    features at different spatial scales and locations (indicated by the red dashed
+    boxes).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\LeaderBased_MultiScale_Attention_Deep_Architecture_for_Person_ReIdentification\figure_2.jpg
+  Figure 2 caption: Overview of MuDeep architecture. The multi-scale stream layer
+    first analyzes feature maps with multiple scales. Then the leader-based attention
+    learning layer is followed to automatically discover and emphasize important spatial
+    locations. Finally, the global and local branch layer is utilized to extract discriminate
+    features from global and local parts. Note that the parameters of each scale are
+    not shared. LAL means the Leader-based Attention Learning layer, with further
+    details shown in Fig. 4.
+  Figure 3 Link: articels_figures_by_rev_year\2019\LeaderBased_MultiScale_Attention_Deep_Architecture_for_Person_ReIdentification\figure_3.jpg
+  Figure 3 caption: Illustration of our residual block.
+  Figure 4 Link: articels_figures_by_rev_year\2019\LeaderBased_MultiScale_Attention_Deep_Architecture_for_Person_ReIdentification\figure_4.jpg
+  Figure 4 caption: "Structure of the leader-based attention learning layer. Note\
+    \ that \u2297 means batch matrix multiplication."
+  Figure 5 Link: articels_figures_by_rev_year\2019\LeaderBased_MultiScale_Attention_Deep_Architecture_for_Person_ReIdentification\figure_5.jpg
+  Figure 5 caption: "Analysis of hyper-parameters. (a) Results of choosing different\
+    \ values of the guidance channel C g ; (b) Results of using different ratios of\
+    \ \u03BB 1 and \u03BB 2 ."
+  Figure 6 Link: articels_figures_by_rev_year\2019\LeaderBased_MultiScale_Attention_Deep_Architecture_for_Person_ReIdentification\figure_6.jpg
+  Figure 6 caption: "Results of comparing \u201Cmulti-scale\u201D with \u201Cmulti-branch\
+    \ on Market-1501 dataset."
+  Figure 7 Link: articels_figures_by_rev_year\2019\LeaderBased_MultiScale_Attention_Deep_Architecture_for_Person_ReIdentification\figure_7.jpg
+  Figure 7 caption: Some examples of small scale and large scale features learned
+    by our model. A warmer color indicates a higher activation value.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.86
+  Name of the first author: Xuelin Qian
+  Name of the last author: Xiangyang Xue
+  Number of Figures: 7
+  Number of Tables: 13
+  Number of authors: 5
+  Paper title: Leader-Based Multi-Scale Attention Deep Architecture for Person Re-Identification
+  Publication Date: 2019-07-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Details of the Multi-Scale Stream Layer
+  Table 10 caption:
+    table_text: "TABLE 10 Results of Training Models withwithout the \u201CLeader\u201D\
+      \ on Market-1501 Dataset"
+  Table 2 caption:
+    table_text: TABLE 2 Settings of All Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Rank-1mAP Accuracy of Transfer Learning on Extensive Benchmarks
+  Table 4 caption:
+    table_text: TABLE 4 Results on CUHK01 Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Results on CUHK03 Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Results on CUHK03-NP Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Results on Market-1501 Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Results on DukeMTMC-reID Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Analysis of Improvements
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2928294
+- Affiliation of the first author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Affiliation of the last author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_1.jpg
+  Figure 1 caption: Conventional 3DMM employs linear bases models for shapealbedo,
+    which are trained with 3D face scans and associated controlled 2D images. We propose
+    a nonlinear 3DMM to model shapealbedo via deep neural networks (DNNs). It can
+    be trained from in-the-wild face images without 3D scans, and also better reconstruct
+    the original images due to the inherent nonlinearity.
+  Figure 10 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_10.jpg
+  Figure 10 caption: Each column shows shape changes when varying one element of f
+    S , by 10 times standard deviations, in opposite directions. Ordered by the magnitude
+    of shape changes.
+  Figure 2 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_2.jpg
+  Figure 2 caption: Jointly learning a nonlinear 3DMM and its fitting algorithm from
+    unconstrained 2D in-the-wild face image collection, in a weakly supervised fashion.
+    L S is a visualization of shading on a sphere with lighting parameters L .
+  Figure 3 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_3.jpg
+  Figure 3 caption: Three albedo representations. (a) Albedo value per vertex, (b)
+    Albedo as a 2D frontal face, (c) UV space 2D unwarped albedo.
+  Figure 4 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_4.jpg
+  Figure 4 caption: 'UV space shape representation. From left to right: individual
+    channels for x , y and z spatial dimension and final combined shape image.'
+  Figure 5 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_5.jpg
+  Figure 5 caption: Forward and backward pass of the rendering layer.
+  Figure 6 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_6.jpg
+  Figure 6 caption: 'Rendering with segmentation masks. Left to right: segmentation
+    results, naive rendering, occulusion-aware rendering.'
+  Figure 7 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_7.jpg
+  Figure 7 caption: 'Effect of albedo regularizations: albedo symmetry (sym) and albedo
+    constancy (const). When there is no regularization being used, shading is mostly
+    baked into the albedo. Using the symmetry property helps to resolve the global
+    lighting. Using constancy constraint futher removes shading from the albedo, which
+    results in a better 3D shape.'
+  Figure 8 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_8.jpg
+  Figure 8 caption: Effect of shape smoothness regularization.
+  Figure 9 Link: articels_figures_by_rev_year\2019\On_Learning_D_Face_Morphable_Model_from_IntheWild_Images\figure_9.jpg
+  Figure 9 caption: Comparison to convolutional autoencoders (AE). Our approach produces
+    results of higher quality. Also it provides access to the 3D facial shape, albedo,
+    lighting, and projection matrix.
+  First author gender probability: 0.91
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.84
+  Name of the first author: Luan Tran
+  Name of the last author: Xiaoming Liu
+  Number of Figures: 26
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: On Learning 3D Face Morphable Model from In-the-Wild Images
+  Publication Date: 2019-07-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Architectures of E E, D A DA and D S DS Networks
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Face Alignment Performance on ALFW2000
+  Table 3 caption:
+    table_text: TABLE 3 3D Scan Reconstruction Comparison (NME)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2927975
+- Affiliation of the first author: college of computer science and artificial intelligence,
+    wenzhou university, wenzhou, zhejiang, china
+  Affiliation of the last author: department of electrical engineering and computer
+    sciences, university of california at berkeley, berkeley, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_1.jpg
+  Figure 1 caption: Illustration of unfolding a third-order tensor.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_10.jpg
+  Figure 10 caption: "Recovery results on images with standard deviation \u03C3=50\
+    \ Gaussian noise and 40 percent salt and pepper noise."
+  Figure 2 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_2.jpg
+  Figure 2 caption: "The reconstruction errors with different values p and \u03BB\
+    \ . For each value p , \u03BB and c , we perform 50 experiments and obtain the\
+    \ averaged error. We then average over c to obtain the mean reconstruction error\
+    \ for each p and \u03BB ."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_3.jpg
+  Figure 3 caption: Results on synthetic data with different percent c of salt and
+    pepper noise.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_4.jpg
+  Figure 4 caption: Recovery results on images without adding noise.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_5.jpg
+  Figure 5 caption: Recovery results on images with 40 percent salt and pepper noise.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_6.jpg
+  Figure 6 caption: Recovery results on images with 50 percent salt and pepper noise.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_7.jpg
+  Figure 7 caption: Recovery results on images with 10 percent occlusions.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_8.jpg
+  Figure 8 caption: Recovery results on images with 15 percent occlusions.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Robust_LowRank_Tensor_Recovery_with_Rectification_and_Alignment\figure_9.jpg
+  Figure 9 caption: "Recovery results on images with standard deviation \u03C3=25\
+    \ Gaussian noise and 40 percent salt and pepper noise."
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.97
+  Name of the first author: Xiaoqin Zhang
+  Name of the last author: Yi Ma
+  Number of Figures: 17
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Robust Low-Rank Tensor Recovery with Rectification and Alignment
+  Publication Date: 2019-07-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Reconstruction Errors with Different Misalignment Levels on
+      Data with Salt and Pepper Noise
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Reconstruction Errors with Different Misalignment Levels on
+      Occluded Data
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2929043

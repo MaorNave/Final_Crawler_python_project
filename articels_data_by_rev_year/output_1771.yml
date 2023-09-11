@@ -1,0 +1,864 @@
+- Affiliation of the first author: college of control science and engineering, zhejiang
+    university, hangzhou, zhejiang, china
+  Affiliation of the last author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_1.jpg
+  Figure 1 caption: Results of static-point determination obtained by the proposed
+    method. The edges between static points are shown as green lines. The features
+    on moving objects and in the static scene are shown in pink and green, respectively,
+    and the features in the static scene are correctly determined. Because the visual
+    descriptors performance is limited, a few dynamic points are inevitably matched
+    to the features in the static scene.
+  Figure 10 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_10.jpg
+  Figure 10 caption: Example taken from the fr3sitting-halfsphere sequence. (a) Result
+    showing the determination of static points by the front end. (b) Result of 3D
+    edge culling during the determination of feature static points by the back end.
+    (c) Estimated trajectory compared with the ground truth.
+  Figure 2 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_2.jpg
+  Figure 2 caption: Illustration of the negative effects caused by dynamic points.
+    The gray circles are the correct results from pose estimation. The white circles
+    are static map points, and the pink circles are points on a moving object. The
+    movement of dynamic points destroys the consistency of motion estimation, as shown
+    in the figure, where the unrecognized dynamic points influence the estimation
+    of T k so it moves from the correct estimation result (gray circle) to the incorrect
+    result (blue circle). Besides, the movement of the dynamic points also destroys
+    the point correlations between points p i and p j
+  Figure 3 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_3.jpg
+  Figure 3 caption: 'Overview of the proposed segmentation method, which comprises
+    three steps to divide the point cloud into different components with different
+    motion patterns: graph initialization, inconsistent edge culling, and point graph
+    segmentation.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_4.jpg
+  Figure 4 caption: 'Two-dimensional example of the segmentation method using point
+    correlations: (a) current frame; (b) reference frame; (c) structure graph of the
+    matched feature points in the reference frame created by Delaunay triangulation;
+    (d) graph after removing inconsistent edges; (e) extracted largest region, which
+    belongs to the static scene; and (f) moving object region separated from the static
+    scene.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_5.jpg
+  Figure 5 caption: "Example of a Hessian structure. (a) Hessian structure of bundle\
+    \ adjustment in Eq. (3). Because the geometry\u2013geometry block is diagonal,\
+    \ the Hessian can be efficiently solved using the Schur complement. (b) Hessian\
+    \ structure of the objective function in Eq. (14). The geometry\u2013geometry\
+    \ block of the Hessian structure is the green block with the pink diagonal. (c)\
+    \ The result after the inconsistent edge observations are removed from the Hessian\
+    \ structure. The green blocks indicate the point correlations, and the blue blocks\
+    \ indicate the geometry\u2013pose correlations. The red blocks indicate moving\
+    \ objects in the camera image. Therefore, if inconsistent measurements in the\
+    \ point correlations can be determined, the two point clusters with different\
+    \ motion consistencies are separated."
+  Figure 6 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_6.jpg
+  Figure 6 caption: System overview. Static point determination is performed in both
+    the front and back ends. Before tracking the local map, the dynamic points are
+    removed from the estimation data. In the back end, the determination of static
+    points and local mapping simultaneously occur. The shaded rectangles indicate
+    components specifically modified for dynamic environments.
+  Figure 7 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_7.jpg
+  Figure 7 caption: 'Images captured by an ASUS Xtion Pro camera and the uncertainty
+    results for depth: (a) color image, (b) depth image registered with the color
+    image, and (c) the uncertainty of the depth image. Blue pixels indicate no data
+    because the depth exceeds the range of the depth camera. Green pixels indicate
+    that the uncertainty of the measured depth is too large to be trusted. Colors
+    from black to red denote the uncertainties of the pixels with valid depths (black
+    = low uncertainty, red = high uncertainty).'
+  Figure 8 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_8.jpg
+  Figure 8 caption: Example of map-point matching. If the unmarked points are removed
+    immediately after the static point determination module, some unreliable features
+    on the image will incorrectly match the marked points.
+  Figure 9 Link: articels_figures_by_rev_year\2020\RGBD_SLAM_in_Dynamic_Environments_Using_Point_Correlations\figure_9.jpg
+  Figure 9 caption: Comparison of example estimated trajectories. (a), (b), and (c)
+    Trajectories estimated using ORB-SLAM2, which is not designed for dynamic environments.
+    (d), (e), and (f) Trajectories estimated using the proposed method.
+  First author gender probability: 0.76
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Weichen Dai
+  Name of the last author: Sebastian Scherer
+  Number of Figures: 16
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: RGB-D SLAM in Dynamic Environments Using Point Correlations
+  Publication Date: 2020-07-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the Rotational Root Mean-Squared Error (RMSE)
+      of the Relative Pose Error (RPE) on the TUM Benchmark
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Translational RMSE of the RPE on the TUM
+      Benchmark
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of the Absolute Trajectory Error (ATE) on the TUM
+      Benchmark
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the ATE on the TUM Benchmark
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of the Real-Time Performance of the Motion Estimation
+      Output in Dynamic Environments
+  Table 6 caption:
+    table_text: TABLE 6 Real-Time Performance Comparison With Standard Deviation
+  Table 7 caption:
+    table_text: TABLE 7 Real-Time Performance of the Major Steps of the Determination
+      of Static Points
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3010942
+- Affiliation of the first author: beijing key laboratory of big data management and
+    analysis methods, gaoling school of artificial intelligence, renmin university
+    of china, beijing, china
+  Affiliation of the last author: department of electrical and computer engineering,
+    northwestern university, evanston, il, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_MetaDistance_for_Sequences_by_Learning_a_Ground_Metric_via_Virtual_Sequ\figure_1.jpg
+  Figure 1 caption: "For a sequence of 11 red points and a sequence of 9 blue points,\
+    \ given a ground metric d between the points, a ground metric matrix D stores\
+    \ all the pairwise distances between points with d , e.g., D 5,3 =d( x 5 , y 3\
+    \ ) is the distance between the fifth red point and the third blue point with\
+    \ the ground metric. The optimal alignment matrix T \u2217 can be inferred based\
+    \ on D according to some temporal constraints which differ in different distance\
+    \ measures. Each element of T \u2217 indicates whether or the probability of aligning\
+    \ the corresponding two points. e.g., T \u2217 5,3 =0 means that the fifth red\
+    \ point and the third blue point are not aligned. The distance between the two\
+    \ sequences equals \u27E8T,D\u27E9 and hence depends on the ground metric. It\
+    \ can be viewed as a meta-distance upon the ground metric."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_MetaDistance_for_Sequences_by_Learning_a_Ground_Metric_via_Virtual_Sequ\figure_2.jpg
+  Figure 2 caption: (a) Temporal structure (TS) based virtual sequences. All training
+    sequences from the same class (with the same color) are associated with the same
+    virtual sequence, all components in all virtual sequences are orthogonal to each
+    other so that the virtual sequences for different classes are well separated;
+    (b) Large margin (LM) based virtual sequences. Training sequences that have large
+    margins from other classes are selected as virtual sequences (bounded by dotted
+    frames). The virtual sequence of a training sequence is set as the nearest selected
+    training sequence from the same class.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_MetaDistance_for_Sequences_by_Learning_a_Ground_Metric_via_Virtual_Sequ\figure_3.jpg
+  Figure 3 caption: The model architecture of Deep-RVSML.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_MetaDistance_for_Sequences_by_Learning_a_Ground_Metric_via_Virtual_Sequ\figure_4.jpg
+  Figure 4 caption: Performances of RVSML as functions of (a) m and (b) log(beta)
+    on the MSR Action3D dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_MetaDistance_for_Sequences_by_Learning_a_Ground_Metric_via_Virtual_Sequ\figure_5.jpg
+  Figure 5 caption: The frame-level validation accuracy of IndRNN as a function of
+    the number of training iterations using the original frame-wide features and the
+    transformed features by DeepRVSML-DTW and DeepRVSML-OPW on the NTU dataset for
+    the (a) CS and (b) CV setting.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.86
+  Name of the first author: Bing Su
+  Name of the last author: Ying Wu
+  Number of Figures: 5
+  Number of Tables: 15
+  Number of authors: 2
+  Paper title: Learning Meta-Distance for Sequences by Learning a Ground Metric via
+    Virtual Sequence Regression
+  Publication Date: 2020-07-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the Proposed RVSML Variants Instantiated by
+      (Left) DTW and (Right) OPW With Other Metric Learning Methods Using the NN Classifier
+      With the (Left) DTW and (Right) OPW Distance on the MSR Action3D Dataset
+  Table 10 caption:
+    table_text: TABLE 10 Comparison of the Proposed Deep-RVSML Variants Instantiated
+      by (Left) DTW and (Right) OPW With Other Deep Metric Learning Methods Using
+      the NN Classifier With the (Left) DTW and (Right) OPW Distance on the SAD Dataset
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Proposed RVSML Variants Instantiated by
+      (Left) DTW and (Right) OPW With Other Metric Learning Methods Using the NN Classifier
+      With the (Left) DTW and (Right) OPW Distance on the MSR Activity3D Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of RVSML Instantiated by (Left) DTW and (Right)
+      OPW With Other Methods Using the NN Classifier With the (Left) DTW and (Right)
+      OPW Distance on the ChaLearn Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of RVSML Instantiated by (Left) DTW and (Right)
+      OPW With Other Metric Learning Methods Using the NN Classifier With the (Left)
+      DTW and (Right) OPW Distance on the SAD Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of the Proposed RVSML Instantiated by (Left) DTW
+      and (Right) OPW With Other Metric Learning Methods Using the NN Classifier With
+      the (Left) DTW and (Right) OPW Distance on the HAS Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of the Training Times
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of the Proposed Deep-RVSML Variants Instantiated
+      by (Left) DTW and (Right) OPW With Other Deep Metric Learning Methods Using
+      the NN Classifier With the (Left) DTW and (Right) OPW Distance on the MSR Action3D
+      Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of the Proposed Deep-RVSML Variants Instantiated
+      by (Left) DTW and (Right) OPW With Other Deep Metric Learning Methods Using
+      the NN Classifier With the (Left) DTW and (Right) OPW Distance on the MSR Activity3D
+      Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Comparison of the Proposed Deep-RVSML Variants Instantiated
+      by (Left) DTW and (Right) OPW With Other Deep Metric Learning Methods Using
+      the NN Classifier With the (Left) DTW and (Right) OPW Distance on the ChaLearn
+      Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3010568
+- Affiliation of the first author: school of computer science and center for optical
+    imagery analysis and learning (optimal), northwestern polytechnical university,
+    xian, shaanxi, p. r. china
+  Affiliation of the last author: school of computer science and center for optical
+    imagery analysis and learning (optimal), northwestern polytechnical university,
+    xian, shaanxi, p. r. china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Multiview_Clustering_A_Scalable_and_ParameterFree_Bipartite_Graph_Fusion_Method\figure_1.jpg
+  Figure 1 caption: Illustration of the joint structured optimal graph across three
+    single-view bipartite graphs. Each single-view is assigned with the weight at
+    the left-up corner, and the link parameters in each single graph are multiplied
+    by the weight. When a rank constraint is imposed on the Laplacian matrix of the
+    joint bipartite graph, three weighted single-view graphs are integrated to be
+    structured optimal with exactly c -connected components ( c=2 here) among data
+    points and anchor points. UP represents the process of updating the joint graph,
+    while UA is to update weight factors.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Multiview_Clustering_A_Scalable_and_ParameterFree_Bipartite_Graph_Fusion_Method\figure_2.jpg
+  Figure 2 caption: The results of anchor selection by directly alternate sampling
+    (DAS) on two types of non-linear data. The number of data points of each cluster
+    are balanced in (a)(c) and are unbalance in (b)(d).
+  Figure 3 Link: articels_figures_by_rev_year\2020\Multiview_Clustering_A_Scalable_and_ParameterFree_Bipartite_Graph_Fusion_Method\figure_3.jpg
+  Figure 3 caption: Experiments on synthetic multiview block diagonal graphs. (a)(b)(c)
+    are respectively input single-view graphs. (d) is the corresponding joint graph
+    obtained by Algorithm 3 with three clusters.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Multiview_Clustering_A_Scalable_and_ParameterFree_Bipartite_Graph_Fusion_Method\figure_4.jpg
+  Figure 4 caption: "The values of weights \u03B1 1 , \u03B1 2 and \u03B1 3 allocated\
+    \ for three single-views in Figs. 3a, 3b, and 3c w.r.t. the number of iterations."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Multiview_Clustering_A_Scalable_and_ParameterFree_Bipartite_Graph_Fusion_Method\figure_5.jpg
+  Figure 5 caption: The clustering ACC, NMI and CPU time of the proposed algorithm
+    with the varying number of anchor points.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xuelong Li
+  Name of the last author: Feiping Nie
+  Number of Figures: 5
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'Multiview Clustering: A Scalable and Parameter-Free Bipartite Graph
+    Fusion Method'
+  Publication Date: 2020-07-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Introduction to Views Information of the Utilized Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 The Clustering Performance and CPU Time (sec.) (MEAN \xB1\
+      \ \xB1 STD) of SFMC Equipped With Different Anchor Selection Strategies"
+  Table 3 caption:
+    table_text: TABLE 3 The Clustering Performance of SFMC Compared to the Scalable
+      CRL ( s s-CLR) by Using Single-View Features and Concatenated Features
+  Table 4 caption:
+    table_text: TABLE 4 The Clustering Performance of the Proposed SFMC Compared to
+      the State-of-the-Art Competitors on Handwritten and MSRC-v1
+  Table 5 caption:
+    table_text: "TABLE 5 The Clustering Accuracy and CPU Running Time (sec.) (MEAN\
+      \ \xB1 \xB1 STD) of the Stable Competitors \u2021 \u2021 on Four Benchmark Datasets"
+  Table 6 caption:
+    table_text: TABLE 6 The Clustering Performance of the Proposed SFMC Compared to
+      the State-of-the-Art Competitors on Mnist4 and Calthch101-20
+  Table 7 caption:
+    table_text: "TABLE 7 The Clustering Performance and CPU Running Time (sec.) on\
+      \ Two Large-Scale Datasets, and \u201DOM\u201D Represents Out-of-Memory"
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3011148
+- Affiliation of the first author: institute of north electronic equipment, beijing,
+    china
+  Affiliation of the last author: national university of singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_1.jpg
+  Figure 1 caption: 'Joint disentangled representation learning and photorealistic
+    cross-age face synthesis for age-invariant face recognition. Col. 1 & 8: Input
+    faces of distinct identities with various challenging factors (e.g., neutral,
+    illumination, expression, pose and occlusion). Col. 2 & 7: Synthesized younger
+    faces by our proposed AIM. Col. 3 & 6: Synthesized older faces by our proposed
+    AIM. Col. 4 & 5: Learned age-invariant facial representations by our proposed
+    AIM. Based on such representations, AIM then apply the face synthesis component
+    onto the representation, which takes targeted ages, identity discriminative information
+    (e.g., expression) as input, and generate faces of various agesexpression. Best
+    viewed in color.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_10.jpg
+  Figure 10 caption: Qualitative comparison of face rejuvenationaging results on CAFR,
+    MORPH, CACD, FG-NET, and IJB-C.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_2.jpg
+  Figure 2 caption: "Age-Invariant Model (AIM) for face recognition in the wild. AIM\
+    \ extends from an auto-encoder based GAN and includes a disentangled Representation\
+    \ Learning sub-Net (RLN) and a Face Synthesis sub-Net (FSN) that jointly learn\
+    \ end-to-end. RLN consists of an encoder ( G \u03B8 E ) and a discriminator (\
+    \ D \u03D5 1 ) that compete with each other to learn discriminative and robust\
+    \ facial representations ( f ) disentangled from age variance. It is augmented\
+    \ by cross-age domain adversarial training ( L cad ) and cross-entropy regularization\
+    \ with a label smoothing strategy ( L cer ). FSN consists of a decoder ( G \u03B8\
+    \ D ) and a local-patch based discriminator ( D \u03D5 2 ) that compete with each\
+    \ other to achieve continuous face rejuvenationaging ( x ) with remarkable photorealistic\
+    \ and identity-preserving properties. It introduces an attention mechanism to\
+    \ guarantee robustness to large background complexity and illumination variance.\
+    \ Note AIM does not require paired training data nor true age of testing samples.\
+    \ Best viewed in color."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_3.jpg
+  Figure 3 caption: The convergence curves of different loss terms in AIM during the
+    training phase. Best viewed in color.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_4.jpg
+  Figure 4 caption: Cross-Age Face Recognition (CAFR) dataset. Best viewed in color.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_5.jpg
+  Figure 5 caption: ROC performance curve on (a) CAFR; (b) CACD-VS; (c) IJB-C. Best
+    viewed in color.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_6.jpg
+  Figure 6 caption: User study on cross-age face synthesis results on CAFR.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_7.jpg
+  Figure 7 caption: 'Age-invariant face recognition example results on CAFR. Col.
+    1 & 18: Input faces of distinct identities with various challenging factors (e.g.,
+    neutral, illumination, expression, and pose). Col. 2, 3, 4, 5, 6, 7, 8, 11, 12,
+    13, 14, 15, 16, 17: Synthesized age regressedprogressed faces by our proposed
+    AIM. Col. 9 & 10: Learned facial representations by AIM, which are similar for
+    the same rowidentity while discriminative across different rowsidentities, hence
+    explicitly disentangled from the age variation. Based on such representations,
+    AIM then apply the face synthesis component onto the representation, which takes
+    targeted ages, identity discriminative information (e.g., expression) as input,
+    and generate faces of various agesexpression. These examples indicate facial representations
+    learned by AIM are robust to age variance, and synthesized cross-age face images
+    retain the intrinsic details. Best viewed in color.'
+  Figure 8 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_8.jpg
+  Figure 8 caption: Facial attributes transformation over time in terms of (a) wrinkles
+    & eyes, (b) mouth & moustache and (c) laugh lines, which is automatically learned
+    by AIM instead of physical modeling.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Towards_AgeInvariant_Face_Recognition\figure_9.jpg
+  Figure 9 caption: Illustration of learned face manifold with continuous transitions
+    in age (horizontal axis) and identity (vertical axis).
+  First author gender probability: 0.9
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jian Zhao
+  Name of the last author: Jiashi Feng
+  Number of Figures: 11
+  Number of Tables: 10
+  Number of authors: 3
+  Paper title: Towards Age-Invariant Face Recognition
+  Publication Date: 2020-07-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics for Publicly Available Cross-Age Face Datasets
+  Table 10 caption:
+    table_text: TABLE 10 Face Recognition Performance Comparison on IJB-C
+  Table 2 caption:
+    table_text: TABLE 2 Face Recognition Performance Comparison on CAFR
+  Table 3 caption:
+    table_text: TABLE 3 Rank-1 Recognition Rates (%) on MORPH Album2
+  Table 4 caption:
+    table_text: TABLE 4 Face Recognition Performance Comparison on CACD-VS
+  Table 5 caption:
+    table_text: TABLE 5 Face Recognition Performance Comparison on FG-NET
+  Table 6 caption:
+    table_text: TABLE 6 Face Recognition Performance Comparison on MegaFace Challenge
+      1 Using FG-NET as Probe Set
+  Table 7 caption:
+    table_text: TABLE 7 Face Recognition Performance Comparison on MegaFace Challenge
+      2 Using FG-NET as Probe Set
+  Table 8 caption:
+    table_text: TABLE 8 Face Recognition Performance Comparison on LFW
+  Table 9 caption:
+    table_text: TABLE 9 Face Recognition Performance Comparison on YTF
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3011426
+- Affiliation of the first author: school of computer science, fudan university, shanghai,
+    china
+  Affiliation of the last author: school of computer science, fudan university, shanghai,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Geometrical_Perspective_on_Image_Style_Transfer_With_Adversarial_Learning\figure_1.jpg
+  Figure 1 caption: An illustration of two noteworthy yet theoretically unclear phenomena
+    first reported in the original work of pix2pix.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Geometrical_Perspective_on_Image_Style_Transfer_With_Adversarial_Learning\figure_2.jpg
+  Figure 2 caption: Proposed geometric viewpoint on image style transfer with adversarial
+    learning.
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Geometrical_Perspective_on_Image_Style_Transfer_With_Adversarial_Learning\figure_3.jpg
+  Figure 3 caption: An illustration of Theorem 3.1. By restricting the generator to
+    certain PTI-family F p , we prove the original adversarial loss is naturally decomposed
+    as independent style transfer tasks between paired charts.
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Geometrical_Perspective_on_Image_Style_Transfer_With_Adversarial_Learning\figure_4.jpg
+  Figure 4 caption: An illustrative proof for Theorem 6.3 and part of Theorem 6.1.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.58
+  Name of the first author: Xudong Pan
+  Name of the last author: Min Yang
+  Number of Figures: 4
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: A Geometrical Perspective on Image Style Transfer With Adversarial
+    Learning
+  Publication Date: 2020-07-23 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3011143
+- Affiliation of the first author: central university of finance and economics, beijing,
+    china
+  Affiliation of the last author: university of york, york, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_Backtrackless_AlignedSpatial_Graph_Convolutional_Networks_for_Graph_Cla\figure_1.jpg
+  Figure 1 caption: "The architecture of the proposed BASGCN model (vertex features\
+    \ are visualized as different colors). An input graph G p ( V p , E p )\u2208\
+    G of arbitrary size is first aligned to the prototype graph G R ( V R , E R )\
+    \ . Then, G p is mapped into a fixed-sized backtrackless aligned vertex grid structure,\
+    \ where the vertex order follows that of G R and the associated aligned vertex\
+    \ adjacency matrix corresponds to a directed graph, i.e., the connection between\
+    \ a pair of vertices is a directed edge. The grid structure of G p is passed through\
+    \ a pair of parallel stacked spatial graph convolution layers to extract multi-scale\
+    \ vertex features (i.e., Z in;0 and Z out;0 are the same), where the vertex information\
+    \ is propagated between specified vertices associated with the directed adjacency\
+    \ matrix. More formally, for each rooted vertex the upper convolution layers focus\
+    \ on aggregating the vertex features of the vertex itself as well as its in-neighbors\
+    \ (i.e., the vertices having directed edges to the rooted vertex), while the lower\
+    \ convolution layers focus on aggregating vertex features of the vertex itself\
+    \ as well as its out-neighbors (i.e., the vertices having directed edges from\
+    \ the rooted vertex to themselves). Note that both the upper and lower graph convolution\
+    \ layers share the same trainable parameters. In the process of vertex information\
+    \ aggregation, the information is propagated along the directed edges, thus the\
+    \ information will not be immediately propagated back to the starting vertex,\
+    \ restricting the tottering problem. Moreover, since the graph convolution layers\
+    \ preserve the original vertex order of the input grid structure, the concatenated\
+    \ vertex features through the graph convolution layers form a new vertex grid\
+    \ structure for G p . This vertex grid structure is then passed to a traditional\
+    \ CNN layer for classification."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_Backtrackless_AlignedSpatial_Graph_Convolutional_Networks_for_Graph_Cla\figure_2.jpg
+  Figure 2 caption: "The procedure of computing the correspondence matrix. Given a\
+    \ set of graphs, for each graph G p : (1) we compute the K -dimensional depth-based\
+    \ (DB) representation DB K p;v rooted at each vertex (e.g., vertex 2) as the K\
+    \ -dimensional vectorial vertex representation, where each element H s ( G K p;2\
+    \ ) represents the Shannon entropy of the K -layer expansion subgraph rooted at\
+    \ vertex v 2 of G p [35]; (2) we identify a family of K -dimensional prototype\
+    \ representations PR K = \u03BC K 1 ,\u2026, \u03BC K j ,\u2026, \u03BC K M using\
+    \ k-means on the K -dimensional DB representations of all graphs; (3) we align\
+    \ the K -dimensional DB representations to the K -dimensional prototype representations\
+    \ and compute a K -level correspondence matrix C K p ."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_Backtrackless_AlignedSpatial_Graph_Convolutional_Networks_for_Graph_Cla\figure_3.jpg
+  Figure 3 caption: An Instance of the proposed backtrackless in-spatial graph convolution
+    operation.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_Backtrackless_AlignedSpatial_Graph_Convolutional_Networks_for_Graph_Cla\figure_4.jpg
+  Figure 4 caption: Accuracy versus the parameter M.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Lu Bai
+  Name of the last author: Edwin R. Hancock
+  Number of Figures: 4
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Learning Backtrackless Aligned-Spatial Graph Convolutional Networks
+    for Graph Classification
+  Publication Date: 2020-07-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Information of the Graph Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Classification Accuracy (In % % \xB1 \xB1 Standard Error)\
+      \ for Comparisons With Graph Kernels"
+  Table 3 caption:
+    table_text: "TABLE 3 Classification Accuracy (In % % \xB1 \xB1 Standard Error)\
+      \ for Comparisons With Deep Learning Methods"
+  Table 4 caption:
+    table_text: TABLE 4 Classification Accuracy for Comparisons With Deep Learning
+      Methods on Bioinformatics Datasets
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3011866
+- Affiliation of the first author: "department of electrical engineering, pontificia\
+    \ universidad cat\xF3lica de chile, santiago, chile"
+  Affiliation of the last author: "department of electrical engineering, pontificia\
+    \ universidad cat\xF3lica de chile, santiago, chile"
+  Figure 1 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_1.jpg
+  Figure 1 caption: View Line sequence for exciting spins in a line along the x -dimension.
+  Figure 10 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_10.jpg
+  Figure 10 caption: "Effect of noise: Model performance (measured by the NMAE) on\
+    \ a sample with a concentration of 20.5 \u03BCg mm 3 as a function of the SNR.\
+    \ The mean and standard deviation of the NMAE are shown."
+  Figure 2 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_2.jpg
+  Figure 2 caption: Example of simulated image. (a) is distorted by (c) which is produced
+    by (b). In the distorted image (d) the red lines correspond to the even simulations
+    and the green lines to the odd simulations.
+  Figure 3 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_3.jpg
+  Figure 3 caption: Proposed Architecture of DeepSPIO. Each decoder upsamples its
+    input using the shared features from the bottleneck. Then it performs a transposed
+    convolution followed by convolutions to densify and specialize the reconstruction
+    of each wavelet filter. The final convolution represents the corresponding wavelet
+    filter.
+  Figure 4 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_4.jpg
+  Figure 4 caption: Simulated SPIO distortions on IXI PD image, ground truth, and
+    SPIO prediction. This image has an NMAE of 0.23. The group average is 0.17.
+  Figure 5 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_5.jpg
+  Figure 5 caption: 'Simulated SPIO distortions on a breast image, ground truth, and
+    SPIO prediction. NMAE: 0.16.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_6.jpg
+  Figure 6 caption: "Examples of the air experiment. The top row has the simulated\
+    \ images. The middle row has DeepSPIO predictions. And the bottom row has the\
+    \ corresponding ground truths. Cylinder concentrations increase from left to right\
+    \ (0.22, 6.7, 13, 20 \u03BCg mm 3 ). The NMAE indices are 1.96, 0.24, 0.30, and\
+    \ 0.21."
+  Figure 7 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_7.jpg
+  Figure 7 caption: Agar-filled phantom with SPIO particles. Various concentrations
+    were used.
+  Figure 8 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_8.jpg
+  Figure 8 caption: Results on the first batch of real samples. With decreasing concentration
+    from left to right.
+  Figure 9 Link: articels_figures_by_rev_year\2020\DeepSPIO_Super_Paramagnetic_Iron_Oxide_Particle_Quantification_Using_Deep_Learni\figure_9.jpg
+  Figure 9 caption: Effect of noise. Model performance (measured by the NMAE) as a
+    function of the concentration. For each SNR level, the mean and standard deviation
+    are shown.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Gabriel della Maggiora
+  Name of the last author: Pablo Irarrazaval
+  Number of Figures: 14
+  Number of Tables: 1
+  Number of authors: 9
+  Paper title: 'DeepSPIO: Super Paramagnetic Iron Oxide Particle Quantification Using
+    Deep Learning in Magnetic Resonance Imaging'
+  Publication Date: 2020-07-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison Between Average Estimated Concentration and Average
+      Ground Truth for Both Batches
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3012103
+- Affiliation of the first author: school of software engineering, south china university
+    of technology, guangzhou, guangdong, china
+  Affiliation of the last author: school of software engineering, south china university
+    of technology, guangzhou, guangdong, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Improving_Generative_Adversarial_Networks_With_Local_Coordinate_Coding\figure_1.jpg
+  Figure 1 caption: Comparisons of the global and local coordinate system. (a) In
+    the global coordinate system, most GAN methods use a global cooridinate coding
+    as an input to generate data. In this way, it is hard to learn the underlying
+    geometry of real data. Therefore, they often sample meaningless points in such
+    a global coordinate system. (b) In the local coordinate system, GAN methods can
+    learn a set of local bases on the manifold, then sample a new point. Then, they
+    are able to learn the underlying geometry and capture the local information of
+    real data. As a result, they can sample a new point with the semantic information.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Improving_Generative_Adversarial_Networks_With_Local_Coordinate_Coding\figure_2.jpg
+  Figure 2 caption: A geometric view of local coordinate coding. Given a set of local
+    bases, if data lie on a manifold, a nonlinear function f(x) can be locally approximated
+    by a linear function w.r.t. the coding. Given all bases, f(x) can be globally
+    approximated.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Improving_Generative_Adversarial_Networks_With_Local_Coordinate_Coding\figure_3.jpg
+  Figure 3 caption: The scheme of the proposed LCCGAN. We use an autoencoder to learn
+    the embeddings on the latent manifold from real data. We minimize the objective
+    function of LCC with different q to learn a set of bases such that the LCC sampling
+    can be conducted. Specifically, we train LCCGAN with q=2 and LCCGAN++ with q=3
+    . Thus, LCCGAN takes as input the constructed LCC codings to generate new data.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Improving_Generative_Adversarial_Networks_With_Local_Coordinate_Coding\figure_4.jpg
+  Figure 4 caption: The geometric views on LCC Sampling. By learning embeddings (i.e.,
+    black points) that lie on the latent manifold, we use LCC to learn a set of bases
+    (i.e., gray points) to form a local coordinate system such that we can sample
+    different latent points (i.e., colored points) by LCC sampling. As a result, our
+    method can generate new data that have different attributes.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Improving_Generative_Adversarial_Networks_With_Local_Coordinate_Coding\figure_5.jpg
+  Figure 5 caption: Comparisons of the LCC sampling between LCCGAN and LCCGAN++. (a)
+    For LCCGAN, when the number of the local bases is insufficient, the approximation
+    of the generator would not be accurate. As a result, the constructed sample would
+    be far away from the manifold. (b) For LCCGAN++, we approximate the generator
+    in a locally flat region, and thus the constructed sample is close to the manifold.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Improving_Generative_Adversarial_Networks_With_Local_Coordinate_Coding\figure_6.jpg
+  Figure 6 caption: Generated samples with d=3 . The yellow and red boxes denote the
+    similar generated digits with low diversity.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Improving_Generative_Adversarial_Networks_With_Local_Coordinate_Coding\figure_7.jpg
+  Figure 7 caption: Comparisons with different GAN methods with the input noise of
+    d=5 . DCGAN with d=100 is considered as the baseline.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Improving_Generative_Adversarial_Networks_With_Local_Coordinate_Coding\figure_8.jpg
+  Figure 8 caption: Visual comparisons of GAN methods with different dimensions of
+    the latent distribution on Oxford-102.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.69
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.68
+  Name of the first author: Jiezhang Cao
+  Name of the last author: Mingkui Tan
+  Number of Figures: 8
+  Number of Tables: 17
+  Number of authors: 5
+  Paper title: Improving Generative Adversarial Networks With Local Coordinate Coding
+  Publication Date: 2020-07-27 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Comparisons With Different GAN Methods in Terms of Inception-Score\
+      \ (IS) and Fr\xE9chet Inception Distance (FID) on Oxford-102"
+  Table 10 caption:
+    table_text: TABLE 10 Comparisons of Different GAN Models Equipped With and Without
+      the LCC Sampling Method
+  Table 2 caption:
+    table_text: "TABLE 2 Comparisons With Different GAN Methods With Different Dimensions\
+      \ of the Latent Distribution in Terms of Inception-Score (IS) and Fr\xE9chet\
+      \ Inception Distance (FID) on the LSUN Dataset"
+  Table 3 caption:
+    table_text: TABLE 3 Visual Comparisons of Different GAN Methods With Different
+      Input Dimensions on the LSUN-Bedroom and LSUN-Classroom Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Visual Comparisons of GAN Methods With Different Dimensions
+      of the Latent Distribution on CelebA
+  Table 5 caption:
+    table_text: "TABLE 5 Comparisons With Different GAN Methods in Terms of Inception\
+      \ Score (IS) and Fr\xE9chet Inception Distance (FID) on CelebA"
+  Table 6 caption:
+    table_text: TABLE 6 Visual Comparisons of Different GAN Methods on ImageNet, Including
+      Promontory, and Volcano
+  Table 7 caption:
+    table_text: TABLE 7 Effect of the LCC Training Method on Improving the Performance
+      of Different GAN Methods on Oxford-102
+  Table 8 caption:
+    table_text: TABLE 8 Generated Images From LCC Sampling on MNIST, Oxford-102, and
+      CelebA
+  Table 9 caption:
+    table_text: TABLE 9 Interpolations Between Two Generated Images on Oxford-102
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3012096
+- Affiliation of the first author: electronic information school, wuhan university,
+    wuhan, china
+  Affiliation of the last author: department of computer science, stony brook university,
+    stony brook, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_1.jpg
+  Figure 1 caption: 'Schematic illustration of different image fusion tasks (first
+    row: source images, second row (from left to right): fusion results of FusionGAN
+    [5], U2Fusion, NSCT [6], U2Fusion, Deepfuse [7], U2Fusion, GFDF [8], and U2Fusion).'
+  Figure 10 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_10.jpg
+  Figure 10 caption: U2Fusion to fuse multi-focus image sequence.
+  Figure 2 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_2.jpg
+  Figure 2 caption: Traditional image fusion framework.
+  Figure 3 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_3.jpg
+  Figure 3 caption: Pipeline of the proposed U2Fusion. Dashed lines represent the
+    data used in the loss function.
+  Figure 4 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_4.jpg
+  Figure 4 caption: "Perceptual feature maps extracted by VGG-16 for input image I\
+    \ , and \u03D5 C j (I) represents the feature map extracted by the convolutional\
+    \ layer before the j th max-pooling layer. The last row is the shape of extracted\
+    \ feature maps in the form of [batchsize, height, width, and channel]."
+  Figure 5 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_5.jpg
+  Figure 5 caption: Illustration of feature maps extracted by VGGNet for overexposed
+    and underexposed images.
+  Figure 6 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_6.jpg
+  Figure 6 caption: Illustration of joint training and sequential training. The dashed
+    arrow between DenseNets means that it is kept and set as the initial parameters
+    of the next task. On this basis, these parameters are optimized according to the
+    new objective.
+  Figure 7 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_7.jpg
+  Figure 7 caption: Intuitive description of data flow during the process of EWC.
+    Thin lines indicate that only a small subset of data are kept, which are merely
+    used to calculate mu i and not applied to train DenseNet.
+  Figure 8 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_8.jpg
+  Figure 8 caption: Architecture of DenseNet used in our model. Numbers shown after
+    concatenationLeakyReLUtanh functions are the channels of corresponding feature
+    maps.
+  Figure 9 Link: articels_figures_by_rev_year\2020\UFusion_A_Unified_Unsupervised_Image_Fusion_Network\figure_9.jpg
+  Figure 9 caption: U2Fusion to fuse multi-exposure image sequence.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Han Xu
+  Name of the last author: Haibin Ling
+  Number of Figures: 24
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: 'U2Fusion: A Unified Unsupervised Image Fusion Network'
+  Publication Date: 2020-07-28 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Mean and Standard Deviation of Four Metrics on VIS-IR Image
+      Fusion on the TNO and RoadScene Datasets (Red: The Best, Blue: The Second Best)'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Mean and Standard Deviation of Four Metrics on Medical Image
+      Fusion on the Harvard Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Mean and Standard Deviation of Four Metrics on Multi-Exposure
+      Image Fusion on the Dataset in [41] and the EMPA HDR Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Mean and Standard Deviation of Four Metrics on Multi-Focus
+      Image Fusion on the Lytro Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Mean of Two Metrics (Correlation CoefficientMean Gradient)
+      of Different Training Orders on Different Datasets
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3012548
+- Affiliation of the first author: school of electrical and information engineering,
+    xian jiaotong university, xian, china
+  Affiliation of the last author: visual computing group, microsoft research asia,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_1.jpg
+  Figure 1 caption: Illustration of network architectures of five different detectors
+    used for WIDER FACE. The term 164 associated with the feature map denotes that
+    anchors with scale 16 and anchor stride 4 (with respect to the input image) have
+    been placed on that feature map. The difference between (d) FPN-finest and (e)
+    FPN-finest-smapling which have the same network architecture, is that (e) uses
+    the proposed group sampling in (d).
+  Figure 10 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_10.jpg
+  Figure 10 caption: Illustration of the detection results of our approach for faces
+    with a high degree of variability in scale, pose, and occlusion.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_2.jpg
+  Figure 2 caption: The distribution of positive and negative training samples at
+    different scales on WIDER FACE training set with different network architectures.
+    The number is normalized by the total amount of training samples.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_3.jpg
+  Figure 3 caption: Network architecture used in our experiments, times 2 is bilinear
+    upsampling and bigoplus is element wise summation.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_4.jpg
+  Figure 4 caption: "Illustrating that the receptive field size of applying a 3 \xD7\
+    \ 3 convolution on an up-sampled feature map is equivalent to that of applying\
+    \ a 2 \xD7 2 convolution on the original feature map."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_5.jpg
+  Figure 5 caption: The network architecture of RPN head in FPN-finest-DC, in which
+    we adopt dilated convolution for enlarging the receptive field. k times kd means
+    a convolution with kernel size k and dilation size d , all these convolutions
+    are with stride 1. C and R are short for classification and regression, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_6.jpg
+  Figure 6 caption: Illustrating the effect of the number of training samples N .
+    Our approach (FPN-finest-sampling) gets better performance when N increases, benefiting
+    from more training examples. The performance of FPN and FPN-finest decreases as
+    N get larger, suffering from more imbalanced data.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_7.jpg
+  Figure 7 caption: Performance comparison with state-of-the-arts in terms of precision-recall
+    curves on WIDER FACE validation set.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_8.jpg
+  Figure 8 caption: Performance comparison with state-of-the-arts in terms of precision-recall
+    curves on WIDER FACE test set.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Group_Sampling_for_Scale_Invariant_Face_Detection\figure_9.jpg
+  Figure 9 caption: Performance comparison with state-of-the-arts on FDDB, AFW and
+    PASCAL Face datasets. Note that the values are calculated by setting the maximum
+    number of false positives to 200 for FDDB.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.72
+  Name of the first author: Xiang Ming
+  Name of the last author: Fang Wen
+  Number of Figures: 10
+  Number of Tables: 15
+  Number of authors: 6
+  Paper title: Group Sampling for Scale Invariant Face Detection
+  Publication Date: 2020-07-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Precision (AP) of Face Detection on WIDER FACE Validation
+      Set With Different Feature Map
+  Table 10 caption:
+    table_text: TABLE 10 Performance Comparison With CenterNet
+  Table 2 caption:
+    table_text: TABLE 2 Average Recall (AR) of Object Detection on MS COCO val2017
+      Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Average Precision (AP) of Face Detection on WIDER FACE Validation
+      Set
+  Table 4 caption:
+    table_text: TABLE 4 Average Recall (AR) on MS COCO val2017 Set
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Models WithWithout Group Sampling Using Different
+      Feature Maps on WIDER FACE
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of YOLOv3, SSD, RetinaFace and R-FCN on WIDER FACE
+      Validation Set
+  Table 7 caption:
+    table_text: 'TABLE 7 Performance Comparison of Each Sub-Detector in Terms of AP
+      on WIDER FACE Validation Set Over Three Models: (1) S Denotes Training Using
+      One Single Scale; (2) M Denotes the Baseline Using Multiple Scales; (3) M+GS
+      Denotes Training Using Multiple Scales Along With the Proposed Group Sampling
+      Method'
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of Different Loss Function for the Regression Task
+  Table 9 caption:
+    table_text: TABLE 9 Performance Comparison of the Proposed Group Sampling, OHEM
+      and Focal Loss, Showing That Our Approach Achieves Better Performance
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3012414

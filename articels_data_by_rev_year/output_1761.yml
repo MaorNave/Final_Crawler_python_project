@@ -1,0 +1,893 @@
+- Affiliation of the first author: heidelberg collaboratory for image processing (hci)
+    and iwr, mathematikon (inf 205), heidelberg university, heidelberg, germany
+  Affiliation of the last author: heidelberg collaboratory for image processing (hci)
+    and iwr, mathematikon (inf 205), heidelberg university, heidelberg, germany
+  Figure 1 Link: articels_figures_by_rev_year\2020\Sharing_Matters_for_Generalization_in_Deep_Metric_Learning\figure_1.jpg
+  Figure 1 caption: Motivation. (left) Real data is described by several latent characteristics
+    (color and shape). (center) Only the discriminative characteristics (color) which
+    separate classes are learned, while the others are ignored, thus failing to generalize
+    to unseen classes. (right) Including characteristics shared across classes (shape)
+    leads to a better representation of the data.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Sharing_Matters_for_Generalization_in_Deep_Metric_Learning\figure_2.jpg
+  Figure 2 caption: tSNE [13] projections of encoding spaces. (left) Discriminative
+    training of embedding space on mathcal Tmathcal X only, (right) Shared training
+    of embedding space on mathcal Tmathcal Xast only. The same random image subset
+    from the CARS196[14] training set is visualized. Image contour color indicates
+    ground-truth class. (left) the embedding groups images into compact class-based
+    clusters, (right) the embedding aligns images based on characteristics shared
+    across classes, e.g., view point (green) and color (orange), which are likely
+    to generalize. See supplementary for larger version, which can be found on the
+    Computer Society Digital Library at http:doi.ieeecomputersociety.org10.1109TPAMI.2020.3009620.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Sharing_Matters_for_Generalization_in_Deep_Metric_Learning\figure_3.jpg
+  Figure 3 caption: 'Nearest neighbour retrieval using phi and phi ast . Based on
+    the class- ( phi ) and shared ( phi ast ) embedding, we show nearest neighbor
+    retrievals limited to images with different class label than the query image.
+    The neighbors obtained based on the embedding phi ast trained for shared characteristics
+    exhibit common visual properties. Most prominent: (a) red color, (b) and (c) pose
+    and car type, (d) roundish shape, (e) back view and color. The embedding phi trained
+    for class discrimination fails to consistently retrieve meaningful neighbours
+    outside of the querys class.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\Sharing_Matters_for_Generalization_in_Deep_Metric_Learning\figure_4.jpg
+  Figure 4 caption: Unique classes per group. The average number of unique classes
+    per group decreases during training on CARS196[14] and CUB200-2011[29] dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Sharing_Matters_for_Generalization_in_Deep_Metric_Learning\figure_5.jpg
+  Figure 5 caption: Architecture and gradient flow. (left) A single encoder phi is
+    alternately trained on both tasks. (right) Each task is trained on a dedicated
+    encoder phi and phi ast based on a shared feature extractor f . Loss is computed
+    per encoder and back-propagated through the shared feature representation f .
+    Using a projection network p , we map phi ast to the embedding phi and compute
+    the decorrelation loss (Eq. (2)) with gradient reversal R(.) .
+  Figure 6 Link: articels_figures_by_rev_year\2020\Sharing_Matters_for_Generalization_in_Deep_Metric_Learning\figure_6.jpg
+  Figure 6 caption: Training curves. Train loss and test recall1 for the class phi
+    and shared phi ast encoders. The model is trained using margin loss [3] with ResNet50[39]
+    on CARS [14] and CUB [29].
+  Figure 7 Link: articels_figures_by_rev_year\2020\Sharing_Matters_for_Generalization_in_Deep_Metric_Learning\figure_7.jpg
+  Figure 7 caption: Embedding space resulting from model trained on discriminative
+    task. The contour color of the individual images indicate the ground-truth class.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Sharing_Matters_for_Generalization_in_Deep_Metric_Learning\figure_8.jpg
+  Figure 8 caption: Embedding space resulting from model trained on shared task. The
+    contour color of the individual images indicate the ground-truth class.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Timo Milbich
+  Name of the last author: "Bj\xF6rn Ommer"
+  Number of Figures: 8
+  Number of Tables: 9
+  Number of authors: 4
+  Paper title: Sharing Matters for Generalization in Deep Metric Learning
+  Publication Date: 2020-07-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Evaluation on CARS196[14]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Evaluation on CUB200-2011[29]
+  Table 3 caption:
+    table_text: TABLE 3 Evaluation on SOP [4]
+  Table 4 caption:
+    table_text: TABLE 4 Evaluation Using Different Ranking Losses Using ResNet50 [39]
+      Backbone Architecture
+  Table 5 caption:
+    table_text: TABLE 5 Generalization Gap Study
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Our Approach Against Standard Generalization
+      Techniques
+  Table 7 caption:
+    table_text: TABLE 7 Architecture Study for Our Approach by Computing Recall1 on
+      CARS196[14] Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of Different Sampling Strategies and Shared Triplet
+      Setups to Learn Shared Features
+  Table 9 caption:
+    table_text: TABLE 9 Evaluation Using Different Ranking Losses With GoogLeNet [41]
+      Backbone Architecture
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3009620
+- Affiliation of the first author: school of microelectronics and communication engineering,
+    chongqing university, chongqing, china
+  Affiliation of the last author: chongqing key laboratory of image cognition, chongqing
+    university of posts and telecommunications, chongqing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_1.jpg
+  Figure 1 caption: Comparison of person re-identification and person search. In (a),
+    the traditional person re-identification task needs to first detect and crop all
+    person regions for feature matching. The person search task in (b) means the joint
+    detection and re-identification for localization.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_10.jpg
+  Figure 10 caption: Detection results of the Webtattoo dataset by using DC-I-Net
+    model. The red boxes represent the predicted bounding boxes and the green boxes
+    represent the ground-truth bounding boxes.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_2.jpg
+  Figure 2 caption: The flowchart of the proposed models. The Siamese network structure
+    of the proposed I-Net (middle) and DC-I-Net (right) are presented, for both of
+    which, the same backbone network (left) with shared weights is used for feature
+    maps extraction. A pair of images containing the same objects (e.g., persons)
+    are fed into the model for training. For I-Net, two Region Proposal Networks (i.e.,
+    Pedestrian Proposal Networks in this case) are implemented for getting the object
+    proposals in each image, and the proposal features generated from the ROI-pooling
+    layers are concatenated and fed into the fully-connected layers for detection
+    and retrieval (i.e., re-identification in this case). For the DC-I-Net, the proposals
+    of each stream are fed into the fully-connected layers for refined detection results.
+    After that, the object features generated by the ROI-Align layers based on the
+    refined detection results are concatenated and fed into another full-connected
+    layer for re-identification. The essential differences between I-Net and DC-I-Net
+    lie in two aspects. 1) For the former, detection and re-identification are treated
+    separately in different layers. 2) For the latter, the two-stage refined objects
+    are used for re-identification rather than the one-stage proposals.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_3.jpg
+  Figure 3 caption: The flow-chart for computing the OLP loss. The detected proposals
+    include two types of pedestrian, i.e., person with identity (p-w-id) in dark blue
+    box and person without identity (p-wo-id) in yellow box. The yellow box is labeled
+    as -1. These proposal features are stored in the feature dictionary, which is
+    used to construct the pair-wise features including positive pairs (green lines)
+    and negative pairs (gray lines).
+  Figure 4 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_4.jpg
+  Figure 4 caption: The protocol for selecting the priority classes of hard examples
+    for computing the HEP loss. First, the person proposals (bounding boxes) with
+    identities (i.e., ground-truth labels) are marked. Second, the negative pairs
+    with the largest cosine distances were selected as hard examples, which are denoted
+    as priority classes. Finally, if the pool of priority classes is not yet filled,
+    some random classes are selected to fill the pool, which are used to compute the
+    HEP loss.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_5.jpg
+  Figure 5 caption: Motivation of DC-I-Net and its differences from I-Net that 1)
+    the detector is deployed in front of the re-identifier in different layers and
+    2) the refined objects instead of the coarse proposals from RPN are used to train
+    the re-identifier.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_6.jpg
+  Figure 6 caption: Retrieval of our DC-I-Net model (middle) and OIM (right) with
+    the CUHK-SYSU dataset by given eight queries (left). The top 3 images with respect
+    to the highest similarity scores are shown. The blue boxes represent the target
+    query person (probe), the green boxes mean correct matches, and the red boxes
+    mean incorrect matches.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_7.jpg
+  Figure 7 caption: Some failures on Top-1 of our DC-I-Net model. The impacts from
+    many real-world factors are shown, including the crowded persons (a, d), inadequate
+    illumination (d, e), specific pose (b), false detection (f) and similar clothes
+    (c, e), which also claim the challenges of person search.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_8.jpg
+  Figure 8 caption: The Precision-Recall (P-R) curves of different methods on CUHK-SYSU
+    (left), PRW (middle) and Webtattoo (right) datasets for object (i.e., person and
+    tattoo) search and object detection, respectively. The first row shows the P-R
+    curves of object search. The second row presents the P-R curves of detection,
+    in which the AP value of detection is presented in the legend.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Tasks_Integrated_Networks_Joint_Detection_and_Retrieval_for_Image_Search\figure_9.jpg
+  Figure 9 caption: Retrieval of our DC-I-Net model (middle) and the OIM (right) with
+    the PRW dataset by given three queries (left). The top 3 images with respect to
+    the highest similarity scores of each model are shown. The blue boxes represent
+    the target query person (probe), the green boxes mean correct matches, and the
+    red boxes mean incorrect matches.
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Lei Zhang
+  Name of the last author: Xinbo Gao
+  Number of Figures: 13
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: 'Tasks Integrated Networks: Joint Detection and Retrieval for Image
+    Search'
+  Publication Date: 2020-07-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparisons of Baselines, SOTA Methods and Our Models on the
+      CUHK-SYSU Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparisons of Baselines, SOTA Methods and Our Models on the
+      PRW Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Tattoo Search Results of Different Models on Webtattoo Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Performance Comparison Between I-Net and DC-I-Net Based on
+      HEP and C 2 2HEP Losses, Respectively
+  Table 5 caption:
+    table_text: 'TABLE 5 Performance Comparisons of Different Joint Losses: Metric
+      Loss and Identity Discrimination Loss Based on the DC-I-Net Architecture'
+  Table 6 caption:
+    table_text: TABLE 6 Performance With Different Feature Dictionary Size Stored
+      in OLP Based on the DC-I-Net Architecture
+  Table 7 caption:
+    table_text: TABLE 7 Performance Comparisons by Using Different Numbers of Selected
+      Priority Classes Based on the DC-I-Net Architecture
+  Table 8 caption:
+    table_text: TABLE 8 Performance Analysis With Different Numbers of Input Images
+      at Every Iteration Based on Different Losses
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3009758
+- Affiliation of the first author: tutte institute for mathematics and computing,
+    ottawa, ontario, canada
+  Affiliation of the last author: tutte institute for mathematics and computing, ottawa,
+    ontario, canada
+  Figure 1 Link: articels_figures_by_rev_year\2020\Comparing_Graph_Clusterings_Set_Partition_Measures_vs_GraphAware_Measures\figure_1.jpg
+  Figure 1 caption: Partitions A and B are identical as set partitions on G 1 and
+    G 2 , and so their similarities are the same when using graph-agnostic measures
+    regardless of the underlying graphs.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Comparing_Graph_Clusterings_Set_Partition_Measures_vs_GraphAware_Measures\figure_2.jpg
+  Figure 2 caption: "From left to right: edge classification b , the class-1 edges\
+    \ corresponding to b , and b s class representative b \xAF \xAF G which includes\
+    \ all edges of the connected graph partition."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Comparing_Graph_Clusterings_Set_Partition_Measures_vs_GraphAware_Measures\figure_3.jpg
+  Figure 3 caption: "Similarity measurements between a ground truth graph partition\
+    \ of size 78 and random partitions of various sizes. |E(G)|=4000 and \u03BC=0.1\
+    \ The measures were smoothed on windows of size 5, shaded regions indicate the\
+    \ standard deviations."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Comparing_Graph_Clusterings_Set_Partition_Measures_vs_GraphAware_Measures\figure_4.jpg
+  Figure 4 caption: "Similarity measurements between a ground truth graph partition\
+    \ of G and random partitions having pre-determined number of internal edges. |E(G)|=4000\
+    \ , \u03BC=0.1 which yields a ground truth partition with 3590 internal edges.\
+    \ The measures were smoothed on windows of size 250, shaded regions indicate the\
+    \ standard deviations."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Comparing_Graph_Clusterings_Set_Partition_Measures_vs_GraphAware_Measures\figure_5.jpg
+  Figure 5 caption: "Comparing the similarity curves of a partition (coarser) and\
+    \ a refinement of it (finer) of LFR graphs having varying inter-cluster edge densities.\
+    \ The graph-aware and graph-agnostic measures yield contradicting conclusions.\
+    \ 10 independent graphs were generated for each \u03BC -value, shaded regions\
+    \ indicate the standard deviations."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Comparing_Graph_Clusterings_Set_Partition_Measures_vs_GraphAware_Measures\figure_6.jpg
+  Figure 6 caption: "Comparing the similarity curves of three partition algorithms\
+    \ on LFR graphs. The graph-aware and graph-agnostic have contradicting conclusions\
+    \ for the algorithms Leading Eigenvector and Fast Greedy. The bottom plots indicate\
+    \ that Leading Eigenvector produces finer partitions than Fast Greedy. The Louvain\
+    \ algorithm outperforms the other two. 100 independent graphs were generated for\
+    \ each \u03BC -value, shaded regions indicate the standard deviations."
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: "Val\xE9rie Poulin"
+  Name of the last author: "Fran\xE7ois Th\xE9berge"
+  Number of Figures: 6
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: 'Comparing Graph Clusterings: Set Partition Measures vs. Graph-Aware
+    Measures'
+  Publication Date: 2020-07-16 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 From Classification Measures to Graph-Aware Clustering Measures
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Generation Parameters for LFR Algorithm
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3009862
+- Affiliation of the first author: beijing laboratory of intelligent information technology,
+    school of computer science and technology, beijing institute of technology, beijing,
+    china
+  Affiliation of the last author: beijing laboratory of intelligent information technology,
+    school of computer science and technology, beijing institute of technology, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_1.jpg
+  Figure 1 caption: Overview of the proposed method, which combines optimal CSR selection
+    and HSI recovery into a unified CNN-based framework. The parameters for these
+    two aspects are jointly learned first. Then, the RGB images are captured under
+    the selected optimal CSR as the inputs and the underlying HSIs are reconstructed
+    by using the HSI recovery network. The black arrow shows the training process
+    and the red arrow denotes the testing process.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_10.jpg
+  Figure 10 caption: Visual quality comparison under different CSR functions and chip
+    setups on a typical scene. The recovered HSIs under the worstmiddlebest CSR functions
+    in [61] and [62] are shown in (a) and (b), respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_2.jpg
+  Figure 2 caption: The architecture of CNN-based HSI recovery from a single RGB image.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_3.jpg
+  Figure 3 caption: The illustration of the optimal CSR selection.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_4.jpg
+  Figure 4 caption: Visual quality comparison for the multi-chip setup on six typical
+    scenes in HSI datasets. The ground truth, recovered HSI by our method, the error
+    map for RBFSRMMNSRRHNSRNHSCNN+our results, and RMSE results along spectra for
+    all methods are shown from top to bottom.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_5.jpg
+  Figure 5 caption: Visual quality comparison for the single-chip setup on six typical
+    scenes in HSI datasets. The ground truth, recovered HSI by our method, the error
+    map for RBFSRMMNSRRHNSRNHSCNN+[65]+Ours M our results, and RMSE results along
+    spectra for all methods are shown from top to bottom.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_6.jpg
+  Figure 6 caption: The RMSE results of our HSI recovery network for the multi-chip
+    setup on three HSI and two CSR datasets. The red and green bars indicate the best
+    and worst CSR functions for the HSI recovery in a brute force way, respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_7.jpg
+  Figure 7 caption: The RMSE results of our HSI recovery network for the single-chip
+    setup on three HSI and two CSR datasets. The red and green bars indicate the best
+    and worst CSR functions for the HSI recovery in a brute force way, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_8.jpg
+  Figure 8 caption: The selected optimal CSR by our method for the multi-chip setup
+    on three HSI datasets.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Joint_Camera_Spectral_Response_Selection_and_Hyperspectral_Image_Recovery\figure_9.jpg
+  Figure 9 caption: The selected optimal CSR by our method for the single-chip setup
+    on three HSI datasets.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Ying Fu
+  Name of the last author: Hua Huang
+  Number of Figures: 17
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: Joint Camera Spectral Response Selection and Hyperspectral Image Recovery
+  Publication Date: 2020-07-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 RMSE, SSIM, and SAM Results With Multi-Chip Setup for Different
+      HSI Recovery Methods on There HSI Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 RMSE, SSIM, and SAM Results With Single-Chip Setup for Different
+      HSI Recovery Methods on There HSI Datasets
+  Table 3 caption:
+    table_text: TABLE 3 RMSE, SSIM, and SAM Results Under the Selected Optimal CSR
+      and Different Network Structures on the ICVL Dataset
+  Table 4 caption:
+    table_text: TABLE 4 RMSE, SSIM, and SAM Results for Different HSI Recovery Methods
+      Under the Variant Illuminations on Three HSI Datasets
+  Table 5 caption:
+    table_text: TABLE 5 RMSE, SSIM, and SAM Results for Different HSI Recovery Methods
+      Under Variant Gaussian Noises
+  Table 6 caption:
+    table_text: TABLE 6 RMSE, SSIM, and SAM Results for Different HSI Recovery Methods
+      Under Variant Compression Artifacts
+  Table 7 caption:
+    table_text: TABLE 7 Classification Results
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3009999
+- Affiliation of the first author: department of electrical and computer engineering,
+    university of california, santa barbara, ca, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of california, santa barbara, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_1.jpg
+  Figure 1 caption: Illustration of complex network structure.
+  Figure 10 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_10.jpg
+  Figure 10 caption: Normalized memory and computation overhead of different methods
+    and benchmarks.
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_2.jpg
+  Figure 2 caption: Example block for Proposition 5.6.
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_3.jpg
+  Figure 3 caption: phi (mathbf JlJlT) (the solid line) and alpha 2(l)alpha 2(l-1)
+    (the dashed line) of SeLU under different epsilon . We have gamma 0=1 for all
+    the configurations.
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_4.jpg
+  Figure 4 caption: Verification of Theorem 4.1 and 4.2. Each point denotes the result
+    of one experiment.
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_5.jpg
+  Figure 5 caption: "Gradient norm distribution throughout the network under different\
+    \ configurations. The colored regions represent the range from 15 percentile to\
+    \ 85 percentile, while the solid line is the median. \u201ClReLU\u201D denotes\
+    \ \u201Cleaky ReLU\u201D."
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_6.jpg
+  Figure 6 caption: Gradient norm distribution throughout the network under different
+    normalization techniques.
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_7.jpg
+  Figure 7 caption: Gradient norm distribution throughout the network with SeLU under
+    different configurations.
+  Figure 8 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_8.jpg
+  Figure 8 caption: Gradient norm distribution throughout DenseNet under different
+    configurations.
+  Figure 9 Link: articels_figures_by_rev_year\2020\A_Comprehensive_and_Modularized_Statistical_Framework_for_Gradient_Norm_Equality\figure_9.jpg
+  Figure 9 caption: Gradient norm distribution throughout ResNet-56 under different
+    configurations.
+  First author gender probability: 0.64
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Zhaodong Chen
+  Name of the last author: Yuan Xie
+  Number of Figures: 10
+  Number of Tables: 14
+  Number of authors: 5
+  Paper title: A Comprehensive and Modularized Statistical Framework for Gradient
+    Norm Equality in Deep Neural Networks
+  Publication Date: 2020-07-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Study Cases
+  Table 10 caption:
+    table_text: TABLE 10 Test Accuracy of SeLU Under Different Configurations (Cl=
+      95% 95%)
+  Table 2 caption:
+    table_text: TABLE 2 Default Notations
+  Table 3 caption:
+    table_text: 'TABLE 3 Common Components in Neural Networks (Proof: Appendix A.6,
+      Available in the Online Supplemental Material)'
+  Table 4 caption:
+    table_text: "TABLE 4 Optimal \u03C3 \u03C3 for ReLU, Leaky ReLU, and Tanh With\
+      \ Gaussian Kernel"
+  Table 5 caption:
+    table_text: "TABLE 5 Optimal \u03B2 \u03B2 for ReLU, Leaky ReLU, and Tanh With\
+      \ Orthogonal Kernel"
+  Table 6 caption:
+    table_text: TABLE 6 Optimal g g for ReLU, Leaky ReLU, and Tanh With sWS
+  Table 7 caption:
+    table_text: TABLE 7 Network Structures for CIFAR-10
+  Table 8 caption:
+    table_text: TABLE 8 Test Accuracy of Initialization Techniques on CIFAR-10 With
+      Different Activation Functions and Configurations (Cl= 95% 95%)
+  Table 9 caption:
+    table_text: TABLE 9 Test Accuracy of Normalization Techniques on CIFAR-10 in Serial
+      Networks (Cl= 95% 95%)
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3010201
+- Affiliation of the first author: university of pittsburgh, pittsburgh, pa, usa
+  Affiliation of the last author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_1.jpg
+  Figure 1 caption: "(a) and (b) show an oriented edge moving across the sensor in\
+    \ true direction U and the predicted local flow U T n by fitting the plane over\
+    \ events in [x, y, t] space as in (d) and (e). The magnitude of the normal velocity\
+    \ component estimated by the plane fitting method is related to the orientation\
+    \ of the edge and true motion direction as U T n=|U|cos(\u03B8) . This relationship\
+    \ can be extended to a larger complex shaped object by linearizing it using multiple\
+    \ small edges (c) over small spatial region and performing plane fitting over\
+    \ each local edge (f). (c) The best estimate of true flow direction can be estimated\
+    \ by finding the correct spatial size \u03C3 corresponding to the maximum mean\
+    \ magnitude | U n \xAF \xAF \xAF \xAF \xAF \xAF \xAF | ."
+  Figure 10 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_10.jpg
+  Figure 10 caption: Figure shows the performance of EDL and ARMS flow on prediction
+    of events for the shapes and moving car scenario. The images show the actual events
+    (green), the predicted events using EDL (red) and the predicted events using ARMS
+    (blue). The figures show that the ARMS flow can greatly improve the prediction
+    in both clean and cluttered and complicated environment invariant to the shapes
+    or number of objects.
+  Figure 2 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_2.jpg
+  Figure 2 caption: The figure shows the output of the algorithm for trivial case
+    of bars and squares moving up and down. (A) The direction of EDL flow estimates
+    is normal to the edge orientations which is corrected by ARMS. (B) shows events
+    color coded by the size of optimal window. (C) represents the direction distributions
+    showing how the EDL gives three distinct peaks for each of the orientations which
+    ARMS corrects towards a single peak representing vertical motion.
+  Figure 3 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_3.jpg
+  Figure 3 caption: "Comparison of EDL and ARMS for two moving objects. The three\
+    \ rows show the direction outputs of the EDL and ARMS flow at three time points.\
+    \ The algorithm works well even when the two objects cross each other closely.\
+    \ Direction histograms show bimodal distribution from ARMS (blue) for the direction\
+    \ of the two individual shapes. The EDL flow (red) however leads to a larger variance\
+    \ and almost a uniform distribution. Even with only one object in the scene (bottom\
+    \ row), EDL flow gives rise to two modalities but ARMS gives a single peak at\
+    \ 3\u03C02 ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_4.jpg
+  Figure 4 caption: Figure shows the setup (A) and ARMS flow directions (B) for a
+    scenario with two pendulums of same length and size but at different depths from
+    the sensor. The figure also shows, as black rectangle, the size of optimal window
+    found by ARMS flow for a given pixel (black dot). We can see that as the two pendulums
+    get close around 70 msec time point, the front edge of the smaller pendulum starts
+    to get erroneous direction estimate due to the higher magnitudes of the closer
+    pendulum. The direction estimates are quickly corrected though, as soon as the
+    two pendulums start to move away (170-190 msec).
+  Figure 5 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_5.jpg
+  Figure 5 caption: "Figure shows the flow directions for an ATIS mounted on a car\
+    \ moving straight ahead (top), taking a left turn (middle) and navigating around\
+    \ another car (bottom). EDL flow is normal to the edges on most events which is\
+    \ reflected in the histograms by the small incorrect peaks at \u03C02 and 3\u03C0\
+    2 . ARMS-Flow corrects these local abnormalities giving rise to correct direction\
+    \ dependent flow reflected in the two distinct peaks during straight motion and\
+    \ a single large peak around 0 deg when the car is turning left. The bottom row\
+    \ provides shows how well the ARMS flow works in a cluttered dynamic case. The\
+    \ black rectangles show the interesting regions in the scene where the normal\
+    \ directions are improved towards the true global flow while still maintaining\
+    \ the directions of independent moving object like the car on the right which\
+    \ has a relative motion indicated in the forward direction (blue arrow)."
+  Figure 6 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_6.jpg
+  Figure 6 caption: Comparison of ARMS flow and EDL flow based velocity estimates
+    against the ground truth velocities recorded with an IMU for the rotational dynamics
+    data from DAVIS benchmark data and the Outdoor Driving and Indoor Flying conditions
+    from the MVSEC data over the duration of the recordings.
+  Figure 7 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_7.jpg
+  Figure 7 caption: The figure shows the predicted events based on EDL and ARMS flow
+    at 250ms in future. Green dots indicate the actual future events while the red
+    and blue dots indicate events predicted by the two flows. The scaling and translation
+    error show how well the ARMS flow keeps the affinity of the object events. The
+    ARMS flow has required scaling closer to 1 and translation error lower than the
+    EDL flow error indicating that all events point to the true direction of motion.
+  Figure 8 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_8.jpg
+  Figure 8 caption: Figure shows the flow results for two different available set
+    of data recorded with DAVIS. The panels show the EDL and ARMS flow directions
+    computed for data recorded for scenes recorded with camera moving freely while
+    simultaneously recording the events and the motion of the camera with an IMU.
+  Figure 9 Link: articels_figures_by_rev_year\2020\RealTime_High_Speed_Motion_Prediction_Using_Fast_ApertureRobust_EventDriven_Visu\figure_9.jpg
+  Figure 9 caption: Figure shows the flow results for events recorded from different
+    conditions from the MVSEC benchmark data. The panels show flow directions from
+    EDL and ARMS flow along with the ground truth directions. The ARMS flow vastly
+    improves the EDL flow estimates and generally is close to the ground truth directions.
+    We also show examples when the ARMS flow fails as shown in the bottom panels for
+    Indoor flying 1, Indoor flying 3 and Outdoor Driving conditions.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Himanshu Akolkar
+  Name of the last author: Ryad Benosman
+  Number of Figures: 12
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Real-Time High Speed Motion Prediction Using Fast Aperture-Robust Event-Driven
+    Visual Flow
+  Publication Date: 2020-07-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Algorithm Parameters
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Endpoint Error (AEE) in Pixels for Five MVSEC Data
+      Set
+  Table 3 caption:
+    table_text: TABLE 3 Benchmark Computation Times on an Intel E5-1603 Processor
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3010468
+- Affiliation of the first author: advanced analytics institute, university of technology
+    sydney, ultimo, nsw, australia
+  Affiliation of the last author: dongguan university of technology, dongguan, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_1.jpg
+  Figure 1 caption: The UNTIE framework. It first transforms the coupling spaces to
+    multiple kernel spaces and then learns the heterogeneities within and between
+    couplings in these kernel spaces by solving a kernel k-means objective.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_10.jpg
+  Figure 10 caption: Comparison of UNTIE versus the other representation methods per
+    the Bonferroni-Dunn test. All methods with ranks outside the marked interval are
+    significantly different (p < 0.1) from UNTIE.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_2.jpg
+  Figure 2 caption: The probability density of intra-coupling heterogeneity indicator
+    per kernel density estimation.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_3.jpg
+  Figure 3 caption: The probability density of inter-coupling heterogeneity indicator
+    per kernel density estimation.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_4.jpg
+  Figure 4 caption: The UNTIE-enabled clustering performance on data sets with different
+    inconsistency levels per the intra-heterogeneity indicator.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_5.jpg
+  Figure 5 caption: The UNTIE-enabled clustering performance on data sets with different
+    inconsistency levels per the inter-heterogeneity indicator.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_6.jpg
+  Figure 6 caption: 'The (epsilon,gamma) -curves of different transformed similarity
+    measures: A better metric yields a better result.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_7.jpg
+  Figure 7 caption: The visualization of different representation methods on dermatology.
+    The UNTIE-represented data shows clearer boundaries between different clusters.
+    The plotted two-dimensional embedding is converted from high-dimensional representation
+    by t-SNE. Different symbols refer to different data clusters per the ground truth.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_8.jpg
+  Figure 8 caption: The UNTIEs training loss on different data sets. The stochastic
+    optimization method for UNTIE is Adam [37] with the initial learning rate 10-3
+    and the batch size 20. The X -axis refers to the number of iterations, and y -axis
+    refers to the loss value of UNITEs objective function Eq. (22).
+  Figure 9 Link: articels_figures_by_rev_year\2020\Unsupervised_Heterogeneous_Coupling_Learning_for_Categorical_Representation\figure_9.jpg
+  Figure 9 caption: 'The UNTIE computational cost w.r.t. data factors: Object number
+    no , attribute number na , and maximum number of attribute values nmv . The solid
+    line refers to the total time cost of UNTIE. The dotted line refers to the time
+    cost of building the coupling spaces. The star line refers to the time cost of
+    the heterogeneity learning.'
+  First author gender probability: 0.61
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.96
+  Name of the first author: Chengzhang Zhu
+  Name of the last author: Jianping Yin
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Unsupervised Heterogeneous Coupling Learning for Categorical Representation
+  Publication Date: 2020-07-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Toy Example
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 List of Notations
+  Table 3 caption:
+    table_text: TABLE 3 Characteristics of 25 Categorical Data Sets
+  Table 4 caption:
+    table_text: 'TABLE 4 Clustering F-Score ( % %) With Different Embedding Methods:
+      The Value-Based Representations are Fed Into k-Means and the Similarity-Based
+      Representations are Fed Into k-Modes to Get the Clustering Results'
+  Table 5 caption:
+    table_text: TABLE 5 KNN, SVM, RF, and LR Classification F-Score (%) With UNTIE
+      and CDE
+  Table 6 caption:
+    table_text: TABLE 6 Three Groups of Kernel Functions for Testing the UNTIE Stability
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3010953
+- Affiliation of the first author: department of mathematics, statistics, and insurance,
+    hang seng university of hong kong, siu lek yuen, hong kong
+  Affiliation of the last author: school of information and communication technology,
+    griffith university, queensland, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Fast_Binary_Quadratic_Programming_Solver_Based_on_Stochastic_Neighborhood_Sear\figure_1.jpg
+  Figure 1 caption: Illustration of the local optimality property of our proposed
+    solver.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Fast_Binary_Quadratic_Programming_Solver_Based_on_Stochastic_Neighborhood_Sear\figure_2.jpg
+  Figure 2 caption: Illustration of the stochastic neighborhood vectors with and without
+    random constraints.
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Fast_Binary_Quadratic_Programming_Solver_Based_on_Stochastic_Neighborhood_Sear\figure_3.jpg
+  Figure 3 caption: Signal restoration using different solvers with mathrmcmathrmnoise
+    = 0.5 , mathrmn = 1000, and mu = 1 .
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Fast_Binary_Quadratic_Programming_Solver_Based_on_Stochastic_Neighborhood_Sear\figure_4.jpg
+  Figure 4 caption: Original and corrupted images with 30 and 50 percent noise, and
+    the restored images using the proposed solver with mathbf mu = 0.05 .
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Fast_Binary_Quadratic_Programming_Solver_Based_on_Stochastic_Neighborhood_Sear\figure_5.jpg
+  Figure 5 caption: 'Comparison of spectral and proposed solvers. First column: corrupted
+    images. Second to last columns: results of spectral and proposed methods.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_Fast_Binary_Quadratic_Programming_Solver_Based_on_Stochastic_Neighborhood_Sear\figure_6.jpg
+  Figure 6 caption: 'Test images for image bisection applications. From left to right:
+    Dog, Flower 1, Flower 2, and Baby.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_Fast_Binary_Quadratic_Programming_Solver_Based_on_Stochastic_Neighborhood_Sear\figure_7.jpg
+  Figure 7 caption: Image bisection results for large images using spectral, EPM and
+    proposed solver.
+  Figure 8 Link: articels_figures_by_rev_year\2020\A_Fast_Binary_Quadratic_Programming_Solver_Based_on_Stochastic_Neighborhood_Sear\figure_8.jpg
+  Figure 8 caption: Image bisection results for large images using spectral and proposed
+    methods.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Benson Shu Yan Lam
+  Name of the last author: Alan Wee-Chung Liew
+  Number of Figures: 8
+  Number of Tables: 6
+  Number of authors: 2
+  Paper title: A Fast Binary Quadratic Programming Solver Based on Stochastic Neighborhood
+    Search
+  Publication Date: 2020-07-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performances of Different Solvers for Uniform Random Matrices
+      (Time in Sec.)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 One-Dimensional Signal Restoration Using Different Solvers
+      (Time in Sec.)
+  Table 3 caption:
+    table_text: TABLE 3 Computational Time of Different Solvers (Time in Sec).
+  Table 4 caption:
+    table_text: TABLE 4 Data Bisection Using Different Solvers
+  Table 5 caption:
+    table_text: "TABLE 5 Image Bisection Results for Medium Size Images Using Different\
+      \ Solvers With \u03C3=8 255 2 \u03C3=82552"
+  Table 6 caption:
+    table_text: "TABLE 6 Image Bisection Results for Medium Size Images Using Different\
+      \ Solvers With \u03C3=8 255 2 \u03C3=82552"
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3010811
+- Affiliation of the first author: key laboratory of intelligent information processing
+    of chinese academy of sciences, institute of computing technology, cas, beijing,
+    china
+  Affiliation of the last author: key laboratory of intelligent information processing
+    of chinese academy of sciences, institute of computing technology, cas, beijing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_1.jpg
+  Figure 1 caption: Illustration of the basic idea of the proposed self-supervised
+    learning framework Twin-cycle Autoencoder (TAE). To learn facial action discriminative
+    features, TAE predicts the disentangled movements that change the facial actions
+    and head poses respectively. In addition, TAE ensures the quality of the discovered
+    movements by transforming the facial-action-changed and pose-changed faces back
+    to the source.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_10.jpg
+  Figure 10 caption: Visualization of the learned attention maps for images that are
+    randomly selected from (a) (b) Voxceleb, (c) (d) BP4D, (e) (f) DISFA, and (g)
+    (h) EmotioNet datasets. In each subfigure, the left most column shows the input
+    facial image. The next eight columns display the learned attention maps with digital
+    indexes. This figure is better viewed in color.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_2.jpg
+  Figure 2 caption: "The framework of Twin-cycle AutoEncoder (TAE). Given a source\
+    \ image I s and target image I t , TAE encodes their facial actions as embeddings\
+    \ \u03D5 s and \u03D5 t , and their poses as \u03C8 s and \u03C8 t through a region\
+    \ perceptive encoder (ref. the bottom-left sub-module, detailed in Fig. 3). \u03D5\
+    \ s and \u03D5 t are then decoded into the pixel displacements T A that represent\
+    \ the changes of facial actions between I s and I t . According to T A , the source\
+    \ image I s is then warped into T A ( I s ) where only the facial actions are\
+    \ changed. Similarly, \u03C8 s and \u03C8 t are decoded into the pose-induced\
+    \ displacements T p , according to which we obtain the pose-changed image T p\
+    \ ( I s ) . In target reconstruction, the integrated displacements are used to\
+    \ warp I s to I t . In the two cycles, the generated facial-action-changed face\
+    \ image T A ( I s ) and the pose-changed face image T p ( I s ) are warped back\
+    \ to the source face image, respectively. The region perceptive encoder consists\
+    \ of separated branches for facial action and pose feature extraction. The facial\
+    \ action branch learns multiple attention masks to perceive the informative facial\
+    \ regions (detailed in Section 3.2.1 and Fig. 3)."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_3.jpg
+  Figure 3 caption: The structure of the encoder in TAE. The facial action encoder
+    and the pose encoder share some convolutional blocks before having their specific
+    branches. The facial-action-branch learns K masks to extract features on local
+    regions. The figure is illustrated with K=8 as an example. Unlike the facial-action-branch,
+    the pose branch has only one way to extract global features. The solid arrow denotes
+    a convolution operation, while the dotted arrow denotes no operation on the input
+    feature map.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_4.jpg
+  Figure 4 caption: Detailed structure of the encoders and decoders in our experiments.
+    (a) is the encoder with facial action and pose branches. (b) shows the details
+    of the sub-branch in (a). (c) is the decoder. BN denotes batch normalization.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_5.jpg
+  Figure 5 caption: Retrieved images using the facial-action-related features and
+    pose-related features learned by TAE with and without attention mechanism.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_6.jpg
+  Figure 6 caption: Threshold-mAP curves of image retrieval using different AU descriptors.
+    (a) and (b) show the results on EmotioNet dataset. (c) and (d) show the results
+    on GFT dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_7.jpg
+  Figure 7 caption: MAE curves of image retrieval using different pose descriptors.
+    The lower MAE means the better performance. (a) shows the results on EmotioNet
+    dataset. (b) shows the results on GFT dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_8.jpg
+  Figure 8 caption: Histogram of the average length of displacements for AU and pose
+    displacements.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Learning_Representations_for_Facial_Actions_From_Unlabeled_Videos\figure_9.jpg
+  Figure 9 caption: Visualizations of the displacements and the generated face images.
+    (a) and (b) illustrates TAE without L1 and attention constraint. (c), (d) shows
+    TAE without attention mechanism. TAE is displayed in (e) and (f). For each pair
+    of facial images, the source is transformed to the AU-changed and pose-changed
+    face images through the AU displacements and pose displacements respectively.
+    The AU-changed face image has the same facial actions as the target and the same
+    pose as the source. The pose-changed face image has the same pose as the target
+    and the same AUs as the source. Better viewed in color.
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.88
+  Name of the first author: Yong Li
+  Name of the last author: Shiguang Shan
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Learning Representations for Facial Actions From Unlabeled Videos
+  Publication Date: 2020-07-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 F1 on BP4D Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 F1 on DISFA Dataset
+  Table 3 caption:
+    table_text: TABLE 3 F1 on GFT Dataset
+  Table 4 caption:
+    table_text: TABLE 4 F1 on EmotioNet Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3011063
+- Affiliation of the first author: computer vision laboratory (cvlab), ecole polytechnique
+    federale de lausanne, lausanne, switzerland
+  Affiliation of the last author: computer vision laboratory (cvlab), ecole polytechnique
+    federale de lausanne, lausanne, switzerland
+  Figure 1 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_1.jpg
+  Figure 1 caption: "Draping a sweater, a T-shirt, a dress and a pairs of jeans. Our\
+    \ method produces results as plausible as those of a PBS method, but runs 100\xD7\
+    \ faster."
+  Figure 10 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_10.jpg
+  Figure 10 caption: Comparison on the T-shirt. GarNet-Naive produces artifacts near
+    the shoulder while GarNet-Local, GarNet-Global and PBS yield similar results.
+  Figure 2 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_2.jpg
+  Figure 2 caption: 'Two versions of our GarNet. Both take as input a target body
+    and the garment mesh roughly aligned with the body pose by using [8]. GarNet-Global:
+    We fuse the global body features with the garment features both early and late.
+    GarNet-Local: In addition, we use a nearest neighbor approach to pooling local
+    body features and feed the result to the fusion network whose job is to combine
+    the body and garment features.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_3.jpg
+  Figure 3 caption: Garment branch of our network. The grey boxes and the numbers
+    in parenthesis denote network layers and their output channel dimensions. Red
+    and blue ones represent garment and global body features, respectively. The green
+    box is the mesh convolution subnetwork and depicted in more detail in Fig. 4.
+    STN stands for a Spatial Transformer Network used in PointNet [7]. MLP blocks
+    are shared by all N points.
+  Figure 4 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_4.jpg
+  Figure 4 caption: "Mesh convolution subnetwork. The residual block is repeated 6\
+    \ times. Dashed red rectangles indicate channel-wise concatenation. The N\xD7\
+    3 -dimensional tensors contain the 3D vertex locations of the input garment, which\
+    \ are passed at different stages via skip connections."
+  Figure 5 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_5.jpg
+  Figure 5 caption: K nearest neighbor pooling in Fig. 2b. We compute the K nearest
+    neighbor body vertices of each garment vertex and max-pool their local features.
+  Figure 6 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_6.jpg
+  Figure 6 caption: Interpenetration and Bending loss terms. (a) The interpenetration
+    term Lpen penalizes a garment vertex mathbf GjP for being on the wrong side of
+    the corresponding body point mathbf Bi . (b) The bending term Lbend penalizes
+    the distance between two neighbors of mathbf GjP to differ from that in the ground
+    truth.
+  Figure 7 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_7.jpg
+  Figure 7 caption: Visualizing different kinds of curvature. All of the metrics above
+    are normalized between 0 and 1.
+  Figure 8 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_8.jpg
+  Figure 8 caption: Neighborhood convention for the Gaussian and mean curvature.
+  Figure 9 Link: articels_figures_by_rev_year\2020\GarNet_Improving_Fast_and_Accurate_Static_D_Cloth_Draping_by_Curvature_Loss\figure_9.jpg
+  Figure 9 caption: Average precision curves for the vertex distance and the facet
+    normal angle error.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Erhan Gundogdu
+  Name of the last author: Pascal Fua
+  Number of Figures: 17
+  Number of Tables: 10
+  Number of authors: 7
+  Paper title: 'GarNet++: Improving Fast and Accurate Static 3D Cloth Draping by Curvature
+    Loss'
+  Publication Date: 2020-07-21 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Architecture Comparison: Average Distance in cm and Face
+      Normal Angle Error in Degrees Between the PBS and Predicted Vertices in Our
+      Dataset That Uses SMPL Body Models'
+  Table 10 caption:
+    table_text: TABLE 10 Quantitative Comparison Between GarNet-Local-RQ and GarNet-Local
+      in Our Dataset Curated From CAESAR Female Body Shapes
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Computation Time
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Between GarNet-Local and GarNet-Global-Params in
+      Our Dataset That Uses SMPL Body Models
+  Table 4 caption:
+    table_text: TABLE 4 Distance % and Angle Error on the Shirt Dataset of [11]
+  Table 5 caption:
+    table_text: TABLE 5 Ablation Study on the Dataset of [11] With GarNet-Local
+  Table 6 caption:
+    table_text: TABLE 6 Distance and Angle Errors for Different Neighborhood Combinations
+      in Our Dataset That Uses SMPL Body Models
+  Table 7 caption:
+    table_text: TABLE 7 Average Loss Values for RQ and Mean Curvature in Our Dataset
+      That Uses SMPL Body Models
+  Table 8 caption:
+    table_text: TABLE 8 Average Distance in cm and Face Normal Angle Difference in
+      Degrees Between the PBS and Predicted Vertices in Our Dataset That Uses SMPL
+      Body Models
+  Table 9 caption:
+    table_text: TABLE 9 Comparison Between the Proposed RQ-Based Curvature Loss, the
+      Discrete Mean Curvature Operator of Eq. (9), and the Uniformly Weighted Mean
+      Curvature Operator of Eq. (19) in Our T-shirt Dataset (SMPL Body Model)
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3010886

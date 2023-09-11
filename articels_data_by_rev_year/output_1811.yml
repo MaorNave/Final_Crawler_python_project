@@ -1,0 +1,888 @@
+- Affiliation of the first author: department of national laboratory of pattern recognition,
+    institute of automation, chinese academy of science, beijing, china
+  Affiliation of the last author: tusimple, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\You_Only_Search_Once_Single_Shot_Neural_Architecture_Search_via_Direct_Sparse_Op\figure_1.jpg
+  Figure 1 caption: 'Three mainstream methods of neural architecture search: (a) Evolution,
+    where a population of architectures is updated based on their fitness, e.g., performance
+    on the validation set. New individuals are produced by crossover and mutate operation.
+    Reinforcement learning, where an RNN controller is applied to sample architectures
+    and trained based on the performance of the architectures. (b) Reinforcement learning,
+    where an RNN controller is applied to sample architectures and optimized based
+    on the performance of the sampled architectures. (c) Gradient based method, where
+    all paths in hypenetwork are parameterized with architecture parameters, both
+    weights and architecture parameters are updated with gradients.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\You_Only_Search_Once_Single_Shot_Neural_Architecture_Search_via_Direct_Sparse_Op\figure_2.jpg
+  Figure 2 caption: We divide a network into S stages according to the size of feature
+    maps. A stage consists of B convolution blocks and ends up with a reduction block.
+    A block composed of M levels and every level contains N different operations.
+    Following [14], we adopt differnet stem structure for CIFAR and ImageNet.
+  Figure 3 Link: articels_figures_by_rev_year\2020\You_Only_Search_Once_Single_Shot_Neural_Architecture_Search_via_Direct_Sparse_Op\figure_3.jpg
+  Figure 3 caption: "The search space under mobile setting, where six operations are\
+    \ applied, namely, MBconv block with kernel sizes 3\xD73, 5\xD75, 7\xD77, expansion\
+    \ ratios with 3 and 6."
+  Figure 4 Link: articels_figures_by_rev_year\2020\You_Only_Search_Once_Single_Shot_Neural_Architecture_Search_via_Direct_Sparse_Op\figure_4.jpg
+  Figure 4 caption: The whole search space can be represented by a completely connected
+    DAG. Here node 0 and 3 are the input and output node, respectively. The dashed
+    line and dashed circle represent that the corresponding connections and nodes
+    are removed. For example, the initial output of the first node (2,1) in the second
+    level can be calculated by h (2,1) = O (5) ( h (0) + h (1,1) + h (1,2) ) , while
+    it becomes h (5) = O (5) ( h (2) + h (4) ) for the pruned sub-graph.
+  Figure 5 Link: articels_figures_by_rev_year\2020\You_Only_Search_Once_Single_Shot_Neural_Architecture_Search_via_Direct_Sparse_Op\figure_5.jpg
+  Figure 5 caption: "An example of search block, which has two levels with two operations:\
+    \ (a) We start with a completely connected block in which all connections, and\
+    \ all nodes are kept. (b) In the search process, we jointly optimize the weights\
+    \ of neural network and the structure parameters \u03BB (shown by the value on\
+    \ every connection) associated with each edge. (c) The final model after removing\
+    \ useless connections and operations."
+  Figure 6 Link: articels_figures_by_rev_year\2020\You_Only_Search_Once_Single_Shot_Neural_Architecture_Search_via_Direct_Sparse_Op\figure_6.jpg
+  Figure 6 caption: Block structures learned on different datasets. (a) The block
+    learned on CIFAR-10. (b) The block learned on ImageNet with the Adaptive Latency
+    technique. (c) The block learned on COCO. (d) The block learned on ImageNet without
+    the Adaptive Latency technique. (e) The block learned on CIFAR-10 with the Adaptive
+    MAC technique. (f) The block learned on CIFAR-10 with fewer number of levels (
+    M=2 ). (g) The block learned on CIFAR-10 with more number of levels ( M=5 ). (h)
+    The block learned on CIFAR-10 with more number of operations ( N=5 ).
+  Figure 7 Link: articels_figures_by_rev_year\2020\You_Only_Search_Once_Single_Shot_Neural_Architecture_Search_via_Direct_Sparse_Op\figure_7.jpg
+  Figure 7 caption: Network structure learned on the search space proposed by Proxyless
+    NAS. (a) Efficient GPU architecture obtained by DSO-NAS. (b) Efficient CPU architecture
+    obtained by DSO-NAS.
+  Figure 8 Link: articels_figures_by_rev_year\2020\You_Only_Search_Once_Single_Shot_Neural_Architecture_Search_via_Direct_Sparse_Op\figure_8.jpg
+  Figure 8 caption: Performance of adaptive FLOPs and adaptive MAC techniques. (a)
+    Error-FLOPs curve wo adaptive FLOPs technique. (b) Error-Parameters curve wo adaptive
+    FLOPs technique. (c) Error-MAC curve wo adaptive MAC technique.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.78
+  Name of the first author: Xinbang Zhang
+  Name of the last author: Chunhong Pan
+  Number of Figures: 8
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: 'You Only Search Once: Single Shot Neural Architecture Search via Direct
+    Sparse Optimization'
+  Publication Date: 2020-08-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison With State-of-the-Art NAS Methods on CIFAR-10
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison With State-of-the-Art Image Classifiers on ImageNet
+  Table 3 caption:
+    table_text: TABLE 3 Results of Transforming Our Method to Different Search Space
+  Table 4 caption:
+    table_text: TABLE 4 Comparison With State-of-the-Art Architecture on PASCAL VOC
+  Table 5 caption:
+    table_text: TABLE 5 Performance of Adaptive Latency Techniques
+  Table 6 caption:
+    table_text: TABLE 6 Influence of Different Pretrain Strategy on CIFAR-10 Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Influence of Different Split Training Strategy on CIFAR-10
+      Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Influence of Number of Levels M M on ImageNet
+  Table 9 caption:
+    table_text: TABLE 9 Influence of Number of Operations N N on ImageNet
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3020300
+- Affiliation of the first author: rapid-rich object search (rose) lab, nanyang technological
+    university, singapore, singapore
+  Affiliation of the last author: rapid-rich object search (rose) lab, nanyang technological
+    university, singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2020\GMFAD_Towards_Generalized_Visual_Recognition_via_Multilayer_Feature_Alignment_an\figure_1.jpg
+  Figure 1 caption: "Example images in \u201Cdog\u201D category collected from different\
+    \ datasets. As we can see, the data appearance can be diverse in terms of background,\
+    \ view, color, and even shape."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\GMFAD_Towards_Generalized_Visual_Recognition_via_Multilayer_Feature_Alignment_an\figure_2.jpg
+  Figure 2 caption: The framework of our proposed GMFAD which aims to learn discriminative
+    and disentangled feature representation in a multilayer perceptron manner. We
+    first conduct feature dimension reduction by learning a shareable shallow feature
+    representation through the proposed non-linear CORAL. We further learn a suitable
+    feature representation in deep layer by considering feature disentanglement.
+  Figure 3 Link: articels_figures_by_rev_year\2020\GMFAD_Towards_Generalized_Visual_Recognition_via_Multilayer_Feature_Alignment_an\figure_3.jpg
+  Figure 3 caption: "Parameter sensitivity analysis by varying (a) \u03BB 0 , (b)\
+    \ \u03BB 1 , (c) \u03BB 2 . Each curve denotes the performance by considering\
+    \ the domain shown in legend as target and the others as source domain."
+  Figure 4 Link: articels_figures_by_rev_year\2020\GMFAD_Towards_Generalized_Visual_Recognition_via_Multilayer_Feature_Alignment_an\figure_4.jpg
+  Figure 4 caption: "Parameter sensitivity analysis by varying (a) \u03BB 0 , (b)\
+    \ \u03BB 1 , (c) \u03BB 2 ."
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Haoliang Li
+  Name of the last author: Alex C. Kot
+  Number of Figures: 4
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: 'GMFAD: Towards Generalized Visual Recognition via Multilayer Feature
+    Alignment and Disentanglement'
+  Publication Date: 2020-09-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Accuracy Results (%) for Domain Generalization Task on Handwritten
+      Digit Recognition
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Accuracy Results (%) for Domain Generalization Task on Object
+      Recognition
+  Table 3 caption:
+    table_text: TABLE 3 Accuracy Results (%) for Domain Generalization Task on Action
+      Recognition
+  Table 4 caption:
+    table_text: TABLE 4 Accuracy Results (%) for Component Analysis in Domain Generalization
+  Table 5 caption:
+    table_text: TABLE 5 Accuracy Results (%) for Kernel Analysis in Domain Generalization
+  Table 6 caption:
+    table_text: TABLE 6 Accuracy Results (%) for Different Domain Alignment Components
+      for Domain Generalization Task
+  Table 7 caption:
+    table_text: TABLE 7 Accuracy Results (%) Based on Office-31 Dataset for Unsupervised
+      Domain Adaptation Based on ResNet
+  Table 8 caption:
+    table_text: TABLE 8 Accuracy Results (%) for Component Analysis for Domain Adaptation
+      Task
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3020554
+- Affiliation of the first author: mohamed bin zayed university of artificial intelligence,
+    abu dhabi, uae
+  Affiliation of the last author: "computer vision laboratory, eth z\xFCrich, z\xFC\
+    rich, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_1.jpg
+  Figure 1 caption: "Generic object counting with partial supervision. Example results\
+    \ are shown on the Visual Genome (top) and the COCO (bottom) datasets. Due to\
+    \ large number of object categories in the dataset (609 for Visual Genome and\
+    \ 80 for COCO), acquiring accurate count annotations for natural scenes is laborious\
+    \ and costly. We propose two settings to address this, where the first (LC) reduces\
+    \ the annotation cost due to multiple instances and the second (RLC) further reduces\
+    \ the annotation cost due to large numbers of object categories. While both frameworks\
+    \ reduce supervision by only requiring image-level lower-count annotations, the\
+    \ LC framework requires these annotations for all categories, whereas RLC only\
+    \ needs them for a subset (blue means the corresponding categories are not count-annotated\
+    \ during training of RLC framework). Our two approaches (LC and RLC) significantly\
+    \ reduce the annotation cost in comparison to the state-of-the-art instance-level\
+    \ (LCFCN [32]) and image-level (Glancing [7]) supervised methods. Here, the example\
+    \ counting results from two datasets show the generalizability of our frameworks\
+    \ to both object counts beyond the lower-count range ( >4 ) and to count-unannotated\
+    \ categories. Due to the absence of category-specific counts for some classes,\
+    \ we introduce an additional category-agnostic total count measure in our RLC\
+    \ framework to facilitate generalization across categories and provide accurate\
+    \ category-agnostic total count (TC) predictions. (correctincorrectunavailable\
+    \ predictions are marked with \u2713 \xD7? respectively)."
+  Figure 10 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_10.jpg
+  Figure 10 caption: Instance segmentation examples of PRM [75] and our approach.
+    Our approach accurately delineates multiple spatially adjacent object instances
+    of the horse and cow categories.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_2.jpg
+  Figure 2 caption: "Examples showing the category-specific density maps, generated\
+    \ by our LC framework, and their usability for improving image-level supervised\
+    \ instance segmentation. We show instance segmentation results using the PRM method\
+    \ [75] (b) and our approach (c), on PASCAL VOC 2012 images. Top row: The PRM approach\
+    \ [75] fails to delineate two spatially adjacent sheep category instances. Bottom\
+    \ row: Single person parts are predicted as multiple persons along with inaccurate\
+    \ mask separation results in over-prediction (7 instead of 5) by the PRM method\
+    \ [75]. The per-category density maps (d) obtained in the lower-count supervised\
+    \ (LC) setting provides the spatial distribution of object count; hence the accumulation\
+    \ of the density map over a local spatial region generally indicates the object\
+    \ count in that region. This property is used to penalize the instance mask predictions\
+    \ containing multiple object instances (object count \u22652 ) or part of objects\
+    \ (object count \u22480 ), and hence to improve weakly supervised instance segmentation\
+    \ (c). The density map accumulation for each predicted mask is shown inside the\
+    \ contour, drawn for clarity. In the top row, the density maps for the sheep and\
+    \ dog categories are overlaid."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_3.jpg
+  Figure 3 caption: Example category-specific density maps produced by our LC and
+    RLC frameworks for horse, person, clock and zebra categories, respectively, on
+    images from COCO dataset. Despite being trained using image-level lower-count
+    supervision, the spatial distributions of objects are preserved in both the LC
+    and RLC density maps. Note that, in the case of our RLC framework, only category-level
+    annotations (no lower-count annotations) were available for the clock and zebra
+    categories.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_4.jpg
+  Figure 4 caption: Overview of our LC architecture with image classification and
+    density branches which are trained jointly using lower-count (LC) supervision.
+    The image classification branch predicts the presence or absence of objects. This
+    branch is used to generate a spatial mask for training the category-specific density
+    branch. The density branch has two terms (spatial and count) in the loss function
+    and produces a category-specific density map to predict the category-specific
+    object count and preserves the spatial distribution of objects.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_5.jpg
+  Figure 5 caption: "Overview of our RLC architecture, which comprises an image classification\
+    \ branch and a density branch. The image classification branch has an identical\
+    \ structure as the LC architecture, and is trained on all categories ( A\u222A\
+    B ) using the class labels indicating the presence or absence of the objects.\
+    \ The density branch has two sub-branches: a category-specific and a category-independent\
+    \ density sub-branch. The category-specific sub-branch adapts the convolution\
+    \ weights from the image classifier branch using a weight modulation layer and\
+    \ then generates a category-specific map, which is multiplied with a spatial attention\
+    \ map to obtain the category-specific density map ( D c ) and category-specific\
+    \ counts. Training this branch updates the weight modulation layer, and only categories\
+    \ with known counts (set A ) are used for the training. The convolution operator\
+    \ using adapted convolution weights is shown in red color. The category-independent\
+    \ density sub-branch predicts the total counts of all objects."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_6.jpg
+  Figure 6 caption: 'Progressive improvement in density map quality with the incremental
+    introduction of spatial and ranking loss terms in our LC framework. In both cases
+    (top row: person and bottom row: bicycle), our overall loss function integrating
+    all three terms provides the best density maps. The category-specific object count
+    is accurately predicted (top row: 5 persons and bottom row: 4 bicycles) by accumulating
+    the respective density map.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_7.jpg
+  Figure 7 caption: Impact of lower-count range on the counting performance, evaluated
+    on the COCO count-test set. The lower-count range is defined from the count 1
+    till tildet-1 . We vary the value of tildet and plot mRMSE w.r.t. the ground-truth
+    counts. As can be observed, very small value such as tildet=3 (cyan) leads to
+    considerable reduction in accuracy, compared to tildet=5 (red). At larger counts
+    between 8 to 12 ( x -axis), tildet=4 (black) leads to a slight reduction in performance
+    compared to tildet=5 . Nearly the same performance is obtained for tildet=5 ,
+    tildet=6 and tildet=7 , indicating that the optimum balance between the annotation
+    cost and counting performance is achieved at tildet=5 . We also trained the proposed
+    model using image-level count supervision (IC), by removing the ranking loss term
+    from the proposed loss function, shown as tildet=infty (green). Although tildet=infty
+    gives the best performance, it requires higher supervision (more costly) to annotate
+    the counts. The figure also shows that at different ground-truth counts, the proposed
+    method outperforms methods using IC (glancing [7]) and PL (LCFCN [32]) supervision.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_8.jpg
+  Figure 8 caption: Annotation speed vs number of per-category instances in an image.
+    The cost of the proposed LC annotation is favorable at larger count ranges, compared
+    to point, and count annotations.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Towards_Partial_Supervision_for_Generic_Object_Counting_in_Natural_Scenes\figure_9.jpg
+  Figure 9 caption: Object counting examples on the COCO and Visual Genome datasets.
+    The ground-truth is shown in green, while the predictions by glancing [7], LCFCN
+    [32], our LC framework, and our RLC framework, are shown sequentially inside the
+    parentheses. The examples show that our LC and RLC frameworks accurately predict
+    counts for diverse categories (animals to food items), and even beyond the lower-count
+    range. Although the count-annotation of object categories indicated with blue
+    are not used for training the RLC framework, their counts are predicted accurately.
+    Finally, the category-independent total count (TC) predicted by our RLC framework
+    is shown separately, inside parentheses. Best viewed in zoom.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Hisham Cholakkal
+  Name of the last author: Luc Van Gool
+  Number of Figures: 10
+  Number of Tables: 14
+  Number of authors: 6
+  Paper title: Towards Partial Supervision for Generic Object Counting in Natural
+    Scenes
+  Publication Date: 2020-09-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notations Used in Our Partially Supervised (LC and RLC) Frameworks
+  Table 10 caption:
+    table_text: TABLE 10 State-of-the-Art Counting Performance Comparison on the Pascal
+      VOC 2007 Count-Test
+  Table 2 caption:
+    table_text: TABLE 2 Counting Performance on the Pascal VOC 2007 Count-Test Set
+      Using Our Approach and Two Baselines
+  Table 3 caption:
+    table_text: 'TABLE 3 Top: Progressive Integration of Different Terms in the Loss
+      Function and Their Impact on the Final Counting Performance of Our LC Framework
+      on the PASCAL VOC Count-Test Set'
+  Table 4 caption:
+    table_text: TABLE 4 Density Map Evaluation on Person Category of PASCAL VOC 2007
+      Count-Test Set, in Terms of Grid Average Mean Absolute Error (GAME) and Mean
+      Absolute Error [MAE or GAME (0)] Metrics
+  Table 5 caption:
+    table_text: TABLE 5 Evaluation of the Hard Spatial Guidance on the PASCAL VOC
+      Count-Test
+  Table 6 caption:
+    table_text: TABLE 6 Evaluation of RLC Framework With Different KnownUnknown Count
+      Splits, on the COCO Count-Test Set
+  Table 7 caption:
+    table_text: TABLE 7 Study on the Structure of the Weight Modulation Layer on the
+      COCO Count-Test Set by Varying the Number of Fully Connected Layers, Size of
+      Hidden Layers, and Activation Functions
+  Table 8 caption:
+    table_text: TABLE 8 State-of-the-Art Counting Performance Comparison on the COCO
+      Count-Test Set
+  Table 9 caption:
+    table_text: TABLE 9 Results on Visual Genome Dataset for All Classes
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3021025
+- Affiliation of the first author: berlin institute of technology (tu berlin), berlin,
+    germany
+  Affiliation of the last author: berlin institute of technology (tu berlin), berlin,
+    germany
+  Figure 1 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_1.jpg
+  Figure 1 caption: Proposed BiLRP method for explaining similarity. Produced explanations
+    are in terms of pairs of input features.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_10.jpg
+  Figure 10 caption: Pairs of illustrations from the Sphaera corpus and BiLRP explanation
+    for the improved similarity model. Similarity captures rotating elements such
+    as letters.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_2.jpg
+  Figure 2 caption: Diagram of the map used by DTD to derive BiLRP propagation rules.
+    The map connects activations at some layer to relevance in the layer above.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_3.jpg
+  Figure 3 caption: 'Illustration of our approach to compute BiLRP explanations: A.
+    Input examples are mapped by the neural network up to the layer at which the similarity
+    model is built. B. LRP is applied to all individual activations in this layer,
+    and the resulting array of explanations is recombined into a single explanation
+    of predicted similarity.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_4.jpg
+  Figure 4 caption: Benchmark comparison on a toy example where we have ground-truth
+    explanation of similarity. BiLRP performs better than all baselines, as measured
+    by the average cosine similarity to the ground truth.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_5.jpg
+  Figure 5 caption: "Effect of the BiLRP parameter \u03B3 on the average cosine similarity\
+    \ between the explanations and the ground truth."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_6.jpg
+  Figure 6 caption: 'Application of BiLRP to a dot-product similarity model built
+    on VGG-16 features at layer 31. Top: BiLRP explanations on different pairs of
+    input images from the Pascal VOC 2007 dataset. Red and blue color indicate positive
+    and negative contributions to the similarity. (Details of the rendering procedure
+    are given in Appendix E of the Supplement, available online.) Bottom: Effect of
+    the BiLRP parameter gamma on the explanation.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_7.jpg
+  Figure 7 caption: Application of BiLRP to study how VGG-16 similarity transfers
+    to various datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_8.jpg
+  Figure 8 caption: "Explanation of measured invariance at layer 31. Left: Similarity\
+    \ matrix associated to a selection of video clips. The diagonal band outlined\
+    \ in black contains the pairs of examples in \u27E8\u22C5 \u27E9 local . Right:\
+    \ BiLRP explanations for selected pairs from the diagonal band."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Building_and_Interpreting_Deep_Similarity_Models\figure_9.jpg
+  Figure 9 caption: Pairs of illustrations from the Sphaera corpus, explained with
+    BiLRP. The high similarity originates mainly from matching fixed features in the
+    image rather than capturing the rotating elements.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Oliver Eberle
+  Name of the last author: "Gr\xE9goire Montavon"
+  Number of Figures: 11
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: Building and Interpreting Deep Similarity Models
+  Publication Date: 2020-09-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Accuracy of a SVM Built on Different Layers of the VGG-16
+      Network and for Different Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Invariance Measured by Eq. (7) at Various Layers of the VGG-16
+      Network on the UCF Sports Action Dataset
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3020738
+- Affiliation of the first author: department of electrical and electronic engineering,
+    university of hong kong, hong kong
+  Affiliation of the last author: tencent x-lab, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_1.jpg
+  Figure 1 caption: Geometric relationship of depth and surface normal in 3D. The
+    point cloud is derived by casting depth values into 3D space via the pinhole camera
+    model. Surface normals can be estimated from a 3D point cloud by solving a system
+    of linear equations; depth is constrained by the local plane determined by neighborhood
+    points and corresponding surface normals.
+  Figure 10 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_10.jpg
+  Figure 10 caption: "Visual comparison of 3D point clouds on NYUD-V2 dataset. \u201C\
+    FCRN [10] + GeoNet++\u201D indicates that we utilize FCRN [10] as the depth backbone\
+    \ in our system. \u201CDORN [18] + GeoNet++\u201D indicates that DORN [18] serves\
+    \ as the depth backbone for our system."
+  Figure 2 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_2.jpg
+  Figure 2 caption: Visual illustrations of depthnormal maps and the reconstructed
+    3D point cloud. (a) is the input image. (b) is the depth map from a state-of-the-art
+    approach DORN [18]. (c) is the surface normal derived from (b). (d) is the corresponding
+    point cloud visualization of (b). (e) shows the ground-truth point cloud. (f)
+    is the depth map from our approach. (g) shows the surface normal derived from
+    (f). (h) shows the corresponding point cloud visulization of (f). The normal maps
+    (DORN [18] and Ours) are computed from the corresponding point cloud shown in
+    (d) and (h) respectively using least square fitting provided in [1] followed by
+    TV-denoising.
+  Figure 3 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_3.jpg
+  Figure 3 caption: Overall structure of GeoNet++. GeoNet++ takes as inputs initial
+    depth estimation (a), initial normal estimation (b), and input image (c). The
+    initial depth and surface normal are first refined with depth-to-normal and normal-to-depth
+    modules. Then, depth (normal) ensemble module is adopted to combine results from
+    initial estimation. It is followed by the edge refinement module, which reduces
+    noise and refines boundaries. GeoNet++ can be applied for multiple times by iteratively
+    taking the refined normal and depth as inputs.
+  Figure 4 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_4.jpg
+  Figure 4 caption: "GeoNet++ components. (a) The depth-to-normal module (L) first\
+    \ estimates \u201CRough Normal\u201D from the \u201CInitial Depth\u201D with least\
+    \ square fitting; normals are then refined by the residual module producing \u201C\
+    Geo-refined Normal\u201D; a normal ensemble network (R) is utilized to fuse the\
+    \ initial and Geo-refined normals generating \u201CGeo-EN-refined normal\u201D\
+    . (b) The normal-to-depth module (L) takes the \u201CInitial Depth\u201D and \u201C\
+    Initial Normal\u201D as inputs; the normal map helps propagate the initial depth\
+    \ prediction to neighbors; depth estimates are aggregated by the kernel regression\
+    \ module producing \u201CGeo-refined Depth\u201D. The depth ensemble module (R)\
+    \ taking \u201CGeo-refined Depth\u201D and \u201CInitial Depth\u201D as inputs\
+    \ further improves prediction generating \u201CGeo-EN-refined Depth\u201D. (c)\
+    \ The edge-aware refinement module first constructs direction-aware propagation\
+    \ \u201CWeight Maps\u201D by combining low-level edges with \u201CResidual Maps\u201D\
+    ; the recursive propagator utilizes the learned weight maps to refine \u201CGeo-EN-refined\
+    \ Depth\u201D producing \u201CFinal Depth\u201D; (d) the edge-aware refinement\
+    \ module for surface normal. Zoom in to see clearer."
+  Figure 5 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_5.jpg
+  Figure 5 caption: Our end-to-end trainable full system with backbone architecture
+    and GeoNet++.
+  Figure 6 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_6.jpg
+  Figure 6 caption: Visual comparisons of surface normal predictions using VGG-16
+    as the backbone architecture.
+  Figure 7 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_7.jpg
+  Figure 7 caption: The first row shows the depth prediction results with the corresponding
+    root mean square error listed below. The second row shows the corresponding 3D
+    point clouds. The Third row shows the estimated surface normal from the corresponding
+    point clouds.
+  Figure 8 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_8.jpg
+  Figure 8 caption: "Visual illustrations on depth prediction. \u201CFCRN [10] + Ours\u201D\
+    \ indicates that we utilize FCRN [10] as the depth backbone in our system. \u201C\
+    DORN [10] + Ours\u201D indicates that DORN [10] is utilized as the depth backbone\
+    \ in our system. Please zoom in to see more details."
+  Figure 9 Link: articels_figures_by_rev_year\2020\GeoNet_Iterative_Geometric_Neural_Network_with_EdgeAware_Refinement_for_Joint_De\figure_9.jpg
+  Figure 9 caption: "\u201CDORN [18] + GeoNet++\u201D represents that we utilize DORN\
+    \ [18] to produce the initial depth. The first row shows the depth prediction\
+    \ results. The second row (column 1) shows normal map directly predicted by our\
+    \ approach for reference. The second row (columns 2-3) shows the corresponding\
+    \ normal directly estimated from the generated depth. The third row (column 1)\
+    \ shows the depth ground truth from LIDAR (invalid fields are filled with method\
+    \ [45] for visualization). The third row (columns 2-3) shows the corresponding\
+    \ point clouds."
+  First author gender probability: 0.98
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 0.91
+  Name of the first author: Xiaojuan Qi
+  Name of the last author: Jiaya Jia
+  Number of Figures: 13
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: 'GeoNet++: Iterative Geometric Neural Network with Edge-Aware Refinement
+    for Joint Depth and Surface Normal Estimation'
+  Publication Date: 2020-09-01 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance of Surface Normal Prediction on NYUD-V2 Test Set
+  Table 10 caption:
+    table_text: TABLE 10 Performance Evaluation of Depth-to-Normal on NYUD-V2 Test
+      Set
+  Table 2 caption:
+    table_text: TABLE 2 Performance of Depth Prediction on NYUD-V2 Test Set
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparisons of Depth Predictions on KITTI Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Performance of Surface Normal Prediction on KITTI Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Comparisons on NYUD-V2 Dataset in Terms of 3D
+      Geometric Metric (3DGM)
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Comparisons on KITTI Dataset in Terms of 3DGM
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Studies on Surface Normal Estimation on NYUD-V2 Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Ablation Studies on Depth Prediction on NYUD-V2 Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Ablation Studies Regarding 3DGM on NYUD-V2 Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3020800
+- Affiliation of the first author: tsinghua university, beijing, china
+  Affiliation of the last author: tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_1.jpg
+  Figure 1 caption: Qualitative illustration of our online reconstruction result for
+    a rectangle room. (a) Full reconstruction result with both geometry and texture.
+    (b) Comparisons of appearance between our online texture mapping (top) and the
+    fused color in existing TSDF based schemes (bottom). (c) Phong shading representation
+    of scene geometry.
+  Figure 10 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_10.jpg
+  Figure 10 caption: Illustration of human body reconstruction for standing sequence.
+    (a) ElasticFusion [3], (b) FlashFusion [5], (c) our online texturing scheme, (d)
+    offline scheme [23].
+  Figure 2 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_2.jpg
+  Figure 2 caption: Pipeline of our proposed approach. It takes the RGB image and
+    depth map as inputs, and adopts a keyframe strategy for map organization. Each
+    keyframe goes through the procedures of loop detection and global pose optimization
+    for globally consistent pose estimation. Both keyframes and local frames are fused
+    using TSDF strategy for geometric reconstruction. View selection and color adjustment
+    are applied for online texture optimization of the reconstructed 3D model. The
+    final output is a globally consistent 3D model with high-quality texture.
+  Figure 3 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_3.jpg
+  Figure 3 caption: The computation time required for different solvers.
+  Figure 4 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_4.jpg
+  Figure 4 caption: Illustrations of our optimization procedure. (a) An undirected
+    graph is built on valid chunks. The edges between adjacent chunks are determined
+    by mesh continuity. (b) In a spanning tree, the minimal edges of the graph are
+    cut and replaced by links with auxiliary variables.
+  Figure 5 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_5.jpg
+  Figure 5 caption: Illustration of reference-based color adjustment. (a) Raw texture
+    with inconsistent appearance. (b) Blended color field as a reference. (c) Consistent
+    appearance after color adjustment.
+  Figure 6 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_6.jpg
+  Figure 6 caption: Computation time of color adjustment under full set versus sparse
+    set of samples on copyroom sequence. Full set takes about doubled computation
+    time than sparse set.
+  Figure 7 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_7.jpg
+  Figure 7 caption: Performance of color adjustment method using sparse set and dense
+    set of color samples. (a) original texture, (b) adjusted texture using sparse
+    set, (c) adjusted texture using dense set.
+  Figure 8 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_8.jpg
+  Figure 8 caption: Qualitative comparisons of FlashFusion [5] (top), our online texturing
+    (middle) and offline texturing [11] (bottom). The sequences (a,b) from [44], (c)
+    from [46], (d) from BundleFusion [4], (e,f) real-world scenes with non-planar
+    objects. The local contents highlighted in the red bounding boxes are zoomed in
+    for better visualization.
+  Figure 9 Link: articels_figures_by_rev_year\2020\RealTime_Globally_Consistent_Dense_D_Reconstruction_With_Online_Texturing\figure_9.jpg
+  Figure 9 caption: The results of single object reconstruction for pillow, toy and
+    teddy sequences. (a,e,i) ElasticFusion [3], (b,f,j) FlashFusion [5], (c,g,k) our
+    online texturing scheme, and (d,h,l) offline texturing scheme [23].
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.95
+  Name of the first author: Lei Han
+  Name of the last author: Lu Fang
+  Number of Figures: 16
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Real-Time Globally Consistent Dense 3D Reconstruction With Online Texturing
+  Publication Date: 2020-09-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Denotations of Our Data Elements
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 SSIM Evaluation on Synthetic and Real-World Data, Where the
+      Offline Scheme [11] Serves as the Reference
+  Table 3 caption:
+    table_text: TABLE 3 Efficiency Evaluation on Various Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Efficiency Comparison on Public Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Estimation of Memory Storage (MB) Measured by Chunk Capacity
+      Times Chunk Number
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3021023
+- Affiliation of the first author: knowledge technology group, university of hamburg,
+    hamburg, germany
+  Affiliation of the last author: knowledge technology group, university of hamburg,
+    hamburg, germany
+  Figure 1 Link: articels_figures_by_rev_year\2020\Semantic_Object_Accuracy_for_Generative_TexttoImage_Synthesis\figure_1.jpg
+  Figure 1 caption: Overview of our model architecture called OP-GAN. The top row
+    shows a high-level summary of our architecture, while the bottom two rows show
+    details of the individual generators and discriminators.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Semantic_Object_Accuracy_for_Generative_TexttoImage_Synthesis\figure_2.jpg
+  Figure 2 caption: Examples when IS fails for COCO images. The top row shows images
+    for which the Inception-Net has very high entropy in its output layer, possibly
+    because the images contain more than one object and are often not centered. The
+    second row shows images containing different objects and scenes which were nonetheless
+    all assigned to the same class by the Inception-Net, thereby negatively affecting
+    the overall predicted diversity in the images.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Semantic_Object_Accuracy_for_Generative_TexttoImage_Synthesis\figure_3.jpg
+  Figure 3 caption: Examples when R-precision fails for COCO images. The top row shows
+    images from the COCO data set. The middle row shows the correct caption and the
+    bottom row gives examples for characteristics of captions that are rated as being
+    more similar than the original caption.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Semantic_Object_Accuracy_for_Generative_TexttoImage_Synthesis\figure_4.jpg
+  Figure 4 caption: Comparison of images generated by different variations of our
+    models.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Semantic_Object_Accuracy_for_Generative_TexttoImage_Synthesis\figure_5.jpg
+  Figure 5 caption: 'Comparison of SOA scores: SOA per class with degree of a bin
+    reflecting relative frequency of that class.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\Semantic_Object_Accuracy_for_Generative_TexttoImage_Synthesis\figure_6.jpg
+  Figure 6 caption: Generated images and objects recognized by the pre-trained object
+    detector (YOLOv3) which was used to calculate the SOA scores. The results highlight
+    that, like most other CNN based object detectors, YOLOv3 focuses much more on
+    texture and less on actual shapes.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Semantic_Object_Accuracy_for_Generative_TexttoImage_Synthesis\figure_7.jpg
+  Figure 7 caption: Comparison of images generated by our model (OP-GAN) with OPs
+    switched on and off.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Semantic_Object_Accuracy_for_Generative_TexttoImage_Synthesis\figure_8.jpg
+  Figure 8 caption: Comparison of images generated by our model (OP-GAN) with images
+    generated by other current models.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tobias Hinz
+  Name of the last author: Stefan Wermter
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Semantic Object Accuracy for Generative Text-to-Image Synthesis
+  Publication Date: 2020-09-02 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Inception Score (IS), Fr\xE9chet Inception Distance (FID),\
+      \ R-Precision, Caption Generation With CIDEr, and Semantic Object Accuracy on\
+      \ Class (SOA-C) and Image Average (SOA-I) on the MS-COCO Data Set"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Recall Values for the Different Models
+  Table 3 caption:
+    table_text: TABLE 3 Human Evaluation Results (Ratio of 1st by Human Ranking) of
+      Five Models on the MS-COCO Data Set Given a Caption
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3021209
+- Affiliation of the first author: data61-csiro, canberra, act, australia
+  Affiliation of the last author: csiro, canberra, act, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_1.jpg
+  Figure 1 caption: "Visual Comparisons. Sample results on URBAN100 with Bicubic (BI)\
+    \ degradation for 4\xD7 on \u201Cimg074\u201D and for 8\xD7 on \u201Cimg040\u201D\
+    . Our method recovers the structures correctly with less distortion and more faithful\
+    \ to the ground-truth image."
+  Figure 10 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_10.jpg
+  Figure 10 caption: Noisy visual comparison on Llama. Textures on the fur, and on
+    rocks in the background are much better reconstructed in our result as compared
+    to the conventional BM3D-SR and BM3D-SRNI.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_2.jpg
+  Figure 2 caption: The detailed network architecture of the proposed Network. The
+    top figure shows the overall architecture of our proposed network with cascading
+    residual on the residual architecture i.e., a long skip connection, medium skip
+    connections, and cascading structures. The bottom figure presents the backbone
+    of our network i.e., Dense Residual Laplacian Module (DRLM).
+  Figure 3 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_3.jpg
+  Figure 3 caption: Laplacian attention. Our model consists of pyramid-level attention
+    to model the features non-linearly. The Laplacian attention weights the residual
+    features at different sub-frequency-bands.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_4.jpg
+  Figure 4 caption: "Parameters versus performance. Comparisons are presented on the\
+    \ MANGA109 [41] for 4\xD7 super-resolution."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_5.jpg
+  Figure 5 caption: "Performance versus Time. Comparisons are presented on the URBAN100\
+    \ [43] for 4\xD7 super-resolution. Our proposed method strides a balance between\
+    \ performance and computation time."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_6.jpg
+  Figure 6 caption: "Visual comparison for 4\xD7. Super-resolution comparison on sample\
+    \ images with sharp edges and texture, taken from URBAN100 [43] and MANGA109 [41]\
+    \ for the scale of 4\xD7. The sharpness of the edges on the objects and textures\
+    \ restored by our method is the best."
+  Figure 7 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_7.jpg
+  Figure 7 caption: "Visual comparison for 8\xD7. Comparisons on images with fine\
+    \ details for a high upsampling factor of 8\xD7 on URBAN100 [43] and MANGA109\
+    \ [41]. The best results are in bold."
+  Figure 8 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_8.jpg
+  Figure 8 caption: "Blur-Downscale (BD) degradation. Comparison on sample images\
+    \ with sharp edges and texture, taken from URBAN100 and SET14 datasets for the\
+    \ scale of 3\xD7. The sharpness of the edges on the objects and textures restored\
+    \ by our method is the best."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Densely_Residual_Laplacian_SuperResolution\figure_9.jpg
+  Figure 9 caption: Noisy SR visual Comparison on BSD100. Textures on the birds are
+    much better reconstructed, and the noise removed by our method as compared to
+    the IRCNN [19] and RCAN [6] for sigma =10 .
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Saeed Anwar
+  Name of the last author: Nick Barnes
+  Number of Figures: 13
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Densely Residual Laplacian Super-Resolution
+  Publication Date: 2020-09-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Contribution of Different Components
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Evaluation of Competing Methods
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Results With Blur-Down Degradation
+  Table 4 caption:
+    table_text: TABLE 4 Objection Recognition
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3021088
+- Affiliation of the first author: "dep. de llenguatges i sistemes inform\xE0tics,\
+    \ universitat dalacant, alicante, spain"
+  Affiliation of the last author: "dep. de llenguatges i sistemes inform\xE0tics,\
+    \ universitat dalacant, alicante, spain"
+  Figure 1 Link: articels_figures_by_rev_year\2020\FuzzyMatch_Repair_Guided_by_Quality_Estimation\figure_1.jpg
+  Figure 1 caption: "Example illustrating how the list of repair operators is built.\
+    \ The segment s \u2032 =Bill found out about the fraud is to be translated into\
+    \ Spanish with the help of the TU (s,t)=(Gina found out about the news, se enter\
+    \ o \xB4 de las noticias) . Unmatched (unaligned) words in s \u2032 are Bill and\
+    \ fraud; unmatched (unaligned) words in s are Gina and news. The string-positioned\
+    \ sub-segment pairs (\u03C3, \u03C3 \u2032 ) shown are those up to length 3 that\
+    \ contain at least an unmatched word. Their translations (\u03BC, \u03BC \u2032\
+    \ ) into Spanish are also provided. In this example, we assume that every \u03C3\
+    \ and \u03C3 \u2032 has a single translation, that is, that M and M \u2032 are\
+    \ singletons."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\FuzzyMatch_Repair_Guided_by_Quality_Estimation\figure_2.jpg
+  Figure 2 caption: "Learning curve for training ERT models for English\u2013Spanish\
+    \ (((a), (b)) and for all language pairs together ((c), (d)) when using non-filtered\
+    \ ((a), (c)) and filtered ((b), (d)) corpora. The solid line is the learning curve\
+    \ computed over the training corpus, whereas the dashed line corresponds to the\
+    \ cross-validation learning curve."
+  Figure 3 Link: articels_figures_by_rev_year\2020\FuzzyMatch_Repair_Guided_by_Quality_Estimation\figure_3.jpg
+  Figure 3 caption: Gini importance for the top 12 features computed over ERT regressors
+    trained for all language pairs with a 60 percent FMT and on filtered and non-filtered
+    corpora (ordered according to the Gini importance on non-filtered corpora).
+  Figure 4 Link: articels_figures_by_rev_year\2020\FuzzyMatch_Repair_Guided_by_Quality_Estimation\figure_4.jpg
+  Figure 4 caption: For en-es, ratio of fuzzy-match repair segments produced to those
+    that would be produced in the worst case.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: John E. Ortega
+  Name of the last author: "Felipe S\xE1nchez-Mart\xEDnez"
+  Number of Figures: 4
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Fuzzy-Match Repair Guided by Quality Estimation
+  Publication Date: 2020-09-02 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 For Each Fuzzy-Match Score Threshold (FMT; \u03D5 \u03D5\
+      ) and Language Pair, Number of Segments to be Translated ( N s \u2032 Ns) and\
+      \ Average Number of Candidate Fuzzy-Match Repaired Segments Per Segment to be\
+      \ Translated ( N t \u2243 Nt\u2243) in the Training, Development and Test Sets"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 For the Training Set, Number of Samples for the Different
+      Fuzzy-Match-Score Thresholds (FMT) Used in the Experiments
+  Table 3 caption:
+    table_text: "TABLE 3 For the Non-Filtered and Filtered Corpora, Error Rate (%)\
+      \ for the Target Segment t t in the TU (s,t) (s,t) Being Repaired (TM), for\
+      \ the Translation Produced by the MT System for the Whole Source Segment s \u2032\
+      \ s (MT) and for the Best Possible Fuzzy-Match Repaired Segment t \u22C6 t\u2605\
+      \ (Oracle)"
+  Table 4 caption:
+    table_text: TABLE 4 For Both the Non-Filtered and Filtered Corpora, Error Rate
+      (%) for the Target Segment in the TU Being Repaired (TM), for the Fuzzy-Match
+      Repaired Segment With the Lowest Predicted Error Rate (ERT) and for the Best
+      Possible One (Oracle)
+  Table 5 caption:
+    table_text: TABLE 5 Error Rate for the Target Segment in the TU Being Repaired
+      (MT), for the Fuzzy-Match Repaired Segment With the Lowest Predicted Error Rate
+      (ERT) and for the Best Possible One (Oracle)
+  Table 6 caption:
+    table_text: TABLE 6 Error Rate for the Target Segment in the TU Being Repaired
+      (MT), for the Fuzzy-Match Repaired Segment With the Lowest Predicted Error Rate
+      (ERT) and for the Best Possible One (Oracle)
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3021361
+- Affiliation of the first author: department of computer science and software engineering,
+    the university of western australia, crawley, australia
+  Affiliation of the last author: department of intelligence science and technology,
+    graduate school of informatics, kyoto university, kyoto, japan
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.8
+  Name of the first author: Mohammed Bennamoun
+  Name of the last author: Ko Nishino
+  Number of Figures: Not Available
+  Number of Tables: 0
+  Number of authors: 5
+  Paper title: "Guest Editors\u2019 Introduction to the Special Issue on RGB-D Vision:\
+    \ Methods and Applications"
+  Publication Date: 2020-09-03 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2976227

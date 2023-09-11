@@ -1,0 +1,962 @@
+- Affiliation of the first author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Affiliation of the last author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_1.jpg
+  Figure 1 caption: Evaluation of the motion priors on 3D motion capture data. The
+    least kinetic energy prior and least force prior performs similarly and both estimate
+    the time offset between two noisy sequences obtained by uniformly sampling a 3D
+    trajectory from different starting times. The least action prior gives biased
+    results even for the no-noise case.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_10.jpg
+  Figure 10 caption: Dance scene. The 3D trajectories are estimated using ten 15fps
+    cameras. Noticeably, the trajectories generated from frame accurate alignment
+    and triangulation are fewer, shorter, and have lower temporal resolution than
+    those reconstructed from motion prior based approaches.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_2.jpg
+  Figure 2 caption: Comparison of the sequencing expressiveness between the least
+    kinetic energy prior and the least force prior for different cumulative frame
+    rates.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_3.jpg
+  Figure 3 caption: Evaluation of the motion priors on the Motion Capture database
+    for simultaneous 3D reconstruction and sub-frame temporal alignment. (a) Spatially,
+    the trajectories estimated using the motion prior achieves higher accuracy than
+    generic B-spline trajectories basis. Frame level alignment geometric triangulation
+    spreads the error to all cameras and estimates less accurate 3D trajectories.
+    (b) Temporally, our motion prior based method estimates the time offset between
+    cameras with sub-frame accuracy.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_4.jpg
+  Figure 4 caption: The effect of the spatiotemporal bundle adjustment on human body
+    pose estimation on the CMU portion of AMASS dataset [27] using (a) the body pose
+    parameters and (b) the reprojection error of the body joints as metrics. The spatiotemporal
+    calibration parameters leads to significantly lower body pose estimation errors
+    than the synchronized captured assumption. The difference between using only the
+    sub-frame temporal offsets and full spatiotemporal calibration parameters are
+    less noticeable especially for the body pose estimation.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_5.jpg
+  Figure 5 caption: Accuracy evaluation of the checkerboard corner 3D trajectories.
+    While the reconstruction is conducted independently at every corner, the estimated
+    3D trajectories assemble themselves in the grid-like configuration. Our methods
+    produce trajectories with significantly smaller error than naive geometric triangulation.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_6.jpg
+  Figure 6 caption: Effect of accurate subframe alignment for the 3D trajectory estimation.
+    (a) Point triangulation of frame accurate alignment gives large reconstruction
+    error and creates different 3D shapes with respect to other methods. (b) Incorrect
+    sub-frame alignment generates 3D trajectory with many loops. (c) Trajectory estimated
+    from correct sub-frame alignment is free from the loops. (d) Using DCT resampling
+    for (c) gives smooth and shape preserving 3D trajectory.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_7.jpg
+  Figure 7 caption: Analysis of the spatial camera calibration for the Checkerboard
+    sequence with different camera models.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_8.jpg
+  Figure 8 caption: Temporal alignment. (a) Original unaligned images. (b) Our aligned
+    images, estimated from temporally down-sampled video at 30fps, are shown for the
+    original video captured at 120fps. (c) Inset of aligned images. The shadows casted
+    by the folding cloth are well temporally aligned across images.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Spatiotemporal_Bundle_Adjustment_for_Dynamic_D_Human_Reconstruction_in_the_Wild\figure_9.jpg
+  Figure 9 caption: Jump scene. Point triangulation of frame-accurate alignment fails
+    to reconstruct the fast action happening at the end of the sequence. Conversely,
+    our motion prior based approach produces plausible reconstruction for the entire
+    course of the action even with relatively low frame-rate cameras. Trajectories
+    estimated from our approach highly resemble those generated by the frame-accurate
+    alignment and triangulation at 120 fps.
+  First author gender probability: 0.81
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Minh Vo
+  Name of the last author: Srinivasa G. Narasimhan
+  Number of Figures: 13
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Spatiotemporal Bundle Adjustment for Dynamic 3D Human Reconstruction
+    in the Wild
+  Publication Date: 2020-07-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Reprojection Error for the Entire CMU Mocap Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Common 3D Body Fitting Losses Used in Eq. (9)
+  Table 3 caption:
+    table_text: TABLE 3 The Effect of Modeling the Rolling Shutter Readout on the
+      Reconstruction Accuracy
+  Table 4 caption:
+    table_text: TABLE 4 Reconstruction Accuracy Comparison Between Geometric Triangulation
+      and Our Proposed Method
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3012429
+- Affiliation of the first author: school of mathematical sciences and institute of
+    computational science, soochow university, suzhou, jiangsu, china
+  Affiliation of the last author: department of mathematics, university of texas at
+    arlington, arlington, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_SelfConsistentField_Iteration_for_Orthogonal_Canonical_Correlation_Analysis\figure_1.jpg
+  Figure 1 caption: 'Comparison of four optimization methods on synthetic data and
+    multi-label classification data yeast in terms of three different criteria. The
+    plots in the second row are for the differences: subtracting the objective value
+    by each of the three stiefel methods from the one by sf OCCA-scf .'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_SelfConsistentField_Iteration_for_Orthogonal_Canonical_Correlation_Analysis\figure_2.jpg
+  Figure 2 caption: Convergence curves of Algorithm 1 on the multi-label classification
+    data yeast.
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_SelfConsistentField_Iteration_for_Orthogonal_Canonical_Correlation_Analysis\figure_3.jpg
+  Figure 3 caption: Correlations obtained by three CCA methods in the 2-D and 3-D
+    orthogonal spaces. The higher the bar is, the better the method performs.
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_SelfConsistentField_Iteration_for_Orthogonal_Canonical_Correlation_Analysis\figure_4.jpg
+  Figure 4 caption: Comparisons of three OCCA methods on the scene data in terms of
+    2-D and 3-D embeddings. Colors represent classes. The markers circle and square
+    represent input data points and output classes. There are 15 classes extracted
+    from 6 multiple labels.
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_SelfConsistentField_Iteration_for_Orthogonal_Canonical_Correlation_Analysis\figure_5.jpg
+  Figure 5 caption: Accuracy and CPU time of three MCCA methods on four datasets for
+    varying the reduced dimension k and the training ratio.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.66
+  Name of the first author: Lei-Hong Zhang
+  Name of the last author: Ren-Cang Li
+  Number of Figures: 5
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: A Self-Consistent-Field Iteration for Orthogonal Canonical Correlation
+    Analysis
+  Publication Date: 2020-07-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Datasets for Multi-Label Classification
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results in Terms of the 5 Measurements on the Five Datasets
+      (40% for Training and 60% 60% for Testing Over 10 Random Splits)
+  Table 3 caption:
+    table_text: TABLE 3 Multi-View Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Means and Standard Deviations of Accuracy Obtained by 1-Nearest
+      Neighbor Classifier on Each View and Embeddings Obtained by Three CCA Methods
+      Over 10 Random Draws From Each Dataset (30% Training and 70% testizng)
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3012541
+- Affiliation of the first author: "department of electrical engineering, university\
+    \ of hawaii at m\u0101noa, honolulu, hi, usa"
+  Affiliation of the last author: department of electrical engineering and computer
+    science, university of michigan, ann arbor, mi, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_1.jpg
+  Figure 1 caption: "Architectures of different INNs for MBIR. (a\u2013b) The architectures\
+    \ of Momentum-Net and BCD-Net [25] are constructed by generalizing BPEG-M and\
+    \ BCD algorithms that solve MBIR problem using a convolutional regularizer trained\
+    \ via convolutional analysis operator learning (CAOL) [24], [36], respectively.\
+    \ (a) Removing extrapolation modules (i.e., setting the extrapolation matrices\
+    \ E (i+1) :\u2200i as a zero matrix), Momentum-Net specializes to the existing\
+    \ gradient-descent-inspired INNs [21], [28]. When the MBIR cost function F(x;y,\
+    \ z (i+1) ) in (P1) has a sharp majorizer M \u02DC (i+1) , \u2200i , Momentum-Net\
+    \ (using \u03C1\u22481 ) specializes to BCD-Net; see Examples 5\u20136. (b) BCD-Net\
+    \ is a general version of the existing INNs in [20], [22], [23], [30], [39], [40],\
+    \ [41] by using iteration-wise image refining NNs, i.e., R \u03B8 (i+1) :\u2200\
+    i , or considering general convex data-fit f(x;y) ."
+  Figure 10 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_10.jpg
+  Figure 10 caption: Comparisons of estimated depths from LFs reconstructed by different
+    MBIR methods in LF photograph using a focal stack (LF photography systems with
+    C = 5 detectors capture a focal stack of LFs consisting of S = 81 sub-aperture
+    images; SPO depth estimation [75] was applied to reconstructed LFs in Fig. 9;
+    display window in meters). See also Table S.3 and Fig. S.2, available in the online
+    supplemental material.
+  Figure 2 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_2.jpg
+  Figure 2 caption: "Convergence behavior of Momentum-Nets dCNN refiners R \u03B8\
+    \ (i) in different applications ( \u03B8 (i) denotes the parameter vector of the\
+    \ ith iteration refiner R \u03B8 (i) , for i=1,\u2026, N iter ; see details of\
+    \ R \u03B8 (i) in (19) and Section 4.2.1; N iter =100 ). Sparse-view CT (fan-beam\
+    \ geometry with 12.5% projections views): R \u03B8 (i) quickly converges, where\
+    \ majorization matrices of training data-fits have similar condition numbers.\
+    \ LF photography using a focal stack (five detectors and reconstructed LFs consists\
+    \ of 9\xD79 sub-aperture images): R \u03B8 (i) has slower convergence, where majorization\
+    \ matrices of training data-fits have largely different condition numbers."
+  Figure 3 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_3.jpg
+  Figure 3 caption: "Empirical measures related to Assumption 4 for guaranteeing convergence\
+    \ of Momentum-Net using dCNN refiners (for details, see (19) and Section 4.2.1),\
+    \ in different applications. See empirical measures for guaranteeing convergence\
+    \ of Momentum-Net using sCNN refiners, and estimation procedure in Fig. S.1 and\
+    \ Section S.2, available in the online supplemental material, respectively. (a)\
+    \ The sparse-view CT reconstruction experiment used fan-beam geometry with 12.5%\
+    \ projections views. (b) The LF photography experiment used five detectors and\
+    \ reconstructed LFs consisting of 9\xD79 sub-aperture images. (a1, b1) For both\
+    \ the applications, we observed that \u0394 (i) \u21920 . This implies that the\
+    \ z (i+1) -updates in (Alg.1.1) satisfy the asymptotic block-coordinate minimizer\
+    \ condition in Assumption 4. (Magenta dots denote the mean values and black vertical\
+    \ error bars denote standard deviations.) (a2) Momentum-Net trained from training\
+    \ data-fits, where their majorization matrices have mild condition number variations,\
+    \ shows that \u03F5 (i) \u21920 . This implies that paired NNs ( R \u03B8 (i+1)\
+    \ , R \u03B8 (i) ) in (Alg.1.1) are asymptotically nonexpansive. (b2) Momentum-Net\
+    \ trained from training training data-fits, where their majorization matrices\
+    \ have mild condition number variations, shows that \u03F5 (i) becomes close to\
+    \ zero, but does not converge to zero in one hundred iterations. (a3, b3) The\
+    \ NNs, R \u03B8 (i+1) in (Alg.1.1), become nonexpansive, i.e., its Lipschitz constant\
+    \ \u03BA (i) becomes less than 1, as i increases."
+  Figure 4 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_4.jpg
+  Figure 4 caption: RMSE minimization comparisons between different INNs for sparse-view
+    CT (fan-beam geometry with 12.5% projections views and 105 incident photons; (a)
+    averaged RMSE values across two test refined images; (b) averaged RMSE values
+    across two test reconstructed images).
+  Figure 5 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_5.jpg
+  Figure 5 caption: RMSE minimization comparisons between different INNs for sparse-view
+    CT (fan-beam geometry with 12.5% projections views and 105 incident photons; averaged
+    RMSE values across two test reconstructed images).
+  Figure 6 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_6.jpg
+  Figure 6 caption: PSNR maximization comparisons between different INNs in LF photography
+    using a focal stack (LF photography systems with C = 5 detectors obtain a focal
+    stack of LFs consisting of S = 81 sub-aperture images; (a) averaged RMSE values
+    across two test refined images); (b) averaged RMSE values across two test reconstructed
+    images.
+  Figure 7 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_7.jpg
+  Figure 7 caption: PSNR maximization comparisons between different INNs in LF photography
+    using a focal stack (LF photography systems with C = 5 detectors obtain a focal
+    stack of LFs consisting of S = 81 sub-aperture images; averaged PSNR values across
+    three test reconstructed images).
+  Figure 8 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_8.jpg
+  Figure 8 caption: Comparison of reconstructed images from different MBIR methods
+    in sparse-view CT (fan-beam geometry with 12.5% projections views and 105 incident
+    photons; images outside zoom-in boxes are magnified to better show differences;
+    display window [800, 1200] HU). See also Table S.1 and Fig. S.2, available in
+    the online supplemental material.
+  Figure 9 Link: articels_figures_by_rev_year\2020\MomentumNet_Fast_and_Convergent_Iterative_Neural_Network_for_Inverse_Problems\figure_9.jpg
+  Figure 9 caption: Error map comparisons of reconstructed sub-aperture images from
+    different MBIR methods in LF photography using a focal stack (LF photography systems
+    with C = 5 detectors capture a focal stack of LFs consisting of S = 81 sub-aperture
+    images; sub-aperture images at the (5,5)mathrmth angular coordinate; the PSNR
+    values in parenthesis were measured from reconstructed LFs). See also Table S.2
+    and Fig. S.2, available in the online supplemental material.
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Il Yong Chun
+  Name of the last author: Jeffrey A. Fessler
+  Number of Figures: 10
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: 'Momentum-Net: Fast and Convergent Iterative Neural Network for Inverse
+    Problems'
+  Publication Date: 2020-07-29 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3012955
+- Affiliation of the first author: school of computer science and with the center
+    for optical imagery analysis and learning (optimal), northwestern polytechnical
+    university, xian, shaanxi, china
+  Affiliation of the last author: school of computer science and with the center for
+    optical imagery analysis and learning (optimal), northwestern polytechnical university,
+    xian, shaanxi, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\NWPUCrowd_A_LargeScale_Benchmark_for_Crowd_Counting_and_Localization\figure_1.jpg
+  Figure 1 caption: The display of the proposed NWPU-Crowd dataset. Column 1 shows
+    some typical samples with normal lighting. The second and third column demonstrate
+    the crowd scenes under the extreme brightness and low-luminance conditions, respectively.
+    The last column illustrates the negative samples, including some scenes with densely
+    arranged other objects.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\NWPUCrowd_A_LargeScale_Benchmark_for_Crowd_Counting_and_Localization\figure_2.jpg
+  Figure 2 caption: The statistical histogram of image-level counts and box-level
+    area. The number in x axis of Fig.(b) denotes 10 x . For example, [0,1] represents
+    the range of box area is [ 10 0 , 10 1 ] .
+  Figure 3 Link: articels_figures_by_rev_year\2020\NWPUCrowd_A_LargeScale_Benchmark_for_Crowd_Counting_and_Localization\figure_3.jpg
+  Figure 3 caption: The eight groups of visualization results of some selected methods
+    on the validation set.
+  Figure 4 Link: articels_figures_by_rev_year\2020\NWPUCrowd_A_LargeScale_Benchmark_for_Crowd_Counting_and_Localization\figure_4.jpg
+  Figure 4 caption: The results under different volumes of the training data on the
+    validation set.
+  Figure 5 Link: articels_figures_by_rev_year\2020\NWPUCrowd_A_LargeScale_Benchmark_for_Crowd_Counting_and_Localization\figure_5.jpg
+  Figure 5 caption: "The three groups of qualitative localization results on the validation\
+    \ set. The Green point is true positive, which is inside the green circle (its\
+    \ center is the groundtruth position and its radius is \u03C3 l ); the red points\
+    \ and the corresponding circles are false negative; the magenta points are false\
+    \ positive. (For a better comparison, we transform RGB-color images to gray-scale\
+    \ images.)."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Qi Wang
+  Name of the last author: Xuelong Li
+  Number of Figures: 5
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: 'NWPU-Crowd: A Large-Scale Benchmark for Crowd Counting and Localization'
+  Publication Date: 2020-07-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics of the Ten Mainstream Crowd Counting Datasets and
+      NWPU-Crowd
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Query Keywords on Some Typical Search Engines
+  Table 3 caption:
+    table_text: TABLE 3 The Performance of Different Models on the Val Set
+  Table 4 caption:
+    table_text: TABLE 4 The Leaderboard of the Counting Performance on the NWPU-Crowd
+      Test Set
+  Table 5 caption:
+    table_text: TABLE 5 The MAE of the Different Training Data on the Val Set
+  Table 6 caption:
+    table_text: TABLE 6 The Performance on the Val Set
+  Table 7 caption:
+    table_text: TABLE 7 The Leaderboard of the Localization Performance on the NWPU-Crowd
+      Test Set
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3013269
+- Affiliation of the first author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Affiliation of the last author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_1.jpg
+  Figure 1 caption: (a) While conventional gait databases capture side-view imagery,
+    we collect a new gait database (FVG) with focus on more challenging frontal views.
+    We propose a novel CNN-based model, termed GaitNet, to directly learn the disentangled
+    appearance, canonical and pose features from walking videos, as opposed to handcrafted
+    GEI or skeleton features. (b) Given 2 videos of Subject 1 and 1 video of Subject
+    2, feature visualizations by our decoder in Fig. 3 show that the appearance feature
+    is video-specific capturing clothing information; the canonical feature is subject-specific
+    capturing the overall body shape at a standard pose; the pose feature is frame-specific
+    capturing body poses at individual frames.
+  Figure 10 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_10.jpg
+  Figure 10 caption: Recognition by fusing f dyn-gait and f sta-gait scores with different
+    weights as defined in Eqn. (13). Rank-1 accuracy and TAR 1% FAR is calculated
+    for CASIA-B and FVG, respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_2.jpg
+  Figure 2 caption: If we may ignore the differences in colortexture of clothing and
+    the body pose, there are inherent body characteristics that are different across
+    subjects (b), and invariant within the same subject (a). These include overall
+    body shape, arm length, torso versus leg ratio, etc. We define canonical feature
+    to specifically describe these characteristics.
+  Figure 3 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_3.jpg
+  Figure 3 caption: The overall architecture of proposed GaitNet. The bottom right
+    block indicates the inference process, while the remaining illustrates the training
+    process with the four color-coded loss functions. All the symbols can be referred
+    in Table 2. The blue dash line, which indicates the cross reconstruction loss,
+    enforces both the canonical and appearance features to be similar across all frames
+    within a video. The yellow dash line, which represents the pose similarity loss,
+    encourages f p containing only the pose information. The green dash line is the
+    canonical consistency loss, enforces the encoder to extract the unique body characteristics
+    of each subject into f c .
+  Figure 4 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_4.jpg
+  Figure 4 caption: Examples of FVG Dataset. (a) Samples of the near frontal middle,
+    left and right walking viewing angles in Session 1 ( s e 1 ) of the first subject
+    ( s 1 ). s e 3 - s 1 is the same subject in Session 3. (b) Samples of slow and
+    fast walking speed for another subject in Session 1. Frames in the second row
+    are normal and in the third row are fast walking. Carrying bag and wearing hat
+    sample is shown below. (c) Samples of changing clothes and with multiple people
+    background from one subject in Session 2.
+  Figure 5 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_5.jpg
+  Figure 5 caption: Synthesis by decoding three features individually, f a , f c and
+    f p , and their concatenation. Left and right parts are two learnt models on frontal
+    and side views of CASIA-B. The top two rows are two frames of the same subject
+    under different conditions (NM versus CL) and the bottom two are another subject.
+    The reconstructed frames x closely match the original input. f c shows consistent
+    body shape for the same subject while different for different subjects. f a recovers
+    the appearance of clothes, at the pose specified by f c . The body pose of f p
+    matches with the input frame.
+  Figure 6 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_6.jpg
+  Figure 6 caption: "Synthesis by decoding pairs of pose features f p and pose-irrelevant\
+    \ features, f a , f c . Left and right parts are examples of frontal and side\
+    \ views of CASIA-B. In either part, each of 4\xD74 synthetic images is D( f l\
+    \ a , f l c , f t p ) , where f l a , f l c is extracted from images in the first\
+    \ column and f t p is from the top row. The synthetic images resemble the appearance\
+    \ of the first column and the pose of the top row."
+  Figure 7 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_7.jpg
+  Figure 7 caption: The t-SNE visualization of (a) appearance features f a , (b) canonical
+    features f c , (c) pose features f p , and (d) dynamic gait features f dyn-gait
+    . We select 5 subjects each with two videos of NM versus CL conditions. Each point
+    represents a single frame, whose color is for subject ID, shape of dot and cross
+    is NM and CL respectively, and size is frame index. We see that f c and f dyn-gait
+    are far more discriminative than f a and f p .
+  Figure 8 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_8.jpg
+  Figure 8 caption: Synthesis on CASIA-B by decoding pose-irrelevant feature f a ,
+    f c and pose feature f p from videos under NM versus CL conditions. Left and right
+    parts are two examples. For each example, f a , f c is extracted from the first
+    column (CL) and f p is from the top row (NM). Top row synthetic images are generated
+    from a model trained without L pose-sim loss, bottom row is with the loss. To
+    show the difference, details in synthetic images are magnified.
+  Figure 9 Link: articels_figures_by_rev_year\2020\On_Learning_Disentangled_Representations_for_Gait_Recognition\figure_9.jpg
+  Figure 9 caption: "The t-SNE visualization of f dyn\u2212gait from 5 subjects, each\
+    \ with 2 videos (NM versus CL). The symbols are defined the same as Fig. 7. The\
+    \ top and bottom rows are two models learnt with L id\u2212single and L id\u2212\
+    inc\u2212avg loss respectively. From left to tight, the points are f dyn\u2212\
+    gait of the first 10 frames, 10-30 frames, and 30-60 frames. Learning with L id\u2212\
+    inc\u2212avg leads to more discriminative dynamic features for the entire duration."
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.84
+  Name of the first author: Ziyuan Zhang
+  Name of the last author: Xiaoming Liu
+  Number of Figures: 14
+  Number of Tables: 11
+  Number of authors: 4
+  Paper title: On Learning Disentangled Representations for Gait Recognition
+  Publication Date: 2020-08-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Existing Gait Databases and Our Collected FVG
+      Database
+  Table 10 caption:
+    table_text: TABLE 10 Definition of FVG Protocols and Performance Comparison (%)
+  Table 2 caption:
+    table_text: TABLE 2 Symbols and Notations
+  Table 3 caption:
+    table_text: TABLE 3 The Properties of Three Disentangled Features in Terms of
+      its Constancy Across Frames and Conditions, and Discriminativeness
+  Table 4 caption:
+    table_text: TABLE 4 The Architecture of E E and D D Networks
+  Table 5 caption:
+    table_text: TABLE 5 The FVG Database
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Study on Various Options of the Disentanglement Loss,
+      Classification Loss, and Classification Features
+  Table 7 caption:
+    table_text: TABLE 7 Comparison (%) on CASIA-B With Cross View and Conditions
+  Table 8 caption:
+    table_text: TABLE 8 Recognition Accuracy (%) Cross Views Under NM on CASIA-B Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Comparison With [35] and [12] Under Different Walking Conditions
+      on CASIA-B by Accuracies (%)
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2998790
+- Affiliation of the first author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Affiliation of the last author: columbia university, new york, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_1.jpg
+  Figure 1 caption: "Illustration of the unsupervised embedding learning. General\
+    \ unsupervised learning usually learns linear separable \u201Cintermediate\u201D\
+    \ features using supervision signal, e.g., rotation in [15], [16]. The learned\
+    \ features may not preserve visual consistency to the categories, performing badly\
+    \ on the nearest neighbor search. Our method learns visually meaningful representations\
+    \ for similarity-based search with data augmentation."
+  Figure 10 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_10.jpg
+  Figure 10 caption: The cosine similarity distributions of randomly initialized representation
+    (left column) and our learned embedding (right column) with different semantic
+    attribute labels on CIFAR-10 [66] and CUB200 [73].
+  Figure 2 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_2.jpg
+  Figure 2 caption: The framework of the proposed instance-wise unsupervised softmax
+    embedding with Siamese network. The input images are projected into low-dimensional
+    normalized embedding features with the CNN backbone. Image features of the same
+    image instance with different data augmentations are invariant, while embedding
+    features of different image instances are spread-out.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_3.jpg
+  Figure 3 caption: Comparison between ExemplarCNN [20], NCE [17] and our solution.
+    ExemplarCNN optimizes the network by comparing the features with the prototype
+    classifier weights. NCE improves the performance by comparing the features with
+    outdated memory. Our solution directly performs the optimization over on-the-fly
+    augmented instance features, which greatly improves the accuracy with higher efficiency.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_4.jpg
+  Figure 4 caption: 'Illustration of our supervision augmentation strategies in the
+    normalized embedding space. negative augmentation with interpolation (left): pushing
+    away the instance features from the synthesized negative features; positive augmentation
+    with extrapolation (right): pulling the augmented positive sample feature towards
+    the original instance features and pushing it away from the negative sample features.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_5.jpg
+  Figure 5 caption: Evaluation of the training efficiency on CIFAR-10 dataset. kNN
+    accuracy (%) at each epoch is reported ( k =200), demonstrating the learning speed
+    of different methods.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_6.jpg
+  Figure 6 caption: The 4NN retrieved results of some example queries from the training
+    set on CUB200 dataset. The positive and negative retrieved results are framed
+    in green and red, respectively. The similarity is measured with cosine similarity.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_7.jpg
+  Figure 7 caption: The cosine similarity distributions on CIFAR-10 [66].
+  Figure 8 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_8.jpg
+  Figure 8 caption: The retrieval results of some randomly selected queries from the
+    testing set on CUB200 dataset, together with the calculated cosine similarity.
+    The positive and negative retrieved results are framed in green and red, respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Augmentation_Invariant_and_Instance_Spreading_Feature_for_Softmax_Embedding\figure_9.jpg
+  Figure 9 caption: "Effect of \u03B3 and \u03B2 in supervision augmentation on CIFAR-10\
+    \ [66] and STL-10 [67] datasets. When \u03B3=0 , it means that only positive supervision\
+    \ augmentation is included. When \u03B2=0 , it means that only negative supervision\
+    \ augmentation is included. ISIF provides a reference without feature-level supervision\
+    \ augmentation."
+  First author gender probability: 0.54
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mang Ye
+  Name of the last author: Shih-Fu Chang
+  Number of Figures: 12
+  Number of Tables: 11
+  Number of authors: 5
+  Paper title: Augmentation Invariant and Instance Spreading Feature for Softmax Embedding
+  Publication Date: 2020-08-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 kNN Accuracy (%) With Different k k on CIFAR-10 Dataset
+  Table 10 caption:
+    table_text: TABLE 10 Effect of Batch Size on CIFAR-10
+  Table 2 caption:
+    table_text: TABLE 2 Classification Accuracy (%) With Linear Classifier and kNN
+      Classifier on STL-10 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Rank- k k Accuracy (%) on CUB200 Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Rank- k k Accuracy (%) on Car196 Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Rank- k k Accuracy (%) on SOP Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Rank- k k Accuracy (%) on SOP Dataset Using Network (ResNet18)
+      Without Pre-Trained Parameters
+  Table 7 caption:
+    table_text: TABLE 7 Rank-1 Accuracy (%) With Different Backbone Networks With
+      aISIF on Three Fine-Grained Image Retrieval Datasets
+  Table 8 caption:
+    table_text: TABLE 8 Different Sampling Strategies on CIFAR-10 Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Effects of Each Data Augmentation Operation in ISIF on CIFAR-10
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3013379
+- Affiliation of the first author: school of electrical and electronic engineering,
+    yonsei university, seoul, korea
+  Affiliation of the last author: school of electrical and electronic engineering,
+    yonsei university, seoul, korea
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_1.jpg
+  Figure 1 caption: We use pairs of warped foreground masks obtained from a single
+    image (left) as a supervisory signal to train our model. This allows us to establish
+    object-aware semantic correspondences across images depicting different instances
+    of the same object or scene category (right). No masks are required at test time.
+    (Best viewed in color.)
+  Figure 10 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_10.jpg
+  Figure 10 caption: Top matches on standard benchmarks. We visualize the top 60 matches
+    according to matching probabilities. Each row shows a result on PF-WILLOW [27],
+    PF-PASCAL [39] and TSS [8], respectively. (Best viewed in color.)
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_2.jpg
+  Figure 2 caption: Overview of SFNet. SFNet takes an input pair of source and target
+    images, and extracts local features using a siamese network. It then computes
+    pairwise matching scores between features and establishes semantic flow for source
+    and target images using the kernel soft argmax. At training time, corresponding
+    foreground masks for the two images are used to compute mask consistency, flow
+    consistency, and smoothness terms. See text for details.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_3.jpg
+  Figure 3 caption: Visualization of soft and kernel soft argmax operations. A point
+    in the source image and its ground-truth correspondence in the target image are
+    shown as the square and the diamond, respectively. A matching point computed by
+    either the soft or kernel soft argmax operators is shown as the cross. When multiple
+    features are highly correlated, the soft argmax often gives incorrect matches.
+    The kernel soft argmax avoids this problem while maintaining differentiability.
+    (Best viewed in color.)
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_4.jpg
+  Figure 4 caption: Visualization of matching probabilities m p and shifts of a dominant
+    mode during training. A point in the source and its ground-truth correspondence
+    in the target are shown as the square and diamond, respectively. The modes selected
+    by the discrete argmax are shown as the cross. We can see that the dominant mode
+    shifts toward a correct match after the second iteration.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_5.jpg
+  Figure 5 caption: Illustration of the mask consistency loss. We estimate the binary
+    source mask M s by warping the target one M t using the flow field F s . The target
+    mask M t is similarly estimated. We then compute the average error between original
+    and estimated masks to compute the mask consistency loss. This penalizes the correspondences
+    between foreground and background regions, and vice versa. We show foreground
+    parts only for the purpose of visualization. (Best viewed in color.)
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_6.jpg
+  Figure 6 caption: 'Using the mask consistency term alone may cause a many-to-one
+    matching problem: (a) multiple yellow points in the source image can be matched
+    to the single blue one in the target image. The flow consistency term (b) penalizes
+    inconsistent correspondences and (c) favors a one-to-one matching. We denote by
+    green and red arrows consistent and inconsistent matches, respectively. (Best
+    viewed in color.)'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_7.jpg
+  Figure 7 caption: 'Using a symmetric loss: (a) considering the flow consistency
+    loss w.r.t a source image only may cause a flow shrinkage problem; (b) we can
+    overcome this problem by computing the loss w.r.t a target image as well and penalizing
+    inconsistent matches; (c) this symmetric loss allows us to perform object-level
+    matching. We use green and red arrows to show consistent and inconsistent matches,
+    respectively. (Best viewed in color.)'
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_8.jpg
+  Figure 8 caption: "Average PCK scores ( \u03B1 bbox =0.1 ) for ( \u03B2 , \u03C3\
+    \ ) pairs on the validation split of PF-PASCAL [39]."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Learning_Semantic_Correspondence_Exploiting_an_ObjectLevel_Prior\figure_9.jpg
+  Figure 9 caption: Visual comparison of alignment results between source and target
+    images on the PF-PASCAL dataset [39]. Keypoints in the source and target images
+    are shown as diamonds and crosses, respectively, with a vector representing the
+    matching error. All methods use ResNet-101 features. Compared to the state of
+    the art, our method is more robust to local non-rigid deformations, scale changes
+    between objects, and clutter. See text for details. (Best viewed in color.)
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Junghyup Lee
+  Name of the last author: Bumsub Ham
+  Number of Figures: 14
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: Learning Semantic Correspondence Exploiting an Object-Level Prior
+  Publication Date: 2020-08-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Comparison With the State of the Art on the PF-WILLOW
+      [27] and the Test Split of the PF-PASCAL [24], [39] in Terms of Average PCK
+  Table 10 caption:
+    table_text: TABLE 10 Average PCK Comparison of Variants of Our Model
+  Table 2 caption:
+    table_text: "TABLE 2 Per-Class PCK ( \u03B1 img =0.1 \u03B1 img =0.1) on PF-PASCAL\
+      \ [39]"
+  Table 3 caption:
+    table_text: "TABLE 3 Per-Class PCK ( \u03B1 bbox =0.1 \u03B1 bbox =0.1) on SPair-71k\
+      \ [29]"
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Comparison on the TSS Dataset [8] in Terms of
+      the Average PCK
+  Table 5 caption:
+    table_text: TABLE 5 Runtime Comparison Per Image Pair on the Test Split of the
+      PF-PASCAL Dataset [17], [39] in Milliseconds
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Comparison on the Caltech-101 Dataset [54]
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Comparison on the JHMDB Dataset [30]
+  Table 8 caption:
+    table_text: TABLE 8 Quantitative Comparison of Object Co-Segmentation on TSS [8]
+      in Terms of IoU
+  Table 9 caption:
+    table_text: TABLE 9 Average PCK Comparison of Different Loss Functions
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3013620
+- Affiliation of the first author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Affiliation of the last author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_1.jpg
+  Figure 1 caption: Summary of recent few-shot segmentation frameworks. The backbone
+    method used to extract support and query features can be either a single shared
+    network or two Siamese networks.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_10.jpg
+  Figure 10 caption: Comparison between feature fusion strategies of (left) HRB and
+    (right) HRB-Cond. Features from different scales are directly added to the main
+    feature in (left), while in (right), essential information is selected from auxiliary
+    features conditioned on the main features by the inter-scale merging module M
+    .
+  Figure 2 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_2.jpg
+  Figure 2 caption: 'Illustration of the training-free prior generation. Top: support
+    images with the masked area in the target class. Middle: query images. Bottom:
+    prior masks of query images where the regions of interest are highlighted.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_3.jpg
+  Figure 3 caption: Overview of our Prior Guided Feature Enrichment Network with the
+    prior generation and Feature Enrichment Module. White blocks marked with H and
+    M represent the high- and middle-level features extracted from backbone respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_4.jpg
+  Figure 4 caption: "Visual illustration of FEM (dashed box) with four scales and\
+    \ a top-down path. C, 1 x 1 and Circled M represent concatenation, 1\xD71 convolution\
+    \ and inter-scale merging module respectively. Activation functions are ReLU."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_5.jpg
+  Figure 5 caption: "Visual illustration of the inter-scale merging module M . C is\
+    \ concatenation and + is pixel-wise addition. \u03B1 means 1 \xD7 1 convolution\
+    \ and \u03B2 represents two 3 \xD7 3 convolutions. Activation functions are ReLU.\
+    \ For features that do not have auxiliary features, there is no concatenation\
+    \ with the auxiliary feature and the refined feature is produced only by the main\
+    \ feature with \u03B1 and \u03B2 ."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_6.jpg
+  Figure 6 caption: Visual illustration of the baseline structure that processes features
+    in the original spatial size of the input features.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_7.jpg
+  Figure 7 caption: Structures of (a) convolution block and (b) classification head.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_8.jpg
+  Figure 8 caption: 'Qualitative results of the proposed PFENet and the baseline.
+    The left samples are from COCO and the right ones are from PASCAL-5 i . From top
+    to bottom: (a) support images, (b) query images, (c) ground truth of query images,
+    (d) predictions of baseline, (e) predictions of PFENet.'
+  Figure 9 Link: articels_figures_by_rev_year\2020\Prior_Guided_Feature_Enrichment_Network_for_FewShot_Segmentation\figure_9.jpg
+  Figure 9 caption: Modularized block of HRNet (HRB) that applies dense multi-resolution
+    fusions.
+  First author gender probability: 0.74
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.91
+  Name of the first author: Zhuotao Tian
+  Name of the last author: Jiaya Jia
+  Number of Figures: 13
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: Prior Guided Feature Enrichment Network for Few-Shot Segmentation
+  Publication Date: 2020-08-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Class mIoU Results on Four Folds of PASCAL-5 i i
+  Table 10 caption:
+    table_text: TABLE 10 Analysis on Values of Mean and Std. of Five Test Results
+      (Class mIoU) on COCO With Different Numbers of Test Query-Support Pairs (1,000
+      and 20,000)
+  Table 2 caption:
+    table_text: TABLE 2 FB-IoU Results on PASCAL-5 i i
+  Table 3 caption:
+    table_text: TABLE 3 Class mIoU FB-IoU Results on COCO
+  Table 4 caption:
+    table_text: TABLE 4 Class mIoU Results of Different Ways for Inter-Scale Interaction
+      on PASCAL-5 i i
+  Table 5 caption:
+    table_text: TABLE 5 Class mIoU of FEM With Different Spatial Sizes and the Comparison
+      With PPM [52] and ASPP [3] on PASCAL-5 i i
+  Table 6 caption:
+    table_text: TABLE 6 Class mIoU on PASCAL-5 i i and Efficiency of Models WithWithout
+      the Proposed Prior and FEM
+  Table 7 caption:
+    table_text: TABLE 7 Class mIoU Results of Different Prior Masks on PASCAL-5 i
+      i
+  Table 8 caption:
+    table_text: TABLE 8 Foreground IoU Results on Totally Unseen Classes of FSS-1000
+      [17]
+  Table 9 caption:
+    table_text: TABLE 9 Mean and Std. of Five Test Results (class mIoU) on PASCAL-5
+      i i
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3013717
+- Affiliation of the first author: intelligent data center, school of mathematics,
+    sun yat-sen university, guangzhou, china
+  Affiliation of the last author: department of electrical engineering, city university
+    of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_1.jpg
+  Figure 1 caption: "Illustration of the vanilla and partial domain adaptation problems.\
+    \ (a) Vanilla domain adaptation assumes that the label spaces of the source and\
+    \ target domains are equivalent, and the domain shift problem is the major difficulty.\
+    \ (b) Partial domain adaptation assumes that the label space of the target domain\
+    \ is a subset of the source domain. Performance can be further degraded by the\
+    \ negative transfer problem, which means that target samples are aligned to outlier\
+    \ classes (e.g., the \u201Ctriangle\u201D). Best viewed in color."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_2.jpg
+  Figure 2 caption: Overview of the proposed multilayer Riemannian manifolds embedding
+    and alignment network. A CNN-based feature extractor is adopted to learn the common
+    representations of both domains. The discriminative information are transferred
+    via the Riemannian manifold layers, where fully connected layers are equipped
+    with the proposed proposed soft discriminant criterion and manifold metric domain
+    alignment. Best viewed in color.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_3.jpg
+  Figure 3 caption: Illustration of the discriminative structure learning framework.
+    (a) The source inter-class similarity forms a separable space for the source samples.
+    (b) The target intra-class similarity constructs a compact space for the samples
+    from the same category. (c) The final embedding space, where the target domain
+    is discriminative. (d) The roadmap for achieving the discriminative property on
+    the target domain. The target intra-class compactness is implemented by mathcal
+    Lintra directly and the target inter-class separability is reached by mathcal
+    Linter transductively. Best viewed in color.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_4.jpg
+  Figure 4 caption: '3D heatmaps of the recognition rates with different penalty hyper-parameters
+    under different settings. (a)-(b): vanilla setting on ImageCLEF. (c)-(d): partial
+    setting on Office-31. Best viewed in color.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_5.jpg
+  Figure 5 caption: '(a): Recognition rate curves of different truncated parameters
+    k on ImageCLEF dataset. The cyan and brown dash curves indicate the mean and standard
+    deviation, respectively. (b)-(c): Error and eigenvalue curves w.r.t. the dimensionality
+    dprime . The (bs-1) th error index is highlighted by the horizontal dash line.
+    (d): Recognition rate curves and the objective curve on the Office-31 dataset
+    (A rightarrow W). Best viewed in color.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_6.jpg
+  Figure 6 caption: Visualization of learned features using 2-D t-SNE [55] on the
+    VisDA-2017 dataset. The first and second rows show the feature representations
+    colored by domains and classes, respectively. The third row shows the target samples
+    colored by classes. Best viewed in color.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_7.jpg
+  Figure 7 caption: 'Confusion matrices of the target domain on the VisDA-2017 dataset;
+    darker colors represent larger values. (a)-(b): ResNet backbone network, which
+    is regarded as the before adaptation case; (c)-(d): DMP network, which shows the
+    performance after adaptation. Best viewed in color.'
+  Figure 8 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_8.jpg
+  Figure 8 caption: '(a)-(b): Class weights computed by different methods on the VisDA-2017
+    dataset under the partial setting. (c)-(d): Accuracy curves by different numbers
+    of shared classes on the Office-31 dataset under the partial setting. Best viewed
+    in color.'
+  Figure 9 Link: articels_figures_by_rev_year\2020\Unsupervised_Domain_Adaptation_via_Discriminative_Manifold_Propagation\figure_9.jpg
+  Figure 9 caption: "Visualization of interpolations using 2-D t-SNE [55] on VisDA-2017\
+    \ with different values of the interpolation parameter alpha . The features are\
+    \ colored by classes. circ and \xD7 represent the correctly and incorrectly classified\
+    \ samples, respectively. Best viewed in color."
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.76
+  Name of the first author: You-Wei Luo
+  Name of the last author: Hong Yan
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Unsupervised Domain Adaptation via Discriminative Manifold Propagation
+  Publication Date: 2020-08-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Study of the Manifold Selection on ImageCLEF
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Class-Wise Recognition Rates (%) on VisDA-2017 (ResNet-101)
+      and Recognition Rates (%) on Office-Home, ImageCLEF and Office-31 (ResNet-50)
+      Under the Vanilla Setting
+  Table 3 caption:
+    table_text: TABLE 3 Recognition Rates (%) on ImageCLEF, Office-31, Office-Home,
+      and VisDA-2017 Under the Partial Setting (ResNet-50)
+  Table 4 caption:
+    table_text: TABLE 4 Class-Wise Recognition Rates (%) of Interpolations on VisDA-2017
+  Table 5 caption:
+    table_text: 'TABLE 5 TOP: Recognition Rates (%) Under Different Sample Size Settings
+      on ImageCLEF'
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3014218
+- Affiliation of the first author: college of automation, harbin engineering university,
+    harbin, heilongjiang, china
+  Affiliation of the last author: department of statistics, university of california,
+    los angeles, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_1.jpg
+  Figure 1 caption: 'An illustration of the proposed model. The model contains two
+    generator networks: one appearance generator and one geometric generator. The
+    two generators are combined by a warping function to produce the final image.
+    The warping function includes a geometric transformation operation for image coordinates
+    and a differentiable interpolation operation. The refining operation is optional
+    for improving the performance of the warping function.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_10.jpg
+  Figure 10 caption: Typical appearance and geometric basis functions for high resolution
+    faces. The appearance basis functions are visualized by the generated images that
+    interpolate the appearance latent factors along the basis functions, while setting
+    geometric latent factor to zeros. The geometric basis functions are visualized
+    by the generated images that interpolate the geometric latent factors along the
+    basis functions, while freezing the appearance latent factor. Refer to Section
+    5.1 for details.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_2.jpg
+  Figure 2 caption: "Example training images from CelebA are illustrated at the first\
+    \ row. The training set contains 10000 images from CelebA, and they are cropped\
+    \ to 64\xD764 pixels by the OpenFace. These faces have different colors, illuminations,\
+    \ identities, viewing angles, shapes, and expressions. The second row shows the\
+    \ output of the appearance generator overlapped with the canonical grid. The third\
+    \ row demonstrates the deformation fields which is the output of the geometric\
+    \ generator. The deformation fields are visualized by the deformed grids overlaid\
+    \ on the reconstructed images."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_3.jpg
+  Figure 3 caption: Typical appearance basis functions, visualized by the generated
+    images that interpolate the appearance latent factors along the basis functions.
+    Each dimension of the appearance latent factors encodes appearance information
+    such as color, illumination and gender. In the fist line, the color of background
+    and the gender change. In the second line, the moustache of the man and the hair
+    of the woman vary. In the third line, the skin color changes from dark to white.
+    In the fourth line, the illumination lighting changes from the left-side of the
+    face to the right-side of the face.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_4.jpg
+  Figure 4 caption: Representative geometric basis functions, visualized by the generated
+    images that interpolate the geometric latent factors along the basis functions.
+    Each dimension of the geometric latent factors encodes fundamental geometric information
+    such as shape and viewing angle. In the fist line, the shape of the face changes
+    from fat to thin from left to the right. In the second line, the pose of the face
+    varies from left to right. In the third line, from left to right, the vertical
+    tilt of the face varies from downward to upward. In the fourth line, the face
+    width changes from stretched to cramped.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_5.jpg
+  Figure 5 caption: Applying the geometric basis functions, (a) rotation warping and
+    (b) shape warping, learned by the geometric generator to the canonical faces generated
+    by the appearance generator. Compared with Fig. 3, only the pose information varies,
+    and the identity information is kept in the process of warping.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_6.jpg
+  Figure 6 caption: Absolute value of covariance between each dimension of the geometric
+    (or appearance) latent vectors and view variations for the face images from Multi-Pie.
+    The left subfigure shows covariance with the geometric latent vector; the right
+    subfigure shows covariance with the appearance latent vector.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_7.jpg
+  Figure 7 caption: "(a) Covariance relationship between the mean latent vector Z\
+    \ \xAF g (i) (or Z \xAF a (i) ) and viewing angles vector \u03B8 . We choose two\
+    \ dimensions of Z g ( Z g 5 and Z g 38 , left and middle) with the largest covariance\
+    \ and one dimension of Z a with the largest covariance ( Z a 25 , right). (b)\
+    \ Images generated by varying the values of the three dimensions in (a) respectively,\
+    \ while fixing the values of other dimensions to be zero."
+  Figure 8 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_8.jpg
+  Figure 8 caption: Interpolation examples of (a) appearance basis functions and (b)
+    geometric basis functions. (c) Transferring the learned expression to the face
+    images in Multi-PIE dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Deformable_Generator_Networks_Unsupervised_Disentanglement_of_Appearance_and_Geo\figure_9.jpg
+  Figure 9 caption: Reconstruction results for high resolution faces. The second column
+    is the reconstruction results by only the deformable generator. The third column
+    is the reconstruction results by recruiting an extra discriminator with adversarial
+    training. The fourth column shows the canonical texture faces outputted by the
+    appearance generator,the last two columns demonstrate the corresponding deformable
+    fields overlaid on the images of the third and fourth columns.
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.86
+  Name of the first author: Xianglei Xing
+  Name of the last author: Ying Nian Wu
+  Number of Figures: 19
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: 'Deformable Generator Networks: Unsupervised Disentanglement of Appearance
+    and Geometry'
+  Publication Date: 2020-08-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the Mean Square Reconstruction Errors (MSRE)
+      Per Image (Followed by the Corresponding Standard Derivations Inside the Parentheses)
+      of Different Methods for Unseen Multi-View Faces From the Multi-Pie Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparisons of the Mean Error of Unsupervised Landmark Prediction
+      on the MAFL Test Set
+  Table 3 caption:
+    table_text: TABLE 3 Comparisons of the Mean Recognition Accuracy of Seven Different
+      Methods on the MUG Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Network Architectures of Deformable Generators for Images
+  Table 5 caption:
+    table_text: TABLE 5 Network Architectures of Dynamic Deformable Generators for
+      Video Sequences
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3013905

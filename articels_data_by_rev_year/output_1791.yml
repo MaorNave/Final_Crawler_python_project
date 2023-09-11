@@ -1,0 +1,841 @@
+- Affiliation of the first author: key laboratory of machine perception (moe), school
+    of electronics engineering and computer science, peking university, beijing, china
+  Affiliation of the last author: key laboratory of machine perception (moe), school
+    of electronics engineering and computer science, peking university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_1.jpg
+  Figure 1 caption: Overview of Our Framework. Compared with existing learning-based
+    methods which formulate VO task as a pure tracking problem, we introduce two important
+    components named Remembering and Refining. The Remembering module preserves longer
+    time information by adopting an adaptive context selection strategy. The Refining
+    module ameliorates previous outputs by employing a spatial-temporal feature reorganization
+    mechanism.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_10.jpg
+  Figure 10 caption: Visualization of attentions. Visualization of the 5th pose in
+    the 1-10 frames on Seq 03 of the KITTI dataset [58].
+  Figure 2 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_2.jpg
+  Figure 2 caption: The Tracking module of our framework. The Tracking component is
+    implemented on a ConvLSTM [37] for preserving temporal information. Relative camera
+    poses are produced by the SE (3) layer [57] from the outputs of recurrent units.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_3.jpg
+  Figure 3 caption: Pose estimation from image sequence. Learning pose with observations
+    from only previous frames (a); and all frames in the sequence (b). The purple,
+    blue, and red lines denote the previous, current, and future observations.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_4.jpg
+  Figure 4 caption: The Remembering module of our framework. The Remembering component
+    selects key hidden states based on camera motions and preserves selected hidden
+    states in the memory slot to construct a global map. From features with pair-wise
+    correspondence to hidden states containing historical knowledge, and finally the
+    Memory for global information of the whole sequence, our model constructs the
+    map from local to global hierarchically and progressively.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_5.jpg
+  Figure 5 caption: The Refining module of our framework. (a) The Refining module
+    estimates the absolute camera poses by aligning current observation with the contexts
+    stored in the Memory module with the last output as guidance. (b) We adopt another
+    convolutional LSTM [37] to enable previously refined results to promote the following
+    estimation. We consider the correlation of both each context stored in the Memory
+    (c); and every channel of the context (d).
+  Figure 6 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_6.jpg
+  Figure 6 caption: Translation and rotation errors in different path lengths and
+    speeds. The average errors of SfmLearner [15], Depth-VO-Feat [16], GeoNet [17],
+    GFS-VO [26], and our model on translation and rotation in different path lengths
+    and speeds.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_7.jpg
+  Figure 7 caption: Qualitative results on the KITTI dataset [1]. The trajectories
+    of ground-truth, Depth-VO-Feat [16], GFS-VO [26], ORB-SLAM2 [1] and our model
+    on Seq 03, 04, 05, 06, 07 and 10 of the KITTI benchmark. Our model reports poor
+    rotation (but much better than other models) performance in the second U-turn
+    in Seq 06, one possible reason is that there are large texture-less regions appearing
+    suddenly. This situation, however, can hardly be found in training sequences.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_8.jpg
+  Figure 8 caption: Qualitative results on the TUM-RGBD dataset [59]. The raw images
+    (first row) and trajectories (second row) recovered by ORB-SLAM2 [1], DSO [5],
+    and our method on the sequence fr3strtexfar (rich textures), fr2poineer360 (abrupt
+    motions), fr3strntexfar (rich structures without textures). ORB-SLAM2 fails in
+    sequence fr2poineer360 and fr3strntexfar due to insufficient textures. DSO fails
+    in sequence fr2poineer360 because of abrupt motions and textureless regions. Trajectories
+    are aligned with ground-truths for scale recovery.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Deep_Visual_Odometry_With_Adaptive_Memory\figure_9.jpg
+  Figure 9 caption: Qualitative results of our models trained with different sequence
+    lengths on the KITTI dataset [58]. The trajectories on Seq 03, 04, 05, 06, 07,
+    and 10 of the ground-truth and our model trained on sequences with 5, 7, 9, and
+    11 frames.
+  First author gender probability: 0.57
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Fei Xue
+  Name of the last author: Hongbin Zha
+  Number of Figures: 12
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Deep Visual Odometry With Adaptive Memory
+  Publication Date: 2020-08-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 End-to-End Learning-Based Visual Odometry Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Comparison Against Learning-Based Methods on
+      the KITTI Dataset [58]
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Comparison Against Classic Methods on the KITTI
+      Dataset [58]
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Results on the TUM-RGBD Dataset [59]
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Comparison of Our Models traizned With Different
+      Sequence Lengths on the KITTI Dataset [58]
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Comparison of Our Models Trained With Different
+      Sequence Lengths on the TUM-RGBD Dataset [59]
+  Table 7 caption:
+    table_text: TABLE 7 Running Time of Processing Each Frame
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3014100
+- Affiliation of the first author: department of computer science, city university
+    of hong, kowloon, hong kong
+  Affiliation of the last author: department of computer science, city university
+    of hong, kowloon, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2020\On_Diversity_in_Image_Captioning_Metrics_and_Methods\figure_1.jpg
+  Figure 1 caption: An overview of our diversity metric. Given a set of captions from
+    a method, we first construct the self-similarity matrix K , consisting of CIDEr
+    [1] scores between all pairs of captions. The diversity score is computed from
+    the singular values of K . A higher diversity score indicates more variety in
+    the set of generated captions, such as changes in the level of descriptive detail
+    and inclusion or removal of objects. The accuracy (average CIDEr and average L2E
+    [32]) of the captions with respect to the human ground-truth is on the bottom.
+    For human annotations, this is the leave-one-out accuracy.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\On_Diversity_in_Image_Captioning_Metrics_and_Methods\figure_2.jpg
+  Figure 2 caption: "An illustration of captioning models. A captioning model learns\
+    \ a projection from image space to caption space (solid arrows). Methods focusing\
+    \ only on accuracy will predict \u201Caverage\u201D captions (represented by \u2605\
+    \ ) that contain common words and concepts among the human annotations (represented\
+    \ by \u2022 \u2022 ). In contrast, a diverse captioning model predicts a set of\
+    \ captions (represented by \u25B2 ) that span all the concepts present in the\
+    \ human annotations. The dashed arrows represent image retrieval, which can improve\
+    \ the distinctiveness of the generated caption. The color indicates the image-caption\
+    \ correspondence."
+  Figure 3 Link: articels_figures_by_rev_year\2020\On_Diversity_in_Image_Captioning_Metrics_and_Methods\figure_3.jpg
+  Figure 3 caption: Correlation plots between the diversity scores of computed metrics
+    and human evaluation. Red lines are the best fit lines to the data.
+  Figure 4 Link: articels_figures_by_rev_year\2020\On_Diversity_in_Image_Captioning_Metrics_and_Methods\figure_4.jpg
+  Figure 4 caption: 'The performance of different models considering accuracy and
+    diversity. Left: using LSA-based diversity, which employs BoW features. Right:
+    using CIDEr kernelized diversity (Self-CIDEr). The marker shape indicates the
+    caption model, while the marker color indicates the diversity generator or training
+    method.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\On_Diversity_in_Image_Captioning_Metrics_and_Methods\figure_5.jpg
+  Figure 5 caption: 'The performance of our proposed models. Top: using random sampling.
+    Bottom: using DPP selection, where the dashed lines denote using L2E [32] as the
+    quality function (DPP-L2E) and the solid lines represent using CIDEr as the quality
+    function (DPP-CIDEr).'
+  Figure 6 Link: articels_figures_by_rev_year\2020\On_Diversity_in_Image_Captioning_Metrics_and_Methods\figure_6.jpg
+  Figure 6 caption: "Qualitative results. For DPP selection, we randomly sample 100\
+    \ captions from the trained UDA- m - \u03B6 , where m=8 and \u03B6=1 , then apply\
+    \ DPP to select 5 captions that have both high quality and diversity."
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Qingzhong Wang
+  Name of the last author: Antoni B. Chan
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: 'On Diversity in Image Captioning: Metrics and Methods'
+  Publication Date: 2020-08-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Correlation Between Diversity Metrics and Human Judgement
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Oracle (Upper Bound) and Average Performance Based on
+      Each Metric
+  Table 3 caption:
+    table_text: TABLE 3 The Performance on Generating Single Caption for One Image
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3013834
+- Affiliation of the first author: college of computing, georgia institute of technology,
+    atlanta, ga, usa
+  Affiliation of the last author: department of computer science, university of california,
+    davis, davis, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_1.jpg
+  Figure 1 caption: Speed-performance trade-off for various instance segmentation
+    methods on COCO. To our knowledge, ours is the first real-time (above 30 FPS)
+    approach with over 30 mask mAP on COCO test-dev.
+  Figure 10 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_10.jpg
+  Figure 10 caption: YOLACT versus YOLACT++ (a) shows the rank of each detection in
+    the image. As YOLACT++ has a fast mask re-scoring branch, its detections with
+    better masks are ranked higher than those of YOLACT (see the leftmost giraffe).
+    Since YOLACT++ is equipped with deformable convolutions in the backbone and has
+    a better anchor design, the box recall, mask quality, and classification confidence
+    are all increased. Specifically, (b) shows that both the box prediction and instance
+    segmentation mask of the left zebra is more precise. (c) shows increased detection
+    recall and improved class confidence scores.
+  Figure 2 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_2.jpg
+  Figure 2 caption: YOLACT Architecture Blueyellow indicates lowhigh values in the
+    prototypes, gray nodes indicate functions that are not trained, and k=4 in this
+    example. We base this architecture off of RetinaNet [27] using ResNet-101 + FPN.
+  Figure 3 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_3.jpg
+  Figure 3 caption: "Protonet Architecture The labels denote feature size and channels\
+    \ for an image size of 550\xD7550 . Arrows indicate 3\xD73 conv layers, except\
+    \ for the final conv which is 1\xD71 . The increase in size is an upsample followed\
+    \ by a conv. Inspired by the mask branch in [2]."
+  Figure 4 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_4.jpg
+  Figure 4 caption: Head Architecture We use a shallower prediction head than RetinaNet
+    [27] and add a mask coefficient branch. This is for c classes, a anchors for feature
+    layer P i , and k prototypes. See Fig. 3 for a key.
+  Figure 5 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_5.jpg
+  Figure 5 caption: Prototype Behavior The activations of the same six prototypes
+    (y axis) across different images (x axis). Prototypes 1-3 respond to objects to
+    one side of a soft, implicit boundary (marked with a dotted line). Prototype 4
+    activates on the bottom-left of objects (for instance, the bottom left of the
+    umbrellas in image d); prototype 5 activates on the background and on the edges
+    between objects; and prototype 6 segments what the network perceives to be the
+    ground in the image. These last 3 patterns are most clear in images d-f.
+  Figure 6 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_6.jpg
+  Figure 6 caption: "Fast Mask Re-scoring Network Architecture Our mask scoring branch\
+    \ consists of 6 conv layers with ReLU non-linearity and 1 global pooling layer.\
+    \ Since there is no feature concatenation nor any fc layers, the speed overhead\
+    \ is only \u223C 1 ms."
+  Figure 7 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_7.jpg
+  Figure 7 caption: YOLACT evaluation results on COCOs test-dev set. This base model
+    achieves 29.8 mAP at 33.0 fps. All images have the confidence threshold set to
+    0.3.
+  Figure 8 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_8.jpg
+  Figure 8 caption: Mask Quality Our masks are typically higher quality than those
+    of Mask R-CNN [2] and FCIS [3] because of the larger mask size and lack of feature
+    repooling.
+  Figure 9 Link: articels_figures_by_rev_year\2020\YOLACT_Better_RealTime_Instance_Segmentation\figure_9.jpg
+  Figure 9 caption: More YOLACT evaluation results on COCOs test-dev set with the
+    same parameters as before. To further support that YOLACT implicitly localizes
+    instances, we select examples with adjacent instances of the same class.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.88
+  Name of the first author: Daniel Bolya
+  Name of the last author: Yong Jae Lee
+  Number of Figures: 10
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: YOLACT++ Better Real-Time Instance Segmentation
+  Publication Date: 2020-08-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 MS COCO [11] Results We Compare to State-of-the-Art Methods
+      for Mask mAP and Speed on COCO test-dev and Include Several Ablations of Our
+      Base Model, Varying Backbone Network and Image Size
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Ablations All Models Evaluated on COCO val2017 Using Our Servers
+  Table 3 caption:
+    table_text: TABLE 3 Different Anchor Choices of Prediction Head We Compare Different
+      Anchor Aspect Ratios and Scales
+  Table 4 caption:
+    table_text: TABLE 4 Pascal 2012 SBD [37] Results Timing for FCIS Redone on a Titan
+      Xp for Fairness
+  Table 5 caption:
+    table_text: TABLE 5 Box Performance on COCOs test-dev Set
+  Table 6 caption:
+    table_text: TABLE 6 YOLACT++ Improvements Contribution to Instance Segmentation
+      Accuracy and Speed Overhead of Each Component of YOLACT++
+  Table 7 caption:
+    table_text: TABLE 7 Different Choices of Using Deformable Convolution Layers The
+      Speed versus Performance Trade Off of Different Design Choices When Applying
+      Deformable Convolutions [14] in YOLACT
+  Table 8 caption:
+    table_text: TABLE 8 Timing Breakdown The Time Taken for Each Stage of the Model
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3014297
+- Affiliation of the first author: school of computer science, china university of
+    geosciences, wuhan, china
+  Affiliation of the last author: department of innovation engineering, university
+    of salento, lecce, italy
+  Figure 1 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_1.jpg
+  Figure 1 caption: Some challenging cases for defocus blur detection. (a) Input image,
+    defocus blur detection map obtained by (b) LBP [48], (c) HiFST [1], (d) BTBNet
+    [58], (e) our DeFusionNet, and (f) ground truth (GT).
+  Figure 10 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_10.jpg
+  Figure 10 caption: Comparison of precision-recall curves, F-measure curves and ROC
+    curves of different methods on CTCUG dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_2.jpg
+  Figure 2 caption: The pipeline of our DeFusionNET. The dark gray block represents
+    the proposed FFRM module. For a given image, we first extract its multi-scale
+    features by using the basic VGG network. Then the features from shallow layers
+    and deep layers are fused as FSHF and FSEF, respectively. Considering the complementary
+    information between FSHF and FSEF, we use them to refine the features of deep
+    and shallow layers in a cross-layer manner. The feature fusion and refinement
+    are performed step by step in a recurrent manner to alternatively refine FSHF,
+    FSEF and the features at each layer (the times of recurrent step is empirically
+    set to 3 in our experiments). In addition, the deep supervision mechanism is imposed
+    at each step and the prediction result of each layer are fused to obtain the final
+    defocus blur map.
+  Figure 3 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_3.jpg
+  Figure 3 caption: The architecture of the proposed feature fusing and refining module
+    (FFRM).
+  Figure 4 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_4.jpg
+  Figure 4 caption: An intuitive representation of channel-wise feature maps their
+    corresponding channel weights learned by the proposed CAM. (a) Input image, (b)
+    the ground truth of defocus blur detection map, (c) the first 36 channel-wise
+    feature maps of the concatenated low level shallow features in the first fusing
+    step, (d) the corresponding channel weights of the feature maps in (c), (e) the
+    first 36 channel-wise feature maps of the concatenated high level semantic features
+    in the first fusing step, and (f) the corresponding channel weights of the feature
+    maps in (e), (g), and (h) are the weighted feature maps of (c) and (e), respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_5.jpg
+  Figure 5 caption: The architecture of the proposed channel attention module (CAM).
+  Figure 6 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_6.jpg
+  Figure 6 caption: The architecture of the proposed feature adaptation module (FAM).
+  Figure 7 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_7.jpg
+  Figure 7 caption: Some example images and their annotated ground truths of the CTCUG
+    dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_8.jpg
+  Figure 8 caption: Comparison of precision-recall curves, F-measure curves and ROC
+    curves of different methods on Shi et al.s dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2020\DeFusionNET_Defocus_Blur_Detection_via_Recurrently_Fusing_and_Refining_Discrimin\figure_9.jpg
+  Figure 9 caption: Comparison of precision-recall curves, F-measure curves and ROC
+    curves of different methods on DUT dataset.
+  First author gender probability: 0.93
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Chang Tang
+  Name of the last author: Antonella Longo
+  Number of Figures: 15
+  Number of Tables: 3
+  Number of authors: 8
+  Paper title: 'DeFusionNET: Defocus Blur Detection via Recurrently Fusing and Refining
+    Discriminative Multi-Scale Deep Features'
+  Publication Date: 2020-08-06 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Quantitative Comparison of F-measure, MAE and AUC Scores\
+      \ (The up-arrow \u2191 \u2191 indicates the Larger Value Achieved, the Better\
+      \ Performance is, While the down-arrow \u2193 \u2193 indicates the Smaller,\
+      \ the Better)"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Analysis Using F-measure, MAE, and AUC Scores
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Analysis of the Times of Recurrent Steps (Step k
+      k Represents Using k k Times of Recurrent Steps in DeFusionNet)
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3014629
+- Affiliation of the first author: "university of wisconsin\u2013madison, madison,\
+    \ wi, usa"
+  Affiliation of the last author: "university of wisconsin\u2013madison, madison,\
+    \ wi, usa"
+  Figure 1 Link: articels_figures_by_rev_year\2020\Performing_Group_Difference_Testing_on_Graph_Structured_Data_From_GANs_Analysis_\figure_1.jpg
+  Figure 1 caption: (left) Cortical thickness between the outer and inner cortical
+    surfaces; (center) Cortical thickness shown on a brain mesh graph; (right) Cortical
+    thickness measurements projected on a sphere mesh graph.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Performing_Group_Difference_Testing_on_Graph_Structured_Data_From_GANs_Analysis_\figure_2.jpg
+  Figure 2 caption: While the the structural similarity Left between samples produced
+    by the generator and that of the training data with and without using laplacian
+    regularization is almost the same, Right shows that the FID decreases significantly
+    faster with GLapGAN.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Performing_Group_Difference_Testing_on_Graph_Structured_Data_From_GANs_Analysis_\figure_3.jpg
+  Figure 3 caption: "Results from bunny dataset in exactnoisy settings. We plot the\
+    \ error E in the y\u2212 axis in all the plots. The x\u2212 axis in shows that\
+    \ GLapGAN converges faster computationally (row 1) and statistically (row 2)."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Performing_Group_Difference_Testing_on_Graph_Structured_Data_From_GANs_Analysis_\figure_4.jpg
+  Figure 4 caption: Results of GLapGAN and the baseline GAN (without regularizer)
+    on six settings. Each experiment was run 3 times with different random seeds.
+    The left column shows the mean precision and standard deviation. The right column
+    shows the corresponding mean recall and standard deviation. These results suggest
+    that the proposed model achieves good precisionrecall and offers benefits relative
+    to the baseline with different training sample sizes. By increasing the training
+    sample size, the precision score achieved by both models increases whereas the
+    recall score moderately decreases.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Performing_Group_Difference_Testing_on_Graph_Structured_Data_From_GANs_Analysis_\figure_5.jpg
+  Figure 5 caption: "A map of p -values (on \u2212 log 10 scale) from a t -test performed\
+    \ on the vertex-wise cortical thickness measures from several group pairs. Left\
+    \ to right: (1) CN versus AD which should serve as a ground truth reference (2)\
+    \ GAN CN versus AD (3) CN versus GAN AD (4) GAN CN versus GAN AD . Overall, we\
+    \ see that the results are visually consistent in terms of vertices deemed to\
+    \ be different across the groups."
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tuan Q. Dinh
+  Name of the last author: Vikas Singh
+  Number of Figures: 5
+  Number of Tables: 0
+  Number of authors: 8
+  Paper title: 'Performing Group Difference Testing on Graph Structured Data From
+    GANs: Analysis and Applications in Neuroimaging'
+  Publication Date: 2020-08-07 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3013433
+- Affiliation of the first author: school of engineering, biometric and data pattern
+    analytics lab, universidad autonoma de madrid, madrid, spain
+  Affiliation of the last author: school of engineering, biometric and data pattern
+    analytics lab, universidad autonoma de madrid, madrid, spain
+  Figure 1 Link: articels_figures_by_rev_year\2020\SensitiveNets_Learning_Agnostic_Representations_with_Application_to_Face_Images\figure_1.jpg
+  Figure 1 caption: "Framework including domain adaptation from a pre-trained face\
+    \ representation x to multiple tasks (Verification, Gender, and Ethnicity classification)\
+    \ with and without the agnostic representation \u03C6(x) . C k is the number of\
+    \ classes for each task k (e.g., C 1 = 2 corresponds to: Male, Female). f k (x)\
+    \ is the projection for the adapted domain and p k is the probability of I x to\
+    \ belong to each of the classes of the task k ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\SensitiveNets_Learning_Agnostic_Representations_with_Application_to_Face_Images\figure_2.jpg
+  Figure 2 caption: "Training process of SensitiveNets to remove sensitive information\
+    \ from the pre-trained embedding representation x . The Normalization is a l 2\
+    \ -norm and the Sensitivity Detector is trained using a softmax classification\
+    \ layer. The resulting feature representation is \u03C6(x)."
+  Figure 3 Link: articels_figures_by_rev_year\2020\SensitiveNets_Learning_Agnostic_Representations_with_Application_to_Face_Images\figure_3.jpg
+  Figure 3 caption: Classification accuracy for gender and ethnicity versus percentage
+    of features removed from the feature space before training.
+  Figure 4 Link: articels_figures_by_rev_year\2020\SensitiveNets_Learning_Agnostic_Representations_with_Application_to_Face_Images\figure_4.jpg
+  Figure 4 caption: "Projections of the ResNet-50 embeddings x (Left) and \u03C6(x)\
+    \ (Right) into the 2D space generated with t-SNE. (Color image)."
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Aythami Morales
+  Name of the last author: Ruben Tolosana
+  Number of Figures: 4
+  Number of Tables: 3
+  Number of authors: 4
+  Paper title: 'SensitiveNets: Learning Agnostic Representations with Application
+    to Face Images'
+  Publication Date: 2020-08-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Classification Accuracies for Each Task Before and After Applying
+      the Projection Into the new Feature Representation. Recognition Represents Face
+      Verification Accuracy (in %)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Our Method to the Gender Differential Privacy
+      Method in [9] for Removing Gender Information
+  Table 3 caption:
+    table_text: TABLE 3 Results on AttractivenessSmiling Classification
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3015420
+- Affiliation of the first author: baidu research, beijing, china
+  Affiliation of the last author: reler lab, australian artificial intelligence institute,
+    university of technology sydney, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\Symbiotic_Attention_for_Egocentric_Action_Recognition_With_ObjectCentric_Alignme\figure_1.jpg
+  Figure 1 caption: The illustration of the object-centric feature alignment. For
+    verb classification, the spatial location provided by the detector can possible
+    reduce the object-irrelevant motions. Local motion features aligned with object
+    features serve as possibly action candidates. For noun classification, global
+    alignment inject the local object features into the context-aware global feature.
+    These location-aware feature candidates from the two branches are beneficial to
+    the subsequent meticulous reasoning.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Symbiotic_Attention_for_Egocentric_Action_Recognition_With_ObjectCentric_Alignme\figure_2.jpg
+  Figure 2 caption: The proposed SAOA framework. Our framework consists of three feature
+    extractors and one interaction module. The detection model generates a set of
+    local object features and location proposals. This location-aware information
+    is injected to the two branches by an object-centric alignment method For the
+    Verb branch, the feature map is locally aligned with the objects by combining
+    the local motion features with corresponding object detection features. For the
+    Noun branch, the object features are aligned with the global noun representation.
+    Subsequently, the fused features from each branch interact with the global feature
+    from the other branch by a symbiotic attention mechanism. The two object-centric
+    feature matrices are first normalized by a cross-stream gating operation. After
+    that, the matrices are attended by the other branch to select the most action-relevant
+    information. The outputs of SAOA are used to classify the verb and noun, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Symbiotic_Attention_for_Egocentric_Action_Recognition_With_ObjectCentric_Alignme\figure_3.jpg
+  Figure 3 caption: The illustration of symbiotic attention on the noun branch. The
+    object-centric noun feature matrix is first normalized by the global verb feature.
+    After that, the feature matrix interacts with the global verb feature to generate
+    attention weights. The final noun representation is the weighted sum of the normalized
+    object-centric features.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Symbiotic_Attention_for_Egocentric_Action_Recognition_With_ObjectCentric_Alignme\figure_4.jpg
+  Figure 4 caption: Qualitative results of our SAOA I3D (Flow) model. The colored
+    boxes show the top-5 detected regions and the numbers are the corresponding attention
+    weights generated by our action-attended relation module. Red indicates the failure
+    case.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.66
+  Name of the first author: Xiaohan Wang
+  Name of the last author: Yi Yang
+  Number of Figures: 4
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: Symbiotic Attention for Egocentric Action Recognition With Object-Centric
+    Alignment
+  Publication Date: 2020-08-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Effectiveness of Symbiotic Attention (SA) for Verb Prediction
+      and Noun Prediction on the EPIC-Kitchens Validation Set
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparisons Between Our Symbiotic Attention and Other Aggregation
+      Methods for Noun Prediction on the EPIC-Kitchens Validation Set
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Study for Verb Prediction Using RGB Data as Inputs
+  Table 4 caption:
+    table_text: TABLE 4 Two-Stream SAOA for Both Verb Classification and Noun Classification
+  Table 5 caption:
+    table_text: TABLE 5 The Comparison With the Baseline Models and State-of-the-Art
+      Methods on the EPIC-Kitchens Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Comparison With the Methods on the Leaderboard of EPIC-Kitchens
+      Action Recognition Challenge
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3015894
+- Affiliation of the first author: institute for artificial intelligence, tsinghua
+    university (thuai), beijing, china
+  Affiliation of the last author: department of population health sciences, weill
+    cornell medical college, new york, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_1.jpg
+  Figure 1 caption: Model-protected multi-task learning framework. The solution process
+    is a recursive two-step procedure. The first step is a decoupled learning procedure
+    in which the model parameters for each task are estimated independently using
+    the precomputed shared information among tasks. The second step is a centralized
+    transfer procedure in which the information shared among tasks is extracted for
+    distribution to each task for the decoupled learning procedure in the next step.
+    The shared information is extracted from the tasks covariance matrix, into which
+    Wishart noise is introduced to ensure model security.
+  Figure 10 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_10.jpg
+  Figure 10 caption: Detailed privacy-accuracy tradeoff on real-world datasets for
+    DP-AGGR. All the settings are the same as those in Fig. 9.
+  Figure 2 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_2.jpg
+  Figure 2 caption: "Examples of model leakage and model protection showing model\
+    \ matrices, where columns correspond to tasks and rows correspond to features.\
+    \ The columns shown have been divided by their respective \u2113 2 norms."
+  Figure 3 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_3.jpg
+  Figure 3 caption: "Task relationships and output model matrices for the synthetic\
+    \ data experiments: (a), (b) and (c) are task relationship matrices, (d), (e)\
+    \ and (f) are the output model matrices. In (a), a high-value entry of the matrix\
+    \ indicates that a pair of tasks have similar model parameters. As in (d), a column\
+    \ shows the model parameters of one task, and every 75 columns are similar, which\
+    \ is consistent with (a). (b) and (c) are learned relationship matrices, in which\
+    \ the task-relationship patterns reflected by the relative values of entries are\
+    \ suppose to be similar to the pattern in (a). In addition, (e) and (f) are learned\
+    \ model matrices, and every 75 columns are supposed to be similar as in (d). Moreover,\
+    \ in (e) and (f), the relative values in each column are also supposed to be similar\
+    \ to those in the correspond column in (d). The results shown are the averages\
+    \ of 100 runs with \u03F5=0.1 ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_4.jpg
+  Figure 4 caption: "Evaluations for privacy-budget allocation strategies. In (a),\
+    \ we set \u03F5 t =\u0398( t \u03B1 ) , for t\u2208[T] ; in (b), we set \u03F5\
+    \ t =\u0398( Q \u2212t ) , for t\u2208[T] . Q 0 =1\u2212 \u03BC \u2212 \u2212\
+    \ \u221A \u22480.9684 . The results shown are averages of 100 runs with \u03F5\
+    =0.1 . For the non-private MTL method, the nMSE was 0.0140."
+  Figure 5 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_5.jpg
+  Figure 5 caption: "Noise-to-signal ratios over the iterations of Algorithm 2. The\
+    \ results shown are averages of 100 runs with \u03F5=0.1 ."
+  Figure 6 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_6.jpg
+  Figure 6 caption: "Privacy-accuracy tradeoff on synthetic datasets. For (a), the\
+    \ data associated with the low-rank model matrix were used; for (b), the data\
+    \ associated with the group-sparse model matrix were used. MP-MTL-LR denotes Algorithm\
+    \ 2, MP-MTL-GS denotes Algorithm 3, and STL denotes the \u2113 2 -norm-penalized\
+    \ STL method. In both panels, STL and MTL denote non-private methods. In (b),\
+    \ the nMSEs of DP-MTRL are above 0.16; in both panels, the nMSEs of DP-AGGR are\
+    \ above 0.78. Detailed results of DP-MTRL and DP-AGGR are presented in Fig. 7."
+  Figure 7 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_7.jpg
+  Figure 7 caption: Detailed privacy-accuracy tradeoff on synthetic datasets for DP-MTRL
+    and DP-AGGR. For (a), the data associated with the low-rank model matrix were
+    used; for (b) and (c), the data associated with the group-sparse model matrix
+    were used. In (c), the plot shows the same performances of DP-AGGR as those in
+    (b) but with a finer vertical axis. Other settings are the same as those used
+    for Fig. 6.
+  Figure 8 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_8.jpg
+  Figure 8 caption: Behaviors based on the number of tasks m used for training. We
+    used 320 tasks for MTL training.
+  Figure 9 Link: articels_figures_by_rev_year\2020\ModelProtected_MultiTask_Learning\figure_9.jpg
+  Figure 9 caption: "Privacy-accuracy tradeoff on real-world datasets. In both panels,\
+    \ MTL denotes the method with the best performance among the four non-private\
+    \ MTL methods proposed by [39], [49], [77] and DP-AGGR without perturbations;\
+    \ MP-MTL-LR denotes Algorithm 2, whereas MP-MTL-GS denotes Algorithm 3; STL denotes\
+    \ the method with the better performance between the \u2113 1 - and \u2113 2 -regularized\
+    \ methods. In (b), the aAUCs of DP-AGGR are below 0.66. The detailed performances\
+    \ of DP-AGGR are presented in Fig. 10."
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Jian Liang
+  Name of the last author: Fei Wang
+  Number of Figures: 10
+  Number of Tables: 2
+  Number of authors: 6
+  Paper title: Model-Protected Multi-Task Learning
+  Publication Date: 2020-08-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notations and Symbols
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Utility Results
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3015859
+- Affiliation of the first author: faculty of science, ontario tech university, oshawa,
+    on, canada
+  Affiliation of the last author: faculty of science, ontario tech university, oshawa,
+    on, canada
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Stream_Algebra_for_Performance_Optimization_of_Large_Scale_Computer_Vision_Pip\figure_1.jpg
+  Figure 1 caption: An example of a concurrency pattern expressed in our algebra.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Stream_Algebra_for_Performance_Optimization_of_Large_Scale_Computer_Vision_Pip\figure_2.jpg
+  Figure 2 caption: Example of a multi-loop feedback-control system. a) Feedforward
+    streaming pipeline. b) Multi-loop feedback-control system for controlling a set
+    of operators in the streaming pipeline shown in (a).
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Stream_Algebra_for_Performance_Optimization_of_Large_Scale_Computer_Vision_Pip\figure_3.jpg
+  Figure 3 caption: Online road-boundary detection algorithm [28] described in the
+    stream algebra. The workflow graph with arrows showing the flow direction of streams.
+    Letters on arrows represent stream names. Dashed lines indicate decoupled streams.
+    The input video stream is V , and the output video stream is Y .
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Stream_Algebra_for_Performance_Optimization_of_Large_Scale_Computer_Vision_Pip\figure_4.jpg
+  Figure 4 caption: Using the time-bounded sequential parameter optimization (SPO)
+    algorithm to select parameter settings that maximize precision and recall measures
+    on the training dataset. At each time step, we record the precision and recall
+    of the good parameter setting found so far.
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Stream_Algebra_for_Performance_Optimization_of_Large_Scale_Computer_Vision_Pip\figure_5.jpg
+  Figure 5 caption: Example of applying the idea of boosting to merge the output of
+    two different parameter-tuning algorithms and select a good parameter setting.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mohamed A. Helala
+  Name of the last author: Ken Q. Pu
+  Number of Figures: 5
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: A Stream Algebra for Performance Optimization of Large Scale Computer
+    Vision Pipelines
+  Publication Date: 2020-08-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Main Axioms of BNA
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Additional Axioms of the Synchronous and Asynchronous
+      Operators of the Data Transformer Model of BNA
+  Table 3 caption:
+    table_text: TABLE 3 The Axioms of Our Stream Algebra
+  Table 4 caption:
+    table_text: TABLE 4 Comparing the Results of the Statistical Road-Boundary Detection
+      Method of [28] Before and After Applying the Sequential Parameter Optimization
+      Algorithm on Dataset 2 and Using the Mean and Standard Deviation Statistics
+      for Both Precision and Recall
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3015867
+- Affiliation of the first author: school of mathematics and statistics and ministry
+    of education key lab of intelligent networks and network security, xian jiaotong
+    university, xian, shaanxi, p.r. china
+  Affiliation of the last author: school of mathematics and statistics and ministry
+    of education key lab of intelligent networks and network security, xian jiaotong
+    university, xian, shaanxi, p.r. china
+  Figure 1 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_1.jpg
+  Figure 1 caption: (a) and (b) are illustrations of the observation models for HrMS
+    and LrHS images, respectively.
+  Figure 10 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_10.jpg
+  Figure 10 caption: (a) Y and (b)-(d) three channels of Y output by CMHF-net, on
+    a testing sample in CAVE dataset, fake and real lemon slices.
+  Figure 2 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_2.jpg
+  Figure 2 caption: (a) Learning bases Y by deep network, with Y and Z to be the inputs
+    of network. (b) The HrHS X is linearly represented by Y and to-be-estimated Y
+    with X =YA+ Y B . The rank of X is r .
+  Figure 3 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_3.jpg
+  Figure 3 caption: An illustration of the relationship between the algorithm in matrix
+    form and the network structure in the tensor form.
+  Figure 4 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_4.jpg
+  Figure 4 caption: "(a) The proposed network with K stages, where the k th stage\
+    \ is denoted as S k ,(k=1,2,\u2026,K) . (b) The flowchart of k th ( k<K ) stage.\
+    \ (c)-(e) Illustration of the first, k th ( 1<k<K ) and final stage of the proposed\
+    \ network, respectively. When setting Y (k) =0 , S k is equivalent to S 1 ."
+  Figure 5 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_5.jpg
+  Figure 5 caption: Illustration of how to create the training data when HrHS images
+    are unavailable.
+  Figure 6 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_6.jpg
+  Figure 6 caption: Illustration of the blind MHHS fusion net.
+  Figure 7 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_7.jpg
+  Figure 7 caption: The fusion results obtained by the 4 competing methods. We display
+    the 10th (490nm) band of 3 samples from the testing data.
+  Figure 8 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_8.jpg
+  Figure 8 caption: HrMSLrHS images (10th band) generated by learned responses of
+    CMHF-net. 4 samples are randomly selected from testing data.
+  Figure 9 Link: articels_figures_by_rev_year\2020\MHFNet_An_Interpretable_Deep_Network_for_Multispectral_and_Hyperspectral_Image_F\figure_9.jpg
+  Figure 9 caption: 'RGB (HrMS) images of 5 samples from the testing data generated
+    with the final output X and other parameters learned by intMHF-net and CMHF-net,
+    respectively. From upper to lower: 5 typical RGB images in original test data,
+    those generated by CMHF-net and intMHF-net.'
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.68
+  Name of the first author: Qi Xie
+  Name of the last author: Deyu Meng
+  Number of Figures: 17
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: 'MHF-Net: An Interpretable Deep Network for Multispectral and Hyperspectral
+    Image Fusion'
+  Publication Date: 2020-08-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Performance of the Intuitive and Proposed Models Over
+      12 Testing Images in CAVE Date Set
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 RMSE of HrMSLrMS Images Generated by intMHF-net and CMHF-Net
+      Compared With Their Groundtruth, Over 12 Testing Samples in CAVE Data
+  Table 3 caption:
+    table_text: TABLE 3 Average Performance of the Proposed Method With Different
+      Stage Numbers on CAVE Data Set With Respect to 5 PQIs
+  Table 4 caption:
+    table_text: TABLE 4 Average Performance of all Competing Methods Over 12 Testing
+      Images of CAVE Date Set With Respect to 5 PQIs
+  Table 5 caption:
+    table_text: TABLE 5 Average Performance of all Competing Methods Over 16 Testing
+      Samples of Chikusei Data Set With Respect to 5 PQIs
+  Table 6 caption:
+    table_text: TABLE 6 Average Performance of All Competing Methods Over 12 Testing
+      Images of CAVE Date Set
+  Table 7 caption:
+    table_text: TABLE 7 RMSE Results of R R and C C Estimated in the Testing Stages
+      of BMHF-Net, and Those of the Low Resolution HrMS and LrHS Images Generated
+      by R R and C C With Respect to the Groundtruth
+  Table 8 caption:
+    table_text: TABLE 8 Average Testing Results on CASI-Houston Data Set Over 10 Experiments
+      With Randomly Generated Spectral and Spatial Responses and the Testing Results
+      on ROSIS-Pavia Data
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3015691

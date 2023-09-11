@@ -1,0 +1,900 @@
+- Affiliation of the first author: school of electronic and information engineering,
+    south china university of technology, guangzhou, guangdong, china
+  Affiliation of the last author: faculty of engineering, ubtech sydney ai centre
+    and the school of computer science, university of sydney, darlington, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2019\Orthogonal_Deep_Neural_Networks\figure_1.jpg
+  Figure 1 caption: "Illustration for the local \u03B4 -isometry of a Deep Neural\
+    \ Network (DNN) with ReLU activation and max pooling functions. Black dots represent\
+    \ training instances in the sample space, and regions coded with different colors\
+    \ represent regions in the instance space that are hierarchically specified by\
+    \ layers of the DNN. The illustration depicts proofs of Lemmas 3.1, 3.2, 3.3,\
+    \ and 3.4. Lemma 3.1 proves that the mapping induced by a linear DNN is of \u03B4\
+    \ -isometry, where \u03B4 specified the expansion and contraction properties of\
+    \ the mapping and is determined by singular value spectrums of weight matrices\
+    \ of all the layers. Lemma 3.2 proves that a nonlinear DNN partitions the instance\
+    \ space into increasingly refined regions. As illustrated in the figure, the space\
+    \ is first partitioned into coarser regions (i.e., the center triangle and other\
+    \ three regions color coded as red, blue, and green), an additional layer further\
+    \ partitions some of the coarser regions into sets of smaller regions (e.g., those\
+    \ inside the region of center triangle), and the process goes recursively. Suppose\
+    \ that a region q is created by layer l of the DNN, and in region q , the nonlinear\
+    \ mapping defined by the matrix W l and activation function reduces to a linear\
+    \ mapping of W q l = diag( \u03C4 l (q)) W l , where \u03C4 l (q) is a binary\
+    \ vector roughly indicating active neurons, and diag(\u22C5) diagonalizes \u03C4\
+    \ l (q) . Suppose q \u2032 is created by layer l+1 at the bottom part of the center\
+    \ triangle, and in region q \u2032 , the nonlinear mappings of layer l and layer\
+    \ l+1 are reduced to a linear mapping of W q \u2032 l+1 = diag( \u03C4 l+1 ( q\
+    \ \u2032 )) W l+1 W q \u2032 l , where symbols have similar meanings as described\
+    \ above. The phenomenon enables to find a covering for the sample space, such\
+    \ that in each covering ball that contains training instances, e.g., x , the DNN\
+    \ T defines a transformation that can be characterized as a linear mapping, e.g.,\
+    \ T |x x . This is proved in Lemma 3.3. Radius of the covering ball is illustrated\
+    \ as \u03B32 in the figure \u2014 a radius is acceptable as long as it is less\
+    \ than the smallest distance from any of the training instances to their respective\
+    \ region boundaries. The behaviors of \u03B4 -isometry of T |x are also visualized\
+    \ in regions p and q respectively. The transformation of T applied on instances\
+    \ x is different in different regions. As a demonstration, in region p , the transformation\
+    \ vertically elongates the distance between instances, while in region q , it\
+    \ horizontally elongates the distance instead. Lastly, in Lemma 3.4, we prove\
+    \ that by Cauchy interlacing law, a nonlinear DNN is of local \u03B4 -isometry\
+    \ within each covering ball specified above."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Orthogonal_Deep_Neural_Networks\figure_2.jpg
+  Figure 2 caption: 'Illustration of our used covering scheme that includes instances
+    of different labels into same balls. Colored squares, circles, and stars represent
+    instances of different labels, and unfilled (large) circles represent covering
+    balls. Top: Existing works [50], [59] usually separate instances of different
+    labels into different covering balls, either by assuming that distances between
+    instances of different labels in the sample space are infinite, or by using covering
+    balls that are small enough not to contain instances of different labels; such
+    a scheme can characterize the generalization errors caused by improper expansion
+    of intra-class variations, but it cannot characterize the errors caused by improper
+    contraction of inter-class differences. Bottom: We use a covering scheme that
+    includes instances into covering balls regardless of their labels; it enables
+    characterization of both types of the aforementioned errors, and leads to a possibly
+    tighter generalization error bound in some cases.'
+  Figure 3 Link: articels_figures_by_rev_year\2019\Orthogonal_Deep_Neural_Networks\figure_3.jpg
+  Figure 3 caption: Validation curves of strict and approximate OrthDNNs on the CIFAR10
+    dataset [35] using architectures of a ConvNet (left) and a ResNet (right) respectively
+    of 20 weight layers.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Orthogonal_Deep_Neural_Networks\figure_4.jpg
+  Figure 4 caption: "Regularization effects of our proposed SVB and BBN for varying\
+    \ sizes of training samples. Results in terms of top-1 error rate improvement\
+    \ ( % ) are obtained by training ResNeXt-101 [58] on ImageNet subsets that are\
+    \ constructed by respectively sampling 110 , 15 , 12 , or all of training images\
+    \ per category from ImageNet. Our methods regularize network training and achieve\
+    \ improved results over the respective baselines of 44.10, 34.21, 25.32, and 19.39\
+    \ percent. Results are based on single-crop testing of the size 320\xD7320 ."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Orthogonal_Deep_Neural_Networks\figure_5.jpg
+  Figure 5 caption: Robustness test of 5 severity levels on the ImageNet-C dataset
+    [23]. Results in terms of top-1 error rate improvement ( % ) are obtained by applying
+    ResNeXt-101 [58] models, which are trained without or with regularization of our
+    proposed SVB and BBN, to either clean or corrupted validation images of ImageNet.
+    Our methods give improved results over the respective baselines of 19.39, 30.56,
+    39.26, 47.09, 58.50, and 70.65 percent.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.85
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Shuai Li
+  Name of the last author: Dacheng Tao
+  Number of Figures: 5
+  Number of Tables: 4
+  Number of authors: 5
+  Paper title: Orthogonal Deep Neural Networks
+  Publication Date: 2019-10-21 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Strict and Approximate OrthDNNs on the CIFAR10
+      Dataset [35], Using ConvNet and ResNet Architectures Respectively of 20 Weight
+      Layers (Referring to the Main Text for Their Specifics)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Approximate OrthDNNs via Hard and Soft Regularization
+      on the CIFAR10 Dataset [35], Using a ResNet of 68 Weight Layers
+  Table 3 caption:
+    table_text: TABLE 3 Error Rates ( % %) on the CIFAR10 and CIFAR100 [35] Datasets
+      When Applying our Proposed SVB and BBN to Various Modern Architectures (Referring
+      to the Main Text for Their Specifics)
+  Table 4 caption:
+    table_text: TABLE 4 Error Rates ( % %) on the Validation Set of ImageNet [46]
+      When Applying Our Proposed SVB and BBN to Various Modern Architectures (Referring
+      to the Main Text for Their Specifics)
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2948352
+- Affiliation of the first author: institute for artificial intelligence, tsinghua
+    university (thuai)
+  Affiliation of the last author: institute for artificial intelligence, tsinghua
+    university (thuai)
+  Figure 1 Link: articels_figures_by_rev_year\2019\Adversarial_Margin_Maximization_Networks\figure_1.jpg
+  Figure 1 caption: Different AMM configurations on synthesized 2D data for linear
+    classifiers. (a) The AVG+LIN configuration results in a separating line which
+    is orthogonal to the line connecting the centers of different classes. (b) and
+    (c) By adjusting the scales of regularization term of different data points using
+    our non-linear shrinkage functions, we obtain decision boundaries with improved
+    margins and better generalization ability compared with the linear shrinkage function
+    adopted in AVG+LIN. (d) When the regularization is only applied to samples with
+    small (instance-specific) margins, the learned models almost show optimal performance
+    up to the limit on numerical precisions. The decision boundaries are plotted in
+    red. Best viewed in color.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Adversarial_Margin_Maximization_Networks\figure_2.jpg
+  Figure 2 caption: Convergence curves of MLP models trained using our AMM with different
+    aggregation and shrinkage functions on MNIST.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Adversarial_Margin_Maximization_Networks\figure_3.jpg
+  Figure 3 caption: Convergence curves of MLP models on MNIST w or wo high order gradients.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Adversarial_Margin_Maximization_Networks\figure_4.jpg
+  Figure 4 caption: MNIST test error rates of MLP models with less training images.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Adversarial_Margin_Maximization_Networks\figure_5.jpg
+  Figure 5 caption: MNIST test error rates of MLP models with noisy training images.
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.76
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Ziang Yan
+  Name of the last author: Changshui Zhang
+  Number of Figures: 5
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Adversarial Margin Maximization Networks
+  Publication Date: 2019-10-21 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 Results on MNIST: Compare MLP Models Trained Using Different
+      Aggregation and Shrinkage Functions'
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 MNIST Test Error Rates of MLP Models w or wo High Order Gradients
+  Table 3 caption:
+    table_text: TABLE 3 MNIST Test Error Rates
+  Table 4 caption:
+    table_text: TABLE 4 CIFAR-10 Test Error Rates
+  Table 5 caption:
+    table_text: TABLE 5 CIFAR-100 Test Error Rates
+  Table 6 caption:
+    table_text: TABLE 6 SVHN Test Error Rates
+  Table 7 caption:
+    table_text: TABLE 7 ImageNet Top-1 Validation Error Rates
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2948348
+- Affiliation of the first author: school of automation, northwestern polytechnical
+    university, xian, china
+  Affiliation of the last author: robotics institute, carnegie mellon university,
+    pittsburgh, pa, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_1.jpg
+  Figure 1 caption: Examples from the PASCAL VOC dataset. It is easier to learn 3D
+    models by using the instances with less complex shapes and in relatively clean
+    backgrounds. The learning process may become difficult when the instances are
+    with complex shapes and in cluttered image backgrounds.
+  Figure 10 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_10.jpg
+  Figure 10 caption: "Examples of the mesh maps, the depth maps, the manually annotated\
+    \ keypoints on different masks and the 3D shapes projected on the images by using\
+    \ our method. In subfigures (a)-(f), \u201CMask\u201D shows the ground-truth mask\
+    \ together with the manually annotated keypoints, \u201CProjection\u201D shows\
+    \ the projection obtained by projecting the 3D shapes onto the images according\
+    \ to the estimated viewpoints (see Section 3.1), \u201CMesh\u201D and \u201CDepth\u201D\
+    \ are the 3D shape mesh and the depth map according to its viewpoint, respectively.\
+    \ The subfigure (g) shows some failure cases, which are also challenging for the\
+    \ STA methods with stronger supervision."
+  Figure 2 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_2.jpg
+  Figure 2 caption: The learning process (i.e., subfigures a-d) of the newly proposed
+    3D shape model learning framework. The subfigures (a) and (b) show the viewpoint
+    estimation process (in Section 3.1) and the sub-group generation process (in Section
+    3.2). The subfigures (c) and (d) show the proposed iterative learning process
+    for common object segmentation (in Section 3.4) and the 3D object reconstruction
+    (in Section 3.3).
+  Figure 3 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_3.jpg
+  Figure 3 caption: Two examples (from the car and aeroplane categories) to show the
+    evolvement of the segmentation masks and the 3D mean shapes when the number of
+    iterations increases. Both the segmentation masks and 3D mean shapes are very
+    coarse at the beginning, while we observe fine details after using our iterative
+    learning approach.
+  Figure 4 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_4.jpg
+  Figure 4 caption: Illustration of the two-stage clustering approach.
+  Figure 5 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_5.jpg
+  Figure 5 caption: Examples to illustrate the newly proposed confidence weighting-based
+    3D shape reconstruction scheme.
+  Figure 6 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_6.jpg
+  Figure 6 caption: "Analysis of the performance (mesh error) variation when using\
+    \ different parameters \u03B4 and K e in the proposed learning framework."
+  Figure 7 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_7.jpg
+  Figure 7 caption: Reconstruction performance comparison on missing data by using
+    the proposed method, one baseline method and four state-of-the-art methods MP
+    [38], EM-PPCA [15], PF-NRSfM [39], and L1-Wiberg [40]. Notice that the missing
+    data rates are 10, 20, 30, and 40 percent, respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_8.jpg
+  Figure 8 caption: Statistic of the EM-PPCA method over 100 times experiments and
+    our proposed method with random initialization. The results with larger than 1
+    Mean 3D Error are considered as bad local minimums.
+  Figure 9 Link: articels_figures_by_rev_year\2019\WeaklySupervised_Learning_of_CategorySpecific_D_Object_Shapes\figure_9.jpg
+  Figure 9 caption: "Visual comparisons of the proposed 3D shape reconstruction method\
+    \ and the keypoints based 3D shape reconstruction method using convex hulls. The\
+    \ subfigure (a) shows the comparison of the mean shapes from our inferred segmentation\
+    \ masks and the mean shapes obtained based on the convex hull of the key points.\
+    \ Notice that in the \u201Cmasks\u201D columns of the subfigure (a) we only show\
+    \ four random examples of the segmentation masks from the corresponding category.\
+    \ The subfigure (b) shows the comparison of the 3D shapes reconstructed based\
+    \ on the convex hull of the key points and our final segmentation masks for each\
+    \ peculiar test instance."
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Junwei Han
+  Name of the last author: Fernando De La Torre
+  Number of Figures: 15
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: Weakly-Supervised Learning of Category-Specific 3D Object Shapes
+  Publication Date: 2019-10-25 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Comparison Between the Estimated Viewpoints From Our Approach\
+      \ and the Two Baseline Methods Vanilla EM-PPCA and Rigid-SFM in Terms of Median\
+      \ Error (MedErr) and Accuracy at \u03A06 \u03A06 (Acc \u03A06 \u03A06)"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Learnt 3D Shape Models Between the Proposed
+      Approach and These From the Weakly Supervised Baseline Methods
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Between the Learned 3D Shape Models Obtained From
+      the Proposed Approach and the State-of-the-Art (STA) Methods
+  Table 4 caption:
+    table_text: TABLE 4 Comparison Between the Segmentation Masks From Our Approach
+      and Other Baselines and STAs in Terms of IOU
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2949562
+- Affiliation of the first author: college of electrical and information, xian polytechnic
+    university, xian, china
+  Affiliation of the last author: csiro data61, epping, nsw, australia
+  Figure 1 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_1.jpg
+  Figure 1 caption: "Examples of SOGGDD filters. (a) A SOIGDD filter with \u03C3 2\
+    \ =5 , \u03C1 2 =1 , and \u03B8= \u03C0 4 . (b) A SOAGDD filter with \u03C3 2\
+    \ =5 , \u03C1 2 =3 , and \u03B8= \u03C0 4 ."
+  Figure 10 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_10.jpg
+  Figure 10 caption: Detection results on the test image Star-polygons with 30 sides.
+    (a) Harris, (b) FAST, (c) ANDD, and (d) Proposed detector.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_2.jpg
+  Figure 2 caption: Examples of a basic corner model in the polar coordinate system.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_3.jpg
+  Figure 3 caption: "The step edge, L-type corner, Y-type corner, X-type corner, and\
+    \ star-type corner models are shown in (a)-(e) in the first column (gray value\
+    \ T 1 =50 , T 2 =100 , T 3 =150 , T 4 =200 , and T 5 =120 ). Their corresponding\
+    \ second-order directional derivatives of the SOAGDD representations ( \u03C1\
+    =4 , \u03C3=2 ) and SOIGDD representations ( \u03C1=1 , \u03C3=2 ) are shown in\
+    \ the second and third columns respectively."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_4.jpg
+  Figure 4 caption: "A step edge and an L-type corner are shown in (a)-(b) in the\
+    \ first column (gray values T 1 =50 and T 2 =100 ). Their corresponding directional\
+    \ derivatives of the anisotropic Gaussian directional derivative representation\
+    \ ( \u03C1 2 =8 , \u03C3 2 =8 ) and isotropic Gaussian directional derivative\
+    \ representation ( \u03C1 2 =1 , \u03C3 2 =8 ) are shown in the second and third\
+    \ columns respectively."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_5.jpg
+  Figure 5 caption: Test images (a) Geometric and (b) Lab and their ground truth corner
+    positions.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_6.jpg
+  Figure 6 caption: Detection results on the test image Geometric. (a) Harris [8],
+    (b) Harris-Laplace [14], (c) FAST [32], (d) ANDD [22], (e) ACJ [23], and (f) Proposed
+    detector.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_7.jpg
+  Figure 7 caption: Detection results on the test image Lab. (a) Harris [8], (b) Harris-Laplace
+    [14], (c) FAST [32], (d) ANDD [22], (e) ACJ [23], and (f) Proposed detector.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_8.jpg
+  Figure 8 caption: Test images.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Corner_Detection_Using_SecondOrder_Generalized_Gaussian_Directional_Derivative_R\figure_9.jpg
+  Figure 9 caption: Average repeatabilities of the ten detectors under rotation, uniform
+    scaling, non-uniform scaling, shear transforms, lossy JPEG compression, and zero-mean
+    white Gaussian noises.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.51
+  Name of the first author: Weichuan Zhang
+  Name of the last author: Changming Sun
+  Number of Figures: 11
+  Number of Tables: 2
+  Number of authors: 2
+  Paper title: Corner Detection Using Second-Order Generalized Gaussian Directional
+    Derivative Representations
+  Publication Date: 2019-10-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance Comparison for the Six Detectors on Two Test Images
+      With Ground Truth
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Execution Time and Memory Usage Comparisons
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2949302
+- Affiliation of the first author: inception institute of artificial intelligence,
+    abu dhabi, uae
+  Affiliation of the last author: osram gmbh, munich, germany
+  Figure 1 Link: articels_figures_by_rev_year\2019\Forecasting_People_Trajectories_and_Head_Poses_by_Jointly_Reasoning_on_Tracklets\figure_1.jpg
+  Figure 1 caption: "Motivating the MX-LSTM: a) analysis between the angle discrepancy\
+    \ \u03C9 between head pose and movement, the pedestrain velocity and the average\
+    \ errors of different approaches on the UCY sequence [1]; b) correlation between\
+    \ movement angle \u03B2 and head orientation angle \u03B1 when the velocity is\
+    \ varying (better in color)."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Forecasting_People_Trajectories_and_Head_Poses_by_Jointly_Reasoning_on_Tracklets\figure_2.jpg
+  Figure 2 caption: A graphical interpretation of tracklets and viselets. a) Tracklets
+    x (i) t and x (i) t+1 and vislet anchor point a (i) t . b) Social pooling leveraging
+    the Visual Frustum of Attention. c) Angles for the correlation analysis.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Forecasting_People_Trajectories_and_Head_Poses_by_Jointly_Reasoning_on_Tracklets\figure_3.jpg
+  Figure 3 caption: 'VFOA pooling: for a given subject, he will try to avoid collision
+    with the people who are inside his view frustum (blue circle). Others (red circle),
+    will not influence his trajectory as they are no in his view frustum.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\Forecasting_People_Trajectories_and_Head_Poses_by_Jointly_Reasoning_on_Tracklets\figure_4.jpg
+  Figure 4 caption: 'Qualitative results: a) MX-LSTM and b) ablation qualitative study
+    on Individual MX-LSTM (better in color).'
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Irtiza Hasan
+  Name of the last author: Fabio Galasso
+  Number of Figures: 4
+  Number of Tables: 8
+  Number of authors: 8
+  Paper title: Forecasting People Trajectories and Head Poses by Jointly Reasoning
+    on Tracklets and Vislets
+  Publication Date: 2019-10-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Mean and Final Average Displacement Errors (in Meters) for
+      All the Methods on All the Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Dataset Statistics
+  Table 3 caption:
+    table_text: TABLE 3 Mean Angular Error (in Degrees) for the State-of-the-Art Head
+      Pose Estimator [67], and Our Model Fed With Manual Annotations (MX-LSTM) and
+      Estimated Values (MX-LSTM-HPE)
+  Table 4 caption:
+    table_text: TABLE 4 Mean Average Displacement (MAD) Error When Changing the Forecasting
+      Horizon
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of MX-LSTM Against Techniques Which Leverage Ground-Truth
+      Information From Future Frames
+  Table 6 caption:
+    table_text: TABLE 6 Mean Average Displacement (MAD) Error When Changing the Observation
+      Period
+  Table 7 caption:
+    table_text: TABLE 7 Mean Average Displacement (MAD) Error When Changing the Forecasting
+      Horizon
+  Table 8 caption:
+    table_text: TABLE 8 MAD Errors on the Different Datasets
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2949414
+- Affiliation of the first author: "inria and the d\xE9partement dinformatique de\
+    \ lens, \xE9cole normale sup\xE9rieure, cnrs, psl research university, paris,\
+    \ france"
+  Affiliation of the last author: "inria, the d\xE9partement dinformatique de lens,\
+    \ \xE9cole normale sup\xE9rieure, cnrs, psl research university, paris, france"
+  Figure 1 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_1.jpg
+  Figure 1 caption: Bilinear image translation. Our method takes as input an image
+    of an object (in green), such as a car, and generates what it would have looked
+    like in another time-period (in blue). Each row shows temporal translation for
+    a different input car image (in green). The translation model is trained on a
+    unpaired dataset of cars with time stamps. We show that analyzing changes between
+    the generated images reveal structural deformations in car shape and appearance
+    over time.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_10.jpg
+  Figure 10 caption: Analyzing trends over time. Each plate (a-c) shows consistent
+    changes over time. In each plate, we show the original input images (top row),
+    their translation into another period (middle row) and the absolute differences
+    (bottom row) between the top and middle images. The absolute differences are shown
+    as heatmaps where bright yellow color indicates the maximum absolute difference
+    within the image, while dark blue colors correspond to small differences. We superimpose
+    the heatmaps on a low contrast version of the original input image to further
+    highlight the changes produced by our model. Please see more results on the project
+    webpage project webpage [72]
+  Figure 2 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_2.jpg
+  Figure 2 caption: CNN architecture for factored visual discovery. We assume that
+    an image is completely determined by (i) latent content variable z y capturing
+    the appearance factors independent of time such as car type and color, and (ii)
+    the time feature y capturing the appearance factors specific to certain time,
+    such as the running boards for cars made in 1930s. The input image I is encoded
+    into a feature vector x , which is transformed together with year variable y using
+    a mapping f(x,y) into a latent content representation z y . A second mapping g(z,y)
+    then combines the latent content with the input time feature y to produce new
+    feature x y . The reconstructed feature x y is finally decoded into image I y
+    . Parameters of the factorization module together with the encoder and decoder
+    are learnt in an end-to-end manner.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_3.jpg
+  Figure 3 caption: Factorization architectures. Our bilinear factorization module
+    (top) and the standard concatenation-based architecture (bottom) have two principal
+    differences. First, our module captures multiplicative interactions between time
+    y and content z y , while concatenation implies additive interactions. Then, we
+    explicitly include dependency on time y in computing latent content z y . More
+    layers can be included in our bilinear module similar to the concatenation architecture.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_4.jpg
+  Figure 4 caption: 'Comparison of different architectures and losses. From left to
+    right: (a) original input image in the 1990s; (b) translation into 1940s generated
+    with a bilinear bottleneck autoencoder fine-tuned using only a L1 reconstruction
+    loss produces rather blurry output; (c) Fine-tuning using an additional adversarial
+    loss produces sharper results; (d) the best results are obtained using the bilinear
+    adversarial translation model.'
+  Figure 5 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_5.jpg
+  Figure 5 caption: Comparison between our bilinear adversarial translation model,
+    CycleGAN [3], and StarGAN [59]. Original input images (all from 1940s) are shown
+    in the top row. Their translations to different time periods, including their
+    original time period, are shown below. Our bilinear adversarial translation and
+    CycleGAN produce sharp images and clear changes over time with comparable visual
+    quality of results. However, our bilinear adversarial translation architecture
+    has the advantage of being a single model whereas a separate CycleGAN model needs
+    to be trained for each target time period. StarGAN learns to change facial features
+    but not the hairstyle.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_6.jpg
+  Figure 6 caption: Comparison between our bilinear adversarial translation model,
+    CycleGAN [3], and StarGAN [59]. Original input images (all from 1960s) are shown
+    in the top row. Our bilinear adversarial translation and CycleGAN produce sharp
+    images and clear changes over time with comparable visual quality of results.
+    StarGAN did not learn to produce significant changes over time on the car dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_7.jpg
+  Figure 7 caption: The main failure modes of our bilinear adversarial translation
+    model. Each column shows one failure mode (unusual viewpoint, open hood, rare
+    car type). In each column the top image shows the input (car from the 1940s, green
+    border) and the bottom image shows the output translation into the 1990s (blue
+    border). In all cases the model fails to modify the input image in a substantial
+    way, but often still modifies some small parts, such as the wheels or the headlights.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_8.jpg
+  Figure 8 caption: 'Comparison of bilinear and concatenation modules in the bottleneck
+    auto-encoder architecture. In each example we show: (a) input original image (1960s);
+    (b-d) concatenation-based translation to 1940s (top) and 1990s (bottom) using
+    different code size of 4 (b), 16 (c), and 64 (d); (e-f) bilinear translation to
+    1940s (top) and 1990s (bottom) using code size of 16 (e) and 64 (f). Note that
+    concatenation modules produce either limited temporal changes (larger code size)
+    or low quality reconstruction (small code size). On the contrary, the bilinear
+    factorization module (e-f) produces significant temporal variations with reasonable
+    image quality for a range of code sizes.'
+  Figure 9 Link: articels_figures_by_rev_year\2019\Bilinear_Image_Translation_for_Temporal_Analysis_of_Photo_Collections\figure_9.jpg
+  Figure 9 caption: Examples of frames from history-lapse videos generated by our
+    bilinear adversarial translation model. Here, input images of cars from the 1940s
+    (left) are translated to different future times (left to right) by varying the
+    input time variable. The output is a video showing changes of car style over time.
+    Please note how the shape and appearance of the input cars changes over time.
+    For example, the curved hood gradually fattens, the round lights become rectangular,
+    the windscreen gets bigger, the front grille gets smaller, and the running board
+    on the side gradually disappears. Note also that other characteristics of the
+    input car instances, such as viewpoint, color and the overall shape are preserved
+    by the learnt temporal transformation. History-lapse videos can be found on the
+    project webpage [72].
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: "Th\xE9ophile Dalens"
+  Name of the last author: Josef Sivic
+  Number of Figures: 11
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: Bilinear Image Translation for Temporal Analysis of Photo Collections
+  Publication Date: 2019-10-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Evaluation of Our Models and Baselines for Both
+      the Cars [4] and Faces [5] Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2950317
+- Affiliation of the first author: university of science and technology of china,
+    hefei, anhui, china
+  Affiliation of the last author: department of computer science, university of rochester,
+    rochester, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_1.jpg
+  Figure 1 caption: "The basic idea of our DosGAN-c on conditional image-to-image\
+    \ translation. D k \u2200k\u2208[N] are N domains of interests. Our model disentangles\
+    \ N domain-specific feature latent space S k through a classifier. Encoder in\
+    \ DosGAN-c learns to project images from N domains to a domain-independent latent\
+    \ space I shared by all domains. Given x 1 \u2208 D 1 for example, various translation\
+    \ image x 1k can be obtained by varying domain-specific features in S k . Specially,\
+    \ x 11 should be consistent with x 1 ."
+  Figure 10 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_10.jpg
+  Figure 10 caption: Comparison between StarGAN and our DosGAN on multiple season
+    translation.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_2.jpg
+  Figure 2 caption: Training architecture of the proposed DosGAN for unpaired image-to-image
+    translation.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_3.jpg
+  Figure 3 caption: Training architecture of the proposed DosGAN for unpaired conditional
+    image-to-image translation (briefly, DosGAN-c).
+  Figure 4 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_4.jpg
+  Figure 4 caption: "The network configuration of DosGANDosGAN-c. \u2212 represents\
+    \ the number of domain-specific features which is determined by the different\
+    \ tasks."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_5.jpg
+  Figure 5 caption: Multiple identity translation results of StarGAN and our DosGAN
+    on Facescrub. The first column is inputs x A , and the first row is x B for DosGAN-cs
+    conditional inputs and target identity examples for StarGAN and DosGAN. Other
+    images are the translation results.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_6.jpg
+  Figure 6 caption: Our results on multiple identity translation on unlabeled CelebA
+    with domain supervision from Facescrub.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_7.jpg
+  Figure 7 caption: Domain-specific interpolations on the CelebA. The translation
+    results are generated by combining inputs domain-independent features with domain-specific
+    features interpolated linearly from left conditional inputs to right conditional
+    inputs.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_8.jpg
+  Figure 8 caption: Our results on multiple identity translation on 3 identities in
+    Facescrub with domain supervision from 528 identities in Facescrub.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Exploring_Explicit_Domain_Supervision_for_Latent_Space_Disentanglement_in_Unpair\figure_9.jpg
+  Figure 9 caption: Comparison between StarGAN and our DosGAN on multiple facial attribute
+    translation.
+  First author gender probability: 0.95
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Jianxin Lin
+  Name of the last author: Jiebo Luo
+  Number of Figures: 11
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: Exploring Explicit Domain Supervision for Latent Space Disentanglement
+    in Unpaired Image-to-Image Translation
+  Publication Date: 2019-10-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Top-1 and Top-5 Face Recognition Accuracy [%] of Multiple
+      Identity Translation Results on Facescrub
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Top-1 Face Recognition Accuracy [%] of Two VGG-16s, That are
+      Trained on Full Training Set and Half Training Set Respectively, on Training
+      Images, Testing Images, Generated Images From DosGAN, and Generated Images From
+      DosGAN half half
+  Table 3 caption:
+    table_text: TABLE 3 Top-1 and Top-5 Face Recognition Accuracy [%] of 3 Identities
+      Identity Translation Results on Facescrub
+  Table 4 caption:
+    table_text: TABLE 4 Classification Error Rate on Multiple Facial Attribute Translation
+  Table 5 caption:
+    table_text: TABLE 5 FID Scores of Multiple Season Translation
+  Table 6 caption:
+    table_text: TABLE 6 PSNR [dB], SSIM, FID between Ground Truth Images and Translation
+      Images Generated From Paired Edge Images and Ground Truth Images
+  Table 7 caption:
+    table_text: TABLE 7 Ablation Study of DosGAN on Multiple Identity Translation
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2950198
+- Affiliation of the first author: school of engineering and information technology,
+    university of new south wales, canberra, act, australia
+  Affiliation of the last author: school of engineering and information technology,
+    university of new south wales, canberra, act, australia
+  Figure 1 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_1.jpg
+  Figure 1 caption: "Diagram of basic principle of triangulation, where P is a point\
+    \ of a 3D object, p and p \u2032 its corresponding points in 2D images captured\
+    \ by two cameras, O R and O L the centers of the left and right cameras, respectively,\
+    \ f the distance between the lens and image plane, b the distance between the\
+    \ centers of the two camera centers, and x R \u2212 x L the disparity of point\
+    \ p in the left image."
+  Figure 10 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_10.jpg
+  Figure 10 caption: Samples of (a) ground-truth disparity map and (b) reconstructed
+    one from our method, with (c) the average PBPs for different thresholds.
+  Figure 2 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_2.jpg
+  Figure 2 caption: A pair of rectified 2D fingerprint images (a) the middle-view
+    image and (b) the right-view image and their respective SRVMs (c) and (d), with
+    white curves refer to ridges and dark curves refer to valleys.
+  Figure 3 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_3.jpg
+  Figure 3 caption: "Diagram of proposed Row-Operator calculating M M backwards from\
+    \ (a) matched pair of labels L s and L \u2032 s to (b) previous pair of valley\
+    \ curve labels L v1 and L \u2032 v1 ."
+  Figure 4 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_4.jpg
+  Figure 4 caption: Result for RVC, where corresponding RV curves have same color.
+  Figure 5 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_5.jpg
+  Figure 5 caption: Diagram of proposed curve-based smoothing. (a) Disparity vectors
+    of example curve highlighted in red in (b), where gray circles represent initially
+    calculated disparities, blue crosses disparities after median filtering, and red
+    points disparities after average filtering.
+  Figure 6 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_6.jpg
+  Figure 6 caption: '3D reconstruction results of our method for one finger: (a) 3D
+    point cloud; (b) the mesh; (c) 3D surface; and (d) textured 3D surface.'
+  Figure 7 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_7.jpg
+  Figure 7 caption: 3D reconstruction results for (a) a contaminated finger, (b) 3D
+    surface, and (c) textured 3D surface are both reconstructed with the contaminated
+    pattern being removed.
+  Figure 8 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_8.jpg
+  Figure 8 caption: Comparison of 3D fingerprint surface reconstructed using the methods
+    based on photometric stereo ((a), (b), and (c)), structured light ((d) and (e)),
+    and stereo vision ((f), (g), (h), and (i)).
+  Figure 9 Link: articels_figures_by_rev_year\2019\D_Fingerprint_Recognition_based_on_RidgeValleyGuided_D_Reconstruction_and_D_Topo\figure_9.jpg
+  Figure 9 caption: Fingerprints with illuminated patterns.
+  First author gender probability: 0.96
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Xuefei Yin
+  Name of the last author: Jiankun Hu
+  Number of Figures: 11
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: 3D Fingerprint Recognition based on Ridge-Valley-Guided 3D Reconstruction
+    and 3D Topology Polymer Feature Extraction
+  Publication Date: 2019-10-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of 3D Fingerprint Reconstruction Time of State-of-the-Art
+      Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Performances for 3D Fingerprint Recognition
+      of State-of-the-Art Methods Evaluated on Databases DB1 and DB2
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2949299
+- Affiliation of the first author: centre for vision, speech, and signal processing,
+    university of surrey, guildford, united kingdom
+  Affiliation of the last author: centre for vision, speech, and signal processing,
+    university of surrey, guildford, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_1.jpg
+  Figure 1 caption: Four main visual semantic information pursuit applications are
+    introduced in this survey, which include object detection (OD), visual semantic
+    segmentation (VSS), visual relationship detection (VRD), and scene graph generation
+    (SGG).
+  Figure 10 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_10.jpg
+  Figure 10 caption: The diagram of teacher-student distillation models.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_2.jpg
+  Figure 2 caption: In current visual perception modules, three possible prior factors
+    associated with region proposals - visual appearance, class information, and relative
+    spatial relationship - are often considered since the current visual semantic
+    relations, as discussed in Section 2, are normally generated via two-stage detection
+    methods. To our knowledge, the potential dense semantic segmentation maps are
+    not yet explored to generate visual semantic relations in current research.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_3.jpg
+  Figure 3 caption: The unified paradigm of the current visual semantic information
+    pursuit methods.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_4.jpg
+  Figure 4 caption: Message passing strategies for different types of the triplet-based
+    reasoning models, in which the messages are passing among the corresponding triplet
+    components.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_5.jpg
+  Figure 5 caption: Message passing strategies for MRF-based or CRF-based reasoning
+    models, in which the messages are generally passing within the same semantic level.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_6.jpg
+  Figure 6 caption: Message passing strategies for the visual semantic hierarchy reasoning
+    models, in which the messages are passing though different semantic levels.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_7.jpg
+  Figure 7 caption: The applied UCG is decomposed as a sequence of DAGs (one possible
+    decomposition), in which the messages in each DAG are passing along its specific
+    structure.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_8.jpg
+  Figure 8 caption: Overview of 2-D spatial external memory iterations for object
+    detection. The old detection is marked with a green box, and the new detection
+    is marked with orange. Here, the spatial memory network is only unrolled one iteration.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Visual_Semantic_Information_Pursuit_A_Survey\figure_9.jpg
+  Figure 9 caption: The diagram of semantic affinity distillation models.
+  First author gender probability: 0.86
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Daqi Liu
+  Name of the last author: Josef Kittler
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: 'Visual Semantic Information Pursuit: A Survey'
+  Publication Date: 2019-10-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Overview of the Typical Visual Semantic Information Pursuit
+      Methods
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance Comparison on VOC 2007 Test
+  Table 3 caption:
+    table_text: TABLE 3 Performance Comparison on COCO 2015 Test-Dev
+  Table 4 caption:
+    table_text: TABLE 4 Performance Comparison (%) on Pascal Context Dataset (59 Classes)
+  Table 5 caption:
+    table_text: TABLE 5 Performance Comparison (%) on Sift Flow Dataset (33 Classes)
+  Table 6 caption:
+    table_text: TABLE 6 Performance Comparison (%) on COCO Stuff Dataset (171 Classes)
+  Table 7 caption:
+    table_text: TABLE 7 Performance Comparison on Visual Relationship Dataset ( k=1
+      k=1)
+  Table 8 caption:
+    table_text: TABLE 8 Performance Comparison on Visual Genome Dataset ( k=100 k=100)
+  Table 9 caption:
+    table_text: TABLE 9 Performance Comparison on Visual Genome Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2950025
+- Affiliation of the first author: department of applied mathematics and statistics,
+    johns hopkins university, baltimore, md, usa
+  Affiliation of the last author: department of applied mathematics and statistics,
+    johns hopkins university, baltimore, md, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Joint_Embedding_of_Graphs\figure_1.jpg
+  Figure 1 caption: "Relationships between random graph models on 1 graph and multiple\
+    \ graphs. The top panel shows the relationships between the random graph models\
+    \ on 1 graph. The models considered are those conditioned on latent positions,\
+    \ that is \u03C4 , X and \u03BB in SBM, RDPG and MREG respectively are treated\
+    \ as parameters. ER is a 1-block SBM. If a graph follows SBM with a positive semidefinite\
+    \ edge probability matrix, it also follows the RDPG model. Any SBM and RDPG graph\
+    \ can be represented by a d -dimensional MREG model with d being less than or\
+    \ equal to the number of blocks or the dimension of RDPG. On one graph, inhomogeneous\
+    \ ER (IER), n -dimensional MREG and n -block SBM are equivalent. The bottom panel\
+    \ shows the relationships between the random graph models on multiple graphs.\
+    \ The models considered are those conditioned on latent positions, and for ER,\
+    \ SBM and RDPG graphs are sampled i.i.d. with the same parameters. In this case,\
+    \ MREG has the flexibility to have \u03BB differ across graphs, which leads to\
+    \ a more generalized model for multiple graphs."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Joint_Embedding_of_Graphs\figure_2.jpg
+  Figure 2 caption: "Mean bias ( \u2225 h m k \u2212 h k \u2225 ) and mean difference\
+    \ between estimates ( \u2225 h m k \u2212 h m2 k \u2225 ) across 20 simulations\
+    \ are shown. The standard errors are also given by error bars. The graphs are\
+    \ generated from a 3-dimensional MREG model as described in Section 5.1. h m k\
+    \ has small asymptotic bias; however, it seems to converge as m increases."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Joint_Embedding_of_Graphs\figure_3.jpg
+  Figure 3 caption: "Distribution of differences between \u03BB i [1] estimated using\
+    \ h m 1 and h 1 . The graphs are generated from the three-dimensional MREG model\
+    \ as described in section 5.1. The differences are small due to the fact that\
+    \ h m 1 and h 1 are close."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Joint_Embedding_of_Graphs\figure_4.jpg
+  Figure 4 caption: Scatter plot of loadings computed by jointly embedding 200 graphs.
+    The graphs are generated from the two-dimensional MREG model as described in Equation
+    (8). The loadings of two classes are separated after being jointly embedded.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Joint_Embedding_of_Graphs\figure_5.jpg
+  Figure 5 caption: Mean classification accuracy of joint embedding, Adjacency Spectral
+    Embedding, Laplacian Eigenmap, Graph Statistics, Graph Spectral Statistics, and
+    PCA with their standard errors are shown. The graphs are generated from a two-dimensional
+    MREG model as described in the Equation (8). The features are first extracted
+    using methods described above; subsequently, we apply a one-NN to classify graphs.
+    For each value of m , the simulation is repeated 100 times. ASE, LE, GS, and GSS
+    do not take advantage of increasing sample size in the feature extraction step.
+    PCA has poor performance when the sample size is small. Joint embedding takes
+    advantage of increasing sample size and outperforms other approaches when given
+    more than 10 graphs.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Joint_Embedding_of_Graphs\figure_6.jpg
+  Figure 6 caption: 'Comparison of average classification accuracy and model complexity
+    (number of embedding dimensions and description length) for JEG and PCA on the
+    HNU1 data. A d dimensional representation is estimated using a training sample
+    (top row: one graph per subject, bottom row: eight graphs per subject), after
+    which all data is embedded, and the test data is classified using one-NN. The
+    representations obtained by JEG are more accurate with fewer model parameters
+    than PCA, especially when the sample size is small.'
+  Figure 7 Link: articels_figures_by_rev_year\2019\Joint_Embedding_of_Graphs\figure_7.jpg
+  Figure 7 caption: Latent positions of the vertices found by JEG for the first seven
+    dimensions using the HNU1 data. The color indicates the hemisphere side according
+    to the Talairach atlas. The off-diagonal panels contain scatter plots of the vertices
+    and diagonal plots show the density. Several dimensions of the embedding show
+    a relationship between the latent positions and the hemisphere side.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Joint_Embedding_of_Graphs\figure_8.jpg
+  Figure 8 caption: The joint latent positions of H estimated by the JE are shown.
+    The first three plots on the diagonal are density estimates of latent positions
+    for each dimension and category, and the last plot shows the number of points
+    from each category. The first three plots of the last row show latent positions
+    histograms for each dimension and category, and the first three plots of the last
+    column are the corresponding box plots. The pairs plots of latent positions are
+    given in the off-diagonal panels. The latent positions of math terms are separated
+    from the other two clusters.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Shangsi Wang
+  Name of the last author: Carey E. Priebe
+  Number of Figures: 8
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Joint Embedding of Graphs
+  Publication Date: 2019-10-31 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Objective Function and Running Time of Four Initialization
+      Approaches
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Clustering Performance on Wikipedia Graphs
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2948619

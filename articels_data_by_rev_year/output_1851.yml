@@ -1,0 +1,853 @@
+- Affiliation of the first author: nanjing university of science and technology, nanjing,
+    china
+  Affiliation of the last author: nanjing university of science and technology, nanjing,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_1.jpg
+  Figure 1 caption: Overview of the proposed covariance attention semantic segmentation
+    network, CANet. Given an input image, (a) we firstly utilize the CNN backbone
+    to obtain the feature maps. (b) Then, feed the feature map to the spatial and
+    channel covariance attention modules for attention features. (c) Finally, fuse
+    the spatial and channel attention features, followed by upsampling to form the
+    final prediction.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_10.jpg
+  Figure 10 caption: Examples to show the difference between DANet and CANet covariance
+    projection. (a) shows the original images; (b) shows the results of DANet projection;
+    and (c) shows the results of CANet covariance projection.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_2.jpg
+  Figure 2 caption: 'Covariance projection of a toy example: (a) Original data distribution,
+    and (b) Data distribution after covariance matrix projection; Covariance projection
+    of a 2-dimensional image: (c) is the original image, and the (d) is the projection
+    result.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_3.jpg
+  Figure 3 caption: 'The pipeline of spatial covariance attention module. It contains
+    four branches: spatial covariance in row (SCR), spatial covariance in column (SCC),
+    edge covariance in row (ECR) and edge covariance in column (ECC). The combination
+    of SCR and ECR (marked as the small dot box) is defined as the basic spatial covariance
+    module and is referred as to SCA. And the combination of all the four branches
+    (marked as the big dot box) is defined as the 2-directional SCA and is referred
+    as to SCA2d.'
+  Figure 4 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_4.jpg
+  Figure 4 caption: "Visualization of the spatial covariance projection. Three examples\
+    \ are given: (a1)-(a6) are the projection results of a color palette with vertical\
+    \ patterns, (b1)-(b6) are the projection results of a color palette with isotropic\
+    \ patterns, and (c1)-(c6) are the projection results of a natural image. Take\
+    \ (a1)-(a6) for example, (a2) is the original image of size H\xD7W; (a1) is the\
+    \ SCR H s r of size H\xD7H; (a3) is the SCC H s c of size W\xD7W; (a4) is the\
+    \ image projection of SCR; (a6) is the image projection of SCC; and (a5) is the\
+    \ image projection of both of SCR and SCC."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_5.jpg
+  Figure 5 caption: An intuitive example to show the contribution of the edge attention
+    module. (a) is the input image, (b) is a feature map (1st channel) from the dilated
+    FCN, (c) is the feature map (1st channel) augmented by edge attention module.
+    Two sample regions are marked by green and red boxes and are enlarged in (d1)-(d3)
+    and (e1)-(e3).
+  Figure 6 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_6.jpg
+  Figure 6 caption: 'The details of channel covariance attention module. It contains
+    two branches: in the top branch channel dimension is combined with the height
+    of the tensor to generate the image slices; in the bottom branch channel dimension
+    is combined with the width of the tensor to generate the image slices.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_7.jpg
+  Figure 7 caption: Visualization results of attention module on Cityscapes validation
+    set. The left two columns are the image and ground truth from the validation set
+    of Cityscapes. The 3rd, 4th and 5th columns represent the pixels-wise raw features,
+    the features processed by the spatial and channel covariance attention operation.
+    The 1st, 2nd and 3rd rows respond to the car, person, traffic light class.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_8.jpg
+  Figure 8 caption: The detailed position and channel attention module proposed in
+    DANet.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Covariance_Attention_for_Semantic_Segmentation\figure_9.jpg
+  Figure 9 caption: Two methods handle the spatial relationship in different ways.
+    (a1) is the original image; (a2) is the resulting image after DANet projection;
+    (a3) is the permutation of the input image; (a4) is the DANet projection of the
+    permutation; and (a5) is the inverse permutation image. (b1)-(b5) show the results
+    of CANet covariance projection.
+  First author gender probability: 0.92
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.51
+  Name of the first author: Yazhou Liu
+  Name of the last author: Qunsen Sun
+  Number of Figures: 12
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Covariance Attention for Semantic Segmentation
+  Publication Date: 2020-09-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Study on Different Components of the Full Attention
+      Modules on the Validation Set of Cityscapes
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Performance of SCA and CCA Compared to Classic Dependency
+      Based Attention Modules on Pascal-Context Test
+  Table 3 caption:
+    table_text: TABLE 3 The Space and Time Complexity of Attention Methods
+  Table 4 caption:
+    table_text: TABLE 4 The Model Size, Running Time and Memory Cost Analysis
+  Table 5 caption:
+    table_text: TABLE 5 ADE20K Performance
+  Table 6 caption:
+    table_text: TABLE 6 Pascal-Context Performance
+  Table 7 caption:
+    table_text: TABLE 7 Segmentation Results on Cityscapes Test
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026069
+- Affiliation of the first author: "department of informatics, technische universit\xE4\
+    t m\xFCnchen, m\xFCnchen, germany"
+  Affiliation of the last author: "department of informatics, technische universit\xE4\
+    t m\xFCnchen, m\xFCnchen, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_1.jpg
+  Figure 1 caption: "Visualization of exponential mapping. Two points v a , v b \u2208\
+    \ S 2 \u2296 correspond to two points d a , d b \u2208 R 2 and \u2220( v a , v\
+    \ b )\u2264\u2225 d a \u2212 d b \u2225 . A square-shaped branch, whose center\
+    \ is d exp c , is relaxed into a circle in R 2 . Then the pre-image of the circle\
+    \ is relaxed into a spherical patch, whose center is v exp c , in S 2 . \u03C8\
+    \ exp is the radius of the relaxed circle in the 2D plane."
+  Figure 10 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_10.jpg
+  Figure 10 caption: "\u03C4 -recall curve in NYUv2 data. (Higher is better)."
+  Figure 2 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_2.jpg
+  Figure 2 caption: "Visualization of stereographic projection. A point v\u2208 S\
+    \ 2 \u2296 corresponds to a point k\u2208 R 2 . A square-shaped branch is relaxed\
+    \ to a circle, which corresponds to an umbrella-shaped region in S 2 \u2296 ."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_3.jpg
+  Figure 3 caption: Visualization of the spherical coordinate system. The hemisphere
+    is flattened to a rectangle, which leads to significant distortion, especially
+    near the pole.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_4.jpg
+  Figure 4 caption: "The geometry of a square-shaped branch in stereographic projection\
+    \ plane. A square-shaped branch ( k 1 , k 2 , k 3 , k 4 ) is projected to a domain\
+    \ ( v 1 , v 2 , v 3 , v 4 ) in S 2 . The radius of its circumscribed circle is\
+    \ \u03C3 ste , and the direction of the center point is v ste c , then \u03C8\
+    \ ste =\u2220( v 1 , v ste c )=arcsin( \u03C3 ste ) ."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_5.jpg
+  Figure 5 caption: "Controlled experiments. The first row shows the vertical direction\
+    \ error \u03B5 ( \u2218 ) at different noise levels. The second row shows the\
+    \ runtime (second) at different noise levels. The third row shows the iteration\
+    \ count at different noise levels."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_6.jpg
+  Figure 6 caption: "High outlier ratio experiments. The first row shows the vertical\
+    \ direction error \u03B5 ( \u2218 ) at different noise levels. The second row\
+    \ shows the runtime (second) at different noise levels. The third row shows the\
+    \ iteration count at different noise levels."
+  Figure 7 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_7.jpg
+  Figure 7 caption: "Large noise experiments. The first row shows the vertical direction\
+    \ error \u03B5 ( \u2218 ) at different noise levels. The second row shows the\
+    \ runtime (second) at different noise levels. The third row shows the iteration\
+    \ count at different noise levels."
+  Figure 8 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_8.jpg
+  Figure 8 caption: "Full Atlanta frame estimation experiments. The first row shows\
+    \ the frame error \u03B5 ( \u2218 ) in different noise levels. The second row\
+    \ shows the runtime (second) in different noise levels. The third row shows the\
+    \ iteration count in different noise levels."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Globally_Optimal_Vertical_Direction_Estimation_in_Atlanta_World\figure_9.jpg
+  Figure 9 caption: The distribution of error for different methods in NYUv2 data.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Yinlong Liu
+  Name of the last author: Alois Knoll
+  Number of Figures: 13
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Globally Optimal Vertical Direction Estimation in Atlanta World
+  Publication Date: 2020-09-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Different Settings for Different Bounds in Algorithm 1
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Median Runtime and Iteration of Different Methods in NYUv2
+      Data
+  Table 3 caption:
+    table_text: TABLE 3 Vertical Direction Estimation Results in Outdoor Data
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3027047
+- Affiliation of the first author: department of computer science and engineering,
+    texas a&m university, college station, tx, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    the university of texas at austin, austin, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\PrivacyPreserving_Deep_Action_Recognition_An_Adversarial_Learning_Framework_and_\figure_1.jpg
+  Figure 1 caption: Basic adversarial training framework for privacy-preserving action
+    recognition.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\PrivacyPreserving_Deep_Action_Recognition_An_Adversarial_Learning_Framework_and_\figure_2.jpg
+  Figure 2 caption: "The trade-off between privacy budget and action utility on SBU\
+    \ dataset. For Naive Downsample method, a larger marker means a larger adopted\
+    \ down-sampling rate. For Ours- K -Beam method, a larger marker means a larger\
+    \ K (number of beams) in Algorithm 2. For Ours-Entropy and Ours-Entropy (restarting),\
+    \ a larger marker means a larger M (number of ensemble models) in Algorithm 4.\
+    \ Methods with \u201C+\u201D superscript are combined with model restarting. Vertical\
+    \ and horizontal purple dashed lines indicate A N B and A T on the original non-anonymized\
+    \ videos, respectively. The black dashed line indicates where A N B = A T . Detailed\
+    \ experimental settings and numerical results for each method can be found in\
+    \ Appendix B, available in the online supplemental material."
+  Figure 3 Link: articels_figures_by_rev_year\2020\PrivacyPreserving_Deep_Action_Recognition_An_Adversarial_Learning_Framework_and_\figure_3.jpg
+  Figure 3 caption: "The trade-off between privacy budget and action utility on UCF-101VISPR\
+    \ Dataset. For Naive Downsample method, a larger marker means a larger down sampling\
+    \ rate is adopted. For Ours- K -Beam method, a larger marker means a larger K\
+    \ (number of beams) in Algorithm 2. For Ours-Entropy and Ours-Entropy (restarting),\
+    \ a larger marker means a larger M (number of ensemble models) in Algorithm 4.\
+    \ Methods with \u201C+\u201D superscript are combined with model restarting. Vertical\
+    \ and horizontal purple dashed lines indicate A N B and A T on the original non-anonymized\
+    \ videos, respectively. The black dashed line indicates where A N B = A T . Detailed\
+    \ experimental settings and numerical results for each method can be found in\
+    \ Appendix B, available in the online supplemental material."
+  Figure 4 Link: articels_figures_by_rev_year\2020\PrivacyPreserving_Deep_Action_Recognition_An_Adversarial_Learning_Framework_and_\figure_4.jpg
+  Figure 4 caption: "The center frame of example videos before (column 1) and after\
+    \ (columns 2-4) applying the anonymization transform learned by Ours-Entropy.\
+    \ The first row shows a frame from a \u201Cpushing\u201D video in the SBU dataset;\
+    \ the second row shows a frame from a \u201Chandstand\u201D video in the UCF101\
+    \ dataset; the third row shows a frame from a \u201Cpush-up\u201D video in the\
+    \ PA-HMDB51 dataset. Privacy attributes in the last two rows include semi-nudity,\
+    \ face, gender, and skin color. Model restarting and ensemble settings are indicated\
+    \ below each anonymized image. M is the number of ensemble models. Methods with\
+    \ a \u201C+\u201D superscript are combined with model restarting."
+  Figure 5 Link: articels_figures_by_rev_year\2020\PrivacyPreserving_Deep_Action_Recognition_An_Adversarial_Learning_Framework_and_\figure_5.jpg
+  Figure 5 caption: "Left: action distribution of PA-HMDB51. Each column shows the\
+    \ number of videos with a certain action. E.g., the last bar shows there are 25\
+    \ \u201Cbrush hair\u201D videos in the PA-HMDB51 dataset. Right: action-attribute\
+    \ correlation in the PA-HMDB51 dataset. The x-axis are all possible values grouped\
+    \ by bracket for each privacy attribute. The y-axis are different action types.\
+    \ The color represents ratio of the number of frames of some action containing\
+    \ a specific privacy attribute value w.r.t. the total number of frames of the\
+    \ action."
+  Figure 6 Link: articels_figures_by_rev_year\2020\PrivacyPreserving_Deep_Action_Recognition_An_Adversarial_Learning_Framework_and_\figure_6.jpg
+  Figure 6 caption: Label distribution per privacy attribute in the PA-HMDB51. The
+    rounded ratio numbers are shown as white text (in % scale). Definitions of label
+    values (0,1,2,3,4) for each attribute are described in Table 1.
+  Figure 7 Link: articels_figures_by_rev_year\2020\PrivacyPreserving_Deep_Action_Recognition_An_Adversarial_Learning_Framework_and_\figure_7.jpg
+  Figure 7 caption: "The trade-off between privacy budget and action utility on PA-HMDB51\
+    \ Dataset. For Naive Downsample method, a larger marker means a larger downsampling\
+    \ rate is adopted. For Ours- K -Beam method, a larger marker means a larger K\
+    \ (number of beams) in Algorithm 2. For Ours-Entropy and Ours-Entropy (restarting),\
+    \ a larger marker means a larger M (number of ensemble models) in Algorithm 4.\
+    \ Methods with \u201C+\u201D superscript are combined with model restarting. Vertical\
+    \ and horizontal purple dashed lines indicate A N B and A T on the original non-anonymized\
+    \ videos, respectively. The black dashed line indicates where A N B = A T . Detailed\
+    \ experimental settings and numerical results for each method can be found in\
+    \ Appendix B, available in the online supplemental material."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.89
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zhenyu Wu
+  Name of the last author: Zhangyang Wang
+  Number of Figures: 7
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: 'Privacy-Preserving Deep Action Recognition: An Adversarial Learning
+    Framework and A New Dataset'
+  Publication Date: 2020-09-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Attribute Definition in the PA-HMDB51 Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Example Annotated Frames in the PA-HMDB51 Dataset
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3026709
+- Affiliation of the first author: school of data and computer science, sun yat-sen
+    university, guangzhou, china
+  Affiliation of the last author: school of data and computer science, sun yat-sen
+    university, guangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\KnowledgeGuided_MultiLabel_FewShot_Learning_for_General_Image_Recognition\figure_1.jpg
+  Figure 1 caption: Illustration of our knowledge-guided graph routing framework.
+    It first uses a CNN to extract image features, and then introduces two graph propagation
+    networks to transfer message on both feature and semantic spaces to learn contextualized
+    features and simultaneously regularize learning classifier weights.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\KnowledgeGuided_MultiLabel_FewShot_Learning_for_General_Image_Recognition\figure_2.jpg
+  Figure 2 caption: The AP (in %) of each category of our proposed framework and the
+    ResNet-101 baseline on the Microsoft COCO dataset.
+  Figure 3 Link: articels_figures_by_rev_year\2020\KnowledgeGuided_MultiLabel_FewShot_Learning_for_General_Image_Recognition\figure_3.jpg
+  Figure 3 caption: Several examples of input images (left), semantic feature maps
+    corresponding to categories with the top- k ( k=4,5 ) highest confidences (middle),
+    and the predicted label distribution (right).
+  Figure 4 Link: articels_figures_by_rev_year\2020\KnowledgeGuided_MultiLabel_FewShot_Learning_for_General_Image_Recognition\figure_4.jpg
+  Figure 4 caption: Several examples of the feature maps generated by the baseline
+    ResNet-101. The samples are the same as those in Fig. 3 for direct comparisons.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Tianshui Chen
+  Name of the last author: Hefeng Wu
+  Number of Figures: 4
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Knowledge-Guided Multi-Label Few-Shot Learning for General Image Recognition
+  Publication Date: 2020-09-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of the mAP, CP, CR, CF1 and OP, OR, OF1 (in %)
+      Scores of Our Framework and Other State-of-the-Art Methods Under Settings of
+      all and Top-3 Labels on the Microsoft COCO Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the AP and mAP (in %) Results of Our Framework
+      and Those of State-of-the-Art Methods on the PASCAL VOC 2007 Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of the AP and mAP Scores (in %) of Our Model and
+      Those of State-of-the-Art Methods on the PASCAL VOC 2012 dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of the mAP, CP, CR, CF1 and OP, OR, OF1 (in %)
+      Scores of Our Framework and Other State-of-the-Art Methods Under Settings of
+      all and Top-3 Labels on the VG-500 Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of the mAP (in %) on 1-Shot and 5-Shot Settings
+      on the Microsoft COCO Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of the mAP (in %) on 1-Shot and 5-Shot Settings
+      on the VG-500 Dataset
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of mAP (in %) of Our Framework (Ours), Our Framework
+      Without the Graph Feature ropagation Module (Ours wo GFP), Our Framework Without
+      the Graph Semantic Propagation Module (Ours wo GSP), Our Framework Without Semantically
+      Guided Attention (Ours wo SGA), Our Framework Without Knowledge-Embedded Feature
+      Propagation (Ours wo KEFP), and the Baseline ResNet-101 From the Multi-Label
+      Image Recognition Task on the Microsoft-COCO Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of mAP (in %) of Our Framework (Ours), Our Framework
+      Without the Graph Feature Propagation Module (Ours wo GFP), Our Framework Without
+      the Graph Semantic Propagation Module (Ours wo GSP), and the Baseline ResNet-101
+      From the Multi-Label Few-Shot Task on the Microsoft-COCO Dataset
+  Table 9 caption:
+    table_text: TABLE 9 Comparison of mAP (in %) of Our Framework With the Cross Entropy
+      (Ours CE) and Euclidean (Ours EU) Losses on the Microsoft-COCO Dataset
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3025814
+- Affiliation of the first author: college of computer science and technology, zhejiang
+    university, hangzhou, zhejiang, china
+  Affiliation of the last author: department of computer science, stony brook university,
+    stony brook, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_1.jpg
+  Figure 1 caption: "Comparison of different approaches for semantic video segmentation\
+    \ at a resolution of 1024\xD72048 on the Cityscapes dataset. The brown dots denote\
+    \ existing methods. The red, green, and blue marks denote results with our first,\
+    \ second, and third baseline model respectively. The triangles denote the results\
+    \ with the FFW module. The diamonds denote the results with FFW and RGC modules.\
+    \ The squares denote the results with FFW and RGFS modules. The hexagons denote\
+    \ the results with FFW, RGC, and RGFS modules. The real-time reference line is\
+    \ set at 15 FPS. Our approach gains a huge advantage in terms of inference time\
+    \ and achieves comparable accuracy compared with other real-time methods. Notice\
+    \ that the horizontal axis is logarithmic."
+  Figure 10 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_10.jpg
+  Figure 10 caption: "Visualization of the RGC operation. The red rectangles are the\
+    \ regions selected by our RGC module. The results show that for the regions selected\
+    \ by the RGC module, the segmentation results are greatly improved. For example,\
+    \ for \u201CT=12\u201D in the figure, the boundaries of the pole are well-preserved\
+    \ by utilizing the RGC module."
+  Figure 2 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_2.jpg
+  Figure 2 caption: "Illustration of decoding process. An MPEG-4 stream consists of\
+    \ I-frames and P-frames. An I-frame is independently encoded, while a P-frame\
+    \ is generated from motion compensation with motion vectors and residuals. \u201C\
+    S\u201D stands for the shifting of pixels from a reference frame to a predicted\
+    \ frame and \u201C+\u201D for element-wise addition."
+  Figure 3 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_3.jpg
+  Figure 3 caption: "An overview of the proposed semantic video segmentation framework.\
+    \ All I-frames are directly sent to the segmentation networks. For P-frames, the\
+    \ RGFS module takes the residual maps as input and decides whether the current\
+    \ frame should be sent to (a) or (b1, b2). (a) Baseline segmentation network.\
+    \ It takes the whole frame as input and outputs the result feature maps. (b1)\
+    \ Acceleration. The fast feature warping (FFW) module takes as input motion vectors\
+    \ and feature maps from the previous frame. It speeds up the segmentation by a\
+    \ wide margin. (b2) Correction. The residual-guided correction (RGC) module selects\
+    \ a region based on the residual map and performs local segmentation. \u201C \u03D5\
+    \ \u201D denotes the baseline segmentation CNN. The blue arrows represent the\
+    \ decision-related procedure."
+  Figure 4 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_4.jpg
+  Figure 4 caption: Different combinations of the proposed modules. For simplicity,
+    the inputs of the modules are omitted.
+  Figure 5 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_5.jpg
+  Figure 5 caption: Visualization of motion vector and optical flow. Following the
+    work of Wu et al. [20], we convert the 2D motion values into 3D HSV values, where
+    hue and saturation refer to the direction (angle) and magnitude of the motion
+    respectively. In general, both motion vectors and optical flow fields can correctly
+    represent most kinds of movements. Optical flow fields contain more details at
+    the original resolution.
+  Figure 6 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_6.jpg
+  Figure 6 caption: An example of residual map. The region with high values in the
+    residual map (c) corresponds to the region where the segmentation result of FFW
+    (b) is poor.
+  Figure 7 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_7.jpg
+  Figure 7 caption: A moving vehicle across the camera view. In this case, the result
+    with the FFW module is more accurate.
+  Figure 8 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_8.jpg
+  Figure 8 caption: Accuracy (mIoU) versus speed (FPS) under different GOP configurations.
+    The number above each point indicates the GOP number.
+  Figure 9 Link: articels_figures_by_rev_year\2020\TapLab_A_Fast_Framework_for_Semantic_Video_Segmentation_Tapping_Into_CompressedD\figure_9.jpg
+  Figure 9 caption: Segmentation results w.r.t different kinds of motion inputs. The
+    results using motion vectors are similar to those using optical flows.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Junyi Feng
+  Name of the last author: Haibin Ling
+  Number of Figures: 13
+  Number of Tables: 8
+  Number of authors: 7
+  Paper title: 'TapLab: A Fast Framework for Semantic Video Segmentation Tapping Into
+    Compressed-Domain Knowledge'
+  Publication Date: 2020-09-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance of Baseline Segmentation Models on Cityscapes
+  Table 3 caption:
+    table_text: TABLE 3 Performance of Feature Propagation Methods on Cityscapes
+  Table 4 caption:
+    table_text: TABLE 4 Performance of Different Settings for the RGC Module on Cityscapes
+  Table 5 caption:
+    table_text: TABLE 5 Effect of Each Module in TapLab on Cityscapes
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Different GOP Numbers
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Different Video Segmentation Methods on Cityscapes
+  Table 8 caption:
+    table_text: TABLE 8 Comparison of Different Models on CamVid
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3024646
+- Affiliation of the first author: riken center for advanced intelligence project
+    (aip), tokyo, japan
+  Affiliation of the last author: lismars, wuhan university, wuhan, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_1.jpg
+  Figure 1 caption: 'Flowchart of the proposed method (Algorithm 1). It includes:
+    A. latent input HSI estimation, B. Spectral orthogonal basis optimization and
+    C. non-local similarity estimation. C consists of two steps including group matching
+    and non-local low-rank approximation. D. Noise estimation and rank adaptation.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_10.jpg
+  Figure 10 caption: Inpainting recovered image of different method from PaU dataset
+    with SR as 0.05. The color image is composed of bands 80, 34, and 9 for the red,
+    green, and blue channels, respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_2.jpg
+  Figure 2 caption: "(a) displays the coefficient images M \xAF (:,:,4) before and\
+    \ after spatial denoising (10). (b) displays the absolute difference signature\
+    \ between A(:,4) and the reference before and after iteration. (c) displays the\
+    \ PSNR values of X iter with \u03B4 equal to 0 and 2 in (15). The test dataset\
+    \ is WDC with noise variance 50."
+  Figure 3 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_3.jpg
+  Figure 3 caption: Denoising results on the CAVE-toy image with the noise variance
+    100. The color image is composed of bands 31, 11, and 6 for the red, green, and
+    blue channels, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_4.jpg
+  Figure 4 caption: Real data experimental results on the Indian Pines dataset. The
+    color image is composed of noisy bands 219, 109 and 1.
+  Figure 5 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_5.jpg
+  Figure 5 caption: Real data experimental results on the Urban dataset of band 207.
+  Figure 6 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_6.jpg
+  Figure 6 caption: Compressed reconstruction results on the CAVE-Toy image with SR
+    as 0.02.
+  Figure 7 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_7.jpg
+  Figure 7 caption: Spectral signature curves of pixel (150,150) reconstructed by
+    different methods on CAVE-Toy with SR as 0.02.
+  Figure 8 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_8.jpg
+  Figure 8 caption: Reconstructed images of different methods from coded Toy dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2020\NonLocal_Meets_Global_An_Iterative_Paradigm_for_Hyperspectral_Image_Restoration\figure_9.jpg
+  Figure 9 caption: PSNR and SSIM values of each band for different inpainting results
+    on Pavia dataset with SR as 0.05.
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.63
+  Name of the first author: Wei He
+  Name of the last author: Liangpei Zhang
+  Number of Figures: 16
+  Number of Tables: 11
+  Number of authors: 7
+  Paper title: 'Non-Local Meets Global: An Iterative Paradigm for Hyperspectral Image
+    Restoration'
+  Publication Date: 2020-09-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Complexity Comparison of Each Iteration Between Proposed NGmeet
+      and State-of-the-Art Non-Local Based Methods
+  Table 10 caption:
+    table_text: TABLE 10 Quantitative Comparison of NGmeet With Different Non-Local
+      Low-Rank Denoising Algorithms on the Simulated HSI PaU Experiments
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Comparison of Different Algorithms in the Simulated
+      HSI Denoising Experiments
+  Table 3 caption:
+    table_text: TABLE 3 Hyper-Spectral Images Used for Simulated Experiments
+  Table 4 caption:
+    table_text: TABLE 4 Hyperspectral Images Used for Real Data Experiments
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Comparison of Different Algorithms in the Simulated
+      HSI Compressed Reconstruction Experiments
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Comparison of Different Algorithms in the HSI
+      Compressive Imaging Reconstruction Experiments
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Comparison of Different Algorithms in the Simulated
+      HSI Inpainting Experiments
+  Table 8 caption:
+    table_text: "TABLE 8 The Influence of Different \u03B4 \u03B4 for NGmeet"
+  Table 9 caption:
+    table_text: TABLE 9 Average Running Time (in seconds) of Each Stage for the Non-Local
+      Low-Rank Based Methods
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3027563
+- Affiliation of the first author: school of computer science and center for optical
+    imagery analysis and learning, northwestern polytechnical university, xian, shaanxi,
+    china
+  Affiliation of the last author: school of computer science and center for optical
+    imagery analysis and learning, northwestern polytechnical university, xian, shaanxi,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_1.jpg
+  Figure 1 caption: The truncated loss and smallest-m loss.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_10.jpg
+  Figure 10 caption: The classification performance of dimensionality reduction +
+    SVM classifier on ten practical image datasets.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_2.jpg
+  Figure 2 caption: "The weight \u03B2 \u2217 i with \u2113 2 -norm reconstruction\
+    \ error."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_3.jpg
+  Figure 3 caption: "h i ( g i (x))=| r i (x) | p versus h i ( g i (x))=( r i (x )\
+    \ 2 +\u03B5 ) p 2 ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_4.jpg
+  Figure 4 caption: The generalization of MM algorithm.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_5.jpg
+  Figure 5 caption: The reconstruction images with occlusions on ARv1 and Feret dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_6.jpg
+  Figure 6 caption: The reconstruction error of clean images on ten practical image
+    datasets.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_7.jpg
+  Figure 7 caption: The percentage based on baseline PCA model of clean images on
+    ten practical image datasets.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_8.jpg
+  Figure 8 caption: The reconstruction error of occlusion images on ten practical
+    image datasets.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Truncated_Robust_Principle_Component_Analysis_With_A_General_Optimization_Framew\figure_9.jpg
+  Figure 9 caption: The percentage based on baseline PCA model of occlusion images
+    on ten practical image datasets.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Feiping Nie
+  Name of the last author: Xuelong Li
+  Number of Figures: 11
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: Truncated Robust Principle Component Analysis With A General Optimization
+    Framework
+  Publication Date: 2020-09-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Descriptions of 10 Practical Image Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Average Reduction Percentage of T-RPCA on Clean Images,
+      the Value >10% >10% is Bold
+  Table 3 caption:
+    table_text: TABLE 3 The Average Reduction Percentage of T-RPCA on Occlusion Images,
+      the Value >10% >10% is Bold
+  Table 4 caption:
+    table_text: TABLE 4 The Average Improved Accuracy of T-RPCA for 10,20,30 10,20,30
+      Dimensions, the Value >5% >5% is Bold
+  Table 5 caption:
+    table_text: TABLE 5 The Running Time on Ten Practical Image Datasets (Second)
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3027968
+- Affiliation of the first author: school of computer science and engineering, south
+    china university of technology, guangzhou, china
+  Affiliation of the last author: department of computer science and engineering,
+    university of california, san diego, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Adversarial_JointLearning_Recurrent_Neural_Network_for_Incomplete_Time_Series_Cl\figure_1.jpg
+  Figure 1 caption: The DodgerLoopDay dataset [9]. The graph shows the number of cars
+    every five minutes (288 points per day). The classes of the DodgerLoopDay dataset
+    are days of the week (we only show four classes with missing values).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Adversarial_JointLearning_Recurrent_Neural_Network_for_Incomplete_Time_Series_Cl\figure_2.jpg
+  Figure 2 caption: The network structure of Gated Recurrent Units [16].
+  Figure 3 Link: articels_figures_by_rev_year\2020\Adversarial_JointLearning_Recurrent_Neural_Network_for_Incomplete_Time_Series_Cl\figure_3.jpg
+  Figure 3 caption: "The proposed AJ-RNN framework. We use green units to denote revealed\
+    \ inputs, yellow for the output of approximated values, purple for the imputed\
+    \ values and a red \u201CX\u201D for missing inputs. Dashed links are for approximation\
+    \ training and solid ones are for imputation. The discriminator receives a completed\
+    \ vector composed of revealed and imputed values as input, which provides a one-to-one\
+    \ supervisory signal for imputed values x 3 and x 4 ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\Adversarial_JointLearning_Recurrent_Neural_Network_for_Incomplete_Time_Series_Cl\figure_4.jpg
+  Figure 4 caption: The trajectories of the hidden units are plotted by performing
+    PCA on a sample trajectory and then plotting the first two principal components.
+    The X -axis and Y -axis are the first and second principal components of the data,
+    respectively. The first two rows are the trajectories of J-RNN and AJ-RNN on the
+    SynContr dataset as the injected noise goes from 0 to 0.5, to 1.5. The last two
+    rows are the trajectories on the data set MidPhxAgeGp. The arrows indicate the
+    point in time when noise is added. The red dotted boxes indicate the area where
+    the difference in the trajectory is obvious before and after adding noise.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Adversarial_JointLearning_Recurrent_Neural_Network_for_Incomplete_Time_Series_Cl\figure_5.jpg
+  Figure 5 caption: The visualization results of the last hidden state h T (the features
+    before entering the softmax layer) on the CBF dataset with t-SNE. The X -axis
+    and Y -axis are denoted as T-SNE1 and T-SNE2, respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Adversarial_JointLearning_Recurrent_Neural_Network_for_Incomplete_Time_Series_Cl\figure_6.jpg
+  Figure 6 caption: The influence of lambda d on the classification performance with
+    the Earthquakes dataset under different missing ratios.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Qianli Ma
+  Name of the last author: Garrison W. Cottrell
+  Number of Figures: 6
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: Adversarial Joint-Learning Recurrent Neural Network for Incomplete
+    Time Series Classification
+  Publication Date: 2020-09-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Averaged Results on the 68 UCR Time Series Data Sets (standard
+      deviations are in parentheses)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Detailed Test Classification Accuracy of Four UCR Real
+      Incomplete Time Series Data Sets
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of AJ-RNN and J-RNNs Averaged Distance on the SynContr
+      and MidPhxAgeGp Data Sets Over Five Runs
+  Table 4 caption:
+    table_text: TABLE 4 Averaged Classification Results Comparison of 1-NNDTW With
+      Raw Data Versus Five percent Imputed Data
+  Table 5 caption:
+    table_text: TABLE 5 The Performance of 1-NNDTW on Data Z-Scored Before Removing
+      Data (First Column) Versus After (Second Column)
+  Table 6 caption:
+    table_text: TABLE 6 The Performance of AJ-RNN on Data Z-Scored Before Removing
+      Data (First Column) Versus After (Second Column)
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3027975
+- Affiliation of the first author: computer and software engineering department, montreal,
+    canada
+  Affiliation of the last author: computer and software engineering department, montreal,
+    canada
+  Figure 1 Link: articels_figures_by_rev_year\2020\Learnable_Pooling_in_Graph_Convolutional_Networks_for_Brain_Surface_Analysis\figure_1.jpg
+  Figure 1 caption: Complex geometry of the cerebral cortex. As illustrated, two nearby
+    points in the volume may in fact be far apart on the cortical surface.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Learnable_Pooling_in_Graph_Convolutional_Networks_for_Brain_Surface_Analysis\figure_2.jpg
+  Figure 2 caption: An overview of the proposed graph convolution network:The brain
+    surface graph are mapped to a low-dimensional subspace using spectral decomposition.
+    The spectral bases of the input brain are then aligned to a common reference.
+    Aligned spectral coordinates and cortical surface features are fed as input to
+    the network, composed of sequential Graph Convolution + Pooling (GC+P) blocks
+    and two fully-connected (FC) layers. Each GC+P block processes input node features
+    Y (l) in two separate paths based on geometric convolutions, one (bottom) deriving
+    a new set of features for each graph node F (l) and the other (top) computing
+    a soft assignment S (l) of nodes to clusters representing nodes of the reduced
+    output graph. A pooling layer then obtains reduced graph features Y (l+1) by aggregating
+    F (l) in each predicted cluster of S (l) .
+  Figure 3 Link: articels_figures_by_rev_year\2020\Learnable_Pooling_in_Graph_Convolutional_Networks_for_Brain_Surface_Analysis\figure_3.jpg
+  Figure 3 caption: Illustration of standard grid-based 2D convolutions (left) and
+    geometric graph convolution (right). The challenge is to exploit kernels on arbitrary
+    graph structures, and to add pooling operations over convolutional layers of graph
+    nodes.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Learnable_Pooling_in_Graph_Convolutional_Networks_for_Brain_Surface_Analysis\figure_4.jpg
+  Figure 4 caption: 'Clusters of different pooling methods: (a) Clusters obtained
+    by spectral k-means clustering. (b) Fixed clusters computed from a cortical parcel
+    atlas. (c) Clusters learned by our learnable pooling method. Colors on the brain
+    surface represent different regions.'
+  Figure 5 Link: articels_figures_by_rev_year\2020\Learnable_Pooling_in_Graph_Convolutional_Networks_for_Brain_Surface_Analysis\figure_5.jpg
+  Figure 5 caption: 'Feature maps and predicted clusters for the task of subject-sex
+    classification: The first column shows examples of activation maps computed by
+    the embedding path of our network for a female subject. The second column gives
+    the average activation in each predicted cluster for the same subject and feature
+    maps. Coloring indicates output of the ReLU activation with minimum value indicated
+    by blue and maximum value indicated by red. Third and fourth columns depict the
+    same information for a male subject.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\Learnable_Pooling_in_Graph_Convolutional_Networks_for_Brain_Surface_Analysis\figure_6.jpg
+  Figure 6 caption: 'Pooling regions learned during training: The pooling regions
+    are learned for the model training to regress the size of cortical regions. During
+    initial epochs, random regions are clustered together to aggregate feature maps.
+    A low AMI score indicates this random clustering compared to the ground-truth.
+    After training, the model finally learns to group multiple parcels (cyan) into
+    on cluster pooling region. AMI score increases over epochs, indicating task-dependent
+    learning by our model. The last figure shows manual parcels with AMI score of
+    1 for reference.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\Learnable_Pooling_in_Graph_Convolutional_Networks_for_Brain_Surface_Analysis\figure_7.jpg
+  Figure 7 caption: 'Evolution of AMI score: The adjusted mutual information score
+    between the pooling regions and the manual parcels over multiple epochs is shown.
+    A random overlap between learned pooling regions and parcels is observed at initial
+    epochs. After training, the AMI score increases with the pooling regions corresponding
+    to ground-truth parcels.'
+  Figure 8 Link: articels_figures_by_rev_year\2020\Learnable_Pooling_in_Graph_Convolutional_Networks_for_Brain_Surface_Analysis\figure_8.jpg
+  Figure 8 caption: Distribution of absolute prediction error (left) and predicted
+    minus real age (right), for NC and AD test subjects. Our learnable pooling strategy
+    yielded graph models that could correctly capture age discrepancies between real
+    and geometry-based ages, as expected between subjects with NC and AD.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Karthik Gopinath
+  Name of the last author: Herve Lombaert
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 3
+  Paper title: Learnable Pooling in Graph Convolutional Networks for Brain Surface
+    Analysis
+  Publication Date: 2020-10-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Impact of Our Hyper-Parameters on Our Learnable Pooling Method
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Baseline Methods Comparison
+  Table 3 caption:
+    table_text: 'TABLE 3 Subject-Sex Classification Performance of Our Pooling Approach
+      on Different Sub-Graphs: Mean Classification Accuracy (%) With Standard Deviation
+      Over Test Set From the Mindboggle Dataset'
+  Table 4 caption:
+    table_text: 'TABLE 4 Evaluation of the Proposed Work: Average Accuracy of Disease
+      Classification (%), With Standard Deviation Over the Complete ADNI Dataset'
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3028391
+- Affiliation of the first author: school of electronic and information engineering,
+    beihang university, beijing, china
+  Affiliation of the last author: tsinghua university, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_1.jpg
+  Figure 1 caption: All reference sequences in the VQA-ODV dataset. It can be seen
+    that the categories of the content are diverse in each group.
+  Figure 10 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_10.jpg
+  Figure 10 caption: Details about the VP-net. The architecture of the VP-net is shown
+    in (a). The convolution layers with indices from 1 to 8 are followed by group
+    normalization layers (each group has 16 channels) [56] and the non-linear activation
+    function. Here, leaky rectified linear unit (LReLU) [57] with leakage coefficient
+    of 0.1 is used as the activation function. The settings of kernel sizes and radius
+    are listed in (b).
+  Figure 2 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_2.jpg
+  Figure 2 caption: "Examples of different map projection types for one 360\xB0 video\
+    \ frame."
+  Figure 3 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_3.jpg
+  Figure 3 caption: "Procedure of the experiment to rate the subjective quality scores\
+    \ of 360\xB0 sequences."
+  Figure 4 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_4.jpg
+  Figure 4 caption: Numbers of sequences achieving the best and worst DMOS scores
+    under different projections, for each bitrate level.
+  Figure 5 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_5.jpg
+  Figure 5 caption: PLCC results of HM and EM weight maps between two sub-groups for
+    each of the 60 reference sequences in our VQA-ODV dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_6.jpg
+  Figure 6 caption: CC results between the HM weight maps and a centered-gaussian
+    weight map of reference sequences in our VQA-ODV dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_7.jpg
+  Figure 7 caption: Percentage of viewport regions, for each of 60 reference sequences
+    in our VQA-ODV dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_8.jpg
+  Figure 8 caption: "Examples of one 360\xB0 frame masked by the corresponding weight\
+    \ maps generated from HM and EM data."
+  Figure 9 Link: articels_figures_by_rev_year\2020\ViewportBased_CNN_A_MultiTask_Approach_for_Assessing__Video_Quality\figure_9.jpg
+  Figure 9 caption: Framework of the V-CNN.
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.87
+  Name of the first author: Mai Xu
+  Name of the last author: Xiaoming Tao
+  Number of Figures: 14
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: "Viewport-Based CNN: A Multi-Task Approach for Assessing 360\xB0 Video\
+    \ Quality"
+  Publication Date: 2020-10-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Mean Values and Standard Deviations of DMOS Under Different
+      Projections and Bitrate Levels
+  Table 10 caption:
+    table_text: TABLE 10 VQA Performance With Different Structures on Stage II of
+      Our V-CNN
+  Table 2 caption:
+    table_text: TABLE 2 Performance of the SSIM Metric and the PSNR Related Metrics
+  Table 3 caption:
+    table_text: TABLE 3 Performance of PSNR and SSIM on 2D Video
+  Table 4 caption:
+    table_text: TABLE 4 Values of Some Key Hyper-Parameters
+  Table 5 caption:
+    table_text: TABLE 5 Comparison on VQA Performance Between Our and Other Approaches,
+      Over All Test Sequences
+  Table 6 caption:
+    table_text: TABLE 6 Results of Camera Motion Detection
+  Table 7 caption:
+    table_text: TABLE 7 Performance Comparison on the HM and EM Modelling
+  Table 8 caption:
+    table_text: TABLE 8 Results of Viewport Proposal for Ablating Camera Motion Detection
+  Table 9 caption:
+    table_text: TABLE 9 VQA Performance With Different Structures on Stage I of Our
+      V-CNN
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3028509

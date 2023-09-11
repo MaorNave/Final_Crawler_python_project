@@ -1,0 +1,903 @@
+- Affiliation of the first author: department of electrical and engineering and computer
+    science, university of california, merced, ca, usa
+  Affiliation of the last author: department of electrical and engineering and computer
+    science, university of california, merced, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_1.jpg
+  Figure 1 caption: Comparisons of upsampling strategies in CNN-based SR algorithms.
+    Red arrows indicate convolutional layers. Blue arrows indicate transposed convolutions
+    (upsampling), and green arrows denote element-wise addition operators. (a) Pre-upsampling
+    based approaches (e.g., SRCNN [9], VDSR [11], DRCN [12], DRRN [13]) typically
+    use the bicubic interpolation to upscale LR input images to the target spatial
+    resolution before applying deep networks for prediction and reconstruction. (b)
+    Post-upsampling based methods directly extract features from LR input images and
+    use sub-pixel convolution [14] or transposed convolution [15] for upsampling.
+    (c) Progressive upsampling approach using the proposed Laplacian pyramid network
+    reconstructs HR images in a coarse-to-fine manner.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_10.jpg
+  Figure 10 caption: PSNR versus network depth. We test the proposed model with different
+    D and R on the Urban100 dataset for 4times SR.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_2.jpg
+  Figure 2 caption: Generative network of LAPGAN [34]. The LAPGAN first upsamples
+    the input images before applying convolution for predicting residuals at each
+    pyramid level.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_3.jpg
+  Figure 3 caption: Detailed network architecture of the proposed LapSRN. At each
+    pyramid level, our model consists of a feature embedding sub-network for extracting
+    non-linear features, transposed convolutional layers for upsampling feature maps
+    and images, and a convolutional layer for predicting the sub-band residuals. As
+    the network structure at each level is highly similar, we share the weights of
+    those components across pyramid levels to reduce the number of network parameters.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_4.jpg
+  Figure 4 caption: Local residual learning. We explore three different ways of local
+    skip connection in the feature embedding sub-network of the LapSRN for training
+    deeper models.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_5.jpg
+  Figure 5 caption: Structure of our recursive block. There are D convolutional layers
+    in a recursive block. The weights of convolutional layers are distinct within
+    the block but shared among all recursive blocks. We use the pre-activation structure
+    [41] without the batch normalization layer.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_6.jpg
+  Figure 6 caption: Convergence analysis. We analyze the contributions of the pyramid
+    structures, loss functions, and global residual learning by replacing each component
+    with the one used in existing methods. Our full model converges faster and achieves
+    better performance.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_7.jpg
+  Figure 7 caption: Contribution of different components in LapSRN. (a) Ground truth
+    HR image (b) without pyramid structure (c) without global residual learning (d)
+    without robust loss (e) full model (f) HR patch.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_8.jpg
+  Figure 8 caption: Contribution of multi-scale supervision (M.S.). The multi-scale
+    supervision guides the network training to progressively reconstruct the HR images
+    and help reduce the spatial aliasing artifacts.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Fast_and_Accurate_Image_SuperResolution_with_Deep_Laplacian_Pyramid_Networks\figure_9.jpg
+  Figure 9 caption: Comparisons of local residual learning. We train our LapSRN-D5R5
+    model with three different local residual learning methods as described in Section
+    3.2.3 and evaluate on the Set5 for 4times SR.
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Wei-Sheng Lai
+  Name of the last author: Ming-Hsuan Yang
+  Number of Figures: 18
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Fast and Accurate Image Super-Resolution with Deep Laplacian Pyramid
+    Networks
+  Publication Date: 2018-08-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Feature-by-Feature Comparisons of CNN-based SR Algorithms
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Study of LapSRN
+  Table 3 caption:
+    table_text: TABLE 3 Parameter Sharing in LapSRN
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Evaluation of Local Residual Learning
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Evaluation of the Number of Recursive Blocks
+      R R and the Number of Convolutional Layers D D in Our Feature Embedding Sub-Network
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Evaluation of State-of-the-Art SR Algorithms
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Comparisons between the Generative Network of
+      the LAPGAN [34] and Our LapSRN
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2865304
+- Affiliation of the first author: university of cambridge, cambridge, united kingdom
+  Affiliation of the last author: university of cambridge, cambridge, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2018\Ticker_An_Adaptive_SingleSwitch_Text_Entry_Method_for_Visually_Impaired_Users\figure_1.jpg
+  Figure 1 caption: "A typical scanning interface. To select the letter \u201Ch\u201D\
+    , at least two clicks are necessary. In the first phase all rows are scanned.\
+    \ The first click selects the desired row associated with the subset efgh. after\
+    \ hearing the corresponding audio cue (e.g., the audio recording of the letter\
+    \ \u201Ce\u201D). Thereafter the individual letter keys of the selected row are\
+    \ scanned in sequence. The second click selects the desired letter \u201Ch\u201D\
+    . Grid2 [5] provides software which enables one to select letters using this configuration.\
+    \ In audio mode, the user will typically have to memorize the contents of each\
+    \ subset which is not necessary in visual mode."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Ticker_An_Adaptive_SingleSwitch_Text_Entry_Method_for_Visually_Impaired_Users\figure_2.jpg
+  Figure 2 caption: "(a) Two example composite audio sequence that can be presented\
+    \ to the user. The topbottom sequence was optimized for usage in fivetwo channel\
+    \ mode, respectively. (b) An illustration of the systems state after receiving\
+    \ one click while trying to write r of \u201Cyour\u201D in five channel mode from\
+    \ the top composite sequence in (a). The first repetition of the alphabet is shown\
+    \ from top to bottom, fqwag,\u2026 , where letters with the same color occur at\
+    \ the same sound source. The letters are highlighted according to their probabilities.\
+    \ The user aimed for \u201Cr\u201D, but clicked slightly late, causing \u201C\
+    x\u201D to be the most likely candidate, followed by \u201Cb\u201D and \u201C\
+    r\u201D. (c) The color intensities indicate that more certainty is provided by\
+    \ the second click compared to (b), i.e., it is more obvious that the user aimed\
+    \ for \u201Cr\u201D. (d) Click times that are possible for the firstsecond repetition\
+    \ of the alphabet \u03BC 1 \u03BC 2 is shown on the horizontalvertical axis (measured\
+    \ in seconds). The start- and end times of each symbols sound file (black lines)\
+    \ are plotted for the first and second repetition of the alphabet, as derived\
+    \ from the top composite sequence in (a). That is, the composite sequence is again\
+    \ fqwag,\u2026 . The starting time of \u201Cs\u201D is at about 1.5s3.4s during\
+    \ the firstsecond repetition of the alphabet. The possible click times are measured\
+    \ from the beginning of audio file of the composite sequence. Letters within the\
+    \ same channel have the same color and correspond to the colors in (b)."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Ticker_An_Adaptive_SingleSwitch_Text_Entry_Method_for_Visually_Impaired_Users\figure_3.jpg
+  Figure 3 caption: "A depiction of P(t,M\u2223\u03B8,\u2113=b) from Equation (2),\
+    \ where the composite audio sequence corresponds to Fig. 2a, \u03C3=0.2s , T\u2248\
+    5s , \u0394=0s , f=0.5 , and g=0 . (a) M=1 , \u2113=b , where \u03BC \u2113 r\
+    \ +\u0394 for each letter is indicated with a labelled line. (b) M=2 and \u2113\
+    =b . (c) P( \u2113 \u2217 \u2223\u03B8, t 1 , t 2 ,M) is computed from Equations\
+    \ (7) and (1); see the text for detail."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Ticker_An_Adaptive_SingleSwitch_Text_Entry_Method_for_Visually_Impaired_Users\figure_4.jpg
+  Figure 4 caption: "The differences to Fig. 3 are pointed out. First, Equation (2)\
+    \ was replaced with Equation (13) to compute P(t,M\u2223\u03B8,\u2113=b) , with\
+    \ \u03B8 as defined by Equation (11). (a) The effect of switch noise is shown,\
+    \ whereas Fig. 3a was drawn without switch noise: f=0.5 and \u03BB=0.3 s. (b)\u2013\
+    (c): Compared to Fig. 3, there is only one 2D Gaussian, and there are no artifacts\
+    \ on the diagonal in (c). (d)\u2013(e): Adding switch noise to (b)\u2013(c): f=0.5\
+    \ and \u03BB=0.3 s."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Ticker_An_Adaptive_SingleSwitch_Text_Entry_Method_for_Visually_Impaired_Users\figure_5.jpg
+  Figure 5 caption: "(a) The click-time delay ( \u0394 ) is varied for \u03C3=50 ms,\
+    \ f=0.05 , \u03BB=0.001 s, T S =0.5 s and T \u2217 S =70 ms. Ticker (5-channel\
+    \ mode) results are shown in red. The red solid lines indicate the average results\
+    \ (with error bars at one standard deviation). The dashed red line indicates the\
+    \ expected text entry rate without the unnecessary waiting time of \u0394+3\u03C3\
+    \ s at the end of each composite audio sequence. Ticker results are superimposed\
+    \ on the results from [4] (black), where for the scanning system T S =max(0.5,\u0394\
+    +3.0\u03C3) seconds. (b) The effect of varying the scanning delays T S and T \u2217\
+    \ S are investigated for \u0394=0 s, \u03C3=100 ms, f=0.05 , \u03BB=0.001 s. Average\
+    \ entities for Ticker in 5-channel mode (red) and Ticker in 1-channel mode (blue)\
+    \ are superimposed on the results for the scanning system (black) from [4]. (c)\
+    \ The effect of varying \u03BB is investigated for \u0394=400 ms, \u03C3=50 ms,\
+    \ f=0.05 , T S =300 ms, T \u2217 S =42 ms. Average entities for Ticker in 5-channel\
+    \ mode (red) and Ticker in 1-channel mode (blue) are superimposed on the results\
+    \ for a standard scanning system (black) from [4]."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Ticker_An_Adaptive_SingleSwitch_Text_Entry_Method_for_Visually_Impaired_Users\figure_6.jpg
+  Figure 6 caption: "Box-and-whisker plots for the multi-channel stereophonic user\
+    \ trials indicating the 5th, 25th, 50th, 75th and 95th percentile values. Results\
+    \ are plotted for each channel, and each speed setting (as indicated by the labels\
+    \ on the x -axis at the top and bottom of each plot). Results are computed over\
+    \ all words and over all participants. For example, the text entry rate plot on\
+    \ the left shows that 50 percent of users could select words at 1wpm when phrases\
+    \ were presented to them in 3-channel mode in \u201CSlow\u201D mode. Outliers\
+    \ are shown as circles. Black lines indicate results for able-bodied participants\
+    \ in the stereophonic-sound controlled experiment. The performance results obtained\
+    \ from a non-speaking individual with motor disabilities are shown in red."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Ticker_An_Adaptive_SingleSwitch_Text_Entry_Method_for_Visually_Impaired_Users\figure_7.jpg
+  Figure 7 caption: Box-and-whisker plots of the audio pilot study, comparing Ticker
+    (T) and a standard scanning system such as Grid2 (G), indicating the 25th, 50th,
+    and 75th percentiles. Results for two sessions are shown in (a)-(b). Each session
+    was 15 minutes long. Each session is numbered ( x -axis). (a) Results for a trained
+    participant (with at least two hours of practise) communicating in an environment
+    with little noise. TmathrmS and TmathrmS were varied. The first session was recorded
+    when the user had at least one hour of practise. The last session was recorded
+    when the user could comfortably use the system blindfolded. (b) Results for the
+    same participant in (a) but simulating a non-speaking individual with motor disabilities
+    (by including synthetic noise and using the system blindfolded). Session 1 presents
+    a user who can click precisely, but with some latency; Delta =0.8 s, sigma =50
+    ms, lambda =0 , f=0 , TmathrmS=70 ms, and TmathrmS=1.4 s. The latency during Session
+    2 was increased and some false positives were randomly generated with Delta =1.5
+    s, sigma =50 ms, f=0.1 and lambda =13 s, TmathrmS=70 ms, and TmathrmS=2.1 s. The
+    theoretical maximum speed that can be attained when using Ticker without the unnecessary
+    waiting time at the end of the composite audio sequence is shown in blue.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.88
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Emli-Mari Nel
+  Name of the last author: David J. C. MacKay
+  Number of Figures: 7
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: 'Ticker: An Adaptive Single-Switch Text Entry Method for Visually Impaired
+    Users'
+  Publication Date: 2018-08-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Analysis for the Potential Effect of the Number of Audio
+      Channels on the Text-Entry Rate
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Analysis for the Potential Effect of the Number of Audio
+      Channels on the Error Rate
+  Table 3 caption:
+    table_text: TABLE 3 The Analysis for the Potential Effect of the Number of Audio
+      Channels on the Clicks per Character
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2865897
+- Affiliation of the first author: department of computer science, university of texas
+    at austin, austin, tx, usa
+  Affiliation of the last author: department of computer science, university of texas
+    at austin, austin, tx, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_1.jpg
+  Figure 1 caption: Given a novel image (top row), our method predicts an objectness
+    map for each pixel (2nd row) and a single foreground segmentation (3rd row). Given
+    a novel video, our end-to-end trainable model simultaneously draws on the strengths
+    of generic object appearance and motion (4th row, color-coded optical flow images)
+    to extract generic objects (last row).
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_2.jpg
+  Figure 2 caption: "Activation maps from a network (VGG [82]) trained for the classification\
+    \ task and our network which is fine-tuned with explicit dense foreground labels.\
+    \ We see that the classification network has already learned image representations\
+    \ that have some notion of objectness, but with poor \u201Cover\u201D-localization.\
+    \ Our network deepens the notion of objectness to pixels and captures fine-grained\
+    \ cues about boundaries. Best viewed on pdf."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_3.jpg
+  Figure 3 caption: "Network structure for our segmentation model. Each convolutional\
+    \ layer except the first 7\xD7 7 convolutional layer and our fusion blocks is\
+    \ a residual block [83], adapted from ResNet-101. We show reduction in resolution\
+    \ at top of each box and the number of stacked convolutional layers in the bottom\
+    \ of each box. To apply our model to images, only the appearance stream is used."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_4.jpg
+  Figure 4 caption: Procedure to generate (pseudo)-ground truth segmentations. We
+    first apply the appearance model to obtain initial segmentations (second row,
+    with object segment in green) and then prune by setting pixels outside bounding
+    boxes as background (third row). Then we apply the bounding box test (fourth row,
+    yellow bounding box is ground truth and blue bounding box is the smallest bounding
+    box enclosing the foreground segment) and optical flow test (fifth row) to determine
+    whether we add the segmentation to the motion streams training set or discard
+    it. Best viewed in color.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_5.jpg
+  Figure 5 caption: 'Qualitative results: We show qualitative results on images belonging
+    to PASCAL (top) and Non-PASCAL (middle) categories. Our segmentation model generalizes
+    remarkably well even to those categories which were unseen in any foreground mask
+    during training (middle rows). Typical failure cases (bottom) involve scene-centric
+    images where it is not easy to clearly identify foreground objects (best viewed
+    on pdf).'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_6.jpg
+  Figure 6 caption: 'Pixel objectness versus saliency methods: Performance gains grouped
+    using foreground-background separability scores. Error bars indicate standard
+    error. On the x -axis, lower values mean that the objects are less salient and
+    thus difficult to separate from background. On the y -axis, we plot the maximum
+    and minimum average gains (averaged over all test images) of pixel objectness
+    with four saliency methods.'
+  Figure 7 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_7.jpg
+  Figure 7 caption: "Visual comparison for our method and the best performing saliency\
+    \ method, DeepSaliency [12], which can fail when an object does not \u201Cstand\
+    \ out\u201D from background. Best viewed on pdf."
+  Figure 8 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_8.jpg
+  Figure 8 caption: Leveraging pixel objectness for foreground aware image retargeting.
+    See supp. for more examples, available online. Best viewed on pdf.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Pixel_Objectness_Learning_to_Segment_Generic_Objects_Automatically_in_Images_and\figure_9.jpg
+  Figure 9 caption: 'Qualitative results: The top half shows examples from our appearance,
+    motion, and joint models along with the flow image which was used as an input
+    to the motion network. The bottom rows show visual comparisons of our method with
+    automatic and semi-supervised baselines (best viewed on pdf and see text for the
+    discussion). Videos of our segmentation results are available on the project website.'
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Bo Xiong
+  Name of the last author: Kristen Grauman
+  Number of Figures: 9
+  Number of Tables: 6
+  Number of authors: 3
+  Paper title: 'Pixel Objectness: Learning to Segment Generic Objects Automatically
+    in Images and Videos'
+  Publication Date: 2018-08-17 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Results on MIT Object Discovery Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Results on ImageNet Localization and Segmentation
+      Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Object-Based Image Retrieval Performance on ImageNet
+  Table 4 caption:
+    table_text: TABLE 4 Video Object Segmentation Results on DAVIS Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Video Object Segmentation Results on YouTube-Objects Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Video Object Segmentation Results on SegTrack-v2
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2865794
+- Affiliation of the first author: xian jiaotong university, xian, china
+  Affiliation of the last author: microsoft research, redmond, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_1.jpg
+  Figure 1 caption: Illustration of the ER3 framework for event retrieval, recognition
+    and recounting. The compact video representation from feature aggregation can
+    be used for large-scale event retrieval. With supervised training, ER3 can also
+    recognize the event category of the input video. Event recounting falls directly
+    out of the latent structure of the model in form of statistics displayed as heat
+    maps for each frame indicating key areas related to the event.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_10.jpg
+  Figure 10 caption: The statistical results of user study. The average percentage
+    of key frames belong to Bad, OK and Good are shown with different color bar. Best
+    viewed in color.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_2.jpg
+  Figure 2 caption: "Illustration of the frames related to \u201CDominique Strauss-Kahn\
+    \ arrested\u201D. The frames in green box denote the positive frames related to\
+    \ the event. Red boxes show irrelevant frames."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_3.jpg
+  Figure 3 caption: "Illustration of tessellated counting grid (TCG) and epitome models,\
+    \ and their Bayesian networks. The left tensor block represents the TCG with E=24\xD7\
+    24,W=8\xD78,S=4\xD74 . The right tensor block represents the epitome with E=24\xD7\
+    24,W=8\xD78 . For TCG, the input CNN feature maps are down-sampled to S=4\xD7\
+    4 . In fact, the epitome can be regarded as a special case of TCG when W=S . For\
+    \ both TCG and epitome, similar frames are usually represented in the same or\
+    \ nearby windows, e.g., the anchor who we frequently see in the video."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_4.jpg
+  Figure 4 caption: Illustration of the reasoning network for event recognition and
+    event recounting.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_5.jpg
+  Figure 5 caption: The average running time of learning epitomes for EVVE dataset
+    with different d and the corresponding retrieval performance (mAP).
+  Figure 6 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_6.jpg
+  Figure 6 caption: The influence of different (a) threshold tau of active map and
+    (b) grid sizes E for Counting grid aggregation (CGA) and Epitome aggregation (EPA).
+    Alex and res denote two CNN models, i.e., AlexNet and ResNet.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_7.jpg
+  Figure 7 caption: Retrieval performance (mAP) per event.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_8.jpg
+  Figure 8 caption: The influence of RNet with increased hops on EVVE dataset. Best
+    viewed in color.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Video_Imprint\figure_9.jpg
+  Figure 9 caption: Influence of the average pooling layer in RNet. The middle column
+    shows the recounting map of RNet. The right column shows the recounting map with
+    avg-pooling layer removed. Best viewed in color.
+  First author gender probability: 0.95
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Zhanning Gao
+  Name of the last author: Gang Hua
+  Number of Figures: 12
+  Number of Tables: 5
+  Number of authors: 6
+  Paper title: Video Imprint
+  Publication Date: 2018-08-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Principal Notations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison with Sum-Aggregation on EVVE Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Retrieval Performance Compared with Other Methods
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with Sum-Aggregation and CGAEPA
+  Table 5 caption:
+    table_text: TABLE 5 Comparison with Other Methods
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2866114
+- Affiliation of the first author: shanghaitech university, pudong, china
+  Affiliation of the last author: shanghaitech university, pudong, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_1.jpg
+  Figure 1 caption: An illustration of our PSM dataset. Our dataset provides both
+    eye fixations of different subjects and semantic labels of all images. Due to
+    a large number of objects in our dataset, for each image, instead of fully segmenting
+    every object, we only label objects that cover at least three gaze points from
+    each individual. To reliably obtain the PSM, we have each subject to view the
+    image 4 times. The commonality across different observers is characterized by
+    the USM whereas the discreminility is characterized by the PSM.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_10.jpg
+  Figure 10 caption: The CC, similarity, AUC-Judd, and NSS for participants with the
+    samedifferent person-specific information. Here FM- x represents the FemaleMale
+    with index x , and LD- x represents the x th participant who likesdislikes sports
+    or fashion, respectively. Because of space constraint, we only compare the PSMs
+    for 10 participants with the samedifferent person-specific information.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_2.jpg
+  Figure 2 caption: The distribution of the interestingness of various objects for
+    the same participant described by the technique in Section 4.2.2. Higher value
+    indicates that the participant pays more attention on the object.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_3.jpg
+  Figure 3 caption: "The point at x=n measures the differences between ground truth\
+    \ saliency maps generated by viewing the same image n times and n+1 times. This\
+    \ figure shows that when n\u22654 , the ground truth saliency maps generated by\
+    \ viewing the image n times have little differences compared with that generated\
+    \ by observing the image n+1 times. Thus viewing each image 4 times is enough\
+    \ to get a robust estimation of the PSM ground truth."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_4.jpg
+  Figure 4 caption: The pipeline of our multi-task CNN based PSM prediction. The input
+    is the image with its predicted USM. Specifically, we treat the discrepancy prediction
+    for each person as a separate task. There are n persons in our dataset, then there
+    are n tasks in this framework. We then sum the predicted discrepancy map with
+    USM and generate the final estimated PSM.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_5.jpg
+  Figure 5 caption: The pipeline of our PSM prediction model. The input is the image
+    with its predicted USM. Specifically, we embed the person-specific information
+    into CNN by encoding it into filters and then convolving filters with the output
+    of conv4 layer. We then sum the predicted discrepancy map with USM and get the
+    final estimated PSM.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_6.jpg
+  Figure 6 caption: The statistics of our survey results (best viewed in color).
+  Figure 7 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_7.jpg
+  Figure 7 caption: MultiConvNets versus our methods for PSM predictions for each
+    observer. In each graph, x axis represents the ID of each observer and y axis
+    represents the metric value of CC, Similarity, AUC-Judd or NSS. We can see that
+    our methods always outperform MultiConvNets under closed-set setting.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_8.jpg
+  Figure 8 caption: Some examples of PSMs predicted by our methods.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Personalized_Saliency_and_Its_Prediction\figure_9.jpg
+  Figure 9 caption: The effect of supervision on middle layers in our Multi-task CNN
+    and CNN-PIEF.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.99
+  Name of the first author: Yanyu Xu
+  Name of the last author: Jingyi Yu
+  Number of Figures: 10
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Personalized Saliency and Its Prediction
+  Publication Date: 2018-08-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Inter-Subject Consistency Scores in the Original Dataset
+      and Those in Our New Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Center Preference of Saliency Maps Viewed at Different Time,
+      Evaluated with the Method Proposed in [53]
+  Table 3 caption:
+    table_text: TABLE 3 The Eye Fixation Distributions in Our Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Inter-Subject Consistency versus within-Subject Consistency
+      in Our Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Inter-Subject Consistency in Different Datasets
+  Table 6 caption:
+    table_text: TABLE 6 The Performance Comparison of Different Methods Under Closed-Set
+      Settings on Our PSM Dataset
+  Table 7 caption:
+    table_text: TABLE 7 The Performance Comparison of Different Methods Under Open-Set
+      Setting on Our PSM Dataset
+  Table 8 caption:
+    table_text: TABLE 8 Prediction Errors Under Different Transfer Learning Settings
+  Table 9 caption:
+    table_text: TABLE 9 The Effect of Inserting Person-Specific Information at Different
+      Positions in CNN-PIEF
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2866563
+- Affiliation of the first author: school of mathematics and statistics, xian jiaotong
+    university, xian, shaanxi, china
+  Affiliation of the last author: school of mathematics science and state key laboratory
+    of cad&cg, zhejiang university, hangzhou, zhejiang, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\SemiSupervised_Domain_Adaptation_by_Covariance_Matching\figure_1.jpg
+  Figure 1 caption: The figures in the top row show the original data points for Gauss,
+    Ellipse and three two-moon datasets, and the figures in the second row show the
+    new representation for the samples by DACoM. Red circles and crosses represent
+    the samples in class 1 and class 2 from target domain (Xt-C1, Xt-C2), respectively,
+    and blue circles and crosses represent the samples in class 1 and class 2 from
+    source domain (Xs-C1, Xs-C2), respectively. Green circles and crosses represent
+    the target training samples of the two classes, respectively.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\SemiSupervised_Domain_Adaptation_by_Covariance_Matching\figure_2.jpg
+  Figure 2 caption: The left figure shows the MDS embedding of the original images,
+    which are clustered by their person ids(P3 or P1). The right figure shows the
+    MDS embedding of new DACoM representations, which are clustered by their poses
+    (up, straight, left and right).
+  Figure 3 Link: articels_figures_by_rev_year\2018\SemiSupervised_Domain_Adaptation_by_Covariance_Matching\figure_3.jpg
+  Figure 3 caption: Comparison of two sampling strategies over different number of
+    landmark points.
+  Figure 4 Link: articels_figures_by_rev_year\2018\SemiSupervised_Domain_Adaptation_by_Covariance_Matching\figure_4.jpg
+  Figure 4 caption: Illustration of the convergence of DACoM by Webkb datasets.
+  Figure 5 Link: articels_figures_by_rev_year\2018\SemiSupervised_Domain_Adaptation_by_Covariance_Matching\figure_5.jpg
+  Figure 5 caption: Performances of DACoM on the Webkb datasets with all the terms
+    or without covariance matching ( theta = 0 ), latent spectral structure ( alpha
+    =0 ), within-class discrimination ( beta =0 ), or between-class discrimination
+    ( gamma =0 ).
+  Figure 6 Link: articels_figures_by_rev_year\2018\SemiSupervised_Domain_Adaptation_by_Covariance_Matching\figure_6.jpg
+  Figure 6 caption: Performances of our DACoM using different parameters of alpha
+    and beta on the Reuters1 datasets. The color represents the classification accuracy.
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Limin Li
+  Name of the last author: Zhenyue Zhang
+  Number of Figures: 6
+  Number of Tables: 11
+  Number of authors: 2
+  Paper title: Semi-Supervised Domain Adaptation by Covariance Matching
+  Publication Date: 2018-08-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Data Summaries of the Real-World Datasets
+  Table 10 caption:
+    table_text: TABLE 10 Means and Standard Deviations of Classification Accuracies
+      (%) of SVMT, DACoM-Sampling, and DACoM on Digit
+  Table 2 caption:
+    table_text: TABLE 2 Method Comparison
+  Table 3 caption:
+    table_text: TABLE 3 Means and Standard Deviations of Classification Accuracies
+      (%) on the Simulation Datasets
+  Table 4 caption:
+    table_text: TABLE 4 Means and Standard Deviations of Classification Accuracies
+      (%) on Face-Pose and Face-Eye Datasets
+  Table 5 caption:
+    table_text: TABLE 5 Means and Standard Deviations of Classification Accuracies
+      (%) on the Webkb Datasets
+  Table 6 caption:
+    table_text: TABLE 6 Means and Standard Deviations of Classification Accuracies
+      (%) of All Methods on Warnat
+  Table 7 caption:
+    table_text: TABLE 7 Means and Standard Deviations of Classification Accuracies
+      (%) on Reuters1 and Reuters2
+  Table 8 caption:
+    table_text: TABLE 8 Means and Standard Deviations of Classification Accuracies
+      (%) on the Reuters3 and Reuters4
+  Table 9 caption:
+    table_text: TABLE 9 The Classification Accuracies for (K)DACoM with Two Sampling
+      Strategies for the Simulation Datasets
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2866846
+- Affiliation of the first author: school of computer science, university of nottingham,
+    nottingham, united kingdom
+  Affiliation of the last author: school of computer science, university of nottingham,
+    nottingham, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_1.jpg
+  Figure 1 caption: "(a) The original bottleneck layer of [7]. (b) The proposed hierarchical\
+    \ parallel & multi-scale structure: our block increases the receptive field size,\
+    \ improves gradient flow, is specifically designed to have (almost) the same number\
+    \ of parameters as the original bottleneck, does not contain 1\xD71 convolutions,\
+    \ and in general is derived from the perspective of improving the performance\
+    \ and efficiency for binary networks. Note: a layer is depicted as a rectangular\
+    \ block containing: its filter size, the number of input and output channels;\
+    \ \u201DC\u201D - denotes concatenation and \u201D+\u201D an element-wise sum."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_10.jpg
+  Figure 10 caption: The effect of varying the cardinality of the proposed binary
+    block on performance.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_2.jpg
+  Figure 2 caption: The architecture of a single Hour-Glass (HG) network [2]. Following
+    [5], the first and last layers (brown colour) are left real while all the remaining
+    layers are binarized.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_3.jpg
+  Figure 3 caption: Cumulative error curves on MPII validation set for real-valued
+    (red) and binary (blue) bottleneck blocks within the HG network.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_4.jpg
+  Figure 4 caption: Examples of failure cases for the binarized HG (first row) and
+    predictions of its real-valued counterpart (second row). The binary HG misses
+    certain range of poses while having similar accuracy for the correct parts.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_5.jpg
+  Figure 5 caption: "Examples of learned 3\xD73 binary filters."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_6.jpg
+  Figure 6 caption: "Examples of features before and after a 1\xD71 convolutional\
+    \ layer. Often the features are copied over with little modifications, usually\
+    \ consisting in the details removal. The contrast was altered for better visualization."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_7.jpg
+  Figure 7 caption: "Different types of blocks described and evaluated. Our best performing\
+    \ block is shown in figure (e). A layer is depicted as a rectangular block containing:\
+    \ its filter size, number of input channels and the number of output channels).\
+    \ \u201CC\u201D - denotes concatenation operation, \u201C+\u201D an element-wise\
+    \ sum and \u201CUP\u201D a bilinearly upsample layer."
+  Figure 8 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_8.jpg
+  Figure 8 caption: Cumulative error curves (a) on AFLW-PIFA, evaluated on all 34
+    points (CALE is the method of [33]), (b) on AFLW2000-3D on all points computed
+    on a random subset of 696 images equally represented in [0circ, 30circ ], [30circ,
+    60circ ], [60circ, 90circ ] (see also [46]).
+  Figure 9 Link: articels_figures_by_rev_year\2018\Hierarchical_Binary_CNNs_for_Landmark_Localization_with_Limited_Resources\figure_9.jpg
+  Figure 9 caption: The effect of varying the depth of the proposed binary block on
+    performance.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Adrian Bulat
+  Name of the last author: Georgios Tzimiropoulos
+  Number of Figures: 16
+  Number of Tables: 12
+  Number of authors: 2
+  Paper title: Hierarchical Binary CNNs for Landmark Localization with Limited Resources
+  Publication Date: 2018-08-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 PCKh Error on MPII Dataset for Real-Valued and Binary Bottleneck
+      Blocks within the HG Network
+  Table 10 caption:
+    table_text: TABLE 10 Comparison Between HG and Improved HG on the MPII Validation
+      Set
+  Table 2 caption:
+    table_text: TABLE 2 PCKh-Based Comparison of Different Blocks on MPII Validation
+      Set. Params Refers to the Number of Parameters of the Whole Network
+  Table 3 caption:
+    table_text: 'TABLE 3 PCKh-Based Performance on MPII Validation Set for Real-Valued
+      Blocks: Our Block Is Compared with a Wider Version of the Original Bottleneck
+      So That Both Blocks Have Similar Parameters'
+  Table 4 caption:
+    table_text: 'TABLE 4 The Effect of Using: Augmentation, Different Losses (Sigmoid
+      vs L2), Different Pooling Methods and of Adding a ReLU After the Conv Layer,
+      When Training Our Binary Network in Terms of PCKh-Based Performance on MPII
+      Validation Set'
+  Table 5 caption:
+    table_text: TABLE 5 PCKh-Based Comparison on MPII Validation Set
+  Table 6 caption:
+    table_text: TABLE 6 NME-Based (%) Comparison on AFLW Test Set
+  Table 7 caption:
+    table_text: TABLE 7 NME-Based (%) Comparison on AFLW-PIFA Evaluated on Visible
+      Landmarks Only
+  Table 8 caption:
+    table_text: TABLE 8 NME-Based (%) Based Comparison on AFLW-PIFA Evaluated on All
+      34 Points, Both Visible and Occluded
+  Table 9 caption:
+    table_text: TABLE 9 NME-Based (%) Based Comparison on AFLW2000-3D Evaluated on
+      All 68 Points, Both Visible and Occluded
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2866051
+- Affiliation of the first author: department of computer, information and technology,
+    indiana university-purdue university indianapolis, indianapolis, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    college of computer and information science, northeastern university, boston,
+    usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_1.jpg
+  Figure 1 caption: Illustration of visual features from seen classes and unseen classes.
+    Here we have three seen classes, i.e., Tiger, Lion and Leopard, as well as two
+    unseen classes, i.e., Cougar and Liger. We could notice that the distributions
+    of different categories across seen and unseen data are intertwined.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_2.jpg
+  Figure 2 caption: "Illustration of our designed basic semantic-visual framework,\
+    \ in which low-rank embedding W maps visual features X into a new space, and hence\
+    \ similar features, e.g., \u201Chas a tail\u201D, would gather together. At the\
+    \ same time, a semantic dictionary D is learned through the reconstruction WX\u2248\
+    DA to link visual features and their semantics. To boost the generalizability\
+    \ of semantic dictionary, we explore two-stage generative adversarial networks\
+    \ (shown in Fig. 3) to synthesize more semantic and visual features to cover the\
+    \ feature space of unseen classes. Hence, adaptive semantic dictionary could constitute\
+    \ the latent basis for the unseen categories."
+  Figure 3 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_3.jpg
+  Figure 3 caption: "Illustration of two-stage generative adversarial networks (GANs)\
+    \ boosted semantic dictionary for zero-shot learning. The first-stage generator\
+    \ G s (\u22C5) aims to synthesize more semantic features to cover unseen classes\
+    \ based on random noise z . Then, the second-stage generator G v (\u22C5) attempts\
+    \ to generate more visual features based on the real and synthesized semantic\
+    \ representations ( a and G s (z) ). Therefore, we could enhance the semantic\
+    \ dictionary and low-rank embedding learning."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_4.jpg
+  Figure 4 caption: Confusion matrices of the test results on unseen classes for the
+    proposed method on (a) aP&aY and (b) AwA. Diagonal numbers indicate the correct
+    prediction accuracy. Column means the ground truth and row denotes the predictions.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_5.jpg
+  Figure 5 caption: Qualitative results of our approach on CUB, where 10 unseen class
+    labels are shown on the top. Then we list the top-3 instances recognized in each
+    class in the middle. The third row represents the top-3 misclassified samples.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_6.jpg
+  Figure 6 caption: Qualitative results of our approach on aP&aY, where 12 unseen
+    class labels are shown on the top. Then we list the top-3 instances recognized
+    in each class in the middle. The third row represents the top-3 misclassified
+    samples.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_7.jpg
+  Figure 7 caption: Performance of our conference model and the proposed method under
+    different number of seenunseen classes on CUB.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_8.jpg
+  Figure 8 caption: (a) Comparison of different variants to our model, (b) parameter
+    analysis on alpha , (c) rank analysis of r on four benchmarks with VGG-VeryDeep-19.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Generative_ZeroShot_Learning_via_LowRank_Embedded_Semantic_Dictionary\figure_9.jpg
+  Figure 9 caption: Visualization of 5 hard unseen class samples from AwA using their
+    learned semantic representations, where (a) is from GSDL A and (b) is from GSDL
+    (ours). Each color represents a class and each point represents an image.
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Zhengming Ding
+  Name of the last author: Yun Fu
+  Number of Figures: 9
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Generative Zero-Shot Learning via Low-Rank Embedded Semantic Dictionary
+  Publication Date: 2018-08-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics of Four Benchmark Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Zero-Shot Classification Accuracy (%) of the Comparisons on
+      the Four Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Zero-Shot Classification Accuracy (%) of the Comparisons on
+      the Four Datasets Using VGG-VeryDeep-19 CNN Features
+  Table 4 caption:
+    table_text: TABLE 4 Retrieval Performance Comparison (%) in Terms of mAP
+  Table 5 caption:
+    table_text: 'TABLE 5 Generalized ZSL Recognition (%) in Terms of Accuracy, where
+      U U: Unseen Classes; S S: Seen Classes; T=S+U T=S+U'
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2867870
+- Affiliation of the first author: school of artificial intelligence, university of
+    chinese academy of sciences, beijing, china
+  Affiliation of the last author: national laboratory of pattern recognition, chinese
+    academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_1.jpg
+  Figure 1 caption: Illustration of asymmetric inner product fitting. The similarity
+    between the two distinct embeddings is crosswise calculated. In order to preserve
+    the semantic similarity, the similarity of similar pairs is maximized, otherwise,
+    the similarity of dissimilar pairs is minimized.
+  Figure 10 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_10.jpg
+  Figure 10 caption: 'Convergence curves of NAMVH 1r and NAMVH 10r on ESP-GAME and
+    MIR-FLICKR with 16-bit codes, respectively. Top row: The original convergence
+    curves; bottom row: The convergence cures of the incremental extension of database
+    samples with two sample rates.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_2.jpg
+  Figure 2 caption: The overview architecture of NAMVH. Each input is represented
+    as two asymmetric embeddings. One is the real-valued embedding (the green points),
+    generated by a multi-layer neural network. Another is the multi-integer-valued
+    embedding (the colorful squares), modeled by BSR. We minimize the pairwise loss
+    between these embeddings and the classification errors in one unified framework.
+    Best viewed in colors.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_3.jpg
+  Figure 3 caption: 'Retrieval performance of different hashing methods on five relatively
+    small datasets. From top row to bottom row, they are ESP-GAME, MIR-FLICKR, NUS-WIDE,
+    CIFAR10 and MNIST, respectively. First column: (a) MAP2000 with different code
+    lengths; Second column: (b) Top-K precision32 bits w.r.t. different numbers of
+    top returned images; Third column: (c) NDCG100 with different code lengths. Best
+    viewed in colors.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_4.jpg
+  Figure 4 caption: Query time comparison and the correspondingly search performance
+    MAP2000 under various code lengths on (a) ESP-GAME, (b) MIR-FLICKR and (c) NUS-WIDE.
+    The markers from left to right on each curve indicate the code length of 8,16,32,64
+    , and 128, respectively. The vertical axis represents the search performance MAP,
+    and the horizontal axis corresponds to the query time cost (milliseconds).
+  Figure 5 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_5.jpg
+  Figure 5 caption: The search performance MAP2000 of NAMVH r 1 and NAMVH r 10 on
+    the different dictionary sizes on (a) ESP-GAME, (b) MIR-FLICKR and (c) NUS-WIDE
+    with 32-bit codes. Green dashed lines represent the highest MAP of the compared
+    binary hashing methods with 48-bit codes.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_6.jpg
+  Figure 6 caption: "The search performance MAPall of the extension methods (e-COSDISH,\
+    \ e-SDH and e-NAMVH r 10 ) and the correspondingly non-extension methods (COSDISH,\
+    \ SDH and NAMVH r 10 ) under various sample rates \u03C0 on (a) ESP-GAME, (b)\
+    \ MIR-FLICKR and (c) NUS-WIDE with 16-bit codes."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_7.jpg
+  Figure 7 caption: The effect of l on MAP2000 performance on (a) CIFAR10, (b) ESP-GAME,
+    (c) MIR-FLICKR and (d) NUS-WIDE with 8-bit and 16-bit codes.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_8.jpg
+  Figure 8 caption: Energy curves of different methods on (a) MNIST, (b) ESP-GAME,
+    (c) MIR-FLICKR and (d) NUS-WIDE with 16-bit codes.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Nonlinear_Asymmetric_MultiValued_Hashing\figure_9.jpg
+  Figure 9 caption: The MAP2000 performance of COSDISH and NAMVH with different similarity
+    constructions on (a) ESP-GAME and (b) MIR-FLICKR.
+  First author gender probability: 0.75
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Cheng Da
+  Name of the last author: Chunhong Pan
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 7
+  Paper title: Nonlinear Asymmetric Multi-Valued Hashing
+  Publication Date: 2018-08-30 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 A Summary of Different Query Strategies of NAMVH
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Retrieval Performance of Different Hashing Methods on Two
+      Large Scale Datasets RCV and ILSVRC14
+  Table 3 caption:
+    table_text: TABLE 3 The MAP2000 Results with Various Activation Functions
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2867866
+- Affiliation of the first author: department of computer science, university of oxford,
+    oxford, united kingdom
+  Affiliation of the last author: department of computer science, university of warwick,
+    coventry, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_1.jpg
+  Figure 1 caption: t-SNE embeddings of 2.5D partial views and 3D complete shapes
+    of multiple object categories.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_2.jpg
+  Figure 2 caption: Overview of the network architecture for training.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_3.jpg
+  Figure 3 caption: Overview of the network architecture for testing.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_4.jpg
+  Figure 4 caption: Detailed architecture of 3D-RecGAN++, showing the two main building
+    blocks. Note that, although these are shown as two separate modules, they are
+    trained end-to-end.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_5.jpg
+  Figure 5 caption: 'An example of ElasticFusion for generating real world data. Left:
+    reconstructed object; sampled camera poses are shown in black. Right: Input RGB,
+    depth image and segmented depth image.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_6.jpg
+  Figure 6 caption: Qualitative results of single category reconstruction on testing
+    datasets with same and cross viewing angles.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_7.jpg
+  Figure 7 caption: Qualitative results of multiple category reconstruction on testing
+    datasets with same and cross viewing angles.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_8.jpg
+  Figure 8 caption: Qualitative results of cross category reconstruction on testing
+    datasets with same and cross viewing angles.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Dense_D_Object_Reconstruction_from_a_Single_Depth_View\figure_9.jpg
+  Figure 9 caption: Qualitative results of real-world objects reconstruction from
+    different approaches. The object instance is segmented from the raw depth image
+    in preprocessing step.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.53
+  Name of the first author: Bo Yang
+  Name of the last author: Hongkai Wen
+  Number of Figures: 9
+  Number of Tables: 12
+  Number of authors: 5
+  Paper title: Dense 3D Object Reconstruction from a Single Depth View
+  Publication Date: 2018-09-02 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Per-Category IoU and CE Loss on Testing Dataset with Same
+      Viewing Angles ( 256 3 2563 Voxel Grids)
+  Table 10 caption:
+    table_text: TABLE 10 Multi-Category IoU and CE Loss on Real-World Dataset ( 256
+      3 2563 Voxel Grids)
+  Table 2 caption:
+    table_text: TABLE 2 Per-Category IoU and CE Loss on Testing Dataset with Cross
+      Viewing Angles ( 256 3 2563 Voxel Grids)
+  Table 3 caption:
+    table_text: TABLE 3 Multi-Category IoU and CE Loss on Testing Dataset with Same
+      Viewing Angles ( 256 3 2563 Voxel Grids)
+  Table 4 caption:
+    table_text: TABLE 4 Multi-Category IoU and CE Loss on Testing Dataset with Cross
+      Viewing Angles ( 256 3 2563 Voxel Grids)
+  Table 5 caption:
+    table_text: TABLE 5 Cross-Category IoU on Testing Dataset with Same Viewing Angles
+      ( 256 3 2563 Voxel Grids)
+  Table 6 caption:
+    table_text: TABLE 6 Cross-Category CE Loss on Testing Dataset with Same Viewing
+      Angles ( 256 3 2563 Voxel Grids)
+  Table 7 caption:
+    table_text: TABLE 7 Cross-Category IoU on Testing Dataset with Cross Viewing Angles
+      ( 256 3 2563 Voxel Grids)
+  Table 8 caption:
+    table_text: TABLE 8 Cross-Category CE Loss on Testing Dataset with Cross Viewing
+      Angles ( 256 3 2563 Voxel Grids)
+  Table 9 caption:
+    table_text: TABLE 9 Cross-Category IoU and CE Loss of 3D-RecGAN++ Trained on Individual
+      Category and Then Tested on the Testing Dataset with Same Viewing Angles ( 256
+      3 2563 Voxel Grids)
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2868195

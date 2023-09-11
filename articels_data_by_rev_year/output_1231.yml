@@ -1,0 +1,920 @@
+- Affiliation of the first author: computer vision group, university of bonn, bonn,
+    germany
+  Affiliation of the last author: computer vision group, university of bonn, bonn,
+    germany
+  Figure 1 Link: articels_figures_by_rev_year\2018\Open_Set_Domain_Adaptation_for_Image_and_Action_Recognition\figure_1.jpg
+  Figure 1 caption: (a) Standard domain adaptation benchmarks assume that source and
+    target domains contain images or videos only of the same set of categories. This
+    is denoted as closed set domain adaptation since it does not include samples of
+    unknown categories or categories which are not present in the other domain. (b)
+    We propose open set domain adaptation. In this setting, both source and target
+    domain contain images or videos that do not belong to the categories of interest.
+    Furthermore, the target domain contains images or videos that are not related
+    to any image or video in the source domain and vice versa.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Open_Set_Domain_Adaptation_for_Image_and_Action_Recognition\figure_2.jpg
+  Figure 2 caption: Overview of the proposed approach for unsupervised open set domain
+    adaptation. (a) The source domain contains some labelled images, indicated by
+    the colours red, blue and green, and some images belonging to unknown classes
+    (grey). For the target domain, we do not have any labels but the shapes indicate
+    if they belong to one of the three categories or an unknown category (circle).
+    (b) In the first step, we assign class labels to some target samples, leaving
+    outliers unlabelled. (c) By minimising the distance between the samples of the
+    source and the target domain that are labelled by the same category, we learn
+    a mapping from the source to the target domain. The image shows the samples in
+    the source domain after the transformation. This process iterates between (b)
+    and (c) until it converges to a local minimum. (d) In order to label all samples
+    in the target domain either by one of the three classes (red, green, blue) or
+    as unknown (grey), we learn a classifier on the source samples that have been
+    mapped to the target domain (c) and apply it to the samples of the target domain
+    (a). In this image, two samples with unknown classes are wrongly classified as
+    red or green.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Open_Set_Domain_Adaptation_for_Image_and_Action_Recognition\figure_3.jpg
+  Figure 3 caption: "Impact of using a random subset of target samples. The blue region\
+    \ shows the difference between the best and worst result of the 5 randomly sampled\
+    \ subsets for a given number of target samples and the black line within the region\
+    \ is the mean accuracy of the 5 subsets. The red line indicates the classification\
+    \ accuracy when using all target samples. The results are reported for ATI- \u03BB\
+    \ using the open set protocol on the unsupervised Office dataset with 10 shared\
+    \ classes using all samples per class."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Open_Set_Domain_Adaptation_for_Image_and_Action_Recognition\figure_4.jpg
+  Figure 4 caption: Execution time in seconds for the assignment and transformation
+    estimation steps of a single iteration with respect to the number of target samples.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Open_Set_Domain_Adaptation_for_Image_and_Action_Recognition\figure_5.jpg
+  Figure 5 caption: The black and grey curves show the classification accuracies for
+    varying values of rho when including or not the constraint sum t xct geq 1 , respectively.
+    rho = 0.5 obtains the best accuracies in 5 out of 6 domain shifts. The blue curve
+    shows the percentage of selected assignments to compute the transformation matrix
+    W in the first iteration. The results are reported for ATI- lambda using the open
+    set protocol on the unsupervised Office dataset with 10 shared classes using all
+    samples per class.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Open_Set_Domain_Adaptation_for_Image_and_Action_Recognition\figure_6.jpg
+  Figure 6 caption: Confusion matrices without (a) and with adaptation (b) for the
+    66 shared classes and unknowns (last row and last column) for the open set protocol
+    for Kinetics [20] and UCF101 [21]. Many instances of the shared classes in the
+    target domain are wrongly classified as unknown instances (last column) if domain
+    adaptation is not applied. The figure is best viewed by zooming in.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Open_Set_Domain_Adaptation_for_Image_and_Action_Recognition\figure_7.jpg
+  Figure 7 caption: Confusion matrices without (a) and with adaptation (b) for an
+    open set classification task with 6 shared classes and a domain shift between
+    synthetic [19] (source) and real [70] (target) data. The features are extracted
+    from the fc7 layer of the VGG-16 model [71].
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.87
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Pau Panareda Busto
+  Name of the last author: Juergen Gall
+  Number of Figures: 7
+  Number of Tables: 20
+  Number of authors: 3
+  Paper title: Open Set Domain Adaptation for Image and Action Recognition
+  Publication Date: 2018-11-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Open Set Domain Adaptation on the Unsupervised Office Dataset
+      with 10 Shared Classes (OS) Using All Samples per Class [32]
+  Table 10 caption:
+    table_text: TABLE 10 Unsupervised Open Set Domain Adaptation on the Sparse Set-Up
+      from [17]
+  Table 2 caption:
+    table_text: "TABLE 2 Evolution of the Percentage of Correct Assignments (Assign-\
+      \ \u03BB \u03BB) When Taking into Account the Selected Target Samples and the\
+      \ Average Class Accuracy of All Target Samples Using Linear SVMs (LSVM)"
+  Table 3 caption:
+    table_text: TABLE 3 Open Set Domain Adaptation on the Unsupervised Office Dataset
+      with 10 Shared Classes (OS)
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of a Standard Linear SVM (LSVM) with a Specific
+      Open Set SVM (OS-SVM) [11] on the Unsupervised Office Dataset with 10 Shared
+      Classes Using All Samples per Class [32]
+  Table 5 caption:
+    table_text: TABLE 5 Impact of Including the Unknown Classes to the Set of Classes
+      C C on the Unsupervised Office Dataset with 10 Shared Classes Using All Samples
+      per Class [32]
+  Table 6 caption:
+    table_text: "TABLE 6 Impact of Increasing the Amount of Unknown Samples in the\
+      \ Domain Shift Amazon \u2192 \u2192 DSLR+Webcam on the Unsupervised Office Dataset\
+      \ with 10 Shared Classes Using 20 Random Samples per Known Class in Both Domains"
+  Table 7 caption:
+    table_text: TABLE 7 Impact of Limiting the Amount of Correct Assignments in the
+      First Iteration
+  Table 8 caption:
+    table_text: TABLE 8 Open Set Domain Adaptation on the Semi-Supervised Office Dataset
+      with 10 Shared Classes (OS)
+  Table 9 caption:
+    table_text: TABLE 9 Unsupervised Open Set Domain Adaptation on the Testbed Dataset
+      (Dense Setting) with 10 Shared Classes (OS)
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2880750
+- Affiliation of the first author: school of automation, northwestern polytechnical
+    university, xian, china
+  Affiliation of the last author: school of electrical and information engineering,
+    university of sydney, sydney, australia
+  Figure 1 Link: articels_figures_by_rev_year\2018\SPFTN_A_Joint_Learning_Framework_for_Localizing_and_Segmenting_Objects_in_Weakly\figure_1.jpg
+  Figure 1 caption: Illustration of the useful information that can be passed between
+    the weakly supervised video object localization task and the weakly supervised
+    video object segmentation task.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\SPFTN_A_Joint_Learning_Framework_for_Localizing_and_Segmenting_Objects_in_Weakly\figure_2.jpg
+  Figure 2 caption: The joint learning framework in the proposed SPFTN for weakly
+    supervised video object localization and segmentation. Equipped with the newly
+    proposed self-paced regularizer, our network can not only generate the pseudo
+    label map to provide the bounding-box-level and pixel-level pseudo labels but
+    also the location weights and pixel weights to indicate the reliable samples during
+    the learning process, which plays critical role for learning deep models jointly
+    for video object localization and segmentation under weak supervision.
+  Figure 3 Link: articels_figures_by_rev_year\2018\SPFTN_A_Joint_Learning_Framework_for_Localizing_and_Segmenting_Objects_in_Weakly\figure_3.jpg
+  Figure 3 caption: Visualization of our weakly supervised video object segmentation
+    results. Examples in the first three rows are from the YouTube-Object dataset.
+    Other examples are from the DAVIS dataset. The last row shows a failure case,
+    which is possibly due to the confusion of the co-occurring foreground objects
+    that have interactions with the person of interest.
+  Figure 4 Link: articels_figures_by_rev_year\2018\SPFTN_A_Joint_Learning_Framework_for_Localizing_and_Segmenting_Objects_in_Weakly\figure_4.jpg
+  Figure 4 caption: Visualization of our weakly supervised video object localization
+    results. Examples in the first row are from the YouTube-Object dataset. Other
+    examples are from the DAVIS dataset. The last row shows a failure case (see the
+    last two columns), in which the fast moving objects exhibit highly non-rigid and
+    unusual behaviors.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Dingwen Zhang
+  Name of the last author: Dong Xu
+  Number of Figures: 4
+  Number of Tables: 6
+  Number of authors: 4
+  Paper title: 'SPFTN: A Joint Learning Framework for Localizing and Segmenting Objects
+    in Weakly Labeled Videos'
+  Publication Date: 2018-11-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Weakly Supervised Video Object Segmentation Results on the
+      YouTube-Object Dataset in Terms of IOU
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Weakly Supervised Video Object Segmentation Results on the
+      DAVIS Validation Dataset, Which Are Measured by the Region Similarity J J, Counter
+      Accuracy F F and Temporal Stability T T
+  Table 3 caption:
+    table_text: TABLE 3 Weakly Supervised Video Object Localization Results on the
+      YouTube-Object Dataset in Terms of CorLoc
+  Table 4 caption:
+    table_text: TABLE 4 Weakly Supervised Video Object Localization Results on the
+      DAVIS Validation Dataset in Terms of CorLoc
+  Table 5 caption:
+    table_text: TABLE 5 Evaluation of the Network Architecture and Self-Paced Regularizer
+      on the Youtube-Object Dataset
+  Table 6 caption:
+    table_text: TABLE 6 Ablation Analysis of the Learning Process on the Youtube-Object
+      Dataset
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2881114
+- Affiliation of the first author: department of computing, imperial college london,
+    london, united kingdom
+  Affiliation of the last author: university of oulu, oulu, finland
+  Figure 1 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_1.jpg
+  Figure 1 caption: Mode-1 fibers (tubes) and mode-3 slices of a 3-way tensor. Adapted
+    from [33].
+  Figure 10 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_10.jpg
+  Figure 10 caption: Results on the Facade benchmark with 30 percent noise.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_2.jpg
+  Figure 2 caption: Illustration of the decomposition.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_3.jpg
+  Figure 3 caption: 'Sample spectrums of A and B . Ground truth attained ( A : 42,
+    B : 12). r=100 . Degree 2 regularizer.'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_4.jpg
+  Figure 4 caption: Convergence on synthetic data with 30 and 60 percent corruption.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_5.jpg
+  Figure 5 caption: Recovery performance with 60 percent corruption. Relative ell
+    2 error and density.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_6.jpg
+  Figure 6 caption: Background subtraction results on Airport Hall. TRPCA 14 removed.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_7.jpg
+  Figure 7 caption: Mean PSNR and FSIM on the 64 images of the first subject of Yale
+    at noise levels 10, 30, and 60 percent.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_8.jpg
+  Figure 8 caption: Results on the Yale benchmark with 30 percent noise. TRPCA 14
+    removed.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Robust_Kronecker_Component_Analysis\figure_9.jpg
+  Figure 9 caption: PSNR and FSIMc of all methods on the Facade benchmark at noise
+    levels 10, 30, and 60 percent.
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mehdi Bahri
+  Name of the last author: Stefanos Zafeiriou
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 3
+  Paper title: Robust Kronecker Component Analysis
+  Publication Date: 2018-11-15 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 AUC on Highway and Hall Ordered by Mean AUC
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Three best results on Yale at 60 percent Noise.
+  Table 3 caption:
+    table_text: TABLE 3 Three Best Results on Facade at 60 Percent Noise
+  Table 4 caption:
+    table_text: TABLE 4 Reconstruction of the First Face of Yale-B with 30 Percent
+      Salt & Pepper Noise and 30 Percent Missing Values
+  Table 5 caption:
+    table_text: TABLE 5 Completion Experiment on the 300W Dataset
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2881476
+- Affiliation of the first author: school of of electrical engineering, tel aviv university,
+    tel aviv, israel
+  Affiliation of the last author: school of of electrical engineering, tel aviv university,
+    tel aviv, israel
+  Figure 1 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_1.jpg
+  Figure 1 caption: 'Prior validation: (a) A PSNR histogram of the quantization errors
+    on the Berkeley Segmentation Dataset (BSDS300): The RGB values of each image were
+    clustered using K-means to 500 clusters and replaced by the cluster center. The
+    histogram shows the PSNRs measured on the entire dataset. (b,d) The image that
+    had the worst PSNR, 36.64 dB, before (b) and after (d) color quantization. (c)
+    Absolute difference image to color-quantized version (the contrast was stretched
+    for display, note that the maximal difference was 18 out of 256).'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_10.jpg
+  Figure 10 caption: 'Natural images: A comparison of several end-to-end single image
+    dehazing methods. The leftmost column is the input image and the rest of the columns
+    show the output of different methods. The transmission maps are shown below each
+    output image.'
+  Figure 2 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_2.jpg
+  Figure 2 caption: Haze-lines demonstration (synthetic image). (a) Pixels of a haze
+    free color image are clustered using K-means. Pixels belonging to four of the
+    clusters are marked. Note that the pixels are non-local and are spread all over
+    the image plane. (b) The four color clusters are depicted in RGB space. Colors
+    of the clusters correspond to the highlighted pixels in (a). (c) Synthetic haze
+    is added to (a). The same clustered pixels are marked, but their observed colors
+    are affected by different amounts of haze. (d) The hazy pixels depicted in RGB
+    color space. They are distributed along lines, termed haze-lines, passing through
+    the atmospheric light, marked in black.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_3.jpg
+  Figure 3 caption: Haze-lines demonstration (natural image). (a) An input hazy image,
+    with two types of pixels marked by a blue circle and an orange triangle. Those
+    pixels show objects with similar radiance (shaded and lit tree trunks, respectively)
+    at different distances from the camera. (b) The color coordinates of the pixels
+    depicted in (a) are shown in RGB color space, with a corresponding color coding.
+    They are distributed over two different haze-lines, as identified by our method.
+    The lines pass through the atmospheric light, marked in black. The other end of
+    the line is the haze-free color of these pixels. As expected, the pixels along
+    the haze-line marked in blue, which correspond to the shaded side of the trees,
+    have a darker haze-free color than the haze-line marked in orange.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_4.jpg
+  Figure 4 caption: "Hough votes. [Top] The color clusters I n N n=1 are projected\
+    \ onto 3 different 2D planes. Each cluster n is marked by a circle with a size\
+    \ proportional to w n . The ground-truth (GT) atmospheric light (extracted from\
+    \ a visible patch in the image) is marked by a green circle while our estimate\
+    \ is marked by a purple diamond. Each colored cluster votes for the GT value,\
+    \ where different colors indicate different haze-lines. The gray colored clusters\
+    \ do not vote for the GT since the following holds: 11[A> I n ]=0 . [Bottom] The\
+    \ three voting arrays, accum c 1 , c 2 ,( c 1 , c 2 )\u2208RG,GB,RB . Best viewed\
+    \ in color."
+  Figure 5 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_5.jpg
+  Figure 5 caption: "Atmospheric light centered spherical representation. The sphere\
+    \ was sampled uniformly using 500 points. The color at each point [\u03D5,\u03B8\
+    ] indicates the number of pixels x with these angles when writing I A (x) in spherical\
+    \ coordinates (image size 768\xD71024 )."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_6.jpg
+  Figure 6 caption: "Distance distribution per haze-line: (a) Pixels belonging to\
+    \ two different haze-lines are depicted in green and blue, respectively. (b) A\
+    \ histogram of r(x) within each cluster. The horizontal axis is limited to the\
+    \ range [0,\u2225A\u2225] , as no pixel can have a radius outside that range in\
+    \ this particular image."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_7.jpg
+  Figure 7 caption: 'Intermediate and final results: (a) An input hazy image; (b)
+    The output image; (c) The distance r(x) of every pixel of the hazy image to the
+    atmospheric light; (d) the estimated radii r max (x) calculated according to Eq.
+    (16); (e) The input image is shown, with the pixels x for which r(x)= r max (x)
+    marked by cyan circles; (f) The data term confidence in Eq. (20) colormapped (warm
+    colors show the larger values); (g) The estimated transmission map t (x) before
+    the regularization; (h) The final transmission map t ~ (x) after regularization.
+    (g) and (h) are colormapped.'
+  Figure 8 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_8.jpg
+  Figure 8 caption: 'Evaluating the accuracy of the estimated atmospheric light on
+    natural images. Top: Examples of hazy images, along with their manually extracted
+    ground-truth atmospheric light (GT), and the results of Sulami et al. [18], He
+    et al. [5], Bahat and Irani [7], and ours. Bottom: L 2 errors calculated on 40
+    hazy images (for which the ground truth could be manually reliably extracted).'
+  Figure 9 Link: articels_figures_by_rev_year\2018\Single_Image_Dehazing_Using_HazeLines\figure_9.jpg
+  Figure 9 caption: 'Natural images: A comparison of several end-to-end single image
+    dehazing methods. The leftmost column is the input image and the rest of the columns
+    show the output of different methods. The transmission maps are shown below each
+    output image.'
+  First author gender probability: 0.94
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.72
+  Name of the first author: Dana Berman
+  Name of the last author: Shai Avidan
+  Number of Figures: 17
+  Number of Tables: 1
+  Number of authors: 3
+  Paper title: Single Image Dehazing Using Haze-Lines
+  Publication Date: 2018-11-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of SSIM and CIEDE2000 Errors over O-HAZE [33],
+      a Dehazing Benchmark with Real Hazy and Haze-Free Outdoor Images
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2882478
+- Affiliation of the first author: rapid-rich object search (rose) lab, interdisciplinary
+    graduate school (igs), nanyang technological university, singapore, singapore
+  Affiliation of the last author: school of electrical and electronic engineering,
+    nanyang technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_1.jpg
+  Figure 1 caption: 'The basic idea of our proposed deep hashing approach. We use
+    a basic network which consists of a series of convolution, pooling and fc layers
+    to obtain a representative feature vector, which is then passed through a variational
+    block to obtain a probabilistic latent representation and then passed through
+    a struct layer. Our network is trained in an end-to-end manner by using two objective
+    functions: 1) the output of the struct layer is optimized such that it can minimize
+    a classification loss, and 2) the latent variable is modelled such that approximated
+    posterior distribution in the form of Multivariate Gaussian is close to the prior
+    regularized term by using the KL-divergence criterion. During retrieval, we obtain
+    the binary representation for each query from the output of the struct layer and
+    perform block quantization.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_10.jpg
+  Figure 10 caption: The retrieval time of a query sample on a database.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_2.jpg
+  Figure 2 caption: Different hashing network architectures in comparison with our
+    proposed network. The base network learns the abstract features of data. The fc
+    layer is the fully-connected layer. y is the label information. C is the classification
+    layer. K is the number of bits.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_3.jpg
+  Figure 3 caption: Toy example of varying bottleneck layer length in the test accuracy
+    for the CIFAR10 classification problem.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_4.jpg
+  Figure 4 caption: To obtain the binary code given an input, we obtain the struct
+    layer output and perform one-hot encoding for each struct block. Each one-hot
+    vector is then transformed to binary form. In this example, the number of blocks
+    is set to M=3 , the number of nodes per block is set to S=4 , and the number of
+    bits is set to K=6 . otimes symbol is defined as concatenation. The darkness of
+    the node represents the probability score where a completely black node represents
+    an output of 1.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_5.jpg
+  Figure 5 caption: 'The basic idea of our proposed CM-DVStH for cross-modality multimedia
+    retrieval. Given a gallery set represented by two modalities (image and text),
+    we learn a fusion hashing network and modality-specific networks: First, we train
+    a fusion network by exploiting the correlation of the cross-modal input and solving
+    a classification-based criterion. Once the fusion network is learned we can now
+    use it to infer the binary codes which are used for learning the modality-specific
+    networks. Second, we learn modality-specific hashing networks (one for each modality)
+    such that a latent representation is modelled based on two criteria: (1) given
+    the image-text pair, the latent variable is forced to be as similar as possible
+    to the inferred binary code from the fusion network through a negative log-likelihood
+    criterion, and (2) the latent representation is also modelled such that approximated
+    posterior distribution in the form of Multivariate Gaussian is close to prior
+    regularized by the KLD criterion. During retrieval, we extract the binary vector
+    for each given query sample by using the learned modality-specific hashing network
+    and obtain the most similar binary codes from the gallery, indexed to retrieve
+    the most relevant images.'
+  Figure 6 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_6.jpg
+  Figure 6 caption: NDCG and ACG performance of different cross-modal hashing methods
+    for the MIRFLICKR and IAPRTC12 database.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_7.jpg
+  Figure 7 caption: The mAP performance of different variants of our method.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_8.jpg
+  Figure 8 caption: The mAP performance of varying values of eta of our method on
+    the CIFAR10 dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Deep_Variational_and_Structural_Hashing\figure_9.jpg
+  Figure 9 caption: The encoding time for each image on the ImageNet database. The
+    black line denotes the feature extraction time of the base network.
+  First author gender probability: 1.0
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.68
+  Name of the first author: Venice Erin Liong
+  Name of the last author: Yap-Peng Tan
+  Number of Figures: 10
+  Number of Tables: 8
+  Number of authors: 4
+  Paper title: Deep Variational and Structural Hashing
+  Publication Date: 2018-11-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The mAP Performance of Different Deep Hashing Models for the
+      Single-Domain Category Retrieval Experiment on the CIFAR10 Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The mAP Performance for the Cross-Domain Category Retrieval
+      Experiment Where the Pascal VOC2007 and Caltech101 are Used as Test Datasets
+      and ImageNet Training Set Is Used for Training1515.The ImageNet column is for
+      the single-domain retrieval experiment where the validation set is used for
+      testing.
+  Table 3 caption:
+    table_text: TABLE 3 The mAP Performance for the Multi-Label Single-Modality Retrieval
+      Experiment on the NUS-WIDE Dataset
+  Table 4 caption:
+    table_text: TABLE 4 The NDCG100 and ACG100 Performance of Different Deep Hashing
+      Methods on the NUS-WIDE Dataset
+  Table 5 caption:
+    table_text: TABLE 5 The mAP Performance of Different Cross-Modal Hashing Methods
+      on Different Datasets, Where Images Were Used as Query Samples and TextsTags
+      Were Employed as Gallery Samples, Respectively
+  Table 6 caption:
+    table_text: TABLE 6 The mAP Performance of Different Cross-Modal Hashing Methods
+      on Different Datasets, Where TextsTags Were Used as Query Samples and Images
+      Were Employed as Gallery Samples, Respectively
+  Table 7 caption:
+    table_text: TABLE 7 The mAP Performance of Different Deep Cross-Modal Hashing
+      Methods on the Cross-Modal Retrieval Experiments
+  Table 8 caption:
+    table_text: TABLE 8 The mAP Performance of Different Variants of Our CM-DVStH
+      Method on the MIRFLICKR25k and IAPRTC12 Dataset
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2882816
+- Affiliation of the first author: b. thomas golisano college of computing and information
+    sciences, rochester institute of technology, rochester
+  Affiliation of the last author: department of ece and college of cis, northeastern
+    university, boston, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_1.jpg
+  Figure 1 caption: Our AAPNet predicts the action label given an unfinished action
+    video. Given features extracted from a partially observed video, AAPNet gains
+    extra discriminative information from fully observed video, and generate more
+    representative and discriminative features for action prediction.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_2.jpg
+  Figure 2 caption: Example of a temporally partial video, and graphical illustration
+    of progress level and observation ratio.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_3.jpg
+  Figure 3 caption: Framework of the proposed adversarial action prediction network.
+    AAPNet contains four major components, an encoder E , a discriminator D , and
+    two decoders G 1 and G 2 . The network learns sequential context information from
+    full videos, and transfer it to the features extracted from partial videos, thereby
+    making the learned features more representative and discriminative.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_4.jpg
+  Figure 4 caption: Flowchart for making prediction for a given testing partial video.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_5.jpg
+  Figure 5 caption: Prediction results on (a) UCF101, (b) Sports-1M, and (c) BIT dataset.
+    Note that these prediction approaches are optimized for partial videos and thus
+    cannot be directly compared to action recognition approaches given full videos
+    (observation ratio r=1.0 ). Please refer to the supplemental material for the
+    numbers in the figure, which can be found on the Computer Society Digital Library
+    at http:doi.ieeecomputersociety.org10.1109TPAMI.2018.2882805.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_6.jpg
+  Figure 6 caption: Top 10 instantly, early, and late predictable actions in UCF101
+    dataset. Action names are colored and sorted according to the percentage of their
+    testing samples falling in the category of IP, EP, or LP. This figure is best
+    viewed in color.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_7.jpg
+  Figure 7 caption: "Top 10 instantly, early, and late predictable actions in Sports1M\
+    \ dataset. Action names are colored and sorted according to the percentage of\
+    \ their testing samples that fall in the category of IP, EP, or LP. For example,\
+    \ \u201Cartistic gymnastics\u201D has 12 percent testing samples that are late\
+    \ predictable (require to observe more than 50 percent video frames in order to\
+    \ make accurate predictions). This figure is best viewed in color."
+  Figure 8 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_8.jpg
+  Figure 8 caption: "Instantly, early, and late predictable actions in BIT dataset.\
+    \ Action names are colored and sorted according to the percentage of their testing\
+    \ samples that fall in the category of IP, EP, or LP. For example, \u201Cpat\u201D\
+    \ has 19 percent testing samples that are late predicable (require to observe\
+    \ more than 50 percent video frames in order to make accurate predictions). This\
+    \ is higher than all the other actions, and thus \u201Cpat\u201D is the most challenging\
+    \ action for prediction. This figure is best viewed in color."
+  Figure 9 Link: articels_figures_by_rev_year\2018\Adversarial_Action_Prediction_Networks\figure_9.jpg
+  Figure 9 caption: Average prediction performance of our AAPNet in different training
+    epochs. (a) The dimensionality Dz of the progress-invariant feature mathbf z is
+    set to 128,256,512. (b) The dimensionality Dh of the hidden feature mathbf h is
+    set to 128,256,512. The proposed AAPNet generally converges after 5 epochs, and
+    its performance variation is within 1.2 percent.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yu Kong
+  Name of the last author: Yun Fu
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 3
+  Paper title: Adversarial Action Prediction Networks
+  Publication Date: 2018-11-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Prediction Results ( % %) on UCF101 Dataset Using C3D, TSN,
+      RGB Stream and Flow Stream in TSN as the CNN Component in Our Architecture
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Training and Testing Time (Hours) of Comparison Methods on
+      UCF101, Sports-1M, and BIT Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Prediction Results ( % %) on UCF101, Sports-1M and BIT Datasets
+      Using Deep Networks Methods
+  Table 4 caption:
+    table_text: "TABLE 4 Comparison Prediction Performance (%) among Variants on Partial\
+      \ Videos of Observation Ratios r\u22080.1,0.3,0.5,0.7,1.0 r\u22080.1,0.3,0.5,0.7,1.0"
+  Table 5 caption:
+    table_text: "TABLE 5 Average Prediction Performance ( % %) of Our Method on UCF101\
+      \ dataset with Various Parameter \u03B1 \u03B1 and \u03B2 \u03B2 Values"
+  Table 6 caption:
+    table_text: TABLE 6 Accuracy ( % %) of Our Method Using Various Fusion Strategies
+      for Integrating the Prediction Scores of Generated Features x (K) x(K) and Given
+      Features x x in Test
+  Table 7 caption:
+    table_text: TABLE 7 Comparison Results with Action Recognition Methods
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2882805
+- Affiliation of the first author: "centralesup\xE9lec, universit\xE9 paris-saclay\
+    \ and inria, ch\xE2tenay-malabry, france"
+  Affiliation of the last author: department elektrotechniek, center for processing
+    speech and images, ku leuven, leuven, belgium
+  Figure 1 Link: "articels_figures_by_rev_year\\2018\\The_Lov\xE1sz_Hinge_A_Novel_Convex_Surrogate_for_Submodular_Losses\\\
+    figure_1.jpg"
+  Figure 1 caption: "Plot of the hinge loss function and a transferred plot with the\
+    \ mapping 1\u2212g(x)y ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: "articels_figures_by_rev_year\\2018\\The_Lov\xE1sz_Hinge_A_Novel_Convex_Surrogate_for_Submodular_Losses\\\
+    figure_2.jpg"
+  Figure 2 caption: Some common convex surrogates for binary prediction as tight upper
+    bounds on the 0-1 step loss (cf. [21, Fig. 10.4]).
+  Figure 3 Link: "articels_figures_by_rev_year\\2018\\The_Lov\xE1sz_Hinge_A_Novel_Convex_Surrogate_for_Submodular_Losses\\\
+    figure_3.jpg"
+  Figure 3 caption: "We introduce a novel convex surrogate for submodular losses,\
+    \ the Lov\xE1sz hinge. We show here the Lov\xE1sz hinge, margin and slack rescaling\
+    \ surfaces with different loss functions l from different views; the x and y axes\
+    \ represent the value of s 1 i and s 2 i in Equation (35); the z axis represents\
+    \ the value of the convex surrogate; the solid red dots represent the values of\
+    \ l at the vertices of the unit hypercube. The convex surrogate strategies yield\
+    \ extensions of the discrete loss."
+  Figure 4 Link: "articels_figures_by_rev_year\\2018\\The_Lov\xE1sz_Hinge_A_Novel_Convex_Surrogate_for_Submodular_Losses\\\
+    figure_4.jpg"
+  Figure 4 caption: "Lov\xE1sz hinge with submodular non-monotonic l while thresholding\
+    \ negative components of s is still applied (cf. the caption of Fig. 3 for the\
+    \ axes notation). Plotted as the red dots, l(1)=l(2)=1 is larger than l(\u2205\
+    )=0 and l(1,2)=0.5 . Thus l is non-monotonic. Although the red dots touch the\
+    \ surface, the surface is no longer convex due to the thresholding strategy."
+  Figure 5 Link: "articels_figures_by_rev_year\\2018\\The_Lov\xE1sz_Hinge_A_Novel_Convex_Surrogate_for_Submodular_Losses\\\
+    figure_5.jpg"
+  Figure 5 caption: The disributions of samples for a synthetic binary classification
+    problem motivated by the problem of early detection in a temporal sequence. As
+    in, e.g., disease evolution, the distribution of early stage samples differs from
+    that of late stage samples.
+  Figure 6 Link: "articels_figures_by_rev_year\\2018\\The_Lov\xE1sz_Hinge_A_Novel_Convex_Surrogate_for_Submodular_Losses\\\
+    figure_6.jpg"
+  Figure 6 caption: 'Examples from the PASCAL VOC dataset. Figs. 6a and 6b contain
+    three categories: People, table and chair. Fig. 6c contains table and chair.'
+  Figure 7 Link: "articels_figures_by_rev_year\\2018\\The_Lov\xE1sz_Hinge_A_Novel_Convex_Surrogate_for_Submodular_Losses\\\
+    figure_7.jpg"
+  Figure 7 caption: Examples from the Microsoft COCO dataset. Fig. 7a contains all
+    the categories of interest (cf. Section 6); Fig. 7b contains dining table, fork
+    and cup; Fig. 7c is not a dining scene but contains people.
+  Figure 8 Link: "articels_figures_by_rev_year\\2018\\The_Lov\xE1sz_Hinge_A_Novel_Convex_Surrogate_for_Submodular_Losses\\\
+    figure_8.jpg"
+  Figure 8 caption: "The primal-dual gap as a function of the number of cutting-plane\
+    \ iterations using the Lov\xE1sz hinge (labeled mathbf L ) with submodular loss,\
+    \ a SVM (labeled 0-1), and margin and slack rescaling with greedy inference (labeled\
+    \ mathbf M and mathbf S ). Fig. 8a for the experiment using Equation (54) and\
+    \ Fig. 8b for Equation (55). This demonstrates that empirical convergence of the\
+    \ Lov\xE1sz hinge is at a rate comparable to an SVM, and is feasible to optimize\
+    \ in practice for real-world problems."
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.53
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jiaqian Yu
+  Name of the last author: Matthew B. Blaschko
+  Number of Figures: 8
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: "The Lov\xE1sz Hinge: A Novel Convex Surrogate for Submodular Losses"
+  Publication Date: 2018-11-23 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 For the Synthetic Problem, the Cross Comparison of Average\
+      \ Loss Values (with Standard Error) for the Submodular Loss in Equation (50)\
+      \ Labeled as \u0394 1 \u03941, Using Different Convex Surrogates"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 For the VOC Image Classification Task, the Cross Comparison\
+      \ of Average Loss Values Using the Jaccard Loss (Labeled \u0394 J \u0394J) as\
+      \ Well as 0-1 Loss"
+  Table 3 caption:
+    table_text: "TABLE 3 For the VOC Multilabel Prediction Task, the Cross Comparison\
+      \ of Average Loss Values (with Standard Error) for the Submodular Losses in\
+      \ Equations (52) and (53), Labeled as \u0394 2 \u03942 and \u0394 3 \u03943,\
+      \ Respectively, Using Different Convex Surrogates: The Lov\xE1sz Hinge, Slack\
+      \ Rescaling, and Margin Rescaling, Labeled as L L, S S and M M, Respectively"
+  Table 4 caption:
+    table_text: "TABLE 4 For the MS COCO Prediction Task, the Cross Comparison of\
+      \ Average Loss Values (with Standard Error) for the Submodular Loss in Equations\
+      \ (54), (55), and (56), Labeled as \u0394 4 \u03944, \u0394 5 \u03945, and \u0394\
+      \ 6 \u03946, Respectively, Using Different Convex Surrogates: The Lov\xE1sz\
+      \ Hinge, Slack Rescaling and Margin Rescaling, Labeled as L L, S S and M M,\
+      \ Respectively"
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2883039
+- Affiliation of the first author: department of computer science and engineering,
+    university of minnesota, minneapolis, usa
+  Affiliation of the last author: department of computer and information science,
+    university of pennsylvania, philadelphia, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_1.jpg
+  Figure 1 caption: "(a) Extracting the control of actions from a third-person video\
+    \ is challenging due to limited visual accessibility to the muscle movements (occlusion\
+    \ and low resolution). Instead, this paper presents Force from Motion from a first-person\
+    \ video\u2014inferring active components of physical force and torque to control\
+    \ the movement of the camera wearer (actor). (b) We recover the actors physical\
+    \ state and control using a rigid body dynamics with an optimal control theory.\
+    \ (c) Our system produces the active force and torque in a gravitational field.\
+    \ As a by-product, the passive force such as air drag and lifting force can be\
+    \ recovered."
+  Figure 10 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_10.jpg
+  Figure 10 caption: We validate our method using synthetic data. The first-person
+    motion on the downhill slop is generated where the color on the trajectory represents
+    the speed and the yellow lines indicate direction and magnitude of curvature.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_2.jpg
+  Figure 2 caption: Our system takes a first-person video of sporting activities and
+    estimate the active force and torque that generates the camera ego-motion. We
+    recognize a physical metric space by estimating gravity and metric scale. Based
+    on the coordinate, we compute the optimal force acting on the actors body by minimizing
+    reprojection error.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_3.jpg
+  Figure 3 caption: 'We model the actors dynamics using an inverted pendulum where
+    the force and torque are decomposed into two components: passive components (weight,
+    mg ; centripetal force, F C ; normal force, F N ; sliding and rolling friction
+    force, R S and R R ; air drag, D ; pitch torque, T P ) and active components (thrust,
+    F T ; roll torque, T R ; yaw torque, T Y ).'
+  Figure 4 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_4.jpg
+  Figure 4 caption: We show the likelihood given an image with the red heatmap. The
+    dotted lines are the ground truth gravity direction. The per pixel evidence [55]
+    is encoded as transparency, i.e., the stronger evidence, the more transparent.
+    The CNN correctly predicts gravity direction while the last image produces 15
+    degree error due to the tilted bicycler.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_5.jpg
+  Figure 5 caption: We compute a maximum a posteriori estimate of the 3D gravity direction.
+    We model the prior using a mixture of von Mises-Fisher distributions and learn
+    a likelihood using a convolutional neural network.
+  Figure 6 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_6.jpg
+  Figure 6 caption: "(a) We plot the centripetal acceleration computed by structure\
+    \ from motion with respect to the banked angle where its slope (blue line) | a\
+    \ a |tan \u03B8 b is the scale factor. (b) We verify the moment balance at a banked\
+    \ turn, T N + T R =0 . (c) The recovered gravity direction and scale allow us\
+    \ to compute the terrain elevation and speed in metric units."
+  Figure 7 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_7.jpg
+  Figure 7 caption: (a) Equation (12) produces plausible active force and torque profile
+    that produces a camera trajectory concerting with the video ((b) and (c)).
+  Figure 8 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_8.jpg
+  Figure 8 caption: We compute the optimal control (a) and its state (b) using Equation
+    (12) that minimizes reprojection error for a synthetically generated motion. Given
+    a camera trajectory, we initialize control input and then, compute the initial
+    state (blue) using Equation (14).
+  Figure 9 Link: articels_figures_by_rev_year\2018\Force_from_Motion_Decoding_Control_Force_of_Activity_in_a_FirstPerson_Video\figure_9.jpg
+  Figure 9 caption: We validate our algorithm using synthetic data. We add disturbance
+    or noise in a form of control input, 2D projection, and gravity where the optimal
+    control input produces accurate state trajectory.
+  First author gender probability: 0.94
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.55
+  Name of the first author: Hyun Soo Park
+  Name of the last author: Jianbo Shi
+  Number of Figures: 15
+  Number of Tables: 1
+  Number of authors: 2
+  Paper title: 'Force from Motion: Decoding Control Force of Activity in a First-Person
+    Video'
+  Publication Date: 2018-11-25 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Angular Velocity Comparison with Gyroscope
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2883327
+- Affiliation of the first author: college of intelligence and computing, tianjin
+    university, tianjin, china
+  Affiliation of the last author: department of computer and information sciences,
+    temple university, philadelphia, usa
+  Figure 1 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_1.jpg
+  Figure 1 caption: 'Texture removal: RGF [22] (b) and our muGIF (c) remove rich textures
+    from (a). No-flashflash image restoration: Guided by the flash image, the restored
+    no-flash results of GIF [27] and muGIF are in (e) and (f), respectively. Mutual
+    structure extraction: From the noisy depthRGB (g), the mutual structures extracted
+    by JFMS [28] and muGIF are given in (h) and (i), respectively.'
+  Figure 10 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_10.jpg
+  Figure 10 caption: Comparison on scale-space filtering. Results are obtained by
+    L0GM [24] ( lambda =0.0330.140.2 ), SD [29] ( lambda =1.4e21.5e44.3e4 ), RTV [26]
+    ( lambda =0.00920.120.5 , sigma =2.0 ), RGF [22] ( sigma s=3.923700 , sigma r=0.05
+    ) and ours ( alpha t=0.010.32.0 ), respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_2.jpg
+  Figure 2 caption: 1D and 2D illustration. Only y-direction derivatives are shown
+    in (d-e) and (g-h). For structure maps, mutual structures are colored in red while
+    inconsistent and smooth structures in green and black, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_3.jpg
+  Figure 3 caption: "Gap between relative structure and relative structure surrogate\
+    \ Eq. (6). The leftmost picture draws the shape of relative structure (RS): |u|\
+    \ max(|v|,0.01) + 1 2 |v| max(|u|,0.01) . The middle left shows the shape of relative\
+    \ structure surrogate (RS Sur.): |u | 2 max(|u|,0.01)\u22C5max(|v|,0.01) + 1 2\
+    \ |v | 2 max(|u|,0.01)\u22C5max(|v|,0.01) . The rest two depict the gap and the\
+    \ zoomed-in gap between RS and RS Sur., respectively. Please notice the scale\
+    \ of z-axis, the largest value is 0.25+0.5\xD70.25=0.375 ."
+  Figure 4 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_4.jpg
+  Figure 4 caption: Sketch of MM. At the k th iteration, the surrogate function u(x,
+    x (k) ) is constructed based on the current x (k) , the curve of which is above
+    that of the objective function f(x) . At the point x (k) , f(x)=u(x, x (k) ) .
+    Through minimizing u(x, x (k) ) , the next estimate x (k+1) is obtained. The values
+    of objective function f(x) at x (k) are non-increasing. The procedure is terminated
+    until convergence.
+  Figure 5 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_5.jpg
+  Figure 5 caption: "Effect of \u03B1 t on dynamic only cases. The 1st case corresponds\
+    \ to texture removal while the 2nd scale-space filtering."
+  Figure 6 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_6.jpg
+  Figure 6 caption: 'Convergence behavior. Top row: A dynamic only example (texture
+    removal, alpha t=0.05 ). Bottom row: A dynamicdynamic example (mutual structure
+    extraction, alpha t=0.02 for RGB and alpha r=0.01 for depth).'
+  Figure 7 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_7.jpg
+  Figure 7 caption: Impact of epsilon r and epsilon t . The results are generated
+    by fixing alpha t=alpha r=0.06 and varying epsilon r and epsilon t .
+  Figure 8 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_8.jpg
+  Figure 8 caption: Insensitive to initialization. (a) and (b) are randomly initialized
+    horizontal and vertical weights. (c) and (d) are the results using (a) and (b)
+    as initialization. (e) and (f) depict the weights computed from the input images.
+    (g) and (h) are the corresponding results using (e) and (f) as initialization.
+  Figure 9 Link: articels_figures_by_rev_year\2018\Mutually_Guided_Image_Filtering\figure_9.jpg
+  Figure 9 caption: Comparisons on texture removal. Results are by L0GM [24] ( lambda
+    = 0.0210.350.18 , topmiddlebottom), SD [29] ( lambda =1104.5e32e4 ), RTV [26]
+    ( lambda =0.0090.0250.07 , sigma =2.0 ), RGF [22] ( sigma s=3.53.59 , sigma r=0.05
+    ) and ours ( alpha t=0.00750.050.12 ), respectively.
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Xiaojie Guo
+  Name of the last author: Haibin Ling
+  Number of Figures: 17
+  Number of Tables: 2
+  Number of authors: 4
+  Paper title: Mutually Guided Image Filtering
+  Publication Date: 2018-11-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Runtime (in Sec) of muGIF (DynamicDynamic) on Inputs with
+      Different Resolutions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Comparison of the Depth Upsampling Task in Terms
+      of MAD on the Data from Middlebury Benchmarks [49]
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2883553
+- Affiliation of the first author: center for research on intelligent perception and
+    computing (cripac), national laboratory of pattern recognition (nlpr), institute
+    of automation, chinese academy of sciences (casia), beijing, china
+  Affiliation of the last author: center for research on intelligent perception and
+    computing (cripac), national laboratory of pattern recognition (nlpr), center
+    for excellence in brain science and intelligence technology (cebsit), institute
+    of automation, chinese academy of sciences (casia), beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_1.jpg
+  Figure 1 caption: Illustration of the semantic concepts and semantic order (best
+    viewed in colors).
+  Figure 10 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_10.jpg
+  Figure 10 caption: Results of image annotation by 3 model variants. Groundtruth
+    matched sentences are marked as red and bold, while some sentences sharing similar
+    meanings as groundtruths are marked as underline (best viewed in colors).
+  Figure 2 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_2.jpg
+  Figure 2 caption: The proposed semantic concepts and order learning framework (best
+    viewed in colors).
+  Figure 3 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_3.jpg
+  Figure 3 caption: The multi-regional multi-label CNN for image concept extraction.
+  Figure 4 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_4.jpg
+  Figure 4 caption: Details of the proposed context-modulated attentional LSTM including
+    a) box feature extraction, b) context-modulated attention, and c) gated fusion
+    of concepts and scene (best viewed in colors).
+  Figure 5 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_5.jpg
+  Figure 5 caption: Input images and attended image regions at three different timesteps,
+    using image context or not, respectively (best viewed in colors).
+  Figure 6 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_6.jpg
+  Figure 6 caption: Predicted top-10 semantic concepts with their confidence scores.
+  Figure 7 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_7.jpg
+  Figure 7 caption: Performance versus number of semantic concepts.
+  Figure 8 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_8.jpg
+  Figure 8 caption: Input images and attended image regions at six different timesteps
+    (best viewed in colors).
+  Figure 9 Link: articels_figures_by_rev_year\2018\Image_and_Sentence_Matching_via_Semantic_Concepts_and_Order_Learning\figure_9.jpg
+  Figure 9 caption: Averaged attention maps at three different timesteps.
+  First author gender probability: 0.76
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yan Huang
+  Name of the last author: Liang Wang
+  Number of Figures: 11
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Image and Sentence Matching via Semantic Concepts and Order Learning
+  Publication Date: 2018-11-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison Results of Image Annotation and Retrieval by Ablation
+      Models on the Flickr30k and MSCOCO (1000 Testing) Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison Results of Image Annotation and Retrieval on the
+      Flickr30k and MSCOCO (1000 Testing) Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Comparison Results of Image Annotation and Retrieval on the
+      MSCOCO (5000 Testing) Dataset
+  Table 4 caption:
+    table_text: TABLE 4 The Performance of Different Lengths of the Semantic Order
+      T T
+  Table 5 caption:
+    table_text: "TABLE 5 The Performance of Different Values of the Regularization\
+      \ Parameter \u03BC \u03BC"
+  Table 6 caption:
+    table_text: TABLE 6 Comparison Results of Image Captioning on the Flickr30k Dataset
+  Table 7 caption:
+    table_text: "TABLE 7 The Performance of Different Values of the Balancing Parameter\
+      \ \u03BB \u03BB"
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2018.2883466

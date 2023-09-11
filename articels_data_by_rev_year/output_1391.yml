@@ -1,0 +1,864 @@
+- Affiliation of the first author: school of mathematical sciences, university of
+    science and technology of china, hefei, china
+  Affiliation of the last author: school of computer science and informatics, cardiff
+    university, cardiff, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_1.jpg
+  Figure 1 caption: The face recognition features trained with only the softmax loss
+    tend to be evenly distributed for the training data, which can become less effective
+    when the training data are not evenly sampled from the face space. By augmenting
+    the loss function with the attribute-aware loss term, the learned features have
+    similar distribution as the attributes, which are better suited for recognition.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_10.jpg
+  Figure 10 caption: 'Evaluation of our method on three public data sets: FRGC v2
+    [28], Bosphorus [34] and 3D-TEC [41]. For each test data set, we show cumulative
+    match characteristic (CMC) curves of three models trained using RGB, depth, and
+    RGB-D of Training-Set-I respectively.'
+  Figure 2 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_2.jpg
+  Figure 2 caption: The distribution of deeply learned features under (a) softmax
+    loss and (b) the joint supervision of softmax loss and attribute-aware loss. There
+    are nine identities with three different ages. The points with different colors
+    denote features with different ages.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_3.jpg
+  Figure 3 caption: The framework of our approach. Facial images stacked with normalized
+    point clouds and fed into a deep convolutional neutral network. The output features
+    of the CNN are directly fed into a fully connected layer and afterwards the softmax
+    loss layer. They are also fed into the attribute-aware loss layer together with
+    their corresponding attribute vectors.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_4.jpg
+  Figure 4 caption: Samples from our large-scale RGB-D dataset. In each row, we show
+    RGB-D data of one individual captured by PrimeSense camera at different locations
+    and times and under different lighting conditions.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_5.jpg
+  Figure 5 caption: 'Rank-1 face identification rates of our approach on the RGB part
+    of our constructed test data. Left: results achieved by fixing tau =0.02 in Eq.
+    (4) and varying lambda in Eq. (9). Right: results by fixing lambda =0.001 and
+    varying tau .'
+  Figure 6 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_6.jpg
+  Figure 6 caption: RGB-D data of two individuals in our gallery and their corresponding
+    three RGB-D images in our probe set. These probes cannot be identified correctly
+    at rank one without depth data. On top of each RGB probe, we show its ranking
+    (r) in RGB-only probing and the cosine distance (d) between the features extracted
+    from the RGB probe and its gallery sample. Below each depth probe, we show the
+    ranking in RGB-D probing and the cosine distance between features extracted from
+    the RGB-D probe and its gallery sample.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_7.jpg
+  Figure 7 caption: The distribution of learned features supervised by softmax loss
+    (a) and supervised jointly by softmax loss and attribute-aware loss (b) in two-dimensional
+    space after dimension reduction using t-SNE [26]. There are ten feature clusters
+    with different color, five males (pentacle) and five females (circle). All of
+    color images of the first female (red circle) are shown under the learned features.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_8.jpg
+  Figure 8 caption: 'The diagrams of the two representative fusion schemes for RGB-D
+    face recognition: (a) signal level fusion, (b) feature level fusion.'
+  Figure 9 Link: articels_figures_by_rev_year\2019\Robust_RGBD_Face_Recognition_Using_AttributeAware_Loss\figure_9.jpg
+  Figure 9 caption: Samples from our small-scale RGB-D dataset under different poses.
+    In each row, we show RGB-D data of one individual captured by PrimeSense under
+    the pose with yaw ranging from left 90circ to right 90circ .
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Luo Jiang
+  Name of the last author: Bailin Deng
+  Number of Figures: 10
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: Robust RGB-D Face Recognition Using Attribute-Aware Loss
+  Publication Date: 2019-05-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Age and Gender Distribution of the Two Training Data Sets
+      We Construct, Each Including 60K Individuals
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Face Identification Rates (%) Using Two Training
+      Datasets with Four Different Loss Functions
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Face Identification Rates (%) Using Training-Set-I
+      and Training-Set-II with Detected Attribute Features
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Face Identification Rates (%) by Training on
+      the RGB-D Data of Training-Set-I with Three Controlled Attributes
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Face Identification Rates (%) and Training Time
+      (Hours) Using the RGB-D Data of Training-Set-I with Different Loss Functions
+      and Fusion Schemes
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Face Identification Rates (%) Using the RGB-D
+      Data of the Small-Scale Training Set Under Different Poses
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Rank-1 Identification Rates (%) with State-of-the-Art
+      Methods on Public Data Sets
+  Table 8 caption:
+    table_text: TABLE 8 Comparison with Fusion Method GTNN [11] on LFW Data Set
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2919284
+- Affiliation of the first author: state key lab. liesmars, wuhan university, wuhan,
+    china
+  Affiliation of the last author: computer vision lab., ca foscari university of venice,
+    venezia mestre, italy
+  Figure 1 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_1.jpg
+  Figure 1 caption: "FRGM: given two graphs G 1 and G 2 , we construct two function\
+    \ spaces F( V 1 ,R) and F( V 2 ,R) as representations, where \u03A6 and \u03A8\
+    \ are two sets of basis functions that represent the nodes V 1 and V 2 , and F\
+    \ V 1 and F V 2 are the inner product or metric that represent the edge attributes\
+    \ E 1 and E 2 . The matching between two graphs can be viewed as a transformation\
+    \ T: G 1 \u2192 G 2 , which may be nonlinear and complicated. Fortunately, T can\
+    \ be recovered from a linear functional: T F :F( V 1 ,R)\u2192F( V 2 ,R) , which\
+    \ is induced from T by the push-forward operation and represented by a linear\
+    \ functional representation map P\u2208 R m\xD7n . P is exactly a correspondence\
+    \ between graphs. Based on the inner product or metric defined as F V 2 , each\
+    \ transformed node will lie closer to its correct match, as shown in matrix D\
+    \ . This property is helpful for improving the matching performance."
+  Figure 10 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_10.jpg
+  Figure 10 caption: Examples of matching unequal-sized graphs using FFRGM-G (in (a)
+    and (b)) and FRGM-E (in (c) and (d)). The red dots are inliers in mathcal G1 ,
+    and the yellow plus signs are inliers with outliers in mathcal G2 . The lines
+    in green are correct matches.
+  Figure 2 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_2.jpg
+  Figure 2 caption: "Empirical statistics of exp(\u2212 E 2 \u03C3 2 ) extracted from\
+    \ the realistic and synthetic datasets used in the experimental section. For thousands\
+    \ of graphs in all six datasets, as \u03C3 varies from 0 to 1, the ratio between\
+    \ the minimum and maximum eigenvalues of exp(\u2212 E 2 \u03C3 2 ) changes with\
+    \ a similar tendency."
+  Figure 3 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_3.jpg
+  Figure 3 caption: (a) Nodes shift after being transformed by minimizing Jnon(mathbf
+    P) in a 20-vs-30 case. The lines in blue are the offset vectors, and the points
+    in green are transformed nodes lbrace mathcal T(Vi(1))rbrace i=1m . (b) Representation
+    map mathbf Past1 (top) and the post-discretization (bottom) corresponding to (a).
+    (c) Nodes transformed by minimizing Jcon(mathbf P) with almost no offset. (d)
+    Representation map mathbf Past2 (top) and the post-discretization (bottom) corresponding
+    to (c). In (b) and (d), red points mark the ground-truth correspondence.
+  Figure 4 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_4.jpg
+  Figure 4 caption: Outlier removal with transformation map mathbf Past obtained by
+    alternately minimizing Jnon(mathbf P) and Jcon(mathbf P) . In each iteration,
+    the red dots are inliers, and the green plus signs are the nodes remaining after
+    removal.
+  Figure 5 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_5.jpg
+  Figure 5 caption: "Comparison between FW and AFW. A toy example in (a)\u2013(c),\
+    \ where hatmathcal Psubseteq mathbb R+1times 3 , mathbf P=(mathbf P1,mathbf P2,mathbf\
+    \ P3) , and the hyperplane nabla f(mathbf P(k))=(0.3,0.4,0.5) . There are three\
+    \ extreme points of hatmathcal P : mathbf A=(0,0,1),mathbf B=(0,1,0),mathbf C=(1,0,0)\
+    \ . From (a) to (b), epsilon = frac115,frac125,frac150 , respectively. f(k)(mathbf\
+    \ P) reaches its minimum at mathbf C=(1,0,0) , and lbrace f(k)epsilon (mathbf\
+    \ P)rbrace epsilon reach their minima at the red dots. A cool color means a small\
+    \ value. It shows that during the iterations, the solution of f(k)epsilon (mathbf\
+    \ P) gradually approximates the solution of f(k)(mathbf P) with epsilon tending\
+    \ to be smaller. In (d), we show a real example from Section 7.4. The function\
+    \ values of objective functions calculated by AFW tend to be equal to the values\
+    \ obtained by FW when epsilon becomes smaller."
+  Figure 6 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_6.jpg
+  Figure 6 caption: 'Left: Some instances of 3D faces. Right: an example of matching
+    unequal-sized graph pairs with sizes (40,50).'
+  Figure 7 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_7.jpg
+  Figure 7 caption: 'Left: evaluation results on parameter sigma in (0,1] . Right:
+    results on k -nn connected graph pairs with varying edge densities.'
+  Figure 8 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_8.jpg
+  Figure 8 caption: Comparisons of the robustness to noise and outliers. For complete
+    graphs, the accuracies with respect to the noise and number of outliers are shown
+    in (a) and (b), respectively. The results for graphs connected by Delaunay triangulation
+    are shown in (c) and (d). FRGM-G and FRGM-E outperform all the others for graphs
+    with noise and outliers.
+  Figure 9 Link: articels_figures_by_rev_year\2019\A_Functional_Representation_for_Graph_Matching\figure_9.jpg
+  Figure 9 caption: Comparisons of running time and average accuracy. The graphs in
+    (a) and (b) are complete, and the graphs in (c) and (d) are connected through
+    Delaunay triangulation. FRGM-G and FRGM-E outperform all the others in terms of
+    matching accuracy with modest running time.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Fu-Dong Wang
+  Name of the last author: Marcello Pelillo
+  Number of Figures: 15
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: A Functional Representation for Graph Matching
+  Publication Date: 2019-05-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Frequently Used Notations in Our Paper
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison Results of Average Accuracy (%) (%) on the 3D Face
+      Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Average Accuracy and Running Time of FRGM-G (Left) versus
+      FRGM-E (Right) on Synthetic Data with Varying Inliers, Noise and Outliers
+  Table 4 caption:
+    table_text: TABLE 4 Effectiveness of Outlier-Removal Strategy
+  Table 5 caption:
+    table_text: TABLE 5 The Execution Times for FW and AFW Implementations
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2919308
+- Affiliation of the first author: science & technology on integrated information
+    system laboratory, institute of software, chinese academy of sciences, beijing,
+    china
+  Affiliation of the last author: department of electrical and computer engineering,
+    northwestern university, evanston, il, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_1.jpg
+  Figure 1 caption: (a) The alignment (the dashed line) of the sequence of 5 points
+    (blue) to the sequence of 3 points (red) in the three-dimensional space; (b) If
+    all points are projected onto the x-y plane, the alignment between the two sequences
+    changes in this two-dimensional subspace.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_10.jpg
+  Figure 10 caption: (a) Accuracies by the HMM classifier, (b) accuracies by the DTW
+    classifier, (c) MAPs by the SVM classifier and (d) multiclass average recalls
+    by the SVM classifier as functions of the dimensionality of the subspace on the
+    ChaLearn dataset.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_2.jpg
+  Figure 2 caption: "An illustrative example of the abstract template M for the \u201C\
+    jack\u201D action. The samples are from the WEIZMANN dataset [53]. The alignment\
+    \ between a sequence and M (at the bottom) actually parses the sequence into different\
+    \ segments. The frames in the segments from different sequences aligned to the\
+    \ same element of M are bounded in the same color. The element is the mean of\
+    \ all these frames and can be viewed as a temporal structure or a key pose. M\
+    \ contains the ordered key poses and reflects the basic semantics of the action."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_3.jpg
+  Figure 3 caption: 'The diagram of LT-LDA. The upper half: given the alignments,
+    the features in sequences are divided into different subsets, and these subsets
+    are viewed as independent classes; LDA is then applied to update the projection
+    W . The lower half: given W , all features are projected into a subspace; in this
+    subspace, the abstract template learning algorithm is applied to update the alignments.
+    The two procedures are repeated alternatively until convergence.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_4.jpg
+  Figure 4 caption: Different performances by the rank pooling and the SVM classifier
+    as functions of (a) the length L of the abstract template and (b) the control
+    factor a on the ChaLearn Gesture dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_5.jpg
+  Figure 5 caption: Different performances by the rank pooling and the SVM classifier
+    as functions of (a) the length L of the abstract template and (b) the control
+    factor a on the MSR Action3D dataset.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_6.jpg
+  Figure 6 caption: Comparisons of the proposed LT-LDA without and with the joint
+    learning of the latent alignments. (a) Accuracies by the DTW classifier and (b)
+    MAPs by the rank pooling and the SVM classifier as functions of the dimensionality
+    of the subspace on the ChaLearn Gesture dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_7.jpg
+  Figure 7 caption: Comparisons of the proposed LT-LDA without and with the joint
+    learning of the latent alignments. (a) Accuracies by the DTW classifier and (b)
+    MAPs by the rank pooling and the SVM classifier as functions of the dimensionality
+    of the subspace on the SAD dataset.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_8.jpg
+  Figure 8 caption: Comparisons of the proposed LT-LDA without and with the joint
+    learning of the latent alignments. (a) Accuracies and (b) MAPs by the rank pooling
+    and the SVM classifier as functions of the dimensionality of the subspace on the
+    Olympic Sports dataset.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Learning_LowDimensional_Temporal_Representations_with_Latent_Alignments\figure_9.jpg
+  Figure 9 caption: Comparisons of the DTW classifier and the nearest AT classifier
+    with the uniform AT, the initial AT, and the learned AT by LT-LDA on (a) the ChaLearn
+    dataset and (b) the Action3D dataset.
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.86
+  Name of the first author: Bing Su
+  Name of the last author: Ying Wu
+  Number of Figures: 16
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Learning Low-Dimensional Temporal Representations with Latent Alignments
+  Publication Date: 2019-05-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison with Other Methods on the ChaLearn Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison with State-of-the-Art Methods on the MSR Action3D
+      Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparison with State-of-the-Art Methods on the MSR Activity3D
+      Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Comparison with State-of-the-Art Methods on the UCF101 Dataset
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2919303
+- Affiliation of the first author: n.1 institute for health (formerly sinapse), national
+    university of singapore, singapore
+  Affiliation of the last author: department of electrical and computer engineering,
+    national university of singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2019\DART_Distribution_Aware_Retinal_Transform_for_EventBased_Cameras\figure_1.jpg
+  Figure 1 caption: The most recent event is indicated in red and the previous events
+    are indicated in blue. White stars indicate the position of previous events mapped
+    onto the log-polar bins at the current time.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\DART_Distribution_Aware_Retinal_Transform_for_EventBased_Cameras\figure_2.jpg
+  Figure 2 caption: A log-polar grid placed at an incoming event occurring at a moving
+    edge where gradient change is dominant. To obtain a robust feature representation,
+    a past event (red point) is split into adjacent bins processing based on its distance
+    to the bin centers (green asterisk).
+  Figure 3 Link: articels_figures_by_rev_year\2019\DART_Distribution_Aware_Retinal_Transform_for_EventBased_Cameras\figure_3.jpg
+  Figure 3 caption: Samples from the N-Caltech101 dataset where red and cyan colorization
+    represent the polarity (brightness increasedecrease) of the event.
+  Figure 4 Link: articels_figures_by_rev_year\2019\DART_Distribution_Aware_Retinal_Transform_for_EventBased_Cameras\figure_4.jpg
+  Figure 4 caption: Codebook size and SPM grid Vs. accuracy.
+  Figure 5 Link: articels_figures_by_rev_year\2019\DART_Distribution_Aware_Retinal_Transform_for_EventBased_Cameras\figure_5.jpg
+  Figure 5 caption: Classification of the NMNIST samples at regular time intervals.
+  Figure 6 Link: articels_figures_by_rev_year\2019\DART_Distribution_Aware_Retinal_Transform_for_EventBased_Cameras\figure_6.jpg
+  Figure 6 caption: Effect of varying the maximum radius of the log-polar grid on
+    NCaltech-101 classification accuracy
+  Figure 7 Link: articels_figures_by_rev_year\2019\DART_Distribution_Aware_Retinal_Transform_for_EventBased_Cameras\figure_7.jpg
+  Figure 7 caption: Feature matching using DART. Each scene has two different time-slices
+    of an event camera output displayed side by side. Red circles indicate the features
+    in the left time-slice and the green crosses indicate the corresponding match
+    in the right time-slice connected by yellow lines.
+  Figure 8 Link: articels_figures_by_rev_year\2019\DART_Distribution_Aware_Retinal_Transform_for_EventBased_Cameras\figure_8.jpg
+  Figure 8 caption: Quantitative evaluation of DART feature matching on N-Caltech101
+    using the mean IoU match score.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.97
+  Name of the first author: Bharath Ramesh
+  Name of the last author: Cheng Xiang
+  Number of Figures: 8
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: 'DART: Distribution Aware Retinal Transform for Event-Based Cameras'
+  Publication Date: 2019-05-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Classification Accuracy on N-MNIST and N-Caltech101 Datasets
+      (%)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Accuracy on MNIST-DVS and CIFAR10-DVS Dataset
+      (%)
+  Table 3 caption:
+    table_text: TABLE 3 Quantitative Tracking Results Using eLOT on the Event Camera
+      Dataset
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2919301
+- Affiliation of the first author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Affiliation of the last author: department of computer science and engineering,
+    the chinese university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_1.jpg
+  Figure 1 caption: In this example image, region B would give a stronger indication
+    that A is a shadow compared to region C. This motivates us to analyze the global
+    image context in a direction-aware manner for detecting and removing shadows.
+  Figure 10 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_10.jpg
+  Figure 10 caption: Effectiveness of the spatial context on shadow detection. (a)
+    input images; (b) DSC results; (c) using only the spatial context in the vertical
+    direction; and (d) using only the spatial context in the horizontal direction.
+  Figure 2 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_2.jpg
+  Figure 2 caption: 'The schematic illustration of the overall shadow detection network:
+    (i) we extract features in different scales over the CNN layers from the input
+    image; (ii) we embed a DSC module (see Fig. 3) to generate direction-aware spatial
+    context features for each layer; (iii) we concatenate the DSC features with convolutional
+    features at each layer and upsample the concatenated feature maps to the size
+    of the input image; (iv) we combine the upsampled feature maps into the multi-level
+    integrated features (MLIF), predict a shadow mask based on the features for each
+    layer using the deep supervision mechanism in [30], and fuse the resulting shadow
+    masks; and (v) in the testing process, we compute the mean shadow mask over the
+    MLIF layer and the fusion layer, and use the conditional random field [31] to
+    further refine the detection result. See Section 3.3 for how we adopt this network
+    for shadow removal.'
+  Figure 3 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_3.jpg
+  Figure 3 caption: The schematic illustration of the direction-aware spatial context
+    module (DSC module). We compute the direction-aware spatial context by adopting
+    a spatial RNN to aggregate spatial context in four principal directions with two
+    rounds of recurrent translations, and formulate the attention mechanism to generate
+    maps of attention weights to combine the context features for different directions.
+    We use the same set of weights in both rounds of recurrent translations. Best
+    viewed in color.
+  Figure 4 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_4.jpg
+  Figure 4 caption: The schematic illustration of how spatial context information
+    propagates in a two-round spatial RNN.
+  Figure 5 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_5.jpg
+  Figure 5 caption: "Inconsistencies between input (shadow images) and ground truth\
+    \ (shadow-free images). Top row is \u201CIMG6456.jpg\u201D from SRD [26] and bottom\
+    \ row is \u201C109-5.png\u201D from ISTD [24]."
+  Figure 6 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_6.jpg
+  Figure 6 caption: Visual comparison of shadow masks produced by our method and other
+    methods (4th-9th columns) against ground truth images shown in 2nd column. Note
+    that stkd-CNN and patd-CNN stand for stacked-CNN and patched-CNN, respectively.
+  Figure 7 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_7.jpg
+  Figure 7 caption: More visual comparison results on shadow detection (continue from
+    Fig. 6).
+  Figure 8 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_8.jpg
+  Figure 8 caption: Visual comparison results of component analysis.
+  Figure 9 Link: articels_figures_by_rev_year\2019\DirectionAware_Spatial_Context_Features_for_Shadow_Detection_and_Removal\figure_9.jpg
+  Figure 9 caption: Effectiveness of CRF [31].
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Xiaowei Hu
+  Name of the last author: Pheng-Ann Heng
+  Number of Figures: 16
+  Number of Tables: 6
+  Number of authors: 5
+  Paper title: Direction-Aware Spatial Context Features for Shadow Detection and Removal
+  Publication Date: 2019-05-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparing our Method (DSC) with Recent Methods for Shadow
+      Detection (scGAN [25], stacked-CNN [23], patched-CNN [33], and Unary-Pairwise
+      [28]), for Saliency Detection (SRM [58] and Amulet [59]), and for Semantic Image
+      Segmentation (PSPNet [60])
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Component Analysis
+  Table 3 caption:
+    table_text: TABLE 3 DSC Architecture Analysis
+  Table 4 caption:
+    table_text: TABLE 4 Comparing our Method (DSC) with Recent Methods for Shadow
+      Removal in Terms of RMSE
+  Table 5 caption:
+    table_text: TABLE 5 Evaluate our Methods (DSC & DSC+) on the Original Ground Truth
+      ( I n In) and the Adjusted Ground Truth ( T f ( I n ) Tf(In))
+  Table 6 caption:
+    table_text: TABLE 6 Train and Test our Method (DSC) on Different Color Spaces
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2919616
+- Affiliation of the first author: "institute of electrical engineering, \xE9cole\
+    \ polytechnique f\xE9d\xE9rale de lausanne, lausanne, switzerland"
+  Affiliation of the last author: department of computer science, university of cambridge,
+    cambridge, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2019\MOSES_A_Streaming_Algorithm_for_Linear_Dimensionality_Reduction\figure_1.jpg
+  Figure 1 caption: Performance of MOSES on synthetic datasets, see Section 5 for
+    the details.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\MOSES_A_Streaming_Algorithm_for_Linear_Dimensionality_Reduction\figure_2.jpg
+  Figure 2 caption: Computational comlexity of all algorithms on synthetic datasets,
+    see Section 5 for the details.
+  Figure 3 Link: articels_figures_by_rev_year\2019\MOSES_A_Streaming_Algorithm_for_Linear_Dimensionality_Reduction\figure_3.jpg
+  Figure 3 caption: Comparisons on synthetic datasets, see Section 5 for the details.
+  Figure 4 Link: articels_figures_by_rev_year\2019\MOSES_A_Streaming_Algorithm_for_Linear_Dimensionality_Reduction\figure_4.jpg
+  Figure 4 caption: Comparisons on real-world datasets, see Section 5 for the details.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Armin Eftekhari
+  Name of the last author: Andreas Grammenos
+  Number of Figures: 4
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: 'MOSES: A Streaming Algorithm for Linear Dimensionality Reduction'
+  Publication Date: 2019-05-28 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2919597
+- Affiliation of the first author: university of oxford, oxford, united kingdom
+  Affiliation of the last author: university of oxford, oxford, united kingdom
+  Figure 1 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_1.jpg
+  Figure 1 caption: "The left hand side shows the original image, and the right the\
+    \ output when modified with imperceptible adversarial perturbations. There is\
+    \ a large variance in how each networks performance is degraded, even though the\
+    \ perturbations are created individually for each network with the same \u2113\
+    \ \u221E norm of 4. We rigorously analyse a diverse range of state-of-the-art\
+    \ segmentation networks, observing how architectural properties, such as residual\
+    \ connections, multiscale processing and CRFs, and input transformations, all\
+    \ influence adversarial robustness. These observations will help future efforts\
+    \ to understand and defend against adversarial examples, whilst in the short term\
+    \ they suggest which networks should currently be preferred in safety-critical\
+    \ applications."
+  Figure 10 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_10.jpg
+  Figure 10 caption: "Similar trends are observed for Deeplab v2, which uses the DenseCRF\
+    \ model as post-processing, as CRF-RNN (Fig. 9) which integrates the CRF as part\
+    \ of the deep network. (a) On untargetted attacks, Deeplab v2 with a CRF is noticably\
+    \ more robust than just the Deeplab v2 network. (b) Attacks created from the base\
+    \ Deeplab v2 network using FGSM are more effective than those created from Deeplab\
+    \ v2 with CRF. This is due to the \u201Cgradient masking\u201D effect of mean-field\
+    \ inference of CRFs. (c) However, the CRF does not \u201Cmask\u201D the gradient\
+    \ for targeted attacks. As a result, Deeplab v2 with a CRF is no more robust than\
+    \ just the Deeplab v2 network."
+  Figure 2 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_2.jpg
+  Figure 2 caption: Adversarial robustness of state-of-the-art models on Pascal VOC.
+    Models based on the ResNet backbone tend to be more robust. For instance, FCN8s
+    and Deeplab v2 ASPP with a ResNet-101 backbone are more robust than with the VGG
+    backbone. Moreover, as expected, the Iterative FGSM ll attack is more powerful
+    at fooling networks than single-step FGSM. Models are ordered by increasing IoU
+    on clean inputs. Results on additional attacks are in the supplementary, available
+    online.
+  Figure 3 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_3.jpg
+  Figure 3 caption: "Adversarial robustness of state-of-the-art models on the Cityscapes\
+    \ dataset. We observe that lightweight networks such as E-Net [73] and ICNet [89]\
+    \ are often about as robust as Dilated-Net [88] ( 341\xD7 more parameters than\
+    \ E-Net). Dilated-Net without its \u201CContext\u201D module is also slightly\
+    \ more robust than the full network (these findings regarding parameter count\
+    \ are contrary to Madry et al. [61] who however did not evaluate different architectures).\
+    \ Both attacks are very effective after \u03F5\u226516 , with performance of all\
+    \ networks degraded considerably. As with the VOC dataset, ResNet (PSPNet) architectures\
+    \ are more robust than VGG (Dilated-Net and FCN8)."
+  Figure 4 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_4.jpg
+  Figure 4 caption: "The IoU Ratio compared to the IoU on clean inputs on the Pascal\
+    \ VOC dataset, for the FGSM attack with \u03F5=8 . The relative ordering of the\
+    \ models is the same if we plot the absolute IoU on adversarial inputs, with the\
+    \ exception of SegNet which is then ranked the lowest."
+  Figure 5 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_5.jpg
+  Figure 5 caption: "Input transformations of adversarial examples generated by Iterative\
+    \ FGSM ll (Eq. (6)) significantly change the prediction of the Deeplab v2 network.\
+    \ These input transformations, however, barely change the output when they are\
+    \ applied to clean images. The l \u221E norm of the perturbation, \u03F5=8 , is\
+    \ visible when looking carefully on screen."
+  Figure 6 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_6.jpg
+  Figure 6 caption: The adversarial examples originally generated by Iterative FGSM
+    ll on Deeplab v2, are less malignant when the adversarial image is first pre-processed
+    with a randomised transformation. The shaded regions correspond to two standard
+    deviations computed from nine random trials of the randomised transformation.
+  Figure 7 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_7.jpg
+  Figure 7 caption: The randomised input transformations no longer increase the robustness
+    of the network when the expected gradient over the distribution of the transformation
+    functions is used in the Iterative FGSM ll attack. The shaded regions correspond
+    to two standard deviations computed from nine random trials of the randomised
+    transformation. The dashed blue line shows the original Iterative FGSM ll attack
+    on non-transformed images.
+  Figure 8 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_8.jpg
+  Figure 8 caption: The effectiveness of adversarial examples generated with one distribution
+    of input transformations, and evaluated with another. The title of each graph
+    shows the input transformation the adversarial examples were generated with. Each
+    graph is effectively a column of Table 2 for multiple epsilon values. The dotted
+    blue line shows the Iterative FGSM ll attack when input transformations are not
+    used at either inference or attack generation time.
+  Figure 9 Link: articels_figures_by_rev_year\2019\On_the_Robustness_of_Semantic_Segmentation_Models_to_Adversarial_Attacks\figure_9.jpg
+  Figure 9 caption: "(a) On untargetted attacks on Pascal VOC, CRF-RNN is noticably\
+    \ more robust than FCN8s. (b) CRF-RNN is more vulnerable to black-box attacks\
+    \ from FCN8, due to its \u201Cgradient masking\u201D effect which results in ineffective\
+    \ white-box attacks. (c) However, the CRF does not \u201Cmask\u201D the gradient\
+    \ for targeted attacks and it is no more robust than FCN8s."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Anurag Arnab
+  Name of the last author: Philip H. S. Torr
+  Number of Figures: 10
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: On the Robustness of Semantic Segmentation Models to Adversarial Attacks
+  Publication Date: 2019-05-29 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Transferability of Adversarial Examples Generated from Different
+      Scales of Deeplab v2 (Columns) and Evaluated on Different Networks (Rows)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Transferability of Adversarial Attacks Generated with Different
+      Input Transformation Distributions
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2919707
+- Affiliation of the first author: dut-ru international school of information science
+    & engineering, dalian university of technology, dalian, china
+  Affiliation of the last author: dut-ru international school of information science
+    & engineering, school of mathematical sciences, dalian university of technology,
+    dalian, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_1.jpg
+  Figure 1 caption: "Comparisons of FIMA with different A \u03C4 f ( \u03C4\u2208\
+    [ 10 \u22124 , 10 1 ] ) and A g \u2208 A PG g , A RF g , A TV g , A CNN g . The\
+    \ bar charts in the rightmost subfigure compares the overall iteration number\
+    \ and running time (in seconds, \u201CTime(s)\u201D for short)."
+  Figure 10 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_10.jpg
+  Figure 10 caption: Rain streaks removal results of mFIMA with comparisons to the
+    state-of-the-art approaches on real-world rainy images.
+  Figure 2 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_2.jpg
+  Figure 2 caption: The iteration curves of FIMA with different settings. The first
+    three subfigures express the function values, constructive errors, and iteration
+    errors, respectively. Subfigure (d) only plots the first 50 iterations for illustrate
+    the scheduling policies of FIMA.
+  Figure 3 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_3.jpg
+  Figure 3 caption: "Comparing iteration behaviors of FIMA to classical nonconvex\
+    \ APGs, including exact ones (mAPG, and APGnc) and inexact niAPG. The left four\
+    \ subfigures compare curves of iteration errors and reconstruction errors with\
+    \ different noise level (1\u2030 and 1 percent), respectively. The rightmost subfigure\
+    \ plot bar charts of the averaged iteration number and \u201CTime(s)\u201D on\
+    \ the dataset [24]."
+  Figure 4 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_4.jpg
+  Figure 4 caption: The non-blind deconvolution performances (1 percent noise level)
+    of eFIMA and iFIMA with comparisons to convex optimization based algorithms (i.e.,
+    FISTA and FTVd), and non-convex solvers (i.e., APGnc, mAPG, and niAPG). The quantitative
+    scores (PSNRSSIM) are reported below each image. The rightmost subfigure on the
+    bottom row plots the curves of PSNR and SSIM of our methods.
+  Figure 5 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_5.jpg
+  Figure 5 caption: The non-blind image deconvolution performance (5 percent noise
+    level) of FIMA with comparisons to existing plug-and-play type methods (i.e.,
+    PPADMM and IRCNN). The quantitative scores (PSNRSSIM) are reported below each
+    image.
+  Figure 6 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_6.jpg
+  Figure 6 caption: The comparisons of mFIMA with and without the module mathcal A
+    . The top row compares the visual results of these different strategies. The bottom
+    row plots the curves of PSNR and KS scores during iterations.
+  Figure 7 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_7.jpg
+  Figure 7 caption: Visual comparisons between mFIMA and other competitive methods
+    (top 3 in Table 3) on a real blurry image.
+  Figure 8 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_8.jpg
+  Figure 8 caption: The blind image deconvolution results of mFIMA with comparisons
+    to state-of-the-art approaches on blurry image with 1 percent Gaussian noise.
+    The quantitative scores (i.e., PSNR SSIM KS) are reported below each image.
+  Figure 9 Link: articels_figures_by_rev_year\2019\On_the_Convergence_of_LearningBased_Iterative_Methods_for_Nonconvex_Inverse_Prob\figure_9.jpg
+  Figure 9 caption: The blind image deconvolution results of mFIMA with comparisons
+    to state-of-the-art approaches on blurry facial image with 3 percent Guassian
+    noise. The quantitative scores (i.e., PSNR SSIM KS) are reported below each image.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Risheng Liu
+  Name of the last author: Zhongxuan Luo
+  Number of Figures: 10
+  Number of Tables: 4
+  Number of authors: 6
+  Paper title: On the Convergence of Learning-Based Iterative Methods for Nonconvex
+    Inverse Problems
+  Publication Date: 2019-06-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Number of Iterations (Including Plug-and-Play Modules)
+      in FIMA
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Averaged PSNR, SSIM and Time(s) on the Benchmark Image Set
+      [24]
+  Table 3 caption:
+    table_text: TABLE 3 Averaged Quantitative Scores on Levin et al.s Benchmark
+  Table 4 caption:
+    table_text: TABLE 4 Averaged PSNR and SSIM on the Benchmark Image Set [50] for
+      Rain Streaks Removal
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2920591
+- Affiliation of the first author: department of information engineering and mathematics,
+    university of siena, siena, si, italy
+  Affiliation of the last author: department of information engineering and mathematics,
+    university of siena, siena, si, italy
+  Figure 1 Link: articels_figures_by_rev_year\2019\Gravitational_Laws_of_Focus_of_Attention\figure_1.jpg
+  Figure 1 caption: "From fixation (a) to smooth pursuit (b,c) on a video stream.\
+    \ Virtual masses generated by details on the basis of the gradient are shown in\
+    \ blue (\u201Cdetail mass\u201D), while green lines represent the velocity which\
+    \ gives rise to \u201Cmotion masses\u201D. An opportune inhibitory process suppresses\
+    \ the contribution of detail masses close to fixation point in (a) so as to cause\
+    \ the shift of attention to cyclists on the right. Finally, as soon as the bicycles\
+    \ come out of the frame the attention shifts to the left cyclists."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Gravitational_Laws_of_Focus_of_Attention\figure_2.jpg
+  Figure 2 caption: (A) The focus of attention can be regarded as an elementary mass
+    which is attracted by the distributed mass in the drawn regions. (B) The gravitational
+    effect of a symmetric mass on the focus of attention is null.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Gravitational_Laws_of_Focus_of_Attention\figure_3.jpg
+  Figure 3 caption: "Energy balance: The energy variation \u0394(U+K)=\u0394U+\u0394\
+    K along with the dissipated energy D is balanced by the injection of inhibitory\
+    \ energy M ."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Gravitational_Laws_of_Focus_of_Attention\figure_4.jpg
+  Figure 4 caption: Examples of simulated scanpaths. This figure shows some outputs
+    of our model in a task of free-viewing of sample stimuli from the dataset MIT1003
+    [30]. The blue square indicates the stating point of the scanpath. Larger arrows
+    are associated to longer transitions. We can observe that small or big objects
+    as well as faces attract attention. This is certainly due to the fact that they
+    present high values of brightness gradient at the contours. Notice how the inhibition
+    of return mechanism allows wide exploration of the scenes that guarantees a good
+    acquisition of the information.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Gravitational_Laws_of_Focus_of_Attention\figure_5.jpg
+  Figure 5 caption: Cumulative score in scanpath prediction. For each value of the
+    string-edit distance (left) and of the scaled time-delay embedding (right), we
+    report the percentage of input stimuli (i.e, the percentage of images in the setting
+    of Table 1) for which a given model obtains a score less than or equal to that
+    value.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Gravitational_Laws_of_Focus_of_Attention\figure_6.jpg
+  Figure 6 caption: Examples of saliency map prediction. Each row present in order
+    the input stimuli (first column), human saliency map (second column) and the saliency
+    map predicted with our model (third column).
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Dario Zanca
+  Name of the last author: Marco Gori
+  Number of Figures: 6
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Gravitational Laws of Focus of Attention
+  Publication Date: 2019-06-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Scanpath Prediction on Images
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Scanpath Prediction on Videos
+  Table 3 caption:
+    table_text: TABLE 3 Saliency Prediction on CAT2000 [4]
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2920636
+- Affiliation of the first author: "encov - cnrsuniversit\xE9 dauvergne, clermont-ferrand,\
+    \ france"
+  Affiliation of the last author: "encov - cnrsuniversit\xE9 dauvergne, clermont-ferrand,\
+    \ france"
+  Figure 1 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_1.jpg
+  Figure 1 caption: "a) A moving frame on a surface M defined using a local parametrization\
+    \ ( x 1 , x 2 ) . b) A moving frame on a surface M defined using local parametrizations\
+    \ ( x 1 , x 2 ) and ( x \xAF 1 , x \xAF 2 ) related by \u03B7 . c) Two surfaces\
+    \ M 1 and M 2 related by \u03C8 are parametrized using ( x 1 , x 2 ) ."
+  Figure 10 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_10.jpg
+  Figure 10 caption: Error maps for two surfaces of the sock dataset. The depth error
+    maps show the difference in the reconstruction and ground truth. Best viewed in
+    colour.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_2.jpg
+  Figure 2 caption: Classification of algebraic deformation models. Isometry is well-constrained
+    and widely studied. It is a combination of conformity and equiareality.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_3.jpg
+  Figure 3 caption: An example of skewless deformation. A surface grid undergoes anisotropic
+    scaling in two orthogonal directions and then undergoes a conformal transformation.
+    Therefore, only the angles between the basis vectors are preserved.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_4.jpg
+  Figure 4 caption: "Illustration of IL. Two smooth curves are related by a mapping\
+    \ \u03C8 . According to IL, there exists a linear map \u03C8 L that relates P\
+    \ and Q and agrees with \u03C8 at zeroth and first-order."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_5.jpg
+  Figure 5 caption: Modeling of template-based 3D reconstruction of deformable objects
+    from a single view.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_6.jpg
+  Figure 6 caption: Modeling N views of a deforming 3D surface.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_7.jpg
+  Figure 7 caption: (left) Normal and depth errors on all datasets. The errors shown
+    are evaluated by averaging the errors on the entire image-set. The first four
+    methods shown are NRSfM methods and the rest are SfT methods. In general, the
+    performance of SfT methods is better than NRSfM methods on these datasets. The
+    methods ending with N and S are NRSfM and SfT methods respectively. (right) Images
+    from the sock and balloon datasets. Some of the tracked points are shown. Best
+    viewed in colour.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_8.jpg
+  Figure 8 caption: Normal and depth errors on the cylinder dataset by varying the
+    noise from 1 to 5 pixels. Best viewed in colour.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Local_Deformable_D_Reconstruction_with_Cartans_Connections\figure_9.jpg
+  Figure 9 caption: Normal and depth errors on the cylinder dataset by varying the
+    radius from 2 to 10. The surface with radius 2 is the most curved. Best viewed
+    in colour.
+  First author gender probability: 0.97
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Shaifali Parashar
+  Name of the last author: Adrien Bartoli
+  Number of Figures: 11
+  Number of Tables: 2
+  Number of authors: 3
+  Paper title: Local Deformable 3D Reconstruction with Cartan's Connections
+  Publication Date: 2019-06-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Summary of Template-Based and Template-Free Deformable 3D
+      Reconstruction for Non-Degenerate Inputs
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Computation Time Comparison of All the Methods on 20 Images
+      of the Cylinder Dataset with 400 Tracked Points
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2920821

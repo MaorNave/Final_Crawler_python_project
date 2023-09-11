@@ -1,0 +1,854 @@
+- Affiliation of the first author: school of computer science and technology, beijing
+    institute of technology, beijing, china
+  Affiliation of the last author: department of computer, information and technology,
+    indiana university-purdue university indianapolis, indianapolis, in, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_1.jpg
+  Figure 1 caption: Illustration of the proposed Deep Residual Correction Network
+    (DRCN) approach that aims to address partial domain adaptation problem, where
+    the label space of the interested small-scale target domain is a subset to that
+    of a large-scale source domain. By utilizing the weighted class-wise matching,
+    DRCN can effectively select out the irrelevant source classes and enhance the
+    importance scores of the most relevant source classes. In addition, the plugged
+    residual block could adaptively align source and target domains, and boost its
+    feature representation capability, which results in better target classification
+    performance.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_10.jpg
+  Figure 10 caption: Parameter sensitivity studies w.r.t. alpha , and beta respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_2.jpg
+  Figure 2 caption: "The architecture and data flow of the added residual correction\
+    \ block in a pre-trained source network, where a FC Layer is a fully-connected\
+    \ layer with appropriate dimensions, BN represents the Batch Normalization layer\
+    \ [52], and ReLU is the non-linear transformation. The blue and red arrows denote\
+    \ the data flow of source and target data, respectively. DRCN expects the added\
+    \ residual correction block to learn the difference \u0394 F s ( x t ) between\
+    \ feature representations F s ( x s ) and F s ( x t ) such that F s ( x s ) and\
+    \ F t ( x t ) can be more similar."
+  Figure 3 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_3.jpg
+  Figure 3 caption: Images examples of datasets Office-Home, Office-31, VisDA2017,
+    and ImageNet-Caltech.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_4.jpg
+  Figure 4 caption: Examples of Website (Web) and Google Street View (GSV) Images
+    for one type of car in the used fine-grained car dataset.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_5.jpg
+  Figure 5 caption: "Classification accuracies of ResNet, JAN, CDAN, and DRCN on the\
+    \ task Web \u2192 GSV of fine-grained recognition in the wild."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_6.jpg
+  Figure 6 caption: "t-SNE visualization of source and target corrected features for\
+    \ traditional domain adaptation in task A \u2192 W (31 classes) at different training\
+    \ iterations. Source data are blue dots and red dots represent target data."
+  Figure 7 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_7.jpg
+  Figure 7 caption: "t-SNE visualization of source and target corrected features for\
+    \ partial domain adaptation in task A \u2192 W (31 classes) at different training\
+    \ iterations. Source data are blue dots and red dots represent target data."
+  Figure 8 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_8.jpg
+  Figure 8 caption: t-SNE visualization of different methods (IWAN [40], SAN [39],
+    PADA [38], DRCN wo RCB, DRCN) for partial domain adaptation of task W rightarrow
+    A (10 classes) in the shared class space. Each class is represented with different
+    color.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Deep_Residual_Correction_Network_for_Partial_Domain_Adaptation\figure_9.jpg
+  Figure 9 caption: 'Histograms of different class weights learned by DRCN for task:
+    A rightarrow W of Office-31 and S rightarrow R of VisDA2017.'
+  First author gender probability: 0.7
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Shuang Li
+  Name of the last author: Zhengming Ding
+  Number of Figures: 11
+  Number of Tables: 8
+  Number of authors: 7
+  Paper title: Deep Residual Correction Network for Partial Domain Adaptation
+  Publication Date: 2020-01-07 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics of the Benchmark Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Accuracy (%) on Office-Home for Partial Transfer Learning
+      Tasks (ResNet-50)
+  Table 3 caption:
+    table_text: TABLE 3 Accuracy (%) on Office-31 for Partial Transfer Learning Tasks
+      (ResNet-50)
+  Table 4 caption:
+    table_text: TABLE 4 Accuracy (%) on VisDA2017 and ImageNet-Caltech for Partial
+      Transfer Learning Tasks (ResNet-50)
+  Table 5 caption:
+    table_text: TABLE 5 Accuracy (%) on Office-Home for Traditional Transfer Learning
+      Tasks (ResNet-50)
+  Table 6 caption:
+    table_text: TABLE 6 Accuracy (%) on Office-31 for Traditioanl Transfer Learning
+      Tasks (ResNet-50)
+  Table 7 caption:
+    table_text: "TABLE 7 Accuracy (%) of DRCN, DRCN ( \u03B1=0 \u03B1=0), DRCN ( \u03B2\
+      =0 \u03B2=0), DRCN ( w=1 w=1) and DRCN (wo RCB) on Office-Home for Partial Transfer\
+      \ Learning Tasks (ResNet-50)"
+  Table 8 caption:
+    table_text: "TABLE 8 Accuracy (%) of DRCN, DRCN ( \u03B1=0 \u03B1=0), DRCN ( \u03B2\
+      =0 \u03B2=0), DRCN ( w=1 w=1) and DRCN (wo RCB) on Office-31 for Partial Transfer\
+      \ Learning Tasks (ResNet-50)"
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2964173
+- Affiliation of the first author: Not Available
+  Affiliation of the last author: Not Available
+  Figure 1 Link: Not Available
+  Figure 1 caption: Not Available
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: Not Available
+  Figure 2 caption: Not Available
+  Figure 3 Link: Not Available
+  Figure 3 caption: Not Available
+  Figure 4 Link: Not Available
+  Figure 4 caption: Not Available
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Sven Dickinson
+  Name of the last author: Sven Dickinson
+  Number of Figures: Not Available
+  Number of Tables: 0
+  Number of authors: 1
+  Paper title: State of the Journal Editorial
+  Publication Date: 2020-01-08 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2958194
+- Affiliation of the first author: "school of computer and communication sciences\
+    \ (ic), \xE9cole polytechnique f\xE9d\xE9rale de lausanne (epfl), lausanne, switzerland"
+  Affiliation of the last author: microsoft research asia, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_1.jpg
+  Figure 1 caption: Examples of matching cost profiles, computed with descriptors
+    such as SIFT [11], VGG-Net (conv3-4) [16], DASC [10], and DSC along the scan lines
+    of A, B, and C for image pairs under non-rigid deformations and illumination changes.
+    In comparison to other handcrafted and deep CNN-based descriptors, DSC yields
+    more reliable global minima.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_10.jpg
+  Figure 10 caption: Comparison of disparity estimates for Moebius and Dolls image
+    pairs on the Middlebury benchmark [27] across illumination combination 13 and
+    exposure combination 02, respectively. Compared to other methods, DSC estimates
+    more accurate and edge-preserved disparity maps.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_2.jpg
+  Figure 2 caption: Illustration of DSC that uses log-polar spatial pyramid pooling
+    on pyramidal self-similarity surfaces defined at (a) level 3, (b) level 2, and
+    (c) level 1. Different colors represent different patches used to reconstruct
+    the self-correlation surfaces while same colors represent patches in the same
+    set used in an aggregation procedure.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_3.jpg
+  Figure 3 caption: Computation of single self-correlation (SSC) descriptor for (a)
+    a local support window with random samples. (b) For each random patch, it first
+    computes the self-similarity using an adaptive self-correlation measure, building
+    multiple self-correlation surfaces. (c) It then encodes responses on the surfaces
+    through log-polar spatial pyramid pooling. (d) The responses are concatenated
+    into a feature vector.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_4.jpg
+  Figure 4 caption: "Examples of log-polar pyramidal bins SB . The total number of\
+    \ bins is N SB = \u2211 S s=2 2 s +1 , where S represents the pyramid level."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_5.jpg
+  Figure 5 caption: 'Efficient computation of multiple self-similarity surfaces in
+    an image: (a) An image with a doubled support window and random samples. (b) A
+    1-D vector representation of a self-similarity surface. (c) Self-similarity surfaces.
+    (d) Self-similarity responses after L-SPP. With edge-aware filtering and response
+    reformulation, self-similarity responses are computed efficiently in a dense manner.'
+  Figure 6 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_6.jpg
+  Figure 6 caption: Visualization of the SSC and DSC descriptors. Our descriptors
+    consist of pyramidal self-correlation computation, log-polar spatial pyramid pooling,
+    non-linear mapping, and normalization.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_7.jpg
+  Figure 7 caption: Visualization of building pyramidal self-correlation surfaces.
+    Multiple self-correlation surfaces are sequentially aggregated using average pooling
+    from the bottom to the top of the log-polar pyramidal point set.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_8.jpg
+  Figure 8 caption: Visualization of geometry-invariance in GI-DSC. To provide scale
+    invariance, our approach measures multi-scale self-correlation surfaces, and fuses
+    them by max-pooling. Moreover, canonical orientation fields for each pixel are
+    estimated to provide orientation invariance.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Dense_CrossModal_Correspondence_Estimation_With_the_Deep_SelfCorrelation_Descrip\figure_9.jpg
+  Figure 9 caption: Component analysis of DSC on the Middlebury benchmark [27] for
+    varying parameter values, such as (a) width (or height) Mmathcal R of the local
+    support window, (b) number of log-polar points Nrho times Nphi , (c) number of
+    random samples K , and (d) level of log-polar pyramid S . In each experiment,
+    all other parameters are fixed to the initial values.
+  First author gender probability: 0.88
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Seungryong Kim
+  Name of the last author: Kwanghoon Sohn
+  Number of Figures: 21
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Dense Cross-Modal Correspondence Estimation With the Deep Self-Correlation
+    Descriptor
+  Publication Date: 2020-01-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Error Rates on a Cross-Modal and Cross-Spectral Benchmark
+      [10]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Error Rates on the DaLI Benchmark [28]
+  Table 3 caption:
+    table_text: TABLE 3 Average Error Rates on the Tri-Modal Human Benchmark [29]
+  Table 4 caption:
+    table_text: TABLE 4 Average Error Rates on the DIML Cross-Modal Benchmark [69]
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2965528
+- Affiliation of the first author: department of precision engineering, graduate school
+    of engineering, university of tokyo, tokyo, japan
+  Affiliation of the last author: research into artifacts, center for engineering
+    (race), school of engineering, university of tokyo, tokyo, japan
+  Figure 1 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_1.jpg
+  Figure 1 caption: An overview of the proposed voting scheme. Our proposed scheme
+    takes a set of putative correspondences (the yellow-colored dense lines between
+    the teal-colored source model and the tan-colored destination scene) as input
+    and processes them in two stages. In the first stage, Section 2.1, a local voting
+    set, C l (shown as yellow-colored sparse lines), is elected based on the local
+    rigidity constraint. Each element in the voting set represents a global hypothesis,
+    and their elementwise support by the putative correspondence is utilized to post-validate
+    the voting set at the second voting stage, Section 2.2. The top supported hypotheses
+    forms the global voting set, C g . In the case shown above, only a single element
+    is selected (shown as the single green-colored line). Using the post-validated
+    voting set, the likelihood scores, S , for the putative correspondences being
+    inliers are computed, according to their covariance with the post-validated voting
+    set, where green-colored lines correspond to the inlier ones, and magenta-colored
+    lines correspond to the outliers. It is up to the high-level application to decide
+    whether to truncate the scores, based on some threshold, or to utilize them all
+    in a weighted model.
+  Figure 10 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_10.jpg
+  Figure 10 caption: Analysis of the computational efficiency of the seven methods,
+    in terms of their execution time means (lines) and standard deviations (shades)
+    over 374 experiments. To enhance clarity, the n th means and deviations are denoted
+    by the points and the error bars. The vertical axis denotes the the elapsed time,
+    while the horizontal axes corresponds to (a) correspondence set cardinality |C|
+    , and (b) the inlier fraction | C gt ||C| . Refer to Section 3.3 for the details
+    of compared methods.
+  Figure 2 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_2.jpg
+  Figure 2 caption: "The concept of both global-geometric consistency techniques:\
+    \ the existing LRF (local reference frame) and the proposed 1PST (single-point\
+    \ superimposition transform). The first column depicts a single correspondence,\
+    \ shown as a red line, between both the source and destination points, p and p\
+    \ \xB4 , for which the elliptical dotted spheres surrounding them depicts their\
+    \ neighborhoods. The second column shows the basis vectors formed using the corresponding\
+    \ technique over a sphere surface for all correspondences within a voting set.\
+    \ Since LRF, as the name implies, computes the basis transformation of each source\
+    \ and destination point separately, T i \u2208 SO 3 and T j \u2208 SO 3 , the\
+    \ transformation basis for the correspondence is obtained by composing the inverse\
+    \ of its destination point transform and the source point transform, T= T \u2212\
+    1 j T i . However, there are two issues with the LRF technique: (1) due to eigenvectors\
+    \ sign ambiguity of each point transformation, there is no guarantee that their\
+    \ composed transform is rotational ambiguity-free, even after following certain\
+    \ conventions to resolve them. (2) the impurities within the neighborhoods of\
+    \ each point are not accounted for. As a result, the transforms of the voting\
+    \ set of previous methods [23], [24] that utilizes LRF are very chaotic, as shown\
+    \ over the sphere surface on the first row. On the other hand, 1PST takes into\
+    \ consideration the neighboring correspondences (shown as gray lines) to filter\
+    \ out impurities, as well as computing the correspondence transform, T\u2208 SE\
+    \ 3 , from both the translation, t\u2208 R 3 , and rotation, R\u2208 SO 3 , in\
+    \ a single pass to avoid sign ambiguities. As a result, the voting set transformation\
+    \ is accurate, as shown over the sphere surface in the second row."
+  Figure 3 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_3.jpg
+  Figure 3 caption: The effect of the k g =| C g | parameter on the accuracy of the
+    ranking processes, from which it is apparent that k g =1 is sufficient for our
+    purposes. The green-colored lines indicate inlier correspondences, while the magenta-colored
+    ones indicate outliers, while C g is the post-validated voting set [Eq. (8)].
+  Figure 4 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_4.jpg
+  Figure 4 caption: 'Sample scans of the U3OR (UWA 3D object recognition) dataset
+    [57], [66], which was utilized in our comparative evaluation. The dataset consists
+    of four models (shown in teal color, namely: Chef, Chicken, Parasaurolophus, and
+    T-Rex) and 50 scenes (the first ten are shown in tan color).'
+  Figure 5 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_5.jpg
+  Figure 5 caption: Extraction of the putative correspondence set from the dataset.
+    The dataset models (shown in teal color) and scenes (shown in tan color) are down-sampled,
+    their surface normals and point features are computed, and finally, they are matched
+    together to generate the putative correspondence set (the yellow-colored dense
+    lines), which forms an input to the evaluated methods.
+  Figure 6 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_6.jpg
+  Figure 6 caption: "Updating the parameter of a related study. Based on our experimental\
+    \ results, we updated the parameter \u03B4 r of f(NNSR,LRF) related method [24]\
+    \ from 10 voxel to 1 voxel to achieve better performance. A higher the PR curve\
+    \ indicates better accuracy. Noting that NNSR (nearest-neighbor similarity ratio)\
+    \ and LRF (local reference frame) denote the underlying techniques utilized within\
+    \ the related method [24]."
+  Figure 7 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_7.jpg
+  Figure 7 caption: Accuracy of the seven methods, in terms of their precision and
+    recall means (lines) and standard deviations (shades) over 374 experiments. To
+    enhance clarity, the n th means and deviations are denoted by the points and the
+    error bars. The horizontal axis corresponds to the recall metric, while the vertical
+    axis is the precision metric. In this parametric plot, the higher a curve from
+    the horizontal axis, the better its results is. The proposed scheme f(LRC,1PST)
+    remains accurate over a large recall range and outperforms all the related methods,
+    including the two state-of-the-art methods and a robust randomized method. Refer
+    to Section 3.3 for the details of compared methods.
+  Figure 8 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_8.jpg
+  Figure 8 caption: 'Demonstration of the impact of the proposed stages, by comparing
+    the proposed method to variants of competing methods combined with one of the
+    proposed stages in terms of their precision and recall means (lines) and standard
+    deviations (shades). To enhance clarity, the n th means and deviations are denoted
+    by the points and the error bars. The horizontal axis corresponds to the recall
+    metric, while the vertical axis is the precision metric. In this parametric plot,
+    the higher a curve from the horizontal axis, the better its results. Note that
+    only the data of 186 experiments (5 mm resolution) are utilized in these graphs,
+    to avoid memory issues in the combined methods: (a) f(NNSR + LRC,LRC + LRF) method
+    [23] with and without the proposed 1PST (single-point superimposition transform)
+    and (b) Optimal RANSAC [41] with and without LRC (local rigidity constraint).'
+  Figure 9 Link: articels_figures_by_rev_year\2020\An_Accurate_and_Efficient_Voting_Scheme_for_a_Maximally_AllInlier_D_Corresponden\figure_9.jpg
+  Figure 9 caption: "Robustness analysis of competing methods against occlusions and\
+    \ scarce inliers in terms of the PR AUC means (lines) and standard deviations\
+    \ (shades), which corresponds to the vertical axis. To enhance clarity, the n\
+    \ th means and deviations are denoted by the points and the error bars. The vertical\
+    \ axes correspond to two: (a) the occlusions ratio and (b) the inlier fraction.\
+    \ The occlusion ratio denotes the ratio between observed surface points and the\
+    \ total surface points of the scene, which falls in the approximate range of 62%\u2013\
+    93%, where the higher the occlusion ratio, the more challenging the problem. Similarly,\
+    \ the inlier fraction | C gt ||C| denotes the ratio between the count of ground-truth\
+    \ inliers and the correspondences set size, which falls in the approximate range\
+    \ of 1.5%\u201321%, where the lower the inlier fraction, the more challenging\
+    \ the problem. In both cases, the higher a curve is, the better its robustness.\
+    \ Refer to Section 3.3 for the details of compared methods."
+  First author gender probability: 0.96
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.9
+  Name of the first author: Hamdi Sahloul
+  Name of the last author: Jun Ota
+  Number of Figures: 11
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: An Accurate and Efficient Voting Scheme for a Maximally All-Inlier
+    3D Correspondence Set
+  Publication Date: 2020-01-10 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2963980
+- Affiliation of the first author: beijing key laboratory of big data management and
+    analysis methods, gaoling school of artificial intelligence, renmin university
+    of china, beijing, china
+  Affiliation of the last author: beijing key laboratory of big data management and
+    analysis methods, gaoling school of artificial intelligence, renmin university
+    of china, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Zero_and_Few_Shot_Learning_With_Semantic_Feature_Synthesis_and_Competitive_Learn\figure_1.jpg
+  Figure 1 caption: Schematic of the proposed model.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Zero_and_Few_Shot_Learning_With_Semantic_Feature_Synthesis_and_Competitive_Learn\figure_2.jpg
+  Figure 2 caption: Illustration of our SFSP and competitive BPL used for ZSL. Note
+    that only generated samples in the bottom-left subfigure and unseen class prototypes
+    in the bottom-right subfigure are updated by updating W .
+  Figure 3 Link: articels_figures_by_rev_year\2020\Zero_and_Few_Shot_Learning_With_Semantic_Feature_Synthesis_and_Competitive_Learn\figure_3.jpg
+  Figure 3 caption: Schematic of the proposed large-scale FSL model applied to the
+    ImNet dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Zero_and_Few_Shot_Learning_With_Semantic_Feature_Synthesis_and_Competitive_Learn\figure_4.jpg
+  Figure 4 caption: "Illustration of our SFSP strategy for FSL with K=5 . Only one\
+    \ random variable \u03F5 i is sampled here."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Zero_and_Few_Shot_Learning_With_Semantic_Feature_Synthesis_and_Competitive_Learn\figure_5.jpg
+  Figure 5 caption: (a) The tSNE visualisation of the generated samples (together
+    with the projected class prototypes) for generalised ZSL on the CUB dataset. (b)
+    The histogram of the classification results over the generated samples (which
+    are classified to seenunseen classes by simple nearest neighbor search over the
+    projected seenunseen class prototypes).
+  Figure 6 Link: articels_figures_by_rev_year\2020\Zero_and_Few_Shot_Learning_With_Semantic_Feature_Synthesis_and_Competitive_Learn\figure_6.jpg
+  Figure 6 caption: Ablation study results on the three medium-scale datasets under
+    pure ZSL.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Zero_and_Few_Shot_Learning_With_Semantic_Feature_Synthesis_and_Competitive_Learn\figure_7.jpg
+  Figure 7 caption: The tSNE visualisation of the visual features of test unseen class
+    samples from the AwA dataset together with the projected class prototypes. The
+    predicted unseen class labels (marked with different colors) of the test samples
+    are obtained by FPL, RPL, BPL0, BPL1, and BPL (ours) under the pure ZSL setting,
+    respectively.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Zero_and_Few_Shot_Learning_With_Semantic_Feature_Synthesis_and_Competitive_Learn\figure_8.jpg
+  Figure 8 caption: Few-shot learning results on the large-scale ImNet dataset.
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.53
+  Name of the first author: Jiechao Guan
+  Name of the last author: Ji-Rong Wen
+  Number of Figures: 8
+  Number of Tables: 7
+  Number of authors: 6
+  Paper title: Zero and Few Shot Learning With Semantic Feature Synthesis and Competitive
+    Learning
+  Publication Date: 2020-01-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Details of Four Benchmark Datasets
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparative Pure ZSL Results (%)
+  Table 3 caption:
+    table_text: TABLE 3 Comparative Generalised ZSL Results (%)
+  Table 4 caption:
+    table_text: TABLE 4 Comparative Results (%) Obtained by Alternative Competitive
+      Learning Methods Under Pure ZSL
+  Table 5 caption:
+    table_text: TABLE 5 Comparative Results (%) of Different Feature Synthesis Strategies
+      for FSL on ImNet
+  Table 6 caption:
+    table_text: TABLE 6 Runtime (mins) Comparison for FSL on ImNet
+  Table 7 caption:
+    table_text: TABLE 7 Comparative Results (%) With 95% Confidence Intervals for
+      Small-Scale FSL on Mini-ImageNet
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2965534
+- Affiliation of the first author: key laboratory for ubiquitous network and service
+    software of liaoning province, dut-ru international school of information science
+    and engineering, dalian university of technology, dalian, china
+  Affiliation of the last author: university of rochester, rochester, ny, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_1.jpg
+  Figure 1 caption: The feature spaces learned by FKDA-X, FKDA-CX, and FKDA-C for
+    three classes, respectively. (a) The space learned by FKDA-X. (b) The space learned
+    by FKDA-CX. (c) The space learned by FKDA-C.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_10.jpg
+  Figure 10 caption: Comparison of known-class recognition accuracy after learning
+    a novel-class stream on Caltech256.
+  Figure 2 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_2.jpg
+  Figure 2 caption: Online learning by FKDA-C. (a) The updating result for involving
+    new samples to the known classes. (b) The updating result for involving k b new
+    classes.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_3.jpg
+  Figure 3 caption: Error rates of novelty detection on ORL. (a) Err ; (b) F a , F
+    b , and F c .
+  Figure 4 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_4.jpg
+  Figure 4 caption: Error rates of novelty detection on AR. (a) Err ; (b) F a , F
+    b , and F c .
+  Figure 5 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_5.jpg
+  Figure 5 caption: Error rates of novelty detection on AWA. (a) Err ; (b) F a , F
+    b , and F c .
+  Figure 6 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_6.jpg
+  Figure 6 caption: Error rates of novelty detection on Caltech256. (a) boldsymbolErr
+    ; (b) boldsymbol Fa , boldsymbol Fb , and boldsymbol Fc .
+  Figure 7 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_7.jpg
+  Figure 7 caption: Comparison of incremental learning a novel-class stream on AWA.
+    (a) classification accuracy; (b) CPU time.
+  Figure 8 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_8.jpg
+  Figure 8 caption: Comparison of incremental learning a novel-class stream on Caltech256.
+    (a) Classification accuracy; (b) CPU time.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Novelty_Detection_and_Online_Learning_for_Chunk_Data_Streams\figure_9.jpg
+  Figure 9 caption: Comparison of known-class recognition accuracy after learning
+    a novel-class stream on AWA.
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Yi Wang
+  Name of the last author: Jiebo Luo
+  Number of Figures: 12
+  Number of Tables: 6
+  Number of authors: 9
+  Paper title: Novelty Detection and Online Learning for Chunk Data Streams
+  Publication Date: 2020-01-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison for Time Complexity
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison for Space Complexity
+  Table 3 caption:
+    table_text: TABLE 3 The Space Complexity and Time Complexity of Incremental DAs
+      for Learning Chunk Data
+  Table 4 caption:
+    table_text: 'TABLE 4 Setting of Datasets:'
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Performance for Batch DAs (SD Stands for Standard
+      Deviation)
+  Table 6 caption:
+    table_text: TABLE 6 Setting of Testing Chunk Data for Novelty Detection
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2965531
+- Affiliation of the first author: beijing laboratory of intelligent information technology,
+    school of computer science, beijing institute of technology, beijing, china
+  Affiliation of the last author: salesforce research asia, singapore, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2020\Paying_Attention_to_Video_Object_Pattern_Understanding\figure_1.jpg
+  Figure 1 caption: 'Our UVOS solution has two key steps: Dynamic Visual Attention
+    Prediction (DVAP, Section 5.2), cascaded by Attention-Guided Object Segmentation
+    (AGOS, Section 5.3). The UVOS-aware attention from DVAP acts as an intermediate
+    video object representation, freeing our method from the dependency of expensive
+    video object annotations and bringing better interpretability with human readable
+    and assessable attention maps.'
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Paying_Attention_to_Video_Object_Pattern_Understanding\figure_2.jpg
+  Figure 2 caption: Example frames from three datasets [10], [11], [12] with our eye-tracking
+    annotation (Section 3). The last column shows the average attention maps of these
+    datasets. We quantitatively verify (Section 4) the high consistency between human
+    attention behavior (2nd column) and primary-object determination (3rd column).
+  Figure 3 Link: articels_figures_by_rev_year\2020\Paying_Attention_to_Video_Object_Pattern_Understanding\figure_3.jpg
+  Figure 3 caption: Illustration of the proposed UVOS model. (a) Simplified schematization
+    of our model that solves UVOS in a two-step manner, without the need of training
+    with expensive precise video object masks. (b) Detailed network architecture,
+    where the DVAP (Section 5.2) and AGOS (Section 5.3) modules share the weights
+    of three bottom convolution blocks. The UVOS-aware attention acts as an intermediate
+    object representation that connects the two modules densely. Best viewed in color.
+    Zoom in for details.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Paying_Attention_to_Video_Object_Pattern_Understanding\figure_4.jpg
+  Figure 4 caption: Visual results of predicted attention and primary video object
+    mask on three datasets (each with two example videos). For each video, the dynamic
+    attention results from our DVAP module are shown in the second row, which are
+    biologically-inspired and used to guide our AGOS module for fine-grained UVOS
+    (see the last row).
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.95
+  Name of the first author: Wenguan Wang
+  Name of the last author: Haibin Ling
+  Number of Figures: 4
+  Number of Tables: 14
+  Number of authors: 5
+  Paper title: Paying Attention to Video Object Pattern Understanding
+  Publication Date: 2020-01-13 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistics of Dynamic Eye-Tracking Datasets
+  Table 10 caption:
+    table_text: TABLE 10 Attribute-Based Aggregate UVOS Performance on the Test Set
+      of DAVIS 16 16 [11] With the Region Similarity J J
+  Table 2 caption:
+    table_text: TABLE 2 Quantitative Results of Inter-Subject Consistency (ISC) and
+      Inter-Task Correlation (ITC), Measured by AUC-Juddy
+  Table 3 caption:
+    table_text: TABLE 3 Attribute-Based Aggregate Results of Inter-Subject Consistency
+      (ISC) and Inter-Task Correlation (ITC) on DAVIS 16 16 With AUC-Juddy
+  Table 4 caption:
+    table_text: TABLE 4 Statistics of the Training and Testing Datasets, Where Fix.,
+      O.-Seg. and I.-Seg., Indicate Eye Fixation Annotation, Object-Level Segmentation
+      Annotation, and Instance-Level Segmentation Annotation, Respectively
+  Table 5 caption:
+    table_text: TABLE 5 Quantitative Comparison of Visual Attention Models on the
+      Test Set of DAVIS 16 16 [11] (Section 6.2)
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Comparison of Different Visual Attention Models
+      on Youtube-Objects [12] (Section 6.2)
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative UVOS Results on the Test Sequences of DAVIS 16
+      16 [11]
+  Table 8 caption:
+    table_text: TABLE 8 Quantitative UVOS Results on Youtube-Objects [12] With the
+      Region Similarity J J
+  Table 9 caption:
+    table_text: "TABLE 9 Quantitative UVOS Results on the Test Sequences of FBMS 59\
+      \ 59 [9] With the Region Similarity J J and F-Measure F \xAF F\xAF"
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2966453
+- Affiliation of the first author: department of electrical and computer engineering,
+    northeastern university, boston, ma, usa
+  Affiliation of the last author: department of electrical and computer engineering
+    and khoury college of computer science, northeastern university, boston, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_1.jpg
+  Figure 1 caption: Comparison of prior network structures (a, b) and our residual
+    dense block (c). (a) Residual block in MDSR [27]. (b) Dense block in SRDenseNet
+    [19]. (c) Our proposed residual dense block (RDB), which not only enables previous
+    RDB to connect with each layer of current RDB, but also makes better use of local
+    features.
+  Figure 10 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_10.jpg
+  Figure 10 caption: Visual results on real-world images with scaling factor times
+    4 .
+  Figure 2 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_2.jpg
+  Figure 2 caption: The architecture of our proposed residual dense network (RDN)
+    for image restoration.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_3.jpg
+  Figure 3 caption: Residual dense block (RDB) architecture. We denote the connections
+    between the ( d -1)th RDB and the following convolutional layers as contiguous
+    memory (CM) mechanism.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_4.jpg
+  Figure 4 caption: "Convergence analysis of RDN for image SR ( \xD72 ) with different\
+    \ values of D, C, and G."
+  Figure 5 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_5.jpg
+  Figure 5 caption: "Convergence analysis on CM, LRL, and GFF. The curves for each\
+    \ combination is based on the PSNR on Set5 ( \xD72 ) in 200 epochs."
+  Figure 6 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_6.jpg
+  Figure 6 caption: "PSNR and test time on Set14 with BI model ( \xD72 )."
+  Figure 7 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_7.jpg
+  Figure 7 caption: Image super-resolution results (BI degradation model) with scaling
+    factors s = 4 (first two rows) and s = 8 (last two rows).
+  Figure 8 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_8.jpg
+  Figure 8 caption: "Visual results using BD degradation model with scaling factor\
+    \ \xD73 ."
+  Figure 9 Link: articels_figures_by_rev_year\2020\Residual_Dense_Network_for_Image_Restoration\figure_9.jpg
+  Figure 9 caption: "Visual results using DN degradation model with scaling factor\
+    \ \xD73 ."
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Yulun Zhang
+  Name of the last author: Yun Fu
+  Number of Figures: 16
+  Number of Tables: 9
+  Number of authors: 5
+  Paper title: Residual Dense Network for Image Restoration
+  Publication Date: 2020-01-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 PSNR (dB) Comparisons Under Different Block Connections
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Ablation Investigation of Contiguous Memory (CM), Local Residual
+      Learning (LRL), and Global Feature Fusion (GFF)
+  Table 3 caption:
+    table_text: TABLE 3 Parameter Number, PSNR, and Test Time Comparisons
+  Table 4 caption:
+    table_text: TABLE 4 Quantitative Results With BI Degradation Model
+  Table 5 caption:
+    table_text: TABLE 5 Benchmark Results With BD and DN Degradation Models
+  Table 6 caption:
+    table_text: TABLE 6 Quantitative Results About Gray-Scale Image Denoising
+  Table 7 caption:
+    table_text: TABLE 7 Quantitative Results About Color Image Denoising
+  Table 8 caption:
+    table_text: TABLE 8 Quantitative Results About Image Compression Artifact Reduction
+  Table 9 caption:
+    table_text: TABLE 9 PSNR (dB)SSIM Results About Image Deblurring
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2968521
+- Affiliation of the first author: "laboratoire dimagerie biom\xE9dicale (lib), sorbonne\
+    \ universit\xE9, cnrs, inserm, paris, france"
+  Affiliation of the last author: "laboratoire dimagerie biom\xE9dicale (lib), sorbonne\
+    \ universit\xE9, cnrs, inserm, paris, france"
+  Figure 1 Link: articels_figures_by_rev_year\2020\Automated_Extraction_of_Mutual_Independence_Patterns_Using_Bayesian_Comparison_o\figure_1.jpg
+  Figure 1 caption: "Example of 2w-SHC. Set D=6 and assume that the current state\
+    \ is partition 12|356|4 . From this partition, an agglomerative clustering algorithm\
+    \ would consider 3\xD722=3 potential states ( 1|2|356|4 , 1|2|435|6 , and 1|2|345|6\
+    \ | ), and a divisive clustering algorithm 2 2 + 3 2 =4 potential states ( 1|2|356|4\
+    \ from the division of 12; 12|3|4|56 , 12|36|4|5 , and 12|35|4|6 from the division\
+    \ of 356). In this particular case, 2w-SHC would then compare the posterior probabilities\
+    \ of 8 states."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\Automated_Extraction_of_Mutual_Independence_Patterns_Using_Bayesian_Comparison_o\figure_2.jpg
+  Figure 2 caption: Sampling scheme. General description of the MCMC sampling scheme.
+    Behavior of each of the C independent chains.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Automated_Extraction_of_Mutual_Independence_Patterns_Using_Bayesian_Comparison_o\figure_3.jpg
+  Figure 3 caption: Simulation study. Comparison of probability obtained for BayesOptim
+    and either BayesCorr (top) or Bic (bottom) as a function of the number of clusters
+    K in the simulated data.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Automated_Extraction_of_Mutual_Independence_Patterns_Using_Bayesian_Comparison_o\figure_4.jpg
+  Figure 4 caption: Simulation study. For BayesOptim, boxplot (median and [25%,75%]
+    probability interval) of posterior probability for the true model (top left),
+    entropy of posterior distribution (bottom left), rank of true model when ranking
+    potential models by decreasing posterior probability (top right), and ratio of
+    posterior probability of true model to posterior probability of maximum a posteriori
+    (bottom right).
+  Figure 5 Link: articels_figures_by_rev_year\2020\Automated_Extraction_of_Mutual_Independence_Patterns_Using_Bayesian_Comparison_o\figure_5.jpg
+  Figure 5 caption: Real data. Comparison of total computation time (top) and time
+    per step (bottom) for Gibbs, 2wSHC, Gibbs+2wSHC, Gibbs+PT, and Gibbs+2wSHC+PT.
+    Computational time was obtained by running J1 = 105 samples for Gibbs, 2wSHC,
+    Gibbs+2wSHC, and Gibbs+PT, and J2 = 104 samples for Gibbs+2wSHC+PT.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Automated_Extraction_of_Mutual_Independence_Patterns_Using_Bayesian_Comparison_o\figure_6.jpg
+  Figure 6 caption: Real data. Comparison of convergence (mean pm standard deviation
+    of L1 distance) as a function of chain length. When the four chains of a given
+    algorithm converged to four different states, the corresponding heterogeneity
+    was 32 . The curves are slightly shifted along the x -axis to avoid superposition.
+    Gibbs and 2wSHC obtained very similar results and cannot be distinguished on the
+    plot.
+  Figure 7 Link: articels_figures_by_rev_year\2020\Automated_Extraction_of_Mutual_Independence_Patterns_Using_Bayesian_Comparison_o\figure_7.jpg
+  Figure 7 caption: Real data. Comparison of L1 distances between estimated probabilities.
+    Two sets of estimated probabilities with different supports have a distance of
+    2.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Guillaume Marrelec
+  Name of the last author: Alain Giron
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: Automated Extraction of Mutual Independence Patterns Using Bayesian
+    Comparison of Partition Models
+  Publication Date: 2020-01-22 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Sampling Scheme
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 HIV Study Data
+  Table 3 caption:
+    table_text: TABLE 3 HIV Study Data
+  Table 4 caption:
+    table_text: TABLE 4 Real Data
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2968065
+- Affiliation of the first author: nlpr, institute of automation of chinese academy
+    of sciences, university of chinese academy of sciences, beijing, p.r. china
+  Affiliation of the last author: nlpr, institute of automation of chinese academy
+    of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_1.jpg
+  Figure 1 caption: The proposed BlockQNN (right in red box) compared with the hand-crafted
+    networks marked in yellow and the existing auto-generated networks in green. Automatically
+    generating the plain networks [12], [13] marked in blue need large computational
+    costs in searching optimal layer types and hyperparameters for each single layer,
+    while the block-wise network heavily reduces the cost to search structures only
+    for one block. The entire network is then constructed by stacking the generated
+    blocks. Similar block concept has been demonstrated its superiority in hand-crafted
+    networks, such as inception-block and residue-block marked in red.
+  Figure 10 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_10.jpg
+  Figure 10 caption: (a) Q-learning performance on CIFAR-100. The accuracy goes up
+    with the epsilon decrease and the top models are all found in the final stage,
+    show that our agent can learn to generate better block structures instead of random
+    searching. The searching process based on early stop strategy. (b-c) Topology
+    of the Top-2 block structures generated by our approach. We call them Block-QNN-A
+    and Block-QNN-B. (d) Topology of the best block structures generated with limited
+    parameters, named Block-QNN-S.
+  Figure 2 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_2.jpg
+  Figure 2 caption: 'Representative block exemplars with their Network structure codes
+    (NSC) respectively: the block with multi-branch connections (left) and the block
+    with shortcut connections (right).'
+  Figure 3 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_3.jpg
+  Figure 3 caption: Auto-generated networks on CIFAR-10 (left) and ImageNet (right).
+    Each network starts with a few convolution layers to learn low-level features,
+    and followed by multiple repeated blocks with several pooling layers inserted
+    for downsampling.
+  Figure 4 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_4.jpg
+  Figure 4 caption: Q-learning process illustration. (a) The state transition process
+    by different action choices. The block structure in (b) is generated by the red
+    solid line in (a). (c) The flow chart of the Q-learning procedure.
+  Figure 5 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_5.jpg
+  Figure 5 caption: Comparison results of Q-learning with and without the shaped intermediate
+    reward r t . By taking our shaped reward, the learning process convergent faster
+    than that without shaped reward start from the same exploration. The searching
+    process based on early stop strategy training pipeline.
+  Figure 6 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_6.jpg
+  Figure 6 caption: The performance of early stop training is poorer than the final
+    accuracy of a complete training. With the help of FLOPs and Density, it squeezes
+    the gap between the redefined reward function and the final accuracy.
+  Figure 7 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_7.jpg
+  Figure 7 caption: The overall pipeline of the Faster BlockQNN framework. Given a
+    network architecture, it first encodes each layer into a vector through integer
+    coding and layer embedding. Subsequently, it applies a recurrent network with
+    LSTM units to integrate the information of individual layers following the network
+    topology into a structural feature. This structural feature together with the
+    epoch index (also embedded into a vector) will finally be fed to an MLP to predict
+    the accuracy at the corresponding time point, i.e. the end of the given epoch.
+    Note that the blocks indicated by blue color, including the embeddings, the LSTM,
+    and the MLP, are jointly learned in an end-to-end manner.
+  Figure 8 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_8.jpg
+  Figure 8 caption: The layer embedding component. It takes the integer codes as input,
+    maps them to embedded vectors respectively via table lookup, and finally concatenates
+    them into a real vector representation. Note that Pred1 and Pred2 share the same
+    lookup table.
+  Figure 9 Link: articels_figures_by_rev_year\2020\BlockQNN_Efficient_BlockWise_Neural_Network_Architecture_Generation\figure_9.jpg
+  Figure 9 caption: 'The distributed asynchronous framework. It contains three parts:
+    master node, controller node, and compute nodes.'
+  First author gender probability: 0.67
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.57
+  Name of the first author: Zhao Zhong
+  Name of the last author: Cheng-Lin Liu
+  Number of Figures: 18
+  Number of Tables: 5
+  Number of authors: 7
+  Paper title: 'BlockQNN: Efficient Block-Wise Neural Network Architecture Generation'
+  Publication Date: 2020-01-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Network Structure Code Space
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Epsilon Schedules
+  Table 3 caption:
+    table_text: TABLE 3 Block-QNNs Results (Error Rate) Compare With State-of-the-Art
+      Methods on CIFAR-10 (C-10) and CIFAR-100 (C-100) Dataset
+  Table 4 caption:
+    table_text: TABLE 4 The Required Computing Resource and Time of Our Approach Compare
+      With Other Automatic Designing Network Methods
+  Table 5 caption:
+    table_text: TABLE 5 Block-QNNs Results (Single-Crop Error Rate) Compare With Modern
+      Methods on ImageNet-1K Dataset
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.2969193

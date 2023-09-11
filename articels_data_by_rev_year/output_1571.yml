@@ -1,0 +1,940 @@
+- Affiliation of the first author: tencent ai lab, shenzhen, china
+  Affiliation of the last author: tencent ai lab, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_1.jpg
+  Figure 1 caption: "(a) Examples of failure cases of the \u201Clatest-all\u201D strategy\
+    \ in a multi-exit deeply-supervised network. For a particular testing sample,\
+    \ green and red circles represent correct and incorrect predictions by the exits\
+    \ at the corresponding layers, respectively. For example, setting the time budget\
+    \ up to the 4th exit, the \u201Clatest-all\u201D strategy only achieves 25 percent\
+    \ accuracy, while 100 percent accuracy can be obtained by the per-sample optimal\
+    \ exit selection within the budget. (b) \u201CCorrectable error rates\u201D (%)\
+    \ from the 2nd to the final exit for ResNet-20 on CIFAR-10 [19]."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_2.jpg
+  Figure 2 caption: "An illustration of the RCN architecture. Orange and green arrows\
+    \ denote regular convolution and strided convolution, respectively. Along the\
+    \ depth dimension, at the coarsest scale of each depth, a Q-network Q i (i=1,2\
+    \ \u2026, n) is embedded to decide either to output the prediction at the currect\
+    \ exit P i (i=1,2 \u2026, n) and EXIT from the computational flow immediately,\
+    \ or to CONTINUE traversing the rest of the network."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_3.jpg
+  Figure 3 caption: "An illustration of the RCN architecture based on the MSDNet [14]\
+    \ backbone. Orange and green arrows denote regular convolution and strided convolution,\
+    \ respectively. Orange dotted arrows represent cross-layer dense connections.\
+    \ Along the depth dimension, at the coarsest scale of each depth, a Q-network\
+    \ Q i (i=1,2 \u2026 , n) is embedded to decide either to output the prediction\
+    \ at the currect exit P i (i=1,2 \u2026 , n) and EXIT from the computational flow\
+    \ immediately, or to CONTINUE traversing the rest of the network."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_4.jpg
+  Figure 4 caption: "(a) Accuracy versus Budget in FLOPs on CIFAR-10 for the baseline,\
+    \ RCN, and RCN with alternating learning ( \u03BB =0.35). (b) Accuracy versus\
+    \ Budget in FLOPs on CIFAR-10, for RCN under different \u03BB . (c) Accuracy versus\
+    \ Budget in FLOPs on CIFAR-10 for MSDNet, RCN (MSDNet backbone), and RCN with\
+    \ alternating learning (MSDNet backbone) ( \u03BB =0.35). (d) Accuracy versus\
+    \ Budget in FLOPs on CIFAR-10, for the baseline, BranchyNet, MSDNet, RCN with\
+    \ alternating learning, and RCN with alternating learning (MSDNet backbone) (\
+    \ \u03BB =0.35)."
+  Figure 5 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_5.jpg
+  Figure 5 caption: (a) Accuracy (in blue) and correctable error rates (in orange)
+    of different exits in RCN (ResNet-20 based for CIFAR-10). (b) The Table shows
+    the percentage of samples whose predictions are changed at each budget due to
+    the routing policy on CIFAR-10. Accuracy change of these affected samples are
+    shown in the Fig. (b).
+  Figure 6 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_6.jpg
+  Figure 6 caption: (a) Accuracy (in blue) and correctable error rates (in orange)
+    of different exits in RCN (ResNet-18 based for ImageNet). (b) The Table shows
+    the percentage of samples whose predictions are changed at each budget due to
+    the routing policy on ImageNet. Accuracy change of these affected samples are
+    shown in the Fig. (b).
+  Figure 7 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_7.jpg
+  Figure 7 caption: (a) Accuracy versus Budget in FLOPs on CIFAR-100, for the baseline,
+    BranchyNet, FractalNet, MSDNet, RCN, RCN with alternating learning, and RCN with
+    alternating learning (MSDNet backbone) ( lambda =1.0). (b) Accuracy versus Budget
+    in FLOPS on ImageNet val, for the baseline, BranchyNet, MSDNet, RCN, RCN with
+    alternating learning, and RCN with alternating learning (MSDNet backbone) ( lambda
+    =1.4). (c) mIoU versus relative time cost on the Cityscapes val set, for the baseline,
+    BranchyNet, RCN, and RCN with alternating learning ( lambda =1.1).
+  Figure 8 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_8.jpg
+  Figure 8 caption: Visualization of outputs given different time budgets on the Cityscapes
+    dataset. Best viewed in color.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Anytime_Recognition_with_Routing_Convolutional_Networks\figure_9.jpg
+  Figure 9 caption: Visualization of pixel-level exit selection maps given different
+    time budgets on the Cityscapes dataset. The values of a certain pixel in the maps
+    represent the selected exit order numbers (from 1 to 9) for the pixel. Best viewed
+    in color.
+  First author gender probability: 0.59
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Zequn Jie
+  Name of the last author: Wei Liu
+  Number of Figures: 9
+  Number of Tables: 2
+  Number of authors: 5
+  Paper title: Anytime Recognition with Routing Convolutional Networks
+  Publication Date: 2019-12-18 00:00:00
+  Table 1 caption:
+    table_text: "TABLE 1 Sample Percentage ( % %) and Accuracy ( % %) Achieved at\
+      \ Each Exit by Taking the First Optimal EXIT Action Guided by the Q-Networks,\
+      \ Under Different Values of \u03BB \u03BB on CIFAR-10"
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 Sample Percentage ( % %) and Accuracy ( % %) Achieved at\
+      \ Each Exit by Taking the First Optimal EXIT Action Guided by the Q-Networks,\
+      \ Under Different Values of \u03BB \u03BB on CIFAR-10, for RCN Based on the\
+      \ MSDNet [14] Backbone"
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2959322
+- Affiliation of the first author: school of electrical engineering, korea advanced
+    institute of science technology, deajeon, south korea
+  Affiliation of the last author: school of electrical engineering, korea advanced
+    institute of science technology, deajeon, south korea
+  Figure 1 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_1.jpg
+  Figure 1 caption: Example procedure of matching cost filtering [12], which simplifies
+    the pixel-wise matching cost via min-convolution to the dotted line and non-minimum
+    suppression to the set of circles s i (p) .
+  Figure 10 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_10.jpg
+  Figure 10 caption: "Qualitative comparison of the accuracy on the dataset \u201C\
+    Motorcycle\u201D on a half resolution in the Middlebury 2014 datasets. (a) shows\
+    \ the input color image (top) and a ground truth disparity map (bottom). (b),\
+    \ (c), and (d) show the estimated disparity maps in the top row and those error\
+    \ maps in the bottom row for SGM [3], SGM-LevSt [28], and the proposed method,\
+    \ respectively. In the error map, red pixels denote the errors."
+  Figure 2 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_2.jpg
+  Figure 2 caption: Illustration of the parametric cost aggregation step [12]. (a)
+    Example of left-to-right aggregation for pixel p . Each circle denotes a pixel
+    on the image. (b) Procedure of recursive parametric aggregation for pixel p .
+  Figure 3 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_3.jpg
+  Figure 3 caption: Illustration of a two-pass scan for 8-path aggregation [10]. Black
+    and gray denote the forward and backward scan, respectively. In each scan, the
+    costs at incoming pixel p are recursively aggregated on four paths.
+  Figure 4 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_4.jpg
+  Figure 4 caption: "Illustration of parameter reduction. Each cube denotes a set\
+    \ of parameters for a Gaussian component at a pixel, i.e., G r,m = \u03C0 r,m\
+    \ , \u03BC r,m , \u03C3 2 r,m and G i = \u03C0 i , \u03BC i , \u03C3 2 i . In\
+    \ each scan, parameters for only the four directions of r are considered."
+  Figure 5 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_5.jpg
+  Figure 5 caption: Observation of the hit rate of Gaussian component hatGi in the
+    datasets, KITTI 2015 [42], KITTI 2012 [43], and Middlebury 2014 (half resolution)
+    [44]. The total number of components is 4Nc . Here, Nc=3 . tau h is set to 3 for
+    KITTI 2015, KITTI 2012, and 1 for Middlebury 2014. (a) Average hit rate on all
+    images in the datasets. (b) Cumulative averaged hit rate.
+  Figure 6 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_6.jpg
+  Figure 6 caption: Overall procedure of the proposed algorithm with parametric aggregation
+    in Sections 2 and 3.
+  Figure 7 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_7.jpg
+  Figure 7 caption: Ratio of the memory requirement of the proposed method to that
+    of (a) SGM [3], (b) eSGM [10], and (C) pSGM [12] according to the number of Gaussian
+    components NT .
+  Figure 8 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_8.jpg
+  Figure 8 caption: Memory efficiency comparison on the KITTI 2015 dataset. The error
+    rate was measured for all pixels including those in occluded regions. Each memory
+    requirement was normalized by that of eSGM [10]. The closer to the origin, the
+    higher the efficiency becomes.
+  Figure 9 Link: articels_figures_by_rev_year\2019\A_Memory_and_AccuracyAware_Gaussian_ParameterBased_Stereo_Matching_Using_Confide\figure_9.jpg
+  Figure 9 caption: Qualitative comparison of the accuracy on the 65th image in the
+    KITTI 2015 dataset. (a) shows the input color image (top) and a ground truth disparity
+    map (bottom). (b), (c), and (d) show the estimated disparity maps in the top row
+    and those error maps in the bottom row for SGM [3], SGM-PBCP [27], and the proposed
+    method, respectively. In the error map, red pixels denote the errors.
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.61
+  Name of the first author: Yeongmin Lee
+  Name of the last author: Chong-Min Kyung
+  Number of Figures: 13
+  Number of Tables: 4
+  Number of authors: 2
+  Paper title: A Memory- and Accuracy-Aware Gaussian Parameter-Based Stereo Matching
+    Using Confidence Measure
+  Publication Date: 2019-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Variables for a Node in the Random Forest
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of the Proposed Method With State-of-the-Art SGM-Based
+      Algorithms in Terms of the Error Rate and the Memory Requirement
+  Table 3 caption:
+    table_text: TABLE 3 Comparison on Stereo Evaluation 2015 in KITTI Vision Benchmark
+      Suite
+  Table 4 caption:
+    table_text: TABLE 4 Analysis of the Performance of the Confidence Measure Schemes
+      With Regard to the Area Under the Curve (AUC)
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2959613
+- Affiliation of the first author: school of data and computer science, sun yat-sen
+    university, guangzhou, china
+  Affiliation of the last author: key laboratory of machine intelligence and advanced
+    computing, ministry of education, school of data and computer science, sun yat-sen
+    university, guangzhou, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_1.jpg
+  Figure 1 caption: (a) Illustration of person re-id. The matching between Camera
+    A and Camera C is cross-clothes, whereas the matching between Camera A and Camera
+    B is without clothing changes. (b) CMC curve of the result of person re-id. The
+    blue curve indicates matching with clothing change, whereas the orange curve shows
+    the result of the matching without clothing change. (c) RGB and contour sketch
+    images of the same person in different clothes.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_10.jpg
+  Figure 10 caption: 'The different ranges of boldsymbol theta . (a), (b), (c), (d),
+    (e): Different partition strategies for an image; (f), (g), (h), (i): the corresponding
+    transformed images of (e) after different SPT layers. The numbers in green circles
+    are the indeces of the partitions, which are used in Table 9.'
+  Figure 2 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_2.jpg
+  Figure 2 caption: (a)-(d) RGB histograms of samples in different cases. When the
+    person with ID 1 wears different clothes, the appearance information in the RGB
+    histogram changes substantially [see (a) and (c)] compared to the case of wearing
+    the same clothes [see (a) and (b)]. The appearance even becomes confusing compared
+    to that of the person with ID 2 in similar clothes [see (c) and (d)]. In this
+    case, the color information can be unreliable and misleading. (e) and (f) demonstrate
+    some examples of input RGB images and contour sketch images captured in three
+    camera views of the PRCC testing set, respectively. (g) and (h) are the corresponding
+    visualizations of the output feature maps of the first convolution block of Res-Net50
+    and our model (i.e., with SPT [see text in Section 3.2)], respectively. In comparison,
+    the proposed SPT features are more stable for the same person under clothing change.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_3.jpg
+  Figure 3 caption: "Illustration of spatial polar transformation. (a) Example of\
+    \ our proposed spatial polar transformation (SPT). (b) The detailed illustration\
+    \ of our proposed transformation, where r j is the radius of the contour sketch\
+    \ image in polar coordinates and \u03B8 i is the polar angle. (c) Uniform sampling\
+    \ method (top) and the sampling method for learning \u03B8 by SPT (bottom). (d)\
+    \ Change in the shape of the receptive field after the transformation."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_4.jpg
+  Figure 4 caption: Our multistream model and the details of each component. (a) Our
+    model is a multistream CNN with different SPT layers to transform the contour
+    sketch images into different types. For each stream, we use the CNN backbone to
+    extract the feature map for each image and divide the feature map into B horizontal
+    angle stripes equally; then we apply the average pooling for each angle stripe
+    and build the unshared ASE components to select discriminative curve patterns
+    by modeling the channel interdependencies. The inputs of our model are triplets,
+    and we use cross-entropy loss and triplet margin loss as the loss function. Here,
+    x a , x p , x n represent the features of the anchor, positive, and negative images,
+    respectively. (b) The contour sketch images are transformed by three different
+    spatial polar transformation (SPT) layers. (c) The detailed structure of angle-specific
+    extractor (ASE).
+  Figure 5 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_5.jpg
+  Figure 5 caption: Examples of the PRCC dataset. (a) The left-hand side are RGB images,
+    and the corresponding contour sketch images are on the right-hand side, where
+    images of the same column are from the same person. (b) Other variations of our
+    collected dataset. The images in the same dash box are of the same identity.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_6.jpg
+  Figure 6 caption: A diagrammatic layout of the camera network map of the PRCC dataset.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_7.jpg
+  Figure 7 caption: The visualization of the ranking lists of our proposed model (top)
+    and PCB (RGB) (bottom). The green box indicates the correct matching. In each
+    subfigure, the leftmost image is the probe image, and the rightest is the ground
+    truth image in the gallery set with the same ID of the probe image. The middle
+    5 images are the rank-1 to rank-5 matching images, from left to right.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_8.jpg
+  Figure 8 caption: The t-SNE visualizations for the features of our proposed method
+    [i.e., (a)] and Res-Net50 [i.e., (b)] on the PRCC dataset. Each color represents
+    an identity which is randomly chosen from the testing set. Each symbol (circle,
+    triangle, or cross) represents the camera label indicating where an image is captured.
+    The person is wearing the same clothing in Camera A and B, and heshe wears different
+    clothes in Camera C. The numbers in the legend are used to indicate the identities.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Person_ReIdentification_by_Contour_Sketch_Under_Moderate_Clothing_Change\figure_9.jpg
+  Figure 9 caption: The histograms of the boldsymboltheta . (a) The histogram of the
+    boldsymboltheta without training the SPT. (b) The histogram of the boldsymboltheta
+    with training the SPT. We can observe that the SPT samples more on the range of
+    B, C, F and G from the original image.
+  First author gender probability: 0.66
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Qize Yang
+  Name of the last author: Wei-Shi Zheng
+  Number of Figures: 13
+  Number of Tables: 12
+  Number of authors: 3
+  Paper title: Person Re-Identification by Contour Sketch Under Moderate Clothing
+    Change
+  Publication Date: 2019-12-18 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance (%) of Our Approach and the Compared Methods on
+      the PRCC Dataset
+  Table 10 caption:
+    table_text: TABLE 10 The Performances (%) of Different Transformation Origins
+      Used in Our Method on PRCC
+  Table 2 caption:
+    table_text: TABLE 2 The Statistics on the Test Set of the PRCC Dataset and the
+      Corresponding Testing Result (%)
+  Table 3 caption:
+    table_text: TABLE 3 The Performance (%) of PCB (RGB) on the Subset of the PRCC
+      Dataset by Using Only Either the Upper Body Information or the Lower One When
+      Only the Clothing Changes Happen Only on the Upper Body (23 Identities as Mentioned
+      in Table 2)
+  Table 4 caption:
+    table_text: TABLE 4 The Performance (%) of Cross-Clothes Matching Under Large
+      Viewpoint Changes
+  Table 5 caption:
+    table_text: TABLE 5 The Results (%) of Person re-id With Clothing Change Under
+      Occlusion on the PRCC Dataset
+  Table 6 caption:
+    table_text: TABLE 6 The Rank-1 Accuracy (%) of Our Approach in the Ablation Study
+      Note That When Removing the SPT Layers, the Model Only Remains One Stream
+  Table 7 caption:
+    table_text: TABLE 7 The Performance (%) of Each Stream of Our Model
+  Table 8 caption:
+    table_text: TABLE 8 Performance (%) on the Number of Sampled Angles and the Learning
+      Strategy of the Sampled Angle
+  Table 9 caption:
+    table_text: "TABLE 9 Analysis of Different Ranges of \u03B8 \u03B8 (the Corresponding\
+      \ Region is Shown in Fig. 9), the Performance (%) is Based on Cosine Similarity"
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2960509
+- Affiliation of the first author: department of information science, nara institute
+    of science and technology (naist), ikoma, nara, japan
+  Affiliation of the last author: department of information science, nara institute
+    of science and technology (naist), ikoma, nara, japan
+  Figure 1 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_1.jpg
+  Figure 1 caption: A ball captured by a conventional color camera and a thermal camera.
+    (a) The target object. (b) Reflection image using a conventional camera. (c) Thermal
+    image of the same object. When the object is carefully illuminated, shading of
+    both images are same, which implies conventional computer vision techniques can
+    be applied to the thermal images.
+  Figure 10 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_10.jpg
+  Figure 10 caption: Exponential fitting results. Double exponential curves fit the
+    observation better than single exponential curves.
+  Figure 2 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_2.jpg
+  Figure 2 caption: Far infrared light transport. While far infrared light can partially
+    be reflected on the surface, the rest of the light is converted to heat energy,
+    propagates inside the object, and is then converted to far infrared light corresponding
+    to the temperature. The composition of all the components are captured by a camera.
+    The observation system is closed in the far infrared light domain.
+  Figure 3 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_3.jpg
+  Figure 3 caption: Far infrared light and heat transport components. Similar to the
+    visible light transport, far infrared light transport consists of (a) ambient,
+    which is the original temperature, (b) reflection as light, (c) diffuse radiation,
+    and (d) global radiation caused by heat propagation. Because the speed of heat
+    is slower than that of light, every components has distinctive transient properties;
+    hence, they are separable.
+  Figure 4 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_4.jpg
+  Figure 4 caption: The architecture of a typical thermal sensor, micro bolometer.
+    Microbolometer element converts far infrared radiation to heat, which changes
+    electrical resistance. The intensity of far infrared is captured by measuring
+    the electrical resistance of the element. To prevent the surrounding temperature
+    change, the sensor is covered by vacuum package.
+  Figure 5 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_5.jpg
+  Figure 5 caption: Transient properties of far infrared light transport. Because
+    the temporal responses of the components are significantly different, they can
+    be separated from the thermal video frames.
+  Figure 6 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_6.jpg
+  Figure 6 caption: Double exponential fitting result to the FTCS curves of different
+    parameters. Double exponential is the sum of two exponentials as shown in Equation
+    (5) representing both the direct and global components. Our model is a good approximation
+    of the radiation transience.
+  Figure 7 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_7.jpg
+  Figure 7 caption: Other viable approaches. (a) By turning on and off the light source
+    in a sufficiently short time, the reflection and diffuse radiation can be directly
+    obtained. (b) Transient state after the light source is turned off contains similar
+    information.
+  Figure 8 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_8.jpg
+  Figure 8 caption: Experimental setup. The object is illuminated by far infrared
+    light and captured by a thermal camera.
+  Figure 9 Link: articels_figures_by_rev_year\2019\TimeResolved_Far_Infrared_Light_Transport_Decomposition_for_Thermal_Photometric_\figure_9.jpg
+  Figure 9 caption: Decomposition result for a black painted wooden ball. (a) The
+    scene. (b) One of thermal video frames. Transient profiles of a point, indicated
+    by the black circle, are shown. (c) Measured temperature transition. (d) Radiation
+    profile. Ambient and reflection components are subtracted from (c). (e) Decomposed
+    diffuse and global radiations. (f-h) Decomposed images of reflection, diffuse,
+    and global radiation, respectively.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Kenichiro Tanaka
+  Name of the last author: Yasuhiro Mukaigawa
+  Number of Figures: 14
+  Number of Tables: 0
+  Number of authors: 8
+  Paper title: Time-Resolved Far Infrared Light Transport Decomposition for Thermal
+    Photometric Stereo
+  Publication Date: 2019-12-18 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2959304
+- Affiliation of the first author: inria rennes bretagne atlantique, rennes, france
+  Affiliation of the last author: inria rennes bretagne atlantique, rennes, france
+  Figure 1 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_1.jpg
+  Figure 1 caption: 'Results of our approach on 3 examples from the KITTI test set.
+    From top to bottom: input to the network, ground truth image, prediction carried
+    out by the network, l1 error, estimated disparity map.'
+  Figure 10 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_10.jpg
+  Figure 10 caption: Interpolation results (top row) and confidence maps.
+  Figure 2 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_2.jpg
+  Figure 2 caption: Graph of the overall structure of our approach. Dark red blocks
+    represent DBP, the blue block represents REF, and the green block CBM.
+  Figure 3 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_3.jpg
+  Figure 3 caption: Qualitative evaluation of the predictions carried out. a) Ground
+    truth image. b) Our prediction. c) L1 error between the prediction and the ground
+    truth image.
+  Figure 4 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_4.jpg
+  Figure 4 caption: 'Comparison of the approaches on three examples from the KITTI
+    test set (from top to bottom: input image, ground truth image, our method, Deep3D
+    ([7]) and Godard et al. ([14])).'
+  Figure 5 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_5.jpg
+  Figure 5 caption: Details from KITTI views, (from left to right:) ground truth detail,
+    detail from our prediction, detail from Deep3D, detail from Godard et al.
+  Figure 6 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_6.jpg
+  Figure 6 caption: 'Detail from views to illustrate the contribution of the Refiner.
+    From left to right: prediction from DBP, final prediction, confidence map.'
+  Figure 7 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_7.jpg
+  Figure 7 caption: 'Elements of comparison for the ablation study. In each column:
+    a) Input image. b) Result from phase I. c) Result from phases I then II. d) Result
+    from phases I, II, then III. e) Result from phases I then III (with phase II skipped).
+    f) Result when trained end-to-end using the metrics from phase III.'
+  Figure 8 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_8.jpg
+  Figure 8 caption: Elements of comparison for constraint set on the confidence map
+    (yellow in confidence maps means low-confidence in DBP prediction). a) Prediction
+    when FB-constraint is set. b) Corresponding confidence map. c) Prediction when
+    no FB-constraint is set. d) Corresponding confidence map.
+  Figure 9 Link: articels_figures_by_rev_year\2019\A_Lightweight_Neural_Network_for_Monocular_View_Generation_With_Occlusion_Handli\figure_9.jpg
+  Figure 9 caption: "Diagram showing the interpolation process. We scale the disparity\
+    \ map obtained as an output of the pre-trained DBP. Warping the input view with\
+    \ the scaled disparity map yields a first interpolated view R \u03B1 . The pre-trained\
+    \ Refiner (and the rest of the network) will then deal with the artifacts, and\
+    \ a confidence map will be generated, so as to produce the final interpolation\
+    \ V \u03B1 with good quality."
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Simon Evain
+  Name of the last author: Christine Guillemot
+  Number of Figures: 13
+  Number of Tables: 3
+  Number of authors: 2
+  Paper title: A Lightweight Neural Network for Monocular View Generation With Occlusion
+    Handling
+  Publication Date: 2019-12-19 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Statistical Evaluations
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Statistical Justification of the Training Schedule
+  Table 3 caption:
+    table_text: TABLE 3 Metric-Wise Comparisons between Our Method and [23] on the
+      Flowers Test Set
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2960689
+- Affiliation of the first author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Affiliation of the last author: department of computer science and engineering,
+    michigan state university, east lansing, mi, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_1.jpg
+  Figure 1 caption: The most popular fingerprint representation consists of (a) global
+    level-1 features (ridge flow, core, and delta) and (b) local level-2 features,
+    called minutiae points, together with their descriptors (e.g., texture in local
+    minutiae neighborhoods). The fingerprint image illustrated here is a rolled impression
+    from the NIST SD4 database [7]. The number of minutiae in NIST4 rolled fingerprint
+    images range all the way from 12 to 196.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_10.jpg
+  Figure 10 caption: Closed-set identification accuracy of DeepPrint [with and without
+    Product Quantization (PQ)] on NIST SD4 and NIST SD14 (last 2,700 pairs) supplemented
+    with a gallery of 1.1 Million. Rank-1 Identification accuracies are 95.15% and
+    94.44%, respectively. Search time is only 160 milliseconds. After adding product
+    quantization, the search time is reduced to 51 milliseconds and the Rank-1 accuracies
+    only drop to 94.8% and 94.2%, respectively.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_2.jpg
+  Figure 2 caption: Failures of the COTS A minutiae-based matcher (minutiae annotated
+    with COTS A). The genuine pair (two impressions from the same finger) in (a) was
+    falsely rejected at 0.1% FAR (score of 9) due to heavy non-linear distortion and
+    moist fingers. The imposter pair (impressions from two different fingers) in (b)
+    was falsely accepted at 0.1% FAR (score of 38) due to the similar minutiae distribution
+    in these two fingerprint images (the score threshold for COTS A FAR = 0.1% is
+    34). In contrast, DeepPrint is able to correctly match the genuine pair in (a)
+    and reject the imposter pair in (b). These slap fingerprint impressions come from
+    public domain FVC 2004 DB1 A database [8]. The number of minutiae in FVC 2004
+    DB1 A images range from 11 to 87.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_3.jpg
+  Figure 3 caption: "Fixed-length, 192-dimensional fingerprint representations extracted\
+    \ by DeepPrint (shown as 16\xD712 feature maps) from the same four fingerprints\
+    \ shown in Fig. 2. Unlike COTS A, we correctly classify the pair in (a) as a genuine\
+    \ pair, and the pair in (b) as an imposter pair. The score threshold of DeepPrint\
+    \ FAR = 0.1% is 0.76."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_4.jpg
+  Figure 4 caption: 'Flow diagram of DeepPrint: (i) a query fingerprint is aligned
+    via a Localization Network which has been trained end-to-end with the Base-Network
+    and Feature Extraction Networks (no reference points are needed for alignment);
+    (ii) the aligned fingerprint proceeds to the Base-Network which is followed by
+    two branches; (iii) the first branch extracts a 96-dimensional texture-based representation;
+    (iv) the second branch extracts a 96-dimensional minutiae-based representation,
+    guided by a side-task of minutiae detection (via a minutiae map which does not
+    have to be extracted during testing); (v) the texture-based representation and
+    minutiae-based representation are concatenated into a 192-dimensional representation
+    of 768 bytes (192 features and 4 bytes per float). The 768 byte template is compressed
+    into a 200 byte fixed-length representation by truncating floating point value
+    features into integer value features, and saving the scaling and shifting values
+    (8 bytes) used to truncate from floating point values to integers. The 200 byte
+    DeepPrint representations can be used both for authentication and large-scale
+    fingerprint search. The minutiae-map can be used to further improve system accuracy
+    and interpretability by re-ranking candidates retrieved by the fixed-length representation.'
+  Figure 5 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_5.jpg
+  Figure 5 caption: Fingerprint impressions from one subject in the DeepPrint training
+    dataset [30]. Impressions were captured longitudinally, resulting in the variability
+    across impressions (contrast and intensity from environmental conditions; distortion
+    and alignment from user placement). Importantly, training with longitudinal data
+    enables learning compact representations which are invariant to the typical noise
+    observed across fingerprint impressions over time, a necessity in any fingerprint
+    recognition system.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_6.jpg
+  Figure 6 caption: Unaligned fingerprint images from NIST SD4 (top row) and corresponding
+    DeepPrint aligned fingerprint images (bottom row).
+  Figure 7 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_7.jpg
+  Figure 7 caption: "Minutiae map extraction. The minutiae locations and orientations\
+    \ of an input fingerprint (a) are encoded as a 6-channel minutiae map (b). The\
+    \ \u201Chot spots\u201D in each channel indicate the spatial location of the minutiae\
+    \ points. The k th channel of the hot spots indicate the contributions of each\
+    \ minutiae to the k\u03C03 orientation."
+  Figure 8 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_8.jpg
+  Figure 8 caption: The custom multi-task minutiae branch of DeepPrint. The dimensions
+    inside each box represent the input dimensions, kernel size, and stride length,
+    respectively.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Learning_a_FixedLength_Fingerprint_Representation\figure_9.jpg
+  Figure 9 caption: 'Examples of poor quality fingerprint images from benchmark datasets.
+    Row 1: Rolled fingerprint impressions from NIST SD4. Row 2: Slap fingerprint images
+    from FVC 2004 DB1 A. Rolled fingerprints are often heavily smudged, making them
+    challenging to accurately recognize. FVC 2004 DB1 A also has several distinct
+    challenges such as small overlapping fingerprint area between two fingerprint
+    images, heavy non-linear distortions, and extreme finger conditions (wet or dry).
+    Minutiae annotated with COTS A.'
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Joshua J. Engelsma
+  Name of the last author: Anil K. Jain
+  Number of Figures: 11
+  Number of Tables: 12
+  Number of authors: 3
+  Paper title: Learning a Fixed-Length Fingerprint Representation
+  Publication Date: 2019-12-20 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Variable Length Minutiae Representation With
+      Fixed-Length DeepPrint Representation
+  Table 10 caption:
+    table_text: 'TABLE 10 DeepPrint + PQ: Search Accuracy (1.1 Million Background)'
+  Table 2 caption:
+    table_text: TABLE 2 Published Studies on Fixed-Length Fingerprint Representations
+  Table 3 caption:
+    table_text: TABLE 3 Localization Network Architecture
+  Table 4 caption:
+    table_text: TABLE 4 Effect of Compression on Accuracy
+  Table 5 caption:
+    table_text: TABLE 5 Benchmarking DeepPrint Search Accuracy Against Fixed-Length
+      Representations in the Literature and COTS
+  Table 6 caption:
+    table_text: TABLE 6 Authentication Accuracy (FVC 2004 DB1 A)
+  Table 7 caption:
+    table_text: TABLE 7 Authentication Accuracy (Rolled-Fingerprints)
+  Table 8 caption:
+    table_text: TABLE 8 Encrypted Authentication Using DeepPrint Representation
+  Table 9 caption:
+    table_text: TABLE 9 DeepPrint + Minutiae Re-Ranking Search Accuracy (1.1 Million
+      Background)
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2961349
+- Affiliation of the first author: "computer vision lab, eth zurich, z\xFCrich, switzerland"
+  Affiliation of the last author: hong kong polytechnic university, kowloon, hong
+    kong
+  Figure 1 Link: articels_figures_by_rev_year\2019\Learned_Dynamic_Guidance_for_Depth_Image_Reconstruction\figure_1.jpg
+  Figure 1 caption: Illustration of the unfolded optimization process of a WASR model.
+    The WASR model takes low quality depth estimation Y and guidance intensity image
+    G as input, aims to achieve a high quality depth image X . Each step of the optimization
+    process can be termed as a stage-wise operation. By dynamically changing the stage-wise
+    operation, we construct the DG-RBF and DG-CNN model for fast and accurate guided
+    depth reconstruction.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Learned_Dynamic_Guidance_for_Depth_Image_Reconstruction\figure_2.jpg
+  Figure 2 caption: Illustration of one stage-wise operation in the DG-RBF model.
+    DG-RBF follows the unfolded optimization process of WASR strictly, the current
+    enhancement result x t and the guidance image g are first convolved with the corresponding
+    L analysis filters, respectively. After a nonlinear transform, the filtering responses
+    of x t and g are combined via an element-wise product, and further convolved with
+    the L adjoint filters to form the result with a regularization term. Finally,
+    the results of regularization and the fidelity terms are summarized to obtain
+    the updated result x t+1 .
+  Figure 3 Link: articels_figures_by_rev_year\2019\Learned_Dynamic_Guidance_for_Depth_Image_Reconstruction\figure_3.jpg
+  Figure 3 caption: Illustration of DG-CNN structure (with two stage-wise operations)
+    for guided depth reconstruction. The light orange, purple and gray components
+    in the figure correspond to the depth encoder, the intensity encoder and the joint
+    decoder, respectively.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Learned_Dynamic_Guidance_for_Depth_Image_Reconstruction\figure_4.jpg
+  Figure 4 caption: Ablation networks used to validate the effectiveness of the stage-wise
+    residual learning structure. More details can be found in Section 6.3.2.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Learned_Dynamic_Guidance_for_Depth_Image_Reconstruction\figure_5.jpg
+  Figure 5 caption: Depth restoration results of different methods based on noise-free
+    data (Moebius).
+  Figure 6 Link: articels_figures_by_rev_year\2019\Learned_Dynamic_Guidance_for_Depth_Image_Reconstruction\figure_6.jpg
+  Figure 6 caption: Depth SR results by different methods for a testing image in the
+    NYU dataset [4].
+  Figure 7 Link: articels_figures_by_rev_year\2019\Learned_Dynamic_Guidance_for_Depth_Image_Reconstruction\figure_7.jpg
+  Figure 7 caption: Depth restoration results of different methods.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Learned_Dynamic_Guidance_for_Depth_Image_Reconstruction\figure_8.jpg
+  Figure 8 caption: Depth reconstruction results of different methods based on real
+    data (Books).
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.71
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 0.55
+  Name of the first author: Shuhang Gu
+  Name of the last author: Lei Zhang
+  Number of Figures: 8
+  Number of Tables: 12
+  Number of authors: 7
+  Paper title: Learned Dynamic Guidance for Depth Image Reconstruction
+  Publication Date: 2019-12-23 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Experimental Results (Avg. RMSE) on the 3 Test Images [56]
+      With Different Initialization Methods and Constraints for the Filters
+  Table 10 caption:
+    table_text: TABLE 10 Experimental Results (RMSE) on the 449 NYU Test Images
+  Table 2 caption:
+    table_text: TABLE 2 Experimental Results (Avg. RMSE Runtime [s]) on the 3 Testing
+      Images [56] by DG-RBF Variations With Different Filter Sizes and Numbers
+  Table 3 caption:
+    table_text: TABLE 3 Experimental Results (Avg. RMSE) on the 3 Test Images [56]
+      by DG-RBF Variations With Different Penalty Parameterization Approaches
+  Table 4 caption:
+    table_text: TABLE 4 Experimental Results (Avg. RMSE and Run-Time) on the 3 Testing
+      Images [56] by DG-RBF Variations With Different Stage Numbers
+  Table 5 caption:
+    table_text: TABLE 5 Experimental Results (Avg. RMSE) on the 3 Testing Images [56]
+      by DG-CNN Variations With Different Numbers of Stage-Wise Sub-Networks
+  Table 6 caption:
+    table_text: TABLE 6 Experimental Results (Avg. RMSE) on the 3 Testing Images [56]
+      by DG-CNN and Ablation Network Architectures Shown in Fig. 4
+  Table 7 caption:
+    table_text: TABLE 7 Experimental Results (Avg. RMSE) on the 3 Testing Images [56]
+      by DG-CNN Variations With Different Feature Maps Combinations
+  Table 8 caption:
+    table_text: TABLE 8 Experimental Results (RMSE) on the 3 Noise-Free Test Images
+  Table 9 caption:
+    table_text: TABLE 9 Experimental Results (RMSE) on the 3 Noisy Test Images
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2961672
+- Affiliation of the first author: national laboratory of pattern recognition, casia,
+    center for research on intelligent perception and computing, casia, center for
+    excellence in brain science and intelligence technology, cas, university of chinese
+    academy of sciences, beijing, china
+  Affiliation of the last author: national laboratory of pattern recognition, casia,
+    center for research on intelligent perception and computing, casia, center for
+    excellence in brain science and intelligence technology, cas, university of chinese
+    academy of sciences, beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Adversarial_CrossSpectral_Face_Completion_for_NIRVIS_Face_Recognition\figure_1.jpg
+  Figure 1 caption: Synthesizing visible faces from near infrared faces is an unsupervised
+    image translation problem because there is no exact pixel-level correspondence
+    between the images from different spectral domains. Self-occlusion and sensing
+    gap make some pixels or contents of a near infrared face occluded or corrupted.
+    Given one near infrared face image as the input, adversarial cross-spectral face
+    completion can produce a high-resolution and frontal visible face image.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Adversarial_CrossSpectral_Face_Completion_for_NIRVIS_Face_Recognition\figure_2.jpg
+  Figure 2 caption: An illustration of our NIR-VIS face completion network. (a), (b),
+    and (c) depict the forward propagation processes of the generator, the multi-scale
+    discriminator, and the fine-grained discriminator, respectively.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Adversarial_CrossSpectral_Face_Completion_for_NIRVIS_Face_Recognition\figure_3.jpg
+  Figure 3 caption: A visual illustration about the warping procedure proposed in
+    equation (1). Those red dots and purple lines indicate the relationships between
+    the facial texture map, the dense UV correspondence field and the RGB color image.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Adversarial_CrossSpectral_Face_Completion_for_NIRVIS_Face_Recognition\figure_4.jpg
+  Figure 4 caption: An illustration of used heterogeneous face images in the three
+    databases. The first row and second row contain a probe NIR image and a VIS gallery
+    image, respectively.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Adversarial_CrossSpectral_Face_Completion_for_NIRVIS_Face_Recognition\figure_5.jpg
+  Figure 5 caption: Visualization results of different methods from the testing set
+    of in CASIA NIR-VIS 2.0. Since these face images are collected from 2007 to 2010,
+    VIS face images have different skin colors and backgrounds.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Adversarial_CrossSpectral_Face_Completion_for_NIRVIS_Face_Recognition\figure_6.jpg
+  Figure 6 caption: Synthesized VIS faces (the second row) under different expressions
+    and poses from the testing set of CASIA NIR-VIS 2.0. Our CFC method translates
+    different NIR faces to a frontal VIS face.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Adversarial_CrossSpectral_Face_Completion_for_NIRVIS_Face_Recognition\figure_7.jpg
+  Figure 7 caption: "Visualization results of high-resolution ( 256\xD7256 ) NIR-VIS\
+    \ face completion under different configurations. The subjects are drawn form\
+    \ the testing set of CASIA NIR-VIS 2.0. Since background pixels are corrupted\
+    \ in NIR images, there are large variations on the synthesized background areas\
+    \ by different configurations."
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.58
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Ran He
+  Name of the last author: Tieniu Tan
+  Number of Figures: 7
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: Adversarial Cross-Spectral Face Completion for NIR-VIS Face Recognition
+  Publication Date: 2019-12-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Comparison of Rank-1 Accuracy (%) and Verification Rate
+      (%) on the CASIA NIR-VIS 2.0 Database (the First Fold)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 The Comparison of Rank-1 Accuracy (%) and Verification Rate
+      (%) on the CASIA NIR-VIS 2.0 Database
+  Table 3 caption:
+    table_text: TABLE 3 Rank-1 Accuracy and Verification Rate on the BUAA NIR-VIS
+      Database
+  Table 4 caption:
+    table_text: TABLE 4 Rank-1 Accuracy and Verification Rate on the Oulu-CASIA NIR-VIS
+      Database
+  Table 5 caption:
+    table_text: TABLE 5 The Comparison of Rank-1 Accuracy (%) and Verification Rate
+      (%) on the First Fold of the CASIA NIR-VIS 2.0 Dataset Across Different Variations
+      of Our Model
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2961900
+- Affiliation of the first author: inria, cnrs, grenoble inp, ljk, university grenoble
+    alpes, grenoble, france
+  Affiliation of the last author: inria, cnrs, grenoble inp, ljk, university grenoble
+    alpes, grenoble, france
+  Figure 1 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_1.jpg
+  Figure 1 caption: Examples of data-augmented training examples produced by our approach.
+    Images and objects are taken from the VOC12 dataset that contains segmentation
+    annotations. We compare the output obtained by pasting the objects with our context
+    model versus those obtained with random placements. Even though the results are
+    not perfectly photorealistic and display blending artefacts, the visual context
+    surrounding objects is more often correct with the explicit context model.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_2.jpg
+  Figure 2 caption: "Illustration of our data augmentation approach. We select an\
+    \ image for augmentation and 1) generate 200 candidate boxes that cover the image.\
+    \ Then, 2) for each box we find a neighborhood that contains the box entirely,\
+    \ crop this neighborhood and mask all pixels falling inside the bounding box;\
+    \ this \u201Cneighborhood\u201D with masked pixels is then fed to the context\
+    \ neural network module and 3) object instances are matched to boxes that have\
+    \ high confidence scores for the presence of an object category. 4) We select\
+    \ at most two instances that are rescaled and blended into the selected bounding\
+    \ boxes. The resulting image is then used for training the object detector."
+  Figure 3 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_3.jpg
+  Figure 3 caption: Contextual images - examples of inputs to the context model. A
+    subimage bounded by a magenta box is used as an input to the context model after
+    masking-out the object information inside a red box. The top row lists examples
+    of positive samples encoding real objects surrounded by regular and predictable
+    context. Positive training examples with ambiguous or uninformative context are
+    given in the second row. The bottom row depicts negative examples enclosing background.
+    This figure shows that contextual images could be ambiguous to classify correctly
+    and the task of predicting the category given only the context is challenging.
+  Figure 4 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_4.jpg
+  Figure 4 caption: Different contextual images obtained from a single bounding box.
+    A single ground-truth bounding box (in blue) is able to generate a set of different
+    context images (in green and orange) by varying the size of the initial box and
+    the context neighborhood. While the orange contextual images may be recognized
+    as a chair, the green ones make it more clear that the person was masked out.
+    This motivates the need to evaluate several context images for one box during
+    the context estimation phase.
+  Figure 5 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_5.jpg
+  Figure 5 caption: Data augmentation for different types of annotations. The first
+    column contains samples from the training dataset with corresponding semanticinstance
+    segmentation and bounding box annotations. Columns 2-4 present the result of applying
+    context-driven augmentation to the initial sample with corresponding annotations.
+  Figure 6 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_6.jpg
+  Figure 6 caption: 'Different kinds of blending used in experiments. From left to
+    right: linear smoothing of boundaries, Gaussian smoothing, no processing, motion
+    blur of the whole image, Poisson blending [55].'
+  Figure 7 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_7.jpg
+  Figure 7 caption: Examples of instance placement with context model guidance. The
+    figure presents samples obtained by placing a matched examples into the box predicted
+    by the context model. The top row shows generated images that are visually almost
+    indistinguishable from the real ones. The middle row presents samples of good
+    quality although with some visual artifacts. For the two leftmost examples, the
+    context module proposed an appropriate object class, but the pasted instances
+    do not look visually appealing. Sometimes, the scene does not look natural because
+    of the segmentation artifacts as in the two middle images. The two rightmost examples
+    show examples where the category seems to be in the right environment, but not
+    perfectly placed. The bottom row presents some failure cases.
+  Figure 8 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_8.jpg
+  Figure 8 caption: Illustration of artifacts arising from enlargement augmentation.
+    In the enlargement data augmentation, an instance is cut out of the image, up-scaled
+    by a small factor and placed back at the same location. This approach leads to
+    blending artefacts. Modified images are given in the top row. Zoomed parts of
+    the images centered on blending artifacts are presented in the bottom line.
+  Figure 9 Link: articels_figures_by_rev_year\2019\On_the_Importance_of_Visual_Context_for_Data_Augmentation_in_Scene_Understanding\figure_9.jpg
+  Figure 9 caption: Possible types of instance-level annotation. The left column presents
+    an image annotated with object boxes. Column 2 shows semantic segmentation annotations
+    with object boxes on top and approximate instance segmentations derived from it.
+    The last column presents the original instance segmentation annotations.
+  First author gender probability: 0.55
+  Gender of the first author: female
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Nikita Dvornik
+  Name of the last author: Cordelia Schmid
+  Number of Figures: 9
+  Number of Tables: 8
+  Number of authors: 3
+  Paper title: On the Importance of Visual Context for Data Augmentation in Scene
+    Understanding
+  Publication Date: 2019-12-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Study on the First Five Categories of VOC12
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Detection Accuracy on VOC07-test for the Single-Category
+      Experiment
+  Table 3 caption:
+    table_text: TABLE 3 Comparison of Detection Accuracy on VOC07-test for the Multiple-Category
+      Experiment
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of Segmentation Accuracy on VOC12val-seg
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Object Detection and Instance Segmentation Accuracy
+      on COCO-val2017 for the Multiple-Category Experiment
+  Table 6 caption:
+    table_text: TABLE 6 Comparison of Detection Accuracy on VOC07-test for the Single-Category
+      Experiment
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of Detection Accuracy on VOC07-test for the Multy-Category
+      Experiment Depending on the Type of Object Masks Used for Augmentation
+  Table 8 caption:
+    table_text: TABLE 8 Object Detection and Semantic Segmentation Performance depending
+      on Amount of Data Used for Building the Context Model
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2961896
+- Affiliation of the first author: state key laboratory of virtual reality technology
+    and systems, school of computer science and engineering, beihang university, beijing,
+    china
+  Affiliation of the last author: computer vision technology department of baidu,
+    beijing, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Learning_From_LargeScale_Noisy_Web_Data_With_Ubiquitous_Reweighting_for_Image_Cl\figure_1.jpg
+  Figure 1 caption: The data have high intra-classes diversity and inter-class similarity,
+    e.g., in the class 973 and 3440, instances in one class are very different from
+    each other, while some instances belonging to different classes are quite similar.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Learning_From_LargeScale_Noisy_Web_Data_With_Ubiquitous_Reweighting_for_Image_Cl\figure_2.jpg
+  Figure 2 caption: Insufficient representative instances, e.g., image (a) is an representative
+    instance and has more information than others, but may be overwhelmed by the uncommon
+    instances like (b), (c), and (d).
+  Figure 3 Link: articels_figures_by_rev_year\2019\Learning_From_LargeScale_Noisy_Web_Data_With_Ubiquitous_Reweighting_for_Image_Cl\figure_3.jpg
+  Figure 3 caption: 'One instance may belong to several classes simultaneously due
+    to the ambiguous class labels, e.g., image (a) may belong to class 2334: motorcycle
+    policeman, speed cop, motorcycle cop (id: label), and class 3369: trail bike,
+    dirt bike, motorcycle bike, image (b) may belong to class 0331: seed, conker seed,
+    and class 1044: Equus caballus, female horse, horse, image (c) may belong to class
+    0268: jeep, landrover, and class 0563: paddle wheel, paddlewheel.'
+  Figure 4 Link: articels_figures_by_rev_year\2019\Learning_From_LargeScale_Noisy_Web_Data_With_Ubiquitous_Reweighting_for_Image_Cl\figure_4.jpg
+  Figure 4 caption: We add the bag attention branch to reweight bag-specific instance
+    saliency. With this branch, the model can pay more attention on the representative
+    instances.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Learning_From_LargeScale_Noisy_Web_Data_With_Ubiquitous_Reweighting_for_Image_Cl\figure_5.jpg
+  Figure 5 caption: We take the correlation between the image features V I i and the
+    text features V T i as the confidence score.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Learning_From_LargeScale_Noisy_Web_Data_With_Ubiquitous_Reweighting_for_Image_Cl\figure_6.jpg
+  Figure 6 caption: Some examples of clustering result on class 218 and its top-4
+    confusing classes.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Learning_From_LargeScale_Noisy_Web_Data_With_Ubiquitous_Reweighting_for_Image_Cl\figure_7.jpg
+  Figure 7 caption: The effectiveness of each reweighting strategy. From the figure,
+    we can see that the performance is improved steadily with our reweighting strategies.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.66
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Jia Li
+  Name of the last author: Shumin Han
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 8
+  Paper title: Learning From Large-Scale Noisy Web Data With Ubiquitous Reweighting
+    for Image Classification
+  Publication Date: 2019-12-24 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 The Influence of Each Strategy When it is Added (Denoted With
+      +) to the Baseline Model or Excluded (Denoted With -) From the Final Model
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Some Experimental Tricks and Their Effects, Which are Used
+      in the WebVison Challenge
+  Table 3 caption:
+    table_text: TABLE 3 The Results of WebVision Image Classification Challenge 2018
+  Table 4 caption:
+    table_text: TABLE 4 The Object Detection Performance of Different Fine-Tuned Models
+      Which are Pre-Trained Using Different Datasets and Strategies
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2961910

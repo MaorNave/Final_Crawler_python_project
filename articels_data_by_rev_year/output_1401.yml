@@ -1,0 +1,891 @@
+- Affiliation of the first author: school of control science and engineering, shandong
+    university, jinan, china
+  Affiliation of the last author: tencent ai lab, shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_1.jpg
+  Figure 1 caption: The proposed RecNet with an encoder-decoder-reconstructor architecture.
+    The encoder-decoder relies on the forward flow from video to caption (blue dotted
+    arrow), in which the decoder generates a caption with the frame features yielded
+    by the encoder. The reconstructor, exploiting the backward flow from caption to
+    video (green dotted arrow), takes the hidden state sequence of the decoder as
+    input and reproduces the visual features of the input video.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_2.jpg
+  Figure 2 caption: 'The proposed RecNet consists of three parts: the CNN-based encoder
+    which extracts the semantic representations of the video frames, the LSTM-based
+    decoder which generates natural language for visual content description, and the
+    reconstructor which exploits the backward flow from caption to visual contents
+    to reproduce the frame representations.'
+  Figure 3 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_3.jpg
+  Figure 3 caption: An illustration of the proposed reconstructor that reproduces
+    the global structure of the video sequence. The left mean pooling is employed
+    to summarize the hidden states of the decoder for the global representation of
+    the caption. The reconstructor aims to reproduce the feature representation of
+    the whole video by mean pooling (the right one) using the global representation
+    of the caption as well as the hidden state sequence of the decoder.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_4.jpg
+  Figure 4 caption: An illustration of the proposed reconstructor that reproduces
+    the local structure of the video sequence. The reconstructor works on the hidden
+    states of the decoder by selectively adjusting the attentive weights, and reproduces
+    the feature representation frame by frame.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_5.jpg
+  Figure 5 caption: An illustration of the proposed reconstructor that reproduces
+    both the global structure and local structure of the video sequence. The reconstructor
+    works on the hidden states of the decoder by selectively adjusting the attentive
+    weights, and reproduces the feature representation frame by frame. Mean pooling
+    is conducted to summarize the reproduced feature representation sequence to yield
+    the representation of the whole video.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_6.jpg
+  Figure 6 caption: "Effects of the trade-off parameter \u03BB for RecNet global and\
+    \ RecNet local in terms of BLEU-4 metric on MSR-VTT. It is noted that \u03BB=0\
+    \ means that the reconstructor is off, and the RecNet turns to be a conventional\
+    \ encoder-decoder model."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_7.jpg
+  Figure 7 caption: The curves of training loss and CIDEr score during the training
+    process (with and without the proposed reconstructor). The base model denotes
+    the traditional encoder-decoder structure for video captioning, while the RecNet
+    stacks the reconstructor on top of the encoder-decoder model. The solid lines
+    in red, blue, and black indicate the cross-entropy loss, the reconstruction loss,
+    and the total training loss, respectively. The dotted line in green indicates
+    the CIDEr score.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_8.jpg
+  Figure 8 caption: Visualization of the distribution of the decoder hidden states
+    in base model (a) and RecNet local (b). The dots in red represent the hidden states
+    generated in training process, and dots in green represent the hidden states generated
+    during the inference process.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Reconstruct_and_Represent_Video_Contents_for_Captioning_via_Reinforcement_Learni\figure_9.jpg
+  Figure 9 caption: "Visualization of some video captioning examples on the MSR-VTT\
+    \ dataset with different models. Due to the page limit, only one ground-truth\
+    \ sentence is given as the reference. Compared to SA-LSTM, the proposed RecNet\
+    \ is able to yield more vivid and descriptive words highlighted in red boldface,\
+    \ such as \u201Cfighting\u201D, \u201Cmakeup\u201D, \u201Cface\u201D, and \u201C\
+    horse\u201D."
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.73
+  Name of the first author: Wei Zhang
+  Name of the last author: Wei Liu
+  Number of Figures: 9
+  Number of Tables: 7
+  Number of authors: 4
+  Paper title: Reconstruct and Represent Video Contents for Captioning via Reinforcement
+    Learning
+  Publication Date: 2019-06-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Performance Evaluation of Different Video Captioning Models
+      on the Testing Set of the MSR-VTT Dataset in Terms of BLEU-4, METEOR, ROUGE-L,
+      and CIDEr Scores (%)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Performance Evaluation of Different Video Captioning Models
+      with C3D Features on the Validation Set of the MSR-VTT Dataset in Terms of BLEU-4,
+      METEOR, ROUGE-L, and CIDEr Scores (%)
+  Table 3 caption:
+    table_text: TABLE 3 Performance Evaluation of Different Video Captioning Models
+      on the MSVD Dataset in Terms of BLEU-4, METEOR, ROUGE-L, and CIDEr Scores (%)
+  Table 4 caption:
+    table_text: TABLE 4 Performance on MSVD with Reduced Size in Terms of CIDEr Scores
+      (%)
+  Table 5 caption:
+    table_text: TABLE 5 Performance Evaluation of Different Video Captioning Models
+      on the Validation Split of the ActivityNet Dataset in Terms of BLEU-4, METEOR,
+      ROUGE-L, and CIDEr Scores (%)
+  Table 6 caption:
+    table_text: TABLE 6 Performance Evaluation of Different Video Captioning Models
+      on the Testing Set of the MSR-VTT Dataset in Terms of BLEU-4, METEOR, ROUGE-L,
+      and CIDEr Scores (%)
+  Table 7 caption:
+    table_text: TABLE 7 Performance Evaluation of the Combined Architecture on MSR-VTT,
+      MSVD, and ActivityNet in Terms of BLEU-4, METEOR, and CIDEr Scores (%)
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2920899
+- Affiliation of the first author: fujian institute of research on the structure of
+    matter, chinese academy of sciences (cas), bejing, china
+  Affiliation of the last author: "technical university of munich, m\xFCnchen, germany"
+  Figure 1 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_1.jpg
+  Figure 1 caption: "Some concepts of the Geometric CG algorithm can be visualized\
+    \ in this figure. At first, it depicts two nearby points X and Y on a manifold\
+    \ M together with their tangent spaces T X M and T Y M (green areas). Second,\
+    \ it shows a CG update from the point X to the point Y in a search direction h\
+    \ along the curve \u0393 X,h (t) . The geodesic \u0393 X,h (t) in the direction\
+    \ of h connects the two points X and Y . Third, it introduces the gradient at\
+    \ Y , i.e., the euclidean gradient \u2207 J (Y) and its projection onto the tangent\
+    \ space grad J (Y)\u2208 T Y M , namely, Riemannian gradient. Finally, as the\
+    \ new CG search direction at Y , H is computed via vector transport T X,th (h)\
+    \ and grad J (Y) ."
+  Figure 10 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_10.jpg
+  Figure 10 caption: 2D visualization of PIE faces (class 5).
+  Figure 2 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_2.jpg
+  Figure 2 caption: Impact of the regularizers to the recognition rate on the USPS
+    digits (SparLowR refers to PCA-SparLow methods without g d ).
+  Figure 3 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_3.jpg
+  Figure 3 caption: Trace of performance over optimization process initialized with
+    different sparse coding methods on 15-Scenes dataset.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_4.jpg
+  Figure 4 caption: Comparison on recognition results with different dictionary sizes
+    for PIE faces. The classifier is 1NN.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_5.jpg
+  Figure 5 caption: Impact of targeted low dimensionality and number of labelled samples
+    to the recognition rate of 1NN classification on the USPS digits.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_6.jpg
+  Figure 6 caption: Trace of performance over optimization process of supervised SparLow
+    with or without regularizers.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_7.jpg
+  Figure 7 caption: Face recognition on 68 class PIE faces. The classifier is 1NN.
+    Randomly choose 8160 training samples and 3394 testing samples.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_8.jpg
+  Figure 8 caption: 'Visualisation of facial features on PIE faces [33]. The presented
+    features are generated via Eq. (63). From top to bottom: (1) PCA eigenfaces; (2)
+    Laplacianfaces; (3) LLEfaces.'
+  Figure 9 Link: articels_figures_by_rev_year\2019\Trace_Quotient_with_Sparsity_Priors_for_Learning_Low_Dimensional_Image_Represent\figure_9.jpg
+  Figure 9 caption: '3D visualisation of PIE faces (class 5, 35, 65). From top to
+    bottom: Applying OLPPPCAONPP in original space, in sparse space with respect to
+    initial dictionary widehatmathbf D , and in sparse space with respect to learned
+    dictionary via SparLow, respectively.'
+  First author gender probability: 0.73
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Xian Wei
+  Name of the last author: Martin Kleinsteuber
+  Number of Figures: 11
+  Number of Tables: 3
+  Number of authors: 3
+  Paper title: Trace Quotient with Sparsity Priors for Learning Low Dimensional Image
+    Representations
+  Publication Date: 2019-06-05 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Classification Performance (Accuracy (%)) for the MNIST &
+      USPS Datasets of the Proposed SparLow Methods, with Comparisons to Some Classical
+      Unsupervised Approaches
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Classification Performance (Average Accuracy (%)) on Caltech-101
+      & Caltech-256 Datasets
+  Table 3 caption:
+    table_text: TABLE 3 Averaged Classification Rate (%) Comparison on 15-Scenes Dataset
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2921031
+- Affiliation of the first author: fraunhofer iosb, institute of optronics, system
+    technologies and image exploitation, ettlingen, germany
+  Affiliation of the last author: hauner childrens hospital, ludwig maximilian university,
+    munich, germany
+  Figure 1 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_1.jpg
+  Figure 1 caption: (a) Simply scaling the SMPL adult body model and fitting it to
+    an infant does not work as body proportions significantly differ. (b) The proposed
+    SMIL model properly captures the infants shape and pose.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_10.jpg
+  Figure 10 caption: Results of GMA case study. Percentage of ratings of synthetic
+    sequences, generated using SMIL, that agree with the reference ratings R 1 V rgb
+    (left) and R 2 V rgb (right), respectively. V reg,other,large,mean denotes different
+    stimuli.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_2.jpg
+  Figure 2 caption: Skinned Multi-Infant Linear (SMIL) model creation pipeline. We
+    create an initial infant model based on SMPL. We perform background and clothing
+    segmentation of the recorded sequences in a preprocessing step, and estimate body,
+    face, and hand landmarks in RGB images. We register the initial model, SMPL B
+    , to the RGB-D data, and create one personalized shape for each sequence, capturing
+    infant shape details outside the SMPL shape space. We learn a new infant specific
+    shape space by performing PCA on all personalized shapes, with the mean shape
+    forming our base template. We also learn a prior over plausible poses from a sampled
+    subset of all poses.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_3.jpg
+  Figure 3 caption: a) Original RGB image. b) Skin weights used for weighted PCA.
+    White denotes high weight, red denotes low weight.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_4.jpg
+  Figure 4 caption: 'SMIL registration results. From left to right: RGB, point cloud,
+    point cloud (other view), point cloud with registered SMIL, rendered registration.'
+  Figure 5 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_5.jpg
+  Figure 5 caption: Visual comparison of four SMPL B (left sides) and SMIL (right
+    sides) registration samples with all 20 shape components. Most visually significant
+    differences occur at waist, chest, shoulders and head.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_6.jpg
+  Figure 6 caption: Average scan-to-mesh error E s2m in mm w.r.t. the number of shape
+    parameters for the two models registered to all fusion scans.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_7.jpg
+  Figure 7 caption: "Average error heatmaps for SMIL and SMPL B on fusion clouds for\
+    \ different numbers of shape components (sc). Top: SMIL. Bottom: SMPL B . Blue\
+    \ means 0 mm, red means \u2265 10 mm."
+  Figure 8 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_8.jpg
+  Figure 8 caption: 'Registration errors. Top: Unnatural pose sample. Bottom: Failure
+    case sample. From left to right: RGB image, 3D point cloud (rotated for improved
+    visibility), overlay of point cloud and registration result, registration result,
+    rendered result from same viewpoint as RGB image.'
+  Figure 9 Link: articels_figures_by_rev_year\2019\Learning_and_Tracking_the_D_Body_Shape_of_Freely_Moving_Infants_from_RGBD_sequen\figure_9.jpg
+  Figure 9 caption: Older infant in very challenging pose. (a) RGB image, (b) 3D point
+    cloud (rotated for improved visibility), (c) overlay of point cloud and SMIL registration
+    result, (d) rendered SMIL registration result.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Nikolas Hesse
+  Name of the last author: A. Sebastian Schroeder
+  Number of Figures: 10
+  Number of Tables: 0
+  Number of authors: 6
+  Paper title: Learning and Tracking the 3D Body Shape of Freely Moving Infants from
+    RGB-D sequences
+  Publication Date: 2019-06-06 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2917908
+- Affiliation of the first author: "computer vision laboratory, \xE9cole polytechnique\
+    \ f\xE9d\xE9rale de lausanne, lausanne, switzerland"
+  Affiliation of the last author: "computer vision laboratory, \xE9cole polytechnique\
+    \ f\xE9d\xE9rale de lausanne, lausanne, switzerland"
+  Figure 1 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_1.jpg
+  Figure 1 caption: Curvilinear structures. (a) Axons and dendrites in a 2-photon
+    light-microscopy stack. (b) Road network in aerial image.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_10.jpg
+  Figure 10 caption: Axons qualitative results. (a) maximum intensity projection of
+    the image (b) overlaid ground-truth and (c) OURS reconstruction of one of the
+    Axons test images. The blue ground-truth tracings were done by the annotator but
+    the additional ground-truth tracings correspond to the neurons that can be still
+    seen in the image.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_2.jpg
+  Figure 2 caption: Ambiguities. Two aerial images and the corresponding segmentations.
+    In both cases, the red box denotes a part of the image in which the segmentation
+    exhibits a gap. (a) The gap is not warranted as the street extends from one side
+    of the box to the other. (b) The gap is legitimate because the path on the right
+    side of the box is a driveways that stops at the entrance of a building.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_3.jpg
+  Figure 3 caption: Two-stream architecture. Both branches share the same U-Net encoder
+    that takes as input the image and a binary mask representing a candidate path.
+    The first branch uses the U-Net decoder and skip connections to produce a tubularity
+    map. The second branch relies on a simpler network to yield a classification score
+    for the path.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_4.jpg
+  Figure 4 caption: Delineation pipeline. Given an image, we first compute a pixel-wise
+    probability map of linear structures, which we also call a tubularity map. Next,
+    we build a graph by finding nodes, shown as blue dots, and connecting them by
+    shortest paths, shown in red. This graph is overcomplete in the sense that it
+    contains the true linear structures and false positive linear structure candidates.
+    To eliminate them, we run a classifier for each edge of the graph and remove the
+    low-scoring edges.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_5.jpg
+  Figure 5 caption: Candidate road and neuron paths. (Top row) Road images with candidates
+    overlaid in yellow. (Bottom row) 2-photon images with candidates overlaid in white.
+    In both cases, we treat the paths that remain with linear structures as positive,
+    even if they do not exactly follow the centerline. By contrast, paths that cross
+    from one structure to another or take shortcuts as treated as negative.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_6.jpg
+  Figure 6 caption: "Creating graph nodes. We skeletonize the ground-truth segmentation\
+    \ or tubularity map and find the topologically significant points, that is, the\
+    \ intersections and end-points shown as green disks. We use them as nodes of our\
+    \ over-complete graph. As they can be far from each other, we additionally introduce\
+    \ the regular grid depicted by the dashed lines and use its intersections with\
+    \ the tubularity skeleton, shown as blue disks, as additional nodes. To prevent\
+    \ nodes from being too close from each other, we introduce an exclusion zone of\
+    \ radius \u03B5 , which is also the radius of the green disks, in which no additional\
+    \ nodes can be added. This approach guarantees that the distance between nodes\
+    \ that ought to be connected is always between \u03B5 and d ."
+  Figure 7 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_7.jpg
+  Figure 7 caption: Task sharing. Learning both path classification and segmentation
+    simultaneously boosts path classification, and does not harm segmentation, compared
+    to training two networks seperately.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_8.jpg
+  Figure 8 caption: 'Quantitative results. Top: Roads. Bottom: Axons. From left to
+    right, cumulative distribution of the Normalized Path Distances; topological precision
+    and recall as a function of the distance threshold m (in pixels) used to compute
+    them. NPD considers all connected pairs of significant points and it is therefore
+    a global measure, while topological precision and recall computes shortest paths
+    only between neighbouring significant points and as a result it is a local metric.'
+  Figure 9 Link: articels_figures_by_rev_year\2019\Joint_Segmentation_and_Path_Classification_of_Curvilinear_Structures\figure_9.jpg
+  Figure 9 caption: Roads qualitative results. Kansas City road network (a) RoadTracer
+    (b) OURS. True positive parts of the network are shown in green, false positive
+    in red and false negative in blue. Matching is done within a radius of 10 pixels.
+    RoadTracer misses the roads at the periphery because the endpoints are not found
+    as well as some of the smaller roads and intersections, which OURS finds.
+  First author gender probability: 0.99
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Agata Mosinska
+  Name of the last author: Pascal Fua
+  Number of Figures: 10
+  Number of Tables: 0
+  Number of authors: 3
+  Paper title: Joint Segmentation and Path Classification of Curvilinear Structures
+  Publication Date: 2019-06-06 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2921327
+- Affiliation of the first author: school of electrical and electronic engineering,
+    nanyang technological university, singapore
+  Affiliation of the last author: school of electrical and electronic engineering,
+    nanyang technological university, singapore
+  Figure 1 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_1.jpg
+  Figure 1 caption: An example of the image triplet with mixture image I , background
+    B , and reflection R from SIR 2 dataset [6] and the reflection removal results
+    obtained by using FY17 [7], CRRN [8], and our method.
+  Figure 10 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_10.jpg
+  Figure 10 caption: The distribution comparisons between CRRN [8], our method, and
+    our method without the statistic loss (SL). D KL is the KL divergence between
+    two distributions. The similarity of two distributions is inversely proportional
+    to the D KL values.
+  Figure 2 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_2.jpg
+  Figure 2 caption: The framework of CoRRN. It consists of three sub-networks to estimate
+    the background and reflections in a cooperative manner. The IdecN is closely guided
+    by the associated gradient features from GdecN with the same resolution at different
+    upsampling stages.
+  Figure 3 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_3.jpg
+  Figure 3 caption: Samples of captured reflection images in the RID and the corresponding
+    synthetic images using the RID. From left to right column, we show the diversity
+    of different illumination conditions, focal lengths, and scenes.
+  Figure 4 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_4.jpg
+  Figure 4 caption: Visualization of the gradient activations in our context encoder
+    network after each max-pooling layer (MP). The activation maps from left to right
+    correspond to the output maps from shallower to deeper layers in the context encoder
+    network. Note that the activations from the reflections are suppressed through
+    propagation while the activations closely related to the background are amplified.
+    It shows that the learned filters in deeper convolutional layers tend to capture
+    information related to the background while the details related to the reflection
+    are kept in the shallower layers.
+  Figure 5 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_5.jpg
+  Figure 5 caption: The estimated gradient generated by the gradient inference network,
+    compared with the reference gradient obtained by using Sobel filter.
+  Figure 6 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_6.jpg
+  Figure 6 caption: An example of the background and its corresponding mixture images
+    (left part) and the gradient level statistics comparison between the patches with
+    and without reflection by using the heavy-tailed and kurtosis distribution (right
+    part).
+  Figure 7 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_7.jpg
+  Figure 7 caption: "Examples of reflection removal results on four wild scenes from\
+    \ SIR 2 dataset [6], compared with FY17[7], NR17 [25], WS18 [18], and LB14 [2].\
+    \ Corresponding close-up views are shown next to the images (with patch brightness\
+    \ \xD72 for better visualization), and SSIM and SSIM r values are displayed below\
+    \ the images. The complete results can be found in the supplementary materials,\
+    \ available online."
+  Figure 8 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_8.jpg
+  Figure 8 caption: Examples from the solid object dataset of SIR 2 [6] with different
+    reflection blur levels. The down arrow means that the reflection blur levels increase.
+    The complete results can be found in the supplementary materials, available online.
+  Figure 9 Link: articels_figures_by_rev_year\2019\CoRRN_Cooperative_Reflection_Removal_Network\figure_9.jpg
+  Figure 9 caption: "The generalization ability comparison with FY17 [7] on their\
+    \ released validation dataset. Corresponding close-up views are shown below the\
+    \ images (the patch brightness \xD72 for better visualization). The complete results\
+    \ can be found in the supplementary materials, available online."
+  First author gender probability: 0.93
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.96
+  Name of the first author: Renjie Wan
+  Name of the last author: Alex C. Kot
+  Number of Figures: 13
+  Number of Tables: 3
+  Number of authors: 6
+  Paper title: 'CoRRN: Cooperative Reflection Removal Network'
+  Publication Date: 2019-06-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Quantitative Evaluation Results Using Five Different Error
+      Metrics, and Compared with Baseline, FY17 [7], NR17 [25], WS18 [18], and LB14
+      [2]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results by Using Images with Different Reflection Blur Levels
+  Table 3 caption:
+    table_text: TABLE 3 Result Comparisons of Our Model Against CRRN [8], Our Model
+      without Statistic Loss (SL), with Only L 1 L1 Loss, and without GdecN, Respectively
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2921574
+- Affiliation of the first author: northeastern university, boston, ma, usa
+  Affiliation of the last author: northeastern university, boston, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_1.jpg
+  Figure 1 caption: The proposed Guided Attention Inference Network (GAIN) makes the
+    networks attention on-line trainable and can plug in different kinds of supervision
+    directly on attention maps in an end-to-end way. We explore the self-guided supervision
+    from the network itself and propose GAIN p ext when extra supervision are available.
+    These guidance can optimize attention maps towards the task of interest.
+  Figure 10 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_10.jpg
+  Figure 10 caption: Some example attention maps corresponding to the three methods
+    in Table 8. These attention maps show that using extra and more bounding box annotations
+    encourages the network to predict based on the workpiece instead of the background.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_2.jpg
+  Figure 2 caption: GAIN has two streams of networks, S cl and S am , sharing parameters.
+    S am encourages the attention map to include regions contributing to the classification
+    decision as complete as possible. The attention map is on-line generated and optimized
+    by the two loss functions jointly.
+  Figure 3 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_3.jpg
+  Figure 3 caption: Framework of the GAIN ext . Pixel-level (GAIN p ext ) and bounding-box
+    (GAIN b ext ) annotations are seamlessly integrated into the GAIN framework to
+    provide direct supervision on attention maps optimizing towards the task of semantic
+    segmentation.
+  Figure 4 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_4.jpg
+  Figure 4 caption: Structure of the weakly-supervised semantic segmentation framework
+    using fully convolutional network (Deeplab [8] here) as the backbone network.
+    Image-level labels and localization cues obtained based on attention maps of GAIN
+    provide guidance on the training of this segmentation network, which is achieved
+    by optimizing two loss functions jointly. No ground-truth pixel-level annotations
+    are used during the training process of this semantic segmentation network.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_5.jpg
+  Figure 5 caption: Qualitative results of attention maps generated by Grad-CAM [39],
+    the proposed GAIN, GAIN b ext and GAIN p ext . Here, GAIN b ext uses 200 randomly
+    selected (2 percent) bounding box annotations and GAIN p ext uses 200 randomly
+    selected (2 percent) pixel-level labels as extra supervision to guide the attention
+    learning process. The proposed methods can obtain much better attention maps that
+    cover more complete regions of interest by guided attention learning with different
+    levels of guidance.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_6.jpg
+  Figure 6 caption: Qualitative results on PASCAL VOC 2012 segmentation val. set.
+    They are generated by SEC (our baseline framework), GAIN-based SEC, GAIN b ext
+    -based SEC and GAIN p ext -based SEC. Here, GAIN b ext -based SEC is based on
+    attention maps generated by GAIN b ext that uses 200 randomly selected (2 percent)
+    bounding box annotations during training. GAIN p ext -based SEC is based on attention
+    maps of GAIN p ext that uses 200 randomly selected pixel-level labels as extra
+    supervision to guide the attention learning process. No extra supervision is used
+    during the training of semantic segmentation network, SEC here.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_7.jpg
+  Figure 7 caption: Qualitative results generated by Grad-CAM [39], our GAIN and GAIN
+    p ext on the Biased Boat dataset. - denotes the number of pixel-level labels of
+    boat used in the training which were randomly chosen from VOC 2012. Attention
+    map corresponding to boat shown only when there are boats recognized.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_8.jpg
+  Figure 8 caption: Datasets and qualitative results of our toy experiments. The critical
+    areas are marked with red bounding boxes in each image. GT means ground truth
+    orientation class label.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Guided_Attention_Inference_Network\figure_9.jpg
+  Figure 9 caption: Example images of the data used in the coarse orientation classification
+    of an industrial workpiece.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Kunpeng Li
+  Name of the last author: Yun Fu
+  Number of Figures: 10
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: Guided Attention Inference Network
+  Publication Date: 2019-06-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Weakly Supervised Semantic Segmentation Methods
+      on PASCAL VOC 2012 segmentation val. Set and segmentation test Set
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of Weakly Supervised Semantic Segmentation Methods
+      on Pascal VOC 2012 segmentation val. Set
+  Table 3 caption:
+    table_text: TABLE 3 Results on PASCAL VOC 2012 segmentation val. Set with the
+      Proposed GAIN b ext extb-based SEC and GAIN b ext extb Implicitly Using Different
+      Amount of Bounding Box Supervision for the Attention Map Learning Process
+  Table 4 caption:
+    table_text: TABLE 4 Results on PASCAL VOC 2012 segmentation val. Set with our
+      GAIN p ext extp-based SEC and GAIN p ext extp Implicitly Using Different Amount
+      of Pixel-Level Supervision for the Attention Map Learning Process
+  Table 5 caption:
+    table_text: TABLE 5 Comparison of Weakly Supervised Semantic Segmentation Methods
+      on Pascal VOC 2012 segmentation test Set
+  Table 6 caption:
+    table_text: TABLE 6 Semantic Segmentation Results without CRF on PASCAL VOC 2012
+      segmentation val. and test Sets
+  Table 7 caption:
+    table_text: TABLE 7 Results Comparison of VGG with Our GAIN and GAIN p ext extp
+      Tested on the Biased Boat Dataset for Classification Accuracy
+  Table 8 caption:
+    table_text: TABLE 8 Performance Comparison between the DenseNet [18] and DenseNet-based
+      GAIN p ext extp
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2921543
+- Affiliation of the first author: university of science and technology of china,
+    hefei, anhui, china
+  Affiliation of the last author: university of science and technology of china, hefei,
+    anhui, china
+  Figure 1 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_1.jpg
+  Figure 1 caption: "CNN-based deep boosting framework. The B.Unit n denotes the n\
+    \ th boosting unit (i.e., G \u03B8 n ) in the framework. The investigation of\
+    \ B.Unit is detailed in Section 4."
+  Figure 10 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_10.jpg
+  Figure 10 caption: "Visual comparisons of an image from the \u201CLIVE1\u201D dataset\
+    \ at QF = 20."
+  Figure 2 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_2.jpg
+  Figure 2 caption: "Details of the evolution for the boosting unit. \u201CC\u201D\
+    \ and \u201CD\u201D with a rectangular block denote the convolution and its dilated\
+    \ variant, respectively. The following \u201C1\u201D and \u201C3\u201D denote\
+    \ the kernel size. \u201CC\u201D with a circular block denotes the concatenation.\
+    \ Each layer in DDFN (except the last one) adopts ReLU [48] as the activation\
+    \ function, which is omitted here for simplifying the illustration."
+  Figure 3 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_3.jpg
+  Figure 3 caption: "Illustrations of the ablation experiments. (a) The curves show\
+    \ the advantage of dense connection over plain structure in terms of convergence.\
+    \ (b) The evolution from plainly connected structure to DDFN. (c) Performance\
+    \ comparisons between DBF and its variants. The symbol \u201CW\u201D means wide\
+    \ and all of these models are tested on the \u201CSet12\u201D dataset at \u03C3\
+    =50 ."
+  Figure 4 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_4.jpg
+  Figure 4 caption: Visualization of stage-wised outputs. The SOS boosted K-SVD [21]
+    and TNRD [16] are adopted to compare with the three-stage DBF.
+  Figure 5 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_5.jpg
+  Figure 5 caption: "Visual comparisons of the image \u201CCouple\u201D from the \u201C\
+    Set12\u201D dataset at \u03C3=50 ."
+  Figure 6 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_6.jpg
+  Figure 6 caption: "Visual comparisons of the image \u201CMan\u201D from the \u201C\
+    Set12\u201D dataset at \u03C3=50 ."
+  Figure 7 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_7.jpg
+  Figure 7 caption: "Visual comparisons of an image from the \u201CBSD68\u201D dataset\
+    \ at \u03C3=35 ."
+  Figure 8 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_8.jpg
+  Figure 8 caption: "Visual comparisons of an image from the \u201CBSD68\u201D dataset\
+    \ at \u03C3=45 ."
+  Figure 9 Link: articels_figures_by_rev_year\2019\RealWorld_Image_Denoising_with_Deep_Boosting\figure_9.jpg
+  Figure 9 caption: "Visual comparisons of an image from the \u201CLIVE1\u201D dataset\
+    \ at QF = 10."
+  First author gender probability: 0.85
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Chang Chen
+  Name of the last author: Feng Wu
+  Number of Figures: 18
+  Number of Tables: 10
+  Number of authors: 5
+  Paper title: Real-World Image Denoising with Deep Boosting
+  Publication Date: 2019-06-10 00:00:00
+  Table 1 caption:
+    table_text: 'TABLE 1 From the Plain Structure to the Dilated Dense Fusion: The
+      Evolution of Structure for the Boosting Unit'
+  Table 10 caption:
+    table_text: TABLE 10 Comparison for the Real-World Denoising on Set15 [25]. DDFN-x3W
+      Is Adopted as the Representative of Our Method for Cross-Domain Evaluation
+  Table 2 caption:
+    table_text: TABLE 2 Inspections of Mean Absolute Gradients (MAG, Termed as G G)
+      of Convolutional Weights
+  Table 3 caption:
+    table_text: "TABLE 3 Comparisons of Mean PSNR (dB) and SSIM Results between Our\
+      \ DBF and Representative Learning-Based Models on the \u201CSet12\u201D and\
+      \ \u201CBSD68\u201D Datasets"
+  Table 4 caption:
+    table_text: TABLE 4 Comparisons for the Blind Gaussian Denoising (Grey-Level)
+  Table 5 caption:
+    table_text: TABLE 5 Comparisons for the Blind Color Image Denoising
+  Table 6 caption:
+    table_text: "TABLE 6 Comparisons of Different \u03BB \u03BB Values on Set12 When\
+      \ \u03C3=50 \u03C3=50"
+  Table 7 caption:
+    table_text: TABLE 7 Comparison of the JPEG Image Deblocking with 4 Representative
+      Methods
+  Table 8 caption:
+    table_text: "TABLE 8 Comparison of Runtime (s) for Gaussian Denoising on the \u201C\
+      Set12\u201D Dataset with Respect to Different Resolutions"
+  Table 9 caption:
+    table_text: TABLE 9 Comparison with Representative Methods on Set60
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2921548
+- Affiliation of the first author: university of california, berkeley, ca, usa
+  Affiliation of the last author: boston university, boston, ma, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\TwoStream_Region_Convolutional_D_Network_for_Temporal_Activity_Detection\figure_1.jpg
+  Figure 1 caption: We propose a fast two-stream Region Convolutional 3D Network (R-C3D)
+    for temporal activity detection in continuous videos. It encodes both the RGB
+    frames and the optical flow maps in two separate streams with fully-convolutional
+    3D filters, proposes activity segments, then classifies and refines them based
+    on pooled features within the segment boundaries. Our model improves both speed
+    and accuracy compared to existing methods.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\TwoStream_Region_Convolutional_D_Network_for_Temporal_Activity_Detection\figure_2.jpg
+  Figure 2 caption: Single stream R-C3D model architecture with only RGB frames as
+    input. The 3D ConvNet takes raw video frames as input and computes convolutional
+    features. These are input to the Proposal Subnet that proposes candidate activities
+    of variable length along with confidence scores. The Classification Subnet filters
+    the proposals, pools fixed size features and then predicts activity labels along
+    with refined segment boundaries.
+  Figure 3 Link: articels_figures_by_rev_year\2019\TwoStream_Region_Convolutional_D_Network_for_Temporal_Activity_Detection\figure_3.jpg
+  Figure 3 caption: Two stream R-C3D architecture. The top stream receives the stacked
+    optical flow fields as input while the bottom stream receives the RGB frames as
+    input. Two separate 3D convnets operate on the two inputs to produce the respective
+    feature maps. These two feature maps are fused and fed to the proposal subnet
+    which proposes candidate activity proposals along with their confidence scores.
+    The classification subnet works on features from two separate streams but on the
+    same set of proposals. The outputs of the two classification subnets are fused
+    for the final activity classification and start-end time regression.
+  Figure 4 Link: articels_figures_by_rev_year\2019\TwoStream_Region_Convolutional_D_Network_for_Temporal_Activity_Detection\figure_4.jpg
+  Figure 4 caption: Qualitative visualization of the predicted activities by single-stream
+    R-C3D (best viewed in color). Figure (a) and (b) show results for two videos each
+    on THUMOS14 and ActivityNet. (c) shows the result for one video from Charades.
+    Ground truth activity segments are marked in black. Predicted activity segments
+    are marked in green for correct predictions and in red for wrong ones. Predicted
+    activities with tIoU more than 0.5 are considered as correct. Corresponding start-end
+    times and confidence score are shown inside brackets.
+  Figure 5 Link: Not Available
+  Figure 5 caption: Not Available
+  Figure 6 Link: Not Available
+  Figure 6 caption: Not Available
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.99
+  Gender of the first author: male
+  Gender of the last author: female
+  Last author gender probability: 1.0
+  Name of the first author: Huijuan Xu
+  Name of the last author: Kate Saenko
+  Number of Figures: 4
+  Number of Tables: 9
+  Number of authors: 3
+  Paper title: Two-Stream Region Convolutional 3D Network for Temporal Activity Detection
+  Publication Date: 2019-06-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Proposal Evaluation on THUMOS14 Dataset (in Percentage)
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Activity Detection Results on THUMOS14 (in Percentage)
+  Table 3 caption:
+    table_text: "TABLE 3 Per-Class AP at tIoU threshold \u03B1=0.5 \u03B1=0.5 on THUMOS14\
+      \ (in Percentage)"
+  Table 4 caption:
+    table_text: TABLE 4 Proposal Evaluation on ActivityNet Validation Set (in Percentage)
+  Table 5 caption:
+    table_text: TABLE 5 Detection Results on ActivityNet in Terms of mAP0.5 (in %)
+  Table 6 caption:
+    table_text: "TABLE 6 Results on ActivityNet in Terms of Average mAP at tIoU Thresholds\
+      \ \u03B1\u2208(0.5,0.95) \u03B1\u2208(0.5,0.95) with Step 0.05 (in %)"
+  Table 7 caption:
+    table_text: TABLE 7 Proposal Evaluation Results on Charades (in Percentage)
+  Table 8 caption:
+    table_text: TABLE 8 Activity Detection Results on Charades (in %)
+  Table 9 caption:
+    table_text: TABLE 9 Activity Detection Speed During Inference
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2921539
+- Affiliation of the first author: microsoft, redmond, wa, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    university of california san diego, la jolla, ca, usa
+  Figure 1 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_1.jpg
+  Figure 1 caption: The bag of semantics (BoS) classifier consists of a retinotopic
+    feature mapping F followed by a semantic mapping N . A non-linear embedding E
+    of the semantic maps is then used to generate a feature vector on a euclidean
+    space D .
+  Figure 10 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_10.jpg
+  Figure 10 caption: Accuracy of MFA-FSs of constant size K times R (components versus
+    factors). From left to right, R incraeses while K decreases.
+  Figure 2 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_2.jpg
+  Figure 2 caption: "CNN based semantic image representation. Each image patch is\
+    \ mapped into an SMN \u03C0 ."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_3.jpg
+  Figure 3 caption: "ImageNet based BoS for a) bedroom image. Object recognition channels\
+    \ for b) \u201Cday bed\u201D c) \u201Ccomforter\u201D and d) \u201Cwindow screen.\u201D"
+  Figure 4 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_4.jpg
+  Figure 4 caption: 'Top: Two classifiers in an euclidean space X, a) L 2 and b) L
+    1 merics. Bottom: c) projection of a sample from a) into the semantic space S
+    (only P(y=1|x) shown). d) natural parameter space mapping of c).'
+  Figure 5 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_5.jpg
+  Figure 5 caption: Modeling data on a manifold. The variance-GMM requires many Gaussians.
+    By fitting locally linear subspaces, the MFA requires few Gaussians.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_6.jpg
+  Figure 6 caption: The MFA-FS( Lambda ) layer implements (49) as a network layer.
+    The bottom branch computes the posterior probability of (50). The top branch computes
+    the remainder of the summation argument. Note that circles denote entry-wise operations,
+    boxes implement matrix multiplications (weight layers), the outer product layer
+    is similar to [44], and the dot-product layer a combination of elementwise multiplication
+    and a sum. Expressions in red are parameters of the k th MFA component, in black
+    the computations made by the network.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_7.jpg
+  Figure 7 caption: MFAFSNet architecture. A standard CNN, pretrained on ImageNet,
+    is used to extract a vector nu (x) of image features. The network is applied to
+    image patches, which are combined with a RoI pooling layer. The vector nu (x)
+    is fed to a dimensionality reduction layer, then to the MFA-FS layer, and finally
+    power and L2 normalized, before application of a linear classification layer.
+  Figure 8 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_8.jpg
+  Figure 8 caption: Performance variation of the nu (2) -FV and the SMN-FV with PCA
+    dimension.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Semantic_Fisher_Scores_for_Task_Transfer_Using_Objects_to_Classify_Scenes\figure_9.jpg
+  Figure 9 caption: Accuracy versus descriptor size for MFA-FS( Lambda ) of 50 components
+    and R factor dimensions and GMM-FV( sigma ) of K components.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Mandar Dixit
+  Name of the last author: Nuno Vasconcelos
+  Number of Figures: 11
+  Number of Tables: 11
+  Number of authors: 3
+  Paper title: 'Semantic Fisher Scores for Task Transfer: Using Objects to Classify
+    Scenes'
+  Publication Date: 2019-06-10 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Parameters of (18) for the GMM-FV and DMM-FV
+  Table 10 caption:
+    table_text: TABLE 10 Task versus Dataset Transfer
+  Table 2 caption:
+    table_text: TABLE 2 Comparison of FV Encodings
+  Table 3 caption:
+    table_text: 'TABLE 3 Ablation Analysis on MIT Indoor, for the Role of Centroids:
+      Learned, Transferred (T), or Random (R)'
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Analysis on MIT Indoor for the Role of Scaling and
+      Assignments
+  Table 5 caption:
+    table_text: TABLE 5 Accuracy of GMM-FVs Implemented with the Natural Parameter
+      Embeddings of (27), (28), and (29)
+  Table 6 caption:
+    table_text: TABLE 6 Scene Classification Accuracy of Various Embeddings
+  Table 7 caption:
+    table_text: TABLE 7 Effect of Initialization on Classification Accuracy
+  Table 8 caption:
+    table_text: "TABLE 8 Classification Accuracy as a Function of Patch Size p\xD7\
+      p p\xD7p"
+  Table 9 caption:
+    table_text: TABLE 9 Task Transfer Performance on MIT Indoor
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2921960
+- Affiliation of the first author: school of computer science, fudan university, shanghai,
+    china
+  Affiliation of the last author: school of computer science, fudan university, shanghai,
+    china
+  Figure 1 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_1.jpg
+  Figure 1 caption: Illustration of training models from scratch. The black dashed
+    box (left) denotes we pre-train models on large-scale classification dataset like
+    ImageNet [3]. The red dashed box (right) denotes we train models on target dataset
+    directly. In this paper, we focus on the object detection task without using the
+    pre-trained models.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_2.jpg
+  Figure 2 caption: "DSOD prediction layers with plain and dense structures (for 300\
+    \ \xD7 300 input). The plain structure is introduced by SSD [9] and dense structure\
+    \ is ours. See Section 3 for more details."
+  Figure 3 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_3.jpg
+  Figure 3 caption: "Illustration of the deep-scale supervision (DSS) module. \u201C\
+    4 \xD7, 2 \xD7 and 1 \xD7 \u201D denote that we reduce the resolution of feature\
+    \ maps to 14 , 12 and the original size, respectively. \u201Cc\u201D denotes concatenation\
+    \ operation. \u201CP 1 and P 2 \u201D are the first (38 \xD7 38) and second scales\
+    \ (19 \xD7 19) of prediction modules in Fig. 2. \u201CP 3 -P 5 \u201D also use\
+    \ three-scale feature maps for prediction, which are not presented in this figure."
+  Figure 4 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_4.jpg
+  Figure 4 caption: Examples of object detection results on the MS COCO test-dev set
+    using DSOD300. The training data is COCO trainval without the ImageNet pre-trained
+    models (29.3 percent mAP[0.5:0.95] on the test-dev set). Each output box is associated
+    with a category label and a softmax score in [0, 1]. A score threshold of 0.6
+    is used for displaying. For each image, one color corresponds to one object category
+    in that image. The running time per image is 57.5 ms on one Titan X GPU or 590
+    ms on Intel (R) Core (TM) i7-5960X CPU 3.00 GHz.
+  Figure 5 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_5.jpg
+  Figure 5 caption: Left is the pre-activation of BN-ReLU-Conv in DSOD, right is the
+    post-activation of Conv-BN-ReLU in DSOD v2.
+  Figure 6 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_6.jpg
+  Figure 6 caption: Sensitivity of our detection results. Each plot shows the mean
+    (over classes) normalized AP for the highest and lowest performing subsets within
+    six different object characteristics (occlusion, truncation, bounding-box area,
+    aspect ratio, viewpoint, part visibility). We show plots for our baseline method
+    (SSD) and our method (DSOD) with and without DSS module. We can observe that DSOD
+    and DSOD v2 consistently improve the performance compared with baseline SSD.
+  Figure 7 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_7.jpg
+  Figure 7 caption: 'Distributions and trendlines of top-ranked false positive (FP)
+    types. Each plot shows the evolving distribution (trendline) of FP types as more
+    FP examples are considered. Each FP is categorized into 1 of 4 types: Loc: Poor
+    localization (a detection with an IoU overlap with the correct class between 0.1
+    and 0.5); Sim: Confusion with a similar category; Oth: Confusion with a dissimilar
+    object category; BG: A FP that fired on background. More details can be referred
+    to [70].'
+  Figure 8 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_8.jpg
+  Figure 8 caption: Accuracy under different input sizes.
+  Figure 9 Link: articels_figures_by_rev_year\2019\Object_Detection_from_Scratch_with_Deep_Supervision\figure_9.jpg
+  Figure 9 caption: More examples of object detection results on the PASCAL VOC 2012
+    test set using DSOD300. The training data is VOC 2007 trainval, VOC 2007 test,
+    VOC 2012 trainval and MS COCO trainval (79.3 percent mAP0.5 on the test set).
+    Each output box is associated with a category label and a softmax score in [0,
+    1]. A score threshold of 0.6 is used for displaying. For each image, one color
+    corresponds to one object category in that image.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.86
+  Name of the first author: Zhiqiang Shen
+  Name of the last author: Xiangyang Xue
+  Number of Figures: 9
+  Number of Tables: 11
+  Number of authors: 6
+  Paper title: Object Detection from Scratch with Deep Supervision
+  Publication Date: 2019-06-11 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 DSOD Architecture (Growth Rate k k = 48 in Each Dense Block)
+  Table 10 caption:
+    table_text: TABLE 10 Comparisons of State-of-the-Art Two-Stage Detectors on MS
+      COCO 2015 test-dev Set
+  Table 2 caption:
+    table_text: TABLE 2 Effectiveness of Various Designs on VOC 2007 test Set
+  Table 3 caption:
+    table_text: TABLE 3 Ablation Study on PASCAL VOC 2007 test Set
+  Table 4 caption:
+    table_text: TABLE 4 PASCAL VOC 2007 test Detection Results
+  Table 5 caption:
+    table_text: TABLE 5 PASCAL VOC 2012 test Detection Results
+  Table 6 caption:
+    table_text: TABLE 6 Effectiveness of Various Designs on VOC 2007 test Set
+  Table 7 caption:
+    table_text: TABLE 7 PASCAL VOC 2012 Competition Comp3 Results
+  Table 8 caption:
+    table_text: TABLE 8 MS COCO test-dev 2015 Detection Results
+  Table 9 caption:
+    table_text: TABLE 9 Comparisons of DSOD and DSOD (v2) on PASCAL VOC and MS COCO
+      2015 test-dev Set
+  paper DOI: https://doi.org/10.1109/TPAMI.2019.2922181

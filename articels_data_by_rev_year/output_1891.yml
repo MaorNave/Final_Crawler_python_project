@@ -1,0 +1,853 @@
+- Affiliation of the first author: department of electrical engineering, indian institute
+    of technology madras, chennai, tamil nadu, india
+  Affiliation of the last author: department of electrical engineering, indian institute
+    of technology madras, chennai, tamil nadu, india
+  Figure 1 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_1.jpg
+  Figure 1 caption: Lensless imaging. Lensless cameras require computation to recover
+    the true scene from measurements. In this work we propose a deep learning based
+    lensless reconstruction algorithm for both separable [1] and non-separable mask
+    [2] based lensless cameras that produce photorealistic reconstructions for real
+    and challenging scenarios.
+  Figure 10 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_10.jpg
+  Figure 10 caption: Display captured reconstructions for cropped PhlatCam measurements.
+    The difference observed in the performance of FlatNet for cropped and full measurements
+    is small. This difference is, however, large for both Le-ADMM and Tikh+U-Net.
+  Figure 2 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_2.jpg
+  Figure 2 caption: 'Overall architecture of the FlatNet. The lensless camera measurement
+    is first mapped into an intermediate image space using a trainable camera inversion
+    layer. This stage is implemented separately for the separable and the non-separable
+    case. A U-Net [31] then enhances the perceptual quality of the intermediate reconstruction.
+    We use a weighted combination of three losses in training our network: a perceptual
+    loss [32] using a VGG16 network [33], mean-square error (MSE), and adversarial
+    loss using a discriminator neural network [34].'
+  Figure 3 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_3.jpg
+  Figure 3 caption: Samples from our collected datasets. All our experiments are conducted
+    on real data captured using lensless prototypes. We collect Display Captured Dataset
+    using both separable and non-separable prototypes to train FlatNet-sep and FlatNet-gen,
+    respectively. We also collect Direct Captured Dataset by placing objects in front
+    of the lensless cameras under controlled illumination. Finally, to improve the
+    robustness of FlatNet, we collect a dataset of Unconstrained Indoor Scenes using
+    PhlatCam and Webcam pairs.
+  Figure 4 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_4.jpg
+  Figure 4 caption: Display captured reconstructions for FlatCam. Ground truth images
+    are shown in a). Finer details like the text in the first image and spots on the
+    insect in the second image are lost in b) Tikhonov regularized and c) TVAL3 reconstruction.
+    Finer details are better preserved in FlatNet-sep for both d) uncalibrated and
+    e) calibrated initializations.
+  Figure 5 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_5.jpg
+  Figure 5 caption: Direct captured reconstructions for FlatCam. a) Details in the
+    border and darker regions are lost in the Tikhonov regularized reconstructions.
+    b) TVAL3 reconstructs the border but is unable to restore the sharpness. The proposed
+    end-to-end models for both c) random and d) transpose initializations produce
+    the best reconstructions. These methods are robust to noise and does not contain
+    any regularization parameters.
+  Figure 6 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_6.jpg
+  Figure 6 caption: Display captured reconstructions for PhlatCam. While the learning
+    based methods clearly outperform traditional methods like Tikhonov and TV-based
+    ADMM, FlatNet-gen has superior performance in terms of reconstructing finer details.
+  Figure 7 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_7.jpg
+  Figure 7 caption: Direct captured reconstructions for PhlatCam. FlatNet-gen has
+    fewer artifacts while Le-ADMM suffers from blurry reconstructions and hallucinated
+    artifacts.
+  Figure 8 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_8.jpg
+  Figure 8 caption: Comparison of FlatNet with Tikh+U-Net. Top row shows the comparison
+    of FlatNet-sep with Tikh+U-Net while the bottom row shows the comparison of FlatNet-gen
+    with Tikh+U-Net. FlatNet provides sharper and more photorealistic reconstructions
+    compared to Tikh+U-Net for both separable and non-separable models.
+  Figure 9 Link: articels_figures_by_rev_year\2020\FlatNet_Towards_Photorealistic_Scene_Reconstruction_From_Lensless_Measurements\figure_9.jpg
+  Figure 9 caption: Effect of padding on Wiener deconvolution for cropped measurement.
+    Top row shows the measurement while the bottom row shows the corresponding Wiener
+    reconstruction. (a) Full measurement. Red box indicates the cropped out region.
+    (b) Zero padded measurement and the corresponding reconstruction. (c) Replicate
+    padded measurement and the corresponding reconstruction. (d) Smoothened replicate
+    padded measurement along with the corresponding reconstruction. Line artifacts
+    are significantly reduced in (d) which is used in this work.
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Salman Siddique Khan
+  Name of the last author: Kaushik Mitra
+  Number of Figures: 13
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: 'FlatNet: Towards Photorealistic Scene Reconstruction From Lensless
+    Measurements'
+  Publication Date: 2020-10-26 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Average Metrics on Display Captured FlatCam Measurements
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Average Metrics on Display Captured PhlatCam Measurements
+  Table 3 caption:
+    table_text: TABLE 3 Memory and FLOP Comparison
+  Table 4 caption:
+    table_text: TABLE 4 Comparison of FlatNet With Tikh+U-Net
+  Table 5 caption:
+    table_text: TABLE 5 Average Metrics on Cropped Display Captured PhlatCam Measurements
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3033882
+- Affiliation of the first author: school of computer science and engineering, nanjing
+    university of science and technology, nanjing, jiangsu, china
+  Affiliation of the last author: huawei inc., shenzhen, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_1.jpg
+  Figure 1 caption: What are these people doing? For a specific person in the red
+    bounding box, we can see his overall appearance (i.e., persons) and body parts
+    scattered in dotted cells (i.e., body regions). Meanwhile, there are some spatial
+    (blue and orange dotted lines) and temporal (blue and orange solid lines) dependencies
+    among persons and body regions that are not directly visible in the target area.
+    These persons cooperate to complete the group activity. Our approach constructs
+    and integrates this three-level information (body regions, persons, and group
+    activity) and their corresponding latent dependencies into a unified framework
+    for group activity recognition. Notably, body regions refer to the cells of a
+    person-based image rather than the specific limbs of a person in this work.
+  Figure 10 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_10.jpg
+  Figure 10 caption: Illustration of the cross inference among body regions. Spatial
+    dependencies among body regions within a person are converted to a heatmap. The
+    corresponding values change from small to large as the colors vary from blue to
+    yellow. Temporal dependencies of a particular body region are described as a Ttimes
+    T adjacency matrix, where T is the number of frames. When the corresponding value
+    is larger, the color of the grid is darker. Limited by the quality of the video
+    frames, some images appear a bit pixelated.
+  Figure 2 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_2.jpg
+  Figure 2 caption: 'Overview of HiGCIN consisting of two modules. Body-regions Inference
+    Module (BIM): extracts convolutional features for each person with consideration
+    of the inherent spatiotemporal dependencies among the body-region features from
+    the dotted cells. Body regions denote the cells of the person-based image not
+    the specific limbs of the person. Persons Inference Module (PIM): further explores
+    the spatiotemporal dependencies among personal features (i.e., blue nodes) extracted
+    from persons via the BIM. Finally, all spatiotemporal features are max-pooled
+    into a single vector (i.e., green nodes) for each frame and fed into a softmax
+    layer to predict the group activity. Notably, HiGCIN is trained in an end-to-end
+    manner without requiring any individual action label. Best viewed in color.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_3.jpg
+  Figure 3 caption: "Comparison of different inferences. (a): The Non-Local Inference\
+    \ [45] models the relationship between a certain feature (i.e., orange node) and\
+    \ all others (i.e., blue nodes). (b): Our Cross Inference explores only the relationship\
+    \ between a certain feature (i.e., orange node) and some of the others (i.e.,\
+    \ blue nodes). Blue nodes in the horizontal direction represent the features of\
+    \ different \u201Cobjects\u201D that appear at the same time as the orange node,\
+    \ while those in the vertical direction denote features of the same \u201Cobject\u201D\
+    \ as that of the orange node at different times."
+  Figure 4 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_4.jpg
+  Figure 4 caption: "The Cross Inference Block maps the original features into spatiotemporal\
+    \ features with the same dimension. For a particular feature node (the orange\
+    \ one, x s t ), the pairwise function r(\u22C5) computes the spatial dependencies\
+    \ along the row and the temporal dependencies along the column, for each feature\
+    \ node. \u201C \u25EF \u201D is a linear transformation g(\u22C5) that computes\
+    \ a new representation for each feature node. A set of T+S responses are averaged\
+    \ to the corresponding spatiotemporal feature ( h s t ). The original and spatiotemporal\
+    \ features are residually connected as the output ( X ) of the block."
+  Figure 5 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_5.jpg
+  Figure 5 caption: "Illustration of the cross inference among body regions. For the\
+    \ k th person in a certain frame, we extract hisher tracklet (person image) to\
+    \ D feature maps of size H\xD7W through multiple convolutional layers. We treat\
+    \ each of the cells in the CNN feature maps as the \u201Cbody-region features\u201D\
+    . By concatenating the features from T frames, we obtain F\u2208 R T\xD7P\xD7\
+    D as the input of the CIB, where P=H\xD7W denotes the number of body-region features\
+    \ of this person. In this module, the CIB aims to refine the representation of\
+    \ each person by involving the spatial dependencies among different body-region\
+    \ features of a person, and the temporal dependencies among different states of\
+    \ a particular body region over time. We obtain the features of the k th person\
+    \ as B k \u2208 R T\xD7D by average pooling a set of body-region features F k\
+    \ \u2208 R T\xD7P\xD7D output from the CIB."
+  Figure 6 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_6.jpg
+  Figure 6 caption: "Illustration of the cross inference among persons. For each frame,\
+    \ we feed a set of person images into the BIM to extract features B t \u2208 R\
+    \ K\xD7D for each person, where K is the number of people and D is the dimension\
+    \ of features. By concatenating the personal features from T frames, we obtain\
+    \ B\u2208 R T\xD7K\xD7D as the input of the CIB. In this module, the CIB is used\
+    \ to refine personal features with consideration of the spatial dependencies among\
+    \ different persons at a certain time step and the temporal dependencies among\
+    \ different states of a particular person over time."
+  Figure 7 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_7.jpg
+  Figure 7 caption: "Comparison of the confusion matrices on the Volleyball Dataset\
+    \ [3]. \u201CL\u201D and \u201CR\u201D are abbreviations for \u201CLeft\u201D\
+    \ and \u201CRight\u201D in the group activity labels. The backbone of our method\
+    \ is ResNet-18."
+  Figure 8 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_8.jpg
+  Figure 8 caption: "Comparison of the confusion matrices on the Collective Activity\
+    \ Dataset [1]. We regard \u201CWalking\u201D and \u201CCrossing\u201D as the same\
+    \ class (\u201CMoving\u201D). The backbone of our method is ResNet-18."
+  Figure 9 Link: articels_figures_by_rev_year\2020\HiGCIN_Hierarchical_GraphBased_Cross_Inference_Network_for_Group_Activity_Recogn\figure_9.jpg
+  Figure 9 caption: Illustration of the cross inference among persons. The spatial
+    dependencies among persons and temporal dependencies of a particular person are
+    described as K times K and Ttimes T adjacency matrices, respectively. K and T
+    are the numbers of persons and frames, respectively. When the corresponding value
+    is larger, the color of the grid is darker.
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.98
+  Name of the first author: Rui Yan
+  Name of the last author: Qi Tian
+  Number of Figures: 10
+  Number of Tables: 5
+  Number of authors: 5
+  Paper title: 'HiGCIN: Hierarchical Graph-Based Cross Inference Network for Group
+    Activity Recognition'
+  Publication Date: 2020-10-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Ablation Studies for HiGCIN on the Volleyball Dataset
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Comparison With the State-of-the-Art Methods on the Volleyball
+      Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Comparison With Non-Local on the Volleyball Dataset
+  Table 4 caption:
+    table_text: TABLE 4 Ablation Studies for Individual Action Labels on the Volleyball
+      Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Comparison With the State-of-the-Art Methods on the Collective
+      Activity Dataset
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3034233
+- Affiliation of the first author: department of information engineering, the chinese
+    university of hong kong, hong kong
+  Affiliation of the last author: department of information engineering, the chinese
+    university of hong kong, hong kong
+  Figure 1 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_1.jpg
+  Figure 1 caption: (a) Manipulating various facial attributes through varying the
+    latent codes of a well-trained GAN model. (b) Conditional manipulation results
+    using InterFaceGAN, where we can better disentangle the correlated attributes
+    (top row) and achieve more precise control of the facial attributes (bottom row).
+    All results are synthesized by PGGAN [1].
+  Figure 10 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_10.jpg
+  Figure 10 caption: 'Conditional manipulation with more than one conditions using
+    PGGAN [1]. Left: Original synthesis. Middle: Manipulations along a single boundary.
+    Right: Conditional manipulations. Green arrows indicate the primal direction and
+    red arrows indicate the directions to be conditioned on.'
+  Figure 2 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_2.jpg
+  Figure 2 caption: "Illustration of the conditional manipulation via subspace projection.\
+    \ The projection of n 1 onto n 2 is subtracted from n 1 , resulting in a new direction\
+    \ n 1 \u2212( n T 1 n 2 ) n 2 ."
+  Figure 3 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_3.jpg
+  Figure 3 caption: Classification accuracy (%) on the latent separation boundaries
+    of PGGAN [1] and StyleGAN [4] with respect to different attributes.
+  Figure 4 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_4.jpg
+  Figure 4 caption: Synthesized samples by PGGAN [1] with the distance near to (middle
+    row) and extremely far away from (top and bottom rows) the separation boundary.
+    Each column corresponds to a particular attribute.
+  Figure 5 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_5.jpg
+  Figure 5 caption: Single attribute manipulation results with PGGAN [1]. The top
+    left shows the same person under gradually changed poses. The remaining samples
+    correspond to the results of manipulating four different attributes. The central
+    one is the original synthesis for each triplet, while the left and right stand
+    for the results by moving the latent code towards the negative and positive directions,
+    respectively.
+  Figure 6 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_6.jpg
+  Figure 6 caption: Illustration of the distance effect by taking gender manipulation
+    with PGGAN [1] as an example. The image in the red dashed box stands for the original
+    synthesis. Our approach performs well when the latent code locates close to the
+    boundary. However, when the distance keeps increasing, the synthesized images
+    are no longer like the same person.
+  Figure 7 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_7.jpg
+  Figure 7 caption: "Examples on fixing the artifacts that PGGAN [1] made. The first\
+    \ row shows several bad synthesis results, while the following two rows present\
+    \ the gradually corrected synthesis by moving the latent codes towards the positive\
+    \ \u201Cquality\u201D direction."
+  Figure 8 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_8.jpg
+  Figure 8 caption: Attribute editing results on StyleGAN [4]. For two attributes
+    pose and age, the top row shows the manipulation results with respect to mathcal
+    Z space, whilst the bottom row corresponds to mathcal W space. Images in red dashed
+    boxes represent the original synthesis. Images between two black dashed lines
+    stand for near-boundary manipulation, and the other images stand for long-distance
+    manipulation.
+  Figure 9 Link: articels_figures_by_rev_year\2020\InterFaceGAN_Interpreting_the_Disentangled_Face_Representation_Learned_by_GANs\figure_9.jpg
+  Figure 9 caption: 'Conditional Manipulation results using PGGAN [1]. Left: Manipulating
+    age attribute by preserving gender. Right: Manipulating eyeglasses attribute by
+    preserving age. For each example, the top row shows the unconditional editing
+    results while the bottom row shows the conditional manipulation.'
+  First author gender probability: 0.97
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.75
+  Name of the first author: Yujun Shen
+  Name of the last author: Bolei Zhou
+  Number of Figures: 15
+  Number of Tables: 5
+  Number of authors: 4
+  Paper title: 'InterFaceGAN: Interpreting the Disentangled Face Representation Learned
+    by GANs'
+  Publication Date: 2020-10-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Disentanglement Analysis on PGGAN [1]
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Disentanglement Analysis on StyleGAN [4]
+  Table 3 caption:
+    table_text: TABLE 3 Re-Scoring Analysis on the Semantic Manipulation Achieved
+      by InterFaceGAN
+  Table 4 caption:
+    table_text: TABLE 4 Layer-Wise Analysis on the Semantic Manipulation Achieved
+      by InterFaceGAN Using StyleGAN [4]
+  Table 5 caption:
+    table_text: TABLE 5 Identity Discrepancy After the Face Manipulation Using InterFaceGAN
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3034267
+- Affiliation of the first author: department of control and systems engineering,
+    nanjing university, nanjing, china
+  Affiliation of the last author: department of control and systems engineering, nanjing
+    university, nanjing, china
+  Figure 1 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_1.jpg
+  Figure 1 caption: "The comparison of l 0 , l 1 and \u03B3 -norm."
+  Figure 10 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_10.jpg
+  Figure 10 caption: Recognition with mixed noises. (a) Original image from ExYaleB.
+    (b) Test image with mixed noises. The reconstructed image of (c) EGSNR, (d) WMNR,
+    (e) NMR, (f) RRCL1 and (g) F-LR-IRNNLS. (h) Representation coefficients. (i) Residuals
+    of each class (F-LR denotes the F-LR-IRNNLS method, and the correct class is marked
+    in red).
+  Figure 2 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_2.jpg
+  Figure 2 caption: The effectiveness of EGSNR on removing noises and recovering face
+    image.
+  Figure 3 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_3.jpg
+  Figure 3 caption: The coefficients of (a) SRC, (b) GSC, and (c) EGSNR of a face
+    image from ExYaleB dataset. The coefficients in red correspond to the correct
+    class.
+  Figure 4 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_4.jpg
+  Figure 4 caption: The normalized convergence curves of Algorithm 1 on five datasets.
+  Figure 5 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_5.jpg
+  Figure 5 caption: Some typical images of CMU PIE dataset and recognition rates (%)
+    comparison of different methods under single and multiple training samples protocols.
+  Figure 6 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_6.jpg
+  Figure 6 caption: "Some test images used in our experiments. (a) face images from\
+    \ ExYaleB with six levels (i.e., 10% \u223C 60%) and three types (i.e., baboon,\
+    \ human face and black block) of occlusions. (b) The top row shows some face images\
+    \ with mask occlusions from the Internet and the second row shows some face images\
+    \ from ExYaleB with manually set mask occlusions. (c) Some face images with sunglasses\
+    \ and scarves occlusions from AR dataset."
+  Figure 7 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_7.jpg
+  Figure 7 caption: 'Recognition rates (%) of different methods on ExYaleB under different
+    experiment settings. (a), (b) and (c): with multiple training samples under 10%
+    sim 60% baboon, human face and black block occlusion, respectively. (d), (e) and
+    (f): with single training sample under 10% sim 60% baboon, human face and black
+    block occlusion, respectively.'
+  Figure 8 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_8.jpg
+  Figure 8 caption: The test images from AR with different facial regions occluded.
+  Figure 9 Link: articels_figures_by_rev_year\2020\Enhanced_Group_Sparse_Regularized_Nonconvex_Regression_for_Face_Recognition\figure_9.jpg
+  Figure 9 caption: The face images with mixed noises (from 0 to 50 percent).
+  First author gender probability: 0.86
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Chao Zhang
+  Name of the last author: Xianzhong Zhou
+  Number of Figures: 13
+  Number of Tables: 8
+  Number of authors: 5
+  Paper title: Enhanced Group Sparse Regularized Nonconvex Regression for Face Recognition
+  Publication Date: 2020-10-27 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Notations and Descriptions
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: "TABLE 2 The Formulation of Different Combinations of Loss Function\
+      \ \u03D5 \u03D5 and Regularizer \u03C8 \u03C8"
+  Table 3 caption:
+    table_text: TABLE 3 Recognition Rates (%) Comparison on ExYaleB With Different
+      Training Sets (s1 Denotes Subset 1 for Training)
+  Table 4 caption:
+    table_text: TABLE 4 Recognition Rates (%) Comparison of Different Methods on ExYaleB
+      and AR Face Datasets Under Masks, Sunglasses and Scarves Occlusion Scenarios
+  Table 5 caption:
+    table_text: TABLE 5 Recognition Rates (%) Comparison of Different Methods on AR
+      Dataset With Occlusion on Different Facial Regions
+  Table 6 caption:
+    table_text: TABLE 6 Recognition Rates (%) Comparison of Different Methods on ExYaleB
+      With Increasing Level of Mixed Noises
+  Table 7 caption:
+    table_text: TABLE 7 Recognition Rates (%) of Different Methods on LFW and PubFig
+      Datasets (IRNNLS1 and IRNNLS2 Represent F-IRNNLS and F-LR-IRNNLS Method Respectively)
+  Table 8 caption:
+    table_text: TABLE 8 Recognition Rates (%) of EGSNR and its Three Variations on
+      ExYaleB With Mixed Noises at Different Levels
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3033994
+- Affiliation of the first author: department of radiology, duke university, durham,
+    nc, usa
+  Affiliation of the last author: department of radiology, electrical and computer
+    engineering, and biostatistics & bioinformatics, duke university, durham, nc,
+    usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_1.jpg
+  Figure 1 caption: Multiple series types of the same patient. We picked 12 different
+    series types and show the slices at the same position. While some series types
+    such as Axial Opposed Phase and Axial In Phase have obvious appearance differences,
+    some other series types such as Portal Venous T1w and Axial TransitionalHepatocyte
+    T1w are visually similar.
+  Figure 10 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_10.jpg
+  Figure 10 caption: Visualization of the results of AI versus Radiologists.
+  Figure 2 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_2.jpg
+  Figure 2 caption: Dataset hierarchy.
+  Figure 3 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_3.jpg
+  Figure 3 caption: (a) Patient age distribution. (b) Series type distribution. Here
+    we use labels ranging in [0, 29] to represent the 30 series types. Corresponding
+    series names can be found in Table 2.
+  Figure 4 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_4.jpg
+  Figure 4 caption: (a) Distribution of number of series per exam. (b) Distribution
+    of number of slices per series.
+  Figure 5 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_5.jpg
+  Figure 5 caption: Dataset annotation.
+  Figure 6 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_6.jpg
+  Figure 6 caption: Architecture of 3DPP network for abdominal MRI series classification.
+    Green dashed rectangle indicates network layer while purple dashed rectangle indicates
+    data flow. Here we illustrate three input volumes of different sizes, marked by
+    three different colors respectively. Arrows of the same color indicate the corresponding
+    data flow. Before the3DPP layer different input volumes have different feature
+    sizes, and3DPP layer can produce the same size of pooled features for the fully-connected
+    layer.
+  Figure 7 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_7.jpg
+  Figure 7 caption: 3D pyramid pooling layer. Given arbitrary size of feature volume,
+    our3DPP layer pools the feature in multiple ways using varied kernel sizes, but
+    produces several fixed size output features. These features are then concatenated
+    in a pre-defined order to form a fixed size feature vector.
+  Figure 8 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_8.jpg
+  Figure 8 caption: 'Correctly classified series. Row 1 to row 4: Axial ADC, Fat Only,
+    Axial In Phase, Coronal Late Dynamic T1w.'
+  Figure 9 Link: articels_figures_by_rev_year\2020\D_Pyramid_Pooling_Network_for_Abdominal_MRI_Series_Classification\figure_9.jpg
+  Figure 9 caption: 'Misclassified series. Row 1 to row 4: Arterial T1w classified
+    as Portal Venous T1w, Early Arterial T1w classified as Arterial T1w, Arterial
+    T1w classified as Axial Precontrast Fat Suppressed T1w and Coronal Transitional
+    Hepatocyte T1w classified as Coronal Late Dynamic T1w.'
+  First author gender probability: 0.83
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Zhe Zhu
+  Name of the last author: Maciej A. Mazurowski
+  Number of Figures: 11
+  Number of Tables: 7
+  Number of authors: 7
+  Paper title: 3D Pyramid Pooling Network for Abdominal MRI Series Classification
+  Publication Date: 2020-10-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Number of Exams in Terms of Manufacturer and Field Strength
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 30 Series Types in Our Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Lenient Series Groups
+  Table 4 caption:
+    table_text: TABLE 4 Series-Wise Strict Accuracy, Series-Wise Lenient Accuracy
+      and Slice-Wise Strict Accuracy of Different Networks on Our Dataset
+  Table 5 caption:
+    table_text: TABLE 5 Strict Accuracy and Lenient Accuracy of 3D InceptionV1, 3DPP
+      InceptionV1, 3D AlexNet, 3DPP AlexNet, 3D ResNet18 and 3DPP ResNet18
+  Table 6 caption:
+    table_text: 'TABLE 6 Upper Triangle Region: Pairwise Comparison Results Under
+      the Strict Disagreement Metric; Lower Triangle Region: Pairwise Disagreement
+      Under Cohens Kappa Coefficient Metric'
+  Table 7 caption:
+    table_text: TABLE 7 Strict Accuracy, Number of Correctly Classified Series and
+      Number of Total Series With Different Thresholds
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3033990
+- Affiliation of the first author: department of electrical and computer engineering,
+    curtin university, bentley, wa, australia
+  Affiliation of the last author: department of electrical and computer engineering,
+    curtin university, bentley, wa, australia
+  Figure 1 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_1.jpg
+  Figure 1 caption: 'Multi-view architectures: (a) Multi-view detection + single-sensor
+    multi-object tracking [17]; (b) Monocular detection + multi-sensor multi-object
+    tracking.'
+  Figure 10 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_10.jpg
+  Figure 10 caption: 'CMC5 Camera 1: YOLOv3 detections (left) and MV-GLMB-OC estimates
+    (right).'
+  Figure 2 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_2.jpg
+  Figure 2 caption: 'MV-GLMB-OC filter Processing Chain. Monocular detections from
+    multiple cameras are fed into the filter, which outputs the filtering density.
+    This output is fed into: the estimator to generate track estimates; and back into
+    the filter to process detections at the next time. The Occlusion Model (red) is
+    an add-on that takes the filter output and compute the detection probabilities
+    for the filter on-the-fly.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_3.jpg
+  Figure 3 caption: "The shadow region (in yellow) of object with labeled state x\
+    \ \u2032 , relative to camera c ."
+  Figure 4 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_4.jpg
+  Figure 4 caption: "Illustration of the survival probability model: (a) The scene\
+    \ mask b(x) ; (b) The control parameter \u03C4 of the sigmoid function."
+  Figure 5 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_5.jpg
+  Figure 5 caption: The projections mathcal P(c) of two quadrics (in cyan and pink)
+    onto two image views (c=1,3) result in 2D conics. The transformation mathcal Z
+    yields the corresponding estimated bounding boxes (in cyan and pink). The estimated
+    bounding box and the measured bounding box (in red) from monocular detector formulate
+    the measurement likelihood (18).
+  Figure 6 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_6.jpg
+  Figure 6 caption: 'Layout for CMC dataset: The blue line denotes the boundary of
+    the tracking area. The yellow boxes denote the coordinates of the boundary in
+    (x,y,z) axes. The 4 cameras are positioned (in sequence) at the top 4 corners
+    of the room.'
+  Figure 7 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_7.jpg
+  Figure 7 caption: 'CMC2 Camera 1 to 4 (left to right): YOLOv3 detections (top row)
+    and MV-GLMB-OC estimates (bottom row).'
+  Figure 8 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_8.jpg
+  Figure 8 caption: 'CMC3 Camera 1 to 4 (left to right): YOLOv3 detections (red bounding
+    boxes) and people that are occluded in all four cameras (yellow bounding boxes).'
+  Figure 9 Link: articels_figures_by_rev_year\2020\A_Bayesian_Filter_for_MultiView_D_MultiObject_Tracking_With_Occlusion_Handling\figure_9.jpg
+  Figure 9 caption: 'Multi-Camera Reconfiguration Experiment: OSPA(2) plots with 3D
+    GIoU base-distance for estimates of 3D centroid with extent. Three trackers are
+    considered: YOLOv3+MV-GLMB-OC (multi-camera reconfiguration) and Faster-RCNN+MV-GLMB-OC
+    (multi-camera reconfiguration) and with YOLOv3+MV-GLMB-OC (all cameras operational).'
+  First author gender probability: 0.98
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Jonah Ong
+  Name of the last author: Sven Nordholm
+  Number of Figures: 11
+  Number of Tables: 7
+  Number of authors: 5
+  Paper title: A Bayesian Filter for Multi-View 3D Multi-Object Tracking With Occlusion
+    Handling
+  Publication Date: 2020-10-28 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Basic Notation
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 WILDTRACKS Performance Benchmarks for 3D Position Estimates
+      (restricted to the ground plane)
+  Table 3 caption:
+    table_text: TABLE 3 CMC1,2,3 Performance Benchmarks for 3D Position Estimates
+  Table 4 caption:
+    table_text: TABLE 4 CMC1,2,3 Performance Benchmarks for 3D Centroid With Extent
+      Estimates
+  Table 5 caption:
+    table_text: TABLE 5 CMC4,5 Performance Benchmarks for 3D Position Estimates
+  Table 6 caption:
+    table_text: TABLE 6 CMC4,5 Performance Benchmarks for 3D Centroid With Extent
+      Estimates
+  Table 7 caption:
+    table_text: TABLE 7 MV-GLMB-OC Runtime on WILDTRACKS and CMC
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3034435
+- Affiliation of the first author: facebook, menlo park, ca, usa
+  Affiliation of the last author: university of florida, gainesville, fl, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\VolterraNet_A_Higher_Order_Convolutional_Network_With_Group_Equivariance_for_Hom\figure_1.jpg
+  Figure 1 caption: "Fiber bundle (B,E,\u03C0) ."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\VolterraNet_A_Higher_Order_Convolutional_Network_With_Group_Equivariance_for_Hom\figure_2.jpg
+  Figure 2 caption: "Visualization (in the spirit of [17]) of second-order term w\
+    \ 2 : M 2 \u2192R of a Volterra kernel (here on a 2-manifold parametrized by (\u03B8\
+    ,\u03D5) ). The coordinates above each grid represent the first entry w 2 (x,\u22C5\
+    ) , and within each grid the gray-scale value represents the weight of the associated\
+    \ kernel w 2 (x,y) ."
+  Figure 3 Link: articels_figures_by_rev_year\2020\VolterraNet_A_Higher_Order_Convolutional_Network_With_Group_Equivariance_for_Hom\figure_3.jpg
+  Figure 3 caption: Second order Volterra correlation operator with the first-order
+    kernel w 1 and separable second order kernel w 2 .
+  Figure 4 Link: articels_figures_by_rev_year\2020\VolterraNet_A_Higher_Order_Convolutional_Network_With_Group_Equivariance_for_Hom\figure_4.jpg
+  Figure 4 caption: Schematic diagram of a second-order Volterranet.
+  Figure 5 Link: articels_figures_by_rev_year\2020\VolterraNet_A_Higher_Order_Convolutional_Network_With_Group_Equivariance_for_Hom\figure_5.jpg
+  Figure 5 caption: Schematic diagram of dilated VolterraNet.
+  Figure 6 Link: articels_figures_by_rev_year\2020\VolterraNet_A_Higher_Order_Convolutional_Network_With_Group_Equivariance_for_Hom\figure_6.jpg
+  Figure 6 caption: M1 template [39].
+  Figure 7 Link: Not Available
+  Figure 7 caption: Not Available
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.53
+  Gender of the first author: female
+  Gender of the last author: male
+  Last author gender probability: 0.92
+  Name of the first author: Monami Banerjee
+  Name of the last author: Baba C. Vemuri
+  Number of Figures: 6
+  Number of Tables: 0
+  Number of authors: 4
+  Paper title: 'VolterraNet: A Higher Order Convolutional Network With Group Equivariance
+    for Homogeneous Manifolds'
+  Publication Date: 2020-11-03 00:00:00
+  Table 1 caption:
+    table_text: Not Available
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: Not Available
+  Table 3 caption:
+    table_text: Not Available
+  Table 4 caption:
+    table_text: Not Available
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3035130
+- Affiliation of the first author: school of information and electronics, beijing
+    institute of technology, beijing, china
+  Affiliation of the last author: faculty of computing and information technology,
+    king abdulaziz university, jeddah, saudi arabia
+  Figure 1 Link: articels_figures_by_rev_year\2020\OneShot_Neural_Architecture_Search_Maximising_Diversity_to_Overcome_Catastrophic\figure_1.jpg
+  Figure 1 caption: "Left: The general process of one-shot NAS. First, the search\
+    \ space is defined as a supernet containing all candidate architectures. Then\
+    \ a single path of the supernet (an architecture) is trained in each step of the\
+    \ supernet training process. Promising architectures are selected based on the\
+    \ validation accuracy of weights inherited from the trained supernet without the\
+    \ need for training from scratch. Right: The validation accuracy for four different\
+    \ architectures during the supernet training. The solid lines (\u201CArch\u201D\
+    ) are the accuracies returned using weights inherited from the supernet; the dashed\
+    \ lines (\u201CArch-R\u201D) are the accuracies after retraining."
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\OneShot_Neural_Architecture_Search_Maximising_Diversity_to_Overcome_Catastrophic\figure_2.jpg
+  Figure 2 caption: NSAS loss function ensures that the learning of current architecture
+    will not deteriorate the performance of previous architectures in the constraint
+    subset.
+  Figure 3 Link: articels_figures_by_rev_year\2020\OneShot_Neural_Architecture_Search_Maximising_Diversity_to_Overcome_Catastrophic\figure_3.jpg
+  Figure 3 caption: The search spaces for the two different datasets. (a) The cell
+    structure of a CNN with a common search space takes the two previous cells output
+    as the cell inputs. There are four operation nodes in each cell, and each operation
+    node selects two outputs from the former nodes associated with those operations
+    as inputs. The output of this cell is the sum of the outputs of all operation
+    nodes. (b) The cell in NAS-Bench-201 is a densely-connected structure, where the
+    operation nodes and output nodes select all former nodes7 with the applied operations
+    as their inputs.
+  Figure 4 Link: articels_figures_by_rev_year\2020\OneShot_Neural_Architecture_Search_Maximising_Diversity_to_Overcome_Catastrophic\figure_4.jpg
+  Figure 4 caption: The best found cells with NSAS and NSAS-C on CIFAR-10.
+  Figure 5 Link: articels_figures_by_rev_year\2020\OneShot_Neural_Architecture_Search_Maximising_Diversity_to_Overcome_Catastrophic\figure_5.jpg
+  Figure 5 caption: "The validation accuracy during supernet training for four different\
+    \ architectures with RandomNAS-NSAS and GDAS-NSAS. The solid lines (\u201CArch\u201D\
+    ) indicate the validation accuracy with weights inherited from the supernet, and\
+    \ the dashed lines (\u201CArch-R\u201D) represent the validation accuracy after\
+    \ retraining."
+  Figure 6 Link: articels_figures_by_rev_year\2020\OneShot_Neural_Architecture_Search_Maximising_Diversity_to_Overcome_Catastrophic\figure_6.jpg
+  Figure 6 caption: The Kendall Tau metric ( tau ) of architecture ranking based on
+    weight sharing and retraining.
+  Figure 7 Link: articels_figures_by_rev_year\2020\OneShot_Neural_Architecture_Search_Maximising_Diversity_to_Overcome_Catastrophic\figure_7.jpg
+  Figure 7 caption: (a) The architecture ranking differences between retraining and
+    inheriting weights from a trained supernet with RandomNAS, RandomNAS-NSAS, GDAS,
+    and GDAS-NSAS (from left to right, respectively). (b) The mean retraining validation
+    accuracy for the architectures found through different methods.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.63
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Miao Zhang
+  Name of the last author: Steven Su
+  Number of Figures: 7
+  Number of Tables: 7
+  Number of authors: 7
+  Paper title: 'One-Shot Neural Architecture Search: Maximising Diversity to Overcome
+    Catastrophic Forgetting'
+  Publication Date: 2020-11-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Results With the Existing NAS Approaches on CIFAR-10 and CIFAR-100
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Results With Existing Manual-Designed Architectures and NAS
+      Approaches on the ImageNet Dataset
+  Table 3 caption:
+    table_text: TABLE 3 Results of One-Shot NAS Baselines on NAS-Bench-201
+  Table 4 caption:
+    table_text: "TABLE 4 Analysis of One-Shot NAS With Various Settings for \u03B2\
+      \ \u03B2 and M M on the NAS-Bench-201 Dataset"
+  Table 5 caption:
+    table_text: TABLE 5 Analysis of the One-Shot NAS Methods With Various Constraint
+      Selection Strategies on CIFAR-10
+  Table 6 caption:
+    table_text: TABLE 6 Analysis of the One-Shot NAS Methods With Various Constraint
+      Selection Strategies on CIFAR-100
+  Table 7 caption:
+    table_text: TABLE 7 Analysis of the One-Shot NAS Methods With Various Constraint
+      Selection Strategies on ImageNet-16-120
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3035351
+- Affiliation of the first author: department of electrical engineering and computer
+    science, university of california, berkeley, ca, usa
+  Affiliation of the last author: department of biomedical engineering, the johns
+    hopkins university, baltimore, md, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\SelfRepresentation_Based_Unsupervised_Exemplar_Selection_in_a_Union_of_Subspaces\figure_1.jpg
+  Figure 1 caption: Number of points in each class associated with the EMNIST handwritten
+    letters (top) and the GTSRB (bottom) street sign databases.
+  Figure 10 Link: Not Available
+  Figure 10 caption: Not Available
+  Figure 2 Link: articels_figures_by_rev_year\2020\SelfRepresentation_Based_Unsupervised_Exemplar_Selection_in_a_Union_of_Subspaces\figure_2.jpg
+  Figure 2 caption: "Subspace clustering on imbalanced data. Two subspaces of dimension\
+    \ three are generated uniformly at random in ambient space of dimension five.\
+    \ Then, x and 100\u2212x points are sampled uniformly at random from the two subspaces,\
+    \ respectively, where x is varied in the x -axis. The clustering accuracy of SSC\
+    \ decreases dramatically as the dataset becomes imbalanced. The exemplar based\
+    \ subspace clustering (see Algorithm 3) is more robust to imbalanced data distribution."
+  Figure 3 Link: articels_figures_by_rev_year\2020\SelfRepresentation_Based_Unsupervised_Exemplar_Selection_in_a_Union_of_Subspaces\figure_3.jpg
+  Figure 3 caption: Running time for Algorithm 1 and Algorithm 2 on a synthetically
+    generated dataset where N data points are sampled uniformly at random from the
+    unit sphere of I R 10 averaged over 10 trials. N is varied along the x -axis and
+    takes values between 100 and 300,000 .
+  Figure 4 Link: articels_figures_by_rev_year\2020\SelfRepresentation_Based_Unsupervised_Exemplar_Selection_in_a_Union_of_Subspaces\figure_4.jpg
+  Figure 4 caption: A geometric illustration of the solution to (12) with X 0 = x
+    1 , x 2 , x 3 . The shaded area is the convex hull K 0 defined in (14).
+  Figure 5 Link: articels_figures_by_rev_year\2020\SelfRepresentation_Based_Unsupervised_Exemplar_Selection_in_a_Union_of_Subspaces\figure_5.jpg
+  Figure 5 caption: Subspace clustering on 190,998 images corresponding to 26 lower
+    case letters from the EMNIST database. We report the averaged accuracy, F-score
+    and running time (in sec.) from 10 trials.
+  Figure 6 Link: articels_figures_by_rev_year\2020\SelfRepresentation_Based_Unsupervised_Exemplar_Selection_in_a_Union_of_Subspaces\figure_6.jpg
+  Figure 6 caption: Effect of varying the parameter lambda for classification on Extended
+    Yale B database. The parameter lambda is varied along the x -axis from 20 to 2500.
+    Note that the x -axis is in log scale.
+  Figure 7 Link: articels_figures_by_rev_year\2020\SelfRepresentation_Based_Unsupervised_Exemplar_Selection_in_a_Union_of_Subspaces\figure_7.jpg
+  Figure 7 caption: Performance of exemplar selection for finding a balanced set of
+    representatives from imbalanced classes in the Extended Yale B dataset. We test
+    the methods with the number of representatives varied in the x -axis from 20 to
+    200, and report the averaged imbalancedness measure from ten trials.
+  Figure 8 Link: Not Available
+  Figure 8 caption: Not Available
+  Figure 9 Link: Not Available
+  Figure 9 caption: Not Available
+  First author gender probability: 0.77
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 0.99
+  Name of the first author: Chong You
+  Name of the last author: "Ren\xE9 Vidal"
+  Number of Figures: 7
+  Number of Tables: 4
+  Number of authors: 4
+  Paper title: Self-Representation Based Unsupervised Exemplar Selection in a Union
+    of Subspaces
+  Publication Date: 2020-11-03 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Subspace Clustering on the GTSRB Database
+  Table 10 caption:
+    table_text: Not Available
+  Table 2 caption:
+    table_text: TABLE 2 Subspace Clustering on the Extended Yale B Database
+  Table 3 caption:
+    table_text: TABLE 3 Classification from Subsets on the Extended Yale B Face Database
+  Table 4 caption:
+    table_text: TABLE 4 Effect of Varying the Parameter t t for Subspace Clustering
+      on Extended Yale B Database Using ESC-FFS
+  Table 5 caption:
+    table_text: Not Available
+  Table 6 caption:
+    table_text: Not Available
+  Table 7 caption:
+    table_text: Not Available
+  Table 8 caption:
+    table_text: Not Available
+  Table 9 caption:
+    table_text: Not Available
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3035599
+- Affiliation of the first author: department of electrical and computer engineering,
+    johns hopkins university, baltimore, md, usa
+  Affiliation of the last author: department of electrical and computer engineering,
+    johns hopkins university, baltimore, md, usa
+  Figure 1 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_1.jpg
+  Figure 1 caption: Representative samples of the images in the JHU-CROWD++ dataset.
+    (a) Overall (b) Rain (c) Snow (d) Haze (e) Distractors.
+  Figure 10 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_10.jpg
+  Figure 10 caption: 'Residual maps. Top row: Without confidence gating. Bottom row:
+    With confidence gating. (a) R5 (b) R4 (c) R3 . Red indicates negative values and
+    cyan indicates positive values. The use of confidence gating improves the residual
+    maps significantly, especially for the shallower layers.'
+  Figure 2 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_2.jpg
+  Figure 2 caption: 'Examples of head-level annotations: (a) Dots (b) Approximate
+    sizes (c) Blur-level.'
+  Figure 3 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_3.jpg
+  Figure 3 caption: Summary of keywords used to scrape the Internet for images.
+  Figure 4 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_4.jpg
+  Figure 4 caption: Distribution of image-level labels.
+  Figure 5 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_5.jpg
+  Figure 5 caption: Distribution of images of different density levels in train, val
+    and test sets.
+  Figure 6 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_6.jpg
+  Figure 6 caption: Distribution of images of weather conditions in train, val and
+    test sets.
+  Figure 7 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_7.jpg
+  Figure 7 caption: Overview of the proposed method. Coarse density map from the deepest
+    layer of the base network is refined using the residual map estimated by the shallower
+    layer. The residual estimation is performed by U - RE B i . In the residual maps,
+    red indicates negative values and cyan indicates positive value.
+  Figure 8 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_8.jpg
+  Figure 8 caption: Uncertainty-guided residual estimation block (U-REB).
+  Figure 9 Link: articels_figures_by_rev_year\2020\JHUCROWD_LargeScale_Crowd_Counting_Dataset_and_A_Benchmark_Method\figure_9.jpg
+  Figure 9 caption: Density maps estimated by different layers of the proposed network.
+    (a) hatY6 (b) hatY5 (c) hatY4 (d) hatY3 (e) Y (ground-truth). It can be observed
+    that the output of the deepest layer ( hatY6 ) looks very coarse, and it is refined
+    in a progressive manner using the residual learned by U-REB 5 , U-REB 4 , U-REB
+    3 to obtain the hatY5,hatY4, hatY3 respectively. Note that fine details and the
+    total count in the density maps improve as we move from hatY6 to hatY3 .
+  First author gender probability: 1.0
+  Gender of the first author: male
+  Gender of the last author: male
+  Last author gender probability: 1.0
+  Name of the first author: Vishwanath A. Sindagi
+  Name of the last author: Vishal M. Patel
+  Number of Figures: 13
+  Number of Tables: 13
+  Number of authors: 3
+  Paper title: 'JHU-CROWD++: Large-Scale Crowd Counting Dataset and A Benchmark Method'
+  Publication Date: 2020-11-04 00:00:00
+  Table 1 caption:
+    table_text: TABLE 1 Comparison of Different Datasets
+  Table 10 caption:
+    table_text: "TABLE 10 Results on JHU-CROWD++ Dataset (\u201CVal Set\u201D)"
+  Table 2 caption:
+    table_text: TABLE 2 Summary of Images Collected Under Adverse Conditions
+  Table 3 caption:
+    table_text: TABLE 3 Distribution of Images Under Different Densities
+  Table 4 caption:
+    table_text: TABLE 4 List of Keywords Used for Searching
+  Table 5 caption:
+    table_text: "TABLE 5 Results of Ablation Study Using \u201CVGG16\u201D Base Network\
+      \ on the JHU-CROWD++ Dataset (Val-Set)"
+  Table 6 caption:
+    table_text: "TABLE 6 Ablation Results: \u201CClass-Conditioning\u201D for Weather-Conditions\
+      \ Study on the JHU-CROWD++ Weather Dataset (Val-Set)"
+  Table 7 caption:
+    table_text: "TABLE 7 Results of Ablation Study Using \u201CRes101\u201D Base Network\
+      \ on the JHU-CROWD++ Dataset (Val-Set)"
+  Table 8 caption:
+    table_text: "TABLE 8 Results of Ablation on the \u201Cbranches\u201D Used for\
+      \ Density Estimation on the JHU-CROWD++ Dataset (Val-Set)"
+  Table 9 caption:
+    table_text: TABLE 9 Results With Varying Training Dataset Size
+  paper DOI: https://doi.org/10.1109/TPAMI.2020.3035969
