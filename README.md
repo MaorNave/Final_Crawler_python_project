@@ -8,7 +8,7 @@
 
 🖊️ Submission Date: 17/08/2023
 
-# 📌 Project Overview
+## 📌 Project Overview
 
 This project delivers a fully-automated web crawler built in Python, targeting academic article metadata from the IEEE Journal platform. It is engineered to support scholarly research by systematically extracting data and organizing outputs into structured folders.
 
@@ -16,9 +16,9 @@ The system navigates journal issues from 2015 to 2023, processes article content
 
 The crawler uses a secure Windows Authenticator login, integrates Google Chrome + WebDriver, and depends on a flexible YAML-based configuration system.
 
-# 📓 Features
+## 📓 Features
 
-## 📦 Data Extraction
+### 📦 Data Extraction
 
 Crawls IEEE article pages across defined years
 
@@ -26,7 +26,7 @@ Filters cover articles and invalid content
 
 Captures: authors (with gender API), DOI, tables, figures, text, and publication metadata
 
-## 📈 Output Organization
+### 📈 Output Organization
 
 Excel File: All article records saved to output.xlsx
 
@@ -34,7 +34,7 @@ Figures Folder: JPGs (600x800 px), named by article and year
 
 Repository Structure: Matches article names and decades for intuitive navigation
 
-# ⚖️ Technical Considerations
+## ⚖️ Technical Considerations
 
 Secure login via Windows Authenticator (academic credentials)
 
@@ -42,17 +42,17 @@ Selenium WebDriver for automated browser control
 
 Smart folder management, image handling, and retry mechanisms for long crawls
 
-# 🔧 System Components
+## 🔧 System Components
 
-💡 Configuration-Driven
+### 💡 Configuration-Driven
 
 YAML config files control login, browser paths, scraping options, and folder output
 
-🕹️ Libraries Used
+### 🕹️ Libraries Used
 
 selenium, yaml, pandas, numpy, os, re, pickle, urllib, datetime, keyboard, genderize, time
 
-# 📊 Functionality Highlights
+## 📊 Functionality Highlights
 
 Gender API integration with request quota handling
 
@@ -60,7 +60,7 @@ Resilient retry logic using call_function_with_retry
 
 Modular design: separate modules for crawling, data extraction, login, and Excel export
 
-# 📑 Key Project Files
+## 📑 Key Project Files
 
 File / Folder
 
@@ -98,7 +98,7 @@ cover_list/
 
 List of skipped cover articles
 
-# 🔎 Installation & Setup
+## 🔎 Installation & Setup
 
 Windows Authenticator — Download
 
@@ -108,7 +108,7 @@ Chrome WebDriver — Get Latest Version
 
 Python Libraries — Install all packages listed in the code or requirements.txt
 
-# 🔍 More Information
+## 🔍 More Information
 
 For full implementation details, function breakdowns, and setup instructions, please refer to the attached documentation files:
 
@@ -116,7 +116,7 @@ Code_guide.docx — Functional overview and logic
 
 Full_Code.docx — Complete source code with inline comments
 
-# 📧 Contact Me
+## 📧 Contact Me
 
 I'm always open to feedback, collaboration, and new research opportunities.
 
