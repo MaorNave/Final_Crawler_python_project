@@ -62,16 +62,17 @@ Modular design: separate modules for crawling, data extraction, login, and Excel
 
 ## 📑 Key Project Files
 
-File / Folder                   Purpose
------------------------------  ----------------------------------------------
-Main.py                        Entry point with crawl toggle settings
-ActivationFunctions.py         All modular crawler functions
-output.xlsx                    Final article data summary
-articels_figures_by_rev_year/ JPG figures by year & article
-articels_data_by_rev_year/     Raw metadata (grouped by 10)
-articels_lists_by_rev_year/    All yearly article links
-names_dict/                    Gender API cache
-cover_list/                    List of skipped cover articles
+| File / Folder                 | Purpose                                 |
+|------------------------------|-----------------------------------------|
+| `Main.py`                    | Entry point with crawl toggle settings  |
+| `ActivationFunctions.py`     | All modular crawler functions           |
+| `output.xlsx`                | Final article data summary              |
+| `articels_figures_by_rev_year/` | JPG figures by year & article       |
+| `articels_data_by_rev_year/` | Raw metadata (grouped by 10)            |
+| `articels_lists_by_rev_year/`| All yearly article links                |
+| `names_dict/`                | Gender API cache                        |
+| `cover_list/`                | List of skipped cover articles          |
+
 
 
 ## 🔍 More Information
